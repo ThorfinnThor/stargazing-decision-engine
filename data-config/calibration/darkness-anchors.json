@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "status": "operator_review_pending",
+  "minimumClassCounts": {
+    "dark_reference": 30,
+    "mid_reference": 20,
+    "urban_control": 20
+  },
+  "anchors": [
+    { "id": "roque-de-los-muchachos", "lat": 28.76, "lon": -17.89, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "teide-high-zone", "lat": 28.27, "lon": -16.64, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "atacama-plateau", "lat": -23, "lon": -67.75, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "big-bend-panther-junction", "lat": 29.25, "lon": -103.25, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "lake-tekapo-basin", "lat": -43.98, "lon": 170.46, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "namibrand-reserve", "lat": -24.95, "lon": 15.89, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "jasper-medicine-lake", "lat": 52.87, "lon": -117.95, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "westhavelland-core", "lat": 52.72, "lon": 12.28, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "alqueva-lake-edge", "lat": 38.25, "lon": -7.25, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "galloway-dark-sky-park", "lat": 55.14, "lon": -4.44, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
+    { "id": "berlin", "lat": 52.52, "lon": 13.405, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "london", "lat": 51.5072, "lon": -0.1276, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "madrid", "lat": 40.4168, "lon": -3.7038, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "paris", "lat": 48.8566, "lon": 2.3522, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "amsterdam", "lat": 52.3676, "lon": 4.9041, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "new-york", "lat": 40.7128, "lon": -74.006, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "los-angeles", "lat": 34.0522, "lon": -118.2437, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "santiago", "lat": -33.4489, "lon": -70.6693, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "auckland", "lat": -36.8509, "lon": 174.7645, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
+    { "id": "cape-town", "lat": -33.9249, "lon": 18.4241, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false }
+  ]
+}
