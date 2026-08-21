@@ -1,0 +1,331 @@
+{
+  "id": "orionids",
+  "slug": "orionids",
+  "iauCode": "ORI",
+  "name": {
+    "en": "Orionids",
+    "de": "Orioniden"
+  },
+  "year": 2027,
+  "peakDate": "2027-10-22",
+  "peakUtc": null,
+  "activeStart": "2027-10-02",
+  "activeEnd": "2027-11-07",
+  "radiantFrame": "J2000",
+  "radiantRaDeg": 95,
+  "radiantDecDeg": 16,
+  "referenceZhr": 20,
+  "source": "International Meteor Organization 2027 Meteor Shower Calendar",
+  "sourceUrl": "https://www.imo.net/files/meteor-shower/cal2027.pdf",
+  "sourceYear": 2027,
+  "verifiedAt": "2026-08-21",
+  "climateContext": {
+    "month": 10,
+    "metric": "monthly_site_sky_quality",
+    "source": "Monthly historical site-score climatology"
+  },
+  "moonConditions": {
+    "bestSiteId": "atacama-plateau",
+    "dateLocal": "2027-10-22",
+    "timezone": "America/Santiago",
+    "moonIlluminationFraction": 0.4561,
+    "moonlessHours": 5.67,
+    "totalDarknessHours": 8.63
+  },
+  "topDestinations": [
+    {
+      "rank": 1,
+      "destinationId": "atacama",
+      "destinationSlug": "atacama",
+      "destinationName": "Atacama Plateau",
+      "siteId": "atacama-plateau",
+      "siteSlug": "atacama-plateau",
+      "siteName": "Atacama high plateau",
+      "climateScore": 93.5,
+      "moonScore": 62.31,
+      "radiantScore": 87.79,
+      "viewingScore": 83,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.63
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.66,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "namibrand-reserve",
+      "siteSlug": "namibrand-reserve",
+      "siteName": "NamibRand reserve observing zone",
+      "climateScore": 94.5,
+      "moonScore": 60.79,
+      "radiantScore": 87.06,
+      "viewingScore": 82.9,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.4798,
+        "moonlessHours": 5.5,
+        "totalDarknessHours": 8.52
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.83,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 87.5,
+      "moonScore": 52.5,
+      "radiantScore": 98.5,
+      "viewingScore": 79.2,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.4466,
+        "moonlessHours": 5.17,
+        "totalDarknessHours": 10.08
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 76.72,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
+      "destinationId": "la-palma",
+      "destinationSlug": "la-palma",
+      "destinationName": "La Palma",
+      "siteId": "roque-de-los-muchachos",
+      "siteSlug": "roque-de-los-muchachos",
+      "siteName": "Roque de los Muchachos observing zone",
+      "climateScore": 84.5,
+      "moonScore": 50.16,
+      "radiantScore": 98.5,
+      "viewingScore": 77,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Atlantic/Canary",
+        "moonIlluminationFraction": 0.4751,
+        "moonlessHours": 4.95,
+        "totalDarknessHours": 10.07
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 77.21,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
+      "destinationId": "tenerife",
+      "destinationSlug": "tenerife",
+      "destinationName": "Tenerife",
+      "siteId": "teide-high-zone",
+      "siteSlug": "teide-high-zone",
+      "siteName": "Teide high-elevation observing zone",
+      "climateScore": 81,
+      "moonScore": 49.36,
+      "radiantScore": 98.5,
+      "viewingScore": 75.01,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Atlantic/Canary",
+        "moonIlluminationFraction": 0.4751,
+        "moonlessHours": 4.83,
+        "totalDarknessHours": 10.06
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 77.7,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    }
+  ],
+  "topSites": [
+    {
+      "rank": 1,
+      "destinationId": "atacama",
+      "destinationSlug": "atacama",
+      "destinationName": "Atacama Plateau",
+      "siteId": "atacama-plateau",
+      "siteSlug": "atacama-plateau",
+      "siteName": "Atacama high plateau",
+      "climateScore": 93.5,
+      "moonScore": 62.31,
+      "radiantScore": 87.79,
+      "viewingScore": 83,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.63
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.66,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "namibrand-reserve",
+      "siteSlug": "namibrand-reserve",
+      "siteName": "NamibRand reserve observing zone",
+      "climateScore": 94.5,
+      "moonScore": 60.79,
+      "radiantScore": 87.06,
+      "viewingScore": 82.9,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.4798,
+        "moonlessHours": 5.5,
+        "totalDarknessHours": 8.52
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.83,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 87.5,
+      "moonScore": 52.5,
+      "radiantScore": 98.5,
+      "viewingScore": 79.2,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.4466,
+        "moonlessHours": 5.17,
+        "totalDarknessHours": 10.08
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 76.72,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
+      "destinationId": "la-palma",
+      "destinationSlug": "la-palma",
+      "destinationName": "La Palma",
+      "siteId": "roque-de-los-muchachos",
+      "siteSlug": "roque-de-los-muchachos",
+      "siteName": "Roque de los Muchachos observing zone",
+      "climateScore": 84.5,
+      "moonScore": 50.16,
+      "radiantScore": 98.5,
+      "viewingScore": 77,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Atlantic/Canary",
+        "moonIlluminationFraction": 0.4751,
+        "moonlessHours": 4.95,
+        "totalDarknessHours": 10.07
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 77.21,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
+      "destinationId": "tenerife",
+      "destinationSlug": "tenerife",
+      "destinationName": "Tenerife",
+      "siteId": "teide-high-zone",
+      "siteSlug": "teide-high-zone",
+      "siteName": "Teide high-elevation observing zone",
+      "climateScore": 81,
+      "moonScore": 49.36,
+      "radiantScore": 98.5,
+      "viewingScore": 75.01,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Atlantic/Canary",
+        "moonIlluminationFraction": 0.4751,
+        "moonlessHours": 4.83,
+        "totalDarknessHours": 10.06
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 77.7,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    }
+  ],
+  "climateScore": 93.5,
+  "moonScore": 62.31,
+  "radiantScore": 87.79,
+  "viewingScore": 83,
+  "confidenceLevel": "low",
+  "indexable": false,
+  "caveats": [
+    "The IMO gives a date maximum and describes a broad peak; no peak hour is invented here.",
+    "Viewing score is not a forecast of meteor counts or ZHR.",
+    "Climate component uses monthly historical sky-quality climatology for the event month.",
+    "Seed or low-confidence climate inputs keep this event out of unqualified SEO rankings."
+  ]
+}

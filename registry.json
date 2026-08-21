@@ -1,0 +1,1390 @@
+{
+  "version": 1,
+  "siteUrl": "https://stargazing.local",
+  "pages": [
+    {
+      "id": "home-en",
+      "pageType": "home",
+      "locale": "en",
+      "path": "/en/",
+      "canonical": "https://stargazing.local/en/",
+      "alternatePaths": {
+        "en": "/en/",
+        "de": "/de/"
+      },
+      "title": "Stargazing for dark skies",
+      "h1": "Know when the night is worth the journey.",
+      "description": "A static, data-driven decision engine for stargazing travel.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-en",
+      "pageType": "gear",
+      "locale": "en",
+      "path": "/en/gear/",
+      "canonical": "https://stargazing.local/en/gear/",
+      "alternatePaths": {
+        "en": "/en/gear/",
+        "de": "/de/gear/"
+      },
+      "title": "Stargazing gear guides",
+      "h1": "Gear for clear nights.",
+      "description": "Static, specification-based gear guides without price or availability claims.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-alqueva-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/alqueva/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/alqueva/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/alqueva/",
+        "de": "/de/stargazing-destinations/alqueva/"
+      },
+      "title": "Alqueva · Stargazing destination",
+      "h1": "Alqueva",
+      "description": "Static dark-sky guide for Alqueva.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-aoraki-mackenzie-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/aoraki-mackenzie/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/aoraki-mackenzie/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/aoraki-mackenzie/",
+        "de": "/de/stargazing-destinations/aoraki-mackenzie/"
+      },
+      "title": "Aoraki Mackenzie · Stargazing destination",
+      "h1": "Aoraki Mackenzie",
+      "description": "Static dark-sky guide for Aoraki Mackenzie.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-atacama-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/atacama/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/atacama/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/atacama/",
+        "de": "/de/stargazing-destinations/atacama/"
+      },
+      "title": "Atacama Plateau · Stargazing destination",
+      "h1": "Atacama Plateau",
+      "description": "Static dark-sky guide for Atacama Plateau.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-big-bend-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/big-bend/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/big-bend/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/big-bend/",
+        "de": "/de/stargazing-destinations/big-bend/"
+      },
+      "title": "Big Bend · Stargazing destination",
+      "h1": "Big Bend",
+      "description": "Static dark-sky guide for Big Bend.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-galloway-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/galloway/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/galloway/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/galloway/",
+        "de": "/de/stargazing-destinations/galloway/"
+      },
+      "title": "Galloway Forest · Stargazing destination",
+      "h1": "Galloway Forest",
+      "description": "Static dark-sky guide for Galloway Forest.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-jasper-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/jasper/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/jasper/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/jasper/",
+        "de": "/de/stargazing-destinations/jasper/"
+      },
+      "title": "Jasper National Park · Stargazing destination",
+      "h1": "Jasper National Park",
+      "description": "Static dark-sky guide for Jasper National Park.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-la-palma-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/la-palma/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/la-palma/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/la-palma/",
+        "de": "/de/stargazing-destinations/la-palma/"
+      },
+      "title": "La Palma · Stargazing destination",
+      "h1": "La Palma",
+      "description": "Static dark-sky guide for La Palma.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-namibrand-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/namibrand/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/namibrand/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/namibrand/",
+        "de": "/de/stargazing-destinations/namibrand/"
+      },
+      "title": "NamibRand · Stargazing destination",
+      "h1": "NamibRand",
+      "description": "Static dark-sky guide for NamibRand.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-tenerife-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/tenerife/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/tenerife/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/tenerife/",
+        "de": "/de/stargazing-destinations/tenerife/"
+      },
+      "title": "Tenerife · Stargazing destination",
+      "h1": "Tenerife",
+      "description": "Static dark-sky guide for Tenerife.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-westhavelland-en",
+      "pageType": "destination",
+      "locale": "en",
+      "path": "/en/stargazing-destinations/westhavelland/",
+      "canonical": "https://stargazing.local/en/stargazing-destinations/westhavelland/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/westhavelland/",
+        "de": "/de/stargazing-destinations/westhavelland/"
+      },
+      "title": "Westhavelland · Stargazing destination",
+      "h1": "Westhavelland",
+      "description": "Static dark-sky guide for Westhavelland.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-quadrantids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/quadrantids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/quadrantids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/quadrantids/",
+        "de": "/de/meteor-showers/2027/quadrantids/"
+      },
+      "title": "Quadrantids 2027",
+      "h1": "Quadrantids 2027",
+      "description": "Static viewing guide for Quadrantids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-lyrids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/lyrids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/lyrids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/lyrids/",
+        "de": "/de/meteor-showers/2027/lyrids/"
+      },
+      "title": "Lyrids 2027",
+      "h1": "Lyrids 2027",
+      "description": "Static viewing guide for Lyrids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-eta-aquariids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/eta-aquariids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/eta-aquariids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/eta-aquariids/",
+        "de": "/de/meteor-showers/2027/eta-aquariids/"
+      },
+      "title": "Eta Aquariids 2027",
+      "h1": "Eta Aquariids 2027",
+      "description": "Static viewing guide for Eta Aquariids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-southern-delta-aquariids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/southern-delta-aquariids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/southern-delta-aquariids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/southern-delta-aquariids/",
+        "de": "/de/meteor-showers/2027/southern-delta-aquariids/"
+      },
+      "title": "Southern Delta Aquariids 2027",
+      "h1": "Southern Delta Aquariids 2027",
+      "description": "Static viewing guide for Southern Delta Aquariids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-alpha-capricornids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/alpha-capricornids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/alpha-capricornids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/alpha-capricornids/",
+        "de": "/de/meteor-showers/2027/alpha-capricornids/"
+      },
+      "title": "Alpha Capricornids 2027",
+      "h1": "Alpha Capricornids 2027",
+      "description": "Static viewing guide for Alpha Capricornids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-perseids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/perseids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/perseids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/perseids/",
+        "de": "/de/meteor-showers/2027/perseids/"
+      },
+      "title": "Perseids 2027",
+      "h1": "Perseids 2027",
+      "description": "Static viewing guide for Perseids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-aurigids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/aurigids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/aurigids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/aurigids/",
+        "de": "/de/meteor-showers/2027/aurigids/"
+      },
+      "title": "Aurigids 2027",
+      "h1": "Aurigids 2027",
+      "description": "Static viewing guide for Aurigids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-orionids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/orionids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/orionids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/orionids/",
+        "de": "/de/meteor-showers/2027/orionids/"
+      },
+      "title": "Orionids 2027",
+      "h1": "Orionids 2027",
+      "description": "Static viewing guide for Orionids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-leonids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/leonids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/leonids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/leonids/",
+        "de": "/de/meteor-showers/2027/leonids/"
+      },
+      "title": "Leonids 2027",
+      "h1": "Leonids 2027",
+      "description": "Static viewing guide for Leonids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-geminids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/geminids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/geminids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/geminids/",
+        "de": "/de/meteor-showers/2027/geminids/"
+      },
+      "title": "Geminids 2027",
+      "h1": "Geminids 2027",
+      "description": "Static viewing guide for Geminids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-ursids-en",
+      "pageType": "meteor-shower",
+      "locale": "en",
+      "path": "/en/meteor-showers/2027/ursids/",
+      "canonical": "https://stargazing.local/en/meteor-showers/2027/ursids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/ursids/",
+        "de": "/de/meteor-showers/2027/ursids/"
+      },
+      "title": "Ursids 2027",
+      "h1": "Ursids 2027",
+      "description": "Static viewing guide for Ursids.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-amsterdam-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/amsterdam/",
+      "canonical": "https://stargazing.local/en/short-trips/amsterdam/",
+      "alternatePaths": {
+        "en": "/en/short-trips/amsterdam/",
+        "de": "/de/short-trips/amsterdam/"
+      },
+      "title": "Short stargazing trips from Amsterdam",
+      "h1": "From Amsterdam",
+      "description": "Static ranking of dark-sky destinations from Amsterdam.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-auckland-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/auckland/",
+      "canonical": "https://stargazing.local/en/short-trips/auckland/",
+      "alternatePaths": {
+        "en": "/en/short-trips/auckland/",
+        "de": "/de/short-trips/auckland/"
+      },
+      "title": "Short stargazing trips from Auckland",
+      "h1": "From Auckland",
+      "description": "Static ranking of dark-sky destinations from Auckland.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-berlin-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/berlin/",
+      "canonical": "https://stargazing.local/en/short-trips/berlin/",
+      "alternatePaths": {
+        "en": "/en/short-trips/berlin/",
+        "de": "/de/short-trips/berlin/"
+      },
+      "title": "Short stargazing trips from Berlin",
+      "h1": "From Berlin",
+      "description": "Static ranking of dark-sky destinations from Berlin.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-cape-town-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/cape-town/",
+      "canonical": "https://stargazing.local/en/short-trips/cape-town/",
+      "alternatePaths": {
+        "en": "/en/short-trips/cape-town/",
+        "de": "/de/short-trips/cape-town/"
+      },
+      "title": "Short stargazing trips from Cape Town",
+      "h1": "From Cape Town",
+      "description": "Static ranking of dark-sky destinations from Cape Town.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-london-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/london/",
+      "canonical": "https://stargazing.local/en/short-trips/london/",
+      "alternatePaths": {
+        "en": "/en/short-trips/london/",
+        "de": "/de/short-trips/london/"
+      },
+      "title": "Short stargazing trips from London",
+      "h1": "From London",
+      "description": "Static ranking of dark-sky destinations from London.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-los-angeles-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/los-angeles/",
+      "canonical": "https://stargazing.local/en/short-trips/los-angeles/",
+      "alternatePaths": {
+        "en": "/en/short-trips/los-angeles/",
+        "de": "/de/short-trips/los-angeles/"
+      },
+      "title": "Short stargazing trips from Los Angeles",
+      "h1": "From Los Angeles",
+      "description": "Static ranking of dark-sky destinations from Los Angeles.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-madrid-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/madrid/",
+      "canonical": "https://stargazing.local/en/short-trips/madrid/",
+      "alternatePaths": {
+        "en": "/en/short-trips/madrid/",
+        "de": "/de/short-trips/madrid/"
+      },
+      "title": "Short stargazing trips from Madrid",
+      "h1": "From Madrid",
+      "description": "Static ranking of dark-sky destinations from Madrid.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-new-york-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/new-york/",
+      "canonical": "https://stargazing.local/en/short-trips/new-york/",
+      "alternatePaths": {
+        "en": "/en/short-trips/new-york/",
+        "de": "/de/short-trips/new-york/"
+      },
+      "title": "Short stargazing trips from New York",
+      "h1": "From New York",
+      "description": "Static ranking of dark-sky destinations from New York.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-paris-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/paris/",
+      "canonical": "https://stargazing.local/en/short-trips/paris/",
+      "alternatePaths": {
+        "en": "/en/short-trips/paris/",
+        "de": "/de/short-trips/paris/"
+      },
+      "title": "Short stargazing trips from Paris",
+      "h1": "From Paris",
+      "description": "Static ranking of dark-sky destinations from Paris.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-santiago-en",
+      "pageType": "short-trip",
+      "locale": "en",
+      "path": "/en/short-trips/santiago/",
+      "canonical": "https://stargazing.local/en/short-trips/santiago/",
+      "alternatePaths": {
+        "en": "/en/short-trips/santiago/",
+        "de": "/de/short-trips/santiago/"
+      },
+      "title": "Short stargazing trips from Santiago",
+      "h1": "From Santiago",
+      "description": "Static ranking of dark-sky destinations from Santiago.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-beginner-telescopes-en",
+      "pageType": "gear-guide",
+      "locale": "en",
+      "path": "/en/gear/beginner-telescopes/",
+      "canonical": "https://stargazing.local/en/gear/beginner-telescopes/",
+      "alternatePaths": {
+        "en": "/en/gear/beginner-telescopes/",
+        "de": "/de/gear/beginner-telescopes/"
+      },
+      "title": "Best beginner telescopes for stargazing",
+      "h1": "Best beginner telescopes for stargazing",
+      "description": "A specification-based guide to portable visual observing setups.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-binoculars-en",
+      "pageType": "gear-guide",
+      "locale": "en",
+      "path": "/en/gear/binoculars/",
+      "canonical": "https://stargazing.local/en/gear/binoculars/",
+      "alternatePaths": {
+        "en": "/en/gear/binoculars/",
+        "de": "/de/gear/binoculars/"
+      },
+      "title": "Best binoculars for stargazing",
+      "h1": "Best binoculars for stargazing",
+      "description": "How aperture, magnification, and hand-holdability shape wide-field observing.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-red-flashlights-en",
+      "pageType": "gear-guide",
+      "locale": "en",
+      "path": "/en/gear/red-flashlights/",
+      "canonical": "https://stargazing.local/en/gear/red-flashlights/",
+      "alternatePaths": {
+        "en": "/en/gear/red-flashlights/",
+        "de": "/de/gear/red-flashlights/"
+      },
+      "title": "Best red flashlights for stargazing",
+      "h1": "Best red flashlights for stargazing",
+      "description": "A practical specification checklist for low-glare field lighting.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "home-de",
+      "pageType": "home",
+      "locale": "de",
+      "path": "/de/",
+      "canonical": "https://stargazing.local/de/",
+      "alternatePaths": {
+        "en": "/en/",
+        "de": "/de/"
+      },
+      "title": "Stargazing für dunkle Himmel",
+      "h1": "Wissen, wann sich die Reise lohnt.",
+      "description": "Statische, datenbasierte Entscheidungshilfe für Sternbeobachtung.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-de",
+      "pageType": "gear",
+      "locale": "de",
+      "path": "/de/gear/",
+      "canonical": "https://stargazing.local/de/gear/",
+      "alternatePaths": {
+        "en": "/en/gear/",
+        "de": "/de/gear/"
+      },
+      "title": "Ausrüstung für Sternbeobachtung",
+      "h1": "Ausrüstung für klare Nächte.",
+      "description": "Statische, technische Gear-Guides ohne Preis- oder Verfügbarkeitsversprechen.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-alqueva-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/alqueva/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/alqueva/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/alqueva/",
+        "de": "/de/stargazing-destinations/alqueva/"
+      },
+      "title": "Alqueva · Sternbeobachtung",
+      "h1": "Alqueva",
+      "description": "Statischer Himmelsführer für Alqueva.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-aoraki-mackenzie-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/aoraki-mackenzie/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/aoraki-mackenzie/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/aoraki-mackenzie/",
+        "de": "/de/stargazing-destinations/aoraki-mackenzie/"
+      },
+      "title": "Aoraki Mackenzie · Sternbeobachtung",
+      "h1": "Aoraki Mackenzie",
+      "description": "Statischer Himmelsführer für Aoraki Mackenzie.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-atacama-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/atacama/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/atacama/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/atacama/",
+        "de": "/de/stargazing-destinations/atacama/"
+      },
+      "title": "Atacama Plateau · Sternbeobachtung",
+      "h1": "Atacama Plateau",
+      "description": "Statischer Himmelsführer für Atacama Plateau.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-big-bend-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/big-bend/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/big-bend/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/big-bend/",
+        "de": "/de/stargazing-destinations/big-bend/"
+      },
+      "title": "Big Bend · Sternbeobachtung",
+      "h1": "Big Bend",
+      "description": "Statischer Himmelsführer für Big Bend.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-galloway-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/galloway/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/galloway/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/galloway/",
+        "de": "/de/stargazing-destinations/galloway/"
+      },
+      "title": "Galloway Forest · Sternbeobachtung",
+      "h1": "Galloway Forest",
+      "description": "Statischer Himmelsführer für Galloway Forest.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-jasper-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/jasper/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/jasper/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/jasper/",
+        "de": "/de/stargazing-destinations/jasper/"
+      },
+      "title": "Jasper National Park · Sternbeobachtung",
+      "h1": "Jasper National Park",
+      "description": "Statischer Himmelsführer für Jasper National Park.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-la-palma-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/la-palma/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/la-palma/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/la-palma/",
+        "de": "/de/stargazing-destinations/la-palma/"
+      },
+      "title": "La Palma · Sternbeobachtung",
+      "h1": "La Palma",
+      "description": "Statischer Himmelsführer für La Palma.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-namibrand-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/namibrand/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/namibrand/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/namibrand/",
+        "de": "/de/stargazing-destinations/namibrand/"
+      },
+      "title": "NamibRand · Sternbeobachtung",
+      "h1": "NamibRand",
+      "description": "Statischer Himmelsführer für NamibRand.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-tenerife-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/tenerife/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/tenerife/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/tenerife/",
+        "de": "/de/stargazing-destinations/tenerife/"
+      },
+      "title": "Tenerife · Sternbeobachtung",
+      "h1": "Tenerife",
+      "description": "Statischer Himmelsführer für Tenerife.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "destination-westhavelland-de",
+      "pageType": "destination",
+      "locale": "de",
+      "path": "/de/stargazing-destinations/westhavelland/",
+      "canonical": "https://stargazing.local/de/stargazing-destinations/westhavelland/",
+      "alternatePaths": {
+        "en": "/en/stargazing-destinations/westhavelland/",
+        "de": "/de/stargazing-destinations/westhavelland/"
+      },
+      "title": "Westhavelland · Sternbeobachtung",
+      "h1": "Westhavelland",
+      "description": "Statischer Himmelsführer für Westhavelland.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-quadrantids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/quadrantids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/quadrantids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/quadrantids/",
+        "de": "/de/meteor-showers/2027/quadrantids/"
+      },
+      "title": "Quadrantiden 2027",
+      "h1": "Quadrantiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Quadrantiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-lyrids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/lyrids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/lyrids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/lyrids/",
+        "de": "/de/meteor-showers/2027/lyrids/"
+      },
+      "title": "Lyriden 2027",
+      "h1": "Lyriden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Lyriden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-eta-aquariids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/eta-aquariids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/eta-aquariids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/eta-aquariids/",
+        "de": "/de/meteor-showers/2027/eta-aquariids/"
+      },
+      "title": "Eta-Aquariiden 2027",
+      "h1": "Eta-Aquariiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Eta-Aquariiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-southern-delta-aquariids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/southern-delta-aquariids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/southern-delta-aquariids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/southern-delta-aquariids/",
+        "de": "/de/meteor-showers/2027/southern-delta-aquariids/"
+      },
+      "title": "Südliche Delta-Aquariiden 2027",
+      "h1": "Südliche Delta-Aquariiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Südliche Delta-Aquariiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-alpha-capricornids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/alpha-capricornids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/alpha-capricornids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/alpha-capricornids/",
+        "de": "/de/meteor-showers/2027/alpha-capricornids/"
+      },
+      "title": "Alpha-Capricorniden 2027",
+      "h1": "Alpha-Capricorniden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Alpha-Capricorniden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-perseids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/perseids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/perseids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/perseids/",
+        "de": "/de/meteor-showers/2027/perseids/"
+      },
+      "title": "Perseiden 2027",
+      "h1": "Perseiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Perseiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-aurigids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/aurigids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/aurigids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/aurigids/",
+        "de": "/de/meteor-showers/2027/aurigids/"
+      },
+      "title": "Aurigiden 2027",
+      "h1": "Aurigiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Aurigiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-orionids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/orionids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/orionids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/orionids/",
+        "de": "/de/meteor-showers/2027/orionids/"
+      },
+      "title": "Orioniden 2027",
+      "h1": "Orioniden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Orioniden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-leonids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/leonids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/leonids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/leonids/",
+        "de": "/de/meteor-showers/2027/leonids/"
+      },
+      "title": "Leoniden 2027",
+      "h1": "Leoniden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Leoniden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-geminids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/geminids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/geminids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/geminids/",
+        "de": "/de/meteor-showers/2027/geminids/"
+      },
+      "title": "Geminiden 2027",
+      "h1": "Geminiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Geminiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "meteor-2027-ursids-de",
+      "pageType": "meteor-shower",
+      "locale": "de",
+      "path": "/de/meteor-showers/2027/ursids/",
+      "canonical": "https://stargazing.local/de/meteor-showers/2027/ursids/",
+      "alternatePaths": {
+        "en": "/en/meteor-showers/2027/ursids/",
+        "de": "/de/meteor-showers/2027/ursids/"
+      },
+      "title": "Ursiden 2027",
+      "h1": "Ursiden 2027",
+      "description": "Statischer Beobachtungsleitfaden für Ursiden.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-amsterdam-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/amsterdam/",
+      "canonical": "https://stargazing.local/de/short-trips/amsterdam/",
+      "alternatePaths": {
+        "en": "/en/short-trips/amsterdam/",
+        "de": "/de/short-trips/amsterdam/"
+      },
+      "title": "Kurze Sternreisen ab Amsterdam",
+      "h1": "Ab Amsterdam",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Amsterdam.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-auckland-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/auckland/",
+      "canonical": "https://stargazing.local/de/short-trips/auckland/",
+      "alternatePaths": {
+        "en": "/en/short-trips/auckland/",
+        "de": "/de/short-trips/auckland/"
+      },
+      "title": "Kurze Sternreisen ab Auckland",
+      "h1": "Ab Auckland",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Auckland.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-berlin-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/berlin/",
+      "canonical": "https://stargazing.local/de/short-trips/berlin/",
+      "alternatePaths": {
+        "en": "/en/short-trips/berlin/",
+        "de": "/de/short-trips/berlin/"
+      },
+      "title": "Kurze Sternreisen ab Berlin",
+      "h1": "Ab Berlin",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Berlin.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-cape-town-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/cape-town/",
+      "canonical": "https://stargazing.local/de/short-trips/cape-town/",
+      "alternatePaths": {
+        "en": "/en/short-trips/cape-town/",
+        "de": "/de/short-trips/cape-town/"
+      },
+      "title": "Kurze Sternreisen ab Cape Town",
+      "h1": "Ab Cape Town",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Cape Town.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-london-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/london/",
+      "canonical": "https://stargazing.local/de/short-trips/london/",
+      "alternatePaths": {
+        "en": "/en/short-trips/london/",
+        "de": "/de/short-trips/london/"
+      },
+      "title": "Kurze Sternreisen ab London",
+      "h1": "Ab London",
+      "description": "Statisches Ranking dunkler Himmelsziele ab London.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-los-angeles-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/los-angeles/",
+      "canonical": "https://stargazing.local/de/short-trips/los-angeles/",
+      "alternatePaths": {
+        "en": "/en/short-trips/los-angeles/",
+        "de": "/de/short-trips/los-angeles/"
+      },
+      "title": "Kurze Sternreisen ab Los Angeles",
+      "h1": "Ab Los Angeles",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Los Angeles.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-madrid-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/madrid/",
+      "canonical": "https://stargazing.local/de/short-trips/madrid/",
+      "alternatePaths": {
+        "en": "/en/short-trips/madrid/",
+        "de": "/de/short-trips/madrid/"
+      },
+      "title": "Kurze Sternreisen ab Madrid",
+      "h1": "Ab Madrid",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Madrid.",
+      "indexable": false,
+      "reasons": [
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-new-york-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/new-york/",
+      "canonical": "https://stargazing.local/de/short-trips/new-york/",
+      "alternatePaths": {
+        "en": "/en/short-trips/new-york/",
+        "de": "/de/short-trips/new-york/"
+      },
+      "title": "Kurze Sternreisen ab New York",
+      "h1": "Ab New York",
+      "description": "Statisches Ranking dunkler Himmelsziele ab New York.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-paris-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/paris/",
+      "canonical": "https://stargazing.local/de/short-trips/paris/",
+      "alternatePaths": {
+        "en": "/en/short-trips/paris/",
+        "de": "/de/short-trips/paris/"
+      },
+      "title": "Kurze Sternreisen ab Paris",
+      "h1": "Ab Paris",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Paris.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "short-trip-santiago-de",
+      "pageType": "short-trip",
+      "locale": "de",
+      "path": "/de/short-trips/santiago/",
+      "canonical": "https://stargazing.local/de/short-trips/santiago/",
+      "alternatePaths": {
+        "en": "/en/short-trips/santiago/",
+        "de": "/de/short-trips/santiago/"
+      },
+      "title": "Kurze Sternreisen ab Santiago",
+      "h1": "Ab Santiago",
+      "description": "Statisches Ranking dunkler Himmelsziele ab Santiago.",
+      "indexable": false,
+      "reasons": [
+        "no-results",
+        "insufficient-confidence",
+        "insufficient-unique-insights"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-beginner-telescopes-de",
+      "pageType": "gear-guide",
+      "locale": "de",
+      "path": "/de/gear/beginner-telescopes/",
+      "canonical": "https://stargazing.local/de/gear/beginner-telescopes/",
+      "alternatePaths": {
+        "en": "/en/gear/beginner-telescopes/",
+        "de": "/de/gear/beginner-telescopes/"
+      },
+      "title": "Beste Einsteiger-Teleskope für Sternbeobachtung",
+      "h1": "Beste Einsteiger-Teleskope für Sternbeobachtung",
+      "description": "Ein Guide auf Basis technischer Daten für portable visuelle Beobachtungssets.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-binoculars-de",
+      "pageType": "gear-guide",
+      "locale": "de",
+      "path": "/de/gear/binoculars/",
+      "canonical": "https://stargazing.local/de/gear/binoculars/",
+      "alternatePaths": {
+        "en": "/en/gear/binoculars/",
+        "de": "/de/gear/binoculars/"
+      },
+      "title": "Beste Ferngläser für Sternbeobachtung",
+      "h1": "Beste Ferngläser für Sternbeobachtung",
+      "description": "Wie Öffnung, Vergrößerung und Handlichkeit die Weitfeldbeobachtung prägen.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "gear-guide-red-flashlights-de",
+      "pageType": "gear-guide",
+      "locale": "de",
+      "path": "/de/gear/red-flashlights/",
+      "canonical": "https://stargazing.local/de/gear/red-flashlights/",
+      "alternatePaths": {
+        "en": "/en/gear/red-flashlights/",
+        "de": "/de/gear/red-flashlights/"
+      },
+      "title": "Beste Rotlichtlampen für Sternbeobachtung",
+      "h1": "Beste Rotlichtlampen für Sternbeobachtung",
+      "description": "Eine praktische Checkliste technischer Daten für blendarmes Licht im Feld.",
+      "indexable": true,
+      "reasons": [],
+      "structuredDataType": "WebPage"
+    }
+  ]
+}
