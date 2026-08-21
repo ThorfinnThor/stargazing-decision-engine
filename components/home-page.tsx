@@ -2,12 +2,7 @@ import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestination
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { localeCopy, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
-
-const foundations = [
-  { label: "Static by design", value: "Pages and rankings are generated before deployment." },
-  { label: "Transparent inputs", value: "Climate, darkness, elevation, and astronomy remain traceable." },
-  { label: "Travel-ready answers", value: "Clear recommendations explain when a trip is worth planning." },
-] as const;
+import { formatMonth } from "@/lib/i18n/months";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const copy = localeCopy[locale];
@@ -79,7 +74,7 @@ export function HomePage({ locale }: { locale: Locale }) {
               <p>{destination.tags.slice(0, 2).join(" · ")}</p>
               <div className="card-score">
                 <span className="score-value">{bestMonth?.score ?? "—"}</span>
-                <span className="score-label">{copy.seedScore}<br />{copy.bestMonth} {bestMonth?.month ?? "—"}</span>
+                <span className="score-label">{copy.seedScore}<br />{copy.bestMonth} {bestMonth ? formatMonth(bestMonth.month, locale) : "—"}</span>
               </div>
             </a>
           ))}
@@ -99,25 +94,6 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <section className="foundation" aria-labelledby="foundation-title">
-        <div className="section-heading">
-          <p className="eyebrow dark">{copy.architectureEyebrow}</p>
-          <h2 id="foundation-title">{copy.architectureTitle}</h2>
-        </div>
-        <div className="foundation-grid">
-          {foundations.map((item, index) => (
-            <article key={item.label}>
-              <span className="number">0{index + 1}</span>
-              <h3>{item.label}</h3>
-              <p>{item.value}</p>
-            </article>
-          ))}
-        </div>
-        <p className="pipeline">
-          SNAPSHOT <span>→</span> NORMALIZE <span>→</span> SCORE <span>→</span>
-          JSON <span>→</span> STATIC PAGE
-        </p>
-      </section>
       <section className="foundation" aria-labelledby="gear-title">
         <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Statische Ausrüstung" : "Static gear"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
         <div className="foundation-grid short-trip-links"><a className="destination-card" href={localizedLinks.gear(locale)}>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</a>{gearGuides.map((guide) => <a className="destination-card" href={localizedLinks.gearGuide(locale, guide)} key={guide}>{guide.replaceAll("-", " ")}</a>)}</div>
