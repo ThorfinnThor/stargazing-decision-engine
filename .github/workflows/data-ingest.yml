@@ -64,7 +64,7 @@ jobs:
           cache: pnpm
       - uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: "3.12"
       - run: pnpm install --frozen-lockfile
       - name: Install optional ingestion dependencies
         if: ${{ inputs.refresh_era5 || inputs.refresh_black_marble || inputs.refresh_dem }}
