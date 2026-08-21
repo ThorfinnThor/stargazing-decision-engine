@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "status": "awaiting_calibration",
+  "reason": "Production anchor minimums, Black Marble measurements, and operator approval are pending. Synthetic values must not create a public darkness curve.",
+  "curve": [],
+  "labels": [
+    { "minimumScore": 85, "label": "Very dark" },
+    { "minimumScore": 65, "label": "Dark" },
+    { "minimumScore": 35, "label": "Moderate artificial light" },
+    { "minimumScore": 0, "label": "Bright surroundings" }
+  ]
+}

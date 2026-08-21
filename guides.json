@@ -1,0 +1,54 @@
+[
+  {
+    "slug": "beginner-telescopes",
+    "title": { "en": "Best beginner telescopes for stargazing", "de": "Beste Einsteiger-Teleskope für Sternbeobachtung" },
+    "category": "beginner-telescopes",
+    "summary": { "en": "A specification-based guide to portable visual observing setups.", "de": "Ein Guide auf Basis technischer Daten für portable visuelle Beobachtungssets." },
+    "decisionSummary": { "en": "Start with a stable, portable mount and enough aperture for the targets you can actually carry to dark skies.", "de": "Beginne mit einer stabilen, mobilen Montierung und genug Öffnung für Ziele, die du tatsächlich unter dunklen Himmel transportieren kannst." },
+    "audience": { "en": "First-time visual observers who value portability and simple setup.", "de": "Einsteiger:innen in der visuellen Beobachtung, denen Mobilität und einfacher Aufbau wichtig sind." },
+    "buyingCriteria": [
+      { "en": "Aperture and visual reach", "de": "Öffnung und visuelle Reichweite" },
+      { "en": "Mount stability and setup time", "de": "Stabilität der Montierung und Aufbauzeit" },
+      { "en": "Weight, portability, and storage", "de": "Gewicht, Mobilität und Lagerung" }
+    ],
+    "items": [
+      { "name": { "en": "70–90 mm portable refractor", "de": "Mobiler Refraktor mit 70–90 mm" }, "whyItMatters": { "en": "Low setup complexity and forgiving alignment suit first sessions.", "de": "Geringe Aufbaukomplexität und gutmütige Ausrichtung passen zu ersten Sitzungen." }, "coreSpecs": { "aperture": "70–90 mm", "mount": "alt-azimuth", "portability": "high" }, "pros": { "en": ["Fast setup", "Low maintenance"], "de": ["Schneller Aufbau", "Wenig Wartung"] }, "cons": { "en": ["Less light gathering than larger apertures"], "de": ["Weniger Lichtsammlung als größere Öffnungen"] }, "recommendationBasis": "specification_analysis", "partnerSearchQuery": "portable 70 90 mm refractor telescope", "affiliatePartnerId": null },
+      { "name": { "en": "114–130 mm tabletop reflector", "de": "114–130-mm-Tischreflektor" }, "whyItMatters": { "en": "More aperture per kilogram when a stable table or platform is available.", "de": "Mehr Öffnung pro Kilogramm, wenn ein stabiler Tisch oder Untergrund vorhanden ist." }, "coreSpecs": { "aperture": "114–130 mm", "mount": "tabletop dobsonian", "portability": "medium" }, "pros": { "en": ["Good aperture-to-cost shape", "Simple manual control"], "de": ["Gutes Öffnungs-Verhältnis", "Einfache manuelle Bedienung"] }, "cons": { "en": ["Needs a stable support surface"], "de": ["Benötigt eine stabile Auflagefläche"] }, "recommendationBasis": "specification_analysis", "partnerSearchQuery": "114 130 mm tabletop reflector telescope", "affiliatePartnerId": null }
+    ],
+    "tradeoffs": { "en": ["A larger aperture is less useful if it stays at home.", "A stable manual mount is often easier to learn than a complex automated one."], "de": ["Eine größere Öffnung bringt wenig, wenn das Gerät zu Hause bleibt.", "Eine stabile manuelle Montierung ist oft leichter zu lernen als eine komplexe automatische."] },
+    "faq": [{ "question": { "en": "Do I need a motorized mount?", "de": "Brauche ich eine motorisierte Montierung?" }, "answer": { "en": "Not for a first visual setup; portability and stability are usually the more important constraints.", "de": "Nicht für ein erstes visuelles Setup; Mobilität und Stabilität sind meist wichtiger." } }],
+    "affiliateDisclosure": { "en": "This guide is specification analysis; no hands-on test or price claim is implied.", "de": "Dieser Guide ist eine technische Analyse; ein Praxistest oder Preisversprechen ist nicht gemeint." },
+    "lastReviewedAt": "2026-08-21"
+  },
+  {
+    "slug": "binoculars",
+    "title": { "en": "Best binoculars for stargazing", "de": "Beste Ferngläser für Sternbeobachtung" },
+    "category": "binoculars",
+    "summary": { "en": "How aperture, magnification, and hand-holdability shape wide-field observing.", "de": "Wie Öffnung, Vergrößerung und Handlichkeit die Weitfeldbeobachtung prägen." },
+    "decisionSummary": { "en": "8×42 is a balanced starting point; larger exit pupils and more magnification trade away hand-held ease.", "de": "8×42 ist ein ausgewogener Einstieg; größere Austrittspupillen und mehr Vergrößerung kosten Handlichkeit." },
+    "audience": { "en": "Observers who want one lightweight tool for daytime travel and night-sky scanning.", "de": "Beobachter:innen, die ein leichtes Werkzeug für Reisen und Nachthimmel suchen." },
+    "buyingCriteria": [{ "en": "Magnification and field of view", "de": "Vergrößerung und Gesichtsfeld" }, { "en": "Objective diameter and exit pupil", "de": "Objektivdurchmesser und Austrittspupille" }, { "en": "Weight, eye relief, and tripod option", "de": "Gewicht, Augenabstand und Stativoption" }],
+    "items": [
+      { "name": { "en": "8×42 general-purpose binocular", "de": "8×42-Allround-Fernglas" }, "whyItMatters": { "en": "A forgiving field of view and manageable weight support scanning and learning.", "de": "Ein gutmütiges Gesichtsfeld und moderates Gewicht erleichtern Erkundung und Lernen." }, "coreSpecs": { "magnification": "8×", "objective": "42 mm", "exitPupil": "5.25 mm" }, "pros": { "en": ["Easy to hand-hold", "Wide use case"], "de": ["Leicht freihändig", "Vielseitig"] }, "cons": { "en": ["Not as bright as larger objectives at the same magnification"], "de": ["Nicht so hell wie größere Objektive bei gleicher Vergrößerung"] }, "recommendationBasis": "specification_analysis", "partnerSearchQuery": "8x42 binoculars astronomy", "affiliatePartnerId": null },
+      { "name": { "en": "10×50 tripod-ready binocular", "de": "10×50-Fernglas mit Stativoption" }, "whyItMatters": { "en": "More reach and a larger objective help deep-sky scanning when support is available.", "de": "Mehr Vergrößerung und ein größeres Objektiv helfen bei Deep-Sky-Scans mit Unterstützung." }, "coreSpecs": { "magnification": "10×", "objective": "50 mm", "exitPupil": "5 mm" }, "pros": { "en": ["More reach", "Strong wide-field potential"], "de": ["Mehr Reichweite", "Starkes Weitfeldpotenzial"] }, "cons": { "en": ["More shake and weight when handheld"], "de": ["Mehr Zittern und Gewicht aus der Hand"] }, "recommendationBasis": "specification_analysis", "partnerSearchQuery": "10x50 astronomy binoculars", "affiliatePartnerId": null }
+    ],
+    "tradeoffs": { "en": ["Magnification increases shake as well as detail.", "A tripod adapter adds stability but reduces grab-and-go simplicity."], "de": ["Mehr Vergrößerung erhöht Zittern ebenso wie Detail.", "Ein Stativadapter schafft Stabilität, verringert aber die Spontanität."] },
+    "faq": [{ "question": { "en": "Are binoculars useful under dark skies?", "de": "Sind Ferngläser unter dunklem Himmel sinnvoll?" }, "answer": { "en": "Yes; their wide field is excellent for star clusters, Milky Way structure, and orientation.", "de": "Ja; ihr großes Gesichtsfeld eignet sich für Sternhaufen, Milchstraßenstrukturen und Orientierung." } }],
+    "affiliateDisclosure": { "en": "This guide compares specifications and does not copy manufacturer claims or list live prices.", "de": "Dieser Guide vergleicht technische Daten und kopiert weder Herstellertexte noch Live-Preise." },
+    "lastReviewedAt": "2026-08-21"
+  },
+  {
+    "slug": "red-flashlights",
+    "title": { "en": "Best red flashlights for stargazing", "de": "Beste Rotlichtlampen für Sternbeobachtung" },
+    "category": "red-flashlights",
+    "summary": { "en": "A practical specification checklist for low-glare field lighting.", "de": "Eine praktische Checkliste technischer Daten für blendarmes Licht im Feld." },
+    "decisionSummary": { "en": "Choose controllable, dim red light with a secure switch and enough runtime for the whole session.", "de": "Wähle dimmbares Rotlicht mit sicherem Schalter und genug Laufzeit für die gesamte Sitzung." },
+    "audience": { "en": "Anyone protecting dark adaptation while moving around an observing site.", "de": "Alle, die beim Bewegen am Beobachtungsort die Dunkeladaption schützen möchten." },
+    "buyingCriteria": [{ "en": "Dimming range and beam control", "de": "Dimm-Bereich und Strahlkontrolle" }, { "en": "Runtime and replaceable power", "de": "Laufzeit und austauschbare Stromversorgung" }, { "en": "Switch lock and weather resistance", "de": "Schaltersperre und Wetterfestigkeit" }],
+    "items": [{ "name": { "en": "Dimmable red headlamp", "de": "Dimmbare Rotlicht-Stirnlampe" }, "whyItMatters": { "en": "Hands-free, low-output light is useful for setup without flooding the observing area.", "de": "Freihändiges, schwaches Licht hilft beim Aufbau, ohne den Beobachtungsbereich zu fluten." }, "coreSpecs": { "color": "red", "dimming": "continuous preferred", "mount": "headband" }, "pros": { "en": ["Hands-free operation", "Easy beam direction"], "de": ["Freie Hände", "Einfache Strahlrichtung"] }, "cons": { "en": ["A bright minimum setting can still harm adaptation"], "de": ["Eine zu helle Mindeststufe kann die Dunkeladaption stören"] }, "recommendationBasis": "specification_analysis", "partnerSearchQuery": "dimmable red light headlamp astronomy", "affiliatePartnerId": null }],
+    "tradeoffs": { "en": ["Maximum brightness matters less than a genuinely low minimum.", "Headlamps are convenient but should be tilted down when speaking with others."], "de": ["Maximale Helligkeit ist weniger wichtig als eine wirklich niedrige Mindeststufe.", "Stirnlampen sind praktisch, sollten im Gespräch aber nach unten zeigen."] },
+    "faq": [{ "question": { "en": "Why red light?", "de": "Warum Rotlicht?" }, "answer": { "en": "Low, controlled red light generally interferes less with dark adaptation than bright white light.", "de": "Schwaches, kontrolliertes Rotlicht stört die Dunkeladaption im Allgemeinen weniger als helles Weißlicht." } }],
+    "affiliateDisclosure": { "en": "No brightness, runtime, price, or weather-resistance claim is made without a cited product specification.", "de": "Ohne zitierte Produktspezifikation gibt es keine Behauptung zu Helligkeit, Laufzeit, Preis oder Wetterfestigkeit." },
+    "lastReviewedAt": "2026-08-21"
+  }
+]

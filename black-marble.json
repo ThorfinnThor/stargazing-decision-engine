@@ -1,0 +1,21 @@
+{
+  "product": "VNP46A4",
+  "collectionVersion": "2",
+  "resolutionArcSeconds": 15,
+  "availableFromYear": 2012,
+  "baselineYearCount": 3,
+  "maxRadiusKm": 75,
+  "layer": {
+    "radiance": "AllAngle_Composite_Snow_Free",
+    "quality": "AllAngle_Composite_Snow_Free_Quality",
+    "acceptedQualityValues": [0]
+  },
+  "rings": [
+    { "id": "0to2", "minKm": 0, "maxKm": 2, "upperInclusive": false, "statistic": "median", "alanWeight": 0.45 },
+    { "id": "2to10", "minKm": 2, "maxKm": 10, "upperInclusive": false, "statistic": "mean", "alanWeight": 0.30 },
+    { "id": "10to30", "minKm": 10, "maxKm": 30, "upperInclusive": false, "statistic": "mean", "alanWeight": 0.15 },
+    { "id": "30to75", "minKm": 30, "maxKm": 75, "upperInclusive": true, "statistic": "mean", "alanWeight": 0.10 }
+  ],
+  "coverageWarningMin": 0.9,
+  "coverageErrorMin": 0.7
+}

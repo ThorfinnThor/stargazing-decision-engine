@@ -1,0 +1,26 @@
+# Dependencies and builds
+node_modules/
+.next/
+out/
+
+# Local environment
+.env
+.env.local
+.env.*.local
+
+# Offline processing artifacts
+generated/intermediate/**
+raw-downloads/
+*.h5
+*.nc
+*.grib
+*.tif
+*.tiff
+
+# Tooling
+.vercel/
+*.tsbuildinfo
+.DS_Store
+pnpm-debug.log*
+__pycache__/
+*.pyc

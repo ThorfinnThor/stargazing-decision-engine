@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "partners": [
+    {
+      "id": "booking-stay-search",
+      "type": "hotel",
+      "enabled": false,
+      "affiliateId": "",
+      "urlTemplate": "https://www.booking.com/searchresults.html?ss={query}&aid={affiliateId}",
+      "allowedHosts": ["booking.com", "www.booking.com"],
+      "disclosure": {
+        "en": "If activated, this link may earn a commission at no extra cost to you.",
+        "de": "Bei Aktivierung kann dieser Link ohne Mehrkosten eine Provision erzeugen."
+      }
+    }
+  ]
+}

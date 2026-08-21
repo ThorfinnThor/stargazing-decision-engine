@@ -1,0 +1,50 @@
+name: Calendar refresh
+
+on:
+  schedule:
+    - cron: "23 3 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calendar-refresh-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+      - name: Build a rolling 36-month real calendar
+        run: |
+          set -euo pipefail
+          pnpm data:calendar:real -- --start "$(date -u +%Y-%m)" --months 36
+          pnpm data:calendar:manifest
+          pnpm data:calendar:validate
+          pnpm data:validate
+          pnpm typecheck
+          pnpm test
+          pnpm build
+      - name: Commit calendar artifacts only after all gates pass
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/data/stargazing/calendar public/data/stargazing/manifest.json
+          if git diff --cached --quiet; then
+            echo "No calendar changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(calendar): refresh rolling astronomy horizon [skip ci]"
+          git push

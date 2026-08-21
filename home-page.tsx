@@ -1,0 +1,127 @@
+import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadSeoPage } from "@/lib/data/load";
+import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { localeCopy, type Locale } from "@/lib/i18n/config";
+import { localizedLinks } from "@/lib/i18n/links";
+
+const foundations = [
+  { label: "Static by design", value: "Pages and rankings are generated before deployment." },
+  { label: "Transparent inputs", value: "Climate, darkness, elevation, and astronomy remain traceable." },
+  { label: "Travel-ready answers", value: "Clear recommendations explain when a trip is worth planning." },
+] as const;
+
+export function HomePage({ locale }: { locale: Locale }) {
+  const copy = localeCopy[locale];
+  const manifest = loadManifest();
+  const shortTripOrigins = listShortTripOrigins();
+  const gearGuides = listGearGuides();
+  const seo = loadSeoPage(`/${locale}/`);
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const destinations = loadDestinations().map((destination) => {
+    const monthly = loadDestinationMonthly(destination.slug);
+    const bestMonth = [...monthly.months].sort((a, b) => b.score - a.score)[0];
+    return { destination, bestMonth };
+  });
+
+  return (
+    <main lang={copy.htmlLang}>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <section className="hero" aria-labelledby="hero-title">
+        <nav className="nav" aria-label="Primary navigation">
+          <a className="brand" href="#top" aria-label="Stargazing home">
+            <span className="brand-mark" aria-hidden="true">✦</span>
+            <span>STARGAZING</span>
+          </a>
+          <div className="locale-nav" aria-label="Language switcher">
+            {(["en", "de"] as const).map((item) => (
+              <a className={item === locale ? "active" : ""} href={localizedLinks.home(item)} key={item}>
+                {item.toUpperCase()}
+              </a>
+            ))}
+          </div>
+        </nav>
+
+        <div className="hero-copy" id="top">
+          <p className="eyebrow">{copy.eyebrow}</p>
+          <h1 id="hero-title">
+            {copy.titleLead}
+            <span>{copy.titleAccent}</span>
+          </h1>
+          <p className="lede">{copy.lede}</p>
+          <a className="hero-link" href="#catalog">
+            {copy.explore} <span aria-hidden="true">↓</span>
+          </a>
+        </div>
+
+        <div className="orbit" aria-hidden="true">
+          <span className="moon" />
+          <span className="star star-one">✦</span>
+          <span className="star star-two">·</span>
+          <span className="star star-three">✦</span>
+        </div>
+      </section>
+
+      <section className="catalog" id="catalog" aria-labelledby="catalog-title">
+        <div className="catalog-intro">
+          <div>
+            <p className="eyebrow dark">{copy.catalogEyebrow}</p>
+            <h2 id="catalog-title">{copy.catalogTitle}</h2>
+          </div>
+          <p className="catalog-note">{copy.catalogNote}</p>
+        </div>
+        <div className="catalog-grid">
+          {destinations.map(({ destination, bestMonth }) => (
+            <a className="destination-card" href={localizedLinks.destination(locale, destination.slug)} key={destination.id}>
+              <div className="card-topline">
+                <span>{destination.countryCode}</span>
+                <span>{destination.continent}</span>
+              </div>
+              <h3>{destination.name}</h3>
+              <p>{destination.tags.slice(0, 2).join(" · ")}</p>
+              <div className="card-score">
+                <span className="score-value">{bestMonth?.score ?? "—"}</span>
+                <span className="score-label">{copy.seedScore}<br />{copy.bestMonth} {bestMonth?.month ?? "—"}</span>
+              </div>
+            </a>
+          ))}
+        </div>
+        <p className="catalog-footnote">
+          {copy.dataset} {manifest.datasetVersion} · {manifest.counts.destinations} {copy.destinations} · {copy.climateNormal} {manifest.climateNormal.startYear}–{manifest.climateNormal.endYear}
+        </p>
+      </section>
+
+      <section className="foundation" aria-labelledby="short-trips-title">
+        <div className="section-heading">
+          <p className="eyebrow dark">{locale === "de" ? "Statische Kurzreisen" : "Static short trips"}</p>
+          <h2 id="short-trips-title">{locale === "de" ? "Ziele ab deiner Stadt." : "Destinations from your city."}</h2>
+        </div>
+        <div className="foundation-grid short-trip-links">
+          {shortTripOrigins.map((origin) => <a className="destination-card" href={localizedLinks.shortTrips(locale, origin)} key={origin}>{origin}</a>)}
+        </div>
+      </section>
+
+      <section className="foundation" aria-labelledby="foundation-title">
+        <div className="section-heading">
+          <p className="eyebrow dark">{copy.architectureEyebrow}</p>
+          <h2 id="foundation-title">{copy.architectureTitle}</h2>
+        </div>
+        <div className="foundation-grid">
+          {foundations.map((item, index) => (
+            <article key={item.label}>
+              <span className="number">0{index + 1}</span>
+              <h3>{item.label}</h3>
+              <p>{item.value}</p>
+            </article>
+          ))}
+        </div>
+        <p className="pipeline">
+          SNAPSHOT <span>→</span> NORMALIZE <span>→</span> SCORE <span>→</span>
+          JSON <span>→</span> STATIC PAGE
+        </p>
+      </section>
+      <section className="foundation" aria-labelledby="gear-title">
+        <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Statische Ausrüstung" : "Static gear"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
+        <div className="foundation-grid short-trip-links"><a className="destination-card" href={localizedLinks.gear(locale)}>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</a>{gearGuides.map((guide) => <a className="destination-card" href={localizedLinks.gearGuide(locale, guide)} key={guide}>{guide.replaceAll("-", " ")}</a>)}</div>
+      </section>
+    </main>
+  );
+}

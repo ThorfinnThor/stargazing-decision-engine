@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "sampleMinutes": 10,
+  "astronomicalTwilightDeg": -18,
+  "minimumRadiantAltitudeDeg": 20,
+  "weights": { "climate": 0.5, "moon": 0.3, "radiant": 0.2 },
+  "moonWeights": { "moonlessFraction": 0.7, "illumination": 0.3 },
+  "radiantWeights": { "duration": 0.6, "altitude": 0.4 },
+  "durationCurve": [[0, 0], [0.5, 20], [1, 40], [2, 65], [4, 90], [6, 100]],
+  "altitudeCurve": [[0, 0], [10, 20], [20, 45], [40, 80], [60, 100]]
+}

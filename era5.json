@@ -1,0 +1,30 @@
+{
+  "dataset": "reanalysis-era5-single-levels-timeseries",
+  "climateNormal": {
+    "startDate": "1991-01-01",
+    "endDate": "2020-12-31"
+  },
+  "variables": [
+    "total_cloud_cover",
+    "2m_temperature",
+    "2m_dewpoint_temperature",
+    "10m_u_component_of_wind",
+    "10m_v_component_of_wind",
+    "total_precipitation"
+  ],
+  "thresholds": {
+    "astronomicalNightSunAltitudeDeg": -18,
+    "clearCloudCoverMax": 0.2,
+    "goodCloudCoverMax": 0.4,
+    "overcastCloudCoverMin": 0.8,
+    "wetPrecipitationMmPerHourMin": 0.1,
+    "dewRiskDepressionCMax": 2,
+    "highWindKmhMin": 30,
+    "clearSequenceHoursMin": 3
+  },
+  "request": {
+    "dataFormat": "csv",
+    "retryMax": 8,
+    "timeoutSeconds": 600
+  }
+}

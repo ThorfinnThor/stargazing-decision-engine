@@ -1,0 +1,18 @@
+{
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "s3": {
+    "endpoint": "https://eodata.dataspace.copernicus.eu",
+    "bucket": "eodata",
+    "prefix": "auxdata/CopDEM/COP-DEM_GLO-30-DGED",
+    "publicFallbackEndpoint": "https://s3.amazonaws.com",
+    "publicFallbackBucket": "copernicus-dem-30m",
+    "publicFallbackPrefix": ""
+  },
+  "tileKeyTemplate": "Copernicus_DSM_COG_10_{tile}_DEM/Copernicus_DSM_COG_10_{tile}_DEM.tif",
+  "neighborhoodsKm": [0.25, 1],
+  "validElevationRangeM": [-500, 9000],
+  "requirePointData": true
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "weights": { "stargazingTrip": 0.75, "distance": 0.25 },
+  "distanceBands": [
+    { "id": "near", "maxKm": 100, "utility": 100 },
+    { "id": "regional", "maxKm": 250, "utility": 85 },
+    { "id": "weekend", "maxKm": 500, "utility": 60 },
+    { "id": "long-weekend", "maxKm": 800, "utility": 30 },
+    { "id": "far", "maxKm": null, "utility": 0 }
+  ],
+  "excludedPublicAccess": "no"
+}

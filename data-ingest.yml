@@ -1,0 +1,147 @@
+name: Data ingestion
+
+on:
+  workflow_dispatch:
+    inputs:
+      destinations:
+        description: "Comma-separated destination or site slugs, or all"
+        required: true
+        default: all
+        type: string
+      refresh_era5:
+        description: "Fetch and process ERA5 climate snapshots"
+        required: true
+        default: false
+        type: boolean
+      refresh_black_marble:
+        description: "Fetch, extract, and process Black Marble snapshots"
+        required: true
+        default: false
+        type: boolean
+      refresh_dem:
+        description: "Fetch and process Copernicus DEM snapshots"
+        required: true
+        default: false
+        type: boolean
+      refresh_images:
+        description: "Rebuild the image attribution manifest"
+        required: true
+        default: false
+        type: boolean
+      refresh_osm:
+        description: "Reserved until an OSM importer is reviewed"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-ingest-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    env:
+      CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
+      EARTHDATA_TOKEN: ${{ secrets.EARTHDATA_TOKEN }}
+      CDSE_S3_ACCESS_KEY: ${{ secrets.CDSE_S3_ACCESS_KEY }}
+      CDSE_S3_SECRET_KEY: ${{ secrets.CDSE_S3_SECRET_KEY }}
+      CDSE_S3_ENDPOINT: ${{ secrets.CDSE_S3_ENDPOINT }}
+      CDSE_S3_BUCKET: ${{ secrets.CDSE_S3_BUCKET }}
+      CDSE_S3_PREFIX: ${{ secrets.CDSE_S3_PREFIX }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.15.0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pnpm install --frozen-lockfile
+      - name: Install optional ingestion dependencies
+        if: ${{ inputs.refresh_era5 || inputs.refresh_black_marble || inputs.refresh_dem }}
+        run: python -m pip install -r requirements-data.txt
+      - name: Resolve requested active sites
+        id: sites
+        env:
+          REQUESTED_DESTINATIONS: ${{ inputs.destinations }}
+        run: |
+          set -euo pipefail
+          if [[ "$REQUESTED_DESTINATIONS" == "all" ]]; then
+            jq -r '.[] | select(.active) | .slug' data-config/sources/observation-sites.json > /tmp/stargazing-sites
+          else
+            : > /tmp/stargazing-sites
+            IFS=',' read -ra requested <<< "$REQUESTED_DESTINATIONS"
+            for item in "${requested[@]}"; do
+              slug="$(printf '%s' "$item" | xargs)"
+              jq -r --arg slug "$slug" '.[] | select(.active and (.slug == $slug or .destinationId == $slug)) | .slug' data-config/sources/observation-sites.json >> /tmp/stargazing-sites
+            done
+            sort -u /tmp/stargazing-sites -o /tmp/stargazing-sites
+          fi
+          test -s /tmp/stargazing-sites
+          echo "count=$(wc -l < /tmp/stargazing-sites | tr -d ' ')" >> "$GITHUB_OUTPUT"
+          cat /tmp/stargazing-sites
+      - name: Fetch and process optional source snapshots
+        env:
+          REFRESH_ERA5: ${{ inputs.refresh_era5 }}
+          REFRESH_BLACK_MARBLE: ${{ inputs.refresh_black_marble }}
+          REFRESH_DEM: ${{ inputs.refresh_dem }}
+        run: |
+          set -euo pipefail
+          while IFS= read -r site; do
+            if [[ "$REFRESH_ERA5" == "true" ]]; then
+              pnpm data:era5:fetch -- --site "$site"
+              pnpm data:era5:process -- --site "$site"
+            fi
+            if [[ "$REFRESH_BLACK_MARBLE" == "true" ]]; then
+              pnpm data:black-marble:fetch -- --site "$site"
+              pnpm data:black-marble:extract -- --site "$site"
+              pnpm data:black-marble:process -- --site "$site"
+            fi
+            if [[ "$REFRESH_DEM" == "true" ]]; then
+              pnpm data:dem:fetch -- --site "$site"
+              pnpm data:dem:process -- --site "$site"
+            fi
+          done < /tmp/stargazing-sites
+      - name: Rebuild image manifest
+        if: ${{ inputs.refresh_images }}
+        run: pnpm data:images
+      - name: Reject unimplemented OSM refreshes
+        if: ${{ inputs.refresh_osm }}
+        run: |
+          echo "OSM refresh was requested, but no reviewed OSM importer is configured." >&2
+          exit 1
+      - name: Score sites with complete real snapshots
+        run: |
+          set -euo pipefail
+          while IFS= read -r site; do
+            if [[ -f "data-snapshots/climate/$site.json" && -f "data-snapshots/black-marble/$site.json" ]]; then
+              pnpm data:score:real -- --site "$site"
+            fi
+          done < /tmp/stargazing-sites
+          pnpm data:score:real:validate
+      - run: pnpm data:rebuild
+      - run: pnpm data:validate
+      - run: pnpm typecheck
+      - run: pnpm test
+      - run: pnpm build
+      - name: Commit derived static data only after all gates pass
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data-snapshots public/data/stargazing public/images
+          if git diff --cached --quiet; then
+            echo "No derived data changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh static snapshots [skip ci]"
+          git push
