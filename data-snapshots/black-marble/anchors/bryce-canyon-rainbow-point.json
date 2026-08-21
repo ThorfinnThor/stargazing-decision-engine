@@ -1,0 +1,158 @@
+{
+  "siteId": "bryce-canyon-rainbow-point",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1763,
+          "totalPixelCount": 1763
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1763,
+          "totalPixelCount": 1763
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1763,
+          "totalPixelCount": 1763
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.02244,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.02244,
+          "coverage": 1,
+          "validPixelCount": 14751,
+          "totalPixelCount": 14751
+        },
+        {
+          "year": 2024,
+          "radiance": 0.015442,
+          "coverage": 1,
+          "validPixelCount": 14751,
+          "totalPixelCount": 14751
+        },
+        {
+          "year": 2023,
+          "radiance": 0.02262,
+          "coverage": 1,
+          "validPixelCount": 14751,
+          "totalPixelCount": 14751
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.032318,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.039762,
+          "coverage": 1,
+          "validPixelCount": 87129,
+          "totalPixelCount": 87129
+        },
+        {
+          "year": 2024,
+          "radiance": 0.027213,
+          "coverage": 1,
+          "validPixelCount": 87129,
+          "totalPixelCount": 87129
+        },
+        {
+          "year": 2023,
+          "radiance": 0.032318,
+          "coverage": 1,
+          "validPixelCount": 87129,
+          "totalPixelCount": 87129
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0.02244,
+  "radiance30to75": 0.032318,
+  "alanExposure": 0.006509,
+  "darknessScore": null,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-21T21:30:11.945846Z"
+}
