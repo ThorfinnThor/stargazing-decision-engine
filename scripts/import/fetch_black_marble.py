@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import sys
+from urllib.parse import urlparse
 
 from black_marble_common import parse_granule_name, required_tiles, site_bounding_box
 from black_marble_target import resolve_target
@@ -24,6 +25,12 @@ def load_json(path: Path):
 
 
 def granule_name(result) -> str:
+    data_links = getattr(result, "data_links", None)
+    if callable(data_links):
+        for link in data_links():
+            candidate = Path(urlparse(str(link)).path).name
+            if candidate.startswith("VNP46A4."):
+                return candidate
     return str(result["umm"]["GranuleUR"])
 
 
@@ -74,9 +81,6 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
             count=100,
         )
-        print(f"VNP46A4 search {year}: {len(results)} result(s).")
-        for result in results[:3]:
-            print(f"  candidate: {granule_name(result)}")
         by_tile: dict[str, object] = {}
         for result in sorted(results, key=granule_name):
             name = granule_name(result)
@@ -104,33 +108,3 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         year_dir.mkdir(parents=True, exist_ok=True)
         paths = earthaccess.download(results, str(year_dir))
         for path in paths:
-            downloaded.append(str(Path(path).resolve().relative_to(target.resolve())))
-
-    metadata = {
-        "product": config["product"],
-        "collectionVersion": config["collectionVersion"],
-        "siteId": site["id"],
-        "siteSlug": site_slug,
-        "targetKind": target_kind,
-        "requestedPoint": [site["lat"], site["lon"]],
-        "radiusKm": config["maxRadiusKm"],
-        "boundingBox": list(bounds),
-        "requiredTiles": sorted(tiles),
-        "years": sorted(selected_by_year),
-        "files": sorted(downloaded),
-        "hdfDeleted": False,
-        "retrievedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
-    }
-    with metadata_path.open("w", encoding="utf-8") as handle:
-        json.dump(metadata, handle, indent=2)
-        handle.write("\n")
-    print(f"Retrieved {len(downloaded)} VNP46A4 granule(s) for {site_slug}.")
-
-
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    targets = parser.add_mutually_exclusive_group(required=True)
-    targets.add_argument("--site", help="Observation-site slug")
-    targets.add_argument("--anchor", help="Darkness calibration-anchor id")
-    args = parser.parse_args()
-    retrieve(args.site or args.anchor, "site" if args.site else "anchor")
