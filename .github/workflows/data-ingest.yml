@@ -122,12 +122,16 @@ jobs:
       - name: Score sites with complete real snapshots
         run: |
           set -euo pipefail
-          while IFS= read -r site; do
-            if [[ -f "data-snapshots/climate/$site.json" && -f "data-snapshots/black-marble/$site.json" ]]; then
-              pnpm data:score:real --site "$site"
-            fi
-          done < /tmp/stargazing-sites
-          pnpm data:score:real:validate
+          if jq -e '.status == "calibrated"' data-config/scoring/darkness.json >/dev/null; then
+            while IFS= read -r site; do
+              if [[ -f "data-snapshots/climate/$site.json" && -f "data-snapshots/black-marble/$site.json" ]]; then
+                pnpm data:score:real --site "$site"
+              fi
+            done < /tmp/stargazing-sites
+            pnpm data:score:real:validate
+          else
+            echo "Skipping real score generation: darkness calibration is not calibrated yet."
+          fi
       - run: pnpm data:rebuild
       - run: pnpm data:validate
       - run: pnpm typecheck
