@@ -5,6 +5,7 @@ import { loadDestination, loadDestinationMonthly, loadDestinations, loadSeoPage 
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { formatMonth } from "@/lib/i18n/months";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -56,7 +57,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         <div className="event-table-wrap">
           <table className="event-table">
             <thead><tr><th>{isGerman ? "Monat" : "Month"}</th><th>{isGerman ? "Sternbeobachtung" : "Stargazing"}</th><th>{isGerman ? "Konfidenz" : "Confidence"}</th></tr></thead>
-            <tbody>{monthly.months.map((month) => <tr key={month.month}><td>{month.month}</td><td>{month.score}</td><td>{month.confidenceLevel}</td></tr>)}</tbody>
+            <tbody>{monthly.months.map((month) => <tr key={month.month}><td>{formatMonth(month.month, locale)}</td><td>{month.score}</td><td>{month.confidenceLevel}</td></tr>)}</tbody>
           </table>
         </div>
       </section>
