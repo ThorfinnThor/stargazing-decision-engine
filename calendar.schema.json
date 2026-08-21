@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/calendar.json",
+  "title": "Astronomy Calendar File",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["destinationId", "siteId", "bestSiteId", "year", "month", "algorithmVersion", "astronomyEngineVersion", "generatedAt", "nights"],
+  "properties": {
+    "destinationId": { "type": "string", "minLength": 1 },
+    "siteId": { "type": ["string", "null"] },
+    "bestSiteId": { "type": ["string", "null"] },
+    "year": { "type": "integer", "minimum": 1900 },
+    "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "algorithmVersion": { "type": "string", "minLength": 1 },
+    "astronomyEngineVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T.+Z$" },
+    "nights": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["darknessRank", "dateLocal", "timezone", "astronomicalDusk", "astronomicalDawn", "moonIlluminationFraction", "moonPhaseAngleDeg", "moonRiseLocal", "moonSetLocal", "moonAltitudeMaxDeg", "moonAboveHorizonDarkHours", "moonBelowHorizonDarkHours", "moonlessHours", "totalDarknessHours", "calendarDarknessScore", "milkyWayUsefulHours", "milkyWayStrongHours", "galacticCenterAltitudeMaxDeg", "milkyWayOpportunityScore"],
+        "properties": {
+          "darknessRank": { "type": "integer", "minimum": 1 },
+          "dateLocal": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+          "timezone": { "type": "string", "minLength": 1 },
+          "astronomicalDusk": { "$ref": "#/$defs/localDateTime" },
+          "astronomicalDawn": { "$ref": "#/$defs/localDateTime" },
+          "moonIlluminationFraction": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+          "moonPhaseAngleDeg": { "type": ["number", "null"], "minimum": 0, "maximum": 180 },
+          "moonRiseLocal": { "$ref": "#/$defs/localDateTime" },
+          "moonSetLocal": { "$ref": "#/$defs/localDateTime" },
+          "moonAltitudeMaxDeg": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+          "moonAboveHorizonDarkHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "moonBelowHorizonDarkHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "moonlessHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "totalDarknessHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "calendarDarknessScore": { "type": "number", "minimum": 0, "maximum": 100 },
+          "milkyWayUsefulHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "milkyWayStrongHours": { "type": "number", "minimum": 0, "maximum": 24 },
+          "galacticCenterAltitudeMaxDeg": { "type": ["number", "null"], "minimum": -90, "maximum": 90 },
+          "milkyWayOpportunityScore": { "type": ["number", "null"], "minimum": 0, "maximum": 100 }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "localDateTime": {
+      "type": ["string", "null"],
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}[+-]\\d{2}:\\d{2}$"
+    }
+  }
+}

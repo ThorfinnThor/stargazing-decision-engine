@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/era5-climate-snapshot.json",
+  "title": "ERA5 Climate Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["siteId", "source", "climateNormal", "requestedPoint", "gridPoint", "gridDistanceKm", "retrievedAt", "precipitationConvention", "months"],
+  "properties": {
+    "siteId": { "type": "string", "minLength": 1 },
+    "source": { "const": "era5-single-levels-timeseries" },
+    "climateNormal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["startYear", "endYear"],
+      "properties": {
+        "startYear": { "const": 1991 },
+        "endYear": { "const": 2020 }
+      }
+    },
+    "requestedPoint": { "$ref": "#/$defs/coordinate" },
+    "gridPoint": { "$ref": "#/$defs/coordinate" },
+    "gridDistanceKm": { "type": "number", "minimum": 0 },
+    "retrievedAt": { "type": "string", "minLength": 1 },
+    "precipitationConvention": { "const": "hourly-accumulation-ending-at-valid-time-metres-to-mm" },
+    "months": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": { "$ref": "#/$defs/month" }
+    }
+  },
+  "$defs": {
+    "coordinate": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "prefixItems": [
+        { "type": "number", "minimum": -90, "maximum": 90 },
+        { "type": "number", "minimum": -180, "maximum": 180 }
+      ]
+    },
+    "probability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "nullableNumber": { "type": ["number", "null"] },
+    "month": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["month", "astronomicalHourCount", "nightCount", "clearHourProbability", "goodHourProbability", "overcastHourProbability", "clearNightProbability", "goodNightProbability", "wetNightHourProbability", "dewRiskProbability", "nightTempMeanC", "nightTempP10C", "nightTempP90C", "nightWindMeanKmh", "highWindHourProbability", "dataCompleteness", "sampleYearCount"],
+      "properties": {
+        "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+        "astronomicalHourCount": { "type": "integer", "minimum": 0 },
+        "nightCount": { "type": "integer", "minimum": 0 },
+        "clearHourProbability": { "$ref": "#/$defs/probability" },
+        "goodHourProbability": { "$ref": "#/$defs/probability" },
+        "overcastHourProbability": { "$ref": "#/$defs/probability" },
+        "clearNightProbability": { "$ref": "#/$defs/probability" },
+        "goodNightProbability": { "$ref": "#/$defs/probability" },
+        "wetNightHourProbability": { "$ref": "#/$defs/probability" },
+        "dewRiskProbability": { "$ref": "#/$defs/probability" },
+        "nightTempMeanC": { "$ref": "#/$defs/nullableNumber" },
+        "nightTempP10C": { "$ref": "#/$defs/nullableNumber" },
+        "nightTempP90C": { "$ref": "#/$defs/nullableNumber" },
+        "nightWindMeanKmh": { "type": ["number", "null"], "minimum": 0 },
+        "highWindHourProbability": { "$ref": "#/$defs/probability" },
+        "dataCompleteness": { "type": "number", "minimum": 0, "maximum": 1 },
+        "sampleYearCount": { "type": "integer", "minimum": 0, "maximum": 30 }
+      }
+    }
+  }
+}

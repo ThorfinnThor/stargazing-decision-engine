@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/ranking.json",
+  "title": "Ranking File",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "title", "period", "entries"],
+  "properties": {
+    "slug": { "type": "string", "minLength": 1 },
+    "title": { "type": "string", "minLength": 1 },
+    "period": { "type": "string", "minLength": 1 },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["rank", "destinationId", "siteId", "score", "reason"],
+        "properties": {
+          "rank": { "type": "integer", "minimum": 1 },
+          "destinationId": { "type": "string", "minLength": 1 },
+          "siteId": { "type": ["string", "null"] },
+          "score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "reason": { "type": "string", "minLength": 1 }
+        }
+      }
+    }
+  }
+}

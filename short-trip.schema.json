@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/short-trip.json",
+  "title": "Short Trip File",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["originSlug", "originName", "countryCode", "maxShortTripKm", "generatedAt", "entries"],
+  "properties": {
+    "originSlug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "originName": { "type": "string", "minLength": 1 },
+    "countryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "maxShortTripKm": { "type": "number", "exclusiveMinimum": 0 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "entries": { "type": "array", "items": { "$ref": "#/$defs/entry" } }
+  },
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["rank", "destinationId", "destinationSlug", "destinationName", "distanceKm", "distanceBand", "bestMonths", "monthlyStargazingTripScores", "stargazingTripScore", "distanceUtility", "shortTripScore", "bestSiteId", "stayArea", "campingAvailable", "reasons", "confidenceLevel"],
+      "properties": {
+        "rank": { "type": "integer", "minimum": 1 },
+        "destinationId": { "type": "string", "minLength": 1 },
+        "destinationSlug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "destinationName": { "type": "string", "minLength": 1 },
+        "distanceKm": { "type": "number", "minimum": 0 },
+        "distanceBand": { "type": "string", "minLength": 1 },
+        "bestMonths": { "type": "array", "minItems": 1, "maxItems": 3, "items": { "$ref": "#/$defs/monthScore" } },
+        "monthlyStargazingTripScores": { "type": "array", "minItems": 1, "maxItems": 12, "items": { "$ref": "#/$defs/monthConfidenceScore" } },
+        "stargazingTripScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "distanceUtility": { "type": "number", "minimum": 0, "maximum": 100 },
+        "shortTripScore": { "type": "number", "minimum": 0, "maximum": 100 },
+        "bestSiteId": { "type": "string", "minLength": 1 },
+        "stayArea": {
+          "type": ["object", "null"],
+          "additionalProperties": false,
+          "required": ["id", "name", "affiliateQuery"],
+          "properties": { "id": { "type": "string", "minLength": 1 }, "name": { "type": "string", "minLength": 1 }, "affiliateQuery": { "type": "string", "minLength": 1 } }
+        },
+        "campingAvailable": { "type": ["boolean", "null"] },
+        "reasons": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "confidenceLevel": { "enum": ["high", "moderate", "low"] }
+      }
+    },
+    "monthScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["month", "score"],
+      "properties": { "month": { "type": "integer", "minimum": 1, "maximum": 12 }, "score": { "type": "number", "minimum": 0, "maximum": 100 } }
+    },
+    "monthConfidenceScore": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["month", "score", "confidenceLevel"],
+      "properties": { "month": { "type": "integer", "minimum": 1, "maximum": 12 }, "score": { "type": "number", "minimum": 0, "maximum": 100 }, "confidenceLevel": { "enum": ["high", "moderate", "low"] } }
+    }
+  }
+}

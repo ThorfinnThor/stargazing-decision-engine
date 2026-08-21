@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/destination.json",
+  "title": "Destination",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "slug", "name", "countryCode", "countryName", "continent", "regionSlugs", "timezone", "active", "priority", "tags", "observationSiteIds", "stayAreaIds", "affiliateQuery"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "name": { "type": "string", "minLength": 1 },
+    "countryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "countryName": { "type": "string", "minLength": 1 },
+    "continent": { "type": "string", "minLength": 1 },
+    "regionSlugs": { "type": "array", "items": { "type": "string" } },
+    "timezone": { "type": "string", "minLength": 1 },
+    "active": { "type": "boolean" },
+    "priority": { "type": "integer", "minimum": 0 },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "observationSiteIds": { "type": "array", "items": { "type": "string" } },
+    "stayAreaIds": { "type": "array", "items": { "type": "string" } },
+    "affiliateQuery": { "type": "string" }
+  }
+}

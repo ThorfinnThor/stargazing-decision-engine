@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/affiliate-partners.json",
+  "title": "Affiliate Partner Config",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "partners"],
+  "properties": {
+    "version": { "const": 1 },
+    "partners": { "type": "array", "minItems": 1, "items": { "$ref": "#/$defs/partner" } }
+  },
+  "$defs": {
+    "partner": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "type", "enabled", "affiliateId", "urlTemplate", "allowedHosts", "disclosure"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "type": { "enum": ["hotel", "activity", "camping", "car_rental", "gear"] },
+        "enabled": { "type": "boolean" },
+        "affiliateId": { "type": "string" },
+        "urlTemplate": { "type": "string", "pattern": "^https://" },
+        "allowedHosts": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+        "disclosure": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["en", "de"],
+          "properties": { "en": { "type": "string", "minLength": 1 }, "de": { "type": "string", "minLength": 1 } }
+        }
+      }
+    }
+  }
+}

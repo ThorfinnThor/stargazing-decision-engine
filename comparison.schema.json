@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/comparison.json",
+  "title": "Comparison File",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["slug", "destinationIds", "metrics"],
+  "properties": {
+    "slug": { "type": "string", "minLength": 1 },
+    "destinationIds": { "type": "array", "minItems": 2, "items": { "type": "string", "minLength": 1 } },
+    "metrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["key", "label", "values"],
+        "properties": {
+          "key": { "type": "string", "minLength": 1 },
+          "label": { "type": "string", "minLength": 1 },
+          "values": { "type": "object", "additionalProperties": { "type": ["number", "null"] } }
+        }
+      }
+    }
+  }
+}

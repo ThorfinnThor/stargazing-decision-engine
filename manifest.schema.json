@@ -1,0 +1,37 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/manifest.json",
+  "title": "Stargazing Dataset Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["datasetVersion", "schemaVersion", "algorithmVersion", "generatedAt", "climateNormal", "blackMarble", "sourceVersions", "counts", "snapshotHashes", "fileChecksums"],
+  "properties": {
+    "datasetVersion": { "type": "string", "minLength": 1 },
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "algorithmVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "climateNormal": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["startYear", "endYear"],
+      "properties": {
+        "startYear": { "type": "integer", "minimum": 1900 },
+        "endYear": { "type": "integer", "minimum": 1900 }
+      }
+    },
+    "blackMarble": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["product", "collection", "years"],
+      "properties": {
+        "product": { "type": "string", "minLength": 1 },
+        "collection": { "type": "integer", "minimum": 1 },
+        "years": { "type": "array", "items": { "type": "integer", "minimum": 1900 } }
+      }
+    },
+    "sourceVersions": { "type": "object", "additionalProperties": { "type": "string" } },
+    "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "snapshotHashes": { "type": "object", "additionalProperties": { "type": "string" } },
+    "fileChecksums": { "type": "object", "additionalProperties": { "type": "string" } }
+  }
+}

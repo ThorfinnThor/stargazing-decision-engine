@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/darkness-calibration.json",
+  "title": "Darkness Calibration Curve",
+  "oneOf": [
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "status", "reason", "curve", "labels"],
+      "properties": {
+        "version": { "type": "integer", "minimum": 1 },
+        "status": { "const": "awaiting_calibration" },
+        "reason": { "type": "string", "minLength": 1 },
+        "curve": { "type": "array", "maxItems": 0 },
+        "labels": { "$ref": "#/$defs/labels" }
+      }
+    },
+    {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["version", "status", "method", "calibratedAt", "blackMarbleYears", "anchorConfigVersion", "anchorCount", "distributions", "curve", "labels"],
+      "properties": {
+        "version": { "type": "integer", "minimum": 1 },
+        "status": { "const": "calibrated" },
+        "method": { "const": "robust-anchor-median-piecewise-linear-v1" },
+        "calibratedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T.+Z$" },
+        "blackMarbleYears": { "type": "array", "minItems": 3, "maxItems": 3, "uniqueItems": true, "items": { "type": "integer", "minimum": 1900 } },
+        "anchorConfigVersion": { "type": "integer", "minimum": 1 },
+        "anchorCount": { "type": "integer", "minimum": 70 },
+        "distributions": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["dark_reference", "mid_reference", "urban_control"],
+          "properties": {
+            "dark_reference": { "$ref": "#/$defs/distribution" },
+            "mid_reference": { "$ref": "#/$defs/distribution" },
+            "urban_control": { "$ref": "#/$defs/distribution" }
+          }
+        },
+        "curve": {
+          "type": "array",
+          "minItems": 5,
+          "items": { "$ref": "#/$defs/curvePoint" }
+        },
+        "labels": { "$ref": "#/$defs/labels" }
+      }
+    }
+  ],
+  "$defs": {
+    "distribution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["count", "minimum", "p10", "p25", "median", "p75", "p90", "maximum", "mad"],
+      "properties": {
+        "count": { "type": "integer", "minimum": 1 },
+        "minimum": { "type": "number", "minimum": 0 },
+        "p10": { "type": "number", "minimum": 0 },
+        "p25": { "type": "number", "minimum": 0 },
+        "median": { "type": "number", "minimum": 0 },
+        "p75": { "type": "number", "minimum": 0 },
+        "p90": { "type": "number", "minimum": 0 },
+        "maximum": { "type": "number", "minimum": 0 },
+        "mad": { "type": "number", "minimum": 0 }
+      }
+    },
+    "curvePoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["alanExposure", "darknessScore"],
+      "properties": {
+        "alanExposure": { "type": "number", "minimum": 0 },
+        "darknessScore": { "type": "number", "minimum": 0, "maximum": 100 }
+      }
+    },
+    "labels": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["minimumScore", "label"],
+        "properties": {
+          "minimumScore": { "type": "number", "minimum": 0, "maximum": 100 },
+          "label": { "enum": ["Very dark", "Dark", "Moderate artificial light", "Bright surroundings"] }
+        }
+      }
+    }
+  }
+}

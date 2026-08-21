@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/darkness.json",
+  "title": "Darkness Metrics",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["siteId", "blackMarbleYears", "radiance0to2", "radiance2to10", "radiance10to30", "radiance30to75", "alanExposure", "darknessScore", "coverage"],
+  "properties": {
+    "siteId": { "type": "string", "minLength": 1 },
+    "blackMarbleYears": { "type": "array", "items": { "type": "integer", "minimum": 1900 } },
+    "radiance0to2": { "type": ["number", "null"], "minimum": 0 },
+    "radiance2to10": { "type": ["number", "null"], "minimum": 0 },
+    "radiance10to30": { "type": ["number", "null"], "minimum": 0 },
+    "radiance30to75": { "type": ["number", "null"], "minimum": 0 },
+    "alanExposure": { "type": ["number", "null"], "minimum": 0 },
+    "darknessScore": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "coverage": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}

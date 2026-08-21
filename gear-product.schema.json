@@ -1,0 +1,12 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/gear-product.json",
+  "type": "array",
+  "items": { "type": "object", "additionalProperties": false, "required": ["id", "brand", "model", "category", "coreSpecs", "editorialPros", "editorialCons", "partnerSearchQuery", "affiliatePartnerId", "lastReviewedAt", "recommendationBasis"], "properties": {
+    "id": { "type": "string", "minLength": 1 }, "brand": { "type": "string", "minLength": 1 }, "model": { "type": "string", "minLength": 1 }, "category": { "type": "string", "minLength": 1 },
+    "coreSpecs": { "type": "object", "minProperties": 1, "additionalProperties": { "type": "string", "minLength": 1 } },
+    "editorialPros": { "$ref": "#/$defs/lists" }, "editorialCons": { "$ref": "#/$defs/lists" },
+    "partnerSearchQuery": { "type": "string", "minLength": 1 }, "affiliatePartnerId": { "type": ["string", "null"] }, "lastReviewedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }, "recommendationBasis": { "const": "specification_analysis" }
+  } },
+  "$defs": { "lists": { "type": "object", "additionalProperties": false, "required": ["en", "de"], "properties": { "en": { "type": "array", "items": { "type": "string" } }, "de": { "type": "array", "items": { "type": "string" } } } } }
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/site-score-snapshot.json",
+  "title": "Monthly Site Score Snapshot",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["siteId", "algorithmVersion", "generatedAt", "months"],
+  "properties": {
+    "siteId": { "type": "string", "minLength": 1 },
+    "algorithmVersion": { "const": "site-score-1.0.0" },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "months": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": { "$ref": "https://stargazing.local/schema/site-score.json" }
+    }
+  }
+}

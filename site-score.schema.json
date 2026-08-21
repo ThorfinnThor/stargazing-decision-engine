@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/site-score.json",
+  "title": "Monthly Site Score",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["siteId", "month", "skyQuality", "tripComfort", "stargazingTrip", "clearSkyScore", "darknessScore", "dewScore", "elevationScore", "temperatureComfortScore", "windComfortScore", "rainComfortScore", "accessScore", "confidenceScore", "confidenceLevel", "reasons", "caveats"],
+  "properties": {
+    "siteId": { "type": "string", "minLength": 1 },
+    "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "skyQuality": { "type": "number", "minimum": 0, "maximum": 100 },
+    "tripComfort": { "type": "number", "minimum": 0, "maximum": 100 },
+    "stargazingTrip": { "type": "number", "minimum": 0, "maximum": 100 },
+    "clearSkyScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "darknessScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "dewScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "elevationScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "temperatureComfortScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "windComfortScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "rainComfortScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "accessScore": { "type": ["number", "null"], "minimum": 0, "maximum": 100 },
+    "confidenceScore": { "type": "number", "minimum": 0, "maximum": 100 },
+    "confidenceLevel": { "enum": ["high", "moderate", "low"] },
+    "reasons": { "type": "array", "items": { "type": "string" } },
+    "caveats": { "type": "array", "items": { "type": "string" } }
+  }
+}

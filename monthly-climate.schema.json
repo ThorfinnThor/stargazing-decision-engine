@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/monthly-climate.json",
+  "title": "Monthly Site Climate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["siteId", "month", "astronomicalHours", "clearHourProbability", "goodHourProbability", "overcastHourProbability", "clearNightProbability", "wetNightHourProbability", "dewRiskProbability", "nightTempMeanC", "nightTempP10C", "nightTempP90C", "nightWindMeanKmh", "highWindHourProbability", "daylightOppositeNightHoursMean", "dataCompleteness"],
+  "properties": {
+    "siteId": { "type": "string", "minLength": 1 },
+    "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+    "astronomicalHours": { "type": "number", "minimum": 0 },
+    "clearHourProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "goodHourProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "overcastHourProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "clearNightProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "wetNightHourProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "dewRiskProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "nightTempMeanC": { "type": ["number", "null"] },
+    "nightTempP10C": { "type": ["number", "null"] },
+    "nightTempP90C": { "type": ["number", "null"] },
+    "nightWindMeanKmh": { "type": ["number", "null"], "minimum": 0 },
+    "highWindHourProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+    "daylightOppositeNightHoursMean": { "type": ["number", "null"], "minimum": 0 },
+    "dataCompleteness": { "type": "number", "minimum": 0, "maximum": 1 }
+  }
+}
