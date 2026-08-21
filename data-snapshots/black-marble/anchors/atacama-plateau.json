@@ -1,0 +1,158 @@
+{
+  "siteId": "atacama-plateau",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.005547,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.005547,
+          "coverage": 1,
+          "validPixelCount": 1524,
+          "totalPixelCount": 1524
+        },
+        {
+          "year": 2024,
+          "radiance": 0.001209,
+          "coverage": 1,
+          "validPixelCount": 1524,
+          "totalPixelCount": 1524
+        },
+        {
+          "year": 2023,
+          "radiance": 0.02932,
+          "coverage": 1,
+          "validPixelCount": 1524,
+          "totalPixelCount": 1524
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.000095,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000095,
+          "coverage": 1,
+          "validPixelCount": 12720,
+          "totalPixelCount": 12720
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000043,
+          "coverage": 1,
+          "validPixelCount": 12720,
+          "totalPixelCount": 12720
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000255,
+          "coverage": 1,
+          "validPixelCount": 12720,
+          "totalPixelCount": 12720
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.013944,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.013198,
+          "coverage": 1,
+          "validPixelCount": 75120,
+          "totalPixelCount": 75120
+        },
+        {
+          "year": 2024,
+          "radiance": 0.013944,
+          "coverage": 1,
+          "validPixelCount": 75120,
+          "totalPixelCount": 75120
+        },
+        {
+          "year": 2023,
+          "radiance": 0.014401,
+          "coverage": 1,
+          "validPixelCount": 75120,
+          "totalPixelCount": 75120
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.005547,
+  "radiance10to30": 0.000095,
+  "radiance30to75": 0.013944,
+  "alanExposure": 0.003059,
+  "darknessScore": null,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-21T19:59:05.344957Z"
+}
