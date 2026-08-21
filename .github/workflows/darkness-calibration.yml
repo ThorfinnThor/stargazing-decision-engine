@@ -1,0 +1,101 @@
+name: Darkness calibration data
+
+on:
+  workflow_dispatch:
+    inputs:
+      anchors:
+        description: "Comma-separated calibration anchor IDs, or all-candidates"
+        required: true
+        default: all-candidates
+        type: string
+      fit_curve:
+        description: "Fit and commit the production curve (approved anchors only)"
+        required: true
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-ingest-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    env:
+      EARTHDATA_TOKEN: ${{ secrets.EARTHDATA_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pnpm install --frozen-lockfile
+      - run: python -m pip install -r requirements-data.txt
+      - name: Resolve requested calibration anchors
+        env:
+          REQUESTED_ANCHORS: ${{ inputs.anchors }}
+        run: |
+          set -euo pipefail
+          : > /tmp/darkness-anchors
+          if [[ "$REQUESTED_ANCHORS" == "all-candidates" ]]; then
+            jq -r '.anchors[].id' data-config/calibration/darkness-anchors.json > /tmp/darkness-anchors
+          else
+            IFS=',' read -ra requested <<< "$REQUESTED_ANCHORS"
+            for item in "${requested[@]}"; do
+              anchor="$(printf '%s' "$item" | xargs)"
+              if ! jq -e --arg id "$anchor" '.anchors[] | select(.id == $id)' data-config/calibration/darkness-anchors.json >/dev/null; then
+                echo "Unknown darkness anchor: $anchor" >&2
+                exit 1
+              fi
+              printf '%s\n' "$anchor" >> /tmp/darkness-anchors
+            done
+            sort -u /tmp/darkness-anchors -o /tmp/darkness-anchors
+          fi
+          test -s /tmp/darkness-anchors
+          echo "Processing $(wc -l < /tmp/darkness-anchors | tr -d ' ') calibration anchor(s):"
+          cat /tmp/darkness-anchors
+      - name: Reject an unapproved curve fit before retrieval
+        if: ${{ inputs.fit_curve }}
+        run: |
+          set -euo pipefail
+          jq -e '.status == "approved" and ([.anchors[].operatorApproved] | all)' \
+            data-config/calibration/darkness-anchors.json >/dev/null || {
+              echo "Curve fitting requires an approved anchor configuration and explicit approval for every anchor." >&2
+              exit 1
+            }
+      - name: Fetch and process Black Marble anchor snapshots
+        run: |
+          set -euo pipefail
+          while IFS= read -r anchor; do
+            pnpm data:black-marble:fetch --anchor "$anchor"
+            pnpm data:black-marble:extract --anchor "$anchor"
+            pnpm data:black-marble:process --anchor "$anchor"
+          done < /tmp/darkness-anchors
+      - name: Fit the reviewed fixed darkness curve
+        if: ${{ inputs.fit_curve }}
+        run: |
+          pnpm data:darkness:calibrate
+          pnpm data:darkness:validate
+      - run: pnpm data:validate
+      - run: pnpm typecheck
+      - run: pnpm test
+      - name: Commit reviewed static calibration artifacts
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data-snapshots/black-marble/anchors data-config/scoring/darkness.json
+          if git diff --cached --quiet; then
+            echo "No calibration data changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh darkness calibration snapshots [skip ci]"
+          git push

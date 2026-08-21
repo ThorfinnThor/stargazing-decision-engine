@@ -13,6 +13,16 @@ test("GitHub workflows keep static quality gates explicit", () => {
   assertIncludes(ci, "pnpm build");
 });
 
+test("GitHub workflows use the packageManager pnpm version", () => {
+  for (const name of ["ci.yml", "calendar-refresh.yml", "health-check.yml", "data-ingest.yml", "darkness-calibration.yml"]) {
+    const contents = workflow(name);
+    assertIncludes(contents, "pnpm/action-setup@v4");
+    if (/pnpm\/action-setup@v4\n\s+with:\n\s+version:/.test(contents)) {
+      throw new Error(`${name} must read the pnpm version from package.json`);
+    }
+  }
+});
+
 test("ingestion is manual and commits only after the full gate", () => {
   const ingest = workflow("data-ingest.yml");
   assertIncludes(ingest, "workflow_dispatch:");
@@ -23,6 +33,19 @@ test("ingestion is manual and commits only after the full gate", () => {
   assertIncludes(ingest, "pnpm build");
   assertIncludes(ingest, "git diff --cached --quiet");
   if (/^\s+push:/m.test(ingest) || /^\s+schedule:/m.test(ingest)) throw new Error("data ingestion must not run automatically");
+});
+
+test("darkness calibration retrieval is manual and approval-gated", () => {
+  const calibration = workflow("darkness-calibration.yml");
+  assertIncludes(calibration, "workflow_dispatch:");
+  assertIncludes(calibration, "all-candidates");
+  assertIncludes(calibration, ".status == \"approved\"");
+  assertIncludes(calibration, "[.anchors[].operatorApproved] | all");
+  assertIncludes(calibration, "pnpm data:darkness:calibrate");
+  assertIncludes(calibration, "git add -- data-snapshots/black-marble/anchors data-config/scoring/darkness.json");
+  if (/^\s+push:/m.test(calibration) || /^\s+schedule:/m.test(calibration)) {
+    throw new Error("darkness calibration retrieval must not run automatically");
+  }
 });
 
 test("scheduled workflows do not deploy or ingest on Vercel", () => {

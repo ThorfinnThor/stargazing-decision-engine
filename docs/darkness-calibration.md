@@ -56,6 +56,16 @@ surroundings”. They are not Bortle classifications.
 
 ## Commands
 
+The recommended production path is the manually dispatched
+`Darkness calibration data` GitHub Actions workflow. Its `anchors` input accepts
+one or more comma-separated anchor IDs, or `all-candidates`. Retrieval can be
+split into reviewable batches; each successful run commits only the derived
+anchor JSON snapshots. Keep `fit_curve` disabled until the checked-in anchor
+configuration is complete and explicitly approved. The workflow rejects an
+unapproved curve fit before it downloads any data.
+
+The equivalent local commands for each reviewed anchor are:
+
 For each reviewed anchor:
 
 ```bash
