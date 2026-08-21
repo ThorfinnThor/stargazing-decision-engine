@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "status": "operator_review_pending",
   "minimumClassCounts": {
     "dark_reference": 30,
@@ -7,25 +7,635 @@
     "urban_control": 20
   },
   "anchors": [
-    { "id": "roque-de-los-muchachos", "lat": 28.76, "lon": -17.89, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "teide-high-zone", "lat": 28.27, "lon": -16.64, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "atacama-plateau", "lat": -23, "lon": -67.75, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "big-bend-panther-junction", "lat": 29.25, "lon": -103.25, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "lake-tekapo-basin", "lat": -43.98, "lon": 170.46, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "namibrand-reserve", "lat": -24.95, "lon": 15.89, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "jasper-medicine-lake", "lat": 52.87, "lon": -117.95, "class": "dark_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "westhavelland-core", "lat": 52.72, "lon": 12.28, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "alqueva-lake-edge", "lat": 38.25, "lon": -7.25, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "galloway-dark-sky-park", "lat": 55.14, "lon": -4.44, "class": "mid_reference", "source": "project seed candidate", "notes": "Candidate only; classification and point require operator review.", "operatorApproved": false },
-    { "id": "berlin", "lat": 52.52, "lon": 13.405, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "london", "lat": 51.5072, "lon": -0.1276, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "madrid", "lat": 40.4168, "lon": -3.7038, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "paris", "lat": 48.8566, "lon": 2.3522, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "amsterdam", "lat": 52.3676, "lon": 4.9041, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "new-york", "lat": 40.7128, "lon": -74.006, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "los-angeles", "lat": 34.0522, "lon": -118.2437, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "santiago", "lat": -33.4489, "lon": -70.6693, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "auckland", "lat": -36.8509, "lon": 174.7645, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false },
-    { "id": "cape-town", "lat": -33.9249, "lon": 18.4241, "class": "urban_control", "source": "project origin-city candidate", "notes": "Candidate urban control; point requires operator review.", "operatorApproved": false }
+    {
+      "id": "roque-de-los-muchachos",
+      "lat": 28.76,
+      "lon": -17.89,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "atacama-plateau",
+      "lat": -23,
+      "lon": -67.75,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "big-bend-panther-junction",
+      "lat": 29.25,
+      "lon": -103.25,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "lake-tekapo-basin",
+      "lat": -43.98,
+      "lon": 170.46,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "namibrand-reserve",
+      "lat": -24.95,
+      "lon": 15.89,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "jasper-medicine-lake",
+      "lat": 52.87,
+      "lon": -117.95,
+      "class": "dark_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "westhavelland-core",
+      "lat": 52.72,
+      "lon": 12.28,
+      "class": "mid_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "alqueva-lake-edge",
+      "lat": 38.25,
+      "lon": -7.25,
+      "class": "mid_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "galloway-dark-sky-park",
+      "lat": 55.14,
+      "lon": -4.44,
+      "class": "mid_reference",
+      "source": "project seed candidate",
+      "notes": "Candidate only; classification and point require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "berlin",
+      "lat": 52.52,
+      "lon": 13.405,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "london",
+      "lat": 51.5072,
+      "lon": -0.1276,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "madrid",
+      "lat": 40.4168,
+      "lon": -3.7038,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "paris",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "amsterdam",
+      "lat": 52.3676,
+      "lon": 4.9041,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "new-york",
+      "lat": 40.7128,
+      "lon": -74.006,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "los-angeles",
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "santiago",
+      "lat": -33.4489,
+      "lon": -70.6693,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "auckland",
+      "lat": -36.8509,
+      "lon": 174.7645,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "cape-town",
+      "lat": -33.9249,
+      "lon": 18.4241,
+      "class": "urban_control",
+      "source": "project origin-city candidate",
+      "notes": "Candidate urban control; point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "death-valley-mesquite-flat",
+      "lat": 36.2305,
+      "lon": -116.7686,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "great-basin-mather-overlook",
+      "lat": 39.0147,
+      "lon": -114.2402,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "capitol-reef-panorama-point",
+      "lat": 38.2871,
+      "lon": -111.2628,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "natural-bridges-owachomo",
+      "lat": 37.6049,
+      "lon": -110.0112,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "canyonlands-grand-view",
+      "lat": 38.3108,
+      "lon": -109.8567,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "bryce-canyon-rainbow-point",
+      "lat": 37.475,
+      "lon": -112.2407,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "grand-canyon-north-rim",
+      "lat": 36.2103,
+      "lon": -112.0562,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "chaco-culture-pueblo-bonito",
+      "lat": 36.0607,
+      "lon": -107.9617,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "cosmic-campground",
+      "lat": 33.479,
+      "lon": -108.922,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "cherry-springs",
+      "lat": 41.6502,
+      "lon": -77.8162,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "central-idaho-sawtooth",
+      "lat": 44.141,
+      "lon": -114.929,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "mont-megantic-observatory",
+      "lat": 45.4558,
+      "lon": -71.1523,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "grasslands-east-block",
+      "lat": 49.124,
+      "lon": -106.561,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "wood-buffalo-salt-plains",
+      "lat": 59.129,
+      "lon": -112.316,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "northumberland-kielder",
+      "lat": 55.233,
+      "lon": -2.587,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "kerry-ballinskelligs",
+      "lat": 51.829,
+      "lon": -10.274,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "montsec-observatory",
+      "lat": 42.051,
+      "lon": 0.729,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "pic-du-midi",
+      "lat": 42.9369,
+      "lon": 0.1428,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "la-silla-observatory",
+      "lat": -29.2567,
+      "lon": -70.7346,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "sutherland-observatory",
+      "lat": -32.3794,
+      "lon": 20.8107,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "warrumbungle-observatory",
+      "lat": -31.273,
+      "lon": 149.07,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "uluru-viewing-area",
+      "lat": -25.345,
+      "lon": 131.036,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "exmoor-brendon-common",
+      "lat": 51.13,
+      "lon": -3.54,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "great-sand-dunes-medano-creek",
+      "lat": 37.74,
+      "lon": -105.51,
+      "class": "dark_reference",
+      "source": "expanded dark-sky-site candidate",
+      "notes": "Candidate reference point near a dark-sky or observatory site; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "flagstaff-observatory-mesa",
+      "lat": 35.198,
+      "lon": -111.651,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "moab-sand-flats",
+      "lat": 38.573,
+      "lon": -109.505,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "kanab-outskirts",
+      "lat": 37.047,
+      "lon": -112.526,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "page-outskirts",
+      "lat": 36.914,
+      "lon": -111.455,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "mammoth-lakes-outskirts",
+      "lat": 37.648,
+      "lon": -118.972,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "banff-lake-minnewanka",
+      "lat": 51.247,
+      "lon": -115.5,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "canmore-benchlands",
+      "lat": 51.096,
+      "lon": -115.35,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "yellowknife-prosperous-lake",
+      "lat": 62.53,
+      "lon": -114.1,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "inverness-culloden",
+      "lat": 57.477,
+      "lon": -4.095,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "oban-ganavan",
+      "lat": 56.435,
+      "lon": -5.482,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "kiruna-outskirts",
+      "lat": 67.855,
+      "lon": 20.225,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "thingvellir-visitor-centre",
+      "lat": 64.255,
+      "lon": -21.13,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "san-pedro-de-atacama",
+      "lat": -22.911,
+      "lon": -68.201,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "swakopmund-outskirts",
+      "lat": -22.68,
+      "lon": 14.526,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "queenstown-outskirts",
+      "lat": -45.031,
+      "lon": 168.662,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "kunanyi-foothills",
+      "lat": -42.895,
+      "lon": 147.236,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "perth-hills",
+      "lat": -31.954,
+      "lon": 116.064,
+      "class": "mid_reference",
+      "source": "expanded peri-urban candidate",
+      "notes": "Candidate intermediate-light reference point; coordinates and class require operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "tokyo",
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "seoul",
+      "lat": 37.5665,
+      "lon": 126.978,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "beijing",
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "singapore",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "dubai",
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "cairo",
+      "lat": 30.0444,
+      "lon": 31.2357,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "lagos",
+      "lat": 6.5244,
+      "lon": 3.3792,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "mexico-city",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "sao-paulo",
+      "lat": -23.5505,
+      "lon": -46.6333,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    },
+    {
+      "id": "buenos-aires",
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "class": "urban_control",
+      "source": "expanded city-center candidate",
+      "notes": "Candidate urban control; city-center point requires operator review.",
+      "operatorApproved": false
+    }
   ]
 }
