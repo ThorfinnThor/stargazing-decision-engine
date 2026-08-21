@@ -65,7 +65,10 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             short_name=config["product"],
             version=config["collectionVersion"],
             bounding_box=bounds,
-            temporal=(f"{year}-01-01", f"{year}-12-31"),
+            # VNP46A4 is an annual composite, but CMR records its ending
+            # timestamp in the following calendar year.  Ending the query on
+            # December 31 therefore excludes otherwise valid granules.
+            temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
             count=100,
         )
         by_tile: dict[str, object] = {}
