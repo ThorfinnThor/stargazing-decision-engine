@@ -9,6 +9,7 @@ import json
 import os
 from pathlib import Path
 import sys
+import time
 
 from black_marble_common import required_tiles, site_bounding_box
 from black_marble_target import resolve_target
@@ -21,6 +22,25 @@ RAW_ROOT = ROOT / "raw-downloads" / "black-marble"
 def load_json(path: Path):
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
+
+
+def retry_network(label: str, operation, attempts: int = 4, initial_delay_seconds: float = 5, sleeper=time.sleep):
+    """Retry a bounded Earthdata network operation with exponential backoff."""
+    if attempts < 1:
+        raise ValueError("attempts must be positive")
+    for attempt in range(1, attempts + 1):
+        try:
+            return operation()
+        except Exception as error:
+            if attempt == attempts:
+                raise
+            delay = initial_delay_seconds * (2 ** (attempt - 1))
+            print(
+                f"{label} failed ({error.__class__.__name__}); retrying in {delay:g}s "
+                f"({attempt}/{attempts}).",
+                file=sys.stderr,
+            )
+            sleeper(delay)
 
 
 def retrieve(site_slug: str, target_kind: str = "site") -> None:
@@ -52,7 +72,7 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
 
     bounds = site_bounding_box(site["lat"], site["lon"], config["maxRadiusKm"])
     tiles = set(required_tiles(bounds))
-    earthaccess.login(strategy="environment")
+    retry_network("Earthdata login", lambda: earthaccess.login(strategy="environment"))
     selected_by_year: dict[int, list] = {}
     first_candidate_year = datetime.now(timezone.utc).year - 1
 
@@ -64,12 +84,15 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             # VNP46A4 is annual, but its ending timestamp is in the following
             # year, so the temporal window intentionally ends on January 1 of
             # the next year.
-            results = earthaccess.search_data(
-                short_name=config["product"],
-                version=config["collectionVersion"],
-                granule_name=f"{config['product']}.A{year}*.{tile}.*",
-                temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
-                count=10,
+            results = retry_network(
+                f"Earthdata search for {year} {tile}",
+                lambda: earthaccess.search_data(
+                    short_name=config["product"],
+                    version=config["collectionVersion"],
+                    granule_name=f"{config['product']}.A{year}*.{tile}.*",
+                    temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
+                    count=10,
+                ),
             )
             if results:
                 by_tile[tile] = sorted(results, key=lambda result: str(result["umm"]["GranuleUR"]))[0]
@@ -89,7 +112,10 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
     for year, results in sorted(selected_by_year.items()):
         year_dir = target / str(year)
         year_dir.mkdir(parents=True, exist_ok=True)
-        paths = earthaccess.download(results, str(year_dir))
+        paths = retry_network(
+            f"Earthdata download for {site_slug} {year}",
+            lambda: earthaccess.download(results, str(year_dir)),
+        )
         for path in paths:
             downloaded.append(str(Path(path).resolve().relative_to(target.resolve())))
 

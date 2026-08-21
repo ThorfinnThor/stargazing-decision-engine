@@ -42,6 +42,7 @@ test("darkness calibration retrieval is manual and approval-gated", () => {
   assertIncludes(calibration, ".status == \"approved\"");
   assertIncludes(calibration, "[.anchors[].operatorApproved] | all");
   assertIncludes(calibration, "pnpm data:darkness:calibrate");
+  assertIncludes(calibration, "pnpm data:rebuild");
   assertIncludes(calibration, "git add -- data-snapshots/black-marble/anchors data-config/scoring/darkness.json");
   if (/^\s+push:/m.test(calibration) || /^\s+schedule:/m.test(calibration)) {
     throw new Error("darkness calibration retrieval must not run automatically");

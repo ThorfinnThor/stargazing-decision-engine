@@ -84,6 +84,7 @@ jobs:
         run: |
           pnpm data:darkness:calibrate
           pnpm data:darkness:validate
+      - run: pnpm data:rebuild
       - run: pnpm data:validate
       - run: pnpm typecheck
       - run: pnpm test
