@@ -9,9 +9,8 @@ import json
 import os
 from pathlib import Path
 import sys
-from urllib.parse import urlparse
 
-from black_marble_common import parse_granule_name, required_tiles, site_bounding_box
+from black_marble_common import required_tiles, site_bounding_box
 from black_marble_target import resolve_target
 
 
@@ -22,16 +21,6 @@ RAW_ROOT = ROOT / "raw-downloads" / "black-marble"
 def load_json(path: Path):
     with path.open("r", encoding="utf-8") as handle:
         return json.load(handle)
-
-
-def granule_name(result) -> str:
-    data_links = getattr(result, "data_links", None)
-    if callable(data_links):
-        for link in data_links():
-            candidate = Path(urlparse(str(link)).path).name
-            if candidate.startswith("VNP46A4."):
-                return candidate
-    return str(result["umm"]["GranuleUR"])
 
 
 def retrieve(site_slug: str, target_kind: str = "site") -> None:
@@ -68,28 +57,22 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
     first_candidate_year = datetime.now(timezone.utc).year - 1
 
     for year in range(first_candidate_year, config["availableFromYear"] - 1, -1):
-        results = earthaccess.search_data(
-            short_name=config["product"],
-            version=config["collectionVersion"],
-            # VNP46A4 annual granules are global 10-degree tiles, but their
-            # CMR spatial metadata is not consistently indexed for bbox
-            # searches. The annual collection is small (36 tiles), so query
-            # by product/version/time and filter the required tile locally.
-            # VNP46A4 is an annual composite, but CMR records its ending
-            # timestamp in the following calendar year.  Ending the query on
-            # December 31 therefore excludes otherwise valid granules.
-            temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
-            count=100,
-        )
         by_tile: dict[str, object] = {}
-        for result in sorted(results, key=granule_name):
-            name = granule_name(result)
-            try:
-                granule_year, tile = parse_granule_name(name)
-            except ValueError:
-                continue
-            if granule_year == year and tile in tiles:
-                by_tile[tile] = result
+        for tile in sorted(tiles):
+            # CMR records expose the human-readable producer filename through
+            # the granule-name query even when GranuleUR is an opaque LAADS id.
+            # VNP46A4 is annual, but its ending timestamp is in the following
+            # year, so the temporal window intentionally ends on January 1 of
+            # the next year.
+            results = earthaccess.search_data(
+                short_name=config["product"],
+                version=config["collectionVersion"],
+                granule_name=f"{config['product']}.A{year}*.{tile}.*",
+                temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
+                count=10,
+            )
+            if results:
+                by_tile[tile] = sorted(results, key=lambda result: str(result["umm"]["GranuleUR"]))[0]
         if tiles.issubset(by_tile):
             selected_by_year[year] = [by_tile[tile] for tile in sorted(tiles)]
         if len(selected_by_year) == config["baselineYearCount"]:
