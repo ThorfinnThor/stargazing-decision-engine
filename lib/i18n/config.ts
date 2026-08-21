@@ -21,8 +21,6 @@ export const localeCopy = {
     dataset: "Dataset",
     destinations: "destinations",
     climateNormal: "climate normal",
-    architectureEyebrow: "Architecture baseline",
-    architectureTitle: "Process offline. Publish static.",
   },
   de: {
     htmlLang: "de",
@@ -39,7 +37,5 @@ export const localeCopy = {
     dataset: "Datensatz",
     destinations: "Ziele",
     climateNormal: "Klima-Normalperiode",
-    architectureEyebrow: "Architektur-Basis",
-    architectureTitle: "Offline verarbeiten. Statisch publizieren.",
   },
 } as const;
