@@ -5,6 +5,7 @@ import { listShortTripOrigins, loadSeoPage, loadShortTrip } from "@/lib/data/loa
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { formatMonth } from "@/lib/i18n/months";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -66,7 +67,7 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
                 <td>{entry.distanceKm} km</td>
                 <td>{entry.distanceBand}</td>
                 <td>{entry.shortTripScore}</td>
-                <td>{entry.bestMonths.map((month) => `${month.month} (${month.score})`).join(", ")}</td>
+                <td>{entry.bestMonths.map((month) => `${formatMonth(month.month, locale)} (${month.score})`).join(", ")}</td>
               </tr>
             ))}</tbody>
           </table>
