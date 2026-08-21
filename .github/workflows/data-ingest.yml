@@ -98,17 +98,17 @@ jobs:
           set -euo pipefail
           while IFS= read -r site; do
             if [[ "$REFRESH_ERA5" == "true" ]]; then
-              pnpm data:era5:fetch -- --site "$site"
-              pnpm data:era5:process -- --site "$site"
+              pnpm data:era5:fetch --site "$site"
+              pnpm data:era5:process --site "$site"
             fi
             if [[ "$REFRESH_BLACK_MARBLE" == "true" ]]; then
-              pnpm data:black-marble:fetch -- --site "$site"
-              pnpm data:black-marble:extract -- --site "$site"
-              pnpm data:black-marble:process -- --site "$site"
+              pnpm data:black-marble:fetch --site "$site"
+              pnpm data:black-marble:extract --site "$site"
+              pnpm data:black-marble:process --site "$site"
             fi
             if [[ "$REFRESH_DEM" == "true" ]]; then
-              pnpm data:dem:fetch -- --site "$site"
-              pnpm data:dem:process -- --site "$site"
+              pnpm data:dem:fetch --site "$site"
+              pnpm data:dem:process --site "$site"
             fi
           done < /tmp/stargazing-sites
       - name: Rebuild image manifest
@@ -124,7 +124,7 @@ jobs:
           set -euo pipefail
           while IFS= read -r site; do
             if [[ -f "data-snapshots/climate/$site.json" && -f "data-snapshots/black-marble/$site.json" ]]; then
-              pnpm data:score:real -- --site "$site"
+              pnpm data:score:real --site "$site"
             fi
           done < /tmp/stargazing-sites
           pnpm data:score:real:validate
