@@ -64,7 +64,10 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         results = earthaccess.search_data(
             short_name=config["product"],
             version=config["collectionVersion"],
-            bounding_box=bounds,
+            # VNP46A4 annual granules are global 10-degree tiles, but their
+            # CMR spatial metadata is not consistently indexed for bbox
+            # searches. The annual collection is small (36 tiles), so query
+            # by product/version/time and filter the required tile locally.
             # VNP46A4 is an annual composite, but CMR records its ending
             # timestamp in the following calendar year.  Ending the query on
             # December 31 therefore excludes otherwise valid granules.
