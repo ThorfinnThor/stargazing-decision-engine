@@ -74,6 +74,9 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             temporal=(f"{year}-01-01", f"{year + 1}-01-01"),
             count=100,
         )
+        print(f"VNP46A4 search {year}: {len(results)} result(s).")
+        for result in results[:3]:
+            print(f"  candidate: {granule_name(result)}")
         by_tile: dict[str, object] = {}
         for result in sorted(results, key=granule_name):
             name = granule_name(result)
