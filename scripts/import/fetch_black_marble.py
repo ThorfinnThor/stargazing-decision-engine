@@ -108,3 +108,33 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         year_dir.mkdir(parents=True, exist_ok=True)
         paths = earthaccess.download(results, str(year_dir))
         for path in paths:
+            downloaded.append(str(Path(path).resolve().relative_to(target.resolve())))
+
+    metadata = {
+        "product": config["product"],
+        "collectionVersion": config["collectionVersion"],
+        "siteId": site["id"],
+        "siteSlug": site_slug,
+        "targetKind": target_kind,
+        "requestedPoint": [site["lat"], site["lon"]],
+        "radiusKm": config["maxRadiusKm"],
+        "boundingBox": list(bounds),
+        "requiredTiles": sorted(tiles),
+        "years": sorted(selected_by_year),
+        "files": sorted(downloaded),
+        "hdfDeleted": False,
+        "retrievedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+    }
+    with metadata_path.open("w", encoding="utf-8") as handle:
+        json.dump(metadata, handle, indent=2)
+        handle.write("\n")
+    print(f"Retrieved {len(downloaded)} VNP46A4 granule(s) for {site_slug}.")
+
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser()
+    targets = parser.add_mutually_exclusive_group(required=True)
+    targets.add_argument("--site", help="Observation-site slug")
+    targets.add_argument("--anchor", help="Darkness calibration-anchor id")
+    args = parser.parse_args()
+    retrieve(args.site or args.anchor, "site" if args.site else "anchor")
