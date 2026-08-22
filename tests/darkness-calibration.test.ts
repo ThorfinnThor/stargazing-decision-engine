@@ -134,8 +134,18 @@ test("calibration fails closed on pending approval, missing counts, weak snapsho
   assert.throws(() => calibrateDarkness(overlap), /medians/i);
 });
 
-test("the committed pending curve validates its unavailable state", async () => {
+test("the committed curve enforces its declared availability", () => {
   const config = JSON.parse(readFileSync(resolve(process.cwd(), "data-config/scoring/darkness.json"), "utf8")) as DarknessCurveConfig;
-  assert.equal(config.status, "awaiting_calibration");
-  assert.throws(() => darknessScoreForExposure(1, config), /not available/i);
+  if (config.status === "awaiting_calibration") {
+    assert.throws(() => darknessScoreForExposure(1, config), /not available/i);
+    return;
+  }
+
+  const anchors = JSON.parse(
+    readFileSync(resolve(process.cwd(), "data-config/calibration/darkness-anchors.json"), "utf8"),
+  ) as DarknessAnchorConfig;
+  assert.equal(config.anchorConfigVersion, anchors.version);
+  assert.equal(config.anchorCount, anchors.anchors.length);
+  assert.ok(config.curve.length >= 2);
+  assert.doesNotThrow(() => darknessScoreForExposure(1, config));
 });
