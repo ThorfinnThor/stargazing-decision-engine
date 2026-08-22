@@ -98,5 +98,5 @@ jobs:
             echo "No calibration data changes to commit."
             exit 0
           fi
-          git commit -m "chore(data): refresh darkness calibration snapshots [skip ci]"
+          git commit -m "chore(data): refresh darkness calibration snapshots"
           git push

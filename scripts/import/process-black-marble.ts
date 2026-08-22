@@ -2,7 +2,7 @@ import { existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { buildBlackMarbleSnapshot } from "../../lib/darkness/black-marble/snapshot.js";
-import { darknessScoreForExposure } from "../../lib/darkness/calibration/calibration.js";
+import { applyDarknessCurve } from "../../lib/darkness/calibration/calibration.js";
 import type { BlackMarbleConfig, BlackMarbleExtractedYear } from "../../lib/darkness/black-marble/types.js";
 import type { DarknessAnchorConfig, DarknessCurveConfig } from "../../lib/darkness/calibration/types.js";
 import type { ObservationSite } from "../../lib/data/types.js";
@@ -38,7 +38,7 @@ const years = readdirSync(rawDirectory)
 const metadata = readJson<{ retrievedAt: string; siteId: string; targetKind?: string; requestedPoint: [number, number] }>(resolve(rawDirectory, "metadata.json"));
 if (metadata.siteId !== site.id) throw new Error(`Black Marble cache identity mismatch for ${targetId}`);
 if (metadata.requestedPoint[0] !== site.lat || metadata.requestedPoint[1] !== site.lon) throw new Error(`Black Marble cache coordinates changed for ${targetId}`);
-const snapshot = buildBlackMarbleSnapshot({
+let snapshot = buildBlackMarbleSnapshot({
   site: { id: site.id, lat: site.lat, lon: site.lon },
   years,
   config,
@@ -48,12 +48,7 @@ const snapshot = buildBlackMarbleSnapshot({
 });
 if (targetKind === "site") {
   const curve = readJson<DarknessCurveConfig>(resolve(root, "data-config/scoring/darkness.json"));
-  if (curve.status === "calibrated" && snapshot.alanExposure !== null) {
-    if (curve.blackMarbleYears.join(",") !== snapshot.blackMarbleYears.join(",")) {
-      throw new Error(`Darkness curve baseline years do not match ${targetId}`);
-    }
-    snapshot.darknessScore = darknessScoreForExposure(snapshot.alanExposure, curve);
-  }
+  if (curve.status === "calibrated") snapshot = applyDarknessCurve(snapshot, curve);
 }
 const outputDirectory = anchorId
   ? resolve(root, "data-snapshots/black-marble/anchors")

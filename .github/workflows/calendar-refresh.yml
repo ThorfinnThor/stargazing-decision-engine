@@ -44,5 +44,5 @@ jobs:
             echo "No calendar changes to commit."
             exit 0
           fi
-          git commit -m "chore(calendar): refresh rolling astronomy horizon [skip ci]"
+          git commit -m "chore(calendar): refresh rolling astronomy horizon"
           git push

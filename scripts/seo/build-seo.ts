@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { evaluateIndexability, type IndexabilityRequirements } from "../../lib/seo/indexability.js";
-import type { Destination, GearGuide, MonthlySiteScore, MeteorShowerEvent, OriginCity, ShortTripFile } from "../../lib/data/types.js";
+import type { Destination, DestinationMonthlySummary, GearGuide, MeteorShowerEvent, OriginCity, ShortTripFile } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
 interface PageDefinition extends IndexabilityRequirements {
@@ -22,10 +22,6 @@ interface SeoConfig {
 interface SeedData {
   destinations: Destination[];
   origins: OriginCity[];
-}
-
-interface ScoredData {
-  scores: MonthlySiteScore[];
 }
 
 interface MeteorOutput { events: MeteorShowerEvent[] }
@@ -49,7 +45,6 @@ const configFile = readJson<SeoConfig>(resolve(root, "data-config/seo/project-se
 const config: SeoConfig = { ...configFile, siteUrl: process.env.NEXT_PUBLIC_APP_URL?.trim() || configFile.siteUrl };
 const definitions = readJson<PageDefinition[]>(resolve(root, "data-config/seo/page-definitions.json"));
 const seed = readJson<SeedData>(generatedPath("seed.normalized.json"));
-const scored = readJson<ScoredData>(generatedPath("seed.scored.json"));
 const meteorOutputs = readdirSync(generatedDir).filter((file) => /^meteor-showers-\d{4}\.json$/.test(file)).map((file) => readJson<MeteorOutput>(generatedPath(file)));
 const events = meteorOutputs.flatMap((output) => output.events);
 const shortTrips = readdirSync(generatedDir).filter((file) => /^short-trips-[a-z0-9-]+\.json$/.test(file)).map((file) => readJson<ShortTripFile>(generatedPath(file)));
@@ -127,7 +122,8 @@ for (const locale of config.locales) {
   }));
   for (const destination of seed.destinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
-    const destinationScores = scored.scores.filter((score) => destination.observationSiteIds.includes(score.siteId));
+    const published = readJson<DestinationMonthlySummary>(publicPath(`monthly/destinations/${destination.slug}.json`));
+    const destinationScores = published.months;
     const confidence = destinationScores.some((score) => score.confidenceLevel === "low") ? "low" : destinationScores.some((score) => score.confidenceLevel === "moderate") ? "moderate" : "high";
     pages.push(makePage({
       id: `destination-${destination.slug}-${locale}`, pageType: "destination", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-destinations/${destination.slug}/`])),

@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import test from "node:test";
 
 import {
+  applyDarknessCurve,
   calibrateDarkness,
   darknessLabelForScore,
   darknessScoreForExposure,
@@ -113,6 +114,18 @@ test("curve interpolation is monotonic and labels never imply Bortle classes", (
   assert.equal(darknessLabelForScore(50, result), "Moderate artificial light");
   assert.equal(darknessLabelForScore(20, result), "Bright surroundings");
   assert.ok(result.labels.every((item) => !item.label.includes("Bortle")));
+});
+
+test("a calibrated curve can score a committed ALAN snapshot without raw raster files", () => {
+  const result = calibrateDarkness(testInputs());
+  const snapshot = testInputs().snapshots[0];
+  const scored = applyDarknessCurve(snapshot, result);
+  assert.equal(scored.darknessScore, darknessScoreForExposure(snapshot.alanExposure as number, result));
+  assert.equal(snapshot.darknessScore, null);
+  assert.throws(
+    () => applyDarknessCurve({ ...snapshot, blackMarbleYears: [2022, 2023, 2024] }, result),
+    /baseline years/i,
+  );
 });
 
 test("calibration fails closed on pending approval, missing counts, weak snapshots, and overlapping medians", () => {

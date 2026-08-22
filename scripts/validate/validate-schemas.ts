@@ -13,6 +13,7 @@ export const schemaFiles = [
   "darkness.schema.json",
   "site-score.schema.json",
   "site-score-snapshot.schema.json",
+  "destination-monthly.schema.json",
   "calendar.schema.json",
   "manifest.schema.json",
   "ranking.schema.json",

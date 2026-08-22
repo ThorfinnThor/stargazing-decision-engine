@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, GearCategory, GearGuide, GearProductMetadata, Manifest, MeteorShowerEvent, ShortTripFile } from "./types.js";
+import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, Manifest, MeteorShowerEvent, ShortTripFile } from "./types.js";
 
 export interface SeoPageRecord {
   id: string;
@@ -28,15 +28,6 @@ const publicDataRoot = resolve(process.cwd(), "public/data/stargazing");
 
 function readPublished<T>(relativePath: string): T {
   return JSON.parse(readFileSync(resolve(publicDataRoot, relativePath), "utf8")) as T;
-}
-
-export interface DestinationMonthlySummary {
-  destinationId: string;
-  months: Array<{
-    month: number;
-    score: number;
-    confidenceLevel: "high" | "moderate" | "low";
-  }>;
 }
 
 export function loadManifest(): Manifest {

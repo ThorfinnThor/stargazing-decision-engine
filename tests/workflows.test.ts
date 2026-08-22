@@ -50,14 +50,20 @@ test("darkness calibration retrieval is manual and approval-gated", () => {
   }
 });
 
-test("scheduled workflows do not deploy or ingest on Vercel", () => {
+test("derived-data commits trigger the Cloudflare Git integration without deploying from workflows", () => {
+  const ingest = workflow("data-ingest.yml");
+  const calibration = workflow("darkness-calibration.yml");
   const calendar = workflow("calendar-refresh.yml");
   const health = workflow("health-check.yml");
   assertIncludes(calendar, "schedule:");
   assertIncludes(calendar, "pnpm data:calendar:real");
   assertIncludes(calendar, "pnpm data:calendar:manifest");
   assertIncludes(health, "pnpm data:health:validate");
-  if (/vercel deploy|vercel\.com\/new/i.test(`${calendar}\n${health}`)) throw new Error("workflows must leave deployment to the Vercel integration");
+  const publishingWorkflows = `${ingest}\n${calibration}\n${calendar}`;
+  if (/\[skip ci\]/i.test(publishingWorkflows)) throw new Error("derived-data commits must not suppress Cloudflare Git builds");
+  if (/vercel deploy|wrangler deploy|cloudflare deploy/i.test(`${publishingWorkflows}\n${health}`)) {
+    throw new Error("workflows must leave deployment to the Cloudflare Git integration");
+  }
 });
 
 function assertIncludes(value: string, expected: string) {

@@ -1,6 +1,6 @@
 # Copernicus DEM importer
 
-Elevation is ingested offline and published as a small JSON snapshot. Vercel
+Elevation is ingested offline and published as a small JSON snapshot. Cloudflare
 does not download or sample a raster at request time.
 
 ## Source and access

@@ -2,7 +2,7 @@
 
 The Black Marble workflow runs offline and publishes only derived site JSON.
 Neither HDF files nor live NASA requests are used by page rendering or by
-Vercel.
+Cloudflare.
 
 ## Product choice
 
@@ -72,7 +72,7 @@ a Bortle class or score.
 ## Operation
 
 Install `requirements-data.txt` in the ingestion runner and provide a manually
-rotated `EARTHDATA_TOKEN`. The secret belongs in GitHub Actions, not Vercel.
+rotated `EARTHDATA_TOKEN`. The secret belongs in GitHub Actions, not Cloudflare.
 
 ```bash
 pnpm data:black-marble:fetch -- --site westhavelland-core

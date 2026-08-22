@@ -15,7 +15,7 @@ curated config + committed snapshots
   -> validation and tests
   -> git commit
   -> Next.js static export
-  -> Vercel CDN
+  -> Cloudflare Workers Static Assets
 ```
 
 `next.config.ts` sets `output: "export"`. This is an executable architecture
@@ -35,12 +35,14 @@ The following are offline-only and must not be read by page code:
 - `generated/**`
 - source APIs such as ERA5, Black Marble, and Copernicus DEM
 
-## GitHub and Vercel responsibilities
+## GitHub and Cloudflare responsibilities
 
 GitHub Actions will run ingestion and deterministic rebuild workflows. A data
 workflow may commit exported public JSON only after normalization, validation,
-tests, type checking, and the static build all succeed. Vercel performs the
+tests, type checking, and the static build all succeed. Cloudflare performs the
 static build from the committed repository; it does not ingest or score data.
+Derived-data commits must not contain `[skip ci]`, because the Cloudflare Git
+integration deploys those committed static artifacts.
 
 ## Static-compatible routing
 
@@ -49,6 +51,8 @@ static build from the committed repository; it does not ingest or score data.
 - Dynamic content routes must enumerate every path with `generateStaticParams`
   and disable unknown parameters.
 - Locale negotiation must not depend on Next.js middleware. Optional default
-  redirects belong in `vercel.json`.
-- Affiliate links should use static outbound URLs or finite Vercel redirects;
+  redirects must be finite static routes or Cloudflare configuration.
+- Affiliate links should use static outbound URLs or finite static redirects;
   no runtime redirect handler is part of V1.
+- Cache, robots, and referrer headers for static paths live in `public/_headers`
+  and are copied into the Cloudflare asset bundle by the Next.js export.

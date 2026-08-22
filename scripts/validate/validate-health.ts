@@ -45,6 +45,7 @@ for (const relativePath of requiredDataFiles) {
   if (!existsSync(resolve(publicDataDir, relativePath))) errors.push(`required static file is missing: ${relativePath}`);
 }
 if (!existsSync(resolve(root, "public/go/manifest.json"))) errors.push("required static file is missing: public/go/manifest.json");
+if (!existsSync(resolve(root, "public/_headers"))) errors.push("required Cloudflare static headers file is missing: public/_headers");
 
 for (const relativePath of ["out/sitemap.xml", "out/robots.txt"]) {
   const path = resolve(root, relativePath);

@@ -1,19 +1,24 @@
 {
-  "datasetVersion": "seed-2026-08-20.1",
+  "datasetVersion": "mixed-2026-08-21.1",
   "schemaVersion": 1,
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "algorithmVersion": "site-score-1.0.0+seed-fixture-0.1.0",
+  "generatedAt": "2026-08-21T17:39:00.601002Z",
   "climateNormal": {
     "startYear": 1991,
     "endYear": 2020
   },
   "blackMarble": {
-    "product": "synthetic-seed-fixture",
-    "collection": 1,
-    "years": []
+    "product": "VNP46A4",
+    "collection": 2,
+    "years": [
+      2023,
+      2024,
+      2025
+    ]
   },
   "sourceVersions": {
-    "dataset": "synthetic-seed-fixture",
+    "dataset": "reviewed-real-snapshots-with-seed-fallback",
+    "siteScores": "site-score-1.0.0",
     "calendar": "synthetic-seed-calendar",
     "meteorShowers": "imo-2027",
     "shortTrips": "haversine-v1",
@@ -27,6 +32,9 @@
     "originCities": 10,
     "siteClimateRows": 120,
     "siteScoreRows": 120,
+    "realScoreSites": 1,
+    "seedScoreSites": 9,
+    "realSiteScoreRows": 12,
     "calendarFiles": 120,
     "meteorShowerFiles": 11,
     "shortTripFiles": 10,

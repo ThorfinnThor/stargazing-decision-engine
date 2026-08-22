@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/destination-monthly.json",
+  "title": "Published destination monthly score summary",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["destinationId", "siteId", "dataStatus", "algorithmVersion", "generatedAt", "months"],
+  "properties": {
+    "destinationId": { "type": "string", "minLength": 1 },
+    "siteId": { "type": "string", "minLength": 1 },
+    "dataStatus": { "enum": ["real", "seed"] },
+    "algorithmVersion": { "type": "string", "minLength": 1 },
+    "generatedAt": { "type": "string", "minLength": 1 },
+    "months": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["month", "score", "confidenceLevel"],
+        "properties": {
+          "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+          "score": { "type": "number", "minimum": 0, "maximum": 100 },
+          "confidenceLevel": { "enum": ["high", "moderate", "low"] }
+        }
+      }
+    }
+  }
+}
