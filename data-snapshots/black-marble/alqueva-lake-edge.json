@@ -1,0 +1,158 @@
+{
+  "siteId": "alqueva-lake-edge",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.12228,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.151428,
+          "coverage": 1,
+          "validPixelCount": 1788,
+          "totalPixelCount": 1788
+        },
+        {
+          "year": 2024,
+          "radiance": 0.12228,
+          "coverage": 1,
+          "validPixelCount": 1788,
+          "totalPixelCount": 1788
+        },
+        {
+          "year": 2023,
+          "radiance": 0.121101,
+          "coverage": 1,
+          "validPixelCount": 1788,
+          "totalPixelCount": 1788
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.171219,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.180023,
+          "coverage": 1,
+          "validPixelCount": 14908,
+          "totalPixelCount": 14908
+        },
+        {
+          "year": 2024,
+          "radiance": 0.150069,
+          "coverage": 1,
+          "validPixelCount": 14908,
+          "totalPixelCount": 14908
+        },
+        {
+          "year": 2023,
+          "radiance": 0.171219,
+          "coverage": 1,
+          "validPixelCount": 14908,
+          "totalPixelCount": 14908
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.503953,
+      "coverage": 0.999955,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.519255,
+          "coverage": 0.999977,
+          "validPixelCount": 88056,
+          "totalPixelCount": 88058
+        },
+        {
+          "year": 2024,
+          "radiance": 0.435921,
+          "coverage": 0.999989,
+          "validPixelCount": 88057,
+          "totalPixelCount": 88058
+        },
+        {
+          "year": 2023,
+          "radiance": 0.503953,
+          "coverage": 0.999955,
+          "validPixelCount": 88054,
+          "totalPixelCount": 88058
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.12228,
+  "radiance10to30": 0.171219,
+  "radiance30to75": 0.503953,
+  "alanExposure": 0.099125,
+  "darknessScore": 84.99,
+  "coverage": 0.999955,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T17:04:08.058805Z"
+}
