@@ -1,0 +1,158 @@
+{
+  "siteId": "jasper-medicine-lake",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 99,
+          "totalPixelCount": 99
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 99,
+          "totalPixelCount": 99
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 99,
+          "totalPixelCount": 99
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.237658,
+      "coverage": 0.980207,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.217563,
+          "coverage": 0.980207,
+          "validPixelCount": 2278,
+          "totalPixelCount": 2324
+        },
+        {
+          "year": 2024,
+          "radiance": 0.237658,
+          "coverage": 0.988382,
+          "validPixelCount": 2297,
+          "totalPixelCount": 2324
+        },
+        {
+          "year": 2023,
+          "radiance": 0.298541,
+          "coverage": 0.9858,
+          "validPixelCount": 2291,
+          "totalPixelCount": 2324
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.007544,
+      "coverage": 0.999124,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.003394,
+          "coverage": 0.999381,
+          "validPixelCount": 19386,
+          "totalPixelCount": 19398
+        },
+        {
+          "year": 2024,
+          "radiance": 0.007544,
+          "coverage": 0.999227,
+          "validPixelCount": 19383,
+          "totalPixelCount": 19398
+        },
+        {
+          "year": 2023,
+          "radiance": 0.021441,
+          "coverage": 0.999124,
+          "validPixelCount": 19381,
+          "totalPixelCount": 19398
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.051249,
+      "coverage": 0.996753,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.044291,
+          "coverage": 0.997722,
+          "validPixelCount": 114298,
+          "totalPixelCount": 114559
+        },
+        {
+          "year": 2024,
+          "radiance": 0.051249,
+          "coverage": 0.996849,
+          "validPixelCount": 114198,
+          "totalPixelCount": 114559
+        },
+        {
+          "year": 2023,
+          "radiance": 0.078044,
+          "coverage": 0.996753,
+          "validPixelCount": 114187,
+          "totalPixelCount": 114559
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.237658,
+  "radiance10to30": 0.007544,
+  "radiance30to75": 0.051249,
+  "alanExposure": 0.070092,
+  "darknessScore": 86.58,
+  "coverage": 0.980207,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T17:31:57.418536Z"
+}
