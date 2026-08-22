@@ -56,7 +56,9 @@ unless a site-specific reviewed override is present in
 review date, and rationale. Ad-hoc CLI overrides are rejected. An accepted
 override remains visible in snapshot warnings and lowers the public confidence
 through the measured coverage; it does not turn poor- or gap-filled pixels into
-valid radiance.
+valid radiance. The allowlist also identifies exactly which rings may fall below
+the global threshold, sets a separate floor for every unaffected ring, and
+requires non-null radiance for every ring and baseline year.
 
 ## ALAN exposure
 

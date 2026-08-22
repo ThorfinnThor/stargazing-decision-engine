@@ -59,6 +59,22 @@ if (snapshot.coverageOverrideUsed) {
       `${targetId}: Black Marble coverage ${snapshot.coverage} is below reviewed floor ${coverageOverride.minimumCoverage}`,
     );
   }
+  const unexpectedlyWeakRings = snapshot.rings.filter(
+    (ring) => ring.coverage < config.coverageErrorMin && !coverageOverride.affectedRingIds.includes(ring.id),
+  );
+  if (unexpectedlyWeakRings.length > 0) {
+    throw new Error(`${targetId}: unreviewed low-coverage ring(s): ${unexpectedlyWeakRings.map((ring) => ring.id).join(", ")}`);
+  }
+  const weakUnaffectedRings = snapshot.rings.filter(
+    (ring) => !coverageOverride.affectedRingIds.includes(ring.id)
+      && ring.coverage < coverageOverride.minimumOtherRingCoverage,
+  );
+  if (weakUnaffectedRings.length > 0) {
+    throw new Error(`${targetId}: unaffected ring coverage fell below its reviewed floor`);
+  }
+  if (snapshot.rings.some((ring) => ring.radiance === null || ring.years.some((year) => year.radiance === null))) {
+    throw new Error(`${targetId}: reviewed coverage override requires non-null radiance in every ring and year`);
+  }
   snapshot.warnings.push(
     `Reviewed ${coverageOverride.reviewedAt}: ${coverageOverride.reason}`,
   );

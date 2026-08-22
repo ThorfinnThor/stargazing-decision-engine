@@ -199,6 +199,16 @@ test("reviewed low Black Marble coverage is visible and reduces confidence", () 
   });
   assert.equal(result.confidenceLevel, "moderate");
   assert.ok(result.caveats.some((item) => item.includes("43% good-quality coverage")));
+  const fullyDocumented = scoreSiteMonth({
+    site,
+    month: { ...month, dataCompleteness: 1 },
+    climate: { ...climate(), gridDistanceKm: 0 },
+    darkness: darkness({ coverageOverrideUsed: true, coverage: 0.69 }),
+    dem: dem(),
+    config,
+  });
+  assert.equal(fullyDocumented.confidenceScore, 84);
+  assert.equal(fullyDocumented.confidenceLevel, "moderate");
 });
 
 test("site scoring emits 12 unique schema-valid months", () => {

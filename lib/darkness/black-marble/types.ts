@@ -27,6 +27,8 @@ export interface BlackMarbleConfig {
   coverageOverrides: Array<{
     siteId: string;
     minimumCoverage: number;
+    affectedRingIds: BlackMarbleRingId[];
+    minimumOtherRingCoverage: number;
     reason: string;
     reviewedAt: string;
   }>;

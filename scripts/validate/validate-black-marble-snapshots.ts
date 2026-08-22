@@ -22,6 +22,17 @@ export function validateBlackMarbleSnapshot(snapshot: BlackMarbleSnapshot, confi
       if (!override) errors.push("coverage override is not present in the reviewed site allowlist");
       else {
         if (snapshot.coverage < override.minimumCoverage) errors.push("coverage is below the reviewed site floor");
+        const unreviewedWeakRings = snapshot.rings.filter(
+          (ring) => ring.coverage < config.coverageErrorMin && !override.affectedRingIds.includes(ring.id),
+        );
+        if (unreviewedWeakRings.length > 0) errors.push("snapshot contains an unreviewed low-coverage ring");
+        if (snapshot.rings.some((ring) => !override.affectedRingIds.includes(ring.id)
+          && ring.coverage < override.minimumOtherRingCoverage)) {
+          errors.push("unaffected ring coverage is below the reviewed floor");
+        }
+        if (snapshot.rings.some((ring) => ring.radiance === null || ring.years.some((year) => year.radiance === null))) {
+          errors.push("coverage override requires non-null radiance in every ring and year");
+        }
         if (!snapshot.warnings.some((warning) => warning.includes(override.reviewedAt) && warning.includes(override.reason))) {
           errors.push("coverage override review metadata is missing from warnings");
         }
@@ -44,6 +55,14 @@ export function validateBlackMarbleConfig(config: BlackMarbleConfig, siteIds: Se
     if (!siteIds.has(override.siteId)) errors.push(`${override.siteId}: coverage override references an unknown site`);
     if (!(override.minimumCoverage >= 0 && override.minimumCoverage < config.coverageErrorMin)) {
       errors.push(`${override.siteId}: minimum coverage must be below the global error threshold`);
+    }
+    if (override.affectedRingIds.length === 0
+      || override.affectedRingIds.length !== new Set(override.affectedRingIds).size) {
+      errors.push(`${override.siteId}: affected ring IDs must be non-empty and unique`);
+    }
+    if (!(override.minimumOtherRingCoverage >= config.coverageErrorMin
+      && override.minimumOtherRingCoverage <= 1)) {
+      errors.push(`${override.siteId}: unaffected ring floor must be at least the global error threshold`);
     }
     if (override.reason.trim().length < 20) errors.push(`${override.siteId}: coverage override reason is too short`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(override.reviewedAt)) errors.push(`${override.siteId}: reviewedAt must be YYYY-MM-DD`);

@@ -98,7 +98,12 @@ function calculateConfidence(options: {
     demAvailability: dem?.elevationM === null || !dem ? 0 : dem.coverage * 100,
     siteMetadata: metadataCompleteness(site),
   };
-  return weighted(Object.entries(components).map(([key, value]) => [value, config.weights.confidence[key as keyof typeof components]]));
+  const rawConfidence = weighted(
+    Object.entries(components).map(([key, value]) => [value, config.weights.confidence[key as keyof typeof components]]),
+  );
+  return darkness.coverageOverrideUsed
+    ? Math.min(rawConfidence, config.confidence.levels.highMinimum - 1)
+    : rawConfidence;
 }
 
 function zeroAstronomicalNightScore(options: {
