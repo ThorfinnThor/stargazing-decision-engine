@@ -29,6 +29,8 @@ test("published destination summaries prefer complete real score snapshots and d
       .find((site) => site && snapshots.has(site.id));
     assert.equal(summary.months.length, 12);
     assert.equal(new Set(summary.months.map((month) => month.month)).size, 12);
+    assert.equal(summary.caveats.length, new Set(summary.caveats).size);
+    assert.ok(summary.caveats.length > 0);
     if (!realSite) {
       assert.equal(summary.dataStatus, "seed");
       continue;
@@ -37,6 +39,7 @@ test("published destination summaries prefer complete real score snapshots and d
     assert.equal(summary.dataStatus, "real");
     assert.equal(summary.siteId, realSite.id);
     assert.equal(summary.algorithmVersion, snapshot.algorithmVersion);
+    assert.deepEqual(summary.caveats, [...new Set(snapshot.months.flatMap((month) => month.caveats))]);
     assert.deepEqual(summary.months, snapshot.months.map((month) => ({
       month: month.month,
       score: month.stargazingTrip,

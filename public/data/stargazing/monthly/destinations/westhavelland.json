@@ -4,6 +4,11 @@
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
   "generatedAt": "2026-08-21T17:39:00.601002Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero",
+    "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
+  ],
   "months": [
     {
       "month": 1,

@@ -4,13 +4,14 @@
   "title": "Published destination monthly score summary",
   "type": "object",
   "additionalProperties": false,
-  "required": ["destinationId", "siteId", "dataStatus", "algorithmVersion", "generatedAt", "months"],
+  "required": ["destinationId", "siteId", "dataStatus", "algorithmVersion", "generatedAt", "caveats", "months"],
   "properties": {
     "destinationId": { "type": "string", "minLength": 1 },
     "siteId": { "type": "string", "minLength": 1 },
     "dataStatus": { "enum": ["real", "seed"] },
     "algorithmVersion": { "type": "string", "minLength": 1 },
     "generatedAt": { "type": "string", "minLength": 1 },
+    "caveats": { "type": "array", "items": { "type": "string", "minLength": 1 }, "uniqueItems": true },
     "months": {
       "type": "array",
       "minItems": 12,
