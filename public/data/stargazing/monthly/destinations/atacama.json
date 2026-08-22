@@ -1,73 +1,73 @@
 {
   "destinationId": "atacama",
   "siteId": "atacama-plateau",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-22T17:14:50.745718Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero"
   ],
   "months": [
     {
       "month": 1,
-      "score": 86.57,
-      "confidenceLevel": "low"
+      "score": 77,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 86.99,
-      "confidenceLevel": "low"
+      "score": 82,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 88.14,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 89.7,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 91.26,
-      "confidenceLevel": "low"
+      "score": 93,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 92.41,
-      "confidenceLevel": "low"
+      "score": 92,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 92.82,
-      "confidenceLevel": "low"
+      "score": 92,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 92.41,
-      "confidenceLevel": "low"
+      "score": 93,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 91.26,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 89.7,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 88.14,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 86.99,
-      "confidenceLevel": "low"
+      "score": 92,
+      "confidenceLevel": "high"
     }
   ]
 }
