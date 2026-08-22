@@ -1,12 +1,88 @@
 {
   "version": 1,
-  "status": "awaiting_calibration",
-  "reason": "Production anchor minimums, Black Marble measurements, and operator approval are pending. Synthetic values must not create a public darkness curve.",
-  "curve": [],
+  "status": "calibrated",
+  "method": "robust-anchor-median-piecewise-linear-v1",
+  "calibratedAt": "2026-08-22T14:54:07.197551Z",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "anchorConfigVersion": 5,
+  "anchorCount": 70,
+  "distributions": {
+    "dark_reference": {
+      "count": 30,
+      "minimum": 0.000018,
+      "p10": 0.001725,
+      "p25": 0.00271,
+      "median": 0.00767,
+      "p75": 0.034584,
+      "p90": 0.074523,
+      "maximum": 0.481845,
+      "mad": 0.005677
+    },
+    "mid_reference": {
+      "count": 20,
+      "minimum": 0.042845,
+      "p10": 0.102832,
+      "p25": 0.369024,
+      "median": 0.738312,
+      "p75": 1.287524,
+      "p90": 1.685955,
+      "maximum": 1.897795,
+      "mad": 0.493533
+    },
+    "urban_control": {
+      "count": 20,
+      "minimum": 2.664524,
+      "p10": 3.041116,
+      "p25": 3.190243,
+      "median": 3.810726,
+      "p75": 4.178248,
+      "p90": 4.356131,
+      "maximum": 4.577326,
+      "mad": 0.42865
+    }
+  },
+  "curve": [
+    {
+      "alanExposure": 0.001725,
+      "darknessScore": 100
+    },
+    {
+      "alanExposure": 0.00767,
+      "darknessScore": 90
+    },
+    {
+      "alanExposure": 0.738312,
+      "darknessScore": 50
+    },
+    {
+      "alanExposure": 3.810726,
+      "darknessScore": 10
+    },
+    {
+      "alanExposure": 4.356131,
+      "darknessScore": 0
+    }
+  ],
   "labels": [
-    { "minimumScore": 85, "label": "Very dark" },
-    { "minimumScore": 65, "label": "Dark" },
-    { "minimumScore": 35, "label": "Moderate artificial light" },
-    { "minimumScore": 0, "label": "Bright surroundings" }
+    {
+      "minimumScore": 85,
+      "label": "Very dark"
+    },
+    {
+      "minimumScore": 65,
+      "label": "Dark"
+    },
+    {
+      "minimumScore": 35,
+      "label": "Moderate artificial light"
+    },
+    {
+      "minimumScore": 0,
+      "label": "Bright surroundings"
+    }
   ]
 }
