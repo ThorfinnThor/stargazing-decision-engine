@@ -1,73 +1,73 @@
 {
   "destinationId": "big-bend",
   "siteId": "big-bend-panther-junction",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-22T17:19:06.143379Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero"
   ],
   "months": [
     {
       "month": 1,
-      "score": 83.1,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 83.52,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 84.66,
-      "confidenceLevel": "low"
+      "score": 96,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 86.23,
-      "confidenceLevel": "low"
+      "score": 97,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 87.79,
-      "confidenceLevel": "low"
+      "score": 96,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 88.93,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 89.35,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 88.93,
-      "confidenceLevel": "low"
+      "score": 90,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 87.79,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 86.23,
-      "confidenceLevel": "low"
+      "score": 97,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 84.66,
-      "confidenceLevel": "low"
+      "score": 96,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 83.52,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "high"
     }
   ]
 }
