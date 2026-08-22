@@ -1,0 +1,158 @@
+{
+  "siteId": "moab-sand-flats",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.622925,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.75884,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2024,
+          "radiance": 0.622925,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2023,
+          "radiance": 0.621556,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.871579,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.951021,
+          "coverage": 1,
+          "validPixelCount": 1800,
+          "totalPixelCount": 1800
+        },
+        {
+          "year": 2024,
+          "radiance": 0.847908,
+          "coverage": 1,
+          "validPixelCount": 1800,
+          "totalPixelCount": 1800
+        },
+        {
+          "year": 2023,
+          "radiance": 0.871579,
+          "coverage": 1,
+          "validPixelCount": 1800,
+          "totalPixelCount": 1800
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.01558,
+      "coverage": 0.999933,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.01809,
+          "coverage": 0.999933,
+          "validPixelCount": 14970,
+          "totalPixelCount": 14971
+        },
+        {
+          "year": 2024,
+          "radiance": 0.010698,
+          "coverage": 1,
+          "validPixelCount": 14971,
+          "totalPixelCount": 14971
+        },
+        {
+          "year": 2023,
+          "radiance": 0.01558,
+          "coverage": 1,
+          "validPixelCount": 14971,
+          "totalPixelCount": 14971
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.007167,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.009973,
+          "coverage": 1,
+          "validPixelCount": 88462,
+          "totalPixelCount": 88462
+        },
+        {
+          "year": 2024,
+          "radiance": 0.006571,
+          "coverage": 1,
+          "validPixelCount": 88462,
+          "totalPixelCount": 88462
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007167,
+          "coverage": 1,
+          "validPixelCount": 88462,
+          "totalPixelCount": 88462
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.622925,
+  "radiance2to10": 0.871579,
+  "radiance10to30": 0.01558,
+  "radiance30to75": 0.007167,
+  "alanExposure": 0.408972,
+  "darknessScore": null,
+  "coverage": 0.999933,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T10:13:19.138194Z"
+}

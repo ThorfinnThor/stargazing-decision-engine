@@ -1,0 +1,158 @@
+{
+  "siteId": "mammoth-lakes-outskirts",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 3.581995,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 3.581995,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 3.494848,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 3.599967,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.145157,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.160289,
+          "coverage": 1,
+          "validPixelCount": 1773,
+          "totalPixelCount": 1773
+        },
+        {
+          "year": 2024,
+          "radiance": 0.104415,
+          "coverage": 1,
+          "validPixelCount": 1773,
+          "totalPixelCount": 1773
+        },
+        {
+          "year": 2023,
+          "radiance": 0.145157,
+          "coverage": 1,
+          "validPixelCount": 1773,
+          "totalPixelCount": 1773
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.007133,
+      "coverage": 0.999797,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.008905,
+          "coverage": 0.999797,
+          "validPixelCount": 14791,
+          "totalPixelCount": 14794
+        },
+        {
+          "year": 2024,
+          "radiance": 0.003643,
+          "coverage": 0.999932,
+          "validPixelCount": 14793,
+          "totalPixelCount": 14794
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007133,
+          "coverage": 1,
+          "validPixelCount": 14794,
+          "totalPixelCount": 14794
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.04134,
+      "coverage": 0.997996,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.04381,
+          "coverage": 0.997996,
+          "validPixelCount": 87170,
+          "totalPixelCount": 87345
+        },
+        {
+          "year": 2024,
+          "radiance": 0.03185,
+          "coverage": 0.999989,
+          "validPixelCount": 87344,
+          "totalPixelCount": 87345
+        },
+        {
+          "year": 2023,
+          "radiance": 0.04134,
+          "coverage": 0.999931,
+          "validPixelCount": 87339,
+          "totalPixelCount": 87345
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 3.581995,
+  "radiance2to10": 0.145157,
+  "radiance10to30": 0.007133,
+  "radiance30to75": 0.04134,
+  "alanExposure": 0.73074,
+  "darknessScore": null,
+  "coverage": 0.997996,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T10:12:59.619788Z"
+}
