@@ -145,5 +145,5 @@ jobs:
             echo "No derived data changes to commit."
             exit 0
           fi
-          git commit -m "chore(data): refresh static snapshots [skip ci]"
+          git commit -m "chore(data): refresh static snapshots"
           git push

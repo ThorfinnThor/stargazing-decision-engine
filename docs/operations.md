@@ -1,7 +1,7 @@
 # Operations runbook
 
 The production site is a static Next.js export. GitHub Actions is the only
-place where source ingestion or JSON generation should run; Vercel only builds
+place where source ingestion or JSON generation should run; Cloudflare only builds
 and serves the committed static output.
 
 ## Safe refresh and rollback
@@ -14,7 +14,7 @@ and serves the committed static output.
    commits derived JSON only after the full validation, test, typecheck, and
    build chain succeeds.
 3. If a refresh is bad, revert the refresh commit in GitHub and merge the
-   revert. Vercel then redeploys the previous known-good static dataset.
+   revert. Cloudflare then redeploys the previous known-good static dataset.
 
 No ingestion workflow may force-push, commit raw downloads, or bypass a
 failed validation. A failed job leaves the last committed dataset untouched.

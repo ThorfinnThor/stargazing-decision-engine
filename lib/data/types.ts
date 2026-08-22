@@ -3,6 +3,7 @@
 export type MonthNumber = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12;
 export type PublicAccess = "yes" | "limited" | "unknown" | "no";
 export type ConfidenceLevel = "high" | "moderate" | "low";
+export type ScoreDataStatus = "real" | "seed";
 
 export interface Destination {
   id: string;
@@ -244,6 +245,26 @@ export interface MonthlySiteScore {
   confidenceLevel: ConfidenceLevel;
   reasons: string[];
   caveats: string[];
+}
+
+export interface SiteScoreSnapshot {
+  siteId: string;
+  algorithmVersion: "site-score-1.0.0";
+  generatedAt: string;
+  months: MonthlySiteScore[];
+}
+
+export interface DestinationMonthlySummary {
+  destinationId: string;
+  siteId: string;
+  dataStatus: ScoreDataStatus;
+  algorithmVersion: string;
+  generatedAt: string;
+  months: Array<{
+    month: MonthNumber;
+    score: number;
+    confidenceLevel: ConfidenceLevel;
+  }>;
 }
 
 export interface DestinationMonthScore {

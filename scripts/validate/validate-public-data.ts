@@ -12,6 +12,7 @@ if (!validateManifest || !validateManifest(readPublishedManifest())) errors.push
 
 const destinationSchema = ajv.getSchema("https://stargazing.local/schema/destination.json");
 const siteSchema = ajv.getSchema("https://stargazing.local/schema/site.json");
+const destinationMonthlySchema = ajv.getSchema("https://stargazing.local/schema/destination-monthly.json");
 const validateFiles = (directory: string, schema: typeof destinationSchema, label: string) => {
   if (!schema) return;
   for (const entry of readdirSync(directory)) {
@@ -23,6 +24,7 @@ const validateFiles = (directory: string, schema: typeof destinationSchema, labe
 };
 
 validateFiles(resolve(publicDataDir, "destinations"), destinationSchema, "Destination");
+validateFiles(resolve(publicDataDir, "monthly/destinations"), destinationMonthlySchema, "Destination monthly summary");
 for (const country of readdirSync(resolve(publicDataDir, "sites"))) {
   const directory = resolve(publicDataDir, "sites", country);
   if (statSync(directory).isDirectory()) validateFiles(directory, siteSchema, "Site");

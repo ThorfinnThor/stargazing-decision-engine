@@ -1,7 +1,7 @@
 # Astronomy calendar methodology
 
 The real calendar is generated offline with Astronomy Engine 2.1.19 and written
-as static JSON. No remote API is used by the browser, Vercel, or the calendar
+as static JSON. No remote API is used by the browser, Cloudflare, or the calendar
 builder. Run it with an explicit start month so the output is reproducible:
 
 ```bash

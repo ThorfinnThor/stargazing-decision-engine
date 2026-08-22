@@ -1,0 +1,7 @@
+/data/*
+  Cache-Control: public, max-age=0, s-maxage=86400, stale-while-revalidate=604800
+
+/go/*
+  X-Robots-Tag: noindex
+  Cache-Control: no-store
+  Referrer-Policy: no-referrer

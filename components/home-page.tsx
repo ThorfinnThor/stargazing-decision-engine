@@ -7,6 +7,12 @@ import { formatMonth } from "@/lib/i18n/months";
 export function HomePage({ locale }: { locale: Locale }) {
   const copy = localeCopy[locale];
   const manifest = loadManifest();
+  const realScoreSites = manifest.counts.realScoreSites ?? 0;
+  const catalogNote = realScoreSites === 0
+    ? copy.catalogNote
+    : realScoreSites >= manifest.counts.observationSites
+      ? copy.realCatalogNote
+      : copy.mixedCatalogNote;
   const shortTripOrigins = listShortTripOrigins();
   const gearGuides = listGearGuides();
   const seo = loadSeoPage(`/${locale}/`);
@@ -14,7 +20,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   const destinations = loadDestinations().map((destination) => {
     const monthly = loadDestinationMonthly(destination.slug);
     const bestMonth = [...monthly.months].sort((a, b) => b.score - a.score)[0];
-    return { destination, bestMonth };
+    return { destination, bestMonth, dataStatus: monthly.dataStatus };
   });
 
   return (
@@ -61,10 +67,10 @@ export function HomePage({ locale }: { locale: Locale }) {
             <p className="eyebrow dark">{copy.catalogEyebrow}</p>
             <h2 id="catalog-title">{copy.catalogTitle}</h2>
           </div>
-          <p className="catalog-note">{copy.catalogNote}</p>
+          <p className="catalog-note">{catalogNote}</p>
         </div>
         <div className="catalog-grid">
-          {destinations.map(({ destination, bestMonth }) => (
+          {destinations.map(({ destination, bestMonth, dataStatus }) => (
             <a className="destination-card" href={localizedLinks.destination(locale, destination.slug)} key={destination.id}>
               <div className="card-topline">
                 <span>{destination.countryCode}</span>
@@ -74,7 +80,7 @@ export function HomePage({ locale }: { locale: Locale }) {
               <p>{destination.tags.slice(0, 2).join(" · ")}</p>
               <div className="card-score">
                 <span className="score-value">{bestMonth?.score ?? "—"}</span>
-                <span className="score-label">{copy.seedScore}<br />{copy.bestMonth} {bestMonth ? formatMonth(bestMonth.month, locale) : "—"}</span>
+                <span className="score-label">{dataStatus === "real" ? copy.realScore : copy.seedScore}<br />{copy.bestMonth} {bestMonth ? formatMonth(bestMonth.month, locale) : "—"}</span>
               </div>
             </a>
           ))}

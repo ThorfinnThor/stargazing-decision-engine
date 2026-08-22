@@ -17,7 +17,14 @@ pnpm data:score:real:validate
 It writes a deterministic 12-month JSON snapshot under
 `data-snapshots/scores/`. The latest source retrieval timestamp is used as the
 derived timestamp, so an unchanged source set has an unchanged output. The
-browser and Vercel never calculate source metrics or retrieve remote data.
+browser and Cloudflare never calculate source metrics or retrieve remote data.
+
+The score command applies the current committed darkness curve directly to the
+committed ALAN exposure. It therefore does not require the raw Black Marble
+raster cache merely because a new reviewed calibration curve was published.
+The static exporter prefers a complete real score snapshot per destination and
+keeps destinations without one explicitly marked as `seed`; real and seed
+scores are never presented under the same provenance label.
 
 ## Components
 

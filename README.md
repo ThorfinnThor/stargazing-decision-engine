@@ -2,7 +2,8 @@
 
 A static-first decision engine for stargazing travel. Data is ingested and
 processed offline, exported as versioned JSON under
-`public/data/stargazing/`, and rendered into static pages for Vercel.
+`public/data/stargazing/`, and rendered into static pages for Cloudflare Workers
+Static Assets.
 
 ## Local development
 
@@ -20,7 +21,7 @@ pnpm data:pipeline
 pnpm build
 ```
 
-The production build uses Next.js static export. Vercel never performs remote
+The production build uses Next.js static export. Cloudflare never performs remote
 source ingestion and the application has no runtime database.
 
 SEO governance is generated as static JSON before the build. It controls page

@@ -60,7 +60,7 @@ grid points, invalid ranges, and malformed timestamps fail the build.
 1. Accept the ERA5 dataset terms in the CDS web interface.
 2. Install the pinned Python dependency from `requirements-data.txt`.
 3. Provide `CDSAPI_KEY` to the ingestion environment. This secret belongs in
-   GitHub Actions, not Vercel.
+   GitHub Actions, not Cloudflare.
 4. Run `pnpm data:era5:fetch` to populate the ignored cache.
 5. Run `pnpm data:era5:process` and `pnpm data:era5:validate`.
 

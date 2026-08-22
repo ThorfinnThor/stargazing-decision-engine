@@ -9,6 +9,7 @@ import type {
   DarknessDistribution,
   DarknessLabelBand,
 } from "./types.js";
+import type { BlackMarbleSnapshot } from "../black-marble/types.js";
 
 const CLASSES: DarknessAnchorClass[] = ["dark_reference", "mid_reference", "urban_control"];
 
@@ -170,6 +171,18 @@ export function darknessScoreForExposure(alanExposure: number, config: DarknessC
     }
   }
   throw new Error("Darkness curve interpolation failed");
+}
+
+export function applyDarknessCurve(snapshot: BlackMarbleSnapshot, config: DarknessCurveConfig): BlackMarbleSnapshot {
+  if (config.status !== "calibrated") throw new Error("Darkness calibration is not available");
+  if (snapshot.alanExposure === null) throw new Error(`${snapshot.siteId}: ALAN exposure is required for darkness scoring`);
+  if (config.blackMarbleYears.join(",") !== snapshot.blackMarbleYears.join(",")) {
+    throw new Error(`Darkness curve baseline years do not match ${snapshot.siteId}`);
+  }
+  return {
+    ...snapshot,
+    darknessScore: darknessScoreForExposure(snapshot.alanExposure, config),
+  };
 }
 
 export function darknessLabelForScore(score: number, config: DarknessCurveConfig) {

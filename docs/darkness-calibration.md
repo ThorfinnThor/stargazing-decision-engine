@@ -1,7 +1,7 @@
 # Darkness calibration methodology
 
 The public darkness score is an offline-derived, static value. Browser code does
-not fit a model and Vercel does not retrieve Black Marble data. A reviewed GitHub
+not fit a model and Cloudflare does not retrieve Black Marble data. A reviewed GitHub
 Actions ingestion run can create the source snapshots and commit the resulting
 fixed JSON curve.
 
