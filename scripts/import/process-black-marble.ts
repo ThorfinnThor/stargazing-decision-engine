@@ -28,6 +28,12 @@ const site = siteSlug
 const targetId = siteSlug ?? anchorId as string;
 const targetKind = siteSlug ? "site" : "anchor";
 if (!site) throw new Error(`Unknown ${targetKind}: ${targetId}`);
+const coverageOverride = siteSlug
+  ? config.coverageOverrides.find((item) => item.siteId === site.id)
+  : undefined;
+if (process.argv.includes("--allow-low-coverage") && !coverageOverride) {
+  throw new Error(`${targetId}: ad-hoc low-coverage overrides are forbidden; add a reviewed site override to black-marble.json`);
+}
 const rawDirectory = resolve(root, "raw-downloads/black-marble", targetId);
 if (!existsSync(rawDirectory)) throw new Error(`No Black Marble cache for ${siteSlug}`);
 const years = readdirSync(rawDirectory)
@@ -44,8 +50,19 @@ let snapshot = buildBlackMarbleSnapshot({
   config,
   retrievedAt: metadata.retrievedAt,
   allowIncompleteYears: process.argv.includes("--allow-incomplete-years"),
-  allowLowCoverage: process.argv.includes("--allow-low-coverage"),
+  allowLowCoverage: Boolean(coverageOverride),
 });
+if (snapshot.coverageOverrideUsed) {
+  if (!coverageOverride) throw new Error(`${targetId}: low coverage has no reviewed override`);
+  if (snapshot.coverage < coverageOverride.minimumCoverage) {
+    throw new Error(
+      `${targetId}: Black Marble coverage ${snapshot.coverage} is below reviewed floor ${coverageOverride.minimumCoverage}`,
+    );
+  }
+  snapshot.warnings.push(
+    `Reviewed ${coverageOverride.reviewedAt}: ${coverageOverride.reason}`,
+  );
+}
 if (targetKind === "site") {
   const curve = readJson<DarknessCurveConfig>(resolve(root, "data-config/scoring/darkness.json"));
   if (curve.status === "calibrated") snapshot = applyDarknessCurve(snapshot, curve);

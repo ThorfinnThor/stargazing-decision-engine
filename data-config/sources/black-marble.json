@@ -17,5 +17,13 @@
     { "id": "30to75", "minKm": 30, "maxKm": 75, "upperInclusive": true, "statistic": "mean", "alanWeight": 0.10 }
   ],
   "coverageWarningMin": 0.9,
-  "coverageErrorMin": 0.7
+  "coverageErrorMin": 0.7,
+  "coverageOverrides": [
+    {
+      "siteId": "teide-high-zone",
+      "minimumCoverage": 0.4,
+      "reason": "The 75 km island window contains extensive ocean and fill coverage; retain only good-quality pixels, preserve all four rings, and reduce published confidence through measured coverage.",
+      "reviewedAt": "2026-08-22"
+    }
+  ]
 }

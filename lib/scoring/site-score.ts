@@ -207,6 +207,9 @@ export function scoreSiteMonth(options: {
   ];
   const caveats = ["Temperature comfort uses the monthly astronomical-night mean, not hourly utility"];
   if (!dem || dem.elevationM === null) caveats.push(elevation === null ? "Elevation unavailable; conservative zero elevation score used" : "Curated elevation fallback used; DEM confidence is zero");
+  if (darkness.coverageOverrideUsed) {
+    caveats.push(`Reviewed Black Marble coverage override used (${Math.round(darkness.coverage * 100)}% good-quality coverage); confidence is reduced`);
+  }
   if (site.accessScore === null) caveats.push("Access is unknown; trip-comfort climate weights were renormalized");
   if (level === "low") caveats.push("Low-confidence score must be excluded from unqualified top rankings");
 

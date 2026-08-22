@@ -51,7 +51,12 @@ exposure.
 Coverage is valid good-quality pixels divided by all candidate pixels in the
 ring. The aggregate ring coverage is the minimum yearly coverage, so a poor
 year cannot be hidden. Coverage below 0.90 emits a warning; below 0.70 fails
-unless an explicit override is supplied and recorded.
+unless a site-specific reviewed override is present in
+`data-config/sources/black-marble.json`. Each override has its own hard minimum,
+review date, and rationale. Ad-hoc CLI overrides are rejected. An accepted
+override remains visible in snapshot warnings and lowers the public confidence
+through the measured coverage; it does not turn poor- or gap-filled pixels into
+valid radiance.
 
 ## ALAN exposure
 
