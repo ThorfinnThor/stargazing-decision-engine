@@ -74,8 +74,8 @@ jobs:
       - name: Fetch and process Black Marble anchor snapshots
         run: |
           set -euo pipefail
+          python3 scripts/import/fetch_black_marble.py --anchors-file /tmp/darkness-anchors
           while IFS= read -r anchor; do
-            pnpm data:black-marble:fetch --anchor "$anchor"
             pnpm data:black-marble:extract --anchor "$anchor"
             pnpm data:black-marble:process --anchor "$anchor"
           done < /tmp/darkness-anchors

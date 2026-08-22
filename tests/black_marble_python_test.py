@@ -1,13 +1,16 @@
 from pathlib import Path
+import os
 import sys
 import unittest
+from unittest.mock import patch
 
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "import"))
 
 from black_marble_common import parse_granule_name, required_tiles, site_bounding_box  # noqa: E402
 from extract_black_marble import decode_radiance  # noqa: E402
-from fetch_black_marble import retry_network  # noqa: E402
+import fetch_black_marble  # noqa: E402
+from fetch_black_marble import earthdata_client, retry_network  # noqa: E402
 
 
 class BlackMarbleGeometryTests(unittest.TestCase):
@@ -56,6 +59,26 @@ class BlackMarbleGeometryTests(unittest.TestCase):
                 initial_delay_seconds=0,
                 sleeper=lambda _delay: None,
             )
+
+    def test_earthdata_login_is_reused_for_a_batch(self):
+        class FakeEarthaccess:
+            login_calls = 0
+
+            @classmethod
+            def login(cls, strategy):
+                self.assertEqual(strategy, "environment")
+                cls.login_calls += 1
+
+        fetch_black_marble._EARTHACCESS = None
+        try:
+            with patch.dict(os.environ, {"EARTHDATA_TOKEN": "test-token"}), patch.dict(
+                sys.modules, {"earthaccess": FakeEarthaccess}
+            ):
+                self.assertIs(earthdata_client(), FakeEarthaccess)
+                self.assertIs(earthdata_client(), FakeEarthaccess)
+            self.assertEqual(FakeEarthaccess.login_calls, 1)
+        finally:
+            fetch_black_marble._EARTHACCESS = None
 
 
 if __name__ == "__main__":
