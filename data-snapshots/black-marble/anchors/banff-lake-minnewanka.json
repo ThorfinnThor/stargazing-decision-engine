@@ -1,0 +1,158 @@
+{
+  "siteId": "banff-lake-minnewanka",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.329554,
+      "coverage": 0.97861,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.318082,
+          "coverage": 0.983066,
+          "validPixelCount": 2206,
+          "totalPixelCount": 2244
+        },
+        {
+          "year": 2024,
+          "radiance": 0.329554,
+          "coverage": 0.97861,
+          "validPixelCount": 2196,
+          "totalPixelCount": 2244
+        },
+        {
+          "year": 2023,
+          "radiance": 0.356268,
+          "coverage": 0.979947,
+          "validPixelCount": 2199,
+          "totalPixelCount": 2244
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.098417,
+      "coverage": 0.991187,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.098417,
+          "coverage": 0.992523,
+          "validPixelCount": 18583,
+          "totalPixelCount": 18723
+        },
+        {
+          "year": 2024,
+          "radiance": 0.097871,
+          "coverage": 0.992469,
+          "validPixelCount": 18582,
+          "totalPixelCount": 18723
+        },
+        {
+          "year": 2023,
+          "radiance": 0.119189,
+          "coverage": 0.991187,
+          "validPixelCount": 18558,
+          "totalPixelCount": 18723
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.073156,
+      "coverage": 0.995012,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.070298,
+          "coverage": 0.995799,
+          "validPixelCount": 109994,
+          "totalPixelCount": 110458
+        },
+        {
+          "year": 2024,
+          "radiance": 0.073156,
+          "coverage": 0.996062,
+          "validPixelCount": 110023,
+          "totalPixelCount": 110458
+        },
+        {
+          "year": 2023,
+          "radiance": 0.090067,
+          "coverage": 0.995012,
+          "validPixelCount": 109907,
+          "totalPixelCount": 110458
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.329554,
+  "radiance10to30": 0.098417,
+  "radiance30to75": 0.073156,
+  "alanExposure": 0.106594,
+  "darknessScore": null,
+  "coverage": 0.97861,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T12:33:14.693299Z"
+}

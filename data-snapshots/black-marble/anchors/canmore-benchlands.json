@@ -1,0 +1,158 @@
+{
+  "siteId": "canmore-benchlands",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 7.63265,
+      "coverage": 0.915789,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 7.63265,
+          "coverage": 0.915789,
+          "validPixelCount": 87,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2024,
+          "radiance": 8.611217,
+          "coverage": 0.936842,
+          "validPixelCount": 89,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2023,
+          "radiance": 6.744284,
+          "coverage": 0.947368,
+          "validPixelCount": 90,
+          "totalPixelCount": 95
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.345564,
+      "coverage": 0.947368,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.345564,
+          "coverage": 0.957181,
+          "validPixelCount": 2146,
+          "totalPixelCount": 2242
+        },
+        {
+          "year": 2024,
+          "radiance": 0.3246,
+          "coverage": 0.956289,
+          "validPixelCount": 2144,
+          "totalPixelCount": 2242
+        },
+        {
+          "year": 2023,
+          "radiance": 0.447328,
+          "coverage": 0.947368,
+          "validPixelCount": 2124,
+          "totalPixelCount": 2242
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.090488,
+      "coverage": 0.987711,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.085971,
+          "coverage": 0.991736,
+          "validPixelCount": 18480,
+          "totalPixelCount": 18634
+        },
+        {
+          "year": 2024,
+          "radiance": 0.090488,
+          "coverage": 0.991521,
+          "validPixelCount": 18476,
+          "totalPixelCount": 18634
+        },
+        {
+          "year": 2023,
+          "radiance": 0.118238,
+          "coverage": 0.987711,
+          "validPixelCount": 18405,
+          "totalPixelCount": 18634
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.106403,
+      "coverage": 0.992371,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.101094,
+          "coverage": 0.992371,
+          "validPixelCount": 109272,
+          "totalPixelCount": 110112
+        },
+        {
+          "year": 2024,
+          "radiance": 0.106403,
+          "coverage": 0.993289,
+          "validPixelCount": 109373,
+          "totalPixelCount": 110112
+        },
+        {
+          "year": 2023,
+          "radiance": 0.12263,
+          "coverage": 0.992816,
+          "validPixelCount": 109321,
+          "totalPixelCount": 110112
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 7.63265,
+  "radiance2to10": 0.345564,
+  "radiance10to30": 0.090488,
+  "radiance30to75": 0.106403,
+  "alanExposure": 1.082147,
+  "darknessScore": null,
+  "coverage": 0.915789,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T12:33:33.818459Z"
+}
