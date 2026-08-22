@@ -4,6 +4,11 @@
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
   "generatedAt": "2026-08-22T16:23:13.859359Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero",
+    "Reviewed Black Marble coverage override used (43% good-quality coverage); confidence is reduced"
+  ],
   "months": [
     {
       "month": 1,

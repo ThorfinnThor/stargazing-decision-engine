@@ -136,6 +136,7 @@ for (const destination of seed.destinations) {
     dataStatus: real ? "real" : "seed",
     algorithmVersion: real?.algorithmVersion ?? "seed-fixture-0.1.0",
     generatedAt: real?.generatedAt ?? seedGeneratedAt,
+    caveats: [...new Set(destinationScores.flatMap((item) => item.caveats))],
     months: destinationScores.map((item) => ({ month: item.month, score: item.stargazingTrip, confidenceLevel: item.confidenceLevel })),
   } satisfies DestinationMonthlySummary);
 }

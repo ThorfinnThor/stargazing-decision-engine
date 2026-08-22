@@ -24,6 +24,26 @@ function readParams(params: { locale: string; slug: string }) {
   } catch { return null; }
 }
 
+function formatCaveat(caveat: string, locale: Locale) {
+  if (locale === "en") return caveat;
+  if (caveat === "Temperature comfort uses the monthly astronomical-night mean, not hourly utility") {
+    return "Der Temperaturkomfort verwendet den Monatsmittelwert astronomischer Nachtstunden, nicht eine stündliche Bewertung.";
+  }
+  if (caveat === "Curated elevation fallback used; DEM confidence is zero") {
+    return "Kuratierte Höhenangabe als Fallback; der DEM-Anteil der Konfidenz ist null.";
+  }
+  if (caveat === "Not a weather forecast") return "Keine Wettervorhersage.";
+  if (caveat === "Not production climate data") return "Keine produktiven Klimadaten.";
+  if (caveat === "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours") {
+    return "Der Sternbeobachtungswert wird auf null gesetzt, wenn ERA5 keine astronomischen Nachtstunden enthält.";
+  }
+  const coverage = caveat.match(/^Reviewed Black Marble coverage override used \((\d+)% good-quality coverage\); confidence is reduced$/);
+  if (coverage) {
+    return `Geprüfte Black-Marble-Abdeckungsausnahme (${coverage[1]} % Abdeckung mit guter Qualität); die Konfidenz ist reduziert.`;
+  }
+  return caveat;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
@@ -66,6 +86,10 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           </table>
         </div>
       </section>
+      {monthly.caveats.length > 0 && <section className="event-summary" aria-labelledby="destination-caveats-title">
+        <h2 id="destination-caveats-title">{isGerman ? "Datengrenzen" : "Data limitations"}</h2>
+        <ul>{monthly.caveats.map((caveat) => <li key={caveat}>{formatCaveat(caveat, locale)}</li>)}</ul>
+      </section>}
       <AffiliateDisclosure locale={locale} />
     </main>
   );

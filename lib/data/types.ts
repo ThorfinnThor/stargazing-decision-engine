@@ -260,6 +260,7 @@ export interface DestinationMonthlySummary {
   dataStatus: ScoreDataStatus;
   algorithmVersion: string;
   generatedAt: string;
+  caveats: string[];
   months: Array<{
     month: MonthNumber;
     score: number;

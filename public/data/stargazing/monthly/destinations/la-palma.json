@@ -4,6 +4,10 @@
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
   "generatedAt": "2026-08-22T15:40:24.934567Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero"
+  ],
   "months": [
     {
       "month": 1,
