@@ -1,0 +1,158 @@
+{
+  "siteId": "swakopmund-outskirts",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 8.79109,
+      "coverage": 0.904762,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 8.79109,
+          "coverage": 0.920635,
+          "validPixelCount": 58,
+          "totalPixelCount": 63
+        },
+        {
+          "year": 2024,
+          "radiance": 9.21289,
+          "coverage": 0.920635,
+          "validPixelCount": 58,
+          "totalPixelCount": 63
+        },
+        {
+          "year": 2023,
+          "radiance": 8.32138,
+          "coverage": 0.904762,
+          "validPixelCount": 57,
+          "totalPixelCount": 63
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 2.245869,
+      "coverage": 0.98622,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.232301,
+          "coverage": 0.992782,
+          "validPixelCount": 1513,
+          "totalPixelCount": 1524
+        },
+        {
+          "year": 2024,
+          "radiance": 2.245869,
+          "coverage": 0.987533,
+          "validPixelCount": 1505,
+          "totalPixelCount": 1524
+        },
+        {
+          "year": 2023,
+          "radiance": 2.302522,
+          "coverage": 0.98622,
+          "validPixelCount": 1503,
+          "totalPixelCount": 1524
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.405013,
+      "coverage": 0.987935,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.404675,
+          "coverage": 0.989591,
+          "validPixelCount": 12549,
+          "totalPixelCount": 12681
+        },
+        {
+          "year": 2024,
+          "radiance": 0.405013,
+          "coverage": 0.987935,
+          "validPixelCount": 12528,
+          "totalPixelCount": 12681
+        },
+        {
+          "year": 2023,
+          "radiance": 0.480626,
+          "coverage": 0.988881,
+          "validPixelCount": 12540,
+          "totalPixelCount": 12681
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.110423,
+      "coverage": 0.999626,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.110423,
+          "coverage": 0.999706,
+          "validPixelCount": 74935,
+          "totalPixelCount": 74957
+        },
+        {
+          "year": 2024,
+          "radiance": 0.107508,
+          "coverage": 0.999706,
+          "validPixelCount": 74935,
+          "totalPixelCount": 74957
+        },
+        {
+          "year": 2023,
+          "radiance": 0.122424,
+          "coverage": 0.999626,
+          "validPixelCount": 74929,
+          "totalPixelCount": 74957
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 8.79109,
+  "radiance2to10": 2.245869,
+  "radiance10to30": 0.405013,
+  "radiance30to75": 0.110423,
+  "alanExposure": 1.441359,
+  "darknessScore": null,
+  "coverage": 0.904762,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T14:01:30.428605Z"
+}
