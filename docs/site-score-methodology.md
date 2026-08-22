@@ -52,4 +52,8 @@ Black Marble coverage, Black Marble baseline completeness, ERA5 grid distance,
 DEM availability, and site/access metadata. Scores of 85 or more are high,
 70–84 moderate, and below 70 low. Every low-confidence result contains an
 explicit caveat requiring destination/ranking builders to exclude it from an
-unqualified top result.
+unqualified top result. A reviewed Black Marble low-coverage override is also
+named in every monthly score caveat and remains numerically penalized by the
+unchanged confidence formula. Any such override additionally caps confidence at
+84 (`moderate`), even if later source improvements would otherwise cross the
+high-confidence threshold.

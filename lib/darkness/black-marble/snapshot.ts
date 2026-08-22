@@ -67,6 +67,9 @@ export function buildBlackMarbleSnapshot(options: {
   if (coverageOverrideUsed && !options.allowLowCoverage) {
     throw new Error(`Black Marble coverage ${coverage} is below ${config.coverageErrorMin}`);
   }
+  if (coverageOverrideUsed) {
+    warnings.push(`Low-coverage override used: ${coverage} is below ${config.coverageErrorMin}`);
+  }
   if (baselineOverrideUsed) warnings.push(`Baseline uses ${byYear.length} year(s), not ${config.baselineYearCount}`);
 
   const radiances = new Map(rings.map((ring) => [ring.id, ring.radiance]));

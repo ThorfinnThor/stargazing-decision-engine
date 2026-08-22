@@ -28,6 +28,12 @@ const site = siteSlug
 const targetId = siteSlug ?? anchorId as string;
 const targetKind = siteSlug ? "site" : "anchor";
 if (!site) throw new Error(`Unknown ${targetKind}: ${targetId}`);
+const coverageOverride = siteSlug
+  ? config.coverageOverrides.find((item) => item.siteId === site.id)
+  : undefined;
+if (process.argv.includes("--allow-low-coverage") && !coverageOverride) {
+  throw new Error(`${targetId}: ad-hoc low-coverage overrides are forbidden; add a reviewed site override to black-marble.json`);
+}
 const rawDirectory = resolve(root, "raw-downloads/black-marble", targetId);
 if (!existsSync(rawDirectory)) throw new Error(`No Black Marble cache for ${siteSlug}`);
 const years = readdirSync(rawDirectory)
@@ -44,8 +50,35 @@ let snapshot = buildBlackMarbleSnapshot({
   config,
   retrievedAt: metadata.retrievedAt,
   allowIncompleteYears: process.argv.includes("--allow-incomplete-years"),
-  allowLowCoverage: process.argv.includes("--allow-low-coverage"),
+  allowLowCoverage: Boolean(coverageOverride),
 });
+if (snapshot.coverageOverrideUsed) {
+  if (!coverageOverride) throw new Error(`${targetId}: low coverage has no reviewed override`);
+  if (snapshot.coverage < coverageOverride.minimumCoverage) {
+    throw new Error(
+      `${targetId}: Black Marble coverage ${snapshot.coverage} is below reviewed floor ${coverageOverride.minimumCoverage}`,
+    );
+  }
+  const unexpectedlyWeakRings = snapshot.rings.filter(
+    (ring) => ring.coverage < config.coverageErrorMin && !coverageOverride.affectedRingIds.includes(ring.id),
+  );
+  if (unexpectedlyWeakRings.length > 0) {
+    throw new Error(`${targetId}: unreviewed low-coverage ring(s): ${unexpectedlyWeakRings.map((ring) => ring.id).join(", ")}`);
+  }
+  const weakUnaffectedRings = snapshot.rings.filter(
+    (ring) => !coverageOverride.affectedRingIds.includes(ring.id)
+      && ring.coverage < coverageOverride.minimumOtherRingCoverage,
+  );
+  if (weakUnaffectedRings.length > 0) {
+    throw new Error(`${targetId}: unaffected ring coverage fell below its reviewed floor`);
+  }
+  if (snapshot.rings.some((ring) => ring.radiance === null || ring.years.some((year) => year.radiance === null))) {
+    throw new Error(`${targetId}: reviewed coverage override requires non-null radiance in every ring and year`);
+  }
+  snapshot.warnings.push(
+    `Reviewed ${coverageOverride.reviewedAt}: ${coverageOverride.reason}`,
+  );
+}
 if (targetKind === "site") {
   const curve = readJson<DarknessCurveConfig>(resolve(root, "data-config/scoring/darkness.json"));
   if (curve.status === "calibrated") snapshot = applyDarknessCurve(snapshot, curve);

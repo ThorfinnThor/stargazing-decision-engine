@@ -17,5 +17,15 @@
     { "id": "30to75", "minKm": 30, "maxKm": 75, "upperInclusive": true, "statistic": "mean", "alanWeight": 0.10 }
   ],
   "coverageWarningMin": 0.9,
-  "coverageErrorMin": 0.7
+  "coverageErrorMin": 0.7,
+  "coverageOverrides": [
+    {
+      "siteId": "teide-high-zone",
+      "minimumCoverage": 0.4,
+      "affectedRingIds": ["0to2"],
+      "minimumOtherRingCoverage": 0.9,
+      "reason": "The 0-2 km summit ring has 43% minimum yearly good-quality coverage but a zero median radiance in all three baseline years; every outer ring retains at least 98% coverage and stable non-null radiance.",
+      "reviewedAt": "2026-08-22"
+    }
+  ]
 }

@@ -24,6 +24,14 @@ export interface BlackMarbleConfig {
   rings: BlackMarbleRingConfig[];
   coverageWarningMin: number;
   coverageErrorMin: number;
+  coverageOverrides: Array<{
+    siteId: string;
+    minimumCoverage: number;
+    affectedRingIds: BlackMarbleRingId[];
+    minimumOtherRingCoverage: number;
+    reason: string;
+    reviewedAt: string;
+  }>;
 }
 
 export interface BlackMarblePixel {

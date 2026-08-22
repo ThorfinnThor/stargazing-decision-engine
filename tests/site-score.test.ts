@@ -188,6 +188,29 @@ test("low-confidence scores carry an explicit ranking exclusion caveat", () => {
   assert.ok(result.caveats.some((item) => item.includes("top rankings")));
 });
 
+test("reviewed low Black Marble coverage is visible and reduces confidence", () => {
+  const result = scoreSiteMonth({
+    site,
+    month,
+    climate: climate(),
+    darkness: darkness({ coverageOverrideUsed: true, coverage: 0.432836 }),
+    dem: null,
+    config,
+  });
+  assert.equal(result.confidenceLevel, "moderate");
+  assert.ok(result.caveats.some((item) => item.includes("43% good-quality coverage")));
+  const fullyDocumented = scoreSiteMonth({
+    site,
+    month: { ...month, dataCompleteness: 1 },
+    climate: { ...climate(), gridDistanceKm: 0 },
+    darkness: darkness({ coverageOverrideUsed: true, coverage: 0.69 }),
+    dem: dem(),
+    config,
+  });
+  assert.equal(fullyDocumented.confidenceScore, 84);
+  assert.equal(fullyDocumented.confidenceLevel, "moderate");
+});
+
 test("site scoring emits 12 unique schema-valid months", () => {
   const months = scoreSite({ site, climate: climate(), darkness: darkness(), dem: dem(), config });
   const snapshot = { siteId: site.id, algorithmVersion: "site-score-1.0.0", generatedAt: "2026-08-20T00:00:00Z", months };

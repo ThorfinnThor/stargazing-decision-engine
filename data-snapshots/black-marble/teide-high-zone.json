@@ -1,0 +1,162 @@
+{
+  "siteId": "teide-high-zone",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": true,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 0.432836,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 0.58209,
+          "validPixelCount": 39,
+          "totalPixelCount": 67
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 0.686567,
+          "validPixelCount": 46,
+          "totalPixelCount": 67
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 0.432836,
+          "validPixelCount": 29,
+          "totalPixelCount": 67
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.023769,
+      "coverage": 0.985589,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.022552,
+          "coverage": 0.989975,
+          "validPixelCount": 1580,
+          "totalPixelCount": 1596
+        },
+        {
+          "year": 2024,
+          "radiance": 0.023769,
+          "coverage": 0.994987,
+          "validPixelCount": 1588,
+          "totalPixelCount": 1596
+        },
+        {
+          "year": 2023,
+          "radiance": 0.051105,
+          "coverage": 0.985589,
+          "validPixelCount": 1573,
+          "totalPixelCount": 1596
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 2.542733,
+      "coverage": 0.980581,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.542733,
+          "coverage": 0.984344,
+          "validPixelCount": 13078,
+          "totalPixelCount": 13286
+        },
+        {
+          "year": 2024,
+          "radiance": 2.532016,
+          "coverage": 0.982914,
+          "validPixelCount": 13059,
+          "totalPixelCount": 13286
+        },
+        {
+          "year": 2023,
+          "radiance": 2.584845,
+          "coverage": 0.980581,
+          "validPixelCount": 13028,
+          "totalPixelCount": 13286
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.319674,
+      "coverage": 0.996078,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.308009,
+          "coverage": 0.996715,
+          "validPixelCount": 78278,
+          "totalPixelCount": 78536
+        },
+        {
+          "year": 2024,
+          "radiance": 0.319674,
+          "coverage": 0.996422,
+          "validPixelCount": 78255,
+          "totalPixelCount": 78536
+        },
+        {
+          "year": 2023,
+          "radiance": 0.338383,
+          "coverage": 0.996078,
+          "validPixelCount": 78228,
+          "totalPixelCount": 78536
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.023769,
+  "radiance10to30": 2.542733,
+  "radiance30to75": 0.319674,
+  "alanExposure": 0.224521,
+  "darknessScore": 78.13,
+  "coverage": 0.432836,
+  "warnings": [
+    "0to2 minimum yearly coverage is 0.432836",
+    "Low-coverage override used: 0.432836 is below 0.7",
+    "Reviewed 2026-08-22: The 0-2 km summit ring has 43% minimum yearly good-quality coverage but a zero median radiance in all three baseline years; every outer ring retains at least 98% coverage and stable non-null radiance."
+  ],
+  "retrievedAt": "2026-08-22T16:23:13.859359Z"
+}

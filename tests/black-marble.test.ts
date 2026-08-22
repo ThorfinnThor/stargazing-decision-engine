@@ -7,7 +7,7 @@ import { haversineKm } from "../lib/climate/era5/distance.js";
 import { ringForDistance, summarizeBlackMarbleYear } from "../lib/darkness/black-marble/rings.js";
 import { buildBlackMarbleSnapshot } from "../lib/darkness/black-marble/snapshot.js";
 import type { BlackMarbleConfig, BlackMarbleExtractedYear } from "../lib/darkness/black-marble/types.js";
-import { validateBlackMarbleSnapshot } from "../scripts/validate/validate-black-marble-snapshots.js";
+import { validateBlackMarbleConfig, validateBlackMarbleSnapshot } from "../scripts/validate/validate-black-marble-snapshots.js";
 
 const root = process.cwd();
 const config = JSON.parse(readFileSync(resolve(root, "data-config/sources/black-marble.json"), "utf8")) as BlackMarbleConfig;
@@ -104,4 +104,15 @@ test("low coverage and incomplete baselines require explicit overrides", () => {
 
 test("haversine sampling is approximately 111.2 km per equatorial degree", () => {
   assert.ok(Math.abs(haversineKm(0, 0, 0, 1) - 111.195) < 0.01);
+});
+
+test("reviewed coverage overrides require known unique sites and bounded floors", () => {
+  assert.deepEqual(validateBlackMarbleConfig(config, new Set(["teide-high-zone"])), []);
+  assert.ok(validateBlackMarbleConfig({
+    ...config,
+    coverageOverrides: [
+      ...config.coverageOverrides,
+      { ...config.coverageOverrides[0], minimumCoverage: config.coverageErrorMin },
+    ],
+  }, new Set(["teide-high-zone"])).some((error) => error.includes("unique")));
 });

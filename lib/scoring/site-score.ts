@@ -98,7 +98,12 @@ function calculateConfidence(options: {
     demAvailability: dem?.elevationM === null || !dem ? 0 : dem.coverage * 100,
     siteMetadata: metadataCompleteness(site),
   };
-  return weighted(Object.entries(components).map(([key, value]) => [value, config.weights.confidence[key as keyof typeof components]]));
+  const rawConfidence = weighted(
+    Object.entries(components).map(([key, value]) => [value, config.weights.confidence[key as keyof typeof components]]),
+  );
+  return darkness.coverageOverrideUsed
+    ? Math.min(rawConfidence, config.confidence.levels.highMinimum - 1)
+    : rawConfidence;
 }
 
 function zeroAstronomicalNightScore(options: {
@@ -207,6 +212,9 @@ export function scoreSiteMonth(options: {
   ];
   const caveats = ["Temperature comfort uses the monthly astronomical-night mean, not hourly utility"];
   if (!dem || dem.elevationM === null) caveats.push(elevation === null ? "Elevation unavailable; conservative zero elevation score used" : "Curated elevation fallback used; DEM confidence is zero");
+  if (darkness.coverageOverrideUsed) {
+    caveats.push(`Reviewed Black Marble coverage override used (${Math.round(darkness.coverage * 100)}% good-quality coverage); confidence is reduced`);
+  }
   if (site.accessScore === null) caveats.push("Access is unknown; trip-comfort climate weights were renormalized");
   if (level === "low") caveats.push("Low-confidence score must be excluded from unqualified top rankings");
 
