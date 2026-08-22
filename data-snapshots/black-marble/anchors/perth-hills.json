@@ -1,0 +1,158 @@
+{
+  "siteId": "perth-hills",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 1.964207,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.081818,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        },
+        {
+          "year": 2024,
+          "radiance": 1.920283,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        },
+        {
+          "year": 2023,
+          "radiance": 1.964207,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 12.061229,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 12.937573,
+          "coverage": 1,
+          "validPixelCount": 1652,
+          "totalPixelCount": 1652
+        },
+        {
+          "year": 2024,
+          "radiance": 12.061229,
+          "coverage": 1,
+          "validPixelCount": 1652,
+          "totalPixelCount": 1652
+        },
+        {
+          "year": 2023,
+          "radiance": 11.452584,
+          "coverage": 1,
+          "validPixelCount": 1652,
+          "totalPixelCount": 1652
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 9.120763,
+      "coverage": 0.999928,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 9.426588,
+          "coverage": 0.999928,
+          "validPixelCount": 13793,
+          "totalPixelCount": 13794
+        },
+        {
+          "year": 2024,
+          "radiance": 9.120763,
+          "coverage": 1,
+          "validPixelCount": 13794,
+          "totalPixelCount": 13794
+        },
+        {
+          "year": 2023,
+          "radiance": 8.720813,
+          "coverage": 0.999928,
+          "validPixelCount": 13793,
+          "totalPixelCount": 13794
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.922814,
+      "coverage": 0.99405,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.970432,
+          "coverage": 0.994504,
+          "validPixelCount": 81065,
+          "totalPixelCount": 81513
+        },
+        {
+          "year": 2024,
+          "radiance": 0.922814,
+          "coverage": 0.995154,
+          "validPixelCount": 81118,
+          "totalPixelCount": 81513
+        },
+        {
+          "year": 2023,
+          "radiance": 0.891585,
+          "coverage": 0.99405,
+          "validPixelCount": 81028,
+          "totalPixelCount": 81513
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 1.964207,
+  "radiance2to10": 12.061229,
+  "radiance10to30": 9.120763,
+  "radiance30to75": 0.922814,
+  "alanExposure": 1.672436,
+  "darknessScore": null,
+  "coverage": 0.99405,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T14:04:41.331591Z"
+}
