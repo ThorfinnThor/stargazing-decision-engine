@@ -17,6 +17,7 @@ from black_marble_target import resolve_target
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW_ROOT = ROOT / "raw-downloads" / "black-marble"
+_EARTHACCESS = None
 
 
 def load_json(path: Path):
@@ -43,6 +44,22 @@ def retry_network(label: str, operation, attempts: int = 4, initial_delay_second
             sleeper(delay)
 
 
+def earthdata_client():
+    """Authenticate once and reuse the Earthdata client for a batch."""
+    global _EARTHACCESS
+    if _EARTHACCESS is not None:
+        return _EARTHACCESS
+    if not os.environ.get("EARTHDATA_TOKEN"):
+        raise SystemExit("EARTHDATA_TOKEN is required for a Black Marble cache miss.")
+    try:
+        import earthaccess  # type: ignore
+    except ImportError as error:
+        raise SystemExit("Install requirements-data.txt before Black Marble retrieval.") from error
+    retry_network("Earthdata login", lambda: earthaccess.login(strategy="environment"))
+    _EARTHACCESS = earthaccess
+    return _EARTHACCESS
+
+
 def retrieve(site_slug: str, target_kind: str = "site") -> None:
     config = load_json(ROOT / "data-config" / "sources" / "black-marble.json")
     site = resolve_target(ROOT, site_slug, target_kind)
@@ -63,16 +80,9 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             print(f"Black Marble extracted cache hit for {site_slug}: {len(extracted_files)} year file(s).")
             return
 
-    if not os.environ.get("EARTHDATA_TOKEN"):
-        raise SystemExit("EARTHDATA_TOKEN is required for a Black Marble cache miss.")
-    try:
-        import earthaccess  # type: ignore
-    except ImportError as error:
-        raise SystemExit("Install requirements-data.txt before Black Marble retrieval.") from error
-
     bounds = site_bounding_box(site["lat"], site["lon"], config["maxRadiusKm"])
     tiles = set(required_tiles(bounds))
-    retry_network("Earthdata login", lambda: earthaccess.login(strategy="environment"))
+    earthaccess = earthdata_client()
     selected_by_year: dict[int, list] = {}
     first_candidate_year = datetime.now(timezone.utc).year - 1
 
@@ -145,5 +155,13 @@ if __name__ == "__main__":
     targets = parser.add_mutually_exclusive_group(required=True)
     targets.add_argument("--site", help="Observation-site slug")
     targets.add_argument("--anchor", help="Darkness calibration-anchor id")
+    targets.add_argument("--anchors-file", type=Path, help="One darkness calibration-anchor id per line")
     args = parser.parse_args()
-    retrieve(args.site or args.anchor, "site" if args.site else "anchor")
+    if args.anchors_file:
+        anchors = [line.strip() for line in args.anchors_file.read_text(encoding="utf-8").splitlines() if line.strip()]
+        if not anchors:
+            raise SystemExit("Anchor file is empty.")
+        for anchor in anchors:
+            retrieve(anchor, "anchor")
+    else:
+        retrieve(args.site or args.anchor, "site" if args.site else "anchor")

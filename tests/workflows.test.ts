@@ -41,6 +41,7 @@ test("darkness calibration retrieval is manual and approval-gated", () => {
   assertIncludes(calibration, "all-candidates");
   assertIncludes(calibration, ".status == \"approved\"");
   assertIncludes(calibration, "[.anchors[].operatorApproved] | all");
+  assertIncludes(calibration, "fetch_black_marble.py --anchors-file /tmp/darkness-anchors");
   assertIncludes(calibration, "pnpm data:darkness:calibrate");
   assertIncludes(calibration, "pnpm data:rebuild");
   assertIncludes(calibration, "git add -- data-snapshots/black-marble/anchors data-config/scoring/darkness.json");
