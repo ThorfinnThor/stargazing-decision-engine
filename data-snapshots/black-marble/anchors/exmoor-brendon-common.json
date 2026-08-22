@@ -1,0 +1,158 @@
+{
+  "siteId": "exmoor-brendon-common",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.141654,
+      "coverage": 0.987936,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.141654,
+          "coverage": 0.99017,
+          "validPixelCount": 2216,
+          "totalPixelCount": 2238
+        },
+        {
+          "year": 2024,
+          "radiance": 0.130166,
+          "coverage": 0.989276,
+          "validPixelCount": 2214,
+          "totalPixelCount": 2238
+        },
+        {
+          "year": 2023,
+          "radiance": 0.142901,
+          "coverage": 0.987936,
+          "validPixelCount": 2211,
+          "totalPixelCount": 2238
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.41038,
+      "coverage": 0.976354,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.442961,
+          "coverage": 0.981072,
+          "validPixelCount": 18297,
+          "totalPixelCount": 18650
+        },
+        {
+          "year": 2024,
+          "radiance": 0.392011,
+          "coverage": 0.976354,
+          "validPixelCount": 18209,
+          "totalPixelCount": 18650
+        },
+        {
+          "year": 2023,
+          "radiance": 0.41038,
+          "coverage": 0.979035,
+          "validPixelCount": 18259,
+          "totalPixelCount": 18650
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.192141,
+      "coverage": 0.91931,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.20627,
+          "coverage": 0.93293,
+          "validPixelCount": 102808,
+          "totalPixelCount": 110199
+        },
+        {
+          "year": 2024,
+          "radiance": 1.127796,
+          "coverage": 0.91931,
+          "validPixelCount": 101307,
+          "totalPixelCount": 110199
+        },
+        {
+          "year": 2023,
+          "radiance": 1.192141,
+          "coverage": 0.925281,
+          "validPixelCount": 101965,
+          "totalPixelCount": 110199
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.141654,
+  "radiance10to30": 0.41038,
+  "radiance30to75": 1.192141,
+  "alanExposure": 0.16981,
+  "darknessScore": null,
+  "coverage": 0.91931,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T10:09:06.305458Z"
+}
