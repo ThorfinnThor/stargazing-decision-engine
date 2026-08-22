@@ -1,0 +1,158 @@
+{
+  "siteId": "northumberland-kielder",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.001975,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000432,
+          "coverage": 1,
+          "validPixelCount": 2463,
+          "totalPixelCount": 2463
+        },
+        {
+          "year": 2024,
+          "radiance": 0.001975,
+          "coverage": 1,
+          "validPixelCount": 2463,
+          "totalPixelCount": 2463
+        },
+        {
+          "year": 2023,
+          "radiance": 0.006824,
+          "coverage": 1,
+          "validPixelCount": 2463,
+          "totalPixelCount": 2463
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.034034,
+      "coverage": 0.995567,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.031876,
+          "coverage": 0.995567,
+          "validPixelCount": 20435,
+          "totalPixelCount": 20526
+        },
+        {
+          "year": 2024,
+          "radiance": 0.034034,
+          "coverage": 0.995761,
+          "validPixelCount": 20439,
+          "totalPixelCount": 20526
+        },
+        {
+          "year": 2023,
+          "radiance": 0.053353,
+          "coverage": 0.995615,
+          "validPixelCount": 20436,
+          "totalPixelCount": 20526
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.554263,
+      "coverage": 0.969823,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.554263,
+          "coverage": 0.97172,
+          "validPixelCount": 117821,
+          "totalPixelCount": 121250
+        },
+        {
+          "year": 2024,
+          "radiance": 0.536319,
+          "coverage": 0.970334,
+          "validPixelCount": 117653,
+          "totalPixelCount": 121250
+        },
+        {
+          "year": 2023,
+          "radiance": 0.582588,
+          "coverage": 0.969823,
+          "validPixelCount": 117591,
+          "totalPixelCount": 121250
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.001975,
+  "radiance10to30": 0.034034,
+  "radiance30to75": 0.554263,
+  "alanExposure": 0.049712,
+  "darknessScore": null,
+  "coverage": 0.969823,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T09:59:54.831158Z"
+}

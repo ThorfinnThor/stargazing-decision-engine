@@ -1,0 +1,158 @@
+{
+  "siteId": "central-idaho-sawtooth",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 82,
+          "totalPixelCount": 82
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 82,
+          "totalPixelCount": 82
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 82,
+          "totalPixelCount": 82
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.006109,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.006109,
+          "coverage": 1,
+          "validPixelCount": 1951,
+          "totalPixelCount": 1951
+        },
+        {
+          "year": 2024,
+          "radiance": 0.00442,
+          "coverage": 1,
+          "validPixelCount": 1951,
+          "totalPixelCount": 1951
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007949,
+          "coverage": 1,
+          "validPixelCount": 1951,
+          "totalPixelCount": 1951
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.000098,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000098,
+          "coverage": 1,
+          "validPixelCount": 16318,
+          "totalPixelCount": 16318
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 16318,
+          "totalPixelCount": 16318
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000198,
+          "coverage": 1,
+          "validPixelCount": 16318,
+          "totalPixelCount": 16318
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.007543,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.009062,
+          "coverage": 1,
+          "validPixelCount": 96368,
+          "totalPixelCount": 96368
+        },
+        {
+          "year": 2024,
+          "radiance": 0.007193,
+          "coverage": 1,
+          "validPixelCount": 96368,
+          "totalPixelCount": 96368
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007543,
+          "coverage": 1,
+          "validPixelCount": 96368,
+          "totalPixelCount": 96368
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.006109,
+  "radiance10to30": 0.000098,
+  "radiance30to75": 0.007543,
+  "alanExposure": 0.002593,
+  "darknessScore": null,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-22T09:59:03.071459Z"
+}
