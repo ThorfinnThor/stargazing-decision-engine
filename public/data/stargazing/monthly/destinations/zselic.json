@@ -1,73 +1,73 @@
 {
   "destinationId": "zselic",
   "siteId": "zselic-starry-sky",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-23T13:24:13.433811Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero"
   ],
   "months": [
     {
       "month": 1,
-      "score": 60.03,
-      "confidenceLevel": "low"
+      "score": 63,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 60.44,
-      "confidenceLevel": "low"
+      "score": 69,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 61.59,
-      "confidenceLevel": "low"
+      "score": 75,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 63.15,
-      "confidenceLevel": "low"
+      "score": 75,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 64.71,
-      "confidenceLevel": "low"
+      "score": 71,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 65.86,
-      "confidenceLevel": "low"
+      "score": 70,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 66.28,
-      "confidenceLevel": "low"
+      "score": 76,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 65.86,
-      "confidenceLevel": "low"
+      "score": 80,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 64.71,
-      "confidenceLevel": "low"
+      "score": 77,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 63.15,
-      "confidenceLevel": "low"
+      "score": 74,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 61.59,
-      "confidenceLevel": "low"
+      "score": 64,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 60.44,
-      "confidenceLevel": "low"
+      "score": 62,
+      "confidenceLevel": "high"
     }
   ]
 }

@@ -1,73 +1,74 @@
 {
   "destinationId": "elan-valley",
   "siteId": "elan-valley-reservoir",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-23T13:21:06.710695Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero",
+    "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
     {
       "month": 1,
-      "score": 52.48,
-      "confidenceLevel": "low"
+      "score": 52,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 52.89,
-      "confidenceLevel": "low"
+      "score": 55,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 54.04,
-      "confidenceLevel": "low"
+      "score": 55,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 55.6,
-      "confidenceLevel": "low"
+      "score": 59,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 57.16,
-      "confidenceLevel": "low"
+      "score": 55,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 58.31,
-      "confidenceLevel": "low"
+      "score": 0,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 58.73,
-      "confidenceLevel": "low"
+      "score": 53,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 58.31,
-      "confidenceLevel": "low"
+      "score": 54,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 57.16,
-      "confidenceLevel": "low"
+      "score": 57,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 55.6,
-      "confidenceLevel": "low"
+      "score": 54,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 54.04,
-      "confidenceLevel": "low"
+      "score": 53,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 52.89,
-      "confidenceLevel": "low"
+      "score": 52,
+      "confidenceLevel": "high"
     }
   ]
 }
