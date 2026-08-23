@@ -1,0 +1,158 @@
+{
+  "siteId": "elqui-paihuano",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 68,
+          "totalPixelCount": 68
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 68,
+          "totalPixelCount": 68
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 68,
+          "totalPixelCount": 68
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.088867,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.096939,
+          "coverage": 1,
+          "validPixelCount": 1620,
+          "totalPixelCount": 1620
+        },
+        {
+          "year": 2024,
+          "radiance": 0.088867,
+          "coverage": 1,
+          "validPixelCount": 1620,
+          "totalPixelCount": 1620
+        },
+        {
+          "year": 2023,
+          "radiance": 0.07583,
+          "coverage": 1,
+          "validPixelCount": 1620,
+          "totalPixelCount": 1620
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.106589,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.111443,
+          "coverage": 1,
+          "validPixelCount": 13515,
+          "totalPixelCount": 13515
+        },
+        {
+          "year": 2024,
+          "radiance": 0.106589,
+          "coverage": 1,
+          "validPixelCount": 13515,
+          "totalPixelCount": 13515
+        },
+        {
+          "year": 2023,
+          "radiance": 0.102817,
+          "coverage": 1,
+          "validPixelCount": 13515,
+          "totalPixelCount": 13515
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.33537,
+      "coverage": 0.997772,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.3515,
+          "coverage": 0.997772,
+          "validPixelCount": 79707,
+          "totalPixelCount": 79885
+        },
+        {
+          "year": 2024,
+          "radiance": 0.330315,
+          "coverage": 0.998798,
+          "validPixelCount": 79789,
+          "totalPixelCount": 79885
+        },
+        {
+          "year": 2023,
+          "radiance": 0.33537,
+          "coverage": 0.998047,
+          "validPixelCount": 79729,
+          "totalPixelCount": 79885
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.088867,
+  "radiance10to30": 0.106589,
+  "radiance30to75": 0.33537,
+  "alanExposure": 0.069655,
+  "darknessScore": 86.61,
+  "coverage": 0.997772,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T12:59:16.580309Z"
+}

@@ -1,73 +1,73 @@
 {
   "destinationId": "elqui-valley",
   "siteId": "elqui-paihuano",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-23T12:59:16.580309Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero"
   ],
   "months": [
     {
       "month": 1,
-      "score": 85.07,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 85.49,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 86.64,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 88.2,
-      "confidenceLevel": "low"
+      "score": 93,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 89.76,
-      "confidenceLevel": "low"
+      "score": 86,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 90.91,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 91.32,
-      "confidenceLevel": "low"
+      "score": 85,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 90.91,
-      "confidenceLevel": "low"
+      "score": 87,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 89.76,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 88.2,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 86.64,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 85.49,
-      "confidenceLevel": "low"
+      "score": 94,
+      "confidenceLevel": "high"
     }
   ]
 }
