@@ -7,6 +7,206 @@
   "entries": [
     {
       "rank": 1,
+      "destinationId": "cederberg",
+      "destinationSlug": "cederberg",
+      "destinationName": "Cederberg Wilderness",
+      "distanceKm": 185.16,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 86.28
+        },
+        {
+          "month": 6,
+          "score": 85.86
+        },
+        {
+          "month": 8,
+          "score": 85.86
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 80.03,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 80.44,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 81.59,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 83.15,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 84.71,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 85.86,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 86.28,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 85.86,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 84.71,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 83.15,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 81.59,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 80.44,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 86.28,
+      "distanceUtility": 85,
+      "shortTripScore": 85.96,
+      "bestSiteId": "cederberg-dark-sky",
+      "stayArea": {
+        "id": "clanwilliam",
+        "name": "Clanwilliam",
+        "affiliateQuery": "Clanwilliam Cederberg"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 86.28 in month 7.",
+        "Distance is 185.16 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Clanwilliam."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 2,
+      "destinationId": "sutherland",
+      "destinationSlug": "sutherland",
+      "destinationName": "Sutherland",
+      "distanceKm": 280.78,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 90.5
+        },
+        {
+          "month": 6,
+          "score": 90.08
+        },
+        {
+          "month": 8,
+          "score": 90.08
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 84.25,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 84.67,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 85.81,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 87.38,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 88.94,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 90.08,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 90.5,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 90.08,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 88.94,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 87.38,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 85.81,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 84.67,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 90.5,
+      "distanceUtility": 60,
+      "shortTripScore": 82.88,
+      "bestSiteId": "sutherland-observatory",
+      "stayArea": {
+        "id": "sutherland-town",
+        "name": "Sutherland town",
+        "affiliateQuery": "Sutherland Northern Cape"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 90.5 in month 7.",
+        "Distance is 280.78 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Sutherland town."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 3,
       "destinationId": "witsand",
       "destinationSlug": "witsand",
       "destinationName": "Witsand",

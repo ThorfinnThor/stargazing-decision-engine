@@ -7,6 +7,106 @@
   "entries": [
     {
       "rank": 1,
+      "destinationId": "sierra-nevada",
+      "destinationSlug": "sierra-nevada",
+      "destinationName": "Sierra Nevada",
+      "distanceKm": 374.31,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 84.03
+        },
+        {
+          "month": 6,
+          "score": 83.61
+        },
+        {
+          "month": 8,
+          "score": 83.61
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 77.78,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 78.19,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 79.34,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 80.9,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 82.46,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 83.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 84.03,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 83.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 82.46,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 80.9,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 79.34,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 78.19,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 84.03,
+      "distanceUtility": 60,
+      "shortTripScore": 78.02,
+      "bestSiteId": "sierra-nevada-observatory",
+      "stayArea": {
+        "id": "capileira",
+        "name": "Capileira",
+        "affiliateQuery": "Capileira Sierra Nevada"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 84.03 in month 7.",
+        "Distance is 374.31 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Capileira."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 2,
       "destinationId": "alqueva",
       "destinationSlug": "alqueva",
       "destinationName": "Alqueva",
@@ -102,6 +202,106 @@
         "Best month score 80.83 in month 7.",
         "Distance is 388.62 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Monsaraz."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 3,
+      "destinationId": "montsec",
+      "destinationSlug": "montsec",
+      "destinationName": "Montsec",
+      "distanceKm": 413.66,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 78.03
+        },
+        {
+          "month": 6,
+          "score": 77.61
+        },
+        {
+          "month": 8,
+          "score": 77.61
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 71.78,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 72.19,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 73.34,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 74.9,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 76.46,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 77.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 78.03,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 77.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 76.46,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 74.9,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 73.34,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 72.19,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 78.03,
+      "distanceUtility": 60,
+      "shortTripScore": 73.52,
+      "bestSiteId": "montsec-observing-area",
+      "stayArea": {
+        "id": "ager",
+        "name": "Àger",
+        "affiliateQuery": "Ager Montsec"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 78.03 in month 7.",
+        "Distance is 413.66 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Àger."
       ],
       "confidenceLevel": "low"
     }

@@ -7,6 +7,206 @@
   "entries": [
     {
       "rank": 1,
+      "destinationId": "exmoor",
+      "destinationSlug": "exmoor",
+      "destinationName": "Exmoor National Park",
+      "distanceKm": 248.33,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 58.13
+        },
+        {
+          "month": 6,
+          "score": 57.71
+        },
+        {
+          "month": 8,
+          "score": 57.71
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 51.88,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 52.29,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 53.44,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 55,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 56.56,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 57.71,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 58.13,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 57.71,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 56.56,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 55,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 53.44,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 52.29,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 58.13,
+      "distanceUtility": 85,
+      "shortTripScore": 64.85,
+      "bestSiteId": "exmoor-dark-sky",
+      "stayArea": {
+        "id": "lynmouth",
+        "name": "Lynmouth",
+        "affiliateQuery": "Lynmouth Exmoor"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 58.13 in month 7.",
+        "Distance is 248.33 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Lynmouth."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 2,
+      "destinationId": "brecon-beacons",
+      "destinationSlug": "brecon-beacons",
+      "destinationName": "Bannau Brycheiniog",
+      "distanceKm": 231.34,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 57.7
+        },
+        {
+          "month": 6,
+          "score": 57.28
+        },
+        {
+          "month": 8,
+          "score": 57.28
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 51.45,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 51.87,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 53.01,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 54.58,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 56.14,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 57.28,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 57.7,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 57.28,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 56.14,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 54.58,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 53.01,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 51.87,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 57.7,
+      "distanceUtility": 85,
+      "shortTripScore": 64.53,
+      "bestSiteId": "brecon-dark-sky",
+      "stayArea": {
+        "id": "brecon-town",
+        "name": "Brecon",
+        "affiliateQuery": "Brecon Wales"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 57.7 in month 7.",
+        "Distance is 231.34 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Brecon."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 3,
       "destinationId": "elan-valley",
       "destinationSlug": "elan-valley",
       "destinationName": "Elan Valley",
@@ -106,7 +306,7 @@
       "confidenceLevel": "low"
     },
     {
-      "rank": 2,
+      "rank": 4,
       "destinationId": "north-york-moors",
       "destinationSlug": "north-york-moors",
       "destinationName": "North York Moors",

@@ -1,0 +1,158 @@
+{
+  "siteId": "central-tasmania-dark-sky",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1872,
+          "totalPixelCount": 1872
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1872,
+          "totalPixelCount": 1872
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1872,
+          "totalPixelCount": 1872
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.000389,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000339,
+          "coverage": 1,
+          "validPixelCount": 15716,
+          "totalPixelCount": 15716
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000389,
+          "coverage": 1,
+          "validPixelCount": 15716,
+          "totalPixelCount": 15716
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000546,
+          "coverage": 1,
+          "validPixelCount": 15716,
+          "totalPixelCount": 15716
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.119238,
+      "coverage": 0.999871,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.128811,
+          "coverage": 0.999903,
+          "validPixelCount": 92761,
+          "totalPixelCount": 92770
+        },
+        {
+          "year": 2024,
+          "radiance": 0.119238,
+          "coverage": 0.999871,
+          "validPixelCount": 92758,
+          "totalPixelCount": 92770
+        },
+        {
+          "year": 2023,
+          "radiance": 0.115768,
+          "coverage": 0.999871,
+          "validPixelCount": 92758,
+          "totalPixelCount": 92770
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0.000389,
+  "radiance30to75": 0.119238,
+  "alanExposure": 0.011323,
+  "darknessScore": 89.8,
+  "coverage": 0.999871,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T13:52:09.159688Z"
+}

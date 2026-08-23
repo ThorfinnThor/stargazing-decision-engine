@@ -7,6 +7,206 @@
   "entries": [
     {
       "rank": 1,
+      "destinationId": "el-leoncito",
+      "destinationSlug": "el-leoncito",
+      "destinationName": "El Leoncito",
+      "distanceKm": 223.74,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 90.8
+        },
+        {
+          "month": 6,
+          "score": 90.38
+        },
+        {
+          "month": 8,
+          "score": 90.38
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 84.55,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 84.97,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 86.11,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 87.68,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 89.24,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 90.38,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 90.8,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 90.38,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 89.24,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 87.68,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 86.11,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 84.97,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 90.8,
+      "distanceUtility": 85,
+      "shortTripScore": 89.35,
+      "bestSiteId": "el-leoncito-observatory",
+      "stayArea": {
+        "id": "barreal",
+        "name": "Barreal",
+        "affiliateQuery": "Barreal Argentina"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 90.8 in month 7.",
+        "Distance is 223.74 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Barreal."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 2,
+      "destinationId": "la-silla",
+      "destinationSlug": "la-silla",
+      "destinationName": "La Silla Observatory",
+      "distanceKm": 465.82,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 92.83
+        },
+        {
+          "month": 6,
+          "score": 92.47
+        },
+        {
+          "month": 8,
+          "score": 92.47
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 86.7,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 87.12,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 88.26,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 89.82,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 91.39,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 92.47,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 92.83,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 92.47,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 91.39,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 89.82,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 88.26,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 87.12,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 92.83,
+      "distanceUtility": 60,
+      "shortTripScore": 84.62,
+      "bestSiteId": "la-silla-observatory",
+      "stayArea": {
+        "id": "vicuna",
+        "name": "Vicuña",
+        "affiliateQuery": "Vicuna Chile"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 92.83 in month 7.",
+        "Distance is 465.82 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Vicuña."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 3,
       "destinationId": "elqui-valley",
       "destinationSlug": "elqui-valley",
       "destinationName": "Elqui Valley",

@@ -1,0 +1,33 @@
+{
+  "destinationId": "exmoor",
+  "siteId": "exmoor-dark-sky",
+  "bestSiteId": "exmoor-dark-sky",
+  "year": 2026,
+  "month": 4,
+  "algorithmVersion": "seed-fixture-calendar-0.2.0",
+  "astronomyEngineVersion": "synthetic-seed",
+  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "nights": [
+    {
+      "darknessRank": 1,
+      "dateLocal": "2026-04-15",
+      "timezone": "Europe/London",
+      "astronomicalDusk": "2026-04-15T20:00:00+01:00",
+      "astronomicalDawn": "2026-04-16T05:00:00+01:00",
+      "moonIlluminationFraction": 0.548,
+      "moonPhaseAngleDeg": 16,
+      "moonRiseLocal": null,
+      "moonSetLocal": null,
+      "moonAltitudeMaxDeg": -12,
+      "moonAboveHorizonDarkHours": 3.42,
+      "moonBelowHorizonDarkHours": 5.58,
+      "moonlessHours": 5.58,
+      "totalDarknessHours": 9,
+      "calendarDarknessScore": 72,
+      "milkyWayUsefulHours": 4.5,
+      "milkyWayStrongHours": 3.15,
+      "galacticCenterAltitudeMaxDeg": 24,
+      "milkyWayOpportunityScore": 72
+    }
+  ]
+}

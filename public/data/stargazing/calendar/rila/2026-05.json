@@ -1,0 +1,33 @@
+{
+  "destinationId": "rila",
+  "siteId": "rila-dark-sky",
+  "bestSiteId": "rila-dark-sky",
+  "year": 2026,
+  "month": 5,
+  "algorithmVersion": "seed-fixture-calendar-0.2.0",
+  "astronomyEngineVersion": "synthetic-seed",
+  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "nights": [
+    {
+      "darknessRank": 1,
+      "dateLocal": "2026-05-15",
+      "timezone": "Europe/Sofia",
+      "astronomicalDusk": "2026-05-15T20:00:00+03:00",
+      "astronomicalDawn": "2026-05-16T05:00:00+03:00",
+      "moonIlluminationFraction": 0.685,
+      "moonPhaseAngleDeg": 65,
+      "moonRiseLocal": null,
+      "moonSetLocal": null,
+      "moonAltitudeMaxDeg": -10,
+      "moonAboveHorizonDarkHours": 3.04,
+      "moonBelowHorizonDarkHours": 4.96,
+      "moonlessHours": 4.96,
+      "totalDarknessHours": 8,
+      "calendarDarknessScore": 64,
+      "milkyWayUsefulHours": 4,
+      "milkyWayStrongHours": 2.8,
+      "galacticCenterAltitudeMaxDeg": 25,
+      "milkyWayOpportunityScore": 64
+    }
+  ]
+}

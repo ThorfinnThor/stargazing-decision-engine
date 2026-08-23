@@ -4,5 +4,206 @@
   "countryCode": "US",
   "maxShortTripKm": 500,
   "generatedAt": "2026-08-20T00:00:00.000Z",
-  "entries": []
+  "entries": [
+    {
+      "rank": 1,
+      "destinationId": "anza-borrego",
+      "destinationSlug": "anza-borrego",
+      "destinationName": "Anza-Borrego Desert",
+      "distanceKm": 192.56,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 90.98
+        },
+        {
+          "month": 6,
+          "score": 90.56
+        },
+        {
+          "month": 8,
+          "score": 90.56
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 84.73,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 85.14,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 86.29,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 87.85,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 89.41,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 90.56,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 90.98,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 90.56,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 89.41,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 87.85,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 86.29,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 85.14,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 90.98,
+      "distanceUtility": 85,
+      "shortTripScore": 89.49,
+      "bestSiteId": "anza-borrego-dark-sky",
+      "stayArea": {
+        "id": "borrego-springs",
+        "name": "Borrego Springs",
+        "affiliateQuery": "Borrego Springs"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 90.98 in month 7.",
+        "Distance is 192.56 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Borrego Springs."
+      ],
+      "confidenceLevel": "low"
+    },
+    {
+      "rank": 2,
+      "destinationId": "death-valley",
+      "destinationSlug": "death-valley",
+      "destinationName": "Death Valley",
+      "distanceKm": 300.2,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 93.3
+        },
+        {
+          "month": 6,
+          "score": 92.88
+        },
+        {
+          "month": 8,
+          "score": 92.88
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 87.05,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 2,
+          "score": 87.47,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 3,
+          "score": 88.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 4,
+          "score": 90.18,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 5,
+          "score": 91.74,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 6,
+          "score": 92.88,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 7,
+          "score": 93.3,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 8,
+          "score": 92.88,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 9,
+          "score": 91.74,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 10,
+          "score": 90.18,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 11,
+          "score": 88.61,
+          "confidenceLevel": "low"
+        },
+        {
+          "month": 12,
+          "score": 87.47,
+          "confidenceLevel": "low"
+        }
+      ],
+      "stargazingTripScore": 93.3,
+      "distanceUtility": 60,
+      "shortTripScore": 84.98,
+      "bestSiteId": "death-valley-dark-sky",
+      "stayArea": {
+        "id": "furnace-creek",
+        "name": "Furnace Creek",
+        "affiliateQuery": "Furnace Creek Death Valley"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 93.3 in month 7.",
+        "Distance is 300.2 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Furnace Creek."
+      ],
+      "confidenceLevel": "low"
+    }
+  ]
 }

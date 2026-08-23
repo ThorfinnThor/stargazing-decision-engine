@@ -56,6 +56,34 @@
     "affiliateQuery": "Alqueva Portugal"
   },
   {
+    "id": "anza-borrego",
+    "slug": "anza-borrego",
+    "name": "Anza-Borrego Desert",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "california",
+      "north-america"
+    ],
+    "timezone": "America/Los_Angeles",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "desert",
+      "dark-sky",
+      "dry",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "anza-borrego-dark-sky"
+    ],
+    "stayAreaIds": [
+      "borrego-springs"
+    ],
+    "affiliateQuery": "Anza-Borrego Desert stargazing"
+  },
+  {
     "id": "aoraki-mackenzie",
     "slug": "aoraki-mackenzie",
     "name": "Aoraki Mackenzie",
@@ -112,6 +140,34 @@
     "affiliateQuery": "Atacama Desert Chile"
   },
   {
+    "id": "bieszczady",
+    "slug": "bieszczady",
+    "name": "Bieszczady Starry Sky Park",
+    "countryCode": "PL",
+    "countryName": "Poland",
+    "continent": "europe",
+    "regionSlugs": [
+      "podkarpackie",
+      "europe"
+    ],
+    "timezone": "Europe/Warsaw",
+    "active": true,
+    "priority": 77,
+    "tags": [
+      "mountain",
+      "forest",
+      "dark-sky",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "bieszczady-dark-sky"
+    ],
+    "stayAreaIds": [
+      "ustrzyki-dolne"
+    ],
+    "affiliateQuery": "Bieszczady starry sky park Poland"
+  },
+  {
     "id": "big-bend",
     "slug": "big-bend",
     "name": "Big Bend",
@@ -140,6 +196,146 @@
     "affiliateQuery": "Big Bend National Park Texas"
   },
   {
+    "id": "brecon-beacons",
+    "slug": "brecon-beacons",
+    "name": "Bannau Brycheiniog",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "wales",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 79,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "accessible",
+      "maritime"
+    ],
+    "observationSiteIds": [
+      "brecon-dark-sky"
+    ],
+    "stayAreaIds": [
+      "brecon-town"
+    ],
+    "affiliateQuery": "Bannau Brycheiniog stargazing Wales"
+  },
+  {
+    "id": "canyonlands",
+    "slug": "canyonlands",
+    "name": "Canyonlands",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 91,
+    "tags": [
+      "desert",
+      "very-dark",
+      "canyon",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "canyonlands-dark-sky"
+    ],
+    "stayAreaIds": [
+      "moab"
+    ],
+    "affiliateQuery": "Canyonlands National Park stargazing"
+  },
+  {
+    "id": "cederberg",
+    "slug": "cederberg",
+    "name": "Cederberg Wilderness",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "western-cape",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 90,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "dry",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "cederberg-dark-sky"
+    ],
+    "stayAreaIds": [
+      "clanwilliam"
+    ],
+    "affiliateQuery": "Cederberg South Africa stargazing"
+  },
+  {
+    "id": "central-tasmania",
+    "slug": "central-tasmania",
+    "name": "Central Tasmania",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "continent": "oceania",
+    "regionSlugs": [
+      "tasmania",
+      "oceania"
+    ],
+    "timezone": "Australia/Hobart",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "mountain",
+      "southern-sky",
+      "dark-sky",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "central-tasmania-dark-sky"
+    ],
+    "stayAreaIds": [
+      "deloraine"
+    ],
+    "affiliateQuery": "Central Tasmania stargazing"
+  },
+  {
+    "id": "cerro-paranal",
+    "slug": "cerro-paranal",
+    "name": "Cerro Paranal",
+    "countryCode": "CL",
+    "countryName": "Chile",
+    "continent": "south-america",
+    "regionSlugs": [
+      "antofagasta",
+      "south-america"
+    ],
+    "timezone": "America/Santiago",
+    "active": true,
+    "priority": 96,
+    "tags": [
+      "desert",
+      "observatory",
+      "very-dark",
+      "high-altitude"
+    ],
+    "observationSiteIds": [
+      "cerro-paranal-observatory"
+    ],
+    "stayAreaIds": [
+      "antofagasta"
+    ],
+    "affiliateQuery": "Cerro Paranal Chile observatory"
+  },
+  {
     "id": "cherry-springs",
     "slug": "cherry-springs",
     "name": "Cherry Springs",
@@ -166,6 +362,90 @@
       "cherry-springs-town"
     ],
     "affiliateQuery": "Cherry Springs Pennsylvania"
+  },
+  {
+    "id": "death-valley",
+    "slug": "death-valley",
+    "name": "Death Valley",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "california",
+      "north-america"
+    ],
+    "timezone": "America/Los_Angeles",
+    "active": true,
+    "priority": 94,
+    "tags": [
+      "desert",
+      "very-dark",
+      "dry",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "death-valley-dark-sky"
+    ],
+    "stayAreaIds": [
+      "furnace-creek"
+    ],
+    "affiliateQuery": "Death Valley stargazing"
+  },
+  {
+    "id": "eifel",
+    "slug": "eifel",
+    "name": "Eifel Dark Sky Park",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "continent": "europe",
+    "regionSlugs": [
+      "north-rhine-westphalia",
+      "europe"
+    ],
+    "timezone": "Europe/Berlin",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "forest",
+      "dark-sky",
+      "volcanic",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "eifel-dark-sky"
+    ],
+    "stayAreaIds": [
+      "schleiden"
+    ],
+    "affiliateQuery": "Eifel dark sky park Germany"
+  },
+  {
+    "id": "el-leoncito",
+    "slug": "el-leoncito",
+    "name": "El Leoncito",
+    "countryCode": "AR",
+    "countryName": "Argentina",
+    "continent": "south-america",
+    "regionSlugs": [
+      "san-juan",
+      "south-america"
+    ],
+    "timezone": "America/Argentina/San_Juan",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "desert",
+      "observatory",
+      "very-dark",
+      "high-altitude"
+    ],
+    "observationSiteIds": [
+      "el-leoncito-observatory"
+    ],
+    "stayAreaIds": [
+      "barreal"
+    ],
+    "affiliateQuery": "El Leoncito Argentina observatory"
   },
   {
     "id": "elan-valley",
@@ -224,6 +504,34 @@
     "affiliateQuery": "Elqui Valley Chile stargazing"
   },
   {
+    "id": "exmoor",
+    "slug": "exmoor",
+    "name": "Exmoor National Park",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "south-west-england",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 81,
+    "tags": [
+      "coastal",
+      "dark-sky",
+      "accessible",
+      "maritime"
+    ],
+    "observationSiteIds": [
+      "exmoor-dark-sky"
+    ],
+    "stayAreaIds": [
+      "lynmouth"
+    ],
+    "affiliateQuery": "Exmoor National Park stargazing"
+  },
+  {
     "id": "galloway",
     "slug": "galloway",
     "name": "Galloway Forest",
@@ -249,6 +557,62 @@
       "cairnsmore"
     ],
     "affiliateQuery": "Galloway Forest Scotland"
+  },
+  {
+    "id": "gobi",
+    "slug": "gobi",
+    "name": "Gobi Desert",
+    "countryCode": "MN",
+    "countryName": "Mongolia",
+    "continent": "asia",
+    "regionSlugs": [
+      "umnugovi",
+      "asia"
+    ],
+    "timezone": "Asia/Ulaanbaatar",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "desert",
+      "very-dark",
+      "remote",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "gobi-dark-sky"
+    ],
+    "stayAreaIds": [
+      "dalanzadgad"
+    ],
+    "affiliateQuery": "Gobi Desert Mongolia stargazing"
+  },
+  {
+    "id": "grasslands",
+    "slug": "grasslands",
+    "name": "Grasslands National Park",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "continent": "north-america",
+    "regionSlugs": [
+      "saskatchewan",
+      "north-america"
+    ],
+    "timezone": "America/Regina",
+    "active": true,
+    "priority": 83,
+    "tags": [
+      "prairie",
+      "dark-sky",
+      "remote",
+      "cold"
+    ],
+    "observationSiteIds": [
+      "grasslands-dark-sky"
+    ],
+    "stayAreaIds": [
+      "val-marie"
+    ],
+    "affiliateQuery": "Grasslands National Park stargazing"
   },
   {
     "id": "great-basin",
@@ -277,6 +641,34 @@
       "great-basin-baker"
     ],
     "affiliateQuery": "Great Basin National Park Nevada"
+  },
+  {
+    "id": "great-sand-dunes",
+    "slug": "great-sand-dunes",
+    "name": "Great Sand Dunes",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "colorado",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 87,
+    "tags": [
+      "desert",
+      "dark-sky",
+      "high-altitude",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "great-sand-dunes-dark-sky"
+    ],
+    "stayAreaIds": [
+      "mosca"
+    ],
+    "affiliateQuery": "Great Sand Dunes National Park stargazing"
   },
   {
     "id": "hanle",
@@ -363,6 +755,34 @@
     "affiliateQuery": "Jasper National Park Canada"
   },
   {
+    "id": "kalahari",
+    "slug": "kalahari",
+    "name": "Kalahari Desert",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "northern-cape",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 89,
+    "tags": [
+      "desert",
+      "very-dark",
+      "dry",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "kalahari-dark-sky"
+    ],
+    "stayAreaIds": [
+      "kgalagadi"
+    ],
+    "affiliateQuery": "Kalahari South Africa stargazing"
+  },
+  {
     "id": "kerry",
     "slug": "kerry",
     "name": "Kerry International Dark Sky Reserve",
@@ -389,6 +809,34 @@
       "caherdaniel"
     ],
     "affiliateQuery": "Kerry International Dark Sky Reserve Ireland"
+  },
+  {
+    "id": "kielder",
+    "slug": "kielder",
+    "name": "Kielder Forest",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "northumberland",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 80,
+    "tags": [
+      "forest",
+      "dark-sky",
+      "lake",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "kielder-dark-sky"
+    ],
+    "stayAreaIds": [
+      "kielder-village"
+    ],
+    "affiliateQuery": "Kielder Forest stargazing"
   },
   {
     "id": "kitt-peak",
@@ -447,6 +895,34 @@
     "affiliateQuery": "La Palma Spain"
   },
   {
+    "id": "la-silla",
+    "slug": "la-silla",
+    "name": "La Silla Observatory",
+    "countryCode": "CL",
+    "countryName": "Chile",
+    "continent": "south-america",
+    "regionSlugs": [
+      "coquimbo",
+      "south-america"
+    ],
+    "timezone": "America/Santiago",
+    "active": true,
+    "priority": 95,
+    "tags": [
+      "desert",
+      "observatory",
+      "very-dark",
+      "high-altitude"
+    ],
+    "observationSiteIds": [
+      "la-silla-observatory"
+    ],
+    "stayAreaIds": [
+      "vicuna"
+    ],
+    "affiliateQuery": "La Silla Observatory Chile"
+  },
+  {
     "id": "mauna-kea",
     "slug": "mauna-kea",
     "name": "Mauna Kea",
@@ -473,6 +949,90 @@
       "mauna-kea-waimea"
     ],
     "affiliateQuery": "Mauna Kea Hawaii stargazing"
+  },
+  {
+    "id": "mcdonald-observatory",
+    "slug": "mcdonald-observatory",
+    "name": "McDonald Observatory",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "texas",
+      "north-america"
+    ],
+    "timezone": "America/Chicago",
+    "active": true,
+    "priority": 90,
+    "tags": [
+      "mountain",
+      "observatory",
+      "dark-sky",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "mcdonald-observatory"
+    ],
+    "stayAreaIds": [
+      "fort-davis"
+    ],
+    "affiliateQuery": "McDonald Observatory Texas stargazing"
+  },
+  {
+    "id": "mont-megantic",
+    "slug": "mont-megantic",
+    "name": "Mont-Mégantic",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "continent": "north-america",
+    "regionSlugs": [
+      "quebec",
+      "north-america"
+    ],
+    "timezone": "America/Toronto",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "mountain",
+      "forest",
+      "dark-sky",
+      "cold"
+    ],
+    "observationSiteIds": [
+      "mont-megantic-observatory"
+    ],
+    "stayAreaIds": [
+      "notre-dame-des-bois"
+    ],
+    "affiliateQuery": "Mont-Mégantic dark sky reserve"
+  },
+  {
+    "id": "montsec",
+    "slug": "montsec",
+    "name": "Montsec",
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "continent": "europe",
+    "regionSlugs": [
+      "catalonia",
+      "europe"
+    ],
+    "timezone": "Europe/Madrid",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "observatory",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "montsec-observing-area"
+    ],
+    "stayAreaIds": [
+      "ager"
+    ],
+    "affiliateQuery": "Montsec Astronomical Park Spain"
   },
   {
     "id": "namibrand",
@@ -503,6 +1063,34 @@
     "affiliateQuery": "NamibRand Nature Reserve Namibia"
   },
   {
+    "id": "natural-bridges",
+    "slug": "natural-bridges",
+    "name": "Natural Bridges",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 89,
+    "tags": [
+      "desert",
+      "very-dark",
+      "canyon",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "natural-bridges-dark-sky"
+    ],
+    "stayAreaIds": [
+      "blanding"
+    ],
+    "affiliateQuery": "Natural Bridges National Monument stargazing"
+  },
+  {
     "id": "north-york-moors",
     "slug": "north-york-moors",
     "name": "North York Moors",
@@ -529,6 +1117,118 @@
       "dalby-village"
     ],
     "affiliateQuery": "North York Moors stargazing"
+  },
+  {
+    "id": "pico-do-arieiro",
+    "slug": "pico-do-arieiro",
+    "name": "Pico do Arieiro",
+    "countryCode": "PT",
+    "countryName": "Portugal",
+    "continent": "europe",
+    "regionSlugs": [
+      "madeira",
+      "europe"
+    ],
+    "timezone": "Europe/Lisbon",
+    "active": true,
+    "priority": 78,
+    "tags": [
+      "mountain",
+      "island",
+      "dark-sky",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "pico-arieiro-observing-area"
+    ],
+    "stayAreaIds": [
+      "funchal"
+    ],
+    "affiliateQuery": "Pico do Arieiro Madeira stargazing"
+  },
+  {
+    "id": "rila",
+    "slug": "rila",
+    "name": "Rila Mountains",
+    "countryCode": "BG",
+    "countryName": "Bulgaria",
+    "continent": "europe",
+    "regionSlugs": [
+      "rila",
+      "europe"
+    ],
+    "timezone": "Europe/Sofia",
+    "active": true,
+    "priority": 80,
+    "tags": [
+      "mountain",
+      "high-altitude",
+      "dark-sky",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "rila-dark-sky"
+    ],
+    "stayAreaIds": [
+      "borovets"
+    ],
+    "affiliateQuery": "Rila Mountains Bulgaria stargazing"
+  },
+  {
+    "id": "sierra-nevada",
+    "slug": "sierra-nevada",
+    "name": "Sierra Nevada",
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "continent": "europe",
+    "regionSlugs": [
+      "andalusia",
+      "europe"
+    ],
+    "timezone": "Europe/Madrid",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "mountain",
+      "high-altitude",
+      "dark-sky",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "sierra-nevada-observatory"
+    ],
+    "stayAreaIds": [
+      "capileira"
+    ],
+    "affiliateQuery": "Sierra Nevada Spain stargazing"
+  },
+  {
+    "id": "sutherland",
+    "slug": "sutherland",
+    "name": "Sutherland",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "northern-cape",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 93,
+    "tags": [
+      "desert",
+      "observatory",
+      "very-dark",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "sutherland-observatory"
+    ],
+    "stayAreaIds": [
+      "sutherland-town"
+    ],
+    "affiliateQuery": "Sutherland South Africa stargazing"
   },
   {
     "id": "tenerife",

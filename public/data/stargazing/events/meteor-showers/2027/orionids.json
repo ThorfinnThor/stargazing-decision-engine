@@ -25,16 +25,44 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "atacama-plateau",
+    "bestSiteId": "cerro-paranal-observatory",
     "dateLocal": "2027-10-22",
     "timezone": "America/Santiago",
     "moonIlluminationFraction": 0.4561,
     "moonlessHours": 5.67,
-    "totalDarknessHours": 8.63
+    "totalDarknessHours": 8.53
   },
   "topDestinations": [
     {
       "rank": 1,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "cerro-paranal-observatory",
+      "siteSlug": "cerro-paranal-observatory",
+      "siteName": "Cerro Paranal observatory area",
+      "climateScore": 96,
+      "moonScore": 62.85,
+      "radiantScore": 87.14,
+      "viewingScore": 84.28,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.03,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "atacama",
       "destinationSlug": "atacama",
       "destinationName": "Atacama Plateau",
@@ -62,7 +90,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "namibrand",
       "destinationSlug": "namibrand",
       "destinationName": "NamibRand",
@@ -90,26 +118,26 @@
       ]
     },
     {
-      "rank": 3,
-      "destinationId": "elqui-valley",
-      "destinationSlug": "elqui-valley",
-      "destinationName": "Elqui Valley",
-      "siteId": "elqui-paihuano",
-      "siteSlug": "elqui-paihuano",
-      "siteName": "Elqui Valley observing area",
-      "climateScore": 89.5,
-      "moonScore": 64.84,
-      "radiantScore": 81.1,
-      "viewingScore": 80.42,
+      "rank": 4,
+      "destinationId": "la-silla",
+      "destinationSlug": "la-silla",
+      "destinationName": "La Silla Observatory",
+      "siteId": "la-silla-observatory",
+      "siteSlug": "la-silla-observatory",
+      "siteName": "La Silla observatory area",
+      "climateScore": 94.5,
+      "moonScore": 64.54,
+      "radiantScore": 81.39,
+      "viewingScore": 82.89,
       "moonConditions": {
         "dateLocal": "2027-10-22",
         "timezone": "America/Santiago",
         "moonIlluminationFraction": 0.4561,
         "moonlessHours": 5.67,
-        "totalDarknessHours": 8.18
+        "totalDarknessHours": 8.23
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.32,
+        "maximumAltitudeDeg": 44.04,
         "darkRadiantHours": 3.17
       },
       "caveats": [
@@ -118,55 +146,27 @@
       ]
     },
     {
-      "rank": 4,
-      "destinationId": "uluru",
-      "destinationSlug": "uluru",
-      "destinationName": "Uluru",
-      "siteId": "uluru-dark-sky",
-      "siteSlug": "uluru-dark-sky",
-      "siteName": "Uluru desert observing area",
-      "climateScore": 91,
-      "moonScore": 57.55,
-      "radiantScore": 86.9,
-      "viewingScore": 80.15,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "Australia/Darwin",
-        "moonIlluminationFraction": 0.5155,
-        "moonlessHours": 5.23,
-        "totalDarknessHours": 8.51
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 48.43,
-        "darkRadiantHours": 3.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "kitt-peak",
-      "destinationSlug": "kitt-peak",
-      "destinationName": "Kitt Peak",
-      "siteId": "kitt-peak-observatory",
-      "siteSlug": "kitt-peak-observatory",
-      "siteName": "Kitt Peak observatory area",
-      "climateScore": 88,
-      "moonScore": 52.72,
-      "radiantScore": 98.5,
-      "viewingScore": 79.52,
+      "destinationId": "el-leoncito",
+      "destinationSlug": "el-leoncito",
+      "destinationName": "El Leoncito",
+      "siteId": "el-leoncito-observatory",
+      "siteSlug": "el-leoncito-observatory",
+      "siteName": "El Leoncito observatory area",
+      "climateScore": 92,
+      "moonScore": 65.62,
+      "radiantScore": 79.05,
+      "viewingScore": 81.5,
       "moonConditions": {
         "dateLocal": "2027-10-22",
-        "timezone": "America/Phoenix",
-        "moonIlluminationFraction": 0.4371,
-        "moonlessHours": 5.17,
-        "totalDarknessHours": 10.1
+        "timezone": "America/Argentina/San_Juan",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.05
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 74.01,
-        "darkRadiantHours": 5.5
+        "maximumAltitudeDeg": 41.37,
+        "darkRadiantHours": 3
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -177,6 +177,34 @@
   "topSites": [
     {
       "rank": 1,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "cerro-paranal-observatory",
+      "siteSlug": "cerro-paranal-observatory",
+      "siteName": "Cerro Paranal observatory area",
+      "climateScore": 96,
+      "moonScore": 62.85,
+      "radiantScore": 87.14,
+      "viewingScore": 84.28,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.03,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "atacama",
       "destinationSlug": "atacama",
       "destinationName": "Atacama Plateau",
@@ -204,7 +232,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "namibrand",
       "destinationSlug": "namibrand",
       "destinationName": "NamibRand",
@@ -232,26 +260,26 @@
       ]
     },
     {
-      "rank": 3,
-      "destinationId": "elqui-valley",
-      "destinationSlug": "elqui-valley",
-      "destinationName": "Elqui Valley",
-      "siteId": "elqui-paihuano",
-      "siteSlug": "elqui-paihuano",
-      "siteName": "Elqui Valley observing area",
-      "climateScore": 89.5,
-      "moonScore": 64.84,
-      "radiantScore": 81.1,
-      "viewingScore": 80.42,
+      "rank": 4,
+      "destinationId": "la-silla",
+      "destinationSlug": "la-silla",
+      "destinationName": "La Silla Observatory",
+      "siteId": "la-silla-observatory",
+      "siteSlug": "la-silla-observatory",
+      "siteName": "La Silla observatory area",
+      "climateScore": 94.5,
+      "moonScore": 64.54,
+      "radiantScore": 81.39,
+      "viewingScore": 82.89,
       "moonConditions": {
         "dateLocal": "2027-10-22",
         "timezone": "America/Santiago",
         "moonIlluminationFraction": 0.4561,
         "moonlessHours": 5.67,
-        "totalDarknessHours": 8.18
+        "totalDarknessHours": 8.23
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.32,
+        "maximumAltitudeDeg": 44.04,
         "darkRadiantHours": 3.17
       },
       "caveats": [
@@ -260,55 +288,27 @@
       ]
     },
     {
-      "rank": 4,
-      "destinationId": "uluru",
-      "destinationSlug": "uluru",
-      "destinationName": "Uluru",
-      "siteId": "uluru-dark-sky",
-      "siteSlug": "uluru-dark-sky",
-      "siteName": "Uluru desert observing area",
-      "climateScore": 91,
-      "moonScore": 57.55,
-      "radiantScore": 86.9,
-      "viewingScore": 80.15,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "Australia/Darwin",
-        "moonIlluminationFraction": 0.5155,
-        "moonlessHours": 5.23,
-        "totalDarknessHours": 8.51
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 48.43,
-        "darkRadiantHours": 3.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "kitt-peak",
-      "destinationSlug": "kitt-peak",
-      "destinationName": "Kitt Peak",
-      "siteId": "kitt-peak-observatory",
-      "siteSlug": "kitt-peak-observatory",
-      "siteName": "Kitt Peak observatory area",
-      "climateScore": 88,
-      "moonScore": 52.72,
-      "radiantScore": 98.5,
-      "viewingScore": 79.52,
+      "destinationId": "el-leoncito",
+      "destinationSlug": "el-leoncito",
+      "destinationName": "El Leoncito",
+      "siteId": "el-leoncito-observatory",
+      "siteSlug": "el-leoncito-observatory",
+      "siteName": "El Leoncito observatory area",
+      "climateScore": 92,
+      "moonScore": 65.62,
+      "radiantScore": 79.05,
+      "viewingScore": 81.5,
       "moonConditions": {
         "dateLocal": "2027-10-22",
-        "timezone": "America/Phoenix",
-        "moonIlluminationFraction": 0.4371,
-        "moonlessHours": 5.17,
-        "totalDarknessHours": 10.1
+        "timezone": "America/Argentina/San_Juan",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.05
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 74.01,
-        "darkRadiantHours": 5.5
+        "maximumAltitudeDeg": 41.37,
+        "darkRadiantHours": 3
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -316,10 +316,10 @@
       ]
     }
   ],
-  "climateScore": 93.5,
-  "moonScore": 62.31,
-  "radiantScore": 87.79,
-  "viewingScore": 83,
+  "climateScore": 96,
+  "moonScore": 62.85,
+  "radiantScore": 87.14,
+  "viewingScore": 84.28,
   "confidenceLevel": "low",
   "indexable": false,
   "caveats": [

@@ -1,0 +1,33 @@
+{
+  "destinationId": "sierra-nevada",
+  "siteId": "sierra-nevada-observatory",
+  "bestSiteId": "sierra-nevada-observatory",
+  "year": 2026,
+  "month": 8,
+  "algorithmVersion": "seed-fixture-calendar-0.2.0",
+  "astronomyEngineVersion": "synthetic-seed",
+  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "nights": [
+    {
+      "darknessRank": 1,
+      "dateLocal": "2026-08-15",
+      "timezone": "Europe/Madrid",
+      "astronomicalDusk": "2026-08-15T20:00:00+02:00",
+      "astronomicalDawn": "2026-08-16T05:00:00+02:00",
+      "moonIlluminationFraction": 0.096,
+      "moonPhaseAngleDeg": 32,
+      "moonRiseLocal": null,
+      "moonSetLocal": null,
+      "moonAltitudeMaxDeg": -4,
+      "moonAboveHorizonDarkHours": 1.9,
+      "moonBelowHorizonDarkHours": 3.1,
+      "moonlessHours": 3.1,
+      "totalDarknessHours": 5,
+      "calendarDarknessScore": 40,
+      "milkyWayUsefulHours": 2.5,
+      "milkyWayStrongHours": 1.75,
+      "galacticCenterAltitudeMaxDeg": 28,
+      "milkyWayOpportunityScore": 40
+    }
+  ]
+}
