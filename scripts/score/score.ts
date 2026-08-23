@@ -36,6 +36,21 @@ const profiles: Record<string, ScoreProfile> = {
   "aoraki-mackenzie": { clear: 0.68, darkness: 94, elevation: 74, comfort: 55, dew: 0.22 },
   namibrand: { clear: 0.91, darkness: 98, elevation: 68, comfort: 68, dew: 0.04 },
   jasper: { clear: 0.58, darkness: 86, elevation: 63, comfort: 48, dew: 0.28, highLatitude: true },
+  "cherry-springs": { clear: 0.62, darkness: 88, elevation: 42, comfort: 62, dew: 0.38, highLatitude: true },
+  "great-basin": { clear: 0.82, darkness: 94, elevation: 82, comfort: 58, dew: 0.12 },
+  "mauna-kea": { clear: 0.76, darkness: 96, elevation: 99, comfort: 52, dew: 0.16 },
+  "kitt-peak": { clear: 0.84, darkness: 92, elevation: 72, comfort: 74, dew: 0.1 },
+  "elqui-valley": { clear: 0.86, darkness: 93, elevation: 58, comfort: 78, dew: 0.08 },
+  kerry: { clear: 0.42, darkness: 74, elevation: 30, comfort: 55, dew: 0.58, highLatitude: true },
+  "north-york-moors": { clear: 0.43, darkness: 68, elevation: 30, comfort: 57, dew: 0.52, highLatitude: true },
+  "elan-valley": { clear: 0.44, darkness: 70, elevation: 34, comfort: 58, dew: 0.5, highLatitude: true },
+  hortobagy: { clear: 0.58, darkness: 72, elevation: 18, comfort: 72, dew: 0.32, highLatitude: true },
+  zselic: { clear: 0.56, darkness: 70, elevation: 28, comfort: 68, dew: 0.38, highLatitude: true },
+  warrumbungle: { clear: 0.74, darkness: 91, elevation: 62, comfort: 70, dew: 0.16 },
+  uluru: { clear: 0.88, darkness: 94, elevation: 30, comfort: 76, dew: 0.08 },
+  hanle: { clear: 0.86, darkness: 95, elevation: 99, comfort: 42, dew: 0.04 },
+  witsand: { clear: 0.78, darkness: 90, elevation: 52, comfort: 72, dew: 0.1 },
+  "al-wathba": { clear: 0.82, darkness: 72, elevation: 8, comfort: 82, dew: 0.06 },
 };
 
 const input = readJson<SeedData>(generatedPath("seed.normalized.json"));
