@@ -211,9 +211,19 @@ test("reviewed low Black Marble coverage is visible and reduces confidence", () 
   assert.equal(fullyDocumented.confidenceLevel, "moderate");
 });
 
+test("high-elevation ERA5 comfort is capped at moderate confidence", () => {
+  const summit = { ...site, elevationM: 2500 };
+  const summitClimate = { ...climate(), siteId: summit.id };
+  const summitDem = { ...dem({ elevationM: 2500 }), siteId: summit.id };
+  const result = scoreSiteMonth({ site: summit, month, climate: summitClimate, darkness: darkness(), dem: summitDem, config });
+  assert.equal(result.confidenceScore, 84);
+  assert.equal(result.confidenceLevel, "moderate");
+  assert.ok(result.caveats.some((item) => item.includes("not a summit forecast")));
+});
+
 test("site scoring emits 12 unique schema-valid months", () => {
   const months = scoreSite({ site, climate: climate(), darkness: darkness(), dem: dem(), config });
-  const snapshot = { siteId: site.id, algorithmVersion: "site-score-1.0.0", generatedAt: "2026-08-20T00:00:00Z", months };
+  const snapshot = { siteId: site.id, algorithmVersion: "site-score-1.1.0", generatedAt: "2026-08-20T00:00:00Z", months };
   assert.equal(months.length, 12);
   assert.deepEqual(validateSiteScoreSnapshot(snapshot), []);
 });

@@ -34,8 +34,10 @@ export interface WindScoreConfig {
 }
 
 export interface ConfidenceConfig {
-  version: number;
+  version: 2;
   era5GridDistanceCurveKm: CurvePoint[];
+  era5OrographyReviewElevationM: number;
+  era5OrographyConfidenceCap: number;
   levels: { highMinimum: number; moderateMinimum: number };
 }
 

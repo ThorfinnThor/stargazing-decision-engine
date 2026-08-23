@@ -147,25 +147,25 @@
     },
     {
       "rank": 5,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 91,
-      "moonScore": 9.73,
+      "destinationId": "kitt-peak",
+      "destinationSlug": "kitt-peak",
+      "destinationName": "Kitt Peak",
+      "siteId": "kitt-peak-observatory",
+      "siteSlug": "kitt-peak-observatory",
+      "siteName": "Kitt Peak observatory area",
+      "climateScore": 94,
+      "moonScore": 9.19,
       "radiantScore": 99.01,
-      "viewingScore": 68.22,
+      "viewingScore": 69.56,
       "moonConditions": {
         "dateLocal": "2027-04-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9408,
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.9388,
         "moonlessHours": 0.83,
-        "totalDarknessHours": 7.3
+        "totalDarknessHours": 7.9
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 83.51,
+        "maximumAltitudeDeg": 86.88,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -289,25 +289,25 @@
     },
     {
       "rank": 5,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 91,
-      "moonScore": 9.73,
+      "destinationId": "kitt-peak",
+      "destinationSlug": "kitt-peak",
+      "destinationName": "Kitt Peak",
+      "siteId": "kitt-peak-observatory",
+      "siteSlug": "kitt-peak-observatory",
+      "siteName": "Kitt Peak observatory area",
+      "climateScore": 94,
+      "moonScore": 9.19,
       "radiantScore": 99.01,
-      "viewingScore": 68.22,
+      "viewingScore": 69.56,
       "moonConditions": {
         "dateLocal": "2027-04-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9408,
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.9388,
         "moonlessHours": 0.83,
-        "totalDarknessHours": 7.3
+        "totalDarknessHours": 7.9
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 83.51,
+        "maximumAltitudeDeg": 86.88,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -320,12 +320,13 @@
   "moonScore": 8.87,
   "radiantScore": 98.5,
   "viewingScore": 71.36,
-  "confidenceLevel": "high",
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "The 2027 maximum is shortly after Full Moon; moonlight affects the peak night.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

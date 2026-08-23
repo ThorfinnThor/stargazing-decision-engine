@@ -61,3 +61,10 @@ named in every monthly score caveat and remains numerically penalized by the
 unchanged confidence formula. Any such override additionally caps confidence at
 84 (`moderate`), even if later source improvements would otherwise cross the
 high-confidence threshold.
+
+ERA5 uses a coarse grid whose model surface can differ materially from a
+mountain summit. Until grid-cell orography is carried in the snapshot, sites at
+or above 1,500 m are capped at confidence 84 (`moderate`). Their temperature and
+wind components remain useful historical context, but are explicitly not
+presented as summit forecasts. This guard changes confidence, not the underlying
+observed climate values.

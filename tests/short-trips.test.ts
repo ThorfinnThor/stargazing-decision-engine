@@ -27,7 +27,7 @@ const closedSite: ObservationSite = { ...publicSite, id: "closed-site", slug: "c
 const unsourcedLimitedSite: ObservationSite = { ...publicSite, id: "limited-site", slug: "limited-site", name: "Unsourced limited site", lat: 0, lon: 0.02, publicAccess: "limited", priority: 99 };
 const stayArea: StayArea = { id: "stay", destinationId: "destination", name: "Stay area", lat: 0, lon: 0.5, affiliateQuery: "Destination stay", observationSiteIds: ["public-site"] };
 const scores: MonthlySiteScore[] = Array.from({ length: 12 }, (_, index) => ({
-  siteId: "public-site", month: (index + 1) as MonthlySiteScore["month"], skyQuality: 70, tripComfort: 70, stargazingTrip: index === 6 ? 90 : 60, clearSkyScore: 70, darknessScore: 70, dewScore: 70, elevationScore: 70, temperatureComfortScore: 70, windComfortScore: 70, rainComfortScore: 70, accessScore: 80, confidenceScore: 35, confidenceLevel: "low", reasons: [], caveats: [],
+  siteId: "public-site", month: (index + 1) as MonthlySiteScore["month"], skyQuality: 70, tripComfort: 70, stargazingTrip: index === 6 ? 90 : 60, clearSkyScore: 70, darknessScore: 70, dewScore: 70, elevationScore: 70, temperatureComfortScore: 70, windComfortScore: 70, rainComfortScore: 70, accessScore: 80, confidenceScore: 85, confidenceLevel: "high", reasons: [], caveats: [],
 }));
 
 test("short-trip distance bands are deterministic at boundaries", () => {
@@ -54,4 +54,11 @@ test("short-trip ranking excludes private sites and reproduces weighted score", 
   assert.ok(Math.abs(entry.shortTripScore - (0.75 * entry.stargazingTripScore + 0.25 * entry.distanceUtility)) < 0.01);
   assert.equal(entry.stayArea?.id, "stay");
   assert.equal(entry.campingAvailable, null);
+});
+
+test("short-trip ranking excludes destinations backed only by low-confidence rows", () => {
+  const lowConfidenceScores = scores.map((score) => ({ ...score, confidenceScore: 35, confidenceLevel: "low" as const }));
+  const [file] = buildShortTripFiles({ origins: [origin], destinations: [destination], sites: [publicSite], stayAreas: [stayArea], scores: lowConfidenceScores, scoringConfig, generatedAt: "2026-08-20T00:00:00.000Z" });
+  assert.ok(file);
+  assert.equal(file.entries.length, 0);
 });

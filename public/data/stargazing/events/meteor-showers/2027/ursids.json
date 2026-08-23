@@ -63,6 +63,34 @@
     },
     {
       "rank": 2,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 98,
+      "moonScore": 74.14,
+      "radiantScore": 92.8,
+      "viewingScore": 89.8,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.2508,
+        "moonlessHours": 8.17,
+        "totalDarknessHours": 11.07
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 41.99,
+        "darkRadiantHours": 7.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -90,7 +118,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -118,7 +146,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "great-sand-dunes",
       "destinationSlug": "great-sand-dunes",
       "destinationName": "Great Sand Dunes",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 47.48,
         "darkRadiantHours": 11.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 91,
-      "moonScore": 79.98,
-      "radiantScore": 94.42,
-      "viewingScore": 88.38,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.2007,
-        "moonlessHours": 9,
-        "totalDarknessHours": 11.25
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 46.05,
-        "darkRadiantHours": 11.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -205,6 +205,34 @@
     },
     {
       "rank": 2,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 98,
+      "moonScore": 74.14,
+      "radiantScore": 92.8,
+      "viewingScore": 89.8,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.2508,
+        "moonlessHours": 8.17,
+        "totalDarknessHours": 11.07
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 41.99,
+        "darkRadiantHours": 7.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -232,7 +260,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -260,7 +288,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "great-sand-dunes",
       "destinationSlug": "great-sand-dunes",
       "destinationName": "Great Sand Dunes",
@@ -286,46 +314,19 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 91,
-      "moonScore": 79.98,
-      "radiantScore": 94.42,
-      "viewingScore": 88.38,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.2007,
-        "moonlessHours": 9,
-        "totalDarknessHours": 11.25
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 46.05,
-        "darkRadiantHours": 11.17
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
   "climateScore": 94,
   "moonScore": 79.45,
   "radiantScore": 94.98,
   "viewingScore": 89.83,
-  "confidenceLevel": "high",
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "The IMO reports no indication of an enhanced 2027 rate or filament crossing.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

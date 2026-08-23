@@ -49,7 +49,9 @@ export function shortTripDistance(distanceKm: number, config: ShortTripScoringCo
 }
 
 function bestSiteForDestination(destination: Destination, sites: ObservationSite[], scores: MonthlySiteScore[]) {
-  const candidates = sites.filter((site) => site.destinationId === destination.id && isTravelEligibleSite(site));
+  const candidates = sites.filter((site) => site.destinationId === destination.id
+    && isTravelEligibleSite(site)
+    && scores.some((score) => score.siteId === site.id && score.confidenceLevel !== "low"));
   return [...candidates].sort((left, right) => {
     const leftScores = scores.filter((score) => score.siteId === left.id);
     const rightScores = scores.filter((score) => score.siteId === right.id);
@@ -60,7 +62,7 @@ function bestSiteForDestination(destination: Destination, sites: ObservationSite
 }
 
 function bestMonths(monthlyScores: MonthlySiteScore[]) {
-  return [...monthlyScores]
+  return monthlyScores.filter((score) => score.confidenceLevel !== "low")
     .sort((left, right) => right.stargazingTrip - left.stargazingTrip || left.month - right.month)
     .slice(0, 3)
     .map((score) => ({ month: score.month, score: score.stargazingTrip }));
@@ -85,7 +87,8 @@ export function buildShortTripFiles(options: {
       const distanceKm = round(haversineKm(origin.lat, origin.lon, site.lat, site.lon));
       if (distanceKm > origin.maxShortTripKm) return [];
       const distance = shortTripDistance(distanceKm, options.scoringConfig);
-      const topMonth = [...monthlyScores].sort((left, right) => right.stargazingTrip - left.stargazingTrip || left.month - right.month)[0];
+      const topMonth = monthlyScores.filter((score) => score.confidenceLevel !== "low")
+        .sort((left, right) => right.stargazingTrip - left.stargazingTrip || left.month - right.month)[0];
       if (!topMonth) return [];
       const stayArea = options.stayAreas.find((area) => area.destinationId === destination.id && area.observationSiteIds.includes(site.id))
         ?? options.stayAreas.find((area) => area.destinationId === destination.id)

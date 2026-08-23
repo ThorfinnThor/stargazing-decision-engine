@@ -2,71 +2,72 @@
   "destinationId": "cerro-paranal",
   "siteId": "cerro-paranal-observatory",
   "dataStatus": "real",
-  "algorithmVersion": "site-score-1.0.0",
+  "algorithmVersion": "site-score-1.1.0",
   "generatedAt": "2026-08-23T17:05:27.498592Z",
   "caveats": [
-    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
   ],
   "months": [
     {
       "month": 1,
       "score": 94,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 2,
       "score": 95,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 3,
       "score": 96,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 4,
       "score": 97,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 5,
       "score": 97,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 6,
       "score": 98,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 7,
       "score": 97,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 8,
       "score": 98,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 9,
       "score": 98,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 10,
       "score": 98,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 11,
       "score": 97,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     },
     {
       "month": 12,
       "score": 97,
-      "confidenceLevel": "high"
+      "confidenceLevel": "moderate"
     }
   ]
 }

@@ -191,7 +191,7 @@ const blackMarbleYears = [...new Set(blackMarbleSnapshots.flatMap((snapshot) => 
 writeJson(publicPath("manifest.json"), {
   datasetVersion: datasetStatus === "seed" ? "seed-2026-08-20.1" : `${datasetStatus}-${datasetDate}.1`,
   schemaVersion: 1,
-  algorithmVersion: datasetStatus === "real" ? "site-score-1.0.0" : datasetStatus === "seed" ? "seed-fixture-0.1.0" : "site-score-1.0.0+seed-fallback-0.1.0",
+  algorithmVersion: datasetStatus === "real" ? "site-score-1.1.0" : datasetStatus === "seed" ? "seed-fixture-0.1.0" : "site-score-1.1.0+seed-fallback-0.1.0",
   generatedAt,
   climateNormal: { startYear: 1991, endYear: 2020 },
   blackMarble: realScoreSiteCount === 0
@@ -199,10 +199,10 @@ writeJson(publicPath("manifest.json"), {
     : { product: "VNP46A4", collection: 2, years: blackMarbleYears },
   sourceVersions: {
     dataset: datasetStatus === "real" ? "reviewed-real-snapshots" : datasetStatus === "seed" ? "synthetic-seed-fixture" : "reviewed-real-snapshots-with-seed-fallback",
-    siteScores: realScoreSiteCount === 0 ? "none" : "site-score-1.0.0",
+    siteScores: realScoreSiteCount === 0 ? "none" : "site-score-1.1.0",
     calendar: "astronomy-calendar-real-1.0.0",
-    meteorShowers: "imo-2027+real-site-score-1.0.0",
-    shortTrips: "haversine-v1+real-site-score-1.0.0",
+    meteorShowers: "imo-2027+real-site-score-1.1.0",
+    shortTrips: "haversine-v1+real-site-score-1.1.0",
     gear: "editorial-2026-08-21",
     images: "attribution-manifest-2026-08-21",
   },

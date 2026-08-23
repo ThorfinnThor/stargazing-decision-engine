@@ -1,5 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "era5GridDistanceCurveKm": [[0, 100], [10, 100], [20, 80], [30, 50], [50, 0]],
+  "era5OrographyReviewElevationM": 1500,
+  "era5OrographyConfidenceCap": 84,
   "levels": { "highMinimum": 85, "moderateMinimum": 70 }
 }

@@ -91,6 +91,34 @@
     },
     {
       "rank": 3,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 99,
+      "moonScore": 14.57,
+      "radiantScore": 94,
+      "viewingScore": 72.67,
+      "moonConditions": {
+        "dateLocal": "2027-11-17",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.8407,
+        "moonlessHours": 1.5,
+        "totalDarknessHours": 10.72
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 68.93,
+        "darkRadiantHours": 4
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -118,7 +146,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 68.44,
         "darkRadiantHours": 4.17
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "mcdonald-observatory",
-      "destinationSlug": "mcdonald-observatory",
-      "destinationName": "McDonald Observatory",
-      "siteId": "mcdonald-observatory",
-      "siteSlug": "mcdonald-observatory",
-      "siteName": "McDonald Observatory visitor area",
-      "climateScore": 93,
-      "moonScore": 20.28,
-      "radiantScore": 94,
-      "viewingScore": 71.38,
-      "moonConditions": {
-        "dateLocal": "2027-11-17",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.7986,
-        "moonlessHours": 2.17,
-        "totalDarknessHours": 10.67
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 69.78,
-        "darkRadiantHours": 4
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -233,6 +233,34 @@
     },
     {
       "rank": 3,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 99,
+      "moonScore": 14.57,
+      "radiantScore": 94,
+      "viewingScore": 72.67,
+      "moonConditions": {
+        "dateLocal": "2027-11-17",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.8407,
+        "moonlessHours": 1.5,
+        "totalDarknessHours": 10.72
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 68.93,
+        "darkRadiantHours": 4
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -260,7 +288,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -286,46 +314,19 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "mcdonald-observatory",
-      "destinationSlug": "mcdonald-observatory",
-      "destinationName": "McDonald Observatory",
-      "siteId": "mcdonald-observatory",
-      "siteSlug": "mcdonald-observatory",
-      "siteName": "McDonald Observatory visitor area",
-      "climateScore": 93,
-      "moonScore": 20.28,
-      "radiantScore": 94,
-      "viewingScore": 71.38,
-      "moonConditions": {
-        "dateLocal": "2027-11-17",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.7986,
-        "moonlessHours": 2.17,
-        "totalDarknessHours": 10.67
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 69.78,
-        "darkRadiantHours": 4
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
   "climateScore": 98,
   "moonScore": 20.28,
   "radiantScore": 94,
   "viewingScore": 73.88,
-  "confidenceLevel": "high",
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "The IMO lists a nodal maximum at 06:00 UT and does not forecast a 2027 storm.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

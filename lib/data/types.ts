@@ -250,7 +250,7 @@ export interface MonthlySiteScore {
 
 export interface SiteScoreSnapshot {
   siteId: string;
-  algorithmVersion: "site-score-1.0.0";
+  algorithmVersion: "site-score-1.1.0";
   generatedAt: string;
   months: MonthlySiteScore[];
 }

@@ -31,19 +31,23 @@ for (const country of readdirSync(resolve(publicDataDir, "sites"))) {
 }
 
 try {
-  execFileSync("pnpm", ["data:seed:validate"], { stdio: "pipe" });
-  execFileSync("pnpm", ["data:shorttrips:validate"], { stdio: "pipe" });
-  execFileSync("pnpm", ["data:seo:validate"], { stdio: "pipe" });
-  execFileSync("pnpm", ["data:affiliate:validate"], { stdio: "pipe" });
-  execFileSync("pnpm", ["data:gear:validate"], { stdio: "pipe" });
-  execFileSync("pnpm", ["data:images:validate"], { stdio: "pipe" });
+  for (const validator of [
+    "validate-seed-config.ts",
+    "validate-short-trips.ts",
+    "validate-seo.ts",
+    "validate-affiliate.ts",
+    "validate-gear.ts",
+    "validate-images.ts",
+  ]) {
+    execFileSync(process.execPath, ["--import", "tsx", resolve(process.cwd(), "scripts/validate", validator)], { stdio: "pipe" });
+  }
 } catch {
-  errors.push("seed config validation failed");
+  errors.push("composed public-data validation failed");
 }
 
 if (errors.length > 0) {
   for (const error of errors) console.error(error);
   process.exitCode = 1;
 } else {
-  console.log("Validated published seed JSON and manifest.");
+  console.log("Validated published static JSON and manifest.");
 }

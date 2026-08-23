@@ -320,12 +320,13 @@
   "moonScore": 92.05,
   "radiantScore": 93.51,
   "viewingScore": 92.82,
-  "confidenceLevel": "high",
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "Peak timing has an observational uncertainty of about 2.5 hours.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

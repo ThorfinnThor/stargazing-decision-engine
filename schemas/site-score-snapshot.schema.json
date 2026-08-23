@@ -7,7 +7,7 @@
   "required": ["siteId", "algorithmVersion", "generatedAt", "months"],
   "properties": {
     "siteId": { "type": "string", "minLength": 1 },
-    "algorithmVersion": { "const": "site-score-1.0.0" },
+    "algorithmVersion": { "const": "site-score-1.1.0" },
     "generatedAt": { "type": "string", "minLength": 1 },
     "months": {
       "type": "array",

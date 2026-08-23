@@ -59,6 +59,7 @@ interface SiteResult {
   site: ObservationSite;
   destination: Destination;
   climateScore: number | null;
+  climateConfidenceLevel: ConfidenceLevel;
   moonScore: number;
   radiant: RadiantMetrics;
   dateLocal: string;
@@ -243,6 +244,7 @@ function buildSiteResult(options: {
     site,
     destination,
     climateScore,
+    climateConfidenceLevel: score?.confidenceLevel ?? "low",
     moonScore,
     radiant,
     dateLocal,
@@ -294,9 +296,13 @@ export function buildMeteorShowerEvents(options: {
   const activeSites = options.sites.filter(isTravelEligibleSite);
   if (activeSites.length === 0) throw new Error("No travel-eligible observation sites available for meteor rankings");
   return options.config.showers.map((shower) => {
+    const eventMonth = Number(shower.peakDate.slice(5, 7));
     const results = activeSites.flatMap((site) => {
       const destination = activeDestinations.find((item) => item.id === site.destinationId);
-      return destination ? [buildSiteResult({ shower, site, destination, scores: options.scores, calendarConfig: options.calendarConfig, scoringConfig: options.scoringConfig })] : [];
+      const climate = options.scores.find((score) => score.siteId === site.id && score.month === eventMonth);
+      return destination && climate && climate.confidenceLevel !== "low"
+        ? [buildSiteResult({ shower, site, destination, scores: options.scores, calendarConfig: options.calendarConfig, scoringConfig: options.scoringConfig })]
+        : [];
     });
     if (results.length === 0) throw new Error(`${shower.slug}: no active observation sites available`);
     results.sort((left, right) => right.viewingScore - left.viewingScore || right.radiant.score - left.radiant.score || left.site.id.localeCompare(right.site.id));
@@ -309,14 +315,12 @@ export function buildMeteorShowerEvents(options: {
       .sort((left, right) => right.viewingScore - left.viewingScore || left.destination.id.localeCompare(right.destination.id));
     const topDestinations = destinationBest.slice(0, 5).map((result, index) => row(result, index + 1));
     const best = results[0];
-    const climateLevels = results.map((result) => options.scores.find((score) => score.siteId === result.site.id && score.month === Number(shower.peakDate.slice(5, 7)))?.confidenceLevel ?? "low");
-    const confidenceLevel: ConfidenceLevel = climateLevels.every((level) => level === "high")
-      ? "high"
-      : climateLevels.every((level) => level !== "low") ? "moderate" : "low";
+    const confidenceLevel: ConfidenceLevel = best.climateConfidenceLevel;
     const caveats = [...new Set([
       ...shower.notes,
       ...best.caveats,
       "Rankings exclude sites without verified public night access.",
+      "Rankings exclude low-confidence climate rows.",
       ...(confidenceLevel === "low" ? ["Low-confidence climate inputs keep this event out of unqualified SEO rankings."] : []),
     ])];
     return {

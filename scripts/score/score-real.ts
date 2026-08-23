@@ -32,7 +32,7 @@ const months = scoreSite({ site, climate, darkness, dem, config: loadSiteScoreCo
 const generatedAt = [climate.retrievedAt, darkness.retrievedAt, dem?.retrievedAt ?? ""].sort().at(-1) as string;
 writeJson(resolve(root, "data-snapshots/scores", `${siteSlug}.json`), {
   siteId: site.id,
-  algorithmVersion: "site-score-1.0.0",
+  algorithmVersion: "site-score-1.1.0",
   generatedAt,
   months,
 });

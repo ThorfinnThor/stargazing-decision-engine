@@ -20,6 +20,12 @@ that are copied into the static export.
 - Raw downloads live in `raw-downloads/era5/` and are ignored by Git. Processed
   snapshots live in `data-snapshots/climate/` and are intended to be committed.
 
+The time-series product represents a coarse ERA5 model grid cell. At mountain
+sites its 2 m temperature and 10 m wind can differ from conditions at the exact
+summit elevation. Production scoring therefore labels these values as
+climatology rather than forecasts and caps high-elevation confidence at
+`moderate` until explicit grid-cell orography is available.
+
 Primary references:
 
 - [ERA5 hourly time-series dataset](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels-timeseries)

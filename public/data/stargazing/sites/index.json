@@ -54,10 +54,15 @@
     "elevationM": 2400,
     "siteType": "desert",
     "publicAccess": "limited",
-    "accessScore": 60,
+    "accessScore": 55,
     "active": true,
     "priority": 100,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://chile.travel/en/blog/the-most-romantic-experiences-that-you-could-live-in-san-pedro-de-atacama/",
+    "accessNotes": {
+      "en": "Official tourism guidance recommends organized astronomical tours outside San Pedro de Atacama. Do not treat the scored plateau coordinate as unrestricted road access; use a licensed local operator and check altitude conditions.",
+      "de": "Die offizielle Tourismusinformation empfiehlt organisierte Astronomie-Touren außerhalb von San Pedro de Atacama. Die bewertete Plateau-Koordinate ist kein frei zugänglicher Straßenpunkt; nutze einen lizenzierten lokalen Anbieter und beachte die Höhenlage."
+    }
   },
   {
     "id": "bieszczady-dark-sky",
@@ -132,7 +137,12 @@
     "accessScore": 68,
     "active": true,
     "priority": 90,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.cederbergobservatory.org.za/book-tickets/",
+    "accessNotes": {
+      "en": "Public observing is offered on selected Saturday evenings, subject to booking, weather, and Moon phase. Arrange nearby accommodation because the program finishes at night.",
+      "de": "Öffentliche Beobachtung findet an ausgewählten Samstagabenden statt, abhängig von Buchung, Wetter und Mondphase. Organisiere eine nahe Unterkunft, da das Programm nachts endet."
+    }
   },
   {
     "id": "central-tasmania-dark-sky",
@@ -242,7 +252,12 @@
     "accessScore": 62,
     "active": true,
     "priority": 92,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.larutanatural.gob.ar/en/must-see/73/el-leoncito-national-park",
+    "accessNotes": {
+      "en": "CESCO and CASLEO offer public night observing only as advance-booked guided visits. Confirm the operating schedule, transport, cold-weather requirements, and any lodging directly before travel.",
+      "de": "CESCO und CASLEO bieten öffentliche Nachtbeobachtung nur als vorab gebuchte Führungen an. Betriebsplan, Transport, Kälteschutz und gegebenenfalls Unterkunft vor der Reise direkt bestätigen."
+    }
   },
   {
     "id": "elan-valley-reservoir",
@@ -313,8 +328,8 @@
     "lon": 103,
     "elevationM": 1200,
     "siteType": "desert",
-    "publicAccess": "limited",
-    "accessScore": 52,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 88,
     "certificationIds": []
@@ -377,7 +392,12 @@
     "accessScore": 45,
     "active": true,
     "priority": 92,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.iiap.res.in/outreach/hdsr/astro-tourism-at-hdsr/visit-the-observatory/",
+    "accessNotes": {
+      "en": "The research observatory permits visitors only during daylight and restricts night access. Public stargazing is arranged in Hanle village through local HDSR Astronomy Ambassadors; confirm entry and health requirements before travel.",
+      "de": "Das Forschungsobservatorium erlaubt Besucher nur tagsüber und beschränkt den Nachtzugang. Öffentliches Stargazing wird im Dorf Hanle über lokale HDSR Astronomy Ambassadors organisiert; Einreise- und Gesundheitsanforderungen vor der Reise prüfen."
+    }
   },
   {
     "id": "hortobagy-dark-sky",
@@ -418,8 +438,8 @@
     "lon": 21.8,
     "elevationM": 1000,
     "siteType": "desert",
-    "publicAccess": "limited",
-    "accessScore": 64,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 89,
     "certificationIds": []
@@ -467,7 +487,12 @@
     "accessScore": 68,
     "active": true,
     "priority": 88,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://noirlab.edu/public/visits/kitt-peak-national/",
+    "accessNotes": {
+      "en": "Night access is through scheduled Kitt Peak Visitor Center observing programs. Reserve in advance and follow the program's arrival and road instructions.",
+      "de": "Nachtzugang erfolgt über terminierte Beobachtungsprogramme des Kitt Peak Visitor Center. Reserviere vorab und beachte die Anfahrts- und Straßenhinweise des Programms."
+    }
   },
   {
     "id": "la-silla-observatory",
@@ -557,7 +582,12 @@
     "accessScore": 72,
     "active": true,
     "priority": 84,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.cieletoilemontmegantic.org/en/visiter",
+    "accessNotes": {
+      "en": "The research observatory is reserved for science after dark. Public astronomy evenings use the ASTROLab or Popular Observatory and require the current park schedule and reservations.",
+      "de": "Das Forschungsobservatorium ist nach Einbruch der Dunkelheit der Wissenschaft vorbehalten. Öffentliche Astronomieabende finden im ASTROLab oder Popular Observatory statt und richten sich nach aktuellem Parkplan und Reservierung."
+    }
   },
   {
     "id": "montsec-observing-area",
@@ -584,10 +614,15 @@
     "elevationM": 1000,
     "siteType": "desert",
     "publicAccess": "limited",
-    "accessScore": 65,
+    "accessScore": 60,
     "active": true,
     "priority": 100,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.namibrand.com/tourism.html",
+    "accessNotes": {
+      "en": "NamibRand is a private reserve. Visitor access is through its tourism concessionaires and their accommodation or activity products, with park fees and reserve rules applying.",
+      "de": "NamibRand ist ein privates Reservat. Besucherzugang erfolgt über die Tourismusanbieter des Reservats und deren Unterkünfte oder Aktivitäten; Parkgebühren und Reservatsregeln gelten."
+    }
   },
   {
     "id": "natural-bridges-dark-sky",
@@ -643,11 +678,16 @@
     "lon": -17.89,
     "elevationM": 2396,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 70,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 100,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://visitlapalma.es/en/stargazing/la-palma/stargazing-at-el-roque-de-los-muchachos/",
+    "accessNotes": {
+      "en": "The observatory area is open to public visits only during the day and cannot be visited at night. Use the officially indicated alternative observing points below the access barrier.",
+      "de": "Das Observatorium kann öffentlich nur tagsüber besucht werden und ist nachts nicht zugänglich. Nutze die offiziell ausgewiesenen alternativen Beobachtungspunkte unterhalb der Zufahrtsschranke."
+    }
   },
   {
     "id": "siding-spring-observing-area",
@@ -658,11 +698,16 @@
     "lon": 149.07,
     "elevationM": 1165,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 70,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 89,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sidingspringobservatory.com.au/visitors.html",
+    "accessNotes": {
+      "en": "Siding Spring Observatory is a working research facility and is not open to the public at night. Use public observing options elsewhere around Warrumbungle or a listed local tour instead.",
+      "de": "Das Siding Spring Observatory ist eine aktive Forschungseinrichtung und nachts nicht öffentlich zugänglich. Nutze stattdessen öffentliche Beobachtungsplätze im Warrumbungle-Gebiet oder eine dort genannte lokale Tour."
+    }
   },
   {
     "id": "sierra-nevada-observatory",
@@ -714,10 +759,15 @@
     "elevationM": 2390,
     "siteType": "mountain",
     "publicAccess": "limited",
-    "accessScore": 75,
+    "accessScore": 65,
     "active": true,
     "priority": 100,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.gobiernodecanarias.org/parquesnacionales/teide/visita/",
+    "accessNotes": {
+      "en": "Night observing must use publicly accessible park viewpoints and comply with current road, parking, trail, weather, and closure rules; this score does not grant observatory or summit access.",
+      "de": "Nächtliche Beobachtungen müssen öffentlich zugängliche Park-Aussichtspunkte sowie aktuelle Straßen-, Parkplatz-, Wege-, Wetter- und Sperrregeln beachten; dieser Wert gewährt keinen Zugang zu Observatorium oder Gipfel."
+    }
   },
   {
     "id": "uluru-dark-sky",
@@ -728,11 +778,16 @@
     "lon": 131.03,
     "elevationM": 500,
     "siteType": "desert",
-    "publicAccess": "limited",
-    "accessScore": 62,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 87,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://uluru.gov.au/about/opening-hours/",
+    "accessNotes": {
+      "en": "Uluṟu-Kata Tjuṯa National Park closes at night and all visitors must leave by the published closing time. Stargazing must take place outside the park or through an authorized experience.",
+      "de": "Der Uluṟu-Kata-Tjuṯa-Nationalpark schließt nachts; alle Besucher müssen ihn bis zur veröffentlichten Schließzeit verlassen. Stargazing muss außerhalb des Parks oder im Rahmen eines autorisierten Angebots stattfinden."
+    }
   },
   {
     "id": "westhavelland-core",
@@ -762,7 +817,12 @@
     "accessScore": 65,
     "active": true,
     "priority": 83,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.tourism.gov.za/AboutNDT/Publications/Bojanala%20December%202023.pdf",
+    "accessNotes": {
+      "en": "Night stargazing is available to overnight guests at Witsand Nature Reserve. Book reserve accommodation or camping and confirm current access conditions before arrival.",
+      "de": "Nächtliches Stargazing ist für Übernachtungsgäste im Witsand Nature Reserve möglich. Reserviere Unterkunft oder Campingplatz und bestätige vor der Anreise die aktuellen Zugangsbedingungen."
+    }
   },
   {
     "id": "zselic-starry-sky",

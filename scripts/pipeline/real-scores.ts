@@ -25,7 +25,7 @@ export function loadRequiredRealScores(sites: ObservationSite[]): RequiredRealSc
   if (unexpected.length > 0) throw new Error(`Real score snapshots do not match active sites: ${unexpected.join(", ")}`);
 
   for (const snapshot of snapshots) {
-    if (snapshot.algorithmVersion !== "site-score-1.0.0") throw new Error(`${snapshot.siteId}: unsupported real score algorithm`);
+    if (snapshot.algorithmVersion !== "site-score-1.1.0") throw new Error(`${snapshot.siteId}: unsupported real score algorithm`);
     if (snapshot.months.length !== 12 || new Set(snapshot.months.map((month) => month.month)).size !== 12) {
       throw new Error(`${snapshot.siteId}: real score snapshot must contain 12 unique months`);
     }

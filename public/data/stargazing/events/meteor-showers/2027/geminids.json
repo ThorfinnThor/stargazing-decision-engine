@@ -25,16 +25,44 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "big-bend-panther-junction",
+    "bestSiteId": "hanle-dark-sky",
     "dateLocal": "2027-12-14",
-    "timezone": "America/Chicago",
-    "moonIlluminationFraction": 0.9658,
+    "timezone": "Asia/Kolkata",
+    "moonIlluminationFraction": 0.9831,
     "moonlessHours": 0,
-    "totalDarknessHours": 10.89
+    "totalDarknessHours": 11.06
   },
   "topDestinations": [
     {
       "rank": 1,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 98,
+      "moonScore": 0.51,
+      "radiantScore": 100,
+      "viewingScore": 69.15,
+      "moonConditions": {
+        "dateLocal": "2027-12-14",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.9831,
+        "moonlessHours": 0,
+        "totalDarknessHours": 11.06
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 89.09,
+        "darkRadiantHours": 9.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -62,7 +90,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -90,7 +118,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -118,55 +146,27 @@
       ]
     },
     {
-      "rank": 4,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 91,
-      "moonScore": 1.14,
-      "radiantScore": 100,
-      "viewingScore": 65.84,
-      "moonConditions": {
-        "dateLocal": "2027-12-14",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9621,
-        "moonlessHours": 0,
-        "totalDarknessHours": 11.24
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 86.37,
-        "darkRadiantHours": 9.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "great-sand-dunes",
-      "destinationSlug": "great-sand-dunes",
-      "destinationName": "Great Sand Dunes",
-      "siteId": "great-sand-dunes-dark-sky",
-      "siteSlug": "great-sand-dunes-dark-sky",
-      "siteName": "Great Sand Dunes dark-sky area",
-      "climateScore": 91,
-      "moonScore": 1.08,
-      "radiantScore": 100,
-      "viewingScore": 65.82,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "namibrand-reserve",
+      "siteSlug": "namibrand-reserve",
+      "siteName": "NamibRand reserve observing zone",
+      "climateScore": 99,
+      "moonScore": 0.64,
+      "radiantScore": 81.46,
+      "viewingScore": 65.98,
       "moonConditions": {
         "dateLocal": "2027-12-14",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.964,
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.9785,
         "moonlessHours": 0,
-        "totalDarknessHours": 11.29
+        "totalDarknessHours": 7.36
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 85.2,
-        "darkRadiantHours": 9.67
+        "maximumAltitudeDeg": 32.1,
+        "darkRadiantHours": 4.33
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -177,6 +177,34 @@
   "topSites": [
     {
       "rank": 1,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 98,
+      "moonScore": 0.51,
+      "radiantScore": 100,
+      "viewingScore": 69.15,
+      "moonConditions": {
+        "dateLocal": "2027-12-14",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.9831,
+        "moonlessHours": 0,
+        "totalDarknessHours": 11.06
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 89.09,
+        "darkRadiantHours": 9.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -204,7 +232,7 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -232,7 +260,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -260,55 +288,27 @@
       ]
     },
     {
-      "rank": 4,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 91,
-      "moonScore": 1.14,
-      "radiantScore": 100,
-      "viewingScore": 65.84,
-      "moonConditions": {
-        "dateLocal": "2027-12-14",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9621,
-        "moonlessHours": 0,
-        "totalDarknessHours": 11.24
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 86.37,
-        "darkRadiantHours": 9.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "great-sand-dunes",
-      "destinationSlug": "great-sand-dunes",
-      "destinationName": "Great Sand Dunes",
-      "siteId": "great-sand-dunes-dark-sky",
-      "siteSlug": "great-sand-dunes-dark-sky",
-      "siteName": "Great Sand Dunes dark-sky area",
-      "climateScore": 91,
-      "moonScore": 1.08,
-      "radiantScore": 100,
-      "viewingScore": 65.82,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "namibrand-reserve",
+      "siteSlug": "namibrand-reserve",
+      "siteName": "NamibRand reserve observing zone",
+      "climateScore": 99,
+      "moonScore": 0.64,
+      "radiantScore": 81.46,
+      "viewingScore": 65.98,
       "moonConditions": {
         "dateLocal": "2027-12-14",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.964,
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.9785,
         "moonlessHours": 0,
-        "totalDarknessHours": 11.29
+        "totalDarknessHours": 7.36
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 85.2,
-        "darkRadiantHours": 9.67
+        "maximumAltitudeDeg": 32.1,
+        "darkRadiantHours": 4.33
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -316,16 +316,17 @@
       ]
     }
   ],
-  "climateScore": 95,
-  "moonScore": 1.03,
+  "climateScore": 98,
+  "moonScore": 0.51,
   "radiantScore": 100,
-  "viewingScore": 67.81,
-  "confidenceLevel": "high",
+  "viewingScore": 69.15,
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "The 2027 peak is centered near 20:00 UT and is severely affected by Full Moon.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

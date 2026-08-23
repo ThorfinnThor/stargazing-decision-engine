@@ -7,6 +7,106 @@
   "entries": [
     {
       "rank": 1,
+      "destinationId": "el-leoncito",
+      "destinationSlug": "el-leoncito",
+      "destinationName": "El Leoncito",
+      "distanceKm": 223.74,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 11,
+          "score": 94
+        },
+        {
+          "month": 12,
+          "score": 93
+        },
+        {
+          "month": 10,
+          "score": 92
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 89,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 89,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 93,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 94,
+      "distanceUtility": 85,
+      "shortTripScore": 91.75,
+      "bestSiteId": "el-leoncito-observatory",
+      "stayArea": {
+        "id": "barreal",
+        "name": "Barreal",
+        "affiliateQuery": "Barreal Argentina"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 94 in month 11.",
+        "Distance is 223.74 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Barreal."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 2,
       "destinationId": "elqui-valley",
       "destinationSlug": "elqui-valley",
       "destinationName": "Elqui Valley",

@@ -1,7 +1,7 @@
 {
   "siteId": "atacama-plateau",
   "dataStatus": "real",
-  "algorithmVersion": "site-score-1.0.0",
+  "algorithmVersion": "site-score-1.1.0",
   "generatedAt": "2026-08-23T17:02:54.513660Z",
   "climate": [
     {
@@ -250,15 +250,16 @@
       "temperatureComfortScore": 70,
       "windComfortScore": 100,
       "rainComfortScore": 59,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 59",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -274,15 +275,16 @@
       "temperatureComfortScore": 67,
       "windComfortScore": 100,
       "rainComfortScore": 68,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 74",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -290,7 +292,7 @@
       "month": 3,
       "skyQuality": 95,
       "tripComfort": 78,
-      "stargazingTrip": 92,
+      "stargazingTrip": 91,
       "clearSkyScore": 95,
       "darknessScore": 98,
       "dewScore": 80,
@@ -298,15 +300,16 @@
       "temperatureComfortScore": 64,
       "windComfortScore": 100,
       "rainComfortScore": 89,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 95",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -322,15 +325,16 @@
       "temperatureComfortScore": 57,
       "windComfortScore": 100,
       "rainComfortScore": 96,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -346,15 +350,16 @@
       "temperatureComfortScore": 45,
       "windComfortScore": 100,
       "rainComfortScore": 94,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -370,15 +375,16 @@
       "temperatureComfortScore": 37,
       "windComfortScore": 100,
       "rainComfortScore": 91,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -394,15 +400,16 @@
       "temperatureComfortScore": 34,
       "windComfortScore": 100,
       "rainComfortScore": 92,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -418,15 +425,16 @@
       "temperatureComfortScore": 42,
       "windComfortScore": 100,
       "rainComfortScore": 95,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -442,22 +450,23 @@
       "temperatureComfortScore": 50,
       "windComfortScore": 100,
       "rainComfortScore": 97,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
       "siteId": "atacama-plateau",
       "month": 10,
       "skyQuality": 99,
-      "tripComfort": 78,
+      "tripComfort": 77,
       "stargazingTrip": 95,
       "clearSkyScore": 100,
       "darknessScore": 98,
@@ -466,15 +475,16 @@
       "temperatureComfortScore": 60,
       "windComfortScore": 100,
       "rainComfortScore": 99,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -490,15 +500,16 @@
       "temperatureComfortScore": 63,
       "windComfortScore": 100,
       "rainComfortScore": 99,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 100",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     },
     {
@@ -514,15 +525,16 @@
       "temperatureComfortScore": 68,
       "windComfortScore": 100,
       "rainComfortScore": 90,
-      "accessScore": 60,
-      "confidenceScore": 98,
-      "confidenceLevel": "high",
+      "accessScore": 55,
+      "confidenceScore": 84,
+      "confidenceLevel": "moderate",
       "reasons": [
         "Clear-sky climatology score: 93",
         "Calibrated darkness score: 98"
       ],
       "caveats": [
-        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
+        "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+        "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
       ]
     }
   ]

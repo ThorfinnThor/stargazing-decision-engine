@@ -2,10 +2,11 @@
   "destinationId": "tenerife",
   "siteId": "teide-high-zone",
   "dataStatus": "real",
-  "algorithmVersion": "site-score-1.0.0",
+  "algorithmVersion": "site-score-1.1.0",
   "generatedAt": "2026-08-23T17:02:38.967042Z",
   "caveats": [
     "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate",
     "Reviewed Black Marble coverage override used (43% good-quality coverage); confidence is reduced"
   ],
   "months": [
@@ -16,7 +17,7 @@
     },
     {
       "month": 2,
-      "score": 83,
+      "score": 82,
       "confidenceLevel": "moderate"
     },
     {
@@ -26,12 +27,12 @@
     },
     {
       "month": 4,
-      "score": 84,
+      "score": 83,
       "confidenceLevel": "moderate"
     },
     {
       "month": 5,
-      "score": 86,
+      "score": 85,
       "confidenceLevel": "moderate"
     },
     {

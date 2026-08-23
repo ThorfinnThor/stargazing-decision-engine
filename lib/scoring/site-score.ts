@@ -60,6 +60,14 @@ export function validateSiteScoreConfig(config: SiteScoreConfig) {
     || config.confidence.levels.highMinimum > 100 || config.confidence.levels.moderateMinimum < 0) {
     throw new Error("Confidence level thresholds are invalid");
   }
+  if (config.confidence.version !== 2
+    || !Number.isFinite(config.confidence.era5OrographyReviewElevationM)
+    || config.confidence.era5OrographyReviewElevationM <= 0
+    || !Number.isFinite(config.confidence.era5OrographyConfidenceCap)
+    || config.confidence.era5OrographyConfidenceCap < config.confidence.levels.moderateMinimum
+    || config.confidence.era5OrographyConfidenceCap >= config.confidence.levels.highMinimum) {
+    throw new Error("ERA5 orography confidence guard is invalid");
+  }
 }
 
 function required(value: number | null, name: string, siteId: string, month: number) {
@@ -101,10 +109,21 @@ function calculateConfidence(options: {
   const rawConfidence = weighted(
     Object.entries(components).map(([key, value]) => [value, config.weights.confidence[key as keyof typeof components]]),
   );
-  return darkness.coverageOverrideUsed
+  const darknessAdjusted = darkness.coverageOverrideUsed
     ? Math.min(rawConfidence, config.confidence.levels.highMinimum - 1)
     : rawConfidence;
+  const effectiveElevationM = dem?.elevationM ?? site.elevationM;
+  return effectiveElevationM !== null && effectiveElevationM >= config.confidence.era5OrographyReviewElevationM
+    ? Math.min(darknessAdjusted, config.confidence.era5OrographyConfidenceCap)
+    : darknessAdjusted;
 }
+
+function hasEra5OrographyCaveat(site: ObservationSite, dem: DemSnapshot | null, config: SiteScoreConfig) {
+  const effectiveElevationM = dem?.elevationM ?? site.elevationM;
+  return effectiveElevationM !== null && effectiveElevationM >= config.confidence.era5OrographyReviewElevationM;
+}
+
+const ERA5_OROGRAPHY_CAVEAT = "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate";
 
 function zeroAstronomicalNightScore(options: {
   site: ObservationSite;
@@ -116,6 +135,7 @@ function zeroAstronomicalNightScore(options: {
 }): MonthlySiteScore {
   const confidence = calculateConfidence(options);
   const caveats = ["Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"];
+  if (hasEra5OrographyCaveat(options.site, options.dem, options.config)) caveats.push(ERA5_OROGRAPHY_CAVEAT);
   if (confidenceLevel(roundPublic(confidence), options.config) === "low") caveats.push("Low-confidence score must be excluded from unqualified top rankings");
   return {
     siteId: options.site.id,
@@ -211,6 +231,7 @@ export function scoreSiteMonth(options: {
     `Calibrated darkness score: ${roundPublic(darkness.darknessScore)}`,
   ];
   const caveats = ["Temperature comfort uses the monthly astronomical-night mean, not hourly utility"];
+  if (hasEra5OrographyCaveat(site, dem, config)) caveats.push(ERA5_OROGRAPHY_CAVEAT);
   if (!dem || dem.elevationM === null) caveats.push(elevation === null ? "Elevation unavailable; conservative zero elevation score used" : "Curated elevation fallback used; DEM confidence is zero");
   if (darkness.coverageOverrideUsed) {
     caveats.push(`Reviewed Black Marble coverage override used (${Math.round(darkness.coverage * 100)}% good-quality coverage); confidence is reduced`);

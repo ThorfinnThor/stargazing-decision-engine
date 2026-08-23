@@ -63,6 +63,34 @@
     },
     {
       "rank": 2,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 99,
+      "moonScore": 99.5,
+      "radiantScore": 79.72,
+      "viewingScore": 95.29,
+      "moonConditions": {
+        "dateLocal": "2027-09-01",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.0167,
+        "moonlessHours": 8.32,
+        "totalDarknessHours": 8.32
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.23,
+        "darkRadiantHours": 2.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -90,7 +118,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "great-basin",
       "destinationSlug": "great-basin",
       "destinationName": "Great Basin",
@@ -118,7 +146,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 49.58,
         "darkRadiantHours": 2.83
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 99.72,
-      "radiantScore": 79.83,
-      "viewingScore": 93.38,
-      "moonConditions": {
-        "dateLocal": "2027-08-31",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.004,
-        "moonlessHours": 8.5,
-        "totalDarknessHours": 8.52
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 49.5,
-        "darkRadiantHours": 2.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -205,6 +205,34 @@
     },
     {
       "rank": 2,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 99,
+      "moonScore": 99.5,
+      "radiantScore": 79.72,
+      "viewingScore": 95.29,
+      "moonConditions": {
+        "dateLocal": "2027-09-01",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.0167,
+        "moonlessHours": 8.32,
+        "totalDarknessHours": 8.32
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.23,
+        "darkRadiantHours": 2.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -232,7 +260,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "great-basin",
       "destinationSlug": "great-basin",
       "destinationName": "Great Basin",
@@ -260,7 +288,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -286,46 +314,19 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 99.72,
-      "radiantScore": 79.83,
-      "viewingScore": 93.38,
-      "moonConditions": {
-        "dateLocal": "2027-08-31",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.004,
-        "moonlessHours": 8.5,
-        "totalDarknessHours": 8.52
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 49.5,
-        "darkRadiantHours": 2.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
   "climateScore": 99,
   "moonScore": 99.86,
   "radiantScore": 81.02,
   "viewingScore": 95.66,
-  "confidenceLevel": "high",
+  "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [
     "The 2027 maximum is listed with New Moon conditions; the radiant becomes useful after local midnight at mid-northern sites.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Rankings exclude sites without verified public night access."
+    "Rankings exclude sites without verified public night access.",
+    "Rankings exclude low-confidence climate rows."
   ]
 }

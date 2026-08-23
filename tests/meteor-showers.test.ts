@@ -37,8 +37,8 @@ function scoresForSites() {
     windComfortScore: 70,
     rainComfortScore: 70,
     accessScore: site.accessScore,
-    confidenceScore: 35,
-    confidenceLevel: "low",
+    confidenceScore: 85,
+    confidenceLevel: "high",
     reasons: ["Synthetic test score"],
     caveats: ["Synthetic test input"],
   } satisfies MonthlySiteScore)));
@@ -62,10 +62,11 @@ test("meteor events combine climate, Moon, and radiant components into bounded s
     assert.ok(event.topSites.length > 0);
     assert.ok(event.topDestinations.length > 0);
     assert.ok(event.viewingScore !== null && event.viewingScore >= 0 && event.viewingScore <= 100);
-    assert.equal(event.indexable, false);
-    assert.equal(event.confidenceLevel, "low");
+    assert.equal(event.indexable, true);
+    assert.equal(event.confidenceLevel, "high");
     assert.ok(event.caveats.some((caveat) => /not a forecast/i.test(caveat)));
     assert.ok(event.caveats.some((caveat) => /verified public night access/i.test(caveat)));
+    assert.ok(event.caveats.some((caveat) => /exclude low-confidence/i.test(caveat)));
     for (const row of [...event.topSites, ...event.topDestinations]) {
       const site = sites.find((candidate) => candidate.id === row.siteId);
       assert.ok(site);
@@ -116,6 +117,19 @@ test("destination ranking retains the best site when a destination has multiple 
   const destinationRow = event.topDestinations.find((item) => item.destinationId === original.destinationId);
   assert.ok(destinationRow);
   assert.equal(destinationRow.siteId, original.id);
+});
+
+test("meteor rankings exclude low-confidence climate rows", () => {
+  const eligibleSite = sites.find(isTravelEligibleSite);
+  assert.ok(eligibleSite);
+  const scores = scoresForSites().map((score) => score.siteId === eligibleSite.id
+    ? { ...score, confidenceScore: 35, confidenceLevel: "low" as const }
+    : score);
+  const events = buildMeteorShowerEvents({ config, scoringConfig, calendarConfig, destinations, sites, scores });
+  for (const event of events) {
+    assert.equal(event.topSites.some((row) => row.siteId === eligibleSite.id), false);
+    assert.equal(event.topDestinations.some((row) => row.siteId === eligibleSite.id), false);
+  }
 });
 
 test("meteor config rejects a peak timestamp that disagrees with its cited date", () => {
