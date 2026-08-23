@@ -15,6 +15,8 @@ The public COG mirror is selected with `--public-fallback`. The tile key templat
 `data-config/sources/copernicus-dem.json` because object paths can change with
 the provider catalogue. In the public COG naming convention, `10` denotes the
 one-arc-second GLO-30 grid; it does not mean ten-metre resolution.
+The public path is calculated exactly rather than discovered by listing the tile
+directory, which also contains non-elevation auxiliary GeoTIFFs.
 
 References:
 

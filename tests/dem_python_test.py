@@ -27,6 +27,17 @@ class DemGeometryTests(unittest.TestCase):
         self.assertIsNone(valid_elevation(float("nan"), None))
         self.assertIsNone(valid_elevation(10000, None))
 
+    def test_public_elevation_object_key_is_not_an_auxiliary_raster(self):
+        key = tile_key(
+            "Copernicus_DSM_COG_10_{tile}_DEM/Copernicus_DSM_COG_10_{tile}_DEM.tif",
+            "N28_00_W018_00",
+        )
+        self.assertEqual(
+            key,
+            "Copernicus_DSM_COG_10_N28_00_W018_00_DEM/Copernicus_DSM_COG_10_N28_00_W018_00_DEM.tif",
+        )
+        self.assertNotIn("AUXFILES", key)
+
     def test_true_median_for_even_and_odd_samples(self):
         self.assertEqual(median([1, 9, 3]), 3)
         self.assertEqual(median([1, 9, 3, 5]), 4)

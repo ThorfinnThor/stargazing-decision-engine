@@ -74,7 +74,11 @@ def fetch(site_slug: str, use_public_fallback: bool) -> None:
         **client_options,
     )
     configured_key = os.environ.get("CDSE_S3_KEY") if not use_public_fallback else None
-    if configured_key:
+    if use_public_fallback:
+        # The public COG mirror exposes a deterministic elevation-object key.
+        # Listing the tile prefix can select an AUXFILES mask GeoTIFF instead.
+        key = tile_key(config["tileKeyTemplate"], tile, prefix)
+    elif configured_key:
         key = configured_key
     else:
         key_prefix = tile_key(config["tileKeyTemplate"], tile, prefix).rsplit("/", 1)[0] + "/"
