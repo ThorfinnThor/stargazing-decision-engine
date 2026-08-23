@@ -1,73 +1,74 @@
 {
   "destinationId": "north-york-moors",
   "siteId": "dalby-forest-dark-sky",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.0.0",
+  "generatedAt": "2026-08-23T13:18:12.699295Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Curated elevation fallback used; DEM confidence is zero",
+    "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
     {
       "month": 1,
-      "score": 51,
-      "confidenceLevel": "low"
+      "score": 57,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 51.42,
-      "confidenceLevel": "low"
+      "score": 57,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 52.56,
-      "confidenceLevel": "low"
+      "score": 59,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 54.13,
-      "confidenceLevel": "low"
+      "score": 60,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 55.69,
-      "confidenceLevel": "low"
+      "score": 55,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 56.83,
-      "confidenceLevel": "low"
+      "score": 0,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 57.25,
-      "confidenceLevel": "low"
+      "score": 0,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 56.83,
-      "confidenceLevel": "low"
+      "score": 56,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 55.69,
-      "confidenceLevel": "low"
+      "score": 60,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 54.13,
-      "confidenceLevel": "low"
+      "score": 60,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 52.56,
-      "confidenceLevel": "low"
+      "score": 58,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 51.42,
-      "confidenceLevel": "low"
+      "score": 57,
+      "confidenceLevel": "high"
     }
   ]
 }
