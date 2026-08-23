@@ -64,7 +64,10 @@ def process(site_slug: str, keep_raster: bool) -> None:
         valid_min, valid_max = config["validElevationRangeM"]
         row, column = dataset.index(site["lon"], site["lat"])
         if row < 0 or column < 0 or row >= dataset.height or column >= dataset.width:
-            raise RuntimeError(f"DEM tile does not contain requested coordinate for {site_slug}")
+            raise RuntimeError(
+                f"DEM tile {metadata['tile']} does not contain requested coordinate for {site_slug}: "
+                f"point=({site['lat']}, {site['lon']}), row={row}, column={column}, bounds={dataset.bounds}"
+            )
         point = dataset.read(1, window=((row, row + 1), (column, column + 1)), masked=True)
         point_mask = np.ma.getmaskarray(point)
         point_value = None if point_mask[0, 0] else valid_elevation(point[0, 0], nodata, valid_min, valid_max)
