@@ -63,16 +63,44 @@
     },
     {
       "rank": 2,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 96,
+      "moonScore": 91.04,
+      "radiantScore": 83.84,
+      "viewingScore": 92.08,
+      "moonConditions": {
+        "dateLocal": "2027-01-03",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.114,
+        "moonlessHours": 10,
+        "totalDarknessHours": 10.86
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.16,
+        "darkRadiantHours": 3.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
       "siteId": "death-valley-dark-sky",
       "siteSlug": "death-valley-dark-sky",
       "siteName": "Death Valley dark-sky area",
-      "climateScore": 93,
+      "climateScore": 91,
       "moonScore": 92.41,
       "radiantScore": 92.91,
-      "viewingScore": 92.81,
+      "viewingScore": 91.81,
       "moonConditions": {
         "dateLocal": "2027-01-03",
         "timezone": "America/Los_Angeles",
@@ -83,34 +111,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 57.28,
         "darkRadiantHours": 4
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 3,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 91,
-      "moonScore": 91.93,
-      "radiantScore": 93.67,
-      "viewingScore": 91.81,
-      "moonConditions": {
-        "dateLocal": "2027-01-03",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.1115,
-        "moonlessHours": 10.5,
-        "totalDarknessHours": 11.26
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 57.9,
-        "darkRadiantHours": 4.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -147,26 +147,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 91.04,
-      "radiantScore": 83.84,
-      "viewingScore": 91.58,
+      "destinationId": "canyonlands",
+      "destinationSlug": "canyonlands",
+      "destinationName": "Canyonlands",
+      "siteId": "canyonlands-dark-sky",
+      "siteSlug": "canyonlands-dark-sky",
+      "siteName": "Canyonlands dark-sky area",
+      "climateScore": 90,
+      "moonScore": 91.93,
+      "radiantScore": 93.67,
+      "viewingScore": 91.31,
       "moonConditions": {
         "dateLocal": "2027-01-03",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.114,
-        "moonlessHours": 10,
-        "totalDarknessHours": 10.86
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.1115,
+        "moonlessHours": 10.5,
+        "totalDarknessHours": 11.26
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 50.16,
-        "darkRadiantHours": 3.17
+        "maximumAltitudeDeg": 57.9,
+        "darkRadiantHours": 4.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -205,16 +205,44 @@
     },
     {
       "rank": 2,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 96,
+      "moonScore": 91.04,
+      "radiantScore": 83.84,
+      "viewingScore": 92.08,
+      "moonConditions": {
+        "dateLocal": "2027-01-03",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.114,
+        "moonlessHours": 10,
+        "totalDarknessHours": 10.86
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.16,
+        "darkRadiantHours": 3.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
       "siteId": "death-valley-dark-sky",
       "siteSlug": "death-valley-dark-sky",
       "siteName": "Death Valley dark-sky area",
-      "climateScore": 93,
+      "climateScore": 91,
       "moonScore": 92.41,
       "radiantScore": 92.91,
-      "viewingScore": 92.81,
+      "viewingScore": 91.81,
       "moonConditions": {
         "dateLocal": "2027-01-03",
         "timezone": "America/Los_Angeles",
@@ -225,34 +253,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 57.28,
         "darkRadiantHours": 4
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 3,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 91,
-      "moonScore": 91.93,
-      "radiantScore": 93.67,
-      "viewingScore": 91.81,
-      "moonConditions": {
-        "dateLocal": "2027-01-03",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.1115,
-        "moonlessHours": 10.5,
-        "totalDarknessHours": 11.26
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 57.9,
-        "darkRadiantHours": 4.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,26 +289,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 91.04,
-      "radiantScore": 83.84,
-      "viewingScore": 91.58,
+      "destinationId": "canyonlands",
+      "destinationSlug": "canyonlands",
+      "destinationName": "Canyonlands",
+      "siteId": "canyonlands-dark-sky",
+      "siteSlug": "canyonlands-dark-sky",
+      "siteName": "Canyonlands dark-sky area",
+      "climateScore": 90,
+      "moonScore": 91.93,
+      "radiantScore": 93.67,
+      "viewingScore": 91.31,
       "moonConditions": {
         "dateLocal": "2027-01-03",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.114,
-        "moonlessHours": 10,
-        "totalDarknessHours": 10.86
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.1115,
+        "moonlessHours": 10.5,
+        "totalDarknessHours": 11.26
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 50.16,
-        "darkRadiantHours": 3.17
+        "maximumAltitudeDeg": 57.9,
+        "darkRadiantHours": 4.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -320,7 +320,7 @@
   "moonScore": 92.05,
   "radiantScore": 93.51,
   "viewingScore": 92.82,
-  "confidenceLevel": "moderate",
+  "confidenceLevel": "high",
   "indexable": true,
   "caveats": [
     "Peak timing has an observational uncertainty of about 2.5 hours.",

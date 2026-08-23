@@ -1,0 +1,33 @@
+{
+  "siteId": "hortobagy-dark-sky",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    47.58,
+    21.14
+  ],
+  "tile": "N47_00_E021_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N47_00_E021_00_DEM/Copernicus_DSM_COG_10_N47_00_E021_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 88.018,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 88.231,
+      "validSampleCount": 304
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 88.076,
+      "validSampleCount": 4879
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:03:44.926453Z"
+}

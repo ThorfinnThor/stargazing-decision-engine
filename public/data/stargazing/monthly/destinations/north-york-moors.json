@@ -3,10 +3,9 @@
   "siteId": "dalby-forest-dark-sky",
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
-  "generatedAt": "2026-08-23T13:18:12.699295Z",
+  "generatedAt": "2026-08-23T17:03:36.999630Z",
   "caveats": [
     "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
-    "Curated elevation fallback used; DEM confidence is zero",
     "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
@@ -17,7 +16,7 @@
     },
     {
       "month": 2,
-      "score": 57,
+      "score": 56,
       "confidenceLevel": "high"
     },
     {
@@ -62,7 +61,7 @@
     },
     {
       "month": 11,
-      "score": 58,
+      "score": 57,
       "confidenceLevel": "high"
     },
     {

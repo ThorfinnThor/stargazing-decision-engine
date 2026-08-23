@@ -1,0 +1,33 @@
+{
+  "siteId": "pico-arieiro-observing-area",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    32.72,
+    -16.82
+  ],
+  "tile": "N32_00_W017_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N32_00_W017_00_DEM/Copernicus_DSM_COG_10_N32_00_W017_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 657.246,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 645.747,
+      "validSampleCount": 235
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 667.485,
+      "validSampleCount": 3925
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:04:47.739371Z"
+}

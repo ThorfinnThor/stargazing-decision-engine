@@ -3,21 +3,20 @@
   "siteId": "jasper-medicine-lake",
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
-  "generatedAt": "2026-08-22T17:31:57.418536Z",
+  "generatedAt": "2026-08-23T17:03:10.449581Z",
   "caveats": [
     "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
-    "Curated elevation fallback used; DEM confidence is zero",
     "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
     {
       "month": 1,
-      "score": 51,
+      "score": 52,
       "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 57,
+      "score": 58,
       "confidenceLevel": "high"
     },
     {
@@ -27,7 +26,7 @@
     },
     {
       "month": 4,
-      "score": 61,
+      "score": 62,
       "confidenceLevel": "high"
     },
     {
@@ -42,7 +41,7 @@
     },
     {
       "month": 7,
-      "score": 63,
+      "score": 64,
       "confidenceLevel": "high"
     },
     {
@@ -52,7 +51,7 @@
     },
     {
       "month": 9,
-      "score": 64,
+      "score": 65,
       "confidenceLevel": "high"
     },
     {
@@ -67,7 +66,7 @@
     },
     {
       "month": 12,
-      "score": 51,
+      "score": 52,
       "confidenceLevel": "high"
     }
   ]

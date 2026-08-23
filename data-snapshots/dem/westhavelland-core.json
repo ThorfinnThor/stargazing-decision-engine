@@ -1,0 +1,33 @@
+{
+  "siteId": "westhavelland-core",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    52.72,
+    12.28
+  ],
+  "tile": "N52_00_E012_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N52_00_E012_00_DEM/Copernicus_DSM_COG_10_N52_00_E012_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 28.259,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 28.212,
+      "validSampleCount": 222
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 27.525,
+      "validSampleCount": 3618
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:02:42.786658Z"
+}

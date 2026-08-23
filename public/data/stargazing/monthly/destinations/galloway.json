@@ -3,10 +3,9 @@
   "siteId": "galloway-dark-sky-park",
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
-  "generatedAt": "2026-08-22T17:09:29.575536Z",
+  "generatedAt": "2026-08-23T17:02:50.700647Z",
   "caveats": [
     "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
-    "Curated elevation fallback used; DEM confidence is zero",
     "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
@@ -17,7 +16,7 @@
     },
     {
       "month": 2,
-      "score": 55,
+      "score": 56,
       "confidenceLevel": "high"
     },
     {
@@ -32,7 +31,7 @@
     },
     {
       "month": 5,
-      "score": 55,
+      "score": 56,
       "confidenceLevel": "high"
     },
     {

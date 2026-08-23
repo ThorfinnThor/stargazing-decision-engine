@@ -1,0 +1,33 @@
+{
+  "siteId": "montsec-observing-area",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    42.02,
+    0.76
+  ],
+  "tile": "N42_00_E000_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N42_00_E000_00_DEM/Copernicus_DSM_COG_10_N42_00_E000_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 779.651,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 780.189,
+      "validSampleCount": 274
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 790.895,
+      "validSampleCount": 4435
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:04:41.150146Z"
+}

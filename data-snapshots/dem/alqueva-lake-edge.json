@@ -1,0 +1,33 @@
+{
+  "siteId": "alqueva-lake-edge",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    38.25,
+    -7.25
+  ],
+  "tile": "N38_00_W008_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N38_00_W008_00_DEM/Copernicus_DSM_COG_10_N38_00_W008_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 213.068,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 211.565,
+      "validSampleCount": 258
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 211.621,
+      "validSampleCount": 4196
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:02:46.770992Z"
+}

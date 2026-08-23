@@ -1,0 +1,33 @@
+{
+  "siteId": "rila-dark-sky",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    42.1,
+    23.6
+  ],
+  "tile": "N42_00_E023_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N42_00_E023_00_DEM/Copernicus_DSM_COG_10_N42_00_E023_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 2139.76,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2145.818,
+      "validSampleCount": 274
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2174.376,
+      "validSampleCount": 4434
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:05:59.974562Z"
+}

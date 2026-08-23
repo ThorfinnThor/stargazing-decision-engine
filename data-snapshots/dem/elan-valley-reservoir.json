@@ -1,0 +1,33 @@
+{
+  "siteId": "elan-valley-reservoir",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    52.3,
+    -3.6
+  ],
+  "tile": "N52_00_W004_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N52_00_W004_00_DEM/Copernicus_DSM_COG_10_N52_00_W004_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 337.624,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 365.252,
+      "validSampleCount": 218
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 401.653,
+      "validSampleCount": 3595
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:03:41.058755Z"
+}

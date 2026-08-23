@@ -1,0 +1,33 @@
+{
+  "siteId": "big-bend-panther-junction",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    29.25,
+    -103.25
+  ],
+  "tile": "N29_00_W104_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N29_00_W104_00_DEM/Copernicus_DSM_COG_10_N29_00_W104_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1619.183,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1628.401,
+      "validSampleCount": 236
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1574.423,
+      "validSampleCount": 3770
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:02:58.553871Z"
+}

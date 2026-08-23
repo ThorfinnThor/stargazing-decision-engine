@@ -25,44 +25,16 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "death-valley-dark-sky",
+    "bestSiteId": "great-basin-wheeler-peak",
     "dateLocal": "2027-08-13",
     "timezone": "America/Los_Angeles",
     "moonIlluminationFraction": 0.9205,
-    "moonlessHours": 1.17,
-    "totalDarknessHours": 7.21
+    "moonlessHours": 0.99,
+    "totalDarknessHours": 6.91
   },
   "topDestinations": [
     {
       "rank": 1,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 97,
-      "moonScore": 13.74,
-      "radiantScore": 98.5,
-      "viewingScore": 72.32,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9205,
-        "moonlessHours": 1.17,
-        "totalDarknessHours": 7.21
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 60.13,
-        "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 2,
       "destinationId": "great-basin",
       "destinationSlug": "great-basin",
       "destinationName": "Great Basin",
@@ -83,6 +55,34 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 61.07,
         "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "death-valley",
+      "destinationSlug": "death-valley",
+      "destinationName": "Death Valley",
+      "siteId": "death-valley-dark-sky",
+      "siteSlug": "death-valley-dark-sky",
+      "siteName": "Death Valley dark-sky area",
+      "climateScore": 95,
+      "moonScore": 13.74,
+      "radiantScore": 98.5,
+      "viewingScore": 71.32,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.9205,
+        "moonlessHours": 1.17,
+        "totalDarknessHours": 7.21
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 60.13,
+        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -147,26 +147,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "grasslands",
-      "destinationSlug": "grasslands",
-      "destinationName": "Grasslands National Park",
-      "siteId": "grasslands-dark-sky",
-      "siteSlug": "grasslands-dark-sky",
-      "siteName": "Grasslands prairie observing area",
-      "climateScore": 92,
-      "moonScore": 15.98,
-      "radiantScore": 97.51,
-      "viewingScore": 70.3,
+      "destinationId": "alqueva",
+      "destinationSlug": "alqueva",
+      "destinationName": "Alqueva",
+      "siteId": "alqueva-lake-edge",
+      "siteSlug": "alqueva-lake-edge",
+      "siteName": "Alqueva lake-edge observing area",
+      "climateScore": 91,
+      "moonScore": 16.24,
+      "radiantScore": 98.5,
+      "viewingScore": 70.07,
       "moonConditions": {
         "dateLocal": "2027-08-13",
-        "timezone": "America/Regina",
-        "moonIlluminationFraction": 0.9184,
-        "moonlessHours": 0.99,
-        "totalDarknessHours": 5.12
+        "timezone": "Europe/Lisbon",
+        "moonIlluminationFraction": 0.9026,
+        "moonlessHours": 1.33,
+        "totalDarknessHours": 6.99
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 61.21,
-        "darkRadiantHours": 5.17
+        "maximumAltitudeDeg": 60.09,
+        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -177,34 +177,6 @@
   "topSites": [
     {
       "rank": 1,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 97,
-      "moonScore": 13.74,
-      "radiantScore": 98.5,
-      "viewingScore": 72.32,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9205,
-        "moonlessHours": 1.17,
-        "totalDarknessHours": 7.21
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 60.13,
-        "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 2,
       "destinationId": "great-basin",
       "destinationSlug": "great-basin",
       "destinationName": "Great Basin",
@@ -225,6 +197,34 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 61.07,
         "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "death-valley",
+      "destinationSlug": "death-valley",
+      "destinationName": "Death Valley",
+      "siteId": "death-valley-dark-sky",
+      "siteSlug": "death-valley-dark-sky",
+      "siteName": "Death Valley dark-sky area",
+      "climateScore": 95,
+      "moonScore": 13.74,
+      "radiantScore": 98.5,
+      "viewingScore": 71.32,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.9205,
+        "moonlessHours": 1.17,
+        "totalDarknessHours": 7.21
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 60.13,
+        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,26 +289,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "grasslands",
-      "destinationSlug": "grasslands",
-      "destinationName": "Grasslands National Park",
-      "siteId": "grasslands-dark-sky",
-      "siteSlug": "grasslands-dark-sky",
-      "siteName": "Grasslands prairie observing area",
-      "climateScore": 92,
-      "moonScore": 15.98,
-      "radiantScore": 97.51,
-      "viewingScore": 70.3,
+      "destinationId": "alqueva",
+      "destinationSlug": "alqueva",
+      "destinationName": "Alqueva",
+      "siteId": "alqueva-lake-edge",
+      "siteSlug": "alqueva-lake-edge",
+      "siteName": "Alqueva lake-edge observing area",
+      "climateScore": 91,
+      "moonScore": 16.24,
+      "radiantScore": 98.5,
+      "viewingScore": 70.07,
       "moonConditions": {
         "dateLocal": "2027-08-13",
-        "timezone": "America/Regina",
-        "moonIlluminationFraction": 0.9184,
-        "moonlessHours": 0.99,
-        "totalDarknessHours": 5.12
+        "timezone": "Europe/Lisbon",
+        "moonIlluminationFraction": 0.9026,
+        "moonlessHours": 1.33,
+        "totalDarknessHours": 6.99
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 61.21,
-        "darkRadiantHours": 5.17
+        "maximumAltitudeDeg": 60.09,
+        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -316,11 +316,11 @@
       ]
     }
   ],
-  "climateScore": 97,
-  "moonScore": 13.74,
-  "radiantScore": 98.5,
-  "viewingScore": 72.32,
-  "confidenceLevel": "moderate",
+  "climateScore": 96,
+  "moonScore": 12.41,
+  "radiantScore": 99.01,
+  "viewingScore": 71.53,
+  "confidenceLevel": "high",
   "indexable": true,
   "caveats": [
     "The IMO describes a broad 03:00–16:00 UT traditional maximum and possible enhanced activity after the main peak.",

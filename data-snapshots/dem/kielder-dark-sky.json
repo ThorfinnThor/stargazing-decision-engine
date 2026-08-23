@@ -1,0 +1,33 @@
+{
+  "siteId": "kielder-dark-sky",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    55.25,
+    -2.55
+  ],
+  "tile": "N55_00_W003_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N55_00_W003_00_DEM/Copernicus_DSM_COG_10_N55_00_W003_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 258.911,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 257.884,
+      "validSampleCount": 240
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 265.686,
+      "validSampleCount": 3847
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-23T17:04:16.391641Z"
+}

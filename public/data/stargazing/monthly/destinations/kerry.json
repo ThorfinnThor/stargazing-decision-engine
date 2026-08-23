@@ -3,10 +3,9 @@
   "siteId": "kerry-dark-sky",
   "dataStatus": "real",
   "algorithmVersion": "site-score-1.0.0",
-  "generatedAt": "2026-08-23T13:23:07.570405Z",
+  "generatedAt": "2026-08-23T17:03:33.337665Z",
   "caveats": [
     "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
-    "Curated elevation fallback used; DEM confidence is zero",
     "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
   ],
   "months": [
@@ -27,7 +26,7 @@
     },
     {
       "month": 4,
-      "score": 59,
+      "score": 58,
       "confidenceLevel": "high"
     },
     {
@@ -57,7 +56,7 @@
     },
     {
       "month": 10,
-      "score": 55,
+      "score": 54,
       "confidenceLevel": "high"
     },
     {
