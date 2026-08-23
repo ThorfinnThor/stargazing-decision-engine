@@ -1,5 +1,33 @@
 [
   {
+    "id": "al-wathba",
+    "slug": "al-wathba",
+    "name": "Al Wathba",
+    "countryCode": "AE",
+    "countryName": "United Arab Emirates",
+    "continent": "asia",
+    "regionSlugs": [
+      "abu-dhabi",
+      "asia"
+    ],
+    "timezone": "Asia/Dubai",
+    "active": true,
+    "priority": 74,
+    "tags": [
+      "desert",
+      "accessible",
+      "dry",
+      "low-elevation"
+    ],
+    "observationSiteIds": [
+      "al-wathba-dark-sky"
+    ],
+    "stayAreaIds": [
+      "al-wathba"
+    ],
+    "affiliateQuery": "Al Wathba Abu Dhabi stargazing"
+  },
+  {
     "id": "alqueva",
     "slug": "alqueva",
     "name": "Alqueva",
@@ -112,6 +140,90 @@
     "affiliateQuery": "Big Bend National Park Texas"
   },
   {
+    "id": "cherry-springs",
+    "slug": "cherry-springs",
+    "name": "Cherry Springs",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "pennsylvania",
+      "north-america"
+    ],
+    "timezone": "America/New_York",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "dark-sky",
+      "forest",
+      "accessible",
+      "four-season"
+    ],
+    "observationSiteIds": [
+      "cherry-springs-dark-sky"
+    ],
+    "stayAreaIds": [
+      "cherry-springs-town"
+    ],
+    "affiliateQuery": "Cherry Springs Pennsylvania"
+  },
+  {
+    "id": "elan-valley",
+    "slug": "elan-valley",
+    "name": "Elan Valley",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "wales",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 79,
+    "tags": [
+      "reservoir",
+      "dark-sky",
+      "remote",
+      "cloud-variable"
+    ],
+    "observationSiteIds": [
+      "elan-valley-reservoir"
+    ],
+    "stayAreaIds": [
+      "rhayader"
+    ],
+    "affiliateQuery": "Elan Valley Wales stargazing"
+  },
+  {
+    "id": "elqui-valley",
+    "slug": "elqui-valley",
+    "name": "Elqui Valley",
+    "countryCode": "CL",
+    "countryName": "Chile",
+    "continent": "south-america",
+    "regionSlugs": [
+      "coquimbo",
+      "south-america"
+    ],
+    "timezone": "America/Santiago",
+    "active": true,
+    "priority": 91,
+    "tags": [
+      "dry",
+      "dark-sky",
+      "observatory",
+      "comfortable"
+    ],
+    "observationSiteIds": [
+      "elqui-paihuano"
+    ],
+    "stayAreaIds": [
+      "paihuano"
+    ],
+    "affiliateQuery": "Elqui Valley Chile stargazing"
+  },
+  {
     "id": "galloway",
     "slug": "galloway",
     "name": "Galloway Forest",
@@ -137,6 +249,90 @@
       "cairnsmore"
     ],
     "affiliateQuery": "Galloway Forest Scotland"
+  },
+  {
+    "id": "great-basin",
+    "slug": "great-basin",
+    "name": "Great Basin",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "nevada",
+      "north-america"
+    ],
+    "timezone": "America/Los_Angeles",
+    "active": true,
+    "priority": 90,
+    "tags": [
+      "desert",
+      "very-dark",
+      "high-altitude",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "great-basin-wheeler-peak"
+    ],
+    "stayAreaIds": [
+      "great-basin-baker"
+    ],
+    "affiliateQuery": "Great Basin National Park Nevada"
+  },
+  {
+    "id": "hanle",
+    "slug": "hanle",
+    "name": "Hanle",
+    "countryCode": "IN",
+    "countryName": "India",
+    "continent": "asia",
+    "regionSlugs": [
+      "ladakh",
+      "asia"
+    ],
+    "timezone": "Asia/Kolkata",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "high-altitude",
+      "very-dark",
+      "remote",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "hanle-dark-sky"
+    ],
+    "stayAreaIds": [
+      "hanle-village"
+    ],
+    "affiliateQuery": "Hanle Ladakh India stargazing"
+  },
+  {
+    "id": "hortobagy",
+    "slug": "hortobagy",
+    "name": "Hortobágy",
+    "countryCode": "HU",
+    "countryName": "Hungary",
+    "continent": "europe",
+    "regionSlugs": [
+      "great-plain",
+      "europe"
+    ],
+    "timezone": "Europe/Budapest",
+    "active": true,
+    "priority": 76,
+    "tags": [
+      "plain",
+      "dark-sky",
+      "accessible",
+      "low-elevation"
+    ],
+    "observationSiteIds": [
+      "hortobagy-dark-sky"
+    ],
+    "stayAreaIds": [
+      "hortobagy-town"
+    ],
+    "affiliateQuery": "Hortobagy Hungary stargazing"
   },
   {
     "id": "jasper",
@@ -167,6 +363,62 @@
     "affiliateQuery": "Jasper National Park Canada"
   },
   {
+    "id": "kerry",
+    "slug": "kerry",
+    "name": "Kerry International Dark Sky Reserve",
+    "countryCode": "IE",
+    "countryName": "Ireland",
+    "continent": "europe",
+    "regionSlugs": [
+      "county-kerry",
+      "europe"
+    ],
+    "timezone": "Europe/Dublin",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "coastal",
+      "dark-sky",
+      "maritime",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "kerry-dark-sky"
+    ],
+    "stayAreaIds": [
+      "caherdaniel"
+    ],
+    "affiliateQuery": "Kerry International Dark Sky Reserve Ireland"
+  },
+  {
+    "id": "kitt-peak",
+    "slug": "kitt-peak",
+    "name": "Kitt Peak",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "arizona",
+      "north-america"
+    ],
+    "timezone": "America/Phoenix",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "desert",
+      "observatory",
+      "dry",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "kitt-peak-observatory"
+    ],
+    "stayAreaIds": [
+      "kitt-peak-tucson"
+    ],
+    "affiliateQuery": "Kitt Peak Arizona"
+  },
+  {
     "id": "la-palma",
     "slug": "la-palma",
     "name": "La Palma",
@@ -193,6 +445,34 @@
       "garafia"
     ],
     "affiliateQuery": "La Palma Spain"
+  },
+  {
+    "id": "mauna-kea",
+    "slug": "mauna-kea",
+    "name": "Mauna Kea",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "hawaii",
+      "north-america"
+    ],
+    "timezone": "Pacific/Honolulu",
+    "active": true,
+    "priority": 94,
+    "tags": [
+      "island",
+      "very-dark",
+      "high-altitude",
+      "observatory"
+    ],
+    "observationSiteIds": [
+      "mauna-kea-summit"
+    ],
+    "stayAreaIds": [
+      "mauna-kea-waimea"
+    ],
+    "affiliateQuery": "Mauna Kea Hawaii stargazing"
   },
   {
     "id": "namibrand",
@@ -223,6 +503,34 @@
     "affiliateQuery": "NamibRand Nature Reserve Namibia"
   },
   {
+    "id": "north-york-moors",
+    "slug": "north-york-moors",
+    "name": "North York Moors",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "yorkshire",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 80,
+    "tags": [
+      "moorland",
+      "dark-sky",
+      "accessible",
+      "cloud-variable"
+    ],
+    "observationSiteIds": [
+      "dalby-forest-dark-sky"
+    ],
+    "stayAreaIds": [
+      "dalby-village"
+    ],
+    "affiliateQuery": "North York Moors stargazing"
+  },
+  {
     "id": "tenerife",
     "slug": "tenerife",
     "name": "Tenerife",
@@ -251,6 +559,62 @@
     "affiliateQuery": "Tenerife Teide"
   },
   {
+    "id": "uluru",
+    "slug": "uluru",
+    "name": "Uluru",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "continent": "oceania",
+    "regionSlugs": [
+      "northern-territory",
+      "oceania"
+    ],
+    "timezone": "Australia/Darwin",
+    "active": true,
+    "priority": 87,
+    "tags": [
+      "desert",
+      "very-dark",
+      "remote",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "uluru-dark-sky"
+    ],
+    "stayAreaIds": [
+      "yulara"
+    ],
+    "affiliateQuery": "Uluru Australia stargazing"
+  },
+  {
+    "id": "warrumbungle",
+    "slug": "warrumbungle",
+    "name": "Warrumbungle",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "continent": "oceania",
+    "regionSlugs": [
+      "new-south-wales",
+      "oceania"
+    ],
+    "timezone": "Australia/Sydney",
+    "active": true,
+    "priority": 89,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "dry",
+      "observatory"
+    ],
+    "observationSiteIds": [
+      "siding-spring-observing-area"
+    ],
+    "stayAreaIds": [
+      "coonabarabran"
+    ],
+    "affiliateQuery": "Warrumbungle National Park Australia"
+  },
+  {
     "id": "westhavelland",
     "slug": "westhavelland",
     "name": "Westhavelland",
@@ -276,5 +640,61 @@
       "guelpe"
     ],
     "affiliateQuery": "Westhavelland Germany"
+  },
+  {
+    "id": "witsand",
+    "slug": "witsand",
+    "name": "Witsand",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "northern-cape",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 83,
+    "tags": [
+      "desert",
+      "dark-sky",
+      "dry",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "witsand-dark-sky"
+    ],
+    "stayAreaIds": [
+      "witsand-town"
+    ],
+    "affiliateQuery": "Witsand Nature Reserve South Africa"
+  },
+  {
+    "id": "zselic",
+    "slug": "zselic",
+    "name": "Zselic Starry Sky Park",
+    "countryCode": "HU",
+    "countryName": "Hungary",
+    "continent": "europe",
+    "regionSlugs": [
+      "transdanubia",
+      "europe"
+    ],
+    "timezone": "Europe/Budapest",
+    "active": true,
+    "priority": 75,
+    "tags": [
+      "forest",
+      "dark-sky",
+      "accessible",
+      "four-season"
+    ],
+    "observationSiteIds": [
+      "zselic-starry-sky"
+    ],
+    "stayAreaIds": [
+      "zselic-village"
+    ],
+    "affiliateQuery": "Zselic Starry Sky Park Hungary"
   }
 ]

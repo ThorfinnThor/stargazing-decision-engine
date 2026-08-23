@@ -1,0 +1,33 @@
+{
+  "destinationId": "uluru",
+  "siteId": "uluru-dark-sky",
+  "bestSiteId": "uluru-dark-sky",
+  "year": 2026,
+  "month": 3,
+  "algorithmVersion": "seed-fixture-calendar-0.2.0",
+  "astronomyEngineVersion": "synthetic-seed",
+  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "nights": [
+    {
+      "darknessRank": 1,
+      "dateLocal": "2026-03-15",
+      "timezone": "Australia/Darwin",
+      "astronomicalDusk": "2026-03-15T20:00:00+09:30",
+      "astronomicalDawn": "2026-03-16T05:00:00+09:30",
+      "moonIlluminationFraction": 0.411,
+      "moonPhaseAngleDeg": 147,
+      "moonRiseLocal": null,
+      "moonSetLocal": null,
+      "moonAltitudeMaxDeg": -14,
+      "moonAboveHorizonDarkHours": 3.8,
+      "moonBelowHorizonDarkHours": 6.2,
+      "moonlessHours": 6.2,
+      "totalDarknessHours": 10,
+      "calendarDarknessScore": 80,
+      "milkyWayUsefulHours": 5,
+      "milkyWayStrongHours": 3.5,
+      "galacticCenterAltitudeMaxDeg": 23,
+      "milkyWayOpportunityScore": 80
+    }
+  ]
+}

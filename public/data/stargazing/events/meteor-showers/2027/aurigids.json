@@ -25,16 +25,100 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "big-bend-panther-junction",
-    "dateLocal": "2027-08-31",
-    "timezone": "America/Chicago",
-    "moonIlluminationFraction": 0.004,
-    "moonlessHours": 8.5,
-    "totalDarknessHours": 8.52
+    "bestSiteId": "hanle-dark-sky",
+    "dateLocal": "2027-09-01",
+    "timezone": "Asia/Kolkata",
+    "moonIlluminationFraction": 0.0167,
+    "moonlessHours": 8.32,
+    "totalDarknessHours": 8.32
   },
   "topDestinations": [
     {
       "rank": 1,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 91.75,
+      "moonScore": 99.5,
+      "radiantScore": 79.72,
+      "viewingScore": 91.67,
+      "moonConditions": {
+        "dateLocal": "2027-09-01",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.0167,
+        "moonlessHours": 8.32,
+        "totalDarknessHours": 8.32
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.23,
+        "darkRadiantHours": 2.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "kitt-peak",
+      "destinationSlug": "kitt-peak",
+      "destinationName": "Kitt Peak",
+      "siteId": "kitt-peak-observatory",
+      "siteSlug": "kitt-peak-observatory",
+      "siteName": "Kitt Peak observatory area",
+      "climateScore": 89.25,
+      "moonScore": 99.67,
+      "radiantScore": 81.24,
+      "viewingScore": 90.77,
+      "moonConditions": {
+        "dateLocal": "2027-08-31",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.0053,
+        "moonlessHours": 8.33,
+        "totalDarknessHours": 8.35
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.03,
+        "darkRadiantHours": 2.83
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "great-basin",
+      "destinationSlug": "great-basin",
+      "destinationName": "Great Basin",
+      "siteId": "great-basin-wheeler-peak",
+      "siteSlug": "great-basin-wheeler-peak",
+      "siteName": "Great Basin Wheeler Peak area",
+      "climateScore": 89.25,
+      "moonScore": 99.84,
+      "radiantScore": 80.68,
+      "viewingScore": 90.71,
+      "moonConditions": {
+        "dateLocal": "2027-08-31",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.0053,
+        "moonlessHours": 7.82,
+        "totalDarknessHours": 7.82
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.63,
+        "darkRadiantHours": 2.83
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -62,111 +146,27 @@
       ]
     },
     {
-      "rank": 2,
-      "destinationId": "la-palma",
-      "destinationSlug": "la-palma",
-      "destinationName": "La Palma",
-      "siteId": "roque-de-los-muchachos",
-      "siteSlug": "roque-de-los-muchachos",
-      "siteName": "Roque de los Muchachos observing zone",
-      "climateScore": 85.75,
-      "moonScore": 99.31,
-      "radiantScore": 80.08,
-      "viewingScore": 88.68,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Atlantic/Canary",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 8.57,
-        "totalDarknessHours": 8.57
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 50.14,
-        "darkRadiantHours": 2.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 3,
-      "destinationId": "tenerife",
-      "destinationSlug": "tenerife",
-      "destinationName": "Tenerife",
-      "siteId": "teide-high-zone",
-      "siteSlug": "teide-high-zone",
-      "siteName": "Teide high-elevation observing zone",
-      "climateScore": 82.25,
-      "moonScore": 98.5,
-      "radiantScore": 79.6,
-      "viewingScore": 86.6,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Atlantic/Canary",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 8.5,
-        "totalDarknessHours": 8.6
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 48.93,
-        "darkRadiantHours": 2.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "alqueva",
-      "destinationSlug": "alqueva",
-      "destinationName": "Alqueva",
-      "siteId": "alqueva-lake-edge",
-      "siteSlug": "alqueva-lake-edge",
-      "siteName": "Alqueva lake-edge observing area",
-      "climateScore": 76.75,
-      "moonScore": 99.31,
-      "radiantScore": 82.66,
-      "viewingScore": 84.7,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Europe/Lisbon",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 7.92,
-        "totalDarknessHours": 7.92
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 50.4,
-        "darkRadiantHours": 3
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "jasper",
-      "destinationSlug": "jasper",
-      "destinationName": "Jasper National Park",
-      "siteId": "jasper-medicine-lake",
-      "siteSlug": "jasper-medicine-lake",
-      "siteName": "Medicine Lake observing area",
-      "climateScore": 73.25,
-      "moonScore": 99.86,
-      "radiantScore": 78.33,
-      "viewingScore": 82.25,
+      "destinationId": "mauna-kea",
+      "destinationSlug": "mauna-kea",
+      "destinationName": "Mauna Kea",
+      "siteId": "mauna-kea-summit",
+      "siteSlug": "mauna-kea-summit",
+      "siteName": "Mauna Kea summit observing zone",
+      "climateScore": 87.25,
+      "moonScore": 99.77,
+      "radiantScore": 76.19,
+      "viewingScore": 88.79,
       "moonConditions": {
         "dateLocal": "2027-08-31",
-        "timezone": "America/Edmonton",
-        "moonIlluminationFraction": 0.0046,
-        "moonlessHours": 5.96,
-        "totalDarknessHours": 5.96
+        "timezone": "Pacific/Honolulu",
+        "moonIlluminationFraction": 0.0076,
+        "moonlessHours": 8.98,
+        "totalDarknessHours": 8.98
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 42.76,
-        "darkRadiantHours": 2.83
+        "maximumAltitudeDeg": 46.8,
+        "darkRadiantHours": 2.33
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -177,6 +177,90 @@
   "topSites": [
     {
       "rank": 1,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-dark-sky",
+      "siteSlug": "hanle-dark-sky",
+      "siteName": "Hanle high-altitude observing area",
+      "climateScore": 91.75,
+      "moonScore": 99.5,
+      "radiantScore": 79.72,
+      "viewingScore": 91.67,
+      "moonConditions": {
+        "dateLocal": "2027-09-01",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.0167,
+        "moonlessHours": 8.32,
+        "totalDarknessHours": 8.32
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.23,
+        "darkRadiantHours": 2.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "kitt-peak",
+      "destinationSlug": "kitt-peak",
+      "destinationName": "Kitt Peak",
+      "siteId": "kitt-peak-observatory",
+      "siteSlug": "kitt-peak-observatory",
+      "siteName": "Kitt Peak observatory area",
+      "climateScore": 89.25,
+      "moonScore": 99.67,
+      "radiantScore": 81.24,
+      "viewingScore": 90.77,
+      "moonConditions": {
+        "dateLocal": "2027-08-31",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.0053,
+        "moonlessHours": 8.33,
+        "totalDarknessHours": 8.35
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 50.03,
+        "darkRadiantHours": 2.83
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "great-basin",
+      "destinationSlug": "great-basin",
+      "destinationName": "Great Basin",
+      "siteId": "great-basin-wheeler-peak",
+      "siteSlug": "great-basin-wheeler-peak",
+      "siteName": "Great Basin Wheeler Peak area",
+      "climateScore": 89.25,
+      "moonScore": 99.84,
+      "radiantScore": 80.68,
+      "viewingScore": 90.71,
+      "moonConditions": {
+        "dateLocal": "2027-08-31",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.0053,
+        "moonlessHours": 7.82,
+        "totalDarknessHours": 7.82
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.63,
+        "darkRadiantHours": 2.83
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -204,111 +288,27 @@
       ]
     },
     {
-      "rank": 2,
-      "destinationId": "la-palma",
-      "destinationSlug": "la-palma",
-      "destinationName": "La Palma",
-      "siteId": "roque-de-los-muchachos",
-      "siteSlug": "roque-de-los-muchachos",
-      "siteName": "Roque de los Muchachos observing zone",
-      "climateScore": 85.75,
-      "moonScore": 99.31,
-      "radiantScore": 80.08,
-      "viewingScore": 88.68,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Atlantic/Canary",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 8.57,
-        "totalDarknessHours": 8.57
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 50.14,
-        "darkRadiantHours": 2.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 3,
-      "destinationId": "tenerife",
-      "destinationSlug": "tenerife",
-      "destinationName": "Tenerife",
-      "siteId": "teide-high-zone",
-      "siteSlug": "teide-high-zone",
-      "siteName": "Teide high-elevation observing zone",
-      "climateScore": 82.25,
-      "moonScore": 98.5,
-      "radiantScore": 79.6,
-      "viewingScore": 86.6,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Atlantic/Canary",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 8.5,
-        "totalDarknessHours": 8.6
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 48.93,
-        "darkRadiantHours": 2.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "alqueva",
-      "destinationSlug": "alqueva",
-      "destinationName": "Alqueva",
-      "siteId": "alqueva-lake-edge",
-      "siteSlug": "alqueva-lake-edge",
-      "siteName": "Alqueva lake-edge observing area",
-      "climateScore": 76.75,
-      "moonScore": 99.31,
-      "radiantScore": 82.66,
-      "viewingScore": 84.7,
-      "moonConditions": {
-        "dateLocal": "2027-09-01",
-        "timezone": "Europe/Lisbon",
-        "moonIlluminationFraction": 0.0229,
-        "moonlessHours": 7.92,
-        "totalDarknessHours": 7.92
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 50.4,
-        "darkRadiantHours": 3
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "jasper",
-      "destinationSlug": "jasper",
-      "destinationName": "Jasper National Park",
-      "siteId": "jasper-medicine-lake",
-      "siteSlug": "jasper-medicine-lake",
-      "siteName": "Medicine Lake observing area",
-      "climateScore": 73.25,
-      "moonScore": 99.86,
-      "radiantScore": 78.33,
-      "viewingScore": 82.25,
+      "destinationId": "mauna-kea",
+      "destinationSlug": "mauna-kea",
+      "destinationName": "Mauna Kea",
+      "siteId": "mauna-kea-summit",
+      "siteSlug": "mauna-kea-summit",
+      "siteName": "Mauna Kea summit observing zone",
+      "climateScore": 87.25,
+      "moonScore": 99.77,
+      "radiantScore": 76.19,
+      "viewingScore": 88.79,
       "moonConditions": {
         "dateLocal": "2027-08-31",
-        "timezone": "America/Edmonton",
-        "moonIlluminationFraction": 0.0046,
-        "moonlessHours": 5.96,
-        "totalDarknessHours": 5.96
+        "timezone": "Pacific/Honolulu",
+        "moonIlluminationFraction": 0.0076,
+        "moonlessHours": 8.98,
+        "totalDarknessHours": 8.98
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 42.76,
-        "darkRadiantHours": 2.83
+        "maximumAltitudeDeg": 46.8,
+        "darkRadiantHours": 2.33
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -316,10 +316,10 @@
       ]
     }
   ],
-  "climateScore": 88.75,
-  "moonScore": 99.72,
-  "radiantScore": 79.83,
-  "viewingScore": 90.26,
+  "climateScore": 91.75,
+  "moonScore": 99.5,
+  "radiantScore": 79.72,
+  "viewingScore": 91.67,
   "confidenceLevel": "low",
   "indexable": false,
   "caveats": [
