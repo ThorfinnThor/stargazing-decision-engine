@@ -5,17 +5,13 @@ does not download or sample a raster at request time.
 
 ## Source and access
 
-V1 uses `COP-DEM_GLO-30-DGED`, the 30 m Copernicus DEM product. CDSE documents
-S3-compatible object storage as a supported access method and identifies the
-GLO-30 collection as available through S3. The runner uses the endpoint
-`eodata.dataspace.copernicus.eu`, bucket `eodata`, and the configurable
-`auxdata/CopDEM/COP-DEM_GLO-30-DGED` prefix. Credentials are supplied only via
-`CDSE_S3_ACCESS_KEY` and `CDSE_S3_SECRET_KEY` in the ingestion environment. If
-the CDSE catalogue exposes a product key that differs from the configured tile
-prefix, set `CDSE_S3_KEY` to that exact object key.
+V1 uses `COP-DEM_GLO-30-DGED`, the 30 m Copernicus DEM product. The production
+GitHub ingestion reads the public Copernicus DEM COG mirror because its tile
+keys are stable and directly addressable. The downloader can also use the
+authenticated CDSE S3 endpoint when an exact collection object key is known.
+Snapshot provenance always records the selected bucket and key.
 
-The official public COG bucket is available as an explicit `--public-fallback`
-for development and recovery. The tile key template is kept in
+The public COG mirror is selected with `--public-fallback`. The tile key template is kept in
 `data-config/sources/copernicus-dem.json` because object paths can change with
 the provider catalogue. In the public COG naming convention, `10` denotes the
 one-arc-second GLO-30 grid; it does not mean ten-metre resolution.

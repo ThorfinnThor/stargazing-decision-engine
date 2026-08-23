@@ -105,7 +105,9 @@ jobs:
               pnpm data:black-marble:process --site "$site"
             fi
             if [[ "$REFRESH_DEM" == "true" ]]; then
-              pnpm data:dem:fetch --site "$site"
+              # The public COG mirror has stable, directly addressable tile
+              # keys; CDSE eodata collection prefixes use a different layout.
+              pnpm data:dem:fetch --site "$site" --public-fallback
               pnpm data:dem:process --site "$site"
             fi
           done < /tmp/stargazing-sites
