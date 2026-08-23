@@ -1,7 +1,7 @@
 {
   "datasetVersion": "real-2026-08-23.1",
   "schemaVersion": 1,
-  "algorithmVersion": "site-score-1.0.0+seed-fixture-0.1.0",
+  "algorithmVersion": "site-score-1.0.0",
   "generatedAt": "2026-08-23T14:12:58.545927Z",
   "climateNormal": {
     "startYear": 1991,
@@ -17,11 +17,11 @@
     ]
   },
   "sourceVersions": {
-    "dataset": "reviewed-real-snapshots-with-seed-fallback",
+    "dataset": "reviewed-real-snapshots",
     "siteScores": "site-score-1.0.0",
-    "calendar": "synthetic-seed-calendar",
-    "meteorShowers": "imo-2027",
-    "shortTrips": "haversine-v1",
+    "calendar": "astronomy-calendar-real-1.0.0",
+    "meteorShowers": "imo-2027+real-site-score-1.0.0",
+    "shortTrips": "haversine-v1+real-site-score-1.0.0",
     "gear": "editorial-2026-08-21",
     "images": "attribution-manifest-2026-08-21"
   },

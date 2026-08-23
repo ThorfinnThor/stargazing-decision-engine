@@ -2,14 +2,19 @@
   "id": "sierra-nevada-observatory",
   "slug": "sierra-nevada-observatory",
   "destinationId": "sierra-nevada",
-  "name": "Sierra Nevada observing area",
+  "name": "Sierra Nevada Observatory",
   "lat": 37.06,
   "lon": -3.38,
   "elevationM": 2500,
   "siteType": "mountain",
-  "publicAccess": "limited",
-  "accessScore": 68,
+  "publicAccess": "no",
+  "accessScore": 0,
   "active": true,
   "priority": 88,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.osn.iaa.es/en/general/guided-visit",
+  "accessNotes": {
+    "en": "Public visits are scheduled daytime guided visits; night visits are not permitted.",
+    "de": "Öffentliche Besuche sind geführte Tagestermine; Nachtbesuche sind nicht erlaubt."
+  }
 }

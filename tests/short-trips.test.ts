@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import { buildShortTripFiles, shortTripDistance, validateShortTripScoringConfig, type ShortTripScoringConfig } from "../lib/trips/short-trips.js";
+import { isTravelEligibleSite } from "../lib/access/travel.js";
 import type { Destination, MonthlySiteScore, ObservationSite, OriginCity, StayArea } from "../lib/data/types.js";
 
 const scoringConfig: ShortTripScoringConfig = {
@@ -23,6 +24,7 @@ const destination: Destination = {
 };
 const publicSite: ObservationSite = { id: "public-site", slug: "public-site", destinationId: "destination", name: "Public site", lat: 0, lon: 0.5, elevationM: null, siteType: "plain", publicAccess: "yes", accessScore: 80, active: true, priority: 1, certificationIds: [] };
 const closedSite: ObservationSite = { ...publicSite, id: "closed-site", slug: "closed-site", name: "Closed site", lat: 0, lon: 0.01, publicAccess: "no", priority: 100 };
+const unsourcedLimitedSite: ObservationSite = { ...publicSite, id: "limited-site", slug: "limited-site", name: "Unsourced limited site", lat: 0, lon: 0.02, publicAccess: "limited", priority: 99 };
 const stayArea: StayArea = { id: "stay", destinationId: "destination", name: "Stay area", lat: 0, lon: 0.5, affiliateQuery: "Destination stay", observationSiteIds: ["public-site"] };
 const scores: MonthlySiteScore[] = Array.from({ length: 12 }, (_, index) => ({
   siteId: "public-site", month: (index + 1) as MonthlySiteScore["month"], skyQuality: 70, tripComfort: 70, stargazingTrip: index === 6 ? 90 : 60, clearSkyScore: 70, darknessScore: 70, dewScore: 70, elevationScore: 70, temperatureComfortScore: 70, windComfortScore: 70, rainComfortScore: 70, accessScore: 80, confidenceScore: 35, confidenceLevel: "low", reasons: [], caveats: [],
@@ -35,8 +37,15 @@ test("short-trip distance bands are deterministic at boundaries", () => {
   assert.deepEqual(shortTripDistance(801, scoringConfig), { band: "far", utility: 0 });
 });
 
+test("travel access fails closed for unsourced conditional sites", () => {
+  assert.equal(isTravelEligibleSite(publicSite), true);
+  assert.equal(isTravelEligibleSite(closedSite), false);
+  assert.equal(isTravelEligibleSite(unsourcedLimitedSite), false);
+  assert.equal(isTravelEligibleSite({ ...unsourcedLimitedSite, notesSourceUrl: "https://example.com/access" }), true);
+});
+
 test("short-trip ranking excludes private sites and reproduces weighted score", () => {
-  const [file] = buildShortTripFiles({ origins: [origin], destinations: [destination], sites: [publicSite, closedSite], stayAreas: [stayArea], scores, scoringConfig, generatedAt: "2026-08-20T00:00:00.000Z" });
+  const [file] = buildShortTripFiles({ origins: [origin], destinations: [destination], sites: [publicSite, closedSite, unsourcedLimitedSite], stayAreas: [stayArea], scores, scoringConfig, generatedAt: "2026-08-20T00:00:00.000Z" });
   assert.ok(file);
   assert.equal(file.entries.length, 1);
   const [entry] = file.entries;

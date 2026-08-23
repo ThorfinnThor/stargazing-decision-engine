@@ -91,7 +91,7 @@ missing-data behavior are documented in
 [`docs/site-score-methodology.md`](docs/site-score-methodology.md).
 
 The real astronomy calendar is generated offline for an explicit rolling horizon
-with `pnpm data:calendar:real -- --start YYYY-MM --months 36`. Its lunar and
+with `pnpm data:calendar:real -- --start YYYY-MM --months 36 --replace`. Its lunar and
 astronomical-darkness and Milky Way-overlap semantics are documented in
 [`docs/calendar-methodology.md`](docs/calendar-methodology.md).
 The Milky Way coordinate and utility configuration is validated with
@@ -111,7 +111,11 @@ viewing scores combine monthly historical sky quality, concrete-night Moon
 conditions, and radiant altitude; they do not forecast meteor counts or ZHR.
 See [`docs/meteor-showers-methodology.md`](docs/meteor-showers-methodology.md).
 
-Short-trip rankings use Haversine distance and static JSON exports. See
+Short-trip rankings use Haversine distance, the complete committed real-score
+snapshot set, and static JSON exports. Meteor and short-trip publication fail
+when an active site lacks its real 12-month score snapshot. Conditional-access
+sites additionally require a reviewed access source before they can enter a
+travel ranking. See
 [`docs/short-trips-methodology.md`](docs/short-trips-methodology.md).
 
 Affiliate links are disabled by default and isolated behind allow-listed static
@@ -120,6 +124,7 @@ redirects. See [`docs/affiliate-setup.md`](docs/affiliate-setup.md).
 Gear guides are static specification-analysis pages with no scraped prices or
 availability claims. See [`docs/gear-methodology.md`](docs/gear-methodology.md).
 
-The current catalog is synthetic seed data for development only. It is marked
-low confidence in the UI and must be replaced by reviewed source snapshots
-before production launch.
+The current catalog contains 50 destinations with 50 complete reviewed real
+score snapshots. Synthetic scoring remains only as an isolated development
+fixture and cannot feed calendars, meteor rankings, short trips, or the
+production manifest.

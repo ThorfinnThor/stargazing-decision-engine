@@ -66,5 +66,6 @@ grid points, invalid ranges, and malformed timestamps fail the build.
 
 The fetcher retries transient failures and reuses cached downloads. Tests use
 small committed CSV fixtures, so they do not require credentials or network
-access. No real ERA5 climate snapshot is currently claimed unless the
-credentialed workflow has been run and its output committed.
+access. Production claims are made only for real ERA5 snapshots committed by
+the credentialed workflow; the current catalog contains one for every active
+site.

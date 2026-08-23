@@ -8,6 +8,7 @@ import type {
   StayArea,
 } from "../data/types.js";
 import { haversineKm } from "../climate/era5/distance.js";
+import { isTravelEligibleSite } from "../access/travel.js";
 
 export interface ShortTripDistanceBand {
   id: string;
@@ -47,8 +48,8 @@ export function shortTripDistance(distanceKm: number, config: ShortTripScoringCo
   return { band: band.id, utility: band.utility };
 }
 
-function bestSiteForDestination(destination: Destination, sites: ObservationSite[], scores: MonthlySiteScore[], excludedPublicAccess: ObservationSite["publicAccess"]) {
-  const candidates = sites.filter((site) => site.active && site.destinationId === destination.id && site.publicAccess !== excludedPublicAccess);
+function bestSiteForDestination(destination: Destination, sites: ObservationSite[], scores: MonthlySiteScore[]) {
+  const candidates = sites.filter((site) => site.destinationId === destination.id && isTravelEligibleSite(site));
   return [...candidates].sort((left, right) => {
     const leftScores = scores.filter((score) => score.siteId === left.id);
     const rightScores = scores.filter((score) => score.siteId === right.id);
@@ -77,7 +78,7 @@ export function buildShortTripFiles(options: {
   validateConfig(options.scoringConfig);
   return options.origins.filter((origin) => origin.active).map((origin) => {
     const entries = options.destinations.filter((destination) => destination.active).flatMap((destination) => {
-      const site = bestSiteForDestination(destination, options.sites, options.scores, options.scoringConfig.excludedPublicAccess);
+      const site = bestSiteForDestination(destination, options.sites, options.scores);
       if (!site) return [];
       const monthlyScores = options.scores.filter((score) => score.siteId === site.id).sort((left, right) => left.month - right.month);
       if (monthlyScores.length === 0) return [];

@@ -41,10 +41,10 @@
       "siteId": "death-valley-dark-sky",
       "siteSlug": "death-valley-dark-sky",
       "siteName": "Death Valley dark-sky area",
-      "climateScore": 92,
+      "climateScore": 96,
       "moonScore": 11.19,
       "radiantScore": 99.01,
-      "viewingScore": 69.16,
+      "viewingScore": 71.16,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Los_Angeles",
@@ -63,16 +63,72 @@
     },
     {
       "rank": 2,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 97,
+      "moonScore": 8.87,
+      "radiantScore": 98.5,
+      "viewingScore": 70.86,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.9427,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 8.12
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 84.96,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "mcdonald-observatory",
+      "destinationSlug": "mcdonald-observatory",
+      "destinationName": "McDonald Observatory",
+      "siteId": "mcdonald-observatory",
+      "siteSlug": "mcdonald-observatory",
+      "siteName": "McDonald Observatory visitor area",
+      "climateScore": 94,
+      "moonScore": 10.46,
+      "radiantScore": 98.5,
+      "viewingScore": 69.84,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.9427,
+        "moonlessHours": 1,
+        "totalDarknessHours": 8.01
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 85.93,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
       "siteId": "natural-bridges-dark-sky",
       "siteSlug": "natural-bridges-dark-sky",
       "siteName": "Natural Bridges dark-sky area",
-      "climateScore": 91.5,
+      "climateScore": 94,
       "moonScore": 9.66,
       "radiantScore": 99.01,
-      "viewingScore": 68.45,
+      "viewingScore": 69.7,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Denver",
@@ -90,17 +146,17 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
       "siteId": "canyonlands-dark-sky",
       "siteSlug": "canyonlands-dark-sky",
       "siteName": "Canyonlands dark-sky area",
-      "climateScore": 89.5,
+      "climateScore": 92,
       "moonScore": 9.73,
       "radiantScore": 99.01,
-      "viewingScore": 67.47,
+      "viewingScore": 68.72,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Denver",
@@ -110,62 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 83.51,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "anza-borrego",
-      "destinationSlug": "anza-borrego",
-      "destinationName": "Anza-Borrego Desert",
-      "siteId": "anza-borrego-dark-sky",
-      "siteSlug": "anza-borrego-dark-sky",
-      "siteName": "Anza-Borrego desert observing area",
-      "climateScore": 89,
-      "moonScore": 9.29,
-      "radiantScore": 99.01,
-      "viewingScore": 67.09,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.79
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 87.7,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "great-basin",
-      "destinationSlug": "great-basin",
-      "destinationName": "Great Basin",
-      "siteId": "great-basin-wheeler-peak",
-      "siteSlug": "great-basin-wheeler-peak",
-      "siteName": "Great Basin Wheeler Peak area",
-      "climateScore": 88,
-      "moonScore": 9.89,
-      "radiantScore": 99.01,
-      "viewingScore": 66.77,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.21
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 81.88,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -183,10 +183,10 @@
       "siteId": "death-valley-dark-sky",
       "siteSlug": "death-valley-dark-sky",
       "siteName": "Death Valley dark-sky area",
-      "climateScore": 92,
+      "climateScore": 96,
       "moonScore": 11.19,
       "radiantScore": 99.01,
-      "viewingScore": 69.16,
+      "viewingScore": 71.16,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Los_Angeles",
@@ -205,16 +205,72 @@
     },
     {
       "rank": 2,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 97,
+      "moonScore": 8.87,
+      "radiantScore": 98.5,
+      "viewingScore": 70.86,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.9427,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 8.12
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 84.96,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "mcdonald-observatory",
+      "destinationSlug": "mcdonald-observatory",
+      "destinationName": "McDonald Observatory",
+      "siteId": "mcdonald-observatory",
+      "siteSlug": "mcdonald-observatory",
+      "siteName": "McDonald Observatory visitor area",
+      "climateScore": 94,
+      "moonScore": 10.46,
+      "radiantScore": 98.5,
+      "viewingScore": 69.84,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.9427,
+        "moonlessHours": 1,
+        "totalDarknessHours": 8.01
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 85.93,
+        "darkRadiantHours": 5.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
       "siteId": "natural-bridges-dark-sky",
       "siteSlug": "natural-bridges-dark-sky",
       "siteName": "Natural Bridges dark-sky area",
-      "climateScore": 91.5,
+      "climateScore": 94,
       "moonScore": 9.66,
       "radiantScore": 99.01,
-      "viewingScore": 68.45,
+      "viewingScore": 69.7,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Denver",
@@ -232,17 +288,17 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
       "siteId": "canyonlands-dark-sky",
       "siteSlug": "canyonlands-dark-sky",
       "siteName": "Canyonlands dark-sky area",
-      "climateScore": 89.5,
+      "climateScore": 92,
       "moonScore": 9.73,
       "radiantScore": 99.01,
-      "viewingScore": 67.47,
+      "viewingScore": 68.72,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Denver",
@@ -258,74 +314,18 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "anza-borrego",
-      "destinationSlug": "anza-borrego",
-      "destinationName": "Anza-Borrego Desert",
-      "siteId": "anza-borrego-dark-sky",
-      "siteSlug": "anza-borrego-dark-sky",
-      "siteName": "Anza-Borrego desert observing area",
-      "climateScore": 89,
-      "moonScore": 9.29,
-      "radiantScore": 99.01,
-      "viewingScore": 67.09,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.79
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 87.7,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "great-basin",
-      "destinationSlug": "great-basin",
-      "destinationName": "Great Basin",
-      "siteId": "great-basin-wheeler-peak",
-      "siteSlug": "great-basin-wheeler-peak",
-      "siteName": "Great Basin Wheeler Peak area",
-      "climateScore": 88,
-      "moonScore": 9.89,
-      "radiantScore": 99.01,
-      "viewingScore": 66.77,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.21
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 81.88,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
-  "climateScore": 92,
+  "climateScore": 96,
   "moonScore": 11.19,
   "radiantScore": 99.01,
-  "viewingScore": 69.16,
-  "confidenceLevel": "low",
-  "indexable": false,
+  "viewingScore": 71.16,
+  "confidenceLevel": "moderate",
+  "indexable": true,
   "caveats": [
     "The 2027 maximum is shortly after Full Moon; moonlight affects the peak night.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Seed or low-confidence climate inputs keep this event out of unqualified SEO rankings."
+    "Rankings exclude sites without verified public night access."
   ]
 }

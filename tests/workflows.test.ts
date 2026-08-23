@@ -57,6 +57,7 @@ test("derived-data commits trigger the Cloudflare Git integration without deploy
   const health = workflow("health-check.yml");
   assertIncludes(calendar, "schedule:");
   assertIncludes(calendar, "pnpm data:calendar:real");
+  assertIncludes(calendar, "--replace");
   assertIncludes(calendar, "pnpm data:calendar:manifest");
   assertIncludes(health, "pnpm data:health:validate");
   const publishingWorkflows = `${ingest}\n${calibration}\n${calendar}`;

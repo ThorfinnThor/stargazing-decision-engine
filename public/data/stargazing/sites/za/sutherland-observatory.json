@@ -2,7 +2,7 @@
   "id": "sutherland-observatory",
   "slug": "sutherland-observatory",
   "destinationId": "sutherland",
-  "name": "Sutherland observatory area",
+  "name": "Sutherland observatory visitor area",
   "lat": -32.38,
   "lon": 20.81,
   "elevationM": 1750,
@@ -11,5 +11,10 @@
   "accessScore": 65,
   "active": true,
   "priority": 93,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.saao.ac.za/visit-sutherland/",
+  "accessNotes": {
+    "en": "Access is through booked SAAO visitor tours; visitors must follow the current tour schedule and observatory rules.",
+    "de": "Der Zugang erfolgt über gebuchte SAAO-Besuchertouren; es gelten der aktuelle Tourplan und die Regeln des Observatoriums."
+  }
 }

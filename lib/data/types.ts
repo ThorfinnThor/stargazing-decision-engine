@@ -37,6 +37,7 @@ export interface ObservationSite {
   priority: number;
   certificationIds: string[];
   notesSourceUrl?: string | null;
+  accessNotes?: { en: string; de: string } | null;
 }
 
 export type Site = ObservationSite;

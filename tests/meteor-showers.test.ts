@@ -13,6 +13,7 @@ import {
   type MeteorShowerScoringConfig,
 } from "../lib/astronomy/meteor-showers.js";
 import type { Destination, MonthlySiteScore, ObservationSite } from "../lib/data/types.js";
+import { isTravelEligibleSite } from "../lib/access/travel.js";
 
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
 const config = read<MeteorShowerConfig>("data-config/astronomy/meteor-showers/2027.json");
@@ -64,6 +65,14 @@ test("meteor events combine climate, Moon, and radiant components into bounded s
     assert.equal(event.indexable, false);
     assert.equal(event.confidenceLevel, "low");
     assert.ok(event.caveats.some((caveat) => /not a forecast/i.test(caveat)));
+    assert.ok(event.caveats.some((caveat) => /verified public night access/i.test(caveat)));
+    for (const row of [...event.topSites, ...event.topDestinations]) {
+      const site = sites.find((candidate) => candidate.id === row.siteId);
+      assert.ok(site);
+      assert.notEqual(site.publicAccess, "no");
+      assert.notEqual(site.publicAccess, "unknown");
+      if (site.publicAccess === "limited") assert.ok(site.notesSourceUrl);
+    }
     const expected = 0.5 * (event.climateScore ?? 0) + 0.3 * (event.moonScore ?? 0) + 0.2 * (event.radiantScore ?? 0);
     assert.ok(Math.abs(expected - (event.viewingScore ?? 0)) < 1);
   }
@@ -87,7 +96,8 @@ test("meteor radiant and Moon metrics preserve local observing-night identity", 
 });
 
 test("destination ranking retains the best site when a destination has multiple sites", () => {
-  const original = sites[0];
+  const original = sites.find(isTravelEligibleSite);
+  assert.ok(original);
   const lowerQualitySite: ObservationSite = { ...original, id: `${original.id}-lower`, slug: `${original.slug}-lower`, name: `${original.name} lower` };
   const scores = scoresForSites().map((score) => score.siteId === original.id ? { ...score, skyQuality: 95 } : score);
   scores.push(...Array.from({ length: 12 }, (_, index) => ({

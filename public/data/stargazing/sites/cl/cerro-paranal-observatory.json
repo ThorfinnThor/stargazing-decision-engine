@@ -2,14 +2,19 @@
   "id": "cerro-paranal-observatory",
   "slug": "cerro-paranal-observatory",
   "destinationId": "cerro-paranal",
-  "name": "Cerro Paranal observatory area",
+  "name": "Cerro Paranal Observatory",
   "lat": -24.63,
   "lon": -70.4,
   "elevationM": 2635,
   "siteType": "desert",
-  "publicAccess": "limited",
-  "accessScore": 58,
+  "publicAccess": "no",
+  "accessScore": 0,
   "active": true,
   "priority": 96,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.eso.org/public/about-eso/travel/paranal/",
+  "accessNotes": {
+    "en": "Public access is by appointment for daytime visits only; there is no public transport or public overnight accommodation at the observatory.",
+    "de": "Öffentlicher Zugang ist nur nach Anmeldung für Tagesbesuche möglich; am Observatorium gibt es weder öffentlichen Transport noch öffentliche Übernachtungsmöglichkeiten."
+  }
 }

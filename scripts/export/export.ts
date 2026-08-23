@@ -23,14 +23,8 @@ interface ScoredData {
   scores: MonthlySiteScore[];
 }
 
-interface CalendarOutput {
-  seed: true;
-  generatedAt: string;
-  files: Record<string, CalendarFile>;
-}
-
 interface MeteorOutput {
-  seed: true;
+  dataStatus: "real";
   generatedAt: string;
   events: MeteorShowerEvent[];
 }
@@ -39,7 +33,6 @@ interface ShortTripOutput extends ShortTripFile {}
 
 const seed = readJson<SeedData>(generatedPath("seed.normalized.json"));
 const scored = readJson<ScoredData>(generatedPath("seed.scored.json"));
-const calendar = readJson<CalendarOutput>(generatedPath("seed.calendar.json"));
 const meteorOutputs = readdirSync(generatedDir)
   .filter((file) => /^meteor-showers-\d{4}\.json$/.test(file))
   .map((file) => readJson<MeteorOutput>(generatedPath(file)));
@@ -48,6 +41,22 @@ const shortTripOutputs = readdirSync(generatedDir)
   .filter((file) => /^short-trips-[a-z0-9-]+\.json$/.test(file))
   .map((file) => readJson<ShortTripOutput>(generatedPath(file)));
 if (shortTripOutputs.length === 0) throw new Error("No generated short-trip file found");
+
+function collectJsonFiles(directory: string): string[] {
+  if (!existsSync(directory)) return [];
+  return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
+    const entryPath = resolve(directory, entry.name);
+    return entry.isDirectory() ? collectJsonFiles(entryPath) : entry.name.endsWith(".json") ? [entryPath] : [];
+  });
+}
+
+const calendarPaths = collectJsonFiles(publicPath("calendar"));
+if (calendarPaths.length === 0) throw new Error("No committed real astronomy calendar files found");
+const calendarFiles = calendarPaths.map((file) => readJson<CalendarFile>(file));
+if (calendarFiles.some((file) => file.algorithmVersion !== "astronomy-calendar-1.0.0" || file.astronomyEngineVersion !== "2.1.19")) {
+  throw new Error("Synthetic or unsupported calendar files cannot be exported");
+}
+if (meteorOutputs.some((output) => output.dataStatus !== "real")) throw new Error("Meteor rankings require real site-score inputs");
 const gearCategories = readJson<GearCategory[]>(resolve(process.cwd(), "data-config/gear/categories.json"));
 const gearGuides = readJson<GearGuide[]>(resolve(process.cwd(), "data-config/gear/guides.json"));
 const gearProducts = readJson<GearProductMetadata[]>(resolve(process.cwd(), "data-config/gear/products.json"));
@@ -160,10 +169,6 @@ for (const site of seed.sites) {
   });
 }
 
-for (const [key, file] of Object.entries(calendar.files)) {
-  writeJson(publicPath(`calendar/${key}.json`), file);
-}
-
 for (const meteor of meteorOutputs) {
   for (const event of meteor.events) {
     writeJson(publicPath(`events/meteor-showers/${event.year}/${event.slug}.json`), event);
@@ -186,13 +191,21 @@ const blackMarbleYears = [...new Set(blackMarbleSnapshots.flatMap((snapshot) => 
 writeJson(publicPath("manifest.json"), {
   datasetVersion: datasetStatus === "seed" ? "seed-2026-08-20.1" : `${datasetStatus}-${datasetDate}.1`,
   schemaVersion: 1,
-  algorithmVersion: datasetStatus === "seed" ? "seed-fixture-0.1.0" : "site-score-1.0.0+seed-fixture-0.1.0",
+  algorithmVersion: datasetStatus === "real" ? "site-score-1.0.0" : datasetStatus === "seed" ? "seed-fixture-0.1.0" : "site-score-1.0.0+seed-fallback-0.1.0",
   generatedAt,
   climateNormal: { startYear: 1991, endYear: 2020 },
   blackMarble: realScoreSiteCount === 0
     ? { product: "synthetic-seed-fixture", collection: 1, years: [] }
     : { product: "VNP46A4", collection: 2, years: blackMarbleYears },
-  sourceVersions: { dataset: datasetStatus === "seed" ? "synthetic-seed-fixture" : "reviewed-real-snapshots-with-seed-fallback", siteScores: realScoreSiteCount === 0 ? "none" : "site-score-1.0.0", calendar: "synthetic-seed-calendar", meteorShowers: "imo-2027", shortTrips: "haversine-v1", gear: "editorial-2026-08-21", images: "attribution-manifest-2026-08-21" },
+  sourceVersions: {
+    dataset: datasetStatus === "real" ? "reviewed-real-snapshots" : datasetStatus === "seed" ? "synthetic-seed-fixture" : "reviewed-real-snapshots-with-seed-fallback",
+    siteScores: realScoreSiteCount === 0 ? "none" : "site-score-1.0.0",
+    calendar: "astronomy-calendar-real-1.0.0",
+    meteorShowers: "imo-2027+real-site-score-1.0.0",
+    shortTrips: "haversine-v1+real-site-score-1.0.0",
+    gear: "editorial-2026-08-21",
+    images: "attribution-manifest-2026-08-21",
+  },
   counts: {
     destinations: seed.destinations.length,
     observationSites: seed.sites.length,
@@ -203,7 +216,7 @@ writeJson(publicPath("manifest.json"), {
     realScoreSites: realScoreSiteCount,
     seedScoreSites: seed.sites.length - realScoreSiteCount,
     realSiteScoreRows: realScores.reduce((sum, snapshot) => sum + snapshot.months.length, 0),
-    calendarFiles: Object.keys(calendar.files).length,
+    calendarFiles: calendarFiles.length,
     meteorShowerFiles: meteorOutputs.reduce((sum, meteor) => sum + meteor.events.length, 0),
     shortTripFiles: shortTripOutputs.length,
     gearCategories: gearCategories.length,

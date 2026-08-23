@@ -50,8 +50,8 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
         <h1>{isGerman ? `Ab ${trip.originName}` : `From ${trip.originName}`}</h1>
         <p className="lede">
           {isGerman
-            ? `Ziele bis ${trip.maxShortTripKm} km, gewichtet nach Seed-Reisewert und Luftlinienentfernung.`
-            : `Destinations within ${trip.maxShortTripKm} km, weighted by the seed stargazing score and great-circle distance.`}
+            ? `Ziele bis ${trip.maxShortTripKm} km, gewichtet nach historischem Realwert und Luftlinienentfernung.`
+            : `Destinations within ${trip.maxShortTripKm} km, weighted by historical real scores and great-circle distance.`}
         </p>
         <p className="event-note">{isGerman ? "Entfernung ist keine Fahrzeit. Alle Werte sind statisch und keine Verfügbarkeits- oder Wetterprognose." : "Distance is not driving time. Values are static and are not availability or weather forecasts."}</p>
       </header>

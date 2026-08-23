@@ -13,6 +13,7 @@ const calendarConfig = readJson<CalendarConfig>(resolve(projectRoot, "data-confi
 export function validateCalendarFile(value: CalendarFile) {
   const fileErrors: string[] = [];
   if (!validate?.(value)) fileErrors.push(JSON.stringify(validate?.errors ?? "schema missing"));
+  if (value.algorithmVersion !== "astronomy-calendar-1.0.0" || value.astronomyEngineVersion !== "2.1.19") fileErrors.push("production calendar must use the real astronomy engine");
   const dates = new Set<string>();
   const ranks = new Set<number>();
   for (const night of value.nights) {

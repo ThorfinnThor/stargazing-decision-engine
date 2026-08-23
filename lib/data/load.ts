@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, Manifest, MeteorShowerEvent, ShortTripFile } from "./types.js";
+import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "./types.js";
 
 export interface SeoPageRecord {
   id: string;
@@ -42,6 +42,10 @@ export function loadDestination(slug: string): Destination {
   const destination = loadDestinations().find((item) => item.slug === slug);
   if (!destination) throw new Error(`Unknown destination: ${slug}`);
   return destination;
+}
+
+export function loadSites(): ObservationSite[] {
+  return readPublished<ObservationSite[]>("sites/index.json");
 }
 
 export function loadDestinationMonthly(slug: string): DestinationMonthlySummary {

@@ -11,6 +11,7 @@ import type {
 } from "../data/types.js";
 import { addLocalDate, buildCalendarNight, localDateOnly, localDateTimeToUtc, type CalendarConfig } from "./calendar.js";
 import { j2000AltitudeDeg } from "./milky-way.js";
+import { isTravelEligibleSite } from "../access/travel.js";
 
 export interface MeteorShowerDefinition {
   id: string;
@@ -290,7 +291,8 @@ export function buildMeteorShowerEvents(options: {
   validateMeteorShowerConfig(options.config);
   validateMeteorShowerScoringConfig(options.scoringConfig);
   const activeDestinations = options.destinations.filter((destination) => destination.active);
-  const activeSites = options.sites.filter((site) => site.active);
+  const activeSites = options.sites.filter(isTravelEligibleSite);
+  if (activeSites.length === 0) throw new Error("No travel-eligible observation sites available for meteor rankings");
   return options.config.showers.map((shower) => {
     const results = activeSites.flatMap((site) => {
       const destination = activeDestinations.find((item) => item.id === site.destinationId);
@@ -311,7 +313,12 @@ export function buildMeteorShowerEvents(options: {
     const confidenceLevel: ConfidenceLevel = climateLevels.every((level) => level === "high")
       ? "high"
       : climateLevels.every((level) => level !== "low") ? "moderate" : "low";
-    const caveats = [...new Set([...shower.notes, ...best.caveats, ...(confidenceLevel === "low" ? ["Seed or low-confidence climate inputs keep this event out of unqualified SEO rankings."] : [])])];
+    const caveats = [...new Set([
+      ...shower.notes,
+      ...best.caveats,
+      "Rankings exclude sites without verified public night access.",
+      ...(confidenceLevel === "low" ? ["Low-confidence climate inputs keep this event out of unqualified SEO rankings."] : []),
+    ])];
     return {
       id: shower.id,
       slug: shower.slug,

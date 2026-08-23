@@ -57,6 +57,10 @@ for (const destination of destinations) {
 for (const site of sites) {
   assertCoordinate(site.lat, site.lon, `Site ${site.id}`);
   if (!destinationIds.has(site.destinationId)) throw new Error(`Site ${site.id} references an unknown destination`);
+  if (site.publicAccess === "no" && site.accessScore !== 0) throw new Error(`Closed site ${site.id} must have accessScore 0`);
+  if (site.publicAccess === "no" && (!site.notesSourceUrl || !site.accessNotes)) throw new Error(`Closed site ${site.id} requires sourced access notes`);
+  if (site.notesSourceUrl && !site.notesSourceUrl.startsWith("https://")) throw new Error(`Site ${site.id} access source must use HTTPS`);
+  if (site.accessNotes && (!site.accessNotes.en.trim() || !site.accessNotes.de.trim())) throw new Error(`Site ${site.id} access notes require English and German text`);
 }
 
 for (const area of stayAreas) {

@@ -6,7 +6,7 @@ and serves the committed static output.
 
 ## Safe refresh and rollback
 
-1. Run `CI` on a pull request. It rebuilds the synthetic/static pipeline,
+1. Run `CI` on a pull request. It rebuilds the static real-derived products,
    validates every schema and source snapshot, runs tests and typechecking,
    and performs a production build.
 2. Use the manually dispatched `Data ingestion` workflow only when the

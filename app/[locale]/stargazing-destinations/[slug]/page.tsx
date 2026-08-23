@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { loadDestination, loadDestinationMonthly, loadDestinations, loadSeoPage } from "@/lib/data/load";
+import { loadDestination, loadDestinationMonthly, loadDestinations, loadSeoPage, loadSites } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -20,7 +20,8 @@ function readParams(params: { locale: string; slug: string }) {
   try {
     const destination = loadDestination(params.slug);
     const path = `/${params.locale}/stargazing-destinations/${params.slug}/`;
-    return { locale: params.locale as Locale, destination, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
+    const sites = loadSites().filter((site) => site.destinationId === destination.id);
+    return { locale: params.locale as Locale, destination, sites, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -59,7 +60,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, monthly, locale, seo } = resolved;
+  const { destination, sites, monthly, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Static dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazing.local/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
@@ -77,6 +78,27 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           ? isGerman ? "1991–2020 Klima-Normalperiode; keine Live-Wettervorhersage." : "1991–2020 climate normal; not a live weather forecast."
           : isGerman ? "Seed-Daten mit niedriger Konfidenz; keine Live-Wettervorhersage." : "Seed data with low confidence; not a live weather forecast."}</p>
       </header>
+      <section className="event-summary" aria-labelledby="destination-access-title">
+        <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>
+        {sites.map((site) => (
+          <div key={site.id}>
+            <p><strong>{site.name}:</strong> {site.publicAccess === "yes"
+              ? isGerman ? "öffentlich zugänglich" : "publicly accessible"
+              : site.publicAccess === "limited"
+                ? site.notesSourceUrl
+                  ? isGerman ? "nur eingeschränkt oder nach Buchung zugänglich" : "limited or booking-only access"
+                  : isGerman ? "eingeschränkt; Bedingungen noch nicht verifiziert" : "limited; conditions not yet verified"
+                : site.publicAccess === "no"
+                  ? isGerman ? "keine öffentliche Nachtbeobachtung an diesem Standort" : "no public night observing at this site"
+                  : isGerman ? "Zugang nicht verifiziert" : "access not verified"}</p>
+            {site.accessNotes && <p className="event-note">{site.accessNotes[locale]}</p>}
+            {site.notesSourceUrl && <p><a href={site.notesSourceUrl} rel="noreferrer">{isGerman ? "Offizielle Zugangsinformation" : "Official access information"}</a></p>}
+          </div>
+        ))}
+        {sites.every((site) => site.publicAccess === "no") && <p className="event-note">
+          {isGerman ? "Dieses Profil beschreibt die astronomischen Bedingungen und ist keine Reiseempfehlung für den angegebenen Standort." : "This profile describes astronomical conditions and is not a travel recommendation for the listed site."}
+        </p>}
+      </section>
       <section className="event-summary" aria-labelledby="destination-months-title">
         <h2 id="destination-months-title">{isGerman ? "Monatliche Werte" : "Monthly scores"}</h2>
         <div className="event-table-wrap">

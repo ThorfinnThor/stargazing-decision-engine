@@ -2,14 +2,19 @@
   "id": "la-silla-observatory",
   "slug": "la-silla-observatory",
   "destinationId": "la-silla",
-  "name": "La Silla observatory area",
+  "name": "La Silla Observatory",
   "lat": -29.26,
   "lon": -70.73,
   "elevationM": 2400,
   "siteType": "mountain",
-  "publicAccess": "limited",
-  "accessScore": 60,
+  "publicAccess": "no",
+  "accessScore": 0,
   "active": true,
   "priority": 95,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.hq.eso.org/public/about-eso/visitors/lasilla/",
+  "accessNotes": {
+    "en": "Public access is limited to registered daytime guided tours; visitor accommodation and private driving inside the site are not available.",
+    "de": "Öffentlicher Zugang ist auf angemeldete geführte Tagestouren beschränkt; Besucherunterkünfte und privates Fahren innerhalb des Geländes sind nicht verfügbar."
+  }
 }

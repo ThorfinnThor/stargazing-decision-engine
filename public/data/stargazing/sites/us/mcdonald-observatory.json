@@ -2,7 +2,7 @@
   "id": "mcdonald-observatory",
   "slug": "mcdonald-observatory",
   "destinationId": "mcdonald-observatory",
-  "name": "McDonald Observatory area",
+  "name": "McDonald Observatory visitor area",
   "lat": 30.67,
   "lon": -104.02,
   "elevationM": 2070,
@@ -11,5 +11,10 @@
   "accessScore": 70,
   "active": true,
   "priority": 90,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://mcdonaldobservatory.org/visit/star-party/",
+  "accessNotes": {
+    "en": "Public evening Star Parties are offered on scheduled dates; advance reservations are recommended.",
+    "de": "Öffentliche abendliche Star Parties finden an festgelegten Terminen statt; eine vorherige Reservierung wird empfohlen."
+  }
 }

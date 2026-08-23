@@ -2,8 +2,9 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { evaluateIndexability, type IndexabilityRequirements } from "../../lib/seo/indexability.js";
-import type { Destination, DestinationMonthlySummary, GearGuide, MeteorShowerEvent, OriginCity, ShortTripFile } from "../../lib/data/types.js";
+import type { Destination, DestinationMonthlySummary, GearGuide, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
+import { isTravelEligibleSite } from "../../lib/access/travel.js";
 
 interface PageDefinition extends IndexabilityRequirements {
   pageType: string;
@@ -21,6 +22,7 @@ interface SeoConfig {
 
 interface SeedData {
   destinations: Destination[];
+  sites: ObservationSite[];
   origins: OriginCity[];
 }
 
@@ -74,6 +76,7 @@ function makePage(options: {
   uniqueInsightCount: number;
   internalLinkCount: number;
   sourceFreshness?: boolean;
+  travelEligible?: boolean;
 }) {
   const requirements = definition(options.pageType);
   const gate = evaluateIndexability({
@@ -86,7 +89,7 @@ function makePage(options: {
     hasCanonical: true,
     internalLinkCount: options.internalLinkCount,
     createsCannibalization: false,
-    containsUnsupportedClaims: false,
+    containsUnsupportedClaims: options.travelEligible === false,
     isFutureRelevant: true,
     sourceFreshness: options.sourceFreshness ?? true,
   }, requirements);
@@ -129,6 +132,7 @@ for (const locale of config.locales) {
       id: `destination-${destination.slug}-${locale}`, pageType: "destination", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-destinations/${destination.slug}/`])),
       title: locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`, h1: destination.name,
       description: locale === "de" ? `Statischer Himmelsführer für ${destination.name}.` : `Static dark-sky guide for ${destination.name}.`, resultCount: destinationScores.length, confidence, uniqueInsightCount: destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: seed.destinations.length + shortTrips.length,
+      travelEligible: seed.sites.some((site) => site.destinationId === destination.id && isTravelEligibleSite(site)),
     }));
   }
   for (const event of events) {

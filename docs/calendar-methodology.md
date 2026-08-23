@@ -5,13 +5,17 @@ as static JSON. No remote API is used by the browser, Cloudflare, or the calenda
 builder. Run it with an explicit start month so the output is reproducible:
 
 ```bash
-pnpm data:calendar:real -- --start 2027-01 --months 36 --generated-at 2026-12-01T00:00:00.000Z
+pnpm data:calendar:real -- --start 2027-01 --months 36 --generated-at 2026-12-01T00:00:00.000Z --replace
 pnpm data:calendar:validate
 ```
 
 `--destination <slug>` supports an incremental destination build. Test and CI
 runs may use `--output-root <path>` and validate it with
 `pnpm data:calendar:validate -- --root <path>` before publishing.
+The standard data rebuild preserves the committed real calendar and refuses to
+export if any synthetic calendar file is present. The monthly calendar workflow
+uses `--replace` only after resolving the dedicated calendar output directory,
+so obsolete horizon months cannot remain mixed with the new horizon.
 
 Each destination uses its active observation-site coordinates and IANA timezone.
 Each local night is named by the evening’s local calendar date and spans local

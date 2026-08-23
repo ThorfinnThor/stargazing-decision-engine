@@ -14,7 +14,7 @@ Astronomy Engine's EQJ-to-HOR rotation. The source explicitly
 notes timing uncertainty for several showers. When it publishes only a maximum
 date, the configuration keeps `peakUtc: null`; no artificial hour is inserted.
 
-For each active observation site, the deterministic viewing score is:
+For each travel-eligible observation site, the deterministic viewing score is:
 
 ```text
 50% monthly historical sky-quality climatology
@@ -39,6 +39,7 @@ it does not claim visibility at an exact instant or model a shower-specific
 peak-width curve.
 
 This score ranks observing opportunity; it is not a meteor-count forecast and
-does not promise the reference ZHR. Seed climate inputs are low confidence and
-event pages are marked non-indexable until reviewed real snapshots replace the
-synthetic catalog.
+does not promise the reference ZHR. Publication requires the complete committed
+real-score snapshot set. Closed and unknown-access sites are excluded;
+conditional-access sites require a reviewed access source. Seed climate inputs
+cannot enter public meteor rankings.

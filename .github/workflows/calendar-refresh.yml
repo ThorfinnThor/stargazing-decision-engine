@@ -27,7 +27,7 @@ jobs:
       - name: Build a rolling 36-month real calendar
         run: |
           set -euo pipefail
-          pnpm data:calendar:real -- --start "$(date -u +%Y-%m)" --months 36
+          pnpm data:calendar:real -- --start "$(date -u +%Y-%m)" --months 36 --replace
           pnpm data:calendar:manifest
           pnpm data:calendar:validate
           pnpm data:validate

@@ -22,9 +22,9 @@ browser and Cloudflare never calculate source metrics or retrieve remote data.
 The score command applies the current committed darkness curve directly to the
 committed ALAN exposure. It therefore does not require the raw Black Marble
 raster cache merely because a new reviewed calibration curve was published.
-The static exporter prefers a complete real score snapshot per destination and
-keeps destinations without one explicitly marked as `seed`; real and seed
-scores are never presented under the same provenance label.
+The static exporter publishes a complete real score snapshot per destination.
+Derived travel products fail closed unless all active sites have twelve real
+monthly scores; seed scores are retained only as isolated development fixtures.
 
 ## Components
 
@@ -33,6 +33,10 @@ curve at 30%. Sky quality is 45% clear sky, 40% calibrated darkness, 10% dew,
 and 5% elevation. Trip comfort is 45% temperature, 30% wind, 15% rain, and 10%
 access. If access is unknown, the three climate weights are renormalized. The
 overall stargazing-trip score is 80% sky quality and 20% trip comfort.
+
+Access is also a separate publication gate. A high astronomical score cannot
+override a closed site: `publicAccess: no` and `unknown` are excluded from
+travel rankings, while `limited` requires a reviewed HTTPS access source.
 
 All calculation remains floating point until the public components are rounded
 to whole score points. The current temperature component uses the monthly mean

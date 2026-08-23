@@ -1,5 +1,5 @@
-import { mkdirSync } from "node:fs";
-import { resolve } from "node:path";
+import { mkdirSync, mkdtempSync, renameSync, rmSync } from "node:fs";
+import { dirname, resolve } from "node:path";
 
 import type { CalendarFile, ObservationSite, Destination } from "../../lib/data/types.js";
 import { buildCalendarNight, rankCalendarNights, type CalendarConfig } from "../../lib/astronomy/calendar.js";
@@ -26,10 +26,18 @@ validateMilkyWayConfig(milkyWayConfig);
 if (milkyWayConfig.referenceStatus !== "approved") throw new Error("Milky Way coordinate requires Sol review before production calendar generation");
 const destinations = readJson<Destination[]>(resolve(root, "data-config/sources/destinations.json"));
 const sites = readJson<ObservationSite[]>(resolve(root, "data-config/sources/observation-sites.json"));
-const outputRoot = resolve(root, argument("--output-root") ?? "public/data/stargazing/calendar");
+const requestedOutputRoot = resolve(root, argument("--output-root") ?? "public/data/stargazing/calendar");
 const destinationSlug = argument("--destination");
+const replaceOutput = process.argv.includes("--replace");
 const selectedDestinations = destinations.filter((item) => item.active && (!destinationSlug || item.slug === destinationSlug));
 if (destinationSlug && selectedDestinations.length === 0) throw new Error(`Unknown active destination slug: ${destinationSlug}`);
+if (replaceOutput && destinationSlug) throw new Error("--replace cannot be combined with --destination");
+if (replaceOutput) {
+  const protectedPaths = new Set([root, resolve(root, "public"), resolve(root, "public/data"), resolve(root, "public/data/stargazing")]);
+  if (protectedPaths.has(requestedOutputRoot)) throw new Error(`Refusing to replace protected output path: ${requestedOutputRoot}`);
+}
+mkdirSync(dirname(requestedOutputRoot), { recursive: true });
+const outputRoot = replaceOutput ? mkdtempSync(`${requestedOutputRoot}.tmp-`) : requestedOutputRoot;
 
 function monthAt(offset: number) {
   const date = new Date(Date.UTC(startYear, startMonth - 1 + offset, 1));
@@ -45,39 +53,50 @@ function mean(values: number[]) {
 }
 
 let fileCount = 0;
-for (const destination of selectedDestinations) {
-  const destinationSites = sites.filter((site) => site.destinationId === destination.id && site.active);
-  if (destinationSites.length === 0) continue;
-  for (let offset = 0; offset < horizonMonths; offset += 1) {
-    const { year, month } = monthAt(offset);
-    const dayCount = new Date(Date.UTC(year, month, 0)).getUTCDate();
-    const candidates = destinationSites.map((site) => {
-      const nights = rankCalendarNights(Array.from({ length: dayCount }, (_, day) => buildCalendarNight({
-        site,
-        dateLocal: dateString(year, month, day + 1),
-        timezone: destination.timezone,
-        config,
-        milkyWayConfig,
-      })));
-      return { site, nights, score: mean(nights.map((night) => night.calendarDarknessScore)), moonless: mean(nights.map((night) => night.moonlessHours)) };
-    });
-    candidates.sort((left, right) => right.score - left.score || right.moonless - left.moonless || left.site.id.localeCompare(right.site.id));
-    const best = candidates[0];
-    const output: CalendarFile = {
-      destinationId: destination.id,
-      siteId: best.site.id,
-      bestSiteId: best.site.id,
-      year,
-      month: month as CalendarFile["month"],
-      algorithmVersion: "astronomy-calendar-1.0.0",
-      astronomyEngineVersion: "2.1.19",
-      generatedAt,
-      nights: best.nights,
-    };
-    const directory = resolve(outputRoot, destination.slug);
-    mkdirSync(directory, { recursive: true });
-    writeJson(resolve(directory, `${year}-${String(month).padStart(2, "0")}.json`), output);
-    fileCount += 1;
+try {
+  for (const destination of selectedDestinations) {
+    const destinationSites = sites.filter((site) => site.destinationId === destination.id && site.active);
+    if (destinationSites.length === 0) continue;
+    for (let offset = 0; offset < horizonMonths; offset += 1) {
+      const { year, month } = monthAt(offset);
+      const dayCount = new Date(Date.UTC(year, month, 0)).getUTCDate();
+      const candidates = destinationSites.map((site) => {
+        const nights = rankCalendarNights(Array.from({ length: dayCount }, (_, day) => buildCalendarNight({
+          site,
+          dateLocal: dateString(year, month, day + 1),
+          timezone: destination.timezone,
+          config,
+          milkyWayConfig,
+        })));
+        return { site, nights, score: mean(nights.map((night) => night.calendarDarknessScore)), moonless: mean(nights.map((night) => night.moonlessHours)) };
+      });
+      candidates.sort((left, right) => right.score - left.score || right.moonless - left.moonless || left.site.id.localeCompare(right.site.id));
+      const best = candidates[0];
+      const output: CalendarFile = {
+        destinationId: destination.id,
+        siteId: best.site.id,
+        bestSiteId: best.site.id,
+        year,
+        month: month as CalendarFile["month"],
+        algorithmVersion: "astronomy-calendar-1.0.0",
+        astronomyEngineVersion: "2.1.19",
+        generatedAt,
+        nights: best.nights,
+      };
+      const directory = resolve(outputRoot, destination.slug);
+      mkdirSync(directory, { recursive: true });
+      writeJson(resolve(directory, `${year}-${String(month).padStart(2, "0")}.json`), output);
+      fileCount += 1;
+    }
   }
+  const expectedFileCount = selectedDestinations.filter((destination) => sites.some((site) => site.active && site.destinationId === destination.id)).length * horizonMonths;
+  if (fileCount !== expectedFileCount) throw new Error(`Calendar build is incomplete: expected ${expectedFileCount}, built ${fileCount}`);
+  if (replaceOutput) {
+    rmSync(requestedOutputRoot, { recursive: true, force: true });
+    renameSync(outputRoot, requestedOutputRoot);
+  }
+} catch (error) {
+  if (replaceOutput) rmSync(outputRoot, { recursive: true, force: true });
+  throw error;
 }
 console.log(`Built ${fileCount} static real astronomy calendar file(s).`);

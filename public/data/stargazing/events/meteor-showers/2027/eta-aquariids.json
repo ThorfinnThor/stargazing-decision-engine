@@ -25,35 +25,35 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "cerro-paranal-observatory",
+    "bestSiteId": "sutherland-observatory",
     "dateLocal": "2027-05-05",
-    "timezone": "America/Santiago",
-    "moonIlluminationFraction": 0.003,
-    "moonlessHours": 10.31,
-    "totalDarknessHours": 10.31
+    "timezone": "Africa/Johannesburg",
+    "moonIlluminationFraction": 0.0057,
+    "moonlessHours": 10.5,
+    "totalDarknessHours": 10.5
   },
   "topDestinations": [
     {
       "rank": 1,
-      "destinationId": "cerro-paranal",
-      "destinationSlug": "cerro-paranal",
-      "destinationName": "Cerro Paranal",
-      "siteId": "cerro-paranal-observatory",
-      "siteSlug": "cerro-paranal-observatory",
-      "siteName": "Cerro Paranal observatory area",
-      "climateScore": 97.25,
-      "moonScore": 99.91,
-      "radiantScore": 73.35,
-      "viewingScore": 93.27,
+      "destinationId": "sutherland",
+      "destinationSlug": "sutherland",
+      "destinationName": "Sutherland",
+      "siteId": "sutherland-observatory",
+      "siteSlug": "sutherland-observatory",
+      "siteName": "Sutherland observatory visitor area",
+      "climateScore": 92,
+      "moonScore": 99.83,
+      "radiantScore": 72.07,
+      "viewingScore": 90.36,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.31,
-        "totalDarknessHours": 10.31
+        "timezone": "Africa/Johannesburg",
+        "moonIlluminationFraction": 0.0057,
+        "moonlessHours": 10.5,
+        "totalDarknessHours": 10.5
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 45.88,
+        "maximumAltitudeDeg": 42.68,
         "darkRadiantHours": 2
       },
       "caveats": [
@@ -63,25 +63,25 @@
     },
     {
       "rank": 2,
-      "destinationId": "namibrand",
-      "destinationSlug": "namibrand",
-      "destinationName": "NamibRand",
-      "siteId": "namibrand-reserve",
-      "siteSlug": "namibrand-reserve",
-      "siteName": "NamibRand reserve observing zone",
-      "climateScore": 95.75,
-      "moonScore": 99.83,
-      "radiantScore": 72.82,
-      "viewingScore": 92.39,
+      "destinationId": "elqui-valley",
+      "destinationSlug": "elqui-valley",
+      "destinationName": "Elqui Valley",
+      "siteId": "elqui-paihuano",
+      "siteSlug": "elqui-paihuano",
+      "siteName": "Elqui Valley observing area",
+      "climateScore": 88,
+      "moonScore": 99.11,
+      "radiantScore": 72.26,
+      "viewingScore": 88.19,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "Africa/Windhoek",
-        "moonIlluminationFraction": 0.0057,
-        "moonlessHours": 10.32,
-        "totalDarknessHours": 10.32
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.003,
+        "moonlessHours": 10.33,
+        "totalDarknessHours": 10.45
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 44.55,
+        "maximumAltitudeDeg": 43.16,
         "darkRadiantHours": 2
       },
       "caveats": [
@@ -91,26 +91,26 @@
     },
     {
       "rank": 3,
-      "destinationId": "atacama",
-      "destinationSlug": "atacama",
-      "destinationName": "Atacama Plateau",
-      "siteId": "atacama-plateau",
-      "siteSlug": "atacama-plateau",
-      "siteName": "Atacama high plateau",
-      "climateScore": 94.75,
-      "moonScore": 99.91,
-      "radiantScore": 74.96,
-      "viewingScore": 92.34,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 97,
+      "moonScore": 99.74,
+      "radiantScore": 38.57,
+      "viewingScore": 86.14,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.27,
-        "totalDarknessHours": 10.27
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.0027,
+        "moonlessHours": 7.67,
+        "totalDarknessHours": 7.69
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 46.71,
-        "darkRadiantHours": 2.17
+        "maximumAltitudeDeg": 26.41,
+        "darkRadiantHours": 0.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -119,26 +119,26 @@
     },
     {
       "rank": 4,
-      "destinationId": "la-silla",
-      "destinationSlug": "la-silla",
-      "destinationName": "La Silla Observatory",
-      "siteId": "la-silla-observatory",
-      "siteSlug": "la-silla-observatory",
-      "siteName": "La Silla observatory area",
-      "climateScore": 95.75,
-      "moonScore": 99.24,
-      "radiantScore": 72.36,
-      "viewingScore": 92.12,
+      "destinationId": "mcdonald-observatory",
+      "destinationSlug": "mcdonald-observatory",
+      "destinationName": "McDonald Observatory",
+      "siteId": "mcdonald-observatory",
+      "siteSlug": "mcdonald-observatory",
+      "siteName": "McDonald Observatory visitor area",
+      "climateScore": 93,
+      "moonScore": 99.46,
+      "radiantScore": 33.75,
+      "viewingScore": 83.09,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.33,
-        "totalDarknessHours": 10.43
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.0027,
+        "moonlessHours": 7.5,
+        "totalDarknessHours": 7.55
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.4,
-        "darkRadiantHours": 2
+        "maximumAltitudeDeg": 25.35,
+        "darkRadiantHours": 0.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -147,26 +147,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "el-leoncito",
-      "destinationSlug": "el-leoncito",
-      "destinationName": "El Leoncito",
-      "siteId": "el-leoncito-observatory",
-      "siteSlug": "el-leoncito-observatory",
-      "siteName": "El Leoncito observatory area",
-      "climateScore": 93.25,
-      "moonScore": 99.9,
-      "radiantScore": 72.24,
-      "viewingScore": 91.04,
+      "destinationId": "natural-bridges",
+      "destinationSlug": "natural-bridges",
+      "destinationName": "Natural Bridges",
+      "siteId": "natural-bridges-dark-sky",
+      "siteSlug": "natural-bridges-dark-sky",
+      "siteName": "Natural Bridges dark-sky area",
+      "climateScore": 96,
+      "moonScore": 99.93,
+      "radiantScore": 16.6,
+      "viewingScore": 81.3,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Argentina/San_Juan",
-        "moonIlluminationFraction": 0.0033,
-        "moonlessHours": 10.49,
-        "totalDarknessHours": 10.49
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.0025,
+        "moonlessHours": 6.75,
+        "totalDarknessHours": 6.75
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.1,
-        "darkRadiantHours": 2
+        "maximumAltitudeDeg": 18.6,
+        "darkRadiantHours": 0
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -177,25 +177,25 @@
   "topSites": [
     {
       "rank": 1,
-      "destinationId": "cerro-paranal",
-      "destinationSlug": "cerro-paranal",
-      "destinationName": "Cerro Paranal",
-      "siteId": "cerro-paranal-observatory",
-      "siteSlug": "cerro-paranal-observatory",
-      "siteName": "Cerro Paranal observatory area",
-      "climateScore": 97.25,
-      "moonScore": 99.91,
-      "radiantScore": 73.35,
-      "viewingScore": 93.27,
+      "destinationId": "sutherland",
+      "destinationSlug": "sutherland",
+      "destinationName": "Sutherland",
+      "siteId": "sutherland-observatory",
+      "siteSlug": "sutherland-observatory",
+      "siteName": "Sutherland observatory visitor area",
+      "climateScore": 92,
+      "moonScore": 99.83,
+      "radiantScore": 72.07,
+      "viewingScore": 90.36,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.31,
-        "totalDarknessHours": 10.31
+        "timezone": "Africa/Johannesburg",
+        "moonIlluminationFraction": 0.0057,
+        "moonlessHours": 10.5,
+        "totalDarknessHours": 10.5
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 45.88,
+        "maximumAltitudeDeg": 42.68,
         "darkRadiantHours": 2
       },
       "caveats": [
@@ -205,25 +205,25 @@
     },
     {
       "rank": 2,
-      "destinationId": "namibrand",
-      "destinationSlug": "namibrand",
-      "destinationName": "NamibRand",
-      "siteId": "namibrand-reserve",
-      "siteSlug": "namibrand-reserve",
-      "siteName": "NamibRand reserve observing zone",
-      "climateScore": 95.75,
-      "moonScore": 99.83,
-      "radiantScore": 72.82,
-      "viewingScore": 92.39,
+      "destinationId": "elqui-valley",
+      "destinationSlug": "elqui-valley",
+      "destinationName": "Elqui Valley",
+      "siteId": "elqui-paihuano",
+      "siteSlug": "elqui-paihuano",
+      "siteName": "Elqui Valley observing area",
+      "climateScore": 88,
+      "moonScore": 99.11,
+      "radiantScore": 72.26,
+      "viewingScore": 88.19,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "Africa/Windhoek",
-        "moonIlluminationFraction": 0.0057,
-        "moonlessHours": 10.32,
-        "totalDarknessHours": 10.32
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.003,
+        "moonlessHours": 10.33,
+        "totalDarknessHours": 10.45
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 44.55,
+        "maximumAltitudeDeg": 43.16,
         "darkRadiantHours": 2
       },
       "caveats": [
@@ -233,26 +233,26 @@
     },
     {
       "rank": 3,
-      "destinationId": "atacama",
-      "destinationSlug": "atacama",
-      "destinationName": "Atacama Plateau",
-      "siteId": "atacama-plateau",
-      "siteSlug": "atacama-plateau",
-      "siteName": "Atacama high plateau",
-      "climateScore": 94.75,
-      "moonScore": 99.91,
-      "radiantScore": 74.96,
-      "viewingScore": 92.34,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
+      "siteId": "big-bend-panther-junction",
+      "siteSlug": "big-bend-panther-junction",
+      "siteName": "Big Bend desert observing area",
+      "climateScore": 97,
+      "moonScore": 99.74,
+      "radiantScore": 38.57,
+      "viewingScore": 86.14,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.27,
-        "totalDarknessHours": 10.27
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.0027,
+        "moonlessHours": 7.67,
+        "totalDarknessHours": 7.69
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 46.71,
-        "darkRadiantHours": 2.17
+        "maximumAltitudeDeg": 26.41,
+        "darkRadiantHours": 0.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -261,26 +261,26 @@
     },
     {
       "rank": 4,
-      "destinationId": "la-silla",
-      "destinationSlug": "la-silla",
-      "destinationName": "La Silla Observatory",
-      "siteId": "la-silla-observatory",
-      "siteSlug": "la-silla-observatory",
-      "siteName": "La Silla observatory area",
-      "climateScore": 95.75,
-      "moonScore": 99.24,
-      "radiantScore": 72.36,
-      "viewingScore": 92.12,
+      "destinationId": "mcdonald-observatory",
+      "destinationSlug": "mcdonald-observatory",
+      "destinationName": "McDonald Observatory",
+      "siteId": "mcdonald-observatory",
+      "siteSlug": "mcdonald-observatory",
+      "siteName": "McDonald Observatory visitor area",
+      "climateScore": 93,
+      "moonScore": 99.46,
+      "radiantScore": 33.75,
+      "viewingScore": 83.09,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Santiago",
-        "moonIlluminationFraction": 0.003,
-        "moonlessHours": 10.33,
-        "totalDarknessHours": 10.43
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.0027,
+        "moonlessHours": 7.5,
+        "totalDarknessHours": 7.55
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.4,
-        "darkRadiantHours": 2
+        "maximumAltitudeDeg": 25.35,
+        "darkRadiantHours": 0.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,26 +289,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "el-leoncito",
-      "destinationSlug": "el-leoncito",
-      "destinationName": "El Leoncito",
-      "siteId": "el-leoncito-observatory",
-      "siteSlug": "el-leoncito-observatory",
-      "siteName": "El Leoncito observatory area",
-      "climateScore": 93.25,
-      "moonScore": 99.9,
-      "radiantScore": 72.24,
-      "viewingScore": 91.04,
+      "destinationId": "natural-bridges",
+      "destinationSlug": "natural-bridges",
+      "destinationName": "Natural Bridges",
+      "siteId": "natural-bridges-dark-sky",
+      "siteSlug": "natural-bridges-dark-sky",
+      "siteName": "Natural Bridges dark-sky area",
+      "climateScore": 96,
+      "moonScore": 99.93,
+      "radiantScore": 16.6,
+      "viewingScore": 81.3,
       "moonConditions": {
         "dateLocal": "2027-05-05",
-        "timezone": "America/Argentina/San_Juan",
-        "moonIlluminationFraction": 0.0033,
-        "moonlessHours": 10.49,
-        "totalDarknessHours": 10.49
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.0025,
+        "moonlessHours": 6.75,
+        "totalDarknessHours": 6.75
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 43.1,
-        "darkRadiantHours": 2
+        "maximumAltitudeDeg": 18.6,
+        "darkRadiantHours": 0
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -316,16 +316,16 @@
       ]
     }
   ],
-  "climateScore": 97.25,
-  "moonScore": 99.91,
-  "radiantScore": 73.35,
-  "viewingScore": 93.27,
-  "confidenceLevel": "low",
-  "indexable": false,
+  "climateScore": 92,
+  "moonScore": 99.83,
+  "radiantScore": 72.07,
+  "viewingScore": 90.36,
+  "confidenceLevel": "moderate",
+  "indexable": true,
   "caveats": [
     "The radiant is best placed shortly before dawn and the 2027 maximum coincides with New Moon.",
     "Viewing score is not a forecast of meteor counts or ZHR.",
     "Climate component uses monthly historical sky-quality climatology for the event month.",
-    "Seed or low-confidence climate inputs keep this event out of unqualified SEO rankings."
+    "Rankings exclude sites without verified public night access."
   ]
 }

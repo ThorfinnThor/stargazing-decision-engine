@@ -1,4 +1,5 @@
-import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadSeoPage } from "@/lib/data/load";
+import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadSeoPage, loadSites } from "@/lib/data/load";
+import { isTravelEligibleSite } from "@/lib/access/travel";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { localeCopy, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
@@ -17,10 +18,14 @@ export function HomePage({ locale }: { locale: Locale }) {
   const gearGuides = listGearGuides();
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const sites = loadSites();
   const destinations = loadDestinations().map((destination) => {
     const monthly = loadDestinationMonthly(destination.slug);
     const bestMonth = [...monthly.months].sort((a, b) => b.score - a.score)[0];
-    return { destination, bestMonth, dataStatus: monthly.dataStatus };
+    const destinationSites = sites.filter((site) => site.destinationId === destination.id);
+    const travelEligible = destinationSites.some(isTravelEligibleSite);
+    const nightAccessStatus = travelEligible ? "eligible" : destinationSites.every((site) => site.publicAccess === "no") ? "closed" : "unverified";
+    return { destination, bestMonth, dataStatus: monthly.dataStatus, nightAccessStatus };
   });
 
   return (
@@ -70,14 +75,16 @@ export function HomePage({ locale }: { locale: Locale }) {
           <p className="catalog-note">{catalogNote}</p>
         </div>
         <div className="catalog-grid">
-          {destinations.map(({ destination, bestMonth, dataStatus }) => (
+          {destinations.map(({ destination, bestMonth, dataStatus, nightAccessStatus }) => (
             <a className="destination-card" href={localizedLinks.destination(locale, destination.slug)} key={destination.id}>
               <div className="card-topline">
                 <span>{destination.countryCode}</span>
                 <span>{destination.continent}</span>
               </div>
               <h3>{destination.name}</h3>
-              <p>{destination.tags.slice(0, 2).join(" · ")}</p>
+              <p>{destination.tags.slice(0, 2).join(" · ")}{nightAccessStatus === "closed"
+                ? ` · ${locale === "de" ? "kein öffentlicher Nachtzugang" : "no public night access"}`
+                : nightAccessStatus === "unverified" ? ` · ${locale === "de" ? "Nachtzugang nicht verifiziert" : "night access not verified"}` : ""}</p>
               <div className="card-score">
                 <span className="score-value">{bestMonth?.score ?? "—"}</span>
                 <span className="score-label">{dataStatus === "real" ? copy.realScore : copy.seedScore}<br />{copy.bestMonth} {bestMonth ? formatMonth(bestMonth.month, locale) : "—"}</span>

@@ -19,6 +19,15 @@
     "active": { "type": "boolean" },
     "priority": { "type": "integer", "minimum": 0 },
     "certificationIds": { "type": "array", "items": { "type": "string" } },
-    "notesSourceUrl": { "type": ["string", "null"], "minLength": 1 }
+    "notesSourceUrl": { "type": ["string", "null"], "minLength": 1 },
+    "accessNotes": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["en", "de"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    }
   }
 }

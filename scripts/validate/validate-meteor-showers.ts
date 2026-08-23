@@ -11,6 +11,8 @@ import {
   type MeteorShowerScoringConfig,
 } from "../../lib/astronomy/meteor-showers.js";
 import type { MeteorShowerEvent } from "../../lib/data/types.js";
+import type { ObservationSite } from "../../lib/data/types.js";
+import { isTravelEligibleSite } from "../../lib/access/travel.js";
 import { publicDataDir, readJson, root } from "../pipeline/io.js";
 import { createSchemaValidator } from "./validate-schemas.js";
 
@@ -75,7 +77,15 @@ if (import.meta.url === `file://${process.argv[1]}`) {
   }
   const directory = resolve(publicDataDir, "events/meteor-showers", year);
   const files = existsSync(directory) ? readdirSync(directory).filter((file) => file.endsWith(".json")) : [];
-  const errors = files.flatMap((file) => validateMeteorShowerEvent(readJson<MeteorShowerEvent>(resolve(directory, file)), scoringConfig).map((error) => `${directory}/${file}: ${error}`));
+  const sites = readJson<ObservationSite[]>(resolve(root, "data-config/sources/observation-sites.json"));
+  const errors = files.flatMap((file) => {
+    const event = readJson<MeteorShowerEvent>(resolve(directory, file));
+    const accessErrors = [...event.topSites, ...event.topDestinations].flatMap((row) => {
+      const site = sites.find((candidate) => candidate.id === row.siteId);
+      return site && isTravelEligibleSite(site) ? [] : [`${row.siteId}: site is not eligible for travel rankings`];
+    });
+    return [...validateMeteorShowerEvent(event, scoringConfig), ...accessErrors].map((error) => `${directory}/${file}: ${error}`);
+  });
   if (errors.length > 0) {
     for (const error of errors) console.error(error);
     process.exitCode = 1;

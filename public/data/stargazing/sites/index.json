@@ -153,16 +153,21 @@
     "id": "cerro-paranal-observatory",
     "slug": "cerro-paranal-observatory",
     "destinationId": "cerro-paranal",
-    "name": "Cerro Paranal observatory area",
+    "name": "Cerro Paranal Observatory",
     "lat": -24.63,
     "lon": -70.4,
     "elevationM": 2635,
     "siteType": "desert",
-    "publicAccess": "limited",
-    "accessScore": 58,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 96,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.eso.org/public/about-eso/travel/paranal/",
+    "accessNotes": {
+      "en": "Public access is by appointment for daytime visits only; there is no public transport or public overnight accommodation at the observatory.",
+      "de": "Öffentlicher Zugang ist nur nach Anmeldung für Tagesbesuche möglich; am Observatorium gibt es weder öffentlichen Transport noch öffentliche Übernachtungsmöglichkeiten."
+    }
   },
   {
     "id": "cherry-springs-dark-sky",
@@ -468,16 +473,21 @@
     "id": "la-silla-observatory",
     "slug": "la-silla-observatory",
     "destinationId": "la-silla",
-    "name": "La Silla observatory area",
+    "name": "La Silla Observatory",
     "lat": -29.26,
     "lon": -70.73,
     "elevationM": 2400,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 60,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 95,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.hq.eso.org/public/about-eso/visitors/lasilla/",
+    "accessNotes": {
+      "en": "Public access is limited to registered daytime guided tours; visitor accommodation and private driving inside the site are not available.",
+      "de": "Öffentlicher Zugang ist auf angemeldete geführte Tagestouren beschränkt; Besucherunterkünfte und privates Fahren innerhalb des Geländes sind nicht verfügbar."
+    }
   },
   {
     "id": "lake-tekapo-basin",
@@ -503,17 +513,22 @@
     "lon": -155.47,
     "elevationM": 4200,
     "siteType": "volcanic-summit",
-    "publicAccess": "limited",
-    "accessScore": 55,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 94,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.hilo.hawaii.edu/maunakea/visitor-information/public-safety",
+    "accessNotes": {
+      "en": "The summit is closed to visitors from 30 minutes after sunset until 30 minutes before sunrise. Public stargazing is available lower on the mountain near the Visitor Information Station.",
+      "de": "Der Gipfel ist für Besucher von 30 Minuten nach Sonnenuntergang bis 30 Minuten vor Sonnenaufgang geschlossen. Öffentliches Stargazing findet weiter unten nahe der Visitor Information Station statt."
+    }
   },
   {
     "id": "mcdonald-observatory",
     "slug": "mcdonald-observatory",
     "destinationId": "mcdonald-observatory",
-    "name": "McDonald Observatory area",
+    "name": "McDonald Observatory visitor area",
     "lat": 30.67,
     "lon": -104.02,
     "elevationM": 2070,
@@ -522,7 +537,12 @@
     "accessScore": 70,
     "active": true,
     "priority": 90,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://mcdonaldobservatory.org/visit/star-party/",
+    "accessNotes": {
+      "en": "Public evening Star Parties are offered on scheduled dates; advance reservations are recommended.",
+      "de": "Öffentliche abendliche Star Parties finden an festgelegten Terminen statt; eine vorherige Reservierung wird empfohlen."
+    }
   },
   {
     "id": "mont-megantic-observatory",
@@ -648,22 +668,27 @@
     "id": "sierra-nevada-observatory",
     "slug": "sierra-nevada-observatory",
     "destinationId": "sierra-nevada",
-    "name": "Sierra Nevada observing area",
+    "name": "Sierra Nevada Observatory",
     "lat": 37.06,
     "lon": -3.38,
     "elevationM": 2500,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 68,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 88,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.osn.iaa.es/en/general/guided-visit",
+    "accessNotes": {
+      "en": "Public visits are scheduled daytime guided visits; night visits are not permitted.",
+      "de": "Öffentliche Besuche sind geführte Tagestermine; Nachtbesuche sind nicht erlaubt."
+    }
   },
   {
     "id": "sutherland-observatory",
     "slug": "sutherland-observatory",
     "destinationId": "sutherland",
-    "name": "Sutherland observatory area",
+    "name": "Sutherland observatory visitor area",
     "lat": -32.38,
     "lon": 20.81,
     "elevationM": 1750,
@@ -672,7 +697,12 @@
     "accessScore": 65,
     "active": true,
     "priority": 93,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.saao.ac.za/visit-sutherland/",
+    "accessNotes": {
+      "en": "Access is through booked SAAO visitor tours; visitors must follow the current tour schedule and observatory rules.",
+      "de": "Der Zugang erfolgt über gebuchte SAAO-Besuchertouren; es gelten der aktuelle Tourplan und die Regeln des Observatoriums."
+    }
   },
   {
     "id": "teide-high-zone",
