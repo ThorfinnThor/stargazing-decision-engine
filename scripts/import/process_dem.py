@@ -32,6 +32,7 @@ def haversine_km(lat_a: float, lon_a: float, lat_b: float, lon_b: float) -> floa
 
 def process(site_slug: str, keep_raster: bool) -> None:
     try:
+        import numpy as np  # type: ignore
         import rasterio  # type: ignore
         from rasterio.windows import from_bounds  # type: ignore
     except ImportError as error:
@@ -65,7 +66,8 @@ def process(site_slug: str, keep_raster: bool) -> None:
         if row < 0 or column < 0 or row >= dataset.height or column >= dataset.width:
             raise RuntimeError(f"DEM tile does not contain requested coordinate for {site_slug}")
         point = dataset.read(1, window=((row, row + 1), (column, column + 1)), masked=True)
-        point_value = None if point.mask[0, 0] else valid_elevation(point[0, 0], nodata, valid_min, valid_max)
+        point_mask = np.ma.getmaskarray(point)
+        point_value = None if point_mask[0, 0] else valid_elevation(point[0, 0], nodata, valid_min, valid_max)
         if point_value is None and config["requirePointData"]:
             raise RuntimeError(f"DEM point is NoData for {site_slug}")
 
@@ -89,11 +91,12 @@ def process(site_slug: str, keep_raster: bool) -> None:
                 transform=dataset.transform,
             ).round_offsets().round_lengths()
             values = dataset.read(1, window=window, masked=True)
+            values_mask = np.ma.getmaskarray(values)
             transform = dataset.window_transform(window)
             valid_values: list[float] = []
             for row_index in range(values.shape[0]):
                 for column_index in range(values.shape[1]):
-                    if values.mask[row_index, column_index]:
+                    if values_mask[row_index, column_index]:
                         continue
                     lon, lat = transform * (column_index + 0.5, row_index + 0.5)
                     if haversine_km(site["lat"], site["lon"], lat, lon) <= radius_km:
