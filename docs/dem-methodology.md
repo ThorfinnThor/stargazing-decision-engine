@@ -33,6 +33,10 @@ mask and dataset NoData values are excluded; non-finite and invalid values are
 also excluded. A missing point elevation is an error for the default
 `requirePointData` policy.
 
+For coordinates exactly on an integer latitude, the public COG's pixel-edge
+alignment places the point in the southern adjacent tile. The tile resolver
+encodes this boundary rule explicitly and regression-tests both hemispheres.
+
 Copernicus DEM is a digital surface model (DSM), so buildings and vegetation can
 contribute to the sampled height. The snapshot records that model type instead
 of presenting it as a bare-earth terrain model.

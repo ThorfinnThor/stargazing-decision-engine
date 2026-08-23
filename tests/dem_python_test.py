@@ -14,7 +14,9 @@ class DemGeometryTests(unittest.TestCase):
         self.assertEqual(tile_for_point(-52.72, -12.28), "S53_00_W013_00")
 
     def test_coordinate_edges(self):
-        self.assertEqual(tile_for_point(0, 0), "N00_00_E000_00")
+        self.assertEqual(tile_for_point(0, 0), "S01_00_E000_00")
+        self.assertEqual(tile_for_point(-23, -67.75), "S24_00_W068_00")
+        self.assertEqual(tile_for_point(28, -16.5), "N27_00_W017_00")
         self.assertEqual(tile_for_point(-90, 180), "S90_00_E179_00")
 
     def test_tile_key_and_nodata(self):

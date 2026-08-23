@@ -8,8 +8,11 @@ import math
 def tile_for_point(lat: float, lon: float) -> str:
     if not (-90 <= lat <= 90 and -180 <= lon <= 180):
         raise ValueError("DEM coordinate outside WGS84 bounds")
-    # Longitude 180 belongs to the final western tile; latitude -90 to S90.
-    tile_lat = min(89, math.floor(lat)) if lat < 90 else 89
+    # The public COG conversion stores latitude cell edges slightly north of
+    # their integer-labelled source samples. On an exact latitude boundary the
+    # southern tile therefore contains the requested coordinate.
+    tile_lat = max(-90, min(89, math.floor(math.nextafter(lat, -math.inf))))
+    # Longitude 180 belongs to the final western tile.
     tile_lon = min(179, math.floor(lon)) if lon < 180 else 179
     lat_prefix = "N" if tile_lat >= 0 else "S"
     lon_prefix = "E" if tile_lon >= 0 else "W"
