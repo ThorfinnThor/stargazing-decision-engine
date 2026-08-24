@@ -28,8 +28,15 @@ Images are selected manually from Wikimedia Commons, filtered for a compatible
 free-use license, converted to self-hosted WebP, and recorded in the image
 manifest with source URL, file title, author, license, license URL, and visible
 attribution text. The allowlist is explicit: `CC0`, `CC BY`, `CC BY-SA`,
-`Public Domain`, and `Public Domain Mark`. Pending records are not presented as
-image assets.
+`Public Domain`, `Public Domain Mark`, `NASA Public Domain`, and `U.S. Government
+Work`. Pending records are not presented as image assets.
+
+The P3 research register at
+[`data-config/sources/p3-image-candidates.json`](../data-config/sources/p3-image-candidates.json)
+contains 25 candidate source pages with complete provenance fields. It is
+publication-blocked and every candidate remains `needs-visual-review` until a
+separate visual and license audit is completed. The CI validator
+`pnpm data:p3:images:validate` rejects missing source or license evidence.
 
 Government and NASA images are accepted only when the source page explicitly
 identifies the work as public domain or a U.S. Government work; the manifest
