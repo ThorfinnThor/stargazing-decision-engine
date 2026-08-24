@@ -3,16 +3,48 @@
   "$id": "https://stargazing.local/schema/search-index.json",
   "title": "Destination Search Index",
   "type": "array",
+  "minItems": 1,
   "items": {
     "type": "object",
     "additionalProperties": false,
-    "required": ["id", "slug", "name", "countryCode", "tags"],
+    "required": ["id", "slug", "name", "countryCode", "countryName", "continent", "tags", "bestSiteId", "bestSiteName", "publicAccess", "monthly"],
     "properties": {
       "id": { "type": "string", "minLength": 1 },
       "slug": { "type": "string", "minLength": 1 },
       "name": { "type": "string", "minLength": 1 },
       "countryCode": { "type": "string", "pattern": "^[A-Z]{2}$" },
-      "tags": { "type": "array", "items": { "type": "string" } }
+      "countryName": { "type": "string", "minLength": 1 },
+      "continent": { "type": "string", "minLength": 1 },
+      "tags": { "type": "array", "items": { "type": "string" } },
+      "bestSiteId": { "type": "string", "minLength": 1 },
+      "bestSiteName": { "type": "string", "minLength": 1 },
+      "publicAccess": { "enum": ["yes", "limited", "unknown", "no"] },
+      "monthly": {
+        "type": "array",
+        "minItems": 12,
+        "maxItems": 12,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["month", "stargazingTrip", "skyQuality", "tripComfort", "clearSkyScore", "darknessScore", "temperatureComfortScore", "nightTempMeanC", "dewRiskProbability", "confidenceScore", "confidenceLevel"],
+          "properties": {
+            "month": { "type": "integer", "minimum": 1, "maximum": 12 },
+            "stargazingTrip": { "$ref": "#/$defs/score" },
+            "skyQuality": { "$ref": "#/$defs/score" },
+            "tripComfort": { "$ref": "#/$defs/score" },
+            "clearSkyScore": { "$ref": "#/$defs/score" },
+            "darknessScore": { "$ref": "#/$defs/score" },
+            "temperatureComfortScore": { "$ref": "#/$defs/score" },
+            "nightTempMeanC": { "type": ["number", "null"] },
+            "dewRiskProbability": { "type": ["number", "null"], "minimum": 0, "maximum": 1 },
+            "confidenceScore": { "$ref": "#/$defs/score" },
+            "confidenceLevel": { "enum": ["high", "moderate", "low"] }
+          }
+        }
+      }
     }
+  },
+  "$defs": {
+    "score": { "type": "number", "minimum": 0, "maximum": 100 }
   }
 }

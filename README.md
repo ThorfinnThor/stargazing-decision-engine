@@ -118,6 +118,11 @@ sites additionally require a reviewed access source before they can enter a
 travel ranking. See
 [`docs/short-trips-methodology.md`](docs/short-trips-methodology.md).
 
+The bilingual finder runs entirely in the browser against the build-time JSON
+index. Its five controls rank reviewed, travel-eligible destinations without
+changing the published Stargazing Trip score and without making a live-weather
+claim. See [`docs/finder-methodology.md`](docs/finder-methodology.md).
+
 Affiliate links are disabled by default and isolated behind allow-listed static
 redirects. See [`docs/affiliate-setup.md`](docs/affiliate-setup.md).
 

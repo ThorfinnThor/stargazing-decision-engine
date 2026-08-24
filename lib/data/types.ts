@@ -269,6 +269,34 @@ export interface DestinationMonthlySummary {
   }>;
 }
 
+export interface FinderMonth {
+  month: MonthNumber;
+  stargazingTrip: number;
+  skyQuality: number;
+  tripComfort: number;
+  clearSkyScore: number;
+  darknessScore: number;
+  temperatureComfortScore: number;
+  nightTempMeanC: number | null;
+  dewRiskProbability: number | null;
+  confidenceScore: number;
+  confidenceLevel: ConfidenceLevel;
+}
+
+export interface FinderDestination {
+  id: string;
+  slug: string;
+  name: string;
+  countryCode: string;
+  countryName: string;
+  continent: string;
+  tags: string[];
+  bestSiteId: string;
+  bestSiteName: string;
+  publicAccess: PublicAccess;
+  monthly: FinderMonth[];
+}
+
 export interface DestinationMonthScore {
   destinationId: string;
   month: MonthNumber;

@@ -77,6 +77,7 @@ function makePage(options: {
   internalLinkCount: number;
   sourceFreshness?: boolean;
   travelEligible?: boolean;
+  forceNoindexReason?: string;
 }) {
   const requirements = definition(options.pageType);
   const gate = evaluateIndexability({
@@ -103,8 +104,8 @@ function makePage(options: {
     title: options.title,
     h1: options.h1,
     description: options.description,
-    indexable: gate.indexable,
-    reasons: gate.reasons,
+    indexable: options.forceNoindexReason ? false : gate.indexable,
+    reasons: options.forceNoindexReason ? [...new Set([...gate.reasons, options.forceNoindexReason])] : gate.reasons,
     structuredDataType: "WebPage" as const,
   } satisfies SeoPage;
 }
@@ -118,6 +119,14 @@ for (const locale of config.locales) {
     h1: locale === "de" ? "Wissen, wann sich die Reise lohnt." : "Know when the night is worth the journey.",
     description: locale === "de" ? "Statische, datenbasierte Entscheidungshilfe für Sternbeobachtung." : "A static, data-driven decision engine for stargazing travel.",
     resultCount: seed.destinations.length, confidence: "low", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + shortTrips.length,
+  }));
+  pages.push(makePage({
+    id: `finder-${locale}`, pageType: "finder", locale, path: `/${locale}/finder/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/finder/`])),
+    title: locale === "de" ? "Stargazing-Finder · Ziele vergleichen" : "Stargazing finder · compare destinations",
+    h1: locale === "de" ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip.",
+    description: locale === "de" ? "Clientseitiger Finder für geprüfte Sternbeobachtungsziele nach Monat, Region, Temperatur, Priorität und Zugang." : "Client-side finder for reviewed stargazing destinations by month, region, temperature, priority, and access.",
+    resultCount: seed.destinations.length, confidence: "moderate", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + 1,
+    forceNoindexReason: "interactive-query-surface",
   }));
   pages.push(makePage({
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),

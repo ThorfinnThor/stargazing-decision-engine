@@ -11,6 +11,7 @@ test("all public schema files register with Ajv", () => {
   assert.ok(ajv.getSchema("https://stargazing.local/schema/manifest.json"));
   assert.ok(ajv.getSchema("https://stargazing.local/schema/darkness-calibration.json"));
   assert.ok(ajv.getSchema("https://stargazing.local/schema/destination-monthly.json"));
+  assert.ok(ajv.getSchema("https://stargazing.local/schema/search-index.json"));
 });
 
 test("the committed manifest satisfies the manifest contract", () => {

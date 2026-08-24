@@ -20,6 +20,25 @@
       "structuredDataType": "WebPage"
     },
     {
+      "id": "finder-en",
+      "pageType": "finder",
+      "locale": "en",
+      "path": "/en/finder/",
+      "canonical": "https://stargazing-decision-engine.shuu9599.workers.dev/en/finder/",
+      "alternatePaths": {
+        "en": "/en/finder/",
+        "de": "/de/finder/"
+      },
+      "title": "Stargazing finder · compare destinations",
+      "h1": "Find the night that fits your trip.",
+      "description": "Client-side finder for reviewed stargazing destinations by month, region, temperature, priority, and access.",
+      "indexable": false,
+      "reasons": [
+        "interactive-query-surface"
+      ],
+      "structuredDataType": "WebPage"
+    },
+    {
       "id": "gear-en",
       "pageType": "gear",
       "locale": "en",
@@ -1394,6 +1413,25 @@
       "description": "Statische, datenbasierte Entscheidungshilfe für Sternbeobachtung.",
       "indexable": true,
       "reasons": [],
+      "structuredDataType": "WebPage"
+    },
+    {
+      "id": "finder-de",
+      "pageType": "finder",
+      "locale": "de",
+      "path": "/de/finder/",
+      "canonical": "https://stargazing-decision-engine.shuu9599.workers.dev/de/finder/",
+      "alternatePaths": {
+        "en": "/en/finder/",
+        "de": "/de/finder/"
+      },
+      "title": "Stargazing-Finder · Ziele vergleichen",
+      "h1": "Finde die Nacht, die zu dir passt.",
+      "description": "Clientseitiger Finder für geprüfte Sternbeobachtungsziele nach Monat, Region, Temperatur, Priorität und Zugang.",
+      "indexable": false,
+      "reasons": [
+        "interactive-query-surface"
+      ],
       "structuredDataType": "WebPage"
     },
     {

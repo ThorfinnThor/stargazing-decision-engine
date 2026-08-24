@@ -3,7 +3,7 @@ import { resolve } from "node:path";
 
 import type { Era5ClimateSnapshot } from "../../lib/climate/era5/types.js";
 import type { BlackMarbleSnapshot } from "../../lib/darkness/black-marble/types.js";
-import type { CalendarFile, Destination, DestinationMonthlySummary, DarknessMetrics, GearCategory, GearGuide, GearProductMetadata, MeteorShowerEvent, MonthlySiteClimate, MonthlySiteScore, ObservationSite, OriginCity, ShortTripFile, SiteScoreSnapshot, StayArea } from "../../lib/data/types.js";
+import type { CalendarFile, Destination, DestinationMonthlySummary, DarknessMetrics, FinderDestination, GearCategory, GearGuide, GearProductMetadata, MeteorShowerEvent, MonthlySiteClimate, MonthlySiteScore, ObservationSite, OriginCity, ShortTripFile, SiteScoreSnapshot, StayArea } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, seedGeneratedAt, writeJson } from "../pipeline/io.js";
 
 interface SeedData {
@@ -134,7 +134,36 @@ function scoreSource(destination: Destination) {
 
 writeJson(publicPath("destinations/index.json"), seed.destinations);
 writeJson(publicPath("sites/index.json"), seed.sites);
-writeJson(publicPath("search/destination-index.json"), seed.destinations.map(({ id, slug, name, countryCode, tags }) => ({ id, slug, name, countryCode, tags })));
+writeJson(publicPath("search/destination-index.json"), seed.destinations.map((destination) => {
+  const { site, scores, real } = scoreSource(destination);
+  const climate = real ? realClimate(site.id) : scored.climate.filter((item) => item.siteId === site.id);
+  const climateByMonth = new Map(climate.map((month) => [month.month, month]));
+  return {
+    id: destination.id,
+    slug: destination.slug,
+    name: destination.name,
+    countryCode: destination.countryCode,
+    countryName: destination.countryName,
+    continent: destination.continent,
+    tags: destination.tags,
+    bestSiteId: site.id,
+    bestSiteName: site.name,
+    publicAccess: site.publicAccess,
+    monthly: scores.map((score) => ({
+      month: score.month,
+      stargazingTrip: score.stargazingTrip,
+      skyQuality: score.skyQuality,
+      tripComfort: score.tripComfort,
+      clearSkyScore: score.clearSkyScore,
+      darknessScore: score.darknessScore,
+      temperatureComfortScore: score.temperatureComfortScore,
+      nightTempMeanC: climateByMonth.get(score.month)?.nightTempMeanC ?? null,
+      dewRiskProbability: climateByMonth.get(score.month)?.dewRiskProbability ?? null,
+      confidenceScore: score.confidenceScore,
+      confidenceLevel: score.confidenceLevel,
+    })),
+  } satisfies FinderDestination;
+}));
 
 for (const destination of seed.destinations) {
   writeJson(publicPath(`destinations/${destination.countryCode.toLowerCase()}/${destination.slug}.json`), destination);

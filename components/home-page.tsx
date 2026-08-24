@@ -53,8 +53,8 @@ export function HomePage({ locale }: { locale: Locale }) {
             <span>{copy.titleAccent}</span>
           </h1>
           <p className="lede">{copy.lede}</p>
-          <a className="hero-link" href="#catalog">
-            {copy.explore} <span aria-hidden="true">↓</span>
+          <a className="hero-link" href={localizedLinks.finder(locale)}>
+            {copy.explore} <span aria-hidden="true">→</span>
           </a>
         </div>
 

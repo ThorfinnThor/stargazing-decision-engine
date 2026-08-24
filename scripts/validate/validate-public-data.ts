@@ -1,9 +1,10 @@
+import { execFileSync } from "node:child_process";
 import { readFileSync, readdirSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 
+import type { Destination, FinderDestination } from "../../lib/data/types.js";
 import { createSchemaValidator, readPublishedManifest } from "./validate-schemas.js";
 import { publicDataDir } from "../pipeline/io.js";
-import { execFileSync } from "node:child_process";
 
 const ajv = createSchemaValidator();
 const errors: string[] = [];
@@ -13,6 +14,7 @@ if (!validateManifest || !validateManifest(readPublishedManifest())) errors.push
 const destinationSchema = ajv.getSchema("https://stargazing.local/schema/destination.json");
 const siteSchema = ajv.getSchema("https://stargazing.local/schema/site.json");
 const destinationMonthlySchema = ajv.getSchema("https://stargazing.local/schema/destination-monthly.json");
+const finderSchema = ajv.getSchema("https://stargazing.local/schema/search-index.json");
 const validateFiles = (directory: string, schema: typeof destinationSchema, label: string) => {
   if (!schema) return;
   for (const entry of readdirSync(directory)) {
@@ -28,6 +30,19 @@ validateFiles(resolve(publicDataDir, "monthly/destinations"), destinationMonthly
 for (const country of readdirSync(resolve(publicDataDir, "sites"))) {
   const directory = resolve(publicDataDir, "sites", country);
   if (statSync(directory).isDirectory()) validateFiles(directory, siteSchema, "Site");
+}
+
+const finderIndex = JSON.parse(readFileSync(resolve(publicDataDir, "search/destination-index.json"), "utf8")) as FinderDestination[];
+const destinationIndex = JSON.parse(readFileSync(resolve(publicDataDir, "destinations/index.json"), "utf8")) as Destination[];
+if (!finderSchema?.(finderIndex)) errors.push("Finder search index is invalid");
+const finderIds = finderIndex.map((destination) => destination.id);
+const destinationIds = destinationIndex.map((destination) => destination.id);
+if (new Set(finderIds).size !== finderIds.length) errors.push("Finder search index contains duplicate destination IDs");
+if (finderIds.length !== destinationIds.length || destinationIds.some((id) => !finderIds.includes(id))) {
+  errors.push("Finder search index must contain every published destination exactly once");
+}
+for (const destination of finderIndex) {
+  if (destination.monthly.length !== 12 || new Set(destination.monthly.map((month) => month.month)).size !== 12) errors.push(`${destination.id}: finder index requires 12 unique months`);
 }
 
 try {
