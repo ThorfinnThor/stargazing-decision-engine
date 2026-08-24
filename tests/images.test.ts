@@ -25,3 +25,20 @@ test("image policy accepts only explicit free or public-domain licenses", () => 
   assert.equal(allowedImageLicenses.includes("CC BY-ND" as never), false);
   assert.equal(allowedImageLicenses.includes("All rights reserved" as never), false);
 });
+
+test("approved image records resolve self-hosted assets under public", () => {
+  const approved: ImageAssetConfig = {
+    slug: "destination",
+    status: "approved",
+    localPath: "/images/destinations/alqueva.webp",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:A_Barragem_de_Alqueva_01.jpg",
+    sourceTitle: "A Barragem de Alqueva 01",
+    author: "GualdimG",
+    license: "CC BY-SA",
+    licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+    attribution: "GualdimG, Wikimedia Commons, CC BY-SA 4.0",
+    checkedAt: "2026-08-24",
+  };
+  const manifest = buildImageManifest({ destinations: [destination], sites: [site], destinationImages: [approved], siteImages: [pending("site")], generatedAt: "2026-08-24T00:00:00.000Z", publicRoot: process.cwd() });
+  assert.equal(manifest.destinations[0].localPath, "/images/destinations/alqueva.webp");
+});

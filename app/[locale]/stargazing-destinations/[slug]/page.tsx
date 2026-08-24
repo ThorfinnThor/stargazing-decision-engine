@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { loadDestination, loadDestinationMonthly, loadDestinations, loadSeoPage, loadSites } from "@/lib/data/load";
+import { loadDestination, loadDestinationMonthly, loadDestinations, loadImageManifest, loadSeoPage, loadSites } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -21,7 +21,8 @@ function readParams(params: { locale: string; slug: string }) {
     const destination = loadDestination(params.slug);
     const path = `/${params.locale}/stargazing-destinations/${params.slug}/`;
     const sites = loadSites().filter((site) => site.destinationId === destination.id);
-    return { locale: params.locale as Locale, destination, sites, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
+    const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
+    return { locale: params.locale as Locale, destination, sites, image, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -60,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, monthly, locale, seo } = resolved;
+  const { destination, sites, image, monthly, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Static dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazing.local/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
@@ -78,6 +79,12 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           ? isGerman ? "1991–2020 Klima-Normalperiode; keine Live-Wettervorhersage." : "1991–2020 climate normal; not a live weather forecast."
           : isGerman ? "Seed-Daten mit niedriger Konfidenz; keine Live-Wettervorhersage." : "Seed data with low confidence; not a live weather forecast."}</p>
       </header>
+      {image?.status === "approved" && image.localPath && <figure className="destination-figure">
+        <img src={image.localPath} alt={image.alt[locale]} loading="eager" decoding="async" />
+        <figcaption>
+          {image.attribution} · <a href={image.sourceUrl ?? undefined} rel="noreferrer">{isGerman ? "Quelle" : "Source"}</a> · <a href={image.licenseUrl ?? undefined} rel="noreferrer">{isGerman ? "Lizenz" : "License"}</a>
+        </figcaption>
+      </figure>}
       <section className="event-summary" aria-labelledby="destination-access-title">
         <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>
         {sites.map((site) => (

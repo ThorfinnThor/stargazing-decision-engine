@@ -45,6 +45,7 @@
     "data:images": "node --import tsx scripts/images/build-image-manifest.ts",
     "data:images:validate": "node --import tsx scripts/validate/validate-images.ts",
     "data:p3:images:validate": "node --import tsx scripts/validate/validate-p3-image-candidates.ts",
+    "data:p3:images:promote": "node --import tsx scripts/images/promote-p3-images.ts",
     "data:calendar:seed": "node --import tsx scripts/calendar/build-calendar.ts",
     "data:calendar:real": "node --import tsx scripts/calendar/build-calendar-real.ts",
     "data:calendar:manifest": "node --import tsx scripts/calendar/refresh-calendar-manifest.ts",

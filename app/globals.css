@@ -175,6 +175,29 @@ h1 span {
   background: var(--night);
 }
 
+.destination-figure {
+  margin: 0 0 clamp(2.5rem, 6vw, 5rem);
+}
+
+.destination-figure img {
+  display: block;
+  width: 100%;
+  height: clamp(18rem, 52vw, 46rem);
+  border: 1px solid rgb(255 255 255 / 16%);
+  object-fit: cover;
+}
+
+.destination-figure figcaption {
+  padding-top: 0.75rem;
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.6;
+}
+
+.destination-figure figcaption a {
+  color: var(--gold);
+}
+
 .trip-page {
   min-height: 100vh;
   padding: 4rem clamp(1.25rem, 7vw, 7rem);

@@ -42,6 +42,6 @@ export function buildImageManifest(options: { destinations: Destination[]; sites
   validateCoverage(sites, options.siteImages, "Site");
   const destinationAssets = destinations.map((destination) => normalizeAsset(options.destinationImages.find((asset) => asset.slug === destination.slug)!, `destination:${destination.slug}`, { en: `${destination.name} stargazing destination`, de: `${destination.name} Sternbeobachtungsziel` }));
   const siteAssets = sites.map((site) => normalizeAsset(options.siteImages.find((asset) => asset.slug === site.slug)!, `site:${site.slug}`, { en: `${site.name} observing site`, de: `${site.name} Beobachtungsort` }));
-  for (const asset of [...destinationAssets, ...siteAssets]) if (asset.status === "approved" && !existsSync(resolve(options.publicRoot, asset.localPath!.replace(/^\//, "")))) throw new Error(`${asset.slug}: local image file is missing`);
+  for (const asset of [...destinationAssets, ...siteAssets]) if (asset.status === "approved" && !existsSync(resolve(options.publicRoot, "public", asset.localPath!.replace(/^\//, "")))) throw new Error(`${asset.slug}: local image file is missing`);
   return { version: 1, generatedAt: options.generatedAt, policy: { allowedLicenses: [...allowedImageLicenses], requiredFormat: "webp", hosting: "self" }, destinations: destinationAssets, sites: siteAssets };
 }

@@ -35,10 +35,11 @@ The P3 research register at
 [`data-config/sources/p3-image-candidates.json`](../data-config/sources/p3-image-candidates.json)
 contains 25 candidate source pages with complete provenance fields. It is
 publication-blocked. All 25 candidates passed a separate Sol visual and license
-audit and are marked `sol-approved-for-download`; this permits only local image
-processing, not publication. The CI validator `pnpm data:p3:images:validate`
-rejects missing source or license evidence and any attempt to remove the
-remaining publication gate.
+audit and are marked `sol-approved-for-download`. Their provenance was then
+copied into the production configuration only after local WebP conversion. The
+research register itself remains publication-blocked and is never rendered
+directly. `pnpm data:images:validate` now cross-checks every promoted field and
+the local WebP signature before publication.
 
 Government and NASA images are accepted only when the source page explicitly
 identifies the work as public domain or a U.S. Government work; the manifest

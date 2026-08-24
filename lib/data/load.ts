@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "./types.js";
+import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "./types.js";
 
 export interface SeoPageRecord {
   id: string;
@@ -46,6 +46,10 @@ export function loadDestination(slug: string): Destination {
 
 export function loadSites(): ObservationSite[] {
   return readPublished<ObservationSite[]>("sites/index.json");
+}
+
+export function loadImageManifest(): ImageManifest {
+  return readPublished<ImageManifest>("images/manifest.json");
 }
 
 export function loadDestinationMonthly(slug: string): DestinationMonthlySummary {

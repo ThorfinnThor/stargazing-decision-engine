@@ -19,9 +19,10 @@ author, license, license URL, attribution, alt text, and review date.
 
 P3 candidates are kept separately in
 `data-config/sources/p3-image-candidates.json`. They include source-page and
-license evidence and have passed visual and Sol review. They are still not
-consumed by the production manifest until the approved originals are converted
-locally to WebP and the production manifest passes its attribution checks.
+consumed directly by page rendering. The first 25 reviewed records have now
+been copied into `destination-images.json` after local WebP conversion; the
+production validator checks that every copied provenance field still matches
+the audit register exactly.
 
 The build never fetches remote images and does not silently fall back to an
 unlicensed asset. See [`docs/licensing.md`](licensing.md) for the source policy.
