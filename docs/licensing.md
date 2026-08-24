@@ -34,9 +34,11 @@ Work`. Pending records are not presented as image assets.
 The P3 research register at
 [`data-config/sources/p3-image-candidates.json`](../data-config/sources/p3-image-candidates.json)
 contains 25 candidate source pages with complete provenance fields. It is
-publication-blocked and every candidate remains `needs-visual-review` until a
-separate visual and license audit is completed. The CI validator
-`pnpm data:p3:images:validate` rejects missing source or license evidence.
+publication-blocked. All 25 candidates passed a separate Sol visual and license
+audit and are marked `sol-approved-for-download`; this permits only local image
+processing, not publication. The CI validator `pnpm data:p3:images:validate`
+rejects missing source or license evidence and any attempt to remove the
+remaining publication gate.
 
 Government and NASA images are accepted only when the source page explicitly
 identifies the work as public domain or a U.S. Government work; the manifest

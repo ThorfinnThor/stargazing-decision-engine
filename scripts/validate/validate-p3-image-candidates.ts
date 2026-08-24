@@ -21,6 +21,18 @@ type CandidateRegister = {
   version: number;
   generatedAt: string;
   policy: { publicationBlocked: boolean; allowedLicenseFamilies: string[] };
+  audit: {
+    reviewedAt: string;
+    reviewedBy: string;
+    status: string;
+    visualReviewCount: number;
+    metadataVerificationCount: number;
+    minimumOriginalWidth: number;
+    minimumOriginalHeight: number;
+    replacementCount: number;
+    replacedDestinationSlugs: string[];
+    publicationStatus: string;
+  };
   candidates: Candidate[];
 };
 
@@ -34,6 +46,21 @@ const required = [
 
 if (register.policy.publicationBlocked !== true) errors.push("P3 candidate register must remain publication-blocked");
 if (register.candidates.length !== 25) errors.push(`expected 25 P3 candidates, found ${register.candidates.length}`);
+if (register.audit.reviewedBy !== "Sol" || register.audit.status !== "approved-for-local-processing") {
+  errors.push("P3 candidate register is missing the completed Sol audit");
+}
+if (register.audit.visualReviewCount !== register.candidates.length || register.audit.metadataVerificationCount !== register.candidates.length) {
+  errors.push("P3 audit counts must cover every candidate");
+}
+if (register.audit.minimumOriginalWidth < 1600 || register.audit.minimumOriginalHeight < 900) {
+  errors.push("P3 candidates do not meet the audited source-resolution floor");
+}
+if (register.audit.replacementCount !== register.audit.replacedDestinationSlugs.length) {
+  errors.push("P3 replacement count does not match its destination list");
+}
+if (register.audit.publicationStatus !== "blocked-until-local-webp-and-production-manifest-validation") {
+  errors.push("P3 candidates must remain blocked until local WebP and production manifest validation");
+}
 if (new Set(register.candidates.map((candidate) => candidate.destinationSlug)).size !== register.candidates.length) {
   errors.push("P3 candidates must have unique destination slugs");
 }
@@ -54,8 +81,8 @@ for (const [index, candidate] of register.candidates.entries()) {
   if (!/^https:\/\/creativecommons\.org\/licenses\/(by|by-sa)\//.test(candidate.licenseUrl)) {
     errors.push(`${candidate.destinationSlug}: CC license URL is missing or malformed`);
   }
-  if (candidate.reviewStatus !== "needs-visual-review") {
-    errors.push(`${candidate.destinationSlug}: candidate must remain needs-visual-review until Sol audit`);
+  if (candidate.reviewStatus !== "sol-approved-for-download") {
+    errors.push(`${candidate.destinationSlug}: candidate is missing Sol download approval`);
   }
 }
 
@@ -63,5 +90,5 @@ if (errors.length > 0) {
   for (const error of errors) console.error(error);
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${register.candidates.length} P3 image candidates; all remain publication-blocked pending visual and Sol license audit.`);
+  console.log(`Validated ${register.candidates.length} Sol-audited P3 image candidates; all remain publication-blocked pending local WebP and production manifest validation.`);
 }
