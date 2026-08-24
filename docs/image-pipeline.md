@@ -3,8 +3,8 @@
 The image workflow is offline and attribution-first:
 
 ```text
-Wikimedia Commons search
-→ commercial-use license filter
+Wikimedia Commons / public-domain source search
+→ explicit free-license filter (CC0 / CC BY / CC BY-SA / public domain)
 → relevance review / manual override
 → local WebP conversion
 → public/images self-hosting

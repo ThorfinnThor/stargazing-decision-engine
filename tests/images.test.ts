@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { buildImageManifest } from "../lib/images/images.js";
+import { allowedImageLicenses, buildImageManifest } from "../lib/images/images.js";
 import type { Destination, ImageAssetConfig, ObservationSite } from "../lib/data/types.js";
 
 const destination: Destination = { id: "destination", slug: "destination", name: "Destination", countryCode: "DE", countryName: "Germany", continent: "Europe", regionSlugs: [], timezone: "Europe/Berlin", active: true, priority: 1, tags: [], observationSiteIds: ["site"], stayAreaIds: [], affiliateQuery: "Destination" };
@@ -17,4 +17,11 @@ test("pending image records produce explicit non-published assets", () => {
 
 test("image coverage rejects missing active targets", () => {
   assert.throws(() => buildImageManifest({ destinations: [destination], sites: [site], destinationImages: [], siteImages: [pending("site")], generatedAt: "2026-08-21T00:00:00.000Z", publicRoot: process.cwd() }), /cover each active target/i);
+});
+
+test("image policy accepts only explicit free or public-domain licenses", () => {
+  assert.deepEqual([...allowedImageLicenses], ["CC0", "CC BY", "CC BY-SA", "Public Domain", "Public Domain Mark", "NASA Public Domain", "U.S. Government Work"]);
+  assert.equal(allowedImageLicenses.includes("CC BY-NC" as never), false);
+  assert.equal(allowedImageLicenses.includes("CC BY-ND" as never), false);
+  assert.equal(allowedImageLicenses.includes("All rights reserved" as never), false);
 });

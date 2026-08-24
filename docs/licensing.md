@@ -25,9 +25,17 @@ summary.
 ## Wikimedia Commons images
 
 Images are selected manually from Wikimedia Commons, filtered for a compatible
-commercial-use license, converted to self-hosted WebP, and recorded in the
-image manifest with source URL, file title, author, license, license URL, and
-visible attribution text. Pending records are not presented as image assets.
+free-use license, converted to self-hosted WebP, and recorded in the image
+manifest with source URL, file title, author, license, license URL, and visible
+attribution text. The allowlist is explicit: `CC0`, `CC BY`, `CC BY-SA`,
+`Public Domain`, and `Public Domain Mark`. Pending records are not presented as
+image assets.
+
+Government and NASA images are accepted only when the source page explicitly
+identifies the work as public domain or a U.S. Government work; the manifest
+uses `NASA Public Domain` or `U.S. Government Work` as the license value. No
+`NC` (non-commercial), `ND` (no-derivatives), “all rights reserved”, unclear,
+or merely free-to-view source is accepted.
 
 ## OpenStreetMap
 

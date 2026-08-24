@@ -3,7 +3,16 @@ import { resolve } from "node:path";
 
 import type { Destination, ImageAssetConfig, ImageManifest, ObservationSite, PublicImageAsset } from "../data/types.js";
 
-export const allowedImageLicenses = ["CC BY", "CC BY-SA", "Public Domain", "NASA"] as const;
+/** Explicitly free-to-use image licenses; NC/ND and unclear terms are rejected. */
+export const allowedImageLicenses = [
+  "CC0",
+  "CC BY",
+  "CC BY-SA",
+  "Public Domain",
+  "Public Domain Mark",
+  "NASA Public Domain",
+  "U.S. Government Work",
+] as const;
 
 function checkedDate(value: string | undefined, label: string) {
   if (!value || !/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`${label}: checkedAt must be an ISO date`);
