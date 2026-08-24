@@ -45,7 +45,7 @@ const required = [
 ] as const;
 
 if (register.policy.publicationBlocked !== true) errors.push("P3 candidate register must remain publication-blocked");
-if (register.candidates.length !== 25) errors.push(`expected 25 P3 candidates, found ${register.candidates.length}`);
+if (register.candidates.length !== 50) errors.push(`expected 50 P3 candidates, found ${register.candidates.length}`);
 if (register.audit.reviewedBy !== "Sol" || register.audit.status !== "approved-for-local-processing") {
   errors.push("P3 candidate register is missing the completed Sol audit");
 }

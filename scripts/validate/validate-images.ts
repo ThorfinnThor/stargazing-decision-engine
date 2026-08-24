@@ -35,6 +35,7 @@ if (!validate?.(actual)) errors.push(JSON.stringify(validate?.errors ?? "image m
 if (JSON.stringify({ ...actual, generatedAt: expected.generatedAt }) !== JSON.stringify(expected)) errors.push("published image manifest is not reproducible from config");
 for (const candidate of p3.candidates) {
   const production = destinationImages.find((image) => image.slug === candidate.destinationSlug);
+  if (production?.status === "pending") continue;
   const expectedFields = {
     status: "approved",
     localPath: `/images/destinations/${candidate.destinationSlug}.webp`,
@@ -46,7 +47,7 @@ for (const candidate of p3.candidates) {
     attribution: candidate.attribution,
     checkedAt: p3.audit.reviewedAt,
   };
-  if (!production || Object.entries(expectedFields).some(([key, value]) => production[key as keyof ImageAssetConfig] !== value)) {
+  if (!production || production.status !== "approved" || Object.entries(expectedFields).some(([key, value]) => production[key as keyof ImageAssetConfig] !== value)) {
     errors.push(`${candidate.destinationSlug}: production config does not match the Sol-audited candidate`);
     continue;
   }

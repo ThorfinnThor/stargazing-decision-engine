@@ -33,10 +33,10 @@ Work`. Pending records are not presented as image assets.
 
 The P3 research register at
 [`data-config/sources/p3-image-candidates.json`](../data-config/sources/p3-image-candidates.json)
-contains 25 candidate source pages with complete provenance fields. It is
-publication-blocked. All 25 candidates passed a separate Sol visual and license
-audit and are marked `sol-approved-for-download`. Their provenance was then
-copied into the production configuration only after local WebP conversion. The
+contains 50 candidate source pages with complete provenance fields. It is
+publication-blocked. All 50 candidates passed a separate Sol visual and license
+audit and are marked `sol-approved-for-download`. Their provenance is copied
+into the production configuration only after local WebP conversion. The
 research register itself remains publication-blocked and is never rendered
 directly. `pnpm data:images:validate` now cross-checks every promoted field and
 the local WebP signature before publication.
