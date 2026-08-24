@@ -68,6 +68,13 @@ test("derived-data commits trigger the Cloudflare Git integration without deploy
   }
 });
 
+test("scheduled static health validation does not require ignored intermediate files", () => {
+  const imageValidator = readFileSync(join(root, "scripts/validate/validate-images.ts"), "utf8");
+  if (imageValidator.includes("generatedPath") || imageValidator.includes("generated/intermediate")) {
+    throw new Error("image validation must be reproducible from committed source configuration");
+  }
+});
+
 function assertIncludes(value: string, expected: string) {
   if (!value.includes(expected)) throw new Error(`Expected workflow text to contain: ${expected}`);
 }

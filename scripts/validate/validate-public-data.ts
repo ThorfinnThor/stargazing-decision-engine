@@ -45,19 +45,19 @@ for (const destination of finderIndex) {
   if (destination.monthly.length !== 12 || new Set(destination.monthly.map((month) => month.month)).size !== 12) errors.push(`${destination.id}: finder index requires 12 unique months`);
 }
 
-try {
-  for (const validator of [
-    "validate-seed-config.ts",
-    "validate-short-trips.ts",
-    "validate-seo.ts",
-    "validate-affiliate.ts",
-    "validate-gear.ts",
-    "validate-images.ts",
-  ]) {
+for (const validator of [
+  "validate-seed-config.ts",
+  "validate-short-trips.ts",
+  "validate-seo.ts",
+  "validate-affiliate.ts",
+  "validate-gear.ts",
+  "validate-images.ts",
+]) {
+  try {
     execFileSync(process.execPath, ["--import", "tsx", resolve(process.cwd(), "scripts/validate", validator)], { stdio: "pipe" });
+  } catch {
+    errors.push(`${validator}: composed public-data validation failed`);
   }
-} catch {
-  errors.push("composed public-data validation failed");
 }
 
 if (errors.length > 0) {
