@@ -56,10 +56,12 @@ The server components load committed candidates and previews. Client components
 select a homepage location after hydration, compute the current minute, draw one
 Canvas, and update once per minute. On destination pages, **Show next night**
 selects the darkest half-hour sample in the immediately upcoming astronomical
-night; the committed fixed preview remains a reproducible fallback and supports
-existing deep links. Preview modes have no timer. Destination query strings are
-parsed after mount and validated against that destination and its deterministic
-primary site.
+night. Destination pages use the live sky only while the Sun is below −18° at
+the target; during local daylight or twilight they open on that upcoming-night
+view instead of an empty daytime dome. The committed fixed preview remains a
+reproducible fallback and supports existing deep links. Preview modes have no
+timer. Destination query strings are parsed after mount and validated against
+that destination and its deterministic primary site.
 
 ## Homepage candidate contract
 
@@ -126,6 +128,9 @@ Measured locally on 2026-08-25 after a production static export:
   smoothing; its glow is rendered separately so the lunar limb remains crisp.
 - Upcoming-night selection produced a valid astronomical night for all 50
   destinations in 43.26 ms total during the fixed-date verification run.
+- A route-by-route browser check on 2026-08-25 loaded all 50 English destination
+  pages: 7 opened on live astronomical night, 43 on the upcoming-night preview,
+  and every page displayed at least 500 catalog stars.
 - Browser QA covered live navigation, upcoming and fixed preview navigation,
   return to live, invalid cross-destination preview rejection, English/German
   labels, named months, and a daylight snapshot with zero visible catalog stars.

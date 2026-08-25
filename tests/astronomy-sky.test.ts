@@ -4,10 +4,12 @@ import test from "node:test";
 
 import { computeSky, computeSunHorizontal } from "../lib/astronomy/compute-sky.js";
 import { brightStarCatalogMetadata, brightStars } from "../lib/astronomy/catalog.js";
-import { findNextAstronomicalNight } from "../lib/astronomy/next-night.js";
+import { findNextAstronomicalNight, selectInitialDestinationSky } from "../lib/astronomy/next-night.js";
+import { createSkyLocation, resolvePrimaryObservationSite } from "../lib/astronomy/primary-site.js";
 import { classifySkyCondition, getEffectiveLimitingMagnitude } from "../lib/astronomy/visibility.js";
 import { formatSkyLocalTime, shouldScheduleSkyRefresh } from "../lib/astronomy/time.js";
 import type { SkyLocation } from "../lib/astronomy/types.js";
+import { loadDestinations, loadSites } from "../lib/data/load.js";
 
 const westhavelland: SkyLocation = { id: "westhavelland:core", destinationId: "westhavelland", destinationSlug: "westhavelland", destinationName: "Westhavelland", siteId: "westhavelland-core", siteName: "Westhavelland Core", label: "Westhavelland Core · Westhavelland", lat: 52.72, lon: 12.28, elevationM: 45, timeZone: "Europe/Berlin" };
 const namib: SkyLocation = { id: "namibrand:reserve", destinationId: "namibrand", destinationSlug: "namibrand", destinationName: "NamibRand", siteId: "namibrand-reserve", siteName: "NamibRand Reserve", label: "NamibRand Reserve · NamibRand", lat: -24.95, lon: 15.89, elevationM: 1000, timeZone: "Africa/Windhoek" };
@@ -87,4 +89,21 @@ test("next-night preview stays near the current date and selects astronomical da
 
 test("next-night preview rejects an invalid starting instant", () => {
   assert.throws(() => findNextAstronomicalNight(westhavelland, "not-an-instant"), /Invalid preview start instant/);
+});
+
+test("destination pages default to live darkness or the upcoming night for all 50 targets", () => {
+  const nowIso = "2026-08-25T17:31:00.000Z";
+  const sites = loadSites();
+  const destinations = loadDestinations().filter((destination) => destination.active);
+  assert.equal(destinations.length, 50);
+  for (const destination of destinations) {
+    const site = resolvePrimaryObservationSite(destination, sites);
+    assert.ok(site, destination.slug);
+    const location = createSkyLocation(destination, site);
+    assert.ok(location, destination.slug);
+    const selection = selectInitialDestinationSky(location, nowIso);
+    const snapshot = computeSky(location, selection.instantIso);
+    assert.equal(snapshot.skyCondition, "night", destination.slug);
+    assert.ok(snapshot.stars.length >= 500, destination.slug);
+  }
 });

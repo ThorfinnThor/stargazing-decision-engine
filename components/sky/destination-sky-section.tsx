@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { AstronomicalSky } from "./astronomical-sky";
-import { findNextAstronomicalNight } from "@/lib/astronomy/next-night";
+import { findNextAstronomicalNight, selectInitialDestinationSky } from "@/lib/astronomy/next-night";
 import { roundedCurrentMinuteIso } from "@/lib/astronomy/selection";
 import { resolveDestinationPreview } from "@/lib/astronomy/previews";
 import type { NightPreview, SkyLocation } from "@/lib/astronomy/types";
@@ -17,8 +17,14 @@ export function DestinationSkySection({ location, previews, locale }: { location
   const [liveInstant, setLiveInstant] = useState(roundedCurrentMinuteIso(0));
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
-    setPreview(resolveDestinationPreview({ previewId: search.get("skyPreview"), previews, location }));
-    setLiveInstant(roundedCurrentMinuteIso());
+    const linkedPreview = resolveDestinationPreview({ previewId: search.get("skyPreview"), previews, location });
+    const nowIso = roundedCurrentMinuteIso();
+    setPreview(linkedPreview);
+    setLiveInstant(nowIso);
+    if (!linkedPreview) {
+      const initial = selectInitialDestinationSky(location, nowIso);
+      setNextNightInstant(initial.mode === "night-preview" ? initial.instantIso : null);
+    }
     setReady(true);
   }, [location, previews]);
   useEffect(() => {
