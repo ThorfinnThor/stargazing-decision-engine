@@ -19,8 +19,13 @@ function starColor(colorIndex: number | null) {
   return "rgb(240 238 224)";
 }
 
+function smoothstep(edge0: number, edge1: number, value: number) {
+  const amount = Math.min(1, Math.max(0, (value - edge0) / (edge1 - edge0)));
+  return amount * amount * (3 - 2 * amount);
+}
+
 function moonTexture(illuminatedFraction: number, angle: number | null) {
-  const size = 64;
+  const size = 256;
   const canvas = document.createElement("canvas");
   canvas.width = size;
   canvas.height = size;
@@ -38,11 +43,17 @@ function moonTexture(illuminatedFraction: number, angle: number | null) {
     const radiusSquared = nx * nx + ny * ny;
     const offset = (y * size + x) * 4;
     if (radiusSquared > 1) { image.data[offset + 3] = 0; continue; }
+    const radius = Math.sqrt(radiusSquared);
     const nz = Math.sqrt(1 - radiusSquared);
-    const lit = nx * lightX + ny * lightY + nz * phaseZ > 0;
-    const edge = Math.min(1, (1 - Math.sqrt(radiusSquared)) * 12);
-    const color = lit ? [244, 235, 207] : [28, 34, 54];
-    image.data[offset] = color[0]; image.data[offset + 1] = color[1]; image.data[offset + 2] = color[2]; image.data[offset + 3] = Math.round(255 * edge);
+    const lightDot = nx * lightX + ny * lightY + nz * phaseZ;
+    const terminator = smoothstep(-0.008, 0.008, lightDot);
+    const edge = smoothstep(0, 0.009, 1 - radius);
+    const shadow = [28, 34, 54];
+    const light = [244, 235, 207];
+    image.data[offset] = Math.round(shadow[0] + (light[0] - shadow[0]) * terminator);
+    image.data[offset + 1] = Math.round(shadow[1] + (light[1] - shadow[1]) * terminator);
+    image.data[offset + 2] = Math.round(shadow[2] + (light[2] - shadow[2]) * terminator);
+    image.data[offset + 3] = Math.round(255 * edge);
   }
   context.putImageData(image, 0, 0);
   return canvas;
@@ -85,8 +96,10 @@ export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; varian
         const x = center + snapshot.moon.xNormalized * radius;
         const y = center + snapshot.moon.yNormalized * radius;
         const diameter = variant === "homepage" ? Math.max(34, size * 0.085) : Math.max(38, Math.min(58, size * 0.09));
-        context.save(); context.shadowColor = "rgb(233 196 106 / 38%)"; context.shadowBlur = diameter * 0.8;
+        context.save(); context.shadowColor = "rgb(233 196 106 / 32%)"; context.shadowBlur = diameter * 0.48;
+        context.fillStyle = "rgb(244 235 207 / 24%)"; context.beginPath(); context.arc(x, y, diameter * 0.43, 0, Math.PI * 2); context.fill(); context.restore();
         const texture = moonTexture(snapshot.moon.illuminatedFraction, snapshot.moon.brightLimbScreenAngleRad);
+        context.save(); context.imageSmoothingEnabled = true; context.imageSmoothingQuality = "high";
         context.drawImage(texture, x - diameter / 2, y - diameter / 2, diameter, diameter); context.restore();
       }
       context.restore();

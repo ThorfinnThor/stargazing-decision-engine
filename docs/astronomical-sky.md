@@ -119,6 +119,8 @@ Measured locally on 2026-08-25 after a production static export:
   complete astronomical snapshot.
 - Browser Canvas redraws observed during desktop QA: 0.8–1.5 ms at device pixel
   ratio capped to 2.
+- The Moon is rasterized at 256 px, then downsampled with high-quality Canvas
+  smoothing; its glow is rendered separately so the lunar limb remains crisp.
 - Browser QA covered live navigation, fixed preview navigation, return to live,
   invalid cross-destination preview rejection, English/German labels, named
   months, and a daylight snapshot with zero visible catalog stars.
@@ -126,4 +128,5 @@ Measured locally on 2026-08-25 after a production static export:
 QA captures:
 
 - [Homepage live sky](qa/astronomical-sky-homepage.png)
+- [Destination live sky with high-resolution Moon](qa/astronomical-sky-destination-live.png)
 - [Destination fixed night preview](qa/astronomical-sky-destination-preview.png)

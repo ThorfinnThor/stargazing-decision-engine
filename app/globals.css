@@ -179,6 +179,31 @@ h1 span {
   background: var(--night);
 }
 
+.destination-page-nav {
+  margin-bottom: clamp(2rem, 5vw, 4rem);
+}
+
+.destination-home-link {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid var(--gold);
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 160ms ease;
+}
+
+.destination-home-link span,
+.destination-home-link:hover,
+.destination-home-link:focus-visible {
+  color: var(--gold);
+}
+
 .destination-figure {
   margin: 0 0 clamp(2.5rem, 6vw, 5rem);
 }
