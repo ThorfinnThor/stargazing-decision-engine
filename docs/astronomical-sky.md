@@ -54,9 +54,12 @@ or temporary light sources. UI copy states this limitation in English and German
 
 The server components load committed candidates and previews. Client components
 select a homepage location after hydration, compute the current minute, draw one
-Canvas, and update once per minute. Fixed previews have no timer. Destination
-query strings are parsed after mount and validated against that destination and
-its deterministic primary site.
+Canvas, and update once per minute. On destination pages, **Show next night**
+selects the darkest half-hour sample in the immediately upcoming astronomical
+night; the committed fixed preview remains a reproducible fallback and supports
+existing deep links. Preview modes have no timer. Destination query strings are
+parsed after mount and validated against that destination and its deterministic
+primary site.
 
 ## Homepage candidate contract
 
@@ -121,12 +124,14 @@ Measured locally on 2026-08-25 after a production static export:
   ratio capped to 2.
 - The Moon is rasterized at 256 px, then downsampled with high-quality Canvas
   smoothing; its glow is rendered separately so the lunar limb remains crisp.
-- Browser QA covered live navigation, fixed preview navigation, return to live,
-  invalid cross-destination preview rejection, English/German labels, named
-  months, and a daylight snapshot with zero visible catalog stars.
+- Upcoming-night selection produced a valid astronomical night for all 50
+  destinations in 43.26 ms total during the fixed-date verification run.
+- Browser QA covered live navigation, upcoming and fixed preview navigation,
+  return to live, invalid cross-destination preview rejection, English/German
+  labels, named months, and a daylight snapshot with zero visible catalog stars.
 
 QA captures:
 
 - [Homepage live sky](qa/astronomical-sky-homepage.png)
 - [Destination live sky with high-resolution Moon](qa/astronomical-sky-destination-live.png)
-- [Destination fixed night preview](qa/astronomical-sky-destination-preview.png)
+- [Destination upcoming-night preview](qa/astronomical-sky-destination-preview.png)

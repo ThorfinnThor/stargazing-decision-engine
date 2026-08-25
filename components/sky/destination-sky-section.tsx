@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { AstronomicalSky } from "./astronomical-sky";
+import { findNextAstronomicalNight } from "@/lib/astronomy/next-night";
 import { roundedCurrentMinuteIso } from "@/lib/astronomy/selection";
 import { resolveDestinationPreview } from "@/lib/astronomy/previews";
 import type { NightPreview, SkyLocation } from "@/lib/astronomy/types";
@@ -12,6 +13,7 @@ import type { Locale } from "@/lib/i18n/config";
 export function DestinationSkySection({ location, previews, locale }: { location: SkyLocation; previews: NightPreview[]; locale: Locale }) {
   const [ready, setReady] = useState(false);
   const [preview, setPreview] = useState<NightPreview | null>(null);
+  const [nextNightInstant, setNextNightInstant] = useState<string | null>(null);
   const [liveInstant, setLiveInstant] = useState(roundedCurrentMinuteIso(0));
   useEffect(() => {
     const search = new URLSearchParams(window.location.search);
@@ -20,7 +22,7 @@ export function DestinationSkySection({ location, previews, locale }: { location
     setReady(true);
   }, [location, previews]);
   useEffect(() => {
-    if (!ready || !shouldScheduleSkyRefresh(preview ? "night-preview" : "live-night")) return;
+    if (!ready || !shouldScheduleSkyRefresh(preview || nextNightInstant ? "night-preview" : "live-night")) return;
     const refresh = () => setLiveInstant(roundedCurrentMinuteIso());
     const delay = 60_000 - (Date.now() % 60_000) + 25;
     let interval: ReturnType<typeof setInterval> | null = null;
@@ -28,19 +30,23 @@ export function DestinationSkySection({ location, previews, locale }: { location
     const visibility = () => { if (document.visibilityState === "visible") refresh(); };
     document.addEventListener("visibilitychange", visibility);
     return () => { clearTimeout(timeout); if (interval) clearInterval(interval); document.removeEventListener("visibilitychange", visibility); };
-  }, [preview, ready]);
+  }, [nextNightInstant, preview, ready]);
   if (!ready) return <div className="sky-loading" role="status">{locale === "de" ? "Astronomischer Himmel wird berechnet …" : "Calculating astronomical sky …"}</div>;
-  const showPreview = (next: NightPreview) => {
-    const url = new URL(window.location.href); url.searchParams.set("skyPreview", next.id); url.hash = "night-sky"; window.history.replaceState(null, "", url); setPreview(next);
-  };
   const showLive = () => {
-    const url = new URL(window.location.href); url.searchParams.delete("skyPreview"); url.hash = "night-sky"; window.history.replaceState(null, "", url); setLiveInstant(roundedCurrentMinuteIso()); setPreview(null);
+    const url = new URL(window.location.href); url.searchParams.delete("skyPreview"); url.hash = "night-sky"; window.history.replaceState(null, "", url); setLiveInstant(roundedCurrentMinuteIso()); setPreview(null); setNextNightInstant(null);
   };
+  const showNextNight = () => {
+    const nowIso = roundedCurrentMinuteIso();
+    const nextNight = findNextAstronomicalNight(location, nowIso);
+    const url = new URL(window.location.href); url.searchParams.delete("skyPreview"); url.hash = "night-sky"; window.history.replaceState(null, "", url);
+    setLiveInstant(nowIso); setPreview(null); setNextNightInstant(nextNight?.instantIso ?? previews[0]?.instantIso ?? null);
+  };
+  const previewInstant = nextNightInstant ?? preview?.instantIso ?? null;
   return <div className="destination-sky-shell">
-    <AstronomicalSky location={location} instantIso={preview?.instantIso ?? liveInstant} mode={preview ? "night-preview" : "live-night"} locale={locale} variant="destination" />
+    <AstronomicalSky location={location} instantIso={previewInstant ?? liveInstant} mode={previewInstant ? "night-preview" : "live-night"} locale={locale} variant="destination" />
     <div className="sky-actions">
-      {preview ? <button type="button" onClick={showLive}>{locale === "de" ? "Zum Live-Himmel" : "Show live sky"}</button>
-        : previews[0] && <button type="button" onClick={() => showPreview(previews[0])}>{locale === "de" ? "Nachtvorschau anzeigen" : "Show night preview"}</button>}
+      {previewInstant ? <button type="button" onClick={showLive}>{locale === "de" ? "Zum Live-Himmel" : "Show live sky"}</button>
+        : <button type="button" onClick={showNextNight}>{locale === "de" ? "Nächste Nacht anzeigen" : "Show next night"}</button>}
     </div>
   </div>;
 }

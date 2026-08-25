@@ -2,8 +2,9 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { computeSky } from "../lib/astronomy/compute-sky.js";
+import { computeSky, computeSunHorizontal } from "../lib/astronomy/compute-sky.js";
 import { brightStarCatalogMetadata, brightStars } from "../lib/astronomy/catalog.js";
+import { findNextAstronomicalNight } from "../lib/astronomy/next-night.js";
 import { classifySkyCondition, getEffectiveLimitingMagnitude } from "../lib/astronomy/visibility.js";
 import { formatSkyLocalTime, shouldScheduleSkyRefresh } from "../lib/astronomy/time.js";
 import type { SkyLocation } from "../lib/astronomy/types.js";
@@ -73,4 +74,17 @@ test("local labels use destination timezone, including DST, and fixed previews d
   assert.equal(shouldScheduleSkyRefresh("live-night"), true);
   assert.equal(shouldScheduleSkyRefresh("night-preview"), false);
   assert.throws(() => formatSkyLocalTime("en", "Invalid/Timezone", "2027-01-01T00:00:00.000Z"));
+});
+
+test("next-night preview stays near the current date and selects astronomical darkness", () => {
+  const fromIso = "2026-08-25T16:50:00.000Z";
+  const nextNight = findNextAstronomicalNight(westhavelland, fromIso);
+  assert.ok(nextNight);
+  assert.ok(Date.parse(nextNight.instantIso) > Date.parse(fromIso));
+  assert.ok(Date.parse(nextNight.instantIso) - Date.parse(fromIso) < 36 * 60 * 60 * 1000);
+  assert.ok(computeSunHorizontal(westhavelland, nextNight.instantIso).altitudeDeg <= -18);
+});
+
+test("next-night preview rejects an invalid starting instant", () => {
+  assert.throws(() => findNextAstronomicalNight(westhavelland, "not-an-instant"), /Invalid preview start instant/);
 });
