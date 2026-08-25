@@ -31,9 +31,12 @@ export function AstronomicalSky(props: {
   const localTime = formatSkyLocalTime(props.locale, props.location.timeZone, props.instantIso);
   const percent = Math.round(snapshot.moon.illuminatedFraction * 100);
   const modeLabel = props.mode === "live-night" ? props.locale === "de" ? "Live-Himmel" : "Live sky" : props.locale === "de" ? "Nachtvorschau" : "Night preview";
+  const disclaimer = props.locale === "de"
+    ? "Ideale Sternsicht bis Magnitude 6; lokale Lichtverschmutzung, Wetter und Horizontabschattungen sind nicht berücksichtigt."
+    : "Ideal magnitude-6 star depth; local light pollution, weather, and horizon obstructions are not included.";
   const summary = props.locale === "de"
-    ? `${props.mode === "live-night" ? "Live-Astronomiesimulation" : "Astronomische Nachtvorschau"} des Himmels über ${props.location.label} um ${localTime} Ortszeit. Der Mond ist zu ${percent} Prozent beleuchtet und befindet sich ${snapshot.moon.aboveHorizon ? "über" : "unter"} dem Horizont. Wetter und lokale Horizontabschattungen sind nicht berücksichtigt.`
-    : `${props.mode === "live-night" ? "Live astronomical simulation" : "Astronomical night preview"} of the sky over ${props.location.label} at ${localTime} local time. The Moon is ${percent} percent illuminated and is ${snapshot.moon.aboveHorizon ? "above" : "below"} the horizon. Weather and local horizon obstructions are not included.`;
+    ? `${props.mode === "live-night" ? "Live-Astronomiesimulation" : "Astronomische Nachtvorschau"} des Himmels über ${props.location.label} um ${localTime} Ortszeit. Der Mond ist zu ${percent} Prozent beleuchtet und befindet sich ${snapshot.moon.aboveHorizon ? "über" : "unter"} dem Horizont. ${disclaimer}`
+    : `${props.mode === "live-night" ? "Live astronomical simulation" : "Astronomical night preview"} of the sky over ${props.location.label} at ${localTime} local time. The Moon is ${percent} percent illuminated and is ${snapshot.moon.aboveHorizon ? "above" : "below"} the horizon. ${disclaimer}`;
   return <figure className={`astronomical-sky astronomical-sky-${props.variant}`} data-location-id={props.location.id} data-site-id={props.location.siteId} data-mode={props.mode} data-instant={props.instantIso}>
     <SkyCanvas snapshot={snapshot} variant={props.variant} />
     <figcaption className="sky-caption">
@@ -42,7 +45,7 @@ export function AstronomicalSky(props: {
       <span>{props.location.siteName} · {localTime}</span>
       <span>{statusCopy[props.locale][snapshot.skyCondition]} · {snapshot.stars.length} {props.locale === "de" ? "sichtbare Katalogsterne" : "visible catalog stars"}</span>
       {props.destinationHref && <Link href={props.destinationHref}>{props.locale === "de" ? "Location ansehen →" : "View location →"}</Link>}
-      <small>{props.locale === "de" ? "Astronomische Simulation. Wetter und lokale Horizontabschattungen sind nicht berücksichtigt." : "Astronomical simulation. Weather and local horizon obstructions are not included."}</small>
+      <small>{disclaimer}</small>
     </figcaption>
     <p className="sr-only">{summary}</p>
   </figure>;

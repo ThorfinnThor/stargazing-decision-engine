@@ -66,6 +66,15 @@ test("astronomical computation modules contain no random selection path", () => 
   }
 });
 
+test("homepage sky remains visible below desktop widths and discloses idealized star depth", () => {
+  const css = readFileSync(new URL("../app/globals.css", import.meta.url), "utf8");
+  const component = readFileSync(new URL("../components/sky/astronomical-sky.tsx", import.meta.url), "utf8");
+  assert.doesNotMatch(css, /\.orbit\s*\{\s*display:\s*none/);
+  assert.match(css, /@media \(max-width: 1050px\)[\s\S]*?\.orbit\s*\{[\s\S]*?position:\s*relative/);
+  assert.match(component, /Ideal magnitude-6 star depth; local light pollution/);
+  assert.match(component, /Ideale Sternsicht bis Magnitude 6; lokale Lichtverschmutzung/);
+});
+
 test("local labels use destination timezone, including DST, and fixed previews do not schedule refresh", () => {
   const winter = formatSkyLocalTime("en", "Europe/Berlin", "2027-01-01T00:00:00.000Z");
   const summer = formatSkyLocalTime("en", "Europe/Berlin", "2027-07-01T00:00:00.000Z");

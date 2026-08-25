@@ -42,6 +42,9 @@ license for unrelated project code.
   toward the local Sun direction.
 - Moon symbol diameter is intentionally enlarged and is not angular scale.
 - Star point radius encodes apparent magnitude and is not angular diameter.
+- Observation sites currently use an ideal limiting-magnitude fallback of 6.0;
+  the rendering does not yet derive star depth from location-specific light
+  pollution. This limitation is disclosed beside every sky visualization.
 
 ## Visibility and honesty
 
@@ -49,6 +52,8 @@ Geometric horizon visibility and a monotonic twilight limiting-magnitude model
 are applied. At daylight the ordinary star catalog is not drawn. The simulation
 does not include weather, haze, smoke, transparency, terrain, trees, buildings,
 or temporary light sources. UI copy states this limitation in English and German.
+The homepage visualization remains present below desktop widths and moves into
+the normal document flow on tablet and mobile layouts.
 
 ## Static architecture
 
@@ -131,6 +136,9 @@ Measured locally on 2026-08-25 after a production static export:
 - A route-by-route browser check on 2026-08-25 loaded all 50 English destination
   pages: 7 opened on live astronomical night, 43 on the upcoming-night preview,
   and every page displayed at least 500 catalog stars.
+- Responsive browser QA kept the homepage sky visible at 1024 px tablet and
+  390 px mobile widths, with no horizontal overflow and the limitation notice
+  visible in English and German.
 - Browser QA covered live navigation, upcoming and fixed preview navigation,
   return to live, invalid cross-destination preview rejection, English/German
   labels, named months, and a daylight snapshot with zero visible catalog stars.
@@ -138,5 +146,7 @@ Measured locally on 2026-08-25 after a production static export:
 QA captures:
 
 - [Homepage live sky](qa/astronomical-sky-homepage.png)
+- [Homepage sky at tablet width](qa/astronomical-sky-homepage-tablet.png)
+- [Homepage sky at mobile width](qa/astronomical-sky-homepage-mobile.png)
 - [Destination live sky with high-resolution Moon](qa/astronomical-sky-destination-live.png)
 - [Destination upcoming-night preview](qa/astronomical-sky-destination-preview.png)

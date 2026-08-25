@@ -698,11 +698,15 @@ h1 span {
 
 @media (max-width: 1050px) {
   .orbit {
-    display: none;
+    position: relative;
+    top: auto;
+    right: auto;
+    width: min(30rem, 100%);
+    margin: clamp(3.5rem, 8vw, 5rem) auto 0;
   }
 
   .hero {
-    min-height: 78vh;
+    min-height: auto;
   }
 }
 
@@ -920,11 +924,8 @@ h3 {
 
 @media (max-width: 800px) {
   .orbit {
-    display: none;
-  }
-
-  .hero {
-    min-height: 78vh;
+    width: 100%;
+    margin-top: 3.5rem;
   }
 
   .astronomical-sky-destination {
