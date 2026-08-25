@@ -9,6 +9,10 @@ export type DestinationSkySelection =
   | { mode: "live-night"; instantIso: string }
   | { mode: "night-preview"; instantIso: string };
 
+export function isAstronomicalNight(location: SkyLocation, instantIso: string) {
+  return computeSunHorizontal(location, instantIso).altitudeDeg < astronomicalNightAltitudeDeg;
+}
+
 export function findNextAstronomicalNight(location: SkyLocation, fromIso: string) {
   const fromMs = Date.parse(fromIso);
   if (!Number.isFinite(fromMs)) throw new Error(`Invalid preview start instant: ${fromIso}`);
@@ -29,8 +33,7 @@ export function findNextAstronomicalNight(location: SkyLocation, fromIso: string
 }
 
 export function selectInitialDestinationSky(location: SkyLocation, nowIso: string): DestinationSkySelection {
-  const sun = computeSunHorizontal(location, nowIso);
-  if (sun.altitudeDeg < astronomicalNightAltitudeDeg) return { mode: "live-night", instantIso: nowIso };
+  if (isAstronomicalNight(location, nowIso)) return { mode: "live-night", instantIso: nowIso };
   const nextNight = findNextAstronomicalNight(location, nowIso);
   return nextNight
     ? { mode: "night-preview", instantIso: nextNight.instantIso }

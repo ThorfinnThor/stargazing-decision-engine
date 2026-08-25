@@ -98,7 +98,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </figcaption>
       </figure>}
       {skyLocation && <section className="destination-sky-section" id="night-sky" aria-label={isGerman ? "Astronomischer Himmel" : "Astronomical sky"}>
-        <DestinationSkySection location={skyLocation} previews={skyPreviews} locale={locale} />
+        <DestinationSkySection key={skyLocation.id} location={skyLocation} previews={skyPreviews} locale={locale} />
       </section>}
       <section className="event-summary" aria-labelledby="destination-access-title">
         <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>

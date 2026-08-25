@@ -4,7 +4,7 @@ import test from "node:test";
 
 import { computeSky, computeSunHorizontal } from "../lib/astronomy/compute-sky.js";
 import { brightStarCatalogMetadata, brightStars } from "../lib/astronomy/catalog.js";
-import { findNextAstronomicalNight, selectInitialDestinationSky } from "../lib/astronomy/next-night.js";
+import { findNextAstronomicalNight, isAstronomicalNight, selectInitialDestinationSky } from "../lib/astronomy/next-night.js";
 import { createSkyLocation, resolvePrimaryObservationSite } from "../lib/astronomy/primary-site.js";
 import { classifySkyCondition, getEffectiveLimitingMagnitude } from "../lib/astronomy/visibility.js";
 import { formatSkyLocalTime, shouldScheduleSkyRefresh } from "../lib/astronomy/time.js";
@@ -100,8 +100,8 @@ test("next-night preview rejects an invalid starting instant", () => {
   assert.throws(() => findNextAstronomicalNight(westhavelland, "not-an-instant"), /Invalid preview start instant/);
 });
 
-test("destination pages default to live darkness or the upcoming night for all 50 targets", () => {
-  const nowIso = "2026-08-25T17:31:00.000Z";
+test("destination pages default to live darkness or the upcoming night for all 50 targets throughout the day", () => {
+  const instants = Array.from({ length: 8 }, (_, index) => new Date(Date.parse("2026-08-25T00:00:00.000Z") + index * 3 * 60 * 60 * 1000).toISOString());
   const sites = loadSites();
   const destinations = loadDestinations().filter((destination) => destination.active);
   assert.equal(destinations.length, 50);
@@ -110,9 +110,23 @@ test("destination pages default to live darkness or the upcoming night for all 5
     assert.ok(site, destination.slug);
     const location = createSkyLocation(destination, site);
     assert.ok(location, destination.slug);
-    const selection = selectInitialDestinationSky(location, nowIso);
-    const snapshot = computeSky(location, selection.instantIso);
-    assert.equal(snapshot.skyCondition, "night", destination.slug);
-    assert.ok(snapshot.stars.length >= 500, destination.slug);
+    for (const nowIso of instants) {
+      const selection = selectInitialDestinationSky(location, nowIso);
+      const snapshot = computeSky(location, selection.instantIso);
+      assert.equal(snapshot.skyCondition, "night", `${destination.slug} at ${nowIso}`);
+      assert.ok(snapshot.stars.length >= 500, `${destination.slug} at ${nowIso}`);
+      assert.equal(selection.mode === "live-night", isAstronomicalNight(location, nowIso), `${destination.slug} at ${nowIso}`);
+    }
   }
+});
+
+test("destination client prevents daylight live views and refreshes restored pages", () => {
+  const component = readFileSync(new URL("../components/sky/destination-sky-section.tsx", import.meta.url), "utf8");
+  const page = readFileSync(new URL("../app/[locale]/stargazing-destinations/[slug]/page.tsx", import.meta.url), "utf8");
+  assert.match(component, /const selection = selectInitialDestinationSky\(location, nowIso\)/);
+  assert.match(component, /window\.addEventListener\("pageshow", restore\)/);
+  assert.match(component, /liveSkyAvailable\s*=\s*isAstronomicalNight/);
+  assert.match(component, /currently daylight or twilight on site/);
+  assert.match(component, /if \(linkedPreview\) \{\s*setNextNightInstant\(null\)/);
+  assert.match(page, /<DestinationSkySection key=\{skyLocation\.id\}/);
 });
