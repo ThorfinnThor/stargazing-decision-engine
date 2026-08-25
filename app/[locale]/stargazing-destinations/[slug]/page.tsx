@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { loadDestination, loadDestinationMonthly, loadDestinations, loadImageManifest, loadSeoPage, loadSites } from "@/lib/data/load";
+import { loadDestination, loadDestinationMonthly, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSites } from "@/lib/data/load";
+import { createSkyLocation, resolvePrimaryObservationSite } from "@/lib/astronomy/primary-site";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
+import { DestinationSkySection } from "@/components/sky/destination-sky-section";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { formatMonth } from "@/lib/i18n/months";
 
@@ -20,9 +22,13 @@ function readParams(params: { locale: string; slug: string }) {
   try {
     const destination = loadDestination(params.slug);
     const path = `/${params.locale}/stargazing-destinations/${params.slug}/`;
-    const sites = loadSites().filter((site) => site.destinationId === destination.id);
+    const allSites = loadSites();
+    const sites = allSites.filter((site) => site.destinationId === destination.id);
+    const primarySite = resolvePrimaryObservationSite(destination, allSites);
+    const skyLocation = primarySite ? createSkyLocation(destination, primarySite) : null;
+    const skyPreviews = skyLocation ? loadNightPreviews().previews.filter((preview) => preview.destinationId === destination.id && preview.siteId === skyLocation.siteId) : [];
     const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
-    return { locale: params.locale as Locale, destination, sites, image, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
+    return { locale: params.locale as Locale, destination, sites, image, skyLocation, skyPreviews, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -61,7 +67,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, image, monthly, locale, seo } = resolved;
+  const { destination, sites, image, skyLocation, skyPreviews, monthly, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Static dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazing.local/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
@@ -85,6 +91,9 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           {image.attribution} · <a href={image.sourceUrl ?? undefined} rel="noreferrer">{isGerman ? "Quelle" : "Source"}</a> · <a href={image.licenseUrl ?? undefined} rel="noreferrer">{isGerman ? "Lizenz" : "License"}</a>
         </figcaption>
       </figure>}
+      {skyLocation && <section className="destination-sky-section" id="night-sky" aria-label={isGerman ? "Astronomischer Himmel" : "Astronomical sky"}>
+        <DestinationSkySection location={skyLocation} previews={skyPreviews} locale={locale} />
+      </section>}
       <section className="event-summary" aria-labelledby="destination-access-title">
         <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>
         {sites.map((site) => (

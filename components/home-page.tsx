@@ -1,9 +1,11 @@
-import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadSeoPage, loadSites } from "@/lib/data/load";
+import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadNightPreviews, loadSeoPage, loadSites } from "@/lib/data/load";
 import { isTravelEligibleSite } from "@/lib/access/travel";
+import { buildHomepageSkyCandidates } from "@/lib/astronomy/homepage-candidates";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { localeCopy, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { formatMonth } from "@/lib/i18n/months";
+import { RandomHomepageSky } from "@/components/sky/random-homepage-sky";
 
 export function HomePage({ locale }: { locale: Locale }) {
   const copy = localeCopy[locale];
@@ -19,7 +21,10 @@ export function HomePage({ locale }: { locale: Locale }) {
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
   const sites = loadSites();
-  const destinations = loadDestinations().map((destination) => {
+  const destinationRecords = loadDestinations();
+  const previews = loadNightPreviews().previews;
+  const homepageSkyCandidates = buildHomepageSkyCandidates({ destinations: destinationRecords, sites, locale, previews });
+  const destinations = destinationRecords.map((destination) => {
     const monthly = loadDestinationMonthly(destination.slug);
     const bestMonth = [...monthly.months].sort((a, b) => b.score - a.score)[0];
     const destinationSites = sites.filter((site) => site.destinationId === destination.id);
@@ -58,11 +63,8 @@ export function HomePage({ locale }: { locale: Locale }) {
           </a>
         </div>
 
-        <div className="orbit" aria-hidden="true">
-          <span className="moon" />
-          <span className="star star-one">✦</span>
-          <span className="star star-two">·</span>
-          <span className="star star-three">✦</span>
+        <div className="orbit">
+          <RandomHomepageSky candidates={homepageSkyCandidates} previews={previews} locale={locale} />
         </div>
       </section>
 
