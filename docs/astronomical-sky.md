@@ -134,11 +134,15 @@ Measured locally on 2026-08-25 after a production static export:
 - Upcoming-night selection produced a valid astronomical night for all 50
   destinations in 43.26 ms total during the fixed-date verification run.
 - A route-by-route browser check on 2026-08-25 loaded all 50 English destination
-  pages: 7 opened on live astronomical night, 43 on the upcoming-night preview,
-  and every page displayed at least 500 catalog stars.
+  pages: 15 opened on live astronomical night, 35 on the upcoming-night
+  preview, and every page displayed at least 2,352 catalog stars.
 - Responsive browser QA kept the homepage sky visible at 1024 px tablet and
   390 px mobile widths, with no horizontal overflow and the limitation notice
   visible in English and German.
+- Destination responsive QA covered 1,440 px desktop, 1,024 px tablet, and
+  390 px mobile widths. The night card, local-language caveat, and navigation
+  remained inside the viewport; daylight locations showed the upcoming-night
+  guard instead of an empty daytime dome.
 - Browser QA covered live navigation, upcoming and fixed preview navigation,
   return to live, invalid cross-destination preview rejection, English/German
   labels, named months, and a daylight snapshot with zero visible catalog stars.
