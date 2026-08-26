@@ -89,6 +89,10 @@ jobs:
           test -s /tmp/stargazing-sites
           echo "count=$(wc -l < /tmp/stargazing-sites | tr -d ' ')" >> "$GITHUB_OUTPUT"
           cat /tmp/stargazing-sites
+      - name: Prepare normalized source data
+        run: |
+          pnpm data:seed
+          pnpm data:normalize
       - name: Fetch and process optional source snapshots
         env:
           REFRESH_ERA5: ${{ inputs.refresh_era5 }}
