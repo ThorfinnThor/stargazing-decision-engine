@@ -73,6 +73,8 @@ test("homepage sky remains visible below desktop widths and discloses idealized 
   assert.match(css, /@media \(max-width: 1050px\)[\s\S]*?\.orbit\s*\{[\s\S]*?position:\s*relative/);
   assert.match(component, /Ideal magnitude-6 star depth; local light pollution/);
   assert.match(component, /Ideale Sternsicht bis Magnitude 6; lokale Lichtverschmutzung/);
+  assert.match(css, /\.destination-card\s*\{[\s\S]*?min-width:\s*0/);
+  assert.match(css, /\.finder-result\s*\{[\s\S]*?contain-intrinsic-inline-size:\s*none/);
 });
 
 test("local labels use destination timezone, including DST, and fixed previews do not schedule refresh", () => {

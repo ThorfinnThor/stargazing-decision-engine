@@ -1,7 +1,7 @@
 import { existsSync, readdirSync, readFileSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { CalendarFile } from "../../lib/data/types.js";
+import type { CalendarFile, Destination } from "../../lib/data/types.js";
 import { calculateCalendarDarknessScore, type CalendarConfig, validateCalendarConfig } from "../../lib/astronomy/calendar.js";
 import { publicDataDir, readJson, root as projectRoot } from "../pipeline/io.js";
 import { createSchemaValidator } from "./validate-schemas.js";
@@ -57,6 +57,37 @@ function visit(directory: string) {
     }
   }
 }
+
+function monthKey(year: number, month: number) {
+  return year * 12 + month - 1;
+}
+
+function validatePublishedHorizon(calendarRoot: string) {
+  const activeDestinations = readJson<Destination[]>(resolve(projectRoot, "data-config/sources/destinations.json"))
+    .filter((destination) => destination.active);
+  const expectedMonths = 36;
+  const ranges: string[] = [];
+  for (const destination of activeDestinations) {
+    const directory = resolve(calendarRoot, destination.slug);
+    if (!existsSync(directory)) {
+      errors.push(`${destination.slug}: calendar directory is missing`);
+      continue;
+    }
+    const files = readdirSync(directory).filter((file) => /^\d{4}-\d{2}\.json$/.test(file)).sort();
+    if (files.length !== expectedMonths) {
+      errors.push(`${destination.slug}: rolling calendar requires ${expectedMonths} months, found ${files.length}`);
+      continue;
+    }
+    const keys = files.map((file) => {
+      const [year, month] = file.slice(0, 7).split("-").map(Number);
+      return monthKey(year, month);
+    });
+    if (keys.some((key, index) => index > 0 && key !== keys[index - 1] + 1)) errors.push(`${destination.slug}: calendar months must be contiguous`);
+    ranges.push(`${files[0]}:${files.at(-1)}`);
+  }
+  if (new Set(ranges).size > 1) errors.push("all destinations must publish the same rolling 36-month range");
+}
+
 if (import.meta.url === `file://${process.argv[1]}`) {
   try {
     validateCalendarConfig(calendarConfig);
@@ -65,6 +96,7 @@ if (import.meta.url === `file://${process.argv[1]}`) {
       ? resolve(projectRoot, process.argv[rootArgumentIndex + 1])
       : resolve(publicDataDir, "calendar");
     visit(calendarRoot);
+    validatePublishedHorizon(calendarRoot);
     if (errors.length > 0) {
       for (const error of errors) console.error(error);
       process.exitCode = 1;

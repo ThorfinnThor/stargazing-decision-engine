@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { listShortTripOrigins, loadSeoPage, loadShortTrip } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
+import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { formatMonth } from "@/lib/i18n/months";
 
@@ -45,6 +46,7 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   return (
     <main className="trip-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Kurze Sternreisen · statisches Ranking" : "Short stargazing trips · static ranking"}</p>
         <h1>{isGerman ? `Ab ${trip.originName}` : `From ${trip.originName}`}</h1>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
+import { PageHomeNav } from "@/components/page-home-nav";
 import { listGearGuides, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -31,6 +32,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p><h1>{guide.title[locale]}</h1><p className="lede">{guide.summary[locale]}</p><p className="event-note">{guide.decisionSummary[locale]}</p></header>
       <section className="event-summary"><h2>{isGerman ? "Für wen" : "Who it is for"}</h2><p>{guide.audience[locale]}</p><h2>{isGerman ? "Kaufkriterien" : "Buying criteria"}</h2><ul>{guide.buyingCriteria.map((criterion) => <li key={criterion.en}>{criterion[locale]}</li>)}</ul></section>
       <section className="event-summary"><h2>{isGerman ? "Vergleich" : "Comparison"}</h2><div className="event-table-wrap"><table className="event-table"><thead><tr><th>{isGerman ? "Option" : "Option"}</th><th>{isGerman ? "Warum wichtig" : "Why it matters"}</th><th>{isGerman ? "Technische Daten" : "Core specs"}</th><th>{isGerman ? "Stärken / Grenzen" : "Pros / cons"}</th></tr></thead><tbody>{guide.items.map((item) => <tr key={item.name.en}><td>{item.name[locale]}</td><td>{item.whyItMatters[locale]}</td><td>{Object.entries(item.coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td><td>{item.pros[locale].join(", ")} / {item.cons[locale].join(", ")}</td></tr>)}</tbody></table></div></section>

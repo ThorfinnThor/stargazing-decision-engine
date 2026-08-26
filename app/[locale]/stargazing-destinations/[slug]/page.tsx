@@ -6,8 +6,8 @@ import { createSkyLocation, resolvePrimaryObservationSite } from "@/lib/astronom
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { DestinationSkySection } from "@/components/sky/destination-sky-section";
+import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
-import { localizedLinks } from "@/lib/i18n/links";
 import { formatMonth } from "@/lib/i18n/months";
 
 export const dynamic = "force-static";
@@ -76,11 +76,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <nav className="destination-page-nav" aria-label={isGerman ? "Seitennavigation" : "Page navigation"}>
-        <a className="destination-home-link" href={localizedLinks.home(locale)}>
-          <span aria-hidden="true">←</span> {isGerman ? "Startseite" : "Home"}
-        </a>
-      </nav>
+      <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Statisches Zielprofil" : "Static destination profile"}</p>
         <h1>{destination.name}</h1>

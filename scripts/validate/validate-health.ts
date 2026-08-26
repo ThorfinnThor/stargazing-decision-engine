@@ -8,6 +8,11 @@ interface Manifest {
   sourceVersions?: Record<string, string>;
 }
 
+interface ImageManifest {
+  destinations: Array<{ status: string }>;
+  sites: Array<{ status: string }>;
+}
+
 const errors: string[] = [];
 const manifestPath = resolve(publicDataDir, "manifest.json");
 if (!existsSync(manifestPath)) errors.push("public dataset manifest is missing");
@@ -31,6 +36,18 @@ function countJsonFiles(directory: string): number {
 
 const calendarCount = countJsonFiles(resolve(publicDataDir, "calendar"));
 if (calendarCount < 1) errors.push("no static calendar files found");
+if (existsSync(manifestPath)) {
+  const manifest = readJson<Manifest>(manifestPath);
+  if (manifest.counts?.calendarFiles !== calendarCount) errors.push(`manifest calendarFiles=${manifest.counts?.calendarFiles ?? "missing"} does not match ${calendarCount} published calendar files`);
+  const imageManifestPath = resolve(publicDataDir, "images/manifest.json");
+  if (existsSync(imageManifestPath)) {
+    const images = readJson<ImageManifest>(imageManifestPath);
+    const allImages = [...images.destinations, ...images.sites];
+    const approvedImages = allImages.filter((image) => image.status === "approved").length;
+    if (manifest.counts?.imageAssets !== allImages.length) errors.push(`manifest imageAssets=${manifest.counts?.imageAssets ?? "missing"} does not match ${allImages.length} image records`);
+    if (manifest.counts?.approvedImageAssets !== approvedImages) errors.push(`manifest approvedImageAssets=${manifest.counts?.approvedImageAssets ?? "missing"} does not match ${approvedImages} approved images`);
+  }
+}
 const requiredDataFiles = [
   "destinations/index.json",
   "sites/index.json",
@@ -46,6 +63,10 @@ for (const relativePath of requiredDataFiles) {
 }
 if (!existsSync(resolve(root, "public/go/manifest.json"))) errors.push("required static file is missing: public/go/manifest.json");
 if (!existsSync(resolve(root, "public/_headers"))) errors.push("required Cloudflare static headers file is missing: public/_headers");
+const redirectsPath = resolve(root, "public/_redirects");
+if (!existsSync(redirectsPath) || !/^\/\s+\/en\/\s+301\s*$/m.test(readFileSync(redirectsPath, "utf8"))) {
+  errors.push("Cloudflare root redirect to the canonical English homepage is missing");
+}
 
 for (const relativePath of ["out/sitemap.xml", "out/robots.txt"]) {
   const path = resolve(root, relativePath);

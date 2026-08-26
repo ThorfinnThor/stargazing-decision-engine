@@ -11,6 +11,8 @@ const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(),
 test("published derived products are real and access-gated", () => {
   const manifest = read<Manifest>("public/data/stargazing/manifest.json");
   assert.equal(manifest.counts.seedScoreSites, 0);
+  assert.equal(manifest.counts.calendarFiles, manifest.counts.destinations * 36);
+  assert.equal(manifest.counts.approvedImageAssets, manifest.counts.destinations);
   assert.equal(manifest.sourceVersions.calendar, "astronomy-calendar-real-1.0.0");
   assert.match(manifest.sourceVersions.meteorShowers, /real-site-score/);
   assert.match(manifest.sourceVersions.shortTrips, /real-site-score/);
