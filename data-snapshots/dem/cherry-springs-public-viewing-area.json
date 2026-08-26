@@ -1,0 +1,33 @@
+{
+  "siteId": "cherry-springs-public-viewing-area",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    41.6501,
+    -77.8164
+  ],
+  "tile": "N41_00_W078_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N41_00_W078_00_DEM/Copernicus_DSM_COG_10_N41_00_W078_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 708.789,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 703.167,
+      "validSampleCount": 274
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 715.947,
+      "validSampleCount": 4407
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:42:41.299057Z"
+}

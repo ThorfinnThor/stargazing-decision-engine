@@ -1,0 +1,158 @@
+{
+  "siteId": "llanos-del-jable",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.856133,
+      "coverage": 0.987508,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.856133,
+          "coverage": 0.99188,
+          "validPixelCount": 1588,
+          "totalPixelCount": 1601
+        },
+        {
+          "year": 2024,
+          "radiance": 0.841471,
+          "coverage": 0.990631,
+          "validPixelCount": 1586,
+          "totalPixelCount": 1601
+        },
+        {
+          "year": 2023,
+          "radiance": 0.911025,
+          "coverage": 0.987508,
+          "validPixelCount": 1581,
+          "totalPixelCount": 1601
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.027774,
+      "coverage": 0.998425,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.024206,
+          "coverage": 0.998425,
+          "validPixelCount": 13312,
+          "totalPixelCount": 13333
+        },
+        {
+          "year": 2024,
+          "radiance": 0.027774,
+          "coverage": 0.9988,
+          "validPixelCount": 13317,
+          "totalPixelCount": 13333
+        },
+        {
+          "year": 2023,
+          "radiance": 0.034088,
+          "coverage": 0.998575,
+          "validPixelCount": 13314,
+          "totalPixelCount": 13333
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.000928,
+      "coverage": 0.999987,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000777,
+          "coverage": 0.999987,
+          "validPixelCount": 78800,
+          "totalPixelCount": 78801
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000928,
+          "coverage": 1,
+          "validPixelCount": 78801,
+          "totalPixelCount": 78801
+        },
+        {
+          "year": 2023,
+          "radiance": 0.001179,
+          "coverage": 1,
+          "validPixelCount": 78801,
+          "totalPixelCount": 78801
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.856133,
+  "radiance10to30": 0.027774,
+  "radiance30to75": 0.000928,
+  "alanExposure": 0.189751,
+  "darknessScore": 80.03,
+  "coverage": 0.987508,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:01:52.580499Z"
+}

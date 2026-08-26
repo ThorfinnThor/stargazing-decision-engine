@@ -1,0 +1,158 @@
+{
+  "siteId": "musala-hut-night-area",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 79,
+          "totalPixelCount": 79
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 79,
+          "totalPixelCount": 79
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 79,
+          "totalPixelCount": 79
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.375554,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.408115,
+          "coverage": 1,
+          "validPixelCount": 1897,
+          "totalPixelCount": 1897
+        },
+        {
+          "year": 2024,
+          "radiance": 0.333438,
+          "coverage": 1,
+          "validPixelCount": 1897,
+          "totalPixelCount": 1897
+        },
+        {
+          "year": 2023,
+          "radiance": 0.375554,
+          "coverage": 1,
+          "validPixelCount": 1897,
+          "totalPixelCount": 1897
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.332746,
+      "coverage": 0.999178,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.363046,
+          "coverage": 0.999178,
+          "validPixelCount": 15801,
+          "totalPixelCount": 15814
+        },
+        {
+          "year": 2024,
+          "radiance": 0.307345,
+          "coverage": 0.999937,
+          "validPixelCount": 15813,
+          "totalPixelCount": 15814
+        },
+        {
+          "year": 2023,
+          "radiance": 0.332746,
+          "coverage": 0.999747,
+          "validPixelCount": 15810,
+          "totalPixelCount": 15814
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.355614,
+      "coverage": 0.999711,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.507214,
+          "coverage": 0.999711,
+          "validPixelCount": 93368,
+          "totalPixelCount": 93395
+        },
+        {
+          "year": 2024,
+          "radiance": 1.355614,
+          "coverage": 0.999732,
+          "validPixelCount": 93370,
+          "totalPixelCount": 93395
+        },
+        {
+          "year": 2023,
+          "radiance": 1.322935,
+          "coverage": 0.999786,
+          "validPixelCount": 93375,
+          "totalPixelCount": 93395
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.375554,
+  "radiance10to30": 0.332746,
+  "radiance30to75": 1.355614,
+  "alanExposure": 0.224423,
+  "darknessScore": 78.13,
+  "coverage": 0.999178,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:13:40.511880Z"
+}

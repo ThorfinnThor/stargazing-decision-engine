@@ -1,0 +1,33 @@
+{
+  "siteId": "sutherland-planetarium-amphitheatre",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -32.395,
+    20.661
+  ],
+  "tile": "S33_00_E020_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S33_00_E020_00_DEM/Copernicus_DSM_COG_10_S33_00_E020_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1461.004,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1458.019,
+      "validSampleCount": 237
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1460.202,
+      "validSampleCount": 3900
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:26:33.331407Z"
+}

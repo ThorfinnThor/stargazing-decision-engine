@@ -25,16 +25,44 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "atacama-plateau",
+    "bestSiteId": "paranal-public-night-tour",
     "dateLocal": "2027-10-22",
     "timezone": "America/Santiago",
     "moonIlluminationFraction": 0.4561,
     "moonlessHours": 5.67,
-    "totalDarknessHours": 8.63
+    "totalDarknessHours": 8.53
   },
   "topDestinations": [
     {
       "rank": 1,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "paranal-public-night-tour",
+      "siteSlug": "paranal-public-night-tour",
+      "siteName": "Paranal public night-tour visitor area",
+      "climateScore": 100,
+      "moonScore": 62.85,
+      "radiantScore": 87.14,
+      "viewingScore": 86.28,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.03,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "atacama",
       "destinationSlug": "atacama",
       "destinationName": "Atacama Plateau",
@@ -62,26 +90,26 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "namibrand",
       "destinationSlug": "namibrand",
       "destinationName": "NamibRand",
-      "siteId": "namibrand-reserve",
-      "siteSlug": "namibrand-reserve",
-      "siteName": "NamibRand reserve observing zone",
+      "siteId": "wolwedans-dune-camp",
+      "siteSlug": "wolwedans-dune-camp",
+      "siteName": "Wolwedans Dune Camp",
       "climateScore": 99,
-      "moonScore": 60.79,
-      "radiantScore": 87.06,
-      "viewingScore": 85.15,
+      "moonScore": 61.42,
+      "radiantScore": 87,
+      "viewingScore": 85.33,
       "moonConditions": {
         "dateLocal": "2027-10-22",
         "timezone": "Africa/Windhoek",
         "moonIlluminationFraction": 0.4798,
-        "moonlessHours": 5.5,
-        "totalDarknessHours": 8.52
+        "moonlessHours": 5.57,
+        "totalDarknessHours": 8.51
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 48.83,
+        "maximumAltitudeDeg": 48.69,
         "darkRadiantHours": 3.67
       },
       "caveats": [
@@ -90,7 +118,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -118,13 +146,13 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-dark-sky",
-      "siteSlug": "natural-bridges-dark-sky",
-      "siteName": "Natural Bridges dark-sky area",
+      "siteId": "natural-bridges-campground",
+      "siteSlug": "natural-bridges-campground",
+      "siteName": "Natural Bridges campground",
       "climateScore": 98,
       "moonScore": 51.19,
       "radiantScore": 99.01,
@@ -137,35 +165,7 @@
         "totalDarknessHours": 10.12
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 68.39,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 97,
-      "moonScore": 51.19,
-      "radiantScore": 99.01,
-      "viewingScore": 83.66,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.4419,
-        "moonlessHours": 4.98,
-        "totalDarknessHours": 10.12
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 67.79,
+        "maximumAltitudeDeg": 68.38,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -177,6 +177,34 @@
   "topSites": [
     {
       "rank": 1,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "paranal-public-night-tour",
+      "siteSlug": "paranal-public-night-tour",
+      "siteName": "Paranal public night-tour visitor area",
+      "climateScore": 100,
+      "moonScore": 62.85,
+      "radiantScore": 87.14,
+      "viewingScore": 86.28,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.4561,
+        "moonlessHours": 5.67,
+        "totalDarknessHours": 8.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 49.03,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "atacama",
       "destinationSlug": "atacama",
       "destinationName": "Atacama Plateau",
@@ -204,7 +232,35 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "wolwedans-dune-camp",
+      "siteSlug": "wolwedans-dune-camp",
+      "siteName": "Wolwedans Dune Camp",
+      "climateScore": 99,
+      "moonScore": 61.42,
+      "radiantScore": 87,
+      "viewingScore": 85.33,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.4798,
+        "moonlessHours": 5.57,
+        "totalDarknessHours": 8.51
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.69,
+        "darkRadiantHours": 3.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "namibrand",
       "destinationSlug": "namibrand",
       "destinationName": "NamibRand",
@@ -232,7 +288,7 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -258,68 +314,12 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "natural-bridges",
-      "destinationSlug": "natural-bridges",
-      "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-dark-sky",
-      "siteSlug": "natural-bridges-dark-sky",
-      "siteName": "Natural Bridges dark-sky area",
-      "climateScore": 98,
-      "moonScore": 51.19,
-      "radiantScore": 99.01,
-      "viewingScore": 84.16,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.4419,
-        "moonlessHours": 4.98,
-        "totalDarknessHours": 10.12
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 68.39,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 97,
-      "moonScore": 51.19,
-      "radiantScore": 99.01,
-      "viewingScore": 83.66,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.4419,
-        "moonlessHours": 4.98,
-        "totalDarknessHours": 10.12
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 67.79,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
-  "climateScore": 99,
-  "moonScore": 62.31,
-  "radiantScore": 87.79,
-  "viewingScore": 85.75,
+  "climateScore": 100,
+  "moonScore": 62.85,
+  "radiantScore": 87.14,
+  "viewingScore": 86.28,
   "confidenceLevel": "moderate",
   "indexable": true,
   "caveats": [

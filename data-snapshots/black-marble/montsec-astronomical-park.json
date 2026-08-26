@@ -1,0 +1,158 @@
+{
+  "siteId": "montsec-astronomical-park",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 77,
+          "totalPixelCount": 77
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.061376,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.061376,
+          "coverage": 1,
+          "validPixelCount": 1894,
+          "totalPixelCount": 1894
+        },
+        {
+          "year": 2024,
+          "radiance": 0.0481,
+          "coverage": 1,
+          "validPixelCount": 1894,
+          "totalPixelCount": 1894
+        },
+        {
+          "year": 2023,
+          "radiance": 0.063614,
+          "coverage": 1,
+          "validPixelCount": 1894,
+          "totalPixelCount": 1894
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.398287,
+      "coverage": 0.999873,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.402202,
+          "coverage": 0.999937,
+          "validPixelCount": 15759,
+          "totalPixelCount": 15760
+        },
+        {
+          "year": 2024,
+          "radiance": 0.342963,
+          "coverage": 1,
+          "validPixelCount": 15760,
+          "totalPixelCount": 15760
+        },
+        {
+          "year": 2023,
+          "radiance": 0.398287,
+          "coverage": 0.999873,
+          "validPixelCount": 15758,
+          "totalPixelCount": 15760
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.768703,
+      "coverage": 0.999817,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.785543,
+          "coverage": 0.999914,
+          "validPixelCount": 93090,
+          "totalPixelCount": 93098
+        },
+        {
+          "year": 2024,
+          "radiance": 0.697412,
+          "coverage": 0.999946,
+          "validPixelCount": 93093,
+          "totalPixelCount": 93098
+        },
+        {
+          "year": 2023,
+          "radiance": 0.768703,
+          "coverage": 0.999817,
+          "validPixelCount": 93081,
+          "totalPixelCount": 93098
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.061376,
+  "radiance10to30": 0.398287,
+  "radiance30to75": 0.768703,
+  "alanExposure": 0.125182,
+  "darknessScore": 83.57,
+  "coverage": 0.999817,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:11:23.235893Z"
+}

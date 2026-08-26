@@ -1,0 +1,158 @@
+{
+  "siteId": "hoya-de-la-mora-perseids-route",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.743096,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.874217,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        },
+        {
+          "year": 2024,
+          "radiance": 0.66345,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        },
+        {
+          "year": 2023,
+          "radiance": 0.743096,
+          "coverage": 1,
+          "validPixelCount": 71,
+          "totalPixelCount": 71
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.311478,
+      "coverage": 0.998867,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.416797,
+          "coverage": 0.999433,
+          "validPixelCount": 1764,
+          "totalPixelCount": 1765
+        },
+        {
+          "year": 2024,
+          "radiance": 0.213281,
+          "coverage": 0.999433,
+          "validPixelCount": 1764,
+          "totalPixelCount": 1765
+        },
+        {
+          "year": 2023,
+          "radiance": 0.311478,
+          "coverage": 0.998867,
+          "validPixelCount": 1763,
+          "totalPixelCount": 1765
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 2.92889,
+      "coverage": 0.999728,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 3.150147,
+          "coverage": 0.999728,
+          "validPixelCount": 14675,
+          "totalPixelCount": 14679
+        },
+        {
+          "year": 2024,
+          "radiance": 2.874221,
+          "coverage": 0.999864,
+          "validPixelCount": 14677,
+          "totalPixelCount": 14679
+        },
+        {
+          "year": 2023,
+          "radiance": 2.92889,
+          "coverage": 0.999796,
+          "validPixelCount": 14676,
+          "totalPixelCount": 14679
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.988406,
+      "coverage": 0.995663,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.073332,
+          "coverage": 0.995663,
+          "validPixelCount": 86327,
+          "totalPixelCount": 86703
+        },
+        {
+          "year": 2024,
+          "radiance": 0.921653,
+          "coverage": 0.997313,
+          "validPixelCount": 86470,
+          "totalPixelCount": 86703
+        },
+        {
+          "year": 2023,
+          "radiance": 0.988406,
+          "coverage": 0.996459,
+          "validPixelCount": 86396,
+          "totalPixelCount": 86703
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.743096,
+  "radiance2to10": 0.311478,
+  "radiance10to30": 2.92889,
+  "radiance30to75": 0.988406,
+  "alanExposure": 0.605382,
+  "darknessScore": 57.28,
+  "coverage": 0.995663,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:56:24.485390Z"
+}

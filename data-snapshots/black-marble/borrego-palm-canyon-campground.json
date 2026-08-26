@@ -1,0 +1,158 @@
+{
+  "siteId": "borrego-palm-canyon-campground",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.098198,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.101229,
+          "coverage": 1,
+          "validPixelCount": 1682,
+          "totalPixelCount": 1682
+        },
+        {
+          "year": 2024,
+          "radiance": 0.087808,
+          "coverage": 1,
+          "validPixelCount": 1682,
+          "totalPixelCount": 1682
+        },
+        {
+          "year": 2023,
+          "radiance": 0.098198,
+          "coverage": 1,
+          "validPixelCount": 1682,
+          "totalPixelCount": 1682
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.015046,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.01491,
+          "coverage": 1,
+          "validPixelCount": 13995,
+          "totalPixelCount": 13995
+        },
+        {
+          "year": 2024,
+          "radiance": 0.015046,
+          "coverage": 1,
+          "validPixelCount": 13995,
+          "totalPixelCount": 13995
+        },
+        {
+          "year": 2023,
+          "radiance": 0.020225,
+          "coverage": 1,
+          "validPixelCount": 13995,
+          "totalPixelCount": 13995
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 2.369912,
+      "coverage": 0.999202,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.524461,
+          "coverage": 0.999517,
+          "validPixelCount": 82692,
+          "totalPixelCount": 82732
+        },
+        {
+          "year": 2024,
+          "radiance": 2.364607,
+          "coverage": 0.999444,
+          "validPixelCount": 82686,
+          "totalPixelCount": 82732
+        },
+        {
+          "year": 2023,
+          "radiance": 2.369912,
+          "coverage": 0.999202,
+          "validPixelCount": 82666,
+          "totalPixelCount": 82732
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.098198,
+  "radiance10to30": 0.015046,
+  "radiance30to75": 2.369912,
+  "alanExposure": 0.15183,
+  "darknessScore": 82.11,
+  "coverage": 0.999202,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:39:28.817759Z"
+}

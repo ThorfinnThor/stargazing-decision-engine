@@ -1,0 +1,160 @@
+{
+  "siteId": "coomakista-pass-viewpoint",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 0.833333,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 0.90625,
+          "validPixelCount": 87,
+          "totalPixelCount": 96
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 0.833333,
+          "validPixelCount": 80,
+          "totalPixelCount": 96
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 0.864583,
+          "validPixelCount": 83,
+          "totalPixelCount": 96
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.012302,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.007112,
+          "coverage": 1,
+          "validPixelCount": 2276,
+          "totalPixelCount": 2276
+        },
+        {
+          "year": 2024,
+          "radiance": 0.012302,
+          "coverage": 1,
+          "validPixelCount": 2276,
+          "totalPixelCount": 2276
+        },
+        {
+          "year": 2023,
+          "radiance": 0.013629,
+          "coverage": 1,
+          "validPixelCount": 2276,
+          "totalPixelCount": 2276
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.025706,
+      "coverage": 0.996093,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.022721,
+          "coverage": 0.996726,
+          "validPixelCount": 18876,
+          "totalPixelCount": 18938
+        },
+        {
+          "year": 2024,
+          "radiance": 0.025706,
+          "coverage": 0.996515,
+          "validPixelCount": 18872,
+          "totalPixelCount": 18938
+        },
+        {
+          "year": 2023,
+          "radiance": 0.034671,
+          "coverage": 0.996093,
+          "validPixelCount": 18864,
+          "totalPixelCount": 18938
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.069226,
+      "coverage": 0.992501,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.067356,
+          "coverage": 0.993466,
+          "validPixelCount": 111153,
+          "totalPixelCount": 111884
+        },
+        {
+          "year": 2024,
+          "radiance": 0.069226,
+          "coverage": 0.992885,
+          "validPixelCount": 111088,
+          "totalPixelCount": 111884
+        },
+        {
+          "year": 2023,
+          "radiance": 0.090315,
+          "coverage": 0.992501,
+          "validPixelCount": 111045,
+          "totalPixelCount": 111884
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.012302,
+  "radiance10to30": 0.025706,
+  "radiance30to75": 0.069226,
+  "alanExposure": 0.014169,
+  "darknessScore": 89.64,
+  "coverage": 0.833333,
+  "warnings": [
+    "0to2 minimum yearly coverage is 0.833333"
+  ],
+  "retrievedAt": "2026-08-26T20:45:53.684400Z"
+}

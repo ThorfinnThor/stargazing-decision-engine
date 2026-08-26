@@ -91,6 +91,62 @@
     },
     {
       "rank": 3,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "paranal-public-night-tour",
+      "siteSlug": "paranal-public-night-tour",
+      "siteName": "Paranal public night-tour visitor area",
+      "climateScore": 99,
+      "moonScore": 98.8,
+      "radiantScore": 100,
+      "viewingScore": 99.14,
+      "moonConditions": {
+        "dateLocal": "2027-07-31",
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.0243,
+        "moonlessHours": 10.33,
+        "totalDarknessHours": 10.4
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 81.23,
+        "darkRadiantHours": 8.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
+      "destinationId": "kalahari",
+      "destinationSlug": "kalahari",
+      "destinationName": "Kalahari Desert",
+      "siteId": "twee-rivieren-rest-camp",
+      "siteSlug": "twee-rivieren-rest-camp",
+      "siteName": "Twee Rivieren Rest Camp",
+      "climateScore": 96,
+      "moonScore": 98.96,
+      "radiantScore": 100,
+      "viewingScore": 97.69,
+      "moonConditions": {
+        "dateLocal": "2027-07-31",
+        "timezone": "Africa/Johannesburg",
+        "moonIlluminationFraction": 0.0348,
+        "moonlessHours": 10.46,
+        "totalDarknessHours": 10.46
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 79.35,
+        "darkRadiantHours": 8.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "sutherland",
       "destinationSlug": "sutherland",
       "destinationName": "Sutherland",
@@ -110,62 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 73.44,
-        "darkRadiantHours": 8.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "el-leoncito",
-      "destinationSlug": "el-leoncito",
-      "destinationName": "El Leoncito",
-      "siteId": "el-leoncito-observatory",
-      "siteSlug": "el-leoncito-observatory",
-      "siteName": "El Leoncito observatory area",
-      "climateScore": 92,
-      "moonScore": 99.22,
-      "radiantScore": 100,
-      "viewingScore": 95.77,
-      "moonConditions": {
-        "dateLocal": "2027-07-31",
-        "timezone": "America/Argentina/San_Juan",
-        "moonIlluminationFraction": 0.026,
-        "moonlessHours": 10.62,
-        "totalDarknessHours": 10.62
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 74.01,
-        "darkRadiantHours": 8.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "witsand",
-      "destinationSlug": "witsand",
-      "destinationName": "Witsand",
-      "siteId": "witsand-dark-sky",
-      "siteSlug": "witsand-dark-sky",
-      "siteName": "Witsand dark-sky reserve area",
-      "climateScore": 90,
-      "moonScore": 98.96,
-      "radiantScore": 100,
-      "viewingScore": 94.69,
-      "moonConditions": {
-        "dateLocal": "2027-07-31",
-        "timezone": "Africa/Johannesburg",
-        "moonIlluminationFraction": 0.0348,
-        "moonlessHours": 10.64,
-        "totalDarknessHours": 10.64
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 73.43,
         "darkRadiantHours": 8.33
       },
       "caveats": [
@@ -233,26 +233,26 @@
     },
     {
       "rank": 3,
-      "destinationId": "sutherland",
-      "destinationSlug": "sutherland",
-      "destinationName": "Sutherland",
-      "siteId": "sutherland-observatory",
-      "siteSlug": "sutherland-observatory",
-      "siteName": "Sutherland observatory visitor area",
-      "climateScore": 94,
-      "moonScore": 98.96,
+      "destinationId": "cerro-paranal",
+      "destinationSlug": "cerro-paranal",
+      "destinationName": "Cerro Paranal",
+      "siteId": "paranal-public-night-tour",
+      "siteSlug": "paranal-public-night-tour",
+      "siteName": "Paranal public night-tour visitor area",
+      "climateScore": 99,
+      "moonScore": 98.8,
       "radiantScore": 100,
-      "viewingScore": 96.69,
+      "viewingScore": 99.14,
       "moonConditions": {
         "dateLocal": "2027-07-31",
-        "timezone": "Africa/Johannesburg",
-        "moonIlluminationFraction": 0.0348,
-        "moonlessHours": 10.64,
-        "totalDarknessHours": 10.64
+        "timezone": "America/Santiago",
+        "moonIlluminationFraction": 0.0243,
+        "moonlessHours": 10.33,
+        "totalDarknessHours": 10.4
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 73.44,
-        "darkRadiantHours": 8.33
+        "maximumAltitudeDeg": 81.23,
+        "darkRadiantHours": 8.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -261,26 +261,26 @@
     },
     {
       "rank": 4,
-      "destinationId": "el-leoncito",
-      "destinationSlug": "el-leoncito",
-      "destinationName": "El Leoncito",
-      "siteId": "el-leoncito-observatory",
-      "siteSlug": "el-leoncito-observatory",
-      "siteName": "El Leoncito observatory area",
-      "climateScore": 92,
-      "moonScore": 99.22,
+      "destinationId": "namibrand",
+      "destinationSlug": "namibrand",
+      "destinationName": "NamibRand",
+      "siteId": "wolwedans-dune-camp",
+      "siteSlug": "wolwedans-dune-camp",
+      "siteName": "Wolwedans Dune Camp",
+      "climateScore": 99,
+      "moonScore": 98.35,
       "radiantScore": 100,
-      "viewingScore": 95.77,
+      "viewingScore": 99.01,
       "moonConditions": {
         "dateLocal": "2027-07-31",
-        "timezone": "America/Argentina/San_Juan",
-        "moonIlluminationFraction": 0.026,
-        "moonlessHours": 10.62,
-        "totalDarknessHours": 10.62
+        "timezone": "Africa/Windhoek",
+        "moonIlluminationFraction": 0.0348,
+        "moonlessHours": 10.33,
+        "totalDarknessHours": 10.42
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 74.01,
-        "darkRadiantHours": 8.33
+        "maximumAltitudeDeg": 80.68,
+        "darkRadiantHours": 8.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,25 +289,25 @@
     },
     {
       "rank": 5,
-      "destinationId": "witsand",
-      "destinationSlug": "witsand",
-      "destinationName": "Witsand",
-      "siteId": "witsand-dark-sky",
-      "siteSlug": "witsand-dark-sky",
-      "siteName": "Witsand dark-sky reserve area",
-      "climateScore": 90,
+      "destinationId": "kalahari",
+      "destinationSlug": "kalahari",
+      "destinationName": "Kalahari Desert",
+      "siteId": "twee-rivieren-rest-camp",
+      "siteSlug": "twee-rivieren-rest-camp",
+      "siteName": "Twee Rivieren Rest Camp",
+      "climateScore": 96,
       "moonScore": 98.96,
       "radiantScore": 100,
-      "viewingScore": 94.69,
+      "viewingScore": 97.69,
       "moonConditions": {
         "dateLocal": "2027-07-31",
         "timezone": "Africa/Johannesburg",
         "moonIlluminationFraction": 0.0348,
-        "moonlessHours": 10.64,
-        "totalDarknessHours": 10.64
+        "moonlessHours": 10.46,
+        "totalDarknessHours": 10.46
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 73.43,
+        "maximumAltitudeDeg": 79.35,
         "darkRadiantHours": 8.33
       },
       "caveats": [

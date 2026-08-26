@@ -1,0 +1,162 @@
+{
+  "siteId": "vogelsang-star-observatory",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.501654,
+      "coverage": 0.978723,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 0.989362,
+          "validPixelCount": 93,
+          "totalPixelCount": 94
+        },
+        {
+          "year": 2024,
+          "radiance": 0.501654,
+          "coverage": 0.989362,
+          "validPixelCount": 93,
+          "totalPixelCount": 94
+        },
+        {
+          "year": 2023,
+          "radiance": 0.520478,
+          "coverage": 0.978723,
+          "validPixelCount": 92,
+          "totalPixelCount": 94
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.50954,
+      "coverage": 0.894166,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.369865,
+          "coverage": 0.914518,
+          "validPixelCount": 2022,
+          "totalPixelCount": 2211
+        },
+        {
+          "year": 2024,
+          "radiance": 0.50954,
+          "coverage": 0.895975,
+          "validPixelCount": 1981,
+          "totalPixelCount": 2211
+        },
+        {
+          "year": 2023,
+          "radiance": 0.69862,
+          "coverage": 0.894166,
+          "validPixelCount": 1977,
+          "totalPixelCount": 2211
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.366245,
+      "coverage": 0.877928,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.366245,
+          "coverage": 0.904772,
+          "validPixelCount": 16684,
+          "totalPixelCount": 18440
+        },
+        {
+          "year": 2024,
+          "radiance": 1.356063,
+          "coverage": 0.877928,
+          "validPixelCount": 16189,
+          "totalPixelCount": 18440
+        },
+        {
+          "year": 2023,
+          "radiance": 1.455513,
+          "coverage": 0.882538,
+          "validPixelCount": 16274,
+          "totalPixelCount": 18440
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 3.519731,
+      "coverage": 0.841435,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 3.483534,
+          "coverage": 0.883105,
+          "validPixelCount": 96194,
+          "totalPixelCount": 108927
+        },
+        {
+          "year": 2024,
+          "radiance": 3.519731,
+          "coverage": 0.841435,
+          "validPixelCount": 91655,
+          "totalPixelCount": 108927
+        },
+        {
+          "year": 2023,
+          "radiance": 3.534544,
+          "coverage": 0.857629,
+          "validPixelCount": 93419,
+          "totalPixelCount": 108927
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.501654,
+  "radiance2to10": 0.50954,
+  "radiance10to30": 1.366245,
+  "radiance30to75": 3.519731,
+  "alanExposure": 0.586538,
+  "darknessScore": 58.31,
+  "coverage": 0.841435,
+  "warnings": [
+    "2to10 minimum yearly coverage is 0.894166",
+    "10to30 minimum yearly coverage is 0.877928",
+    "30to75 minimum yearly coverage is 0.841435"
+  ],
+  "retrievedAt": "2026-08-26T21:31:34.083924Z"
+}

@@ -1,0 +1,158 @@
+{
+  "siteId": "pyramid-island",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 0.958333,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 0.958333,
+          "validPixelCount": 92,
+          "totalPixelCount": 96
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 0.989583,
+          "validPixelCount": 95,
+          "totalPixelCount": 96
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 0.96875,
+          "validPixelCount": 93,
+          "totalPixelCount": 96
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.261592,
+      "coverage": 0.977292,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.232195,
+          "coverage": 0.977292,
+          "validPixelCount": 2281,
+          "totalPixelCount": 2334
+        },
+        {
+          "year": 2024,
+          "radiance": 0.261592,
+          "coverage": 0.984147,
+          "validPixelCount": 2297,
+          "totalPixelCount": 2334
+        },
+        {
+          "year": 2023,
+          "radiance": 0.322806,
+          "coverage": 0.982862,
+          "validPixelCount": 2294,
+          "totalPixelCount": 2334
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.004233,
+      "coverage": 0.99964,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.001129,
+          "coverage": 0.999949,
+          "validPixelCount": 19424,
+          "totalPixelCount": 19425
+        },
+        {
+          "year": 2024,
+          "radiance": 0.004233,
+          "coverage": 0.999897,
+          "validPixelCount": 19423,
+          "totalPixelCount": 19425
+        },
+        {
+          "year": 2023,
+          "radiance": 0.016571,
+          "coverage": 0.99964,
+          "validPixelCount": 19418,
+          "totalPixelCount": 19425
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.050123,
+      "coverage": 0.996975,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.043804,
+          "coverage": 0.997838,
+          "validPixelCount": 114467,
+          "totalPixelCount": 114715
+        },
+        {
+          "year": 2024,
+          "radiance": 0.050123,
+          "coverage": 0.997019,
+          "validPixelCount": 114373,
+          "totalPixelCount": 114715
+        },
+        {
+          "year": 2023,
+          "radiance": 0.076766,
+          "coverage": 0.996975,
+          "validPixelCount": 114368,
+          "totalPixelCount": 114715
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.261592,
+  "radiance10to30": 0.004233,
+  "radiance30to75": 0.050123,
+  "alanExposure": 0.075237,
+  "darknessScore": 86.3,
+  "coverage": 0.958333,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:19:20.042755Z"
+}

@@ -25,7 +25,7 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "big-bend-panther-junction",
+    "bestSiteId": "sotol-vista-overlook",
     "dateLocal": "2027-04-22",
     "timezone": "America/Chicago",
     "moonIlluminationFraction": 0.9427,
@@ -38,13 +38,13 @@
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
+      "siteId": "sotol-vista-overlook",
+      "siteSlug": "sotol-vista-overlook",
+      "siteName": "Sotol Vista Overlook",
       "climateScore": 98,
       "moonScore": 8.87,
-      "radiantScore": 98.5,
-      "viewingScore": 71.36,
+      "radiantScore": 99.01,
+      "viewingScore": 71.46,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Chicago",
@@ -53,8 +53,8 @@
         "totalDarknessHours": 8.12
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 84.96,
-        "darkRadiantHours": 5.5
+        "maximumAltitudeDeg": 85.19,
+        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -66,22 +66,22 @@
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 94,
-      "moonScore": 11.19,
+      "siteId": "mesquite-flat-sand-dunes",
+      "siteSlug": "mesquite-flat-sand-dunes",
+      "siteName": "Mesquite Flat Sand Dunes",
+      "climateScore": 96,
+      "moonScore": 11.21,
       "radiantScore": 99.01,
-      "viewingScore": 70.16,
+      "viewingScore": 71.17,
       "moonConditions": {
         "dateLocal": "2027-04-22",
         "timezone": "America/Los_Angeles",
         "moonIlluminationFraction": 0.9388,
         "moonlessHours": 1,
-        "totalDarknessHours": 7.48
+        "totalDarknessHours": 7.47
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 84.75,
+        "maximumAltitudeDeg": 84.58,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -94,9 +94,9 @@
       "destinationId": "mcdonald-observatory",
       "destinationSlug": "mcdonald-observatory",
       "destinationName": "McDonald Observatory",
-      "siteId": "mcdonald-observatory",
-      "siteSlug": "mcdonald-observatory",
-      "siteName": "McDonald Observatory visitor area",
+      "siteId": "davis-mountains-skyline-drive",
+      "siteSlug": "davis-mountains-skyline-drive",
+      "siteName": "Davis Mountains Skyline Drive",
       "climateScore": 94,
       "moonScore": 10.46,
       "radiantScore": 98.5,
@@ -109,7 +109,7 @@
         "totalDarknessHours": 8.01
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 85.93,
+        "maximumAltitudeDeg": 85.91,
         "darkRadiantHours": 5.5
       },
       "caveats": [
@@ -122,9 +122,9 @@
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-dark-sky",
-      "siteSlug": "natural-bridges-dark-sky",
-      "siteName": "Natural Bridges dark-sky area",
+      "siteId": "natural-bridges-campground",
+      "siteSlug": "natural-bridges-campground",
+      "siteName": "Natural Bridges campground",
       "climateScore": 94,
       "moonScore": 9.66,
       "radiantScore": 99.01,
@@ -180,6 +180,34 @@
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
+      "siteId": "sotol-vista-overlook",
+      "siteSlug": "sotol-vista-overlook",
+      "siteName": "Sotol Vista Overlook",
+      "climateScore": 98,
+      "moonScore": 8.87,
+      "radiantScore": 99.01,
+      "viewingScore": 71.46,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Chicago",
+        "moonIlluminationFraction": 0.9427,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 8.12
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 85.19,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "big-bend",
+      "destinationSlug": "big-bend",
+      "destinationName": "Big Bend",
       "siteId": "big-bend-panther-junction",
       "siteSlug": "big-bend-panther-junction",
       "siteName": "Big Bend desert observing area",
@@ -204,7 +232,35 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "destinationId": "death-valley",
+      "destinationSlug": "death-valley",
+      "destinationName": "Death Valley",
+      "siteId": "mesquite-flat-sand-dunes",
+      "siteSlug": "mesquite-flat-sand-dunes",
+      "siteName": "Mesquite Flat Sand Dunes",
+      "climateScore": 96,
+      "moonScore": 11.21,
+      "radiantScore": 99.01,
+      "viewingScore": 71.17,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.9388,
+        "moonlessHours": 1,
+        "totalDarknessHours": 7.47
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 84.58,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -232,13 +288,13 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 5,
       "destinationId": "mcdonald-observatory",
       "destinationSlug": "mcdonald-observatory",
       "destinationName": "McDonald Observatory",
-      "siteId": "mcdonald-observatory",
-      "siteSlug": "mcdonald-observatory",
-      "siteName": "McDonald Observatory visitor area",
+      "siteId": "davis-mountains-skyline-drive",
+      "siteSlug": "davis-mountains-skyline-drive",
+      "siteName": "Davis Mountains Skyline Drive",
       "climateScore": 94,
       "moonScore": 10.46,
       "radiantScore": 98.5,
@@ -251,64 +307,8 @@
         "totalDarknessHours": 8.01
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 85.93,
+        "maximumAltitudeDeg": 85.91,
         "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "natural-bridges",
-      "destinationSlug": "natural-bridges",
-      "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-dark-sky",
-      "siteSlug": "natural-bridges-dark-sky",
-      "siteName": "Natural Bridges dark-sky area",
-      "climateScore": 94,
-      "moonScore": 9.66,
-      "radiantScore": 99.01,
-      "viewingScore": 69.7,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9408,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.37
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 83.8,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "kitt-peak",
-      "destinationSlug": "kitt-peak",
-      "destinationName": "Kitt Peak",
-      "siteId": "kitt-peak-observatory",
-      "siteSlug": "kitt-peak-observatory",
-      "siteName": "Kitt Peak observatory area",
-      "climateScore": 94,
-      "moonScore": 9.19,
-      "radiantScore": 99.01,
-      "viewingScore": 69.56,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Phoenix",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.9
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 86.88,
-        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -318,9 +318,9 @@
   ],
   "climateScore": 98,
   "moonScore": 8.87,
-  "radiantScore": 98.5,
-  "viewingScore": 71.36,
-  "confidenceLevel": "moderate",
+  "radiantScore": 99.01,
+  "viewingScore": 71.46,
+  "confidenceLevel": "high",
   "indexable": true,
   "caveats": [
     "The 2027 maximum is shortly after Full Moon; moonlight affects the peak night.",

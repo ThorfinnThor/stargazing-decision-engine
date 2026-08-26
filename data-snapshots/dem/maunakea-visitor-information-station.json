@@ -1,0 +1,33 @@
+{
+  "siteId": "maunakea-visitor-information-station",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    19.7592,
+    -155.4561
+  ],
+  "tile": "N19_00_W156_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N19_00_W156_00_DEM/Copernicus_DSM_COG_10_N19_00_W156_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 2802.688,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2806.936,
+      "validSampleCount": 216
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2815.296,
+      "validSampleCount": 3507
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:06:24.797463Z"
+}

@@ -25,22 +25,50 @@
     "source": "Monthly historical site-score climatology"
   },
   "moonConditions": {
-    "bestSiteId": "natural-bridges-dark-sky",
-    "dateLocal": "2027-12-22",
-    "timezone": "America/Denver",
-    "moonIlluminationFraction": 0.2042,
-    "moonlessHours": 8.98,
-    "totalDarknessHours": 11.31
+    "bestSiteId": "khongoryn-els-visitor-zone",
+    "dateLocal": "2027-12-23",
+    "timezone": "Asia/Ulaanbaatar",
+    "moonIlluminationFraction": 0.1732,
+    "moonlessHours": 9.95,
+    "totalDarknessHours": 11.61
   },
   "topDestinations": [
     {
       "rank": 1,
+      "destinationId": "gobi",
+      "destinationSlug": "gobi",
+      "destinationName": "Gobi Desert",
+      "siteId": "khongoryn-els-visitor-zone",
+      "siteSlug": "khongoryn-els-visitor-zone",
+      "siteName": "Khongoryn Els visitor zone",
+      "climateScore": 99,
+      "moonScore": 84.8,
+      "radiantScore": 97.58,
+      "viewingScore": 94.46,
+      "moonConditions": {
+        "dateLocal": "2027-12-23",
+        "timezone": "Asia/Ulaanbaatar",
+        "moonIlluminationFraction": 0.1732,
+        "moonlessHours": 9.95,
+        "totalDarknessHours": 11.61
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 53.96,
+        "darkRadiantHours": 11.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-dark-sky",
-      "siteSlug": "natural-bridges-dark-sky",
-      "siteName": "Natural Bridges dark-sky area",
+      "siteId": "natural-bridges-campground",
+      "siteSlug": "natural-bridges-campground",
+      "siteName": "Natural Bridges campground",
       "climateScore": 94,
       "moonScore": 79.45,
       "radiantScore": 94.98,
@@ -62,13 +90,13 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "hanle",
       "destinationSlug": "hanle",
       "destinationName": "Hanle",
-      "siteId": "hanle-dark-sky",
-      "siteSlug": "hanle-dark-sky",
-      "siteName": "Hanle high-altitude observing area",
+      "siteId": "hanle-astronomy-ambassador-zone",
+      "siteSlug": "hanle-astronomy-ambassador-zone",
+      "siteName": "Hanle Astronomy Ambassador zone",
       "climateScore": 98,
       "moonScore": 74.14,
       "radiantScore": 92.8,
@@ -90,7 +118,35 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "destinationId": "death-valley",
+      "destinationSlug": "death-valley",
+      "destinationName": "Death Valley",
+      "siteId": "mesquite-flat-sand-dunes",
+      "siteSlug": "mesquite-flat-sand-dunes",
+      "siteName": "Mesquite Flat Sand Dunes",
+      "climateScore": 93,
+      "moonScore": 79.56,
+      "radiantScore": 94.63,
+      "viewingScore": 89.29,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.2007,
+        "moonlessHours": 8.94,
+        "totalDarknessHours": 11.26
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 46.57,
+        "darkRadiantHours": 11.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "canyonlands",
       "destinationSlug": "canyonlands",
       "destinationName": "Canyonlands",
@@ -110,62 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 48.06,
-        "darkRadiantHours": 11.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 78.88,
-      "radiantScore": 90.1,
-      "viewingScore": 89.18,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.2078,
-        "moonlessHours": 8.59,
-        "totalDarknessHours": 10.91
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 38.7,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "great-sand-dunes",
-      "destinationSlug": "great-sand-dunes",
-      "destinationName": "Great Sand Dunes",
-      "siteId": "great-sand-dunes-dark-sky",
-      "siteSlug": "great-sand-dunes-dark-sky",
-      "siteName": "Great Sand Dunes dark-sky area",
-      "climateScore": 91,
-      "moonScore": 80.51,
-      "radiantScore": 94.99,
-      "viewingScore": 88.65,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.2042,
-        "moonlessHours": 9.15,
-        "totalDarknessHours": 11.31
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 47.48,
         "darkRadiantHours": 11.33
       },
       "caveats": [
@@ -177,6 +177,62 @@
   "topSites": [
     {
       "rank": 1,
+      "destinationId": "gobi",
+      "destinationSlug": "gobi",
+      "destinationName": "Gobi Desert",
+      "siteId": "khongoryn-els-visitor-zone",
+      "siteSlug": "khongoryn-els-visitor-zone",
+      "siteName": "Khongoryn Els visitor zone",
+      "climateScore": 99,
+      "moonScore": 84.8,
+      "radiantScore": 97.58,
+      "viewingScore": 94.46,
+      "moonConditions": {
+        "dateLocal": "2027-12-23",
+        "timezone": "Asia/Ulaanbaatar",
+        "moonIlluminationFraction": 0.1732,
+        "moonlessHours": 9.95,
+        "totalDarknessHours": 11.61
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 53.96,
+        "darkRadiantHours": 11.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 2,
+      "destinationId": "natural-bridges",
+      "destinationSlug": "natural-bridges",
+      "destinationName": "Natural Bridges",
+      "siteId": "natural-bridges-campground",
+      "siteSlug": "natural-bridges-campground",
+      "siteName": "Natural Bridges campground",
+      "climateScore": 94,
+      "moonScore": 79.45,
+      "radiantScore": 94.98,
+      "viewingScore": 89.83,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.2042,
+        "moonlessHours": 8.98,
+        "totalDarknessHours": 11.31
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 47.46,
+        "darkRadiantHours": 11.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -204,7 +260,35 @@
       ]
     },
     {
-      "rank": 2,
+      "rank": 4,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "siteId": "hanle-astronomy-ambassador-zone",
+      "siteSlug": "hanle-astronomy-ambassador-zone",
+      "siteName": "Hanle Astronomy Ambassador zone",
+      "climateScore": 98,
+      "moonScore": 74.14,
+      "radiantScore": 92.8,
+      "viewingScore": 89.8,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "Asia/Kolkata",
+        "moonIlluminationFraction": 0.2508,
+        "moonlessHours": 8.17,
+        "totalDarknessHours": 11.07
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 41.99,
+        "darkRadiantHours": 7.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "hanle",
       "destinationSlug": "hanle",
       "destinationName": "Hanle",
@@ -230,97 +314,13 @@
         "Viewing score is not a forecast of meteor counts or ZHR.",
         "Climate component uses monthly historical sky-quality climatology for the event month."
       ]
-    },
-    {
-      "rank": 3,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 92,
-      "moonScore": 80.53,
-      "radiantScore": 95.22,
-      "viewingScore": 89.2,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.2042,
-        "moonlessHours": 9.17,
-        "totalDarknessHours": 11.33
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 48.06,
-        "darkRadiantHours": 11.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 78.88,
-      "radiantScore": 90.1,
-      "viewingScore": 89.18,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.2078,
-        "moonlessHours": 8.59,
-        "totalDarknessHours": 10.91
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 38.7,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "great-sand-dunes",
-      "destinationSlug": "great-sand-dunes",
-      "destinationName": "Great Sand Dunes",
-      "siteId": "great-sand-dunes-dark-sky",
-      "siteSlug": "great-sand-dunes-dark-sky",
-      "siteName": "Great Sand Dunes dark-sky area",
-      "climateScore": 91,
-      "moonScore": 80.51,
-      "radiantScore": 94.99,
-      "viewingScore": 88.65,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.2042,
-        "moonlessHours": 9.15,
-        "totalDarknessHours": 11.31
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 47.48,
-        "darkRadiantHours": 11.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
     }
   ],
-  "climateScore": 94,
-  "moonScore": 79.45,
-  "radiantScore": 94.98,
-  "viewingScore": 89.83,
-  "confidenceLevel": "moderate",
+  "climateScore": 99,
+  "moonScore": 84.8,
+  "radiantScore": 97.58,
+  "viewingScore": 94.46,
+  "confidenceLevel": "high",
   "indexable": true,
   "caveats": [
     "The IMO reports no indication of an enhanced 2027 rate or filament crossing.",
