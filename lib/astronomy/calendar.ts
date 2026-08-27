@@ -1,7 +1,7 @@
 import { Body, Equator, Horizon, Illumination, Observer, SearchAltitude, SearchRiseSet } from "astronomy-engine";
 import type { CalendarNight, ObservationSite } from "../data/types.js";
 import type { CurvePoint } from "../scoring/types.js";
-import { buildMilkyWayMetrics, galacticCenterAltitudeDeg, type MilkyWayConfig, validateMilkyWayConfig } from "./milky-way.js";
+import { buildMilkyWayMetrics, galacticCenterAltitudeDeg, type MilkyWayConfig, validateMilkyWayConfig } from "./milky-way";
 
 export interface CalendarConfig {
   version: number;

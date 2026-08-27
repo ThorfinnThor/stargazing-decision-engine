@@ -3,10 +3,11 @@
 import { useEffect, useState } from "react";
 
 import { AstronomicalSky } from "./astronomical-sky";
+import { NightPlanningPanel } from "./night-planning-panel";
 import { findNextAstronomicalNight, selectInitialDestinationSky } from "@/lib/astronomy/next-night";
 import { roundedCurrentMinuteIso } from "@/lib/astronomy/selection";
 import { resolveDestinationPreview } from "@/lib/astronomy/previews";
-import type { NightPreview, SkyLocation } from "@/lib/astronomy/types";
+import type { DestinationNightContext, NightPreview, SkyLocation } from "@/lib/astronomy/types";
 import type { Locale } from "@/lib/i18n/config";
 
 export function DestinationSkySection({ location, previews, locale }: { location: SkyLocation; previews: NightPreview[]; locale: Locale }) {
@@ -61,12 +62,18 @@ export function DestinationSkySection({ location, previews, locale }: { location
     setLiveInstant(nowIso); setPreview(null); setNextNightInstant(nextNight?.instantIso ?? previews[0]?.instantIso ?? null);
   };
   const previewInstant = nextNightInstant ?? preview?.instantIso ?? null;
+  const context: DestinationNightContext = {
+    mode: previewInstant ? "night-preview" : "live-night",
+    source: nextNightInstant ? "next-night" : preview ? "linked-preview" : "live",
+    instantIso: previewInstant ?? liveInstant,
+  };
   return <div className="destination-sky-shell">
-    <AstronomicalSky location={location} instantIso={previewInstant ?? liveInstant} mode={previewInstant ? "night-preview" : "live-night"} locale={locale} variant="destination" />
+    <AstronomicalSky location={location} instantIso={context.instantIso} mode={context.mode} locale={locale} variant="destination" />
     <div className="sky-actions">
       {previewInstant
         ? <button type="button" onClick={showLive}>{locale === "de" ? "Zum Live-Himmel" : "Show live sky"}</button>
-        : <button type="button" onClick={showNextNight}>{locale === "de" ? "Nächste Nacht anzeigen" : "Show next night"}</button>}
+      : <button type="button" onClick={showNextNight}>{locale === "de" ? "Nächste Nacht anzeigen" : "Show next night"}</button>}
     </div>
+    <NightPlanningPanel key={`${location.id}-${context.mode}`} location={location} context={context} locale={locale} />
   </div>;
 }
