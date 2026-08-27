@@ -102,22 +102,24 @@ test("next-night preview rejects an invalid starting instant", () => {
   assert.throws(() => findNextAstronomicalNight(westhavelland, "not-an-instant"), /Invalid preview start instant/);
 });
 
-test("destination pages default to live darkness or the upcoming night for all 50 targets throughout the day", () => {
+test("destination pages support live darkness or the upcoming night for all 100 observation sites throughout the day", () => {
   const instants = Array.from({ length: 8 }, (_, index) => new Date(Date.parse("2026-08-25T00:00:00.000Z") + index * 3 * 60 * 60 * 1000).toISOString());
   const sites = loadSites();
   const destinations = loadDestinations().filter((destination) => destination.active);
+  const destinationsById = new Map(destinations.map((destination) => [destination.id, destination]));
   assert.equal(destinations.length, 50);
-  for (const destination of destinations) {
-    const site = resolvePrimaryObservationSite(destination, sites);
-    assert.ok(site, destination.slug);
+  assert.equal(sites.length, 100);
+  for (const site of sites) {
+    const destination = destinationsById.get(site.destinationId);
+    assert.ok(destination, site.slug);
     const location = createSkyLocation(destination, site);
-    assert.ok(location, destination.slug);
+    assert.ok(location, site.slug);
     for (const nowIso of instants) {
       const selection = selectInitialDestinationSky(location, nowIso);
       const snapshot = computeSky(location, selection.instantIso);
-      assert.equal(snapshot.skyCondition, "night", `${destination.slug} at ${nowIso}`);
-      assert.ok(snapshot.stars.length >= 500, `${destination.slug} at ${nowIso}`);
-      assert.equal(selection.mode === "live-night", isAstronomicalNight(location, nowIso), `${destination.slug} at ${nowIso}`);
+      assert.equal(snapshot.skyCondition, "night", `${site.slug} at ${nowIso}`);
+      assert.ok(snapshot.stars.length >= 500, `${site.slug} at ${nowIso}`);
+      assert.equal(selection.mode === "live-night", isAstronomicalNight(location, nowIso), `${site.slug} at ${nowIso}`);
     }
   }
 });
@@ -130,5 +132,8 @@ test("destination client prevents daylight live views and refreshes restored pag
   assert.match(component, /liveSkyAvailable\s*=\s*isAstronomicalNight/);
   assert.match(component, /currently daylight or twilight on site/);
   assert.match(component, /if \(linkedPreview\) \{\s*setNextNightInstant\(null\)/);
-  assert.match(page, /<DestinationSkySection key=\{skyLocation\.id\}/);
+  assert.match(page, /<DestinationSiteExplorer options=\{siteViews\}/);
+  const explorer = readFileSync(new URL("../components/sky/destination-site-explorer.tsx", import.meta.url), "utf8");
+  assert.match(explorer, /<DestinationSkySection key=\{selected\.location\.id\}/);
+  assert.match(explorer, /selected\.monthly\.months\.map/);
 });

@@ -269,6 +269,14 @@ export interface DestinationMonthlySummary {
   }>;
 }
 
+export interface SiteMonthlySummary {
+  siteId: string;
+  dataStatus: ScoreDataStatus;
+  algorithmVersion: string;
+  generatedAt: string;
+  scores: MonthlySiteScore[];
+}
+
 export interface FinderMonth {
   month: MonthNumber;
   stargazingTrip: number;
