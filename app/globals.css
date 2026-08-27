@@ -837,7 +837,8 @@ h1 span {
 }
 
 .constellation-toggle:focus-visible,
-.constellation-summary-card:focus-visible {
+.constellation-summary-card:focus-visible,
+.constellation-secondary-card:focus-visible {
   outline: 2px solid var(--blue);
   outline-offset: 3px;
 }
@@ -893,6 +894,64 @@ h1 span {
 .constellation-summary-card[aria-pressed="true"] {
   border-color: var(--constellation-active);
   box-shadow: inset 3px 0 0 var(--constellation-active);
+}
+
+.constellation-secondary {
+  display: grid;
+  gap: 0.55rem;
+  margin-top: 1rem;
+}
+
+.constellation-secondary h4,
+.constellation-secondary p {
+  margin: 0;
+}
+
+.constellation-secondary h4 {
+  color: #dbe3f4;
+  font: 0.68rem/1.2 ui-monospace, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.constellation-secondary p {
+  color: #7f8aa3;
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.constellation-secondary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.4rem;
+}
+
+.constellation-secondary-card {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+  padding: 0.55rem 0.65rem;
+  border: 1px solid rgb(142 197 255 / 16%);
+  background: rgb(8 11 23 / 24%);
+  color: #7f8aa3;
+  cursor: pointer;
+  text-align: left;
+}
+
+.constellation-secondary-card strong {
+  color: #dbe3f4;
+  font: 400 0.82rem/1.2 Georgia, "Times New Roman", serif;
+}
+
+.constellation-secondary-card span {
+  font: 0.57rem/1.35 ui-monospace, monospace;
+  text-transform: uppercase;
+}
+
+.constellation-secondary-card[aria-pressed="true"] {
+  border-color: var(--constellation-active);
+  box-shadow: inset 2px 0 0 var(--constellation-active);
+  color: var(--blue);
 }
 
 .constellation-empty,

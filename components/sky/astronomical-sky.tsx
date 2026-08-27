@@ -32,15 +32,20 @@ export function AstronomicalSky(props: {
   if (!result.snapshot) return <div className="sky-unavailable" role="status">{props.locale === "de" ? "Astronomische Simulation nicht verfügbar." : "Astronomical simulation unavailable."}</div>;
   const snapshot = result.snapshot;
   const localTime = formatSkyLocalTime(props.locale, props.location.timeZone, props.instantIso);
-  const constellationSummaries = buildConstellationSummaries(snapshot.constellations, props.locale, 3);
+  const allConstellationSummaries = buildConstellationSummaries(snapshot.constellations, props.locale, snapshot.constellations.length, props.variant === "destination");
+  const recognizableConstellationSummaries = allConstellationSummaries.filter((item) => item.visibilityState === "recognizable");
+  const constellationSummaries = recognizableConstellationSummaries.slice(0, 3);
+  const featuredConstellationIds = new Set(constellationSummaries.map((item) => item.constellationId));
+  const additionalConstellationSummaries = allConstellationSummaries.filter((item) => !featuredConstellationIds.has(item.constellationId));
+  const partlyVisibleConstellationSummaries = allConstellationSummaries.filter((item) => item.visibilityState === "partly-visible");
   const percent = Math.round(snapshot.moon.illuminatedFraction * 100);
   const modeLabel = props.mode === "live-night" ? props.locale === "de" ? "Live-Himmel" : "Live sky" : props.locale === "de" ? "Nachtvorschau" : "Night preview";
   const disclaimer = props.locale === "de"
     ? "Ideale Sternsicht bis Magnitude 6; lokale Lichtverschmutzung, Wetter und Horizontabschattungen sind nicht berücksichtigt."
     : "Ideal magnitude-6 star depth; local light pollution, weather, and horizon obstructions are not included.";
   const summary = props.locale === "de"
-    ? `${props.mode === "live-night" ? "Live-Astronomiesimulation" : "Astronomische Nachtvorschau"} des Himmels über ${props.location.label} um ${localTime} Ortszeit. Der Mond ist zu ${percent} Prozent beleuchtet und befindet sich ${snapshot.moon.aboveHorizon ? "über" : "unter"} dem Horizont. ${constellationSummaries.length ? `Erkennbare westliche Sternbilder: ${constellationSummaries.map((item) => item.name).join(", ")}.` : "Keine vollständige westliche Sternbildfigur ist ausreichend prominent."} ${disclaimer}`
-    : `${props.mode === "live-night" ? "Live astronomical simulation" : "Astronomical night preview"} of the sky over ${props.location.label} at ${localTime} local time. The Moon is ${percent} percent illuminated and is ${snapshot.moon.aboveHorizon ? "above" : "below"} the horizon. ${constellationSummaries.length ? `Recognizable Western constellations: ${constellationSummaries.map((item) => item.name).join(", ")}.` : "No complete Western constellation figure is sufficiently prominent."} ${disclaimer}`;
+    ? `${props.mode === "live-night" ? "Live-Astronomiesimulation" : "Astronomische Nachtvorschau"} des Himmels über ${props.location.label} um ${localTime} Ortszeit. Der Mond ist zu ${percent} Prozent beleuchtet und befindet sich ${snapshot.moon.aboveHorizon ? "über" : "unter"} dem Horizont. ${recognizableConstellationSummaries.length ? `Erkennbare westliche Sternbilder: ${recognizableConstellationSummaries.map((item) => item.name).join(", ")}.` : "Keine vollständige westliche Sternbildfigur ist ausreichend prominent."} ${partlyVisibleConstellationSummaries.length ? `Teilweise sichtbare Figuren: ${partlyVisibleConstellationSummaries.map((item) => item.name).join(", ")}.` : ""} ${disclaimer}`
+    : `${props.mode === "live-night" ? "Live astronomical simulation" : "Astronomical night preview"} of the sky over ${props.location.label} at ${localTime} local time. The Moon is ${percent} percent illuminated and is ${snapshot.moon.aboveHorizon ? "above" : "below"} the horizon. ${recognizableConstellationSummaries.length ? `Recognizable Western constellations: ${recognizableConstellationSummaries.map((item) => item.name).join(", ")}.` : "No complete Western constellation figure is sufficiently prominent."} ${partlyVisibleConstellationSummaries.length ? `Partly visible figures: ${partlyVisibleConstellationSummaries.map((item) => item.name).join(", ")}.` : ""} ${disclaimer}`;
   return <figure className={`astronomical-sky astronomical-sky-${props.variant}`} data-location-id={props.location.id} data-site-id={props.location.siteId} data-mode={props.mode} data-instant={props.instantIso}>
     <SkyCanvas snapshot={snapshot} variant={props.variant} locale={props.locale} showConstellations={showConstellations} activeConstellationId={activeConstellationId} />
     <div className="sky-details">
@@ -79,6 +84,25 @@ export function AstronomicalSky(props: {
           </button>)}</div> : <p className="constellation-empty">{props.locale === "de"
             ? "Für diesen Zeitpunkt ist keine vollständige Sternbildfigur ausreichend deutlich über dem Horizont. Einzelne Sterne oder Teilformen können dennoch sichtbar sein."
             : "No complete constellation figure is sufficiently prominent above the horizon at this time. Individual stars or partial patterns may still be visible."}</p>}
+          {additionalConstellationSummaries.length > 0 ? <div className="constellation-secondary">
+            <h4>{props.locale === "de" ? "Außerdem am Himmel" : "Also in the sky"}</h4>
+            <p>{props.locale === "de"
+              ? "Alle weiteren oben gezeichneten Figuren; teilweise sichtbare Formen sind entsprechend markiert."
+              : "Every other figure drawn above; partial shapes are marked accordingly."}</p>
+            <div className="constellation-secondary-grid">{additionalConstellationSummaries.map((item) => <button
+              type="button"
+              key={item.constellationId}
+              className="constellation-secondary-card"
+              aria-pressed={activeConstellationId === item.constellationId}
+              onClick={() => setActiveConstellationId(item.constellationId)}
+              onFocus={() => setActiveConstellationId(item.constellationId)}
+            >
+              <strong>{item.name}</strong>
+              <span>{item.visibilityState === "recognizable"
+                ? props.locale === "de" ? "erkennbar" : "recognizable"
+                : props.locale === "de" ? "teilweise sichtbar" : "partly visible"} · {item.directionLabel} · {item.altitudeLabel}</span>
+            </button>)}</div>
+          </div> : null}
           {snapshot.skyCondition === "daylight" ? <p className="constellation-daylight-note">{props.locale === "de" ? "Sterne können astronomisch über dem Horizont liegen, sind im hellen Himmel aber nicht sichtbar." : "Stars may be astronomically above the horizon, but they are not visible in the bright sky."}</p> : null}
         </section>
       </div> : null}

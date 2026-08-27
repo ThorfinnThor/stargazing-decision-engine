@@ -70,6 +70,10 @@ Geometric horizon visibility and a monotonic twilight limiting-magnitude model
 are applied. At daylight the ordinary star catalog is not drawn. The simulation
 does not include weather, haze, smoke, transparency, terrain, trees, buildings,
 or temporary light sources. UI copy states this limitation in English and German.
+Destination pages give the three strongest recognizable constellations detailed
+cards, then list every remaining drawn figure in a compact section. The compact
+entries distinguish recognizable figures from line patterns that are only
+partly above the geometric horizon; selecting any entry highlights its lines.
 The homepage visualization remains present below desktop widths and moves into
 the normal document flow on tablet and mobile layouts.
 
