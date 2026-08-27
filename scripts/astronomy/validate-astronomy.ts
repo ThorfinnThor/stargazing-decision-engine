@@ -6,6 +6,7 @@ import type { Destination, ObservationSite } from "../../lib/data/types.js";
 import { computeSky } from "../../lib/astronomy/compute-sky.js";
 import { constellationCopyById } from "../../lib/astronomy/constellation-copy.js";
 import { createSkyLocation, resolvePrimaryObservationSite } from "../../lib/astronomy/primary-site.js";
+import { validateNightPlannerConfig, type NightPlannerConfig } from "../../lib/astronomy/night-planner.js";
 import type { BrightStarCatalog, ConstellationDatasetFile, NightPreviewFile } from "../../lib/astronomy/types.js";
 import { isValidInstantIso } from "../../lib/astronomy/validation.js";
 import { publicDataDir, readJson } from "../pipeline/io.js";
@@ -16,7 +17,10 @@ const constellationFile = readJson<ConstellationDatasetFile>(resolve(publicDataD
 const previewFile = readJson<NightPreviewFile>(resolve(publicDataDir, "astronomy/night-previews.json"));
 const destinations = readJson<Destination[]>(resolve(publicDataDir, "destinations/index.json"));
 const sites = readJson<ObservationSite[]>(resolve(publicDataDir, "sites/index.json"));
+const nightPlannerConfig = readJson<NightPlannerConfig>(resolve(process.cwd(), "data-config/astronomy/night-planner.json"));
 const errors: string[] = [];
+
+try { validateNightPlannerConfig(nightPlannerConfig); } catch (error) { errors.push(error instanceof Error ? error.message : "night planner config is invalid"); }
 
 if (catalog.source.license !== "CC BY-SA 4.0"
   || catalog.source.sourceCommit !== "ba2dec4eb0f6768914c7fc1051258100214ddf84"

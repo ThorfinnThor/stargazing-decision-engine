@@ -182,3 +182,94 @@ export type NightPreviewFile = {
   generatorVersion: string;
   previews: NightPreview[];
 };
+
+export type DestinationNightContext = {
+  mode: "live-night" | "night-preview";
+  source: "live" | "linked-preview" | "next-night";
+  instantIso: string;
+};
+
+export type NightPlanMode = "live-night" | "night-preview";
+
+export type NightPlanEventKind =
+  | "sunset"
+  | "astronomical-dusk"
+  | "moonrise"
+  | "moonset"
+  | "astronomical-dawn"
+  | "sunrise";
+
+export type NightPlanEvent = {
+  kind: NightPlanEventKind;
+  instantIso: string;
+};
+
+export type NightSample = {
+  startIso: string;
+  endIso: string;
+  midpointIso: string;
+  sunAltitudeDeg: number;
+  moonAltitudeDeg: number;
+  moonIlluminationFraction: number;
+  astronomicalDark: boolean;
+  moonAboveHorizon: boolean;
+  astronomicalScore: number | null;
+};
+
+export type RecommendationQuality = "excellent" | "good" | "fair" | "limited";
+
+export type RecommendationReasonCode =
+  | "astronomical-darkness"
+  | "moon-below-horizon"
+  | "starts-after-moonset"
+  | "ends-before-moonrise"
+  | "moon-low"
+  | "thin-moon"
+  | "bright-moon-remains"
+  | "short-darkness-window"
+  | "best-remaining-window";
+
+export type RecommendedWindow = {
+  startIso: string;
+  endIso: string;
+  durationMinutes: number;
+  averageScore: number;
+  peakScore: number;
+  quality: RecommendationQuality;
+  reasonCodes: RecommendationReasonCode[];
+  isRemainingNightRecommendation: boolean;
+};
+
+export type NightTimelineSegmentKind = "twilight" | "astronomical-darkness" | "moon-above" | "moon-below" | "recommended";
+
+export type NightTimelineSegment = {
+  kind: NightTimelineSegmentKind;
+  startIso: string;
+  endIso: string;
+  startRatio: number;
+  endRatio: number;
+};
+
+export type NightPlanStatus = "ready" | "no-astronomical-night" | "night-finished" | "unavailable";
+
+export type NightPlan = {
+  version: 1;
+  locationId: string;
+  siteId: string;
+  timeZone: string;
+  mode: NightPlanMode;
+  nightDateLocal: string;
+  calculationStartIso: string;
+  calculationEndIso: string;
+  timelineStartIso: string;
+  timelineEndIso: string;
+  status: NightPlanStatus;
+  events: NightPlanEvent[];
+  samples: NightSample[];
+  fullNightRecommendation: RecommendedWindow | null;
+  displayedRecommendation: RecommendedWindow | null;
+  timelineSegments: NightTimelineSegment[];
+  astronomicalDarkMinutes: number;
+  moonBelowHorizonDarkMinutes: number;
+  moonIlluminationFractionAtNightMidpoint: number | null;
+};

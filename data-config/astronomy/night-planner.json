@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "sampleMinutes": 10,
+  "astronomicalTwilightDeg": -18,
+  "minimumRecommendedWindowMinutes": 60,
+  "nearPeakTolerancePoints": 8,
+  "mergeGapMinutes": 10,
+  "moonPenaltyMax": 0.78,
+  "moonIlluminationExponent": 0.65,
+  "moonFullPenaltyAltitudeDeg": 45,
+  "qualityBands": {
+    "excellent": 90,
+    "good": 75,
+    "fair": 55
+  }
+}

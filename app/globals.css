@@ -978,6 +978,231 @@ h1 span {
   text-transform: uppercase;
 }
 
+.night-planning-panel {
+  display: grid;
+  grid-template-columns: minmax(15rem, 0.8fr) minmax(20rem, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 4rem);
+  margin-top: clamp(2rem, 5vw, 3.5rem);
+  padding-top: clamp(1.5rem, 4vw, 2.5rem);
+  border-top: 1px solid rgb(142 197 255 / 18%);
+}
+
+.night-recommendation {
+  min-width: 0;
+}
+
+.night-recommendation h2 {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  line-height: 1;
+}
+
+.night-plan-date,
+.night-plan-reasons,
+.night-plan-quality,
+.night-plan-disclaimer,
+.night-plan-status {
+  color: var(--muted);
+  font-size: 0.74rem;
+  line-height: 1.5;
+}
+
+.night-plan-date {
+  margin: 0.8rem 0 0;
+  color: #858fa8;
+}
+
+.night-plan-time {
+  margin: 1rem 0 0.55rem;
+  color: var(--gold);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.8vw, 2rem);
+}
+
+.night-plan-time time {
+  white-space: nowrap;
+}
+
+.night-plan-reasons {
+  margin: 0;
+  color: var(--blue);
+}
+
+.night-plan-quality {
+  margin: 0.45rem 0 0;
+  color: #dbe3f4;
+  font-weight: 700;
+}
+
+.night-plan-disclaimer {
+  max-width: 28rem;
+  margin: 1rem 0 0;
+  color: #858fa8;
+  font-size: 0.67rem;
+}
+
+.night-plan-status {
+  margin: 1rem 0 0;
+  color: var(--gold);
+}
+
+.night-planning-loading,
+.night-planning-error {
+  display: block;
+  color: var(--muted);
+}
+
+.night-planning-loading p,
+.night-planning-error p {
+  margin: 0;
+  font-size: 0.78rem;
+}
+
+.night-timeline {
+  min-width: 0;
+}
+
+.night-timeline h3 {
+  margin: 0;
+  color: var(--blue);
+  font: 700 0.68rem/1.2 ui-monospace, monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.night-timeline-intro {
+  margin: 0.45rem 0 1rem;
+  color: var(--muted);
+  font-size: 0.72rem;
+}
+
+.night-timeline-chart {
+  display: grid;
+  grid-template-columns: 5.6rem minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: stretch;
+  min-width: 0;
+}
+
+.night-timeline-row-labels {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  color: var(--muted);
+  font: 0.6rem/1.2 ui-monospace, monospace;
+  text-transform: uppercase;
+}
+
+.night-timeline-svg {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  height: auto;
+  overflow: visible;
+}
+
+.night-timeline-guide {
+  stroke: rgb(142 197 255 / 14%);
+  stroke-width: 1;
+}
+
+.night-timeline-segment {
+  rx: 4;
+}
+
+.night-timeline-segment-twilight {
+  fill: #8ec5ff;
+  opacity: 0.22;
+}
+
+.night-timeline-segment-astronomical-darkness {
+  fill: #080b17;
+  stroke: rgb(142 197 255 / 32%);
+  stroke-width: 1;
+}
+
+.night-timeline-segment-moon-above {
+  fill: #f4efe4;
+  opacity: 0.24;
+}
+
+.night-timeline-segment-moon-below {
+  fill: transparent;
+  stroke: rgb(170 178 200 / 38%);
+  stroke-dasharray: 5 4;
+  stroke-width: 1;
+}
+
+.night-timeline-segment-recommended {
+  fill: #e9c46a;
+  opacity: 0.82;
+  stroke: #e9c46a;
+  stroke-width: 2;
+}
+
+.night-timeline-event-marker {
+  stroke: rgb(142 197 255 / 70%);
+  stroke-width: 2;
+  stroke-dasharray: 3 4;
+}
+
+.night-timeline-now {
+  stroke: rgb(244 239 228 / 90%);
+  stroke-width: 2;
+}
+
+.night-timeline-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+  margin: 0.75rem 0 0 6.35rem;
+  color: #858fa8;
+  font-size: 0.62rem;
+}
+
+.night-timeline-legend span {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+}
+
+.night-timeline-swatch {
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.45rem;
+  border: 1px solid rgb(142 197 255 / 40%);
+}
+
+.night-timeline-swatch-dark { background: #080b17; }
+.night-timeline-swatch-moon { background: #f4efe4; opacity: 0.55; }
+.night-timeline-swatch-recommended { background: #e9c46a; }
+.night-timeline-swatch-now { background: #f4efe4; }
+
+.night-timeline-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.35rem 1rem;
+  margin: 1rem 0 0 6.35rem;
+  padding: 0;
+  color: #858fa8;
+  font-size: 0.65rem;
+  list-style: none;
+}
+
+.night-timeline-events li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 1px solid rgb(142 197 255 / 10%);
+  padding-bottom: 0.25rem;
+}
+
+.night-timeline-events time {
+  color: #dbe3f4;
+  white-space: nowrap;
+}
+
 @media (max-width: 1050px) {
   .orbit {
     position: relative;
@@ -1215,6 +1440,19 @@ h3 {
     grid-template-columns: 1fr;
   }
 
+  .night-planning-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .night-timeline-chart {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+  }
+
+  .night-timeline-legend,
+  .night-timeline-events {
+    margin-left: 5.25rem;
+  }
+
   .section-heading,
   .foundation-grid,
   .catalog-intro {
@@ -1267,6 +1505,22 @@ h3 {
   .finder-controls,
   .finder-results {
     grid-template-columns: 1fr;
+  }
+
+  .night-timeline-chart {
+    grid-template-columns: 1fr;
+  }
+
+  .night-timeline-row-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.35rem;
+    font-size: 0.56rem;
+  }
+
+  .night-timeline-events,
+  .night-timeline-legend {
+    margin-left: 0;
   }
 
   .finder-result {
