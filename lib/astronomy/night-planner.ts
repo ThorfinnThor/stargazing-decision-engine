@@ -336,7 +336,12 @@ export function resolveTonightNightDate(input: { location: SkyLocation; nowIso: 
 
 function selectRemainingRecommendation(samples: NightSample[], nowMs: number, config: NightPlannerConfig) {
   const remaining = samples.filter((sample) => sample.astronomicalScore !== null && Date.parse(sample.endIso) > nowMs).map((sample) => Date.parse(sample.startIso) < nowMs ? { ...sample, startIso: new Date(nowMs).toISOString() } : sample);
-  return candidateFromSamples(remaining, true, config);
+  const recommendation = candidateFromSamples(remaining, true, config);
+  if (!recommendation) return null;
+  return {
+    ...recommendation,
+    reasonCodes: [...recommendation.reasonCodes, "best-remaining-window" as const],
+  };
 }
 
 export function buildNightPlan(input: { location: SkyLocation; mode: NightPlanMode; instantIso: string; nowIso?: string; config?: NightPlannerConfig }): NightPlan {
@@ -352,21 +357,26 @@ export function buildNightPlan(input: { location: SkyLocation; mode: NightPlanMo
   const events = eventList(window.events);
   const full = candidateFromSamples(samples, false, config);
   const fullWithReasons = full ? withReasonCodes(refineWindow(full, window.events, config), samples, window.events, config) : null;
+  const firstDark = samples.find((sample) => sample.astronomicalDark);
+  const lastDark = [...samples].reverse().find((sample) => sample.astronomicalDark);
   let status: NightPlanStatus = fullWithReasons ? "ready" : "no-astronomical-night";
   let displayed = fullWithReasons;
   if (input.mode === "live-night" && fullWithReasons) {
     const nowMs = now.getTime();
-    if (nowMs > Date.parse(fullWithReasons.endIso)) {
+    const darknessEndMs = window.events.astronomicalDawn?.getTime()
+      ?? (lastDark ? Date.parse(lastDark.endIso) : window.end.getTime());
+    if (nowMs >= darknessEndMs) {
+      displayed = null;
+      status = "night-finished";
+    } else if (nowMs > Date.parse(fullWithReasons.endIso)) {
       const remaining = selectRemainingRecommendation(samples, nowMs, config);
       if (remaining) displayed = withReasonCodes(refineWindow(remaining, window.events, config), samples, window.events, config);
-      else if (nowMs >= Date.parse((window.events.sunrise?.toISOString() ?? window.events.astronomicalDawn?.toISOString() ?? window.end.toISOString()))) {
+      else {
         displayed = null;
         status = "night-finished";
       }
     }
   }
-  const firstDark = samples.find((sample) => sample.astronomicalDark);
-  const lastDark = [...samples].reverse().find((sample) => sample.astronomicalDark);
   const timelineStart = window.events.sunset ?? (window.events.astronomicalDusk ? new Date(window.events.astronomicalDusk.getTime() - 60 * 60_000) : firstDark ? new Date(Date.parse(firstDark.startIso)) : window.start);
   const timelineEnd = window.events.sunrise ?? (window.events.astronomicalDawn ? new Date(window.events.astronomicalDawn.getTime() + 60 * 60_000) : lastDark ? new Date(Date.parse(lastDark.endIso)) : window.end);
   const timelineStartIso = new Date(clamp(timelineStart.getTime(), window.start.getTime(), window.end.getTime())).toISOString();
@@ -375,6 +385,7 @@ export function buildNightPlan(input: { location: SkyLocation; mode: NightPlanMo
   const moonBelowMinutes = samples.filter((sample) => sample.astronomicalDark && !sample.moonAboveHorizon).reduce((sum, sample) => sum + minutes(Date.parse(sample.startIso), Date.parse(sample.endIso)), 0);
   const midpoint = new Date((window.start.getTime() + window.end.getTime()) / 2);
   const midpointMoon = moonMetrics(midpoint, new Observer(input.location.lat, input.location.lon, input.location.elevationM ?? 0));
+  const polarNight = !window.events.sunset && !window.events.sunrise && darkMinutes > 0;
   return {
     version: 1,
     locationId: input.location.id,
@@ -387,6 +398,7 @@ export function buildNightPlan(input: { location: SkyLocation; mode: NightPlanMo
     timelineStartIso,
     timelineEndIso,
     status,
+    polarNight,
     events,
     samples,
     fullNightRecommendation: fullWithReasons,
@@ -396,6 +408,22 @@ export function buildNightPlan(input: { location: SkyLocation; mode: NightPlanMo
     moonBelowHorizonDarkMinutes: round(moonBelowMinutes),
     moonIlluminationFractionAtNightMidpoint: Number.isFinite(midpointMoon.illumination) ? round(midpointMoon.illumination, 4) : null,
   };
+}
+
+export function shouldRefreshLiveNightPlan(input: { plan: NightPlan; location: SkyLocation; nowIso: string }) {
+  if (input.plan.mode !== "live-night") return false;
+  const now = assertValidInstant(input.nowIso);
+  const nowMs = now.getTime();
+  const eventTime = (kind: NightPlanEventKind) => {
+    const event = input.plan.events.find((candidate) => candidate.kind === kind);
+    return event ? Date.parse(event.instantIso) : null;
+  };
+  const astronomicalDawnMs = eventTime("astronomical-dawn");
+  if (input.plan.status !== "night-finished" && astronomicalDawnMs !== null && nowMs >= astronomicalDawnMs) return true;
+  if (input.plan.displayedRecommendation && nowMs > Date.parse(input.plan.displayedRecommendation.endIso)) return true;
+  const sunriseMs = eventTime("sunrise");
+  if (sunriseMs !== null) return nowMs > sunriseMs;
+  return resolveTonightNightDate({ location: input.location, nowIso: input.nowIso }) !== input.plan.nightDateLocal;
 }
 
 export { timelineRatio };

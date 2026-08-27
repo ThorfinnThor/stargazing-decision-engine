@@ -74,6 +74,6 @@ export function DestinationSkySection({ location, previews, locale }: { location
         ? <button type="button" onClick={showLive}>{locale === "de" ? "Zum Live-Himmel" : "Show live sky"}</button>
       : <button type="button" onClick={showNextNight}>{locale === "de" ? "Nächste Nacht anzeigen" : "Show next night"}</button>}
     </div>
-    <NightPlanningPanel location={location} context={context} locale={locale} />
+    <NightPlanningPanel key={`${location.id}-${context.mode}`} location={location} context={context} locale={locale} />
   </div>;
 }

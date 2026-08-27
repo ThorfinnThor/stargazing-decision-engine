@@ -21,6 +21,10 @@ score = round(100 × clamp(1 − moonPenalty, 0, 1))
 
 The recommendation selects the highest contiguous near-peak window, prefers at least 60 minutes, and deterministically ranks ties by average score, duration, peak score, then start time. It never uses weather, light pollution, terrain, stars, planets, or external runtime APIs.
 
+## Live updates and time labels
+
+The expensive Sun/Moon sampling is anchored to the relevant local night. In live mode it is recalculated only when the recommendation or astronomical-night boundary is crossed; the current-time marker continues to update each minute without rebuilding the samples. Locations without sunset or sunrise are explicitly identified as polar night when astronomical darkness exists. If a timeline crosses a daylight-saving offset transition, clock labels include their UTC offset so repeated local times remain distinguishable.
+
 ## User-facing limitations
 
 The recommendation is astronomical only. Weather, haze, smoke, local light pollution, trees, buildings, terrain, and object-specific visibility are not calculated. A visible disclaimer is rendered with every plan.

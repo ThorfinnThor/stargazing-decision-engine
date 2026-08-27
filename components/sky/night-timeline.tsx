@@ -1,5 +1,5 @@
 import type { Locale } from "@/lib/i18n/config";
-import { formatSkyLocalTime } from "@/lib/astronomy/time";
+import { formatLocalClockTime, hasTimeZoneOffsetTransition } from "@/lib/astronomy/time";
 import { timelineRatio } from "@/lib/astronomy/night-planner";
 import type { NightPlan, NightPlanEventKind } from "@/lib/astronomy/types";
 
@@ -38,13 +38,15 @@ function segmentLabel(kind: string, locale: Locale) {
 
 export function NightTimeline({ plan, locale, nowIso }: NightTimelineProps) {
   const isGerman = locale === "de";
+  const includeUtcOffset = hasTimeZoneOffsetTransition(plan.timeZone, plan.timelineStartIso, plan.timelineEndIso);
+  const formatTime = (instantIso: string) => formatLocalClockTime(locale, plan.timeZone, instantIso, includeUtcOffset);
   const nowRatio = nowIso && plan.mode === "live-night" && Date.parse(nowIso) >= Date.parse(plan.timelineStartIso) && Date.parse(nowIso) <= Date.parse(plan.timelineEndIso)
     ? timelineRatio(nowIso, plan.timelineStartIso, plan.timelineEndIso)
     : null;
   const heading = isGerman ? "Nacht-Timeline" : "Night timeline";
   const description = isGerman
-    ? "Sonnen- und Mondphasen erklären das empfohlene Fenster."
-    : "Sun and Moon phases explain the recommended window.";
+    ? `${plan.polarNight ? "Polarnacht: " : ""}Sonnen- und Mondphasen erklären das empfohlene Fenster.`
+    : `${plan.polarNight ? "Polar night: " : ""}Sun and Moon phases explain the recommended window.`;
   return <section className="night-timeline" aria-labelledby={`night-timeline-${plan.locationId}`}>
     <h3 id={`night-timeline-${plan.locationId}`}>{heading}</h3>
     <p className="night-timeline-intro">{description}</p>
@@ -76,8 +78,8 @@ export function NightTimeline({ plan, locale, nowIso }: NightTimelineProps) {
       {nowRatio !== null ? <span><i className="night-timeline-swatch night-timeline-swatch-now" />{isGerman ? "Jetzt" : "Now"}</span> : null}
     </div>
     <ul className="night-timeline-events">
-      {plan.events.map((event) => <li key={`${event.kind}-${event.instantIso}`}><span>{eventLabels[locale][event.kind]}</span><time dateTime={event.instantIso}>{formatSkyLocalTime(locale, plan.timeZone, event.instantIso)}</time></li>)}
-      {nowRatio !== null ? <li><span>{isGerman ? "Jetzt" : "Now"}</span><time dateTime={nowIso!}>{formatSkyLocalTime(locale, plan.timeZone, nowIso!)}</time></li> : null}
+      {plan.events.map((event) => <li key={`${event.kind}-${event.instantIso}`}><span>{eventLabels[locale][event.kind]}</span><time dateTime={event.instantIso}>{formatTime(event.instantIso)}</time></li>)}
+      {nowRatio !== null ? <li><span>{isGerman ? "Jetzt" : "Now"}</span><time dateTime={nowIso!}>{formatTime(nowIso!)}</time></li> : null}
     </ul>
   </section>;
 }

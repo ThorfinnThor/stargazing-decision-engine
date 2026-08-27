@@ -264,6 +264,7 @@ export type NightPlan = {
   timelineStartIso: string;
   timelineEndIso: string;
   status: NightPlanStatus;
+  polarNight: boolean;
   events: NightPlanEvent[];
   samples: NightSample[];
   fullNightRecommendation: RecommendedWindow | null;

@@ -9,8 +9,10 @@ import {
   calculateAstronomicalScore,
   nightPlannerConfig,
   resolveTonightNightDate,
+  shouldRefreshLiveNightPlan,
   validateNightPlannerConfig,
 } from "../lib/astronomy/night-planner.js";
+import { formatLocalClockTime, hasTimeZoneOffsetTransition } from "../lib/astronomy/time.js";
 import type { SkyLocation } from "../lib/astronomy/types.js";
 
 const calendarConfig = JSON.parse(readFileSync(resolve(process.cwd(), "data-config/astronomy/calendar-config.json"), "utf8"));
@@ -77,15 +79,31 @@ test("night preview produces one synchronized plan with events, samples, scores 
   assert.ok(plan.astronomicalDarkMinutes > 0);
 });
 
-test("live plan keeps full recommendation before its window and selects a remaining window after it", () => {
+test("live plan keeps the full recommendation before its window and labels a later remaining window", () => {
   const preview = buildNightPlan({ location: westhavelland, mode: "night-preview", instantIso: "2027-01-01T00:30:00.000Z" });
   assert.ok(preview.fullNightRecommendation);
   const before = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2027-01-01T00:30:00.000Z", nowIso: "2026-12-31T16:00:00.000Z" });
   assert.equal(before.status, "ready");
   assert.equal(before.displayedRecommendation?.isRemainingNightRecommendation, false);
-  const after = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2027-01-01T04:30:00.000Z", nowIso: "2027-01-01T04:30:00.000Z" });
-  assert.ok(after.status === "ready" || after.status === "night-finished");
-  if (after.status === "ready") assert.equal(after.displayedRecommendation?.isRemainingNightRecommendation, true);
+  const after = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2027-01-01T04:00:00.000Z", nowIso: "2027-01-01T04:00:00.000Z" });
+  assert.equal(after.status, "ready");
+  assert.equal(after.displayedRecommendation?.isRemainingNightRecommendation, true);
+  assert.ok(after.displayedRecommendation?.reasonCodes.includes("best-remaining-window"));
+});
+
+test("live plan finishes at astronomical dawn rather than retaining a past recommendation until sunrise", () => {
+  const afterDawn = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2027-01-01T06:00:00.000Z", nowIso: "2027-01-01T06:00:00.000Z" });
+  assert.equal(afterDawn.status, "night-finished");
+  assert.equal(afterDawn.displayedRecommendation, null);
+  assert.ok(afterDawn.timelineSegments.every((segment) => segment.kind !== "recommended"));
+});
+
+test("live-plan refresh predicate advances only at recommendation and night boundaries", () => {
+  const before = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2026-12-31T16:00:00.000Z", nowIso: "2026-12-31T16:00:00.000Z" });
+  assert.equal(shouldRefreshLiveNightPlan({ plan: before, location: westhavelland, nowIso: "2026-12-31T16:01:00.000Z" }), false);
+  assert.equal(shouldRefreshLiveNightPlan({ plan: before, location: westhavelland, nowIso: "2027-01-01T04:00:00.000Z" }), true);
+  const remaining = buildNightPlan({ location: westhavelland, mode: "live-night", instantIso: "2027-01-01T04:00:00.000Z", nowIso: "2027-01-01T04:00:00.000Z" });
+  assert.equal(shouldRefreshLiveNightPlan({ plan: remaining, location: westhavelland, nowIso: "2027-01-01T04:01:00.000Z" }), false);
 });
 
 test("polar summer returns no astronomical night without inventing a dark recommendation", () => {
@@ -94,7 +112,16 @@ test("polar summer returns no astronomical night without inventing a dark recomm
   assert.equal(plan.fullNightRecommendation, null);
   assert.equal(plan.displayedRecommendation, null);
   assert.equal(plan.astronomicalDarkMinutes, 0);
+  assert.equal(plan.polarNight, false);
   assert.ok(plan.timelineSegments.every((segment) => segment.kind !== "recommended"));
+});
+
+test("polar winter is explicitly classified when darkness exists without sunset or sunrise", () => {
+  const plan = buildNightPlan({ location: tromsø, mode: "night-preview", instantIso: "2027-01-01T12:00:00.000Z" });
+  assert.equal(plan.status, "ready");
+  assert.equal(plan.polarNight, true);
+  assert.ok(plan.astronomicalDarkMinutes > 0);
+  assert.ok(plan.events.every((event) => event.kind !== "sunset" && event.kind !== "sunrise"));
 });
 
 test("site and hemisphere changes produce different event timing and plans", () => {
@@ -114,6 +141,17 @@ test("DST nights retain local-date identity and allow 23/25-hour sample counts",
   assert.equal(spring.samples.length, 138);
   assert.equal(autumn.samples.length, 150);
   assert.notEqual(spring.calculationStartIso, autumn.calculationStartIso);
+});
+
+test("DST fallback clock times include distinct UTC offsets when local times repeat", () => {
+  const firstLocal0230 = "2027-10-31T00:30:00.000Z";
+  const secondLocal0230 = "2027-10-31T01:30:00.000Z";
+  assert.equal(hasTimeZoneOffsetTransition("Europe/Berlin", "2027-10-30T18:00:00.000Z", "2027-10-31T06:00:00.000Z"), true);
+  const firstLabel = formatLocalClockTime("de", "Europe/Berlin", firstLocal0230, true);
+  const secondLabel = formatLocalClockTime("de", "Europe/Berlin", secondLocal0230, true);
+  assert.match(firstLabel, /^02:30/);
+  assert.match(secondLabel, /^02:30/);
+  assert.notEqual(firstLabel, secondLabel);
 });
 
 test("night planner dark-minute totals cross-check existing calendar sampling within one interval", () => {

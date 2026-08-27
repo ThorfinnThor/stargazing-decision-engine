@@ -2,9 +2,8 @@
 
 import { useEffect, useMemo, useState } from "react";
 
-import { buildNightPlan } from "@/lib/astronomy/night-planner";
-import { formatSkyLocalTime } from "@/lib/astronomy/time";
-import { roundedCurrentMinuteIso } from "@/lib/astronomy/selection";
+import { buildNightPlan, shouldRefreshLiveNightPlan } from "@/lib/astronomy/night-planner";
+import { formatLocalClockTime, hasTimeZoneOffsetTransition } from "@/lib/astronomy/time";
 import type { DestinationNightContext, NightPlan, RecommendationReasonCode, RecommendationQuality, SkyLocation } from "@/lib/astronomy/types";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -45,10 +44,6 @@ const eventCopy: Record<Locale, Record<string, string>> = {
   en: { sunset: "Sunset", "astronomical-dusk": "Astronomical darkness begins", moonrise: "Moonrise", moonset: "Moonset", "astronomical-dawn": "Astronomical darkness ends", sunrise: "Sunrise" },
 };
 
-function formatTime(locale: Locale, timeZone: string, instantIso: string) {
-  return new Intl.DateTimeFormat(locale, { timeZone, hour: "2-digit", minute: "2-digit", hourCycle: locale === "de" ? "h23" : undefined }).format(new Date(instantIso));
-}
-
 function formatNightDate(locale: Locale, timeZone: string, plan: NightPlan) {
   const formatter = new Intl.DateTimeFormat(locale, { timeZone, day: "numeric", month: "long" });
   const start = formatter.format(new Date(plan.timelineStartIso));
@@ -57,39 +52,29 @@ function formatNightDate(locale: Locale, timeZone: string, plan: NightPlan) {
 }
 
 export function NightPlanningPanel({ location, context, locale }: { location: SkyLocation; context: DestinationNightContext; locale: Locale }) {
-  const [nowIso, setNowIso] = useState<string | null>(null);
-  useEffect(() => {
-    const refresh = () => setNowIso(roundedCurrentMinuteIso());
-    refresh();
-    const delay = 60_000 - (Date.now() % 60_000) + 25;
-    let interval: ReturnType<typeof setInterval> | null = null;
-    const timeout = setTimeout(() => { refresh(); interval = setInterval(refresh, 60_000); }, delay);
-    const restore = () => refresh();
-    document.addEventListener("visibilitychange", restore);
-    window.addEventListener("focus", restore);
-    window.addEventListener("pageshow", restore);
-    return () => {
-      clearTimeout(timeout);
-      if (interval) clearInterval(interval);
-      document.removeEventListener("visibilitychange", restore);
-      window.removeEventListener("focus", restore);
-      window.removeEventListener("pageshow", restore);
-    };
-  }, [context.mode, context.instantIso, location.id]);
-
+  const [livePlanAnchorIso, setLivePlanAnchorIso] = useState(() => context.instantIso);
+  const planningInstantIso = context.mode === "live-night" ? livePlanAnchorIso : context.instantIso;
+  const nowIso = context.mode === "live-night" ? context.instantIso : null;
   const result = useMemo(() => {
-    if (!nowIso) return { plan: null, error: null };
     try {
-      return { plan: buildNightPlan({ location, mode: context.mode, instantIso: context.instantIso, nowIso }), error: null };
+      return { plan: buildNightPlan({ location, mode: context.mode, instantIso: planningInstantIso, nowIso: planningInstantIso }), error: null };
     } catch (error) {
       return { plan: null, error: error instanceof Error ? error.message : "Night planning unavailable" };
     }
-  }, [context.instantIso, context.mode, location, nowIso]);
+  }, [context.mode, location, planningInstantIso]);
 
-  if (!nowIso) return <section className="night-planning-panel night-planning-loading" aria-busy="true"><p>{locale === "de" ? "Nachtplanung wird berechnet …" : "Calculating night plan …"}</p></section>;
+  useEffect(() => {
+    if (context.mode !== "live-night" || !result.plan) return;
+    if (shouldRefreshLiveNightPlan({ plan: result.plan, location, nowIso: context.instantIso })) {
+      setLivePlanAnchorIso((current) => current === context.instantIso ? current : context.instantIso);
+    }
+  }, [context.instantIso, context.mode, location, result.plan]);
+
   if (result.error || !result.plan) return <section className="night-planning-panel night-planning-error" role="status"><p>{locale === "de" ? "Nachtplanung nicht verfügbar." : "Night planning unavailable."}</p></section>;
   const plan = result.plan;
   const recommendation = plan.displayedRecommendation;
+  const includeUtcOffset = hasTimeZoneOffsetTransition(plan.timeZone, plan.timelineStartIso, plan.timelineEndIso);
+  const formatTime = (instantIso: string) => formatLocalClockTime(locale, location.timeZone, instantIso, includeUtcOffset);
   const heading = context.mode === "live-night"
     ? locale === "de" ? "Beste Zeit heute Nacht" : "Best time tonight"
     : locale === "de" ? "Beste Zeit in dieser Nacht" : "Best time this night";
@@ -102,18 +87,19 @@ export function NightPlanningPanel({ location, context, locale }: { location: Sk
       ? locale === "de" ? "Die astronomische Nacht ist für heute beendet." : "The astronomical night has ended."
       : null;
   const reasons = recommendation?.reasonCodes.slice(0, 2).map((reason) => reasonCopy[locale][reason]) ?? [];
+  const polarNightContext = plan.polarNight ? locale === "de" ? "Polarnacht. " : "Polar night. " : "";
   const accessibleSummary = recommendation
     ? locale === "de"
-      ? `Für ${location.siteName} ist die beste astronomische Beobachtungszeit in der Nacht ${formatNightDate(locale, location.timeZone, plan)} von ${formatTime(locale, location.timeZone, recommendation.startIso)} bis ${formatTime(locale, location.timeZone, recommendation.endIso)} Uhr Ortszeit. ${reasons.join(" und ")}. ${plan.events.map((event) => `${eventCopy[locale][event.kind] ?? event.kind}: ${formatTime(locale, location.timeZone, event.instantIso)}`).join(". ")}. Wetter ist nicht berücksichtigt.`
-      : `For ${location.siteName}, the best astronomical observing time on the night of ${formatNightDate(locale, location.timeZone, plan)} is ${formatTime(locale, location.timeZone, recommendation.startIso)} to ${formatTime(locale, location.timeZone, recommendation.endIso)} local time. ${reasons.join(" and ")}. ${plan.events.map((event) => `${eventCopy[locale][event.kind] ?? event.kind}: ${formatTime(locale, location.timeZone, event.instantIso)}`).join(". ")}. Weather is not included.`
+      ? `${polarNightContext}Für ${location.siteName} ist die beste astronomische Beobachtungszeit in der Nacht ${formatNightDate(locale, location.timeZone, plan)} von ${formatTime(recommendation.startIso)} bis ${formatTime(recommendation.endIso)} Uhr Ortszeit. ${reasons.join(" und ")}. ${plan.events.map((event) => `${eventCopy[locale][event.kind] ?? event.kind}: ${formatTime(event.instantIso)}`).join(". ")}. Wetter ist nicht berücksichtigt.`
+      : `${polarNightContext}For ${location.siteName}, the best astronomical observing time on the night of ${formatNightDate(locale, location.timeZone, plan)} is ${formatTime(recommendation.startIso)} to ${formatTime(recommendation.endIso)} local time. ${reasons.join(" and ")}. ${plan.events.map((event) => `${eventCopy[locale][event.kind] ?? event.kind}: ${formatTime(event.instantIso)}`).join(". ")}. Weather is not included.`
     : statusMessage ?? disclaimer;
-  return <section className="night-planning-panel" data-location-id={plan.locationId} data-site-id={plan.siteId} data-night-date={plan.nightDateLocal} data-sample-count={plan.samples.length} aria-labelledby={`night-planning-title-${plan.locationId}`}>
+  return <section className="night-planning-panel" data-location-id={plan.locationId} data-site-id={plan.siteId} data-night-date={plan.nightDateLocal} data-plan-anchor={planningInstantIso} data-sample-count={plan.samples.length} aria-labelledby={`night-planning-title-${plan.locationId}`}>
     <div className="night-recommendation">
       <p className="eyebrow">{context.mode === "live-night" ? locale === "de" ? "Heute Nacht" : "Tonight" : locale === "de" ? "Nachtvorschau" : "Night preview"}</p>
       <h2 id={`night-planning-title-${plan.locationId}`}>{heading}</h2>
-      <p className="night-plan-date">{locale === "de" ? `Nacht ${formatNightDate(locale, location.timeZone, plan)}` : `Night of ${formatNightDate(locale, location.timeZone, plan)}`}</p>
+      <p className="night-plan-date">{plan.polarNight ? locale === "de" ? "Polarnacht · " : "Polar night · " : null}{locale === "de" ? `Nacht ${formatNightDate(locale, location.timeZone, plan)}` : `Night of ${formatNightDate(locale, location.timeZone, plan)}`}</p>
       {recommendation ? <>
-        <p className="night-plan-time"><time dateTime={recommendation.startIso}>{formatTime(locale, location.timeZone, recommendation.startIso)}</time>–<time dateTime={recommendation.endIso}>{formatTime(locale, location.timeZone, recommendation.endIso)}</time> {locale === "de" ? "Uhr" : "local time"}</p>
+        <p className="night-plan-time"><time dateTime={recommendation.startIso}>{formatTime(recommendation.startIso)}</time>–<time dateTime={recommendation.endIso}>{formatTime(recommendation.endIso)}</time> {locale === "de" ? "Uhr" : "local time"}</p>
         <p className="night-plan-reasons">{reasons.join(" · ")}</p>
         <p className="night-plan-quality">{qualityCopy[locale][recommendation.quality]}</p>
       </> : <p className="night-plan-status">{statusMessage}</p>}
