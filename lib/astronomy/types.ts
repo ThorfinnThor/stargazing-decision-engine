@@ -93,6 +93,7 @@ export type VisibleConstellation = {
 export type ConstellationSummary = {
   constellationId: string;
   name: string;
+  visibilityState: VisibleConstellation["visibilityState"];
   directionLabel: string;
   altitudeLabel: string;
   recognitionHint: string;

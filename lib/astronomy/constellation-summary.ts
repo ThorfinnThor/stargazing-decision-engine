@@ -19,9 +19,9 @@ export function altitudeLabel(altitudeDeg: number, locale: Locale) {
   return locale === "de" ? "hoch" : "high";
 }
 
-export function buildConstellationSummaries(visible: readonly VisibleConstellation[], locale: Locale, limit = 3): ConstellationSummary[] {
+export function buildConstellationSummaries(visible: readonly VisibleConstellation[], locale: Locale, limit = 3, includePartlyVisible = false): ConstellationSummary[] {
   return visible
-    .filter((constellation) => constellation.visibilityState === "recognizable")
+    .filter((constellation) => includePartlyVisible || constellation.visibilityState === "recognizable")
     .slice(0, Math.max(0, limit))
     .flatMap((constellation) => {
       const copy = constellationCopyById.get(constellation.id);
@@ -29,6 +29,7 @@ export function buildConstellationSummaries(visible: readonly VisibleConstellati
       return [{
         constellationId: constellation.id,
         name: copy.name[locale],
+        visibilityState: constellation.visibilityState,
         directionLabel: directionLabel(constellation.centerAzimuthDeg, locale),
         altitudeLabel: altitudeLabel(constellation.centerAltitudeDeg, locale),
         recognitionHint: copy.recognitionHint[locale],

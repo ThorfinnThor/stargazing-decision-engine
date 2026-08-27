@@ -113,6 +113,19 @@ test("constellation summaries use deterministic priorities, compass sectors, and
   assert.equal(altitudeLabel(60.001, "de"), "hoch");
 });
 
+test("destination summaries account for every constellation line drawn over Jasper", () => {
+  const destination = loadDestinations().find((item) => item.id === "jasper");
+  const site = loadSites().find((item) => item.id === "jasper-medicine-lake");
+  assert.ok(destination && site);
+  const location = createSkyLocation(destination, site);
+  assert.ok(location);
+  const snapshot = computeSky(location, "2026-08-28T07:53:00.000Z");
+  const summaries = buildConstellationSummaries(snapshot.constellations, "en", snapshot.constellations.length, true);
+  assert.equal(summaries.length, snapshot.constellations.length);
+  assert.ok(summaries.filter((item) => item.visibilityState === "recognizable").length > 3);
+  assert.ok(summaries.some((item) => item.visibilityState === "partly-visible"));
+});
+
 test("astronomical computation modules contain no random selection path", () => {
   const computationModules = ["compute-sky.ts", "projection.ts", "visibility.ts"];
   for (const moduleName of computationModules) {
@@ -197,6 +210,7 @@ test("destination client defaults to a useful night view, preserves fixed previe
 
 test("destination sky exposes constellation toggle, localized summaries, and keyboard focus highlighting", () => {
   const component = readFileSync(new URL("../components/sky/astronomical-sky.tsx", import.meta.url), "utf8");
+  const css = readFileSync(new URL("../app/globals.css", import.meta.url), "utf8");
   assert.match(component, /aria-pressed=\{showConstellations\}/);
   assert.match(component, /Sternbilder anzeigen/);
   assert.match(component, /What you can see/);
@@ -204,4 +218,7 @@ test("destination sky exposes constellation toggle, localized summaries, and key
   assert.match(component, /Western sky culture/);
   assert.match(component, /Moon.*the horizon.*illuminated/);
   assert.match(component, /Mond.*dem Horizont.*beleuchtet/);
+  assert.match(component, /Also in the sky/);
+  assert.match(component, /partly visible/);
+  assert.match(css, /\.constellation-secondary-grid/);
 });
