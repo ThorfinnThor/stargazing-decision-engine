@@ -1,8 +1,10 @@
 import { Body, Equator, Horizon, MoonPhase, Observer, Rotation_EQJ_HOR } from "astronomy-engine";
 
 import { brightStars } from "./catalog";
+import { westernConstellations } from "./constellations";
+import { projectConstellations, type TransformedCatalogStar } from "./constellation-transform";
 import { assertValidInstant, assertValidSkyLocation } from "./validation";
-import { brightLimbScreenAngle, clamp, horizontalFromVector, phaseIlluminatedFraction, projectFullSky } from "./projection";
+import { brightLimbScreenAngle, clamp, horizontalFromVector, horizontalVector, phaseIlluminatedFraction, projectFullSky } from "./projection";
 import { classifySkyCondition, getEffectiveLimitingMagnitude, starVisualStyle } from "./visibility";
 import type { CatalogStar, HorizontalPosition, ProjectedStar, SkyLocation, SkySnapshot } from "./types";
 
@@ -19,12 +21,16 @@ export function computeSunHorizontal(location: SkyLocation, instantIso: string) 
 }
 
 export function transformCatalogStar(star: CatalogStar, rotation: { rot: number[][] }) {
+  return horizontalFromVector(transformCatalogVector(star, rotation));
+}
+
+export function transformCatalogVector(star: CatalogStar, rotation: { rot: number[][] }) {
   const r = rotation.rot;
-  return horizontalFromVector({
+  return {
     x: r[0][0] * star.xEqj + r[1][0] * star.yEqj + r[2][0] * star.zEqj,
     y: r[0][1] * star.xEqj + r[1][1] * star.yEqj + r[2][1] * star.zEqj,
     z: r[0][2] * star.xEqj + r[1][2] * star.yEqj + r[2][2] * star.zEqj,
-  });
+  };
 }
 
 export function computeSky(location: SkyLocation, instantIso: string, stars: readonly CatalogStar[] = brightStars): SkySnapshot {
@@ -37,12 +43,21 @@ export function computeSky(location: SkyLocation, instantIso: string, stars: rea
   const effectiveLimitingMagnitude = getEffectiveLimitingMagnitude({ baseLimitingMagnitude, sunAltitudeDeg: sun.altitudeDeg });
   const rotation = Rotation_EQJ_HOR(instant, observer);
   const projected: ProjectedStar[] = [];
+  const transformedByStarId = new Map<number, TransformedCatalogStar>();
   for (const star of stars) {
-    if (star.magnitude > effectiveLimitingMagnitude) continue;
-    const horizontal = transformCatalogStar(star, rotation);
-    if (!horizontal.aboveHorizon) continue;
-    const point = projectFullSky(horizontal.altitudeDeg, horizontal.azimuthDeg);
-    if (!point) continue;
+    const vector = transformCatalogVector(star, rotation);
+    const horizontal = horizontalFromVector(vector);
+    const point = horizontal.aboveHorizon ? projectFullSky(horizontal.altitudeDeg, horizontal.azimuthDeg) : null;
+    const likelyVisible = horizontal.aboveHorizon && star.magnitude <= effectiveLimitingMagnitude;
+    transformedByStarId.set(star.id, {
+      horizontalVector: horizontalVector(horizontal),
+      altitudeDeg: horizontal.altitudeDeg,
+      azimuthDeg: horizontal.azimuthDeg,
+      projected: point,
+      likelyVisible,
+      magnitude: star.magnitude,
+    });
+    if (!likelyVisible || !point) continue;
     const style = starVisualStyle(star.magnitude, effectiveLimitingMagnitude);
     projected.push({ ...point, ...horizontal, id: star.id, magnitude: star.magnitude, colorIndex: star.colorIndex, ...style });
   }
@@ -62,6 +77,7 @@ export function computeSky(location: SkyLocation, instantIso: string, stars: rea
       yNormalized: moonPoint?.yNormalized ?? null,
     },
     stars: projected,
+    constellations: projectConstellations(westernConstellations, transformedByStarId, sun.altitudeDeg),
     effectiveLimitingMagnitude,
     skyCondition: classifySkyCondition(sun.altitudeDeg),
   };

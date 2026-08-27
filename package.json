@@ -45,6 +45,7 @@
     "data:images": "node --import tsx scripts/images/build-image-manifest.ts",
     "data:images:validate": "node --import tsx scripts/validate/validate-images.ts",
     "data:astronomy:catalog": "node --import tsx scripts/astronomy/build-star-catalog.ts",
+    "data:astronomy:constellations": "node --import tsx scripts/astronomy/build-constellation-lines.ts",
     "data:astronomy:previews": "node --import tsx scripts/astronomy/build-night-previews.ts",
     "data:astronomy:validate": "node --import tsx scripts/astronomy/validate-astronomy.ts",
     "data:p3:images:validate": "node --import tsx scripts/validate/validate-p3-image-candidates.ts",

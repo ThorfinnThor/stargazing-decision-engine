@@ -49,6 +49,66 @@ export type CatalogStar = {
   colorIndex: number | null;
 };
 
+export type SkyCultureId = "western";
+
+export type ConstellationLinePath = {
+  starIds: number[];
+  weight: "normal" | "thin" | "bold";
+};
+
+export type ConstellationDefinition = {
+  id: string;
+  skyCulture: SkyCultureId;
+  iauAbbreviation: string;
+  names: { de: string; en: string; latin?: string };
+  linePaths: ConstellationLinePath[];
+  labelAnchorStarId?: number;
+  explanationId: string;
+};
+
+export type ProjectedConstellationPoint = { xNormalized: number; yNormalized: number };
+
+export type ProjectedConstellationPath = {
+  constellationId: string;
+  points: ProjectedConstellationPoint[];
+  weight: "normal" | "thin" | "bold";
+};
+
+export type VisibleConstellation = {
+  id: string;
+  iauAbbreviation: string;
+  visibilityState: "partly-visible" | "recognizable";
+  score: number;
+  visibleAnchorCount: number;
+  totalAnchorCount: number;
+  visibleAnchorRatio: number;
+  visibleSegmentFraction: number;
+  centerAltitudeDeg: number;
+  centerAzimuthDeg: number;
+  labelXNormalized: number | null;
+  labelYNormalized: number | null;
+  projectedPaths: ProjectedConstellationPath[];
+};
+
+export type ConstellationSummary = {
+  constellationId: string;
+  name: string;
+  directionLabel: string;
+  altitudeLabel: string;
+  recognitionHint: string;
+  shortDescription: string;
+};
+
+export type ConstellationCopy = {
+  id: string;
+  name: { de: string; en: string };
+  shortDescription: { de: string; en: string };
+  recognitionHint: { de: string; en: string };
+  culturalNote?: { de: string; en: string };
+  factSources: string[];
+  lastReviewedAt: string;
+};
+
 export type ProjectedStar = {
   id: number;
   xNormalized: number;
@@ -77,12 +137,13 @@ export type SkySnapshot = {
   sun: HorizontalPosition;
   moon: MoonSkyState;
   stars: ProjectedStar[];
+  constellations: VisibleConstellation[];
   effectiveLimitingMagnitude: number;
   skyCondition: SkyCondition;
 };
 
 export type BrightStarCatalog = {
-  version: 1;
+  version: 2;
   source: {
     name: string;
     version: string;
@@ -92,9 +153,26 @@ export type BrightStarCatalog = {
     licenseUrl: string;
     upstreamSha256: string;
     magnitudeCutoff: number;
+    constellationAnchorMagnitudeCeiling: number;
+    idSystem: "HIP";
     generatedAt: string;
   };
   stars: Array<[number, number, number, number, number, number | null]>;
+};
+
+export type ConstellationDatasetFile = {
+  version: 1;
+  skyCulture: "western";
+  source: {
+    name: string;
+    url: string;
+    sourceCommit: string;
+    license: "CC BY-SA 4.0";
+    licenseUrl: string;
+    upstreamSha256: string;
+    generatedAt: string;
+  };
+  constellations: ConstellationDefinition[];
 };
 
 export type NightPreviewFile = {

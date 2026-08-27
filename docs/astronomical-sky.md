@@ -13,22 +13,37 @@ maintained by David Nash / Astronexus:
 - Source commit: `ba2dec4eb0f6768914c7fc1051258100214ddf84`
 - Upstream file SHA-256: `d9f69fd86bbf90a4e4d52b4c5c53eacfa6dfc0bfdef85bfd94f095e0bebe4ebd`
 - License: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
-- Derivative: filtered to apparent magnitude `<= 6.0`, converted from J2000
-  right ascension/declination to normalized EQJ vectors, non-runtime columns
-  removed, deterministically sorted.
-- Runtime catalog: 5,070 stars; no external astronomy request is made at runtime.
+- Derivative: stars with a valid Hipparcos identifier are filtered to apparent
+  magnitude `<= 6.0`; required constellation anchors may extend to the audited
+  ceiling of `6.5`. Coordinates are converted from J2000 right
+  ascension/declination to normalized EQJ vectors, non-runtime columns are
+  removed, and records are deterministically sorted by magnitude and HIP ID.
+- Runtime catalog: 5,041 stars; no external astronomy request is made at runtime.
+
+Constellation line paths are a separate derivative of the **Stellarium Western
+sky culture**:
+
+- Source: <https://github.com/Stellarium/stellarium-skycultures/blob/014fbb5e59233d133c22f9811af96b67d05a95c9/western/index.json>
+- Source commit: `014fbb5e59233d133c22f9811af96b67d05a95c9`
+- Upstream file SHA-256: `a861accd345249a185a5ecfc2a516f34291c0aa52f4bb8d8337ffc53e9cef6b9`
+- License for text and data: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- Derivative: 18 curated Western constellations, retaining only HIP line paths,
+  line weights, stable IDs, and English/German display names. No upstream
+  illustrations are included.
+- Curated recognition hints and short explanations are original project text.
 
 Rebuild from a verified local upstream file:
 
 ```bash
+pnpm data:astronomy:constellations --input=/absolute/path/to/western/index.json
 pnpm data:astronomy:catalog --input=/absolute/path/to/hygdata_v41.csv
 pnpm data:astronomy:previews
 pnpm data:astronomy:validate
 ```
 
-The generated catalog derivative is redistributed under CC BY-SA 4.0. That
-license and the attribution above apply to the catalog data; they do not grant a
-license for unrelated project code.
+The generated catalog and constellation-line derivatives are redistributed
+under CC BY-SA 4.0. That license and the attributions above apply to those data;
+they do not grant a license for unrelated project code.
 
 ## Computation
 
@@ -37,6 +52,9 @@ license for unrelated project code.
 - Time: UTC instant; labels use the destination's IANA timezone.
 - Refraction: geometric/unrefracted for Sun, Moon, and stars.
 - Stars: one EQJ-to-horizontal rotation matrix per snapshot.
+- Constellations: HIP anchors reuse those transformed vectors; great-circle
+  segments are sampled with spherical interpolation and clipped at the local
+  geometric horizon before projection.
 - Projection: azimuthal equidistant full-sky dome, north up and east left.
 - Moon: topocentric position and phase; bright-limb direction is projected
   toward the local Sun direction.
@@ -57,16 +75,18 @@ the normal document flow on tablet and mobile layouts.
 
 ## Static architecture
 
-The server components load committed candidates and previews. Client components
+The server components load committed candidates, catalog data, constellation
+paths, and previews. Client components
 select a homepage location after hydration, compute the current minute, draw one
 Canvas, and update once per minute. On destination pages, **Show next night**
 selects the darkest half-hour sample in the immediately upcoming astronomical
-night. Destination pages use the live sky only while the Sun is below −18° at
-the target; during local daylight or twilight they open on that upcoming-night
-view instead of an empty daytime dome. The committed fixed preview remains a
-reproducible fallback and supports existing deep links. Preview modes have no
-timer. Destination query strings are parsed after mount and validated against
-that destination and its deterministic primary site.
+night. Destination pages always open with the current live sky for their own
+site, including an honest star-free daylight dome. **Show next night** switches
+to the next astronomical night for the same site; **Show live sky** returns to
+the current minute. The committed fixed preview remains a reproducible fallback
+and supports existing deep links. Preview modes have no timer. Destination
+query strings are parsed after mount and validated against that destination and
+its deterministic primary site.
 
 ## Homepage candidate contract
 
@@ -119,12 +139,14 @@ preview ID is validated against the same pair before it can be displayed.
 
 ## Verification snapshot
 
-Measured locally on 2026-08-25 after a production static export:
+Measured locally on 2026-08-27 after the V2.1 production static export:
 
 - 50 deterministic destination previews validate; 41 destinations are eligible
   for random homepage promotion because their deterministic primary site also
   passes the travel-access gate.
-- Compact catalog: 270,152 bytes uncompressed and 113,120 bytes gzip.
+- Compact HIP catalog: 268,697 bytes uncompressed and 112,597 bytes gzip.
+- Western constellation derivative: 18 curated figures, 215 unique HIP
+  anchors, and 7,459 bytes uncompressed.
 - Warm mean over 100 runs: 1.067 ms for homepage selection and 0.567 ms for a
   complete astronomical snapshot.
 - Browser Canvas redraws observed during desktop QA: 0.8–1.5 ms at device pixel
@@ -133,19 +155,22 @@ Measured locally on 2026-08-25 after a production static export:
   smoothing; its glow is rendered separately so the lunar limb remains crisp.
 - Upcoming-night selection produced a valid astronomical night for all 50
   destinations in 43.26 ms total during the fixed-date verification run.
-- A route-by-route browser check on 2026-08-25 loaded all 50 English destination
-  pages: 15 opened on live astronomical night, 35 on the upcoming-night
-  preview, and every page displayed at least 2,352 catalog stars.
+- The computation regression covers all 100 observation sites at eight instants
+  across a complete day. Every site produces either its own live astronomical
+  night or its own valid upcoming-night snapshot; locations are never
+  substituted.
 - Responsive browser QA kept the homepage sky visible at 1024 px tablet and
   390 px mobile widths, with no horizontal overflow and the limitation notice
   visible in English and German.
-- Destination responsive QA covered 1,440 px desktop, 1,024 px tablet, and
+- Destination responsive QA covered 1,280 px desktop, 1,024 px tablet, and
   390 px mobile widths. The night card, local-language caveat, and navigation
-  remained inside the viewport; daylight locations showed the upcoming-night
-  guard instead of an empty daytime dome.
+  remained inside the viewport; direct daylight views honestly rendered zero
+  visible stars and offered the explicit next-night action.
 - Browser QA covered live navigation, upcoming and fixed preview navigation,
   return to live, invalid cross-destination preview rejection, English/German
-  labels, named months, and a daylight snapshot with zero visible catalog stars.
+  labels, named months, a daylight snapshot with zero visible catalog stars,
+  both site switches, constellation toggle, keyboard focus, active highlighting,
+  and no browser console errors. The measured Canvas redraw was 1.30 ms.
 
 QA captures:
 

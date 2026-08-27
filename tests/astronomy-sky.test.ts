@@ -4,11 +4,15 @@ import test from "node:test";
 
 import { computeSky, computeSunHorizontal } from "../lib/astronomy/compute-sky.js";
 import { brightStarCatalogMetadata, brightStars } from "../lib/astronomy/catalog.js";
+import { altitudeLabel, buildConstellationSummaries, directionLabel } from "../lib/astronomy/constellation-summary.js";
+import { constellationCopyById } from "../lib/astronomy/constellation-copy.js";
+import { projectConstellations, slerp, type TransformedCatalogStar } from "../lib/astronomy/constellation-transform.js";
+import { westernConstellations, westernConstellationMetadata } from "../lib/astronomy/constellations.js";
 import { findNextAstronomicalNight, isAstronomicalNight, selectInitialDestinationSky } from "../lib/astronomy/next-night.js";
 import { createSkyLocation, resolvePrimaryObservationSite } from "../lib/astronomy/primary-site.js";
 import { classifySkyCondition, getEffectiveLimitingMagnitude } from "../lib/astronomy/visibility.js";
 import { formatSkyLocalTime, shouldScheduleSkyRefresh } from "../lib/astronomy/time.js";
-import type { SkyLocation } from "../lib/astronomy/types.js";
+import type { ConstellationDefinition, SkyLocation } from "../lib/astronomy/types.js";
 import { loadDestinations, loadSites } from "../lib/data/load.js";
 
 const westhavelland: SkyLocation = { id: "westhavelland:core", destinationId: "westhavelland", destinationSlug: "westhavelland", destinationName: "Westhavelland", siteId: "westhavelland-core", siteName: "Westhavelland Core", label: "Westhavelland Core · Westhavelland", lat: 52.72, lon: 12.28, elevationM: 45, timeZone: "Europe/Berlin" };
@@ -20,7 +24,20 @@ test("licensed compact catalog stays within the approved source and size contrac
   assert.equal(brightStarCatalogMetadata.sourceCommit, "ba2dec4eb0f6768914c7fc1051258100214ddf84");
   assert.equal(brightStarCatalogMetadata.license, "CC BY-SA 4.0");
   assert.equal(brightStarCatalogMetadata.magnitudeCutoff, 6);
-  assert.equal(brightStars.length, 5070);
+  assert.equal(brightStarCatalogMetadata.idSystem, "HIP");
+  assert.equal(brightStars.length, 5041);
+});
+
+test("Western constellation data is pinned, licensed, resolvable, and fully curated", () => {
+  assert.equal(westernConstellationMetadata.license, "CC BY-SA 4.0");
+  assert.equal(westernConstellationMetadata.sourceCommit, "014fbb5e59233d133c22f9811af96b67d05a95c9");
+  assert.equal(westernConstellations.length, 18);
+  const starIds = new Set(brightStars.map((star) => star.id));
+  for (const constellation of westernConstellations) {
+    assert.ok(constellationCopyById.has(constellation.id), constellation.id);
+    assert.ok(constellation.linePaths.length > 0, constellation.id);
+    for (const path of constellation.linePaths) for (const starId of path.starIds) assert.ok(starIds.has(starId), `${constellation.id}:${starId}`);
+  }
 });
 
 test("twilight limiting magnitude is bounded and monotonic as the Sun descends", () => {
@@ -37,6 +54,7 @@ test("same location and fixed instant produce deterministic finite sky snapshots
   assert.ok(first.stars.length > 500);
   assert.ok(first.stars.every((star) => Number.isFinite(star.altitudeDeg) && Number.isFinite(star.azimuthDeg)));
   assert.ok(Number.isFinite(first.moon.phaseDeg));
+  assert.deepEqual(second.constellations, first.constellations);
 });
 
 test("same UTC instant at northern and southern sites yields different local skies", () => {
@@ -50,12 +68,49 @@ test("same UTC instant at northern and southern sites yields different local ski
   });
   assert.ok(altitudeDifferences.length > 0);
   assert.ok(Math.max(...altitudeDifferences) > 10);
+  assert.notDeepEqual(north.constellations.map((item) => [item.id, item.centerAltitudeDeg]), south.constellations.map((item) => [item.id, item.centerAltitudeDeg]));
 });
 
 test("daylight does not produce fake catalog stars", () => {
   const snapshot = computeSky(westhavelland, "2027-06-21T12:00:00.000Z");
   assert.equal(snapshot.skyCondition, "daylight");
   assert.equal(snapshot.stars.length, 0);
+  assert.equal(snapshot.constellations.length, 0);
+});
+
+test("constellation lines follow the sphere and clip at the geometric horizon", () => {
+  const vector = (altitudeDeg: number, azimuthDeg: number) => {
+    const altitude = altitudeDeg * Math.PI / 180;
+    const azimuth = azimuthDeg * Math.PI / 180;
+    return { x: Math.cos(altitude) * Math.cos(azimuth), y: -Math.cos(altitude) * Math.sin(azimuth), z: Math.sin(altitude) };
+  };
+  const star = (altitudeDeg: number, azimuthDeg: number): TransformedCatalogStar => ({
+    horizontalVector: vector(altitudeDeg, azimuthDeg), altitudeDeg, azimuthDeg,
+    projected: altitudeDeg > 0 ? { xNormalized: 0, yNormalized: 0 } : null,
+    likelyVisible: altitudeDeg > 0, magnitude: 2,
+  });
+  const definition: ConstellationDefinition = { id: "fixture", skyCulture: "western", iauAbbreviation: "Fix", names: { de: "Test", en: "Fixture" }, linePaths: [{ starIds: [1, 2, 3], weight: "normal" }], explanationId: "fixture" };
+  const result = projectConstellations([definition], new Map([[1, star(35, 350)], [2, star(20, 10)], [3, star(-15, 30)]]), -20);
+  assert.equal(result.length, 1);
+  assert.equal(result[0].visibilityState, "partly-visible");
+  assert.ok(result[0].projectedPaths.length >= 1);
+  assert.ok(result[0].projectedPaths.every((path) => path.points.every((point) => Math.hypot(point.xNormalized, point.yNormalized) <= 1 + 1e-9)));
+  const midpoint = slerp(vector(20, 350), vector(20, 10), 0.5);
+  assert.ok(midpoint.z > 0);
+});
+
+test("constellation summaries use deterministic priorities, compass sectors, and altitude bands", () => {
+  const snapshot = computeSky(westhavelland, "2027-01-01T00:00:00.000Z");
+  const first = buildConstellationSummaries(snapshot.constellations, "en");
+  assert.deepEqual(buildConstellationSummaries(snapshot.constellations, "en"), first);
+  assert.ok(first.length <= 3);
+  assert.equal(directionLabel(0, "en"), "north");
+  assert.equal(directionLabel(45, "de"), "Nordosten");
+  assert.equal(directionLabel(359, "en"), "north");
+  assert.equal(altitudeLabel(14.999, "en"), "near the horizon");
+  assert.equal(altitudeLabel(15, "de"), "niedrig");
+  assert.equal(altitudeLabel(30, "en"), "mid-sky");
+  assert.equal(altitudeLabel(60.001, "de"), "hoch");
 });
 
 test("astronomical computation modules contain no random selection path", () => {
@@ -124,16 +179,27 @@ test("destination pages support live darkness or the upcoming night for all 100 
   }
 });
 
-test("destination client prevents daylight live views and refreshes restored pages", () => {
+test("destination client starts live, preserves fixed preview links, and offers an explicit next-night view", () => {
   const component = readFileSync(new URL("../components/sky/destination-sky-section.tsx", import.meta.url), "utf8");
   const page = readFileSync(new URL("../app/[locale]/stargazing-destinations/[slug]/page.tsx", import.meta.url), "utf8");
-  assert.match(component, /const selection = selectInitialDestinationSky\(location, nowIso\)/);
   assert.match(component, /window\.addEventListener\("pageshow", restore\)/);
-  assert.match(component, /liveSkyAvailable\s*=\s*isAstronomicalNight/);
-  assert.match(component, /currently daylight or twilight on site/);
-  assert.match(component, /if \(linkedPreview\) \{\s*setNextNightInstant\(null\)/);
+  assert.match(component, /setPreview\(linkedPreview\)/);
+  assert.match(component, /setNextNightInstant\(null\)/);
+  assert.match(component, /findNextAstronomicalNight\(location, nowIso\)/);
+  assert.doesNotMatch(component, /selectInitialDestinationSky/);
+  assert.match(component, /Show next night/);
+  assert.match(component, /Show live sky/);
   assert.match(page, /<DestinationSiteExplorer options=\{siteViews\}/);
   const explorer = readFileSync(new URL("../components/sky/destination-site-explorer.tsx", import.meta.url), "utf8");
   assert.match(explorer, /<DestinationSkySection key=\{selected\.location\.id\}/);
   assert.match(explorer, /selected\.monthly\.months\.map/);
+});
+
+test("destination sky exposes constellation toggle, localized summaries, and keyboard focus highlighting", () => {
+  const component = readFileSync(new URL("../components/sky/astronomical-sky.tsx", import.meta.url), "utf8");
+  assert.match(component, /aria-pressed=\{showConstellations\}/);
+  assert.match(component, /Sternbilder anzeigen/);
+  assert.match(component, /What you can see/);
+  assert.match(component, /onFocus=\{\(\) => setActiveConstellationId/);
+  assert.match(component, /Western sky culture/);
 });

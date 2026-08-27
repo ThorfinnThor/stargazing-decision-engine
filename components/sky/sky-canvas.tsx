@@ -2,7 +2,9 @@
 
 import { useEffect, useRef } from "react";
 
+import { constellationCopyById } from "@/lib/astronomy/constellation-copy";
 import type { SkySnapshot } from "@/lib/astronomy/types";
+import type { Locale } from "@/lib/i18n/config";
 
 const backgrounds = {
   daylight: [32, 54, 88],
@@ -59,7 +61,13 @@ function moonTexture(illuminatedFraction: number, angle: number | null) {
   return canvas;
 }
 
-export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; variant: "homepage" | "destination" }) {
+export function SkyCanvas({ snapshot, variant, locale, showConstellations, activeConstellationId }: {
+  snapshot: SkySnapshot;
+  variant: "homepage" | "destination";
+  locale: Locale;
+  showConstellations: boolean;
+  activeConstellationId: string | null;
+}) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
     const canvas = ref.current;
@@ -84,6 +92,29 @@ export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; varian
       gradient.addColorStop(1, `rgb(${red} ${green} ${blue})`);
       context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.fillStyle = gradient; context.fill();
       context.save(); context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.clip();
+      const drawConstellation = (constellationId: string, active: boolean) => {
+        const constellation = snapshot.constellations.find((item) => item.id === constellationId);
+        if (!constellation) return;
+        context.strokeStyle = active ? "rgb(233 196 106 / 75%)" : constellation.visibilityState === "recognizable" ? "rgb(142 197 255 / 24%)" : "rgb(142 197 255 / 11%)";
+        context.lineWidth = active ? (variant === "homepage" ? 1.25 : 1.5) : (variant === "homepage" ? 0.75 : 1);
+        context.lineCap = "round";
+        context.lineJoin = "round";
+        for (const path of constellation.projectedPaths) {
+          context.beginPath();
+          path.points.forEach((point, index) => {
+            const x = center + point.xNormalized * radius;
+            const y = center + point.yNormalized * radius;
+            if (index === 0) context.moveTo(x, y);
+            else context.lineTo(x, y);
+          });
+          context.stroke();
+        }
+      };
+      if (showConstellations) {
+        for (const constellation of snapshot.constellations) {
+          if (constellation.id !== activeConstellationId) drawConstellation(constellation.id, false);
+        }
+      }
       for (const star of snapshot.stars) {
         const x = center + star.xNormalized * radius;
         const y = center + star.yNormalized * radius;
@@ -92,6 +123,7 @@ export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; varian
         context.globalAlpha = star.opacity; context.fillStyle = starColor(star.colorIndex); context.fill();
       }
       context.globalAlpha = 1;
+      if (showConstellations && activeConstellationId) drawConstellation(activeConstellationId, true);
       if (snapshot.moon.aboveHorizon && snapshot.moon.xNormalized !== null && snapshot.moon.yNormalized !== null) {
         const x = center + snapshot.moon.xNormalized * radius;
         const y = center + snapshot.moon.yNormalized * radius;
@@ -101,6 +133,25 @@ export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; varian
         const texture = moonTexture(snapshot.moon.illuminatedFraction, snapshot.moon.brightLimbScreenAngleRad);
         context.save(); context.imageSmoothingEnabled = true; context.imageSmoothingQuality = "high";
         context.drawImage(texture, x - diameter / 2, y - diameter / 2, diameter, diameter); context.restore();
+      }
+      if (showConstellations) {
+        const labels = snapshot.constellations
+          .filter((constellation) => constellation.visibilityState === "recognizable" && constellation.labelXNormalized !== null && constellation.labelYNormalized !== null)
+          .slice(0, variant === "homepage" ? 2 : 3);
+        context.font = `${variant === "homepage" ? 9 : 10}px ui-monospace, monospace`;
+        context.textAlign = "center";
+        context.textBaseline = "middle";
+        for (const constellation of labels) {
+          const labelX = constellation.labelXNormalized as number;
+          const labelY = constellation.labelYNormalized as number;
+          const moonDistance = snapshot.moon.xNormalized === null || snapshot.moon.yNormalized === null
+            ? Infinity
+            : Math.hypot(labelX - snapshot.moon.xNormalized, labelY - snapshot.moon.yNormalized);
+          if (moonDistance < 0.16) continue;
+          context.fillStyle = constellation.id === activeConstellationId ? "rgb(233 196 106)" : "rgb(142 197 255 / 70%)";
+          const name = constellationCopyById.get(constellation.id)?.name[locale] ?? constellation.iauAbbreviation;
+          context.fillText(name, center + labelX * radius, center + labelY * radius);
+        }
       }
       context.restore();
       context.strokeStyle = "rgb(142 197 255 / 32%)"; context.lineWidth = 1; context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.stroke();
@@ -114,6 +165,6 @@ export function SkyCanvas({ snapshot, variant }: { snapshot: SkySnapshot; varian
     const observer = new ResizeObserver(() => requestAnimationFrame(draw));
     observer.observe(canvas);
     return () => observer.disconnect();
-  }, [snapshot, variant]);
+  }, [activeConstellationId, locale, showConstellations, snapshot, variant]);
   return <canvas className="sky-canvas" ref={ref} aria-hidden="true" />;
 }
