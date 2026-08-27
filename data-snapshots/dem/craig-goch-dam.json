@@ -1,0 +1,33 @@
+{
+  "siteId": "craig-goch-dam",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    52.33,
+    -3.631
+  ],
+  "tile": "N52_00_W004_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N52_00_W004_00_DEM/Copernicus_DSM_COG_10_N52_00_W004_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 456.913,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 450.767,
+      "validSampleCount": 224
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 375.785,
+      "validSampleCount": 3592
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:47:16.319612Z"
+}

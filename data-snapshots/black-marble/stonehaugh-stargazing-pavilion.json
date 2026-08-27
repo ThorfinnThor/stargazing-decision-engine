@@ -1,0 +1,158 @@
+{
+  "siteId": "stonehaugh-stargazing-pavilion",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 105,
+          "totalPixelCount": 105
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.007111,
+      "coverage": 0.999593,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.00513,
+          "coverage": 1,
+          "validPixelCount": 2458,
+          "totalPixelCount": 2458
+        },
+        {
+          "year": 2024,
+          "radiance": 0.007111,
+          "coverage": 1,
+          "validPixelCount": 2458,
+          "totalPixelCount": 2458
+        },
+        {
+          "year": 2023,
+          "radiance": 0.01956,
+          "coverage": 0.999593,
+          "validPixelCount": 2457,
+          "totalPixelCount": 2458
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.048631,
+      "coverage": 0.992677,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.044851,
+          "coverage": 0.993458,
+          "validPixelCount": 20350,
+          "totalPixelCount": 20484
+        },
+        {
+          "year": 2024,
+          "radiance": 0.048631,
+          "coverage": 0.992677,
+          "validPixelCount": 20334,
+          "totalPixelCount": 20484
+        },
+        {
+          "year": 2023,
+          "radiance": 0.096449,
+          "coverage": 0.992726,
+          "validPixelCount": 20335,
+          "totalPixelCount": 20484
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.903636,
+      "coverage": 0.959271,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.903636,
+          "coverage": 0.961487,
+          "validPixelCount": 116312,
+          "totalPixelCount": 120971
+        },
+        {
+          "year": 2024,
+          "radiance": 0.862408,
+          "coverage": 0.960437,
+          "validPixelCount": 116185,
+          "totalPixelCount": 120971
+        },
+        {
+          "year": 2023,
+          "radiance": 0.907864,
+          "coverage": 0.959271,
+          "validPixelCount": 116044,
+          "totalPixelCount": 120971
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.007111,
+  "radiance10to30": 0.048631,
+  "radiance30to75": 0.903636,
+  "alanExposure": 0.073625,
+  "darknessScore": 86.39,
+  "coverage": 0.959271,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:25:13.889873Z"
+}

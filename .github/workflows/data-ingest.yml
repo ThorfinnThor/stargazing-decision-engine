@@ -38,13 +38,15 @@ permissions:
   contents: write
 
 concurrency:
-  group: data-ingest-main
+  group: data-ingest-${{ github.ref }}
   cancel-in-progress: false
 
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    # A complete three-source refresh for 50 new sites is intentionally one
+    # auditable batch and can take several hours on the hosted runner.
+    timeout-minutes: 360
     env:
       CDSAPI_KEY: ${{ secrets.CDSAPI_KEY }}
       EARTHDATA_TOKEN: ${{ secrets.EARTHDATA_TOKEN }}
@@ -87,6 +89,10 @@ jobs:
           test -s /tmp/stargazing-sites
           echo "count=$(wc -l < /tmp/stargazing-sites | tr -d ' ')" >> "$GITHUB_OUTPUT"
           cat /tmp/stargazing-sites
+      - name: Prepare normalized source data
+        run: |
+          pnpm data:seed
+          pnpm data:normalize
       - name: Fetch and process optional source snapshots
         env:
           REFRESH_ERA5: ${{ inputs.refresh_era5 }}
@@ -149,4 +155,4 @@ jobs:
             exit 0
           fi
           git commit -m "chore(data): refresh static snapshots"
-          git push
+          git push origin "HEAD:${GITHUB_REF_NAME}"

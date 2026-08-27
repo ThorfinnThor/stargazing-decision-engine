@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "./types.js";
+import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile, SiteMonthlySummary } from "./types.js";
 import type { NightPreviewFile } from "../astronomy/types.js";
 
 export interface SeoPageRecord {
@@ -59,6 +59,10 @@ export function loadNightPreviews(): NightPreviewFile {
 
 export function loadDestinationMonthly(slug: string): DestinationMonthlySummary {
   return readPublished<DestinationMonthlySummary>(`monthly/destinations/${slug}.json`);
+}
+
+export function loadSiteMonthly(slug: string): SiteMonthlySummary {
+  return readPublished<SiteMonthlySummary>(`monthly/sites/${slug}.json`);
 }
 
 export function listMeteorShowerEvents(year = 2027) {

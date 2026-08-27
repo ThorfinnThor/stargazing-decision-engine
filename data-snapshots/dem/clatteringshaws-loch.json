@@ -1,0 +1,33 @@
+{
+  "siteId": "clatteringshaws-loch",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    55.064,
+    -4.275
+  ],
+  "tile": "N55_00_W005_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N55_00_W005_00_DEM/Copernicus_DSM_COG_10_N55_00_W005_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 172.5,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 172.5,
+      "validSampleCount": 238
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 172.5,
+      "validSampleCount": 3822
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:43:45.277014Z"
+}

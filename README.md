@@ -129,7 +129,8 @@ redirects. See [`docs/affiliate-setup.md`](docs/affiliate-setup.md).
 Gear guides are static specification-analysis pages with no scraped prices or
 availability claims. See [`docs/gear-methodology.md`](docs/gear-methodology.md).
 
-The current catalog contains 50 destinations with 50 complete reviewed real
-score snapshots. Synthetic scoring remains only as an isolated development
+The current catalog contains 50 destinations with 100 complete reviewed real
+observation-site score snapshots. Every destination exposes two site-specific
+sky and monthly-score views. Synthetic scoring remains only as an isolated development
 fixture and cannot feed calendars, meteor rankings, short trips, or the
 production manifest.

@@ -1,0 +1,33 @@
+{
+  "siteId": "pinon-flats-campground",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    37.726,
+    -105.518
+  ],
+  "tile": "N37_00_W106_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N37_00_W106_00_DEM/Copernicus_DSM_COG_10_N37_00_W106_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 2482.757,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2483.478,
+      "validSampleCount": 250
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2482.492,
+      "validSampleCount": 4151
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T21:18:19.675901Z"
+}

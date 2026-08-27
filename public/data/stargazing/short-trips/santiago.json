@@ -3,14 +3,14 @@
   "originName": "Santiago",
   "countryCode": "CL",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-23T17:05:59.974562Z",
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
   "entries": [
     {
       "rank": 1,
       "destinationId": "el-leoncito",
       "destinationSlug": "el-leoncito",
       "destinationName": "El Leoncito",
-      "distanceKm": 223.74,
+      "distanceKm": 224.15,
       "distanceBand": "regional",
       "bestMonths": [
         {
@@ -91,7 +91,7 @@
       "stargazingTripScore": 94,
       "distanceUtility": 85,
       "shortTripScore": 91.75,
-      "bestSiteId": "el-leoncito-observatory",
+      "bestSiteId": "el-leoncito-cesco-night-visit",
       "stayArea": {
         "id": "barreal",
         "name": "Barreal",
@@ -100,7 +100,7 @@
       "campingAvailable": null,
       "reasons": [
         "Best month score 94 in month 11.",
-        "Distance is 223.74 km by great-circle calculation; no road time is estimated.",
+        "Distance is 224.15 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Barreal."
       ],
       "confidenceLevel": "moderate"
@@ -202,6 +202,106 @@
         "Best month score 94 in month 1.",
         "Distance is 380.43 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Paihuano."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 3,
+      "destinationId": "la-silla",
+      "destinationSlug": "la-silla",
+      "destinationName": "La Silla Observatory",
+      "distanceKm": 358.65,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 1,
+          "score": 86
+        },
+        {
+          "month": 2,
+          "score": 86
+        },
+        {
+          "month": 11,
+          "score": 86
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 85,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 85,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 79,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 78,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 80,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 85,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 86,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 86,
+      "distanceUtility": 60,
+      "shortTripScore": 79.5,
+      "bestSiteId": "collowara-tourist-observatory",
+      "stayArea": {
+        "id": "vicuna",
+        "name": "Vicuña",
+        "affiliateQuery": "Vicuna Chile"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 86 in month 1.",
+        "Distance is 358.65 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Vicuña."
       ],
       "confidenceLevel": "high"
     }

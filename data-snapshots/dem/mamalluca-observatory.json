@@ -1,0 +1,36 @@
+{
+  "siteId": "mamalluca-observatory",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -30.001,
+    -70.685
+  ],
+  "tile": "S31_00_W071_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S31_00_W071_00_DEM/Copernicus_DSM_COG_10_S31_00_W071_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 937.632,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": null,
+      "validSampleCount": 0
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": null,
+      "validSampleCount": 0
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [
+    "0.25 km neighborhood crosses the downloaded tile boundary and was omitted",
+    "1 km neighborhood crosses the downloaded tile boundary and was omitted"
+  ],
+  "retrievedAt": "2026-08-26T21:04:20.763578Z"
+}

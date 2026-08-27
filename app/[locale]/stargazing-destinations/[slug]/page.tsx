@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { loadDestination, loadDestinationMonthly, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSites } from "@/lib/data/load";
-import { createSkyLocation, resolvePrimaryObservationSite } from "@/lib/astronomy/primary-site";
+import { loadDestination, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
-import { DestinationSkySection } from "@/components/sky/destination-sky-section";
+import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
-import { formatMonth } from "@/lib/i18n/months";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -16,21 +15,6 @@ export const dynamicParams = false;
 export function generateStaticParams() {
   const destinations = loadDestinations();
   return locales.flatMap((locale) => destinations.map((destination) => ({ locale, slug: destination.slug })));
-}
-
-function readParams(params: { locale: string; slug: string }) {
-  if (!isLocale(params.locale)) return null;
-  try {
-    const destination = loadDestination(params.slug);
-    const path = `/${params.locale}/stargazing-destinations/${params.slug}/`;
-    const allSites = loadSites();
-    const sites = allSites.filter((site) => site.destinationId === destination.id);
-    const primarySite = resolvePrimaryObservationSite(destination, allSites);
-    const skyLocation = primarySite ? createSkyLocation(destination, primarySite) : null;
-    const skyPreviews = skyLocation ? loadNightPreviews().previews.filter((preview) => preview.destinationId === destination.id && preview.siteId === skyLocation.siteId) : [];
-    const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
-    return { locale: params.locale as Locale, destination, sites, image, skyLocation, skyPreviews, monthly: loadDestinationMonthly(params.slug), seo: loadSeoPage(path) };
-  } catch { return null; }
 }
 
 function formatCaveat(caveat: string, locale: Locale) {
@@ -53,6 +37,44 @@ function formatCaveat(caveat: string, locale: Locale) {
   return caveat;
 }
 
+function readParams(params: { locale: string; slug: string }) {
+  if (!isLocale(params.locale)) return null;
+  try {
+    const locale = params.locale as Locale;
+    const destination = loadDestination(params.slug);
+    const path = `/${params.locale}/stargazing-destinations/${params.slug}/`;
+    const allSites = loadSites();
+    const sitesById = new Map(allSites.map((site) => [site.id, site]));
+    const sites = destination.observationSiteIds.flatMap((siteId) => {
+      const site = sitesById.get(siteId);
+      return site?.destinationId === destination.id ? [site] : [];
+    });
+    const nightPreviews = loadNightPreviews().previews;
+    const siteViews = sites.flatMap((site): DestinationSiteView[] => {
+      const location = createSkyLocation(destination, site);
+      if (!location) return [];
+      const siteMonthly = loadSiteMonthly(site.slug);
+      const caveats = [...new Set(siteMonthly.scores.flatMap((score) => score.caveats))].map((caveat) => formatCaveat(caveat, locale));
+      return [{
+        site: { id: site.id, name: site.name, publicAccess: site.publicAccess },
+        location,
+        previews: nightPreviews.filter((preview) => preview.destinationId === destination.id && preview.siteId === site.id),
+        monthly: {
+          destinationId: destination.id,
+          siteId: site.id,
+          dataStatus: siteMonthly.dataStatus,
+          algorithmVersion: siteMonthly.algorithmVersion,
+          generatedAt: siteMonthly.generatedAt,
+          caveats,
+          months: siteMonthly.scores.map((score) => ({ month: score.month, score: score.stargazingTrip, confidenceLevel: score.confidenceLevel })),
+        },
+      }];
+    });
+    const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
+    return { locale, destination, sites, siteViews, image, seo: loadSeoPage(path) };
+  } catch { return null; }
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
@@ -68,11 +90,11 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, image, skyLocation, skyPreviews, monthly, locale, seo } = resolved;
+  const { destination, sites, siteViews, image, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Static dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazing.local/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
-  const hasRealScores = monthly.dataStatus === "real";
+  const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
@@ -93,9 +115,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           {image.attribution} · <a href={image.sourceUrl ?? undefined} rel="noreferrer">{isGerman ? "Quelle" : "Source"}</a> · <a href={image.licenseUrl ?? undefined} rel="noreferrer">{isGerman ? "Lizenz" : "License"}</a>
         </figcaption>
       </figure>}
-      {skyLocation && <section className="destination-sky-section" id="night-sky" aria-label={isGerman ? "Astronomischer Himmel" : "Astronomical sky"}>
-        <DestinationSkySection key={skyLocation.id} location={skyLocation} previews={skyPreviews} locale={locale} />
-      </section>}
+      <DestinationSiteExplorer options={siteViews} locale={locale} />
       <section className="event-summary" aria-labelledby="destination-access-title">
         <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>
         {sites.map((site) => (
@@ -117,19 +137,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           {isGerman ? "Dieses Profil beschreibt die astronomischen Bedingungen und ist keine Reiseempfehlung für den angegebenen Standort." : "This profile describes astronomical conditions and is not a travel recommendation for the listed site."}
         </p>}
       </section>
-      <section className="event-summary" aria-labelledby="destination-months-title">
-        <h2 id="destination-months-title">{isGerman ? "Monatliche Werte" : "Monthly scores"}</h2>
-        <div className="event-table-wrap">
-          <table className="event-table">
-            <thead><tr><th>{isGerman ? "Monat" : "Month"}</th><th>{isGerman ? "Sternbeobachtung" : "Stargazing"}</th><th>{isGerman ? "Konfidenz" : "Confidence"}</th></tr></thead>
-            <tbody>{monthly.months.map((month) => <tr key={month.month}><td>{formatMonth(month.month, locale)}</td><td>{month.score}</td><td>{month.confidenceLevel}</td></tr>)}</tbody>
-          </table>
-        </div>
-      </section>
-      {monthly.caveats.length > 0 && <section className="event-summary" aria-labelledby="destination-caveats-title">
-        <h2 id="destination-caveats-title">{isGerman ? "Datengrenzen" : "Data limitations"}</h2>
-        <ul>{monthly.caveats.map((caveat) => <li key={caveat}>{formatCaveat(caveat, locale)}</li>)}</ul>
-      </section>}
       <AffiliateDisclosure locale={locale} />
     </main>
   );

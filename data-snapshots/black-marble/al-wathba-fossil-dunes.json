@@ -1,0 +1,158 @@
+{
+  "siteId": "al-wathba-fossil-dunes",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 6.301811,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 6.301811,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2024,
+          "radiance": 5.932151,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2023,
+          "radiance": 6.739021,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 17.860138,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 17.860138,
+          "coverage": 1,
+          "validPixelCount": 1541,
+          "totalPixelCount": 1541
+        },
+        {
+          "year": 2024,
+          "radiance": 17.676524,
+          "coverage": 1,
+          "validPixelCount": 1541,
+          "totalPixelCount": 1541
+        },
+        {
+          "year": 2023,
+          "radiance": 20.352777,
+          "coverage": 1,
+          "validPixelCount": 1541,
+          "totalPixelCount": 1541
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 25.899799,
+      "coverage": 0.988087,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 26.314405,
+          "coverage": 0.993927,
+          "validPixelCount": 12765,
+          "totalPixelCount": 12843
+        },
+        {
+          "year": 2024,
+          "radiance": 25.899799,
+          "coverage": 0.988087,
+          "validPixelCount": 12690,
+          "totalPixelCount": 12843
+        },
+        {
+          "year": 2023,
+          "radiance": 25.828253,
+          "coverage": 0.989722,
+          "validPixelCount": 12711,
+          "totalPixelCount": 12843
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 4.714338,
+      "coverage": 0.968844,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 4.956375,
+          "coverage": 0.978842,
+          "validPixelCount": 74207,
+          "totalPixelCount": 75811
+        },
+        {
+          "year": 2024,
+          "radiance": 4.714338,
+          "coverage": 0.972036,
+          "validPixelCount": 73691,
+          "totalPixelCount": 75811
+        },
+        {
+          "year": 2023,
+          "radiance": 4.671357,
+          "coverage": 0.968844,
+          "validPixelCount": 73449,
+          "totalPixelCount": 75811
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 6.301811,
+  "radiance2to10": 17.860138,
+  "radiance10to30": 25.899799,
+  "radiance30to75": 4.714338,
+  "alanExposure": 2.443886,
+  "darknessScore": 27.79,
+  "coverage": 0.968844,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:38:17.240888Z"
+}

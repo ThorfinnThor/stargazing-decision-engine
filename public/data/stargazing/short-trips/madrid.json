@@ -3,7 +3,7 @@
   "originName": "Madrid",
   "countryCode": "ES",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-08-23T17:05:59.974562Z",
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
   "entries": [
     {
       "rank": 1,
@@ -110,7 +110,7 @@
       "destinationId": "montsec",
       "destinationSlug": "montsec",
       "destinationName": "Montsec",
-      "distanceKm": 413.66,
+      "distanceKm": 412.11,
       "distanceBand": "weekend",
       "bestMonths": [
         {
@@ -119,7 +119,7 @@
         },
         {
           "month": 8,
-          "score": 86
+          "score": 87
         },
         {
           "month": 3,
@@ -164,7 +164,7 @@
         },
         {
           "month": 8,
-          "score": 86,
+          "score": 87,
           "confidenceLevel": "high"
         },
         {
@@ -191,7 +191,7 @@
       "stargazingTripScore": 89,
       "distanceUtility": 60,
       "shortTripScore": 81.75,
-      "bestSiteId": "montsec-observing-area",
+      "bestSiteId": "montsec-astronomical-park",
       "stayArea": {
         "id": "ager",
         "name": "Àger",
@@ -200,10 +200,110 @@
       "campingAvailable": null,
       "reasons": [
         "Best month score 89 in month 7.",
-        "Distance is 413.66 km by great-circle calculation; no road time is estimated.",
+        "Distance is 412.11 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Àger."
       ],
       "confidenceLevel": "high"
+    },
+    {
+      "rank": 3,
+      "destinationId": "sierra-nevada",
+      "destinationSlug": "sierra-nevada",
+      "destinationName": "Sierra Nevada",
+      "distanceKm": 370.49,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 85
+        },
+        {
+          "month": 8,
+          "score": 85
+        },
+        {
+          "month": 6,
+          "score": 84
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 69,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 69,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 75,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 84,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 85,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 85,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 72,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 67,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 85,
+      "distanceUtility": 60,
+      "shortTripScore": 78.75,
+      "bestSiteId": "hoya-de-la-mora-perseids-route",
+      "stayArea": {
+        "id": "capileira",
+        "name": "Capileira",
+        "affiliateQuery": "Capileira Sierra Nevada"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 85 in month 7.",
+        "Distance is 370.49 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Capileira."
+      ],
+      "confidenceLevel": "moderate"
     }
   ]
 }

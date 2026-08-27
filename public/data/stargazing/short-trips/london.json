@@ -3,7 +3,7 @@
   "originName": "London",
   "countryCode": "GB",
   "maxShortTripKm": 350,
-  "generatedAt": "2026-08-23T17:05:59.974562Z",
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
   "entries": [
     {
       "rank": 1,
@@ -110,46 +110,46 @@
       "destinationId": "brecon-beacons",
       "destinationSlug": "brecon-beacons",
       "destinationName": "Bannau Brycheiniog",
-      "distanceKm": 231.34,
-      "distanceBand": "regional",
+      "distanceKm": 251.52,
+      "distanceBand": "weekend",
       "bestMonths": [
         {
           "month": 4,
-          "score": 58
+          "score": 60
         },
         {
           "month": 9,
-          "score": 56
+          "score": 57
         },
         {
           "month": 3,
-          "score": 54
+          "score": 56
         }
       ],
       "monthlyStargazingTripScores": [
         {
           "month": 1,
-          "score": 50,
+          "score": 52,
           "confidenceLevel": "high"
         },
         {
           "month": 2,
-          "score": 53,
+          "score": 55,
           "confidenceLevel": "high"
         },
         {
           "month": 3,
-          "score": 54,
+          "score": 56,
           "confidenceLevel": "high"
         },
         {
           "month": 4,
-          "score": 58,
+          "score": 60,
           "confidenceLevel": "high"
         },
         {
           "month": 5,
-          "score": 54,
+          "score": 56,
           "confidenceLevel": "high"
         },
         {
@@ -159,7 +159,7 @@
         },
         {
           "month": 7,
-          "score": 51,
+          "score": 52,
           "confidenceLevel": "high"
         },
         {
@@ -169,29 +169,29 @@
         },
         {
           "month": 9,
-          "score": 56,
+          "score": 57,
           "confidenceLevel": "high"
         },
         {
           "month": 10,
-          "score": 53,
+          "score": 55,
           "confidenceLevel": "high"
         },
         {
           "month": 11,
-          "score": 51,
+          "score": 53,
           "confidenceLevel": "high"
         },
         {
           "month": 12,
-          "score": 50,
+          "score": 52,
           "confidenceLevel": "high"
         }
       ],
-      "stargazingTripScore": 58,
-      "distanceUtility": 85,
-      "shortTripScore": 64.75,
-      "bestSiteId": "brecon-dark-sky",
+      "stargazingTripScore": 60,
+      "distanceUtility": 60,
+      "shortTripScore": 60,
+      "bestSiteId": "usk-reservoir-dark-sky-site",
       "stayArea": {
         "id": "brecon-town",
         "name": "Brecon",
@@ -199,14 +199,114 @@
       },
       "campingAvailable": null,
       "reasons": [
-        "Best month score 58 in month 4.",
-        "Distance is 231.34 km by great-circle calculation; no road time is estimated.",
+        "Best month score 60 in month 4.",
+        "Distance is 251.52 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Brecon."
       ],
       "confidenceLevel": "high"
     },
     {
       "rank": 3,
+      "destinationId": "elan-valley",
+      "destinationSlug": "elan-valley",
+      "destinationName": "Elan Valley",
+      "distanceKm": 257.07,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 60
+        },
+        {
+          "month": 9,
+          "score": 57
+        },
+        {
+          "month": 3,
+          "score": 56
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 60,
+      "distanceUtility": 60,
+      "shortTripScore": 60,
+      "bestSiteId": "craig-goch-dam",
+      "stayArea": {
+        "id": "rhayader",
+        "name": "Rhayader",
+        "affiliateQuery": "Rhayader Elan Valley"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 60 in month 4.",
+        "Distance is 257.07 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Rhayader."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "north-york-moors",
       "destinationSlug": "north-york-moors",
       "destinationName": "North York Moors",
@@ -302,106 +402,6 @@
         "Best month score 60 in month 4.",
         "Distance is 312.91 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Dalby village."
-      ],
-      "confidenceLevel": "high"
-    },
-    {
-      "rank": 4,
-      "destinationId": "elan-valley",
-      "destinationSlug": "elan-valley",
-      "destinationName": "Elan Valley",
-      "distanceKm": 253.98,
-      "distanceBand": "weekend",
-      "bestMonths": [
-        {
-          "month": 4,
-          "score": 59
-        },
-        {
-          "month": 9,
-          "score": 57
-        },
-        {
-          "month": 2,
-          "score": 55
-        }
-      ],
-      "monthlyStargazingTripScores": [
-        {
-          "month": 1,
-          "score": 52,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 2,
-          "score": 55,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 3,
-          "score": 55,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 4,
-          "score": 59,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 5,
-          "score": 55,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 6,
-          "score": 0,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 7,
-          "score": 53,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 8,
-          "score": 54,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 9,
-          "score": 57,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 10,
-          "score": 54,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 11,
-          "score": 53,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 12,
-          "score": 52,
-          "confidenceLevel": "high"
-        }
-      ],
-      "stargazingTripScore": 59,
-      "distanceUtility": 60,
-      "shortTripScore": 59.25,
-      "bestSiteId": "elan-valley-reservoir",
-      "stayArea": {
-        "id": "rhayader",
-        "name": "Rhayader",
-        "affiliateQuery": "Rhayader Elan Valley"
-      },
-      "campingAvailable": null,
-      "reasons": [
-        "Best month score 59 in month 4.",
-        "Distance is 253.98 km by great-circle calculation; no road time is estimated.",
-        "Stay area metadata: Rhayader."
       ],
       "confidenceLevel": "high"
     }

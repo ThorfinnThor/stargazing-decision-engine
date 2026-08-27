@@ -1,0 +1,158 @@
+{
+  "siteId": "davis-mountains-skyline-drive",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 70,
+          "totalPixelCount": 70
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.02425,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.024147,
+          "coverage": 1,
+          "validPixelCount": 1634,
+          "totalPixelCount": 1634
+        },
+        {
+          "year": 2024,
+          "radiance": 0.02425,
+          "coverage": 1,
+          "validPixelCount": 1634,
+          "totalPixelCount": 1634
+        },
+        {
+          "year": 2023,
+          "radiance": 0.028163,
+          "coverage": 1,
+          "validPixelCount": 1634,
+          "totalPixelCount": 1634
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.001241,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.001147,
+          "coverage": 1,
+          "validPixelCount": 13594,
+          "totalPixelCount": 13594
+        },
+        {
+          "year": 2024,
+          "radiance": 0.001241,
+          "coverage": 1,
+          "validPixelCount": 13594,
+          "totalPixelCount": 13594
+        },
+        {
+          "year": 2023,
+          "radiance": 0.001275,
+          "coverage": 1,
+          "validPixelCount": 13594,
+          "totalPixelCount": 13594
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.101644,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.161518,
+          "coverage": 1,
+          "validPixelCount": 80335,
+          "totalPixelCount": 80335
+        },
+        {
+          "year": 2024,
+          "radiance": 0.101644,
+          "coverage": 1,
+          "validPixelCount": 80335,
+          "totalPixelCount": 80335
+        },
+        {
+          "year": 2023,
+          "radiance": 0.100001,
+          "coverage": 1,
+          "validPixelCount": 80335,
+          "totalPixelCount": 80335
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.02425,
+  "radiance10to30": 0.001241,
+  "radiance30to75": 0.101644,
+  "alanExposure": 0.017055,
+  "darknessScore": 89.49,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-08-26T20:49:52.020665Z"
+}
