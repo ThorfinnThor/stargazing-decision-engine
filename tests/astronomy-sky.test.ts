@@ -179,14 +179,14 @@ test("destination pages support live darkness or the upcoming night for all 100 
   }
 });
 
-test("destination client starts live, preserves fixed preview links, and offers an explicit next-night view", () => {
+test("destination client defaults to a useful night view, preserves fixed preview links, and keeps live mode available", () => {
   const component = readFileSync(new URL("../components/sky/destination-sky-section.tsx", import.meta.url), "utf8");
   const page = readFileSync(new URL("../app/[locale]/stargazing-destinations/[slug]/page.tsx", import.meta.url), "utf8");
   assert.match(component, /window\.addEventListener\("pageshow", restore\)/);
   assert.match(component, /setPreview\(linkedPreview\)/);
-  assert.match(component, /setNextNightInstant\(null\)/);
+  assert.match(component, /selectInitialDestinationSky\(location, nowIso\)/);
+  assert.match(component, /initialSelection\?\.mode === "night-preview"/);
   assert.match(component, /findNextAstronomicalNight\(location, nowIso\)/);
-  assert.doesNotMatch(component, /selectInitialDestinationSky/);
   assert.match(component, /Show next night/);
   assert.match(component, /Show live sky/);
   assert.match(page, /<DestinationSiteExplorer options=\{siteViews\}/);
@@ -202,4 +202,6 @@ test("destination sky exposes constellation toggle, localized summaries, and key
   assert.match(component, /What you can see/);
   assert.match(component, /onFocus=\{\(\) => setActiveConstellationId/);
   assert.match(component, /Western sky culture/);
+  assert.match(component, /Moon.*the horizon.*illuminated/);
+  assert.match(component, /Mond.*dem Horizont.*beleuchtet/);
 });
