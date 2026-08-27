@@ -11,6 +11,13 @@
   --blue: #8ec5ff;
   --gold: #e9c46a;
   --muted: #aab2c8;
+  --constellation-line: #8ec5ff;
+  --constellation-line-opacity: 0.24;
+  --constellation-line-partial-opacity: 0.11;
+  --constellation-active: #e9c46a;
+  --constellation-active-opacity: 0.75;
+  --constellation-label-opacity: 0.7;
+  --constellation-star-active: #f4efe4;
 }
 
 * {
@@ -617,6 +624,12 @@ h1 span {
   justify-items: center;
 }
 
+.astronomical-sky-homepage .sky-details {
+  display: grid;
+  width: 100%;
+  justify-items: center;
+}
+
 .sky-canvas {
   display: block;
   width: 100%;
@@ -654,6 +667,17 @@ h1 span {
   max-width: 27rem;
   color: #858fa8;
   font-size: 0.64rem;
+}
+
+.sky-culture-note a {
+  color: inherit;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.sky-featured-names {
+  color: rgb(142 197 255 / 82%);
 }
 
 .sky-mode {
@@ -760,6 +784,127 @@ h1 span {
 .astronomical-sky-destination .sky-caption {
   width: 100%;
   margin-top: 1rem;
+}
+
+.sky-details {
+  min-width: 0;
+}
+
+.constellation-panel {
+  display: grid;
+  gap: 1.25rem;
+  margin-top: 1.5rem;
+}
+
+.constellation-toggle {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  width: fit-content;
+  padding: 0.55rem 0;
+  border: 0;
+  background: transparent;
+  color: #dbe3f4;
+  cursor: pointer;
+  font: 700 0.68rem/1.2 Arial, sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.constellation-toggle-mark {
+  position: relative;
+  width: 2rem;
+  height: 1.05rem;
+  border: 1px solid rgb(142 197 255 / 55%);
+  border-radius: 999px;
+}
+
+.constellation-toggle-mark::after {
+  position: absolute;
+  top: 0.16rem;
+  left: 0.18rem;
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  background: #77839e;
+  content: "";
+  transition: transform 160ms ease, background 160ms ease;
+}
+
+.constellation-toggle[aria-pressed="true"] .constellation-toggle-mark::after {
+  background: var(--constellation-active);
+  transform: translateX(0.88rem);
+}
+
+.constellation-toggle:focus-visible,
+.constellation-summary-card:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.constellation-summary h3 {
+  margin: 0 0 0.8rem;
+  color: var(--blue);
+  font: 0.67rem/1.2 ui-monospace, monospace;
+  letter-spacing: 0.12em;
+}
+
+.constellation-summary-grid {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.constellation-summary-card {
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem;
+  border: 1px solid rgb(142 197 255 / 20%);
+  background: rgb(8 11 23 / 38%);
+  color: var(--muted);
+  cursor: pointer;
+  text-align: left;
+}
+
+.constellation-summary-card strong {
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+}
+
+.constellation-summary-card > span:first-of-type {
+  color: var(--blue);
+  font: 0.62rem/1.4 ui-monospace, monospace;
+  text-transform: uppercase;
+}
+
+.constellation-summary-card > span:last-of-type,
+.constellation-summary-card small,
+.constellation-empty,
+.constellation-daylight-note {
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
+.constellation-summary-card small {
+  color: #7f8aa3;
+}
+
+.constellation-summary-card[aria-pressed="true"] {
+  border-color: var(--constellation-active);
+  box-shadow: inset 3px 0 0 var(--constellation-active);
+}
+
+.constellation-empty,
+.constellation-daylight-note {
+  max-width: 34rem;
+  margin: 0;
+  color: #929db5;
+}
+
+.constellation-daylight-note {
+  margin-top: 0.65rem;
+  color: var(--gold);
 }
 
 .sky-actions button {
