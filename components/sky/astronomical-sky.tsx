@@ -49,6 +49,9 @@ export function AstronomicalSky(props: {
         <strong>{props.location.destinationName}</strong>
         <span>{props.location.siteName} · {localTime}</span>
         <span>{statusCopy[props.locale][snapshot.skyCondition]} · {snapshot.stars.length} {props.locale === "de" ? "sichtbare Katalogsterne" : "visible catalog stars"}</span>
+        <span className="sky-moon-status">{props.locale === "de"
+          ? `Mond ${snapshot.moon.aboveHorizon ? "über" : "unter"} dem Horizont · ${percent} % beleuchtet`
+          : `Moon ${snapshot.moon.aboveHorizon ? "above" : "below"} the horizon · ${percent}% illuminated`}</span>
         {props.variant === "homepage" && constellationSummaries.length > 0 ? <span className="sky-featured-names">{props.locale === "de" ? "Sternbilder" : "Constellations"}: {constellationSummaries.slice(0, 2).map((item) => item.name).join(" · ")}</span> : null}
         {props.destinationHref && <Link href={props.destinationHref}>{props.locale === "de" ? "Location ansehen →" : "View location →"}</Link>}
         <small>{disclaimer}</small>

@@ -78,15 +78,17 @@ the normal document flow on tablet and mobile layouts.
 The server components load committed candidates, catalog data, constellation
 paths, and previews. Client components
 select a homepage location after hydration, compute the current minute, draw one
-Canvas, and update once per minute. On destination pages, **Show next night**
-selects the darkest half-hour sample in the immediately upcoming astronomical
-night. Destination pages always open with the current live sky for their own
-site, including an honest star-free daylight dome. **Show next night** switches
-to the next astronomical night for the same site; **Show live sky** returns to
-the current minute. The committed fixed preview remains a reproducible fallback
-and supports existing deep links. Preview modes have no timer. Destination
-query strings are parsed after mount and validated against that destination and
-its deterministic primary site.
+Canvas, and update once per minute. Destination pages open with the current sky
+during astronomical night and automatically select the darkest half-hour sample
+in the immediately upcoming astronomical night during daylight or twilight. This
+keeps the default destination view useful instead of presenting an apparently
+empty dome. **Show live sky** still exposes the honest current daylight or
+twilight state, and **Show next night** returns to the upcoming night for the same
+site. A visible Moon status explains when the Moon is below the local horizon.
+The committed fixed preview remains a reproducible fallback and supports existing
+deep links. Preview modes have no timer. Destination query strings are parsed
+after mount and validated against that destination and its deterministic primary
+site.
 
 ## Homepage candidate contract
 
