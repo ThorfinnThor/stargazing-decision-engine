@@ -40,8 +40,25 @@ export function NightTimeline({ plan, locale, nowIso }: NightTimelineProps) {
   const isGerman = locale === "de";
   const includeUtcOffset = hasTimeZoneOffsetTransition(plan.timeZone, plan.timelineStartIso, plan.timelineEndIso);
   const formatTime = (instantIso: string) => formatLocalClockTime(locale, plan.timeZone, instantIso, includeUtcOffset);
-  const nowRatio = nowIso && plan.mode === "live-night" && Date.parse(nowIso) >= Date.parse(plan.timelineStartIso) && Date.parse(nowIso) <= Date.parse(plan.timelineEndIso)
+  const nowMs = nowIso ? Date.parse(nowIso) : null;
+  const timelineStartMs = Date.parse(plan.timelineStartIso);
+  const timelineEndMs = Date.parse(plan.timelineEndIso);
+  const nowRatio = nowIso && plan.mode === "live-night" && nowMs !== null && nowMs >= timelineStartMs && nowMs <= timelineEndMs
     ? timelineRatio(nowIso, plan.timelineStartIso, plan.timelineEndIso)
+    : null;
+  const sunset = plan.events.find((event) => event.kind === "sunset");
+  const outsideTimelineMessage = nowIso && nowMs !== null && nowRatio === null
+    ? nowMs < timelineStartMs && sunset
+      ? isGerman
+        ? `Jetzt: ${formatTime(nowIso)} · Die Zeitleiste für heute Nacht beginnt mit Sonnenuntergang um ${formatTime(sunset.instantIso)} Uhr.`
+        : `Now: ${formatTime(nowIso)} · Tonight's timeline begins at sunset, ${formatTime(sunset.instantIso)}.`
+      : nowMs > timelineEndMs
+        ? isGerman
+          ? `Jetzt: ${formatTime(nowIso)} · Die dargestellte Nachtzeitleiste ist beendet.`
+          : `Now: ${formatTime(nowIso)} · The displayed night timeline has ended.`
+        : isGerman
+          ? `Jetzt: ${formatTime(nowIso)} · Die aktuelle Zeit liegt außerhalb der dargestellten Nachtzeitleiste.`
+          : `Now: ${formatTime(nowIso)} · The current time is outside the displayed night timeline.`
     : null;
   const heading = isGerman ? "Nacht-Timeline" : "Night timeline";
   const description = isGerman
@@ -50,6 +67,7 @@ export function NightTimeline({ plan, locale, nowIso }: NightTimelineProps) {
   return <section className="night-timeline" aria-labelledby={`night-timeline-${plan.locationId}`}>
     <h3 id={`night-timeline-${plan.locationId}`}>{heading}</h3>
     <p className="night-timeline-intro">{description}</p>
+    {outsideTimelineMessage ? <p className="night-timeline-now-context">{outsideTimelineMessage}</p> : null}
     <div className="night-timeline-chart">
       <div className="night-timeline-row-labels" aria-hidden="true">
         <span>{isGerman ? "Himmel" : "Sky"}</span>
