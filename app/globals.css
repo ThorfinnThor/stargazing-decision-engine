@@ -600,6 +600,23 @@ h1 span {
   text-transform: uppercase;
 }
 
+.gear-source-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: var(--blue);
+  font-size: 0.72rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+.gear-pro-con {
+  display: block;
+}
+
+.gear-pro-con + .gear-pro-con {
+  margin-top: 0.5rem;
+}
+
 .event-footer {
   padding: 2rem 0 4rem;
   color: var(--muted);
@@ -1549,6 +1566,51 @@ h3 {
 }
 
 @media (max-width: 800px) {
+  .gear-comparison-table,
+  .gear-comparison-table tbody,
+  .gear-comparison-table tr,
+  .gear-comparison-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .gear-comparison-table thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  .gear-comparison-table tbody {
+    display: grid;
+    gap: 1rem;
+  }
+
+  .gear-comparison-table tr {
+    border: 1px solid rgb(142 197 255 / 25%);
+    background: rgb(17 23 42 / 65%);
+  }
+
+  .gear-comparison-table td {
+    display: grid;
+    grid-template-columns: minmax(6.5rem, 34%) minmax(0, 1fr);
+    gap: 0.75rem;
+    padding: 0.8rem;
+    overflow-wrap: anywhere;
+  }
+
+  .gear-comparison-table td::before {
+    color: var(--blue);
+    content: attr(data-label);
+    font: 700 0.62rem/1.4 ui-monospace, monospace;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
   .orbit {
     width: 100%;
     margin-top: 3.5rem;

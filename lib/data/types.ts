@@ -91,11 +91,18 @@ export interface GearGuideItem {
   name: { en: string; de: string };
   whyItMatters: { en: string; de: string };
   coreSpecs: Record<string, string>;
+  localizedCoreSpecs?: { en: Record<string, string>; de: Record<string, string> };
   pros: { en: string[]; de: string[] };
   cons: { en: string[]; de: string[] };
   recommendationBasis: "specification_analysis";
   partnerSearchQuery: string;
   affiliatePartnerId: string | null;
+  source?: {
+    publisher: string;
+    title: string;
+    url: string;
+    checkedAt: string;
+  };
 }
 
 export interface GearGuide {

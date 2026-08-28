@@ -45,7 +45,39 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
       <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p><h1>{guide.title[locale]}</h1><p className="lede">{guide.summary[locale]}</p><p className="event-note">{guide.decisionSummary[locale]}</p></header>
       <section className="event-summary" aria-labelledby="gear-audience-title"><h2 id="gear-audience-title">{isGerman ? "Für wen" : "Who it is for"}</h2><p>{guide.audience[locale]}</p><h2>{isGerman ? "Kaufkriterien" : "Buying criteria"}</h2><ul>{guide.buyingCriteria.map((criterion) => <li key={criterion.en}>{criterion[locale]}</li>)}</ul></section>
-      <section className="event-summary" aria-labelledby="gear-comparison-title"><h2 id="gear-comparison-title">{isGerman ? "Vergleich" : "Comparison"}</h2><div className="event-table-wrap"><table className="event-table"><thead><tr><th>{isGerman ? "Option" : "Option"}</th><th>{isGerman ? "Warum wichtig" : "Why it matters"}</th><th>{isGerman ? "Technische Daten" : "Core specs"}</th><th>{isGerman ? "Stärken / Grenzen" : "Pros / cons"}</th></tr></thead><tbody>{guide.items.map((item) => <tr key={item.name.en}><td>{item.name[locale]}</td><td>{item.whyItMatters[locale]}</td><td>{Object.entries(item.coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td><td>{item.pros[locale].join(", ")} / {item.cons[locale].join(", ")}</td></tr>)}</tbody></table></div></section>
+      <section className="event-summary" aria-labelledby="gear-comparison-title">
+        <h2 id="gear-comparison-title">{isGerman ? "Vergleich" : "Comparison"}</h2>
+        <div className="event-table-wrap">
+          <table className="event-table gear-comparison-table">
+            <thead>
+              <tr>
+                <th>{isGerman ? "Option" : "Option"}</th>
+                <th>{isGerman ? "Warum wichtig" : "Why it matters"}</th>
+                <th>{isGerman ? "Technische Daten" : "Core specs"}</th>
+                <th>{isGerman ? "Stärken / Grenzen" : "Pros / cons"}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {guide.items.map((item) => {
+                const coreSpecs = item.localizedCoreSpecs?.[locale] ?? item.coreSpecs;
+                return <tr key={item.name.en}>
+                  <td data-label={isGerman ? "Option" : "Option"}>
+                    <strong>{item.name[locale]}</strong>
+                    {item.source ? <><br /><a className="gear-source-link" href={item.source.url} rel="noreferrer">{isGerman ? "Herstellerdaten ↗" : "Manufacturer specifications ↗"}</a></> : null}
+                  </td>
+                  <td data-label={isGerman ? "Warum wichtig" : "Why it matters"}>{item.whyItMatters[locale]}</td>
+                  <td data-label={isGerman ? "Technische Daten" : "Core specs"}>{Object.entries(coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td>
+                  <td data-label={isGerman ? "Stärken / Grenzen" : "Pros / cons"}>
+                    <span className="gear-pro-con"><strong>{isGerman ? "Stärken:" : "Pros:"}</strong> {item.pros[locale].join(", ")}</span>
+                    <span className="gear-pro-con"><strong>{isGerman ? "Grenzen:" : "Cons:"}</strong> {item.cons[locale].join(", ")}</span>
+                  </td>
+                </tr>;
+              })}
+            </tbody>
+          </table>
+        </div>
+        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? `Quellen zuletzt geprüft: ${guide.lastReviewedAt}. Vorteile und Grenzen sind redaktionelle Schlussfolgerungen aus den verlinkten Herstellerdaten.` : `Sources last checked: ${guide.lastReviewedAt}. Pros and limitations are editorial inferences from the linked manufacturer specifications.`}</p> : null}
+      </section>
       <section className="event-summary" aria-labelledby="gear-tradeoffs-title"><h2 id="gear-tradeoffs-title">{isGerman ? "Abwägungen" : "Trade-offs"}</h2><ul>{guide.tradeoffs[locale].map((tradeoff) => <li key={tradeoff}>{tradeoff}</li>)}</ul><h2>FAQ</h2>{guide.faq.map((item) => <details key={item.question.en}><summary>{item.question[locale]}</summary><p>{item.answer[locale]}</p></details>)}</section>
       <section className="event-summary" aria-labelledby="gear-method-title">
         <h2 id="gear-method-title">{isGerman ? "So entstand dieser Guide" : "How this guide was made"}</h2>

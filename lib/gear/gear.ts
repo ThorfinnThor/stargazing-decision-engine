@@ -18,6 +18,11 @@ export function validateGearCatalog(categories: GearCategory[], guides: GearGuid
     for (const item of guide.items) {
       if (item.recommendationBasis !== "specification_analysis" || !item.partnerSearchQuery.trim() || item.affiliatePartnerId !== null) throw new Error(`${guide.slug}: gear item must remain specification-only with dormant affiliate hook`);
       if (Object.keys(item.coreSpecs).length === 0 || item.pros.en.length === 0 || item.cons.en.length === 0) throw new Error(`${guide.slug}: item requires specs, pros, and cons`);
+      if (item.localizedCoreSpecs && (Object.keys(item.localizedCoreSpecs.en).length === 0 || Object.keys(item.localizedCoreSpecs.de).length === 0)) throw new Error(`${guide.slug}: localized item specs must be complete in both languages`);
+      if (item.source) {
+        if (!item.source.url.startsWith("https://") || !item.source.publisher.trim() || !item.source.title.trim()) throw new Error(`${guide.slug}: item source must be a complete HTTPS record`);
+        assertDate(item.source.checkedAt, `${guide.slug} item source`);
+      }
     }
   }
   const productIds = new Set<string>();
