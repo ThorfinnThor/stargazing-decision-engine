@@ -30,7 +30,7 @@ const labels = {
   en: {
     month: "Month", allMonths: "Best month", region: "Region", allRegions: "All regions",
     temperature: "Night temperature", priority: "Priority", access: "Night access",
-    loading: "Loading the static destination index…", loadError: "The static destination index could not be loaded.",
+    loading: "Loading the destination index…", loadError: "The destination index could not be loaded.",
     result: "matching destinations", methodology: "Match score combines the unchanged historical trip score with your selected preference fit and source confidence. It is not a weather forecast.",
     temperatures: { any: "Any", cold: "Cold · around 0 °C", cool: "Cool · around 7 °C", mild: "Mild · around 14 °C", warm: "Warm · around 21 °C" },
     priorities: { balanced: "Balanced", darkness: "Darkest sky", comfort: "Trip comfort", clear: "Clear-sky history" },
@@ -41,7 +41,7 @@ const labels = {
   de: {
     month: "Monat", allMonths: "Bester Monat", region: "Region", allRegions: "Alle Regionen",
     temperature: "Nachttemperatur", priority: "Priorität", access: "Nachtzugang",
-    loading: "Statischer Zielindex wird geladen…", loadError: "Der statische Zielindex konnte nicht geladen werden.",
+    loading: "Zielübersicht wird geladen…", loadError: "Die Zielübersicht konnte nicht geladen werden.",
     result: "passende Ziele", methodology: "Der Match-Wert verbindet den unveränderten historischen Reisewert mit deinen Präferenzen und der Quellenkonfidenz. Er ist keine Wettervorhersage.",
     temperatures: { any: "Egal", cold: "Kalt · etwa 0 °C", cool: "Kühl · etwa 7 °C", mild: "Mild · etwa 14 °C", warm: "Warm · etwa 21 °C" },
     priorities: { balanced: "Ausgewogen", darkness: "Dunkelster Himmel", comfort: "Reisekomfort", clear: "Historisch klarer Himmel" },

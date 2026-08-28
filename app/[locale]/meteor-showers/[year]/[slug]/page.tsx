@@ -45,13 +45,13 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
   const { event, locale, year, seo } = resolved;
   const name = event.name[locale];
   const isGerman = locale === "de";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `${name} ${year}`, description: seo?.description ?? `Static viewing guide for ${name} ${year}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/meteor-showers/${year}/${event.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `${name} ${year}`, description: seo?.description ?? `Viewing guide for ${name} ${year}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/meteor-showers/${year}/${event.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <PageHomeNav locale={locale} />
       <header className="event-header">
-        <p className="eyebrow">{isGerman ? "Meteorstrom · statischer Leitfaden" : "Meteor shower · static viewing guide"}</p>
+        <p className="eyebrow">{isGerman ? "Meteorstrom · Beobachtungsleitfaden" : "Meteor shower · viewing guide"}</p>
         <h1>{name} <span>{year}</span></h1>
         <p className="lede">
           {isGerman
@@ -73,7 +73,7 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
       </section>
 
       <section className="event-summary" aria-labelledby="event-top-title">
-        <h2 id="event-top-title">{isGerman ? "Beste statische Ziele" : "Top static destinations"}</h2>
+        <h2 id="event-top-title">{isGerman ? "Beste Ziele" : "Top destinations"}</h2>
         <div className="event-table-wrap">
           <table className="event-table">
             <thead><tr><th>#</th><th>{isGerman ? "Ziel" : "Destination"}</th><th>{isGerman ? "Ort" : "Site"}</th><th>{isGerman ? "Wert" : "Score"}</th><th>{isGerman ? "Mondlos" : "Moonless"}</th></tr></thead>

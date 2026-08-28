@@ -117,7 +117,7 @@ for (const locale of config.locales) {
     id: `home-${locale}`, pageType: "home", locale, path: homePath, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/`])),
     title: locale === "de" ? "Stargazing für dunkle Himmel" : "Stargazing for dark skies",
     h1: locale === "de" ? "Wissen, wann sich die Reise lohnt." : "Know when the night is worth the journey.",
-    description: locale === "de" ? "Statische, datenbasierte Entscheidungshilfe für Sternbeobachtung." : "A static, data-driven decision engine for stargazing travel.",
+    description: locale === "de" ? "Datenbasierte Entscheidungshilfe für Sternbeobachtung." : "A data-driven decision engine for stargazing travel.",
     resultCount: seed.destinations.length, confidence: "low", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + shortTrips.length,
   }));
   pages.push(makePage({
@@ -130,7 +130,7 @@ for (const locale of config.locales) {
   }));
   pages.push(makePage({
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),
-    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Statische, technische Gear-Guides ohne Preis- oder Verfügbarkeitsversprechen." : "Static, specification-based gear guides without price or availability claims.", resultCount: gearGuides.length, confidence: "high", uniqueInsightCount: 3, internalLinkCount: gearGuides.length + seed.destinations.length,
+    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Technische Gear-Guides ohne Preis- oder Verfügbarkeitsversprechen." : "Specification-based gear guides without price or availability claims.", resultCount: gearGuides.length, confidence: "high", uniqueInsightCount: 3, internalLinkCount: gearGuides.length + seed.destinations.length,
   }));
   for (const destination of seed.destinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
@@ -140,7 +140,7 @@ for (const locale of config.locales) {
     pages.push(makePage({
       id: `destination-${destination.slug}-${locale}`, pageType: "destination", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-destinations/${destination.slug}/`])),
       title: locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`, h1: destination.name,
-      description: locale === "de" ? `Statischer Himmelsführer für ${destination.name}.` : `Static dark-sky guide for ${destination.name}.`, resultCount: destinationScores.length, confidence, uniqueInsightCount: destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: seed.destinations.length + shortTrips.length,
+      description: locale === "de" ? `Himmelsführer für ${destination.name}.` : `Dark-sky guide for ${destination.name}.`, resultCount: destinationScores.length, confidence, uniqueInsightCount: destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: seed.destinations.length + shortTrips.length,
       travelEligible: seed.sites.some((site) => site.destinationId === destination.id && isTravelEligibleSite(site)),
     }));
   }
@@ -149,7 +149,7 @@ for (const locale of config.locales) {
     pages.push(makePage({
       id: `meteor-${event.year}-${event.slug}-${locale}`, pageType: "meteor-shower", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/meteor-showers/${event.year}/${event.slug}/`])),
       title: `${event.name[locale]} ${event.year}`, h1: `${event.name[locale]} ${event.year}`,
-      description: locale === "de" ? `Statischer Beobachtungsleitfaden für ${event.name[locale]}.` : `Static viewing guide for ${event.name[locale]}.`, resultCount: event.topSites.length, confidence: event.confidenceLevel, uniqueInsightCount: event.topSites.length >= 2 ? 3 : event.topSites.length, internalLinkCount: event.topDestinations.length + 2,
+      description: locale === "de" ? `Beobachtungsleitfaden für ${event.name[locale]}.` : `Viewing guide for ${event.name[locale]}.`, resultCount: event.topSites.length, confidence: event.confidenceLevel, uniqueInsightCount: event.topSites.length >= 2 ? 3 : event.topSites.length, internalLinkCount: event.topDestinations.length + 2,
     }));
   }
   for (const trip of shortTrips) {
@@ -157,7 +157,7 @@ for (const locale of config.locales) {
     pages.push(makePage({
       id: `short-trip-${trip.originSlug}-${locale}`, pageType: "short-trip", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/short-trips/${trip.originSlug}/`])),
       title: locale === "de" ? `Kurze Sternreisen ab ${trip.originName}` : `Short stargazing trips from ${trip.originName}`, h1: locale === "de" ? `Ab ${trip.originName}` : `From ${trip.originName}`,
-      description: locale === "de" ? `Statisches Ranking dunkler Himmelsziele ab ${trip.originName}.` : `Static ranking of dark-sky destinations from ${trip.originName}.`, resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
+      description: locale === "de" ? `Ranking dunkler Himmelsziele ab ${trip.originName}.` : `Ranking of dark-sky destinations from ${trip.originName}.`, resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
     }));
   }
   for (const guide of gearGuides) {
