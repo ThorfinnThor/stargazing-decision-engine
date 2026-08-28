@@ -9,4 +9,8 @@ export const localizedLinks = {
   shortTrips: (locale: Locale, originSlug: string) => `/${locale}/short-trips/${originSlug}/`,
   gear: (locale: Locale) => `/${locale}/gear/`,
   gearGuide: (locale: Locale, slug: string) => `/${locale}/gear/${slug}/`,
+  about: (locale: Locale) => `/${locale}/about/`,
+  contact: (locale: Locale) => `/${locale}/contact/`,
+  imprint: (locale: Locale) => `/${locale}/imprint/`,
+  privacy: (locale: Locale) => `/${locale}/privacy/`,
 } as const;

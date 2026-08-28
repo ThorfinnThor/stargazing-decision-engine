@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { AstronomicalSky } from "./astronomical-sky";
 import { computeSunHorizontal } from "@/lib/astronomy/compute-sky";
@@ -19,33 +19,17 @@ function randomUnit() {
 }
 
 export function RandomHomepageSky({ candidates, previews, locale }: { candidates: HomepageSkyCandidate[]; previews: NightPreview[]; locale: Locale }) {
-  const signature = useMemo(() => candidates.map((candidate) => candidate.id).join("|"), [candidates]);
   const [state, setState] = useState<State | null>(null);
   const stateRef = useRef<State | null>(null);
   useEffect(() => {
-    const storageKey = `stargazing-home-sky:${signature}`;
     const choose = (instantIso: string) => {
       const selection = selectHomepageSky({ candidates, previews, instantIso, locationRandomUnit: randomUnit(), previewRandomUnit: randomUnit() });
       if (!selection) return null;
-      const next = { selection, instantIso: selection.mode === "night-preview" ? selection.instantIso : instantIso };
-      try { sessionStorage.setItem(storageKey, JSON.stringify({ ...next, expiresAt: Date.now() + 30 * 60_000 })); } catch {}
-      return next;
+      return { selection, instantIso: selection.mode === "night-preview" ? selection.instantIso : instantIso };
     };
     const nowIso = roundedCurrentMinuteIso();
-    let initial: State | null = null;
-    try {
-      const saved = JSON.parse(sessionStorage.getItem(storageKey) ?? "null") as (State & { expiresAt: number }) | null;
-      const candidate = saved && saved.expiresAt > Date.now() ? candidates.find((item) => item.id === saved.selection.candidateId) : null;
-      if (saved && candidate) {
-        const selection = saved.selection;
-        const valid = selection.mode === "night-preview"
-          ? previews.some((preview) => preview.id === selection.previewId && preview.destinationId === candidate.location.destinationId && preview.siteId === candidate.location.siteId)
-          : shouldKeepLiveSelection(computeSunHorizontal(candidate.location, nowIso).altitudeDeg);
-        if (valid) initial = { selection, instantIso: selection.mode === "night-preview" ? selection.instantIso : nowIso };
-      }
-    } catch {}
     const commit = (next: State | null) => { stateRef.current = next; setState(next); };
-    commit(initial ?? choose(nowIso));
+    commit(choose(nowIso));
     const refresh = () => {
       const instantIso = roundedCurrentMinuteIso();
       const current = stateRef.current;
@@ -64,7 +48,7 @@ export function RandomHomepageSky({ candidates, previews, locale }: { candidates
     const visibility = () => { if (document.visibilityState === "visible") refresh(); };
     document.addEventListener("visibilitychange", visibility);
     return () => { clearTimeout(timeout); if (interval) clearInterval(interval); document.removeEventListener("visibilitychange", visibility); };
-  }, [candidates, previews, signature]);
+  }, [candidates, previews]);
   if (!state) return <div className="sky-loading" role="status">{locale === "de" ? "Astronomischer Himmel wird berechnet …" : "Calculating astronomical sky …"}</div>;
   const candidate = candidates.find((item) => item.id === state.selection.candidateId);
   if (!candidate) return <div className="sky-unavailable">{locale === "de" ? "Keine geeignete Location verfügbar." : "No suitable location available."}</div>;

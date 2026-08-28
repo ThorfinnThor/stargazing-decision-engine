@@ -610,6 +610,69 @@ h1 span {
   color: var(--blue);
 }
 
+.site-legal-footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: end;
+  padding: 2.5rem clamp(1.25rem, 7vw, 7rem);
+  border-top: 1px solid rgb(255 255 255 / 14%);
+  background: var(--night);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.site-legal-footer p {
+  max-width: 34rem;
+  margin: 0.25rem 0;
+}
+
+.site-legal-brand {
+  color: var(--paper);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-legal-footer nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  justify-content: flex-end;
+}
+
+.site-legal-footer a {
+  color: var(--blue);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.25rem;
+}
+
+.legal-page address {
+  color: #e6e9f2;
+  font-style: normal;
+  line-height: 1.7;
+}
+
+.legal-page .event-header h1 {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 700px) {
+  .site-legal-footer {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .site-legal-footer nav {
+    justify-content: flex-start;
+  }
+
+  .legal-page .event-header h1 {
+    font-size: clamp(2.35rem, 12vw, 3rem);
+    hyphens: auto;
+  }
+}
+
 @media (max-width: 700px) {
   .event-page {
     padding-top: 1rem;
