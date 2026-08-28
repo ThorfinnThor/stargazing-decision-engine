@@ -23,6 +23,23 @@ test("gear catalog validates as specification analysis with dormant affiliate ho
   assert.ok(products.every((product) => product.affiliatePartnerId === null));
 });
 
+test("the beginner telescope comparison is source-backed", () => {
+  const guide = guides.find((candidate) => candidate.slug === "beginner-telescopes");
+  assert.ok(guide);
+  assert.equal(guide.items.length, 3);
+
+  const sources = guide.items.map((item) => item.source);
+  assert.ok(sources.every((source) => source !== undefined));
+  assert.ok(sources.every((source) => source?.url.startsWith("https://")));
+  assert.ok(sources.every((source) => source?.checkedAt === "2026-08-28"));
+  assert.deepEqual(
+    sources.map((source) => source?.publisher),
+    ["Sky-Watcher", "Bresser", "Celestron"],
+  );
+  assert.ok(guide.items.every((item) => item.localizedCoreSpecs?.en && item.localizedCoreSpecs.de));
+  assert.ok(guide.items.every((item) => item.affiliatePartnerId === null));
+});
+
 test("gear validation rejects unsupported hands-on claims", () => {
   const invalid = structuredClone(guides);
   invalid[0].items[0].recommendationBasis = "hands_on_test" as never;
