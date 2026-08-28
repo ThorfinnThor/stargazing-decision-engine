@@ -26,6 +26,7 @@ export const schemaFiles = [
   "gear-guide.schema.json",
   "gear-category.schema.json",
   "gear-product.schema.json",
+  "destination-editorial-guide.schema.json",
   "image-manifest.schema.json",
   "era5-climate-snapshot.schema.json",
   "black-marble-snapshot.schema.json",

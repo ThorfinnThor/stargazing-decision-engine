@@ -1,4 +1,5 @@
 import { legal } from "@/lib/legal/config";
+import type { Destination, DestinationEditorialGuide, GearGuide } from "@/lib/data/types";
 
 const sectionNames = {
   en: {
@@ -118,4 +119,90 @@ export function buildWebPageStructuredData(options: {
   }
 
   return { "@context": "https://schema.org", "@graph": graph };
+}
+
+export function buildDestinationEditorialStructuredData(options: {
+  destination: Destination;
+  guide: DestinationEditorialGuide;
+  locale: "en" | "de";
+  url: string;
+}) {
+  const { destination, guide, locale, url } = options;
+  const articleId = `${url}#editorial-guide`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": articleId,
+        headline: guide.seoTitle[locale],
+        description: guide.seoDescription[locale],
+        dateModified: guide.lastReviewedAt,
+        inLanguage: locale,
+        mainEntityOfPage: { "@id": `${url}#webpage` },
+        about: {
+          "@type": "TouristDestination",
+          name: destination.name,
+          addressCountry: destination.countryCode,
+        },
+        publisher: { "@id": `${new URL(url).origin}/#publisher` },
+        citation: guide.sources.map((source) => source.url),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: guide.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question[locale],
+          acceptedAnswer: { "@type": "Answer", text: item.answer[locale] },
+        })),
+      },
+    ],
+  };
+}
+
+export function buildGearGuideStructuredData(options: {
+  guide: GearGuide;
+  locale: "en" | "de";
+  url: string;
+}) {
+  const { guide, locale, url } = options;
+  const sourceUrls = guide.items.flatMap((item) => item.source ? [item.source.url] : []);
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": `${url}#gear-guide`,
+        headline: guide.title[locale],
+        description: guide.summary[locale],
+        dateModified: guide.lastReviewedAt,
+        inLanguage: locale,
+        mainEntityOfPage: { "@id": `${url}#webpage` },
+        publisher: { "@id": `${new URL(url).origin}/#publisher` },
+        citation: sourceUrls,
+        about: guide.items.map((item) => ({ "@type": "Thing", name: item.name[locale] })),
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${url}#compared-products`,
+        name: locale === "de" ? "Verglichene Produkte" : "Compared products",
+        numberOfItems: guide.items.length,
+        itemListElement: guide.items.map((item, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: item.name[locale],
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: guide.faq.map((item) => ({
+          "@type": "Question",
+          name: item.question[locale],
+          acceptedAnswer: { "@type": "Answer", text: item.answer[locale] },
+        })),
+      },
+    ],
+  };
 }

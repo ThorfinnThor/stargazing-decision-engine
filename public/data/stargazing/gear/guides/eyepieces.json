@@ -1,149 +1,284 @@
 {
   "slug": "eyepieces",
   "title": {
-    "en": "How to choose telescope eyepieces",
-    "de": "Teleskop-Okulare sinnvoll auswählen"
+    "en": "11–12.5 mm telescope eyepieces compared: field, eye relief, and mass",
+    "de": "11–12,5-mm-Teleskopokulare im Vergleich: Feld, Augenabstand und Gewicht"
   },
   "category": "eyepieces",
   "summary": {
-    "en": "Choose useful magnifications from focal length, exit pupil, field of view, and eye relief instead of collecting overlapping eyepieces.",
-    "de": "Wähle sinnvolle Vergrößerungen anhand von Brennweite, Austrittspupille, Gesichtsfeld und Augenabstand, statt sich überschneidende Okulare zu sammeln."
+    "en": "A source-backed comparison of three 1.25-inch eyepieces in the same medium-power focal-length band, showing what wider apparent field, longer eye relief, waterproofing, and added mass actually change.",
+    "de": "Ein quellenbasierter Vergleich dreier 1,25-Zoll-Okulare im selben mittleren Brennweitenbereich, der zeigt, was größeres scheinbares Feld, längerer Augenabstand, Wasserschutz und Mehrgewicht tatsächlich verändern."
   },
   "decisionSummary": {
-    "en": "Build a small, well-spaced set: one low-power finder eyepiece, one medium-power option, and only then a high-power eyepiece that your telescope and local seeing can support.",
-    "de": "Baue ein kleines, gut abgestuftes Set auf: ein Übersichtsokular, eine mittlere Vergrößerung und erst danach ein Hochvergrößerungsokular, das Teleskop und Seeing tatsächlich tragen."
+    "en": "Choose the 51.5 g Celestron Omni 12 mm when a light 50-degree Plössl and 8 mm eye relief suit the observer, the 345 g Baader Morpheus 12.5 mm when 20 mm eye relief and a 76-degree field matter most, or the 279 g Explore Scientific 11 mm when the widest 82-degree field is worth accepting 15.6 mm eye relief and slightly higher magnification.",
+    "de": "Wähle das 51,5-g-Celestron Omni 12 mm, wenn ein leichtes 50-Grad-Plössl mit 8 mm Augenabstand passt, das 345-g-Baader Morpheus 12,5 mm, wenn 20 mm Augenabstand und 76 Grad Feld am wichtigsten sind, oder das 279-g-Explore Scientific 11 mm, wenn das größte 82-Grad-Feld etwas weniger Augenabstand und leicht höhere Vergrößerung rechtfertigt."
   },
   "audience": {
-    "en": "Visual observers who want to add or replace eyepieces without duplicating magnifications they already own.",
-    "de": "Visuelle Beobachter:innen, die Okulare ergänzen oder ersetzen möchten, ohne vorhandene Vergrößerungen zu duplizieren."
+    "en": "Visual observers comparing a first medium-power upgrade for a telescope with a 1.25-inch focuser, especially those balancing eyeglasses, manual tracking, and mount stability.",
+    "de": "Visuelle Beobachter:innen, die ein erstes Mittelvergrößerungs-Upgrade für einen 1,25-Zoll-Auszug vergleichen und dabei Brille, manuelle Nachführung und Montierungsstabilität abwägen."
   },
   "buyingCriteria": [
     {
-      "en": "Focal length, resulting magnification, and exit pupil in your telescope",
-      "de": "Brennweite, resultierende Vergrößerung und Austrittspupille am eigenen Teleskop"
+      "en": "Resulting magnification and exit pupil in the actual telescope",
+      "de": "Resultierende Vergrößerung und Austrittspupille am konkreten Teleskop"
     },
     {
-      "en": "Apparent field of view and the true sky area it produces",
-      "de": "Scheinbares Gesichtsfeld und der daraus entstehende wahre Himmelsausschnitt"
+      "en": "Apparent field and field-stop diameter rather than marketing adjectives",
+      "de": "Scheinbares Feld und Feldblendendurchmesser statt Marketingadjektive"
     },
     {
-      "en": "Eye relief, barrel size, weight, and focuser compatibility",
-      "de": "Augenabstand, Steckmaß, Gewicht und Kompatibilität zum Okularauszug"
+      "en": "Published eye relief and the observer's eyeglass requirement",
+      "de": "Veröffentlichter Augenabstand und Brillenbedarf der beobachtenden Person"
+    },
+    {
+      "en": "Eyepiece mass, barrel geometry, filter thread, and focuser balance",
+      "de": "Okulargewicht, Steckhülsengeometrie, Filtergewinde und Auszugsbalance"
     }
   ],
   "items": [
     {
       "name": {
-        "en": "Long-focal-length wide-field eyepiece",
-        "de": "Langbrennweitiges Weitwinkelokular"
+        "en": "Celestron Omni 12 mm",
+        "de": "Celestron Omni 12 mm"
       },
       "whyItMatters": {
-        "en": "Low magnification and a larger exit pupil make star fields, extended objects, and target finding easier.",
-        "de": "Geringe Vergrößerung und eine größere Austrittspupille erleichtern Sternfelder, ausgedehnte Objekte und das Auffinden von Zielen."
+        "en": "The Omni is a four-element 50-degree Plössl weighing 51.5 g, establishing the light and mechanically simple baseline while its published 8 mm eye relief is the central comfort limitation.",
+        "de": "Das Omni ist ein vierlinsiges 50-Grad-Plössl mit 51,5 g und bildet die leichte, mechanisch einfache Basis; sein veröffentlichter Augenabstand von 8 mm ist die zentrale Komfortgrenze."
       },
       "coreSpecs": {
-        "focalLength": "matched to a useful low-power exit pupil",
-        "field": "apparent and true field both stated",
-        "barrel": "1.25 or 2 inch compatible"
+        "focalLength": "12 mm",
+        "apparentField": "50°",
+        "eyeRelief": "8 mm",
+        "weight": "51.5 g"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Focal length": "12 mm",
+          "Apparent field": "50°; 10.7 mm field stop",
+          "Eye relief": "8 mm",
+          "Optical layout": "4 elements in 2 groups; multi-coated",
+          "Mechanical": "1.25-inch filter-threaded barrel; 51.5 g; not waterproof"
+        },
+        "de": {
+          "Brennweite": "12 mm",
+          "Scheinbares Feld": "50°; 10,7 mm Feldblende",
+          "Augenabstand": "8 mm",
+          "Optischer Aufbau": "4 Linsen in 2 Gruppen; mehrschichtvergütet",
+          "Mechanik": "1,25-Zoll-Steckhülse mit Filtergewinde; 51,5 g; nicht wasserdicht"
+        }
       },
       "pros": {
         "en": [
-          "Large navigable sky area",
-          "Relaxed viewing for extended targets"
+          "Lowest published mass and simplest optical layout in this comparison",
+          "Standard 1.25-inch filter thread and fold-down eyecup are documented"
         ],
         "de": [
-          "Großer überschaubarer Himmelsausschnitt",
-          "Entspanntes Beobachten ausgedehnter Ziele"
+          "Niedrigstes veröffentlichtes Gewicht und einfachster optischer Aufbau im Vergleich",
+          "Standard-1,25-Zoll-Filtergewinde und umklappbare Augenmuschel sind dokumentiert"
         ]
       },
       "cons": {
         "en": [
-          "Large models can be heavy",
-          "An oversized exit pupil wastes aperture and brightens the background"
+          "Shortest published eye relief and narrowest apparent field here",
+          "The official page lists it as non-parfocal and not waterproof"
         ],
         "de": [
-          "Große Modelle können schwer sein",
-          "Eine zu große Austrittspupille verschenkt Öffnung und hellt den Hintergrund auf"
+          "Kürzester veröffentlichter Augenabstand und kleinstes scheinbares Feld hier",
+          "Die offizielle Seite führt es als nicht parfokal und nicht wasserdicht"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "wide field telescope eyepiece long focal length",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Celestron Omni 12mm eyepiece",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Celestron",
+        "title": "Omni 12mm Eyepiece - 1.25 inch",
+        "url": "https://www.celestron.com/products/omni-12mm-eyepiece-125in",
+        "checkedAt": "2026-08-28"
+      }
     },
     {
       "name": {
-        "en": "Medium- or short-focal-length eyepiece",
-        "de": "Mittel- oder kurzbrennweitiges Okular"
+        "en": "Baader Morpheus 12.5 mm",
+        "de": "Baader Morpheus 12,5 mm"
       },
       "whyItMatters": {
-        "en": "Moderate to high power reveals lunar, planetary, and compact deep-sky detail when focus, collimation, and seeing cooperate.",
-        "de": "Mittlere bis hohe Vergrößerung zeigt Mond-, Planeten- und kompakte Deep-Sky-Details, wenn Fokus, Kollimation und Seeing mitspielen."
+        "en": "Baader publishes a 76-degree apparent field, 20 mm eye relief, 16.8 mm field stop, dual 1.25-/2-inch fit, and 345 g mass, prioritizing a wide and eyeglass-friendlier view over minimal weight.",
+        "de": "Baader veröffentlicht 76 Grad scheinbares Feld, 20 mm Augenabstand, 16,8 mm Feldblende, 1,25-/2-Zoll-Doppelpassung und 345 g Gewicht und priorisiert damit weiten, brillenfreundlicheren Einblick vor Minimalgewicht."
       },
       "coreSpecs": {
-        "focalLength": "spaced clearly from existing eyepieces",
-        "eyeRelief": "comfortable with or without glasses",
-        "opticalFit": "appropriate for telescope focal ratio"
+        "focalLength": "12.5 mm",
+        "apparentField": "76°",
+        "eyeRelief": "20 mm",
+        "weight": "345 g"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Focal length": "12.5 mm",
+          "Apparent field": "76°; 16.8 mm field stop",
+          "Eye relief": "20 mm",
+          "Optical layout": "8 elements in 5 groups",
+          "Mechanical": "dual 1.25-/2-inch skirt; M43 thread; 345 g"
+        },
+        "de": {
+          "Brennweite": "12,5 mm",
+          "Scheinbares Feld": "76°; 16,8 mm Feldblende",
+          "Augenabstand": "20 mm",
+          "Optischer Aufbau": "8 Linsen in 5 Gruppen",
+          "Mechanik": "kombinierte 1,25-/2-Zoll-Steckhülse; M43-Gewinde; 345 g"
+        }
       },
       "pros": {
         "en": [
-          "Useful detail scale",
-          "Compact formats are common"
+          "Longest published eye relief in this comparison",
+          "Dual barrel geometry, M43 thread, two eyeguard styles, and phosphorescent markings are documented"
         ],
         "de": [
-          "Nützlicher Detailmaßstab",
-          "Kompakte Bauformen sind verbreitet"
+          "Größter veröffentlichter Augenabstand in diesem Vergleich",
+          "Doppelte Steckhülsengeometrie, M43-Gewinde, zwei Augenmuscheltypen und nachleuchtende Beschriftung sind dokumentiert"
         ]
       },
       "cons": {
         "en": [
-          "Seeing often limits usable power",
-          "Short eye relief can be uncomfortable"
+          "Highest published mass here, which can alter balance on a light mount",
+          "Slightly longer focal length means slightly lower magnification than the other two in the same telescope"
         ],
         "de": [
-          "Seeing begrenzt oft die nutzbare Vergrößerung",
-          "Kurzer Augenabstand kann unbequem sein"
+          "Höchstes veröffentlichtes Gewicht hier; das kann die Balance einer leichten Montierung verändern",
+          "Etwas längere Brennweite bedeutet im selben Teleskop etwas geringere Vergrößerung als bei den beiden anderen"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "telescope eyepiece medium high magnification eye relief",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Baader Morpheus 12.5mm eyepiece",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Baader Planetarium",
+        "title": "Morpheus 76-degree eyepiece series technical data",
+        "url": "https://www.baader-planetarium.com/en/downloads/dl/file/id/223/morpheus-76-eyepiece-series-technical-data.pdf",
+        "checkedAt": "2026-08-28"
+      }
+    },
+    {
+      "name": {
+        "en": "Explore Scientific 82° Series 11 mm",
+        "de": "Explore Scientific 82° Series 11 mm"
+      },
+      "whyItMatters": {
+        "en": "Explore Scientific publishes the widest apparent field here at 82 degrees, with 15.6 mm eye relief, a 15.9 mm field stop, a waterproof argon-purged body, and 279 g mass.",
+        "de": "Explore Scientific veröffentlicht mit 82 Grad das größte scheinbare Feld hier, kombiniert mit 15,6 mm Augenabstand, 15,9 mm Feldblende, wasserdichtem argongefülltem Gehäuse und 279 g Gewicht."
+      },
+      "coreSpecs": {
+        "focalLength": "11 mm",
+        "apparentField": "82°",
+        "eyeRelief": "15.6 mm",
+        "weight": "279 g"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Focal length": "11 mm",
+          "Apparent field": "82°; 15.9 mm field stop",
+          "Eye relief": "15.6 mm",
+          "Optics": "enhanced multilayer coatings; blackened internal surfaces and lens edges",
+          "Mechanical": "1.25-inch barrel; waterproof and argon-purged; 279 g"
+        },
+        "de": {
+          "Brennweite": "11 mm",
+          "Scheinbares Feld": "82°; 15,9 mm Feldblende",
+          "Augenabstand": "15,6 mm",
+          "Optik": "erweiterte Mehrschichtvergütung; geschwärzte Innenflächen und Linsenränder",
+          "Mechanik": "1,25-Zoll-Steckhülse; wasserdicht und argongefüllt; 279 g"
+        }
+      },
+      "pros": {
+        "en": [
+          "Widest published apparent field in this comparison",
+          "Waterproof argon-purged construction is documented"
+        ],
+        "de": [
+          "Größtes veröffentlichtes scheinbares Feld in diesem Vergleich",
+          "Wasserdichte, argongefüllte Konstruktion ist dokumentiert"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Less published eye relief than the Morpheus",
+          "The 11 mm focal length yields about 14% more magnification than 12.5 mm, so this is not an optically identical power comparison"
+        ],
+        "de": [
+          "Weniger veröffentlichter Augenabstand als beim Morpheus",
+          "11 mm ergeben etwa 14 % mehr Vergrößerung als 12,5 mm; dies ist daher kein optisch identischer Vergrößerungsvergleich"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Explore Scientific 82 degree 11mm eyepiece",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Explore Scientific",
+        "title": "82-degree Series 11mm Waterproof Eyepiece",
+        "url": "https://explorescientific.com/products/82-11mm",
+        "checkedAt": "2026-08-28"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "A wider apparent field improves immersion and tracking time, but often adds size, weight, and cost.",
-      "Maximum theoretical magnification is less useful than a clean image at a lower, repeatable power."
+      "Apparent field is not true field by itself: telescope focal length, eyepiece focal length, and field stop determine the sky area actually framed.",
+      "Longer eye relief can help eyeglass wearers, but published millimetres do not guarantee that every face shape and eyecup geometry will reveal the full field.",
+      "Moving from 51.5 g to roughly 300–345 g may require rebalance or stronger focuser tension on a light Dobsonian or alt-azimuth mount.",
+      "This is a specification comparison, not a controlled test of scatter, edge correction, chromatic behaviour, or subjective comfort in fast telescopes."
     ],
     "de": [
-      "Ein größeres scheinbares Gesichtsfeld verbessert Einblick und Nachführzeit, erhöht aber oft Größe, Gewicht und Kosten.",
-      "Die theoretische Maximalvergrößerung ist weniger wert als ein sauberes Bild bei geringerer, zuverlässig nutzbarer Vergrößerung."
+      "Scheinbares Feld ist nicht automatisch wahres Feld: Teleskopbrennweite, Okularbrennweite und Feldblende bestimmen den tatsächlich eingerahmten Himmel.",
+      "Längerer Augenabstand kann Brillenträgern helfen; veröffentlichte Millimeter garantieren aber nicht bei jeder Gesichtsform und Augenmuschel das vollständige Feld.",
+      "Der Sprung von 51,5 g auf etwa 300–345 g kann bei leichtem Dobson oder Azimutalmontierung Neubalance oder stärkere Auszugsklemmung verlangen.",
+      "Dies ist ein Datenvergleich, kein kontrollierter Test von Streulicht, Randkorrektur, Farbverhalten oder subjektivem Komfort an lichtstarken Teleskopen."
     ]
   },
   "faq": [
     {
       "question": {
-        "en": "How do I calculate magnification and exit pupil?",
-        "de": "Wie berechne ich Vergrößerung und Austrittspupille?"
+        "en": "What magnification would these produce?",
+        "de": "Welche Vergrößerung erzeugen diese Okulare?"
       },
       "answer": {
-        "en": "Divide telescope focal length by eyepiece focal length for magnification. Divide aperture by magnification for exit pupil, using the same units.",
-        "de": "Teile die Teleskopbrennweite durch die Okularbrennweite für die Vergrößerung. Teile die Öffnung durch die Vergrößerung für die Austrittspupille; verwende jeweils gleiche Einheiten."
+        "en": "Divide telescope focal length by eyepiece focal length. In a 650 mm telescope, 12 mm gives about 54×, 12.5 mm gives 52×, and 11 mm gives about 59×. Exit pupil is telescope aperture divided by that magnification.",
+        "de": "Teile Teleskopbrennweite durch Okularbrennweite. An 650 mm ergeben 12 mm etwa 54×, 12,5 mm 52× und 11 mm etwa 59×. Die Austrittspupille ist Teleskopöffnung geteilt durch diese Vergrößerung."
       }
     },
     {
       "question": {
-        "en": "Do I need a complete eyepiece set immediately?",
-        "de": "Brauche ich sofort ein vollständiges Okular-Set?"
+        "en": "Is the widest eyepiece automatically best?",
+        "de": "Ist das weiteste Okular automatisch das beste?"
       },
       "answer": {
-        "en": "No. Start with the supplied eyepiece, identify the missing observing scale, and add one clearly different focal length at a time.",
-        "de": "Nein. Starte mit dem vorhandenen Okular, erkenne den fehlenden Beobachtungsmaßstab und ergänze jeweils nur eine klar andere Brennweite."
+        "en": "No. A wide apparent field increases drift time and immersion, but eye placement, correction in your telescope, mass, balance, and comfort also matter. This guide does not claim a winner without a controlled optical and ergonomic test.",
+        "de": "Nein. Ein großes scheinbares Feld erhöht Durchlaufzeit und Immersion, doch Augenposition, Korrektur am eigenen Teleskop, Gewicht, Balance und Komfort zählen ebenfalls. Ohne kontrollierten optischen und ergonomischen Test kürt dieser Guide keinen Sieger."
+      }
+    },
+    {
+      "question": {
+        "en": "Do eyeglasses require 20 mm eye relief?",
+        "de": "Braucht eine Brille 20 mm Augenabstand?"
+      },
+      "answer": {
+        "en": "Not universally, but more usable eye relief usually makes seeing the full field easier with glasses. Frame shape, lens distance, eyecup geometry, and where the manufacturer measures eye relief all affect the result, so try before committing when possible.",
+        "de": "Nicht grundsätzlich, aber mehr nutzbarer Augenabstand erleichtert mit Brille meist das vollständige Feld. Fassung, Glasabstand, Augenmuschelgeometrie und Messmethode des Herstellers beeinflussen das Ergebnis; probiere nach Möglichkeit vor dem Kauf."
+      }
+    },
+    {
+      "question": {
+        "en": "Should I buy a complete focal-length set?",
+        "de": "Sollte ich ein vollständiges Brennweiten-Set kaufen?"
+      },
+      "answer": {
+        "en": "Usually not at first. Calculate the magnifications and exit pupils you already own, identify one genuinely missing observing scale, and add a clearly separated focal length. Closely spaced eyepieces can duplicate the same practical view under real seeing.",
+        "de": "Anfangs meist nicht. Berechne vorhandene Vergrößerungen und Austrittspupillen, erkenne einen wirklich fehlenden Beobachtungsmaßstab und ergänze eine klar getrennte Brennweite. Eng gestufte Okulare können unter realem Seeing denselben praktischen Einblick duplizieren."
       }
     }
   ],
   "affiliateDisclosure": {
-    "en": "This guide explains optical relationships and compatibility from specifications; it does not rank brands or claim hands-on comparison.",
-    "de": "Dieser Guide erklärt optische Zusammenhänge und Kompatibilität anhand technischer Daten; er rankt keine Marken und behauptet keinen Praxistest."
+    "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured optical test, or claim of hands-on use.",
+    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene optische Messungen oder die Behauptung eines Praxistests."
   },
   "lastReviewedAt": "2026-08-28"
 }

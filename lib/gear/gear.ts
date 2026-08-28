@@ -4,6 +4,46 @@ function assertDate(value: string, label: string) {
   if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`${label}: lastReviewedAt must be an ISO date`);
 }
 
+function wordCount(value: string) {
+  return value.trim().split(/\s+/u).filter(Boolean).length;
+}
+
+export function gearGuideEditorialIssues(guide: GearGuide) {
+  const issues: string[] = [];
+  if (guide.items.length < 3) issues.push("fewer-than-three-compared-products");
+  if (guide.buyingCriteria.length < 4) issues.push("insufficient-buying-criteria");
+  if (guide.tradeoffs.en.length < 3 || guide.tradeoffs.de.length < 3) issues.push("insufficient-tradeoffs");
+  if (guide.faq.length < 3) issues.push("insufficient-faq-depth");
+  if (wordCount(guide.summary.en) < 10 || wordCount(guide.summary.de) < 10) issues.push("thin-summary");
+  if (wordCount(guide.decisionSummary.en) < 25 || wordCount(guide.decisionSummary.de) < 25) issues.push("thin-decision-summary");
+  if (wordCount(guide.audience.en) < 10 || wordCount(guide.audience.de) < 10) issues.push("thin-audience-definition");
+
+  const names = new Set<string>();
+  const sources = new Set<string>();
+  for (const item of guide.items) {
+    if (names.has(item.name.en)) issues.push("duplicate-product-name");
+    names.add(item.name.en);
+    if (!item.source) {
+      issues.push("product-without-primary-source");
+    } else if (sources.has(item.source.url)) {
+      issues.push("duplicate-product-source");
+    } else {
+      sources.add(item.source.url);
+    }
+    if (!item.localizedCoreSpecs || Object.keys(item.localizedCoreSpecs.en).length < 4 || Object.keys(item.localizedCoreSpecs.de).length < 4) issues.push("insufficient-localized-specifications");
+    if (item.pros.en.length < 2 || item.pros.de.length < 2 || item.cons.en.length < 2 || item.cons.de.length < 2) issues.push("insufficient-product-tradeoffs");
+    if (wordCount(item.whyItMatters.en) < 15 || wordCount(item.whyItMatters.de) < 15) issues.push("thin-product-rationale");
+  }
+  for (const faq of guide.faq) {
+    if (wordCount(faq.answer.en) < 18 || wordCount(faq.answer.de) < 18) issues.push("thin-faq-answer");
+  }
+  return [...new Set(issues)];
+}
+
+export function isGearGuideEditorialReady(guide: GearGuide) {
+  return gearGuideEditorialIssues(guide).length === 0;
+}
+
 export function validateGearCatalog(categories: GearCategory[], guides: GearGuide[], products: GearProductMetadata[]) {
   if (categories.length < 1 || guides.length < 1) throw new Error("Gear catalog requires categories and guides");
   const categoryIds = new Set(categories.map((category) => category.id));
@@ -23,6 +63,11 @@ export function validateGearCatalog(categories: GearCategory[], guides: GearGuid
         if (!item.source.url.startsWith("https://") || !item.source.publisher.trim() || !item.source.title.trim()) throw new Error(`${guide.slug}: item source must be a complete HTTPS record`);
         assertDate(item.source.checkedAt, `${guide.slug} item source`);
       }
+    }
+    if (guide.items.some((item) => item.source) && !guide.items.every((item) => item.source)) throw new Error(`${guide.slug}: source-backed comparisons may not mix sourced and unsourced products`);
+    if (guide.items.some((item) => item.source)) {
+      const editorialIssues = gearGuideEditorialIssues(guide);
+      if (editorialIssues.length > 0) throw new Error(`${guide.slug}: source-backed comparison is not editorially ready (${editorialIssues.join(", ")})`);
     }
   }
   const productIds = new Set<string>();

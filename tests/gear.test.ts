@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
-import { validateGearCatalog } from "../lib/gear/gear.js";
+import { gearGuideEditorialIssues, isGearGuideEditorialReady, validateGearCatalog } from "../lib/gear/gear.js";
 import type { GearCategory, GearGuide, GearProductMetadata } from "../lib/data/types.js";
 
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
@@ -95,4 +95,30 @@ test("gear validation rejects unsupported hands-on claims", () => {
   const invalid = structuredClone(guides);
   invalid[0].items[0].recommendationBasis = "hands_on_test" as never;
   assert.throws(() => validateGearCatalog(categories, invalid, products), /specification-only/i);
+});
+
+test("only fully sourced, comparison-depth gear guides are editorially ready", () => {
+  const ready = guides.filter(isGearGuideEditorialReady);
+  assert.deepEqual(ready.map((guide) => guide.slug), [
+    "beginner-telescopes",
+    "binoculars",
+    "red-flashlights",
+    "observing-chairs",
+    "tripods",
+    "star-trackers",
+    "dew-control",
+    "portable-power",
+    "eyepieces",
+    "astronomy-filters",
+  ]);
+  assert.ok(ready.every((guide) => gearGuideEditorialIssues(guide).length === 0));
+  assert.ok(guides.filter((guide) => !isGearGuideEditorialReady(guide)).every((guide) => gearGuideEditorialIssues(guide).includes("product-without-primary-source")));
+});
+
+test("source-backed comparisons cannot mix documented and undocumented products", () => {
+  const invalid = structuredClone(guides);
+  const guide = invalid.find((candidate) => candidate.slug === "star-trackers");
+  assert.ok(guide);
+  delete guide.items[0].source;
+  assert.throws(() => validateGearCatalog(categories, invalid, products), /may not mix sourced and unsourced/i);
 });

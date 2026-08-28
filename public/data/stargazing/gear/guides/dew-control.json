@@ -1,149 +1,284 @@
 {
   "slug": "dew-control",
   "title": {
-    "en": "Dew control for optics that stay clear",
-    "de": "Taubschutz für klare Optik"
+    "en": "Dew heater controllers compared: manual simplicity or sensor-led control",
+    "de": "Tausteuerungen im Vergleich: manuell einfach oder sensorgeregelt"
   },
   "category": "dew-control",
   "summary": {
-    "en": "A field guide to passive shields, heated straps, controllers, and the power budget behind them.",
-    "de": "Ein Feld-Guide zu Taukappen, Heizbändern, Controllern und dem dafür nötigen Strombudget."
+    "en": "A source-backed comparison of three 12 V dew-controller architectures, from a two-knob manual unit to environmental sensing, five independent channels, remote control, and integrated power distribution.",
+    "de": "Ein quellenbasierter Vergleich dreier 12-V-Tausteuerungsarchitekturen – vom manuellen Zwei-Regler-Gerät bis zu Umweltsensorik, fünf unabhängigen Kanälen, Fernsteuerung und integrierter Stromverteilung."
   },
   "decisionSummary": {
-    "en": "Use a correctly sized shield first; add thermostatic heat only when humidity, sky exposure, and session length justify the extra power.",
-    "de": "Nutze zuerst eine passende Taukappe; ergänze geregelte Heizung erst, wenn Feuchte, Himmelsöffnung und Sitzungsdauer den Mehrverbrauch rechtfertigen."
+    "en": "Choose the Astrozap AZ-720 when four heater outputs grouped under two manual controls are enough, the Celestron Smart DewHeater Controller 2X when two sensor-aware channels and Celestron integration fit the optical train, or the Pegasus Astro DewMaster2 when five individually controlled RCA channels, display, Wi-Fi, USB-C, and automatic dew-point logic justify the additional system complexity.",
+    "de": "Wähle den Astrozap AZ-720, wenn vier Heizausgänge in zwei manuellen Regelgruppen genügen, den Celestron Smart DewHeater Controller 2X, wenn zwei sensorgeregelte Kanäle und Celestron-Integration zum optischen Aufbau passen, oder den Pegasus Astro DewMaster2, wenn fünf einzeln geregelte RCA-Kanäle, Display, WLAN, USB-C und automatische Taupunktlogik die zusätzliche Systemkomplexität rechtfertigen."
   },
   "audience": {
-    "en": "Observers and imagers working in humid, radiatively cooling conditions.",
-    "de": "Beobachter:innen und Astrofotograf:innen in feuchten, stark auskühlenden Nächten."
+    "en": "Observers and imagers whose corrector plate, objective, finder, eyepiece, or guide scope dews over during long and humid field sessions.",
+    "de": "Beobachter:innen und Astrofotograf:innen, deren Korrektorplatte, Objektiv, Sucher, Okular oder Leitrohr in langen, feuchten Feldnächten beschlägt."
   },
   "buyingCriteria": [
     {
-      "en": "Correct diameter and length for the optical surface",
-      "de": "Passender Durchmesser und passende Länge für die Optik"
+      "en": "Number of independently controlled heater zones rather than socket count alone",
+      "de": "Anzahl unabhängig geregelter Heizzonen statt nur Buchsenanzahl"
     },
     {
-      "en": "Heat control range and sensor placement",
-      "de": "Regelbereich der Heizung und Sensorposition"
+      "en": "Manual duty-cycle control versus environmental and optic-temperature feedback",
+      "de": "Manuelle Tastgradregelung im Vergleich zu Umwelt- und Optiktemperatur-Rückmeldung"
     },
     {
-      "en": "Connector compatibility and overnight power draw",
-      "de": "Steckerkompatibilität und Stromverbrauch über Nacht"
+      "en": "RCA heater, sensor, power-input, and pass-through connector compatibility",
+      "de": "Kompatibilität von RCA-Heizern, Sensoren, Stromeingang und Durchschleif-Ausgängen"
+    },
+    {
+      "en": "Total current budget, cable routing, mounting, and night-vision-safe operation",
+      "de": "Gesamtstrombudget, Kabelführung, Befestigung und nachsichtgerechte Bedienung"
     }
   ],
   "items": [
     {
       "name": {
-        "en": "Passive dew shield",
-        "de": "Passive Taukappe"
+        "en": "Astrozap AZ-720 Dual Channel Dew Controller",
+        "de": "Astrozap AZ-720 Dual Channel Dew Controller"
       },
       "whyItMatters": {
-        "en": "A light-blocking extension slows radiative cooling and reduces stray light without batteries.",
-        "de": "Eine lichtabschirmende Verlängerung verlangsamt Auskühlung und reduziert Streulicht ohne Batterie."
+        "en": "The AZ-720 offers four RCA outputs in two manually linked control groups, an 11–14 V input range, and a 5 A total ceiling without adding sensors, software, or a display.",
+        "de": "Der AZ-720 bietet vier RCA-Ausgänge in zwei manuell gekoppelten Regelgruppen, 11–14 V Eingang und 5 A Gesamtgrenze, ohne Sensoren, Software oder Display hinzuzufügen."
       },
       "coreSpecs": {
-        "fit": "snug, non-vignetting",
-        "length": "proportional to aperture",
-        "material": "rigid or insulated"
+        "zones": "2 manual channels controlling 4 RCA outputs",
+        "range": "5–95% duty cycle per channel",
+        "power": "11–14 V DC; 5 A total",
+        "mounting": "1/4-20 threaded insert"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Control zones": "two manual channels; two outputs per channel",
+          "Heater outputs": "four RCA sockets total",
+          "Duty-cycle range": "5–95% per channel",
+          "Power": "11–14 V DC; 5 A total capacity; fused input",
+          "Mounting": "1/4-20 threaded insert; removable six-foot vehicle-plug cable"
+        },
+        "de": {
+          "Regelzonen": "zwei manuelle Kanäle; je zwei Ausgänge",
+          "Heizausgänge": "insgesamt vier RCA-Buchsen",
+          "Tastgradbereich": "5–95 % je Kanal",
+          "Strom": "11–14 V DC; 5 A Gesamtkapazität; abgesicherter Eingang",
+          "Befestigung": "1/4-20-Gewinde; abnehmbares sechs Fuß langes Fahrzeugstecker-Kabel"
+        }
       },
       "pros": {
         "en": [
-          "No power required",
-          "Reduces stray light"
+          "Few controls and no software dependency",
+          "Four RCA sockets can cover multiple straps when paired loads share one setting"
         ],
         "de": [
-          "Kein Strom nötig",
-          "Reduziert Streulicht"
+          "Wenige Bedienelemente und keine Softwareabhängigkeit",
+          "Vier RCA-Buchsen können mehrere Bänder versorgen, wenn gekoppelte Lasten dieselbe Einstellung teilen"
         ]
       },
       "cons": {
         "en": [
-          "May not be enough in heavy dew",
-          "Adds packed length"
+          "Only two independent control levels despite four sockets",
+          "No ambient or optic-temperature feedback; the observer sets output manually"
         ],
         "de": [
-          "Bei starkem Tau eventuell nicht ausreichend",
-          "Vergrößert das Packmaß"
+          "Trotz vier Buchsen nur zwei unabhängige Regelstufen",
+          "Keine Rückmeldung von Umgebung oder Optiktemperatur; die Leistung wird manuell gesetzt"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "telescope passive dew shield insulated",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Astrozap AZ-720 dual channel dew controller",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astrozap",
+        "title": "Dual Channel Dew Controller AZ-720",
+        "url": "https://astrozap.com/collections/dew-heaters-controller-and-adapters/products/dew-controller",
+        "checkedAt": "2026-08-28"
+      }
     },
     {
       "name": {
-        "en": "Heated dew strap with controller",
-        "de": "Beheizbares Tauband mit Controller"
+        "en": "Celestron Smart DewHeater Controller 2X",
+        "de": "Celestron Smart DewHeater Controller 2X"
       },
       "whyItMatters": {
-        "en": "Low, regulated heat keeps a lens or corrector just above the dew point during long sessions.",
-        "de": "Geringe, geregelte Wärme hält Linse oder Korrektor bei langen Sitzungen knapp über dem Taupunkt."
+        "en": "Celestron combines two RCA heater ports with an integrated ambient sensor, two thermistor inputs, automatic control, and one 12 V pass-through output in a 544 g enclosure.",
+        "de": "Celestron kombiniert zwei RCA-Heizports mit integriertem Umgebungssensor, zwei Thermistoreingängen, automatischer Regelung und einem 12-V-Durchschleif-Ausgang in einem 544-g-Gehäuse."
       },
       "coreSpecs": {
-        "fit": "matched to circumference",
-        "control": "variable or thermostatic",
-        "power": "12 V or USB class"
+        "zones": "2 heater ports and 2 thermistor ports",
+        "power": "12 V DC; 10 A input; 120 W maximum",
+        "passThrough": "one 12 V output up to 7 A",
+        "weight": "544.3 g"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Control zones": "two RCA heater ports with corresponding thermistor ports",
+          "Sensing": "integrated ambient temperature and humidity sensor",
+          "Power": "12 V DC; 10 A maximum input; 120 W controller ceiling",
+          "Pass-through": "one 12 V output up to 7 A",
+          "Integration": "standalone, Celestron hand control, or CPWI via USB; 544.3 g"
+        },
+        "de": {
+          "Regelzonen": "zwei RCA-Heizports mit zugehörigen Thermistorports",
+          "Sensorik": "integrierter Sensor für Umgebungstemperatur und Luftfeuchte",
+          "Strom": "12 V DC; maximal 10 A Eingang; 120 W Controllergrenze",
+          "Durchschleifen": "ein 12-V-Ausgang bis 7 A",
+          "Integration": "autark, Celestron-Handcontroller oder CPWI über USB; 544,3 g"
+        }
       },
       "pros": {
         "en": [
-          "Works in persistent humidity",
-          "Adjustable output"
+          "Uses ambient data and optic thermistors for automatic heat control",
+          "One fused 12 V input can also feed a separate device through the pass-through port"
         ],
         "de": [
-          "Wirksam bei anhaltender Feuchte",
-          "Regelbare Leistung"
+          "Nutzt Umgebungsdaten und Optik-Thermistoren für automatische Heizregelung",
+          "Ein abgesicherter 12-V-Eingang kann über den Durchschleif-Port zusätzlich ein separates Gerät versorgen"
         ]
       },
       "cons": {
         "en": [
-          "Consumes field power",
-          "Poor fit wastes heat"
+          "Only two heater channels and the highest published mass here",
+          "Third-party heater straps need the optional Celestron thermistor for full smart control"
         ],
         "de": [
-          "Verbraucht Strom im Feld",
-          "Schlechter Sitz verschwendet Wärme"
+          "Nur zwei Heizkanäle und höchstes veröffentlichtes Gewicht hier",
+          "Fremde Heizbänder benötigen für vollständige Smart-Regelung den optionalen Celestron-Thermistor"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "telescope dew heater strap controller 12v",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Celestron Smart DewHeater Controller 2X",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Celestron",
+        "title": "Smart DewHeater Controller 2X",
+        "url": "https://www.celestron.com/products/smart-dewheater-controller-2x",
+        "checkedAt": "2026-08-28"
+      }
+    },
+    {
+      "name": {
+        "en": "Pegasus Astro DewMaster2",
+        "de": "Pegasus Astro DewMaster2"
+      },
+      "whyItMatters": {
+        "en": "DewMaster2 provides five independently adjustable RCA outputs, an included environment sensor, two optional optic-temperature inputs, a red OLED, Wi-Fi and USB-C control, plus two 12 V pass-through sockets in 250 g.",
+        "de": "DewMaster2 bietet fünf unabhängig regelbare RCA-Ausgänge, mitgelieferten Umweltsensor, zwei optionale Optiktemperatur-Eingänge, rotes OLED, WLAN- und USB-C-Steuerung sowie zwei 12-V-Durchschleifbuchsen bei 250 g."
+      },
+      "coreSpecs": {
+        "zones": "5 independent RCA heater outputs",
+        "power": "12–13.8 V DC; PWM at input voltage",
+        "sensors": "environment sensor included; 2 probe inputs",
+        "control": "OLED, buttons, Wi-Fi, USB-C, ASCOM"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Control zones": "five independent RCA heater outputs",
+          "Sensing": "environment sensor included; two optional temperature-probe inputs",
+          "Power": "12–13.8 V DC; PWM at input voltage",
+          "Control": "red OLED, local buttons, Wi-Fi browser, USB-C, and ASCOM",
+          "Other outputs": "two 12 V pass-through sockets; 109 × 74 × 25 mm; 250 g"
+        },
+        "de": {
+          "Regelzonen": "fünf unabhängige RCA-Heizausgänge",
+          "Sensorik": "Umweltsensor enthalten; zwei Eingänge für optionale Temperaturfühler",
+          "Strom": "12–13,8 V DC; PWM mit Eingangsspannung",
+          "Steuerung": "rotes OLED, Tasten, WLAN-Browser, USB-C und ASCOM",
+          "Weitere Ausgänge": "zwei 12-V-Durchschleifbuchsen; 109 × 74 × 25 mm; 250 g"
+        }
+      },
+      "pros": {
+        "en": [
+          "Most independently controlled heater outputs in this comparison",
+          "Included environmental sensor plus local, browser, USB, and ASCOM control paths"
+        ],
+        "de": [
+          "Meiste unabhängig geregelte Heizausgänge in diesem Vergleich",
+          "Mitgelieferter Umweltsensor plus lokale, Browser-, USB- und ASCOM-Steuerung"
+        ]
+      },
+      "cons": {
+        "en": [
+          "More settings, networking, and cable choices than a two-knob manual controller",
+          "Optic-temperature probes are not included even though two probe sockets are provided"
+        ],
+        "de": [
+          "Mehr Einstellungen, Netzwerk- und Kabelentscheidungen als bei einer manuellen Zwei-Regler-Steuerung",
+          "Optiktemperaturfühler sind trotz zweier vorgesehener Buchsen nicht enthalten"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Pegasus Astro DewMaster2",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Pegasus Astro",
+        "title": "DewMaster2",
+        "url": "https://pegasusastro.com/products/dewmaster2/",
+        "checkedAt": "2026-08-28"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "More heat is not automatically better: excess warmth can create tube currents or drain a battery.",
-      "A controller adds cost and wiring but makes output repeatable."
+      "Four physical outputs do not equal four control zones: the Astrozap pairs its sockets, while the other two controllers regulate every cited heater port independently.",
+      "Automatic dew-point logic can conserve energy, but only when sensors are correctly placed and the controller's assumptions match the optical system.",
+      "Pass-through power reduces cable runs yet concentrates current through one input, so the source, plug, fuse, and total load must all be sized together.",
+      "A passive, correctly fitted dew shield remains useful with any controller because it limits radiative cooling and stray light without consuming battery power."
     ],
     "de": [
-      "Mehr Wärme ist nicht automatisch besser: Überheizung kann Tubusseeing erzeugen oder den Akku leeren.",
-      "Ein Controller kostet und verkabelt mehr, macht die Leistung aber reproduzierbar."
+      "Vier physische Ausgänge sind nicht vier Regelzonen: Astrozap koppelt seine Buchsen, während die anderen beiden Controller jeden zitierten Heizport einzeln regeln.",
+      "Automatische Taupunktlogik kann Energie sparen, aber nur bei korrekt platzierten Sensoren und wenn die Annahmen der Steuerung zum optischen System passen.",
+      "Durchgeschleifte Stromversorgung reduziert Kabelwege, konzentriert aber Strom auf einen Eingang; Quelle, Stecker, Sicherung und Gesamtlast müssen gemeinsam dimensioniert werden.",
+      "Eine passende passive Taukappe bleibt bei jeder Steuerung sinnvoll, weil sie Strahlungsauskühlung und Streulicht ohne Akkuverbrauch reduziert."
     ]
   },
   "faq": [
     {
       "question": {
-        "en": "When should I deploy the dew shield?",
-        "de": "Wann sollte ich die Taukappe montieren?"
+        "en": "Should the heater run at full power?",
+        "de": "Soll das Heizband mit voller Leistung laufen?"
       },
       "answer": {
-        "en": "Fit it before the optics cool and before dew forms; prevention is easier than drying a fogged corrector in the dark.",
-        "de": "Montiere sie, bevor die Optik auskühlt und Tau entsteht; Vorbeugen ist einfacher, als einen beschlagenen Korrektor im Dunkeln zu trocknen."
+        "en": "Usually not. The goal is to keep the optical surface slightly above the dew point, not to make it warm. Excess heat wastes battery and may create local air currents. Begin low before dew forms and increase only as conditions demand.",
+        "de": "Normalerweise nicht. Ziel ist, die optische Fläche knapp über dem Taupunkt zu halten, nicht sie warm zu machen. Zu viel Wärme verschwendet Akku und kann lokale Luftströmungen erzeugen. Beginne niedrig vor der Taubildung und erhöhe nur nach Bedarf."
       }
     },
     {
       "question": {
-        "en": "How do I size a heater?",
-        "de": "Wie dimensioniere ich ein Heizband?"
+        "en": "Can any RCA heater strap use any controller?",
+        "de": "Funktioniert jedes RCA-Heizband an jeder Steuerung?"
       },
       "answer": {
-        "en": "Measure the actual circumference, confirm the connector and voltage, then budget the controller and cable losses as well as the strap wattage.",
-        "de": "Miss den tatsächlichen Umfang, prüfe Stecker und Spannung und rechne neben der Band-Leistung auch Controller- und Kabelverluste ins Budget ein."
+        "en": "Do not assume so. Confirm voltage, polarity, connector, resistance or current draw, and the controller's per-channel and total limits. Smart temperature feedback may also require a matching thermistor even when the heater plug itself fits.",
+        "de": "Das darf nicht vorausgesetzt werden. Prüfe Spannung, Polarität, Stecker, Widerstand oder Stromaufnahme sowie Kanal- und Gesamtgrenzen des Controllers. Intelligente Temperaturregelung kann zusätzlich einen passenden Thermistor benötigen, selbst wenn der Heizstecker mechanisch passt."
+      }
+    },
+    {
+      "question": {
+        "en": "Where should a temperature probe sit?",
+        "de": "Wo sitzt ein Temperaturfühler?"
+      },
+      "answer": {
+        "en": "Follow the controller and heater instructions. A probe intended to represent the optic must make reliable thermal contact near the controlled surface without entering the optical path, being crushed, or reading heat from electronics rather than glass or its cell.",
+        "de": "Folge den Anleitungen von Controller und Heizer. Ein Fühler für die Optik braucht zuverlässigen thermischen Kontakt nahe der geregelten Fläche, ohne in den Strahlengang zu ragen, gequetscht zu werden oder Elektronikwärme statt Glas beziehungsweise Fassung zu messen."
+      }
+    },
+    {
+      "question": {
+        "en": "How large should the overnight battery be?",
+        "de": "Wie groß muss der Nachtakku sein?"
+      },
+      "answer": {
+        "en": "Add the measured average watts of every heater and pass-through device, multiply by operating hours, account for conversion losses, then keep reserve for cold conditions. Maximum controller capacity is a wiring limit, not a prediction of normal energy use.",
+        "de": "Addiere die gemessene Durchschnittsleistung aller Heizer und durchgeschleiften Geräte, multipliziere mit den Betriebsstunden, berücksichtige Wandlungsverluste und plane Kältereserve. Die Maximalleistung der Steuerung ist eine Verkabelungsgrenze, keine Prognose des normalen Energieverbrauchs."
       }
     }
   ],
   "affiliateDisclosure": {
-    "en": "No product is endorsed. This guide explains fit, control, and power considerations that should be checked against current specifications.",
-    "de": "Es wird kein Produkt empfohlen. Dieser Guide erklärt Passform, Regelung und Stromfragen, die mit aktuellen Daten abgeglichen werden müssen."
+    "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured dew-prevention test, or claim of hands-on use.",
+    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene Taubeschlagtests oder die Behauptung eines Praxistests."
   },
   "lastReviewedAt": "2026-08-28"
 }

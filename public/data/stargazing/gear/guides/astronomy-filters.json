@@ -1,149 +1,284 @@
 {
   "slug": "astronomy-filters",
   "title": {
-    "en": "Astronomy filters: what they can and cannot do",
-    "de": "Astronomiefilter: was sie leisten – und was nicht"
+    "en": "CLS, UHC-E, or UHC? Three visual filter passbands compared",
+    "de": "CLS, UHC-E oder UHC? Drei visuelle Filterkurven im Vergleich"
   },
   "category": "astronomy-filters",
   "summary": {
-    "en": "Match filter type to target, telescope, and observing purpose while avoiding promises that no optical filter can keep.",
-    "de": "Stimme den Filtertyp auf Ziel, Teleskop und Beobachtungszweck ab und vermeide Versprechen, die kein optischer Filter halten kann."
+    "en": "A source-backed comparison of three Astronomik visual filters that separates their published passbands, intended targets, aperture guidance, and real limits.",
+    "de": "Ein quellenbasierter Vergleich dreier visueller Astronomik-Filter, der veröffentlichte Durchlassbereiche, Zielklassen, Öffnungshinweise und reale Grenzen trennt."
   },
   "decisionSummary": {
-    "en": "Buy a filter for a defined task: selective nebula contrast or controlled lunar brightness. No filter replaces dark adaptation, good focus, clear air, or a genuinely dark site.",
-    "de": "Kaufe einen Filter für eine klar definierte Aufgabe: selektiven Nebelkontrast oder kontrollierte Mondhelligkeit. Kein Filter ersetzt Dunkeladaption, guten Fokus, klare Luft oder einen wirklich dunklen Standort."
+    "en": "Choose the wide CLS only when its broad-spectrum urban use matches the target, the 45 nm UHC-E for emission nebulae and comets in smaller telescopes, or the narrower 25 nm UHC for emission and planetary nebulae when the aperture can support its more selective passband. None restores light removed by the filter or replaces a dark site.",
+    "de": "Wähle den breiten CLS nur, wenn sein urbaner Breitbandeinsatz zum Ziel passt, den 45-nm-UHC-E für Emissionsnebel und Kometen an kleineren Teleskopen oder den engeren 25-nm-UHC für Emissions- und planetarische Nebel, wenn die Öffnung den selektiveren Durchlass unterstützt. Keiner ersetzt verlorenes Licht oder einen dunklen Standort."
   },
   "audience": {
-    "en": "Visual observers deciding whether a nebula, lunar, or neutral-density filter solves a real problem in their setup.",
-    "de": "Visuelle Beobachter:innen, die klären möchten, ob ein Nebel-, Mond- oder Neutraldichtefilter ein echtes Problem ihres Setups löst."
+    "en": "Visual observers choosing a first threaded deep-sky filter who want comparable manufacturer data instead of an unsupported universal light-pollution cure.",
+    "de": "Visuelle Beobachter:innen, die ihren ersten einschraubbaren Deep-Sky-Filter anhand vergleichbarer Herstellerdaten statt eines unbelegten Allheilmittels gegen Lichtverschmutzung wählen."
   },
   "buyingCriteria": [
     {
-      "en": "Target class and whether its light lies in the filter's passband",
-      "de": "Zielklasse und ob ihr Licht im Durchlassbereich des Filters liegt"
+      "en": "Target spectrum: emission nebula, comet, galaxy, cluster, or reflection nebula",
+      "de": "Zielspektrum: Emissionsnebel, Komet, Galaxie, Sternhaufen oder Reflexionsnebel"
     },
     {
-      "en": "Transmission curve, bandwidth, and out-of-band blocking",
-      "de": "Transmissionskurve, Bandbreite und Sperrung außerhalb des Durchlassbereichs"
+      "en": "Published blue-green passband and FWHM rather than the filter-family label alone",
+      "de": "Veröffentlichter blaugrüner Durchlass und FWHM statt nur der Filterfamilien-Bezeichnung"
     },
     {
-      "en": "Thread size, aperture, exit pupil, and intended visual use",
-      "de": "Gewindegröße, Öffnung, Austrittspupille und vorgesehene visuelle Nutzung"
+      "en": "Telescope aperture, exit pupil, and manufacturer suitability guidance",
+      "de": "Teleskopöffnung, Austrittspupille und Eignungshinweise des Herstellers"
+    },
+    {
+      "en": "Correct 1.25-inch or 2-inch thread and a return option for a visual comparison",
+      "de": "Passendes 1,25- oder 2-Zoll-Gewinde und Rückgabemöglichkeit für den visuellen Vergleich"
     }
   ],
   "items": [
     {
       "name": {
-        "en": "Selective visual nebula filter",
-        "de": "Selektiver visueller Nebelfilter"
+        "en": "Astronomik CLS",
+        "de": "Astronomik CLS"
       },
       "whyItMatters": {
-        "en": "A suitable passband can improve contrast for specific emission nebulae by suppressing parts of the background spectrum, not by making the target intrinsically brighter.",
-        "de": "Ein geeigneter Durchlassbereich kann den Kontrast bestimmter Emissionsnebel erhöhen, indem Teile des Hintergrundspektrums gedämpft werden – nicht indem das Ziel selbst heller wird."
+        "en": "The CLS establishes the broad end of this comparison, transmitting 450–540 nm and above 650 nm while Astronomik positions it for urban viewing of galaxies, clusters, nebulae, and comets rather than dark-site visual use.",
+        "de": "Der CLS bildet das breite Ende dieses Vergleichs: Er überträgt 450–540 nm und oberhalb 650 nm; Astronomik ordnet ihn der urbanen Beobachtung von Galaxien, Haufen, Nebeln und Kometen statt dem visuellen Einsatz unter dunklem Himmel zu."
       },
       "coreSpecs": {
-        "passband": "published transmission curve",
-        "blocking": "out-of-band suppression stated",
-        "thread": "matches eyepiece or accessory"
+        "blueGreenPassband": "450–540 nm",
+        "redPassband": ">650 nm",
+        "lineTransmission": "92% H-beta/OIII; 97% H-alpha",
+        "glass": "1 mm"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Published passbands": "450–540 nm and above 650 nm",
+          "Line transmission": "92% at H-beta 486 nm and OIII 496/501 nm; 97% at H-alpha 656 nm",
+          "Visual positioning": "manufacturer rates urban use reasonable; dark-site use rather unsuitable",
+          "Targets named by manufacturer": "galaxies, open and globular clusters, reflection and gas nebulae, comets",
+          "Formats": "1.25-inch M28.5, 2-inch M48, SC rear cell, and T-mount variants"
+        },
+        "de": {
+          "Veröffentlichte Durchlässe": "450–540 nm und oberhalb 650 nm",
+          "Linientransmission": "92 % bei H-beta 486 nm und OIII 496/501 nm; 97 % bei H-alpha 656 nm",
+          "Visuelle Einordnung": "Hersteller bewertet urbanen Einsatz als sinnvoll, dunklen Himmel als eher ungeeignet",
+          "Vom Hersteller genannte Ziele": "Galaxien, offene und Kugelsternhaufen, Reflexions- und Gasnebel, Kometen",
+          "Formate": "1,25 Zoll M28,5, 2 Zoll M48, SC-Rückseite und T-Mount"
+        }
       },
       "pros": {
         "en": [
-          "Can reveal more structure in suitable emission nebulae",
-          "Passive and compact"
+          "Broadest published blue-green window here and the least target-restricted manufacturer positioning",
+          "The manufacturer publishes exact line transmission and multiple threaded formats"
         ],
         "de": [
-          "Kann bei geeigneten Emissionsnebeln mehr Struktur zeigen",
-          "Passiv und kompakt"
+          "Breitestes veröffentlichtes blaugrünes Fenster hier und am wenigsten eingeschränkte Zielauswahl des Herstellers",
+          "Der Hersteller veröffentlicht exakte Linientransmissionen und mehrere Gewindeformate"
         ]
       },
       "cons": {
         "en": [
-          "Not a general light-pollution cure",
-          "Can dim stars and unsuitable targets"
+          "Astronomik itself rates visual use under dark skies as rather unsuitable",
+          "A broad passband rejects less background spectrum than either UHC option and cannot recreate a dark sky"
         ],
         "de": [
-          "Keine allgemeine Lösung gegen Lichtverschmutzung",
-          "Kann Sterne und ungeeignete Ziele abdunkeln"
+          "Astronomik selbst bewertet den visuellen Einsatz unter dunklem Himmel als eher ungeeignet",
+          "Der breite Durchlass sperrt weniger Hintergrundspektrum als beide UHC-Optionen und kann keinen dunklen Himmel herstellen"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "visual astronomy nebula filter transmission curve",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Astronomik CLS visual filter 1.25 inch",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astronomik",
+        "title": "Astronomik CLS filter",
+        "url": "https://www.astronomik.com/en/Visual-Filters/CLS/",
+        "checkedAt": "2026-08-28"
+      }
     },
     {
       "name": {
-        "en": "Neutral-density or variable polarizing lunar filter",
-        "de": "Neutraldichte- oder variabler Polfilter für den Mond"
+        "en": "Astronomik UHC-E",
+        "de": "Astronomik UHC-E"
       },
       "whyItMatters": {
-        "en": "Controlled attenuation can make a bright lunar image more comfortable without claiming additional optical detail.",
-        "de": "Kontrollierte Dämpfung kann ein helles Mondbild angenehmer machen, ohne zusätzliche optische Details zu versprechen."
+        "en": "The UHC-E occupies the middle ground with a documented 45 nm FWHM, a 465–530 nm window, and explicit manufacturer guidance for emission nebulae and comets in telescopes up to 125 mm under urban skies.",
+        "de": "Der UHC-E besetzt die Mitte mit dokumentierten 45 nm FWHM, einem Fenster von 465–530 nm und ausdrücklicher Herstellerempfehlung für Emissionsnebel und Kometen an Teleskopen bis 125 mm unter urbanem Himmel."
       },
       "coreSpecs": {
-        "attenuation": "fixed transmission or adjustable range",
-        "thread": "compatible with eyepiece barrel",
-        "use": "visual comfort, not solar observing"
+        "fwhm": "45 nm",
+        "blueGreenPassband": "465–530 nm",
+        "redPassband": ">645 nm",
+        "lineTransmission": "94–95%"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "FWHM": "45 nm",
+          "Published passbands": "465–530 nm and above 645 nm",
+          "Line transmission": "94% at H-beta and H-alpha; 95% at both OIII lines",
+          "Visual positioning": "manufacturer recommends urban use for telescopes up to 5 inches / 125 mm",
+          "Targets named by manufacturer": "emission nebulae and comets"
+        },
+        "de": {
+          "FWHM": "45 nm",
+          "Veröffentlichte Durchlässe": "465–530 nm und oberhalb 645 nm",
+          "Linientransmission": "94 % bei H-beta und H-alpha; 95 % an beiden OIII-Linien",
+          "Visuelle Einordnung": "Hersteller empfiehlt urbanen Einsatz an Teleskopen bis 5 Zoll / 125 mm",
+          "Vom Hersteller genannte Ziele": "Emissionsnebel und Kometen"
+        }
       },
       "pros": {
         "en": [
-          "Reduces perceived glare",
-          "Variable versions adapt to phase and magnification"
+          "Documented 45 nm compromise passes more starlight than the standard UHC",
+          "The manufacturer gives a concrete small-aperture and target-use case"
         ],
         "de": [
-          "Reduziert wahrgenommene Blendung",
-          "Variable Varianten passen sich Phase und Vergrößerung an"
+          "Dokumentierter 45-nm-Kompromiss lässt mehr Sternlicht als der Standard-UHC passieren",
+          "Der Hersteller nennt einen konkreten Einsatz für kleine Öffnungen und Zielklassen"
         ]
       },
       "cons": {
         "en": [
-          "Does not improve atmospheric seeing",
-          "Variable filters add adjustment and optical surfaces"
+          "Still a selective filter, so broad-spectrum targets can lose light",
+          "Astronomik recommends its narrower UHC instead under dark skies and above 125 mm"
         ],
         "de": [
-          "Verbessert kein atmosphärisches Seeing",
-          "Variable Filter bringen Justage und zusätzliche optische Flächen"
+          "Bleibt ein selektiver Filter; breitbandige Ziele können Licht verlieren",
+          "Astronomik empfiehlt unter dunklem Himmel und oberhalb 125 mm stattdessen den engeren UHC"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "telescope lunar neutral density variable polarizing filter",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Astronomik UHC-E visual filter 1.25 inch",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astronomik",
+        "title": "Astronomik UHC-E filter",
+        "url": "https://www.astronomik.com/en/Visual-Filters/UHC-E/",
+        "checkedAt": "2026-08-28"
+      }
+    },
+    {
+      "name": {
+        "en": "Astronomik UHC",
+        "de": "Astronomik UHC"
+      },
+      "whyItMatters": {
+        "en": "The standard UHC is the most selective option here at 25 nm FWHM and 480–505 nm, with 95% typical transmission at H-beta and both OIII lines and manufacturer positioning for emission nebulae in medium or larger telescopes.",
+        "de": "Der Standard-UHC ist mit 25 nm FWHM und 480–505 nm die selektivste Option hier; typisch 95 % Transmission an H-beta und beiden OIII-Linien treffen auf die Herstellerpositionierung für Emissionsnebel an mittleren oder größeren Teleskopen."
+      },
+      "coreSpecs": {
+        "fwhm": "25 nm",
+        "blueGreenPassband": "480–505 nm",
+        "redPassband": ">645 nm",
+        "lineTransmission": "95%"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "FWHM": "25 nm",
+          "Published passbands": "480–505 nm and above 645 nm",
+          "Line transmission": "95% typical at H-beta, both OIII lines, and H-alpha",
+          "Visual positioning": "manufacturer rates urban use from 4 inches / 100 mm and dark-site use across focal ratios f/3 to f/15",
+          "Targets named by manufacturer": "gaseous and planetary nebulae"
+        },
+        "de": {
+          "FWHM": "25 nm",
+          "Veröffentlichte Durchlässe": "480–505 nm und oberhalb 645 nm",
+          "Linientransmission": "typisch 95 % bei H-beta, beiden OIII-Linien und H-alpha",
+          "Visuelle Einordnung": "Hersteller bewertet urbanen Einsatz ab 4 Zoll / 100 mm und dunklen Himmel über Öffnungsverhältnisse f/3 bis f/15",
+          "Vom Hersteller genannte Ziele": "Gasnebel und planetarische Nebel"
+        }
+      },
+      "pros": {
+        "en": [
+          "Narrowest documented FWHM in this comparison while retaining H-beta and both OIII lines",
+          "Exact transmission, passband, aperture, and focal-ratio guidance are published"
+        ],
+        "de": [
+          "Engste dokumentierte FWHM im Vergleich bei Erhalt von H-beta und beiden OIII-Linien",
+          "Exakte Transmission, Durchlass-, Öffnungs- und Öffnungsverhältnis-Hinweise sind veröffentlicht"
+        ]
+      },
+      "cons": {
+        "en": [
+          "The narrower window suppresses more starlight than UHC-E and is not intended as a universal target filter",
+          "For telescopes below 125 mm the manufacturer directs buyers toward the wider UHC-E"
+        ],
+        "de": [
+          "Das engere Fenster dämpft mehr Sternlicht als der UHC-E und ist kein universeller Zielfilter",
+          "Für Teleskope unter 125 mm verweist der Hersteller auf den breiteren UHC-E"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Astronomik UHC visual filter 1.25 inch",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astronomik",
+        "title": "Astronomik UHC filter",
+        "url": "https://www.astronomik.com/en/Visual-Filters/UHC/",
+        "checkedAt": "2026-08-28"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "Narrower passbands may improve contrast on compatible nebulae but remove more starlight and demand careful target selection.",
-      "Brightness control can improve comfort, but clouds, haze, poor seeing, focus errors, and light pollution still limit detail."
+      "This is a controlled same-manufacturer specification comparison, not an independent visual ranking or transmission-bench test.",
+      "A narrower passband can raise contrast on compatible line-emitting nebulae while removing more continuum light, including starlight and light from unsuitable targets.",
+      "Aperture guidance is the manufacturer's practical recommendation, not a physical cutoff; exit pupil, observer adaptation, target surface brightness, and sky quality still matter.",
+      "The red H-alpha passband is part of the published curve, but strong red transmission alone does not guarantee a prominent visual H-alpha response from the dark-adapted human eye."
     ],
     "de": [
-      "Engere Durchlassbereiche können bei passenden Nebeln den Kontrast verbessern, nehmen aber mehr Sternlicht und verlangen eine sorgfältige Zielwahl.",
-      "Helligkeitskontrolle kann den Komfort verbessern, doch Wolken, Dunst, schlechtes Seeing, Fokusfehler und Lichtverschmutzung begrenzen weiterhin die Details."
+      "Dies ist ein kontrollierter Datenvergleich desselben Herstellers, kein unabhängiges visuelles Ranking oder Transmissions-Labortest.",
+      "Ein engerer Durchlass kann bei passenden Linienemissionsnebeln den Kontrast erhöhen, entfernt aber mehr Kontinuumslicht einschließlich Sternlicht und Licht ungeeigneter Ziele.",
+      "Die Öffnungsangabe ist eine praktische Herstellerempfehlung, keine physikalische Grenze; Austrittspupille, Dunkeladaption, Flächenhelligkeit und Himmel bleiben relevant.",
+      "Der rote H-alpha-Durchlass gehört zur veröffentlichten Kurve; hohe rote Transmission allein garantiert aber keine auffällige visuelle H-alpha-Wirkung des dunkeladaptierten Auges."
     ]
   },
   "faq": [
     {
       "question": {
-        "en": "Will a filter make every deep-sky object easier to see?",
-        "de": "Macht ein Filter jedes Deep-Sky-Objekt leichter sichtbar?"
+        "en": "Does any of these filters remove light pollution?",
+        "de": "Entfernt einer dieser Filter Lichtverschmutzung?"
       },
       "answer": {
-        "en": "No. Selective filters mainly help compatible emission nebulae. Galaxies, star clusters, and reflection nebulae emit broad spectra that the same filter may simply dim.",
-        "de": "Nein. Selektive Filter helfen vor allem bei passenden Emissionsnebeln. Galaxien, Sternhaufen und Reflexionsnebel besitzen breite Spektren, die derselbe Filter oft nur abdunkelt."
+        "en": "No. Each rejects selected wavelengths and passes others; it cannot undo broad-spectrum LED glow, atmospheric scattering, or lost dark adaptation. Treat the filter as a target-specific contrast tool, not a replacement for travelling to a darker site.",
+        "de": "Nein. Jeder sperrt ausgewählte Wellenlängen und lässt andere passieren; breitbandiges LED-Licht, atmosphärische Streuung oder verlorene Dunkeladaption macht er nicht rückgängig. Betrachte ihn als zielspezifisches Kontrastwerkzeug, nicht als Ersatz für einen dunkleren Standort."
       }
     },
     {
       "question": {
-        "en": "Can a lunar filter be used for the Sun?",
-        "de": "Kann ein Mondfilter für die Sonne verwendet werden?"
+        "en": "Which one should I use for galaxies and star clusters?",
+        "de": "Welchen sollte ich für Galaxien und Sternhaufen nutzen?"
       },
       "answer": {
-        "en": "No. Solar observing requires a certified, undamaged solar filter designed for the exact optical setup and fitted before concentrated sunlight enters the telescope.",
-        "de": "Nein. Sonnenbeobachtung erfordert einen zertifizierten, unbeschädigten Sonnenfilter für das konkrete optische System, der vor Eintritt des gebündelten Sonnenlichts montiert wird."
+        "en": "Astronomik names those broad-spectrum targets for the wider CLS, especially in urban use, but also rates the CLS rather unsuitable for visual observing at a dark site. The two UHC filters are positioned primarily for emission nebulae and can dim continuum targets.",
+        "de": "Astronomik nennt diese breitbandigen Ziele beim weiteren CLS besonders für urbanen Einsatz, bewertet den CLS unter dunklem Himmel visuell aber als eher ungeeignet. Beide UHC-Filter sind primär für Emissionsnebel positioniert und können Kontinuumsziele abdunkeln."
+      }
+    },
+    {
+      "question": {
+        "en": "Is UHC-E simply a cheaper UHC?",
+        "de": "Ist UHC-E einfach ein günstigerer UHC?"
+      },
+      "answer": {
+        "en": "No. Its published 45 nm FWHM is materially wider than the UHC's 25 nm window. Astronomik positions that wider passband for more retained starlight, comets, and smaller apertures, so the choice is optical rather than a quality tier.",
+        "de": "Nein. Seine veröffentlichte FWHM von 45 nm ist deutlich breiter als das 25-nm-Fenster des UHC. Astronomik positioniert diesen breiteren Durchlass für mehr verbleibendes Sternlicht, Kometen und kleinere Öffnungen; die Wahl ist optisch, keine Qualitätsstufe."
+      }
+    },
+    {
+      "question": {
+        "en": "Can a CLS or UHC filter be used for the Sun?",
+        "de": "Kann ein CLS- oder UHC-Filter für die Sonne verwendet werden?"
+      },
+      "answer": {
+        "en": "Absolutely not. None is a solar safety filter. Solar observing requires a certified, undamaged front-aperture solar filter designed and secured for the exact telescope before concentrated sunlight enters the optical system.",
+        "de": "Auf keinen Fall. Keiner ist ein Sonnenschutzfilter. Sonnenbeobachtung erfordert einen zertifizierten, unbeschädigten und sicher befestigten Objektiv-Sonnenfilter für das konkrete Teleskop, bevor gebündeltes Sonnenlicht ins optische System gelangt."
       }
     }
   ],
   "affiliateDisclosure": {
-    "en": "This is specification-based education, not a product endorsement. Verify current transmission data, fit, safety instructions, and intended use before purchase.",
-    "de": "Dies ist technische Orientierung, keine Produktempfehlung. Prüfe vor dem Kauf aktuelle Transmissionsdaten, Passform, Sicherheitshinweise und Einsatzzweck."
+    "en": "This source-backed guide compares current manufacturer specifications from one product family to keep passband data directly comparable. It contains no live prices, affiliate identifiers, independent transmission measurement, or claim of hands-on use.",
+    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten einer Produktfamilie, damit Durchlasswerte direkt vergleichbar bleiben. Er enthält weder Live-Preise noch Affiliate-Kennungen, unabhängige Transmissionsmessungen oder die Behauptung eines Praxistests."
   },
   "lastReviewedAt": "2026-08-28"
 }

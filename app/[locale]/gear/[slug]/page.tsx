@@ -4,10 +4,11 @@ import { notFound } from "next/navigation";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { listGearGuides, loadGearGuide, loadSeoPage } from "@/lib/data/load";
-import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildGearGuideStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
+import { isGearGuideEditorialReady } from "@/lib/gear/gear";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -20,7 +21,7 @@ function readParams(params: { locale: string; slug: string }) {
     return {
       locale: params.locale as Locale,
       guide: loadGearGuide(params.slug),
-      relatedGuides: listGearGuides().filter((slug) => slug !== params.slug).slice(0, 3).map(loadGearGuide),
+      relatedGuides: listGearGuides().filter((slug) => slug !== params.slug).map(loadGearGuide).filter(isGearGuideEditorialReady).slice(0, 3),
       seo: loadSeoPage(`/${params.locale}/gear/${params.slug}/`),
     };
   } catch {
@@ -40,9 +41,11 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   const { locale, guide, relatedGuides, seo } = resolved;
   const isGerman = locale === "de";
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
+  const guideStructuredData = buildGearGuideStructuredData({ guide, locale, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/` });
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideStructuredData) }} />
       <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p><h1>{guide.title[locale]}</h1><p className="lede">{guide.summary[locale]}</p><p className="event-note">{guide.decisionSummary[locale]}</p></header>
       <section className="event-summary" aria-labelledby="gear-audience-title"><h2 id="gear-audience-title">{isGerman ? "Für wen" : "Who it is for"}</h2><p>{guide.audience[locale]}</p><h2>{isGerman ? "Kaufkriterien" : "Buying criteria"}</h2><ul>{guide.buyingCriteria.map((criterion) => <li key={criterion.en}>{criterion[locale]}</li>)}</ul></section>
@@ -64,7 +67,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
                 return <tr key={item.name.en}>
                   <td data-label={isGerman ? "Option" : "Option"}>
                     <strong>{item.name[locale]}</strong>
-                    {item.source ? <><br /><a className="gear-source-link" href={item.source.url} rel="noreferrer">{isGerman ? "Herstellerdaten ↗" : "Manufacturer specifications ↗"}</a></> : null}
+                    {item.source ? <><br /><a className="gear-source-link" href={item.source.url} rel="noreferrer">{item.source.publisher}: {item.source.title} ↗</a></> : null}
                   </td>
                   <td data-label={isGerman ? "Warum wichtig" : "Why it matters"}>{item.whyItMatters[locale]}</td>
                   <td data-label={isGerman ? "Technische Daten" : "Core specs"}>{Object.entries(coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td>
