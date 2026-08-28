@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 
 import { listShortTripOrigins, loadSeoPage, loadShortTrip } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -29,12 +30,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!resolved) return {};
   const title = resolved.locale === "de" ? `Kurze Sternreisen ab ${resolved.trip.originName}` : `Short stargazing trips from ${resolved.trip.originName}`;
   const seo = resolved.seo;
-  return {
-    title: seo?.title ?? title,
-    description: seo?.description,
-    robots: seo?.indexable ? undefined : { index: false, follow: true },
-    alternates: seo ? { canonical: seo.canonical, languages: seo.alternatePaths } : undefined,
-  };
+  return buildSeoMetadata({ seo, locale: resolved.locale, title, description: resolved.locale === "de" ? `Ranking dunkler Himmelsziele ab ${resolved.trip.originName}.` : `Ranking of dark-sky destinations from ${resolved.trip.originName}.` });
 }
 
 export default async function ShortTripsPage({ params }: { params: Promise<{ locale: string; origin: string }> }) {
@@ -42,7 +38,7 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   if (!resolved) notFound();
   const { trip, locale, seo } = resolved;
   const isGerman = locale === "de";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `Short stargazing trips from ${trip.originName}`, description: seo?.description ?? `Destination ranking from ${trip.originName}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/short-trips/${trip.originSlug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `Short stargazing trips from ${trip.originName}`, description: seo?.description ?? `Destination ranking from ${trip.originName}.`, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/short-trips/${trip.originSlug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   return (
     <main className="trip-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

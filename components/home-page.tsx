@@ -23,7 +23,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   }).filter((trip) => trip.destinationCount > 0);
   const gearGuides = listGearGuides().map(loadGearGuide);
   const seo = loadSeoPage(`/${locale}/`);
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Index", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const sites = loadSites();
   const destinationRecords = loadDestinations();
   const previews = loadNightPreviews().previews;

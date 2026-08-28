@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { loadDestination, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
@@ -78,13 +79,7 @@ function readParams(params: { locale: string; slug: string }) {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
-  const seo = resolved.seo;
-  return {
-    title: seo?.title ?? resolved.destination.name,
-    description: seo?.description,
-    robots: seo?.indexable ? undefined : { index: false, follow: true },
-    alternates: seo ? { canonical: seo.canonical, languages: seo.alternatePaths } : undefined,
-  };
+  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.destination.name, description: resolved.locale === "de" ? `Himmelsführer für ${resolved.destination.name}.` : `Dark-sky guide for ${resolved.destination.name}.`, image: resolved.image?.localPath ?? null });
 }
 
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -93,7 +88,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
   const { destination, sites, siteViews, image, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazing.local/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>

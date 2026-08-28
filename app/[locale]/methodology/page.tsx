@@ -6,6 +6,7 @@ import { loadSeoPage } from "@/lib/data/load";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -26,12 +27,7 @@ function readParams(params: { locale: string }) {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
-  return {
-    title: resolved.seo?.title,
-    description: resolved.seo?.description,
-    robots: resolved.seo?.indexable ? undefined : { index: false, follow: true },
-    alternates: resolved.seo ? { canonical: resolved.seo.canonical, languages: resolved.seo.alternatePaths } : undefined,
-  };
+  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.locale === "de" ? "So bewerten wir Astronomie-Ausrüstung" : "How we evaluate astronomy gear", description: resolved.locale === "de" ? "Transparente Methodik für technische Vergleiche und Quellen." : "Transparent methodology for technical comparisons and sources." });
 }
 
 export default async function MethodologyPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -41,7 +37,7 @@ export default async function MethodologyPage({ params }: { params: Promise<{ lo
   const isGerman = locale === "de";
   const title = isGerman ? "So bewerten wir Ausrüstung." : "How we evaluate gear.";
   const description = isGerman ? "Unsere redaktionellen Standards für technische Gear-Guides, Quellen, Aktualität und kommerzielle Unabhängigkeit." : "Our editorial standards for technical gear guides, evidence, freshness, and commercial independence.";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? title, description: seo?.description ?? description, url: seo?.canonical ?? `https://stargazing.local/${locale}/methodology/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? title, description: seo?.description ?? description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/methodology/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
 
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
