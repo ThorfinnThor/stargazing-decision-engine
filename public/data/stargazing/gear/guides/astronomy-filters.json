@@ -1,0 +1,149 @@
+{
+  "slug": "astronomy-filters",
+  "title": {
+    "en": "Astronomy filters: what they can and cannot do",
+    "de": "Astronomiefilter: was sie leisten – und was nicht"
+  },
+  "category": "astronomy-filters",
+  "summary": {
+    "en": "Match filter type to target, telescope, and observing purpose while avoiding promises that no optical filter can keep.",
+    "de": "Stimme den Filtertyp auf Ziel, Teleskop und Beobachtungszweck ab und vermeide Versprechen, die kein optischer Filter halten kann."
+  },
+  "decisionSummary": {
+    "en": "Buy a filter for a defined task: selective nebula contrast or controlled lunar brightness. No filter replaces dark adaptation, good focus, clear air, or a genuinely dark site.",
+    "de": "Kaufe einen Filter für eine klar definierte Aufgabe: selektiven Nebelkontrast oder kontrollierte Mondhelligkeit. Kein Filter ersetzt Dunkeladaption, guten Fokus, klare Luft oder einen wirklich dunklen Standort."
+  },
+  "audience": {
+    "en": "Visual observers deciding whether a nebula, lunar, or neutral-density filter solves a real problem in their setup.",
+    "de": "Visuelle Beobachter:innen, die klären möchten, ob ein Nebel-, Mond- oder Neutraldichtefilter ein echtes Problem ihres Setups löst."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Target class and whether its light lies in the filter's passband",
+      "de": "Zielklasse und ob ihr Licht im Durchlassbereich des Filters liegt"
+    },
+    {
+      "en": "Transmission curve, bandwidth, and out-of-band blocking",
+      "de": "Transmissionskurve, Bandbreite und Sperrung außerhalb des Durchlassbereichs"
+    },
+    {
+      "en": "Thread size, aperture, exit pupil, and intended visual use",
+      "de": "Gewindegröße, Öffnung, Austrittspupille und vorgesehene visuelle Nutzung"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "Selective visual nebula filter",
+        "de": "Selektiver visueller Nebelfilter"
+      },
+      "whyItMatters": {
+        "en": "A suitable passband can improve contrast for specific emission nebulae by suppressing parts of the background spectrum, not by making the target intrinsically brighter.",
+        "de": "Ein geeigneter Durchlassbereich kann den Kontrast bestimmter Emissionsnebel erhöhen, indem Teile des Hintergrundspektrums gedämpft werden – nicht indem das Ziel selbst heller wird."
+      },
+      "coreSpecs": {
+        "passband": "published transmission curve",
+        "blocking": "out-of-band suppression stated",
+        "thread": "matches eyepiece or accessory"
+      },
+      "pros": {
+        "en": [
+          "Can reveal more structure in suitable emission nebulae",
+          "Passive and compact"
+        ],
+        "de": [
+          "Kann bei geeigneten Emissionsnebeln mehr Struktur zeigen",
+          "Passiv und kompakt"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Not a general light-pollution cure",
+          "Can dim stars and unsuitable targets"
+        ],
+        "de": [
+          "Keine allgemeine Lösung gegen Lichtverschmutzung",
+          "Kann Sterne und ungeeignete Ziele abdunkeln"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "visual astronomy nebula filter transmission curve",
+      "affiliatePartnerId": null
+    },
+    {
+      "name": {
+        "en": "Neutral-density or variable polarizing lunar filter",
+        "de": "Neutraldichte- oder variabler Polfilter für den Mond"
+      },
+      "whyItMatters": {
+        "en": "Controlled attenuation can make a bright lunar image more comfortable without claiming additional optical detail.",
+        "de": "Kontrollierte Dämpfung kann ein helles Mondbild angenehmer machen, ohne zusätzliche optische Details zu versprechen."
+      },
+      "coreSpecs": {
+        "attenuation": "fixed transmission or adjustable range",
+        "thread": "compatible with eyepiece barrel",
+        "use": "visual comfort, not solar observing"
+      },
+      "pros": {
+        "en": [
+          "Reduces perceived glare",
+          "Variable versions adapt to phase and magnification"
+        ],
+        "de": [
+          "Reduziert wahrgenommene Blendung",
+          "Variable Varianten passen sich Phase und Vergrößerung an"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Does not improve atmospheric seeing",
+          "Variable filters add adjustment and optical surfaces"
+        ],
+        "de": [
+          "Verbessert kein atmosphärisches Seeing",
+          "Variable Filter bringen Justage und zusätzliche optische Flächen"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "telescope lunar neutral density variable polarizing filter",
+      "affiliatePartnerId": null
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "Narrower passbands may improve contrast on compatible nebulae but remove more starlight and demand careful target selection.",
+      "Brightness control can improve comfort, but clouds, haze, poor seeing, focus errors, and light pollution still limit detail."
+    ],
+    "de": [
+      "Engere Durchlassbereiche können bei passenden Nebeln den Kontrast verbessern, nehmen aber mehr Sternlicht und verlangen eine sorgfältige Zielwahl.",
+      "Helligkeitskontrolle kann den Komfort verbessern, doch Wolken, Dunst, schlechtes Seeing, Fokusfehler und Lichtverschmutzung begrenzen weiterhin die Details."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "Will a filter make every deep-sky object easier to see?",
+        "de": "Macht ein Filter jedes Deep-Sky-Objekt leichter sichtbar?"
+      },
+      "answer": {
+        "en": "No. Selective filters mainly help compatible emission nebulae. Galaxies, star clusters, and reflection nebulae emit broad spectra that the same filter may simply dim.",
+        "de": "Nein. Selektive Filter helfen vor allem bei passenden Emissionsnebeln. Galaxien, Sternhaufen und Reflexionsnebel besitzen breite Spektren, die derselbe Filter oft nur abdunkelt."
+      }
+    },
+    {
+      "question": {
+        "en": "Can a lunar filter be used for the Sun?",
+        "de": "Kann ein Mondfilter für die Sonne verwendet werden?"
+      },
+      "answer": {
+        "en": "No. Solar observing requires a certified, undamaged solar filter designed for the exact optical setup and fitted before concentrated sunlight enters the telescope.",
+        "de": "Nein. Sonnenbeobachtung erfordert einen zertifizierten, unbeschädigten Sonnenfilter für das konkrete optische System, der vor Eintritt des gebündelten Sonnenlichts montiert wird."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "This is specification-based education, not a product endorsement. Verify current transmission data, fit, safety instructions, and intended use before purchase.",
+    "de": "Dies ist technische Orientierung, keine Produktempfehlung. Prüfe vor dem Kauf aktuelle Transmissionsdaten, Passform, Sicherheitshinweise und Einsatzzweck."
+  },
+  "lastReviewedAt": "2026-08-28"
+}

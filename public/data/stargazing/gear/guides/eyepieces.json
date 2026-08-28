@@ -1,0 +1,149 @@
+{
+  "slug": "eyepieces",
+  "title": {
+    "en": "How to choose telescope eyepieces",
+    "de": "Teleskop-Okulare sinnvoll auswählen"
+  },
+  "category": "eyepieces",
+  "summary": {
+    "en": "Choose useful magnifications from focal length, exit pupil, field of view, and eye relief instead of collecting overlapping eyepieces.",
+    "de": "Wähle sinnvolle Vergrößerungen anhand von Brennweite, Austrittspupille, Gesichtsfeld und Augenabstand, statt sich überschneidende Okulare zu sammeln."
+  },
+  "decisionSummary": {
+    "en": "Build a small, well-spaced set: one low-power finder eyepiece, one medium-power option, and only then a high-power eyepiece that your telescope and local seeing can support.",
+    "de": "Baue ein kleines, gut abgestuftes Set auf: ein Übersichtsokular, eine mittlere Vergrößerung und erst danach ein Hochvergrößerungsokular, das Teleskop und Seeing tatsächlich tragen."
+  },
+  "audience": {
+    "en": "Visual observers who want to add or replace eyepieces without duplicating magnifications they already own.",
+    "de": "Visuelle Beobachter:innen, die Okulare ergänzen oder ersetzen möchten, ohne vorhandene Vergrößerungen zu duplizieren."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Focal length, resulting magnification, and exit pupil in your telescope",
+      "de": "Brennweite, resultierende Vergrößerung und Austrittspupille am eigenen Teleskop"
+    },
+    {
+      "en": "Apparent field of view and the true sky area it produces",
+      "de": "Scheinbares Gesichtsfeld und der daraus entstehende wahre Himmelsausschnitt"
+    },
+    {
+      "en": "Eye relief, barrel size, weight, and focuser compatibility",
+      "de": "Augenabstand, Steckmaß, Gewicht und Kompatibilität zum Okularauszug"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "Long-focal-length wide-field eyepiece",
+        "de": "Langbrennweitiges Weitwinkelokular"
+      },
+      "whyItMatters": {
+        "en": "Low magnification and a larger exit pupil make star fields, extended objects, and target finding easier.",
+        "de": "Geringe Vergrößerung und eine größere Austrittspupille erleichtern Sternfelder, ausgedehnte Objekte und das Auffinden von Zielen."
+      },
+      "coreSpecs": {
+        "focalLength": "matched to a useful low-power exit pupil",
+        "field": "apparent and true field both stated",
+        "barrel": "1.25 or 2 inch compatible"
+      },
+      "pros": {
+        "en": [
+          "Large navigable sky area",
+          "Relaxed viewing for extended targets"
+        ],
+        "de": [
+          "Großer überschaubarer Himmelsausschnitt",
+          "Entspanntes Beobachten ausgedehnter Ziele"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Large models can be heavy",
+          "An oversized exit pupil wastes aperture and brightens the background"
+        ],
+        "de": [
+          "Große Modelle können schwer sein",
+          "Eine zu große Austrittspupille verschenkt Öffnung und hellt den Hintergrund auf"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "wide field telescope eyepiece long focal length",
+      "affiliatePartnerId": null
+    },
+    {
+      "name": {
+        "en": "Medium- or short-focal-length eyepiece",
+        "de": "Mittel- oder kurzbrennweitiges Okular"
+      },
+      "whyItMatters": {
+        "en": "Moderate to high power reveals lunar, planetary, and compact deep-sky detail when focus, collimation, and seeing cooperate.",
+        "de": "Mittlere bis hohe Vergrößerung zeigt Mond-, Planeten- und kompakte Deep-Sky-Details, wenn Fokus, Kollimation und Seeing mitspielen."
+      },
+      "coreSpecs": {
+        "focalLength": "spaced clearly from existing eyepieces",
+        "eyeRelief": "comfortable with or without glasses",
+        "opticalFit": "appropriate for telescope focal ratio"
+      },
+      "pros": {
+        "en": [
+          "Useful detail scale",
+          "Compact formats are common"
+        ],
+        "de": [
+          "Nützlicher Detailmaßstab",
+          "Kompakte Bauformen sind verbreitet"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Seeing often limits usable power",
+          "Short eye relief can be uncomfortable"
+        ],
+        "de": [
+          "Seeing begrenzt oft die nutzbare Vergrößerung",
+          "Kurzer Augenabstand kann unbequem sein"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "telescope eyepiece medium high magnification eye relief",
+      "affiliatePartnerId": null
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "A wider apparent field improves immersion and tracking time, but often adds size, weight, and cost.",
+      "Maximum theoretical magnification is less useful than a clean image at a lower, repeatable power."
+    ],
+    "de": [
+      "Ein größeres scheinbares Gesichtsfeld verbessert Einblick und Nachführzeit, erhöht aber oft Größe, Gewicht und Kosten.",
+      "Die theoretische Maximalvergrößerung ist weniger wert als ein sauberes Bild bei geringerer, zuverlässig nutzbarer Vergrößerung."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "How do I calculate magnification and exit pupil?",
+        "de": "Wie berechne ich Vergrößerung und Austrittspupille?"
+      },
+      "answer": {
+        "en": "Divide telescope focal length by eyepiece focal length for magnification. Divide aperture by magnification for exit pupil, using the same units.",
+        "de": "Teile die Teleskopbrennweite durch die Okularbrennweite für die Vergrößerung. Teile die Öffnung durch die Vergrößerung für die Austrittspupille; verwende jeweils gleiche Einheiten."
+      }
+    },
+    {
+      "question": {
+        "en": "Do I need a complete eyepiece set immediately?",
+        "de": "Brauche ich sofort ein vollständiges Okular-Set?"
+      },
+      "answer": {
+        "en": "No. Start with the supplied eyepiece, identify the missing observing scale, and add one clearly different focal length at a time.",
+        "de": "Nein. Starte mit dem vorhandenen Okular, erkenne den fehlenden Beobachtungsmaßstab und ergänze jeweils nur eine klar andere Brennweite."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "This guide explains optical relationships and compatibility from specifications; it does not rank brands or claim hands-on comparison.",
+    "de": "Dieser Guide erklärt optische Zusammenhänge und Kompatibilität anhand technischer Daten; er rankt keine Marken und behauptet keinen Praxistest."
+  },
+  "lastReviewedAt": "2026-08-28"
+}

@@ -132,6 +132,10 @@ for (const locale of config.locales) {
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),
     title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Technische Gear-Guides ohne Preis- oder Verfügbarkeitsversprechen." : "Specification-based gear guides without price or availability claims.", resultCount: gearGuides.length, confidence: "high", uniqueInsightCount: 3, internalLinkCount: gearGuides.length + seed.destinations.length,
   }));
+  pages.push(makePage({
+    id: `methodology-${locale}`, pageType: "methodology", locale, path: `/${locale}/methodology/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/methodology/`])),
+    title: locale === "de" ? "So bewerten wir Astronomie-Ausrüstung" : "How we evaluate astronomy gear", h1: locale === "de" ? "So bewerten wir Ausrüstung." : "How we evaluate gear.", description: locale === "de" ? "Transparente Methodik für technische Vergleiche, Nachweise, Aktualität und redaktionelle Unabhängigkeit." : "Transparent methodology for technical comparisons, evidence, freshness, and editorial independence.", resultCount: 6, confidence: "high", uniqueInsightCount: 5, internalLinkCount: gearGuides.length + 1,
+  }));
   for (const destination of seed.destinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
     const published = readJson<DestinationMonthlySummary>(publicPath(`monthly/destinations/${destination.slug}.json`));
