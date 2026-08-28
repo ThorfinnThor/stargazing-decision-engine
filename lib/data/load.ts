@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile, SiteMonthlySummary } from "./types.js";
+import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile, SiteMonthlySummary } from "./types.js";
 import type { NightPreviewFile } from "../astronomy/types.js";
 
 export interface SeoPageRecord {
@@ -44,6 +44,17 @@ export function loadDestination(slug: string): Destination {
   const destination = loadDestinations().find((item) => item.slug === slug);
   if (!destination) throw new Error(`Unknown destination: ${slug}`);
   return destination;
+}
+
+export function loadDestinationEditorialGuide(slug: string): DestinationEditorialGuide | null {
+  const filePath = resolve(publicDataRoot, "editorial/destinations", `${slug}.json`);
+  return existsSync(filePath) ? JSON.parse(readFileSync(filePath, "utf8")) as DestinationEditorialGuide : null;
+}
+
+export function listDestinationEditorialGuides() {
+  const directory = resolve(publicDataRoot, "editorial/destinations");
+  if (!existsSync(directory)) return [] as string[];
+  return readdirSync(directory).filter((file) => file.endsWith(".json") && file !== "index.json").map((file) => file.replace(/\.json$/, "")).sort();
 }
 
 export function loadSites(): ObservationSite[] {

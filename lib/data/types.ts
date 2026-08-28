@@ -22,6 +22,65 @@ export interface Destination {
   affiliateQuery: string;
 }
 
+export type LocalizedEditorialText = { en: string; de: string };
+
+export interface DestinationEditorialSource {
+  id: string;
+  publisher: string;
+  title: string;
+  url: string;
+  checkedAt: string;
+  authority: "official-destination" | "public-agency" | "protected-area" | "science-institution" | "nonprofit-certifier";
+}
+
+export interface DestinationEditorialSection {
+  id: string;
+  heading: LocalizedEditorialText;
+  paragraphs: { en: string[]; de: string[] };
+  sourceIds: string[];
+}
+
+export interface DestinationTourStep {
+  id: string;
+  timeHint: LocalizedEditorialText;
+  title: LocalizedEditorialText;
+  body: LocalizedEditorialText;
+  sourceIds: string[];
+}
+
+export interface DestinationEditorialGuide {
+  version: 1;
+  destinationId: string;
+  slug: string;
+  seoTitle: LocalizedEditorialText;
+  seoDescription: LocalizedEditorialText;
+  standfirst: LocalizedEditorialText;
+  editorialAngle: LocalizedEditorialText;
+  sections: DestinationEditorialSection[];
+  tour: {
+    title: LocalizedEditorialText;
+    summary: LocalizedEditorialText;
+    duration: LocalizedEditorialText;
+    suitability: LocalizedEditorialText;
+    sourceIds: string[];
+    steps: DestinationTourStep[];
+  };
+  fieldNotesTitle: LocalizedEditorialText;
+  fieldNotes: Array<{
+    id: string;
+    title: LocalizedEditorialText;
+    body: LocalizedEditorialText;
+    sourceIds: string[];
+  }>;
+  faq: Array<{
+    question: LocalizedEditorialText;
+    answer: LocalizedEditorialText;
+    sourceIds: string[];
+  }>;
+  sources: DestinationEditorialSource[];
+  lastReviewedAt: string;
+}
+
 export interface ObservationSite {
   id: string;
   slug: string;

@@ -1,122 +1,237 @@
 {
   "slug": "star-trackers",
   "title": {
-    "en": "Star trackers: a clear path from tripod to long exposure",
-    "de": "Star-Tracker: der Weg vom Stativ zur Langzeitbelichtung"
+    "en": "Travel star trackers compared: three routes into tracked nightscapes",
+    "de": "Reise-Star-Tracker im Vergleich: drei Wege zu nachgeführten Nachtlandschaften"
   },
   "category": "star-trackers",
   "summary": {
-    "en": "Understand payload, polar alignment, and power before choosing a tracker for wide-field astrophotography.",
-    "de": "Verstehe Traglast, Polausrichtung und Stromversorgung, bevor du einen Tracker für Weitfeld-Astrofotografie wählst."
+    "en": "A source-backed comparison of three portable single-axis trackers, separating bare head specifications from the wedge, counterweight, ball head, and alignment tools a field kit may still need.",
+    "de": "Ein quellenbasierter Vergleich dreier transportabler Einachsen-Tracker, der die Daten des reinen Kopfes von Wedge, Gegengewicht, Kugelkopf und Ausrichtungshilfen eines vollständigen Feld-Sets trennt."
   },
   "decisionSummary": {
-    "en": "Start with the smallest tracker that carries your camera and lens with margin; alignment repeatability matters more than a headline payload.",
-    "de": "Beginne mit dem kleinsten Tracker, der Kamera und Objektiv mit Reserve trägt; reproduzierbare Ausrichtung zählt mehr als eine nominelle Traglast."
+    "en": "Choose the 430 g MSM NOMAD when walking weight and a camera-lens workflow dominate, the Sky-Watcher Star Adventurer when its published bundle structure and AA-battery option fit your kit, or the iOptron SkyGuider Pro when a built-in polar scope, rechargeable battery, and documented ST-4 port matter.",
+    "de": "Wähle den 430-g-MSM NOMAD, wenn Fußweg und Kamera-Objektiv-Workflow dominieren, den Sky-Watcher Star Adventurer, wenn seine dokumentierten Bundles und AA-Stromversorgung zum Set passen, oder den iOptron SkyGuider Pro, wenn eingebautes Polsucherfernrohr, Akku und dokumentierter ST-4-Port wichtig sind."
   },
   "audience": {
-    "en": "Photographers moving from fixed-tripod night-sky images to tracked exposures.",
-    "de": "Fotograf:innen auf dem Weg von Stativaufnahmen zu nachgeführten Belichtungen."
+    "en": "Travelling photographers moving from fixed-tripod Milky Way images to tracked wide-field exposures and willing to learn polar alignment.",
+    "de": "Reisende Fotograf:innen auf dem Weg von statischen Milchstraßenbildern zu nachgeführten Weitfeldbelichtungen, die Polausrichtung lernen möchten."
   },
   "buyingCriteria": [
     {
-      "en": "Payload in the configuration you will actually use",
-      "de": "Traglast in der tatsächlich verwendeten Konfiguration"
+      "en": "Total moving load and lever arm, not camera-and-lens mass alone",
+      "de": "Gesamte bewegte Last und Hebelarm statt nur Kamera- und Objektivgewicht"
     },
     {
-      "en": "Polar-alignment visibility and adjustment precision",
-      "de": "Sichtbarkeit der Polausrichtung und Einstellpräzision"
+      "en": "Alignment method in the hemisphere and terrain where you will work",
+      "de": "Ausrichtungsmethode für Hemisphäre und Gelände des Einsatzorts"
     },
     {
-      "en": "Battery runtime and cable management",
-      "de": "Akkulaufzeit und Kabelmanagement"
+      "en": "What the cited package includes: head, wedge, ball head, counterweight, and polar aid",
+      "de": "Inhalt des zitierten Pakets: Kopf, Wedge, Kugelkopf, Gegengewicht und Polhilfe"
+    },
+    {
+      "en": "Power source, charging interface, and cold-night operating plan",
+      "de": "Stromquelle, Ladeschnittstelle und Betriebsplan für kalte Nächte"
     }
   ],
   "items": [
     {
       "name": {
-        "en": "Compact camera star tracker",
-        "de": "Kompakter Kamera-Star-Tracker"
+        "en": "Move Shoot Move NOMAD",
+        "de": "Move Shoot Move NOMAD"
       },
       "whyItMatters": {
-        "en": "A small motorized axis extends wide-field exposures while keeping the travel kit simple.",
-        "de": "Eine kleine motorisierte Achse verlängert Weitfeldbelichtungen und hält das Reise-Setup einfach."
+        "en": "At a published 430 g, the NOMAD is the lightest tracker body here; its 3.5 kg maximum payload and camera-oriented alignment kits make it the most explicitly travel-first option, not automatically the most accurate one.",
+        "de": "Mit veröffentlichten 430 g ist der NOMAD der leichteste Tracker-Körper hier; seine maximale Traglast von 3,5 kg und kamerabezogenen Ausrichtungs-Kits machen ihn zur ausdrücklichsten Reiseoption, nicht automatisch zum genauesten Gerät."
       },
       "coreSpecs": {
-        "payload": "camera plus lens with margin",
-        "alignment": "integrated or illuminated polar aid",
-        "power": "USB or internal battery"
+        "trackerWeight": "430 g including rechargeable Li-Poly battery",
+        "publishedPayload": "3.5 kg maximum",
+        "body": "89 × 67 × 55 mm",
+        "mounting": "Arca-Swiss dovetail and 1/4-inch threaded hole"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Tracker body": "430 g including rechargeable Li-Poly battery",
+          "Published maximum payload": "3.5 kg",
+          "Dimensions": "89 × 67 × 55 mm",
+          "Mounting": "Arca-Swiss dovetail and 1/4-inch threaded hole",
+          "Operation": "northern- and southern-hemisphere tracking; alignment accessory depends on bundle"
+        },
+        "de": {
+          "Tracker-Körper": "430 g inklusive wiederaufladbarem Li-Poly-Akku",
+          "Veröffentlichte Maximaltraglast": "3,5 kg",
+          "Abmessungen": "89 × 67 × 55 mm",
+          "Befestigung": "Arca-Swiss-Schiene und 1/4-Zoll-Gewinde",
+          "Betrieb": "Nachführung auf Nord- und Südhalbkugel; Ausrichtungshilfe abhängig vom Bundle"
+        }
       },
       "pros": {
         "en": [
-          "Low packed weight",
-          "Simple wide-field workflow"
+          "Lowest published tracker-body mass in this comparison",
+          "Arca-Swiss base and standard 1/4-inch thread are documented"
         ],
         "de": [
-          "Geringes Packgewicht",
-          "Einfacher Weitfeld-Workflow"
+          "Niedrigstes veröffentlichtes Tracker-Körpergewicht in diesem Vergleich",
+          "Arca-Swiss-Basis und Standard-1/4-Zoll-Gewinde sind dokumentiert"
         ]
       },
       "cons": {
         "en": [
-          "Limited payload",
-          "Polar alignment remains critical"
+          "Lowest published maximum payload in this comparison",
+          "Laser or phone alignment hardware depends on hemisphere-specific bundle; laser rules must be checked locally"
         ],
         "de": [
-          "Begrenzte Traglast",
-          "Polausrichtung bleibt entscheidend"
+          "Niedrigste veröffentlichte Maximaltraglast in diesem Vergleich",
+          "Laser- oder Smartphone-Ausrichtung hängt vom hemisphärenspezifischen Bundle ab; lokale Laserregeln müssen geprüft werden"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "compact star tracker astrophotography camera",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Move Shoot Move NOMAD star tracker",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Move Shoot Move",
+        "title": "Ultra-Portable Star Tracker for Travel | MSM NomAD",
+        "url": "https://www.moveshootmove.com/products/ultra-portable-star-tracker-for-travel-msm-nomad",
+        "checkedAt": "2026-08-28"
+      }
     },
     {
       "name": {
-        "en": "Tracker with equatorial wedge",
-        "de": "Tracker mit äquatorialer Wedge"
+        "en": "Sky-Watcher Star Adventurer",
+        "de": "Sky-Watcher Star Adventurer"
       },
       "whyItMatters": {
-        "en": "A rigid wedge and stronger drive support heavier lenses or a small imaging tube when the tripod is equally solid.",
-        "de": "Eine steife Wedge und ein stärkerer Antrieb tragen schwerere Objektive oder einen kleinen Imaging-Tubus, wenn das Stativ ebenso solide ist."
+        "en": "Sky-Watcher publishes a 5 kg payload, AA or external 5 V power, and separate Photo and Astro bundles, making package contents a central part of the decision rather than an afterthought.",
+        "de": "Sky-Watcher veröffentlicht 5 kg Traglast, AA- oder externe 5-V-Stromversorgung sowie getrennte Photo- und Astro-Bundles; damit ist der Lieferumfang ein zentraler Teil der Entscheidung statt einer Nebensache."
       },
       "coreSpecs": {
-        "payload": "system-specific, counterweight included",
-        "alignment": "fine azimuth and altitude adjustment",
-        "power": "external 5–12 V typical"
+        "publishedPayload": "5 kg",
+        "power": "4×AA or external 5 V",
+        "tracking": "sidereal, half-sidereal, solar, lunar; north and south",
+        "alignment": "built-in illuminated polar scope"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Published payload": "5 kg",
+          "Power": "4×AA battery or external 5 V",
+          "Tracking": "sidereal, half-sidereal, solar, and lunar; northern and southern hemispheres",
+          "Alignment": "built-in polar scope with illuminator",
+          "Package caveat": "Photo and Astro bundles contain different accessories"
+        },
+        "de": {
+          "Veröffentlichte Traglast": "5 kg",
+          "Stromversorgung": "4×AA-Batterie oder externe 5 V",
+          "Nachführung": "siderisch, halbsiderisch, solar und lunar; Nord- und Südhalbkugel",
+          "Ausrichtung": "eingebautes Polsucherfernrohr mit Beleuchtung",
+          "Bundle-Hinweis": "Photo- und Astro-Bundle enthalten unterschiedliche Zubehörteile"
+        }
       },
       "pros": {
         "en": [
-          "More configuration headroom",
-          "Fine alignment controls"
+          "AA batteries provide a field-replaceable power path",
+          "The official page documents both Photo and counterweighted Astro bundle contents"
         ],
         "de": [
-          "Mehr Spielraum bei der Konfiguration",
-          "Feine Ausrichtungsregler"
+          "AA-Batterien bieten eine im Feld austauschbare Stromquelle",
+          "Die offizielle Seite dokumentiert den Inhalt von Photo- und gegengewichtetem Astro-Bundle"
         ]
       },
       "cons": {
         "en": [
-          "More setup time",
-          "Heavier and more cables"
+          "The cited page does not publish a complete working-kit mass",
+          "A 5 kg headline payload does not establish exposure accuracy with a particular focal length or tripod"
         ],
         "de": [
-          "Längerer Aufbau",
-          "Mehr Gewicht und Kabel"
+          "Die zitierte Seite nennt kein Gewicht des vollständigen Arbeits-Sets",
+          "Eine nominelle Traglast von 5 kg belegt keine Nachführgenauigkeit für eine bestimmte Brennweite oder ein bestimmtes Stativ"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "equatorial wedge star tracker counterweight",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Sky-Watcher Star Adventurer tracker",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Sky-Watcher",
+        "title": "Star Adventurer",
+        "url": "https://www.skywatcher.com/product/star-adventurer/",
+        "checkedAt": "2026-08-28"
+      }
+    },
+    {
+      "name": {
+        "en": "iOptron SkyGuider Pro",
+        "de": "iOptron SkyGuider Pro"
+      },
+      "whyItMatters": {
+        "en": "The SkyGuider Pro pairs a 5 kg balanced payload claim with a documented 1 kg head, built-in illuminated polar scope, rechargeable battery, ST-4 guiding port, and optional wedge and counterweight hardware.",
+        "de": "Der SkyGuider Pro kombiniert eine nominelle, ausbalancierte Traglast von 5 kg mit dokumentiertem 1-kg-Kopf, beleuchtetem Polsucher, Akku, ST-4-Port sowie optionaler Wedge- und Gegengewicht-Hardware."
+      },
+      "coreSpecs": {
+        "trackerWeight": "1 kg with battery; 1.45 kg with base",
+        "publishedPayload": "5 kg maximum when balanced",
+        "battery": "3.7 V 2000 mAh; up to 20 h at 20 °C",
+        "guiding": "ST-4 compatible"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Tracker head": "1 kg with battery; 1.45 kg with base",
+          "Published maximum payload": "5 kg when balanced",
+          "Battery": "3.7 V 2000 mAh Li-Poly; up to 20 hours at 20 °C",
+          "Tracking": "sidereal, half-sidereal, solar, lunar; north and south",
+          "Interfaces": "illuminated polar scope, ST-4 port, Micro-USB charging"
+        },
+        "de": {
+          "Tracker-Kopf": "1 kg mit Akku; 1,45 kg mit Basis",
+          "Veröffentlichte Maximaltraglast": "5 kg bei ausbalanciertem Aufbau",
+          "Akku": "3,7 V, 2000 mAh, Li-Poly; bis zu 20 Stunden bei 20 °C",
+          "Nachführung": "siderisch, halbsiderisch, solar und lunar; Nord und Süd",
+          "Schnittstellen": "beleuchteter Polsucher, ST-4-Port, Micro-USB-Laden"
+        }
+      },
+      "pros": {
+        "en": [
+          "Official specifications document the head mass, base mass, battery, polar scope, and ST-4 port",
+          "Counterweight bracket and fine-adjustment base are available for a more complete equatorial setup"
+        ],
+        "de": [
+          "Offizielle Daten dokumentieren Kopf- und Basisgewicht, Akku, Polsucher und ST-4-Port",
+          "Gegengewichtshalterung und Feinverstellbasis sind für einen vollständigeren äquatorialen Aufbau verfügbar"
+        ]
+      },
+      "cons": {
+        "en": [
+          "The cited head-only package does not include the optional base, counterweight kit, tripod, or ball head",
+          "Published 20-hour runtime is specified at 20 °C and should not be assumed for cold nights"
+        ],
+        "de": [
+          "Das zitierte reine Kopf-Paket enthält weder optionale Basis noch Gegengewicht-Set, Stativ oder Kugelkopf",
+          "Die veröffentlichten 20 Stunden gelten bei 20 °C und dürfen nicht auf kalte Nächte übertragen werden"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "iOptron SkyGuider Pro camera mount",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "iOptron",
+        "title": "SkyGuider Pro Camera Mount Head",
+        "url": "https://www.ioptron.com/product-p/3552.htm",
+        "checkedAt": "2026-08-28"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "Tracking does not remove the need for a rigid tripod and careful focus.",
-      "A larger payload class buys flexibility but adds alignment and transport work."
+      "Published payload is a mechanical ceiling under a manufacturer's conditions, not a promise of round stars at a given focal length and exposure time.",
+      "The lightest tracker body may still require a wedge, ball head, alignment aid, tripod, and charging cable; compare the complete working kit.",
+      "Counterbalancing can reduce drive load but adds setup steps and packed mass.",
+      "A precise polar alignment improves tracking, yet tripod flex, focus, wind, periodic error, and lens focal length still affect the frame."
     ],
     "de": [
-      "Nachführung ersetzt weder ein steifes Stativ noch sorgfältiges Fokussieren.",
-      "Eine höhere Traglastklasse schafft Flexibilität, erhöht aber Ausrichtungs- und Transportaufwand."
+      "Veröffentlichte Traglast ist eine mechanische Obergrenze unter Herstellerbedingungen, kein Versprechen runder Sterne bei bestimmter Brennweite und Belichtungszeit.",
+      "Auch der leichteste Tracker-Körper kann Wedge, Kugelkopf, Ausrichtungshilfe, Stativ und Ladekabel benötigen; vergleiche das vollständige Arbeits-Set.",
+      "Gegengewicht kann den Antrieb entlasten, erhöht aber Aufbauzeit und Packgewicht.",
+      "Präzise Polausrichtung verbessert die Nachführung; Stativflex, Fokus, Wind, periodischer Fehler und Brennweite beeinflussen das Bild trotzdem."
     ]
   },
   "faq": [
@@ -126,24 +241,44 @@
         "de": "Brauche ich für Milchstraßenfotos einen Tracker?"
       },
       "answer": {
-        "en": "No. A fixed tripod is the simplest start; a tracker becomes useful when you want longer exposures or lower ISO without star trailing.",
-        "de": "Nein. Ein festes Stativ ist der einfachste Einstieg; ein Tracker hilft bei längeren Belichtungen oder niedrigerem ISO ohne Sternspuren."
+        "en": "No. A fixed tripod is the simpler first step and preserves a sharp landscape without compositing. Tracking becomes useful when gathering more sky signal through longer exposures or lower ISO; a tracked sky and fixed foreground normally require separate frames and careful blending.",
+        "de": "Nein. Ein festes Stativ ist der einfachere Einstieg und hält die Landschaft ohne Compositing scharf. Nachführung hilft, durch längere Belichtung oder niedrigeres ISO mehr Himmelsignal zu sammeln; nachgeführter Himmel und fester Vordergrund benötigen normalerweise getrennte Aufnahmen und sorgfältiges Zusammenfügen."
       }
     },
     {
       "question": {
-        "en": "What is the most common setup mistake?",
-        "de": "Was ist der häufigste Aufbaufehler?"
+        "en": "Can I compare the 3.5 kg and 5 kg payload figures directly?",
+        "de": "Kann ich die Traglastangaben von 3,5 kg und 5 kg direkt vergleichen?"
       },
       "answer": {
-        "en": "Overloading the tracker or extending a flexible center column makes accurate tracking much harder than the advertised payload suggests.",
-        "de": "Eine Überlastung oder eine flexible, ausgezogene Mittelsäule erschwert genaue Nachführung stärker, als die nominelle Traglast vermuten lässt."
+        "en": "Only as manufacturer specifications, not as a shared performance test. Balance, lens length, tripod stiffness, polar alignment, wind, focal length, and acceptable star shape can matter more than the number. Leave margin and judge the complete configuration.",
+        "de": "Nur als Herstellerangaben, nicht als gemeinsamen Leistungstest. Balance, Objektivlänge, Stativsteifigkeit, Polausrichtung, Wind, Brennweite und akzeptierte Sternform können wichtiger sein als die Zahl. Plane Reserve und bewerte die vollständige Konfiguration."
+      }
+    },
+    {
+      "question": {
+        "en": "What must be in a complete field kit?",
+        "de": "Was gehört in ein vollständiges Feld-Set?"
+      },
+      "answer": {
+        "en": "At minimum: a rigid tripod, tracker, appropriate wedge or tilt base, camera attachment, a legal and usable polar-alignment method, charged power, and a way to verify focus. A heavier setup may also need a declination bracket and counterweight.",
+        "de": "Mindestens: steifes Stativ, Tracker, passende Wedge oder Neigebasis, Kamerabefestigung, eine legale und nutzbare Polausrichtungsmethode, geladene Stromquelle und eine Fokuskontrolle. Ein schwererer Aufbau kann zusätzlich Deklinationshalterung und Gegengewicht benötigen."
+      }
+    },
+    {
+      "question": {
+        "en": "Does autoguiding make a small tracker foolproof?",
+        "de": "Macht Autoguiding einen kleinen Tracker narrensicher?"
+      },
+      "answer": {
+        "en": "No. A guiding port can support correction on compatible axes, but it cannot repair a flexible tripod, severe polar error, overloaded mechanics, poor focus, or wind movement. It also adds a guide camera, computer or controller, power, and cables.",
+        "de": "Nein. Ein Guiding-Port kann kompatible Achsen korrigieren, aber kein flexibles Stativ, groben Polfehler, überlastete Mechanik, schlechten Fokus oder Windbewegung beheben. Außerdem kommen Guidekamera, Rechner oder Controller, Strom und Kabel hinzu."
       }
     }
   ],
   "affiliateDisclosure": {
-    "en": "This is specification-based education, not a product ranking or hands-on review. Verify current limits and power requirements before purchase.",
-    "de": "Dies ist technische Orientierung, kein Produktranking oder Praxistest. Prüfe vor dem Kauf aktuelle Grenzen und Stromanforderungen."
+    "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured tracking test, or claim of hands-on use.",
+    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene Nachführmessungen oder die Behauptung eines Praxistests."
   },
   "lastReviewedAt": "2026-08-28"
 }

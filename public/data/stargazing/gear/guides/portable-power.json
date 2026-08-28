@@ -1,21 +1,21 @@
 {
   "slug": "portable-power",
   "title": {
-    "en": "Portable power for a full night outside",
-    "de": "Mobile Stromversorgung für eine ganze Nacht"
+    "en": "Portable power stations compared for an astronomy field kit",
+    "de": "Mobile Powerstations für das Astronomie-Feld-Set im Vergleich"
   },
   "category": "portable-power",
   "summary": {
-    "en": "Size a field battery from watt-hours, outputs, temperature, and safe transport—not from a headline capacity alone.",
-    "de": "Dimensioniere einen Feldakku nach Wattstunden, Ausgängen, Temperatur und sicherem Transport – nicht nur nach einer großen Kapazitätszahl."
+    "en": "A source-backed comparison of three 286–288 Wh LiFePO4 power stations, focused on the USB, regulated 12 V, and AC paths that trackers, cameras, laptops, and dew-control systems actually use.",
+    "de": "Ein quellenbasierter Vergleich dreier LiFePO4-Powerstations mit 286–288 Wh, fokussiert auf die USB-, geregelten 12-V- und AC-Pfade, die Tracker, Kameras, Laptops und Tausteuerungen tatsächlich nutzen."
   },
   "decisionSummary": {
-    "en": "List every load, convert it to watt-hours, and keep a cold-weather reserve before choosing connectors or battery chemistry.",
-    "de": "Liste jede Last auf, rechne sie in Wattstunden um und plane eine Kältereserve ein, bevor du Stecker oder Zellchemie auswählst."
+    "en": "Choose the 2.8 kg Anker SOLIX C300 DC when USB-C and 12 V are enough and avoiding an inverter saves mass, the 3.75 kg Jackery Explorer 300 Plus when one compact AC outlet and two 100 W USB-C ports fit the load plan, or the 4.7 kg EcoFlow RIVER 3 Plus when 600 W AC, a 126 W car outlet, and later capacity expansion justify the extra weight.",
+    "de": "Wähle die 2,8-kg-Anker SOLIX C300 DC, wenn USB-C und 12 V genügen und der Verzicht auf einen Wechselrichter Gewicht spart, die 3,75-kg-Jackery Explorer 300 Plus, wenn eine kompakte AC-Steckdose und zwei 100-W-USB-C-Ports zum Lastplan passen, oder die 4,7-kg-EcoFlow RIVER 3 Plus, wenn 600 W AC, 126-W-Fahrzeugausgang und spätere Kapazitätserweiterung das Mehrgewicht rechtfertigen."
   },
   "audience": {
-    "en": "Observers running dew heaters, trackers, cameras, or red lights away from mains power.",
-    "de": "Beobachter:innen mit Taubändern, Trackern, Kameras oder Rotlicht fernab einer Steckdose."
+    "en": "Observers and imagers powering trackers, cameras, dew heaters, mini computers, or laptops away from mains electricity who can calculate a realistic watt-hour budget.",
+    "de": "Beobachter:innen und Astrofotograf:innen, die Tracker, Kameras, Taubänder, Mini-Computer oder Laptops fernab vom Netz versorgen und ein realistisches Wattstundenbudget berechnen können."
   },
   "buyingCriteria": [
     {
@@ -23,127 +23,262 @@
       "de": "Nutzbare Wattstunden nach Umwandlungsverlusten"
     },
     {
-      "en": "The exact USB, 12 V, or regulated outputs required",
-      "de": "Die benötigten USB-, 12-V- oder geregelten Ausgänge"
+      "en": "The exact USB-C, vehicle-style 12 V, or AC output required by every load",
+      "de": "Der exakte USB-C-, 12-V-Fahrzeug- oder AC-Ausgang für jede Last"
     },
     {
-      "en": "Cold-weather behavior, weight, and safe charging",
-      "de": "Verhalten bei Kälte, Gewicht und sicheres Laden"
+      "en": "Continuous output limits and whether inverter overhead is necessary",
+      "de": "Dauerleistungsgrenzen und ob Wechselrichterverluste überhaupt nötig sind"
+    },
+    {
+      "en": "Charge and discharge temperature limits, packed mass, and safe charging",
+      "de": "Lade- und Entladetemperaturen, Packgewicht und sicheres Laden"
     }
   ],
   "items": [
     {
       "name": {
-        "en": "USB-C power bank",
-        "de": "USB-C-Powerbank"
+        "en": "Anker SOLIX C300 DC",
+        "de": "Anker SOLIX C300 DC"
       },
       "whyItMatters": {
-        "en": "A compact bank is efficient for phones, small trackers, and USB lighting when regulated 12 V is not required.",
-        "de": "Eine kompakte Bank ist effizient für Telefone, kleine Tracker und USB-Licht, wenn kein geregeltes 12 V nötig ist."
+        "en": "This 288 Wh DC-only unit removes the AC inverter and publishes two 140 W two-way USB-C ports, making it the lightest option here when every astronomy load can run from USB or its vehicle-style DC output.",
+        "de": "Diese reine DC-Einheit mit 288 Wh verzichtet auf einen AC-Wechselrichter und dokumentiert zwei bidirektionale 140-W-USB-C-Ports; damit ist sie hier am leichtesten, sofern jede Astronomielast über USB oder den Fahrzeug-DC-Ausgang läuft."
       },
       "coreSpecs": {
-        "capacity": "listed Wh or mAh at cell voltage",
-        "outputs": "USB-C PD plus USB-A as needed",
-        "protection": "overcurrent and temperature protection"
+        "capacity": "288 Wh LiFePO4",
+        "weight": "2.8 kg",
+        "output": "300 W total DC",
+        "ports": "2×140 W bidirectional USB-C plus additional USB and 12 V car socket"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Capacity": "288 Wh LiFePO4",
+          "Published weight": "2.8 kg",
+          "Output architecture": "DC only; 300 W total",
+          "High-power USB-C": "two bidirectional ports up to 140 W each",
+          "Charging": "USB-C or up to 100 W solar; no AC outlet"
+        },
+        "de": {
+          "Kapazität": "288 Wh LiFePO4",
+          "Veröffentlichtes Gewicht": "2,8 kg",
+          "Ausgangsarchitektur": "nur DC; 300 W gesamt",
+          "Leistungsstarke USB-C-Ports": "zwei bidirektionale Ports mit bis zu 140 W",
+          "Laden": "USB-C oder bis zu 100 W solar; keine AC-Steckdose"
+        }
       },
       "pros": {
         "en": [
-          "Light and familiar",
-          "Simple USB charging"
+          "Lowest published mass in this comparison",
+          "Avoids AC conversion when the complete setup is USB-C or 12 V compatible"
         ],
         "de": [
-          "Leicht und vertraut",
-          "Einfaches USB-Laden"
+          "Niedrigstes veröffentlichtes Gewicht in diesem Vergleich",
+          "Vermeidet AC-Wandlung, wenn das vollständige Set USB-C- oder 12-V-kompatibel ist"
         ]
       },
       "cons": {
         "en": [
-          "Limited 12 V compatibility",
-          "Capacity falls in cold conditions"
+          "Cannot directly power AC-only chargers or laptops without suitable DC input",
+          "The documented 300 W total output is lower than the EcoFlow's AC ceiling, although most astronomy loads are far smaller"
         ],
         "de": [
-          "Begrenzte 12-V-Kompatibilität",
-          "Kapazität sinkt bei Kälte"
+          "Kann reine AC-Ladegeräte oder Laptops ohne passenden DC-Eingang nicht direkt versorgen",
+          "Die dokumentierten 300 W Gesamtleistung liegen unter der AC-Grenze des EcoFlow, auch wenn die meisten Astronomielasten deutlich kleiner sind"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "USB-C PD power bank astronomy field",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Anker SOLIX C300 DC power station",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Anker SOLIX Support",
+        "title": "Anker SOLIX C300 DC Portable Power Station User Guide (A1726)",
+        "url": "https://service.ankersolix.com/product-description/a08J1000000Y7GcIAK",
+        "checkedAt": "2026-08-28"
+      }
     },
     {
       "name": {
-        "en": "12 V LiFePO4 field battery",
-        "de": "12-V-LiFePO4-Feldakku"
+        "en": "Jackery Explorer 300 Plus",
+        "de": "Jackery Explorer 300 Plus"
       },
       "whyItMatters": {
-        "en": "A dedicated 12 V battery suits multiple regulated loads when connectors, fusing, and charging are planned carefully.",
-        "de": "Ein dedizierter 12-V-Akku passt zu mehreren geregelten Verbrauchern, wenn Stecker, Sicherungen und Laden sauber geplant sind."
+        "en": "Jackery combines a 288 Wh LiFePO4 battery with one 300 W pure-sine AC outlet, two USB-C ports up to 100 W, and a 12 V/10 A car socket in a published 3.75 kg package.",
+        "de": "Jackery kombiniert einen 288-Wh-LiFePO4-Akku mit einer 300-W-Reinsinus-AC-Steckdose, zwei USB-C-Ports bis 100 W und einer 12-V/10-A-Fahrzeugbuchse in einem veröffentlichten 3,75-kg-Paket."
       },
       "coreSpecs": {
-        "capacity": "usable Wh at intended discharge",
-        "outputs": "regulated 12 V plus USB",
-        "mass": "include case and cables"
+        "capacity": "288 Wh LiFePO4",
+        "weight": "3.75 kg",
+        "acOutput": "300 W pure sine; 600 W peak",
+        "dcOutput": "2×100 W USB-C; 12 V/10 A car port"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Capacity": "288 Wh LiFePO4",
+          "Published weight": "3.75 kg",
+          "AC output": "one pure-sine outlet; 300 W continuous, 600 W peak",
+          "DC outputs": "two USB-C ports up to 100 W; 12 V/10 A car port",
+          "Operating range": "manufacturer states -10 to 45 °C discharge; charge only 0 to 45 °C"
+        },
+        "de": {
+          "Kapazität": "288 Wh LiFePO4",
+          "Veröffentlichtes Gewicht": "3,75 kg",
+          "AC-Ausgang": "eine Reinsinus-Steckdose; 300 W Dauerleistung, 600 W Spitze",
+          "DC-Ausgänge": "zwei USB-C-Ports bis 100 W; 12-V/10-A-Fahrzeugbuchse",
+          "Temperaturbereich": "Hersteller nennt -10 bis 45 °C Entladung; Laden nur bei 0 bis 45 °C"
+        }
       },
       "pros": {
         "en": [
-          "Good fit for 12 V heaters and mounts",
-          "Clear expansion path"
+          "Adds a pure-sine AC outlet while remaining under 4 kg",
+          "Two 100 W USB-C outputs and a 12 V/10 A vehicle socket cover several common field paths"
         ],
         "de": [
-          "Gut für 12-V-Heizer und Montierungen",
-          "Einfach erweiterbar"
+          "Ergänzt eine Reinsinus-AC-Steckdose und bleibt unter 4 kg",
+          "Zwei 100-W-USB-C-Ausgänge und 12-V/10-A-Fahrzeugbuchse decken mehrere übliche Feldpfade ab"
         ]
       },
       "cons": {
         "en": [
-          "Heavier and more expensive",
-          "Needs chemistry-specific charger"
+          "Only one AC outlet and a 300 W continuous AC ceiling",
+          "Charging below 0 °C is outside the documented operating limit"
         ],
         "de": [
-          "Schwerer und teurer",
-          "Benötigt ein passendes Ladegerät"
+          "Nur eine AC-Steckdose und 300 W AC-Dauerleistung",
+          "Laden unter 0 °C liegt außerhalb des dokumentierten Betriebsbereichs"
         ]
       },
       "recommendationBasis": "specification_analysis",
-      "partnerSearchQuery": "12v LiFePO4 astronomy field battery",
-      "affiliatePartnerId": null
+      "partnerSearchQuery": "Jackery Explorer 300 Plus power station",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Jackery",
+        "title": "Explorer 300 Plus Portable Power Station",
+        "url": "https://de.jackery.com/products/explorer-300-plus-portable-power-station",
+        "checkedAt": "2026-08-28"
+      }
+    },
+    {
+      "name": {
+        "en": "EcoFlow RIVER 3 Plus",
+        "de": "EcoFlow RIVER 3 Plus"
+      },
+      "whyItMatters": {
+        "en": "The RIVER 3 Plus has slightly less nominal energy at 286 Wh but the highest published continuous AC output here at 600 W, a 126 W car outlet, and a stackable battery path up to 858 Wh.",
+        "de": "Die RIVER 3 Plus hat mit 286 Wh etwas weniger Nennenergie, aber mit 600 W die höchste veröffentlichte AC-Dauerleistung hier, eine 126-W-Fahrzeugbuchse und einen stapelbaren Erweiterungspfad bis 858 Wh."
+      },
+      "coreSpecs": {
+        "capacity": "286 Wh LiFePO4",
+        "weight": "4.7 kg",
+        "acOutput": "600 W total; 1200 W surge",
+        "dcOutput": "100 W USB-C; 12.6 V/10 A/126 W car outlet"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Capacity": "286 Wh LiFePO4; expandable to 858 Wh",
+          "Published weight": "4.7 kg",
+          "AC output": "600 W total; 1200 W surge",
+          "DC outputs": "one USB-C up to 100 W; two USB-A; 12.6 V/10 A/126 W car outlet",
+          "Operating range": "manufacturer states -10 to 45 °C discharge; charge 0 to 45 °C"
+        },
+        "de": {
+          "Kapazität": "286 Wh LiFePO4; erweiterbar bis 858 Wh",
+          "Veröffentlichtes Gewicht": "4,7 kg",
+          "AC-Ausgang": "600 W gesamt; 1200 W Spitze",
+          "DC-Ausgänge": "ein USB-C bis 100 W; zwei USB-A; 12,6-V/10-A/126-W-Fahrzeugbuchse",
+          "Temperaturbereich": "Hersteller nennt -10 bis 45 °C Entladung; Laden bei 0 bis 45 °C"
+        }
+      },
+      "pros": {
+        "en": [
+          "Highest published continuous AC output and strongest vehicle-style DC outlet in this comparison",
+          "Official expansion batteries can raise nominal capacity to 572 or 858 Wh"
+        ],
+        "de": [
+          "Höchste veröffentlichte AC-Dauerleistung und stärkster Fahrzeug-DC-Ausgang in diesem Vergleich",
+          "Offizielle Zusatzakkus können die Nennkapazität auf 572 oder 858 Wh erhöhen"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Highest published mass in this comparison",
+          "Only one 100 W USB-C port, so multi-device USB-C plans may need a hub or different output path"
+        ],
+        "de": [
+          "Höchstes veröffentlichtes Gewicht in diesem Vergleich",
+          "Nur ein 100-W-USB-C-Port; mehrere USB-C-Verbraucher benötigen eventuell Hub oder anderen Ausgangspfad"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "EcoFlow RIVER 3 Plus power station",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "EcoFlow",
+        "title": "RIVER 3 Plus Portable Power Station",
+        "url": "https://www.ecoflow.com/uk/river-3-plus-portable-power-station",
+        "checkedAt": "2026-08-28"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "A large nominal capacity does not guarantee the connectors or regulated voltage your equipment needs.",
-      "Extra reserve weighs more, but cold and conversion losses make a small reserve easy to regret."
+      "Nominal watt-hours are not delivered watt-hours: battery management, DC conversion, inverter use, temperature, cable loss, and shutdown reserve reduce useful energy.",
+      "A DC-only station is lighter and can be efficient for compatible loads, but an AC-only camera charger can turn that advantage into an adapter problem.",
+      "More AC output does not lengthen runtime; capacity and the actual average load determine runtime.",
+      "LiFePO4 chemistry improves cycle-life expectations, yet every cited unit prohibits charging below 0 °C, so winter power needs thermal planning rather than wishful thinking."
     ],
     "de": [
-      "Eine große Nennkapazität garantiert weder passende Stecker noch die benötigte geregelte Spannung.",
-      "Reserve wiegt mehr, aber Kälte und Wandlungsverluste machen eine knappe Dimensionierung schnell ärgerlich."
+      "Nenn-Wattstunden sind keine abgegebenen Wattstunden: Batteriemanagement, DC-Wandlung, Wechselrichter, Temperatur, Kabelverluste und Abschaltreserve reduzieren die nutzbare Energie.",
+      "Eine reine DC-Station ist leichter und für kompatible Lasten effizient; ein reines AC-Kameraladegerät kann diesen Vorteil jedoch in ein Adapterproblem verwandeln.",
+      "Mehr AC-Ausgangsleistung verlängert nicht die Laufzeit; Kapazität und reale Durchschnittslast bestimmen sie.",
+      "LiFePO4 verbessert die erwartbare Zyklenfestigkeit, doch alle zitierten Geräte verbieten Laden unter 0 °C; Winterbetrieb braucht deshalb ein Wärmekonzept statt Hoffnung."
     ]
   },
   "faq": [
     {
       "question": {
-        "en": "How do I calculate a night of power?",
+        "en": "How do I calculate one night of power?",
         "de": "Wie berechne ich den Strombedarf einer Nacht?"
       },
       "answer": {
-        "en": "Multiply each device's watts by its hours of use, add the results, then divide by expected system efficiency and add a cold-weather reserve.",
-        "de": "Multipliziere die Watt jedes Geräts mit seinen Nutzungsstunden, addiere alles, teile durch den erwarteten Wirkungsgrad und ergänze eine Kältereserve."
+        "en": "Measure or conservatively estimate each device's average watts, multiply by hours, and add the watt-hours. Divide by a realistic conversion efficiency, then add reserve for cold conditions and unexpected run time. Do not size from the maximum power label alone.",
+        "de": "Miss oder schätze konservativ die durchschnittliche Leistung jedes Geräts, multipliziere mit den Stunden und addiere die Wattstunden. Teile durch einen realistischen Wirkungsgrad und ergänze Reserve für Kälte und längere Laufzeit. Dimensioniere nicht allein nach der Maximalleistungsangabe."
       }
     },
     {
       "question": {
-        "en": "Can I run every device from one battery?",
-        "de": "Kann ich jedes Gerät an einem Akku betreiben?"
+        "en": "Do I need an AC outlet in the field?",
+        "de": "Brauche ich im Feld eine AC-Steckdose?"
       },
       "answer": {
-        "en": "Only when voltage, connector polarity, current limits, and fusing all match. A distribution box can simplify this, but it does not replace checking each load.",
-        "de": "Nur wenn Spannung, Steckerpolarität, Stromgrenzen und Sicherungen passen. Eine Verteilerbox kann vereinfachen, ersetzt aber nicht die Prüfung jeder Last."
+        "en": "Only if a required device or charger lacks a suitable regulated DC or USB-C input. Running a low-voltage device through an AC adapter can add conversion loss. Inventory every connector, voltage, polarity, and cable before choosing the station.",
+        "de": "Nur wenn ein benötigtes Gerät oder Ladegerät keinen passenden geregelten DC- oder USB-C-Eingang besitzt. Ein Niedervoltgerät über sein AC-Netzteil zu betreiben kann zusätzliche Wandlungsverluste verursachen. Inventarisiere vor der Wahl Stecker, Spannung, Polarität und Kabel."
+      }
+    },
+    {
+      "question": {
+        "en": "Can I charge these batteries below freezing?",
+        "de": "Kann ich diese Akkus unter dem Gefrierpunkt laden?"
+      },
+      "answer": {
+        "en": "Not according to the cited operating limits: the Jackery and EcoFlow documentation specifies charging from 0 °C, and the Anker unit should likewise be operated within its current manual. Keep the station dry and within its documented temperature range; never improvise unsafe heating.",
+        "de": "Nicht nach den zitierten Betriebsgrenzen: Jackery und EcoFlow geben Laden ab 0 °C an; auch die Anker-Einheit muss innerhalb ihres aktuellen Handbuchs betrieben werden. Halte die Station trocken und im dokumentierten Temperaturbereich; improvisiere niemals unsichere Erwärmung."
+      }
+    },
+    {
+      "question": {
+        "en": "Can one power station run every astronomy device?",
+        "de": "Kann eine Powerstation jedes Astronomiegerät betreiben?"
+      },
+      "answer": {
+        "en": "Only when voltage, connector polarity, current limits, startup peaks, and total continuous output all match. A distribution box can simplify wiring but does not make incompatible loads safe. Keep delicate data and camera cables physically separate from high-current heater leads where practical.",
+        "de": "Nur wenn Spannung, Steckerpolarität, Stromgrenzen, Einschaltspitzen und gesamte Dauerleistung passen. Eine Verteilerbox vereinfacht Verkabelung, macht inkompatible Lasten aber nicht sicher. Trenne empfindliche Daten- und Kamerakabel möglichst räumlich von stromstarken Heizleitungen."
       }
     }
   ],
   "affiliateDisclosure": {
-    "en": "This guide is educational and specification-based. Capacity, safety, and compatibility must be verified from the current product documentation.",
-    "de": "Dieser Guide dient der technischen Orientierung. Kapazität, Sicherheit und Kompatibilität müssen mit der aktuellen Produktdokumentation geprüft werden."
+    "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured runtime test, or claim of hands-on use.",
+    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene Laufzeitmessungen oder die Behauptung eines Praxistests."
   },
   "lastReviewedAt": "2026-08-28"
 }

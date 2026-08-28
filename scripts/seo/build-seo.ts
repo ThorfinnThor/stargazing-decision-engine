@@ -2,9 +2,10 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { evaluateIndexability, type IndexabilityRequirements } from "../../lib/seo/indexability.js";
-import type { Destination, DestinationMonthlySummary, GearGuide, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
+import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearGuide, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 import { isTravelEligibleSite } from "../../lib/access/travel.js";
+import { isGearGuideEditorialReady } from "../../lib/gear/gear.js";
 
 interface PageDefinition extends IndexabilityRequirements {
   pageType: string;
@@ -54,6 +55,9 @@ const meteorOutputs = readdirSync(generatedDir).filter((file) => /^meteor-shower
 const events = meteorOutputs.flatMap((output) => output.events);
 const shortTrips = readdirSync(generatedDir).filter((file) => /^short-trips-[a-z0-9-]+\.json$/.test(file)).map((file) => readJson<ShortTripFile>(generatedPath(file)));
 const gearGuides = readJson<GearGuide[]>(resolve(root, "data-config/gear/guides.json"));
+const editoriallyReadyGearGuides = gearGuides.filter(isGearGuideEditorialReady);
+const destinationGuides = readJson<DestinationEditorialGuide[]>(resolve(root, "data-config/editorial/destination-guides.json"));
+const destinationGuidesBySlug = new Map(destinationGuides.map((guide) => [guide.slug, guide]));
 
 function normalizedTimestamp(value: string) {
   const timestamp = new Date(/^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T00:00:00.000Z` : value);
@@ -151,7 +155,7 @@ for (const locale of config.locales) {
   }));
   pages.push(makePage({
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),
-    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Technische Gear-Guides ohne Preis- oder Verfügbarkeitsversprechen." : "Specification-based gear guides without price or availability claims.", lastModified: gearLastModified, resultCount: gearGuides.length, confidence: "high", uniqueInsightCount: 3, internalLinkCount: gearGuides.length + seed.destinations.length,
+    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Quellenbasierte Gear-Vergleiche ohne Preis- oder Verfügbarkeitsversprechen." : "Source-backed gear comparisons without price or availability claims.", lastModified: gearLastModified, resultCount: editoriallyReadyGearGuides.length, confidence: "high", uniqueInsightCount: editoriallyReadyGearGuides.length, internalLinkCount: editoriallyReadyGearGuides.length + seed.destinations.length,
   }));
   pages.push(makePage({
     id: `methodology-${locale}`, pageType: "methodology", locale, path: `/${locale}/methodology/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/methodology/`])),
@@ -166,11 +170,13 @@ for (const locale of config.locales) {
     const published = readJson<DestinationMonthlySummary>(publicPath(`monthly/destinations/${destination.slug}.json`));
     const destinationScores = published.months;
     const confidence = destinationScores.some((score) => score.confidenceLevel === "low") ? "low" : destinationScores.some((score) => score.confidenceLevel === "moderate") ? "moderate" : "high";
+    const editorialGuide = destinationGuidesBySlug.get(destination.slug);
     pages.push(makePage({
       id: `destination-${destination.slug}-${locale}`, pageType: "destination", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-destinations/${destination.slug}/`])),
-      title: locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`, h1: destination.name,
-      description: locale === "de" ? `Himmelsführer für ${destination.name}.` : `Dark-sky guide for ${destination.name}.`, lastModified: dataLastModified, resultCount: destinationScores.length, confidence, uniqueInsightCount: destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: seed.destinations.length + shortTrips.length,
+      title: editorialGuide?.seoTitle[locale] ?? (locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`), h1: destination.name,
+      description: editorialGuide?.seoDescription[locale] ?? (locale === "de" ? `Himmelsführer für ${destination.name}.` : `Dark-sky guide for ${destination.name}.`), lastModified: editorialGuide ? latestTimestamp(dataLastModified, editorialGuide.lastReviewedAt) : dataLastModified, resultCount: destinationScores.length, confidence: editorialGuide ? "high" : confidence, uniqueInsightCount: editorialGuide ? editorialGuide.sections.length + editorialGuide.fieldNotes.length + 1 : destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: editorialGuide ? 4 : 1,
       travelEligible: seed.sites.some((site) => site.destinationId === destination.id && isTravelEligibleSite(site)),
+      forceNoindexReason: editorialGuide ? undefined : "editorial-guide-pending",
     }));
   }
   for (const event of events) {
@@ -192,10 +198,12 @@ for (const locale of config.locales) {
     }));
   }
   for (const guide of gearGuides) {
+    const editoriallyReady = isGearGuideEditorialReady(guide);
     const path = `/${locale}/gear/${guide.slug}/`;
     pages.push(makePage({
       id: `gear-guide-${guide.slug}-${locale}`, pageType: "gear-guide", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/${guide.slug}/`])),
-      title: guide.title[locale], h1: guide.title[locale], description: guide.summary[locale], lastModified: guide.lastReviewedAt, resultCount: guide.items.length, confidence: "high", uniqueInsightCount: guide.items.length >= 2 ? 3 : 2, internalLinkCount: gearGuides.length + seed.destinations.length,
+      title: guide.title[locale], h1: guide.title[locale], description: guide.summary[locale], lastModified: guide.lastReviewedAt, resultCount: guide.items.length, confidence: editoriallyReady ? "high" : "low", uniqueInsightCount: editoriallyReady ? guide.buyingCriteria.length + guide.tradeoffs[locale].length : 1, internalLinkCount: editoriallyReady ? editoriallyReadyGearGuides.length + seed.destinations.length : 1,
+      forceNoindexReason: editoriallyReady ? undefined : "editorial-comparison-pending",
     }));
   }
 }

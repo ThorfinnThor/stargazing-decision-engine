@@ -1,6 +1,6 @@
 import { resolve } from "node:path";
 
-import { validateGearCatalog } from "../../lib/gear/gear.js";
+import { isGearGuideEditorialReady, validateGearCatalog } from "../../lib/gear/gear.js";
 import type { GearCategory, GearGuide, GearProductMetadata } from "../../lib/data/types.js";
 import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
@@ -11,4 +11,15 @@ validateGearCatalog(categories, guides, products);
 writeJson(publicPath("gear/categories.json"), categories);
 writeJson(publicPath("gear/products.json"), products);
 for (const guide of guides) writeJson(publicPath(`gear/guides/${guide.slug}.json`), guide);
+writeJson(publicPath("gear/index.json"), {
+  version: 1,
+  guides: guides.filter(isGearGuideEditorialReady).map((guide) => ({
+    slug: guide.slug,
+    title: guide.title,
+    summary: guide.summary,
+    comparedProducts: guide.items.length,
+    primarySources: guide.items.filter((item) => item.source).length,
+    lastReviewedAt: guide.lastReviewedAt,
+  })),
+});
 console.log(`Built ${categories.length} gear categories, ${guides.length} guides, and ${products.length} static product metadata records.`);

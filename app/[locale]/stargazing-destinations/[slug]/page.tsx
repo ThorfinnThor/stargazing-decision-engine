@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { loadDestination, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { listDestinationEditorialGuides, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
-import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
+import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 
 export const dynamic = "force-static";
@@ -72,32 +74,41 @@ function readParams(params: { locale: string; slug: string }) {
       }];
     });
     const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
-    return { locale, destination, sites, siteViews, image, seo: loadSeoPage(path) };
+    const editorialSlugs = new Set(listDestinationEditorialGuides());
+    const relatedDestinations = loadDestinations()
+      .filter((item) => item.slug !== destination.slug && editorialSlugs.has(item.slug))
+      .sort((left, right) => Number(right.continent === destination.continent) - Number(left.continent === destination.continent) || left.priority - right.priority)
+      .slice(0, 3);
+    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), relatedDestinations, seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
-  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.destination.name, description: resolved.locale === "de" ? `Himmelsführer für ${resolved.destination.name}.` : `Dark-sky guide for ${resolved.destination.name}.`, image: resolved.image?.localPath ?? null });
+  const fallbackDescription = resolved.locale === "de" ? `Himmelsführer für ${resolved.destination.name}.` : `Dark-sky guide for ${resolved.destination.name}.`;
+  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.guide?.seoTitle[resolved.locale] ?? resolved.destination.name, description: resolved.guide?.seoDescription[resolved.locale] ?? fallbackDescription, image: resolved.image?.localPath ?? null });
 }
 
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, siteViews, image, locale, seo } = resolved;
+  const { destination, sites, siteViews, image, guide, relatedDestinations, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
+  const canonical = seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`;
+  const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical }) : null;
   const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      {editorialStructuredData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(editorialStructuredData) }} />}
       <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Zielprofil" : "Destination profile"}</p>
         <h1>{destination.name}</h1>
-        <p className="lede">{hasRealScores
+        <p className="lede">{guide ? guide.standfirst[locale] : hasRealScores
           ? isGerman ? "Historische Realwerte aus geprüften Klima- und Dunkelheits-Snapshots." : "Historical real scores from reviewed climate and darkness snapshots."
           : isGerman ? "Historische Seed-Werte und Monatskontext für die Beobachtungsplanung." : "Historical seed values and monthly context for planning an observing trip."}</p>
         <p className="event-note">{hasRealScores
@@ -132,6 +143,20 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           {isGerman ? "Dieses Profil beschreibt die astronomischen Bedingungen und ist keine Reiseempfehlung für den angegebenen Standort." : "This profile describes astronomical conditions and is not a travel recommendation for the listed site."}
         </p>}
       </section>
+      {guide && <DestinationEditorialGuideView guide={guide} locale={locale} />}
+      {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
+        <div>
+          <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>
+          <h2 id="destination-related-title">{isGerman ? "Weitere redaktionelle Himmelsführer" : "More editorial sky guides"}</h2>
+        </div>
+        <div className="destination-related-grid">
+          {relatedDestinations.map((related, index) => <Link key={related.id} href={`/${locale}/stargazing-destinations/${related.slug}/`}>
+            <span>{String(index + 1).padStart(2, "0")}</span>
+            <strong>{related.name}</strong>
+            <small>{related.countryName}</small>
+          </Link>)}
+        </div>
+      </nav>}
       <AffiliateDisclosure locale={locale} />
     </main>
   );

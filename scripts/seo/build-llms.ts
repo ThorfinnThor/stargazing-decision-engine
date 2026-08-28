@@ -23,7 +23,7 @@ function section(title: string, pageType: string) {
 
 const content = `# Stargazing Index
 
-> Stargazing Index is a bilingual, data-driven guide for choosing stargazing destinations, months, observing sites, and astronomy gear. It publishes static pages backed by reproducible JSON data and clearly stated limitations.
+> Stargazing Index is a bilingual, data-driven guide for choosing stargazing destinations, months, observing sites, and astronomy gear. Its reviewed field guides, independent routes, and source-backed comparisons are supported by reproducible JSON data and clearly stated limitations.
 
 The primary language is English. German versions use the same paths under \`/de/\`; each page declares reciprocal language alternates. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
 
@@ -40,6 +40,8 @@ ${section("Destination guides", "destination")}${section("Short-trip guides", "s
 - [Dataset manifest](${absolute("/data/stargazing/manifest.json")}): Dataset version, generation time, sources, counts, hashes, and checksums.
 - [Destination index](${absolute("/data/stargazing/destinations/index.json")}): Destination identifiers, countries, time zones, tags, and related observing sites.
 - [Observation-site index](${absolute("/data/stargazing/sites/index.json")}): Coordinates, elevation, access status, and source-backed access notes.
+- [Editorial destination-guide index](${absolute("/data/stargazing/editorial/destinations/index.json")}): Reviewed guide identifiers, word counts, source counts, and revision dates.
+- [Editorial gear-guide index](${absolute("/data/stargazing/gear/index.json")}): Bilingual specification comparisons with cited primary sources and dormant affiliate fields.
 - [SEO registry](${absolute("/data/stargazing/seo/registry.json")}): Canonicals, language alternates, descriptions, modification dates, and indexability decisions.
 
 ## Optional

@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://stargazing.local/schema/destination-editorial-guide.json",
+  "title": "Destination editorial guide",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["version", "destinationId", "slug", "seoTitle", "seoDescription", "standfirst", "editorialAngle", "sections", "tour", "fieldNotesTitle", "fieldNotes", "faq", "sources", "lastReviewedAt"],
+  "properties": {
+    "version": { "const": 1 },
+    "destinationId": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "seoTitle": { "$ref": "#/$defs/localizedText" },
+    "seoDescription": { "$ref": "#/$defs/localizedText" },
+    "standfirst": { "$ref": "#/$defs/localizedText" },
+    "editorialAngle": { "$ref": "#/$defs/localizedText" },
+    "sections": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 7,
+      "items": { "$ref": "#/$defs/section" }
+    },
+    "tour": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary", "duration", "suitability", "sourceIds", "steps"],
+      "properties": {
+        "title": { "$ref": "#/$defs/localizedText" },
+        "summary": { "$ref": "#/$defs/localizedText" },
+        "duration": { "$ref": "#/$defs/localizedText" },
+        "suitability": { "$ref": "#/$defs/localizedText" },
+        "sourceIds": { "$ref": "#/$defs/sourceIds" },
+        "steps": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 6,
+          "items": { "$ref": "#/$defs/tourStep" }
+        }
+      }
+    },
+    "fieldNotesTitle": { "$ref": "#/$defs/localizedText" },
+    "fieldNotes": {
+      "type": "array",
+      "minItems": 3,
+      "items": { "$ref": "#/$defs/fieldNote" }
+    },
+    "faq": {
+      "type": "array",
+      "minItems": 2,
+      "items": { "$ref": "#/$defs/faq" }
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 3,
+      "items": { "$ref": "#/$defs/source" }
+    },
+    "lastReviewedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+  },
+  "$defs": {
+    "localizedText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["en", "de"],
+      "properties": {
+        "en": { "type": "string", "minLength": 1 },
+        "de": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sourceIds": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" }
+    },
+    "section": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "heading", "paragraphs", "sourceIds"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "heading": { "$ref": "#/$defs/localizedText" },
+        "paragraphs": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["en", "de"],
+          "properties": {
+            "en": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } },
+            "de": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 } }
+          }
+        },
+        "sourceIds": { "$ref": "#/$defs/sourceIds" }
+      }
+    },
+    "tourStep": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "timeHint", "title", "body", "sourceIds"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "timeHint": { "$ref": "#/$defs/localizedText" },
+        "title": { "$ref": "#/$defs/localizedText" },
+        "body": { "$ref": "#/$defs/localizedText" },
+        "sourceIds": { "$ref": "#/$defs/sourceIds" }
+      }
+    },
+    "fieldNote": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "title", "body", "sourceIds"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "title": { "$ref": "#/$defs/localizedText" },
+        "body": { "$ref": "#/$defs/localizedText" },
+        "sourceIds": { "$ref": "#/$defs/sourceIds" }
+      }
+    },
+    "faq": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["question", "answer", "sourceIds"],
+      "properties": {
+        "question": { "$ref": "#/$defs/localizedText" },
+        "answer": { "$ref": "#/$defs/localizedText" },
+        "sourceIds": { "$ref": "#/$defs/sourceIds" }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "publisher", "title", "url", "checkedAt", "authority"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+        "publisher": { "type": "string", "minLength": 2 },
+        "title": { "type": "string", "minLength": 2 },
+        "url": { "type": "string", "pattern": "^https://" },
+        "checkedAt": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "authority": {
+          "enum": ["official-destination", "public-agency", "protected-area", "science-institution", "nonprofit-certifier"]
+        }
+      }
+    }
+  }
+}

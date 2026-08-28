@@ -51,6 +51,7 @@ for (const validator of [
   "validate-seo.ts",
   "validate-affiliate.ts",
   "validate-gear.ts",
+  "validate-destination-guides.ts",
   "validate-images.ts",
 ]) {
   try {
