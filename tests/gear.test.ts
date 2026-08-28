@@ -40,6 +40,23 @@ test("the beginner telescope comparison is source-backed", () => {
   assert.ok(guide.items.every((item) => item.affiliatePartnerId === null));
 });
 
+test("the 8x42 binocular comparison is source-backed and fully localized", () => {
+  const guide = guides.find((candidate) => candidate.slug === "binoculars");
+  assert.ok(guide);
+  assert.equal(guide.items.length, 3);
+
+  const sources = guide.items.map((item) => item.source);
+  assert.ok(sources.every((source) => source !== undefined));
+  assert.ok(sources.every((source) => source?.url.startsWith("https://")));
+  assert.ok(sources.every((source) => source?.checkedAt === "2026-08-28"));
+  assert.deepEqual(
+    sources.map((source) => source?.publisher),
+    ["Nikon", "Vortex Optics", "Celestron"],
+  );
+  assert.ok(guide.items.every((item) => item.localizedCoreSpecs?.en && item.localizedCoreSpecs.de));
+  assert.ok(guide.items.every((item) => item.affiliatePartnerId === null));
+});
+
 test("gear validation rejects unsupported hands-on claims", () => {
   const invalid = structuredClone(guides);
   invalid[0].items[0].recommendationBasis = "hands_on_test" as never;
