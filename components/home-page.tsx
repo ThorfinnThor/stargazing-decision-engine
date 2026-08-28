@@ -20,7 +20,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   const shortTrips = shortTripOrigins.map((origin) => {
     const trip = loadShortTrip(origin);
     return { origin, originName: trip.originName, destinationCount: trip.entries.length };
-  });
+  }).filter((trip) => trip.destinationCount > 0);
   const gearGuides = listGearGuides().map(loadGearGuide);
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
@@ -110,7 +110,7 @@ export function HomePage({ locale }: { locale: Locale }) {
         </div>
         <div className="foundation-grid short-trip-links">
           {shortTrips.map(({ origin, originName, destinationCount }) => <a className="destination-card short-trip-card" href={localizedLinks.shortTrips(locale, origin)} key={origin}>
-            <div className="card-topline"><span>{destinationCount} {locale === "de" ? "Ziele" : "destinations"}</span><span>→</span></div>
+            <div className="card-topline"><span>{destinationCount} {locale === "de" ? (destinationCount === 1 ? "Ziel" : "Ziele") : (destinationCount === 1 ? "destination" : "destinations")}</span><span>→</span></div>
             <h3>{originName}</h3>
             <p>{locale === "de" ? "Dunkle Orte für eine realistische Kurzreise." : "Dark-sky places for a practical short trip."}</p>
           </a>)}
