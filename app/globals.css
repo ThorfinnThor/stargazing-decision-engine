@@ -1077,6 +1077,15 @@ h1 span {
   font-size: 0.72rem;
 }
 
+.night-timeline-now-context {
+  margin: -0.25rem 0 1rem;
+  border-left: 2px solid var(--gold);
+  padding: 0.4rem 0.65rem;
+  color: #dbe3f4;
+  font-size: 0.68rem;
+  line-height: 1.45;
+}
+
 .night-timeline-chart {
   display: grid;
   grid-template-columns: 5.6rem minmax(0, 1fr);

@@ -51,10 +51,10 @@ function formatNightDate(locale: Locale, timeZone: string, plan: NightPlan) {
   return start === end ? start : `${start} – ${end}`;
 }
 
-export function NightPlanningPanel({ location, context, locale }: { location: SkyLocation; context: DestinationNightContext; locale: Locale }) {
+export function NightPlanningPanel({ location, context, currentInstantIso, locale }: { location: SkyLocation; context: DestinationNightContext; currentInstantIso: string; locale: Locale }) {
   const [livePlanAnchorIso, setLivePlanAnchorIso] = useState(() => context.instantIso);
   const planningInstantIso = context.mode === "live-night" ? livePlanAnchorIso : context.instantIso;
-  const nowIso = context.mode === "live-night" ? context.instantIso : null;
+  const nowIso = context.source === "linked-preview" ? null : currentInstantIso;
   const result = useMemo(() => {
     try {
       return { plan: buildNightPlan({ location, mode: context.mode, instantIso: planningInstantIso, nowIso: planningInstantIso }), error: null };

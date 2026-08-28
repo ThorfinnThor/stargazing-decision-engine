@@ -26,7 +26,7 @@ export function DestinationSkySection({ location, previews, locale }: { location
     setReady(true);
   }, [location, previews]);
   useEffect(() => {
-    if (!ready || preview || nextNightInstant) return;
+    if (!ready || preview) return;
     const refresh = () => {
       const nowIso = roundedCurrentMinuteIso();
       setLiveInstant(nowIso);
@@ -46,7 +46,7 @@ export function DestinationSkySection({ location, previews, locale }: { location
       window.removeEventListener("pageshow", restore);
       window.removeEventListener("focus", restore);
     };
-  }, [location, nextNightInstant, preview, ready]);
+  }, [preview, ready]);
   if (!ready) return <div className="sky-loading" role="status">{locale === "de" ? "Astronomischer Himmel wird berechnet …" : "Calculating astronomical sky …"}</div>;
   const showLive = () => {
     const nowIso = roundedCurrentMinuteIso();
@@ -74,6 +74,6 @@ export function DestinationSkySection({ location, previews, locale }: { location
         ? <button type="button" onClick={showLive}>{locale === "de" ? "Zum Live-Himmel" : "Show live sky"}</button>
       : <button type="button" onClick={showNextNight}>{locale === "de" ? "Nächste Nacht anzeigen" : "Show next night"}</button>}
     </div>
-    <NightPlanningPanel key={`${location.id}-${context.mode}`} location={location} context={context} locale={locale} />
+    <NightPlanningPanel key={`${location.id}-${context.mode}`} location={location} context={context} currentInstantIso={liveInstant} locale={locale} />
   </div>;
 }
