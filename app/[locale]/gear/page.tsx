@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
-import { listGearGuides, loadGearCategories, loadSeoPage } from "@/lib/data/load";
+import { listGearGuides, loadGearCategories, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
@@ -17,7 +17,7 @@ export function generateStaticParams() {
 
 function readParams(params: { locale: string }) {
   if (!isLocale(params.locale)) return null;
-  try { return { locale: params.locale as Locale, categories: loadGearCategories(), guides: listGearGuides(), seo: loadSeoPage(`/${params.locale}/gear/`) }; } catch { return null; }
+  try { return { locale: params.locale as Locale, categories: loadGearCategories(), guides: listGearGuides().map(loadGearGuide), seo: loadSeoPage(`/${params.locale}/gear/`) }; } catch { return null; }
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
@@ -38,7 +38,7 @@ export default async function GearIndexPage({ params }: { params: Promise<{ loca
       <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Ausrüstung · Guides" : "Gear · guides"}</p><h1>{isGerman ? "Ausrüstung für klare Nächte." : "Gear for clear nights."}</h1><p className="lede">{isGerman ? "Technische Vergleiche für Sternbeobachtung, getrennt von Rankings und ohne Preis- oder Verfügbarkeitsversprechen." : "Specification-based comparisons for stargazing, separate from rankings and without price or availability claims."}</p></header>
       <section className="catalog" aria-labelledby="gear-categories-title"><div className="catalog-intro"><h2 id="gear-categories-title">{isGerman ? "Kategorien" : "Categories"}</h2></div><div className="catalog-grid">{categories.map((category) => <article className="destination-card" key={category.id}><h3>{category.name[locale]}</h3><p>{category.description[locale]}</p></article>)}</div></section>
-      <section className="event-summary" aria-labelledby="gear-guides-title"><h2 id="gear-guides-title">{isGerman ? "Guides" : "Guides"}</h2><div className="foundation-grid">{guides.map((guide) => <a className="destination-card" href={localizedLinks.gearGuide(locale, guide)} key={guide}><h3>{guide.replaceAll("-", " ")}</h3></a>)}</div></section>
+      <section className="event-summary" aria-labelledby="gear-guides-title"><h2 id="gear-guides-title">{isGerman ? "Guides" : "Guides"}</h2><div className="foundation-grid gear-guide-grid">{guides.map((guide) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, guide.slug)} key={guide.slug}><div className="card-topline"><span>{guide.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{guide.title[locale]}</h3><p>{guide.summary[locale]}</p><p>{guide.decisionSummary[locale]}</p></a>)}</div></section>
       <AffiliateDisclosure locale={locale} />
     </main>
   );

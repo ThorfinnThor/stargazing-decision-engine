@@ -486,6 +486,20 @@ h1 span {
   text-decoration: none;
 }
 
+.short-trip-card,
+.gear-guide-card {
+  min-height: 12rem;
+}
+
+.gear-guide-card .card-topline {
+  margin-bottom: 2rem;
+}
+
+.gear-guide-card p {
+  min-height: 0;
+  margin-bottom: 0.75rem;
+}
+
 .affiliate-disclosure {
   max-width: 70rem;
   margin: 1.5rem auto 0;

@@ -1,0 +1,109 @@
+{
+  "originSlug": "delhi",
+  "originName": "Delhi",
+  "countryCode": "IN",
+  "maxShortTripKm": 500,
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "entries": [
+    {
+      "rank": 1,
+      "destinationId": "hanle",
+      "destinationSlug": "hanle",
+      "destinationName": "Hanle",
+      "distanceKm": 493.15,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 96
+        },
+        {
+          "month": 9,
+          "score": 95
+        },
+        {
+          "month": 10,
+          "score": 93
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 82,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 79,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 79,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 83,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 89,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 96,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 85,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 93,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 96,
+      "distanceUtility": 60,
+      "shortTripScore": 87,
+      "bestSiteId": "hanle-astronomy-ambassador-zone",
+      "stayArea": {
+        "id": "hanle-village",
+        "name": "Hanle village",
+        "affiliateQuery": "Hanle Ladakh"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 96 in month 6.",
+        "Distance is 493.15 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Hanle village."
+      ],
+      "confidenceLevel": "moderate"
+    }
+  ]
+}

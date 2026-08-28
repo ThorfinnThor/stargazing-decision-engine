@@ -1,0 +1,109 @@
+{
+  "originSlug": "melbourne",
+  "originName": "Melbourne",
+  "countryCode": "AU",
+  "maxShortTripKm": 500,
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "entries": [
+    {
+      "rank": 1,
+      "destinationId": "central-tasmania",
+      "destinationSlug": "central-tasmania",
+      "destinationName": "Central Tasmania",
+      "distanceKm": 462.28,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 1,
+          "score": 68
+        },
+        {
+          "month": 2,
+          "score": 68
+        },
+        {
+          "month": 3,
+          "score": 66
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 66,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 62,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 68,
+      "distanceUtility": 60,
+      "shortTripScore": 66,
+      "bestSiteId": "central-tasmania-dark-sky",
+      "stayArea": {
+        "id": "deloraine",
+        "name": "Deloraine",
+        "affiliateQuery": "Deloraine Tasmania"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 68 in month 1.",
+        "Distance is 462.28 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Deloraine."
+      ],
+      "confidenceLevel": "high"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "slug": "star-trackers",
+  "title": {
+    "en": "Star trackers: a clear path from tripod to long exposure",
+    "de": "Star-Tracker: der Weg vom Stativ zur Langzeitbelichtung"
+  },
+  "category": "star-trackers",
+  "summary": {
+    "en": "Understand payload, polar alignment, and power before choosing a tracker for wide-field astrophotography.",
+    "de": "Verstehe Traglast, Polausrichtung und Stromversorgung, bevor du einen Tracker für Weitfeld-Astrofotografie wählst."
+  },
+  "decisionSummary": {
+    "en": "Start with the smallest tracker that carries your camera and lens with margin; alignment repeatability matters more than a headline payload.",
+    "de": "Beginne mit dem kleinsten Tracker, der Kamera und Objektiv mit Reserve trägt; reproduzierbare Ausrichtung zählt mehr als eine nominelle Traglast."
+  },
+  "audience": {
+    "en": "Photographers moving from fixed-tripod night-sky images to tracked exposures.",
+    "de": "Fotograf:innen auf dem Weg von Stativaufnahmen zu nachgeführten Belichtungen."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Payload in the configuration you will actually use",
+      "de": "Traglast in der tatsächlich verwendeten Konfiguration"
+    },
+    {
+      "en": "Polar-alignment visibility and adjustment precision",
+      "de": "Sichtbarkeit der Polausrichtung und Einstellpräzision"
+    },
+    {
+      "en": "Battery runtime and cable management",
+      "de": "Akkulaufzeit und Kabelmanagement"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "Compact camera star tracker",
+        "de": "Kompakter Kamera-Star-Tracker"
+      },
+      "whyItMatters": {
+        "en": "A small motorized axis extends wide-field exposures while keeping the travel kit simple.",
+        "de": "Eine kleine motorisierte Achse verlängert Weitfeldbelichtungen und hält das Reise-Setup einfach."
+      },
+      "coreSpecs": {
+        "payload": "camera plus lens with margin",
+        "alignment": "integrated or illuminated polar aid",
+        "power": "USB or internal battery"
+      },
+      "pros": {
+        "en": [
+          "Low packed weight",
+          "Simple wide-field workflow"
+        ],
+        "de": [
+          "Geringes Packgewicht",
+          "Einfacher Weitfeld-Workflow"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Limited payload",
+          "Polar alignment remains critical"
+        ],
+        "de": [
+          "Begrenzte Traglast",
+          "Polausrichtung bleibt entscheidend"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "compact star tracker astrophotography camera",
+      "affiliatePartnerId": null
+    },
+    {
+      "name": {
+        "en": "Tracker with equatorial wedge",
+        "de": "Tracker mit äquatorialer Wedge"
+      },
+      "whyItMatters": {
+        "en": "A rigid wedge and stronger drive support heavier lenses or a small imaging tube when the tripod is equally solid.",
+        "de": "Eine steife Wedge und ein stärkerer Antrieb tragen schwerere Objektive oder einen kleinen Imaging-Tubus, wenn das Stativ ebenso solide ist."
+      },
+      "coreSpecs": {
+        "payload": "system-specific, counterweight included",
+        "alignment": "fine azimuth and altitude adjustment",
+        "power": "external 5–12 V typical"
+      },
+      "pros": {
+        "en": [
+          "More configuration headroom",
+          "Fine alignment controls"
+        ],
+        "de": [
+          "Mehr Spielraum bei der Konfiguration",
+          "Feine Ausrichtungsregler"
+        ]
+      },
+      "cons": {
+        "en": [
+          "More setup time",
+          "Heavier and more cables"
+        ],
+        "de": [
+          "Längerer Aufbau",
+          "Mehr Gewicht und Kabel"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "equatorial wedge star tracker counterweight",
+      "affiliatePartnerId": null
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "Tracking does not remove the need for a rigid tripod and careful focus.",
+      "A larger payload class buys flexibility but adds alignment and transport work."
+    ],
+    "de": [
+      "Nachführung ersetzt weder ein steifes Stativ noch sorgfältiges Fokussieren.",
+      "Eine höhere Traglastklasse schafft Flexibilität, erhöht aber Ausrichtungs- und Transportaufwand."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "Do I need a tracker for Milky Way photos?",
+        "de": "Brauche ich für Milchstraßenfotos einen Tracker?"
+      },
+      "answer": {
+        "en": "No. A fixed tripod is the simplest start; a tracker becomes useful when you want longer exposures or lower ISO without star trailing.",
+        "de": "Nein. Ein festes Stativ ist der einfachste Einstieg; ein Tracker hilft bei längeren Belichtungen oder niedrigerem ISO ohne Sternspuren."
+      }
+    },
+    {
+      "question": {
+        "en": "What is the most common setup mistake?",
+        "de": "Was ist der häufigste Aufbaufehler?"
+      },
+      "answer": {
+        "en": "Overloading the tracker or extending a flexible center column makes accurate tracking much harder than the advertised payload suggests.",
+        "de": "Eine Überlastung oder eine flexible, ausgezogene Mittelsäule erschwert genaue Nachführung stärker, als die nominelle Traglast vermuten lässt."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "This is specification-based education, not a product ranking or hands-on review. Verify current limits and power requirements before purchase.",
+    "de": "Dies ist technische Orientierung, kein Produktranking oder Praxistest. Prüfe vor dem Kauf aktuelle Grenzen und Stromanforderungen."
+  },
+  "lastReviewedAt": "2026-08-28"
+}
