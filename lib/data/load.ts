@@ -14,6 +14,7 @@ export interface SeoPageRecord {
   title: string;
   h1: string;
   description: string;
+  lastModified: string;
   indexable: boolean;
   reasons: string[];
   structuredDataType: "WebPage";

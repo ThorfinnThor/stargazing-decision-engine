@@ -6,6 +6,7 @@ import { loadSeoPage } from "@/lib/data/load";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -22,12 +23,7 @@ function readPage(locale: string) {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const resolved = readPage((await params).locale);
   if (!resolved) return {};
-  return {
-    title: resolved.seo?.title,
-    description: resolved.seo?.description,
-    robots: { index: false, follow: true },
-    alternates: resolved.seo ? { canonical: resolved.seo.canonical, languages: resolved.seo.alternatePaths } : undefined,
-  };
+  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.locale === "de" ? "Stargazing-Finder" : "Stargazing finder", description: resolved.locale === "de" ? "Vergleiche geprüfte Sternbeobachtungsziele." : "Compare reviewed stargazing destinations." });
 }
 
 export default async function FinderPage({ params }: { params: Promise<{ locale: string }> }) {
@@ -36,7 +32,7 @@ export default async function FinderPage({ params }: { params: Promise<{ locale:
   const { locale, seo } = resolved;
   const de = locale === "de";
   const description = seo?.description ?? (de ? "Stargazing-Finder für geprüfte Reiseziele." : "Stargazing finder for reviewed destinations.");
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing finder", description, url: seo?.canonical ?? `https://stargazing.local/${locale}/finder/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing finder", description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/finder/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   return (
     <main className="finder-page" lang={locale}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

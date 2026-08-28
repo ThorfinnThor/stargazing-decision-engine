@@ -5,6 +5,7 @@ import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { listGearGuides, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 
@@ -30,7 +31,7 @@ function readParams(params: { locale: string; slug: string }) {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
-  return { title: resolved.seo?.title ?? resolved.guide.title[resolved.locale], description: resolved.seo?.description ?? resolved.guide.summary[resolved.locale], robots: resolved.seo?.indexable ? undefined : { index: false, follow: true }, alternates: resolved.seo ? { canonical: resolved.seo.canonical, languages: resolved.seo.alternatePaths } : undefined };
+  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.guide.title[resolved.locale], description: resolved.guide.summary[resolved.locale] });
 }
 
 export default async function GearGuidePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -38,7 +39,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   if (!resolved) notFound();
   const { locale, guide, relatedGuides, seo } = resolved;
   const isGerman = locale === "de";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazing.local/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />

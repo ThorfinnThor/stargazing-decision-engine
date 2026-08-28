@@ -6,5 +6,6 @@
   { "pageType": "short-trip", "keywordIntent": "short stargazing trips from origin", "cluster": "travel-planning", "canonicalPattern": "/{locale}/short-trips/{origin}/", "minimumDataCompleteness": 1, "minimumConfidence": "high", "minimumUniqueInsights": 2, "minimumInternalLinks": 3 },
   { "pageType": "gear", "keywordIntent": "stargazing gear guide", "cluster": "gear", "canonicalPattern": "/{locale}/gear/", "minimumDataCompleteness": 1, "minimumConfidence": "high", "minimumUniqueInsights": 2, "minimumInternalLinks": 3 },
   { "pageType": "methodology", "keywordIntent": "stargazing gear editorial methodology", "cluster": "gear", "canonicalPattern": "/{locale}/methodology/", "minimumDataCompleteness": 1, "minimumConfidence": "high", "minimumUniqueInsights": 3, "minimumInternalLinks": 3 },
+  { "pageType": "about", "keywordIntent": "stargazing index editorial mission", "cluster": "trust", "canonicalPattern": "/{locale}/about/", "minimumDataCompleteness": 1, "minimumConfidence": "high", "minimumUniqueInsights": 3, "minimumInternalLinks": 2 },
   { "pageType": "gear-guide", "keywordIntent": "specific stargazing gear guide", "cluster": "gear", "canonicalPattern": "/{locale}/gear/{slug}/", "minimumDataCompleteness": 1, "minimumConfidence": "high", "minimumUniqueInsights": 2, "minimumInternalLinks": 3 }
 ]

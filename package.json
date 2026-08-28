@@ -37,6 +37,8 @@
     "data:shorttrips": "node --import tsx scripts/trips/build-short-trips.ts",
     "data:shorttrips:validate": "node --import tsx scripts/validate/validate-short-trips.ts",
     "data:seo": "node --import tsx scripts/seo/build-seo.ts",
+    "data:llms": "node --import tsx scripts/seo/build-llms.ts",
+    "data:llms:validate": "node --import tsx scripts/validate/validate-llms.ts",
     "data:seo:validate": "node --import tsx scripts/validate/validate-seo.ts",
     "data:affiliate:validate": "node --import tsx scripts/validate/validate-affiliate.ts",
     "data:affiliate": "node --import tsx scripts/affiliate/build-redirects.ts",
@@ -57,9 +59,9 @@
     "data:milky-way:validate": "node --import tsx scripts/validate/validate-milky-way-config.ts",
     "data:health:validate": "node --import tsx scripts/validate/validate-health.ts",
     "data:export": "node --import tsx scripts/export/export.ts",
-    "data:validate": "node --import tsx scripts/validate/validate-public-data.ts && node --import tsx scripts/validate/validate-climate-snapshots.ts && node --import tsx scripts/validate/validate-black-marble-snapshots.ts && node --import tsx scripts/validate/validate-dem-snapshots.ts && node --import tsx scripts/validate/validate-darkness-calibration.ts && node --import tsx scripts/validate/validate-score-config.ts && node --import tsx scripts/validate/validate-site-score-snapshots.ts && pnpm data:milky-way:validate && pnpm data:meteor-showers:validate && node --import tsx scripts/validate/validate-calendar-files.ts && pnpm data:astronomy:validate",
-    "data:pipeline": "pnpm data:seed && pnpm data:normalize && pnpm data:score && pnpm data:meteor-showers && pnpm data:shorttrips && pnpm data:export && pnpm data:gear && pnpm data:images && pnpm data:astronomy:previews && pnpm data:seo && pnpm data:affiliate && pnpm data:validate && pnpm data:affiliate:validate && pnpm data:gear:validate && pnpm data:images:validate",
-    "data:rebuild": "pnpm data:seed && pnpm data:normalize && pnpm data:score && pnpm data:meteor-showers && pnpm data:shorttrips && pnpm data:export && pnpm data:gear && pnpm data:images && pnpm data:astronomy:previews && pnpm data:seo && pnpm data:affiliate && pnpm data:validate && pnpm data:affiliate:validate && pnpm data:gear:validate && pnpm data:images:validate"
+    "data:validate": "node --import tsx scripts/validate/validate-public-data.ts && node --import tsx scripts/validate/validate-climate-snapshots.ts && node --import tsx scripts/validate/validate-black-marble-snapshots.ts && node --import tsx scripts/validate/validate-dem-snapshots.ts && node --import tsx scripts/validate/validate-darkness-calibration.ts && node --import tsx scripts/validate/validate-score-config.ts && node --import tsx scripts/validate/validate-site-score-snapshots.ts && pnpm data:milky-way:validate && pnpm data:meteor-showers:validate && node --import tsx scripts/validate/validate-calendar-files.ts && pnpm data:astronomy:validate && pnpm data:seo:validate && pnpm data:llms:validate",
+    "data:pipeline": "pnpm data:seed && pnpm data:normalize && pnpm data:score && pnpm data:meteor-showers && pnpm data:shorttrips && pnpm data:export && pnpm data:gear && pnpm data:images && pnpm data:astronomy:previews && pnpm data:seo && pnpm data:llms && pnpm data:affiliate && pnpm data:validate && pnpm data:affiliate:validate && pnpm data:gear:validate && pnpm data:images:validate",
+    "data:rebuild": "pnpm data:seed && pnpm data:normalize && pnpm data:score && pnpm data:meteor-showers && pnpm data:shorttrips && pnpm data:export && pnpm data:gear && pnpm data:images && pnpm data:astronomy:previews && pnpm data:seo && pnpm data:llms && pnpm data:affiliate && pnpm data:validate && pnpm data:affiliate:validate && pnpm data:gear:validate && pnpm data:images:validate"
   },
   "dependencies": {
     "astronomy-engine": "2.1.19",

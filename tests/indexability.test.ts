@@ -28,8 +28,8 @@ test("SEO indexability gate permits complete pages and explains every rejection"
 });
 
 test("structured data emits an absolute WebPage contract", () => {
-  const value = buildWebPageStructuredData({ name: "Example", description: "Description", url: "https://stargazing.local/en/example/", inLanguage: "en", isPartOf: "Stargazing Decision Engine" });
-  assert.equal(value["@type"], "WebPage");
-  assert.equal(value.url, "https://stargazing.local/en/example/");
-  assert.equal(value.isPartOf?.url, "https://stargazing.local");
+  const value = buildWebPageStructuredData({ name: "Example", description: "Description", url: "https://stargazingindex.com/en/example/", inLanguage: "en", isPartOf: "Stargazing Index" });
+  const page = value["@graph"].find((item) => item["@type"] === "WebPage");
+  assert.equal(page?.url, "https://stargazingindex.com/en/example/");
+  assert.deepEqual(page?.isPartOf, { "@id": "https://stargazingindex.com/#website" });
 });

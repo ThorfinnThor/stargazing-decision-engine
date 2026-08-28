@@ -7,7 +7,12 @@ export const dynamic = "force-static";
 export default function robots(): MetadataRoute.Robots {
   const registry = loadSeoRegistry();
   return {
-    rules: { userAgent: "*", allow: "/" },
+    rules: [
+      { userAgent: "*", allow: "/" },
+      { userAgent: "OAI-SearchBot", allow: "/" },
+      { userAgent: "ChatGPT-User", allow: "/" },
+    ],
+    host: registry.siteUrl.replace(/\/$/, ""),
     sitemap: `${registry.siteUrl.replace(/\/$/, "")}/sitemap.xml`,
   };
 }

@@ -27,6 +27,6 @@ test("every localized page receives directly reachable legal navigation", () => 
 test("the public site does not use cookies, analytics, or persistent browser storage", () => {
   const client = read("components/sky/random-homepage-sky.tsx");
   assert.doesNotMatch(client, /sessionStorage|localStorage|document\.cookie/);
-  const rootLayout = read("app/layout.tsx");
-  assert.doesNotMatch(rootLayout, /gtag|GoogleAnalytics|PostHog|analytics/i);
+  const rootLayouts = `${read("app/(root)/layout.tsx")}\n${read("app/[locale]/layout.tsx")}`;
+  assert.doesNotMatch(rootLayouts, /gtag|GoogleAnalytics|PostHog|analytics/i);
 });

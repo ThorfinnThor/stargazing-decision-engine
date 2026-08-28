@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const siteUrl = registry.siteUrl.replace(/\/$/, "");
   return registry.pages.filter((page) => page.indexable).map((page) => ({
     url: page.canonical,
+    lastModified: page.lastModified,
     alternates: { languages: Object.fromEntries(Object.entries(page.alternatePaths).map(([locale, path]) => [locale, `${siteUrl}${path}`])) },
   }));
 }

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { loadMeteorShowerEvent, listMeteorShowerEvents, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
+import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 
@@ -31,12 +32,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   if (!resolved) return {};
   const title = resolved.event.name[resolved.locale];
   const seo = resolved.seo;
-  return {
-    title: seo?.title ?? `${title} ${resolved.year}`,
-    description: seo?.description,
-    robots: seo?.indexable ? undefined : { index: false, follow: true },
-    alternates: seo ? { canonical: seo.canonical, languages: seo.alternatePaths } : undefined,
-  };
+  return buildSeoMetadata({ seo, locale: resolved.locale, title: `${title} ${resolved.year}`, description: resolved.locale === "de" ? `Beobachtungsleitfaden für ${title}.` : `Viewing guide for ${title}.` });
 }
 
 export default async function MeteorShowerPage({ params }: { params: Promise<{ locale: string; year: string; slug: string }> }) {
@@ -45,7 +41,7 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
   const { event, locale, year, seo } = resolved;
   const name = event.name[locale];
   const isGerman = locale === "de";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `${name} ${year}`, description: seo?.description ?? `Viewing guide for ${name} ${year}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/meteor-showers/${year}/${event.slug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `${name} ${year}`, description: seo?.description ?? `Viewing guide for ${name} ${year}.`, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/meteor-showers/${year}/${event.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
