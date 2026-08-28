@@ -42,20 +42,20 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   if (!resolved) notFound();
   const { trip, locale, seo } = resolved;
   const isGerman = locale === "de";
-  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `Short stargazing trips from ${trip.originName}`, description: seo?.description ?? `Static ranking from ${trip.originName}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/short-trips/${trip.originSlug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
+  const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `Short stargazing trips from ${trip.originName}`, description: seo?.description ?? `Destination ranking from ${trip.originName}.`, url: seo?.canonical ?? `https://stargazing.local/${locale}/short-trips/${trip.originSlug}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
   return (
     <main className="trip-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <PageHomeNav locale={locale} />
       <header className="event-header">
-        <p className="eyebrow">{isGerman ? "Kurze Sternreisen · statisches Ranking" : "Short stargazing trips · static ranking"}</p>
+        <p className="eyebrow">{isGerman ? "Kurze Sternreisen · Zielranking" : "Short stargazing trips · destination ranking"}</p>
         <h1>{isGerman ? `Ab ${trip.originName}` : `From ${trip.originName}`}</h1>
         <p className="lede">
           {isGerman
             ? `Ziele bis ${trip.maxShortTripKm} km, gewichtet nach historischem Realwert und Luftlinienentfernung.`
             : `Destinations within ${trip.maxShortTripKm} km, weighted by historical real scores and great-circle distance.`}
         </p>
-        <p className="event-note">{isGerman ? "Entfernung ist keine Fahrzeit. Alle Werte sind statisch und keine Verfügbarkeits- oder Wetterprognose." : "Distance is not driving time. Values are static and are not availability or weather forecasts."}</p>
+        <p className="event-note">{isGerman ? "Entfernung ist keine Fahrzeit. Die veröffentlichten Werte sind keine Verfügbarkeits- oder Wetterprognose." : "Distance is not driving time. Published values are not availability or weather forecasts."}</p>
       </header>
       <section className="event-summary" aria-labelledby="trip-results-title">
         <h2 id="trip-results-title">{isGerman ? "Beste Ziele" : "Best destinations"}</h2>

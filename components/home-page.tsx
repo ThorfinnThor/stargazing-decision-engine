@@ -101,7 +101,7 @@ export function HomePage({ locale }: { locale: Locale }) {
 
       <section className="foundation" aria-labelledby="short-trips-title">
         <div className="section-heading">
-          <p className="eyebrow dark">{locale === "de" ? "Statische Kurzreisen" : "Static short trips"}</p>
+          <p className="eyebrow dark">{locale === "de" ? "Kurzreisen" : "Short trips"}</p>
           <h2 id="short-trips-title">{locale === "de" ? "Ziele ab deiner Stadt." : "Destinations from your city."}</h2>
         </div>
         <div className="foundation-grid short-trip-links">
@@ -110,7 +110,7 @@ export function HomePage({ locale }: { locale: Locale }) {
       </section>
 
       <section className="foundation" aria-labelledby="gear-title">
-        <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Statische Ausrüstung" : "Static gear"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
+        <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Ausrüstungsguides" : "Gear guides"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
         <div className="foundation-grid short-trip-links"><a className="destination-card" href={localizedLinks.gear(locale)}>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</a>{gearGuides.map((guide) => <a className="destination-card" href={localizedLinks.gearGuide(locale, guide)} key={guide}>{guide.replaceAll("-", " ")}</a>)}</div>
       </section>
     </main>

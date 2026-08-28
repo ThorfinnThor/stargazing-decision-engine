@@ -35,13 +35,13 @@ export default async function FinderPage({ params }: { params: Promise<{ locale:
   if (!resolved) notFound();
   const { locale, seo } = resolved;
   const de = locale === "de";
-  const description = seo?.description ?? (de ? "Statischer Stargazing-Finder." : "Static stargazing finder.");
+  const description = seo?.description ?? (de ? "Stargazing-Finder für geprüfte Reiseziele." : "Stargazing finder for reviewed destinations.");
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing finder", description, url: seo?.canonical ?? `https://stargazing.local/${locale}/finder/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
   return (
     <main className="finder-page" lang={locale}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <nav className="finder-nav" aria-label={de ? "Finder-Navigation" : "Finder navigation"}><a href={localizedLinks.home(locale)}>← {de ? "Startseite" : "Home"}</a><div>{locales.map((item) => <a className={item === locale ? "active" : ""} href={localizedLinks.finder(item)} key={item}>{item.toUpperCase()}</a>)}</div></nav>
-      <header className="finder-header"><p className="eyebrow">{de ? "Statisch · clientseitig · fünf Eingaben" : "Static · client-side · five inputs"}</p><h1>{de ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip."}</h1><p className="lede">{description}</p></header>
+      <header className="finder-header"><p className="eyebrow">{de ? "Clientseitig · fünf Eingaben" : "Client-side · five inputs"}</p><h1>{de ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip."}</h1><p className="lede">{description}</p></header>
       <section className="finder-body" aria-label={de ? "Finder und Ergebnisse" : "Finder and results"}><FinderClient locale={locale} /></section>
     </main>
   );
