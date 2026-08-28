@@ -70,7 +70,6 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
             ))}</tbody>
           </table>
         </div>
-        <p className="event-note">{isGerman ? "Die Camping-Angabe bleibt unbekannt, solange keine kuratierte Quelle vorliegt." : "Camping remains unknown until curated source metadata is available."}</p>
       </section>
       <AffiliateDisclosure locale={locale} />
     </main>

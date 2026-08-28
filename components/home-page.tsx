@@ -5,6 +5,7 @@ import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { localeCopy, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { formatMonth } from "@/lib/i18n/months";
+import { DestinationCatalogFilter } from "@/components/destination-catalog-filter";
 import { RandomHomepageSky } from "@/components/sky/random-homepage-sky";
 
 export function HomePage({ locale }: { locale: Locale }) {
@@ -14,7 +15,7 @@ export function HomePage({ locale }: { locale: Locale }) {
   const catalogNote = realScoreSites === 0
     ? copy.catalogNote
     : realScoreSites >= manifest.counts.observationSites
-      ? copy.realCatalogNote
+      ? null
       : copy.mixedCatalogNote;
   const shortTripOrigins = listShortTripOrigins();
   const shortTrips = shortTripOrigins.map((origin) => {
@@ -33,9 +34,24 @@ export function HomePage({ locale }: { locale: Locale }) {
     const bestMonth = [...monthly.months].sort((a, b) => b.score - a.score)[0];
     const destinationSites = sites.filter((site) => site.destinationId === destination.id);
     const travelEligible = destinationSites.some(isTravelEligibleSite);
-    const nightAccessStatus = travelEligible ? "eligible" : destinationSites.every((site) => site.publicAccess === "no") ? "closed" : "unverified";
+    const nightAccessStatus: "eligible" | "closed" | "unverified" = travelEligible
+      ? "eligible"
+      : destinationSites.every((site) => site.publicAccess === "no") ? "closed" : "unverified";
     return { destination, bestMonth, dataStatus: monthly.dataStatus, nightAccessStatus };
   });
+  const catalogDestinations = destinations.map(({ destination, bestMonth, dataStatus, nightAccessStatus }) => ({
+    id: destination.id,
+    href: localizedLinks.destination(locale, destination.slug),
+    name: destination.name,
+    countryCode: destination.countryCode,
+    countryName: destination.countryName,
+    continent: destination.continent,
+    tags: destination.tags,
+    nightAccessStatus,
+    score: bestMonth?.score ?? null,
+    scoreLabel: dataStatus === "real" ? copy.realScore : copy.seedScore,
+    bestMonthLabel: bestMonth ? formatMonth(bestMonth.month, locale) : "—",
+  }));
 
   return (
     <main lang={copy.htmlLang}>
@@ -78,26 +94,9 @@ export function HomePage({ locale }: { locale: Locale }) {
             <p className="eyebrow dark">{copy.catalogEyebrow}</p>
             <h2 id="catalog-title">{copy.catalogTitle}</h2>
           </div>
-          <p className="catalog-note">{catalogNote}</p>
+          {catalogNote ? <p className="catalog-note">{catalogNote}</p> : null}
         </div>
-        <div className="catalog-grid">
-          {destinations.map(({ destination, bestMonth, dataStatus, nightAccessStatus }) => (
-            <a className="destination-card" href={localizedLinks.destination(locale, destination.slug)} key={destination.id}>
-              <div className="card-topline">
-                <span>{destination.countryCode}</span>
-                <span>{destination.continent}</span>
-              </div>
-              <h3>{destination.name}</h3>
-              <p>{destination.tags.slice(0, 2).join(" · ")}{nightAccessStatus === "closed"
-                ? ` · ${locale === "de" ? "kein öffentlicher Nachtzugang" : "no public night access"}`
-                : nightAccessStatus === "unverified" ? ` · ${locale === "de" ? "Nachtzugang nicht verifiziert" : "night access not verified"}` : ""}</p>
-              <div className="card-score">
-                <span className="score-value">{bestMonth?.score ?? "—"}</span>
-                <span className="score-label">{dataStatus === "real" ? copy.realScore : copy.seedScore}<br />{copy.bestMonth} {bestMonth ? formatMonth(bestMonth.month, locale) : "—"}</span>
-              </div>
-            </a>
-          ))}
-        </div>
+        <DestinationCatalogFilter destinations={catalogDestinations} locale={locale} bestMonthLabel={copy.bestMonth} />
         <p className="catalog-footnote">
           {copy.dataset} {manifest.datasetVersion} · {manifest.counts.destinations} {copy.destinations} · {copy.climateNormal} {manifest.climateNormal.startYear}–{manifest.climateNormal.endYear}
         </p>
