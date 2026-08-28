@@ -1113,25 +1113,28 @@ h1 span {
 
 .night-timeline-segment-twilight {
   fill: #8ec5ff;
-  opacity: 0.22;
+  opacity: 0.12;
 }
 
 .night-timeline-segment-astronomical-darkness {
-  fill: #080b17;
-  stroke: rgb(142 197 255 / 32%);
-  stroke-width: 1;
+  fill: #8ec5ff;
+  fill-opacity: 0.27;
+  stroke: rgb(142 197 255 / 68%);
+  stroke-width: 1.5;
 }
 
 .night-timeline-segment-moon-above {
   fill: #f4efe4;
-  opacity: 0.24;
+  fill-opacity: 0.48;
+  stroke: rgb(244 239 228 / 68%);
+  stroke-width: 1;
 }
 
 .night-timeline-segment-moon-below {
   fill: transparent;
-  stroke: rgb(170 178 200 / 38%);
+  stroke: rgb(170 178 200 / 62%);
   stroke-dasharray: 5 4;
-  stroke-width: 1;
+  stroke-width: 1.5;
 }
 
 .night-timeline-segment-recommended {
@@ -1147,9 +1150,18 @@ h1 span {
   stroke-dasharray: 3 4;
 }
 
-.night-timeline-now {
-  stroke: rgb(244 239 228 / 90%);
-  stroke-width: 2;
+.night-timeline-now line {
+  stroke: var(--paper);
+  stroke-width: 3;
+  filter: drop-shadow(0 0 3px rgb(244 239 228 / 55%));
+  vector-effect: non-scaling-stroke;
+}
+
+.night-timeline-now circle {
+  fill: var(--paper);
+  stroke: var(--night);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
 }
 
 .night-timeline-legend {
@@ -1174,10 +1186,30 @@ h1 span {
   border: 1px solid rgb(142 197 255 / 40%);
 }
 
-.night-timeline-swatch-dark { background: #080b17; }
-.night-timeline-swatch-moon { background: #f4efe4; opacity: 0.55; }
+.night-timeline-swatch-dark {
+  border-color: rgb(142 197 255 / 68%);
+  background: rgb(142 197 255 / 27%);
+}
+
+.night-timeline-swatch-moon-above {
+  border-color: rgb(244 239 228 / 68%);
+  background: rgb(244 239 228 / 48%);
+}
+
+.night-timeline-swatch-moon-below {
+  border-color: rgb(170 178 200 / 62%);
+  border-style: dashed;
+  background: transparent;
+}
+
 .night-timeline-swatch-recommended { background: #e9c46a; }
-.night-timeline-swatch-now { background: #f4efe4; }
+.night-timeline-swatch-now {
+  width: 0.16rem;
+  height: 0.8rem;
+  border: 0;
+  background: var(--paper);
+  box-shadow: 0 0 3px rgb(244 239 228 / 55%);
+}
 
 .night-timeline-events {
   display: grid;
