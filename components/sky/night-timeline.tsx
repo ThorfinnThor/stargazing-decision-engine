@@ -64,7 +64,7 @@ export function NightTimeline({ plan, locale, nowIso }: NightTimelineProps) {
           const height = item.kind === "recommended" ? 24 : 26;
           return <rect key={`${item.kind}-${item.startIso}-${index}`} x={item.startRatio * 1000} y={y} width={Math.max(1, (item.endRatio - item.startRatio) * 1000)} height={height} className={`night-timeline-segment night-timeline-segment-${item.kind}`} aria-label={segmentLabel(item.kind, locale)} />;
         })}
-        {plan.events.map((event) => {
+        {plan.events.filter((event) => event.kind === "astronomical-dusk" || event.kind === "astronomical-dawn").map((event) => {
           const ratio = timelineRatio(event.instantIso, plan.timelineStartIso, plan.timelineEndIso);
           return <line key={`${event.kind}-${event.instantIso}`} x1={ratio * 1000} x2={ratio * 1000} y1="0" y2="156" className={`night-timeline-event-marker night-timeline-event-${event.kind}`} />;
         })}
