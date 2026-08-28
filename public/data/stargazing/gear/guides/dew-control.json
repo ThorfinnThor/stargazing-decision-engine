@@ -1,0 +1,149 @@
+{
+  "slug": "dew-control",
+  "title": {
+    "en": "Dew control for optics that stay clear",
+    "de": "Taubschutz für klare Optik"
+  },
+  "category": "dew-control",
+  "summary": {
+    "en": "A field guide to passive shields, heated straps, controllers, and the power budget behind them.",
+    "de": "Ein Feld-Guide zu Taukappen, Heizbändern, Controllern und dem dafür nötigen Strombudget."
+  },
+  "decisionSummary": {
+    "en": "Use a correctly sized shield first; add thermostatic heat only when humidity, sky exposure, and session length justify the extra power.",
+    "de": "Nutze zuerst eine passende Taukappe; ergänze geregelte Heizung erst, wenn Feuchte, Himmelsöffnung und Sitzungsdauer den Mehrverbrauch rechtfertigen."
+  },
+  "audience": {
+    "en": "Observers and imagers working in humid, radiatively cooling conditions.",
+    "de": "Beobachter:innen und Astrofotograf:innen in feuchten, stark auskühlenden Nächten."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Correct diameter and length for the optical surface",
+      "de": "Passender Durchmesser und passende Länge für die Optik"
+    },
+    {
+      "en": "Heat control range and sensor placement",
+      "de": "Regelbereich der Heizung und Sensorposition"
+    },
+    {
+      "en": "Connector compatibility and overnight power draw",
+      "de": "Steckerkompatibilität und Stromverbrauch über Nacht"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "Passive dew shield",
+        "de": "Passive Taukappe"
+      },
+      "whyItMatters": {
+        "en": "A light-blocking extension slows radiative cooling and reduces stray light without batteries.",
+        "de": "Eine lichtabschirmende Verlängerung verlangsamt Auskühlung und reduziert Streulicht ohne Batterie."
+      },
+      "coreSpecs": {
+        "fit": "snug, non-vignetting",
+        "length": "proportional to aperture",
+        "material": "rigid or insulated"
+      },
+      "pros": {
+        "en": [
+          "No power required",
+          "Reduces stray light"
+        ],
+        "de": [
+          "Kein Strom nötig",
+          "Reduziert Streulicht"
+        ]
+      },
+      "cons": {
+        "en": [
+          "May not be enough in heavy dew",
+          "Adds packed length"
+        ],
+        "de": [
+          "Bei starkem Tau eventuell nicht ausreichend",
+          "Vergrößert das Packmaß"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "telescope passive dew shield insulated",
+      "affiliatePartnerId": null
+    },
+    {
+      "name": {
+        "en": "Heated dew strap with controller",
+        "de": "Beheizbares Tauband mit Controller"
+      },
+      "whyItMatters": {
+        "en": "Low, regulated heat keeps a lens or corrector just above the dew point during long sessions.",
+        "de": "Geringe, geregelte Wärme hält Linse oder Korrektor bei langen Sitzungen knapp über dem Taupunkt."
+      },
+      "coreSpecs": {
+        "fit": "matched to circumference",
+        "control": "variable or thermostatic",
+        "power": "12 V or USB class"
+      },
+      "pros": {
+        "en": [
+          "Works in persistent humidity",
+          "Adjustable output"
+        ],
+        "de": [
+          "Wirksam bei anhaltender Feuchte",
+          "Regelbare Leistung"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Consumes field power",
+          "Poor fit wastes heat"
+        ],
+        "de": [
+          "Verbraucht Strom im Feld",
+          "Schlechter Sitz verschwendet Wärme"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "telescope dew heater strap controller 12v",
+      "affiliatePartnerId": null
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "More heat is not automatically better: excess warmth can create tube currents or drain a battery.",
+      "A controller adds cost and wiring but makes output repeatable."
+    ],
+    "de": [
+      "Mehr Wärme ist nicht automatisch besser: Überheizung kann Tubusseeing erzeugen oder den Akku leeren.",
+      "Ein Controller kostet und verkabelt mehr, macht die Leistung aber reproduzierbar."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "When should I deploy the dew shield?",
+        "de": "Wann sollte ich die Taukappe montieren?"
+      },
+      "answer": {
+        "en": "Fit it before the optics cool and before dew forms; prevention is easier than drying a fogged corrector in the dark.",
+        "de": "Montiere sie, bevor die Optik auskühlt und Tau entsteht; Vorbeugen ist einfacher, als einen beschlagenen Korrektor im Dunkeln zu trocknen."
+      }
+    },
+    {
+      "question": {
+        "en": "How do I size a heater?",
+        "de": "Wie dimensioniere ich ein Heizband?"
+      },
+      "answer": {
+        "en": "Measure the actual circumference, confirm the connector and voltage, then budget the controller and cable losses as well as the strap wattage.",
+        "de": "Miss den tatsächlichen Umfang, prüfe Stecker und Spannung und rechne neben der Band-Leistung auch Controller- und Kabelverluste ins Budget ein."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "No product is endorsed. This guide explains fit, control, and power considerations that should be checked against current specifications.",
+    "de": "Es wird kein Produkt empfohlen. Dieser Guide erklärt Passform, Regelung und Stromfragen, die mit aktuellen Daten abgeglichen werden müssen."
+  },
+  "lastReviewedAt": "2026-08-28"
+}

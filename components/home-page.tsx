@@ -1,4 +1,4 @@
-import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadManifest, loadNightPreviews, loadSeoPage, loadSites } from "@/lib/data/load";
+import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadGearGuide, loadManifest, loadNightPreviews, loadSeoPage, loadShortTrip, loadSites } from "@/lib/data/load";
 import { isTravelEligibleSite } from "@/lib/access/travel";
 import { buildHomepageSkyCandidates } from "@/lib/astronomy/homepage-candidates";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
@@ -17,7 +17,11 @@ export function HomePage({ locale }: { locale: Locale }) {
       ? copy.realCatalogNote
       : copy.mixedCatalogNote;
   const shortTripOrigins = listShortTripOrigins();
-  const gearGuides = listGearGuides();
+  const shortTrips = shortTripOrigins.map((origin) => {
+    const trip = loadShortTrip(origin);
+    return { origin, originName: trip.originName, destinationCount: trip.entries.length };
+  });
+  const gearGuides = listGearGuides().map(loadGearGuide);
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Decision Engine", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazing.local/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Decision Engine" });
   const sites = loadSites();
@@ -105,13 +109,17 @@ export function HomePage({ locale }: { locale: Locale }) {
           <h2 id="short-trips-title">{locale === "de" ? "Ziele ab deiner Stadt." : "Destinations from your city."}</h2>
         </div>
         <div className="foundation-grid short-trip-links">
-          {shortTripOrigins.map((origin) => <a className="destination-card" href={localizedLinks.shortTrips(locale, origin)} key={origin}>{origin}</a>)}
+          {shortTrips.map(({ origin, originName, destinationCount }) => <a className="destination-card short-trip-card" href={localizedLinks.shortTrips(locale, origin)} key={origin}>
+            <div className="card-topline"><span>{destinationCount} {locale === "de" ? "Ziele" : "destinations"}</span><span>→</span></div>
+            <h3>{originName}</h3>
+            <p>{locale === "de" ? "Dunkle Orte für eine realistische Kurzreise." : "Dark-sky places for a practical short trip."}</p>
+          </a>)}
         </div>
       </section>
 
       <section className="foundation" aria-labelledby="gear-title">
         <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Ausrüstungsguides" : "Gear guides"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
-        <div className="foundation-grid short-trip-links"><a className="destination-card" href={localizedLinks.gear(locale)}>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</a>{gearGuides.map((guide) => <a className="destination-card" href={localizedLinks.gearGuide(locale, guide)} key={guide}>{guide.replaceAll("-", " ")}</a>)}</div>
+        <div className="foundation-grid short-trip-links"><a className="destination-card gear-guide-card" href={localizedLinks.gear(locale)}><div className="card-topline"><span>{gearGuides.length} {locale === "de" ? "Guides" : "guides"}</span><span>→</span></div><h3>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</h3><p>{locale === "de" ? "Technische Orientierung für klare Nächte." : "Specification-based guidance for clear nights."}</p></a>{gearGuides.map((guide) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, guide.slug)} key={guide.slug}><div className="card-topline"><span>{guide.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{guide.title[locale]}</h3><p>{guide.summary[locale]}</p></a>)}</div>
       </section>
     </main>
   );

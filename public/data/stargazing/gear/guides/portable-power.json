@@ -1,0 +1,149 @@
+{
+  "slug": "portable-power",
+  "title": {
+    "en": "Portable power for a full night outside",
+    "de": "Mobile Stromversorgung für eine ganze Nacht"
+  },
+  "category": "portable-power",
+  "summary": {
+    "en": "Size a field battery from watt-hours, outputs, temperature, and safe transport—not from a headline capacity alone.",
+    "de": "Dimensioniere einen Feldakku nach Wattstunden, Ausgängen, Temperatur und sicherem Transport – nicht nur nach einer großen Kapazitätszahl."
+  },
+  "decisionSummary": {
+    "en": "List every load, convert it to watt-hours, and keep a cold-weather reserve before choosing connectors or battery chemistry.",
+    "de": "Liste jede Last auf, rechne sie in Wattstunden um und plane eine Kältereserve ein, bevor du Stecker oder Zellchemie auswählst."
+  },
+  "audience": {
+    "en": "Observers running dew heaters, trackers, cameras, or red lights away from mains power.",
+    "de": "Beobachter:innen mit Taubändern, Trackern, Kameras oder Rotlicht fernab einer Steckdose."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Usable watt-hours after conversion losses",
+      "de": "Nutzbare Wattstunden nach Umwandlungsverlusten"
+    },
+    {
+      "en": "The exact USB, 12 V, or regulated outputs required",
+      "de": "Die benötigten USB-, 12-V- oder geregelten Ausgänge"
+    },
+    {
+      "en": "Cold-weather behavior, weight, and safe charging",
+      "de": "Verhalten bei Kälte, Gewicht und sicheres Laden"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "USB-C power bank",
+        "de": "USB-C-Powerbank"
+      },
+      "whyItMatters": {
+        "en": "A compact bank is efficient for phones, small trackers, and USB lighting when regulated 12 V is not required.",
+        "de": "Eine kompakte Bank ist effizient für Telefone, kleine Tracker und USB-Licht, wenn kein geregeltes 12 V nötig ist."
+      },
+      "coreSpecs": {
+        "capacity": "listed Wh or mAh at cell voltage",
+        "outputs": "USB-C PD plus USB-A as needed",
+        "protection": "overcurrent and temperature protection"
+      },
+      "pros": {
+        "en": [
+          "Light and familiar",
+          "Simple USB charging"
+        ],
+        "de": [
+          "Leicht und vertraut",
+          "Einfaches USB-Laden"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Limited 12 V compatibility",
+          "Capacity falls in cold conditions"
+        ],
+        "de": [
+          "Begrenzte 12-V-Kompatibilität",
+          "Kapazität sinkt bei Kälte"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "USB-C PD power bank astronomy field",
+      "affiliatePartnerId": null
+    },
+    {
+      "name": {
+        "en": "12 V LiFePO4 field battery",
+        "de": "12-V-LiFePO4-Feldakku"
+      },
+      "whyItMatters": {
+        "en": "A dedicated 12 V battery suits multiple regulated loads when connectors, fusing, and charging are planned carefully.",
+        "de": "Ein dedizierter 12-V-Akku passt zu mehreren geregelten Verbrauchern, wenn Stecker, Sicherungen und Laden sauber geplant sind."
+      },
+      "coreSpecs": {
+        "capacity": "usable Wh at intended discharge",
+        "outputs": "regulated 12 V plus USB",
+        "mass": "include case and cables"
+      },
+      "pros": {
+        "en": [
+          "Good fit for 12 V heaters and mounts",
+          "Clear expansion path"
+        ],
+        "de": [
+          "Gut für 12-V-Heizer und Montierungen",
+          "Einfach erweiterbar"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Heavier and more expensive",
+          "Needs chemistry-specific charger"
+        ],
+        "de": [
+          "Schwerer und teurer",
+          "Benötigt ein passendes Ladegerät"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "12v LiFePO4 astronomy field battery",
+      "affiliatePartnerId": null
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "A large nominal capacity does not guarantee the connectors or regulated voltage your equipment needs.",
+      "Extra reserve weighs more, but cold and conversion losses make a small reserve easy to regret."
+    ],
+    "de": [
+      "Eine große Nennkapazität garantiert weder passende Stecker noch die benötigte geregelte Spannung.",
+      "Reserve wiegt mehr, aber Kälte und Wandlungsverluste machen eine knappe Dimensionierung schnell ärgerlich."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "How do I calculate a night of power?",
+        "de": "Wie berechne ich den Strombedarf einer Nacht?"
+      },
+      "answer": {
+        "en": "Multiply each device's watts by its hours of use, add the results, then divide by expected system efficiency and add a cold-weather reserve.",
+        "de": "Multipliziere die Watt jedes Geräts mit seinen Nutzungsstunden, addiere alles, teile durch den erwarteten Wirkungsgrad und ergänze eine Kältereserve."
+      }
+    },
+    {
+      "question": {
+        "en": "Can I run every device from one battery?",
+        "de": "Kann ich jedes Gerät an einem Akku betreiben?"
+      },
+      "answer": {
+        "en": "Only when voltage, connector polarity, current limits, and fusing all match. A distribution box can simplify this, but it does not replace checking each load.",
+        "de": "Nur wenn Spannung, Steckerpolarität, Stromgrenzen und Sicherungen passen. Eine Verteilerbox kann vereinfachen, ersetzt aber nicht die Prüfung jeder Last."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "This guide is educational and specification-based. Capacity, safety, and compatibility must be verified from the current product documentation.",
+    "de": "Dieser Guide dient der technischen Orientierung. Kapazität, Sicherheit und Kompatibilität müssen mit der aktuellen Produktdokumentation geprüft werden."
+  },
+  "lastReviewedAt": "2026-08-28"
+}

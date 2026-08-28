@@ -232,7 +232,7 @@ writeJson(publicPath("manifest.json"), {
     calendar: "astronomy-calendar-real-1.0.0",
     meteorShowers: "imo-2027+real-site-score-1.1.0",
     shortTrips: "haversine-v1+real-site-score-1.1.0",
-    gear: "editorial-2026-08-21",
+    gear: "editorial-2026-08-28",
     images: "attribution-manifest-2026-08-21",
   },
   counts: {

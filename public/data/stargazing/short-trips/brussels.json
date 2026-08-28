@@ -1,0 +1,109 @@
+{
+  "originSlug": "brussels",
+  "originName": "Brussels",
+  "countryCode": "BE",
+  "maxShortTripKm": 400,
+  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "entries": [
+    {
+      "rank": 1,
+      "destinationId": "eifel",
+      "destinationSlug": "eifel",
+      "destinationName": "Eifel Dark Sky Park",
+      "distanceKm": 150.18,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 57
+        },
+        {
+          "month": 8,
+          "score": 57
+        },
+        {
+          "month": 9,
+          "score": 56
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 44,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 48,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 49,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 44,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 42,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 57,
+      "distanceUtility": 85,
+      "shortTripScore": 64,
+      "bestSiteId": "vogelsang-star-observatory",
+      "stayArea": {
+        "id": "schleiden",
+        "name": "Schleiden",
+        "affiliateQuery": "Schleiden Eifel"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 57 in month 4.",
+        "Distance is 150.18 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Schleiden."
+      ],
+      "confidenceLevel": "high"
+    }
+  ]
+}
