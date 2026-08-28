@@ -74,6 +74,23 @@ test("the red-light headlamp comparison is source-backed and fully localized", (
   assert.ok(guide.items.every((item) => item.affiliatePartnerId === null));
 });
 
+test("the tripod comparison is source-backed and fully localized", () => {
+  const guide = guides.find((candidate) => candidate.slug === "tripods");
+  assert.ok(guide);
+  assert.equal(guide.items.length, 3);
+
+  const sources = guide.items.map((item) => item.source);
+  assert.ok(sources.every((source) => source !== undefined));
+  assert.ok(sources.every((source) => source?.url.startsWith("https://")));
+  assert.ok(sources.every((source) => source?.checkedAt === "2026-08-28"));
+  assert.deepEqual(
+    sources.map((source) => source?.publisher),
+    ["Vortex Optics", "Celestron", "Manfrotto"],
+  );
+  assert.ok(guide.items.every((item) => item.localizedCoreSpecs?.en && item.localizedCoreSpecs.de));
+  assert.ok(guide.items.every((item) => item.affiliatePartnerId === null));
+});
+
 test("gear validation rejects unsupported hands-on claims", () => {
   const invalid = structuredClone(guides);
   invalid[0].items[0].recommendationBasis = "hands_on_test" as never;
