@@ -10,6 +10,7 @@ import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
+import { DestinationDecisionSummary } from "@/components/destination-decision-summary";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 
 export const dynamic = "force-static";
@@ -101,20 +102,21 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
   const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical }) : null;
   const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
-    <main className="event-page" lang={isGerman ? "de" : "en"}>
+    <main className="event-page destination-profile-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       {editorialStructuredData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(editorialStructuredData) }} />}
       <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Zielprofil" : "Destination profile"}</p>
         <h1>{destination.name}</h1>
-        <p className="lede">{guide ? guide.standfirst[locale] : hasRealScores
+        <p className="lede">{guide ? guide.seoDescription[locale] : hasRealScores
           ? isGerman ? "Historische Realwerte aus geprüften Klima- und Dunkelheits-Snapshots." : "Historical real scores from reviewed climate and darkness snapshots."
           : isGerman ? "Historische Seed-Werte und Monatskontext für die Beobachtungsplanung." : "Historical seed values and monthly context for planning an observing trip."}</p>
         <p className="event-note">{hasRealScores
           ? isGerman ? "1991–2020 Klima-Normalperiode; keine Live-Wettervorhersage." : "1991–2020 climate normal; not a live weather forecast."
           : isGerman ? "Seed-Daten mit niedriger Konfidenz; keine Live-Wettervorhersage." : "Seed data with low confidence; not a live weather forecast."}</p>
       </header>
+      <DestinationDecisionSummary sites={sites} siteViews={siteViews} guide={guide} locale={locale} hasRealScores={hasRealScores} />
       {image?.status === "approved" && image.localPath && <figure className="destination-figure">
         <img src={image.localPath} alt={image.alt[locale]} loading="eager" decoding="async" />
         <figcaption>

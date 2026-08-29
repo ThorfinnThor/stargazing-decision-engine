@@ -7,6 +7,7 @@ import type { DestinationMonthlySummary, PublicAccess } from "@/lib/data/types";
 import type { NightPreview, SkyLocation } from "@/lib/astronomy/types";
 import type { Locale } from "@/lib/i18n/config";
 import { formatMonth } from "@/lib/i18n/months";
+import { recommendedSiteView } from "@/lib/destination/site-recommendation";
 
 export interface DestinationSiteView {
   site: {
@@ -33,7 +34,8 @@ function accessLabel(access: PublicAccess, locale: Locale) {
 }
 
 export function DestinationSiteExplorer({ options, locale }: { options: DestinationSiteView[]; locale: Locale }) {
-  const [selectedSiteId, setSelectedSiteId] = useState(options[0]?.site.id ?? "");
+  const defaultSiteId = recommendedSiteView(options)?.site.id ?? "";
+  const [selectedSiteId, setSelectedSiteId] = useState(defaultSiteId);
   const selected = options.find((option) => option.site.id === selectedSiteId) ?? options[0];
   if (!selected) return null;
   const isGerman = locale === "de";
