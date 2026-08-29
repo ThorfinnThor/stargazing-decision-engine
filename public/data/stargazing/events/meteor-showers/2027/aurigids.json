@@ -91,34 +91,6 @@
     },
     {
       "rank": 3,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
-      "climateScore": 98,
-      "moonScore": 99.86,
-      "radiantScore": 81.13,
-      "viewingScore": 95.18,
-      "moonConditions": {
-        "dateLocal": "2027-08-31",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.0046,
-        "moonlessHours": 7.89,
-        "totalDarknessHours": 7.89
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 49.75,
-        "darkRadiantHours": 2.83
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
       "destinationId": "gobi",
       "destinationSlug": "gobi",
       "destinationName": "Gobi Desert",
@@ -146,7 +118,7 @@
       ]
     },
     {
-      "rank": 5,
+      "rank": 4,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -166,6 +138,34 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 49.46,
+        "darkRadiantHours": 2.83
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
+      "destinationId": "great-basin",
+      "destinationSlug": "great-basin",
+      "destinationName": "Great Basin",
+      "siteId": "mather-overlook",
+      "siteSlug": "mather-overlook",
+      "siteName": "Mather Overlook",
+      "climateScore": 97,
+      "moonScore": 99.84,
+      "radiantScore": 80.66,
+      "viewingScore": 94.58,
+      "moonConditions": {
+        "dateLocal": "2027-08-31",
+        "timezone": "America/Los_Angeles",
+        "moonIlluminationFraction": 0.0053,
+        "moonlessHours": 7.82,
+        "totalDarknessHours": 7.82
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 48.58,
         "darkRadiantHours": 2.83
       },
       "caveats": [
@@ -289,25 +289,25 @@
     },
     {
       "rank": 5,
-      "destinationId": "canyonlands",
-      "destinationSlug": "canyonlands",
-      "destinationName": "Canyonlands",
-      "siteId": "canyonlands-dark-sky",
-      "siteSlug": "canyonlands-dark-sky",
-      "siteName": "Canyonlands dark-sky area",
+      "destinationId": "gobi",
+      "destinationSlug": "gobi",
+      "destinationName": "Gobi Desert",
+      "siteId": "khongoryn-els-visitor-zone",
+      "siteSlug": "khongoryn-els-visitor-zone",
+      "siteName": "Khongoryn Els visitor zone",
       "climateScore": 98,
-      "moonScore": 99.86,
-      "radiantScore": 81.13,
-      "viewingScore": 95.18,
+      "moonScore": 99.31,
+      "radiantScore": 80.3,
+      "viewingScore": 94.85,
       "moonConditions": {
-        "dateLocal": "2027-08-31",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.0046,
-        "moonlessHours": 7.89,
-        "totalDarknessHours": 7.89
+        "dateLocal": "2027-09-01",
+        "timezone": "Asia/Ulaanbaatar",
+        "moonIlluminationFraction": 0.0136,
+        "moonlessHours": 7.33,
+        "totalDarknessHours": 7.36
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 49.75,
+        "maximumAltitudeDeg": 47.69,
         "darkRadiantHours": 2.83
       },
       "caveats": [

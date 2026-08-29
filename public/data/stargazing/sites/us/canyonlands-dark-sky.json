@@ -2,14 +2,19 @@
   "id": "canyonlands-dark-sky",
   "slug": "canyonlands-dark-sky",
   "destinationId": "canyonlands",
-  "name": "Canyonlands dark-sky area",
+  "name": "Canyonlands broad dark-sky reference area",
   "lat": 38.2,
   "lon": -109.9,
   "elevationM": 1800,
   "siteType": "desert",
-  "publicAccess": "yes",
-  "accessScore": 76,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 91,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.nps.gov/cany/planyourvisit/stargazing.htm",
+  "accessNotes": {
+    "en": "This broad coordinate supports regional climate scoring but does not identify a verified public parking or observing surface. Use a confirmed paved Island in the Sky overlook and current NPS access notices instead.",
+    "de": "Diese breite Koordinate dient der regionalen Klimabewertung, bezeichnet aber keine bestätigte öffentliche Park- oder Beobachtungsfläche. Nutze stattdessen einen bestätigten asphaltierten Aussichtspunkt auf Island in the Sky und aktuelle NPS-Zugangshinweise."
+  }
 }
