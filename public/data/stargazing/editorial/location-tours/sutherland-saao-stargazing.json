@@ -1,0 +1,158 @@
+{
+  "version": 1,
+  "id": "sutherland-saao-stargazing",
+  "slug": "sutherland-saao-stargazing",
+  "destinationId": "sutherland",
+  "recommendedSiteId": "sutherland-observatory",
+  "title": {
+    "en": "A booked SAAO stargazing evening from Sutherland",
+    "de": "Ein gebuchter SAAO-Beobachtungsabend ab Sutherland"
+  },
+  "seoDescription": {
+    "en": "Plan the SAAO visitor stargazing activity near Sutherland without confusing its visitor telescopes with night access to the research observatory.",
+    "de": "Plane die SAAO-Besucherbeobachtung bei Sutherland, ohne Besucherteleskope mit einem Nachtzugang zum Forschungsobservatorium zu verwechseln."
+  },
+  "standfirst": {
+    "en": "The SAAO night activity is a small scheduled visitor session using dedicated telescopes. It does not include access to SALT or the research telescopes after dark. The clean plan is to sleep in Sutherland, book the correct evening, drive to the visitor activity and return to town when the approximately ninety-minute program ends.",
+    "de": "Die SAAO-Nachtaktivität ist eine kleine terminierte Besucherveranstaltung an dafür vorgesehenen Teleskopen. Sie umfasst weder SALT noch nächtlichen Zugang zu den Forschungsteleskopen. Die klare Planung besteht aus einer Unterkunft in Sutherland, der richtigen Buchung, der Fahrt zur Besucheraktivität und der Rückkehr nach dem etwa neunzigminütigen Programm."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Operator",
+        "de": "Betreiber"
+      },
+      "value": {
+        "en": "South African Astronomical Observatory",
+        "de": "South African Astronomical Observatory"
+      },
+      "sourceIds": [
+        "sutherland-book"
+      ]
+    },
+    {
+      "label": {
+        "en": "Duration",
+        "de": "Dauer"
+      },
+      "value": {
+        "en": "Approximately 90 minutes",
+        "de": "Etwa 90 Minuten"
+      },
+      "sourceIds": [
+        "sutherland-book"
+      ]
+    },
+    {
+      "label": {
+        "en": "Instrument",
+        "de": "Instrument"
+      },
+      "value": {
+        "en": "Dedicated visitor telescopes",
+        "de": "Eigene Besucherteleskope"
+      },
+      "sourceIds": [
+        "sutherland-book"
+      ]
+    },
+    {
+      "label": {
+        "en": "Not included",
+        "de": "Nicht enthalten"
+      },
+      "value": {
+        "en": "SALT and night entry to research telescopes",
+        "de": "SALT und nächtlicher Zugang zu Forschungsteleskopen"
+      },
+      "sourceIds": [
+        "sutherland-book",
+        "sutherland-visit"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "two-visits",
+      "kind": "decisions",
+      "heading": {
+        "en": "Day and night visits answer different questions",
+        "de": "Tag- und Nachtbesuch beantworten unterschiedliche Fragen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "You want to see the research site",
+            "de": "Du möchtest den Forschungsstandort sehen"
+          },
+          "body": {
+            "en": "Choose the relevant daytime tour and verify its current program separately. The night activity cannot be used to enter SALT or wander among the research instruments because astronomical work requires strict light control.",
+            "de": "Wähle die passende Tagestour und prüfe deren aktuelles Programm separat. Die Nachtveranstaltung bietet keinen Zugang zu SALT oder freie Bewegung zwischen Forschungsinstrumenten, da die wissenschaftliche Arbeit strenge Lichtkontrolle verlangt."
+          },
+          "sourceIds": [
+            "sutherland-visit",
+            "sutherland-book"
+          ]
+        },
+        {
+          "label": {
+            "en": "You want guided observing",
+            "de": "Du möchtest geführt beobachten"
+          },
+          "body": {
+            "en": "Book the stargazing activity. The stated format uses two visitor telescopes and can be cancelled when weather prevents useful observation.",
+            "de": "Buche die Stargazing-Aktivität. Das angegebene Format nutzt zwei Besucherteleskope und kann abgesagt werden, wenn das Wetter keine sinnvolle Beobachtung erlaubt."
+          },
+          "sourceIds": [
+            "sutherland-book"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "town-base",
+      "kind": "prose",
+      "heading": {
+        "en": "Keep the evening anchored in town",
+        "de": "Der Abend bleibt in der Stadt verankert"
+      },
+      "paragraphs": {
+        "en": [
+          "Stay in Sutherland rather than treating the observatory as an overnight destination. Confirm the activity before dinner and allow enough time for the road out of town. The plateau is about 18 kilometres from Sutherland and sits at high elevation, so the temperature at the visitor site may feel very different from the afternoon in town.",
+          "Carry warm layers and arrive without bright exterior lights or plans for independent exploration. The operator may substitute Dobsonian telescopes when electronic visitor instruments have technical problems. That changes the equipment, not the purpose of the evening."
+        ],
+        "de": [
+          "Übernachte in Sutherland, statt das Observatorium als Nachtquartier zu behandeln. Bestätige die Aktivität vor dem Abendessen und plane ausreichend Zeit für die Straße aus dem Ort ein. Das Plateau liegt etwa 18 Kilometer von Sutherland entfernt und auf großer Höhe, weshalb sich die Temperatur am Besucherstandort deutlich vom Nachmittag im Ort unterscheiden kann.",
+          "Nimm warme Kleidung mit und komme ohne helle Außenbeleuchtung oder Pläne für eigenständige Erkundungen. Bei technischen Problemen mit elektronischen Besucherteleskopen kann der Betreiber Dobson-Teleskope einsetzen. Das ändert die Ausrüstung, nicht den Zweck des Abends."
+        ]
+      },
+      "sourceIds": [
+        "sutherland-book",
+        "sutherland-visit"
+      ]
+    },
+    {
+      "id": "weather",
+      "kind": "note",
+      "heading": {
+        "en": "A cancellation protects the meaning of the visit",
+        "de": "Eine Absage schützt den Sinn des Besuchs"
+      },
+      "body": {
+        "en": "The activity is built around actual telescope views and may be cancelled in poor weather. Keep an indoor alternative in Sutherland and avoid reframing a cancelled booking as permission to search for a roadside site near the research plateau.",
+        "de": "Die Aktivität lebt von realen Teleskopbeobachtungen und kann bei schlechtem Wetter abgesagt werden. Halte in Sutherland eine Alternative für drinnen bereit und deute eine Absage nicht als Erlaubnis zur Suche nach einem Straßenstandort nahe dem Forschungsplateau. Die wissenschaftliche Anlage bleibt auch dann ein kontrollierter Arbeitsort. Eine spätere Buchung ist die bessere Antwort auf Bewölkung."
+      },
+      "sourceIds": [
+        "sutherland-book",
+        "sutherland-town"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "sutherland-book",
+    "sutherland-visit",
+    "sutherland-town"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

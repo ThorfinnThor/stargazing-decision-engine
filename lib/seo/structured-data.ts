@@ -1,5 +1,5 @@
 import { legal } from "@/lib/legal/config";
-import type { Destination, DestinationEditorialGuide, GearGuide } from "@/lib/data/types";
+import type { Destination, DestinationEditorialGuide, DestinationEditorialSource, GearGuide, LocationTour } from "@/lib/data/types";
 
 const sectionNames = {
   en: {
@@ -7,6 +7,7 @@ const sectionNames = {
     methodology: "Methodology",
     about: "About",
     "stargazing-destinations": "Stargazing destinations",
+    "stargazing-tours": "Location tours",
     "short-trips": "Short trips",
     "meteor-showers": "Meteor showers",
   },
@@ -15,6 +16,7 @@ const sectionNames = {
     methodology: "Methodik",
     about: "Über uns",
     "stargazing-destinations": "Sternbeobachtungsziele",
+    "stargazing-tours": "Standort-Touren",
     "short-trips": "Kurzreisen",
     "meteor-showers": "Meteorschauer",
   },
@@ -39,12 +41,12 @@ function breadcrumbs(url: URL, locale: "en" | "de", pageName: string) {
     item: `${url.origin}/${locale}/`,
   }];
   const firstSegment = contentSegments[0];
-  if (firstSegment === "gear" && contentSegments.length > 1) {
+  if ((firstSegment === "gear" || firstSegment === "stargazing-tours") && contentSegments.length > 1) {
     items.push({
       "@type": "ListItem",
       position: items.length + 1,
-      name: sectionNames[locale].gear,
-      item: `${url.origin}/${locale}/gear/`,
+      name: sectionNames[locale][firstSegment],
+      item: `${url.origin}/${locale}/${firstSegment}/`,
     });
   }
   items.push({
@@ -57,6 +59,32 @@ function breadcrumbs(url: URL, locale: "en" | "de", pageName: string) {
     "@type": "BreadcrumbList",
     "@id": `${url.href}#breadcrumb`,
     itemListElement: items,
+  };
+}
+
+export function buildLocationTourStructuredData(options: {
+  destination: Destination;
+  tour: LocationTour;
+  locale: "en" | "de";
+  url: string;
+  sources: DestinationEditorialSource[];
+}) {
+  const { destination, tour, locale, url, sources } = options;
+  const cited = sources.filter((source) => tour.sourceIds.includes(source.id));
+  return {
+    "@context": "https://schema.org",
+    "@graph": [{
+      "@type": "Article",
+      "@id": `${url}#location-tour`,
+      headline: tour.title[locale],
+      description: tour.seoDescription[locale],
+      dateModified: tour.lastReviewedAt,
+      inLanguage: locale,
+      mainEntityOfPage: { "@id": `${url}#webpage` },
+      about: { "@type": "TouristDestination", name: destination.name, addressCountry: destination.countryCode },
+      publisher: { "@id": `${new URL(url).origin}/#publisher` },
+      citation: cited.map((source) => source.url),
+    }],
   };
 }
 

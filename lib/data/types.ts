@@ -81,6 +81,67 @@ export interface DestinationEditorialGuide {
   lastReviewedAt: string;
 }
 
+export interface LocationTourFact {
+  label: LocalizedEditorialText;
+  value: LocalizedEditorialText;
+  sourceIds: string[];
+}
+
+export type LocationTourBlock =
+  | {
+      id: string;
+      kind: "prose";
+      heading: LocalizedEditorialText;
+      paragraphs: { en: string[]; de: string[] };
+      sourceIds: string[];
+    }
+  | {
+      id: string;
+      kind: "schedule";
+      heading: LocalizedEditorialText;
+      introduction?: LocalizedEditorialText;
+      items: Array<{
+        time: LocalizedEditorialText;
+        title: LocalizedEditorialText;
+        body: LocalizedEditorialText;
+        sourceIds: string[];
+      }>;
+    }
+  | {
+      id: string;
+      kind: "decisions";
+      heading: LocalizedEditorialText;
+      introduction?: LocalizedEditorialText;
+      items: Array<{
+        label: LocalizedEditorialText;
+        body: LocalizedEditorialText;
+        sourceIds: string[];
+      }>;
+    }
+  | {
+      id: string;
+      kind: "note";
+      heading: LocalizedEditorialText;
+      body: LocalizedEditorialText;
+      sourceIds: string[];
+      tone: "practical" | "warning" | "context";
+    };
+
+export interface LocationTour {
+  version: 1;
+  id: string;
+  slug: string;
+  destinationId: string;
+  recommendedSiteId: string;
+  title: LocalizedEditorialText;
+  seoDescription: LocalizedEditorialText;
+  standfirst: LocalizedEditorialText;
+  facts: LocationTourFact[];
+  blocks: LocationTourBlock[];
+  sourceIds: string[];
+  lastReviewedAt: string;
+}
+
 export interface ObservationSite {
   id: string;
   slug: string;

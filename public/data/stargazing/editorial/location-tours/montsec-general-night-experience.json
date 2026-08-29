@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "id": "montsec-general-night-experience",
+  "slug": "montsec-general-night-experience",
+  "destinationId": "montsec",
+  "recommendedSiteId": "montsec-astronomical-park",
+  "title": {
+    "en": "How to plan the Montsec General Night Experience",
+    "de": "So planst du die allgemeine Nachterfahrung im Montsec"
+  },
+  "seoDescription": {
+    "en": "A booking-led plan for Montsec Astronomical Park's General Night Experience, including language, weather and overnight-parking limits.",
+    "de": "Ein buchungsorientierter Plan für die allgemeine Nachterfahrung im Parc Astronòmic del Montsec mit Sprache, Wetter und Grenzen des Übernachtungsparkens."
+  },
+  "standfirst": {
+    "en": "Montsec is a programmed astronomy visit rather than a self-guided lookout. The General Night Experience combines the planetarium, a guided explanation of the real sky, the telescope park and a permanent exhibition. The ticket, session language and weather policy matter more than choosing an arbitrary arrival time from sunset.",
+    "de": "Montsec ist ein programmiertes Astronomieangebot und kein frei gewählter Aussichtspunkt. Die allgemeine Nachterfahrung verbindet Planetarium, geführte Erklärung des realen Himmels, Teleskoppark und Dauerausstellung. Ticket, Sprache und Wetterregel sind wichtiger als eine aus dem Sonnenuntergang abgeleitete Ankunftszeit."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Experience",
+        "de": "Angebot"
+      },
+      "value": {
+        "en": "General Night Experience",
+        "de": "Allgemeine Nachterfahrung"
+      },
+      "sourceIds": [
+        "montsec-night"
+      ]
+    },
+    {
+      "label": {
+        "en": "Published duration",
+        "de": "Angegebene Dauer"
+      },
+      "value": {
+        "en": "Two hours",
+        "de": "Zwei Stunden"
+      },
+      "sourceIds": [
+        "montsec-night"
+      ]
+    },
+    {
+      "label": {
+        "en": "Booking",
+        "de": "Buchung"
+      },
+      "value": {
+        "en": "Advance purchase recommended; places are limited",
+        "de": "Vorabkauf empfohlen; Plätze sind begrenzt"
+      },
+      "sourceIds": [
+        "montsec-sale"
+      ]
+    },
+    {
+      "label": {
+        "en": "Parking",
+        "de": "Parken"
+      },
+      "value": {
+        "en": "Visitor parking, no overnight stay",
+        "de": "Besucherparkplatz, keine Übernachtung"
+      },
+      "sourceIds": [
+        "montsec-sale"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "ticket",
+      "kind": "note",
+      "heading": {
+        "en": "The ticket defines the evening",
+        "de": "Das Ticket bestimmt den Abend"
+      },
+      "body": {
+        "en": "Choose the exact night session and language on the current booking page. Same-day admission may exist when places remain, but the park advises against arriving without a ticket. Keep the QR confirmation available offline and reach reception before the stated check-in time.",
+        "de": "Wähle auf der aktuellen Buchungsseite die konkrete Nachtsitzung und Sprache. Bei freien Plätzen kann ein Kauf am selben Tag möglich sein, doch der Park rät von einer Anreise ohne Ticket ab. Speichere die QR-Bestätigung offline und erreiche den Empfang vor der angegebenen Zeit."
+      },
+      "sourceIds": [
+        "montsec-sale"
+      ],
+      "tone": "practical"
+    },
+    {
+      "id": "inside-program",
+      "kind": "schedule",
+      "heading": {
+        "en": "What the two hours actually contain",
+        "de": "Was in den zwei Stunden tatsächlich enthalten ist"
+      },
+      "introduction": {
+        "en": "The order can follow the operator's program, but the night combines three distinct forms of interpretation.",
+        "de": "Die Reihenfolge folgt dem Programm des Betreibers, doch der Abend verbindet drei unterschiedliche Formen der Vermittlung."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Planetarium",
+            "de": "Planetarium"
+          },
+          "title": {
+            "en": "A guided model of the night",
+            "de": "Ein geführtes Modell der Nacht"
+          },
+          "body": {
+            "en": "L'Ull del Montsec uses a digital dome for the film and sky explanation. When conditions allow, the retractable dome opens so the interpretation can move from simulation to the actual sky.",
+            "de": "L’Ull del Montsec nutzt die digitale Kuppel für Film und Himmelserklärung. Wenn die Bedingungen es erlauben, öffnet sich die Kuppel und die Vermittlung wechselt von der Simulation zum realen Himmel."
+          },
+          "sourceIds": [
+            "montsec-night"
+          ]
+        },
+        {
+          "time": {
+            "en": "Telescope park",
+            "de": "Teleskoppark"
+          },
+          "title": {
+            "en": "Observation depends on the weather",
+            "de": "Die Beobachtung hängt vom Wetter ab"
+          },
+          "body": {
+            "en": "The guide introduces the instruments and, with a usable sky, selected objects such as the Moon, planets or deep-sky targets. Cloud changes the activity rather than creating a promise of telescope views.",
+            "de": "Die Führung erklärt die Instrumente und zeigt bei nutzbarem Himmel ausgewählte Objekte wie Mond, Planeten oder Deep-Sky-Ziele. Bewölkung verändert das Programm und begründet keinen Anspruch auf Teleskopbeobachtung."
+          },
+          "sourceIds": [
+            "montsec-night",
+            "montsec-sale"
+          ]
+        },
+        {
+          "time": {
+            "en": "Exhibition",
+            "de": "Ausstellung"
+          },
+          "title": {
+            "en": "Why the protected night matters",
+            "de": "Warum die geschützte Nacht zählt"
+          },
+          "body": {
+            "en": "The Starlight room places astronomy beside the protection of the nocturnal environment. It gives the reserve context that would be missing from a simple telescope queue.",
+            "de": "Die Sala Starlight stellt Astronomie neben den Schutz der nächtlichen Umwelt. Sie gibt dem Reservat einen Zusammenhang, der in einer bloßen Teleskopschlange fehlen würde."
+          },
+          "sourceIds": [
+            "montsec-night",
+            "montsec-reserve"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "after-session",
+      "kind": "decisions",
+      "heading": {
+        "en": "Do not turn the car park into an unofficial extension",
+        "de": "Der Parkplatz ist keine inoffizielle Verlängerung"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "You want to stay overnight",
+            "de": "Du möchtest über Nacht bleiben"
+          },
+          "body": {
+            "en": "Book accommodation elsewhere. The park states that its visitor parking cannot be used for an overnight stay.",
+            "de": "Buche eine Unterkunft an einem anderen Ort. Der Park weist ausdrücklich darauf hin, dass sein Besucherparkplatz nicht zum Übernachten genutzt werden darf."
+          },
+          "sourceIds": [
+            "montsec-sale"
+          ]
+        },
+        {
+          "label": {
+            "en": "The session ends under clear skies",
+            "de": "Die Veranstaltung endet unter klarem Himmel"
+          },
+          "body": {
+            "en": "Leave according to the site's directions and continue only to a separately verified public observing place if one was planned in advance. A ticket to the park does not establish access rights on surrounding land.",
+            "de": "Verlasse das Gelände nach den Hinweisen des Standorts und fahre nur zu einem separat geprüften öffentlichen Beobachtungsplatz weiter, wenn dieser vorher geplant war. Das Parkticket begründet keine Zugangsrechte auf umliegenden Flächen."
+          },
+          "sourceIds": [
+            "montsec-sale",
+            "montsec-reserve"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "montsec-night",
+    "montsec-sale",
+    "montsec-reserve"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { evaluateIndexability, type IndexabilityRequirements } from "../../lib/seo/indexability.js";
-import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearGuide, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
+import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearGuide, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 import { isTravelEligibleSite } from "../../lib/access/travel.js";
 import { isGearGuideEditorialReady } from "../../lib/gear/gear.js";
@@ -58,6 +58,7 @@ const gearGuides = readJson<GearGuide[]>(resolve(root, "data-config/gear/guides.
 const editoriallyReadyGearGuides = gearGuides.filter(isGearGuideEditorialReady);
 const destinationGuides = readJson<DestinationEditorialGuide[]>(resolve(root, "data-config/editorial/destination-guides.json"));
 const destinationGuidesBySlug = new Map(destinationGuides.map((guide) => [guide.slug, guide]));
+const locationTours = readJson<LocationTour[]>(resolve(root, "data-config/editorial/location-tours.json"));
 
 function normalizedTimestamp(value: string) {
   const timestamp = new Date(/^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T00:00:00.000Z` : value);
@@ -153,6 +154,19 @@ for (const locale of config.locales) {
     resultCount: seed.destinations.length, confidence: "moderate", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + 1,
     forceNoindexReason: "interactive-query-surface",
   }));
+  pages.push(makePage({
+    id: `location-tours-${locale}`, pageType: "location-tours", locale, path: `/${locale}/stargazing-tours/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/`])),
+    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Zehn Orte, zehn unterschiedliche Nächte." : "Ten places, ten different nights.",
+    description: locale === "de" ? "Quellenbasierte Nachtpläne für konkrete Beobachtungsorte mit Zugang, Anfahrt und klaren Grenzen." : "Source-backed night plans for specific observing locations, with access, approach and practical boundaries.",
+    lastModified: latestTimestamp(...locationTours.map((tour) => tour.lastReviewedAt)), resultCount: locationTours.length, confidence: "high", uniqueInsightCount: locationTours.length, internalLinkCount: locationTours.length + 1,
+  }));
+  for (const tour of locationTours) {
+    const path = `/${locale}/stargazing-tours/${tour.slug}/`;
+    pages.push(makePage({
+      id: `location-tour-${tour.slug}-${locale}`, pageType: "location-tour", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/${tour.slug}/`])),
+      title: tour.title[locale], h1: tour.title[locale], description: tour.seoDescription[locale], lastModified: tour.lastReviewedAt, resultCount: tour.blocks.length, confidence: "high", uniqueInsightCount: tour.blocks.length + tour.facts.length, internalLinkCount: 3,
+    }));
+  }
   pages.push(makePage({
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),
     title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Quellenbasierte Gear-Vergleiche ohne Preis- oder Verfügbarkeitsversprechen." : "Source-backed gear comparisons without price or availability claims.", lastModified: gearLastModified, resultCount: editoriallyReadyGearGuides.length, confidence: "high", uniqueInsightCount: editoriallyReadyGearGuides.length, internalLinkCount: editoriallyReadyGearGuides.length + seed.destinations.length,

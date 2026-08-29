@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { listDestinationEditorialGuides, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { listDestinationEditorialGuides, listLocationTours, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -80,7 +80,7 @@ function readParams(params: { locale: string; slug: string }) {
       .filter((item) => item.slug !== destination.slug && editorialSlugs.has(item.slug))
       .sort((left, right) => Number(right.continent === destination.continent) - Number(left.continent === destination.continent) || left.priority - right.priority)
       .slice(0, 3);
-    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), relatedDestinations, seo: loadSeoPage(path) };
+    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), locationTour: listLocationTours().find((tour) => tour.destinationId === destination.id) ?? null, relatedDestinations, seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -94,7 +94,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, siteViews, image, guide, relatedDestinations, locale, seo } = resolved;
+  const { destination, sites, siteViews, image, guide, locationTour, relatedDestinations, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
@@ -146,6 +146,14 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </p>}
       </section>
       {guide && <DestinationEditorialGuideView guide={guide} locale={locale} />}
+      {locationTour && <aside className="destination-location-tour">
+        <div>
+          <p className="eyebrow">{isGerman ? "Konkreter Nachtplan" : "A specific night plan"}</p>
+          <h2>{locationTour.title[locale]}</h2>
+          <p>{locationTour.seoDescription[locale]}</p>
+        </div>
+        <Link href={`/${locale}/stargazing-tours/${locationTour.slug}/`}>{isGerman ? "Tour öffnen" : "Open the tour"} →</Link>
+      </aside>}
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>

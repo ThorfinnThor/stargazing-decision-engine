@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "id": "twee-rivieren-camp-sky",
+  "slug": "twee-rivieren-camp-sky",
+  "destinationId": "kalahari",
+  "recommendedSiteId": "twee-rivieren-rest-camp",
+  "title": {
+    "en": "Stargazing from inside Twee Rivieren rest camp",
+    "de": "Sternbeobachtung innerhalb des Twee-Rivieren-Restcamps"
+  },
+  "seoDescription": {
+    "en": "A gate-compliant Kgalagadi night based inside Twee Rivieren rest camp, with wildlife rules and accommodation treated as part of the observing plan.",
+    "de": "Eine mit den Torregeln vereinbare Kgalagadi-Nacht innerhalb des Twee-Rivieren-Restcamps, bei der Wildtierschutz und Unterkunft Teil des Beobachtungsplans sind."
+  },
+  "standfirst": {
+    "en": "Kgalagadi becomes inaccessible as a self-guided driving landscape after the gates close. A night at Twee Rivieren therefore begins with an accommodation decision, not a search for the darkest roadside pull-off. Observe only from a permitted area within camp and let the park's movement rules define the edges of the session.",
+    "de": "Nach Schließung der Tore lässt sich Kgalagadi nicht als frei befahrbare Beobachtungslandschaft nutzen. Eine Nacht in Twee Rivieren beginnt deshalb mit der Unterkunft und nicht mit der Suche nach dem dunkelsten Straßenrand. Beobachte nur in einem erlaubten Bereich innerhalb des Camps und lasse die Bewegungsregeln des Parks den Rahmen bestimmen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Booked accommodation at Twee Rivieren",
+        "de": "Gebuchte Unterkunft in Twee Rivieren"
+      },
+      "sourceIds": [
+        "kgalagadi-stay",
+        "kgalagadi-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night movement",
+        "de": "Bewegung bei Nacht"
+      },
+      "value": {
+        "en": "Remain within permitted camp areas after gates close",
+        "de": "Nach Torschluss in erlaubten Campbereichen bleiben"
+      },
+      "sourceIds": [
+        "kgalagadi-gates"
+      ]
+    },
+    {
+      "label": {
+        "en": "Facilities",
+        "de": "Infrastruktur"
+      },
+      "value": {
+        "en": "Reception, shop, fuel, restaurant and 24-hour electricity",
+        "de": "Rezeption, Shop, Kraftstoff, Restaurant und durchgängiger Strom"
+      },
+      "sourceIds": [
+        "kgalagadi-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Check",
+        "de": "Prüfen"
+      },
+      "value": {
+        "en": "Current gate times before every visit",
+        "de": "Aktuelle Torzeiten vor jedem Besuch"
+      },
+      "sourceIds": [
+        "kgalagadi-gates"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "camp-rule",
+      "kind": "note",
+      "heading": {
+        "en": "The camp boundary is the night route",
+        "de": "Die Campgrenze ist die Nachtroute"
+      },
+      "body": {
+        "en": "Once gates close, do not drive into the park to improve the horizon or move closer to the dunes. Gate times vary by month and can change without notice. Confirm them with SANParks, complete the day's driving before closure and choose a permitted place near your accommodation where staff rules allow you to stand quietly.",
+        "de": "Nach Torschluss fährst du nicht in den Park, um Horizont oder Dünennähe zu verbessern. Torzeiten unterscheiden sich nach Monat und können sich ohne Vorankündigung ändern. Bestätige sie bei SANParks, beende alle Fahrten rechtzeitig und wähle nahe der Unterkunft einen erlaubten Bereich, in dem die Campregeln einen ruhigen Aufenthalt zulassen."
+      },
+      "sourceIds": [
+        "kgalagadi-gates",
+        "kgalagadi-park"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "camp-night",
+      "kind": "schedule",
+      "heading": {
+        "en": "Build the sky session around camp life",
+        "de": "Die Beobachtung richtet sich nach dem Campleben"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before gate closure",
+            "de": "Vor Torschluss"
+          },
+          "title": {
+            "en": "Finish fuel, food and wildlife drives",
+            "de": "Kraftstoff, Essen und Wildtierfahrten abschließen"
+          },
+          "body": {
+            "en": "Return with time to park, check the local notices and prepare warm clothing and water. Twee Rivieren has more services than the smaller camps, but those services do not justify a rushed arrival at the gate.",
+            "de": "Kehre mit genug Zeit zurück, parke, prüfe lokale Hinweise und lege warme Kleidung sowie Wasser bereit. Twee Rivieren bietet mehr Versorgung als kleinere Camps, doch diese Infrastruktur rechtfertigt keine knappe Ankunft am Tor."
+          },
+          "sourceIds": [
+            "kgalagadi-park",
+            "kgalagadi-gates"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dinner",
+            "de": "Nach dem Abendessen"
+          },
+          "title": {
+            "en": "Use a small observing kit",
+            "de": "Mit kleiner Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "Binoculars and a reclining chair are easier to manage around accommodation than a large telescope. Keep walkways clear, avoid shining light toward neighbouring units and never leave the permitted camp area in pursuit of darkness.",
+            "de": "Fernglas und Liegestuhl lassen sich nahe der Unterkunft besser handhaben als ein großes Teleskop. Halte Wege frei, richte kein Licht auf benachbarte Einheiten und verlasse für mehr Dunkelheit niemals den erlaubten Campbereich."
+          },
+          "sourceIds": [
+            "kgalagadi-stay",
+            "kgalagadi-park"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sleep",
+            "de": "Vor dem Schlafen"
+          },
+          "title": {
+            "en": "Pack for the morning gate, not dawn photography",
+            "de": "Für das Morgentor packen, nicht für spontane Dämmerungsfotografie"
+          },
+          "body": {
+            "en": "Secure equipment inside the accommodation and check the next day's opening time. A planned early drive begins when the park permits it, not when the first light appears.",
+            "de": "Sichere die Ausrüstung in der Unterkunft und prüfe die Öffnungszeit des nächsten Tages. Eine geplante Frühfahrt beginnt mit der Freigabe durch den Park und nicht mit dem ersten Licht."
+          },
+          "sourceIds": [
+            "kgalagadi-gates",
+            "kgalagadi-stay"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-this-is",
+      "kind": "prose",
+      "heading": {
+        "en": "This is a camp sky, not an isolated desert claim",
+        "de": "Das ist ein Camphimmel und kein Versprechen völliger Wüstenabgeschiedenheit"
+      },
+      "paragraphs": {
+        "en": [
+          "Twee Rivieren is the park's largest rest camp and includes twenty-four-hour electricity and mobile reception. Local lights and buildings may affect parts of the horizon. The advantage is legal, practical access to the night from a secure base, not the absence of every nearby light.",
+          "Anyone seeking a more remote camp must research that accommodation and its rules separately. The broad Kalahari score cannot be transferred automatically to the exact view from a particular chalet or campsite."
+        ],
+        "de": [
+          "Twee Rivieren ist das größte Restcamp des Parks und besitzt durchgängigen Strom sowie Mobilfunkempfang. Lokale Beleuchtung und Gebäude können Teile des Horizonts beeinflussen. Der Vorteil ist ein legaler, praktikabler Nachtzugang von einer sicheren Basis und nicht die Abwesenheit jedes nahen Lichts.",
+          "Wer ein abgelegeneres Camp sucht, muss Unterkunft und Regeln separat prüfen. Der allgemeine Kalahari-Wert lässt sich nicht automatisch auf den exakten Blick von einem bestimmten Chalet oder Stellplatz übertragen."
+        ]
+      },
+      "sourceIds": [
+        "kgalagadi-park",
+        "kgalagadi-stay"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "kgalagadi-park",
+    "kgalagadi-gates",
+    "kgalagadi-travel",
+    "kgalagadi-stay"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

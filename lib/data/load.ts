@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile, SiteMonthlySummary } from "./types.js";
+import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile, SiteMonthlySummary } from "./types.js";
 import type { NightPreviewFile } from "../astronomy/types.js";
 
 export interface SeoPageRecord {
@@ -55,6 +55,14 @@ export function listDestinationEditorialGuides() {
   const directory = resolve(publicDataRoot, "editorial/destinations");
   if (!existsSync(directory)) return [] as string[];
   return readdirSync(directory).filter((file) => file.endsWith(".json") && file !== "index.json").map((file) => file.replace(/\.json$/, "")).sort();
+}
+
+export function listLocationTours(): LocationTour[] {
+  return readPublished<LocationTour[]>("editorial/location-tours/index.json");
+}
+
+export function loadLocationTour(slug: string): LocationTour {
+  return readPublished<LocationTour>(`editorial/location-tours/${slug}.json`);
 }
 
 export function loadSites(): ObservationSite[] {

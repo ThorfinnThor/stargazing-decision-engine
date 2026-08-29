@@ -1,4 +1,4 @@
-import { listGearGuides, listShortTripOrigins, loadDestinations, loadDestinationMonthly, loadGearGuide, loadManifest, loadNightPreviews, loadSeoPage, loadShortTrip, loadSites } from "@/lib/data/load";
+import { listGearGuides, listLocationTours, listShortTripOrigins, loadDestination, loadDestinations, loadDestinationMonthly, loadGearGuide, loadManifest, loadNightPreviews, loadSeoPage, loadShortTrip, loadSites } from "@/lib/data/load";
 import { isTravelEligibleSite } from "@/lib/access/travel";
 import { buildHomepageSkyCandidates } from "@/lib/astronomy/homepage-candidates";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
@@ -23,6 +23,7 @@ export function HomePage({ locale }: { locale: Locale }) {
     return { origin, originName: trip.originName, destinationCount: trip.entries.length };
   }).filter((trip) => trip.destinationCount > 0);
   const gearGuides = listGearGuides().map(loadGearGuide);
+  const locationTours = listLocationTours();
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Index", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const sites = loadSites();
@@ -119,6 +120,25 @@ export function HomePage({ locale }: { locale: Locale }) {
       <section className="foundation" aria-labelledby="gear-title">
         <div className="section-heading"><p className="eyebrow dark">{locale === "de" ? "Ausrüstungsguides" : "Gear guides"}</p><h2 id="gear-title">{locale === "de" ? "Werkzeuge für klare Nächte." : "Tools for clear nights."}</h2></div>
         <div className="foundation-grid short-trip-links"><a className="destination-card gear-guide-card" href={localizedLinks.gear(locale)}><div className="card-topline"><span>{gearGuides.length} {locale === "de" ? "Guides" : "guides"}</span><span>→</span></div><h3>{locale === "de" ? "Alle Gear-Guides" : "All gear guides"}</h3><p>{locale === "de" ? "Technische Orientierung für klare Nächte." : "Specification-based guidance for clear nights."}</p></a>{gearGuides.map((guide) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, guide.slug)} key={guide.slug}><div className="card-topline"><span>{guide.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{guide.title[locale]}</h3><p>{guide.summary[locale]}</p></a>)}</div>
+      </section>
+
+      <section className="foundation" aria-labelledby="location-tours-title">
+        <div className="section-heading">
+          <p className="eyebrow dark">{locale === "de" ? "Standort-Touren" : "Location tours"}</p>
+          <h2 id="location-tours-title">{locale === "de" ? "Eine konkrete Nacht statt allgemeiner Reisetipps." : "One specific night, not generic travel advice."}</h2>
+        </div>
+        <div className="foundation-grid short-trip-links">
+          <a className="destination-card" href={localizedLinks.locationTours(locale)}>
+            <div className="card-topline"><span>{locationTours.length} {locale === "de" ? "Touren" : "tours"}</span><span>→</span></div>
+            <h3>{locale === "de" ? "Alle Standort-Touren" : "All location tours"}</h3>
+            <p>{locale === "de" ? "Geprüfte Nachtpläne mit Zugang, Anfahrt und klaren Grenzen." : "Reviewed night plans with access, approach and practical boundaries."}</p>
+          </a>
+          {locationTours.slice(0, 3).map((tour) => <a className="destination-card" href={localizedLinks.locationTour(locale, tour.slug)} key={tour.id}>
+            <div className="card-topline"><span>{loadDestination(tour.destinationId).name}</span><span>→</span></div>
+            <h3>{tour.title[locale]}</h3>
+            <p>{tour.seoDescription[locale]}</p>
+          </a>)}
+        </div>
       </section>
     </main>
   );

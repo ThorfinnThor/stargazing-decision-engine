@@ -1,0 +1,157 @@
+{
+  "version": 1,
+  "id": "craig-goch-reservoir-night",
+  "slug": "craig-goch-reservoir-night",
+  "destinationId": "elan-valley",
+  "recommendedSiteId": "craig-goch-dam",
+  "title": {
+    "en": "A careful dark-sky night at Craig Goch",
+    "de": "Eine sorgfältig geplante Dark-Sky-Nacht am Craig Goch"
+  },
+  "seoDescription": {
+    "en": "A practical Elan Valley observing plan for Craig Goch car park, with winter roads, weak mobile signal and the reservoir setting treated honestly.",
+    "de": "Ein praktischer Beobachtungsplan für den Parkplatz am Craig Goch im Elan Valley mit ehrlicher Einordnung von Winterstraßen, schwachem Mobilfunk und Stauseeumgebung."
+  },
+  "standfirst": {
+    "en": "Craig Goch is one of five sites the Elan Valley Trust identifies for stargazing. The car park makes it approachable, while the surrounding reservoir roads remain remote, largely unlit and untreated in winter. A good evening here depends less on elaborate astronomy equipment than on arriving with a known route and a conservative weather decision.",
+    "de": "Craig Goch gehört zu fünf Standorten, die der Elan Valley Trust für Sternbeobachtung nennt. Der Parkplatz erleichtert den Zugang, doch die umliegenden Stauseestraßen bleiben abgelegen, weitgehend unbeleuchtet und werden im Winter nicht gestreut. Entscheidend sind eine bekannte Route und eine vorsichtige Wetterentscheidung, nicht aufwendige Astronomieausrüstung."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe from",
+        "de": "Beobachten am"
+      },
+      "value": {
+        "en": "Craig Goch car park",
+        "de": "Parkplatz Craig Goch"
+      },
+      "sourceIds": [
+        "elan-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Mobile signal",
+        "de": "Mobilfunk"
+      },
+      "value": {
+        "en": "Very limited or absent",
+        "de": "Sehr schwach oder nicht vorhanden"
+      },
+      "sourceIds": [
+        "elan-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Winter roads",
+        "de": "Winterstraßen"
+      },
+      "value": {
+        "en": "Untreated; ice can be a problem",
+        "de": "Nicht gestreut; Eis kann problematisch sein"
+      },
+      "sourceIds": [
+        "elan-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Time",
+        "de": "Dauer"
+      },
+      "value": {
+        "en": "Three to five hours from Rhayader",
+        "de": "Drei bis fünf Stunden ab Rhayader"
+      },
+      "sourceIds": [
+        "elan-sites",
+        "elan-dams"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "offline",
+      "kind": "prose",
+      "heading": {
+        "en": "The route has to work without a phone",
+        "de": "Die Route muss ohne Telefon funktionieren"
+      },
+      "paragraphs": {
+        "en": [
+          "Download the route from Rhayader and share the destination and return time with someone before entering the estate. The official site guidance warns that mobile signal can be minimal or absent. That turns a forgotten map or an uncertain junction into a practical risk rather than a minor inconvenience.",
+          "Reach Craig Goch while the shape of the reservoir road and the car park are still visible. Walk only the immediate area you intend to use, and keep away from unlit edges. The dam is part of the landscape, not a platform for finding an increasingly dramatic foreground after dark."
+        ],
+        "de": [
+          "Lade die Route ab Rhayader herunter und teile Ziel sowie Rückkehrzeit mit einer anderen Person, bevor du in das Gebiet fährst. Die offizielle Standortinformation warnt vor sehr schwachem oder fehlendem Mobilfunk. Eine vergessene Karte oder unklare Abzweigung wird dadurch zum praktischen Risiko und nicht nur zur kleinen Unannehmlichkeit.",
+          "Erreiche Craig Goch, solange Verlauf der Stauseestraße und Parkplatz noch erkennbar sind. Bewege dich nur in dem unmittelbaren Bereich, den du nutzen willst, und halte Abstand zu unbeleuchteten Kanten. Der Damm gehört zur Landschaft, ist aber kein Ort für die nächtliche Suche nach einem immer eindrucksvolleren Vordergrund."
+        ]
+      },
+      "sourceIds": [
+        "elan-sites",
+        "elan-dams"
+      ]
+    },
+    {
+      "id": "road-call",
+      "kind": "decisions",
+      "heading": {
+        "en": "A clear sky does not overrule the road",
+        "de": "Ein klarer Himmel hebt den Straßenzustand nicht auf"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Dry roads and stable visibility",
+            "de": "Trockene Straße und stabile Sicht"
+          },
+          "body": {
+            "en": "Continue with the Craig Goch plan and remain at the known car park. Warm clothing, food and a drink belong in the car even for a short session.",
+            "de": "Bleibe beim Craig-Goch-Plan und am bekannten Parkplatz. Warme Kleidung, Essen und Getränk gehören auch bei einer kurzen Beobachtung ins Fahrzeug."
+          },
+          "sourceIds": [
+            "elan-sites"
+          ]
+        },
+        {
+          "label": {
+            "en": "Ice, flooding concern or dense hill fog",
+            "de": "Eis, Hochwasserbedenken oder dichter Bergnebel"
+          },
+          "body": {
+            "en": "Do not use a remote ungritted road merely because a cloud forecast looks promising. Keep the night near Rhayader or return in safer conditions.",
+            "de": "Nutze eine abgelegene, ungestreute Straße nicht allein wegen einer günstigen Wolkenprognose. Bleibe nahe Rhayader oder kehre unter sichereren Bedingungen zurück."
+          },
+          "sourceIds": [
+            "elan-sites"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dark-adaptation",
+      "kind": "note",
+      "heading": {
+        "en": "Let the reservoir become quiet",
+        "de": "Lass den Stausee ruhig werden"
+      },
+      "body": {
+        "en": "After setup, spend twenty minutes without checking a bright screen and use the broad dark outline of the valley to orient yourself. The measured darkness makes naked-eye scanning worthwhile. It does not remove cloud, local obstruction or the need to protect other visitors from vehicle lights.",
+        "de": "Verbringe nach dem Aufbau zwanzig Minuten ohne hellen Bildschirm und orientiere dich an der dunklen Kontur des Tals. Die gemessene Dunkelheit macht die Beobachtung mit bloßem Auge lohnend. Sie beseitigt weder Wolken noch lokale Hindernisse und entbindet nicht von Rücksicht bei Fahrzeuglicht."
+      },
+      "sourceIds": [
+        "elan-sites",
+        "elan-dark"
+      ],
+      "tone": "context"
+    }
+  ],
+  "sourceIds": [
+    "elan-sites",
+    "elan-dark",
+    "elan-dams"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
