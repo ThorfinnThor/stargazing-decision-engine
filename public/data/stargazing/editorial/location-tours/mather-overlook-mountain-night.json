@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "id": "mather-overlook-mountain-night",
+  "slug": "mather-overlook-mountain-night",
+  "destinationId": "great-basin",
+  "recommendedSiteId": "mather-overlook",
+  "title": {
+    "en": "A mountain night at Mather Overlook",
+    "de": "Eine Bergnacht am Mather Overlook"
+  },
+  "seoDescription": {
+    "en": "Plan a Great Basin stargazing evening at Mather Overlook with seasonal road access, a lower-elevation fallback and a direct descent.",
+    "de": "Plane eine Sternennacht am Mather Overlook im Great Basin mit saisonaler Straßenzufahrt, tiefer gelegener Alternative und direkter Abfahrt."
+  },
+  "standfirst": {
+    "en": "Mather Overlook offers a named National Park Service stargazing location on the Wheeler Peak Scenic Drive, with broad views and a mountain-road commitment. It is not a campsite. Reach it in daylight only when the seasonal road and weather support the plan, keep the Astronomy Amphitheater as the lower fallback and descend after one focused session.",
+    "de": "Der Mather Overlook ist ein vom National Park Service genannter Sternenort am Wheeler Peak Scenic Drive mit weitem Blick und den Anforderungen einer Bergstraße. Er ist kein Campingplatz. Fahre nur bei geeigneter saisonaler Straße und Wetterlage bei Tageslicht hinauf, halte das Astronomy Amphitheater als tiefer gelegene Alternative bereit und steige nach einer konzentrierten Sitzung wieder ab."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Primary site",
+        "de": "Hauptstandort"
+      },
+      "value": {
+        "en": "Mather Overlook",
+        "de": "Mather Overlook"
+      },
+      "sourceIds": [
+        "grba-stargaze",
+        "grba-mather"
+      ]
+    },
+    {
+      "label": {
+        "en": "Road",
+        "de": "Straße"
+      },
+      "value": {
+        "en": "Seasonal Wheeler Peak Scenic Drive",
+        "de": "Saisonal geöffneter Wheeler Peak Scenic Drive"
+      },
+      "sourceIds": [
+        "grba-drive",
+        "grba-mather"
+      ]
+    },
+    {
+      "label": {
+        "en": "Fallback",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Astronomy Amphitheater at lower elevation",
+        "de": "Astronomy Amphitheater in niedrigerer Lage"
+      },
+      "sourceIds": [
+        "grba-stargaze"
+      ]
+    },
+    {
+      "label": {
+        "en": "Overnight",
+        "de": "Übernachtung"
+      },
+      "value": {
+        "en": "Not at the overlook",
+        "de": "Nicht am Aussichtspunkt"
+      },
+      "sourceIds": [
+        "grba-camp",
+        "grba-mather"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "elevation-choice",
+      "kind": "prose",
+      "heading": {
+        "en": "Choose elevation only when it improves the whole night",
+        "de": "Höhe nur wählen, wenn sie den gesamten Abend verbessert"
+      },
+      "paragraphs": {
+        "en": [
+          "Mather Overlook sits along the mountain drive rather than beside the park's main lower facilities. The extra elevation can open the horizon, but it also adds cold, wind, a seasonal road and a longer descent. Read current road information and weather before leaving the lower park, then decide whether the mountain is genuinely comfortable for every passenger.",
+          "The Astronomy Amphitheater remains a credible observing plan rather than a consolation prize. The National Park Service uses it for astronomy programming and identifies several accessible observing areas. On a marginal evening, the lower location can preserve attention for the sky instead of spending it on the road."
+        ],
+        "de": [
+          "Der Mather Overlook liegt an der Bergstraße und nicht bei den wichtigsten tiefer gelegenen Einrichtungen des Parks. Die zusätzliche Höhe kann den Horizont öffnen, bringt aber Kälte, Wind, eine saisonale Straße und eine längere Abfahrt mit sich. Lies aktuelle Straßen- und Wetterinformationen vor dem Verlassen der tieferen Parkbereiche und entscheide dann, ob der Berg für alle Mitfahrenden wirklich angenehm ist.",
+          "Das Astronomy Amphitheater bleibt ein glaubwürdiger Beobachtungsplan und ist kein Trostpreis. Der National Park Service nutzt es für Astronomieprogramme und nennt mehrere gut erreichbare Beobachtungsorte. An einem grenzwertigen Abend kann die tiefere Lage die Aufmerksamkeit für den Himmel bewahren, statt sie auf der Straße zu verbrauchen."
+        ]
+      },
+      "sourceIds": [
+        "grba-stargaze",
+        "grba-mather",
+        "grba-drive"
+      ]
+    },
+    {
+      "id": "mather-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "The mountain gets a simple yes or no",
+        "de": "Der Berg erhält ein klares Ja oder Nein"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Road open, dry and comfortable",
+            "de": "Straße offen, trocken und gut befahrbar"
+          },
+          "body": {
+            "en": "Continue to Mather in daylight, confirm the parking and return direction, and stop adding destinations. Carry insulation for a temperature that may differ sharply from the valley.",
+            "de": "Fahre bei Tageslicht zum Mather, bestätige Parkplatz und Rückrichtung und füge keine weiteren Ziele hinzu. Nimm isolierende Kleidung für eine Temperatur mit, die sich deutlich vom Tal unterscheiden kann."
+          },
+          "sourceIds": [
+            "grba-drive",
+            "grba-mather"
+          ]
+        },
+        {
+          "label": {
+            "en": "Road, wind or cloud creates doubt",
+            "de": "Straße, Wind oder Wolken schaffen Zweifel"
+          },
+          "body": {
+            "en": "Stay lower and use the Astronomy Amphitheater or another currently open NPS location. Do not let a preselected photograph or elevation number turn a flexible evening into a difficult ascent.",
+            "de": "Bleibe tiefer und nutze das Astronomy Amphitheater oder einen anderen aktuell geöffneten NPS-Standort. Ein vorab gewähltes Foto oder eine Höhenangabe darf aus einem flexiblen Abend keine schwierige Auffahrt machen."
+          },
+          "sourceIds": [
+            "grba-stargaze",
+            "grba-drive"
+          ]
+        },
+        {
+          "label": {
+            "en": "You intend to remain until morning",
+            "de": "Du möchtest bis zum Morgen bleiben"
+          },
+          "body": {
+            "en": "Reserve a legal campground and redesign the evening around it. The overlook is a viewing stop, not an overnight accommodation or substitute for a campsite.",
+            "de": "Reserviere einen legalen Campingplatz und plane den Abend darum neu. Der Aussichtspunkt ist ein Beobachtungsstopp und weder Unterkunft noch Ersatz für einen Campingplatz."
+          },
+          "sourceIds": [
+            "grba-camp",
+            "grba-mather"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mather-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "Arrive in colour and descend with concentration",
+        "de": "Bei sichtbaren Farben ankommen und konzentriert abfahren"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Make the last road decision below",
+            "de": "Die letzte Straßenentscheidung unten treffen"
+          },
+          "body": {
+            "en": "Check conditions, use facilities and tell the group whether Mather or the lower fallback is now final. Once climbing begins, the evening should no longer depend on searching for alternatives.",
+            "de": "Prüfe Bedingungen, nutze Einrichtungen und sage der Gruppe, ob Mather oder die tiefere Alternative nun feststeht. Mit Beginn der Auffahrt darf der Abend nicht mehr von der Suche nach weiteren Möglichkeiten abhängen."
+          },
+          "sourceIds": [
+            "grba-drive",
+            "grba-stargaze"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the overlook",
+            "de": "Am Aussichtspunkt"
+          },
+          "title": {
+            "en": "Set the return before setting the telescope",
+            "de": "Den Rückweg vor dem Teleskop festlegen"
+          },
+          "body": {
+            "en": "Identify the road edge, parking movement and safe standing area in daylight. Keep the observing kit compact, protect night vision and give the mountain skyline time to become a navigable reference.",
+            "de": "Erkenne Straßenrand, Parkplatzbewegungen und sicheren Standbereich bei Tageslicht. Halte die Ausrüstung kompakt, schütze die Dunkeladaption und gib der Bergsilhouette Zeit, zu einer verlässlichen Orientierung zu werden."
+          },
+          "sourceIds": [
+            "grba-mather",
+            "grba-stargaze"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the fixed end",
+            "de": "Zur festgelegten Endzeit"
+          },
+          "title": {
+            "en": "Leave before cold becomes the decision-maker",
+            "de": "Abfahren, bevor die Kälte entscheidet"
+          },
+          "body": {
+            "en": "Pack while hands and attention still work well, then descend directly to the arranged accommodation or campground. Do not sleep at the overlook or prolong the night with another stop on the mountain road.",
+            "de": "Packe ein, solange Hände und Aufmerksamkeit zuverlässig funktionieren, und fahre direkt zur organisierten Unterkunft oder zum Campingplatz. Schlafe nicht am Aussichtspunkt und verlängere die Nacht nicht mit einem weiteren Halt an der Bergstraße."
+          },
+          "sourceIds": [
+            "grba-camp",
+            "grba-drive",
+            "grba-mather"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "grba-stargaze",
+    "grba-mather",
+    "grba-drive",
+    "grba-camp"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

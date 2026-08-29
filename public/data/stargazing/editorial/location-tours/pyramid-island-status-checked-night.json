@@ -1,0 +1,217 @@
+{
+  "version": 1,
+  "id": "pyramid-island-status-checked-night",
+  "slug": "pyramid-island-status-checked-night",
+  "destinationId": "jasper",
+  "recommendedSiteId": "pyramid-island",
+  "title": {
+    "en": "A status-checked evening at Pyramid Island",
+    "de": "Ein geprüfter Abend am Pyramid Island"
+  },
+  "seoDescription": {
+    "en": "Plan a Jasper stargazing evening at Pyramid Island using current Parks Canada opening, bulletin and trail information before leaving town.",
+    "de": "Plane eine Sternenbeobachtung am Pyramid Island in Jasper und prüfe vor der Abfahrt aktuelle Öffnungen, Mitteilungen und Wegangaben von Parks Canada."
+  },
+  "standfirst": {
+    "en": "Pyramid Island is one of Parks Canada's easy-access dark-sky locations near Jasper, but familiar proximity should not replace a same-day status check. Wildfire recovery, seasonal work, trail conditions and wildlife can alter a simple plan. Verify the route before leaving town, remain on designated surfaces and return without adding Medicine Lake after midnight.",
+    "de": "Pyramid Island gehört zu den leicht erreichbaren Dark-Sky-Orten von Parks Canada nahe Jasper. Die kurze Entfernung ersetzt jedoch keine Prüfung am selben Tag. Wiederaufbau nach Waldbränden, saisonale Arbeiten, Wegzustand und Wildtiere können einen einfachen Plan verändern. Bestätige die Route vor der Abfahrt, bleibe auf ausgewiesenen Flächen und fahre zurück, ohne nach Mitternacht noch Medicine Lake anzuhängen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Destination",
+        "de": "Ziel"
+      },
+      "value": {
+        "en": "Pyramid Island",
+        "de": "Pyramid Island"
+      },
+      "sourceIds": [
+        "parks-dark-sky",
+        "parks-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Check together",
+        "de": "Gemeinsam prüfen"
+      },
+      "value": {
+        "en": "Open map, bulletins and trail conditions",
+        "de": "Öffnungskarte, Mitteilungen und Wegzustand"
+      },
+      "sourceIds": [
+        "parks-open",
+        "parks-bulletins",
+        "parks-trails"
+      ]
+    },
+    {
+      "label": {
+        "en": "On site",
+        "de": "Vor Ort"
+      },
+      "value": {
+        "en": "Stay on designated roads, parking and paths",
+        "de": "Auf ausgewiesenen Straßen, Parkflächen und Wegen bleiben"
+      },
+      "sourceIds": [
+        "parks-visit",
+        "parks-trails"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return",
+        "de": "Rückkehr"
+      },
+      "value": {
+        "en": "Back to Jasper after one site",
+        "de": "Nach einem Standort zurück nach Jasper"
+      },
+      "sourceIds": [
+        "parks-visit",
+        "parks-contact"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "three-status-pages",
+      "kind": "decisions",
+      "heading": {
+        "en": "Three official pages answer three different risks",
+        "de": "Drei offizielle Seiten beantworten drei verschiedene Risiken"
+      },
+      "introduction": {
+        "en": "A location can be open while a road, trail or facility serving it is affected. Read the pages together.",
+        "de": "Ein Ort kann geöffnet sein, während Zufahrt, Weg oder Einrichtung betroffen sind. Die Seiten müssen gemeinsam gelesen werden."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "The open map shows normal access",
+            "de": "Die Öffnungskarte zeigt normalen Zugang"
+          },
+          "body": {
+            "en": "Continue to current bulletins and trail conditions before committing. The map establishes broad availability; the other notices supply temporary restrictions and surface information relevant to an evening visit.",
+            "de": "Prüfe anschließend aktuelle Mitteilungen und Wegzustand. Die Karte zeigt die allgemeine Verfügbarkeit, während die weiteren Hinweise temporäre Einschränkungen und für den Abend relevante Oberflächeninformationen liefern."
+          },
+          "sourceIds": [
+            "parks-open",
+            "parks-bulletins",
+            "parks-trails"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any part of the route remains ambiguous",
+            "de": "Ein Teil der Route bleibt unklar"
+          },
+          "body": {
+            "en": "Contact the park or choose another official easy-access site whose status is explicit. Do not solve uncertainty by driving past closures or parking beyond established areas after dark.",
+            "de": "Kontaktiere den Park oder wähle einen anderen offiziellen, leicht erreichbaren Ort mit eindeutigem Status. Löse Unklarheit nicht durch Fahrten hinter Sperren oder Parken außerhalb vorgesehener Flächen nach Einbruch der Dunkelheit."
+          },
+          "sourceIds": [
+            "parks-contact",
+            "parks-open",
+            "parks-dark-sky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "recovery-context",
+      "kind": "note",
+      "heading": {
+        "en": "Treat recovery information as part of the destination",
+        "de": "Wiederaufbauinformationen gehören zum Reiseziel"
+      },
+      "body": {
+        "en": "Jasper's visitor information reflects an active recovery landscape. Follow temporary signs and closures even when an older guide or saved map suggests another route. A short stargazing outing has no reason to compete with restoration work, emergency access or wildlife management.",
+        "de": "Die Besucherinformationen von Jasper spiegeln eine Landschaft im aktiven Wiederaufbau. Befolge temporäre Schilder und Sperren auch dann, wenn ein älterer Guide oder eine gespeicherte Karte eine andere Route zeigt. Ein kurzer Sternenausflug darf weder Wiederherstellung noch Notfallzugang oder Wildtiermanagement behindern."
+      },
+      "sourceIds": [
+        "parks-visit",
+        "parks-bulletins",
+        "parks-open"
+      ],
+      "tone": "context"
+    },
+    {
+      "id": "pyramid-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "A nearby site still deserves a complete plan",
+        "de": "Auch ein naher Ort verdient einen vollständigen Plan"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving Jasper",
+            "de": "Vor der Abfahrt aus Jasper"
+          },
+          "title": {
+            "en": "Finish the status check on a real connection",
+            "de": "Statusprüfung mit stabiler Verbindung abschließen"
+          },
+          "body": {
+            "en": "Save the approved route, the return address and park contact information. Carry warm layers and wildlife-safe behaviour into the plan rather than assuming town proximity makes the island an urban park.",
+            "de": "Speichere die freigegebene Route, die Rückkehradresse und die Parkkontakte. Plane warme Kleidung und wildtiergerechtes Verhalten ein, statt den Ort wegen seiner Stadtnähe wie einen Stadtpark zu behandeln."
+          },
+          "sourceIds": [
+            "parks-contact",
+            "parks-visit",
+            "parks-open"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before twilight ends",
+            "de": "Vor Ende der Dämmerung"
+          },
+          "title": {
+            "en": "Settle on designated surfaces",
+            "de": "Auf ausgewiesenen Flächen ankommen"
+          },
+          "body": {
+            "en": "Identify the parking area, bridge or permitted path in the remaining light and avoid trampling shoreline vegetation. Choose a compact setup that does not block circulation or invite movement into closed areas.",
+            "de": "Erkenne Parkplatz, Brücke oder erlaubten Weg im restlichen Licht und schone die Ufervegetation. Wähle einen kompakten Aufbau, der weder Bewegungsflächen blockiert noch zum Betreten gesperrter Bereiche verleitet."
+          },
+          "sourceIds": [
+            "parks-trails",
+            "parks-visit"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the session ends",
+            "de": "Am Ende der Sitzung"
+          },
+          "title": {
+            "en": "Return directly instead of collecting another lake",
+            "de": "Direkt zurückkehren statt einen weiteren See zu sammeln"
+          },
+          "body": {
+            "en": "Pack quietly, scan for wildlife near the route and drive back to Jasper. Medicine Lake can be planned for a separate daylight-to-night visit after its own road and status review.",
+            "de": "Packe ruhig ein, achte entlang der Route auf Wildtiere und fahre nach Jasper zurück. Medicine Lake kann nach eigener Straßen- und Statusprüfung als separater Übergang vom Tag zur Nacht geplant werden."
+          },
+          "sourceIds": [
+            "parks-dark-sky",
+            "parks-visit",
+            "parks-open"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "parks-dark-sky",
+    "parks-visit",
+    "parks-open",
+    "parks-bulletins",
+    "parks-trails",
+    "parks-contact"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

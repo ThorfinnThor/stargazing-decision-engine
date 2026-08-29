@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "id": "clatteringshaws-self-sufficient-night",
+  "slug": "clatteringshaws-self-sufficient-night",
+  "destinationId": "galloway",
+  "recommendedSiteId": "clatteringshaws-loch",
+  "title": {
+    "en": "A self-sufficient night beside Clatteringshaws Loch",
+    "de": "Eigenständig am Clatteringshaws Loch beobachten"
+  },
+  "seoDescription": {
+    "en": "Plan an independent stargazing evening at Clatteringshaws Loch with current Forestry and Land Scotland access information and no reliance on closed facilities.",
+    "de": "Plane einen eigenständigen Sternenabend am Clatteringshaws Loch anhand aktueller Zugangsangaben von Forestry and Land Scotland und ohne Abhängigkeit von geschlossenen Einrichtungen."
+  },
+  "standfirst": {
+    "en": "Clatteringshaws offers an official dark-sky destination with loch, forest and a practical road approach. It now requires more independence than older descriptions suggest because the visitor centre, café and toilets are closed. Bring what the evening needs, confirm the car-park situation and resist adding a second forest destination once darkness has settled.",
+    "de": "Clatteringshaws ist ein offizielles Dark-Sky-Ziel mit See, Wald und praktikabler Straßenanbindung. Der Ort verlangt heute mehr Eigenständigkeit als ältere Beschreibungen vermuten lassen, denn Besucherzentrum, Café und Toiletten sind geschlossen. Bring alles Nötige mit, bestätige die Parkplatzlage und verzichte nach Einbruch der Dunkelheit auf ein zweites Waldziel."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachtungsort"
+      },
+      "value": {
+        "en": "Clatteringshaws Loch",
+        "de": "Clatteringshaws Loch"
+      },
+      "sourceIds": [
+        "fls-dark-sky",
+        "fls-clatteringshaws"
+      ]
+    },
+    {
+      "label": {
+        "en": "Facilities",
+        "de": "Einrichtungen"
+      },
+      "value": {
+        "en": "Visitor centre, café and toilets closed",
+        "de": "Besucherzentrum, Café und Toiletten geschlossen"
+      },
+      "sourceIds": [
+        "fls-clatteringshaws-info"
+      ]
+    },
+    {
+      "label": {
+        "en": "Bring",
+        "de": "Mitbringen"
+      },
+      "value": {
+        "en": "Food, water, warm layers and offline directions",
+        "de": "Essen, Wasser, warme Kleidung und Offline-Navigation"
+      },
+      "sourceIds": [
+        "fls-clatteringshaws",
+        "fls-clatteringshaws-info"
+      ]
+    },
+    {
+      "label": {
+        "en": "Confirm",
+        "de": "Bestätigen"
+      },
+      "value": {
+        "en": "Current parking and forest alerts",
+        "de": "Aktuelle Parkplatz- und Forsthinweise"
+      },
+      "sourceIds": [
+        "fls-clatteringshaws-info"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "closed-building",
+      "kind": "note",
+      "heading": {
+        "en": "Pack as though the building were not there",
+        "de": "Packen, als gäbe es das Gebäude nicht"
+      },
+      "body": {
+        "en": "The visitor centre, café and toilets at Clatteringshaws are closed. Old articles and map labels can still create the impression of a serviced stop, so use the current Forestry and Land Scotland page as the authority. Carry water, food and everything needed for comfort, and choose a different evening if the lack of facilities creates a problem for anyone in the group.",
+        "de": "Besucherzentrum, Café und Toiletten in Clatteringshaws sind geschlossen. Ältere Artikel und Kartenbeschriftungen können weiterhin den Eindruck eines versorgten Standorts erwecken. Maßgeblich ist deshalb die aktuelle Seite von Forestry and Land Scotland. Nimm Wasser, Essen und alles für einen angenehmen Aufenthalt mit. Wähle einen anderen Abend, wenn die fehlenden Einrichtungen für jemanden in der Gruppe problematisch sind."
+      },
+      "sourceIds": [
+        "fls-clatteringshaws-info",
+        "fls-clatteringshaws"
+      ],
+      "tone": "practical"
+    },
+    {
+      "id": "loch-session",
+      "kind": "schedule",
+      "heading": {
+        "en": "Keep the loch familiar as the forest disappears",
+        "de": "Der See bleibt vertraut, während der Wald im Dunkeln verschwindet"
+      },
+      "introduction": {
+        "en": "A calm session depends more on reading the site in daylight than on moving to find a darker corner.",
+        "de": "Eine ruhige Beobachtung hängt stärker davon ab, den Ort bei Tageslicht zu verstehen, als nach einem dunkleren Winkel zu suchen."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving",
+            "de": "Vor der Abfahrt"
+          },
+          "title": {
+            "en": "Read the live access information",
+            "de": "Aktuelle Zugangshinweise lesen"
+          },
+          "body": {
+            "en": "Check the official destination and car-park pages for alerts, restrictions or changed arrangements. Download the route because forest coverage may not support a last-minute search.",
+            "de": "Prüfe die offiziellen Seiten zu Ziel und Parkplatz auf Warnungen, Einschränkungen oder geänderte Abläufe. Lade die Route herunter, weil der Empfang im Wald eine spontane Suche nicht zuverlässig unterstützt."
+          },
+          "sourceIds": [
+            "fls-clatteringshaws",
+            "fls-clatteringshaws-info"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Find the safe edge of the visit",
+            "de": "Die sichere Grenze des Aufenthalts finden"
+          },
+          "body": {
+            "en": "Park only where current instructions allow, identify the return path and choose a firm observing position away from traffic. The water and wooded skyline supply the atmosphere without requiring a walk into unlit forest tracks.",
+            "de": "Parke nur dort, wo aktuelle Hinweise es erlauben, erkenne den Rückweg und wähle einen festen Beobachtungsplatz abseits des Verkehrs. Wasser und Waldsilhouette schaffen die Atmosphäre, ohne dass ein Spaziergang auf unbeleuchteten Forstwegen nötig ist."
+          },
+          "sourceIds": [
+            "fls-clatteringshaws",
+            "fls-dark-sky"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dark",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe, then leave by the known route",
+            "de": "Beobachten und auf bekanntem Weg zurückkehren"
+          },
+          "body": {
+            "en": "Allow one long period without phone or car light. Pack before cold or fatigue turns the departure into hurried work, and use the same approach you inspected rather than continuing to Glentrool for a second session.",
+            "de": "Gönne dir eine längere Phase ohne Telefon- oder Autolicht. Packe ein, bevor Kälte oder Müdigkeit die Abfahrt hektisch machen, und nutze denselben geprüften Weg, statt für eine zweite Sitzung nach Glentrool weiterzufahren."
+          },
+          "sourceIds": [
+            "fls-dark-sky",
+            "fls-glentrool"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "galloway-choice",
+      "kind": "decisions",
+      "heading": {
+        "en": "When Clatteringshaws should remain a daylight stop",
+        "de": "Wann Clatteringshaws ein Tagesstopp bleiben sollte"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Parking or access is unclear",
+            "de": "Parken oder Zugang sind unklar"
+          },
+          "body": {
+            "en": "Do not resolve uncertainty at an isolated site after dark. Use another officially described destination whose current access information answers the practical questions before departure.",
+            "de": "Klärungsbedarf gehört nicht an einen abgelegenen Ort nach Einbruch der Dunkelheit. Nutze ein anderes offiziell beschriebenes Ziel, dessen aktuelle Zugangsinformationen die praktischen Fragen vor der Abfahrt beantworten."
+          },
+          "sourceIds": [
+            "fls-clatteringshaws-info",
+            "fls-dark-sky"
+          ]
+        },
+        {
+          "label": {
+            "en": "The group needs toilets or indoor shelter",
+            "de": "Die Gruppe braucht Toiletten oder einen Innenraum"
+          },
+          "body": {
+            "en": "Choose a serviced base and treat the loch as a daytime visit. Darkness alone is not enough to make a location suitable for the people actually travelling.",
+            "de": "Wähle eine versorgte Basis und besuche den See am Tag. Dunkelheit allein macht einen Standort nicht passend für die Menschen, die tatsächlich unterwegs sind."
+          },
+          "sourceIds": [
+            "fls-clatteringshaws-info"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "fls-dark-sky",
+    "fls-clatteringshaws",
+    "fls-clatteringshaws-info",
+    "fls-glentrool"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

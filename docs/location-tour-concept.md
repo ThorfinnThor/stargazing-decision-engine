@@ -33,3 +33,18 @@ The initial collection covers ten distinct access and planning situations:
 10. Hanle places acclimatisation, community arrangements, and observatory permission ahead of equipment.
 
 The collection deliberately avoids fabricated driving times, unverified parking promises, weather guarantees, personal test claims, and unsourced visibility statements.
+
+## Second collection
+
+The next ten tours extend the same source standard into new access models without copying the first collection's structure:
+
+1. Tenerife reduces the official seven-stop Planets and Stars route to one or two deliberate high-zone stops.
+2. Clatteringshaws plans for a lochside night without relying on the closed visitor centre, café, or toilets.
+3. San Pedro uses a registered astronomy excursion and keeps protected-area visits separate from night access.
+4. Sotol Vista makes paved-road access, desert supplies, and the return drive part of the Big Bend observing decision.
+5. Mount John uses an authorised night experience while preserving the boundary around an active research observatory.
+6. NamibRand treats a concession booking and host-approved observing area as the foundation of a two-night stay.
+7. Pyramid Island combines Jasper's open map, bulletins, and trail conditions into one same-day status check.
+8. Mesquite Flat separates a night visit from camping and makes heat, flooding, and road conditions decisive.
+9. Maunakea directs public night observing to the Visitor Information Station while respecting summit closure, altitude, and cultural responsibilities.
+10. Mather Overlook pairs seasonal mountain access with a lower-elevation fallback and a direct descent.

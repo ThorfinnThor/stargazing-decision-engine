@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "id": "sotol-vista-paved-road-night",
+  "slug": "sotol-vista-paved-road-night",
+  "destinationId": "big-bend",
+  "recommendedSiteId": "sotol-vista-overlook",
+  "title": {
+    "en": "A paved-road desert night at Sotol Vista",
+    "de": "Eine Wüstennacht am Sotol Vista"
+  },
+  "seoDescription": {
+    "en": "Use Sotol Vista Overlook for a focused Big Bend stargazing evening, with park conditions, desert supplies and the return drive planned before dark.",
+    "de": "Nutze den Sotol Vista Overlook für einen konzentrierten Sternenabend im Big Bend und plane Parkzustand, Wüstenvorräte und Rückfahrt vor Einbruch der Dunkelheit."
+  },
+  "standfirst": {
+    "en": "Sotol Vista gives a Big Bend night a clear address and a paved approach. That simplicity is valuable in a vast desert park where fuel, water, road conditions and wildlife matter after the visitor centres have closed. Use the overlook as the destination, not as the first stop in an improvised night drive through the Chisos Mountains.",
+    "de": "Sotol Vista gibt einer Big-Bend-Nacht eine klare Adresse und eine befestigte Zufahrt. Diese Einfachheit ist in einem weitläufigen Wüstenpark wertvoll, wenn Kraftstoff, Wasser, Straßenzustand und Wildtiere nach Schließung der Besucherzentren zählen. Nutze den Aussichtspunkt als Ziel und nicht als ersten Halt einer improvisierten Nachtfahrt durch die Chisos Mountains."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachtungsort"
+      },
+      "value": {
+        "en": "Sotol Vista Overlook",
+        "de": "Sotol Vista Overlook"
+      },
+      "sourceIds": [
+        "nps-sotol",
+        "nps-stargazing"
+      ]
+    },
+    {
+      "label": {
+        "en": "Approach",
+        "de": "Zufahrt"
+      },
+      "value": {
+        "en": "Paved Ross Maxwell Scenic Drive",
+        "de": "Befestigter Ross Maxwell Scenic Drive"
+      },
+      "sourceIds": [
+        "nps-sotol"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before dark",
+        "de": "Vor der Dunkelheit"
+      },
+      "value": {
+        "en": "Fuel, water and tyre check completed",
+        "de": "Kraftstoff, Wasser und Reifen geprüft"
+      },
+      "sourceIds": [
+        "nps-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Final check",
+        "de": "Letzte Prüfung"
+      },
+      "value": {
+        "en": "Park alerts, closures and road conditions",
+        "de": "Parkwarnungen, Sperrungen und Straßenzustand"
+      },
+      "sourceIds": [
+        "nps-conditions"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "pavement-strategy",
+      "kind": "decisions",
+      "heading": {
+        "en": "Pavement is part of the observing strategy",
+        "de": "Die befestigte Straße gehört zur Beobachtungsstrategie"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "A first night in the park",
+            "de": "Eine erste Nacht im Park"
+          },
+          "body": {
+            "en": "Choose Sotol Vista because the National Park Service identifies it for stargazing and describes the access from a major paved road. A known overlook reduces navigation work without pretending that every desert turnout is equivalent.",
+            "de": "Wähle Sotol Vista, weil der National Park Service den Ort für Sternbeobachtung nennt und die Zufahrt über eine wichtige befestigte Straße beschreibt. Ein bekannter Aussichtspunkt verringert Navigationsarbeit, ohne jeden Wüstenhalt als gleichwertig darzustellen."
+          },
+          "sourceIds": [
+            "nps-stargazing",
+            "nps-sotol"
+          ]
+        },
+        {
+          "label": {
+            "en": "A closure or uncomfortable drive",
+            "de": "Eine Sperrung oder unangenehme Fahrt"
+          },
+          "body": {
+            "en": "Use the current NPS information to choose another named location or cancel. A high park score does not justify crossing a closure, taking an unsuitable road or continuing when driver concentration has fallen.",
+            "de": "Nutze die aktuellen NPS-Informationen für einen anderen genannten Ort oder brich ab. Ein hoher Parkwert rechtfertigt weder das Umgehen einer Sperrung noch eine ungeeignete Straße oder die Weiterfahrt bei nachlassender Konzentration."
+          },
+          "sourceIds": [
+            "nps-conditions",
+            "nps-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sotol-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "Give the overlook the whole usable evening",
+        "de": "Dem Aussichtspunkt den gesamten nutzbaren Abend geben"
+      },
+      "introduction": {
+        "en": "The route works because each practical task is completed before the desert becomes difficult to read.",
+        "de": "Die Route funktioniert, weil jede praktische Aufgabe erledigt ist, bevor die Wüste schwer lesbar wird."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "In daylight",
+            "de": "Bei Tageslicht"
+          },
+          "title": {
+            "en": "Fill the margins before entering the night",
+            "de": "Reserven vor Beginn der Nacht auffüllen"
+          },
+          "body": {
+            "en": "Top up fuel, carry more water than the observing session appears to require and inspect the tyres. Read current alerts and note the distance back to the chosen accommodation or campground.",
+            "de": "Tanke, nimm mehr Wasser mit als die Beobachtung scheinbar verlangt und prüfe die Reifen. Lies aktuelle Warnungen und notiere die Entfernung zur gewählten Unterkunft oder zum Campingplatz."
+          },
+          "sourceIds": [
+            "nps-safety",
+            "nps-conditions"
+          ]
+        },
+        {
+          "time": {
+            "en": "At sunset",
+            "de": "Bei Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the overlook before losing colour",
+            "de": "Den Aussichtspunkt kennenlernen, bevor die Farben verschwinden"
+          },
+          "body": {
+            "en": "Park in the established area, identify traffic movement and select a place that does not obstruct other visitors. Let the Chisos skyline become the fixed frame for the session.",
+            "de": "Parke im vorgesehenen Bereich, beobachte Verkehrsbewegungen und wähle einen Platz, der andere Besucher nicht behindert. Die Silhouette der Chisos wird zum festen Rahmen der Sitzung."
+          },
+          "sourceIds": [
+            "nps-sotol"
+          ]
+        },
+        {
+          "time": {
+            "en": "After adaptation",
+            "de": "Nach der Dunkeladaption"
+          },
+          "title": {
+            "en": "Observe without adding another desert leg",
+            "de": "Beobachten ohne weitere Wüstenetappe"
+          },
+          "body": {
+            "en": "Keep white light off, scan slowly and pack while everyone remains alert. Leave cautiously because wildlife and dark roads continue beyond the parking area even when the sky session is over.",
+            "de": "Lass weißes Licht aus, beobachte langsam und packe ein, solange alle aufmerksam sind. Fahre vorsichtig, denn Wildtiere und dunkle Straßen bleiben auch nach Ende der Beobachtung Teil der Route."
+          },
+          "sourceIds": [
+            "nps-stargazing",
+            "nps-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desert-boundary",
+      "kind": "note",
+      "heading": {
+        "en": "The return drive belongs to the safety plan",
+        "de": "Die Rückfahrt gehört zum Sicherheitsplan"
+      },
+      "body": {
+        "en": "Set the end time before dark and name the driver who is rested enough to use it. Big Bend's scale can make a familiar road feel much longer at night. If wildlife appears, slow down and allow it space; if fatigue appears, the observing session has already run too long.",
+        "de": "Lege die Endzeit vor Einbruch der Dunkelheit fest und bestimme eine ausgeruhte Person für die Rückfahrt. Die Größe des Big Bend lässt eine vertraute Straße nachts deutlich länger wirken. Bei Wildtieren wird verlangsamt und Abstand gehalten. Wenn Müdigkeit einsetzt, war die Beobachtung bereits zu lang."
+      },
+      "sourceIds": [
+        "nps-safety",
+        "nps-conditions"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "nps-stargazing",
+    "nps-sotol",
+    "nps-conditions",
+    "nps-safety"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

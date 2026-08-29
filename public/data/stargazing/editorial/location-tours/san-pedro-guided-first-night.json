@@ -1,0 +1,226 @@
+{
+  "version": 1,
+  "id": "san-pedro-guided-first-night",
+  "slug": "san-pedro-guided-first-night",
+  "destinationId": "atacama",
+  "recommendedSiteId": "san-pedro-astronomy-tour-zone",
+  "title": {
+    "en": "A guided first astronomy night from San Pedro",
+    "de": "Eine geführte erste Astronomienacht ab San Pedro"
+  },
+  "seoDescription": {
+    "en": "Organise a first Atacama stargazing evening through a registered San Pedro operator, with protected-area visits and high-altitude travel kept separate.",
+    "de": "Organisiere den ersten Sternenabend in der Atacama über einen registrierten Anbieter in San Pedro und trenne Schutzgebietsbesuche von Reisen in große Höhe."
+  },
+  "standfirst": {
+    "en": "San Pedro de Atacama is the useful base, not a licence to drive onto any dark piece of plateau. For a first night, a registered astronomy excursion provides a known observing area, transport and interpretation while leaving protected lagoons and higher-altitude landscapes to their own daytime plans. Confirm exactly what the operator includes before the pickup.",
+    "de": "San Pedro de Atacama ist die sinnvolle Basis und keine Erlaubnis, jede dunkle Fläche des Hochlands anzufahren. Für die erste Nacht bietet eine registrierte Astronomieexkursion einen bekannten Beobachtungsbereich, Transport und Einordnung. Geschützte Lagunen und höher gelegene Landschaften behalten eigene Tagespläne. Kläre vor der Abholung genau, was der Anbieter einschließt."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "San Pedro de Atacama",
+        "de": "San Pedro de Atacama"
+      },
+      "sourceIds": [
+        "chile-san-pedro"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night format",
+        "de": "Nachtformat"
+      },
+      "value": {
+        "en": "Booked astronomy excursion outside town",
+        "de": "Gebuchte Astronomieexkursion außerhalb des Orts"
+      },
+      "sourceIds": [
+        "chile-stargazing",
+        "chile-three-experiences"
+      ]
+    },
+    {
+      "label": {
+        "en": "Keep separate",
+        "de": "Getrennt halten"
+      },
+      "value": {
+        "en": "Los Flamencos protected-area visits",
+        "de": "Besuche im Schutzgebiet Los Flamencos"
+      },
+      "sourceIds": [
+        "conaf-flamencos"
+      ]
+    },
+    {
+      "label": {
+        "en": "Confirm",
+        "de": "Bestätigen"
+      },
+      "value": {
+        "en": "Pickup, language, duration and weather policy",
+        "de": "Abholung, Sprache, Dauer und Wetterregelung"
+      },
+      "sourceIds": [
+        "chile-stargazing",
+        "chile-three-experiences"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "plateau-pin",
+      "kind": "prose",
+      "heading": {
+        "en": "The dark plateau is not a single public viewpoint",
+        "de": "Das dunkle Hochland ist kein einzelner öffentlicher Aussichtspunkt"
+      },
+      "paragraphs": {
+        "en": [
+          "Tourism information for San Pedro presents stargazing as an organised excursion into the clearer surroundings outside town. That distinction matters. A tour zone describes an operating area used by local providers, not unrestricted public land with a universal parking rule. Ask where the activity meets, whether transport is included and how the operator handles a cloudy night.",
+          "Keep the afternoon light. A long trip to salt flats, lagoons or the higher Andes creates fatigue and introduces separate conservation and access rules. Los Flamencos National Reserve is managed as a protected area with defined sectors and visitor conditions; a daytime entry does not establish night-time astronomy access."
+        ],
+        "de": [
+          "Die Tourismusinformationen für San Pedro beschreiben Sternbeobachtung als organisierte Exkursion in die klarere Umgebung außerhalb des Orts. Diese Unterscheidung zählt. Eine Tourzone bezeichnet ein Arbeitsgebiet lokaler Anbieter und kein frei zugängliches Gelände mit allgemeiner Parkregel. Frage nach Treffpunkt, Transport und dem Umgang mit einer bewölkten Nacht.",
+          "Halte den Nachmittag leicht. Eine lange Fahrt zu Salzflächen, Lagunen oder in die höheren Anden erzeugt Müdigkeit und bringt eigene Schutz- und Zugangsregeln mit sich. Das Los Flamencos National Reserve wird als Schutzgebiet mit festgelegten Sektoren und Besuchsbedingungen verwaltet. Ein Tageszugang begründet keinen nächtlichen Astronomiezugang."
+        ]
+      },
+      "sourceIds": [
+        "chile-san-pedro",
+        "chile-stargazing",
+        "conaf-flamencos"
+      ]
+    },
+    {
+      "id": "operator-questions",
+      "kind": "decisions",
+      "heading": {
+        "en": "Book the explanation, not merely the transport",
+        "de": "Die Einordnung buchen und nicht nur den Transport"
+      },
+      "introduction": {
+        "en": "Two excursions can leave the same town and still offer very different nights.",
+        "de": "Zwei Exkursionen können im selben Ort starten und trotzdem sehr unterschiedliche Nächte bieten."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "You want a first view of the southern sky",
+            "de": "Du möchtest den Südhimmel erstmals kennenlernen"
+          },
+          "body": {
+            "en": "Choose a program that explicitly includes guided naked-eye orientation as well as telescope time. Language and group size affect how much can be explained, so confirm both rather than relying on a generic stargazing label.",
+            "de": "Wähle ein Programm, das ausdrücklich eine geführte Orientierung mit bloßem Auge und Teleskopzeit umfasst. Sprache und Gruppengröße beeinflussen die Tiefe der Erklärung. Bestätige beides, statt dich auf die allgemeine Bezeichnung Stargazing zu verlassen."
+          },
+          "sourceIds": [
+            "chile-stargazing",
+            "chile-three-experiences"
+          ]
+        },
+        {
+          "label": {
+            "en": "You are tired or newly arrived",
+            "de": "Du bist müde oder gerade angekommen"
+          },
+          "body": {
+            "en": "Prefer a shorter, lower-complexity session from San Pedro and postpone high-altitude excursions. Dry air, cold after sunset and travel fatigue can make an ambitious first evening less useful than an early return.",
+            "de": "Bevorzuge eine kürzere, unkomplizierte Sitzung ab San Pedro und verschiebe Fahrten in große Höhe. Trockene Luft, Kälte nach Sonnenuntergang und Reisemüdigkeit können einen ehrgeizigen ersten Abend weniger sinnvoll machen als eine frühe Rückkehr."
+          },
+          "sourceIds": [
+            "chile-san-pedro",
+            "chile-three-experiences"
+          ]
+        },
+        {
+          "label": {
+            "en": "The Moon is bright",
+            "de": "Der Mond ist hell"
+          },
+          "body": {
+            "en": "Ask what the guide will emphasise under that sky. Lunar observing, bright planets and constellation orientation can still support a good session, but they are a different product from a deep-sky night.",
+            "de": "Frage, welche Schwerpunkte der Guide unter diesem Himmel setzt. Mondbeobachtung, helle Planeten und Orientierung an Sternbildern können weiterhin eine gute Sitzung ergeben, sind aber ein anderes Angebot als eine Deep-Sky-Nacht."
+          },
+          "sourceIds": [
+            "chile-stargazing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "san-pedro-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "One quiet afternoon, one defined excursion",
+        "de": "Ein ruhiger Nachmittag und eine klar definierte Exkursion"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Earlier that day",
+            "de": "Früher am Tag"
+          },
+          "title": {
+            "en": "Confirm the message from the operator",
+            "de": "Nachricht des Anbieters bestätigen"
+          },
+          "body": {
+            "en": "Check pickup location, start time, clothing advice and cancellation procedure. Keep the address and contact details offline, and eat before the group assembles unless the booking says otherwise.",
+            "de": "Prüfe Abholort, Startzeit, Kleidungshinweise und Absageverfahren. Speichere Adresse und Kontaktdaten offline und iss vor dem Treffen, sofern die Buchung nichts anderes vorsieht."
+          },
+          "sourceIds": [
+            "chile-stargazing",
+            "chile-three-experiences"
+          ]
+        },
+        {
+          "time": {
+            "en": "During the program",
+            "de": "Während des Programms"
+          },
+          "title": {
+            "en": "Let the guide establish the horizon",
+            "de": "Den Horizont vom Guide erschließen lassen"
+          },
+          "body": {
+            "en": "Begin with the naked-eye sky before queuing at a telescope. The practical value of a local guide lies in connecting that particular date, latitude and season with objects actually above the Atacama horizon.",
+            "de": "Beginne mit dem Himmel für das bloße Auge, bevor du dich am Teleskop anstellst. Der praktische Wert lokaler Führung liegt darin, genaues Datum, Breitengrad und Jahreszeit mit den tatsächlich über dem Atacama-Horizont stehenden Objekten zu verbinden."
+          },
+          "sourceIds": [
+            "chile-stargazing",
+            "chile-three-experiences"
+          ]
+        },
+        {
+          "time": {
+            "en": "After return",
+            "de": "Nach der Rückkehr"
+          },
+          "title": {
+            "en": "End in San Pedro",
+            "de": "In San Pedro enden"
+          },
+          "body": {
+            "en": "Do not convert the return into an independent search for another dark site. Note what you would like to revisit and book a second, more specialised session if the first night reveals a clear interest.",
+            "de": "Verwandle die Rückfahrt nicht in eine eigenständige Suche nach einem weiteren dunklen Ort. Notiere, was du vertiefen möchtest, und buche bei klarem Interesse eine zweite, stärker spezialisierte Sitzung."
+          },
+          "sourceIds": [
+            "chile-san-pedro",
+            "chile-stargazing"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "chile-san-pedro",
+    "chile-stargazing",
+    "chile-three-experiences",
+    "conaf-flamencos"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

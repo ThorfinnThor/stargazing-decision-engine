@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "maunakea-vis-respectful-evening",
+  "slug": "maunakea-vis-respectful-evening",
+  "destinationId": "mauna-kea",
+  "recommendedSiteId": "maunakea-visitor-information-station",
+  "title": {
+    "en": "A respectful evening at the Maunakea VIS",
+    "de": "Ein respektvoller Abend an der Maunakea VIS"
+  },
+  "seoDescription": {
+    "en": "Plan public stargazing at the Maunakea Visitor Information Station while respecting summit night closure, altitude guidance and cultural responsibilities.",
+    "de": "Plane öffentliche Sternbeobachtung an der Maunakea Visitor Information Station und respektiere Gipfelsperrung, Höhenhinweise und kulturelle Verantwortung."
+  },
+  "standfirst": {
+    "en": "The public night destination on Maunakea is the Visitor Information Station at 2,804 metres, not the summit observatory zone. The summit closes to the public at night, and the lower station still sits high enough for altitude symptoms and cold to matter. Arrive with time to assess how everyone feels, follow current operating information and leave before the station closes.",
+    "de": "Das öffentliche Nachtziel am Maunakea ist die Visitor Information Station auf 2.804 Metern und nicht die Observatoriumszone am Gipfel. Der Gipfel ist nachts für die Öffentlichkeit geschlossen. Schon die niedrigere Station liegt hoch genug, dass Höhenbeschwerden und Kälte zählen. Komme früh genug an, prüfe das Befinden aller, folge aktuellen Betriebshinweisen und fahre vor Schließung der Station ab."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Public night site",
+        "de": "Öffentlicher Nachtstandort"
+      },
+      "value": {
+        "en": "Visitor Information Station at 2,804 m",
+        "de": "Visitor Information Station auf 2.804 m"
+      },
+      "sourceIds": [
+        "mk-stargazing",
+        "mk-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Summit",
+        "de": "Gipfel"
+      },
+      "value": {
+        "en": "Closed to public vehicles at night",
+        "de": "Nachts für öffentliche Fahrzeuge geschlossen"
+      },
+      "sourceIds": [
+        "mk-important"
+      ]
+    },
+    {
+      "label": {
+        "en": "Health decision",
+        "de": "Gesundheitsentscheidung"
+      },
+      "value": {
+        "en": "Descend when altitude symptoms appear",
+        "de": "Bei Höhenbeschwerden abfahren"
+      },
+      "sourceIds": [
+        "mk-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before driving",
+        "de": "Vor der Fahrt"
+      },
+      "value": {
+        "en": "Check current VIS, road and weather notices",
+        "de": "Aktuelle VIS-, Straßen- und Wetterhinweise prüfen"
+      },
+      "sourceIds": [
+        "mk-stargazing",
+        "mk-important"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "altitude-choice",
+      "kind": "decisions",
+      "heading": {
+        "en": "The mountain decides through the body as well as the weather",
+        "de": "Der Berg entscheidet durch den Körper ebenso wie durch das Wetter"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Everyone feels normal at the VIS",
+            "de": "Alle fühlen sich an der VIS normal"
+          },
+          "body": {
+            "en": "Stay within the public area, keep the session modest and monitor how the group responds as temperature and darkness change. The station's elevation is already substantial, so a comfortable arrival is not a reason to ignore later symptoms.",
+            "de": "Bleibe im öffentlichen Bereich, halte die Sitzung überschaubar und beobachte, wie die Gruppe auf sinkende Temperatur und Dunkelheit reagiert. Die Station liegt bereits hoch. Eine angenehme Ankunft ist kein Grund, spätere Symptome zu ignorieren."
+          },
+          "sourceIds": [
+            "mk-safety",
+            "mk-stargazing"
+          ]
+        },
+        {
+          "label": {
+            "en": "Headache, nausea, dizziness or unusual breathlessness appears",
+            "de": "Kopfschmerz, Übelkeit, Schwindel oder ungewöhnliche Atemnot treten auf"
+          },
+          "body": {
+            "en": "Stop the visit and descend. Do not wait for a program, better cloud break or another object. The official safety guidance treats descent as the practical response to altitude illness.",
+            "de": "Beende den Besuch und fahre hinunter. Warte weder auf ein Programm noch auf eine bessere Wolkenlücke oder ein weiteres Objekt. Die offiziellen Sicherheitshinweise nennen die Abfahrt als praktische Reaktion auf Höhenkrankheit."
+          },
+          "sourceIds": [
+            "mk-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mauna-meaning",
+      "kind": "prose",
+      "heading": {
+        "en": "Visit a living cultural landscape, not only an observing platform",
+        "de": "Eine lebendige Kulturlandschaft besuchen und nicht nur eine Beobachtungsplattform"
+      },
+      "paragraphs": {
+        "en": [
+          "Maunakea carries deep cultural significance for Native Hawaiians as well as a prominent scientific role. Read the official cultural and heritage material before arrival, follow all signs and remain within areas open to visitors. Respect is visible in small decisions about movement, noise, waste and whether a photograph is worth stepping beyond a boundary.",
+          "The astronomy experience does not become more authentic by pressing toward the summit. Public vehicles must leave the summit area at night, and research facilities are not a backdrop for unauthorised access. The VIS is the correct scale for an independent evening because its public function and limits are explicit."
+        ],
+        "de": [
+          "Maunakea besitzt für Native Hawaiians tiefe kulturelle Bedeutung und zugleich eine herausragende wissenschaftliche Rolle. Lies vor der Ankunft die offiziellen Kultur- und Heritage-Informationen, befolge alle Schilder und bleibe in geöffneten Besucherbereichen. Respekt zeigt sich in kleinen Entscheidungen zu Bewegung, Lautstärke, Abfall und der Frage, ob ein Foto das Überschreiten einer Grenze wert ist.",
+          "Das Astronomieerlebnis wird nicht authentischer, wenn man zum Gipfel drängt. Öffentliche Fahrzeuge müssen die Gipfelregion nachts verlassen, und Forschungseinrichtungen sind keine Kulisse für unautorisierten Zugang. Die VIS ist der richtige Maßstab für einen eigenständigen Abend, weil ihre öffentliche Funktion und ihre Grenzen eindeutig sind."
+        ]
+      },
+      "sourceIds": [
+        "mk-culture",
+        "mk-heritage",
+        "mk-important",
+        "mk-stargazing"
+      ]
+    },
+    {
+      "id": "vis-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "Finish the night before the mountain forces the issue",
+        "de": "Die Nacht beenden, bevor der Berg die Entscheidung erzwingt"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before ascent",
+            "de": "Vor der Auffahrt"
+          },
+          "title": {
+            "en": "Read the current operating page",
+            "de": "Aktuelle Betriebsseite lesen"
+          },
+          "body": {
+            "en": "Check road, weather and VIS information and verify the closing time shown for that date. Carry warm clothing, water and a reliable plan for the descent without assuming that a public program will run.",
+            "de": "Prüfe Straßen-, Wetter- und VIS-Informationen und bestätige die für das Datum genannte Schließzeit. Nimm warme Kleidung, Wasser und einen verlässlichen Abfahrtsplan mit, ohne von einem stattfindenden öffentlichen Programm auszugehen."
+          },
+          "sourceIds": [
+            "mk-stargazing",
+            "mk-important",
+            "mk-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the VIS",
+            "de": "An der VIS"
+          },
+          "title": {
+            "en": "Settle inside the public boundary",
+            "de": "Innerhalb der öffentlichen Grenze ankommen"
+          },
+          "body": {
+            "en": "Allow time for orientation and physical assessment before committing to a long session. Use lights sparingly and follow staff instructions where activities or temporary restrictions are present.",
+            "de": "Nimm dir Zeit für Orientierung und körperliche Einschätzung, bevor du eine lange Sitzung beginnst. Nutze Licht sparsam und folge den Hinweisen des Personals bei Aktivitäten oder temporären Einschränkungen."
+          },
+          "sourceIds": [
+            "mk-stargazing",
+            "mk-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "Well before closure",
+            "de": "Deutlich vor Schließung"
+          },
+          "title": {
+            "en": "Descend while attention remains fresh",
+            "de": "Mit voller Aufmerksamkeit abfahren"
+          },
+          "body": {
+            "en": "Pack completely, check every passenger and start down before the operating limit. Sleeping in a vehicle at the VIS is not an alternative to arranging legal accommodation at lower elevation.",
+            "de": "Packe vollständig ein, prüfe alle Mitfahrenden und beginne die Abfahrt vor der Betriebsgrenze. Schlafen im Fahrzeug an der VIS ersetzt keine legal organisierte Unterkunft in niedrigerer Lage."
+          },
+          "sourceIds": [
+            "mk-important",
+            "mk-safety"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "mk-stargazing",
+    "mk-safety",
+    "mk-important",
+    "mk-culture",
+    "mk-heritage"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
