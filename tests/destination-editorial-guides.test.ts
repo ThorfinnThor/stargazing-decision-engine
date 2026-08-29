@@ -13,7 +13,11 @@ const seed = read<{ destinations: Destination[] }>("generated/intermediate/seed.
 
 test("destination editorial guides meet bilingual depth, uniqueness, and source coverage gates", () => {
   assert.doesNotThrow(() => validateDestinationEditorialGuides(guides, seed.destinations));
-  assert.equal(guides.length, 10);
+  assert.ok(guides.length >= 13);
+  assert.deepEqual(
+    ["death-valley", "great-basin", "mauna-kea"].filter((slug) => !guides.some((guide) => guide.slug === slug)),
+    [],
+  );
   assert.ok(guides.every((guide) => destinationGuideWordCount(guide, "en") >= 650));
   assert.ok(guides.every((guide) => destinationGuideWordCount(guide, "de") >= 650));
   assert.ok(guides.every((guide) => guide.sections.length >= 3 && guide.tour.steps.length >= 4 && guide.sources.length >= 3));
