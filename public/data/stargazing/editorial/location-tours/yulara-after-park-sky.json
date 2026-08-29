@@ -1,0 +1,196 @@
+{
+  "version": 1,
+  "id": "yulara-after-park-sky",
+  "slug": "yulara-after-park-sky",
+  "destinationId": "uluru",
+  "recommendedSiteId": "yulara-authorised-astronomy-zone",
+  "title": {
+    "en": "From Uluṟu at sunset to an authorised Yulara sky",
+    "de": "Sonnenuntergang am Uluṟu, Sterne in Yulara"
+  },
+  "seoDescription": {
+    "en": "Separate an Uluṟu park visit from a respectful stargazing session at a confirmed location outside the park boundary near Yulara.",
+    "de": "Trenne den Besuch von Uluṟu von einer respektvollen Sternenbeobachtung an einem bestätigten Ort außerhalb der Parkgrenze bei Yulara."
+  },
+  "standfirst": {
+    "en": "Uluṟu is Country with opening hours, cultural responsibilities and photography guidance. The national park closes at night, so the astronomy session belongs at a confirmed outside-park location near Yulara or within an authorised experience. Leave the park early enough to cross the boundary calmly, then let restraint shape the image as much as exposure settings do.",
+    "de": "Uluṟu ist Country mit Öffnungszeiten, kultureller Verantwortung und Fotohinweisen. Der Nationalpark schließt nachts. Die Astronomiesitzung gehört deshalb an einen bestätigten Ort außerhalb des Parks bei Yulara oder in ein autorisiertes Angebot. Verlasse den Park früh genug für eine ruhige Grenzüberfahrt und lasse Zurückhaltung das Bild ebenso prägen wie die Belichtung."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Day visit",
+        "de": "Tagesbesuch"
+      },
+      "value": {
+        "en": "Inside Uluṟu-Kata Tjuṯa National Park",
+        "de": "Im Uluṟu-Kata-Tjuṯa-Nationalpark"
+      },
+      "sourceIds": [
+        "uluru-hours",
+        "uluru-itinerary"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night site",
+        "de": "Nachtstandort"
+      },
+      "value": {
+        "en": "Confirmed location outside the park near Yulara",
+        "de": "Bestätigter Ort außerhalb des Parks bei Yulara"
+      },
+      "sourceIds": [
+        "uluru-photo",
+        "uluru-guide"
+      ]
+    },
+    {
+      "label": {
+        "en": "Hard boundary",
+        "de": "Feste Grenze"
+      },
+      "value": {
+        "en": "Exit within the published park hours",
+        "de": "Innerhalb der veröffentlichten Parkzeiten ausfahren"
+      },
+      "sourceIds": [
+        "uluru-hours",
+        "uluru-faq"
+      ]
+    },
+    {
+      "label": {
+        "en": "Conduct",
+        "de": "Verhalten"
+      },
+      "value": {
+        "en": "Follow cultural and photography guidance",
+        "de": "Kultur- und Fotohinweise befolgen"
+      },
+      "sourceIds": [
+        "uluru-respect",
+        "uluru-photo"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "country-first",
+      "kind": "note",
+      "heading": {
+        "en": "A technically possible photograph can still be the wrong one",
+        "de": "Ein technisch mögliches Foto kann trotzdem falsch sein"
+      },
+      "body": {
+        "en": "Read the official cultural and photography guidance before composing around Uluṟu. Remain on marked routes, avoid sensitive details and never use artificial light to turn the rock or surrounding Country into a night set. Respect continues after the Cultural Centre closes and does not depend on whether a boundary is physically guarded.",
+        "de": "Lies die offiziellen Kultur- und Fotohinweise, bevor Uluṟu Teil der Bildgestaltung wird. Bleibe auf markierten Wegen, meide sensible Details und nutze kein künstliches Licht, um Felsen oder umliegendes Country zur Nachtkulisse zu machen. Respekt endet nicht mit der Schließung des Cultural Centre und hängt nicht von einer bewachten Grenze ab."
+      },
+      "sourceIds": [
+        "uluru-respect",
+        "uluru-photo"
+      ],
+      "tone": "context"
+    },
+    {
+      "id": "two-places",
+      "kind": "prose",
+      "heading": {
+        "en": "The sunset stop and the star site are different places",
+        "de": "Sonnenuntergang und Sternenstandort sind verschiedene Orte"
+      },
+      "paragraphs": {
+        "en": [
+          "Check the day's park hours and calculate the drive to the exit, not merely the time of sunset. Kata Tjuṯa needs an earlier departure because it lies farther from the gate. Save the route to Yulara and confirm the outside-park lookout or operator before entering the park, where a weak connection should not force a night decision.",
+          "Beyond the boundary, use only the previously confirmed dune or resort-area location. Park on an established surface, keep clear of the highway and wait for vision to adapt before opening optics. If the access point feels ambiguous, return to accommodation. Darkness does not establish public access to an unnamed track."
+        ],
+        "de": [
+          "Prüfe die Öffnungszeiten des Tages und berechne die Fahrt bis zur Ausfahrt, nicht nur den Sonnenuntergang. Kata Tjuṯa verlangt wegen der größeren Entfernung zum Tor eine frühere Abfahrt. Speichere die Route nach Yulara und bestätige Aussichtspunkt oder Anbieter außerhalb des Parks vor der Einfahrt, damit schwacher Empfang keine Nachtentscheidung erzwingt.",
+          "Nutze hinter der Grenze ausschließlich den zuvor bestätigten Dünen- oder Resortstandort. Parke auf einer vorgesehenen Fläche, halte Abstand zur Straße und warte mit der Optik auf die Dunkeladaption. Wenn der Zugang unklar wirkt, kehre zur Unterkunft zurück. Dunkelheit begründet keinen öffentlichen Zugang zu einer namenlosen Spur."
+        ]
+      },
+      "sourceIds": [
+        "uluru-hours",
+        "uluru-itinerary",
+        "uluru-guide",
+        "uluru-safety"
+      ]
+    },
+    {
+      "id": "uluru-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "Leave the park with time still in hand",
+        "de": "Den Park mit ausreichender Zeitreserve verlassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "While the Cultural Centre is open",
+            "de": "Während das Cultural Centre geöffnet ist"
+          },
+          "title": {
+            "en": "Understand the place before framing it",
+            "de": "Den Ort verstehen, bevor er gerahmt wird"
+          },
+          "body": {
+            "en": "Use the cultural material and marked routes to learn why visitor conduct and restricted photography matter. Pack water and warm layers for the later outside-park session.",
+            "de": "Nutze kulturelle Informationen und markierte Wege, um die Bedeutung von Verhalten und Fotobeschränkungen zu verstehen. Packe Wasser und warme Kleidung für die spätere Sitzung außerhalb des Parks."
+          },
+          "sourceIds": [
+            "uluru-respect",
+            "uluru-photo",
+            "uluru-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before the published closing boundary",
+            "de": "Vor der veröffentlichten Schließzeit"
+          },
+          "title": {
+            "en": "Drive all the way out",
+            "de": "Vollständig aus dem Park fahren"
+          },
+          "body": {
+            "en": "Leave the sunset area with the full distance to the gate included. Do not treat closing time as the moment to start packing or attempt to test a gate after dark.",
+            "de": "Verlasse den Sonnenuntergangsbereich unter Einrechnung der gesamten Strecke zum Tor. Nutze die Schließzeit weder als Beginn des Einpackens noch zum Testen eines Tores nach Einbruch der Dunkelheit."
+          },
+          "sourceIds": [
+            "uluru-hours",
+            "uluru-faq",
+            "uluru-itinerary"
+          ]
+        },
+        {
+          "time": {
+            "en": "After arrival near Yulara",
+            "de": "Nach der Ankunft bei Yulara"
+          },
+          "title": {
+            "en": "Let the confirmed site become dark",
+            "de": "Den bestätigten Ort dunkel werden lassen"
+          },
+          "body": {
+            "en": "Settle within its established footprint, keep lights low and observe without returning toward the park. Finish at the booked accommodation or legal resort campground.",
+            "de": "Komme innerhalb der vorgesehenen Fläche an, halte Licht niedrig und beobachte ohne Rückfahrt in Richtung Park. Beende den Abend an der gebuchten Unterkunft oder dem legalen Resort-Campingplatz."
+          },
+          "sourceIds": [
+            "uluru-photo",
+            "uluru-guide"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "uluru-hours",
+    "uluru-faq",
+    "uluru-photo",
+    "uluru-respect",
+    "uluru-safety",
+    "uluru-itinerary",
+    "uluru-guide"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

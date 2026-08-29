@@ -1,0 +1,210 @@
+{
+  "version": 1,
+  "id": "borrego-palm-campground-night",
+  "slug": "borrego-palm-campground-night",
+  "destinationId": "anza-borrego",
+  "recommendedSiteId": "borrego-palm-canyon-campground",
+  "title": {
+    "en": "A campsite-first night in Anza-Borrego",
+    "de": "Eine Campingplatznacht im Anza-Borrego"
+  },
+  "seoDescription": {
+    "en": "Plan an Anza-Borrego stargazing night from a legal Borrego Palm Canyon campsite, with desert supplies and all driving finished before dark.",
+    "de": "Plane eine Sternennacht im Anza-Borrego von einem legalen Stellplatz im Borrego Palm Canyon aus und beende Versorgung sowie Fahrten vor der Dunkelheit."
+  },
+  "standfirst": {
+    "en": "Anza-Borrego rewards the decision to stop driving. A booked Borrego Palm Canyon campsite gives the night a lawful address, toilets and a known return of only a few steps. Fill water, food and fuel in Borrego Springs, read current closures and let the desert darken around the pitch rather than chasing an unverified backcountry coordinate.",
+    "de": "Im Anza-Borrego lohnt sich die Entscheidung, das Fahren zu beenden. Ein gebuchter Stellplatz im Borrego Palm Canyon gibt der Nacht eine legale Adresse, Toiletten und einen nur wenige Schritte langen Rückweg. Fülle Wasser, Essen und Kraftstoff in Borrego Springs auf, lies aktuelle Sperren und lasse die Wüste um den Platz dunkel werden, statt einer ungeprüften Backcountry-Koordinate zu folgen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Borrego Palm Canyon Campground",
+        "de": "Borrego Palm Canyon Campground"
+      },
+      "sourceIds": [
+        "ab-park",
+        "ab-access"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before camp",
+        "de": "Vor dem Camp"
+      },
+      "value": {
+        "en": "Fill supplies in Borrego Springs",
+        "de": "Vorräte in Borrego Springs auffüllen"
+      },
+      "sourceIds": [
+        "ab-park",
+        "ab-brochure"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night plan",
+        "de": "Nachtplan"
+      },
+      "value": {
+        "en": "Vehicle remains at the assigned site",
+        "de": "Fahrzeug bleibt am zugewiesenen Platz"
+      },
+      "sourceIds": [
+        "ab-access"
+      ]
+    },
+    {
+      "label": {
+        "en": "Recheck",
+        "de": "Erneut prüfen"
+      },
+      "value": {
+        "en": "Current closures and desert conditions",
+        "de": "Aktuelle Sperren und Wüstenbedingungen"
+      },
+      "sourceIds": [
+        "ab-park",
+        "ab-brochure"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "base-before-darkness",
+      "kind": "decisions",
+      "heading": {
+        "en": "Choose the base before the darkness",
+        "de": "Die Basis vor der Dunkelheit wählen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "A legal campsite is confirmed",
+            "de": "Ein legaler Stellplatz ist bestätigt"
+          },
+          "body": {
+            "en": "Make it the final destination. Download the park map, close supply gaps in town and remove any saved unverified desert pin that could tempt a late relocation.",
+            "de": "Mache ihn zum endgültigen Ziel. Lade die Parkkarte herunter, schließe Versorgungslücken im Ort und entferne jede ungeprüfte Wüstenmarkierung, die zu einem späten Wechsel verleiten könnte."
+          },
+          "sourceIds": [
+            "ab-park",
+            "ab-brochure",
+            "ab-access"
+          ]
+        },
+        {
+          "label": {
+            "en": "Wind, closure or heat makes the site unsuitable",
+            "de": "Wind, Sperrung oder Hitze machen den Ort ungeeignet"
+          },
+          "body": {
+            "en": "Change the booking or remain indoors. Do not use rougher roads to escape a problem that already affects the desert, and never let a high score replace the current park decision.",
+            "de": "Ändere die Buchung oder bleibe im Schutzraum. Nutze keine raueren Straßen, um einem Problem zu entkommen, das bereits die Wüste betrifft, und ersetze die aktuelle Parkentscheidung niemals durch einen hohen Wert."
+          },
+          "sourceIds": [
+            "ab-park",
+            "ab-brochure"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pitch-reading",
+      "kind": "prose",
+      "heading": {
+        "en": "Read the assigned ground before the shadows join",
+        "de": "Den zugewiesenen Boden lesen, bevor die Schatten kommen"
+      },
+      "paragraphs": {
+        "en": [
+          "Check in, locate toilets and inspect the pitch for uneven ground, neighbouring tents and the direction vehicle lights would face. Choose a compact observing area inside the site boundary. Set the tent, chairs and optics while every trip hazard is visible, then complete cooking and other bright tasks.",
+          "Dust and wind favour simple equipment. Begin with naked-eye orientation and binoculars rather than opening cases across the campsite. Dim warm screens, keep light directed down and preserve the quiet of people who may be sleeping nearby. The campground is a shared base, not a private observatory field."
+        ],
+        "de": [
+          "Melde dich an, finde die Toiletten und prüfe den Stellplatz auf Unebenheiten, Nachbarzelte und die Richtung möglicher Fahrzeuglichter. Wähle einen kompakten Beobachtungsbereich innerhalb der Platzgrenze. Stelle Zelt, Stühle und Optik auf, solange Stolperstellen sichtbar sind, und erledige Kochen sowie andere helle Aufgaben.",
+          "Staub und Wind sprechen für einfache Ausrüstung. Beginne mit Orientierung durch bloßes Auge und Fernglas, statt Koffer über den Platz zu verteilen. Dimme warme Bildschirme, richte Licht nach unten und wahre die Ruhe schlafender Nachbarn. Der Campingplatz ist eine gemeinsame Basis und kein privates Observatoriumsfeld."
+        ]
+      },
+      "sourceIds": [
+        "ab-access",
+        "ab-darksky",
+        "ab-brochure"
+      ]
+    },
+    {
+      "id": "parked-night",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the car cool with the desert",
+        "de": "Das Auto mit der Wüste abkühlen lassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Finish every vehicle task",
+            "de": "Jede Fahrzeugaufgabe beenden"
+          },
+          "body": {
+            "en": "Park correctly, unload once, secure food and place water within reach. Identify the few-step route back to shelter before dark adaptation begins.",
+            "de": "Parke korrekt, lade einmal aus, sichere Lebensmittel und stelle Wasser griffbereit. Erkenne den kurzen Rückweg zum Schutzraum vor Beginn der Dunkeladaption."
+          },
+          "sourceIds": [
+            "ab-access",
+            "ab-park"
+          ]
+        },
+        {
+          "time": {
+            "en": "After twilight",
+            "de": "Nach der Dämmerung"
+          },
+          "title": {
+            "en": "Observe without narrowing the night too soon",
+            "de": "Beobachten, ohne die Nacht zu früh einzuengen"
+          },
+          "body": {
+            "en": "Give the broad sky time before using a telescope. A fixed chair and binocular sweep reveal more than repeated walks around the campground with a screen.",
+            "de": "Gib dem weiten Himmel Zeit, bevor ein Teleskop eingesetzt wird. Ein fester Stuhl und Fernglasrunden zeigen mehr als wiederholte Wege mit Bildschirm über den Campingplatz."
+          },
+          "sourceIds": [
+            "ab-darksky"
+          ]
+        },
+        {
+          "time": {
+            "en": "When conditions change",
+            "de": "Wenn sich Bedingungen ändern"
+          },
+          "title": {
+            "en": "Move into shelter, not through the park",
+            "de": "In den Schutzraum wechseln, nicht durch den Park"
+          },
+          "body": {
+            "en": "Secure optics against dust and enter the tent or vehicle. Wind or wildlife discomfort is a reason to stop, not to seek another night location.",
+            "de": "Sichere Optik gegen Staub und gehe ins Zelt oder Fahrzeug. Wind oder Unbehagen wegen Wildtieren sind Gründe zum Beenden und nicht zur Suche nach einem anderen Nachtort."
+          },
+          "sourceIds": [
+            "ab-access",
+            "ab-brochure"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "ab-park",
+    "ab-access",
+    "ab-brochure",
+    "ab-darksky"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

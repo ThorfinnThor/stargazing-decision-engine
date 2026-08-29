@@ -48,3 +48,28 @@ The next ten tours extend the same source standard into new access models withou
 8. Mesquite Flat separates a night visit from camping and makes heat, flooding, and road conditions decisive.
 9. Maunakea directs public night observing to the Visitor Information Station while respecting summit closure, altitude, and cultural responsibilities.
 10. Mather Overlook pairs seasonal mountain access with a lower-elevation fallback and a direct descent.
+
+## Third collection
+
+The third collection adds twenty nights whose usefulness depends on a specific access decision rather than darkness alone:
+
+1. Canyonlands keeps the session on the paved Island in the Sky mesa and treats cliff edges and the descent as part of the plan.
+2. Sutton Bank distinguishes an independent visit to the Star Hub from a place on a guided North York Moors event.
+3. Hortobágy uses a current guided fishpond walk as the legal and ecological framework for the night.
+4. Zselic builds the visit around a confirmed public observatory programme instead of an unverified forest track.
+5. Witsand makes a reserve stay, staff-approved observing surface, and nearby bed the foundation of the session.
+6. Al Wathba remains within current visitor hours and authorised surfaces around protected fossil-dune formations.
+7. Frenchman Valley Campground resolves the Grasslands night at a booked pitch without turning the backcountry into overflow.
+8. ASTROLab separates Mont-Mégantic's public programme from independent access to the summit research observatory.
+9. Natural Bridges keeps observing within the established campground and leaves unlit monument roads for daylight.
+10. Piñon Flats uses a booked Great Sand Dunes campsite without making the dune field a night route.
+11. McDonald Observatory treats the Star Party ticket as an appointment and the research roads as closed working space.
+12. Borrego Palm Canyon keeps the Anza-Borrego session at the assigned campground rather than searching desert pullouts.
+13. Usk Reservoir makes one compact public dark-sky site the whole Brecon Beacons evening.
+14. Vogelsang combines a named Eifel observing point with current protected-area and facility rules.
+15. Stonehaugh uses a single Kielder venue whose event and independent-access conditions are checked separately.
+16. Wimbleball makes Exmoor's weather and named Dark Sky Hub more important than collecting remote moorland stops.
+17. Yulara supplies the lawful overnight base after Uluru's national-park visitor window closes.
+18. Kitt Peak pairs a booked public programme with one careful summit descent and no photographic road stops.
+19. Mamalluca turns an Elqui Valley reputation into a programme with language, check-in, transport, and a known return.
+20. Camp Blackman lets the Warrumbungle vehicle remain parked while Siding Spring stays a separate daylight visit.

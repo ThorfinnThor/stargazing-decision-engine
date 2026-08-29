@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "id": "astrolab-program-night",
+  "slug": "astrolab-program-night",
+  "destinationId": "mont-megantic",
+  "recommendedSiteId": "mont-megantic-astrolab",
+  "title": {
+    "en": "A programmed astronomy night at ASTROLab",
+    "de": "Eine programmierte Astronomienacht am ASTROLab"
+  },
+  "seoDescription": {
+    "en": "Build a Mont-Mégantic night around the current ASTROLab programme, transport and park access rather than assuming public observatory entry.",
+    "de": "Plane eine Mont-Mégantic-Nacht rund um aktuelles ASTROLab-Programm, Transport und Parkzugang statt öffentlichen Observatoriumszugang vorauszusetzen."
+  },
+  "standfirst": {
+    "en": "Mont-Mégantic combines a national park, an astronomy interpretation centre and a working summit observatory. Those elements do not share one access rule. A public night begins with the ASTROLab programme currently on sale, including its meeting point and transport. The research observatory remains a controlled facility, even when its dome is visible from the route.",
+    "de": "Mont-Mégantic verbindet Nationalpark, astronomisches Besucherzentrum und aktives Gipfelobservatorium. Diese Elemente teilen keine einzige Zugangsregel. Eine öffentliche Nacht beginnt mit dem aktuell angebotenen ASTROLab-Programm samt Treffpunkt und Transport. Das Forschungsobservatorium bleibt eine kontrollierte Einrichtung, auch wenn seine Kuppel von der Route sichtbar ist."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Public format",
+        "de": "Öffentliches Format"
+      },
+      "value": {
+        "en": "Current ASTROLab night programme",
+        "de": "Aktuelles ASTROLab-Nachtprogramm"
+      },
+      "sourceIds": [
+        "mm-program",
+        "mm-guide"
+      ]
+    },
+    {
+      "label": {
+        "en": "Research site",
+        "de": "Forschungsort"
+      },
+      "value": {
+        "en": "Separate controlled summit observatory",
+        "de": "Separates kontrolliertes Gipfelobservatorium"
+      },
+      "sourceIds": [
+        "mm-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Confirm",
+        "de": "Bestätigen"
+      },
+      "value": {
+        "en": "Ticket, meeting point and transport",
+        "de": "Ticket, Treffpunkt und Transport"
+      },
+      "sourceIds": [
+        "mm-program"
+      ]
+    },
+    {
+      "label": {
+        "en": "Context",
+        "de": "Kontext"
+      },
+      "value": {
+        "en": "International Dark Sky Reserve",
+        "de": "International Dark Sky Reserve"
+      },
+      "sourceIds": [
+        "mm-reserve"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "three-institutions",
+      "kind": "note",
+      "heading": {
+        "en": "The dome, park and programme are not interchangeable",
+        "de": "Kuppel, Park und Programm sind nicht austauschbar"
+      },
+      "body": {
+        "en": "Read the ticket as the authority for public night access. It defines where visitors meet, which facilities are included and how the mountain is reached. A park admission or daytime view of the summit does not grant independent night entry to the research observatory.",
+        "de": "Lies das Ticket als maßgebliche Grundlage für öffentlichen Nachtzugang. Es definiert Treffpunkt, eingeschlossene Einrichtungen und Bergtransport. Parkeintritt oder Tagesblick zum Gipfel gewähren keinen eigenständigen Nachtzugang zum Forschungsobservatorium. Prüfe außerdem, an welchem Eingang die Gruppe tatsächlich zusammenkommt und ob die Rückfahrt im Programm enthalten ist. Diese Einzelheiten entscheiden darüber, wo das Fahrzeug bleibt und wie die Nacht endet. Eine gespeicherte Bestätigung verhindert, dass fehlender Empfang am Berg die Zuordnung erschwert."
+      },
+      "sourceIds": [
+        "mm-park",
+        "mm-program",
+        "mm-guide"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "programme-match",
+      "kind": "decisions",
+      "heading": {
+        "en": "Match the group to the published evening",
+        "de": "Die Gruppe dem veröffentlichten Abend zuordnen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "The current programme and language fit",
+            "de": "Aktuelles Programm und Sprache passen"
+          },
+          "body": {
+            "en": "Book it and follow the confirmation for arrival, duration, clothing and transport. Seasonal programmes change, so an older itinerary cannot establish the current sequence.",
+            "de": "Buche es und folge der Bestätigung zu Ankunft, Dauer, Kleidung und Transport. Saisonale Programme ändern sich, weshalb ein älterer Reiseplan die aktuelle Abfolge nicht festlegt."
+          },
+          "sourceIds": [
+            "mm-program",
+            "mm-guide"
+          ]
+        },
+        {
+          "label": {
+            "en": "Cloud or programme availability is uncertain",
+            "de": "Wolken oder Programmverfügbarkeit sind unsicher"
+          },
+          "body": {
+            "en": "Decide whether the interpretive content alone justifies the visit and use the operator's current policy. Do not convert a cancelled ticket into an independent summit drive.",
+            "de": "Entscheide, ob die Vermittlungsinhalte allein den Besuch rechtfertigen, und nutze die aktuelle Regelung des Anbieters. Verwandle ein storniertes Ticket nicht in eine eigenständige Gipfelfahrt."
+          },
+          "sourceIds": [
+            "mm-program",
+            "mm-park"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "astrolab-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the programme carry the mountain logistics",
+        "de": "Das Programm trägt die Berglogistik"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before departure",
+            "de": "Vor der Abfahrt"
+          },
+          "title": {
+            "en": "Check the exact meeting instruction",
+            "de": "Genaue Treffanweisung prüfen"
+          },
+          "body": {
+            "en": "Save the booking, park notices and transport details offline. Dress for the mountain and arrive without needing to solve food or equipment tasks at check-in.",
+            "de": "Speichere Buchung, Parkhinweise und Transportdetails offline. Kleide dich für den Berg und komme an, ohne beim Check-in noch Essen oder Ausrüstung klären zu müssen."
+          },
+          "sourceIds": [
+            "mm-program",
+            "mm-park"
+          ]
+        },
+        {
+          "time": {
+            "en": "During interpretation",
+            "de": "Während der Vermittlung"
+          },
+          "title": {
+            "en": "Connect reserve protection with the sky",
+            "de": "Reservatsschutz mit dem Himmel verbinden"
+          },
+          "body": {
+            "en": "Use the guide and ASTROLab material before concentrating on individual telescope views. Light-control measures make sense when the wider reserve is understood.",
+            "de": "Nutze Guide und ASTROLab-Inhalte, bevor einzelne Teleskopblicke dominieren. Lichtschutzmaßnahmen werden verständlich, wenn das größere Reservat bekannt ist."
+          },
+          "sourceIds": [
+            "mm-guide",
+            "mm-reserve"
+          ]
+        },
+        {
+          "time": {
+            "en": "At programme end",
+            "de": "Am Programmende"
+          },
+          "title": {
+            "en": "Return through the official arrangement",
+            "de": "Über die offizielle Regelung zurückkehren"
+          },
+          "body": {
+            "en": "Follow staff transport and departure instructions. Leave personal summit exploration and another observing site out of the night.",
+            "de": "Folge den Transport- und Abfahrthinweisen des Personals. Verzichte in dieser Nacht auf eigene Gipfelerkundung und einen weiteren Beobachtungsort."
+          },
+          "sourceIds": [
+            "mm-program",
+            "mm-park"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "mm-park",
+    "mm-program",
+    "mm-guide",
+    "mm-reserve"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "id": "usk-reservoir-compact-night",
+  "slug": "usk-reservoir-compact-night",
+  "destinationId": "brecon-beacons",
+  "recommendedSiteId": "usk-reservoir-dark-sky-site",
+  "title": {
+    "en": "A compact dark-sky evening at Usk Reservoir",
+    "de": "Ein kompakter Dark-Sky-Abend am Usk Reservoir"
+  },
+  "seoDescription": {
+    "en": "Use the official Usk Reservoir dark-sky site with its narrow approach, mountain weather and public hard surface understood before sunset.",
+    "de": "Nutze den offiziellen Dark-Sky-Standort am Usk Reservoir und kläre schmale Zufahrt, Bergwetter und öffentliche befestigte Fläche vor Sonnenuntergang."
+  },
+  "standfirst": {
+    "en": "Usk Reservoir is useful because it turns a broad Welsh dark-sky reserve into a named public location. The hills screen light, but the narrow approach and exposed weather need more attention than the darkness itself. Save the exact site, reach the signed car park in daylight and keep the observing footprint on the hard surface away from water and operational infrastructure.",
+    "de": "Der Usk Reservoir ist nützlich, weil er aus einem weiten walisischen Dark-Sky-Reservat einen benannten öffentlichen Standort macht. Die Hügel schirmen Licht ab, doch schmale Zufahrt und exponiertes Wetter verlangen mehr Aufmerksamkeit als die Dunkelheit selbst. Speichere den exakten Ort, erreiche den ausgeschilderten Parkplatz bei Tageslicht und halte die Beobachtung auf der befestigten Fläche fern von Wasser und Betriebsanlagen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Official site",
+        "de": "Offizieller Ort"
+      },
+      "value": {
+        "en": "Usk Reservoir dark-sky site",
+        "de": "Dark-Sky-Standort Usk Reservoir"
+      },
+      "sourceIds": [
+        "bb-places",
+        "bb-sky"
+      ]
+    },
+    {
+      "label": {
+        "en": "Approach",
+        "de": "Zufahrt"
+      },
+      "value": {
+        "en": "Narrow rural road from Trecastle",
+        "de": "Schmale Landstraße ab Trecastle"
+      },
+      "sourceIds": [
+        "bb-places"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observe from",
+        "de": "Beobachten von"
+      },
+      "value": {
+        "en": "Public hard surface",
+        "de": "Öffentlicher befestigter Untergrund"
+      },
+      "sourceIds": [
+        "bb-places"
+      ]
+    },
+    {
+      "label": {
+        "en": "Deciding factor",
+        "de": "Entscheidender Faktor"
+      },
+      "value": {
+        "en": "Current mountain weather",
+        "de": "Aktuelles Bergwetter"
+      },
+      "sourceIds": [
+        "bb-safety"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "named-baseline",
+      "kind": "prose",
+      "heading": {
+        "en": "Use the named site, not the reserve pin",
+        "de": "Den benannten Ort statt der Reservatsmarkierung nutzen"
+      },
+      "paragraphs": {
+        "en": [
+          "Save the official Usk description and route, then identify one researched lower fallback. The reserve coordinate is too broad for navigation and says nothing about parking or safe footing. On the final approach from Trecastle, allow time to yield and never block gates or operational access.",
+          "At the car park, read posted restrictions and identify the exit while the road remains visible. Use the hills' light shielding from the public surface. There is no need to move toward a water edge or infrastructure for a wider view, and a dramatic foreground is not worth leaving the known area."
+        ],
+        "de": [
+          "Speichere die offizielle Beschreibung und Route zum Usk und bestimme eine geprüfte, tiefer gelegene Alternative. Die Reservatskoordinate ist für Navigation zu breit und sagt nichts über Parkplatz oder sicheren Untergrund. Plane auf der letzten Zufahrt ab Trecastle Zeit zum Ausweichen ein und blockiere weder Tore noch Betriebszufahrten.",
+          "Lies am Parkplatz veröffentlichte Einschränkungen und erkenne die Ausfahrt, solange die Straße sichtbar ist. Nutze die Lichtabschirmung der Hügel von der öffentlichen Fläche. Für einen weiteren Blick musst du dich weder dem Wasser noch Anlagen nähern. Ein dramatischer Vordergrund rechtfertigt das Verlassen des bekannten Bereichs nicht."
+        ]
+      },
+      "sourceIds": [
+        "bb-places",
+        "bb-sky",
+        "bb-safety"
+      ]
+    },
+    {
+      "id": "mountain-window",
+      "kind": "decisions",
+      "heading": {
+        "en": "Weather decides how short the final road should be",
+        "de": "Das Wetter bestimmt, wie kurz die letzte Straße sein darf"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Dry road, manageable wind and clear retreat",
+            "de": "Trockene Straße, mäßiger Wind und klare Rückfahrt"
+          },
+          "body": {
+            "en": "Continue to Usk in daylight and make it the only site. Set a departure time that preserves alertness for the narrow return.",
+            "de": "Fahre bei Tageslicht zum Usk und mache ihn zum einzigen Standort. Lege eine Abfahrtszeit fest, die Aufmerksamkeit für die schmale Rückfahrt bewahrt."
+          },
+          "sourceIds": [
+            "bb-places",
+            "bb-safety"
+          ]
+        },
+        {
+          "label": {
+            "en": "Fog, rain, ice or strong wind",
+            "de": "Nebel, Regen, Eis oder starker Wind"
+          },
+          "body": {
+            "en": "Use the lower confirmed fallback or cancel. Do not wait until the reservoir road has become the hardest part of the evening.",
+            "de": "Nutze die tiefer gelegene bestätigte Alternative oder sage ab. Warte nicht, bis die Reservoirstraße zum schwierigsten Teil des Abends geworden ist."
+          },
+          "sourceIds": [
+            "bb-safety",
+            "bb-places"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "usk-sequence",
+      "kind": "schedule",
+      "heading": {
+        "en": "Keep arrival and departure reversible",
+        "de": "Ankunft und Abfahrt umkehrbar halten"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Remaining daylight",
+            "de": "Verbleibendes Tageslicht"
+          },
+          "title": {
+            "en": "Read signs, surface and exit",
+            "de": "Schilder, Untergrund und Ausfahrt lesen"
+          },
+          "body": {
+            "en": "Park legally, inspect the stable footprint and keep gates clear. Place only the equipment that can be packed without bright light.",
+            "de": "Parke legal, prüfe die stabile Fläche und halte Tore frei. Stelle nur Ausrüstung auf, die ohne helles Licht eingepackt werden kann."
+          },
+          "sourceIds": [
+            "bb-places"
+          ]
+        },
+        {
+          "time": {
+            "en": "During adaptation",
+            "de": "Während der Dunkeladaption"
+          },
+          "title": {
+            "en": "Let the hills provide the shielding",
+            "de": "Die Hügel abschirmen lassen"
+          },
+          "body": {
+            "en": "Keep screens low, begin with naked-eye orientation and share the public surface. Stay away from water edges and operational equipment.",
+            "de": "Halte Bildschirme niedrig, beginne mit bloßem Auge und teile die öffentliche Fläche. Bleibe fern von Wasserkanten und Betriebsanlagen."
+          },
+          "sourceIds": [
+            "bb-sky",
+            "bb-places"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before fog or fatigue deepens",
+            "de": "Bevor Nebel oder Müdigkeit zunehmen"
+          },
+          "title": {
+            "en": "Reverse the daylight approach",
+            "de": "Die Tageszufahrt umkehren"
+          },
+          "body": {
+            "en": "Pack every small item, warm up and leave on the known road. Use full legal vehicle lighting once the car enters public traffic.",
+            "de": "Packe jedes Kleinteil ein, wärme dich auf und fahre auf der bekannten Straße zurück. Nutze im öffentlichen Verkehr die vollständige vorgeschriebene Fahrzeugbeleuchtung."
+          },
+          "sourceIds": [
+            "bb-safety"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "bb-places",
+    "bb-sky",
+    "bb-safety",
+    "bb-darksky"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

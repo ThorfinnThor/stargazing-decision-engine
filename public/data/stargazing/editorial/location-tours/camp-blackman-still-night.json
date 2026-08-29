@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "id": "camp-blackman-still-night",
+  "slug": "camp-blackman-still-night",
+  "destinationId": "warrumbungle",
+  "recommendedSiteId": "camp-blackman",
+  "title": {
+    "en": "A still night from Camp Blackman",
+    "de": "Eine ruhige Nacht vom Camp Blackman"
+  },
+  "seoDescription": {
+    "en": "Use a booked Camp Blackman pitch as the legal observing base in Warrumbungle, paired with a separate daylight visit to Siding Spring.",
+    "de": "Nutze einen gebuchten Stellplatz im Camp Blackman als legale Beobachtungsbasis im Warrumbungle und trenne davon einen Tagesbesuch in Siding Spring."
+  },
+  "standfirst": {
+    "en": "Warrumbungle's strongest observing platform is not a secret lookout. It is a lawful campsite where the vehicle can stop moving, camp tasks can finish before dark and the return drive can wait until morning. Camp Blackman supplies that base. Siding Spring belongs to daylight visitor hours and should deepen the astronomy context rather than become an after-hours destination.",
+    "de": "Die stärkste Beobachtungsplattform im Warrumbungle ist kein geheimer Aussichtspunkt. Es ist ein legaler Campingplatz, an dem das Fahrzeug stehen bleibt, Aufgaben vor der Dunkelheit erledigt werden und die Rückfahrt bis morgens warten kann. Camp Blackman bietet diese Basis. Siding Spring gehört in die Tageszeiten und vertieft den astronomischen Kontext, statt zum Ziel nach Betriebsschluss zu werden."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night base",
+        "de": "Nachtbasis"
+      },
+      "value": {
+        "en": "Booked Camp Blackman pitch",
+        "de": "Gebuchter Stellplatz im Camp Blackman"
+      },
+      "sourceIds": [
+        "warr-camp",
+        "warr-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Water",
+        "de": "Wasser"
+      },
+      "value": {
+        "en": "Bring drinking and cooking water",
+        "de": "Trink- und Kochwasser mitbringen"
+      },
+      "sourceIds": [
+        "warr-camp",
+        "warr-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Research visit",
+        "de": "Forschungsbesuch"
+      },
+      "value": {
+        "en": "Siding Spring during public daytime access",
+        "de": "Siding Spring während öffentlicher Tageszeiten"
+      },
+      "sourceIds": [
+        "warr-siding",
+        "warr-starry-story"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night movement",
+        "de": "Nachtbewegung"
+      },
+      "value": {
+        "en": "Observe inside the assigned campsite",
+        "de": "Innerhalb des zugewiesenen Campingplatzes beobachten"
+      },
+      "sourceIds": [
+        "warr-camp",
+        "warr-dark-sky"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "camp-solves-return",
+      "kind": "prose",
+      "heading": {
+        "en": "The booked pitch solves the return drive",
+        "de": "Der gebuchte Stellplatz löst die Rückfahrt"
+      },
+      "paragraphs": {
+        "en": [
+          "Confirm the campground booking, park alerts and fire conditions before entering the park. Download the map and carry all drinking and cooking water, food and bedding for a night that may become much colder than the afternoon. A lawful base matters more than squeezing another viewpoint into the itinerary.",
+          "Reach Camp Blackman in daylight, locate amenities and inspect the assigned pitch for branches, uneven ground and neighbouring tents. Place chairs and compact optics where they do not invade another site or a vehicle lane. Once cooking and bright tasks are complete, park the car for the night."
+        ],
+        "de": [
+          "Bestätige Campingplatzbuchung, Parkwarnungen und Feuerlage vor der Einfahrt. Lade die Karte herunter und bring Trink- und Kochwasser, Essen und Bettzeug für eine Nacht mit, die deutlich kälter als der Nachmittag werden kann. Eine legale Basis zählt mehr als ein zusätzlicher Aussichtspunkt im Reiseplan.",
+          "Erreiche Camp Blackman bei Tageslicht, finde die Einrichtungen und prüfe den zugewiesenen Platz auf Äste, Unebenheiten und benachbarte Zelte. Stelle Stühle und kompakte Optik so auf, dass weder andere Plätze noch Fahrspuren belegt werden. Nach Kochen und hellen Aufgaben bleibt das Fahrzeug bis morgens stehen."
+        ]
+      },
+      "sourceIds": [
+        "warr-camp",
+        "warr-visitor",
+        "warr-park"
+      ]
+    },
+    {
+      "id": "day-science-night-camp",
+      "kind": "decisions",
+      "heading": {
+        "en": "Science by day, independent sky from camp",
+        "de": "Wissenschaft am Tag, eigenständiger Himmel vom Camp"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Siding Spring is open to visitors",
+            "de": "Siding Spring ist für Besucher geöffnet"
+          },
+          "body": {
+            "en": "Use the current public information and finish the visit within its conditions. Learn about the research instruments, then return to camp while orientation is still easy. The summit is not the night foreground.",
+            "de": "Nutze die aktuellen Besucherinformationen und beende den Besuch innerhalb der Bedingungen. Lerne die Forschungsinstrumente kennen und kehre zum Camp zurück, solange die Orientierung einfach ist. Der Gipfel ist nicht der nächtliche Vordergrund."
+          },
+          "sourceIds": [
+            "warr-siding",
+            "warr-starry-story"
+          ]
+        },
+        {
+          "label": {
+            "en": "Alerts, fire or weather undermine the camp night",
+            "de": "Warnungen, Feuer oder Wetter gefährden die Campnacht"
+          },
+          "body": {
+            "en": "Follow the park decision and alter or cancel the stay. Dark-sky status does not reduce fire, branch, heat, frost or access risk, and no roadside alternative should be invented after arrival.",
+            "de": "Folge der Entscheidung des Parks und ändere oder storniere den Aufenthalt. Dark-Sky-Status mindert weder Feuer-, Ast-, Hitze-, Frost- noch Zugangsrisiken. Nach der Ankunft wird keine Straßenalternative erfunden."
+          },
+          "sourceIds": [
+            "warr-visitor",
+            "warr-park"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blackman-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "Make the campsite still before making it dark",
+        "de": "Den Campingplatz ruhig machen, bevor er dunkel wird"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Finish water, food and walking lines",
+            "de": "Wasser, Essen und Laufwege klären"
+          },
+          "body": {
+            "en": "Prepare the meal, secure food, set warm layers and identify the short path between equipment, tent and facilities. Remove every avoidable reason for bright light later.",
+            "de": "Bereite Essen vor, sichere Lebensmittel, lege warme Kleidung bereit und erkenne den kurzen Weg zwischen Ausrüstung, Zelt und Einrichtungen. Beseitige jeden vermeidbaren Grund für helles Licht später."
+          },
+          "sourceIds": [
+            "warr-camp",
+            "warr-visitor"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the camp settles",
+            "de": "Wenn das Camp ruhig wird"
+          },
+          "title": {
+            "en": "Start broad and simple",
+            "de": "Breit und einfach beginnen"
+          },
+          "body": {
+            "en": "Allow dark adaptation, use the naked-eye sky and then binoculars. Shield necessary low light below an awning or toward the ground and respect sleeping neighbours.",
+            "de": "Beginne mit Dunkeladaption, bloßem Auge und anschließend Fernglas. Schirme notwendiges schwaches Licht unter einem Vordach oder zum Boden ab und respektiere schlafende Nachbarn."
+          },
+          "sourceIds": [
+            "warr-dark-sky",
+            "warr-camp"
+          ]
+        },
+        {
+          "time": {
+            "en": "When cold or wind dominates",
+            "de": "Wenn Kälte oder Wind bestimmen"
+          },
+          "title": {
+            "en": "Pack and sleep where the booking says",
+            "de": "Einpacken und am gebuchten Platz schlafen"
+          },
+          "body": {
+            "en": "Secure optics against moisture and dust, count accessories and enter the tent or vehicle without relocating through the park. Driving resumes after rest and daylight.",
+            "de": "Schütze Optik vor Feuchtigkeit und Staub, zähle Zubehör und gehe ins Zelt oder Fahrzeug, ohne den Standort im Park zu wechseln. Die Fahrt beginnt nach Ruhe und Tageslicht erneut."
+          },
+          "sourceIds": [
+            "warr-camp",
+            "warr-visitor"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "warr-park",
+    "warr-visitor",
+    "warr-camp",
+    "warr-dark-sky",
+    "warr-starry-story",
+    "warr-siding"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

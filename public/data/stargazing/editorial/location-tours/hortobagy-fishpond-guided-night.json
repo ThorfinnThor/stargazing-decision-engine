@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "id": "hortobagy-fishpond-guided-night",
+  "slug": "hortobagy-fishpond-guided-night",
+  "destinationId": "hortobagy",
+  "recommendedSiteId": "hortobagy-fishpond-night-walk",
+  "title": {
+    "en": "A guided night walk in Hortobágy",
+    "de": "Eine geführte Nachtwanderung im Hortobágy"
+  },
+  "seoDescription": {
+    "en": "Use a current Hortobágy night event for legitimate access to the fishpond landscape while keeping protected-area rules central.",
+    "de": "Nutze eine aktuelle Hortobágy-Nachtveranstaltung für legitimen Zugang zur Fischteichlandschaft und stelle Schutzgebietsregeln in den Mittelpunkt."
+  },
+  "standfirst": {
+    "en": "Hortobágy is a living protected landscape, not an empty plain available after closing. A current park night walk or astronomy event supplies the correct meeting place, route and host. Book the actual date, bring only compact equipment and remain with the group. Independent movement around fishponds and wildlife habitat is not part of the ticket.",
+    "de": "Hortobágy ist eine lebendige Schutzlandschaft und keine leere Ebene nach Betriebsschluss. Eine aktuelle Nachtwanderung oder Astronomieveranstaltung des Parks liefert Treffpunkt, Route und Gastgeber. Buche das konkrete Datum, bring nur kompakte Ausrüstung mit und bleibe bei der Gruppe. Eigenständige Bewegung an Fischteichen und in Wildtierlebensräumen gehört nicht zum Ticket."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Format",
+        "de": "Format"
+      },
+      "value": {
+        "en": "Current park-led night walk or astronomy event",
+        "de": "Aktuelle parkgeführte Nachtwanderung oder Astronomieveranstaltung"
+      },
+      "sourceIds": [
+        "hort-event",
+        "hort-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Landscape",
+        "de": "Landschaft"
+      },
+      "value": {
+        "en": "Protected fishpond and steppe habitat",
+        "de": "Geschützter Fischteich- und Steppenlebensraum"
+      },
+      "sourceIds": [
+        "hort-world",
+        "hort-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Access",
+        "de": "Zugang"
+      },
+      "value": {
+        "en": "Only the published meeting route",
+        "de": "Nur die veröffentlichte Treffroute"
+      },
+      "sourceIds": [
+        "hort-event"
+      ]
+    },
+    {
+      "label": {
+        "en": "Equipment",
+        "de": "Ausrüstung"
+      },
+      "value": {
+        "en": "Compact and guide-approved",
+        "de": "Kompakt und vom Guide akzeptiert"
+      },
+      "sourceIds": [
+        "hort-event"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "event-is-access",
+      "kind": "note",
+      "heading": {
+        "en": "The event is the access model",
+        "de": "Die Veranstaltung ist das Zugangsmodell"
+      },
+      "body": {
+        "en": "Confirm that the programme exists on the chosen date, including language, meeting point, duration and weather procedure. A past festival listing or general park opening does not create a night route. If no current event is offered, choose a legal accommodation-based alternative rather than entering protected land independently.",
+        "de": "Bestätige, dass das Programm am gewählten Datum stattfindet, einschließlich Sprache, Treffpunkt, Dauer und Wetterverfahren. Ein früherer Festivaleintrag oder allgemeine Parköffnung schafft keine Nachtroute. Gibt es keine aktuelle Veranstaltung, wähle eine legale Alternative an einer Unterkunft, statt Schutzland eigenständig zu betreten."
+      },
+      "sourceIds": [
+        "hort-event",
+        "hort-park"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "wetland-night",
+      "kind": "prose",
+      "heading": {
+        "en": "Darkness belongs to birds and observers at the same time",
+        "de": "Dunkelheit gehört Vögeln und Beobachtern zugleich"
+      },
+      "paragraphs": {
+        "en": [
+          "The fishpond and steppe landscape is internationally significant habitat. Follow the guide's route, voice level and light discipline, and keep away from reed beds, water edges and any closed track. The absence of streetlight is not permission to expand the group footprint.",
+          "Use naked-eye orientation and binoculars that can be carried without a tripod maze. Astronomy gains context from the flat horizon, while the protected area's sounds and movement remain undisturbed. If wildlife activity changes the route, the guide's decision overrides the planned view."
+        ],
+        "de": [
+          "Fischteich- und Steppenlandschaft sind international bedeutende Lebensräume. Folge Route, Lautstärke und Lichtdisziplin des Guides und halte Abstand zu Schilf, Wasserkanten und gesperrten Wegen. Fehlendes Straßenlicht erlaubt keine Erweiterung der Gruppenfläche. Auch ein scheinbar leerer Damm bleibt Teil des gelenkten Schutzgebietsbesuchs.",
+          "Nutze Orientierung mit bloßem Auge und Fernglas, das ohne Stativlandschaft getragen werden kann. Astronomie gewinnt durch den flachen Horizont Kontext, während Geräusche und Bewegungen des Schutzgebiets ungestört bleiben. Verändert Wildtieraktivität die Route, hat die Entscheidung des Guides Vorrang vor dem geplanten Blick."
+        ]
+      },
+      "sourceIds": [
+        "hort-world",
+        "hort-park",
+        "hort-event"
+      ]
+    },
+    {
+      "id": "guided-sequence",
+      "kind": "schedule",
+      "heading": {
+        "en": "Arrive as a participant, leave as a participant",
+        "de": "Als Teilnehmer ankommen und als Teilnehmer gehen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before meeting",
+            "de": "Vor dem Treffen"
+          },
+          "title": {
+            "en": "Save the exact event instruction",
+            "de": "Genaue Veranstaltungsanweisung speichern"
+          },
+          "body": {
+            "en": "Confirm clothing, footwear and whether personal optics are welcome. Reach the named meeting point without exploring side roads.",
+            "de": "Bestätige Kleidung, Schuhe und ob eigene Optik willkommen ist. Erreiche den benannten Treffpunkt ohne Erkundung von Nebenwegen."
+          },
+          "sourceIds": [
+            "hort-event"
+          ]
+        },
+        {
+          "time": {
+            "en": "On the route",
+            "de": "Auf der Route"
+          },
+          "title": {
+            "en": "Stay inside the guide's light envelope",
+            "de": "Im Lichtbereich des Guides bleiben"
+          },
+          "body": {
+            "en": "Let staff manage necessary light and movement. Keep screens off and use only the surfaces included in the programme.",
+            "de": "Lass das Personal notwendiges Licht und Bewegung steuern. Halte Bildschirme aus und nutze nur die im Programm enthaltenen Flächen."
+          },
+          "sourceIds": [
+            "hort-event",
+            "hort-park"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the finish",
+            "de": "Am Ende"
+          },
+          "title": {
+            "en": "Return from the official endpoint",
+            "de": "Vom offiziellen Endpunkt zurückkehren"
+          },
+          "body": {
+            "en": "Pack at the group location and follow departure instructions. Do not remain near ponds for a private extension.",
+            "de": "Packe am Gruppenstandort ein und folge den Abfahrthinweisen. Bleibe nicht für eine private Verlängerung an den Teichen."
+          },
+          "sourceIds": [
+            "hort-event",
+            "hort-world"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "hort-world",
+    "hort-park",
+    "hort-event"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

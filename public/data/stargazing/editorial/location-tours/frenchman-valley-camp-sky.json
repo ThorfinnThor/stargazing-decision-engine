@@ -1,0 +1,213 @@
+{
+  "version": 1,
+  "id": "frenchman-valley-camp-sky",
+  "slug": "frenchman-valley-camp-sky",
+  "destinationId": "grasslands",
+  "recommendedSiteId": "frenchman-valley-campground",
+  "title": {
+    "en": "A prairie night at Frenchman Valley",
+    "de": "Eine Prärienacht im Frenchman Valley"
+  },
+  "seoDescription": {
+    "en": "Plan a Grasslands National Park sky session from Frenchman Valley Campground with services, wildlife and backcountry boundaries checked in advance.",
+    "de": "Plane eine Himmelsbeobachtung im Grasslands National Park vom Frenchman Valley Campground und prüfe Versorgung, Wildtiere und Backcountry-Grenzen im Voraus."
+  },
+  "standfirst": {
+    "en": "Grasslands offers a horizon that makes movement feel unnecessary. Frenchman Valley Campground is the useful first-night base because parking, sleeping and the return are already resolved. Read current service and fire information, bring the water and food the stay requires and observe from the assigned site. The dark backcountry is not a late-night extension of a campground booking.",
+    "de": "Grasslands bietet einen Horizont, der Bewegung überflüssig wirken lässt. Der Frenchman Valley Campground ist die sinnvolle Basis der ersten Nacht, weil Parken, Schlafen und Rückweg bereits gelöst sind. Lies aktuelle Versorgungs- und Feuerhinweise, bring benötigtes Wasser und Essen mit und beobachte vom zugewiesenen Platz. Das dunkle Backcountry ist keine spätnächtliche Erweiterung einer Campingbuchung."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Frenchman Valley Campground",
+        "de": "Frenchman Valley Campground"
+      },
+      "sourceIds": [
+        "gl-map",
+        "gl-services"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before arrival",
+        "de": "Vor der Ankunft"
+      },
+      "value": {
+        "en": "Confirm services, hours and fire information",
+        "de": "Versorgung, Zeiten und Feuerhinweise bestätigen"
+      },
+      "sourceIds": [
+        "gl-services",
+        "gl-hours"
+      ]
+    },
+    {
+      "label": {
+        "en": "Wildlife",
+        "de": "Wildtiere"
+      },
+      "value": {
+        "en": "Observe from established camp surfaces",
+        "de": "Von vorgesehenen Campflächen beobachten"
+      },
+      "sourceIds": [
+        "gl-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Backcountry",
+        "de": "Backcountry"
+      },
+      "value": {
+        "en": "Separate registration and preparation",
+        "de": "Separate Registrierung und Vorbereitung"
+      },
+      "sourceIds": [
+        "gl-backcountry"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "prairie-base",
+      "kind": "prose",
+      "heading": {
+        "en": "The assigned pitch is already surrounded by sky",
+        "de": "Der zugewiesene Platz ist bereits von Himmel umgeben"
+      },
+      "paragraphs": {
+        "en": [
+          "Use the park map and current service information to confirm the campground, access hours and what is operating. Carry sufficient water, food, warm layers and a downloaded return route. Prairie distance and limited services punish the assumption that a missing item can be collected after sunset.",
+          "Arrive in daylight, inspect the pitch and identify toilets, walking lines and neighbouring campers. Keep chairs and optics inside the site and away from vegetation. The open horizon does not improve enough to justify crossing into a wildlife area or an unregistered backcountry route."
+        ],
+        "de": [
+          "Nutze Parkkarte und aktuelle Versorgungsinformationen, um Campingplatz, Zugangszeiten und geöffnete Einrichtungen zu bestätigen. Nimm ausreichend Wasser, Essen, warme Kleidung und eine heruntergeladene Rückroute mit. Prärieentfernungen und begrenzte Versorgung bestrafen die Annahme, ein fehlender Gegenstand könne nach Sonnenuntergang besorgt werden.",
+          "Komme bei Tageslicht an, prüfe den Stellplatz und erkenne Toiletten, Laufwege und Nachbarn. Halte Stühle und Optik innerhalb des Platzes und fern von Vegetation. Der offene Horizont verbessert sich nicht genug, um einen Wildtierbereich oder eine nicht registrierte Backcountry-Route zu betreten."
+        ]
+      },
+      "sourceIds": [
+        "gl-map",
+        "gl-services",
+        "gl-safety",
+        "gl-backcountry"
+      ]
+    },
+    {
+      "id": "services-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "Plan around what the park actually provides",
+        "de": "Mit dem planen, was der Park tatsächlich bietet"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Camp services match the group's needs",
+            "de": "Die Campversorgung passt zur Gruppe"
+          },
+          "body": {
+            "en": "Complete the booking and make the pitch the whole night. Finish food and bright tasks before adaptation, then keep the vehicle parked until morning.",
+            "de": "Schließe die Buchung ab und mache den Platz zur ganzen Nacht. Beende Essen und helle Aufgaben vor der Dunkeladaption und lasse das Fahrzeug bis morgens stehen."
+          },
+          "sourceIds": [
+            "gl-services",
+            "gl-hours"
+          ]
+        },
+        {
+          "label": {
+            "en": "Water, fire or facility status creates a gap",
+            "de": "Wasser-, Feuer- oder Anlagenstatus erzeugt eine Lücke"
+          },
+          "body": {
+            "en": "Resolve it before entering the park or choose another legal base. Backcountry camping requires its own registration and cannot serve as spontaneous overflow.",
+            "de": "Löse sie vor der Parkeinfahrt oder wähle eine andere legale Basis. Backcountry-Camping verlangt eine eigene Registrierung und dient nicht als spontaner Ausweichplatz."
+          },
+          "sourceIds": [
+            "gl-services",
+            "gl-backcountry",
+            "gl-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prairie-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the horizon come to the campsite",
+        "de": "Den Horizont zum Campingplatz kommen lassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before dusk",
+            "de": "Vor der Dämmerung"
+          },
+          "title": {
+            "en": "Secure the camp and read the ground",
+            "de": "Camp sichern und Boden lesen"
+          },
+          "body": {
+            "en": "Store food, place water, inspect footing and agree on the short safe observing area. Keep every route used by campers clear.",
+            "de": "Sichere Essen, stelle Wasser bereit, prüfe Untergrund und vereinbare den kurzen sicheren Beobachtungsbereich. Halte alle von Campern genutzten Wege frei."
+          },
+          "sourceIds": [
+            "gl-safety",
+            "gl-services"
+          ]
+        },
+        {
+          "time": {
+            "en": "Under the first stars",
+            "de": "Unter den ersten Sternen"
+          },
+          "title": {
+            "en": "Start with the prairie scale",
+            "de": "Mit dem Maßstab der Prärie beginnen"
+          },
+          "body": {
+            "en": "Watch the broad sky change before narrowing the view through optics. Keep voice and light low because wildlife and sleeping visitors share the darkness.",
+            "de": "Beobachte den Wandel des weiten Himmels, bevor Optik den Blick einengt. Halte Stimme und Licht niedrig, weil Wildtiere und schlafende Besucher die Dunkelheit teilen."
+          },
+          "sourceIds": [
+            "gl-sky",
+            "gl-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the session ends",
+            "de": "Wenn die Sitzung endet"
+          },
+          "title": {
+            "en": "Walk back instead of driving out",
+            "de": "Zurückgehen statt hinausfahren"
+          },
+          "body": {
+            "en": "Pack at the pitch, enter shelter and leave road decisions for daylight. A distant viewpoint adds risk after the legal night base has already been established.",
+            "de": "Packe am Platz, gehe in den Schutzraum und verschiebe Straßenentscheidungen auf den Tag. Ein entfernter Aussichtspunkt erhöht das Risiko, nachdem die legale Nachtbasis bereits feststeht."
+          },
+          "sourceIds": [
+            "gl-map",
+            "gl-safety"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "gl-sky",
+    "gl-map",
+    "gl-services",
+    "gl-backcountry",
+    "gl-hours",
+    "gl-safety"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "id": "zselic-observatory-program-night",
+  "slug": "zselic-observatory-program-night",
+  "destinationId": "zselic",
+  "recommendedSiteId": "zselic-public-observatory",
+  "title": {
+    "en": "A public observatory night in Zselic",
+    "de": "Eine öffentliche Observatoriumsnacht im Zselic"
+  },
+  "seoDescription": {
+    "en": "Plan a Zselic public-observatory programme with current opening, booking and protected-landscape rules verified before arrival.",
+    "de": "Plane ein Programm am öffentlichen Observatorium im Zselic und bestätige Öffnung, Buchung und Landschaftsschutzregeln vor der Ankunft."
+  },
+  "standfirst": {
+    "en": "Zselic's public observatory is the clearest way to turn a protected dark landscape into a real visitor evening. Use the current programme calendar rather than assuming nightly opening, confirm the language and meeting details and stay within the facility. The surrounding forest adds darkness but does not become an independent after-hours observing field.",
+    "de": "Das öffentliche Observatorium im Zselic ist der klarste Weg, eine geschützte dunkle Landschaft in einen realen Besucherabend zu verwandeln. Nutze den aktuellen Programmkalender statt tägliche Öffnung anzunehmen, bestätige Sprache und Treffdetails und bleibe in der Anlage. Der umgebende Wald bringt Dunkelheit, wird aber nicht zum eigenständigen Beobachtungsfeld nach Betriebsschluss."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Venue",
+        "de": "Ort"
+      },
+      "value": {
+        "en": "Zselic public observatory",
+        "de": "Öffentliches Observatorium Zselic"
+      },
+      "sourceIds": [
+        "zselic-programs"
+      ]
+    },
+    {
+      "label": {
+        "en": "Requirement",
+        "de": "Voraussetzung"
+      },
+      "value": {
+        "en": "Current published programme or confirmed visit",
+        "de": "Aktuelles veröffentlichtes Programm oder bestätigter Besuch"
+      },
+      "sourceIds": [
+        "zselic-programs",
+        "zselic-holiday"
+      ]
+    },
+    {
+      "label": {
+        "en": "Setting",
+        "de": "Umgebung"
+      },
+      "value": {
+        "en": "Protected Zselic landscape",
+        "de": "Geschützte Landschaft Zselic"
+      },
+      "sourceIds": [
+        "zselic-ddnp"
+      ]
+    },
+    {
+      "label": {
+        "en": "Boundary",
+        "de": "Grenze"
+      },
+      "value": {
+        "en": "Facility and published visitor route",
+        "de": "Anlage und veröffentlichte Besucherroute"
+      },
+      "sourceIds": [
+        "zselic-programs",
+        "zselic-ddnp"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "calendar-first",
+      "kind": "decisions",
+      "heading": {
+        "en": "A programme date is more useful than a dark-sky label",
+        "de": "Ein Programmdatum ist nützlicher als ein Dark-Sky-Label"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "A suitable public programme is listed",
+            "de": "Ein passendes öffentliches Programm ist gelistet"
+          },
+          "body": {
+            "en": "Reserve or confirm it and save start, language, duration and meeting instructions. Build transport and lodging around the real appointment.",
+            "de": "Reserviere oder bestätige es und speichere Start, Sprache, Dauer und Treffanweisung. Baue Transport und Unterkunft um den realen Termin."
+          },
+          "sourceIds": [
+            "zselic-programs",
+            "zselic-holiday"
+          ]
+        },
+        {
+          "label": {
+            "en": "No confirmed programme exists",
+            "de": "Kein bestätigtes Programm vorhanden"
+          },
+          "body": {
+            "en": "Do not infer access from the regional designation. Contact the facility or choose an accommodation with explicit night arrangements.",
+            "de": "Leite Zugang nicht aus der regionalen Auszeichnung ab. Kontaktiere die Anlage oder wähle eine Unterkunft mit ausdrücklicher Nachtregelung."
+          },
+          "sourceIds": [
+            "zselic-programs",
+            "zselic-ddnp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest-boundary",
+      "kind": "note",
+      "heading": {
+        "en": "The forest supplies darkness without supplying permission",
+        "de": "Der Wald liefert Dunkelheit, aber keine Erlaubnis"
+      },
+      "body": {
+        "en": "Remain on the visitor route and surfaces identified by the observatory. Protected-landscape rules continue after dark, and an empty track is not a substitute for a confirmed location. Keep noise, light and movement close to the public programme. Confirm the final approach before losing mobile reception, and carry the facility contact with the booking rather than relying on a map pin alone. If directions disagree with signs on site, stop and use the staffed contact instead of testing another forest road.",
+        "de": "Bleibe auf der Besucherroute und den vom Observatorium benannten Flächen. Landschaftsschutzregeln gelten nach Einbruch der Dunkelheit weiter, und ein leerer Weg ersetzt keinen bestätigten Standort. Halte Lärm, Licht und Bewegung nahe am öffentlichen Programm. Kläre die letzte Zufahrt vor einem möglichen Ausfall des Mobilfunkempfangs und speichere den Kontakt der Anlage zusammen mit der Buchung, statt dich allein auf eine Kartenmarkierung zu verlassen. Widersprechen Wegbeschreibung und Beschilderung einander, halte an und nutze den Kontakt der Anlage, statt eine andere Forststraße auszuprobieren."
+      },
+      "sourceIds": [
+        "zselic-ddnp",
+        "zselic-programs"
+      ],
+      "tone": "context"
+    },
+    {
+      "id": "zselic-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the observatory contain the whole night",
+        "de": "Das Observatorium umfasst die ganze Nacht"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before arrival",
+            "de": "Vor der Ankunft"
+          },
+          "title": {
+            "en": "Resolve the last forest kilometre",
+            "de": "Den letzten Waldkilometer klären"
+          },
+          "body": {
+            "en": "Save the official approach, programme confirmation and return lodging. Arrive with warm clothing and no need for a roadside search.",
+            "de": "Speichere offizielle Zufahrt, Programmbestätigung und Rückunterkunft. Komme mit warmer Kleidung und ohne Bedarf an einer Straßensuche an."
+          },
+          "sourceIds": [
+            "zselic-programs",
+            "zselic-holiday"
+          ]
+        },
+        {
+          "time": {
+            "en": "During the programme",
+            "de": "Während des Programms"
+          },
+          "title": {
+            "en": "Use interpretation before individual targets",
+            "de": "Vermittlung vor Einzelzielen nutzen"
+          },
+          "body": {
+            "en": "Follow staff lighting and telescope instructions and connect the observed sky to the protected landscape around it.",
+            "de": "Folge Licht- und Teleskophinweisen des Personals und verbinde den beobachteten Himmel mit der geschützten Landschaft."
+          },
+          "sourceIds": [
+            "zselic-programs",
+            "zselic-ddnp"
+          ]
+        },
+        {
+          "time": {
+            "en": "After closing",
+            "de": "Nach der Schließung"
+          },
+          "title": {
+            "en": "Leave by the confirmed route",
+            "de": "Auf bestätigter Route abfahren"
+          },
+          "body": {
+            "en": "Return to lodging without stopping on forest tracks. Another clear night deserves another confirmed appointment.",
+            "de": "Kehre ohne Halt auf Waldwegen zur Unterkunft zurück. Eine weitere klare Nacht verdient einen weiteren bestätigten Termin."
+          },
+          "sourceIds": [
+            "zselic-programs",
+            "zselic-holiday"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "zselic-programs",
+    "zselic-holiday",
+    "zselic-ddnp"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

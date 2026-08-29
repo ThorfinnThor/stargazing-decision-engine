@@ -1,0 +1,222 @@
+{
+  "version": 1,
+  "id": "island-in-the-sky-paved-night",
+  "slug": "island-in-the-sky-paved-night",
+  "destinationId": "canyonlands",
+  "recommendedSiteId": "island-in-the-sky-night-area",
+  "title": {
+    "en": "One paved night on Island in the Sky",
+    "de": "Eine befestigte Nacht auf Island in the Sky"
+  },
+  "seoDescription": {
+    "en": "Plan a Canyonlands stargazing evening on the paved Island in the Sky mesa, with legal parking, desert supplies and the rim return settled before dark.",
+    "de": "Plane einen Sternenabend auf dem befestigten Island-in-the-Sky-Plateau mit legalem Parkplatz, Wüstenvorräten und einem vor Dunkelheit geklärten Rückweg."
+  },
+  "standfirst": {
+    "en": "Canyonlands does not need a difficult road to feel remote. Island in the Sky provides elevation and open horizons while keeping the first night on pavement. Check one legal overlook, carry the supplies the mesa lacks and reject any after-dark descent onto an unpaved road. The return to UT 313 should be as familiar as the observing position.",
+    "de": "Canyonlands braucht keine schwierige Straße, um abgelegen zu wirken. Island in the Sky bietet Höhe und offene Horizonte, während die erste Nacht auf Asphalt bleibt. Prüfe einen legalen Aussichtspunkt, bring die auf dem Plateau fehlenden Vorräte mit und verzichte nach Einbruch der Dunkelheit auf unbefestigte Abfahrten. Der Rückweg zur UT 313 sollte so vertraut sein wie der Beobachtungsplatz."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night area",
+        "de": "Nachtbereich"
+      },
+      "value": {
+        "en": "Island in the Sky paved mesa",
+        "de": "Befestigtes Plateau von Island in the Sky"
+      },
+      "sourceIds": [
+        "cany-stargazing",
+        "cany-directions"
+      ]
+    },
+    {
+      "label": {
+        "en": "Road choice",
+        "de": "Straßenwahl"
+      },
+      "value": {
+        "en": "Paved scenic road only",
+        "de": "Nur die befestigte Panoramastraße"
+      },
+      "sourceIds": [
+        "cany-roads"
+      ]
+    },
+    {
+      "label": {
+        "en": "Bring",
+        "de": "Mitbringen"
+      },
+      "value": {
+        "en": "Fuel, water and offline park map",
+        "de": "Kraftstoff, Wasser und Offline-Parkkarte"
+      },
+      "sourceIds": [
+        "cany-conditions",
+        "cany-compendium"
+      ]
+    },
+    {
+      "label": {
+        "en": "Overnight",
+        "de": "Übernachtung"
+      },
+      "value": {
+        "en": "A lawful occupied campsite, not a turnout",
+        "de": "Ein legal belegter Campingplatz, keine Haltebucht"
+      },
+      "sourceIds": [
+        "cany-camp",
+        "cany-regulations"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "mesa-choice",
+      "kind": "decisions",
+      "heading": {
+        "en": "Make the boring road choice on purpose",
+        "de": "Die unspektakuläre Straße bewusst wählen"
+      },
+      "introduction": {
+        "en": "The mesa is already remote enough for a serious night. Technical driving adds exposure without improving the decision.",
+        "de": "Das Plateau ist bereits abgelegen genug für eine ernsthafte Nacht. Anspruchsvolle Fahrten erhöhen das Risiko, ohne die Entscheidung zu verbessern."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Paved road open and weather settled",
+            "de": "Befestigte Straße offen und Wetter stabil"
+          },
+          "body": {
+            "en": "Select one NPS-described overlook that is currently open, save its lot and remain on hardened surfaces. Shafer day-use parking is excluded when its published night closure applies. The route ends when the car is parked.",
+            "de": "Wähle einen aktuell geöffneten, vom NPS beschriebenen Aussichtspunkt, speichere seinen Parkplatz und bleibe auf befestigten Flächen. Der Shafer-Tagesparkplatz entfällt, wenn seine veröffentlichte Nachtsperre gilt. Die Route endet mit dem Parken."
+          },
+          "sourceIds": [
+            "cany-stargazing",
+            "cany-conditions",
+            "cany-regulations"
+          ]
+        },
+        {
+          "label": {
+            "en": "Ice, lightning, construction or strong wind",
+            "de": "Eis, Gewitter, Bauarbeiten oder starker Wind"
+          },
+          "body": {
+            "en": "Stay lower or cancel. A broad destination score cannot overrule a closure, winter road warning or unsafe rim. Do not look for a supposedly sheltered unpaved alternative after sunset.",
+            "de": "Bleibe tiefer oder sage ab. Ein allgemeiner Zielwert setzt weder Sperren noch Winterwarnungen oder einen unsicheren Rand außer Kraft. Suche nach Sonnenuntergang keine vermeintlich geschützte unbefestigte Alternative."
+          },
+          "sourceIds": [
+            "cany-conditions",
+            "cany-winter",
+            "cany-roads"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "rim-reading",
+      "kind": "prose",
+      "heading": {
+        "en": "Read the rim while depth still has colour",
+        "de": "Den Rand lesen, solange Tiefe noch Farbe besitzt"
+      },
+      "paragraphs": {
+        "en": [
+          "Arrive with enough light to distinguish the car park, safe standing area and cliff boundary. Organise chair, red light, optics and warm layers before contrast disappears. Keep well back from the edge and leave every access lane clear. The open horizon is useful without approaching an exposed drop.",
+          "Artificially lighting cliffs is prohibited and also destroys the darkness everyone came to use. Frame the landscape with the remaining natural light, then allow the foreground to become dark. A small binocular setup is easier to keep inside the known footprint than a photographic arrangement that spreads cases and cables across a shared overlook."
+        ],
+        "de": [
+          "Komme bei genügend Licht an, um Parkplatz, sicheren Standbereich und Kliffgrenze zu unterscheiden. Ordne Stuhl, Rotlicht, Optik und warme Kleidung, bevor die Kontraste verschwinden. Halte großen Abstand zum Rand und jede Zufahrt frei. Der offene Horizont ist auch ohne Annäherung an eine exponierte Kante wertvoll.",
+          "Künstliches Beleuchten der Felsen ist verboten und zerstört zudem genau die Dunkelheit, die alle nutzen möchten. Gestalte die Landschaft mit dem verbleibenden natürlichen Licht und lasse den Vordergrund danach dunkel werden. Ein kleines Fernglas-Setup bleibt leichter im bekannten Bereich als eine Fotoausrüstung mit Koffern und Kabeln auf einem gemeinsam genutzten Aussichtspunkt."
+        ]
+      },
+      "sourceIds": [
+        "cany-stargazing",
+        "cany-regulations",
+        "cany-directions"
+      ]
+    },
+    {
+      "id": "mesa-return",
+      "kind": "schedule",
+      "heading": {
+        "en": "The descent begins before anyone is tired",
+        "de": "Die Abfahrt beginnt, bevor jemand müde ist"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before the climb",
+            "de": "Vor der Auffahrt"
+          },
+          "title": {
+            "en": "Close every supply gap",
+            "de": "Alle Versorgungslücken schließen"
+          },
+          "body": {
+            "en": "Read alerts, fill fuel and water, download the map and choose the legal overnight destination. Normal supplies and dependable reception are not available on the mesa.",
+            "de": "Lies Warnungen, fülle Kraftstoff und Wasser auf, lade die Karte herunter und lege den legalen Übernachtungsort fest. Normale Versorgung und verlässlicher Empfang fehlen auf dem Plateau."
+          },
+          "sourceIds": [
+            "cany-conditions",
+            "cany-compendium",
+            "cany-camp"
+          ]
+        },
+        {
+          "time": {
+            "en": "After adaptation",
+            "de": "Nach der Dunkeladaption"
+          },
+          "title": {
+            "en": "Stay with one horizon",
+            "de": "Bei einem Horizont bleiben"
+          },
+          "body": {
+            "en": "Use minimal downward light and observe from the established surface. If traffic or wind interrupts the session, wait or finish rather than adding another viewpoint.",
+            "de": "Nutze nur minimales nach unten gerichtetes Licht und beobachte von der vorgesehenen Fläche. Wenn Verkehr oder Wind stören, warte oder beende den Abend, statt einen weiteren Aussichtspunkt anzufahren."
+          },
+          "sourceIds": [
+            "cany-stargazing",
+            "cany-regulations"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the fixed cutoff",
+            "de": "Zur festen Endzeit"
+          },
+          "title": {
+            "en": "Follow the same paved line out",
+            "de": "Auf derselben befestigten Route zurück"
+          },
+          "body": {
+            "en": "Count people and equipment, confirm driver alertness and return toward UT 313. A full campground does not convert a scenic turnout into overnight space.",
+            "de": "Zähle Personen und Ausrüstung, prüfe die Aufmerksamkeit der fahrenden Person und kehre zur UT 313 zurück. Ein voller Campingplatz macht eine Aussichtsbucht nicht zum Übernachtungsort."
+          },
+          "sourceIds": [
+            "cany-directions",
+            "cany-camp",
+            "cany-regulations"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "cany-stargazing",
+    "cany-conditions",
+    "cany-roads",
+    "cany-directions",
+    "cany-regulations",
+    "cany-compendium",
+    "cany-camp",
+    "cany-winter"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

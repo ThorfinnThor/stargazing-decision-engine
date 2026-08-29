@@ -1378,7 +1378,7 @@ h1 span {
   border-top: 1px solid rgb(255 255 255 / 14%);
   list-style: none;
 }
-.location-tour-schedule li { padding: 1.5rem; }
+.location-tour-schedule li { min-width: 0; padding: 1.5rem; overflow-wrap: anywhere; }
 .location-tour-schedule li + li { border-left: 1px solid rgb(255 255 255 / 14%); }
 .location-tour-schedule li > span,
 .location-tour-time {
@@ -1396,7 +1396,7 @@ h1 span {
   border-top: 1px solid rgb(255 255 255 / 14%);
   border-left: 1px solid rgb(255 255 255 / 14%);
 }
-.location-tour-decisions article { padding: 1.5rem; border-right: 1px solid rgb(255 255 255 / 14%); border-bottom: 1px solid rgb(255 255 255 / 14%); }
+.location-tour-decisions article { min-width: 0; padding: 1.5rem; overflow-wrap: anywhere; border-right: 1px solid rgb(255 255 255 / 14%); border-bottom: 1px solid rgb(255 255 255 / 14%); }
 
 .location-tour-sources { padding: clamp(3.5rem, 8vw, 6rem) 0; }
 .location-tour-sources > p { max-width: 46rem; color: var(--muted); line-height: 1.7; }

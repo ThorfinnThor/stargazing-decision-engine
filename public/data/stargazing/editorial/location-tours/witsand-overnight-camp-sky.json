@@ -1,0 +1,187 @@
+{
+  "version": 1,
+  "id": "witsand-overnight-camp-sky",
+  "slug": "witsand-overnight-camp-sky",
+  "destinationId": "witsand",
+  "recommendedSiteId": "witsand-overnight-camp",
+  "title": {
+    "en": "A booked camp night at Witsand",
+    "de": "Eine gebuchte Campnacht im Witsand"
+  },
+  "seoDescription": {
+    "en": "Plan a Witsand Nature Reserve stargazing night from booked accommodation, with protected-area access and dune movement controlled by the reserve.",
+    "de": "Plane eine Sternennacht im Witsand Nature Reserve von gebuchter Unterkunft aus und lasse Schutzgebietszugang sowie Dünenbewegung vom Reservat bestimmen."
+  },
+  "standfirst": {
+    "en": "Witsand's pale dunes and dry interior make a striking night setting, but the reserve is protected land rather than an open roadside stop. Book the overnight camp or accommodation, confirm arrival and gate arrangements and ask staff where observing is permitted. Stay beside the legal base. Dune exploration and the phenomenon the reserve is known for belong to current local guidance.",
+    "de": "Die hellen Dünen und das trockene Landesinnere machen Witsand zu einer markanten Nachtlandschaft. Das Reservat ist jedoch Schutzland und kein offener Straßenstopp. Buche Camp oder Unterkunft, bestätige Ankunft und Torregelung und frage das Personal nach erlaubten Beobachtungsflächen. Bleibe an der legalen Basis. Dünenerkundung und das bekannte Naturphänomen folgen aktuellen lokalen Hinweisen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Access",
+        "de": "Zugang"
+      },
+      "value": {
+        "en": "Booked reserve accommodation or camp",
+        "de": "Gebuchte Reservatsunterkunft oder Camp"
+      },
+      "sourceIds": [
+        "witsand-tourism",
+        "witsand-nc"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night location",
+        "de": "Nachtort"
+      },
+      "value": {
+        "en": "Host-approved surface beside the stay",
+        "de": "Vom Gastgeber bestätigte Fläche an der Unterkunft"
+      },
+      "sourceIds": [
+        "witsand-nc"
+      ]
+    },
+    {
+      "label": {
+        "en": "Landscape",
+        "de": "Landschaft"
+      },
+      "value": {
+        "en": "Protected dunes and wildlife habitat",
+        "de": "Geschützte Dünen und Wildtierlebensraum"
+      },
+      "sourceIds": [
+        "witsand-protected"
+      ]
+    },
+    {
+      "label": {
+        "en": "Confirm",
+        "de": "Bestätigen"
+      },
+      "value": {
+        "en": "Gate, arrival and facility arrangements",
+        "de": "Tor-, Ankunfts- und Anlagenregelungen"
+      },
+      "sourceIds": [
+        "witsand-tourism",
+        "witsand-nc"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "booking-opens-gate",
+      "kind": "prose",
+      "heading": {
+        "en": "The reservation turns a remote coordinate into a lawful night",
+        "de": "Die Reservierung macht aus einer abgelegenen Koordinate eine legale Nacht"
+      },
+      "paragraphs": {
+        "en": [
+          "Confirm the exact accommodation, arrival window, gate procedure, food, water and current road guidance with the reserve. Save the contact and route offline. A broad Witsand map point cannot answer whether a visitor may enter, remain after dark or use a particular dune edge.",
+          "Once checked in, ask staff for the safest permitted observing surface close to shelter. Learn the route, trip hazards and local lighting in daylight. Keep equipment compact and secure against wind and sand. The useful advantage is sleeping nearby, not pushing deeper into the reserve."
+        ],
+        "de": [
+          "Bestätige genaue Unterkunft, Ankunftsfenster, Torverfahren, Essen, Wasser und aktuelle Straßenhinweise beim Reservat. Speichere Kontakt und Route offline. Eine allgemeine Witsand-Markierung beantwortet nicht, ob Besucher einfahren, nach Einbruch der Dunkelheit bleiben oder einen bestimmten Dünenrand nutzen dürfen.",
+          "Frage nach dem Check-in das Personal nach der sichersten erlaubten Beobachtungsfläche nahe dem Schutzraum. Lerne Route, Stolperstellen und lokale Beleuchtung bei Tageslicht. Halte Ausrüstung kompakt und sichere sie gegen Wind und Sand. Der nützliche Vorteil liegt im nahen Schlafplatz und nicht im tieferen Vordringen ins Reservat."
+        ]
+      },
+      "sourceIds": [
+        "witsand-tourism",
+        "witsand-nc",
+        "witsand-protected"
+      ]
+    },
+    {
+      "id": "dune-restraint",
+      "kind": "note",
+      "heading": {
+        "en": "Do not turn pale dunes into a night trail",
+        "de": "Helle Dünen nicht zum Nachtweg machen"
+      },
+      "body": {
+        "en": "Remain within the area approved by reserve staff and do not pursue wildlife, sounds or dune features after dark. Protected status governs movement even when the sand appears open. A foreground photograph never outranks habitat, footing or the gate conditions of the stay.",
+        "de": "Bleibe im vom Reservatspersonal freigegebenen Bereich und folge weder Wildtieren noch Geräuschen oder Dünenformen nach Einbruch der Dunkelheit. Der Schutzstatus bestimmt Bewegung auch auf scheinbar offenem Sand. Ein Vordergrundfoto hat niemals Vorrang vor Lebensraum, Untergrund oder Torbedingungen des Aufenthalts."
+      },
+      "sourceIds": [
+        "witsand-protected",
+        "witsand-nc"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "camp-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "Use the bed to remove the late drive",
+        "de": "Mit dem Bett die späte Fahrt entfernen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "At check-in",
+            "de": "Beim Check-in"
+          },
+          "title": {
+            "en": "Ask the night question directly",
+            "de": "Die Nachtfrage direkt stellen"
+          },
+          "body": {
+            "en": "Confirm where, for how long and with which light rules observing is allowed. Do not rely on another guest's informal route.",
+            "de": "Bestätige Ort, Dauer und Lichtregeln der Beobachtung. Verlasse dich nicht auf die informelle Route eines anderen Gastes."
+          },
+          "sourceIds": [
+            "witsand-nc",
+            "witsand-tourism"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dark",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Stay close and let vision travel",
+            "de": "Nah bleiben und den Blick reisen lassen"
+          },
+          "body": {
+            "en": "Use naked-eye orientation and binoculars from the approved surface. Keep movement, noise and lamps close to the accommodation.",
+            "de": "Nutze bloßes Auge und Fernglas von der erlaubten Fläche. Halte Bewegung, Lärm und Lampen nahe der Unterkunft."
+          },
+          "sourceIds": [
+            "witsand-protected",
+            "witsand-nc"
+          ]
+        },
+        {
+          "time": {
+            "en": "When wind or fatigue rises",
+            "de": "Wenn Wind oder Müdigkeit zunehmen"
+          },
+          "title": {
+            "en": "Return on foot to the booked shelter",
+            "de": "Zu Fuß zum gebuchten Schutzraum zurück"
+          },
+          "body": {
+            "en": "Pack and sleep at the confirmed base. Assess roads and dunes again only after daylight and staff information.",
+            "de": "Packe ein und schlafe an der bestätigten Basis. Beurteile Straßen und Dünen erst nach Tageslicht und Personalhinweisen erneut."
+          },
+          "sourceIds": [
+            "witsand-tourism",
+            "witsand-nc"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "witsand-tourism",
+    "witsand-nc",
+    "witsand-protected"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
