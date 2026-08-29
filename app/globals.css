@@ -1266,7 +1266,7 @@ h1 span {
   margin: 0.75rem 0 1rem;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: clamp(1.6rem, 2.35vw, 2.35rem);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.05;
@@ -1288,16 +1288,25 @@ h1 span {
 }
 
 .location-tour-header h1 {
-  max-width: 19ch;
-  font-size: clamp(3.2rem, 7vw, 6.8rem);
+  max-width: 28ch;
+  font-size: clamp(2.65rem, 5vw, 5rem);
+  line-height: 0.96;
+  text-wrap: balance;
+}
+
+.location-tours-index .event-header h1 {
+  max-width: 50rem;
+  font-size: clamp(2.65rem, 5vw, 5rem);
+  line-height: 0.96;
+  text-wrap: balance;
 }
 
 .location-tour-page h1,
 .location-tour-body h2,
 .location-tour-sources h2,
 .location-tour-index-grid h2 {
-  overflow-wrap: anywhere;
-  hyphens: auto;
+  overflow-wrap: break-word;
+  hyphens: manual;
 }
 
 .location-tour-header .lede { max-width: 58rem; }
@@ -1343,7 +1352,7 @@ h1 span {
   margin: 0 0 1.5rem;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.15rem, 4vw, 4rem);
+  font-size: clamp(1.85rem, 3vw, 3rem);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 1.04;
@@ -1417,7 +1426,7 @@ h1 span {
 .location-tour-index-grid span,
 .location-tour-index-grid small { display: block; color: var(--blue); font: 0.65rem/1.4 ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
 .location-tour-index-grid small { margin: 2rem 0 1rem; }
-.location-tour-index-grid h2 { max-width: 24ch; margin: 0; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.7rem, 3vw, 2.7rem); font-weight: 400; letter-spacing: -0.035em; line-height: 1.08; }
+.location-tour-index-grid h2 { max-width: 28ch; margin: 0; color: #fff; font-family: Georgia, "Times New Roman", serif; font-size: clamp(1.45rem, 2vw, 2rem); font-weight: 400; letter-spacing: -0.03em; line-height: 1.12; text-wrap: balance; }
 .location-tour-index-grid p { max-width: 36rem; color: var(--muted); line-height: 1.65; }
 .location-tour-index-grid > a:hover,
 .location-tour-index-grid > a:focus-visible { background: rgb(142 197 255 / 6%); }
@@ -2668,6 +2677,20 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .location-tour-facts {
+    grid-template-columns: 1fr;
+  }
+
+  .location-tour-facts div + div {
+    border-top: 1px solid rgb(255 255 255 / 14%);
+    border-left: 0;
+  }
+
+  .location-tour-index-grid > a {
+    min-height: auto;
+    padding: 1.5rem;
+  }
+
   .destination-field-note-grid {
     grid-template-columns: 1fr;
   }
