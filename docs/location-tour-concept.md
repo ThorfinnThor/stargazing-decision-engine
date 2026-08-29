@@ -73,3 +73,18 @@ The third collection adds twenty nights whose usefulness depends on a specific a
 18. Kitt Peak pairs a booked public programme with one careful summit descent and no photographic road stops.
 19. Mamalluca turns an Elqui Valley reputation into a programme with language, check-in, transport, and a known return.
 20. Camp Blackman lets the Warrumbungle vehicle remain parked while Siding Spring stays a separate daylight visit.
+
+## Final collection
+
+The final ten tours complete one source-backed night plan for every reviewed destination:
+
+1. Hoya de la Mora exists as a night route only through a current organised event and never as informal access to the Sierra Nevada Observatory.
+2. Pico do Arieiro uses current parking, shuttle, road, and trail information to contain a short summit session and its fixed descent.
+3. CESCO receives its own advance reservation from a Barreal base while CASLEO and camping remain separate permissions.
+4. Paranal is visited at night only through a current ticketed ESO event and its official transport.
+5. Collowara supplies the booked public night near Andacollo while La Silla remains a separately registered daytime visit.
+6. Cederberg Observatory turns a selected Saturday roster, ticket, Moon phase, weather decision, and nearby bed into one complete evening.
+7. Lake St Clair replaces a regional Central Tasmania coordinate with a legal stay and a permitted walk-from-bed observing surface.
+8. Khongoryn Els depends on a confirmed guide or ger camp that provides transport, water, shelter, and an approved nearby night area.
+9. A Bieszczady show uses the organiser's dated booking and emailed meeting point rather than treating the wider starry-sky park as unrestricted access.
+10. Musala Hut places a compact session beside confirmed shelter between a daylight ascent and a daylight descent.

@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "khongoryn-els-hosted-camp-night",
+  "slug": "khongoryn-els-hosted-camp-night",
+  "destinationId": "gobi",
+  "recommendedSiteId": "khongoryn-els-visitor-zone",
+  "title": {
+    "en": "A hosted night at Khongoryn Els",
+    "de": "Eine betreute Nacht bei Khongoryn Els"
+  },
+  "seoDescription": {
+    "en": "Reach Khongoryn Els with a confirmed guide or ger camp, settle before dusk and observe from a host-approved surface beside shelter.",
+    "de": "Erreiche Khongoryn Els mit bestätigtem Guide oder Ger-Camp, richte dich vor der Dämmerung ein und beobachte auf einer erlaubten Fläche am Schutzraum."
+  },
+  "standfirst": {
+    "en": "The Gobi rewards preparation at a scale that a map pin cannot express. Khongoryn Els is a useful destination only when a confirmed guide or ger camp connects transport, water, shelter and local land arrangements. Book that chain as one itinerary. Reach camp before dusk, ask the host where guests may observe and keep the session within walking distance of shelter. The dark desert beyond camp is not an invitation to separate from the operator.",
+    "de": "Die Gobi belohnt Vorbereitung in einem Maßstab, den eine Kartenmarkierung nicht ausdrückt. Khongoryn Els ist erst dann ein brauchbares Ziel, wenn ein bestätigter Guide oder ein Ger-Camp Transport, Wasser, Schutz und lokale Landregelungen verbindet. Buche diese Kette als einen Reiseplan. Erreiche das Camp vor der Dämmerung, frage den Gastgeber nach der erlaubten Beobachtungsfläche und bleibe in Fußweite zum Schutz. Die dunkle Wüste außerhalb des Camps ist keine Einladung, sich vom Anbieter zu trennen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Access model",
+        "de": "Zugangsmodell"
+      },
+      "value": {
+        "en": "Confirmed guide or booked ger camp",
+        "de": "Bestätigter Guide oder gebuchtes Ger-Camp"
+      },
+      "sourceIds": [
+        "gobi-mto",
+        "gobi-home"
+      ]
+    },
+    {
+      "label": {
+        "en": "Transport",
+        "de": "Transport"
+      },
+      "value": {
+        "en": "Locally arranged suitable vehicle and driver",
+        "de": "Lokal organisiertes geeignetes Fahrzeug mit Fahrer"
+      },
+      "sourceIds": [
+        "gobi-mto",
+        "gobi-ministry"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night area",
+        "de": "Nachtfläche"
+      },
+      "value": {
+        "en": "Host-approved ground near shelter",
+        "de": "Vom Gastgeber erlaubte Fläche nahe dem Schutz"
+      },
+      "sourceIds": [
+        "gobi-home",
+        "gobi-ministry"
+      ]
+    },
+    {
+      "label": {
+        "en": "Essential margin",
+        "de": "Wichtige Reserve"
+      },
+      "value": {
+        "en": "Water, food, warmth and delayed-travel capacity",
+        "de": "Wasser, Essen, Wärme und Reserve für Verzögerungen"
+      },
+      "sourceIds": [
+        "gobi-mto",
+        "gobi-home"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "operator-chain",
+      "kind": "decisions",
+      "heading": {
+        "en": "A complete booking is more valuable than a famous coordinate",
+        "de": "Eine vollständige Buchung zählt mehr als eine berühmte Koordinate"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Guide, camp, vehicle and meeting point are confirmed",
+            "de": "Guide, Camp, Fahrzeug und Treffpunkt sind bestätigt"
+          },
+          "body": {
+            "en": "Proceed with the hosted itinerary and ask which equipment, meals, water and bedding are included. Share dietary, mobility and medical needs before departure and keep emergency contacts with the group.",
+            "de": "Nutze den betreuten Reiseplan und frage, welche Ausrüstung, Mahlzeiten, Wasser und Bettzeug enthalten sind. Teile Ernährung, Mobilität und medizinische Bedürfnisse vor Abfahrt mit und halte Notfallkontakte bei der Gruppe."
+          },
+          "sourceIds": [
+            "gobi-mto",
+            "gobi-home",
+            "gobi-ministry"
+          ]
+        },
+        {
+          "label": {
+            "en": "Only a destination pin or informal driver exists",
+            "de": "Nur Zielmarkierung oder informeller Fahrer vorhanden"
+          },
+          "body": {
+            "en": "Do not depart for a night plan. Resolve a registered or accountable host, exact camp, suitable transport and return sequence first. Remote tracks and shifting arrangements cannot be repaired after sunset by searching for another ger.",
+            "de": "Fahre nicht zu einem Nachtplan ab. Kläre zuerst verantwortlichen Gastgeber, genaues Camp, geeignetes Fahrzeug und Rückkehrablauf. Abgelegene Spuren und wechselnde Regelungen lassen sich nach Sonnenuntergang nicht durch die Suche nach einem anderen Ger reparieren."
+          },
+          "sourceIds": [
+            "gobi-mto",
+            "gobi-ministry"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "desert-scale",
+      "kind": "prose",
+      "heading": {
+        "en": "Let the eye travel while the body stays near camp",
+        "de": "Der Blick reist, während der Körper am Camp bleibt"
+      },
+      "paragraphs": {
+        "en": [
+          "Ask the host to identify a durable, permitted surface away from vehicles, animals, tents and routine camp work. Inspect it before dusk and agree on the short return line. Wind can lift sand quickly, so protect lenses, use a weighted compact tripod only when appropriate and keep every case ready to close.",
+          "Begin with the unaided sky and binoculars rather than carrying equipment toward the dunes. Darkness and horizon scale are already available beside the booked shelter. Moving farther adds navigation and communication risk without guaranteeing a better view, and it may cross land-use or habitat boundaries the visitor does not understand."
+        ],
+        "de": [
+          "Bitte den Gastgeber um eine robuste erlaubte Fläche abseits von Fahrzeugen, Tieren, Zelten und gewöhnlicher Camparbeit. Prüfe sie vor der Dämmerung und vereinbare die kurze Rücklinie. Wind kann Sand rasch aufwirbeln; schütze Linsen, nutze nur bei Eignung ein beschwertes kompaktes Stativ und halte jeden Koffer schließbereit.",
+          "Beginne mit bloßem Auge und Fernglas, statt Ausrüstung in Richtung Dünen zu tragen. Dunkelheit und Horizontgröße sind bereits neben dem gebuchten Schutz verfügbar. Größere Entfernung erhöht Navigations- und Kommunikationsrisiko ohne garantierten besseren Blick und kann Landnutzungs- oder Lebensraumgrenzen überschreiten, die Besucher nicht erkennen."
+        ]
+      },
+      "sourceIds": [
+        "gobi-mto",
+        "gobi-home",
+        "gobi-ministry"
+      ]
+    },
+    {
+      "id": "gobi-camp-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Make survival tasks boring before the stars appear",
+        "de": "Versorgungsaufgaben werden vor den Sternen langweilig"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "On arrival",
+            "de": "Bei der Ankunft"
+          },
+          "title": {
+            "en": "Finish the camp conversation",
+            "de": "Das Campgespräch abschließen"
+          },
+          "body": {
+            "en": "Confirm sleeping place, water, meals, toilets, permitted movement, weather concern and departure plan. Charge essential communication equipment and place warm layers before temperature falls.",
+            "de": "Bestätige Schlafplatz, Wasser, Mahlzeiten, Toiletten, erlaubte Bewegung, Wetterrisiko und Abfahrtsplan. Lade wichtige Kommunikationsausrüstung und lege warme Schichten bereit, bevor die Temperatur fällt."
+          },
+          "sourceIds": [
+            "gobi-home",
+            "gobi-ministry"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness settles",
+            "de": "Nach Einsetzen der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe from the agreed footprint",
+            "de": "Von der vereinbarten Fläche beobachten"
+          },
+          "body": {
+            "en": "Keep screens dim, movement quiet and optics secured against dust. Stay within voice or clear contact of the host and never follow animals, vehicles or dune silhouettes away from camp.",
+            "de": "Halte Bildschirme dunkel, Bewegung leise und Optik gegen Staub gesichert. Bleibe in Rufweite oder klarem Kontakt zum Gastgeber und folge weder Tieren noch Fahrzeugen oder Dünensilhouetten vom Camp weg."
+          },
+          "sourceIds": [
+            "gobi-mto",
+            "gobi-home"
+          ]
+        },
+        {
+          "time": {
+            "en": "When wind or cold rises",
+            "de": "Wenn Wind oder Kälte zunehmen"
+          },
+          "title": {
+            "en": "Close the equipment and enter shelter",
+            "de": "Ausrüstung schließen und Schutz aufsuchen"
+          },
+          "body": {
+            "en": "End immediately, count people and cases and return to the assigned ger. Travel resumes with the operator after rest and current route information, not as a night transfer.",
+            "de": "Beende sofort, zähle Menschen und Koffer und kehre zum zugewiesenen Ger zurück. Die Reise beginnt nach Ruhe und aktuellen Routeninformationen mit dem Anbieter erneut und nicht als Nachttransfer."
+          },
+          "sourceIds": [
+            "gobi-mto",
+            "gobi-ministry"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "gobi-mto",
+    "gobi-home",
+    "gobi-ministry"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

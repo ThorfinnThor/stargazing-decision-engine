@@ -1,0 +1,214 @@
+{
+  "version": 1,
+  "id": "musala-hut-daylight-bookends",
+  "slug": "musala-hut-daylight-bookends",
+  "destinationId": "rila",
+  "recommendedSiteId": "musala-hut-night-area",
+  "title": {
+    "en": "Musala Hut between two daylight journeys",
+    "de": "Musala-Hütte zwischen zwei Tageswegen"
+  },
+  "seoDescription": {
+    "en": "Confirm Musala Hut, lift and marked route, ascend in daylight, observe beside shelter and descend only after daylight and a new weather check.",
+    "de": "Bestätige Musala-Hütte, Lift und markierte Route, steige bei Tageslicht auf, beobachte am Schutz und steige erst nach Tageslicht und neuer Wetterprüfung ab."
+  },
+  "standfirst": {
+    "en": "Rila is not a drive-up dark-sky destination. A night near Musala works as a genuine mountain-hut journey whose small astronomy session happens beside booked shelter. Confirm that the hut is operating, check national-park rules, lift times, marked route, weather and rescue information, then ascend while the ground is visible. Sleep at the hut and descend after daylight. If any link in that chain is uncertain, the regional sky coordinate does not provide an alternative car park.",
+    "de": "Rila ist kein anfahrbares Dark-Sky-Ziel. Eine Nacht nahe Musala funktioniert als echte Hüttenreise, deren kleine Astronomiesitzung neben gebuchtem Schutz stattfindet. Bestätige den Hüttenbetrieb, prüfe Nationalparkregeln, Liftzeiten, markierte Route, Wetter und Rettungsinformationen und steige auf, solange der Boden sichtbar ist. Schlafe in der Hütte und steige nach Tageslicht ab. Ist ein Glied dieser Kette unsicher, bietet die regionale Himmelskoordinate keinen Ersatzparkplatz."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Overnight base",
+        "de": "Übernachtungsbasis"
+      },
+      "value": {
+        "en": "Directly confirmed Musala Hut bed",
+        "de": "Direkt bestätigtes Bett in der Musala-Hütte"
+      },
+      "sourceIds": [
+        "rila-stay"
+      ]
+    },
+    {
+      "label": {
+        "en": "Route",
+        "de": "Route"
+      },
+      "value": {
+        "en": "Legal marked national-park trail",
+        "de": "Legaler markierter Nationalparkweg"
+      },
+      "sourceIds": [
+        "rila-rules",
+        "rila-tourism"
+      ]
+    },
+    {
+      "label": {
+        "en": "Lift",
+        "de": "Lift"
+      },
+      "value": {
+        "en": "Check current Borovets operation and a no-lift plan",
+        "de": "Aktuellen Betrieb in Borovets und Plan ohne Lift prüfen"
+      },
+      "sourceIds": [
+        "rila-tourism"
+      ]
+    },
+    {
+      "label": {
+        "en": "Astronomy",
+        "de": "Astronomie"
+      },
+      "value": {
+        "en": "Compact session beside host-approved shelter",
+        "de": "Kompakte Sitzung am von der Hütte erlaubten Schutz"
+      },
+      "sourceIds": [
+        "rila-stay",
+        "rila-rules"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "hut-chain",
+      "kind": "decisions",
+      "heading": {
+        "en": "Every link must work before Borovets",
+        "de": "Jedes Glied muss vor Borovets funktionieren"
+      },
+      "introduction": {
+        "en": "A hut booking alone does not solve transport, weather or the marked route.",
+        "de": "Eine Hüttenbuchung allein löst weder Transport noch Wetter oder markierte Route."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Hut, route, lift and forecast are all confirmed",
+            "de": "Hütte, Route, Lift und Vorhersage sind vollständig bestätigt"
+          },
+          "body": {
+            "en": "Travel as a conservative two-day mountain itinerary. Carry the equipment, food, water, insulation, navigation and emergency plan required even if the astronomy portion lasts only an hour beside shelter.",
+            "de": "Reise als konservativer zweitägiger Bergplan. Trage Ausrüstung, Essen, Wasser, Isolation, Navigation und Notfallplan, die auch dann nötig sind, wenn die Astronomie nur eine Stunde am Schutz dauert."
+          },
+          "sourceIds": [
+            "rila-stay",
+            "rila-rules",
+            "rila-tourism"
+          ]
+        },
+        {
+          "label": {
+            "en": "One element is missing or conditions deteriorate",
+            "de": "Ein Element fehlt oder Bedingungen verschlechtern sich"
+          },
+          "body": {
+            "en": "Do not start or turn back within daylight reserves. Never replace a missed lift with an improvised night ascent from Borovets, and never use the regional coordinate as road access.",
+            "de": "Starte nicht oder kehre innerhalb der Tageslichtreserve um. Ersetze einen verpassten Lift niemals durch einen improvisierten Nachtaufstieg ab Borovets und behandle die Regionskoordinate nie als Straßenzugang."
+          },
+          "sourceIds": [
+            "rila-rules",
+            "rila-tourism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shelter-not-summit",
+      "kind": "prose",
+      "heading": {
+        "en": "The useful sky is the one beside shelter",
+        "de": "Der brauchbare Himmel liegt neben dem Schutz"
+      },
+      "paragraphs": {
+        "en": [
+          "Ask the hut host which durable nearby surface may be used without blocking entrances, paths, sleeping guests or emergency movement. Inspect it before dusk. Keep the setup compact, wind-secured and close enough to retreat immediately when fog, precipitation or cold changes.",
+          "There is no need to walk toward a summit in darkness. The hut-side sky preserves the essential advantage while removing unfamiliar terrain from the observing session. Keep light low, sound restrained and all equipment inside the known footprint; protected-area rules and other guests' rest remain active at night."
+        ],
+        "de": [
+          "Frage den Hüttenwirt, welche robuste nahe Fläche genutzt werden darf, ohne Eingänge, Wege, schlafende Gäste oder Rettungsbewegung zu blockieren. Prüfe sie vor der Dämmerung. Halte den Aufbau kompakt, windsicher und so nah, dass bei Nebel, Niederschlag oder Kälte sofortiger Rückzug möglich ist.",
+          "Es gibt keinen Grund, in der Dunkelheit zu einem Gipfel zu gehen. Der Himmel an der Hütte bewahrt den wesentlichen Vorteil und entfernt unbekanntes Gelände aus der Beobachtung. Halte Licht schwach, Geräusche zurückhaltend und Ausrüstung innerhalb der bekannten Fläche; Schutzgebietsregeln und Gästeruhe gelten nachts weiter."
+        ]
+      },
+      "sourceIds": [
+        "rila-stay",
+        "rila-rules"
+      ]
+    },
+    {
+      "id": "two-day-rhythm",
+      "kind": "schedule",
+      "heading": {
+        "en": "Daylight is part of both directions",
+        "de": "Tageslicht gehört zu beiden Richtungen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Early in Borovets",
+            "de": "Früh in Borovets"
+          },
+          "title": {
+            "en": "Recheck before gaining height",
+            "de": "Vor dem Höhengewinn erneut prüfen"
+          },
+          "body": {
+            "en": "Confirm lift operation, hut status, mountain forecast, marked route and turnaround time. Leave the full itinerary with a contact and begin with enough reserve to reach shelter in daylight.",
+            "de": "Bestätige Liftbetrieb, Hüttenstatus, Bergvorhersage, markierte Route und Umkehrzeit. Hinterlege den vollständigen Plan bei einer Kontaktperson und beginne mit genug Reserve, um den Schutz bei Tageslicht zu erreichen."
+          },
+          "sourceIds": [
+            "rila-stay",
+            "rila-tourism",
+            "rila-rules"
+          ]
+        },
+        {
+          "time": {
+            "en": "After arrival at the hut",
+            "de": "Nach Ankunft an der Hütte"
+          },
+          "title": {
+            "en": "Finish mountain tasks before astronomy",
+            "de": "Bergaufgaben vor der Astronomie beenden"
+          },
+          "body": {
+            "en": "Check in, eat, hydrate, dry clothing and learn the approved outside area. Observe only if the host and current conditions support it; a booked bed is permission to rest, not a demand to use the sky.",
+            "de": "Checke ein, iss, trink, trockne Kleidung und lerne die erlaubte Außenfläche. Beobachte nur, wenn Gastgeber und aktuelle Bedingungen es tragen; ein gebuchtes Bett ist eine Erlaubnis zur Ruhe und keine Forderung, den Himmel zu nutzen."
+          },
+          "sourceIds": [
+            "rila-stay",
+            "rila-rules"
+          ]
+        },
+        {
+          "time": {
+            "en": "The following morning",
+            "de": "Am folgenden Morgen"
+          },
+          "title": {
+            "en": "Descend after a fresh decision",
+            "de": "Nach neuer Entscheidung absteigen"
+          },
+          "body": {
+            "en": "Sleep before travel, inspect weather and route again and descend on the marked line in daylight. Lift changes or poor conditions may require waiting or using the prepared alternative rather than forcing the schedule.",
+            "de": "Schlafe vor der Reise, prüfe Wetter und Route erneut und steige bei Tageslicht auf markierter Linie ab. Liftänderungen oder schlechte Bedingungen können Warten oder die vorbereitete Alternative verlangen, statt den Zeitplan zu erzwingen."
+          },
+          "sourceIds": [
+            "rila-tourism",
+            "rila-rules",
+            "rila-stay"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "rila-stay",
+    "rila-rules",
+    "rila-tourism"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

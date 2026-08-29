@@ -7938,5 +7938,2017 @@
       "warr-siding"
     ],
     "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "hoya-de-la-mora-confirmed-ascent",
+    "slug": "hoya-de-la-mora-confirmed-ascent",
+    "destinationId": "sierra-nevada",
+    "recommendedSiteId": "hoya-de-la-mora-perseids-route",
+    "title": {
+      "en": "Hoya de la Mora by confirmed route",
+      "de": "Hoya de la Mora auf bestätigter Route"
+    },
+    "seoDescription": {
+      "en": "Join Hoya de la Mora only through a current astronomy event, with high-mountain weather, transport and descent settled before departure.",
+      "de": "Nutze Hoya de la Mora nur über eine aktuelle Astronomieveranstaltung und kläre Bergwetter, Transport und Abstieg vor der Abfahrt."
+    },
+    "standfirst": {
+      "en": "Hoya de la Mora becomes a credible astronomy night when an organiser publishes a real event, meeting point and transport plan. It is not a back entrance to the Sierra Nevada Observatory, whose public visits take place by day and whose night access is prohibited. Treat the evening as a supervised high-mountain appointment. Confirm the route, dress for the summit rather than Granada and descend with the same group that brought you up.",
+      "de": "Hoya de la Mora wird zu einer glaubwürdigen Astronomienacht, wenn ein Veranstalter einen konkreten Termin, Treffpunkt und Transportplan veröffentlicht. Der Ort ist kein Hintereingang zum Sierra Nevada Observatory, dessen öffentliche Besuche tagsüber stattfinden und dessen Nachtzugang verboten ist. Behandle den Abend als betreuten Hochgebirgstermin. Bestätige die Route, kleide dich für den Gipfel statt für Granada und steige mit derselben Gruppe ab, mit der du hinaufgekommen bist."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Valid access",
+          "de": "Gültiger Zugang"
+        },
+        "value": {
+          "en": "A currently published organised event",
+          "de": "Eine aktuell veröffentlichte organisierte Veranstaltung"
+        },
+        "sourceIds": [
+          "sierra-event",
+          "sierra-home"
+        ]
+      },
+      {
+        "label": {
+          "en": "Research campus",
+          "de": "Forschungscampus"
+        },
+        "value": {
+          "en": "Day visits only; no public night entry",
+          "de": "Nur Tagesbesuche; kein öffentlicher Nachtzugang"
+        },
+        "sourceIds": [
+          "sierra-osn"
+        ]
+      },
+      {
+        "label": {
+          "en": "Mountain exposure",
+          "de": "Bergexposition"
+        },
+        "value": {
+          "en": "Cold, wind, ice and altitude can stop the plan",
+          "de": "Kälte, Wind, Eis und Höhe können den Plan stoppen"
+        },
+        "sourceIds": [
+          "sierra-event",
+          "sierra-home"
+        ]
+      },
+      {
+        "label": {
+          "en": "Return",
+          "de": "Rückweg"
+        },
+        "value": {
+          "en": "Use the event's organised descent",
+          "de": "Den organisierten Abstieg der Veranstaltung nutzen"
+        },
+        "sourceIds": [
+          "sierra-event"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "campus-is-not-the-route",
+        "kind": "note",
+        "heading": {
+          "en": "The observatory boundary is unambiguous",
+          "de": "Die Grenze des Observatoriums ist eindeutig"
+        },
+        "body": {
+          "en": "Do not drive toward the research domes expecting an informal viewpoint, a late check-in or access after a daytime visit. The observatory operates as a scientific workplace, and its published visitor programme does not permit night visits. Hoya de la Mora is a separate event location with its own conditions. Save the organiser's confirmation and follow temporary barriers, staff instructions and road closures even if navigation software suggests continuing uphill.",
+          "de": "Fahre nicht zu den Forschungskuppeln in der Erwartung eines informellen Aussichtspunkts, eines späten Check-ins oder eines Zugangs nach einem Tagesbesuch. Das Observatorium ist ein wissenschaftlicher Arbeitsplatz, und sein veröffentlichtes Besucherprogramm erlaubt keine Nachtbesuche. Hoya de la Mora ist ein separater Veranstaltungsort mit eigenen Bedingungen. Speichere die Bestätigung des Veranstalters und folge temporären Barrieren, Personalhinweisen und Straßensperren, auch wenn die Navigation eine Weiterfahrt bergauf vorschlägt."
+        },
+        "sourceIds": [
+          "sierra-osn",
+          "sierra-event"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "mountain-evening",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the organiser control the mountain clock",
+          "de": "Den Bergzeitplan dem Veranstalter überlassen"
+        },
+        "introduction": {
+          "en": "A fixed group rhythm removes the two weakest parts of an independent summit attempt: uncertain access and a fatigued descent.",
+          "de": "Ein fester Gruppenrhythmus beseitigt die beiden schwächsten Teile eines eigenständigen Gipfelversuchs: unsicheren Zugang und einen erschöpften Abstieg."
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before leaving the valley",
+              "de": "Vor dem Verlassen des Tals"
+            },
+            "title": {
+              "en": "Read the complete event message",
+              "de": "Die vollständige Veranstaltungsnachricht lesen"
+            },
+            "body": {
+              "en": "Confirm meeting point, transport, fitness requirement, clothing, cancellation procedure and expected return. Carry water, insulation and any medication needed at altitude; a clear city forecast is not mountain clearance.",
+              "de": "Bestätige Treffpunkt, Transport, Fitnessanforderung, Kleidung, Absageverfahren und erwartete Rückkehr. Nimm Wasser, Isolation und in der Höhe benötigte Medikamente mit; eine klare Stadtvorhersage ist keine Bergfreigabe."
+            },
+            "sourceIds": [
+              "sierra-event",
+              "sierra-home"
+            ]
+          },
+          {
+            "time": {
+              "en": "On the supervised route",
+              "de": "Auf der betreuten Route"
+            },
+            "title": {
+              "en": "Keep observation separate from movement",
+              "de": "Beobachtung und Bewegung trennen"
+            },
+            "body": {
+              "en": "Stop before looking upward, keep pace with the leader and use only restrained downward light. Uneven ground, cold and altitude deserve attention whenever the group moves; the sky can wait until everyone is stationary.",
+              "de": "Halte an, bevor du nach oben schaust, bleibe im Tempo der Leitung und nutze nur zurückhaltendes Licht zum Boden. Unebener Grund, Kälte und Höhe verdienen bei jeder Bewegung Aufmerksamkeit; der Himmel wartet, bis alle stehen."
+            },
+            "sourceIds": [
+              "sierra-event",
+              "sierra-home"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the announced finish",
+              "de": "Zum angekündigten Ende"
+            },
+            "title": {
+              "en": "Descend with the plan intact",
+              "de": "Mit intaktem Plan absteigen"
+            },
+            "body": {
+              "en": "Pack before hands become numb, remain with the group and use its return transport. Do not add an observatory road, an unlit trail or another summit stop after the programme closes.",
+              "de": "Packe ein, bevor die Hände taub werden, bleibe bei der Gruppe und nutze deren Rücktransport. Ergänze nach Programmende weder Observatoriumsstraße noch unbeleuchteten Weg oder weiteren Gipfelstopp."
+            },
+            "sourceIds": [
+              "sierra-event",
+              "sierra-osn"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "altitude-go-decision",
+        "kind": "prose",
+        "heading": {
+          "en": "A good sky does not make a good ascent",
+          "de": "Ein guter Himmel macht noch keinen guten Aufstieg"
+        },
+        "paragraphs": {
+          "en": [
+            "Check current mountain information close to departure and accept cancellation without trying to rescue the evening independently. Wind, ice, snow, cloud immersion or altitude symptoms can end a technically clear night. The event leader's decision has more authority than the monthly destination score.",
+            "Base below the mountain so the session ends with a known bed and no further driving search. If no suitable event is operating, keep the observatory for a separate daytime visit and choose another explicitly authorised astronomy activity. Elevation is never compensation for missing permission."
+          ],
+          "de": [
+            "Prüfe aktuelle Berginformationen kurz vor der Abfahrt und akzeptiere eine Absage, ohne den Abend eigenständig retten zu wollen. Wind, Eis, Schnee, Wolkeneinbruch oder Höhensymptome können eine astronomisch klare Nacht beenden. Die Entscheidung der Veranstaltungsleitung hat mehr Gewicht als der monatliche Destinationswert.",
+            "Nutze eine Basis unterhalb des Berges, damit die Sitzung mit einem bekannten Bett endet und keine weitere Suchfahrt entsteht. Findet keine passende Veranstaltung statt, behalte das Observatorium als separaten Tagesbesuch und wähle ein anderes ausdrücklich autorisiertes Astronomieangebot. Höhe ersetzt niemals eine fehlende Erlaubnis."
+          ]
+        },
+        "sourceIds": [
+          "sierra-osn",
+          "sierra-event",
+          "sierra-home"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "sierra-osn",
+      "sierra-event",
+      "sierra-home"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "arieiro-fixed-descent-session",
+    "slug": "arieiro-fixed-descent-session",
+    "destinationId": "pico-do-arieiro",
+    "recommendedSiteId": "pico-arieiro-observing-area",
+    "title": {
+      "en": "An Arieiro session with a fixed descent",
+      "de": "Eine Arieiro-Sitzung mit festem Rückweg"
+    },
+    "seoDescription": {
+      "en": "Check Pico do Arieiro parking, shuttle, roads and mountain conditions before a short authorised summit session with a fixed descent.",
+      "de": "Prüfe Parken, Shuttle, Straßen und Bergbedingungen am Pico do Arieiro vor einer kurzen erlaubten Gipfelsitzung mit festem Rückweg."
+    },
+    "standfirst": {
+      "en": "Pico do Arieiro can rise above Madeira's cloud layer, but that famous view does not guarantee an uncomplicated night. Parking and shuttle operations change, mountain routes close, and the exposed summit can move from dry to wet or icy quickly. Use the official visitor area only when current information supports an evening visit. Arrive before darkness, stay on a stable authorised surface and set the descent time before the first telescope case is opened.",
+      "de": "Der Pico do Arieiro kann über Madeiras Wolkenschicht liegen, doch dieser berühmte Blick garantiert keine unkomplizierte Nacht. Park- und Shuttlebetrieb ändern sich, Bergwege schließen, und der exponierte Gipfel kann rasch von trocken zu nass oder eisig wechseln. Nutze den offiziellen Besucherbereich nur, wenn aktuelle Informationen einen Abendbesuch tragen. Komme vor der Dunkelheit an, bleibe auf einer stabilen erlaubten Fläche und lege die Abfahrtszeit fest, bevor der erste Teleskopkoffer geöffnet wird."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Primary area",
+          "de": "Hauptbereich"
+        },
+        "value": {
+          "en": "Official Pico do Arieiro visitor area",
+          "de": "Offizieller Besucherbereich am Pico do Arieiro"
+        },
+        "sourceIds": [
+          "arieiro-official"
+        ]
+      },
+      {
+        "label": {
+          "en": "Operations",
+          "de": "Betrieb"
+        },
+        "value": {
+          "en": "Parking, shuttle and timed access require rechecking",
+          "de": "Parken, Shuttle und Zeitfenster erneut prüfen"
+        },
+        "sourceIds": [
+          "arieiro-official",
+          "arieiro-ifcn"
+        ]
+      },
+      {
+        "label": {
+          "en": "Trail status",
+          "de": "Wegstatus"
+        },
+        "value": {
+          "en": "Closures apply even under clear stars",
+          "de": "Sperren gelten auch unter klarem Himmel"
+        },
+        "sourceIds": [
+          "arieiro-trail",
+          "arieiro-ifcn"
+        ]
+      },
+      {
+        "label": {
+          "en": "Empenas",
+          "de": "Empenas"
+        },
+        "value": {
+          "en": "Published road hours end at 21:00",
+          "de": "Veröffentlichte Straßennutzung endet um 21:00 Uhr"
+        },
+        "sourceIds": [
+          "arieiro-empenas"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "summit-or-lower",
+        "kind": "decisions",
+        "heading": {
+          "en": "The webcam is evidence, not permission",
+          "de": "Die Webcam ist ein Hinweis, keine Erlaubnis"
+        },
+        "introduction": {
+          "en": "Choose the summit only when operations and surface conditions agree with the picture.",
+          "de": "Wähle den Gipfel nur, wenn Betrieb und Oberflächenzustand zum Bild passen."
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Road, parking and visitor access are confirmed",
+              "de": "Straße, Parken und Besucherzugang sind bestätigt"
+            },
+            "body": {
+              "en": "Use the official area for a compact session. Save the parking or shuttle arrangement, identify the exact closing constraint and keep the equipment small enough to pack immediately if cloud or wind arrives.",
+              "de": "Nutze den offiziellen Bereich für eine kompakte Sitzung. Speichere Park- oder Shuttle-Regelung, erkenne die genaue Schließgrenze und halte die Ausrüstung so klein, dass sie bei Wolken oder Wind sofort verpackt ist."
+            },
+            "sourceIds": [
+              "arieiro-official",
+              "arieiro-ifcn"
+            ]
+          },
+          {
+            "label": {
+              "en": "Access or mountain conditions remain uncertain",
+              "de": "Zugang oder Bergbedingungen bleiben unsicher"
+            },
+            "body": {
+              "en": "Stay lower or use a booked Madeira astronomy experience with a confirmed site. Do not test a closed route, roadside shoulder or Empenas after its published road hours simply because the summit appears clear.",
+              "de": "Bleibe tiefer oder nutze ein gebuchtes Madeira-Astronomieangebot mit bestätigtem Ort. Teste weder gesperrte Route noch Straßenrand oder Empenas nach den veröffentlichten Straßennutzungszeiten, nur weil der Gipfel klar wirkt."
+            },
+            "sourceIds": [
+              "arieiro-ifcn",
+              "arieiro-trail",
+              "arieiro-empenas"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "arieiro-clock",
+        "kind": "schedule",
+        "heading": {
+          "en": "Build the session backwards from the descent",
+          "de": "Die Sitzung rückwärts von der Abfahrt planen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "In Funchal or the lower base",
+              "de": "In Funchal oder an der tieferen Basis"
+            },
+            "title": {
+              "en": "Resolve transport before altitude",
+              "de": "Transport vor der Höhe klären"
+            },
+            "body": {
+              "en": "Read the official visitor and route notices, confirm how the vehicle reaches and leaves the area and compare a mountain forecast with visible conditions. Pack insulation, waterproof layers and water within immediate reach.",
+              "de": "Lies offizielle Besucher- und Routenhinweise, bestätige Zu- und Abfahrt des Fahrzeugs und vergleiche Bergvorhersage mit sichtbaren Bedingungen. Packe Isolation, Regenschutz und Wasser griffbereit."
+            },
+            "sourceIds": [
+              "arieiro-official",
+              "arieiro-trail",
+              "arieiro-ifcn"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Learn the surface, not the skyline",
+              "de": "Die Fläche statt nur der Skyline lernen"
+            },
+            "body": {
+              "en": "Identify barriers, pedestrian movement, the shortest safe return to the vehicle and any operating boundary. Set up only where visitors are permitted and where a tripod cannot obstruct the shared area.",
+              "de": "Erkenne Barrieren, Fußverkehr, den kürzesten sicheren Weg zum Fahrzeug und jede Betriebsgrenze. Baue nur auf erlaubten Besucherflächen auf, auf denen ein Stativ den gemeinsam genutzten Bereich nicht blockiert."
+            },
+            "sourceIds": [
+              "arieiro-official",
+              "arieiro-ifcn"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the predetermined cutoff",
+              "de": "Zum vorher festgelegten Ende"
+            },
+            "title": {
+              "en": "Leave before the mountain chooses for you",
+              "de": "Abfahren, bevor der Berg entscheidet"
+            },
+            "body": {
+              "en": "Pack while the road and team are still comfortable. Descend on the verified route without adding Empenas or a trailhead as a second session; their separate restrictions still apply.",
+              "de": "Packe ein, solange Straße und Gruppe noch sicher sind. Fahre auf der bestätigten Route ab, ohne Empenas oder einen Weganfang als zweite Sitzung anzuhängen; deren eigene Einschränkungen gelten weiterhin."
+            },
+            "sourceIds": [
+              "arieiro-official",
+              "arieiro-empenas",
+              "arieiro-trail"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "exposed-island-mountain",
+        "kind": "note",
+        "heading": {
+          "en": "Cloud below you can become cloud around you",
+          "de": "Wolken unter dir können Wolken um dich werden"
+        },
+        "body": {
+          "en": "Treat wind, rain, icing, poor visibility and sudden cloud immersion as reasons to end the session, not as photographic atmosphere. The PR1 route status is a safety boundary and a night sky does not reopen a closed trail. Keep observation within the visitor surface already inspected in daylight. If the descent driver is cold, tired or uncertain, astronomy has already finished.",
+          "de": "Behandle Wind, Regen, Vereisung, schlechte Sicht und plötzlich einfallende Wolken als Gründe für das Ende und nicht als fotografische Stimmung. Der Status der PR1-Route ist eine Sicherheitsgrenze, und ein klarer Nachthimmel öffnet keinen gesperrten Weg. Beobachte nur auf der bei Tageslicht geprüften Besucherfläche. Ist die fahrende Person kalt, müde oder unsicher, ist die Astronomie bereits beendet."
+        },
+        "sourceIds": [
+          "arieiro-trail",
+          "arieiro-ifcn",
+          "arieiro-official"
+        ],
+        "tone": "warning"
+      }
+    ],
+    "sourceIds": [
+      "arieiro-official",
+      "arieiro-trail",
+      "arieiro-ifcn",
+      "arieiro-empenas"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "cesco-reserved-night-from-barreal",
+    "slug": "cesco-reserved-night-from-barreal",
+    "destinationId": "el-leoncito",
+    "recommendedSiteId": "el-leoncito-cesco-night-visit",
+    "title": {
+      "en": "CESCO after dark, Barreal before and after",
+      "de": "CESCO bei Nacht, Barreal davor und danach"
+    },
+    "seoDescription": {
+      "en": "Base in Barreal for a reserved CESCO night visit at El Leoncito while keeping CASLEO and national-park camping as separate permissions.",
+      "de": "Nutze Barreal als Basis für einen reservierten CESCO-Nachtbesuch in El Leoncito und behandle CASLEO sowie Camping als getrennte Erlaubnisse."
+    },
+    "standfirst": {
+      "en": "El Leoncito contains more than one institution, and their names are easy to blur while planning from afar. A CESCO night visit is its own advance-booked programme. It does not include informal access to CASLEO, a campsite or another road inside the park. Sleep in Barreal or hold a separate legal camping arrangement, reach the park in daylight and let one confirmed reservation define the whole observing night.",
+      "de": "El Leoncito umfasst mehr als eine Institution, deren Namen bei der Planung aus der Ferne leicht verschwimmen. Ein CESCO-Nachtbesuch ist ein eigenes, vorab gebuchtes Programm. Er umfasst weder informellen Zugang zu CASLEO noch zu Campingplatz oder weiterer Parkstraße. Schlafe in Barreal oder besitze eine getrennte legale Campingregelung, erreiche den Park bei Tageslicht und lasse eine bestätigte Reservierung die gesamte Beobachtungsnacht bestimmen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night visit",
+          "de": "Nachtbesuch"
+        },
+        "value": {
+          "en": "Advance-booked CESCO programme",
+          "de": "Vorab gebuchtes CESCO-Programm"
+        },
+        "sourceIds": [
+          "leoncito-activities",
+          "leoncito-plan"
+        ]
+      },
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Barreal or separately booked legal camping",
+          "de": "Barreal oder separat gebuchtes legales Camping"
+        },
+        "sourceIds": [
+          "leoncito-plan",
+          "leoncito-fees"
+        ]
+      },
+      {
+        "label": {
+          "en": "CASLEO",
+          "de": "CASLEO"
+        },
+        "value": {
+          "en": "Separate institution and access arrangement",
+          "de": "Separate Institution und Zugangsregelung"
+        },
+        "sourceIds": [
+          "leoncito-activities"
+        ]
+      },
+      {
+        "label": {
+          "en": "Conditions",
+          "de": "Bedingungen"
+        },
+        "value": {
+          "en": "Altitude, cold, wind and remote roads",
+          "de": "Höhe, Kälte, Wind und abgelegene Straßen"
+        },
+        "sourceIds": [
+          "leoncito-plan"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "barreal-bookends",
+        "kind": "prose",
+        "heading": {
+          "en": "A known bed gives the observatory visit an edge",
+          "de": "Ein bekanntes Bett gibt dem Observatoriumsbesuch einen Rahmen"
+        },
+        "paragraphs": {
+          "en": [
+            "Choose the night's legal endpoint before booking the astronomy programme. Barreal offers the simplest base because the outbound route begins from a known place and the return does not depend on finding accommodation after a cold late session. If camping is preferred, confirm it independently with the park; an observatory ticket is not a camping permit.",
+            "Carry water, warm layers and an offline route, and allow more time than a city-to-city distance suggests. Dry Andean air can cool sharply after sunset. Arriving early also prevents headlights, hurried walking and confused check-in from becoming part of the observing programme."
+          ],
+          "de": [
+            "Bestimme den legalen Endpunkt der Nacht, bevor du das Astronomieprogramm buchst. Barreal ist die einfachste Basis, weil die Hinfahrt an einem bekannten Ort beginnt und die Rückkehr nicht von einer Unterkunftssuche nach einer kalten späten Sitzung abhängt. Möchtest du campen, bestätige dies getrennt beim Park; ein Observatoriumsticket ist keine Campingerlaubnis.",
+            "Nimm Wasser, warme Schichten und eine Offline-Route mit und plane mehr Zeit ein, als eine Stadt-zu-Stadt-Entfernung vermuten lässt. Trockene Andenluft kann nach Sonnenuntergang stark abkühlen. Frühe Ankunft verhindert außerdem, dass Scheinwerfer, Eile und ein unklarer Check-in Teil des Beobachtungsprogramms werden."
+          ]
+        },
+        "sourceIds": [
+          "leoncito-plan",
+          "leoncito-fees",
+          "leoncito-activities"
+        ]
+      },
+      {
+        "id": "cesco-sequence",
+        "kind": "schedule",
+        "heading": {
+          "en": "Keep each institution in its own time slot",
+          "de": "Jede Institution behält ihr eigenes Zeitfenster"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before the travel day",
+              "de": "Vor dem Reisetag"
+            },
+            "title": {
+              "en": "Confirm CESCO by name",
+              "de": "CESCO namentlich bestätigen"
+            },
+            "body": {
+              "en": "Verify operating day, reservation, meeting point, transport, duration and weather procedure. Save the reply offline and do not substitute a CASLEO reference, a park admission or an old timetable for this exact booking.",
+              "de": "Bestätige Betriebstag, Reservierung, Treffpunkt, Transport, Dauer und Wetterverfahren. Speichere die Antwort offline und ersetze diese konkrete Buchung weder durch einen CASLEO-Hinweis noch Parkeintritt oder alten Zeitplan."
+            },
+            "sourceIds": [
+              "leoncito-activities",
+              "leoncito-plan"
+            ]
+          },
+          {
+            "time": {
+              "en": "In daylight at El Leoncito",
+              "de": "Bei Tageslicht in El Leoncito"
+            },
+            "title": {
+              "en": "Resolve the return before check-in",
+              "de": "Den Rückweg vor dem Check-in klären"
+            },
+            "body": {
+              "en": "Identify the programme entrance and the road back to Barreal or the separately booked campsite. Keep fuel, water and clothing with the group and follow staff movement rules around scientific facilities.",
+              "de": "Erkenne Programmeingang und Straße zurück nach Barreal oder zum separat gebuchten Campingplatz. Halte Treibstoff, Wasser und Kleidung bei der Gruppe und folge den Bewegungsregeln des Personals rund um wissenschaftliche Anlagen."
+            },
+            "sourceIds": [
+              "leoncito-plan",
+              "leoncito-fees"
+            ]
+          },
+          {
+            "time": {
+              "en": "When the visit ends",
+              "de": "Wenn der Besuch endet"
+            },
+            "title": {
+              "en": "Leave without collecting another dome",
+              "de": "Abfahren ohne eine weitere Kuppel zu sammeln"
+            },
+            "body": {
+              "en": "Pack completely, follow the approved exit and return to the chosen base. Do not add CASLEO, a park road or an empty campsite unless a separate current permission explicitly covers it.",
+              "de": "Packe vollständig ein, folge der erlaubten Ausfahrt und kehre zur gewählten Basis zurück. Ergänze weder CASLEO noch Parkstraße oder leeren Campingplatz, sofern keine separate aktuelle Erlaubnis dies ausdrücklich abdeckt."
+            },
+            "sourceIds": [
+              "leoncito-activities",
+              "leoncito-plan",
+              "leoncito-fees"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "three-permissions",
+        "kind": "decisions",
+        "heading": {
+          "en": "One valley can contain three different permissions",
+          "de": "Ein Tal kann drei verschiedene Erlaubnisse enthalten"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "CESCO reservation confirmed",
+              "de": "CESCO-Reservierung bestätigt"
+            },
+            "body": {
+              "en": "Proceed with the named night programme and its published visitor conditions. Treat every telescope area outside that itinerary as closed unless staff explicitly includes it.",
+              "de": "Nutze das benannte Nachtprogramm und seine veröffentlichten Besucherbedingungen. Behandle jeden Teleskopbereich außerhalb dieses Ablaufs als geschlossen, sofern das Personal ihn nicht ausdrücklich einbezieht."
+            },
+            "sourceIds": [
+              "leoncito-activities",
+              "leoncito-plan"
+            ]
+          },
+          {
+            "label": {
+              "en": "Only general park or fee information is available",
+              "de": "Nur allgemeine Park- oder Gebühreninformationen liegen vor"
+            },
+            "body": {
+              "en": "Do not travel expecting a night visit. Ask for the exact institution, date and meeting procedure or keep El Leoncito as a daytime park stop. General opening and entrance information cannot create an observatory appointment.",
+              "de": "Reise nicht in Erwartung eines Nachtbesuchs. Frage nach genauer Institution, Datum und Treffverfahren oder behandle El Leoncito als Tagesstopp. Allgemeine Öffnungs- und Eintrittsinformationen schaffen keinen Observatoriumstermin."
+            },
+            "sourceIds": [
+              "leoncito-plan",
+              "leoncito-fees"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "leoncito-activities",
+      "leoncito-plan",
+      "leoncito-fees"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "paranal-official-night-bus",
+    "slug": "paranal-official-night-bus",
+    "destinationId": "cerro-paranal",
+    "recommendedSiteId": "paranal-public-night-tour",
+    "title": {
+      "en": "Paranal at night only when ESO opens it",
+      "de": "Paranal bei Nacht nur mit Öffnung durch ESO"
+    },
+    "seoDescription": {
+      "en": "Use a rare official ESO night event at Paranal only with current registration and organised transport; ordinary public visits remain daytime-only.",
+      "de": "Nutze ein seltenes offizielles ESO-Nachtevent am Paranal nur mit aktueller Registrierung und organisiertem Transport; normale Besuche bleiben tagsüber."
+    },
+    "standfirst": {
+      "en": "Paranal's night sky is usually the working environment of an observatory, not a public attraction. ESO has announced limited ticketed night tours, but those events exist only on the published dates and through their official registration and transport. A daytime visitor place, an old event announcement or a rental car does not create after-hours access. If a current night event is available, let its bus, check-in and staff route contain the entire visit.",
+      "de": "Der Nachthimmel am Paranal ist gewöhnlich Arbeitsumgebung eines Observatoriums und keine öffentliche Attraktion. ESO hat begrenzte kostenpflichtige Nachttouren angekündigt, doch diese Veranstaltungen existieren nur an veröffentlichten Terminen sowie über offizielle Registrierung und Transport. Ein Tagesbesucherplatz, eine alte Ankündigung oder ein Mietwagen schafft keinen Zugang nach Betriebsschluss. Ist ein aktuelles Nachtevent verfügbar, sollen Bus, Check-in und Personalroute den gesamten Besuch umfassen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night access",
+          "de": "Nachtzugang"
+        },
+        "value": {
+          "en": "Only a current ticketed ESO night event",
+          "de": "Nur ein aktuelles kostenpflichtiges ESO-Nachtevent"
+        },
+        "sourceIds": [
+          "paranal-night",
+          "paranal-visitors"
+        ]
+      },
+      {
+        "label": {
+          "en": "Transport",
+          "de": "Transport"
+        },
+        "value": {
+          "en": "Use the event's published official transport",
+          "de": "Den veröffentlichten offiziellen Veranstaltungstransport nutzen"
+        },
+        "sourceIds": [
+          "paranal-night",
+          "paranal-travel"
+        ]
+      },
+      {
+        "label": {
+          "en": "Ordinary visits",
+          "de": "Normale Besuche"
+        },
+        "value": {
+          "en": "Registered daytime tours",
+          "de": "Registrierte Tagestouren"
+        },
+        "sourceIds": [
+          "paranal-visitors"
+        ]
+      },
+      {
+        "label": {
+          "en": "Independent overnight",
+          "de": "Eigenständige Übernachtung"
+        },
+        "value": {
+          "en": "Not provided at the observatory",
+          "de": "Am Observatorium nicht vorgesehen"
+        },
+        "sourceIds": [
+          "paranal-travel",
+          "paranal-visitors"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "event-exists-or-not",
+        "kind": "note",
+        "heading": {
+          "en": "A pilot event is not a standing opening hour",
+          "de": "Ein Pilottermin ist keine dauerhafte Öffnungszeit"
+        },
+        "body": {
+          "en": "Check ESO's current visitor and night-event pages for the actual date. Registration, capacity, identity requirements, meeting point and transport instructions must all match the intended visit. A screenshot from an earlier event proves only that a night programme once occurred. Without a live booking and confirmation, Paranal remains a daytime public visit and a closed scientific site after hours.",
+          "de": "Prüfe die aktuellen ESO-Seiten für Besucher und Nachtveranstaltungen zum tatsächlichen Datum. Registrierung, Kapazität, Identitätsanforderungen, Treffpunkt und Transporthinweise müssen zum geplanten Besuch passen. Ein Screenshot einer früheren Veranstaltung beweist nur, dass einmal ein Nachtprogramm stattfand. Ohne aktive Buchung und Bestätigung bleibt Paranal ein öffentlicher Tagesbesuch und nach Betriebsschluss ein geschlossener Wissenschaftsstandort."
+        },
+        "sourceIds": [
+          "paranal-night",
+          "paranal-visitors"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "paranal-choice",
+        "kind": "decisions",
+        "heading": {
+          "en": "Choose between two legitimate Paranal visits",
+          "de": "Zwischen zwei legitimen Paranal-Besuchen wählen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "A current ESO night ticket is confirmed",
+              "de": "Ein aktuelles ESO-Nachtticket ist bestätigt"
+            },
+            "body": {
+              "en": "Follow the specified city meeting point, official bus, check-in time and visitor programme. Do not self-drive to the gate, change transport or assume the ticket includes areas outside the controlled route.",
+              "de": "Folge dem angegebenen Treffpunkt in der Stadt, dem offiziellen Bus, der Check-in-Zeit und dem Besucherprogramm. Fahre nicht selbst zum Tor, ändere den Transport nicht und nimm keine Bereiche außerhalb der kontrollierten Route als eingeschlossen an."
+            },
+            "sourceIds": [
+              "paranal-night",
+              "paranal-travel"
+            ]
+          },
+          {
+            "label": {
+              "en": "No night event is on sale",
+              "de": "Kein Nachtevent wird angeboten"
+            },
+            "body": {
+              "en": "Book the regular daytime tour if it suits the trip, then arrange a separate lawful astronomy night with a public operator elsewhere. Do not wait near the access road for observatory darkness.",
+              "de": "Buche bei Interesse die normale Tagestour und organisiere eine separate legale Astronomienacht bei einem öffentlichen Anbieter an anderem Ort. Warte nicht nahe der Zufahrtsstraße auf die Dunkelheit des Observatoriums."
+            },
+            "sourceIds": [
+              "paranal-visitors",
+              "paranal-travel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "official-bus-night",
+        "kind": "schedule",
+        "heading": {
+          "en": "The bus is part of the observatory boundary",
+          "de": "Der Bus ist Teil der Observatoriumsgrenze"
+        },
+        "introduction": {
+          "en": "Official transport keeps a remote working facility from becoming an improvised road trip.",
+          "de": "Offizieller Transport verhindert, dass aus einer abgelegenen Forschungsanlage eine improvisierte Straßenfahrt wird."
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before the meeting time",
+              "de": "Vor der Treffzeit"
+            },
+            "title": {
+              "en": "Arrive in the departure city ready",
+              "de": "Abfahrtsbereit in der Stadt ankommen"
+            },
+            "body": {
+              "en": "Carry the confirmation and required identification, eat beforehand, pack warm layers and understand the return time. The event communication decides what equipment may travel and whether weather changes the programme.",
+              "de": "Führe Bestätigung und erforderlichen Ausweis mit, iss vorher, packe warme Schichten und kenne die Rückkehrzeit. Die Veranstaltungsmitteilung entscheidet, welche Ausrüstung mitfährt und ob Wetter das Programm verändert."
+            },
+            "sourceIds": [
+              "paranal-night",
+              "paranal-travel"
+            ]
+          },
+          {
+            "time": {
+              "en": "Inside the site",
+              "de": "Innerhalb des Standorts"
+            },
+            "title": {
+              "en": "Remain with the controlled visitor route",
+              "de": "Auf der kontrollierten Besucherroute bleiben"
+            },
+            "body": {
+              "en": "Follow staff, keep light and equipment within instructions and treat every unlisted road, platform and building as operational space. The organiser may shorten observing when wind or technical work requires it.",
+              "de": "Folge dem Personal, halte Licht und Ausrüstung innerhalb der Anweisungen und behandle jede nicht aufgeführte Straße, Plattform und jedes Gebäude als Betriebsbereich. Der Veranstalter kann Beobachtung bei Wind oder technischer Arbeit verkürzen."
+            },
+            "sourceIds": [
+              "paranal-visitors",
+              "paranal-night"
+            ]
+          },
+          {
+            "time": {
+              "en": "At programme close",
+              "de": "Zum Programmende"
+            },
+            "title": {
+              "en": "Return on the same transport contract",
+              "de": "Mit derselben Transportregelung zurückkehren"
+            },
+            "body": {
+              "en": "Board the official bus and finish the visit at its published endpoint. There is no independent overnight extension, roadside photo stop or alternative observatory exit after staff closes the tour.",
+              "de": "Steige in den offiziellen Bus und beende den Besuch an dessen veröffentlichtem Endpunkt. Nach Schließung der Tour gibt es weder eigenständige Übernachtungsverlängerung noch Straßenfotostopp oder alternative Observatoriumsausfahrt."
+            },
+            "sourceIds": [
+              "paranal-night",
+              "paranal-travel",
+              "paranal-visitors"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "paranal-visitors",
+      "paranal-travel",
+      "paranal-night"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "collowara-night-la-silla-day",
+    "slug": "collowara-night-la-silla-day",
+    "destinationId": "la-silla",
+    "recommendedSiteId": "collowara-tourist-observatory",
+    "title": {
+      "en": "Collowara at night, La Silla by day",
+      "de": "Collowara bei Nacht, La Silla am Tag"
+    },
+    "seoDescription": {
+      "en": "Pair a directly confirmed Collowara tourist-observatory night near Andacollo with a separate registered daytime visit to ESO's La Silla.",
+      "de": "Verbinde eine direkt bestätigte Nacht am Besucherobservatorium Collowara bei Andacollo mit einem getrennten registrierten Tagesbesuch bei ESO La Silla."
+    },
+    "standfirst": {
+      "en": "La Silla and Collowara answer different visitor questions. ESO offers registered daytime tours of its research site, while Collowara is identified as a tourist observatory with telescopes and must be contacted directly for a current night session. Do not try to turn the La Silla day ticket into evening access. Keep the two appointments on separate blocks, base near Andacollo for Collowara and confirm the night operator before crossing an inland road after sunset.",
+      "de": "La Silla und Collowara beantworten unterschiedliche Besucherfragen. ESO bietet registrierte Tagestouren seines Forschungsstandorts, während Collowara als Besucherobservatorium mit Teleskopen ausgewiesen ist und für eine aktuelle Nachtsitzung direkt kontaktiert werden muss. Verwandle das La-Silla-Tagesticket nicht in Abendzugang. Halte beide Termine getrennt, nutze für Collowara eine Basis bei Andacollo und bestätige den Nachtanbieter, bevor du nach Sonnenuntergang eine Inlandstraße befährst."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night venue",
+          "de": "Nachtort"
+        },
+        "value": {
+          "en": "Collowara tourist observatory",
+          "de": "Besucherobservatorium Collowara"
+        },
+        "sourceIds": [
+          "lasilla-collowara"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night requirement",
+          "de": "Nachtanforderung"
+        },
+        "value": {
+          "en": "Confirm session and operating status directly",
+          "de": "Sitzung und Betriebsstatus direkt bestätigen"
+        },
+        "sourceIds": [
+          "lasilla-collowara"
+        ]
+      },
+      {
+        "label": {
+          "en": "La Silla",
+          "de": "La Silla"
+        },
+        "value": {
+          "en": "Registered guided visit during published daytime access",
+          "de": "Registrierter geführter Besuch während veröffentlichter Tageszeiten"
+        },
+        "sourceIds": [
+          "lasilla-visits",
+          "lasilla-travel"
+        ]
+      },
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Stay near Andacollo for the night programme",
+          "de": "Für das Nachtprogramm nahe Andacollo übernachten"
+        },
+        "sourceIds": [
+          "lasilla-collowara"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "two-observatories",
+        "kind": "prose",
+        "heading": {
+          "en": "Two domes do not share one visitor policy",
+          "de": "Zwei Kuppeln teilen keine Besucherregel"
+        },
+        "paragraphs": {
+          "en": [
+            "Register a La Silla visit through ESO and follow its published daytime conditions, transport information and site rules. Visitor accommodation and private movement inside the research site are not part of ordinary public access. Finish that visit as scheduled and leave the evening free of assumptions about remaining near the telescopes.",
+            "For the night, contact Collowara directly and ask for the exact date, start, language, meeting point, road advice, weather decision and return time. Chile Travel establishes it as an astrotourism venue; the operator's current reply establishes whether this particular session exists. Keep that reply with an offline route from the Andacollo base."
+          ],
+          "de": [
+            "Registriere einen La-Silla-Besuch über ESO und folge den veröffentlichten Tagesbedingungen, Transporthinweisen und Standortregeln. Besucherunterkunft und private Bewegung innerhalb des Forschungsstandorts gehören nicht zum gewöhnlichen öffentlichen Zugang. Beende diesen Besuch wie vorgesehen und halte den Abend frei von Annahmen über einen Verbleib nahe den Teleskopen.",
+            "Kontaktiere Collowara für die Nacht direkt und frage nach genauem Datum, Beginn, Sprache, Treffpunkt, Straßenhinweis, Wetterentscheidung und Rückkehrzeit. Chile Travel weist den Ort als Astrotourismusangebot aus; die aktuelle Antwort des Betreibers entscheidet, ob diese konkrete Sitzung stattfindet. Speichere sie zusammen mit einer Offline-Route von der Basis in Andacollo."
+          ]
+        },
+        "sourceIds": [
+          "lasilla-visits",
+          "lasilla-travel",
+          "lasilla-collowara"
+        ]
+      },
+      {
+        "id": "collowara-evening",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let Andacollo hold the night together",
+          "de": "Andacollo hält die Nacht zusammen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before the inland drive",
+              "de": "Vor der Fahrt ins Inland"
+            },
+            "title": {
+              "en": "Receive a current reply",
+              "de": "Eine aktuelle Antwort erhalten"
+            },
+            "body": {
+              "en": "Confirm that Collowara is operating and reserve as required. Check fuel, road condition, cold-weather layers and who drives back; a directory entry is not a same-day opening notice.",
+              "de": "Bestätige den Betrieb von Collowara und reserviere falls erforderlich. Prüfe Treibstoff, Straßenzustand, Kleidung für Kälte und die fahrende Person für die Rückkehr; ein Verzeichniseintrag ist keine tagesaktuelle Öffnungsmeldung."
+            },
+            "sourceIds": [
+              "lasilla-collowara"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before darkness",
+              "de": "Vor der Dunkelheit"
+            },
+            "title": {
+              "en": "Reach the named visitor entrance",
+              "de": "Den benannten Besuchereingang erreichen"
+            },
+            "body": {
+              "en": "Arrive with enough light to recognise parking, paths and programme facilities. Follow staff telescope and lighting instructions rather than spreading a private setup beyond the hosted area.",
+              "de": "Komme bei genügend Licht an, um Parkplatz, Wege und Programmeinrichtungen zu erkennen. Folge den Teleskop- und Lichtanweisungen des Personals, statt eine private Ausrüstung über den betreuten Bereich hinaus auszubreiten."
+            },
+            "sourceIds": [
+              "lasilla-collowara"
+            ]
+          },
+          {
+            "time": {
+              "en": "After the hosted session",
+              "de": "Nach der betreuten Sitzung"
+            },
+            "title": {
+              "en": "Return to the same base",
+              "de": "Zur selben Basis zurückkehren"
+            },
+            "body": {
+              "en": "Pack, confirm driver alertness and return toward the booked Andacollo accommodation. La Silla is not a second night stop, and a research-site access road is not a fallback observing area.",
+              "de": "Packe ein, prüfe die Aufmerksamkeit der fahrenden Person und kehre zur gebuchten Unterkunft bei Andacollo zurück. La Silla ist kein zweiter Nachtstopp, und eine Forschungszufahrt ist kein Ersatzbeobachtungsplatz."
+            },
+            "sourceIds": [
+              "lasilla-travel",
+              "lasilla-visits",
+              "lasilla-collowara"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "day-night-separation",
+        "kind": "note",
+        "heading": {
+          "en": "Separation improves both visits",
+          "de": "Die Trennung verbessert beide Besuche"
+        },
+        "body": {
+          "en": "Schedule La Silla and Collowara far enough apart that registration, daylight travel, meals and rest remain realistic. A late rush from one institution to another creates road and check-in risk without adding useful sky time. If Collowara cannot confirm the night, retain the La Silla day visit and replace the evening with another explicitly booked public astronomy product rather than waiting outside either observatory.",
+          "de": "Plane La Silla und Collowara mit genügend Abstand, damit Registrierung, Tagesfahrt, Essen und Ruhe realistisch bleiben. Eine späte Eile von einer Institution zur anderen erzeugt Straßen- und Check-in-Risiken, ohne nützliche Himmelszeit hinzuzufügen. Kann Collowara die Nacht nicht bestätigen, behalte den La-Silla-Tagesbesuch und ersetze den Abend durch ein anderes ausdrücklich gebuchtes öffentliches Astronomieangebot, statt vor einem der Observatorien zu warten."
+        },
+        "sourceIds": [
+          "lasilla-visits",
+          "lasilla-travel",
+          "lasilla-collowara"
+        ],
+        "tone": "context"
+      }
+    ],
+    "sourceIds": [
+      "lasilla-visits",
+      "lasilla-travel",
+      "lasilla-collowara"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "cederberg-selected-saturday",
+    "slug": "cederberg-selected-saturday",
+    "destinationId": "cederberg",
+    "recommendedSiteId": "cederberg-astronomical-observatory",
+    "title": {
+      "en": "One Saturday at Cederberg Observatory",
+      "de": "Ein Samstag am Cederberg Observatory"
+    },
+    "seoDescription": {
+      "en": "Reserve a selected-Saturday Cederberg Observatory programme, check its roster, Moon and weather, and sleep nearby after the session.",
+      "de": "Reserviere ein ausgewähltes Samstagsprogramm am Cederberg Observatory, prüfe Plan, Mond und Wetter und schlafe nach der Sitzung in der Nähe."
+    },
+    "standfirst": {
+      "en": "Cederberg's darkness covers a large landscape, but the public observatory gives a visitor something more useful than a regional map pin. It publishes selected Saturday viewing and ticket information, with telescope observing dependent on clear weather and Moon phase. Choose the date from the current roster, reserve it and book a nearby bed before arranging the drive. The session should end at that bed, not with a late search across unfamiliar mountain roads.",
+      "de": "Die Dunkelheit des Cederberg umfasst eine große Landschaft, doch das öffentliche Observatorium bietet Besuchern mehr als eine regionale Kartenmarkierung. Es veröffentlicht Beobachtungen an ausgewählten Samstagen und Ticketinformationen, wobei Teleskopbeobachtung von klarem Wetter und Mondphase abhängt. Wähle das Datum aus dem aktuellen Plan, reserviere es und buche vor der Fahrt ein nahes Bett. Die Sitzung soll dort enden und nicht mit einer späten Suche auf unbekannten Bergstraßen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Public nights",
+          "de": "Öffentliche Nächte"
+        },
+        "value": {
+          "en": "Selected Saturdays on the current roster",
+          "de": "Ausgewählte Samstage im aktuellen Plan"
+        },
+        "sourceIds": [
+          "cederberg-roster"
+        ]
+      },
+      {
+        "label": {
+          "en": "Entry",
+          "de": "Eintritt"
+        },
+        "value": {
+          "en": "Reserve through the observatory ticket process",
+          "de": "Über das Ticketverfahren des Observatoriums reservieren"
+        },
+        "sourceIds": [
+          "cederberg-tickets"
+        ]
+      },
+      {
+        "label": {
+          "en": "Telescope condition",
+          "de": "Teleskopbedingung"
+        },
+        "value": {
+          "en": "Clear weather and suitable Moon phase",
+          "de": "Klares Wetter und geeignete Mondphase"
+        },
+        "sourceIds": [
+          "cederberg-roster",
+          "cederberg-tourism"
+        ]
+      },
+      {
+        "label": {
+          "en": "Afterwards",
+          "de": "Danach"
+        },
+        "value": {
+          "en": "Use prebooked nearby accommodation",
+          "de": "Vorgebuchte nahe Unterkunft nutzen"
+        },
+        "sourceIds": [
+          "cederberg-tourism"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "roster-decision",
+        "kind": "decisions",
+        "heading": {
+          "en": "The roster decides whether the observatory is your night",
+          "de": "Der Plan entscheidet über die Observatoriumsnacht"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "The date is listed and tickets are confirmed",
+              "de": "Das Datum ist gelistet und Tickets sind bestätigt"
+            },
+            "body": {
+              "en": "Save the confirmation, start time, directions and weather contact. Arrange accommodation close enough that the route after the programme is short, known and independent of mobile reception.",
+              "de": "Speichere Bestätigung, Beginn, Anfahrt und Wetterkontakt. Organisiere eine Unterkunft so nah, dass die Route nach dem Programm kurz, bekannt und unabhängig vom Mobilfunkempfang ist."
+            },
+            "sourceIds": [
+              "cederberg-roster",
+              "cederberg-tickets",
+              "cederberg-tourism"
+            ]
+          },
+          {
+            "label": {
+              "en": "Full Moon, weather or roster removes viewing",
+              "de": "Vollmond, Wetter oder Plan verhindern die Beobachtung"
+            },
+            "body": {
+              "en": "Use the observatory's decision and move the visit or cancel. Do not convert the wider Cederberg coordinate into an assumed public pull-off or enter private land to recover the night.",
+              "de": "Folge der Entscheidung des Observatoriums und verschiebe oder storniere den Besuch. Verwandle die weitere Cederberg-Koordinate nicht in einen angenommenen öffentlichen Halteplatz und betrete kein Privatland, um die Nacht zu retten."
+            },
+            "sourceIds": [
+              "cederberg-roster",
+              "cederberg-tourism"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "not-a-regional-pin",
+        "kind": "note",
+        "heading": {
+          "en": "Dark countryside still has owners, gates and roads",
+          "de": "Dunkles Land hat weiterhin Eigentümer, Tore und Straßen"
+        },
+        "body": {
+          "en": "The regional dark-sky record is not a verified roadside observing site. Stay with the ticketed observatory area or obtain explicit current permission from a named accommodation or land parcel. Do not follow anonymous coordinates, open a gate or stop on a narrow road shoulder after the programme. A cancelled public session reduces access as well as telescope availability.",
+          "de": "Der regionale Dark-Sky-Datensatz ist kein verifizierter Beobachtungsplatz am Straßenrand. Bleibe beim ticketierten Observatoriumsbereich oder hole eine ausdrückliche aktuelle Erlaubnis einer benannten Unterkunft oder Fläche ein. Folge keinen anonymen Koordinaten, öffne kein Tor und halte nach dem Programm nicht auf einem schmalen Straßenrand. Eine abgesagte öffentliche Sitzung verringert sowohl den Zugang als auch die Teleskopverfügbarkeit."
+        },
+        "sourceIds": [
+          "cederberg-tourism",
+          "cederberg-roster"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "saturday-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let one Saturday finish quietly",
+          "de": "Einen Samstag ruhig enden lassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "On the same morning",
+              "de": "Am selben Morgen"
+            },
+            "title": {
+              "en": "Ask whether the telescopes will open",
+              "de": "Fragen, ob die Teleskope öffnen"
+            },
+            "body": {
+              "en": "Recheck the roster and the observatory's weather procedure. Pack warm clothing and a low light even in a dry season, and keep the accommodation contact and route offline.",
+              "de": "Prüfe Plan und Wetterverfahren des Observatoriums erneut. Packe auch in trockener Jahreszeit warme Kleidung und schwaches Licht und speichere Unterkunftskontakt sowie Route offline."
+            },
+            "sourceIds": [
+              "cederberg-roster",
+              "cederberg-tickets"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before the programme",
+              "de": "Vor dem Programm"
+            },
+            "title": {
+              "en": "Arrive while the last road is legible",
+              "de": "Ankommen, solange die letzte Straße lesbar ist"
+            },
+            "body": {
+              "en": "Park where directed, identify the short return line and let staff organise the observing space. Complete food, clothing and bright tasks before visitors begin adapting to darkness.",
+              "de": "Parke nach Anweisung, erkenne den kurzen Rückweg und lass das Personal den Beobachtungsraum organisieren. Beende Essen, Kleidung und helle Aufgaben, bevor Besucher sich an die Dunkelheit gewöhnen."
+            },
+            "sourceIds": [
+              "cederberg-tickets",
+              "cederberg-tourism"
+            ]
+          },
+          {
+            "time": {
+              "en": "When the host closes",
+              "de": "Wenn der Gastgeber schließt"
+            },
+            "title": {
+              "en": "Take the known route to bed",
+              "de": "Auf bekannter Route zum Bett"
+            },
+            "body": {
+              "en": "Pack at the venue and travel only to the prebooked accommodation. Leave independent farm-road exploration and another viewpoint for a separately researched daylight plan.",
+              "de": "Packe am Veranstaltungsort ein und fahre nur zur vorgebuchten Unterkunft. Eigenständige Erkundung von Farmstraßen und weitere Aussichtspunkte bleiben einem separat geprüften Tagesplan vorbehalten."
+            },
+            "sourceIds": [
+              "cederberg-tourism",
+              "cederberg-roster"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "cederberg-tickets",
+      "cederberg-roster",
+      "cederberg-tourism"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "lake-st-clair-walk-from-bed",
+    "slug": "lake-st-clair-walk-from-bed",
+    "destinationId": "central-tasmania",
+    "recommendedSiteId": "lake-st-clair-overnight-area",
+    "title": {
+      "en": "Lake St Clair without a night drive",
+      "de": "Lake St Clair ohne Nachtfahrt"
+    },
+    "seoDescription": {
+      "en": "Book a legal Lake St Clair stay, inspect a nearby permitted surface in daylight and observe within walking distance of bed after checking park alerts.",
+      "de": "Buche einen legalen Aufenthalt am Lake St Clair, prüfe tagsüber eine nahe erlaubte Fläche und beobachte nach Kontrolle der Parkwarnungen in Bettnähe."
+    },
+    "standfirst": {
+      "en": "Central Tasmania is too broad to function as an observing address. Lake St Clair is useful because a legal stay can place parking, shelter and the night's endpoint together inside a managed national park. It is not advertised as a standalone astronomy field, so the plan remains modest. Check in before dusk, ask which nearby visitor surfaces may be used, inspect one short walking route and let the car remain parked until daylight.",
+      "de": "Zentraltasmanien ist zu groß, um als Beobachtungsadresse zu funktionieren. Lake St Clair ist sinnvoll, weil ein legaler Aufenthalt Parken, Schutz und Endpunkt der Nacht in einem verwalteten Nationalpark zusammenführen kann. Der Ort wird nicht als eigenständiges Astronomiefeld beworben, daher bleibt der Plan zurückhaltend. Checke vor der Dämmerung ein, frage nach nutzbaren nahen Besucherflächen, prüfe einen kurzen Fußweg und lasse das Auto bis zum Tageslicht stehen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Legal base",
+          "de": "Legale Basis"
+        },
+        "value": {
+          "en": "Booked Lake St Clair accommodation or camping",
+          "de": "Gebuchte Unterkunft oder Camping am Lake St Clair"
+        },
+        "sourceIds": [
+          "tas-lake",
+          "tas-know"
+        ]
+      },
+      {
+        "label": {
+          "en": "Observing area",
+          "de": "Beobachtungsfläche"
+        },
+        "value": {
+          "en": "A permitted visitor surface confirmed on site",
+          "de": "Eine vor Ort bestätigte erlaubte Besucherfläche"
+        },
+        "sourceIds": [
+          "tas-lake"
+        ]
+      },
+      {
+        "label": {
+          "en": "Travel-day check",
+          "de": "Prüfung am Reisetag"
+        },
+        "value": {
+          "en": "Park alerts, road and track status",
+          "de": "Parkwarnungen sowie Straßen- und Wegstatus"
+        },
+        "sourceIds": [
+          "tas-alerts",
+          "tas-know"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night transport",
+          "de": "Nachttransport"
+        },
+        "value": {
+          "en": "Walk from bed; reassess roads after daylight",
+          "de": "Vom Bett zu Fuß; Straßen nach Tageslicht neu prüfen"
+        },
+        "sourceIds": [
+          "tas-lake",
+          "tas-alerts"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "regional-coordinate",
+        "kind": "prose",
+        "heading": {
+          "en": "Replace the regional pin with a checked-in room",
+          "de": "Die Regionsmarkierung durch einen Check-in ersetzen"
+        },
+        "paragraphs": {
+          "en": [
+            "Reserve the exact accommodation or campsite and read what facilities, arrival arrangements and vehicle access apply. The broad Central Tasmania sky point is a climate reference, not permission to stop on a dark road. A booking creates a lawful endpoint but still does not identify every lawn, shore or track as an observing area.",
+            "Ask staff where a small, quiet setup can stand without entering a closed track, disturbing guests or moving toward wildlife habitat. Walk that line in daylight and note steps, water edges, tree cover and necessary gates. Binoculars and a chair usually suit this close-to-bed plan better than equipment that demands repeated trips to the car."
+          ],
+          "de": [
+            "Reserviere die genaue Unterkunft oder den Campingplatz und lies, welche Einrichtungen, Ankunftsregelungen und Fahrzeugzugänge gelten. Der allgemeine Himmelsreferenzpunkt für Zentraltasmanien ist eine Klimareferenz und keine Erlaubnis für einen Halt auf dunkler Straße. Eine Buchung schafft einen legalen Endpunkt, weist aber nicht jede Wiese, jedes Ufer oder jeden Weg als Beobachtungsfläche aus.",
+            "Frage das Personal, wo eine kleine ruhige Ausrüstung stehen kann, ohne gesperrten Weg zu betreten, Gäste zu stören oder in Richtung Wildtierlebensraum zu gehen. Laufe diese Linie bei Tageslicht und erkenne Stufen, Wasserkanten, Baumbestand und notwendige Tore. Fernglas und Stuhl passen meist besser zu diesem bettnahen Plan als Ausrüstung mit wiederholten Wegen zum Auto."
+          ]
+        },
+        "sourceIds": [
+          "tas-lake",
+          "tas-know"
+        ]
+      },
+      {
+        "id": "tasmanian-change",
+        "kind": "note",
+        "heading": {
+          "en": "The alert board outranks the climate month",
+          "de": "Die Warnmeldung steht über dem Klimamonat"
+        },
+        "body": {
+          "en": "Read current park alerts again on arrival. Mountain cloud, rain, frost, smoke, wind, flooding or a closed track can change the useful surface and the route back to shelter. Do not move to an untreated road or lakeshore when the chosen area fails. A night with no observing is still safer than converting a protected park into a search for darkness.",
+          "de": "Lies aktuelle Parkwarnungen bei der Ankunft erneut. Bergwolken, Regen, Frost, Rauch, Wind, Überflutung oder ein gesperrter Weg können die nutzbare Fläche und den Rückweg zum Schutz ändern. Weiche nicht auf unbehandelte Straße oder Seeufer aus, wenn der gewählte Bereich ausfällt. Eine Nacht ohne Beobachtung ist sicherer als die Verwandlung eines Schutzparks in eine Suche nach Dunkelheit."
+        },
+        "sourceIds": [
+          "tas-alerts",
+          "tas-know",
+          "tas-lake"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "st-clair-hours",
+        "kind": "schedule",
+        "heading": {
+          "en": "Park once and make the night smaller",
+          "de": "Einmal parken und die Nacht kleiner machen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "At afternoon check-in",
+              "de": "Beim Check-in am Nachmittag"
+            },
+            "title": {
+              "en": "Ask one precise night question",
+              "de": "Eine genaue Nachtfrage stellen"
+            },
+            "body": {
+              "en": "Confirm the permitted nearby surface, route, quiet expectations and any wildlife or closure concern. Store food correctly, place waterproof clothing and prepare every bright task before dusk.",
+              "de": "Bestätige nahe erlaubte Fläche, Route, Ruheanforderungen und mögliche Wildtier- oder Sperrhinweise. Lagere Essen korrekt, lege wasserdichte Kleidung bereit und erledige jede helle Aufgabe vor der Dämmerung."
+            },
+            "sourceIds": [
+              "tas-lake",
+              "tas-know"
+            ]
+          },
+          {
+            "time": {
+              "en": "When the sky clears",
+              "de": "Wenn der Himmel aufklart"
+            },
+            "title": {
+              "en": "Walk only the inspected line",
+              "de": "Nur die geprüfte Linie gehen"
+            },
+            "body": {
+              "en": "Carry compact optics and a low shielded light to the approved surface. Stay away from water edges, vegetation and sleeping areas, and return immediately when rain or visibility changes.",
+              "de": "Trage kompakte Optik und ein schwaches abgeschirmtes Licht zur erlaubten Fläche. Halte Abstand zu Wasserkanten, Vegetation und Schlafbereichen und kehre bei Regen oder Sichtänderung sofort zurück."
+            },
+            "sourceIds": [
+              "tas-lake",
+              "tas-alerts"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the first sign of fatigue",
+              "de": "Beim ersten Zeichen von Müdigkeit"
+            },
+            "title": {
+              "en": "Walk back to the booked shelter",
+              "de": "Zum gebuchten Schutz zurückgehen"
+            },
+            "body": {
+              "en": "Pack, use the same short route and sleep. The vehicle remains parked, and every road or trail decision waits for daylight and another alert check.",
+              "de": "Packe ein, nutze denselben kurzen Weg und schlafe. Das Fahrzeug bleibt stehen, und jede Straßen- oder Wegentscheidung wartet auf Tageslicht und eine weitere Warnprüfung."
+            },
+            "sourceIds": [
+              "tas-alerts",
+              "tas-know"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "tas-lake",
+      "tas-alerts",
+      "tas-know"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "khongoryn-els-hosted-camp-night",
+    "slug": "khongoryn-els-hosted-camp-night",
+    "destinationId": "gobi",
+    "recommendedSiteId": "khongoryn-els-visitor-zone",
+    "title": {
+      "en": "A hosted night at Khongoryn Els",
+      "de": "Eine betreute Nacht bei Khongoryn Els"
+    },
+    "seoDescription": {
+      "en": "Reach Khongoryn Els with a confirmed guide or ger camp, settle before dusk and observe from a host-approved surface beside shelter.",
+      "de": "Erreiche Khongoryn Els mit bestätigtem Guide oder Ger-Camp, richte dich vor der Dämmerung ein und beobachte auf einer erlaubten Fläche am Schutzraum."
+    },
+    "standfirst": {
+      "en": "The Gobi rewards preparation at a scale that a map pin cannot express. Khongoryn Els is a useful destination only when a confirmed guide or ger camp connects transport, water, shelter and local land arrangements. Book that chain as one itinerary. Reach camp before dusk, ask the host where guests may observe and keep the session within walking distance of shelter. The dark desert beyond camp is not an invitation to separate from the operator.",
+      "de": "Die Gobi belohnt Vorbereitung in einem Maßstab, den eine Kartenmarkierung nicht ausdrückt. Khongoryn Els ist erst dann ein brauchbares Ziel, wenn ein bestätigter Guide oder ein Ger-Camp Transport, Wasser, Schutz und lokale Landregelungen verbindet. Buche diese Kette als einen Reiseplan. Erreiche das Camp vor der Dämmerung, frage den Gastgeber nach der erlaubten Beobachtungsfläche und bleibe in Fußweite zum Schutz. Die dunkle Wüste außerhalb des Camps ist keine Einladung, sich vom Anbieter zu trennen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Access model",
+          "de": "Zugangsmodell"
+        },
+        "value": {
+          "en": "Confirmed guide or booked ger camp",
+          "de": "Bestätigter Guide oder gebuchtes Ger-Camp"
+        },
+        "sourceIds": [
+          "gobi-mto",
+          "gobi-home"
+        ]
+      },
+      {
+        "label": {
+          "en": "Transport",
+          "de": "Transport"
+        },
+        "value": {
+          "en": "Locally arranged suitable vehicle and driver",
+          "de": "Lokal organisiertes geeignetes Fahrzeug mit Fahrer"
+        },
+        "sourceIds": [
+          "gobi-mto",
+          "gobi-ministry"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night area",
+          "de": "Nachtfläche"
+        },
+        "value": {
+          "en": "Host-approved ground near shelter",
+          "de": "Vom Gastgeber erlaubte Fläche nahe dem Schutz"
+        },
+        "sourceIds": [
+          "gobi-home",
+          "gobi-ministry"
+        ]
+      },
+      {
+        "label": {
+          "en": "Essential margin",
+          "de": "Wichtige Reserve"
+        },
+        "value": {
+          "en": "Water, food, warmth and delayed-travel capacity",
+          "de": "Wasser, Essen, Wärme und Reserve für Verzögerungen"
+        },
+        "sourceIds": [
+          "gobi-mto",
+          "gobi-home"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "operator-chain",
+        "kind": "decisions",
+        "heading": {
+          "en": "A complete booking is more valuable than a famous coordinate",
+          "de": "Eine vollständige Buchung zählt mehr als eine berühmte Koordinate"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Guide, camp, vehicle and meeting point are confirmed",
+              "de": "Guide, Camp, Fahrzeug und Treffpunkt sind bestätigt"
+            },
+            "body": {
+              "en": "Proceed with the hosted itinerary and ask which equipment, meals, water and bedding are included. Share dietary, mobility and medical needs before departure and keep emergency contacts with the group.",
+              "de": "Nutze den betreuten Reiseplan und frage, welche Ausrüstung, Mahlzeiten, Wasser und Bettzeug enthalten sind. Teile Ernährung, Mobilität und medizinische Bedürfnisse vor Abfahrt mit und halte Notfallkontakte bei der Gruppe."
+            },
+            "sourceIds": [
+              "gobi-mto",
+              "gobi-home",
+              "gobi-ministry"
+            ]
+          },
+          {
+            "label": {
+              "en": "Only a destination pin or informal driver exists",
+              "de": "Nur Zielmarkierung oder informeller Fahrer vorhanden"
+            },
+            "body": {
+              "en": "Do not depart for a night plan. Resolve a registered or accountable host, exact camp, suitable transport and return sequence first. Remote tracks and shifting arrangements cannot be repaired after sunset by searching for another ger.",
+              "de": "Fahre nicht zu einem Nachtplan ab. Kläre zuerst verantwortlichen Gastgeber, genaues Camp, geeignetes Fahrzeug und Rückkehrablauf. Abgelegene Spuren und wechselnde Regelungen lassen sich nach Sonnenuntergang nicht durch die Suche nach einem anderen Ger reparieren."
+            },
+            "sourceIds": [
+              "gobi-mto",
+              "gobi-ministry"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "desert-scale",
+        "kind": "prose",
+        "heading": {
+          "en": "Let the eye travel while the body stays near camp",
+          "de": "Der Blick reist, während der Körper am Camp bleibt"
+        },
+        "paragraphs": {
+          "en": [
+            "Ask the host to identify a durable, permitted surface away from vehicles, animals, tents and routine camp work. Inspect it before dusk and agree on the short return line. Wind can lift sand quickly, so protect lenses, use a weighted compact tripod only when appropriate and keep every case ready to close.",
+            "Begin with the unaided sky and binoculars rather than carrying equipment toward the dunes. Darkness and horizon scale are already available beside the booked shelter. Moving farther adds navigation and communication risk without guaranteeing a better view, and it may cross land-use or habitat boundaries the visitor does not understand."
+          ],
+          "de": [
+            "Bitte den Gastgeber um eine robuste erlaubte Fläche abseits von Fahrzeugen, Tieren, Zelten und gewöhnlicher Camparbeit. Prüfe sie vor der Dämmerung und vereinbare die kurze Rücklinie. Wind kann Sand rasch aufwirbeln; schütze Linsen, nutze nur bei Eignung ein beschwertes kompaktes Stativ und halte jeden Koffer schließbereit.",
+            "Beginne mit bloßem Auge und Fernglas, statt Ausrüstung in Richtung Dünen zu tragen. Dunkelheit und Horizontgröße sind bereits neben dem gebuchten Schutz verfügbar. Größere Entfernung erhöht Navigations- und Kommunikationsrisiko ohne garantierten besseren Blick und kann Landnutzungs- oder Lebensraumgrenzen überschreiten, die Besucher nicht erkennen."
+          ]
+        },
+        "sourceIds": [
+          "gobi-mto",
+          "gobi-home",
+          "gobi-ministry"
+        ]
+      },
+      {
+        "id": "gobi-camp-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Make survival tasks boring before the stars appear",
+          "de": "Versorgungsaufgaben werden vor den Sternen langweilig"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "On arrival",
+              "de": "Bei der Ankunft"
+            },
+            "title": {
+              "en": "Finish the camp conversation",
+              "de": "Das Campgespräch abschließen"
+            },
+            "body": {
+              "en": "Confirm sleeping place, water, meals, toilets, permitted movement, weather concern and departure plan. Charge essential communication equipment and place warm layers before temperature falls.",
+              "de": "Bestätige Schlafplatz, Wasser, Mahlzeiten, Toiletten, erlaubte Bewegung, Wetterrisiko und Abfahrtsplan. Lade wichtige Kommunikationsausrüstung und lege warme Schichten bereit, bevor die Temperatur fällt."
+            },
+            "sourceIds": [
+              "gobi-home",
+              "gobi-ministry"
+            ]
+          },
+          {
+            "time": {
+              "en": "After darkness settles",
+              "de": "Nach Einsetzen der Dunkelheit"
+            },
+            "title": {
+              "en": "Observe from the agreed footprint",
+              "de": "Von der vereinbarten Fläche beobachten"
+            },
+            "body": {
+              "en": "Keep screens dim, movement quiet and optics secured against dust. Stay within voice or clear contact of the host and never follow animals, vehicles or dune silhouettes away from camp.",
+              "de": "Halte Bildschirme dunkel, Bewegung leise und Optik gegen Staub gesichert. Bleibe in Rufweite oder klarem Kontakt zum Gastgeber und folge weder Tieren noch Fahrzeugen oder Dünensilhouetten vom Camp weg."
+            },
+            "sourceIds": [
+              "gobi-mto",
+              "gobi-home"
+            ]
+          },
+          {
+            "time": {
+              "en": "When wind or cold rises",
+              "de": "Wenn Wind oder Kälte zunehmen"
+            },
+            "title": {
+              "en": "Close the equipment and enter shelter",
+              "de": "Ausrüstung schließen und Schutz aufsuchen"
+            },
+            "body": {
+              "en": "End immediately, count people and cases and return to the assigned ger. Travel resumes with the operator after rest and current route information, not as a night transfer.",
+              "de": "Beende sofort, zähle Menschen und Koffer und kehre zum zugewiesenen Ger zurück. Die Reise beginnt nach Ruhe und aktuellen Routeninformationen mit dem Anbieter erneut und nicht als Nachttransfer."
+            },
+            "sourceIds": [
+              "gobi-mto",
+              "gobi-ministry"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "gobi-mto",
+      "gobi-home",
+      "gobi-ministry"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "bieszczady-emailed-meeting-point",
+    "slug": "bieszczady-emailed-meeting-point",
+    "destinationId": "bieszczady",
+    "recommendedSiteId": "lutowiska-astronomy-show-area",
+    "title": {
+      "en": "Follow the Bieszczady meeting-point email",
+      "de": "Der Bieszczady-Treffpunkt steht in der E-Mail"
+    },
+    "seoDescription": {
+      "en": "Book a dated Bieszczady astronomy show, use the organiser's emailed meeting point and return directly to legal lodging near Lutowiska.",
+      "de": "Buche eine datierte Bieszczady-Astronomieshow, nutze den per E-Mail gesendeten Treffpunkt und kehre direkt zur legalen Unterkunft bei Lutowiska zurück."
+    },
+    "standfirst": {
+      "en": "Bieszczady Starry Sky Park names a region, not a universal after-dark car park. Its astronomy shows solve that ambiguity by assigning a date, paid booking and exact meeting point through the organiser. Stay near Lutowiska, wait for the actual instructions and navigate to that address before darkness. The show is the night's permission and structure. Trails, empty parking areas and the wider national park keep their own rules after the programme ends.",
+      "de": "Der Bieszczady Starry Sky Park bezeichnet eine Region und keinen allgemeinen Nachtparkplatz. Seine Astronomieshows lösen diese Unklarheit durch Datum, kostenpflichtige Buchung und genauen Treffpunkt des Veranstalters. Übernachte nahe Lutowiska, warte auf die tatsächlichen Anweisungen und fahre vor der Dunkelheit zu dieser Adresse. Die Show ist Erlaubnis und Struktur der Nacht. Wege, leere Parkplätze und der weitere Nationalpark behalten nach Programmende ihre eigenen Regeln."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night product",
+          "de": "Nachtangebot"
+        },
+        "value": {
+          "en": "Dated paid astronomy show",
+          "de": "Datierte kostenpflichtige Astronomieshow"
+        },
+        "sourceIds": [
+          "biesz-shows"
+        ]
+      },
+      {
+        "label": {
+          "en": "Meeting point",
+          "de": "Treffpunkt"
+        },
+        "value": {
+          "en": "Use the organiser's current email",
+          "de": "Aktuelle E-Mail des Veranstalters nutzen"
+        },
+        "sourceIds": [
+          "biesz-shows"
+        ]
+      },
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Legal lodging near Lutowiska",
+          "de": "Legale Unterkunft nahe Lutowiska"
+        },
+        "sourceIds": [
+          "biesz-about",
+          "biesz-shows"
+        ]
+      },
+      {
+        "label": {
+          "en": "Protected area",
+          "de": "Schutzgebiet"
+        },
+        "value": {
+          "en": "National-park safety and trail rules still apply",
+          "de": "Sicherheits- und Wegregeln des Nationalparks gelten weiterhin"
+        },
+        "sourceIds": [
+          "biesz-safety",
+          "biesz-trails"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "email-is-the-coordinate",
+        "kind": "note",
+        "heading": {
+          "en": "Do not replace the organiser's address with a map guess",
+          "de": "Die Veranstalteradresse nicht durch eine Kartenschätzung ersetzen"
+        },
+        "body": {
+          "en": "The representative Lutowiska record is not the guaranteed location of every show. Use the current email for meeting point, time, payment, equipment and weather instructions. If that message has not arrived or remains ambiguous, contact the organiser before travelling. A regional dark-sky label, trailhead or apparently empty car park cannot substitute for the dated arrangement.",
+          "de": "Der repräsentative Datensatz bei Lutowiska ist nicht der garantierte Ort jeder Show. Nutze die aktuelle E-Mail für Treffpunkt, Zeit, Zahlung, Ausrüstung und Wetterhinweise. Ist diese Nachricht nicht angekommen oder unklar, kontaktiere den Veranstalter vor der Fahrt. Regionale Dark-Sky-Auszeichnung, Weganfang oder scheinbar leerer Parkplatz ersetzen die datierte Vereinbarung nicht."
+        },
+        "sourceIds": [
+          "biesz-shows",
+          "biesz-about",
+          "biesz-trails"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "show-night",
+        "kind": "schedule",
+        "heading": {
+          "en": "A local room protects the end of the programme",
+          "de": "Ein lokales Zimmer schützt das Programmende"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before booking lodging",
+              "de": "Vor der Unterkunftsbuchung"
+            },
+            "title": {
+              "en": "Match the room to the dated show",
+              "de": "Das Zimmer an die datierte Show anpassen"
+            },
+            "body": {
+              "en": "Confirm the event and choose legal accommodation near enough for a simple return. Save the host contact, meeting-point email and road route offline, and read current national-park safety information.",
+              "de": "Bestätige die Veranstaltung und wähle eine legale Unterkunft nah genug für eine einfache Rückkehr. Speichere Gastgeberkontakt, Treffpunkt-E-Mail und Straßenroute offline und lies aktuelle Sicherheitsinformationen des Nationalparks."
+            },
+            "sourceIds": [
+              "biesz-shows",
+              "biesz-safety"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before the announced start",
+              "de": "Vor dem angekündigten Beginn"
+            },
+            "title": {
+              "en": "Arrive at the emailed place",
+              "de": "Am per E-Mail genannten Ort ankommen"
+            },
+            "body": {
+              "en": "Park and gather as directed, prepare warm and waterproof layers and let the organiser lead light and equipment use. Do not leave the group for a nearby field or trail.",
+              "de": "Parke und versammle dich nach Anweisung, bereite warme wasserdichte Kleidung vor und überlasse Licht- sowie Ausrüstungsnutzung der Leitung. Verlasse die Gruppe nicht für ein nahes Feld oder einen Weg."
+            },
+            "sourceIds": [
+              "biesz-shows",
+              "biesz-safety",
+              "biesz-trails"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the show finish",
+              "de": "Am Ende der Show"
+            },
+            "title": {
+              "en": "Return without a second sky search",
+              "de": "Ohne zweite Himmelssuche zurückkehren"
+            },
+            "body": {
+              "en": "Pack, follow the known road to lodging and leave mountain trails and parking areas unused at night. Weather disappointment does not expand visitor rights inside the protected region.",
+              "de": "Packe ein, folge der bekannten Straße zur Unterkunft und nutze Bergwege sowie Parkplätze nachts nicht weiter. Wetterenttäuschung erweitert keine Besucherrechte in der geschützten Region."
+            },
+            "sourceIds": [
+              "biesz-safety",
+              "biesz-trails",
+              "biesz-shows"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "region-and-event",
+        "kind": "prose",
+        "heading": {
+          "en": "The park explains the landscape; the show explains tonight",
+          "de": "Der Park erklärt die Landschaft, die Show den heutigen Abend"
+        },
+        "paragraphs": {
+          "en": [
+            "Use the Starry Sky Park material to understand the initiative and the value of protecting darkness. Use the event page for the practical night. These roles are complementary, but neither grants access to every road, meadow or trail across the inhabited mountain region.",
+            "Mountain cloud, rain, snow, cold and wind may alter or cancel a show. Follow the organiser's procedure together with national-park warnings. If the event cannot proceed, spend the evening at the booked accommodation rather than building an independent route from old photographs or another participant's recommendation."
+          ],
+          "de": [
+            "Nutze das Material des Starry Sky Park, um Initiative und Wert des Dunkelheitsschutzes zu verstehen. Nutze die Veranstaltungsseite für die praktische Nacht. Beide Rollen ergänzen sich, doch keine gewährt Zugang zu jeder Straße, Wiese oder jedem Weg in der bewohnten Bergregion.",
+            "Bergwolken, Regen, Schnee, Kälte und Wind können eine Show verändern oder absagen. Folge dem Verfahren des Veranstalters zusammen mit den Warnungen des Nationalparks. Kann die Veranstaltung nicht stattfinden, verbringe den Abend in der gebuchten Unterkunft, statt aus alten Fotos oder Empfehlungen anderer Teilnehmer eine eigenständige Route zu bauen."
+          ]
+        },
+        "sourceIds": [
+          "biesz-about",
+          "biesz-shows",
+          "biesz-safety",
+          "biesz-trails"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "biesz-shows",
+      "biesz-about",
+      "biesz-safety",
+      "biesz-trails"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "musala-hut-daylight-bookends",
+    "slug": "musala-hut-daylight-bookends",
+    "destinationId": "rila",
+    "recommendedSiteId": "musala-hut-night-area",
+    "title": {
+      "en": "Musala Hut between two daylight journeys",
+      "de": "Musala-Hütte zwischen zwei Tageswegen"
+    },
+    "seoDescription": {
+      "en": "Confirm Musala Hut, lift and marked route, ascend in daylight, observe beside shelter and descend only after daylight and a new weather check.",
+      "de": "Bestätige Musala-Hütte, Lift und markierte Route, steige bei Tageslicht auf, beobachte am Schutz und steige erst nach Tageslicht und neuer Wetterprüfung ab."
+    },
+    "standfirst": {
+      "en": "Rila is not a drive-up dark-sky destination. A night near Musala works as a genuine mountain-hut journey whose small astronomy session happens beside booked shelter. Confirm that the hut is operating, check national-park rules, lift times, marked route, weather and rescue information, then ascend while the ground is visible. Sleep at the hut and descend after daylight. If any link in that chain is uncertain, the regional sky coordinate does not provide an alternative car park.",
+      "de": "Rila ist kein anfahrbares Dark-Sky-Ziel. Eine Nacht nahe Musala funktioniert als echte Hüttenreise, deren kleine Astronomiesitzung neben gebuchtem Schutz stattfindet. Bestätige den Hüttenbetrieb, prüfe Nationalparkregeln, Liftzeiten, markierte Route, Wetter und Rettungsinformationen und steige auf, solange der Boden sichtbar ist. Schlafe in der Hütte und steige nach Tageslicht ab. Ist ein Glied dieser Kette unsicher, bietet die regionale Himmelskoordinate keinen Ersatzparkplatz."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Overnight base",
+          "de": "Übernachtungsbasis"
+        },
+        "value": {
+          "en": "Directly confirmed Musala Hut bed",
+          "de": "Direkt bestätigtes Bett in der Musala-Hütte"
+        },
+        "sourceIds": [
+          "rila-stay"
+        ]
+      },
+      {
+        "label": {
+          "en": "Route",
+          "de": "Route"
+        },
+        "value": {
+          "en": "Legal marked national-park trail",
+          "de": "Legaler markierter Nationalparkweg"
+        },
+        "sourceIds": [
+          "rila-rules",
+          "rila-tourism"
+        ]
+      },
+      {
+        "label": {
+          "en": "Lift",
+          "de": "Lift"
+        },
+        "value": {
+          "en": "Check current Borovets operation and a no-lift plan",
+          "de": "Aktuellen Betrieb in Borovets und Plan ohne Lift prüfen"
+        },
+        "sourceIds": [
+          "rila-tourism"
+        ]
+      },
+      {
+        "label": {
+          "en": "Astronomy",
+          "de": "Astronomie"
+        },
+        "value": {
+          "en": "Compact session beside host-approved shelter",
+          "de": "Kompakte Sitzung am von der Hütte erlaubten Schutz"
+        },
+        "sourceIds": [
+          "rila-stay",
+          "rila-rules"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "hut-chain",
+        "kind": "decisions",
+        "heading": {
+          "en": "Every link must work before Borovets",
+          "de": "Jedes Glied muss vor Borovets funktionieren"
+        },
+        "introduction": {
+          "en": "A hut booking alone does not solve transport, weather or the marked route.",
+          "de": "Eine Hüttenbuchung allein löst weder Transport noch Wetter oder markierte Route."
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Hut, route, lift and forecast are all confirmed",
+              "de": "Hütte, Route, Lift und Vorhersage sind vollständig bestätigt"
+            },
+            "body": {
+              "en": "Travel as a conservative two-day mountain itinerary. Carry the equipment, food, water, insulation, navigation and emergency plan required even if the astronomy portion lasts only an hour beside shelter.",
+              "de": "Reise als konservativer zweitägiger Bergplan. Trage Ausrüstung, Essen, Wasser, Isolation, Navigation und Notfallplan, die auch dann nötig sind, wenn die Astronomie nur eine Stunde am Schutz dauert."
+            },
+            "sourceIds": [
+              "rila-stay",
+              "rila-rules",
+              "rila-tourism"
+            ]
+          },
+          {
+            "label": {
+              "en": "One element is missing or conditions deteriorate",
+              "de": "Ein Element fehlt oder Bedingungen verschlechtern sich"
+            },
+            "body": {
+              "en": "Do not start or turn back within daylight reserves. Never replace a missed lift with an improvised night ascent from Borovets, and never use the regional coordinate as road access.",
+              "de": "Starte nicht oder kehre innerhalb der Tageslichtreserve um. Ersetze einen verpassten Lift niemals durch einen improvisierten Nachtaufstieg ab Borovets und behandle die Regionskoordinate nie als Straßenzugang."
+            },
+            "sourceIds": [
+              "rila-rules",
+              "rila-tourism"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "shelter-not-summit",
+        "kind": "prose",
+        "heading": {
+          "en": "The useful sky is the one beside shelter",
+          "de": "Der brauchbare Himmel liegt neben dem Schutz"
+        },
+        "paragraphs": {
+          "en": [
+            "Ask the hut host which durable nearby surface may be used without blocking entrances, paths, sleeping guests or emergency movement. Inspect it before dusk. Keep the setup compact, wind-secured and close enough to retreat immediately when fog, precipitation or cold changes.",
+            "There is no need to walk toward a summit in darkness. The hut-side sky preserves the essential advantage while removing unfamiliar terrain from the observing session. Keep light low, sound restrained and all equipment inside the known footprint; protected-area rules and other guests' rest remain active at night."
+          ],
+          "de": [
+            "Frage den Hüttenwirt, welche robuste nahe Fläche genutzt werden darf, ohne Eingänge, Wege, schlafende Gäste oder Rettungsbewegung zu blockieren. Prüfe sie vor der Dämmerung. Halte den Aufbau kompakt, windsicher und so nah, dass bei Nebel, Niederschlag oder Kälte sofortiger Rückzug möglich ist.",
+            "Es gibt keinen Grund, in der Dunkelheit zu einem Gipfel zu gehen. Der Himmel an der Hütte bewahrt den wesentlichen Vorteil und entfernt unbekanntes Gelände aus der Beobachtung. Halte Licht schwach, Geräusche zurückhaltend und Ausrüstung innerhalb der bekannten Fläche; Schutzgebietsregeln und Gästeruhe gelten nachts weiter."
+          ]
+        },
+        "sourceIds": [
+          "rila-stay",
+          "rila-rules"
+        ]
+      },
+      {
+        "id": "two-day-rhythm",
+        "kind": "schedule",
+        "heading": {
+          "en": "Daylight is part of both directions",
+          "de": "Tageslicht gehört zu beiden Richtungen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Early in Borovets",
+              "de": "Früh in Borovets"
+            },
+            "title": {
+              "en": "Recheck before gaining height",
+              "de": "Vor dem Höhengewinn erneut prüfen"
+            },
+            "body": {
+              "en": "Confirm lift operation, hut status, mountain forecast, marked route and turnaround time. Leave the full itinerary with a contact and begin with enough reserve to reach shelter in daylight.",
+              "de": "Bestätige Liftbetrieb, Hüttenstatus, Bergvorhersage, markierte Route und Umkehrzeit. Hinterlege den vollständigen Plan bei einer Kontaktperson und beginne mit genug Reserve, um den Schutz bei Tageslicht zu erreichen."
+            },
+            "sourceIds": [
+              "rila-stay",
+              "rila-tourism",
+              "rila-rules"
+            ]
+          },
+          {
+            "time": {
+              "en": "After arrival at the hut",
+              "de": "Nach Ankunft an der Hütte"
+            },
+            "title": {
+              "en": "Finish mountain tasks before astronomy",
+              "de": "Bergaufgaben vor der Astronomie beenden"
+            },
+            "body": {
+              "en": "Check in, eat, hydrate, dry clothing and learn the approved outside area. Observe only if the host and current conditions support it; a booked bed is permission to rest, not a demand to use the sky.",
+              "de": "Checke ein, iss, trink, trockne Kleidung und lerne die erlaubte Außenfläche. Beobachte nur, wenn Gastgeber und aktuelle Bedingungen es tragen; ein gebuchtes Bett ist eine Erlaubnis zur Ruhe und keine Forderung, den Himmel zu nutzen."
+            },
+            "sourceIds": [
+              "rila-stay",
+              "rila-rules"
+            ]
+          },
+          {
+            "time": {
+              "en": "The following morning",
+              "de": "Am folgenden Morgen"
+            },
+            "title": {
+              "en": "Descend after a fresh decision",
+              "de": "Nach neuer Entscheidung absteigen"
+            },
+            "body": {
+              "en": "Sleep before travel, inspect weather and route again and descend on the marked line in daylight. Lift changes or poor conditions may require waiting or using the prepared alternative rather than forcing the schedule.",
+              "de": "Schlafe vor der Reise, prüfe Wetter und Route erneut und steige bei Tageslicht auf markierter Linie ab. Liftänderungen oder schlechte Bedingungen können Warten oder die vorbereitete Alternative verlangen, statt den Zeitplan zu erzwingen."
+            },
+            "sourceIds": [
+              "rila-tourism",
+              "rila-rules",
+              "rila-stay"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "rila-stay",
+      "rila-rules",
+      "rila-tourism"
+    ],
+    "lastReviewedAt": "2026-08-29"
   }
 ]

@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "id": "cesco-reserved-night-from-barreal",
+  "slug": "cesco-reserved-night-from-barreal",
+  "destinationId": "el-leoncito",
+  "recommendedSiteId": "el-leoncito-cesco-night-visit",
+  "title": {
+    "en": "CESCO after dark, Barreal before and after",
+    "de": "CESCO bei Nacht, Barreal davor und danach"
+  },
+  "seoDescription": {
+    "en": "Base in Barreal for a reserved CESCO night visit at El Leoncito while keeping CASLEO and national-park camping as separate permissions.",
+    "de": "Nutze Barreal als Basis für einen reservierten CESCO-Nachtbesuch in El Leoncito und behandle CASLEO sowie Camping als getrennte Erlaubnisse."
+  },
+  "standfirst": {
+    "en": "El Leoncito contains more than one institution, and their names are easy to blur while planning from afar. A CESCO night visit is its own advance-booked programme. It does not include informal access to CASLEO, a campsite or another road inside the park. Sleep in Barreal or hold a separate legal camping arrangement, reach the park in daylight and let one confirmed reservation define the whole observing night.",
+    "de": "El Leoncito umfasst mehr als eine Institution, deren Namen bei der Planung aus der Ferne leicht verschwimmen. Ein CESCO-Nachtbesuch ist ein eigenes, vorab gebuchtes Programm. Er umfasst weder informellen Zugang zu CASLEO noch zu Campingplatz oder weiterer Parkstraße. Schlafe in Barreal oder besitze eine getrennte legale Campingregelung, erreiche den Park bei Tageslicht und lasse eine bestätigte Reservierung die gesamte Beobachtungsnacht bestimmen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night visit",
+        "de": "Nachtbesuch"
+      },
+      "value": {
+        "en": "Advance-booked CESCO programme",
+        "de": "Vorab gebuchtes CESCO-Programm"
+      },
+      "sourceIds": [
+        "leoncito-activities",
+        "leoncito-plan"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Barreal or separately booked legal camping",
+        "de": "Barreal oder separat gebuchtes legales Camping"
+      },
+      "sourceIds": [
+        "leoncito-plan",
+        "leoncito-fees"
+      ]
+    },
+    {
+      "label": {
+        "en": "CASLEO",
+        "de": "CASLEO"
+      },
+      "value": {
+        "en": "Separate institution and access arrangement",
+        "de": "Separate Institution und Zugangsregelung"
+      },
+      "sourceIds": [
+        "leoncito-activities"
+      ]
+    },
+    {
+      "label": {
+        "en": "Conditions",
+        "de": "Bedingungen"
+      },
+      "value": {
+        "en": "Altitude, cold, wind and remote roads",
+        "de": "Höhe, Kälte, Wind und abgelegene Straßen"
+      },
+      "sourceIds": [
+        "leoncito-plan"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "barreal-bookends",
+      "kind": "prose",
+      "heading": {
+        "en": "A known bed gives the observatory visit an edge",
+        "de": "Ein bekanntes Bett gibt dem Observatoriumsbesuch einen Rahmen"
+      },
+      "paragraphs": {
+        "en": [
+          "Choose the night's legal endpoint before booking the astronomy programme. Barreal offers the simplest base because the outbound route begins from a known place and the return does not depend on finding accommodation after a cold late session. If camping is preferred, confirm it independently with the park; an observatory ticket is not a camping permit.",
+          "Carry water, warm layers and an offline route, and allow more time than a city-to-city distance suggests. Dry Andean air can cool sharply after sunset. Arriving early also prevents headlights, hurried walking and confused check-in from becoming part of the observing programme."
+        ],
+        "de": [
+          "Bestimme den legalen Endpunkt der Nacht, bevor du das Astronomieprogramm buchst. Barreal ist die einfachste Basis, weil die Hinfahrt an einem bekannten Ort beginnt und die Rückkehr nicht von einer Unterkunftssuche nach einer kalten späten Sitzung abhängt. Möchtest du campen, bestätige dies getrennt beim Park; ein Observatoriumsticket ist keine Campingerlaubnis.",
+          "Nimm Wasser, warme Schichten und eine Offline-Route mit und plane mehr Zeit ein, als eine Stadt-zu-Stadt-Entfernung vermuten lässt. Trockene Andenluft kann nach Sonnenuntergang stark abkühlen. Frühe Ankunft verhindert außerdem, dass Scheinwerfer, Eile und ein unklarer Check-in Teil des Beobachtungsprogramms werden."
+        ]
+      },
+      "sourceIds": [
+        "leoncito-plan",
+        "leoncito-fees",
+        "leoncito-activities"
+      ]
+    },
+    {
+      "id": "cesco-sequence",
+      "kind": "schedule",
+      "heading": {
+        "en": "Keep each institution in its own time slot",
+        "de": "Jede Institution behält ihr eigenes Zeitfenster"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before the travel day",
+            "de": "Vor dem Reisetag"
+          },
+          "title": {
+            "en": "Confirm CESCO by name",
+            "de": "CESCO namentlich bestätigen"
+          },
+          "body": {
+            "en": "Verify operating day, reservation, meeting point, transport, duration and weather procedure. Save the reply offline and do not substitute a CASLEO reference, a park admission or an old timetable for this exact booking.",
+            "de": "Bestätige Betriebstag, Reservierung, Treffpunkt, Transport, Dauer und Wetterverfahren. Speichere die Antwort offline und ersetze diese konkrete Buchung weder durch einen CASLEO-Hinweis noch Parkeintritt oder alten Zeitplan."
+          },
+          "sourceIds": [
+            "leoncito-activities",
+            "leoncito-plan"
+          ]
+        },
+        {
+          "time": {
+            "en": "In daylight at El Leoncito",
+            "de": "Bei Tageslicht in El Leoncito"
+          },
+          "title": {
+            "en": "Resolve the return before check-in",
+            "de": "Den Rückweg vor dem Check-in klären"
+          },
+          "body": {
+            "en": "Identify the programme entrance and the road back to Barreal or the separately booked campsite. Keep fuel, water and clothing with the group and follow staff movement rules around scientific facilities.",
+            "de": "Erkenne Programmeingang und Straße zurück nach Barreal oder zum separat gebuchten Campingplatz. Halte Treibstoff, Wasser und Kleidung bei der Gruppe und folge den Bewegungsregeln des Personals rund um wissenschaftliche Anlagen."
+          },
+          "sourceIds": [
+            "leoncito-plan",
+            "leoncito-fees"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the visit ends",
+            "de": "Wenn der Besuch endet"
+          },
+          "title": {
+            "en": "Leave without collecting another dome",
+            "de": "Abfahren ohne eine weitere Kuppel zu sammeln"
+          },
+          "body": {
+            "en": "Pack completely, follow the approved exit and return to the chosen base. Do not add CASLEO, a park road or an empty campsite unless a separate current permission explicitly covers it.",
+            "de": "Packe vollständig ein, folge der erlaubten Ausfahrt und kehre zur gewählten Basis zurück. Ergänze weder CASLEO noch Parkstraße oder leeren Campingplatz, sofern keine separate aktuelle Erlaubnis dies ausdrücklich abdeckt."
+          },
+          "sourceIds": [
+            "leoncito-activities",
+            "leoncito-plan",
+            "leoncito-fees"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "three-permissions",
+      "kind": "decisions",
+      "heading": {
+        "en": "One valley can contain three different permissions",
+        "de": "Ein Tal kann drei verschiedene Erlaubnisse enthalten"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "CESCO reservation confirmed",
+            "de": "CESCO-Reservierung bestätigt"
+          },
+          "body": {
+            "en": "Proceed with the named night programme and its published visitor conditions. Treat every telescope area outside that itinerary as closed unless staff explicitly includes it.",
+            "de": "Nutze das benannte Nachtprogramm und seine veröffentlichten Besucherbedingungen. Behandle jeden Teleskopbereich außerhalb dieses Ablaufs als geschlossen, sofern das Personal ihn nicht ausdrücklich einbezieht."
+          },
+          "sourceIds": [
+            "leoncito-activities",
+            "leoncito-plan"
+          ]
+        },
+        {
+          "label": {
+            "en": "Only general park or fee information is available",
+            "de": "Nur allgemeine Park- oder Gebühreninformationen liegen vor"
+          },
+          "body": {
+            "en": "Do not travel expecting a night visit. Ask for the exact institution, date and meeting procedure or keep El Leoncito as a daytime park stop. General opening and entrance information cannot create an observatory appointment.",
+            "de": "Reise nicht in Erwartung eines Nachtbesuchs. Frage nach genauer Institution, Datum und Treffverfahren oder behandle El Leoncito als Tagesstopp. Allgemeine Öffnungs- und Eintrittsinformationen schaffen keinen Observatoriumstermin."
+          },
+          "sourceIds": [
+            "leoncito-plan",
+            "leoncito-fees"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "leoncito-activities",
+    "leoncito-plan",
+    "leoncito-fees"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
