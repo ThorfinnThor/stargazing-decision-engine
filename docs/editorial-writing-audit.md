@@ -6,7 +6,7 @@ This report checks source copy against `docs/editorial-writing-standard.md`. It 
 
 | Corpus | Pages | Text units | Banned phrases | Em dashes | Colons |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| destination | 50 | 2218 | 0 | 25 | 152 |
+| destination | 50 | 2218 | 0 | 4 | 144 |
 | location-tour | 10 | 194 | 0 | 0 | 0 |
 | gear | 10 | 598 | 0 | 2 | 32 |
 
@@ -15,13 +15,12 @@ This report checks source copy against `docs/editorial-writing-standard.md`. It 
 - Exact cross-page duplicate passages: 0
 - Repeated twelve-word openings across pages: 4
 - The repeated openings are limited to factual published-specification labels in gear comparison bullets.
-- Repeated destination section-ID sequences: 1
+- Repeated destination section-ID sequences: 0
 - The new location-tour corpus passes the hard phrase and exact-duplication checks.
 
 ## Highest-priority existing patterns
 
-- 21 destination guides share the section-ID sequence `make-the-access-decision > choose-the-night > work-the-site-carefully`: kerry, north-york-moors, elan-valley, hortobagy, zselic, hanle, witsand, al-wathba, montsec, sierra-nevada, pico-do-arieiro, el-leoncito, cerro-paranal, la-silla, cederberg, sutherland, kalahari, central-tasmania, gobi, bieszczady, rila.
 
 ## Editorial decision
 
-The ten location tours are suitable for publication when their build, source, SEO, and visual checks pass. The older destination and gear corpus should not be described as fully compliant until the repeated-structure findings have been reviewed page by page. Revisions should be handled in subject-based batches, preserving the cited facts while changing information order and voice where needed.
+The destination corpus passes the hard phrase, exact-duplication, and repeated-structure checks. Publication still depends on source, schema, build, SEO, and visual verification; this text audit does not replace those gates.
