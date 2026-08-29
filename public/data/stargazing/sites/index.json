@@ -3,16 +3,21 @@
     "id": "al-wathba-dark-sky",
     "slug": "al-wathba-dark-sky",
     "destinationId": "al-wathba",
-    "name": "Al Wathba desert observing area",
+    "name": "Al Wathba regional reference area",
     "lat": 24.22,
     "lon": 54.62,
     "elevationM": 15,
     "siteType": "desert",
-    "publicAccess": "yes",
-    "accessScore": 72,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 74,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.ead.gov.ae/en/Experience-Green-Abu-Dhabi/Places-To-Go/Al-Wathba-Fossil-Dunes",
+    "accessNotes": {
+      "en": "This coordinate supports regional sky calculations but is not a verified public night-observing surface. The nearby Fossil Dunes reserve is currently closed; do not travel here for stargazing until an authority publishes a legal night location and current access rules.",
+      "de": "Diese Koordinate dient regionalen Himmelsberechnungen, ist aber keine bestätigte öffentliche Nachtbeobachtungsfläche. Das nahe Fossil-Dunes-Reservat ist derzeit geschlossen; reise erst zum Stargazing an, wenn eine Behörde einen legalen Nachtplatz und aktuelle Zugangsregeln veröffentlicht."
+    }
   },
   {
     "id": "al-wathba-fossil-dunes",
@@ -23,15 +28,15 @@
     "lon": 54.573,
     "elevationM": 30,
     "siteType": "desert-reserve",
-    "publicAccess": "unknown",
-    "accessScore": null,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 72,
     "certificationIds": [],
-    "notesSourceUrl": "https://visitabudhabi.ae/en/things-to-do/nature-and-wildlife/natural-wonders/al-wathba-fossil-dunes",
+    "notesSourceUrl": "https://www.ead.gov.ae/en/Experience-Green-Abu-Dhabi/Places-To-Go/Al-Wathba-Fossil-Dunes",
     "accessNotes": {
-      "en": "The official page confirms a visitor reserve with illuminated trails but does not establish unrestricted late-night observing access. Do not rely on this point until current hours and night rules are confirmed.",
-      "de": "Die offizielle Seite bestätigt ein Besucherreservat mit beleuchteten Wegen, aber keinen unbeschränkten Zugang zur späten Nachtbeobachtung. Nutze diesen Punkt erst nach Bestätigung aktueller Öffnungs- und Nachtregeln."
+      "en": "The Environment Agency – Abu Dhabi currently lists the Fossil Dunes as temporarily closed for development until further notice. Do not enter or use the reserve as a stargazing destination unless that official status changes.",
+      "de": "Die Environment Agency – Abu Dhabi führt die Fossil Dunes derzeit bis auf Weiteres als wegen Entwicklungsarbeiten vorübergehend geschlossen. Betritt oder nutze das Reservat nicht als Stargazing-Ziel, solange sich dieser offizielle Status nicht ändert."
     }
   },
   {
@@ -93,16 +98,21 @@
     "id": "bieszczady-dark-sky",
     "slug": "bieszczady-dark-sky",
     "destinationId": "bieszczady",
-    "name": "Bieszczady dark-sky area",
+    "name": "Bieszczady regional reference area",
     "lat": 49.1,
     "lon": 22.7,
     "elevationM": 700,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 74,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 77,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.gwiezdnebieszczady.pl/o-inicjatywe/",
+    "accessNotes": {
+      "en": "The starry-sky park covers a large inhabited and protected mountain region; this coordinate is not a public observing pad. Use the organiser's confirmed meeting point for a dated astronomy show or independently verify a legal parking and overnight arrangement.",
+      "de": "Der Sternenpark umfasst eine große bewohnte und geschützte Bergregion; diese Koordinate ist kein öffentlicher Beobachtungsplatz. Nutze den bestätigten Treffpunkt einer terminierten Astronomievorführung oder prüfe selbst eine legale Park- und Übernachtungsregelung."
+    }
   },
   {
     "id": "big-bend-panther-junction",
@@ -223,36 +233,41 @@
     "id": "cederberg-dark-sky",
     "slug": "cederberg-dark-sky",
     "destinationId": "cederberg",
-    "name": "Cederberg dark-sky area",
+    "name": "Cederberg regional reference area",
     "lat": -32.35,
     "lon": 19.07,
     "elevationM": 900,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 68,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 90,
     "certificationIds": [],
-    "notesSourceUrl": "https://www.cederbergobservatory.org.za/book-tickets/",
+    "notesSourceUrl": "https://www.cederberg.co.za/activities/star-gazing",
     "accessNotes": {
-      "en": "Public observing is offered on selected Saturday evenings, subject to booking, weather, and Moon phase. Arrange nearby accommodation because the program finishes at night.",
-      "de": "Öffentliche Beobachtung findet an ausgewählten Samstagabenden statt, abhängig von Buchung, Wetter und Mondphase. Organisiere eine nahe Unterkunft, da das Programm nachts endet."
+      "en": "This coordinate represents the wider Cederberg and is not a verified roadside observing site. Reserve the Astronomical Observatory programme or obtain explicit permission and current access details for a named accommodation or land parcel.",
+      "de": "Diese Koordinate repräsentiert das größere Cederberg-Gebiet und ist kein bestätigter Straßen-Beobachtungsplatz. Buche das Programm des Astronomical Observatory oder hole für eine benannte Unterkunft beziehungsweise Fläche ausdrückliche Erlaubnis und aktuelle Zugangsdaten ein."
     }
   },
   {
     "id": "central-tasmania-dark-sky",
     "slug": "central-tasmania-dark-sky",
     "destinationId": "central-tasmania",
-    "name": "Central Tasmania dark-sky area",
+    "name": "Central Tasmania regional reference area",
     "lat": -41.8,
     "lon": 146.5,
     "elevationM": 1000,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 68,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 86,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.tas.gov.au/explore-our-parks/lake-st-clair",
+    "accessNotes": {
+      "en": "This point is a regional climate and sky reference, not an approved night pull-off. Base a visit on booked accommodation or camping at Lake St Clair and check park alerts, vehicle access, and wildlife guidance for the exact date.",
+      "de": "Dieser Punkt ist eine regionale Klima- und Himmelsreferenz, keine freigegebene nächtliche Haltebucht. Stütze einen Besuch auf gebuchte Unterkunft oder Camping am Lake St Clair und prüfe Parkmeldungen, Fahrzeugzugang und Wildtierhinweise für den konkreten Termin."
+    }
   },
   {
     "id": "cerro-paranal-observatory",
@@ -1243,16 +1258,21 @@
     "id": "montsec-observing-area",
     "slug": "montsec-observing-area",
     "destinationId": "montsec",
-    "name": "Montsec observing area",
+    "name": "Montsec regional reference area",
     "lat": 42.02,
     "lon": 0.76,
     "elevationM": 950,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 78,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 86,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://parcastronomic.cat/en/reserve-starlight/",
+    "accessNotes": {
+      "en": "This point represents the wider Starlight reserve, not a confirmed public parking or observing surface. For a dependable night use a dated Montsec Astronomical Park session or independently verify land ownership, parking, and night access for another exact point.",
+      "de": "Dieser Punkt repräsentiert das größere Starlight-Reservat, keinen bestätigten öffentlichen Parkplatz oder Beobachtungsplatz. Nutze für eine verlässliche Nacht einen terminierten Besuch im Montsec Astronomical Park oder prüfe bei einem anderen exakten Punkt Eigentum, Parken und Nachtzugang selbst."
+    }
   },
   {
     "id": "mt-john-night-observing",
@@ -1398,16 +1418,21 @@
     "id": "pico-arieiro-observing-area",
     "slug": "pico-arieiro-observing-area",
     "destinationId": "pico-do-arieiro",
-    "name": "Pico do Arieiro observing area",
+    "name": "Pico do Arieiro visitor area",
     "lat": 32.72,
     "lon": -16.82,
     "elevationM": 1818,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 76,
+    "publicAccess": "limited",
+    "accessScore": 58,
     "active": true,
     "priority": 78,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://visitmadeira.com/en/where-to-go/madeira/madeira-peaks/pico-do-areeiro/",
+    "accessNotes": {
+      "en": "The official visitor page confirms a highly visited summit area with paid parking and shuttle arrangements, but it does not promise unrestricted all-night use. Confirm parking operation, road and trail status, weather, and any timed access before treating it as a night plan.",
+      "de": "Die offizielle Besucherseite bestätigt einen stark frequentierten Gipfelbereich mit kostenpflichtigem Parkplatz und Shuttle-Regelung, aber keine uneingeschränkte Nutzung während der ganzen Nacht. Prüfe Parkbetrieb, Straßen- und Wegestatus, Wetter und mögliche Zeitfenster, bevor du daraus einen Nachtplan machst."
+    }
   },
   {
     "id": "pinon-flats-campground",
@@ -1453,16 +1478,21 @@
     "id": "rila-dark-sky",
     "slug": "rila-dark-sky",
     "destinationId": "rila",
-    "name": "Rila mountain observing area",
+    "name": "Rila regional reference area",
     "lat": 42.1,
     "lon": 23.6,
     "elevationM": 1800,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 72,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 80,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://rilanationalpark.bg/tourism/general-information/rules-and-prohibitions-2.html",
+    "accessNotes": {
+      "en": "This mountain coordinate is a regional sky reference rather than a road-accessible night site. Any after-dark plan must use marked routes and legal accommodation while respecting current national-park, rescue, weather, and lift information.",
+      "de": "Diese Bergkoordinate ist eine regionale Himmelsreferenz statt eines straßenseitig erreichbaren Nachtplatzes. Jeder Plan nach Einbruch der Dunkelheit muss markierte Routen und legale Unterkunft nutzen sowie aktuelle Nationalpark-, Rettungs-, Wetter- und Liftinformationen beachten."
+    }
   },
   {
     "id": "roque-de-los-muchachos",
@@ -1783,10 +1813,10 @@
     "id": "witsand-dark-sky",
     "slug": "witsand-dark-sky",
     "destinationId": "witsand",
-    "name": "Witsand dark-sky reserve area",
-    "lat": -32.4,
-    "lon": 20.7,
-    "elevationM": 850,
+    "name": "Witsand Nature Reserve reference area",
+    "lat": -28.552,
+    "lon": 22.485,
+    "elevationM": 1200,
     "siteType": "semi-desert",
     "publicAccess": "limited",
     "accessScore": 65,
@@ -1795,18 +1825,18 @@
     "certificationIds": [],
     "notesSourceUrl": "https://www.tourism.gov.za/AboutNDT/Publications/Bojanala%20December%202023.pdf",
     "accessNotes": {
-      "en": "Night stargazing is available to overnight guests at Witsand Nature Reserve. Book reserve accommodation or camping and confirm current access conditions before arrival.",
-      "de": "Nächtliches Stargazing ist für Übernachtungsgäste im Witsand Nature Reserve möglich. Reserviere Unterkunft oder Campingplatz und bestätige vor der Anreise die aktuellen Zugangsbedingungen."
+      "en": "This point represents Witsand Nature Reserve in the Northern Cape, not the coastal town in the Western Cape. Night stargazing is tied to a booked reserve stay; confirm accommodation, gate times, road conditions, and the exact observing area before arrival.",
+      "de": "Dieser Punkt bezeichnet das Witsand Nature Reserve im Northern Cape, nicht den gleichnamigen Küstenort im Western Cape. Nachtbeobachtung ist an eine gebuchte Übernachtung im Reservat gebunden; bestätige Unterkunft, Torzeiten, Straßenzustand und den genauen Beobachtungsbereich vor der Anreise."
     }
   },
   {
     "id": "witsand-overnight-camp",
     "slug": "witsand-overnight-camp",
     "destinationId": "witsand",
-    "name": "Witsand overnight camp",
-    "lat": -32.39,
-    "lon": 20.705,
-    "elevationM": 860,
+    "name": "Witsand Nature Reserve overnight camp",
+    "lat": -28.552,
+    "lon": 22.485,
+    "elevationM": 1200,
     "siteType": "reserve-camp",
     "publicAccess": "limited",
     "accessScore": 66,
@@ -1815,8 +1845,8 @@
     "certificationIds": [],
     "notesSourceUrl": "https://www.tourism.gov.za/AboutNDT/Publications/Bojanala%20December%202023.pdf",
     "accessNotes": {
-      "en": "Night viewing is intended for booked overnight guests of Witsand Nature Reserve. Confirm accommodation, gate times, road conditions, and reserve rules directly.",
-      "de": "Nachtbeobachtung ist für gebuchte Übernachtungsgäste des Witsand Nature Reserve vorgesehen. Bestätige Unterkunft, Torzeiten, Straßenbedingungen und Reservatsregeln direkt."
+      "en": "Night viewing is intended for booked overnight guests of Witsand Nature Reserve in the Northern Cape. Confirm the exact accommodation, gate times, road conditions, and reserve rules directly; do not navigate to coastal Witsand in the Western Cape.",
+      "de": "Nachtbeobachtung ist für gebuchte Übernachtungsgäste des Witsand Nature Reserve im Northern Cape vorgesehen. Bestätige genaue Unterkunft, Torzeiten, Straßenzustand und Reservatsregeln direkt; navigiere nicht zum Küstenort Witsand im Western Cape."
     }
   },
   {
