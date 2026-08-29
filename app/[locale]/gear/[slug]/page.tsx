@@ -43,12 +43,28 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const guideStructuredData = buildGearGuideStructuredData({ guide, locale, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/` });
   return (
-    <main className="event-page" lang={isGerman ? "de" : "en"}>
+    <main className="event-page gear-guide-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideStructuredData) }} />
       <PageHomeNav locale={locale} />
-      <header className="event-header"><p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p><h1>{guide.title[locale]}</h1><p className="lede">{guide.summary[locale]}</p><p className="event-note">{guide.decisionSummary[locale]}</p></header>
-      <section className="event-summary" aria-labelledby="gear-audience-title"><h2 id="gear-audience-title">{isGerman ? "Für wen" : "Who it is for"}</h2><p>{guide.audience[locale]}</p><h2>{isGerman ? "Kaufkriterien" : "Buying criteria"}</h2><ul>{guide.buyingCriteria.map((criterion) => <li key={criterion.en}>{criterion[locale]}</li>)}</ul></section>
+      <header className="event-header gear-guide-header">
+        <p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p>
+        <h1>{guide.title[locale]}</h1>
+        <p className="lede">{guide.summary[locale]}</p>
+        <p className="gear-decision-line">{guide.decisionSummary[locale]}</p>
+      </header>
+      <section className="event-summary gear-decision-summary" aria-labelledby="gear-audience-title">
+        <div>
+          <p className="eyebrow">{isGerman ? "Passung" : "Fit"}</p>
+          <h2 id="gear-audience-title">{isGerman ? "Für wen" : "Who it is for"}</h2>
+          <p>{guide.audience[locale]}</p>
+        </div>
+        <div>
+          <p className="eyebrow">{isGerman ? "Vor dem Kauf" : "Before buying"}</p>
+          <h2>{isGerman ? "Kaufkriterien" : "Buying criteria"}</h2>
+          <ul>{guide.buyingCriteria.map((criterion) => <li key={criterion.en}>{criterion[locale]}</li>)}</ul>
+        </div>
+      </section>
       <section className="event-summary" aria-labelledby="gear-comparison-title">
         <h2 id="gear-comparison-title">{isGerman ? "Vergleich" : "Comparison"}</h2>
         <div className="event-table-wrap">
@@ -88,7 +104,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
         <p>{isGerman ? "Die Aussagen beruhen auf technischen Zusammenhängen, Kompatibilität und veröffentlichten Spezifikationen. Wir behaupten keine Praxistests und führen keine Live-Preise oder Verfügbarkeiten." : "The guidance is based on technical relationships, compatibility, and published specifications. We do not claim hands-on testing or publish live prices or availability."}</p>
         <a className="text-link" href={localizedLinks.methodology(locale)}>{isGerman ? "Bewertungsmethodik lesen →" : "Read the evaluation methodology →"}</a>
       </section>
-      <section className="event-summary" aria-labelledby="related-guides-title">
+      <section className="event-summary gear-related-guides" aria-labelledby="related-guides-title">
         <h2 id="related-guides-title">{isGerman ? "Weitere Ausrüstungs-Guides" : "Related gear guides"}</h2>
         <div className="foundation-grid gear-guide-grid">{relatedGuides.map((related) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, related.slug)} key={related.slug}><div className="card-topline"><span>{related.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{related.title[locale]}</h3><p>{related.summary[locale]}</p></a>)}</div>
       </section>

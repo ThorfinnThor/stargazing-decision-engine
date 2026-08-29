@@ -19,9 +19,8 @@ export function DestinationEditorialGuideView({ guide, locale }: { guide: Destin
   return (
     <article className="destination-editorial" aria-labelledby="destination-editorial-title">
       <header className="destination-editorial-intro">
-        <p className="eyebrow">{isGerman ? "Redaktioneller Feldführer" : "Editorial field guide"}</p>
+        <p className="eyebrow">{isGerman ? "Vor Ort planen" : "Field guide"}</p>
         <h2 id="destination-editorial-title">{guide.seoTitle[locale]}</h2>
-        <p className="destination-editorial-standfirst">{guide.standfirst[locale]}</p>
         <p className="destination-editorial-angle">{guide.editorialAngle[locale]}</p>
       </header>
 
