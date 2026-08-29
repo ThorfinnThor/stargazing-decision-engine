@@ -2,14 +2,19 @@
   "id": "brecon-dark-sky",
   "slug": "brecon-dark-sky",
   "destinationId": "brecon-beacons",
-  "name": "Bannau Brycheiniog dark-sky area",
+  "name": "Bannau Brycheiniog reference area",
   "lat": 51.88,
   "lon": -3.43,
   "elevationM": 500,
   "siteType": "mountain",
-  "publicAccess": "yes",
-  "accessScore": 80,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 79,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://bannaubrycheiniog.org/thingstodo/top-10-places-to-go-stargazing/",
+  "accessNotes": {
+    "en": "This coordinate represents the reserve rather than a named parking place. Use one of the National Park's listed stargazing sites and verify its current parking and access conditions.",
+    "de": "Diese Koordinate repräsentiert das Schutzgebiet statt eines benannten Parkplatzes. Nutze einen gelisteten Sternbeobachtungsort des Nationalparks und bestätige dessen aktuelle Park- und Zugangsbedingungen."
+  }
 }

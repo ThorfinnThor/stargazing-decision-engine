@@ -2,14 +2,19 @@
   "id": "eifel-dark-sky",
   "slug": "eifel-dark-sky",
   "destinationId": "eifel",
-  "name": "Eifel dark-sky observing area",
+  "name": "Eifel Dark Sky Park reference area",
   "lat": 50.55,
   "lon": 6.56,
   "elevationM": 500,
   "siteType": "forest",
-  "publicAccess": "yes",
-  "accessScore": 82,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 82,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.nationalpark-eifel.de/de/nationalpark-erleben/sternenpark/",
+  "accessNotes": {
+    "en": "The coordinate represents the protected region, not a public nighttime stop. The National Park directs independent observers to named SternenBlicke outside the sensitive park core.",
+    "de": "Die Koordinate repräsentiert die geschützte Region, keinen öffentlichen Nachtplatz. Der Nationalpark verweist selbständige Beobachter auf benannte SternenBlicke außerhalb des empfindlichen Parkkerns."
+  }
 }
