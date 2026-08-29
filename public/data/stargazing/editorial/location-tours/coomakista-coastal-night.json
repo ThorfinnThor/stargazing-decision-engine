@@ -1,0 +1,170 @@
+{
+  "version": 1,
+  "id": "coomakista-coastal-night",
+  "slug": "coomakista-coastal-night",
+  "destinationId": "kerry",
+  "recommendedSiteId": "coomakista-pass-viewpoint",
+  "title": {
+    "en": "A weather-led stargazing evening at Coomakista Pass",
+    "de": "Ein wettergeführter Beobachtungsabend am Coomakista Pass"
+  },
+  "seoDescription": {
+    "en": "Plan a self-guided Kerry dark-sky evening at Coomakista Pass without turning a changeable Atlantic night into a long viewpoint chase.",
+    "de": "Plane eine eigenständige Dark-Sky-Nacht am Coomakista Pass in Kerry, ohne wechselhaftes Atlantikwetter mit einer langen Aussichtspunktjagd zu beantworten."
+  },
+  "standfirst": {
+    "en": "Coomakista Pass sits between Waterville and Caherdaniel with a wide Atlantic outlook. Its appeal is obvious in daylight, but the night succeeds only when visibility, wind and the road remain comfortable. This is a compact coastal plan with one decision point before sunset and no promise that a dark-sky reserve removes Irish weather.",
+    "de": "Der Coomakista Pass liegt zwischen Waterville und Caherdaniel und öffnet den Blick zum Atlantik. Bei Tageslicht ist seine Wirkung sofort verständlich, doch nachts zählen Sicht, Wind und sichere Straßenverhältnisse. Dieser kompakte Küstenplan besitzt eine klare Entscheidung vor Sonnenuntergang und verspricht nicht, dass ein Dark-Sky-Reservat das irische Wetter aufhebt."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Ausgangspunkt"
+      },
+      "value": {
+        "en": "Waterville or Caherdaniel",
+        "de": "Waterville oder Caherdaniel"
+      },
+      "sourceIds": [
+        "kerry-discover"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observe",
+        "de": "Beobachten"
+      },
+      "value": {
+        "en": "From the verified Coomakista viewpoint",
+        "de": "Vom geprüften Coomakista-Aussichtspunkt"
+      },
+      "sourceIds": [
+        "kerry-reserve"
+      ]
+    },
+    {
+      "label": {
+        "en": "Allow",
+        "de": "Einplanen"
+      },
+      "value": {
+        "en": "Three to four hours including a daylight scout",
+        "de": "Drei bis vier Stunden einschließlich Erkundung bei Tageslicht"
+      },
+      "sourceIds": [
+        "kerry-discover",
+        "kerry-reserve"
+      ]
+    },
+    {
+      "label": {
+        "en": "Abort for",
+        "de": "Abbrechen bei"
+      },
+      "value": {
+        "en": "Unsafe wind, poor road visibility or persistent cloud",
+        "de": "Unsicherem Wind, schlechter Straßensicht oder beständiger Bewölkung"
+      },
+      "sourceIds": [
+        "kerry-reserve"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "weather-window",
+      "kind": "decisions",
+      "heading": {
+        "en": "The forecast decides whether this is a sky night or a coastal evening",
+        "de": "Die Vorhersage entscheidet zwischen Himmelsnacht und Küstenabend"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Clear enough and comfortable wind",
+            "de": "Ausreichend klar und erträglicher Wind"
+          },
+          "body": {
+            "en": "Scout Coomakista before sunset, identify the parking edge and stay for the first sustained dark interval. The reserve surrounds the viewpoint with a much larger region, but a single known place is safer than an improvised night drive.",
+            "de": "Erkunde Coomakista vor Sonnenuntergang, erkenne die Parkplatzbegrenzung und bleibe für das erste längere dunkle Zeitfenster. Das Reservat umfasst eine große Region, doch ein bekannter Standort ist sicherer als eine improvisierte Nachtfahrt."
+          },
+          "sourceIds": [
+            "kerry-reserve",
+            "kerry-discover"
+          ]
+        },
+        {
+          "label": {
+            "en": "Broken cloud with usable gaps",
+            "de": "Wolkenfelder mit nutzbaren Lücken"
+          },
+          "body": {
+            "en": "Keep the equipment simple. Binoculars and unaided observing can use short openings without creating a setup that must be dismantled in rain.",
+            "de": "Halte die Ausrüstung einfach. Fernglas und freie Beobachtung nutzen kurze Lücken, ohne dass bei Regen ein großer Aufbau abgebaut werden muss."
+          },
+          "sourceIds": [
+            "kerry-discover"
+          ]
+        },
+        {
+          "label": {
+            "en": "Low cloud, spray or uncomfortable gusts",
+            "de": "Tiefe Wolken, Gischt oder unangenehme Böen"
+          },
+          "body": {
+            "en": "Stay in the village and keep the route for another night. The dark-sky designation describes the protected night environment, not the conditions of a particular evening.",
+            "de": "Bleibe im Ort und verschiebe die Route. Die Dark-Sky-Anerkennung beschreibt den geschützten Nachthimmel, nicht die Bedingungen eines bestimmten Abends."
+          },
+          "sourceIds": [
+            "kerry-reserve"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coastal-setup",
+      "kind": "note",
+      "heading": {
+        "en": "A low profile works better on the pass",
+        "de": "Ein niedriger Aufbau funktioniert auf dem Pass besser"
+      },
+      "body": {
+        "en": "A stable chair, warm windproof layers and binoculars suit an exposed coastal viewpoint better than a tall, vibration-prone tripod. Keep every loose item contained. The aim is to watch the Atlantic horizon and the darker sky above it without turning the pull-off into a equipment yard.",
+        "de": "Ein stabiler Stuhl, warme winddichte Kleidung und ein Fernglas passen besser zu einem exponierten Küstenpass als ein hohes, vibrationsanfälliges Stativ. Sichere alle losen Teile. Ziel ist der Blick über den Atlantikhorizont und den dunkleren Himmel darüber, nicht ein Gerätepark am Straßenrand."
+      },
+      "sourceIds": [
+        "kerry-discover"
+      ],
+      "tone": "practical"
+    },
+    {
+      "id": "return",
+      "kind": "prose",
+      "heading": {
+        "en": "Use the same road twice",
+        "de": "Nutze dieselbe Straße zweimal"
+      },
+      "paragraphs": {
+        "en": [
+          "Approach from the accommodation you will return to, not as part of a late loop around the peninsula. The daylight scout reveals bends, entrances and the exposed edge of the viewpoint. That familiarity matters more after several hours outside than another possible patch of darkness farther along the coast.",
+          "Leave before fatigue becomes the dominant condition. A lower but calm session near a known base is usually more productive than repeated night driving through the reserve."
+        ],
+        "de": [
+          "Fahre von der Unterkunft an, zu der du später zurückkehrst, und mache den Pass nicht zum Teil einer späten Runde um die Halbinsel. Die Erkundung bei Tageslicht zeigt Kurven, Zufahrten und die exponierte Kante des Aussichtspunkts. Diese Vertrautheit ist nach mehreren Stunden draußen wichtiger als ein möglicher dunklerer Abschnitt weiter an der Küste.",
+          "Beende den Abend, bevor Müdigkeit die wichtigste Bedingung wird. Eine ruhigere Beobachtung nahe einer bekannten Basis ist meist ergiebiger als wiederholtes Nachtfahren durch das Reservat."
+        ]
+      },
+      "sourceIds": [
+        "kerry-reserve",
+        "kerry-discover"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "kerry-discover",
+    "kerry-reserve",
+    "kerry-festival"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

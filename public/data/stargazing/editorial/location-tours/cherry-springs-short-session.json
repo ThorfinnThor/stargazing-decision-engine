@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "id": "cherry-springs-short-session",
+  "slug": "cherry-springs-short-session",
+  "destinationId": "cherry-springs",
+  "recommendedSiteId": "cherry-springs-public-viewing-area",
+  "title": {
+    "en": "Cherry Springs for one evening without an overnight permit",
+    "de": "Ein Abend in Cherry Springs ohne Übernachtungsgenehmigung"
+  },
+  "seoDescription": {
+    "en": "Use Cherry Springs State Park's public viewing area correctly for a few hours, without confusing it with the permit-based overnight astronomy field.",
+    "de": "So nutzt du den öffentlichen Beobachtungsbereich im Cherry Springs State Park für einige Stunden, ohne ihn mit dem genehmigungspflichtigen Übernachtungsfeld zu verwechseln."
+  },
+  "standfirst": {
+    "en": "Cherry Springs has three different observing areas, and choosing the wrong one changes the rules of the night. This plan is for a short visit to the Night Sky Public Viewing Area north of Route 44. It is not an overnight stay and it does not use the astronomy field reserved for registered observers.",
+    "de": "Cherry Springs besitzt drei unterschiedliche Beobachtungsbereiche, deren Regeln nicht austauschbar sind. Dieser Plan gilt für einen kurzen Besuch im Night Sky Public Viewing Area nördlich der Route 44. Er ist keine Übernachtung und nutzt nicht das Feld für registrierte Astronomen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Correct area",
+        "de": "Richtiger Bereich"
+      },
+      "value": {
+        "en": "Night Sky Public Viewing Area",
+        "de": "Night Sky Public Viewing Area"
+      },
+      "sourceIds": [
+        "chsp-stargazing"
+      ]
+    },
+    {
+      "label": {
+        "en": "Length",
+        "de": "Dauer"
+      },
+      "value": {
+        "en": "A few hours, no overnight stay",
+        "de": "Einige Stunden, keine Übernachtung"
+      },
+      "sourceIds": [
+        "chsp-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Facilities",
+        "de": "Infrastruktur"
+      },
+      "value": {
+        "en": "Public parking, restrooms and a shielded amphitheater",
+        "de": "Öffentlicher Parkplatz, Toiletten und abgeschirmtes Amphitheater"
+      },
+      "sourceIds": [
+        "chsp-stargazing"
+      ]
+    },
+    {
+      "label": {
+        "en": "Expect",
+        "de": "Erwarten"
+      },
+      "value": {
+        "en": "Remote roads and weak mobile coverage",
+        "de": "Abgelegene Straßen und schwachen Mobilfunkempfang"
+      },
+      "sourceIds": [
+        "chsp-park"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "three-fields",
+      "kind": "decisions",
+      "heading": {
+        "en": "One park, three different commitments",
+        "de": "Ein Park, drei unterschiedliche Nutzungen"
+      },
+      "introduction": {
+        "en": "The public viewing area is the low-commitment option. The rustic campground and the Overnight Astronomy Observation Field answer different needs.",
+        "de": "Der öffentliche Bereich ist die unkomplizierte Option. Campingplatz und Overnight Astronomy Observation Field erfüllen andere Zwecke."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "A few hours with a chair or binoculars",
+            "de": "Einige Stunden mit Stuhl oder Fernglas"
+          },
+          "body": {
+            "en": "Use the public viewing area. A walkway leads from parking to an amphitheater shielded from passing vehicle lights, and the park explicitly describes it as the short-term observing area.",
+            "de": "Nutze den öffentlichen Bereich. Ein Weg führt vom Parkplatz zu einem gegen vorbeifahrende Fahrzeuge abgeschirmten Amphitheater. Die Parkverwaltung weist diesen Ort ausdrücklich für kurze Beobachtungen aus."
+          },
+          "sourceIds": [
+            "chsp-stargazing"
+          ]
+        },
+        {
+          "label": {
+            "en": "An entire night with serious equipment",
+            "de": "Eine ganze Nacht mit umfangreicher Ausrüstung"
+          },
+          "body": {
+            "en": "That is the Overnight Astronomy Observation Field. It requires registration and a fee permit, imposes stricter lighting rules and expects arrival in daylight for field parking.",
+            "de": "Dafür ist das Overnight Astronomy Observation Field vorgesehen. Es verlangt Registrierung und Gebührenbescheid, hat strengere Lichtregeln und erwartet die Ankunft bei Tageslicht für das Parken auf dem Feld."
+          },
+          "sourceIds": [
+            "chsp-stargazing",
+            "chsp-permit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arrival",
+      "kind": "prose",
+      "heading": {
+        "en": "Make the remote approach boring",
+        "de": "Die abgelegene Anfahrt sollte unspektakulär bleiben"
+      },
+      "paragraphs": {
+        "en": [
+          "Save the park address and return route before departure because mobile coverage is unreliable. Arrive with enough daylight to separate the public parking area from the overnight field across the road. The mountain setting can be cool and damp even when the day below felt mild, so footwear and insulation matter more than an elaborate observing kit.",
+          "Take only what you can carry from the parking area without repeated trips. A blanket or chair, binoculars and a properly filtered low-level light are enough for a first visit. White light, pets and alcohol are not appropriate in the public viewing area, and any light should be pointed down."
+        ],
+        "de": [
+          "Speichere Parkadresse und Rückweg vor der Abfahrt, denn der Mobilfunkempfang ist unzuverlässig. Komme bei ausreichendem Tageslicht an, damit du den öffentlichen Parkplatz vom Übernachtungsfeld auf der anderen Straßenseite unterscheiden kannst. Auf der Bergkuppe kann es auch nach einem milden Tag kühl und feucht werden, weshalb Schuhe und warme Kleidung wichtiger sind als umfangreiche Ausrüstung.",
+          "Nimm nur mit, was du ohne mehrere Wege vom Parkplatz tragen kannst. Decke oder Stuhl, Fernglas und eine korrekt gefilterte schwache Lampe reichen für den ersten Besuch. Weißes Licht, Haustiere und Alkohol gehören nicht in den öffentlichen Bereich. Jede Lampe bleibt nach unten gerichtet."
+        ]
+      },
+      "sourceIds": [
+        "chsp-stargazing",
+        "chsp-park"
+      ]
+    },
+    {
+      "id": "departure",
+      "kind": "note",
+      "heading": {
+        "en": "Leave before a short visit becomes an unplanned overnight",
+        "de": "Aus dem Kurzbesuch darf keine ungeplante Übernachtung werden"
+      },
+      "body": {
+        "en": "The public viewing area is not an overnight facility. Decide the departure time before dark, pack quietly and use the shielded approach back to the car. If your actual goal is dawn, long-exposure imaging or a full telescope session, return with the correct astronomy-field registration rather than stretching the public-area rules.",
+        "de": "Der öffentliche Bereich ist kein Übernachtungsplatz. Lege die Abfahrtszeit vor Einbruch der Dunkelheit fest, packe ruhig ein und nutze den abgeschirmten Weg zurück zum Fahrzeug. Wenn du bis zum Morgen bleiben, lange Belichtungen aufnehmen oder ein großes Teleskop betreiben willst, komm mit der richtigen Registrierung für das Astronomiefeld zurück, statt die Regeln des Kurzzeitbereichs auszudehnen."
+      },
+      "sourceIds": [
+        "chsp-park",
+        "chsp-permit"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "chsp-stargazing",
+    "chsp-park",
+    "chsp-etiquette",
+    "chsp-permit"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

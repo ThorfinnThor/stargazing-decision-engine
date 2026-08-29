@@ -34,7 +34,7 @@ The primary language is English. German versions use the same paths under \`/de/
 - [About the publisher](${absolute("/en/about/")}): Mission, editorial responsibility, corrections, and ownership.
 - [Editorial methodology](${absolute("/en/methodology/")}): Evidence, source, freshness, and independence rules.
 - [XML sitemap](${absolute("/sitemap.xml")}): Complete list of indexable English and German canonical pages.
-${section("Destination guides", "destination")}${section("Short-trip guides", "short-trip")}${section("Gear guides", "gear-guide")}
+${section("Destination guides", "destination")}${section("Location tours", "location-tour")}${section("Short-trip guides", "short-trip")}${section("Gear guides", "gear-guide")}
 ## Machine-readable data
 
 - [Dataset manifest](${absolute("/data/stargazing/manifest.json")}): Dataset version, generation time, sources, counts, hashes, and checksums.

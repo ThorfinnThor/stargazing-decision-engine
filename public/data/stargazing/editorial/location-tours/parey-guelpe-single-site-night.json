@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "id": "parey-guelpe-single-site-night",
+  "slug": "parey-guelpe-single-site-night",
+  "destinationId": "westhavelland",
+  "recommendedSiteId": "parey-guelpe-observing-site",
+  "title": {
+    "en": "A single-site observing night between Parey and Gülpe",
+    "de": "Eine Beobachtungsnacht zwischen Parey und Gülpe ohne Standortwechsel"
+  },
+  "seoDescription": {
+    "en": "A self-guided Westhavelland plan for the official observing site between Parey and Gülpe, including fog, vehicle-light and camping decisions.",
+    "de": "Ein eigenständiger Westhavelland-Plan für den offiziellen Beobachtungsplatz zwischen Parey und Gülpe mit Entscheidungen zu Nebel, Fahrzeuglicht und Übernachtung."
+  },
+  "standfirst": {
+    "en": "Westhavelland has several official observing places, which makes site-hopping tempting. The Parey to Gülpe location works better as a deliberate single stop. It offers a broad horizon and vehicle access, but nearby water increases the tendency for fog and passing headlights can disturb adaptation.",
+    "de": "Im Westhavelland gibt es mehrere offizielle Beobachtungsplätze, weshalb ein nächtlicher Standortwechsel verlockend wirkt. Der Platz zwischen Parey und Gülpe funktioniert besser als bewusst gewählter Einzelstandort. Er bietet weiten Horizont und Fahrzeugzugang, doch Gewässer begünstigen Nebel und vorbeifahrende Scheinwerfer stören die Dunkeladaption."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Site",
+        "de": "Standort"
+      },
+      "value": {
+        "en": "Official place 3 between Parey and Gülpe",
+        "de": "Offizieller Platz 3 zwischen Parey und Gülpe"
+      },
+      "sourceIds": [
+        "sternenpark-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Strength",
+        "de": "Stärke"
+      },
+      "value": {
+        "en": "Excellent all-round view and vehicle access",
+        "de": "Sehr gute Rundumsicht und Fahrzeugzugang"
+      },
+      "sourceIds": [
+        "sternenpark-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Weakness",
+        "de": "Schwäche"
+      },
+      "value": {
+        "en": "Higher fog tendency and occasional disruptive headlights",
+        "de": "Erhöhte Nebelneigung und gelegentlich störende Scheinwerfer"
+      },
+      "sourceIds": [
+        "sternenpark-sites"
+      ]
+    },
+    {
+      "label": {
+        "en": "Camping",
+        "de": "Camping"
+      },
+      "value": {
+        "en": "Only at the Gülpe sports field, not at every observing place",
+        "de": "Nur am Sportplatz Gülpe, nicht an jedem Beobachtungsplatz"
+      },
+      "sourceIds": [
+        "sternenpark-sites"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "fog-call",
+      "kind": "note",
+      "heading": {
+        "en": "Make the fog call before unpacking",
+        "de": "Die Nebelentscheidung fällt vor dem Auspacken"
+      },
+      "body": {
+        "en": "The official site description identifies fog as the location's main environmental compromise. Look across the low ground on arrival and watch how quickly moisture is forming. If the horizon is already disappearing, a long telescope setup will not rescue the night. Decide early, while the return route is still easy to read.",
+        "de": "Die offizielle Standortbeschreibung nennt Nebel als wichtigsten natürlichen Kompromiss. Prüfe bei der Ankunft das tiefe Gelände und beobachte, wie schnell Feuchtigkeit entsteht. Wenn der Horizont bereits verschwindet, rettet auch ein aufwendiger Teleskopaufbau die Nacht nicht. Entscheide früh, solange der Rückweg noch gut erkennbar ist."
+      },
+      "sourceIds": [
+        "sternenpark-sites"
+      ],
+      "tone": "practical"
+    },
+    {
+      "id": "field-rhythm",
+      "kind": "schedule",
+      "heading": {
+        "en": "A quiet four-hour field rhythm",
+        "de": "Ein ruhiger Rhythmus für vier Stunden"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Last daylight",
+            "de": "Letztes Tageslicht"
+          },
+          "title": {
+            "en": "Park for a clean departure",
+            "de": "Für eine saubere Abfahrt parken"
+          },
+          "body": {
+            "en": "Use the designated surfaces and point the vehicle so that leaving later requires as little manoeuvring as possible. Walk the immediate area and choose a setup that does not occupy the route or expose other observers to headlights.",
+            "de": "Nutze die vorgesehenen Flächen und stelle das Fahrzeug so ab, dass die spätere Abfahrt möglichst wenig Rangieren verlangt. Gehe die unmittelbare Umgebung ab und wähle einen Aufbau, der weder Weg noch andere Beobachter durch Scheinwerfer beeinträchtigt."
+          },
+          "sourceIds": [
+            "sternenpark-sites",
+            "havelland-tips"
+          ]
+        },
+        {
+          "time": {
+            "en": "First darkness",
+            "de": "Erste Dunkelheit"
+          },
+          "title": {
+            "en": "Read the full horizon",
+            "de": "Den ganzen Horizont lesen"
+          },
+          "body": {
+            "en": "The broad view is the reason to choose this place. Begin with the unaided sky and note where haze or isolated light is strongest before committing the telescope to one direction.",
+            "de": "Die weite Sicht ist der Grund für diesen Platz. Beginne mit bloßem Auge und prüfe, wo Dunst oder einzelne Lichtquellen am stärksten sind, bevor das Teleskop auf eine Richtung festgelegt wird."
+          },
+          "sourceIds": [
+            "sternenpark-sites"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before departure",
+            "de": "Vor der Abfahrt"
+          },
+          "title": {
+            "en": "Pack under controlled light",
+            "de": "Mit kontrolliertem Licht einpacken"
+          },
+          "body": {
+            "en": "Close cases and secure loose items with a low downward light. Tell nearby observers before headlights come on and leave without adding an unnecessary second observing stop.",
+            "de": "Schließe Koffer und sichere lose Teile mit schwachem, nach unten gerichtetem Licht. Kündige benachbarten Beobachtern die Scheinwerfer an und fahre ab, ohne einen unnötigen zweiten Beobachtungsstopp einzulegen."
+          },
+          "sourceIds": [
+            "havelland-tips",
+            "naturpark-sky"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "overnight",
+      "kind": "prose",
+      "heading": {
+        "en": "Observing access is not camping permission",
+        "de": "Beobachtungszugang ist keine Campingerlaubnis"
+      },
+      "paragraphs": {
+        "en": [
+          "The dark-sky park has no entrance gate, admission charge or general opening time. That openness does not turn every observing place into an overnight pitch. The park identifies the Gülpe sports field as the camping location, so sleeping at the Parey to Gülpe site should not be assumed.",
+          "If you need an overnight base, arrange it before the evening and keep the observing session separate. The result is a calmer departure and less pressure to improvise beside a rural road after fatigue sets in."
+        ],
+        "de": [
+          "Der Sternenpark besitzt weder Eingang noch Eintritt noch allgemeine Öffnungszeiten. Diese Offenheit macht aber nicht jeden Beobachtungsplatz zum Übernachtungsplatz. Der Park nennt den Sportplatz Gülpe als Campingstandort. Eine Übernachtung am Platz zwischen Parey und Gülpe darf daher nicht vorausgesetzt werden.",
+          "Wenn du eine Übernachtungsbasis brauchst, organisiere sie vor dem Abend und trenne sie von der Beobachtung. Das sorgt für eine ruhigere Abfahrt und verhindert Improvisation an einer Landstraße, sobald Müdigkeit einsetzt."
+        ]
+      },
+      "sourceIds": [
+        "sternenpark-sites",
+        "naturpark-sky"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "sternenpark-sites",
+    "havelland-tips",
+    "naturpark-sky"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

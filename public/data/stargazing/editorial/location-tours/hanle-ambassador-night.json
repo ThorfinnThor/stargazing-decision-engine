@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "id": "hanle-ambassador-night",
+  "slug": "hanle-ambassador-night",
+  "destinationId": "hanle",
+  "recommendedSiteId": "hanle-astronomy-ambassador-zone",
+  "title": {
+    "en": "A community-led astronomy night in Hanle",
+    "de": "Eine gemeinschaftsgeführte Astronomienacht in Hanle"
+  },
+  "seoDescription": {
+    "en": "Plan a Hanle Dark Sky Reserve night through local astronomy support, with acclimatization, reserve rules and observatory access kept distinct.",
+    "de": "Plane eine Nacht im Hanle Dark Sky Reserve mit lokaler astronomischer Begleitung und klarer Trennung von Akklimatisation, Reservatsregeln und Observatoriumszugang."
+  },
+  "standfirst": {
+    "en": "Hanle is not a one-night detour from Leh. The village sits at extreme altitude inside a protected dark-sky reserve where community astronomy and scientific work share the same environment. A responsible visit allows time to acclimatize, arranges the stay before arrival and treats a visit to the Indian Astronomical Observatory as a separate, regulated activity.",
+    "de": "Hanle ist kein eintägiger Abstecher von Leh. Das Dorf liegt in extremer Höhe in einem geschützten Dark-Sky-Reservat, in dem gemeinschaftliche Astronomie und Forschung denselben Raum teilen. Ein verantwortungsvoller Besuch lässt Zeit zur Akklimatisation, organisiert die Unterkunft vor der Ankunft und behandelt das Indian Astronomical Observatory als getrennte, geregelte Aktivität."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Format",
+        "de": "Format"
+      },
+      "value": {
+        "en": "Locally arranged observing in the reserve",
+        "de": "Lokal organisierte Beobachtung im Reservat"
+      },
+      "sourceIds": [
+        "hanle-about",
+        "hanle-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Health",
+        "de": "Gesundheit"
+      },
+      "value": {
+        "en": "Acclimatization is essential",
+        "de": "Akklimatisation ist unverzichtbar"
+      },
+      "sourceIds": [
+        "hanle-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Stay",
+        "de": "Unterkunft"
+      },
+      "value": {
+        "en": "Arrange in advance within the official visitor framework",
+        "de": "Vorab im offiziellen Besucherrahmen organisieren"
+      },
+      "sourceIds": [
+        "hanle-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observatory",
+        "de": "Observatorium"
+      },
+      "value": {
+        "en": "Separate visit with its own permission and rules",
+        "de": "Getrennter Besuch mit eigenen Genehmigungen und Regeln"
+      },
+      "sourceIds": [
+        "hanle-observatory"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "altitude",
+      "kind": "prose",
+      "heading": {
+        "en": "The first astronomical decision is physiological",
+        "de": "Die erste astronomische Entscheidung betrifft den Körper"
+      },
+      "paragraphs": {
+        "en": [
+          "Hanle's altitude changes how a visitor should plan the entire stay. Follow the reserve's current health guidance, build acclimatization into the itinerary and do not use a clear forecast as a reason to compress the journey. Headache, nausea, unusual fatigue or breathlessness are reasons to stop the night plan and seek appropriate help, not problems to overcome for a better sky.",
+          "Settle into the arranged accommodation before thinking about equipment. A small kit, warm layers and a local meeting plan are more useful than bringing a complex telescope into an environment where health, transport and permissions already require attention."
+        ],
+        "de": [
+          "Die Höhe von Hanle verändert die Planung des gesamten Aufenthalts. Befolge die aktuellen Gesundheitshinweise des Reservats, baue Akklimatisation in die Route ein und verkürze die Anreise nicht wegen einer klaren Prognose. Kopfschmerzen, Übelkeit, ungewöhnliche Erschöpfung oder Atemnot sind Gründe, den Nachtplan abzubrechen und passende Hilfe zu suchen. Sie sind keine Hindernisse, die für einen besseren Himmel überwunden werden sollten.",
+          "Komme zunächst in der organisierten Unterkunft an, bevor du an Ausrüstung denkst. Ein kleines Set, warme Kleidung und ein lokaler Treffpunkt sind nützlicher als ein komplexes Teleskop in einer Umgebung, in der Gesundheit, Transport und Genehmigungen bereits Aufmerksamkeit verlangen."
+        ]
+      },
+      "sourceIds": [
+        "hanle-visit"
+      ]
+    },
+    {
+      "id": "local-night",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let local arrangements shape the night",
+        "de": "Lokale Absprachen formen die Nacht"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "During the day",
+            "de": "Am Tag"
+          },
+          "title": {
+            "en": "Confirm the host and observing place",
+            "de": "Gastgeber und Beobachtungsort bestätigen"
+          },
+          "body": {
+            "en": "Use the current HDSR visitor information to arrange the stay and any astro-tourism activity. Do not assume that an open patch of ground is available merely because it lies within the reserve.",
+            "de": "Nutze die aktuellen HDSR-Besucherinformationen, um Unterkunft und astronomische Aktivität zu organisieren. Eine freie Fläche ist nicht allein deshalb verfügbar, weil sie im Reservat liegt."
+          },
+          "sourceIds": [
+            "hanle-visit",
+            "hanle-about"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dark",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe with the community, not around it",
+            "de": "Mit der Gemeinschaft beobachten, nicht an ihr vorbei"
+          },
+          "body": {
+            "en": "Follow the local astronomy ambassador or host instructions on light, movement and equipment. The reserve model links night-sky protection with community participation, so visitor conduct is part of the experience rather than an afterthought.",
+            "de": "Befolge die Hinweise lokaler Astronomy Ambassadors oder Gastgeber zu Licht, Bewegung und Ausrüstung. Das Reservatsmodell verbindet Nachthimmelschutz mit Beteiligung der Gemeinschaft. Das Verhalten der Besucher ist daher Teil der Erfahrung und kein Nachtrag."
+          },
+          "sourceIds": [
+            "hanle-about",
+            "hanle-visit"
+          ]
+        },
+        {
+          "time": {
+            "en": "When fatigue appears",
+            "de": "Wenn Müdigkeit einsetzt"
+          },
+          "title": {
+            "en": "Return without negotiating with altitude",
+            "de": "Ohne Verhandlung mit der Höhe zurückkehren"
+          },
+          "body": {
+            "en": "End the session early and return to the arranged accommodation. An extra hour outside has little value if concentration, temperature or physical comfort is deteriorating.",
+            "de": "Beende die Beobachtung früh und kehre zur organisierten Unterkunft zurück. Eine zusätzliche Stunde draußen hat wenig Wert, wenn Konzentration, Temperaturgefühl oder körperliches Befinden nachlassen."
+          },
+          "sourceIds": [
+            "hanle-visit"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "observatory",
+      "kind": "note",
+      "heading": {
+        "en": "The scientific observatory is not the village observing field",
+        "de": "Das Forschungsobservatorium ist nicht das Beobachtungsfeld des Dorfes"
+      },
+      "body": {
+        "en": "A visit to the Indian Astronomical Observatory follows its own current permission and operating rules. Arrange it through the official route and never present access to community astronomy in Hanle as automatic night access to research facilities.",
+        "de": "Ein Besuch des Indian Astronomical Observatory folgt eigenen aktuellen Genehmigungs- und Betriebsregeln. Organisiere ihn über den offiziellen Weg und stelle den Zugang zur gemeinschaftlichen Astronomie in Hanle niemals als automatischen Nachtzugang zu Forschungseinrichtungen dar."
+      },
+      "sourceIds": [
+        "hanle-observatory"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "hanle-about",
+    "hanle-visit",
+    "hanle-observatory"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

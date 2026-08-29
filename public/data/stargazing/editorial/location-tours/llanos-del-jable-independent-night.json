@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "id": "llanos-del-jable-independent-night",
+  "slug": "llanos-del-jable-independent-night",
+  "destinationId": "la-palma",
+  "recommendedSiteId": "llanos-del-jable",
+  "title": {
+    "en": "An independent stargazing night at Llanos del Jable",
+    "de": "Eine eigenständige Beobachtungsnacht am Llanos del Jable"
+  },
+  "seoDescription": {
+    "en": "A practical self-guided plan for stargazing at Llanos del Jable on La Palma, with the correct night-access distinction from Roque de los Muchachos.",
+    "de": "Ein praktischer Plan für eine eigenständige Beobachtungsnacht am Llanos del Jable auf La Palma mit klarer Abgrenzung zum Roque de los Muchachos."
+  },
+  "standfirst": {
+    "en": "Llanos del Jable is the straightforward choice when you want to observe independently on La Palma. It is an official astronomical viewpoint, while the famous observatory complex at Roque de los Muchachos is a daytime visit rather than a public night site. This route keeps the evening in one place and treats the mountain drive as part of the plan.",
+    "de": "Der Llanos del Jable ist die unkomplizierte Wahl für eine eigenständige Beobachtungsnacht auf La Palma. Er ist ein offizieller astronomischer Aussichtspunkt, während der bekannte Observatoriumskomplex am Roque de los Muchachos kein öffentlicher Nachtstandort ist. Diese Route bleibt an einem Ort und berücksichtigt die Bergfahrt als Teil des Abends."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachtungsort"
+      },
+      "value": {
+        "en": "Llanos del Jable astronomical viewpoint",
+        "de": "Astronomischer Aussichtspunkt Llanos del Jable"
+      },
+      "sourceIds": [
+        "visit-llanos"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night access",
+        "de": "Nachtzugang"
+      },
+      "value": {
+        "en": "Public viewpoint",
+        "de": "Öffentlicher Aussichtspunkt"
+      },
+      "sourceIds": [
+        "visit-llanos"
+      ]
+    },
+    {
+      "label": {
+        "en": "Do not use",
+        "de": "Nicht nutzen"
+      },
+      "value": {
+        "en": "The Roque observatory complex after dark",
+        "de": "Den Observatoriumskomplex am Roque nach Einbruch der Nacht"
+      },
+      "sourceIds": [
+        "visit-roque"
+      ]
+    },
+    {
+      "label": {
+        "en": "Allow",
+        "de": "Einplanen"
+      },
+      "value": {
+        "en": "Four to five hours including the mountain approach",
+        "de": "Vier bis fünf Stunden einschließlich Bergfahrt"
+      },
+      "sourceIds": [
+        "visit-llanos",
+        "visit-roque"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "site-choice",
+      "kind": "note",
+      "heading": {
+        "en": "The useful location is not the telescope complex",
+        "de": "Der sinnvolle Nachtstandort ist nicht der Teleskopkomplex"
+      },
+      "body": {
+        "en": "Roque de los Muchachos is worth a separate daytime visit, but its research site is not open for public night observing. Llanos del Jable removes that ambiguity. Set the viewpoint as the destination before leaving mobile coverage and do not treat a closed barrier higher on the ridge as an invitation to find another turnout.",
+        "de": "Der Roque de los Muchachos lohnt sich als eigener Tagesbesuch, doch das Forschungsareal ist nachts nicht für öffentliche Beobachtung geöffnet. Am Llanos del Jable ist die Lage eindeutig. Speichere den Aussichtspunkt vor dem Verlust des Mobilfunkempfangs als Ziel und suche an einer geschlossenen Schranke weiter oben nicht nach einem improvisierten Ausweichplatz."
+      },
+      "sourceIds": [
+        "visit-roque",
+        "visit-llanos"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "evening-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let your eyes arrive before the stars do",
+        "de": "Lass die Augen vor den Sternen ankommen"
+      },
+      "introduction": {
+        "en": "The best use of this viewpoint begins before full darkness, not with a late search for parking.",
+        "de": "Der Aussichtspunkt funktioniert am besten, wenn der Abend vor der vollständigen Dunkelheit beginnt und nicht mit einer späten Parkplatzsuche."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Finish the mountain drive in daylight",
+            "de": "Die Bergfahrt bei Tageslicht beenden"
+          },
+          "body": {
+            "en": "Use the remaining light to identify the viewpoint furniture, the safe walking surface and the direction of the return road. Put on warm layers before the temperature falls rather than opening doors and searching bags later.",
+            "de": "Nutze das restliche Licht, um Aussichtspunkt, sicheren Untergrund und die Richtung der Rückfahrt zu erkennen. Ziehe warme Kleidung an, bevor die Temperatur fällt, statt später Türen zu öffnen und Taschen zu durchsuchen."
+          },
+          "sourceIds": [
+            "visit-llanos"
+          ]
+        },
+        {
+          "time": {
+            "en": "During twilight",
+            "de": "Während der Dämmerung"
+          },
+          "title": {
+            "en": "Settle without bright light",
+            "de": "Ohne helles Licht einrichten"
+          },
+          "body": {
+            "en": "Place chairs and binoculars while the horizon remains visible. Once other observers are present, keep vehicle lights and torches off or directed down at the lowest practical level. The official guidance asks visitors to protect the darkness and the surrounding natural area.",
+            "de": "Stelle Stühle und Fernglas auf, solange der Horizont noch sichtbar ist. Sobald andere Beobachter anwesend sind, bleiben Fahrzeuglichter und Lampen aus oder werden auf niedrigster sinnvoller Stufe nach unten gerichtet. Die offiziellen Hinweise verlangen Rücksicht auf Dunkelheit und Naturraum."
+          },
+          "sourceIds": [
+            "visit-llanos",
+            "visit-roque"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dark",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Stay with one horizon",
+            "de": "Bei einem Horizont bleiben"
+          },
+          "body": {
+            "en": "Give your vision time to adapt and scan one section of sky repeatedly. Moving between viewpoints costs dark adaptation and adds unnecessary night driving. Leave only when you can pack without exposing other visitors to headlights.",
+            "de": "Gib den Augen Zeit zur Anpassung und beobachte einen Himmelsbereich wiederholt. Ein Wechsel zwischen Aussichtspunkten kostet Dunkeladaption und verursacht unnötige Nachtfahrten. Fahre erst ab, wenn du einpacken kannst, ohne andere Besucher mit Scheinwerfern zu stören."
+          },
+          "sourceIds": [
+            "visit-llanos"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weather-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "When the ridge is not the right answer",
+        "de": "Wann der Höhenzug nicht die richtige Antwort ist"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Wind or cloud on the approach",
+            "de": "Wind oder Wolken auf der Anfahrt"
+          },
+          "body": {
+            "en": "Do not turn a poor mountain night into repeated driving between high viewpoints. A lower, calm session can be more productive than chasing a break in cloud on exposed roads.",
+            "de": "Verwandle eine schlechte Bergnacht nicht in eine Fahrt zwischen mehreren Höhenstandorten. Eine ruhigere Beobachtung weiter unten kann sinnvoller sein als die Suche nach einer Wolkenlücke auf exponierten Straßen."
+          },
+          "sourceIds": [
+            "visit-caldera"
+          ]
+        },
+        {
+          "label": {
+            "en": "A daytime Roque visit",
+            "de": "Ein Tagesbesuch am Roque"
+          },
+          "body": {
+            "en": "Book or plan it separately. The daytime panorama and research setting are valuable, but they do not change the night-access rule or make the observatory a substitute for Llanos del Jable.",
+            "de": "Plane oder buche ihn separat. Panorama und Forschungsumfeld sind tagsüber sehenswert, ändern aber weder die Nachtregel noch ersetzen sie den Llanos del Jable als Beobachtungsort."
+          },
+          "sourceIds": [
+            "visit-roque"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "visit-roque",
+    "visit-llanos",
+    "visit-caldera"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

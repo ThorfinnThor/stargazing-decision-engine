@@ -1,0 +1,171 @@
+{
+  "version": 1,
+  "id": "cumeada-booked-observation",
+  "slug": "cumeada-booked-observation",
+  "destinationId": "alqueva",
+  "recommendedSiteId": "cumeada-dark-sky-observatory",
+  "title": {
+    "en": "A booked night observation at Cumeada",
+    "de": "Eine gebuchte Nachtbeobachtung in Cumeada"
+  },
+  "seoDescription": {
+    "en": "Plan a Dark Sky Alqueva observation at the official Cumeada observatory, with booking, arrival and weather expectations kept clear.",
+    "de": "Plane eine Beobachtung am offiziellen Dark Sky Alqueva Observatorium in Cumeada mit klaren Erwartungen an Buchung, Ankunft und Wetter."
+  },
+  "standfirst": {
+    "en": "Cumeada is not a roadside stop that happens to have dark skies. The useful experience is a scheduled night observation at the official Dark Sky Alqueva observatory. Build the evening around the booked start time, and keep any daylight visit to Monsaraz separate from the astronomy session.",
+    "de": "Cumeada ist kein beliebiger Straßenstopp unter dunklem Himmel. Die sinnvolle Erfahrung ist eine terminierte Nachtbeobachtung am offiziellen Dark Sky Alqueva Observatorium. Der Abend richtet sich nach der gebuchten Startzeit. Ein Tagesbesuch in Monsaraz bleibt davon getrennt."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Format",
+        "de": "Format"
+      },
+      "value": {
+        "en": "Guided night observation",
+        "de": "Geführte Nachtbeobachtung"
+      },
+      "sourceIds": [
+        "cumeada-activity"
+      ]
+    },
+    {
+      "label": {
+        "en": "Location",
+        "de": "Ort"
+      },
+      "value": {
+        "en": "Official observatory in Cumeada",
+        "de": "Offizielles Observatorium in Cumeada"
+      },
+      "sourceIds": [
+        "cumeada-activity",
+        "municipal-observatory"
+      ]
+    },
+    {
+      "label": {
+        "en": "Access",
+        "de": "Zugang"
+      },
+      "value": {
+        "en": "Book for the scheduled activity",
+        "de": "Für die terminierte Aktivität buchen"
+      },
+      "sourceIds": [
+        "cumeada-activity"
+      ]
+    },
+    {
+      "label": {
+        "en": "Plan around",
+        "de": "Darauf ausrichten"
+      },
+      "value": {
+        "en": "The confirmed session time, not sunset alone",
+        "de": "Die bestätigte Veranstaltungszeit, nicht nur den Sonnenuntergang"
+      },
+      "sourceIds": [
+        "cumeada-activity"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "day-and-night",
+      "kind": "prose",
+      "heading": {
+        "en": "Monsaraz can frame the day, but Cumeada owns the night",
+        "de": "Monsaraz kann den Tag rahmen, doch die Nacht gehört Cumeada"
+      },
+      "paragraphs": {
+        "en": [
+          "The wider Alqueva landscape rewards a slow afternoon, and Monsaraz provides a natural daylight stop. Do not let that detour compress the final drive to Cumeada. The observatory activity has a defined meeting point and start time, so dinner and the transfer belong on the calendar before sightseeing expands to fill the day.",
+          "Once at Cumeada, treat the program as the observing plan rather than a prelude to searching for another lake-edge location. The value lies in the interpretation and equipment supplied by the official observatory, particularly for visitors who would otherwise arrive without a way to identify what is overhead."
+        ],
+        "de": [
+          "Die Landschaft am Alqueva eignet sich für einen ruhigen Nachmittag, und Monsaraz ist ein naheliegender Tagesstopp. Diese Runde darf die abschließende Fahrt nach Cumeada nicht verkürzen. Die Aktivität am Observatorium hat Treffpunkt und Startzeit, weshalb Abendessen und Transfer feststehen sollten, bevor der Tagesbesuch länger wird als geplant.",
+          "In Cumeada ist das Programm selbst der Beobachtungsplan und nicht der Auftakt zur Suche nach einem weiteren Standort am See. Der besondere Wert liegt in der Einordnung und der Ausrüstung des offiziellen Observatoriums, vor allem für Besucher, die den Himmel sonst kaum selbst erschließen könnten."
+        ]
+      },
+      "sourceIds": [
+        "visitportugal-route",
+        "cumeada-activity",
+        "municipal-observatory"
+      ]
+    },
+    {
+      "id": "booking-check",
+      "kind": "decisions",
+      "heading": {
+        "en": "Read the confirmation as part of the route",
+        "de": "Die Buchungsbestätigung gehört zur Route"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Time and language",
+            "de": "Zeit und Sprache"
+          },
+          "body": {
+            "en": "Use the details in the current booking confirmation rather than a time copied from an old itinerary. Astronomy activities follow seasonal darkness and the available program.",
+            "de": "Orientiere dich an der aktuellen Buchungsbestätigung und nicht an einer Uhrzeit aus einem älteren Reiseplan. Astronomische Aktivitäten richten sich nach Jahreszeit und angebotenem Programm."
+          },
+          "sourceIds": [
+            "cumeada-activity"
+          ]
+        },
+        {
+          "label": {
+            "en": "Cloud or poor visibility",
+            "de": "Wolken oder schlechte Sicht"
+          },
+          "body": {
+            "en": "Check the operator's current instructions before driving. A dark-sky designation does not guarantee a clear session, and this page is not a weather forecast.",
+            "de": "Prüfe vor der Fahrt die aktuellen Hinweise des Veranstalters. Die Anerkennung als Dark-Sky-Gebiet garantiert keine klare Beobachtung, und diese Seite ist keine Wettervorhersage."
+          },
+          "sourceIds": [
+            "cumeada-activity",
+            "visitportugal-route"
+          ]
+        },
+        {
+          "label": {
+            "en": "Independent observing",
+            "de": "Eigenständige Beobachtung"
+          },
+          "body": {
+            "en": "Choose a separately verified public location if that is your aim. A booking at Cumeada should not be presented as unrestricted access to every dark lakeshore in the reserve.",
+            "de": "Wähle dafür einen separat geprüften öffentlichen Standort. Eine Buchung in Cumeada ist keine pauschale Erlaubnis für jeden dunklen Uferplatz im Reservat."
+          },
+          "sourceIds": [
+            "visitportugal-route"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "what-to-bring",
+      "kind": "note",
+      "heading": {
+        "en": "Bring comfort, not a competing observing setup",
+        "de": "Komfort ist wichtiger als eine konkurrierende Ausrüstung"
+      },
+      "body": {
+        "en": "Warm layers, closed shoes and a dim red light solve the practical problems of waiting outside. Unless the operator explicitly asks for personal equipment, a large telescope adds transport and setup work to a session already designed around the observatory's instruments and guide.",
+        "de": "Warme Kleidung, geschlossene Schuhe und eine schwache rote Lampe lösen die praktischen Probleme einer Nacht im Freien. Wenn der Veranstalter nicht ausdrücklich eigene Ausrüstung verlangt, verursacht ein großes Teleskop nur zusätzlichen Transport und Aufbau in einem Programm, das bereits um Instrumente und Führung des Observatoriums gestaltet ist."
+      },
+      "sourceIds": [
+        "cumeada-activity"
+      ],
+      "tone": "practical"
+    }
+  ],
+  "sourceIds": [
+    "cumeada-activity",
+    "visitportugal-route",
+    "municipal-observatory"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
