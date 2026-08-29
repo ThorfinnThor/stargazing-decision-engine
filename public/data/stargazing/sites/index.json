@@ -53,16 +53,21 @@
     "id": "anza-borrego-dark-sky",
     "slug": "anza-borrego-dark-sky",
     "destinationId": "anza-borrego",
-    "name": "Anza-Borrego desert observing area",
+    "name": "Anza-Borrego reference area",
     "lat": 33.25,
     "lon": -116.4,
     "elevationM": 250,
     "siteType": "desert",
-    "publicAccess": "yes",
-    "accessScore": 80,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 88,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.ca.gov/?lang=en&page_id=638",
+    "accessNotes": {
+      "en": "This coordinate represents the wider park, not a verified nighttime parking place. Use a booked campground or confirm a named day-use location and its closing time before relying on it.",
+      "de": "Diese Koordinate repräsentiert den größeren Park, keinen verifizierten Nachtparkplatz. Nutze einen gebuchten Campingplatz oder bestätige einen benannten Tagesplatz samt Schließzeit, bevor du dich darauf verlässt."
+    }
   },
   {
     "id": "atacama-plateau",
@@ -138,16 +143,21 @@
     "id": "brecon-dark-sky",
     "slug": "brecon-dark-sky",
     "destinationId": "brecon-beacons",
-    "name": "Bannau Brycheiniog dark-sky area",
+    "name": "Bannau Brycheiniog reference area",
     "lat": 51.88,
     "lon": -3.43,
     "elevationM": 500,
     "siteType": "mountain",
-    "publicAccess": "yes",
-    "accessScore": 80,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 79,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://bannaubrycheiniog.org/thingstodo/top-10-places-to-go-stargazing/",
+    "accessNotes": {
+      "en": "This coordinate represents the reserve rather than a named parking place. Use one of the National Park's listed stargazing sites and verify its current parking and access conditions.",
+      "de": "Diese Koordinate repräsentiert das Schutzgebiet statt eines benannten Parkplatzes. Nutze einen gelisteten Sternbeobachtungsort des Nationalparks und bestätige dessen aktuelle Park- und Zugangsbedingungen."
+    }
   },
   {
     "id": "camp-blackman",
@@ -458,16 +468,21 @@
     "id": "eifel-dark-sky",
     "slug": "eifel-dark-sky",
     "destinationId": "eifel",
-    "name": "Eifel dark-sky observing area",
+    "name": "Eifel Dark Sky Park reference area",
     "lat": 50.55,
     "lon": 6.56,
     "elevationM": 500,
     "siteType": "forest",
-    "publicAccess": "yes",
-    "accessScore": 82,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 82,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nationalpark-eifel.de/de/nationalpark-erleben/sternenpark/",
+    "accessNotes": {
+      "en": "The coordinate represents the protected region, not a public nighttime stop. The National Park directs independent observers to named SternenBlicke outside the sensitive park core.",
+      "de": "Die Koordinate repräsentiert die geschützte Region, keinen öffentlichen Nachtplatz. Der Nationalpark verweist selbständige Beobachter auf benannte SternenBlicke außerhalb des empfindlichen Parkkerns."
+    }
   },
   {
     "id": "el-leoncito-cesco-night-visit",
@@ -568,16 +583,21 @@
     "id": "exmoor-dark-sky",
     "slug": "exmoor-dark-sky",
     "destinationId": "exmoor",
-    "name": "Exmoor dark-sky observing area",
+    "name": "Exmoor reference area",
     "lat": 51.13,
     "lon": -3.65,
     "elevationM": 350,
     "siteType": "moorland",
-    "publicAccess": "yes",
-    "accessScore": 82,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 81,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.exmoor-nationalpark.gov.uk/__data/assets/pdf_file/0014/4091/Astronomers-Guide-to-Exmoor.pdf",
+    "accessNotes": {
+      "en": "This coordinate represents the reserve rather than a named parking place. Choose one of the National Park Authority's recommended observing sites and verify parking and land access for that exact location.",
+      "de": "Diese Koordinate repräsentiert das Schutzgebiet statt eines benannten Parkplatzes. Wähle einen empfohlenen Beobachtungsort der Nationalparkbehörde und bestätige Parken sowie Landzugang für genau diesen Platz."
+    }
   },
   {
     "id": "frenchman-valley-campground",
@@ -633,7 +653,7 @@
     "id": "grasslands-dark-sky",
     "slug": "grasslands-dark-sky",
     "destinationId": "grasslands",
-    "name": "Grasslands prairie observing area",
+    "name": "Two Trees Trail stargazing area",
     "lat": 49.1,
     "lon": -107.6,
     "elevationM": 900,
@@ -642,7 +662,12 @@
     "accessScore": 72,
     "active": true,
     "priority": 83,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.canada.ca/pn-np/sk/grasslands/nature/environnement-environment/etoile-sky",
+    "accessNotes": {
+      "en": "Parks Canada lists Two Trees Trail as a car-accessible stargazing location. Confirm gravel-road conditions, park alerts, seasonal services, and wildlife guidance at the visitor centre.",
+      "de": "Parks Canada führt den Two Trees Trail als mit dem Auto erreichbaren Beobachtungsort. Bestätige Schotterstraßenzustand, Parkmeldungen, saisonale Versorgung und Wildtierhinweise im Besucherzentrum."
+    }
   },
   {
     "id": "great-basin-wheeler-peak",
@@ -663,7 +688,7 @@
     "id": "great-sand-dunes-dark-sky",
     "slug": "great-sand-dunes-dark-sky",
     "destinationId": "great-sand-dunes",
-    "name": "Great Sand Dunes dark-sky area",
+    "name": "Dunes Parking Area",
     "lat": 37.73,
     "lon": -105.51,
     "elevationM": 2500,
@@ -672,7 +697,12 @@
     "accessScore": 74,
     "active": true,
     "priority": 87,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/grsa/planyourvisit/experiencethenight.htm",
+    "accessNotes": {
+      "en": "The National Park Service identifies the Dunes Parking Area as the reference point for independent night-sky visits. Check current park alerts, weather, fees, and road conditions before arrival.",
+      "de": "Der National Park Service nennt den Dunes Parking Area als Orientierungspunkt für selbständige Nachthimmelbesuche. Prüfe vor der Anreise Parkmeldungen, Wetter, Gebühren und Straßenzustand."
+    }
   },
   {
     "id": "hanle-astronomy-ambassador-zone",
@@ -858,16 +888,21 @@
     "id": "kielder-dark-sky",
     "slug": "kielder-dark-sky",
     "destinationId": "kielder",
-    "name": "Kielder Forest dark-sky area",
+    "name": "Kielder Forest reference area",
     "lat": 55.25,
     "lon": -2.55,
     "elevationM": 300,
     "siteType": "forest",
-    "publicAccess": "yes",
-    "accessScore": 80,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 80,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.forestryengland.uk/kielder-forest",
+    "accessNotes": {
+      "en": "This coordinate represents the wider forest, not a verified pull-off. Use a named visitor car park or the Stonehaugh pavilion and follow posted closing, parking, and forest-road conditions.",
+      "de": "Diese Koordinate repräsentiert den größeren Wald, keine verifizierte Haltebucht. Nutze einen benannten Besucherparkplatz oder den Stonehaugh Pavilion und beachte veröffentlichte Schließ-, Park- und Waldstraßenbedingungen."
+    }
   },
   {
     "id": "kitt-peak-observatory",
@@ -1168,20 +1203,20 @@
     "id": "mont-megantic-observatory",
     "slug": "mont-megantic-observatory",
     "destinationId": "mont-megantic",
-    "name": "Mont-Mégantic observatory area",
+    "name": "Mont-Mégantic summit research observatory",
     "lat": 45.46,
     "lon": -71.15,
     "elevationM": 1100,
     "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 72,
+    "publicAccess": "no",
+    "accessScore": 0,
     "active": true,
     "priority": 84,
     "certificationIds": [],
-    "notesSourceUrl": "https://www.cieletoilemontmegantic.org/en/visiter",
+    "notesSourceUrl": "https://www.sepaq.com/pq/mme/index.dot?language_id=1",
     "accessNotes": {
-      "en": "The research observatory is reserved for science after dark. Public astronomy evenings use the ASTROLab or Popular Observatory and require the current park schedule and reservations.",
-      "de": "Das Forschungsobservatorium ist nach Einbruch der Dunkelheit der Wissenschaft vorbehalten. Öffentliche Astronomieabende finden im ASTROLab oder Popular Observatory statt und richten sich nach aktuellem Parkplan und Reservierung."
+      "en": "The summit research observatory is not an independent public nighttime lookout. Public astronomy evenings use the ASTROLab or designated programme venues and require the current park schedule and reservations.",
+      "de": "Das Forschungsobservatorium am Gipfel ist kein selbständig zugänglicher öffentlicher Nacht-Aussichtspunkt. Öffentliche Astronomieabende nutzen das ASTROLab oder ausgewiesene Veranstaltungsorte und erfordern aktuellen Parkplan und Reservierung."
     }
   },
   {
@@ -1303,7 +1338,7 @@
     "id": "natural-bridges-dark-sky",
     "slug": "natural-bridges-dark-sky",
     "destinationId": "natural-bridges",
-    "name": "Natural Bridges dark-sky area",
+    "name": "Natural Bridges Visitor Center parking lot",
     "lat": 37.6,
     "lon": -110,
     "elevationM": 1800,
@@ -1312,7 +1347,12 @@
     "accessScore": 72,
     "active": true,
     "priority": 89,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/nabr/planyourvisit/summer.htm",
+    "accessNotes": {
+      "en": "The National Park Service explicitly welcomes independent stargazing from the visitor-center parking lot. Facilities may be closed after hours, so carry water, fuel, a paper map, and current park information.",
+      "de": "Der National Park Service erlaubt selbständige Sternbeobachtung ausdrücklich vom Parkplatz des Besucherzentrums. Einrichtungen können nach Dienstschluss geschlossen sein; nimm Wasser, Kraftstoff, Papierkarte und aktuelle Parkinformationen mit."
+    }
   },
   {
     "id": "paranal-public-night-tour",

@@ -2,14 +2,19 @@
   "id": "exmoor-dark-sky",
   "slug": "exmoor-dark-sky",
   "destinationId": "exmoor",
-  "name": "Exmoor dark-sky observing area",
+  "name": "Exmoor reference area",
   "lat": 51.13,
   "lon": -3.65,
   "elevationM": 350,
   "siteType": "moorland",
-  "publicAccess": "yes",
-  "accessScore": 82,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 81,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.exmoor-nationalpark.gov.uk/__data/assets/pdf_file/0014/4091/Astronomers-Guide-to-Exmoor.pdf",
+  "accessNotes": {
+    "en": "This coordinate represents the reserve rather than a named parking place. Choose one of the National Park Authority's recommended observing sites and verify parking and land access for that exact location.",
+    "de": "Diese Koordinate repräsentiert das Schutzgebiet statt eines benannten Parkplatzes. Wähle einen empfohlenen Beobachtungsort der Nationalparkbehörde und bestätige Parken sowie Landzugang für genau diesen Platz."
+  }
 }

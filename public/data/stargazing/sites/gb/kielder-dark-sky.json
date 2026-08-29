@@ -2,14 +2,19 @@
   "id": "kielder-dark-sky",
   "slug": "kielder-dark-sky",
   "destinationId": "kielder",
-  "name": "Kielder Forest dark-sky area",
+  "name": "Kielder Forest reference area",
   "lat": 55.25,
   "lon": -2.55,
   "elevationM": 300,
   "siteType": "forest",
-  "publicAccess": "yes",
-  "accessScore": 80,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 80,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.forestryengland.uk/kielder-forest",
+  "accessNotes": {
+    "en": "This coordinate represents the wider forest, not a verified pull-off. Use a named visitor car park or the Stonehaugh pavilion and follow posted closing, parking, and forest-road conditions.",
+    "de": "Diese Koordinate repräsentiert den größeren Wald, keine verifizierte Haltebucht. Nutze einen benannten Besucherparkplatz oder den Stonehaugh Pavilion und beachte veröffentlichte Schließ-, Park- und Waldstraßenbedingungen."
+  }
 }

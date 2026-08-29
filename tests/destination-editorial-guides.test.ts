@@ -13,9 +13,9 @@ const seed = read<{ destinations: Destination[] }>("generated/intermediate/seed.
 
 test("destination editorial guides meet bilingual depth, uniqueness, and source coverage gates", () => {
   assert.doesNotThrow(() => validateDestinationEditorialGuides(guides, seed.destinations));
-  assert.ok(guides.length >= 19);
+  assert.ok(guides.length >= 29);
   assert.deepEqual(
-    ["canyonlands", "cherry-springs", "death-valley", "elqui-valley", "great-basin", "kitt-peak", "mauna-kea", "uluru", "warrumbungle"].filter(
+    ["anza-borrego", "brecon-beacons", "canyonlands", "cherry-springs", "death-valley", "eifel", "elqui-valley", "exmoor", "grasslands", "great-basin", "great-sand-dunes", "kielder", "kitt-peak", "mauna-kea", "mcdonald-observatory", "mont-megantic", "natural-bridges", "uluru", "warrumbungle"].filter(
       (slug) => !guides.some((guide) => guide.slug === slug),
     ),
     [],
