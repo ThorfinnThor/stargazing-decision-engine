@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "id": "eifel-sternenblick-bench-night",
+  "slug": "eifel-sternenblick-bench-night",
+  "destinationId": "eifel",
+  "recommendedSiteId": "vogelsang-star-observatory",
+  "title": {
+    "en": "A bench-led night at an Eifel SternenBlick",
+    "de": "Eine Nacht am Eifeler SternenBlick"
+  },
+  "seoDescription": {
+    "en": "Choose a named Eifel SternenBlick facility for an accessible observing evening that keeps visitors outside protected nocturnal habitat.",
+    "de": "Wähle einen benannten Eifeler SternenBlick für einen zugänglichen Beobachtungsabend außerhalb geschützter nächtlicher Lebensräume."
+  },
+  "standfirst": {
+    "en": "The Eifel solves a common access problem with designed SternenBlick sites around the protected core. Benches, interpretation and a known approach create a better public night than a shortcut into woodland. Choose the exact facility in advance, inspect its paths before dark and let the reclining bench carry the experience. National-park habitat remains undisturbed.",
+    "de": "Die Eifel löst ein häufiges Zugangsproblem mit gestalteten SternenBlick-Standorten rund um den geschützten Kern. Bänke, Informationen und bekannte Zufahrten schaffen eine bessere öffentliche Nacht als eine Abkürzung in den Wald. Wähle die genaue Anlage im Voraus, prüfe ihre Wege vor der Dunkelheit und lasse die Liegebank das Erlebnis tragen. Der Lebensraum im Nationalpark bleibt ungestört."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Facility",
+        "de": "Anlage"
+      },
+      "value": {
+        "en": "Named SternenBlick outside the protected core",
+        "de": "Benannter SternenBlick außerhalb des Schutzkerns"
+      },
+      "sourceIds": [
+        "ei-views",
+        "ei-park"
+      ]
+    },
+    {
+      "label": {
+        "en": "Useful features",
+        "de": "Nützliche Merkmale"
+      },
+      "value": {
+        "en": "Bench, interpretation and open horizon",
+        "de": "Bank, Informationen und freier Horizont"
+      },
+      "sourceIds": [
+        "ei-views"
+      ]
+    },
+    {
+      "label": {
+        "en": "Guided option",
+        "de": "Geführte Option"
+      },
+      "value": {
+        "en": "Book a SternenGuide when desired",
+        "de": "Bei Bedarf SternenGuide buchen"
+      },
+      "sourceIds": [
+        "ei-guides",
+        "ei-meet"
+      ]
+    },
+    {
+      "label": {
+        "en": "Not part of the plan",
+        "de": "Nicht Teil des Plans"
+      },
+      "value": {
+        "en": "Sleeping in the car, fire or woodland shortcut",
+        "de": "Schlafen im Auto, Feuer oder Waldabkürzung"
+      },
+      "sourceIds": [
+        "ei-rules"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "facility-choice",
+      "kind": "decisions",
+      "heading": {
+        "en": "Choose between a bench and a guide",
+        "de": "Zwischen Bank und Guide wählen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "You want a quiet independent hour",
+            "de": "Du möchtest eine ruhige eigenständige Stunde"
+          },
+          "body": {
+            "en": "Select the exact SternenBlick from the official directory, save its access and use the designed bench and surface. The facility already solves horizon and visitor-footprint questions.",
+            "de": "Wähle den genauen SternenBlick aus dem offiziellen Verzeichnis, speichere seinen Zugang und nutze Bank sowie vorgesehene Fläche. Die Anlage löst bereits Fragen zu Horizont und Besucherbereich."
+          },
+          "sourceIds": [
+            "ei-views"
+          ]
+        },
+        {
+          "label": {
+            "en": "You want interpretation or are new to the sky",
+            "de": "Du möchtest Einordnung oder bist neu am Himmel"
+          },
+          "body": {
+            "en": "Book a listed SternenGuide or meeting instead of expecting an informal programme at every facility. Confirm date, language and meeting place directly.",
+            "de": "Buche einen gelisteten SternenGuide oder Treffpunkt, statt an jeder Anlage ein spontanes Programm zu erwarten. Bestätige Datum, Sprache und Treffpunkt direkt."
+          },
+          "sourceIds": [
+            "ei-guides",
+            "ei-meet"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "designed-surface",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the public design do the work",
+        "de": "Die öffentliche Gestaltung arbeiten lassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before darkness",
+            "de": "Vor der Dunkelheit"
+          },
+          "title": {
+            "en": "Inspect panels, paths and horizon",
+            "de": "Tafeln, Wege und Horizont prüfen"
+          },
+          "body": {
+            "en": "Park legally, identify the quiet return and keep equipment on the designed surface. Do not extend the plan into woodland or a protected core trail.",
+            "de": "Parke legal, erkenne den ruhigen Rückweg und halte Ausrüstung auf der gestalteten Fläche. Erweitere den Plan weder in den Wald noch auf einen Weg im Schutzkern."
+          },
+          "sourceIds": [
+            "ei-views",
+            "ei-rules"
+          ]
+        },
+        {
+          "time": {
+            "en": "Once seated",
+            "de": "Nach dem Hinsetzen"
+          },
+          "title": {
+            "en": "Use the bench before the binoculars",
+            "de": "Die Bank vor dem Fernglas nutzen"
+          },
+          "body": {
+            "en": "Recline, allow full adaptation and trace the largest constellations. Optics become more useful once directions and the open part of the horizon are understood.",
+            "de": "Lehne dich zurück, lasse die Augen vollständig adaptieren und verfolge die größten Sternbilder. Optik wird nützlicher, sobald Richtungen und offener Horizont verstanden sind."
+          },
+          "sourceIds": [
+            "ei-park",
+            "ei-views"
+          ]
+        },
+        {
+          "time": {
+            "en": "At departure",
+            "de": "Bei der Abfahrt"
+          },
+          "title": {
+            "en": "Leave habitat dark",
+            "de": "Lebensraum dunkel lassen"
+          },
+          "body": {
+            "en": "Collect every item and use the known path. Return to accommodation without sleeping in the vehicle, lighting a fire or cutting through nocturnal habitat.",
+            "de": "Sammle alle Gegenstände ein und nutze den bekannten Weg. Kehre zur Unterkunft zurück, ohne im Fahrzeug zu schlafen, Feuer zu machen oder nächtlichen Lebensraum zu durchqueren."
+          },
+          "sourceIds": [
+            "ei-rules",
+            "ei-park"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "night-ecology",
+      "kind": "note",
+      "heading": {
+        "en": "Access rules are also night-ecology rules",
+        "de": "Zugangsregeln sind zugleich Regeln der Nachtökologie"
+      },
+      "body": {
+        "en": "The park protects more than darkness for human observers. Remaining at a named facility limits noise, light and movement in habitat used by nocturnal wildlife. A slightly different horizon is not worth moving into the core area.",
+        "de": "Der Park schützt mehr als Dunkelheit für menschliche Beobachter. Wer an einer benannten Anlage bleibt, begrenzt Lärm, Licht und Bewegung in Lebensräumen nachtaktiver Tiere. Ein etwas anderer Horizont rechtfertigt keinen Wechsel in den Kernbereich."
+      },
+      "sourceIds": [
+        "ei-park",
+        "ei-rules",
+        "ei-views"
+      ],
+      "tone": "context"
+    }
+  ],
+  "sourceIds": [
+    "ei-park",
+    "ei-views",
+    "ei-guides",
+    "ei-meet",
+    "ei-rules"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

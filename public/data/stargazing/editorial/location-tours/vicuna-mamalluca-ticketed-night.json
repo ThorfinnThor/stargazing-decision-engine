@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "id": "vicuna-mamalluca-ticketed-night",
+  "slug": "vicuna-mamalluca-ticketed-night",
+  "destinationId": "elqui-valley",
+  "recommendedSiteId": "mamalluca-observatory",
+  "title": {
+    "en": "A Vicuña evening built around Mamalluca",
+    "de": "Ein Abend in Vicuña rund um Mamalluca"
+  },
+  "seoDescription": {
+    "en": "Book the correct Mamalluca astronomy programme, complete its Vicuña check-in and return to the same valley base without an improvised roadside extension.",
+    "de": "Buche das passende Mamalluca-Astronomieprogramm, erledige den Check-in in Vicuña und kehre ohne improvisierte Straßenverlängerung zur selben Talbasis zurück."
+  },
+  "standfirst": {
+    "en": "Elqui's dark-sky reputation does not tell a first-time visitor where to park. Mamalluca turns it into an appointment with a language, duration, meeting procedure and telescopes. Complete the published Vicuña sales-office step, confirm transport and let the booked programme be the night. Anonymous agricultural roads can wait until ownership and permission are explicit.",
+    "de": "Der Ruf des Elqui-Tals als dunkler Himmel verrät Erstbesuchern keinen Parkplatz. Mamalluca macht daraus einen Termin mit Sprache, Dauer, Treffverfahren und Teleskopen. Erledige den veröffentlichten Schritt im Verkaufsbüro von Vicuña, bestätige den Transport und lasse das gebuchte Programm die Nacht sein. Anonyme Landwirtschaftswege warten, bis Eigentum und Erlaubnis eindeutig sind."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Vicuña",
+        "de": "Vicuña"
+      },
+      "sourceIds": [
+        "elqui-sernatur-destination"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night product",
+        "de": "Nachtangebot"
+      },
+      "value": {
+        "en": "Booked Mamalluca programme",
+        "de": "Gebuchtes Mamalluca-Programm"
+      },
+      "sourceIds": [
+        "elqui-mamalluca",
+        "elqui-english"
+      ]
+    },
+    {
+      "label": {
+        "en": "Check-in",
+        "de": "Check-in"
+      },
+      "value": {
+        "en": "Current Vicuña sales-office procedure",
+        "de": "Aktuelles Verfahren im Verkaufsbüro von Vicuña"
+      },
+      "sourceIds": [
+        "elqui-mamalluca",
+        "elqui-english"
+      ]
+    },
+    {
+      "label": {
+        "en": "Transport",
+        "de": "Transport"
+      },
+      "value": {
+        "en": "Confirm separately; it is not assumed",
+        "de": "Separat bestätigen; nicht vorausgesetzt"
+      },
+      "sourceIds": [
+        "elqui-mamalluca"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "ticket-selection",
+      "kind": "prose",
+      "heading": {
+        "en": "Language and Moon change the value of the ticket",
+        "de": "Sprache und Mond verändern den Wert des Tickets"
+      },
+      "paragraphs": {
+        "en": [
+          "Compare the official programme descriptions rather than buying the first available time. The standard, English-language and premium products differ in interpretation and format. Confirm the exact language, duration and current price on the live booking page, then consider whether a bright Moon supports the objects and experience you actually want.",
+          "Transport is a separate practical question. Decide who drives or which transfer is confirmed before completing the evening plan. A ticket should not end with a search for a vehicle or a dark side road after the programme."
+        ],
+        "de": [
+          "Vergleiche die offiziellen Programmbeschreibungen, statt die erste verfügbare Uhrzeit zu kaufen. Standard-, englischsprachige und Premium-Angebote unterscheiden sich in Vermittlung und Format. Bestätige Sprache, Dauer und aktuellen Preis auf der Live-Buchungsseite und prüfe, ob ein heller Mond die gewünschten Objekte und das erwartete Erlebnis unterstützt.",
+          "Der Transport ist eine eigene praktische Frage. Lege vor Abschluss der Abendplanung fest, wer fährt oder welcher Transfer bestätigt ist. Ein Ticket sollte nicht nach dem Programm in der Suche nach einem Fahrzeug oder einer dunklen Nebenstraße enden."
+        ]
+      },
+      "sourceIds": [
+        "elqui-mamalluca",
+        "elqui-english",
+        "elqui-premium",
+        "elqui-starlight"
+      ]
+    },
+    {
+      "id": "vicuna-procedure",
+      "kind": "schedule",
+      "heading": {
+        "en": "Vicuña remains part of the astronomy route",
+        "de": "Vicuña bleibt Teil der Astronomieroute"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before departure",
+            "de": "Vor der Abfahrt"
+          },
+          "title": {
+            "en": "Complete the published office step",
+            "de": "Den veröffentlichten Büroschritt abschließen"
+          },
+          "body": {
+            "en": "Use the current instructions for Torre Bauer by the main square, payment and check-in. Do not arrive at the dome expecting a payment process the official page says is unavailable there.",
+            "de": "Nutze die aktuellen Hinweise zu Torre Bauer am Hauptplatz sowie zu Zahlung und Check-in. Erscheine nicht an der Kuppel in der Erwartung eines Zahlungsverfahrens, das laut offizieller Seite dort nicht angeboten wird."
+          },
+          "sourceIds": [
+            "elqui-mamalluca",
+            "elqui-english"
+          ]
+        },
+        {
+          "time": {
+            "en": "During the session",
+            "de": "Während der Sitzung"
+          },
+          "title": {
+            "en": "Begin with the southern horizon",
+            "de": "Mit dem Südhorizont beginnen"
+          },
+          "body": {
+            "en": "Let the guide establish directions and seasonal landmarks before using the Dobsonian and dome telescope. Keep screens away so the interpretation connects the actual valley sky rather than a generic app view.",
+            "de": "Lass den Guide Richtungen und saisonale Orientierungspunkte erklären, bevor Dobson- und Kuppelteleskop genutzt werden. Halte Bildschirme fern, damit die Vermittlung den realen Talhimmel statt einer allgemeinen App-Ansicht erschließt."
+          },
+          "sourceIds": [
+            "elqui-mamalluca",
+            "elqui-english"
+          ]
+        },
+        {
+          "time": {
+            "en": "After the programme",
+            "de": "Nach dem Programm"
+          },
+          "title": {
+            "en": "Return to the known base",
+            "de": "Zur bekannten Basis zurückkehren"
+          },
+          "body": {
+            "en": "Use the confirmed transport to Vicuña or lodging. Note any interest for a second visit, but do not follow an unverified road into agricultural land.",
+            "de": "Nutze den bestätigten Transport nach Vicuña oder zur Unterkunft. Notiere Interessen für einen zweiten Besuch, fahre aber nicht über einen ungeprüften Weg in landwirtschaftliche Flächen."
+          },
+          "sourceIds": [
+            "elqui-sernatur-destination",
+            "elqui-sernatur-register"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "valley-access",
+      "kind": "note",
+      "heading": {
+        "en": "A dark valley is not a blanket access permit",
+        "de": "Ein dunkles Tal ist keine pauschale Zugangserlaubnis"
+      },
+      "body": {
+        "en": "If an independent second night is planned, verify the landowner, parking surface and return route directly. Registration and official tourism listings help identify accountable operators; they do not make every dark roadside public.",
+        "de": "Für eine eigenständige zweite Nacht müssen Eigentümer, Parkfläche und Rückweg direkt bestätigt werden. Registrierung und offizielle Tourismuslisten helfen bei der Wahl verantwortlicher Anbieter. Sie machen nicht jeden dunklen Straßenrand öffentlich."
+      },
+      "sourceIds": [
+        "elqui-sernatur-register",
+        "elqui-sernatur-destination"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "elqui-mamalluca",
+    "elqui-english",
+    "elqui-premium",
+    "elqui-sernatur-register",
+    "elqui-sernatur-destination",
+    "elqui-starlight"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

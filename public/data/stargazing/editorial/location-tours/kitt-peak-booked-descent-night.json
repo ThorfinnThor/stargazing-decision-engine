@@ -1,0 +1,208 @@
+{
+  "version": 1,
+  "id": "kitt-peak-booked-descent-night",
+  "slug": "kitt-peak-booked-descent-night",
+  "destinationId": "kitt-peak",
+  "recommendedSiteId": "kitt-peak-visitor-center-night-program",
+  "title": {
+    "en": "A booked Kitt Peak night with a deliberate descent",
+    "de": "Eine gebuchte Kitt-Peak-Nacht mit geplanter Abfahrt"
+  },
+  "seoDescription": {
+    "en": "Plan a Kitt Peak Visitor Center night programme from Tucson, with booking, summit weather and the mountain descent treated as one appointment.",
+    "de": "Plane ein Nachtprogramm am Kitt Peak Visitor Center ab Tucson und behandle Buchung, Gipfelwetter und Bergabfahrt als einen Termin."
+  },
+  "standfirst": {
+    "en": "The telescope is not the main planning problem at Kitt Peak. Access is. A useful night begins with the exact Visitor Center programme, its current email and a vehicle ready for the mountain road. Stay inside the guided format and leave the summit on the instructed route. Cloud never turns a booking into independent observatory access.",
+    "de": "Das Teleskop ist am Kitt Peak nicht das wichtigste Planungsproblem. Entscheidend ist der Zugang. Eine gute Nacht beginnt mit dem konkreten Visitor-Center-Programm, seiner aktuellen Nachricht und einem Fahrzeug für die Bergstraße. Bleibe im geführten Format und verlasse den Gipfel auf der angewiesenen Route. Bewölkung macht aus einer Buchung keinen eigenständigen Observatoriumszugang."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Requirement",
+        "de": "Voraussetzung"
+      },
+      "value": {
+        "en": "Valid night-programme booking",
+        "de": "Gültige Buchung für ein Nachtprogramm"
+      },
+      "sourceIds": [
+        "kp-booking",
+        "kp-programmes"
+      ]
+    },
+    {
+      "label": {
+        "en": "Meeting point",
+        "de": "Treffpunkt"
+      },
+      "value": {
+        "en": "Kitt Peak Visitor Center",
+        "de": "Kitt Peak Visitor Center"
+      },
+      "sourceIds": [
+        "kp-visits"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before ascent",
+        "de": "Vor der Auffahrt"
+      },
+      "value": {
+        "en": "Check road and summit weather",
+        "de": "Straßen- und Gipfelwetter prüfen"
+      },
+      "sourceIds": [
+        "kp-access",
+        "kp-weather"
+      ]
+    },
+    {
+      "label": {
+        "en": "Finish",
+        "de": "Abschluss"
+      },
+      "value": {
+        "en": "Direct descent toward Tucson",
+        "de": "Direkte Abfahrt in Richtung Tucson"
+      },
+      "sourceIds": [
+        "kp-access",
+        "kp-visits"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "programme-fit",
+      "kind": "decisions",
+      "heading": {
+        "en": "Choose the appointment before choosing equipment",
+        "de": "Den Termin vor der Ausrüstung wählen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "The published programme fits the group",
+            "de": "Das veröffentlichte Programm passt zur Gruppe"
+          },
+          "body": {
+            "en": "Reserve the exact date and format, then use the confirmation for arrival time, age or mobility requirements and weather procedure. Save it offline. A general Visitor Center page is not a substitute for a place on a limited event.",
+            "de": "Reserviere genaues Datum und Format und entnimm der Bestätigung Ankunftszeit, Alters- oder Mobilitätsanforderungen und Wetterverfahren. Speichere sie offline. Eine allgemeine Visitor-Center-Seite ersetzt keinen Platz in einer begrenzten Veranstaltung."
+          },
+          "sourceIds": [
+            "kp-programmes",
+            "kp-booking",
+            "kp-visits"
+          ]
+        },
+        {
+          "label": {
+            "en": "The event is unavailable or changed",
+            "de": "Die Veranstaltung ist nicht verfügbar oder geändert"
+          },
+          "body": {
+            "en": "Choose another date or another public astronomy venue. Do not drive west hoping for a waiting list, and do not interpret a cancellation as permission to stop on telescope roads.",
+            "de": "Wähle ein anderes Datum oder einen anderen öffentlichen Astronomiestandort. Fahre nicht in der Hoffnung auf eine Warteliste nach Westen und deute eine Absage nicht als Erlaubnis für Halte an Teleskopstraßen."
+          },
+          "sourceIds": [
+            "kp-booking",
+            "kp-access"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summit-appointment",
+      "kind": "schedule",
+      "heading": {
+        "en": "One ascent, one programme, one descent",
+        "de": "Eine Auffahrt, ein Programm, eine Abfahrt"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before Tucson is behind you",
+            "de": "Bevor Tucson zurückbleibt"
+          },
+          "title": {
+            "en": "Confirm the mountain",
+            "de": "Den Berg bestätigen"
+          },
+          "body": {
+            "en": "Read the latest programme message, road and weather notices. Fill fuel, carry water, closed shoes and layers suited to the summit rather than the city forecast.",
+            "de": "Lies die jüngste Programmmitteilung sowie Straßen- und Wetterhinweise. Tanke, nimm Wasser, geschlossene Schuhe und Kleidung für den Gipfel statt für die Stadtprognose mit."
+          },
+          "sourceIds": [
+            "kp-booking",
+            "kp-weather",
+            "kp-access"
+          ]
+        },
+        {
+          "time": {
+            "en": "At check-in",
+            "de": "Beim Check-in"
+          },
+          "title": {
+            "en": "Hand the rhythm to the guide",
+            "de": "Den Rhythmus dem Guide überlassen"
+          },
+          "body": {
+            "en": "Follow constellation, binocular and telescope activities as offered. Keep personal lights low and ask before placing a tripod or opening equipment beyond the programme.",
+            "de": "Folge den angebotenen Sternbild-, Fernglas- und Teleskopteilen. Halte eigenes Licht niedrig und frage vor dem Aufstellen eines Stativs oder zusätzlicher Ausrüstung."
+          },
+          "sourceIds": [
+            "kp-programmes",
+            "kp-booking"
+          ]
+        },
+        {
+          "time": {
+            "en": "When staff closes the evening",
+            "de": "Wenn das Personal den Abend beendet"
+          },
+          "title": {
+            "en": "Secure the car before discussing the sky",
+            "de": "Das Fahrzeug sichern, bevor der Himmel besprochen wird"
+          },
+          "body": {
+            "en": "Pack optics, check driver alertness and descend without a photographic stop. Conversation can continue after the vehicle has safely left the mountain.",
+            "de": "Verstaue Optik, prüfe die Aufmerksamkeit der fahrenden Person und fahre ohne Fotostopp ab. Gespräche können weitergehen, sobald das Fahrzeug den Berg sicher verlassen hat."
+          },
+          "sourceIds": [
+            "kp-access",
+            "kp-visits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sovereign-research-site",
+      "kind": "note",
+      "heading": {
+        "en": "Visit a research site on sovereign land with restraint",
+        "de": "Einen Forschungsstandort auf souveränem Land zurückhaltend besuchen"
+      },
+      "body": {
+        "en": "Remain within Visitor Center areas and the programme's route. Kitt Peak hosts scientific facilities and lies on the Tohono O'odham Nation. Closed roads, work areas and staff instructions are boundaries, not optional suggestions for a better angle.",
+        "de": "Bleibe in den Bereichen des Visitor Center und auf der Programmroute. Kitt Peak beherbergt wissenschaftliche Einrichtungen und liegt auf dem Gebiet der Tohono O’odham Nation. Gesperrte Straßen, Arbeitsbereiche und Anweisungen des Personals sind Grenzen und keine unverbindlichen Hinweise für einen besseren Blickwinkel."
+      },
+      "sourceIds": [
+        "kp-visits",
+        "kp-access",
+        "kp-programmes"
+      ],
+      "tone": "context"
+    }
+  ],
+  "sourceIds": [
+    "kp-visits",
+    "kp-programmes",
+    "kp-booking",
+    "kp-access",
+    "kp-weather"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

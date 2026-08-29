@@ -1,0 +1,190 @@
+{
+  "version": 1,
+  "id": "wimbleball-weather-led-night",
+  "slug": "wimbleball-weather-led-night",
+  "destinationId": "exmoor",
+  "recommendedSiteId": "wimbleball-dark-sky-hub",
+  "title": {
+    "en": "A weather-led night at Wimbleball",
+    "de": "Eine wettergeführte Nacht am Wimbleball"
+  },
+  "seoDescription": {
+    "en": "Plan a Wimbleball Lake dark-sky evening with the named hub, parking, reservoir exposure and Exmoor weather checked before leaving the village.",
+    "de": "Plane einen Dark-Sky-Abend am Wimbleball Lake und prüfe benannten Hub, Parkplatz, exponierte Reservoirlage und Exmoor-Wetter vor der Abfahrt."
+  },
+  "standfirst": {
+    "en": "Exmoor rewards site selection more than mileage. Wimbleball gives the night a named dark-sky hub, but reservoir exposure means wind and rain can matter quickly. Confirm the exact parking and land conditions, reach the public surface in daylight and keep the return short. A darker unnamed lane is not an upgrade when access and footing are unknown.",
+    "de": "Im Exmoor zählt die Standortwahl mehr als die gefahrene Strecke. Wimbleball gibt der Nacht einen benannten Dark-Sky-Hub, doch die exponierte Reservoirlage lässt Wind und Regen schnell wichtig werden. Bestätige Parkplatz und Geländebedingungen, erreiche die öffentliche Fläche bei Tageslicht und halte die Rückfahrt kurz. Eine dunklere namenlose Spur ist keine Verbesserung, wenn Zugang und Untergrund unbekannt sind."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Wimbleball dark-sky hub",
+        "de": "Dark-Sky-Hub Wimbleball"
+      },
+      "sourceIds": [
+        "ex-wimble",
+        "ex-guide"
+      ]
+    },
+    {
+      "label": {
+        "en": "Check",
+        "de": "Prüfen"
+      },
+      "value": {
+        "en": "Current parking and land access",
+        "de": "Aktuellen Parkplatz- und Landzugang"
+      },
+      "sourceIds": [
+        "ex-wimble",
+        "ex-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Main exposure",
+        "de": "Hauptrisiko"
+      },
+      "value": {
+        "en": "Wind and rain around the reservoir",
+        "de": "Wind und Regen am Reservoir"
+      },
+      "sourceIds": [
+        "ex-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Fallback principle",
+        "de": "Alternativprinzip"
+      },
+      "value": {
+        "en": "A named lower or sheltered site",
+        "de": "Ein benannter tieferer oder geschützter Ort"
+      },
+      "sourceIds": [
+        "ex-guide",
+        "ex-trail"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "weather-first",
+      "kind": "note",
+      "heading": {
+        "en": "The forecast changes the site, not just the clothing",
+        "de": "Die Prognose verändert den Ort und nicht nur die Kleidung"
+      },
+      "body": {
+        "en": "Reservoir wind can make a technically clear night unpleasant or unsafe. Read current local weather and access information before leaving the base. If rain, gusts or poor visibility undermine the public surface, use a researched named fallback or keep the evening indoors. Do not improvise on an unverified moorland lane.",
+        "de": "Wind am Reservoir kann eine technisch klare Nacht unangenehm oder unsicher machen. Lies lokale Wetter- und Zugangsinformationen vor der Abfahrt. Wenn Regen, Böen oder schlechte Sicht die öffentliche Fläche beeinträchtigen, nutze eine geprüfte benannte Alternative oder bleibe drinnen. Improvisiere nicht auf einer ungeprüften Moorlandstraße."
+      },
+      "sourceIds": [
+        "ex-safety",
+        "ex-wimble",
+        "ex-guide"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "hub-footprint",
+      "kind": "schedule",
+      "heading": {
+        "en": "A short route protects a long look",
+        "de": "Eine kurze Route schützt einen langen Blick"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Confirm parking and the return line",
+            "de": "Parkplatz und Rückweg bestätigen"
+          },
+          "body": {
+            "en": "Use the official hub information, park only as permitted and inspect the hard surface, water boundary and exit. Keep gates and visitor movement open.",
+            "de": "Nutze die offiziellen Hub-Informationen, parke nur wie erlaubt und prüfe befestigte Fläche, Wassergrenze und Ausfahrt. Halte Tore und Besucherbewegung frei."
+          },
+          "sourceIds": [
+            "ex-wimble",
+            "ex-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "As the reservoir darkens",
+            "de": "Wenn das Reservoir dunkel wird"
+          },
+          "title": {
+            "en": "Use one sheltered footprint",
+            "de": "Eine geschützte Fläche nutzen"
+          },
+          "body": {
+            "en": "Set compact equipment where wind is manageable without moving toward the shore. Begin broad, shield light and share the public location quietly.",
+            "de": "Stelle kompakte Ausrüstung dort auf, wo Wind beherrschbar bleibt, ohne zum Ufer zu wechseln. Beginne mit weitem Blick, schirme Licht ab und teile den öffentlichen Ort ruhig."
+          },
+          "sourceIds": [
+            "ex-guide",
+            "ex-wimble"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before wet or cold dominates",
+            "de": "Bevor Nässe oder Kälte bestimmen"
+          },
+          "title": {
+            "en": "Pack while hands remain reliable",
+            "de": "Einpacken, solange Hände zuverlässig sind"
+          },
+          "body": {
+            "en": "Dry and count equipment, follow the known path and return to the planned accommodation. Leave another Exmoor site for another evening.",
+            "de": "Trockne und zähle Ausrüstung, folge dem bekannten Weg und kehre zur geplanten Unterkunft zurück. Ein anderer Exmoor-Ort gehört zu einem anderen Abend."
+          },
+          "sourceIds": [
+            "ex-safety",
+            "ex-trail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "site-not-mileage",
+      "kind": "prose",
+      "heading": {
+        "en": "A named modest site beats an anonymous darker verge",
+        "de": "Ein benannter mäßiger Ort schlägt einen namenlosen dunkleren Rand"
+      },
+      "paragraphs": {
+        "en": [
+          "The official Exmoor material identifies practical viewing places and routes. That knowledge includes parking and legitimate public use, which a light-pollution map cannot provide. Use Wimbleball because its role is understood, not because every part of its horizon is perfect.",
+          "If trees, visitors or local light affect one direction, turn attention to the open part of the sky rather than relocating. The value of the night lies in uninterrupted adaptation and a safe return. Extra mileage rarely restores either once the group has begun packing."
+        ],
+        "de": [
+          "Die offiziellen Exmoor-Informationen nennen praktische Beobachtungsorte und Routen. Dieses Wissen umfasst Parken und legitime öffentliche Nutzung, was eine Lichtverschmutzungskarte nicht liefern kann. Nutze Wimbleball, weil seine Rolle verstanden ist und nicht weil jeder Horizont perfekt wäre.",
+          "Wenn Bäume, Besucher oder lokales Licht eine Richtung beeinflussen, richte die Aufmerksamkeit auf den offenen Himmelsbereich, statt den Ort zu wechseln. Der Wert der Nacht liegt in ungestörter Dunkeladaption und sicherer Rückkehr. Zusätzliche Kilometer stellen beides selten wieder her, sobald die Gruppe mit dem Einpacken begonnen hat."
+        ]
+      },
+      "sourceIds": [
+        "ex-guide",
+        "ex-wimble",
+        "ex-trail"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "ex-guide",
+    "ex-trail",
+    "ex-wimble",
+    "ex-safety"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

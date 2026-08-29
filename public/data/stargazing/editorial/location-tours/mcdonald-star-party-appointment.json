@@ -1,0 +1,206 @@
+{
+  "version": 1,
+  "id": "mcdonald-star-party-appointment",
+  "slug": "mcdonald-star-party-appointment",
+  "destinationId": "mcdonald-observatory",
+  "recommendedSiteId": "mcdonald-observatory",
+  "title": {
+    "en": "A Star Party appointment at McDonald Observatory",
+    "de": "Ein Star-Party-Termin am McDonald Observatory"
+  },
+  "seoDescription": {
+    "en": "Plan a McDonald Observatory Star Party with ticket, check-in, mountain weather and the return to Fort Davis resolved in advance.",
+    "de": "Plane eine Star Party am McDonald Observatory und kläre Ticket, Check-in, Bergwetter und Rückfahrt nach Fort Davis im Voraus."
+  },
+  "standfirst": {
+    "en": "A McDonald Observatory night is an appointment, not a self-guided visit to research domes. The public Star Party has its own ticket, check-in and observing field. Stay in Fort Davis, read the current programme and weather message and leave personal expectations flexible. Research instruments and Skyline Drive do not become after-hours extensions of the event.",
+    "de": "Eine Nacht am McDonald Observatory ist ein Termin und kein eigenständiger Besuch von Forschungskuppeln. Die öffentliche Star Party besitzt eigenes Ticket, Check-in und Beobachtungsfeld. Bleibe in Fort Davis, lies aktuelle Programm- und Wetternachrichten und halte Erwartungen flexibel. Forschungsinstrumente und Skyline Drive werden nicht zu Verlängerungen nach Veranstaltungsende."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Public event",
+        "de": "Öffentliche Veranstaltung"
+      },
+      "value": {
+        "en": "Booked McDonald Observatory Star Party",
+        "de": "Gebuchte McDonald Observatory Star Party"
+      },
+      "sourceIds": [
+        "mcd-star",
+        "mcd-plan"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Fort Davis",
+        "de": "Fort Davis"
+      },
+      "sourceIds": [
+        "mcd-davis"
+      ]
+    },
+    {
+      "label": {
+        "en": "Included area",
+        "de": "Enthaltener Bereich"
+      },
+      "value": {
+        "en": "Visitor programme and observing field",
+        "de": "Besucherprogramm und Beobachtungsfeld"
+      },
+      "sourceIds": [
+        "mcd-visit",
+        "mcd-field"
+      ]
+    },
+    {
+      "label": {
+        "en": "Excluded",
+        "de": "Ausgeschlossen"
+      },
+      "value": {
+        "en": "Independent research-dome access",
+        "de": "Eigenständiger Zugang zu Forschungskuppeln"
+      },
+      "sourceIds": [
+        "mcd-visit"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "ticket-defines-night",
+      "kind": "decisions",
+      "heading": {
+        "en": "The ticket defines the part of the mountain you can use",
+        "de": "Das Ticket definiert den nutzbaren Teil des Berges"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Star Party confirmed",
+            "de": "Star Party bestätigt"
+          },
+          "body": {
+            "en": "Use the current confirmation for arrival, check-in, clothing, age guidance and weather handling. Plan dinner and the Fort Davis drive around that appointment.",
+            "de": "Nutze die aktuelle Bestätigung für Ankunft, Check-in, Kleidung, Altershinweise und Wetterverfahren. Plane Abendessen und Fahrt ab Fort Davis um diesen Termin. Speichere die Anfahrt offline."
+          },
+          "sourceIds": [
+            "mcd-star",
+            "mcd-plan",
+            "mcd-davis"
+          ]
+        },
+        {
+          "label": {
+            "en": "Event unavailable or weather-affected",
+            "de": "Veranstaltung nicht verfügbar oder wetterbedingt betroffen"
+          },
+          "body": {
+            "en": "Use the operator's alternative or another date. Do not enter research roads, remain after staff departure or treat the mountain as an open observing field.",
+            "de": "Nutze die Alternative des Betreibers oder ein anderes Datum. Befahre keine Forschungsstraßen, bleibe nicht nach Abfahrt des Personals und behandle den Berg nicht als offenes Beobachtungsfeld."
+          },
+          "sourceIds": [
+            "mcd-visit",
+            "mcd-plan"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "field-rhythm",
+      "kind": "schedule",
+      "heading": {
+        "en": "Arrive ready to share an observing field",
+        "de": "Bereit zum Teilen eines Beobachtungsfelds ankommen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving Fort Davis",
+            "de": "Vor der Abfahrt aus Fort Davis"
+          },
+          "title": {
+            "en": "Read the final programme notice",
+            "de": "Letzte Programmmitteilung lesen"
+          },
+          "body": {
+            "en": "Save tickets, fill water and choose warm layers for mountain conditions. Confirm the return route before reception weakens.",
+            "de": "Speichere Tickets, fülle Wasser auf und wähle warme Kleidung für Bergbedingungen. Bestätige die Rückroute, bevor der Empfang schwächer wird."
+          },
+          "sourceIds": [
+            "mcd-plan",
+            "mcd-davis"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the Star Party",
+            "de": "Bei der Star Party"
+          },
+          "title": {
+            "en": "Let staff control light and telescope flow",
+            "de": "Licht und Teleskopablauf dem Personal überlassen"
+          },
+          "body": {
+            "en": "Follow the orientation and queue, use only visitor areas and keep personal screens low. Ask before placing any equipment on the field.",
+            "de": "Folge Orientierung und Warteschlange, nutze nur Besucherbereiche und halte eigene Bildschirme niedrig. Frage vor dem Aufstellen von Ausrüstung auf dem Feld."
+          },
+          "sourceIds": [
+            "mcd-star",
+            "mcd-field"
+          ]
+        },
+        {
+          "time": {
+            "en": "At programme close",
+            "de": "Am Programmende"
+          },
+          "title": {
+            "en": "Return directly to Fort Davis",
+            "de": "Direkt nach Fort Davis zurückkehren"
+          },
+          "body": {
+            "en": "Secure equipment, confirm the driver is alert and descend without a Skyline Drive detour. The programme ends where staff say it ends.",
+            "de": "Sichere Ausrüstung, prüfe die Aufmerksamkeit der fahrenden Person und fahre ohne Umweg über Skyline Drive hinab. Das Programm endet dort, wo das Personal es beendet."
+          },
+          "sourceIds": [
+            "mcd-plan",
+            "mcd-davis"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "research-boundary-mcd",
+      "kind": "note",
+      "heading": {
+        "en": "Visitor astronomy and research astronomy share a site, not an access rule",
+        "de": "Besucher- und Forschungsastronomie teilen einen Ort, nicht dieselbe Zugangsregel"
+      },
+      "body": {
+        "en": "The public experience is designed around specific visitor facilities and telescopes. Research domes, technical roads and staff work remain separate. Respect that boundary even when an object shown during the Star Party is also being studied on the mountain.",
+        "de": "Das öffentliche Erlebnis nutzt bestimmte Besuchereinrichtungen und Teleskope. Forschungskuppeln, Technikstraßen und die Arbeit des Personals bleiben getrennt. Respektiere diese Grenze auch dann, wenn ein bei der Star Party gezeigtes Objekt zugleich auf dem Berg erforscht wird."
+      },
+      "sourceIds": [
+        "mcd-visit",
+        "mcd-field",
+        "mcd-star"
+      ],
+      "tone": "context"
+    }
+  ],
+  "sourceIds": [
+    "mcd-visit",
+    "mcd-star",
+    "mcd-plan",
+    "mcd-field",
+    "mcd-davis"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

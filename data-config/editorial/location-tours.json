@@ -3863,5 +3863,4080 @@
       "doc-aoraki"
     ],
     "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "island-in-the-sky-paved-night",
+    "slug": "island-in-the-sky-paved-night",
+    "destinationId": "canyonlands",
+    "recommendedSiteId": "island-in-the-sky-night-area",
+    "title": {
+      "en": "One paved night on Island in the Sky",
+      "de": "Eine befestigte Nacht auf Island in the Sky"
+    },
+    "seoDescription": {
+      "en": "Plan a Canyonlands stargazing evening on the paved Island in the Sky mesa, with legal parking, desert supplies and the rim return settled before dark.",
+      "de": "Plane einen Sternenabend auf dem befestigten Island-in-the-Sky-Plateau mit legalem Parkplatz, Wüstenvorräten und einem vor Dunkelheit geklärten Rückweg."
+    },
+    "standfirst": {
+      "en": "Canyonlands does not need a difficult road to feel remote. Island in the Sky provides elevation and open horizons while keeping the first night on pavement. Check one legal overlook, carry the supplies the mesa lacks and reject any after-dark descent onto an unpaved road. The return to UT 313 should be as familiar as the observing position.",
+      "de": "Canyonlands braucht keine schwierige Straße, um abgelegen zu wirken. Island in the Sky bietet Höhe und offene Horizonte, während die erste Nacht auf Asphalt bleibt. Prüfe einen legalen Aussichtspunkt, bring die auf dem Plateau fehlenden Vorräte mit und verzichte nach Einbruch der Dunkelheit auf unbefestigte Abfahrten. Der Rückweg zur UT 313 sollte so vertraut sein wie der Beobachtungsplatz."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night area",
+          "de": "Nachtbereich"
+        },
+        "value": {
+          "en": "Island in the Sky paved mesa",
+          "de": "Befestigtes Plateau von Island in the Sky"
+        },
+        "sourceIds": [
+          "cany-stargazing",
+          "cany-directions"
+        ]
+      },
+      {
+        "label": {
+          "en": "Road choice",
+          "de": "Straßenwahl"
+        },
+        "value": {
+          "en": "Paved scenic road only",
+          "de": "Nur die befestigte Panoramastraße"
+        },
+        "sourceIds": [
+          "cany-roads"
+        ]
+      },
+      {
+        "label": {
+          "en": "Bring",
+          "de": "Mitbringen"
+        },
+        "value": {
+          "en": "Fuel, water and offline park map",
+          "de": "Kraftstoff, Wasser und Offline-Parkkarte"
+        },
+        "sourceIds": [
+          "cany-conditions",
+          "cany-compendium"
+        ]
+      },
+      {
+        "label": {
+          "en": "Overnight",
+          "de": "Übernachtung"
+        },
+        "value": {
+          "en": "A lawful occupied campsite, not a turnout",
+          "de": "Ein legal belegter Campingplatz, keine Haltebucht"
+        },
+        "sourceIds": [
+          "cany-camp",
+          "cany-regulations"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "mesa-choice",
+        "kind": "decisions",
+        "heading": {
+          "en": "Make the boring road choice on purpose",
+          "de": "Die unspektakuläre Straße bewusst wählen"
+        },
+        "introduction": {
+          "en": "The mesa is already remote enough for a serious night. Technical driving adds exposure without improving the decision.",
+          "de": "Das Plateau ist bereits abgelegen genug für eine ernsthafte Nacht. Anspruchsvolle Fahrten erhöhen das Risiko, ohne die Entscheidung zu verbessern."
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Paved road open and weather settled",
+              "de": "Befestigte Straße offen und Wetter stabil"
+            },
+            "body": {
+              "en": "Select one NPS-described overlook that is currently open, save its lot and remain on hardened surfaces. Shafer day-use parking is excluded when its published night closure applies. The route ends when the car is parked.",
+              "de": "Wähle einen aktuell geöffneten, vom NPS beschriebenen Aussichtspunkt, speichere seinen Parkplatz und bleibe auf befestigten Flächen. Der Shafer-Tagesparkplatz entfällt, wenn seine veröffentlichte Nachtsperre gilt. Die Route endet mit dem Parken."
+            },
+            "sourceIds": [
+              "cany-stargazing",
+              "cany-conditions",
+              "cany-regulations"
+            ]
+          },
+          {
+            "label": {
+              "en": "Ice, lightning, construction or strong wind",
+              "de": "Eis, Gewitter, Bauarbeiten oder starker Wind"
+            },
+            "body": {
+              "en": "Stay lower or cancel. A broad destination score cannot overrule a closure, winter road warning or unsafe rim. Do not look for a supposedly sheltered unpaved alternative after sunset.",
+              "de": "Bleibe tiefer oder sage ab. Ein allgemeiner Zielwert setzt weder Sperren noch Winterwarnungen oder einen unsicheren Rand außer Kraft. Suche nach Sonnenuntergang keine vermeintlich geschützte unbefestigte Alternative."
+            },
+            "sourceIds": [
+              "cany-conditions",
+              "cany-winter",
+              "cany-roads"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rim-reading",
+        "kind": "prose",
+        "heading": {
+          "en": "Read the rim while depth still has colour",
+          "de": "Den Rand lesen, solange Tiefe noch Farbe besitzt"
+        },
+        "paragraphs": {
+          "en": [
+            "Arrive with enough light to distinguish the car park, safe standing area and cliff boundary. Organise chair, red light, optics and warm layers before contrast disappears. Keep well back from the edge and leave every access lane clear. The open horizon is useful without approaching an exposed drop.",
+            "Artificially lighting cliffs is prohibited and also destroys the darkness everyone came to use. Frame the landscape with the remaining natural light, then allow the foreground to become dark. A small binocular setup is easier to keep inside the known footprint than a photographic arrangement that spreads cases and cables across a shared overlook."
+          ],
+          "de": [
+            "Komme bei genügend Licht an, um Parkplatz, sicheren Standbereich und Kliffgrenze zu unterscheiden. Ordne Stuhl, Rotlicht, Optik und warme Kleidung, bevor die Kontraste verschwinden. Halte großen Abstand zum Rand und jede Zufahrt frei. Der offene Horizont ist auch ohne Annäherung an eine exponierte Kante wertvoll.",
+            "Künstliches Beleuchten der Felsen ist verboten und zerstört zudem genau die Dunkelheit, die alle nutzen möchten. Gestalte die Landschaft mit dem verbleibenden natürlichen Licht und lasse den Vordergrund danach dunkel werden. Ein kleines Fernglas-Setup bleibt leichter im bekannten Bereich als eine Fotoausrüstung mit Koffern und Kabeln auf einem gemeinsam genutzten Aussichtspunkt."
+          ]
+        },
+        "sourceIds": [
+          "cany-stargazing",
+          "cany-regulations",
+          "cany-directions"
+        ]
+      },
+      {
+        "id": "mesa-return",
+        "kind": "schedule",
+        "heading": {
+          "en": "The descent begins before anyone is tired",
+          "de": "Die Abfahrt beginnt, bevor jemand müde ist"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before the climb",
+              "de": "Vor der Auffahrt"
+            },
+            "title": {
+              "en": "Close every supply gap",
+              "de": "Alle Versorgungslücken schließen"
+            },
+            "body": {
+              "en": "Read alerts, fill fuel and water, download the map and choose the legal overnight destination. Normal supplies and dependable reception are not available on the mesa.",
+              "de": "Lies Warnungen, fülle Kraftstoff und Wasser auf, lade die Karte herunter und lege den legalen Übernachtungsort fest. Normale Versorgung und verlässlicher Empfang fehlen auf dem Plateau."
+            },
+            "sourceIds": [
+              "cany-conditions",
+              "cany-compendium",
+              "cany-camp"
+            ]
+          },
+          {
+            "time": {
+              "en": "After adaptation",
+              "de": "Nach der Dunkeladaption"
+            },
+            "title": {
+              "en": "Stay with one horizon",
+              "de": "Bei einem Horizont bleiben"
+            },
+            "body": {
+              "en": "Use minimal downward light and observe from the established surface. If traffic or wind interrupts the session, wait or finish rather than adding another viewpoint.",
+              "de": "Nutze nur minimales nach unten gerichtetes Licht und beobachte von der vorgesehenen Fläche. Wenn Verkehr oder Wind stören, warte oder beende den Abend, statt einen weiteren Aussichtspunkt anzufahren."
+            },
+            "sourceIds": [
+              "cany-stargazing",
+              "cany-regulations"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the fixed cutoff",
+              "de": "Zur festen Endzeit"
+            },
+            "title": {
+              "en": "Follow the same paved line out",
+              "de": "Auf derselben befestigten Route zurück"
+            },
+            "body": {
+              "en": "Count people and equipment, confirm driver alertness and return toward UT 313. A full campground does not convert a scenic turnout into overnight space.",
+              "de": "Zähle Personen und Ausrüstung, prüfe die Aufmerksamkeit der fahrenden Person und kehre zur UT 313 zurück. Ein voller Campingplatz macht eine Aussichtsbucht nicht zum Übernachtungsort."
+            },
+            "sourceIds": [
+              "cany-directions",
+              "cany-camp",
+              "cany-regulations"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "cany-stargazing",
+      "cany-conditions",
+      "cany-roads",
+      "cany-directions",
+      "cany-regulations",
+      "cany-compendium",
+      "cany-camp",
+      "cany-winter"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "sutton-bank-star-hub-night",
+    "slug": "sutton-bank-star-hub-night",
+    "destinationId": "north-york-moors",
+    "recommendedSiteId": "sutton-bank-star-hub",
+    "title": {
+      "en": "A Star Hub evening at Sutton Bank",
+      "de": "Ein Star-Hub-Abend am Sutton Bank"
+    },
+    "seoDescription": {
+      "en": "Plan a Sutton Bank Star Hub night using the official site, event calendar and current access rather than a broad moorland coordinate.",
+      "de": "Plane eine Nacht am Sutton Bank Star Hub anhand von offiziellem Standort, Veranstaltungskalender und aktuellem Zugang statt einer weiten Moorlandkoordinate."
+    },
+    "standfirst": {
+      "en": "Sutton Bank gives the North York Moors a precise public astronomy address. Choose between a listed event and an independent visit to the hub, then confirm parking and opening conditions before travel. The escarpment view is already enough. A second forest site after dark adds an unfamiliar road without improving the value of a settled session.",
+      "de": "Sutton Bank gibt den North York Moors eine präzise öffentliche Astronomieadresse. Wähle zwischen einer gelisteten Veranstaltung und einem eigenständigen Besuch am Hub und bestätige Parken sowie Öffnungsbedingungen vor der Reise. Der Blick vom Steilhang reicht bereits aus. Ein zweiter Waldstandort nach Einbruch der Dunkelheit fügt nur eine unbekannte Straße hinzu."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Site",
+          "de": "Ort"
+        },
+        "value": {
+          "en": "Sutton Bank Star Hub",
+          "de": "Sutton Bank Star Hub"
+        },
+        "sourceIds": [
+          "nym-sites",
+          "nym-hub"
+        ]
+      },
+      {
+        "label": {
+          "en": "Format",
+          "de": "Format"
+        },
+        "value": {
+          "en": "Independent visit or listed event",
+          "de": "Eigenständiger Besuch oder gelistete Veranstaltung"
+        },
+        "sourceIds": [
+          "nym-events",
+          "nym-hub"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before travel",
+          "de": "Vor der Reise"
+        },
+        "value": {
+          "en": "Confirm parking and current access",
+          "de": "Parken und aktuellen Zugang bestätigen"
+        },
+        "sourceIds": [
+          "nym-sites",
+          "nym-hub"
+        ]
+      },
+      {
+        "label": {
+          "en": "Route limit",
+          "de": "Routengrenze"
+        },
+        "value": {
+          "en": "One hub for the entire evening",
+          "de": "Ein Hub für den gesamten Abend"
+        },
+        "sourceIds": [
+          "nym-sites"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "hub-or-event",
+        "kind": "decisions",
+        "heading": {
+          "en": "Decide whether the night needs a host",
+          "de": "Entscheiden, ob die Nacht einen Gastgeber braucht"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "You want guided interpretation",
+              "de": "Du möchtest geführte Einordnung"
+            },
+            "body": {
+              "en": "Choose a current event and follow its booking, meeting and weather instructions. A place on the calendar is different from simply arriving at the hub.",
+              "de": "Wähle eine aktuelle Veranstaltung und folge Buchungs-, Treff- und Wetterhinweisen. Ein Termin im Kalender unterscheidet sich von einer bloßen Ankunft am Hub."
+            },
+            "sourceIds": [
+              "nym-events",
+              "nym-hub"
+            ]
+          },
+          {
+            "label": {
+              "en": "You want a quiet independent session",
+              "de": "Du möchtest eine ruhige eigenständige Sitzung"
+            },
+            "body": {
+              "en": "Confirm ordinary site and parking access, arrive in daylight and use the designed public footprint. Do not assume event facilities or staff will be present.",
+              "de": "Bestätige gewöhnlichen Standort- und Parkplatzugang, komme bei Tageslicht an und nutze die gestaltete öffentliche Fläche. Setze weder Veranstaltungseinrichtungen noch Personal voraus."
+            },
+            "sourceIds": [
+              "nym-sites",
+              "nym-hub"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bank-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let one escarpment become familiar",
+          "de": "Einen Steilhang vertraut werden lassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Read the hub and exit",
+              "de": "Hub und Ausfahrt lesen"
+            },
+            "body": {
+              "en": "Park under current rules, inspect paths and horizon and place compact equipment clear of other visitors.",
+              "de": "Parke nach aktuellen Regeln, prüfe Wege und Horizont und stelle kompakte Ausrüstung frei von anderen Besuchern auf."
+            },
+            "sourceIds": [
+              "nym-hub",
+              "nym-sites"
+            ]
+          },
+          {
+            "time": {
+              "en": "After adaptation",
+              "de": "Nach der Dunkeladaption"
+            },
+            "title": {
+              "en": "Work with the open direction",
+              "de": "Mit der offenen Richtung arbeiten"
+            },
+            "body": {
+              "en": "Use the escarpment horizon, keep light low and allow a long uninterrupted view before optics narrow the field.",
+              "de": "Nutze den Horizont des Steilhangs, halte Licht niedrig und erlaube einen langen ungestörten Blick, bevor Optik das Feld einengt."
+            },
+            "sourceIds": [
+              "nym-hub"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the planned end",
+              "de": "Zum geplanten Ende"
+            },
+            "title": {
+              "en": "Return without collecting another site",
+              "de": "Zurückkehren ohne weiteren Standort"
+            },
+            "body": {
+              "en": "Pack, take the known route to lodging and leave Dalby or another hub for a separately researched night.",
+              "de": "Packe ein, nutze die bekannte Route zur Unterkunft und lasse Dalby oder einen anderen Hub für eine separat geprüfte Nacht."
+            },
+            "sourceIds": [
+              "nym-sites"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "moor-address",
+        "kind": "prose",
+        "heading": {
+          "en": "A named address matters more than a broad dark moor",
+          "de": "Eine benannte Adresse zählt mehr als ein weites dunkles Moor"
+        },
+        "paragraphs": {
+          "en": [
+            "Official site information supplies the details a darkness map cannot provide. It identifies where visitors are expected, how the hub is used and which events actually exist. Save that information offline and treat temporary signs or closures as authoritative.",
+            "If cloud, wind or access makes Sutton Bank unsuitable, change the evening rather than searching minor roads. A calm return preserves more value than moving between public places whose after-dark conditions were never checked."
+          ],
+          "de": [
+            "Offizielle Standortinformationen liefern Details, die eine Dunkelheitskarte nicht bietet. Sie zeigen, wo Besucher erwartet werden, wie der Hub genutzt wird und welche Veranstaltungen tatsächlich stattfinden. Speichere diese Informationen offline und behandle temporäre Schilder oder Sperren als maßgeblich.",
+            "Wenn Wolken, Wind oder Zugang Sutton Bank ungeeignet machen, ändere den Abend statt Nebenstraßen zu durchsuchen. Eine ruhige Rückkehr bewahrt mehr Wert als ein Wechsel zwischen öffentlichen Orten, deren Nachtbedingungen nie geprüft wurden."
+          ]
+        },
+        "sourceIds": [
+          "nym-sites",
+          "nym-events",
+          "nym-hub"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "nym-sites",
+      "nym-events",
+      "nym-hub"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "hortobagy-fishpond-guided-night",
+    "slug": "hortobagy-fishpond-guided-night",
+    "destinationId": "hortobagy",
+    "recommendedSiteId": "hortobagy-fishpond-night-walk",
+    "title": {
+      "en": "A guided night walk in Hortobágy",
+      "de": "Eine geführte Nachtwanderung im Hortobágy"
+    },
+    "seoDescription": {
+      "en": "Use a current Hortobágy night event for legitimate access to the fishpond landscape while keeping protected-area rules central.",
+      "de": "Nutze eine aktuelle Hortobágy-Nachtveranstaltung für legitimen Zugang zur Fischteichlandschaft und stelle Schutzgebietsregeln in den Mittelpunkt."
+    },
+    "standfirst": {
+      "en": "Hortobágy is a living protected landscape, not an empty plain available after closing. A current park night walk or astronomy event supplies the correct meeting place, route and host. Book the actual date, bring only compact equipment and remain with the group. Independent movement around fishponds and wildlife habitat is not part of the ticket.",
+      "de": "Hortobágy ist eine lebendige Schutzlandschaft und keine leere Ebene nach Betriebsschluss. Eine aktuelle Nachtwanderung oder Astronomieveranstaltung des Parks liefert Treffpunkt, Route und Gastgeber. Buche das konkrete Datum, bring nur kompakte Ausrüstung mit und bleibe bei der Gruppe. Eigenständige Bewegung an Fischteichen und in Wildtierlebensräumen gehört nicht zum Ticket."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Format",
+          "de": "Format"
+        },
+        "value": {
+          "en": "Current park-led night walk or astronomy event",
+          "de": "Aktuelle parkgeführte Nachtwanderung oder Astronomieveranstaltung"
+        },
+        "sourceIds": [
+          "hort-event",
+          "hort-park"
+        ]
+      },
+      {
+        "label": {
+          "en": "Landscape",
+          "de": "Landschaft"
+        },
+        "value": {
+          "en": "Protected fishpond and steppe habitat",
+          "de": "Geschützter Fischteich- und Steppenlebensraum"
+        },
+        "sourceIds": [
+          "hort-world",
+          "hort-park"
+        ]
+      },
+      {
+        "label": {
+          "en": "Access",
+          "de": "Zugang"
+        },
+        "value": {
+          "en": "Only the published meeting route",
+          "de": "Nur die veröffentlichte Treffroute"
+        },
+        "sourceIds": [
+          "hort-event"
+        ]
+      },
+      {
+        "label": {
+          "en": "Equipment",
+          "de": "Ausrüstung"
+        },
+        "value": {
+          "en": "Compact and guide-approved",
+          "de": "Kompakt und vom Guide akzeptiert"
+        },
+        "sourceIds": [
+          "hort-event"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "event-is-access",
+        "kind": "note",
+        "heading": {
+          "en": "The event is the access model",
+          "de": "Die Veranstaltung ist das Zugangsmodell"
+        },
+        "body": {
+          "en": "Confirm that the programme exists on the chosen date, including language, meeting point, duration and weather procedure. A past festival listing or general park opening does not create a night route. If no current event is offered, choose a legal accommodation-based alternative rather than entering protected land independently.",
+          "de": "Bestätige, dass das Programm am gewählten Datum stattfindet, einschließlich Sprache, Treffpunkt, Dauer und Wetterverfahren. Ein früherer Festivaleintrag oder allgemeine Parköffnung schafft keine Nachtroute. Gibt es keine aktuelle Veranstaltung, wähle eine legale Alternative an einer Unterkunft, statt Schutzland eigenständig zu betreten."
+        },
+        "sourceIds": [
+          "hort-event",
+          "hort-park"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "wetland-night",
+        "kind": "prose",
+        "heading": {
+          "en": "Darkness belongs to birds and observers at the same time",
+          "de": "Dunkelheit gehört Vögeln und Beobachtern zugleich"
+        },
+        "paragraphs": {
+          "en": [
+            "The fishpond and steppe landscape is internationally significant habitat. Follow the guide's route, voice level and light discipline, and keep away from reed beds, water edges and any closed track. The absence of streetlight is not permission to expand the group footprint.",
+            "Use naked-eye orientation and binoculars that can be carried without a tripod maze. Astronomy gains context from the flat horizon, while the protected area's sounds and movement remain undisturbed. If wildlife activity changes the route, the guide's decision overrides the planned view."
+          ],
+          "de": [
+            "Fischteich- und Steppenlandschaft sind international bedeutende Lebensräume. Folge Route, Lautstärke und Lichtdisziplin des Guides und halte Abstand zu Schilf, Wasserkanten und gesperrten Wegen. Fehlendes Straßenlicht erlaubt keine Erweiterung der Gruppenfläche. Auch ein scheinbar leerer Damm bleibt Teil des gelenkten Schutzgebietsbesuchs.",
+            "Nutze Orientierung mit bloßem Auge und Fernglas, das ohne Stativlandschaft getragen werden kann. Astronomie gewinnt durch den flachen Horizont Kontext, während Geräusche und Bewegungen des Schutzgebiets ungestört bleiben. Verändert Wildtieraktivität die Route, hat die Entscheidung des Guides Vorrang vor dem geplanten Blick."
+          ]
+        },
+        "sourceIds": [
+          "hort-world",
+          "hort-park",
+          "hort-event"
+        ]
+      },
+      {
+        "id": "guided-sequence",
+        "kind": "schedule",
+        "heading": {
+          "en": "Arrive as a participant, leave as a participant",
+          "de": "Als Teilnehmer ankommen und als Teilnehmer gehen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before meeting",
+              "de": "Vor dem Treffen"
+            },
+            "title": {
+              "en": "Save the exact event instruction",
+              "de": "Genaue Veranstaltungsanweisung speichern"
+            },
+            "body": {
+              "en": "Confirm clothing, footwear and whether personal optics are welcome. Reach the named meeting point without exploring side roads.",
+              "de": "Bestätige Kleidung, Schuhe und ob eigene Optik willkommen ist. Erreiche den benannten Treffpunkt ohne Erkundung von Nebenwegen."
+            },
+            "sourceIds": [
+              "hort-event"
+            ]
+          },
+          {
+            "time": {
+              "en": "On the route",
+              "de": "Auf der Route"
+            },
+            "title": {
+              "en": "Stay inside the guide's light envelope",
+              "de": "Im Lichtbereich des Guides bleiben"
+            },
+            "body": {
+              "en": "Let staff manage necessary light and movement. Keep screens off and use only the surfaces included in the programme.",
+              "de": "Lass das Personal notwendiges Licht und Bewegung steuern. Halte Bildschirme aus und nutze nur die im Programm enthaltenen Flächen."
+            },
+            "sourceIds": [
+              "hort-event",
+              "hort-park"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the finish",
+              "de": "Am Ende"
+            },
+            "title": {
+              "en": "Return from the official endpoint",
+              "de": "Vom offiziellen Endpunkt zurückkehren"
+            },
+            "body": {
+              "en": "Pack at the group location and follow departure instructions. Do not remain near ponds for a private extension.",
+              "de": "Packe am Gruppenstandort ein und folge den Abfahrthinweisen. Bleibe nicht für eine private Verlängerung an den Teichen."
+            },
+            "sourceIds": [
+              "hort-event",
+              "hort-world"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "hort-world",
+      "hort-park",
+      "hort-event"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "zselic-observatory-program-night",
+    "slug": "zselic-observatory-program-night",
+    "destinationId": "zselic",
+    "recommendedSiteId": "zselic-public-observatory",
+    "title": {
+      "en": "A public observatory night in Zselic",
+      "de": "Eine öffentliche Observatoriumsnacht im Zselic"
+    },
+    "seoDescription": {
+      "en": "Plan a Zselic public-observatory programme with current opening, booking and protected-landscape rules verified before arrival.",
+      "de": "Plane ein Programm am öffentlichen Observatorium im Zselic und bestätige Öffnung, Buchung und Landschaftsschutzregeln vor der Ankunft."
+    },
+    "standfirst": {
+      "en": "Zselic's public observatory is the clearest way to turn a protected dark landscape into a real visitor evening. Use the current programme calendar rather than assuming nightly opening, confirm the language and meeting details and stay within the facility. The surrounding forest adds darkness but does not become an independent after-hours observing field.",
+      "de": "Das öffentliche Observatorium im Zselic ist der klarste Weg, eine geschützte dunkle Landschaft in einen realen Besucherabend zu verwandeln. Nutze den aktuellen Programmkalender statt tägliche Öffnung anzunehmen, bestätige Sprache und Treffdetails und bleibe in der Anlage. Der umgebende Wald bringt Dunkelheit, wird aber nicht zum eigenständigen Beobachtungsfeld nach Betriebsschluss."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Venue",
+          "de": "Ort"
+        },
+        "value": {
+          "en": "Zselic public observatory",
+          "de": "Öffentliches Observatorium Zselic"
+        },
+        "sourceIds": [
+          "zselic-programs"
+        ]
+      },
+      {
+        "label": {
+          "en": "Requirement",
+          "de": "Voraussetzung"
+        },
+        "value": {
+          "en": "Current published programme or confirmed visit",
+          "de": "Aktuelles veröffentlichtes Programm oder bestätigter Besuch"
+        },
+        "sourceIds": [
+          "zselic-programs",
+          "zselic-holiday"
+        ]
+      },
+      {
+        "label": {
+          "en": "Setting",
+          "de": "Umgebung"
+        },
+        "value": {
+          "en": "Protected Zselic landscape",
+          "de": "Geschützte Landschaft Zselic"
+        },
+        "sourceIds": [
+          "zselic-ddnp"
+        ]
+      },
+      {
+        "label": {
+          "en": "Boundary",
+          "de": "Grenze"
+        },
+        "value": {
+          "en": "Facility and published visitor route",
+          "de": "Anlage und veröffentlichte Besucherroute"
+        },
+        "sourceIds": [
+          "zselic-programs",
+          "zselic-ddnp"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "calendar-first",
+        "kind": "decisions",
+        "heading": {
+          "en": "A programme date is more useful than a dark-sky label",
+          "de": "Ein Programmdatum ist nützlicher als ein Dark-Sky-Label"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "A suitable public programme is listed",
+              "de": "Ein passendes öffentliches Programm ist gelistet"
+            },
+            "body": {
+              "en": "Reserve or confirm it and save start, language, duration and meeting instructions. Build transport and lodging around the real appointment.",
+              "de": "Reserviere oder bestätige es und speichere Start, Sprache, Dauer und Treffanweisung. Baue Transport und Unterkunft um den realen Termin."
+            },
+            "sourceIds": [
+              "zselic-programs",
+              "zselic-holiday"
+            ]
+          },
+          {
+            "label": {
+              "en": "No confirmed programme exists",
+              "de": "Kein bestätigtes Programm vorhanden"
+            },
+            "body": {
+              "en": "Do not infer access from the regional designation. Contact the facility or choose an accommodation with explicit night arrangements.",
+              "de": "Leite Zugang nicht aus der regionalen Auszeichnung ab. Kontaktiere die Anlage oder wähle eine Unterkunft mit ausdrücklicher Nachtregelung."
+            },
+            "sourceIds": [
+              "zselic-programs",
+              "zselic-ddnp"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "forest-boundary",
+        "kind": "note",
+        "heading": {
+          "en": "The forest supplies darkness without supplying permission",
+          "de": "Der Wald liefert Dunkelheit, aber keine Erlaubnis"
+        },
+        "body": {
+          "en": "Remain on the visitor route and surfaces identified by the observatory. Protected-landscape rules continue after dark, and an empty track is not a substitute for a confirmed location. Keep noise, light and movement close to the public programme. Confirm the final approach before losing mobile reception, and carry the facility contact with the booking rather than relying on a map pin alone. If directions disagree with signs on site, stop and use the staffed contact instead of testing another forest road.",
+          "de": "Bleibe auf der Besucherroute und den vom Observatorium benannten Flächen. Landschaftsschutzregeln gelten nach Einbruch der Dunkelheit weiter, und ein leerer Weg ersetzt keinen bestätigten Standort. Halte Lärm, Licht und Bewegung nahe am öffentlichen Programm. Kläre die letzte Zufahrt vor einem möglichen Ausfall des Mobilfunkempfangs und speichere den Kontakt der Anlage zusammen mit der Buchung, statt dich allein auf eine Kartenmarkierung zu verlassen. Widersprechen Wegbeschreibung und Beschilderung einander, halte an und nutze den Kontakt der Anlage, statt eine andere Forststraße auszuprobieren."
+        },
+        "sourceIds": [
+          "zselic-ddnp",
+          "zselic-programs"
+        ],
+        "tone": "context"
+      },
+      {
+        "id": "zselic-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the observatory contain the whole night",
+          "de": "Das Observatorium umfasst die ganze Nacht"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before arrival",
+              "de": "Vor der Ankunft"
+            },
+            "title": {
+              "en": "Resolve the last forest kilometre",
+              "de": "Den letzten Waldkilometer klären"
+            },
+            "body": {
+              "en": "Save the official approach, programme confirmation and return lodging. Arrive with warm clothing and no need for a roadside search.",
+              "de": "Speichere offizielle Zufahrt, Programmbestätigung und Rückunterkunft. Komme mit warmer Kleidung und ohne Bedarf an einer Straßensuche an."
+            },
+            "sourceIds": [
+              "zselic-programs",
+              "zselic-holiday"
+            ]
+          },
+          {
+            "time": {
+              "en": "During the programme",
+              "de": "Während des Programms"
+            },
+            "title": {
+              "en": "Use interpretation before individual targets",
+              "de": "Vermittlung vor Einzelzielen nutzen"
+            },
+            "body": {
+              "en": "Follow staff lighting and telescope instructions and connect the observed sky to the protected landscape around it.",
+              "de": "Folge Licht- und Teleskophinweisen des Personals und verbinde den beobachteten Himmel mit der geschützten Landschaft."
+            },
+            "sourceIds": [
+              "zselic-programs",
+              "zselic-ddnp"
+            ]
+          },
+          {
+            "time": {
+              "en": "After closing",
+              "de": "Nach der Schließung"
+            },
+            "title": {
+              "en": "Leave by the confirmed route",
+              "de": "Auf bestätigter Route abfahren"
+            },
+            "body": {
+              "en": "Return to lodging without stopping on forest tracks. Another clear night deserves another confirmed appointment.",
+              "de": "Kehre ohne Halt auf Waldwegen zur Unterkunft zurück. Eine weitere klare Nacht verdient einen weiteren bestätigten Termin."
+            },
+            "sourceIds": [
+              "zselic-programs",
+              "zselic-holiday"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "zselic-programs",
+      "zselic-holiday",
+      "zselic-ddnp"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "witsand-overnight-camp-sky",
+    "slug": "witsand-overnight-camp-sky",
+    "destinationId": "witsand",
+    "recommendedSiteId": "witsand-overnight-camp",
+    "title": {
+      "en": "A booked camp night at Witsand",
+      "de": "Eine gebuchte Campnacht im Witsand"
+    },
+    "seoDescription": {
+      "en": "Plan a Witsand Nature Reserve stargazing night from booked accommodation, with protected-area access and dune movement controlled by the reserve.",
+      "de": "Plane eine Sternennacht im Witsand Nature Reserve von gebuchter Unterkunft aus und lasse Schutzgebietszugang sowie Dünenbewegung vom Reservat bestimmen."
+    },
+    "standfirst": {
+      "en": "Witsand's pale dunes and dry interior make a striking night setting, but the reserve is protected land rather than an open roadside stop. Book the overnight camp or accommodation, confirm arrival and gate arrangements and ask staff where observing is permitted. Stay beside the legal base. Dune exploration and the phenomenon the reserve is known for belong to current local guidance.",
+      "de": "Die hellen Dünen und das trockene Landesinnere machen Witsand zu einer markanten Nachtlandschaft. Das Reservat ist jedoch Schutzland und kein offener Straßenstopp. Buche Camp oder Unterkunft, bestätige Ankunft und Torregelung und frage das Personal nach erlaubten Beobachtungsflächen. Bleibe an der legalen Basis. Dünenerkundung und das bekannte Naturphänomen folgen aktuellen lokalen Hinweisen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Access",
+          "de": "Zugang"
+        },
+        "value": {
+          "en": "Booked reserve accommodation or camp",
+          "de": "Gebuchte Reservatsunterkunft oder Camp"
+        },
+        "sourceIds": [
+          "witsand-tourism",
+          "witsand-nc"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night location",
+          "de": "Nachtort"
+        },
+        "value": {
+          "en": "Host-approved surface beside the stay",
+          "de": "Vom Gastgeber bestätigte Fläche an der Unterkunft"
+        },
+        "sourceIds": [
+          "witsand-nc"
+        ]
+      },
+      {
+        "label": {
+          "en": "Landscape",
+          "de": "Landschaft"
+        },
+        "value": {
+          "en": "Protected dunes and wildlife habitat",
+          "de": "Geschützte Dünen und Wildtierlebensraum"
+        },
+        "sourceIds": [
+          "witsand-protected"
+        ]
+      },
+      {
+        "label": {
+          "en": "Confirm",
+          "de": "Bestätigen"
+        },
+        "value": {
+          "en": "Gate, arrival and facility arrangements",
+          "de": "Tor-, Ankunfts- und Anlagenregelungen"
+        },
+        "sourceIds": [
+          "witsand-tourism",
+          "witsand-nc"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "booking-opens-gate",
+        "kind": "prose",
+        "heading": {
+          "en": "The reservation turns a remote coordinate into a lawful night",
+          "de": "Die Reservierung macht aus einer abgelegenen Koordinate eine legale Nacht"
+        },
+        "paragraphs": {
+          "en": [
+            "Confirm the exact accommodation, arrival window, gate procedure, food, water and current road guidance with the reserve. Save the contact and route offline. A broad Witsand map point cannot answer whether a visitor may enter, remain after dark or use a particular dune edge.",
+            "Once checked in, ask staff for the safest permitted observing surface close to shelter. Learn the route, trip hazards and local lighting in daylight. Keep equipment compact and secure against wind and sand. The useful advantage is sleeping nearby, not pushing deeper into the reserve."
+          ],
+          "de": [
+            "Bestätige genaue Unterkunft, Ankunftsfenster, Torverfahren, Essen, Wasser und aktuelle Straßenhinweise beim Reservat. Speichere Kontakt und Route offline. Eine allgemeine Witsand-Markierung beantwortet nicht, ob Besucher einfahren, nach Einbruch der Dunkelheit bleiben oder einen bestimmten Dünenrand nutzen dürfen.",
+            "Frage nach dem Check-in das Personal nach der sichersten erlaubten Beobachtungsfläche nahe dem Schutzraum. Lerne Route, Stolperstellen und lokale Beleuchtung bei Tageslicht. Halte Ausrüstung kompakt und sichere sie gegen Wind und Sand. Der nützliche Vorteil liegt im nahen Schlafplatz und nicht im tieferen Vordringen ins Reservat."
+          ]
+        },
+        "sourceIds": [
+          "witsand-tourism",
+          "witsand-nc",
+          "witsand-protected"
+        ]
+      },
+      {
+        "id": "dune-restraint",
+        "kind": "note",
+        "heading": {
+          "en": "Do not turn pale dunes into a night trail",
+          "de": "Helle Dünen nicht zum Nachtweg machen"
+        },
+        "body": {
+          "en": "Remain within the area approved by reserve staff and do not pursue wildlife, sounds or dune features after dark. Protected status governs movement even when the sand appears open. A foreground photograph never outranks habitat, footing or the gate conditions of the stay.",
+          "de": "Bleibe im vom Reservatspersonal freigegebenen Bereich und folge weder Wildtieren noch Geräuschen oder Dünenformen nach Einbruch der Dunkelheit. Der Schutzstatus bestimmt Bewegung auch auf scheinbar offenem Sand. Ein Vordergrundfoto hat niemals Vorrang vor Lebensraum, Untergrund oder Torbedingungen des Aufenthalts."
+        },
+        "sourceIds": [
+          "witsand-protected",
+          "witsand-nc"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "camp-evening",
+        "kind": "schedule",
+        "heading": {
+          "en": "Use the bed to remove the late drive",
+          "de": "Mit dem Bett die späte Fahrt entfernen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "At check-in",
+              "de": "Beim Check-in"
+            },
+            "title": {
+              "en": "Ask the night question directly",
+              "de": "Die Nachtfrage direkt stellen"
+            },
+            "body": {
+              "en": "Confirm where, for how long and with which light rules observing is allowed. Do not rely on another guest's informal route.",
+              "de": "Bestätige Ort, Dauer und Lichtregeln der Beobachtung. Verlasse dich nicht auf die informelle Route eines anderen Gastes."
+            },
+            "sourceIds": [
+              "witsand-nc",
+              "witsand-tourism"
+            ]
+          },
+          {
+            "time": {
+              "en": "After dark",
+              "de": "Nach Einbruch der Dunkelheit"
+            },
+            "title": {
+              "en": "Stay close and let vision travel",
+              "de": "Nah bleiben und den Blick reisen lassen"
+            },
+            "body": {
+              "en": "Use naked-eye orientation and binoculars from the approved surface. Keep movement, noise and lamps close to the accommodation.",
+              "de": "Nutze bloßes Auge und Fernglas von der erlaubten Fläche. Halte Bewegung, Lärm und Lampen nahe der Unterkunft."
+            },
+            "sourceIds": [
+              "witsand-protected",
+              "witsand-nc"
+            ]
+          },
+          {
+            "time": {
+              "en": "When wind or fatigue rises",
+              "de": "Wenn Wind oder Müdigkeit zunehmen"
+            },
+            "title": {
+              "en": "Return on foot to the booked shelter",
+              "de": "Zu Fuß zum gebuchten Schutzraum zurück"
+            },
+            "body": {
+              "en": "Pack and sleep at the confirmed base. Assess roads and dunes again only after daylight and staff information.",
+              "de": "Packe ein und schlafe an der bestätigten Basis. Beurteile Straßen und Dünen erst nach Tageslicht und Personalhinweisen erneut."
+            },
+            "sourceIds": [
+              "witsand-tourism",
+              "witsand-nc"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "witsand-tourism",
+      "witsand-nc",
+      "witsand-protected"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "al-wathba-fossil-dunes-evening",
+    "slug": "al-wathba-fossil-dunes-evening",
+    "destinationId": "al-wathba",
+    "recommendedSiteId": "al-wathba-fossil-dunes",
+    "title": {
+      "en": "An authorised evening at Al Wathba Fossil Dunes",
+      "de": "Ein autorisierter Abend an den Al Wathba Fossil Dunes"
+    },
+    "seoDescription": {
+      "en": "Plan an Al Wathba Fossil Dunes evening around current opening, site rules and protected formations rather than an unrestricted desert assumption.",
+      "de": "Plane einen Abend an den Al Wathba Fossil Dunes nach aktuellen Öffnungszeiten, Standortregeln und geschützten Formationen statt nach einer Annahme unbegrenzter Wüste."
+    },
+    "standfirst": {
+      "en": "Al Wathba Fossil Dunes provide a defined visitor landscape near Abu Dhabi, but the formations are protected and access follows current Environment Agency guidance. Check opening and visitor conditions on the day, arrive while paths and barriers are visible and remain on authorised surfaces. The desert beyond the facility is not automatically included in the visit.",
+      "de": "Die Al Wathba Fossil Dunes bilden eine definierte Besucherlandschaft bei Abu Dhabi. Die Formationen sind jedoch geschützt, und der Zugang folgt aktuellen Hinweisen der Environment Agency. Prüfe Öffnung und Besuchsbedingungen am Tag selbst, komme bei sichtbaren Wegen und Barrieren an und bleibe auf erlaubten Flächen. Die Wüste außerhalb der Anlage gehört nicht automatisch zum Besuch."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Visitor site",
+          "de": "Besucherort"
+        },
+        "value": {
+          "en": "Al Wathba Fossil Dunes",
+          "de": "Al Wathba Fossil Dunes"
+        },
+        "sourceIds": [
+          "wathba-ead",
+          "wathba-visit"
+        ]
+      },
+      {
+        "label": {
+          "en": "Authority",
+          "de": "Zuständigkeit"
+        },
+        "value": {
+          "en": "Environment Agency Abu Dhabi guidance",
+          "de": "Hinweise der Environment Agency Abu Dhabi"
+        },
+        "sourceIds": [
+          "wathba-ead",
+          "wathba-news"
+        ]
+      },
+      {
+        "label": {
+          "en": "Surface",
+          "de": "Fläche"
+        },
+        "value": {
+          "en": "Authorised paths and visitor areas",
+          "de": "Erlaubte Wege und Besucherbereiche"
+        },
+        "sourceIds": [
+          "wathba-visit"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before driving",
+          "de": "Vor der Fahrt"
+        },
+        "value": {
+          "en": "Confirm current opening and conditions",
+          "de": "Aktuelle Öffnung und Bedingungen bestätigen"
+        },
+        "sourceIds": [
+          "wathba-ead",
+          "wathba-visit"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "formation-boundary",
+        "kind": "note",
+        "heading": {
+          "en": "The formations are the reason for the boundary",
+          "de": "Die Formationen sind der Grund für die Grenze"
+        },
+        "body": {
+          "en": "Do not climb, touch or light fossil-dune structures for a photograph. Follow barriers, paths and staff directions, and keep tripod feet on surfaces where visitors are permitted. Protected geology remains vulnerable after sunset even when damage would be difficult to see.",
+          "de": "Klettere nicht auf fossile Dünenformationen, berühre sie nicht und beleuchte sie nicht für ein Foto. Folge Barrieren, Wegen und Personalhinweisen und stelle Stativfüße nur auf erlaubte Besucherflächen. Geschützte Geologie bleibt nach Sonnenuntergang empfindlich, auch wenn Schäden schwer sichtbar wären."
+        },
+        "sourceIds": [
+          "wathba-ead",
+          "wathba-visit",
+          "wathba-news"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "opening-decision",
+        "kind": "decisions",
+        "heading": {
+          "en": "Use only the evening the site currently offers",
+          "de": "Nur den Abend nutzen, den der Standort aktuell anbietet"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Opening and evening access are explicit",
+              "de": "Öffnung und Abendzugang sind eindeutig"
+            },
+            "body": {
+              "en": "Arrive within the published window, identify the final departure time and keep the whole session inside the visitor facility.",
+              "de": "Komme innerhalb des veröffentlichten Fensters an, erkenne die späteste Abfahrtszeit und halte die gesamte Sitzung innerhalb der Besucheranlage."
+            },
+            "sourceIds": [
+              "wathba-ead",
+              "wathba-visit"
+            ]
+          },
+          {
+            "label": {
+              "en": "Hours, event or access remain unclear",
+              "de": "Zeiten, Veranstaltung oder Zugang bleiben unklar"
+            },
+            "body": {
+              "en": "Contact the authority or choose another confirmed public site. Do not infer permission from an old announcement or drive onto adjacent desert tracks.",
+              "de": "Kontaktiere die Behörde oder wähle einen anderen bestätigten öffentlichen Ort. Leite keine Erlaubnis aus einer alten Mitteilung ab und befahre keine benachbarten Wüstenspuren."
+            },
+            "sourceIds": [
+              "wathba-news",
+              "wathba-ead"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "fossil-dune-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let daylight explain the foreground",
+          "de": "Tageslicht erklärt den Vordergrund"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Read paths, barriers and exit",
+              "de": "Wege, Barrieren und Ausfahrt lesen"
+            },
+            "body": {
+              "en": "Park as directed, learn the visitor circulation and compose without leaving authorised surfaces. Carry water and clothing for the current desert conditions.",
+              "de": "Parke nach Anweisung, lerne die Besucherführung und gestalte Bilder ohne erlaubte Flächen zu verlassen. Nimm Wasser und Kleidung für aktuelle Wüstenbedingungen mit."
+            },
+            "sourceIds": [
+              "wathba-visit",
+              "wathba-ead"
+            ]
+          },
+          {
+            "time": {
+              "en": "During twilight",
+              "de": "Während der Dämmerung"
+            },
+            "title": {
+              "en": "Move attention from rock to sky",
+              "de": "Aufmerksamkeit vom Gestein zum Himmel verschieben"
+            },
+            "body": {
+              "en": "Stop foreground exploration, protect night vision and observe from the established area. Keep artificial light off the formations.",
+              "de": "Beende die Vordergrunderkundung, schütze Dunkeladaption und beobachte vom vorgesehenen Bereich. Halte künstliches Licht von den Formationen fern."
+            },
+            "sourceIds": [
+              "wathba-ead",
+              "wathba-news"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before the access window closes",
+              "de": "Bevor das Zugangsfenster schließt"
+            },
+            "title": {
+              "en": "Leave through the visitor route",
+              "de": "Über die Besucherroute abfahren"
+            },
+            "body": {
+              "en": "Pack completely and depart on time. Adjacent desert does not become an overflow location after the facility closes.",
+              "de": "Packe vollständig ein und fahre pünktlich ab. Benachbarte Wüste wird nach Schließung der Anlage nicht zum Ausweichstandort."
+            },
+            "sourceIds": [
+              "wathba-visit",
+              "wathba-ead"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "wathba-ead",
+      "wathba-news",
+      "wathba-visit"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "frenchman-valley-camp-sky",
+    "slug": "frenchman-valley-camp-sky",
+    "destinationId": "grasslands",
+    "recommendedSiteId": "frenchman-valley-campground",
+    "title": {
+      "en": "A prairie night at Frenchman Valley",
+      "de": "Eine Prärienacht im Frenchman Valley"
+    },
+    "seoDescription": {
+      "en": "Plan a Grasslands National Park sky session from Frenchman Valley Campground with services, wildlife and backcountry boundaries checked in advance.",
+      "de": "Plane eine Himmelsbeobachtung im Grasslands National Park vom Frenchman Valley Campground und prüfe Versorgung, Wildtiere und Backcountry-Grenzen im Voraus."
+    },
+    "standfirst": {
+      "en": "Grasslands offers a horizon that makes movement feel unnecessary. Frenchman Valley Campground is the useful first-night base because parking, sleeping and the return are already resolved. Read current service and fire information, bring the water and food the stay requires and observe from the assigned site. The dark backcountry is not a late-night extension of a campground booking.",
+      "de": "Grasslands bietet einen Horizont, der Bewegung überflüssig wirken lässt. Der Frenchman Valley Campground ist die sinnvolle Basis der ersten Nacht, weil Parken, Schlafen und Rückweg bereits gelöst sind. Lies aktuelle Versorgungs- und Feuerhinweise, bring benötigtes Wasser und Essen mit und beobachte vom zugewiesenen Platz. Das dunkle Backcountry ist keine spätnächtliche Erweiterung einer Campingbuchung."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Frenchman Valley Campground",
+          "de": "Frenchman Valley Campground"
+        },
+        "sourceIds": [
+          "gl-map",
+          "gl-services"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before arrival",
+          "de": "Vor der Ankunft"
+        },
+        "value": {
+          "en": "Confirm services, hours and fire information",
+          "de": "Versorgung, Zeiten und Feuerhinweise bestätigen"
+        },
+        "sourceIds": [
+          "gl-services",
+          "gl-hours"
+        ]
+      },
+      {
+        "label": {
+          "en": "Wildlife",
+          "de": "Wildtiere"
+        },
+        "value": {
+          "en": "Observe from established camp surfaces",
+          "de": "Von vorgesehenen Campflächen beobachten"
+        },
+        "sourceIds": [
+          "gl-safety"
+        ]
+      },
+      {
+        "label": {
+          "en": "Backcountry",
+          "de": "Backcountry"
+        },
+        "value": {
+          "en": "Separate registration and preparation",
+          "de": "Separate Registrierung und Vorbereitung"
+        },
+        "sourceIds": [
+          "gl-backcountry"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "prairie-base",
+        "kind": "prose",
+        "heading": {
+          "en": "The assigned pitch is already surrounded by sky",
+          "de": "Der zugewiesene Platz ist bereits von Himmel umgeben"
+        },
+        "paragraphs": {
+          "en": [
+            "Use the park map and current service information to confirm the campground, access hours and what is operating. Carry sufficient water, food, warm layers and a downloaded return route. Prairie distance and limited services punish the assumption that a missing item can be collected after sunset.",
+            "Arrive in daylight, inspect the pitch and identify toilets, walking lines and neighbouring campers. Keep chairs and optics inside the site and away from vegetation. The open horizon does not improve enough to justify crossing into a wildlife area or an unregistered backcountry route."
+          ],
+          "de": [
+            "Nutze Parkkarte und aktuelle Versorgungsinformationen, um Campingplatz, Zugangszeiten und geöffnete Einrichtungen zu bestätigen. Nimm ausreichend Wasser, Essen, warme Kleidung und eine heruntergeladene Rückroute mit. Prärieentfernungen und begrenzte Versorgung bestrafen die Annahme, ein fehlender Gegenstand könne nach Sonnenuntergang besorgt werden.",
+            "Komme bei Tageslicht an, prüfe den Stellplatz und erkenne Toiletten, Laufwege und Nachbarn. Halte Stühle und Optik innerhalb des Platzes und fern von Vegetation. Der offene Horizont verbessert sich nicht genug, um einen Wildtierbereich oder eine nicht registrierte Backcountry-Route zu betreten."
+          ]
+        },
+        "sourceIds": [
+          "gl-map",
+          "gl-services",
+          "gl-safety",
+          "gl-backcountry"
+        ]
+      },
+      {
+        "id": "services-decision",
+        "kind": "decisions",
+        "heading": {
+          "en": "Plan around what the park actually provides",
+          "de": "Mit dem planen, was der Park tatsächlich bietet"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Camp services match the group's needs",
+              "de": "Die Campversorgung passt zur Gruppe"
+            },
+            "body": {
+              "en": "Complete the booking and make the pitch the whole night. Finish food and bright tasks before adaptation, then keep the vehicle parked until morning.",
+              "de": "Schließe die Buchung ab und mache den Platz zur ganzen Nacht. Beende Essen und helle Aufgaben vor der Dunkeladaption und lasse das Fahrzeug bis morgens stehen."
+            },
+            "sourceIds": [
+              "gl-services",
+              "gl-hours"
+            ]
+          },
+          {
+            "label": {
+              "en": "Water, fire or facility status creates a gap",
+              "de": "Wasser-, Feuer- oder Anlagenstatus erzeugt eine Lücke"
+            },
+            "body": {
+              "en": "Resolve it before entering the park or choose another legal base. Backcountry camping requires its own registration and cannot serve as spontaneous overflow.",
+              "de": "Löse sie vor der Parkeinfahrt oder wähle eine andere legale Basis. Backcountry-Camping verlangt eine eigene Registrierung und dient nicht als spontaner Ausweichplatz."
+            },
+            "sourceIds": [
+              "gl-services",
+              "gl-backcountry",
+              "gl-safety"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "prairie-hours",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the horizon come to the campsite",
+          "de": "Den Horizont zum Campingplatz kommen lassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before dusk",
+              "de": "Vor der Dämmerung"
+            },
+            "title": {
+              "en": "Secure the camp and read the ground",
+              "de": "Camp sichern und Boden lesen"
+            },
+            "body": {
+              "en": "Store food, place water, inspect footing and agree on the short safe observing area. Keep every route used by campers clear.",
+              "de": "Sichere Essen, stelle Wasser bereit, prüfe Untergrund und vereinbare den kurzen sicheren Beobachtungsbereich. Halte alle von Campern genutzten Wege frei."
+            },
+            "sourceIds": [
+              "gl-safety",
+              "gl-services"
+            ]
+          },
+          {
+            "time": {
+              "en": "Under the first stars",
+              "de": "Unter den ersten Sternen"
+            },
+            "title": {
+              "en": "Start with the prairie scale",
+              "de": "Mit dem Maßstab der Prärie beginnen"
+            },
+            "body": {
+              "en": "Watch the broad sky change before narrowing the view through optics. Keep voice and light low because wildlife and sleeping visitors share the darkness.",
+              "de": "Beobachte den Wandel des weiten Himmels, bevor Optik den Blick einengt. Halte Stimme und Licht niedrig, weil Wildtiere und schlafende Besucher die Dunkelheit teilen."
+            },
+            "sourceIds": [
+              "gl-sky",
+              "gl-safety"
+            ]
+          },
+          {
+            "time": {
+              "en": "When the session ends",
+              "de": "Wenn die Sitzung endet"
+            },
+            "title": {
+              "en": "Walk back instead of driving out",
+              "de": "Zurückgehen statt hinausfahren"
+            },
+            "body": {
+              "en": "Pack at the pitch, enter shelter and leave road decisions for daylight. A distant viewpoint adds risk after the legal night base has already been established.",
+              "de": "Packe am Platz, gehe in den Schutzraum und verschiebe Straßenentscheidungen auf den Tag. Ein entfernter Aussichtspunkt erhöht das Risiko, nachdem die legale Nachtbasis bereits feststeht."
+            },
+            "sourceIds": [
+              "gl-map",
+              "gl-safety"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "gl-sky",
+      "gl-map",
+      "gl-services",
+      "gl-backcountry",
+      "gl-hours",
+      "gl-safety"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "astrolab-program-night",
+    "slug": "astrolab-program-night",
+    "destinationId": "mont-megantic",
+    "recommendedSiteId": "mont-megantic-astrolab",
+    "title": {
+      "en": "A programmed astronomy night at ASTROLab",
+      "de": "Eine programmierte Astronomienacht am ASTROLab"
+    },
+    "seoDescription": {
+      "en": "Build a Mont-Mégantic night around the current ASTROLab programme, transport and park access rather than assuming public observatory entry.",
+      "de": "Plane eine Mont-Mégantic-Nacht rund um aktuelles ASTROLab-Programm, Transport und Parkzugang statt öffentlichen Observatoriumszugang vorauszusetzen."
+    },
+    "standfirst": {
+      "en": "Mont-Mégantic combines a national park, an astronomy interpretation centre and a working summit observatory. Those elements do not share one access rule. A public night begins with the ASTROLab programme currently on sale, including its meeting point and transport. The research observatory remains a controlled facility, even when its dome is visible from the route.",
+      "de": "Mont-Mégantic verbindet Nationalpark, astronomisches Besucherzentrum und aktives Gipfelobservatorium. Diese Elemente teilen keine einzige Zugangsregel. Eine öffentliche Nacht beginnt mit dem aktuell angebotenen ASTROLab-Programm samt Treffpunkt und Transport. Das Forschungsobservatorium bleibt eine kontrollierte Einrichtung, auch wenn seine Kuppel von der Route sichtbar ist."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Public format",
+          "de": "Öffentliches Format"
+        },
+        "value": {
+          "en": "Current ASTROLab night programme",
+          "de": "Aktuelles ASTROLab-Nachtprogramm"
+        },
+        "sourceIds": [
+          "mm-program",
+          "mm-guide"
+        ]
+      },
+      {
+        "label": {
+          "en": "Research site",
+          "de": "Forschungsort"
+        },
+        "value": {
+          "en": "Separate controlled summit observatory",
+          "de": "Separates kontrolliertes Gipfelobservatorium"
+        },
+        "sourceIds": [
+          "mm-park"
+        ]
+      },
+      {
+        "label": {
+          "en": "Confirm",
+          "de": "Bestätigen"
+        },
+        "value": {
+          "en": "Ticket, meeting point and transport",
+          "de": "Ticket, Treffpunkt und Transport"
+        },
+        "sourceIds": [
+          "mm-program"
+        ]
+      },
+      {
+        "label": {
+          "en": "Context",
+          "de": "Kontext"
+        },
+        "value": {
+          "en": "International Dark Sky Reserve",
+          "de": "International Dark Sky Reserve"
+        },
+        "sourceIds": [
+          "mm-reserve"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "three-institutions",
+        "kind": "note",
+        "heading": {
+          "en": "The dome, park and programme are not interchangeable",
+          "de": "Kuppel, Park und Programm sind nicht austauschbar"
+        },
+        "body": {
+          "en": "Read the ticket as the authority for public night access. It defines where visitors meet, which facilities are included and how the mountain is reached. A park admission or daytime view of the summit does not grant independent night entry to the research observatory.",
+          "de": "Lies das Ticket als maßgebliche Grundlage für öffentlichen Nachtzugang. Es definiert Treffpunkt, eingeschlossene Einrichtungen und Bergtransport. Parkeintritt oder Tagesblick zum Gipfel gewähren keinen eigenständigen Nachtzugang zum Forschungsobservatorium. Prüfe außerdem, an welchem Eingang die Gruppe tatsächlich zusammenkommt und ob die Rückfahrt im Programm enthalten ist. Diese Einzelheiten entscheiden darüber, wo das Fahrzeug bleibt und wie die Nacht endet. Eine gespeicherte Bestätigung verhindert, dass fehlender Empfang am Berg die Zuordnung erschwert."
+        },
+        "sourceIds": [
+          "mm-park",
+          "mm-program",
+          "mm-guide"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "programme-match",
+        "kind": "decisions",
+        "heading": {
+          "en": "Match the group to the published evening",
+          "de": "Die Gruppe dem veröffentlichten Abend zuordnen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "The current programme and language fit",
+              "de": "Aktuelles Programm und Sprache passen"
+            },
+            "body": {
+              "en": "Book it and follow the confirmation for arrival, duration, clothing and transport. Seasonal programmes change, so an older itinerary cannot establish the current sequence.",
+              "de": "Buche es und folge der Bestätigung zu Ankunft, Dauer, Kleidung und Transport. Saisonale Programme ändern sich, weshalb ein älterer Reiseplan die aktuelle Abfolge nicht festlegt."
+            },
+            "sourceIds": [
+              "mm-program",
+              "mm-guide"
+            ]
+          },
+          {
+            "label": {
+              "en": "Cloud or programme availability is uncertain",
+              "de": "Wolken oder Programmverfügbarkeit sind unsicher"
+            },
+            "body": {
+              "en": "Decide whether the interpretive content alone justifies the visit and use the operator's current policy. Do not convert a cancelled ticket into an independent summit drive.",
+              "de": "Entscheide, ob die Vermittlungsinhalte allein den Besuch rechtfertigen, und nutze die aktuelle Regelung des Anbieters. Verwandle ein storniertes Ticket nicht in eine eigenständige Gipfelfahrt."
+            },
+            "sourceIds": [
+              "mm-program",
+              "mm-park"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "astrolab-flow",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the programme carry the mountain logistics",
+          "de": "Das Programm trägt die Berglogistik"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before departure",
+              "de": "Vor der Abfahrt"
+            },
+            "title": {
+              "en": "Check the exact meeting instruction",
+              "de": "Genaue Treffanweisung prüfen"
+            },
+            "body": {
+              "en": "Save the booking, park notices and transport details offline. Dress for the mountain and arrive without needing to solve food or equipment tasks at check-in.",
+              "de": "Speichere Buchung, Parkhinweise und Transportdetails offline. Kleide dich für den Berg und komme an, ohne beim Check-in noch Essen oder Ausrüstung klären zu müssen."
+            },
+            "sourceIds": [
+              "mm-program",
+              "mm-park"
+            ]
+          },
+          {
+            "time": {
+              "en": "During interpretation",
+              "de": "Während der Vermittlung"
+            },
+            "title": {
+              "en": "Connect reserve protection with the sky",
+              "de": "Reservatsschutz mit dem Himmel verbinden"
+            },
+            "body": {
+              "en": "Use the guide and ASTROLab material before concentrating on individual telescope views. Light-control measures make sense when the wider reserve is understood.",
+              "de": "Nutze Guide und ASTROLab-Inhalte, bevor einzelne Teleskopblicke dominieren. Lichtschutzmaßnahmen werden verständlich, wenn das größere Reservat bekannt ist."
+            },
+            "sourceIds": [
+              "mm-guide",
+              "mm-reserve"
+            ]
+          },
+          {
+            "time": {
+              "en": "At programme end",
+              "de": "Am Programmende"
+            },
+            "title": {
+              "en": "Return through the official arrangement",
+              "de": "Über die offizielle Regelung zurückkehren"
+            },
+            "body": {
+              "en": "Follow staff transport and departure instructions. Leave personal summit exploration and another observing site out of the night.",
+              "de": "Folge den Transport- und Abfahrthinweisen des Personals. Verzichte in dieser Nacht auf eigene Gipfelerkundung und einen weiteren Beobachtungsort."
+            },
+            "sourceIds": [
+              "mm-program",
+              "mm-park"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "mm-park",
+      "mm-program",
+      "mm-guide",
+      "mm-reserve"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "natural-bridges-campground-night",
+    "slug": "natural-bridges-campground-night",
+    "destinationId": "natural-bridges",
+    "recommendedSiteId": "natural-bridges-campground",
+    "title": {
+      "en": "A campground night at Natural Bridges",
+      "de": "Eine Campingplatznacht am Natural Bridges"
+    },
+    "seoDescription": {
+      "en": "Plan a Natural Bridges night from the park campground, keeping summer heat, limited services and monument rules inside one legal base.",
+      "de": "Plane eine Nacht am Natural Bridges vom Parkcampingplatz aus und berücksichtige Sommerhitze, begrenzte Versorgung und Monumentregeln innerhalb einer legalen Basis."
+    },
+    "standfirst": {
+      "en": "Natural Bridges earned dark-sky recognition, but remoteness makes the practical base more important than the designation. A legal park campground removes the need for a late drive and keeps the session near shelter. Confirm seasonal operation and availability, bring water and supplies and observe from the assigned area. The scenic road remains a daylight landscape.",
+      "de": "Natural Bridges besitzt Dark-Sky-Anerkennung, doch die Abgelegenheit macht die praktische Basis wichtiger als die Auszeichnung. Ein legaler Parkcampingplatz verhindert eine späte Fahrt und hält die Sitzung nahe am Schutzraum. Bestätige saisonalen Betrieb und Verfügbarkeit, bring Wasser und Vorräte mit und beobachte vom zugewiesenen Bereich. Die Panoramastraße bleibt eine Tageslandschaft."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night base",
+          "de": "Nachtbasis"
+        },
+        "value": {
+          "en": "Natural Bridges campground",
+          "de": "Campingplatz Natural Bridges"
+        },
+        "sourceIds": [
+          "nb-camp"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before arrival",
+          "de": "Vor der Ankunft"
+        },
+        "value": {
+          "en": "Confirm seasonal availability and weather",
+          "de": "Saisonale Verfügbarkeit und Wetter bestätigen"
+        },
+        "sourceIds": [
+          "nb-camp",
+          "nb-weather"
+        ]
+      },
+      {
+        "label": {
+          "en": "Bring",
+          "de": "Mitbringen"
+        },
+        "value": {
+          "en": "Water, food and heat/cold layers",
+          "de": "Wasser, Essen sowie Kleidung für Hitze und Kälte"
+        },
+        "sourceIds": [
+          "nb-safety",
+          "nb-summer"
+        ]
+      },
+      {
+        "label": {
+          "en": "Driving",
+          "de": "Fahren"
+        },
+        "value": {
+          "en": "Finish scenic-road travel before dark",
+          "de": "Fahrten auf der Panoramastraße vor Dunkelheit beenden"
+        },
+        "sourceIds": [
+          "nb-safety",
+          "nb-camp"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "remote-base",
+        "kind": "prose",
+        "heading": {
+          "en": "Remoteness increases the value of a legal bed",
+          "de": "Abgelegenheit erhöht den Wert eines legalen Schlafplatzes"
+        },
+        "paragraphs": {
+          "en": [
+            "Check campground operation, site availability, monument alerts and weather before travelling. Carry enough water, food and fuel margin for the stay. Summer heat can remain serious late in the day, while high-desert temperature may fall sharply after sunset.",
+            "Arrive while the site number, toilets, walking line and neighbouring pitches are visible. Keep the setup inside the assigned footprint and finish every vehicle or cooking task before dark. The legal bed means there is no reason to search the scenic drive for an unofficial overnight position."
+          ],
+          "de": [
+            "Prüfe Campingplatzbetrieb, Platzverfügbarkeit, Monumentwarnungen und Wetter vor der Reise. Nimm genügend Wasser, Essen und Kraftstoffreserve für den Aufenthalt mit. Sommerhitze kann bis spät am Tag ernst bleiben, während die Hochwüste nach Sonnenuntergang stark abkühlt.",
+            "Komme an, solange Platznummer, Toiletten, Laufweg und Nachbarplätze sichtbar sind. Halte den Aufbau innerhalb der zugewiesenen Fläche und beende Fahrzeug- sowie Kochaufgaben vor der Dunkelheit. Der legale Schlafplatz beseitigt jeden Grund, an der Panoramastraße nach einer inoffiziellen Übernachtung zu suchen."
+          ]
+        },
+        "sourceIds": [
+          "nb-camp",
+          "nb-safety",
+          "nb-summer",
+          "nb-weather"
+        ]
+      },
+      {
+        "id": "season-limit",
+        "kind": "decisions",
+        "heading": {
+          "en": "Heat and season can cancel a famous sky",
+          "de": "Hitze und Saison können einen berühmten Himmel absagen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Camp open and temperatures manageable",
+              "de": "Camp offen und Temperaturen beherrschbar"
+            },
+            "body": {
+              "en": "Use the pitch as the observing site and keep the session close to shelter and water. A chair and binoculars are enough for a first visit.",
+              "de": "Nutze den Platz als Beobachtungsort und halte die Sitzung nahe Schutzraum und Wasser. Stuhl und Fernglas reichen für einen ersten Besuch."
+            },
+            "sourceIds": [
+              "nb-camp",
+              "nb-safety"
+            ]
+          },
+          {
+            "label": {
+              "en": "Extreme heat, storm or closed facilities",
+              "de": "Extreme Hitze, Sturm oder geschlossene Einrichtungen"
+            },
+            "body": {
+              "en": "Change the date or base. Night opening does not make unsafe daytime travel, a damaged road or absent water support acceptable.",
+              "de": "Ändere Datum oder Basis. Nachtöffnung macht weder unsichere Tagesfahrt noch beschädigte Straße oder fehlende Wasserversorgung akzeptabel."
+            },
+            "sourceIds": [
+              "nb-summer",
+              "nb-weather",
+              "nb-safety"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "camp-darkness",
+        "kind": "schedule",
+        "heading": {
+          "en": "Keep the bridges for daylight and the stars for camp",
+          "de": "Brücken am Tag, Sterne am Camp"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Late afternoon",
+              "de": "Später Nachmittag"
+            },
+            "title": {
+              "en": "Complete the scenic visit and check in",
+              "de": "Panoramabesuch beenden und einchecken"
+            },
+            "body": {
+              "en": "Finish bridge overlooks and road travel while terrain is readable, then settle the campground without rushing.",
+              "de": "Beende Brückenaussichten und Straßenfahrten, solange das Gelände lesbar ist, und richte danach den Campingplatz ohne Hektik ein."
+            },
+            "sourceIds": [
+              "nb-safety",
+              "nb-camp"
+            ]
+          },
+          {
+            "time": {
+              "en": "After dark",
+              "de": "Nach Einbruch der Dunkelheit"
+            },
+            "title": {
+              "en": "Observe within the known footprint",
+              "de": "Innerhalb der bekannten Fläche beobachten"
+            },
+            "body": {
+              "en": "Dim lights, adapt and work from broad naked-eye views toward optics. Keep roads and neighbouring sites clear.",
+              "de": "Dimme Licht, adaptiere und gehe vom weiten Blick mit bloßem Auge zur Optik über. Halte Straßen und Nachbarplätze frei."
+            },
+            "sourceIds": [
+              "nb-camp"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before sleep",
+              "de": "Vor dem Schlafen"
+            },
+            "title": {
+              "en": "Secure the desert kit",
+              "de": "Wüstenausrüstung sichern"
+            },
+            "body": {
+              "en": "Count accessories, protect optics and enter the booked shelter. Driving and another bridge stop wait for morning.",
+              "de": "Zähle Zubehör, schütze Optik und gehe in den gebuchten Schutzraum. Fahrt und weiterer Brückenstopp warten bis morgens."
+            },
+            "sourceIds": [
+              "nb-camp",
+              "nb-safety"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "nb-summer",
+      "nb-safety",
+      "nb-camp",
+      "nb-weather"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "pinon-flats-dune-edge-night",
+    "slug": "pinon-flats-dune-edge-night",
+    "destinationId": "great-sand-dunes",
+    "recommendedSiteId": "pinon-flats-campground",
+    "title": {
+      "en": "A dune-edge night from Piñon Flats",
+      "de": "Eine Nacht am Dünenrand vom Piñon Flats"
+    },
+    "seoDescription": {
+      "en": "Use Piñon Flats Campground as a legal Great Sand Dunes observing base, with sand travel, storms and temperature planned before dark.",
+      "de": "Nutze den Piñon Flats Campground als legale Beobachtungsbasis an den Great Sand Dunes und plane Sandwege, Gewitter sowie Temperatur vor der Dunkelheit."
+    },
+    "standfirst": {
+      "en": "Great Sand Dunes can tempt visitors into a long night walk, but the safer first experience stays near Piñon Flats Campground. The dunes and mountain skyline are already present from the legal base. Finish any sand exploration before darkness, monitor storms and temperature and keep the telescope close to shelter. Night does not make the dune field easier to navigate.",
+      "de": "Great Sand Dunes kann zu einer langen Nachtwanderung verleiten, doch die sicherere erste Erfahrung bleibt nahe dem Piñon Flats Campground. Dünen und Bergsilhouette sind bereits von der legalen Basis sichtbar. Beende jede Sanderkundung vor der Dunkelheit, beobachte Gewitter und Temperatur und halte das Teleskop nahe am Schutzraum. Die Nacht macht das Dünenfeld nicht leichter navigierbar."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Piñon Flats Campground",
+          "de": "Piñon Flats Campground"
+        },
+        "sourceIds": [
+          "gsd-camp"
+        ]
+      },
+      {
+        "label": {
+          "en": "Walking limit",
+          "de": "Weggrenze"
+        },
+        "value": {
+          "en": "Finish dune exploration before dark",
+          "de": "Dünenerkundung vor Dunkelheit beenden"
+        },
+        "sourceIds": [
+          "gsd-safety",
+          "gsd-night"
+        ]
+      },
+      {
+        "label": {
+          "en": "Weather",
+          "de": "Wetter"
+        },
+        "value": {
+          "en": "Monitor storms, wind and temperature",
+          "de": "Gewitter, Wind und Temperatur beobachten"
+        },
+        "sourceIds": [
+          "gsd-weather",
+          "gsd-safety"
+        ]
+      },
+      {
+        "label": {
+          "en": "Observe",
+          "de": "Beobachten"
+        },
+        "value": {
+          "en": "From the assigned campground footprint",
+          "de": "Von der zugewiesenen Campingfläche"
+        },
+        "sourceIds": [
+          "gsd-camp",
+          "gsd-night"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "dunes-not-route",
+        "kind": "note",
+        "heading": {
+          "en": "The dune field is scenery, not the return route",
+          "de": "Das Dünenfeld ist Landschaft und kein Rückweg"
+        },
+        "body": {
+          "en": "Sand erases lines, slows walking and hides changes in slope. Complete any hike under daylight rules and return to the campground before navigation depends on a lamp. An open sky over the dunes can be appreciated from the legal base without carrying equipment deep into the field.",
+          "de": "Sand löscht Linien, verlangsamt Wege und verbirgt Hangwechsel. Beende jede Wanderung unter Tagesbedingungen und kehre zum Campingplatz zurück, bevor Navigation von einer Lampe abhängt. Der offene Himmel über den Dünen lässt sich von der legalen Basis erleben, ohne Ausrüstung tief ins Feld zu tragen."
+        },
+        "sourceIds": [
+          "gsd-safety",
+          "gsd-night"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "storm-or-sky",
+        "kind": "decisions",
+        "heading": {
+          "en": "Lightning outranks the night plan",
+          "de": "Blitz hat Vorrang vor dem Nachtplan"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Stable weather and comfortable wind",
+              "de": "Stabiles Wetter und angenehmer Wind"
+            },
+            "body": {
+              "en": "Set a compact observing area inside the pitch after camp tasks finish. Keep optics protected from blowing sand and begin with the mountain-and-dune horizon.",
+              "de": "Richte nach Abschluss der Campaufgaben einen kompakten Beobachtungsbereich im Stellplatz ein. Schütze Optik vor Flugsand und beginne mit Berg- und Dünenhorizont."
+            },
+            "sourceIds": [
+              "gsd-weather",
+              "gsd-camp",
+              "gsd-night"
+            ]
+          },
+          {
+            "label": {
+              "en": "Thunder, strong wind or falling temperature",
+              "de": "Gewitter, starker Wind oder fallende Temperatur"
+            },
+            "body": {
+              "en": "Move into shelter and stop. Do not cross the campground or dunes looking for a clearer pocket, and follow all park weather guidance.",
+              "de": "Gehe in den Schutzraum und beende. Durchquere weder Campingplatz noch Dünen auf der Suche nach einer klareren Stelle und befolge alle Wetterhinweise des Parks."
+            },
+            "sourceIds": [
+              "gsd-weather",
+              "gsd-safety"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pinon-session",
+        "kind": "schedule",
+        "heading": {
+          "en": "Bring the sky to a prepared campsite",
+          "de": "Den Himmel zu einem vorbereiteten Campingplatz bringen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Return from sand and settle the pitch",
+              "de": "Vom Sand zurückkehren und Platz einrichten"
+            },
+            "body": {
+              "en": "Check in, secure food, learn the path to facilities and place warm layers and water within reach.",
+              "de": "Checke ein, sichere Essen, lerne den Weg zu Einrichtungen und lege warme Kleidung sowie Wasser bereit."
+            },
+            "sourceIds": [
+              "gsd-camp",
+              "gsd-safety"
+            ]
+          },
+          {
+            "time": {
+              "en": "During twilight",
+              "de": "Während der Dämmerung"
+            },
+            "title": {
+              "en": "Secure optics before wind finds them",
+              "de": "Optik sichern, bevor der Wind sie findet"
+            },
+            "body": {
+              "en": "Use stable cases and the smallest practical setup. Finish bright tasks while footing and neighbours remain visible.",
+              "de": "Nutze stabile Koffer und den kleinsten sinnvollen Aufbau. Beende helle Aufgaben, solange Untergrund und Nachbarn sichtbar sind."
+            },
+            "sourceIds": [
+              "gsd-weather",
+              "gsd-camp"
+            ]
+          },
+          {
+            "time": {
+              "en": "After the session",
+              "de": "Nach der Sitzung"
+            },
+            "title": {
+              "en": "Sleep at the base already chosen",
+              "de": "An der bereits gewählten Basis schlafen"
+            },
+            "body": {
+              "en": "Clean sand from equipment, store it safely and remain at the booked pitch. The next drive begins after daylight and a fresh weather check.",
+              "de": "Entferne Sand von der Ausrüstung, lagere sie sicher und bleibe am gebuchten Platz. Die nächste Fahrt beginnt nach Tageslicht und neuer Wetterprüfung."
+            },
+            "sourceIds": [
+              "gsd-camp",
+              "gsd-weather"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "gsd-night",
+      "gsd-camp",
+      "gsd-weather",
+      "gsd-safety"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "mcdonald-star-party-appointment",
+    "slug": "mcdonald-star-party-appointment",
+    "destinationId": "mcdonald-observatory",
+    "recommendedSiteId": "mcdonald-observatory",
+    "title": {
+      "en": "A Star Party appointment at McDonald Observatory",
+      "de": "Ein Star-Party-Termin am McDonald Observatory"
+    },
+    "seoDescription": {
+      "en": "Plan a McDonald Observatory Star Party with ticket, check-in, mountain weather and the return to Fort Davis resolved in advance.",
+      "de": "Plane eine Star Party am McDonald Observatory und kläre Ticket, Check-in, Bergwetter und Rückfahrt nach Fort Davis im Voraus."
+    },
+    "standfirst": {
+      "en": "A McDonald Observatory night is an appointment, not a self-guided visit to research domes. The public Star Party has its own ticket, check-in and observing field. Stay in Fort Davis, read the current programme and weather message and leave personal expectations flexible. Research instruments and Skyline Drive do not become after-hours extensions of the event.",
+      "de": "Eine Nacht am McDonald Observatory ist ein Termin und kein eigenständiger Besuch von Forschungskuppeln. Die öffentliche Star Party besitzt eigenes Ticket, Check-in und Beobachtungsfeld. Bleibe in Fort Davis, lies aktuelle Programm- und Wetternachrichten und halte Erwartungen flexibel. Forschungsinstrumente und Skyline Drive werden nicht zu Verlängerungen nach Veranstaltungsende."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Public event",
+          "de": "Öffentliche Veranstaltung"
+        },
+        "value": {
+          "en": "Booked McDonald Observatory Star Party",
+          "de": "Gebuchte McDonald Observatory Star Party"
+        },
+        "sourceIds": [
+          "mcd-star",
+          "mcd-plan"
+        ]
+      },
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Fort Davis",
+          "de": "Fort Davis"
+        },
+        "sourceIds": [
+          "mcd-davis"
+        ]
+      },
+      {
+        "label": {
+          "en": "Included area",
+          "de": "Enthaltener Bereich"
+        },
+        "value": {
+          "en": "Visitor programme and observing field",
+          "de": "Besucherprogramm und Beobachtungsfeld"
+        },
+        "sourceIds": [
+          "mcd-visit",
+          "mcd-field"
+        ]
+      },
+      {
+        "label": {
+          "en": "Excluded",
+          "de": "Ausgeschlossen"
+        },
+        "value": {
+          "en": "Independent research-dome access",
+          "de": "Eigenständiger Zugang zu Forschungskuppeln"
+        },
+        "sourceIds": [
+          "mcd-visit"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "ticket-defines-night",
+        "kind": "decisions",
+        "heading": {
+          "en": "The ticket defines the part of the mountain you can use",
+          "de": "Das Ticket definiert den nutzbaren Teil des Berges"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Star Party confirmed",
+              "de": "Star Party bestätigt"
+            },
+            "body": {
+              "en": "Use the current confirmation for arrival, check-in, clothing, age guidance and weather handling. Plan dinner and the Fort Davis drive around that appointment.",
+              "de": "Nutze die aktuelle Bestätigung für Ankunft, Check-in, Kleidung, Altershinweise und Wetterverfahren. Plane Abendessen und Fahrt ab Fort Davis um diesen Termin. Speichere die Anfahrt offline."
+            },
+            "sourceIds": [
+              "mcd-star",
+              "mcd-plan",
+              "mcd-davis"
+            ]
+          },
+          {
+            "label": {
+              "en": "Event unavailable or weather-affected",
+              "de": "Veranstaltung nicht verfügbar oder wetterbedingt betroffen"
+            },
+            "body": {
+              "en": "Use the operator's alternative or another date. Do not enter research roads, remain after staff departure or treat the mountain as an open observing field.",
+              "de": "Nutze die Alternative des Betreibers oder ein anderes Datum. Befahre keine Forschungsstraßen, bleibe nicht nach Abfahrt des Personals und behandle den Berg nicht als offenes Beobachtungsfeld."
+            },
+            "sourceIds": [
+              "mcd-visit",
+              "mcd-plan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "field-rhythm",
+        "kind": "schedule",
+        "heading": {
+          "en": "Arrive ready to share an observing field",
+          "de": "Bereit zum Teilen eines Beobachtungsfelds ankommen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before leaving Fort Davis",
+              "de": "Vor der Abfahrt aus Fort Davis"
+            },
+            "title": {
+              "en": "Read the final programme notice",
+              "de": "Letzte Programmmitteilung lesen"
+            },
+            "body": {
+              "en": "Save tickets, fill water and choose warm layers for mountain conditions. Confirm the return route before reception weakens.",
+              "de": "Speichere Tickets, fülle Wasser auf und wähle warme Kleidung für Bergbedingungen. Bestätige die Rückroute, bevor der Empfang schwächer wird."
+            },
+            "sourceIds": [
+              "mcd-plan",
+              "mcd-davis"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the Star Party",
+              "de": "Bei der Star Party"
+            },
+            "title": {
+              "en": "Let staff control light and telescope flow",
+              "de": "Licht und Teleskopablauf dem Personal überlassen"
+            },
+            "body": {
+              "en": "Follow the orientation and queue, use only visitor areas and keep personal screens low. Ask before placing any equipment on the field.",
+              "de": "Folge Orientierung und Warteschlange, nutze nur Besucherbereiche und halte eigene Bildschirme niedrig. Frage vor dem Aufstellen von Ausrüstung auf dem Feld."
+            },
+            "sourceIds": [
+              "mcd-star",
+              "mcd-field"
+            ]
+          },
+          {
+            "time": {
+              "en": "At programme close",
+              "de": "Am Programmende"
+            },
+            "title": {
+              "en": "Return directly to Fort Davis",
+              "de": "Direkt nach Fort Davis zurückkehren"
+            },
+            "body": {
+              "en": "Secure equipment, confirm the driver is alert and descend without a Skyline Drive detour. The programme ends where staff say it ends.",
+              "de": "Sichere Ausrüstung, prüfe die Aufmerksamkeit der fahrenden Person und fahre ohne Umweg über Skyline Drive hinab. Das Programm endet dort, wo das Personal es beendet."
+            },
+            "sourceIds": [
+              "mcd-plan",
+              "mcd-davis"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "research-boundary-mcd",
+        "kind": "note",
+        "heading": {
+          "en": "Visitor astronomy and research astronomy share a site, not an access rule",
+          "de": "Besucher- und Forschungsastronomie teilen einen Ort, nicht dieselbe Zugangsregel"
+        },
+        "body": {
+          "en": "The public experience is designed around specific visitor facilities and telescopes. Research domes, technical roads and staff work remain separate. Respect that boundary even when an object shown during the Star Party is also being studied on the mountain.",
+          "de": "Das öffentliche Erlebnis nutzt bestimmte Besuchereinrichtungen und Teleskope. Forschungskuppeln, Technikstraßen und die Arbeit des Personals bleiben getrennt. Respektiere diese Grenze auch dann, wenn ein bei der Star Party gezeigtes Objekt zugleich auf dem Berg erforscht wird."
+        },
+        "sourceIds": [
+          "mcd-visit",
+          "mcd-field",
+          "mcd-star"
+        ],
+        "tone": "context"
+      }
+    ],
+    "sourceIds": [
+      "mcd-visit",
+      "mcd-star",
+      "mcd-plan",
+      "mcd-field",
+      "mcd-davis"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "borrego-palm-campground-night",
+    "slug": "borrego-palm-campground-night",
+    "destinationId": "anza-borrego",
+    "recommendedSiteId": "borrego-palm-canyon-campground",
+    "title": {
+      "en": "A campsite-first night in Anza-Borrego",
+      "de": "Eine Campingplatznacht im Anza-Borrego"
+    },
+    "seoDescription": {
+      "en": "Plan an Anza-Borrego stargazing night from a legal Borrego Palm Canyon campsite, with desert supplies and all driving finished before dark.",
+      "de": "Plane eine Sternennacht im Anza-Borrego von einem legalen Stellplatz im Borrego Palm Canyon aus und beende Versorgung sowie Fahrten vor der Dunkelheit."
+    },
+    "standfirst": {
+      "en": "Anza-Borrego rewards the decision to stop driving. A booked Borrego Palm Canyon campsite gives the night a lawful address, toilets and a known return of only a few steps. Fill water, food and fuel in Borrego Springs, read current closures and let the desert darken around the pitch rather than chasing an unverified backcountry coordinate.",
+      "de": "Im Anza-Borrego lohnt sich die Entscheidung, das Fahren zu beenden. Ein gebuchter Stellplatz im Borrego Palm Canyon gibt der Nacht eine legale Adresse, Toiletten und einen nur wenige Schritte langen Rückweg. Fülle Wasser, Essen und Kraftstoff in Borrego Springs auf, lies aktuelle Sperren und lasse die Wüste um den Platz dunkel werden, statt einer ungeprüften Backcountry-Koordinate zu folgen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Borrego Palm Canyon Campground",
+          "de": "Borrego Palm Canyon Campground"
+        },
+        "sourceIds": [
+          "ab-park",
+          "ab-access"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before camp",
+          "de": "Vor dem Camp"
+        },
+        "value": {
+          "en": "Fill supplies in Borrego Springs",
+          "de": "Vorräte in Borrego Springs auffüllen"
+        },
+        "sourceIds": [
+          "ab-park",
+          "ab-brochure"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night plan",
+          "de": "Nachtplan"
+        },
+        "value": {
+          "en": "Vehicle remains at the assigned site",
+          "de": "Fahrzeug bleibt am zugewiesenen Platz"
+        },
+        "sourceIds": [
+          "ab-access"
+        ]
+      },
+      {
+        "label": {
+          "en": "Recheck",
+          "de": "Erneut prüfen"
+        },
+        "value": {
+          "en": "Current closures and desert conditions",
+          "de": "Aktuelle Sperren und Wüstenbedingungen"
+        },
+        "sourceIds": [
+          "ab-park",
+          "ab-brochure"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "base-before-darkness",
+        "kind": "decisions",
+        "heading": {
+          "en": "Choose the base before the darkness",
+          "de": "Die Basis vor der Dunkelheit wählen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "A legal campsite is confirmed",
+              "de": "Ein legaler Stellplatz ist bestätigt"
+            },
+            "body": {
+              "en": "Make it the final destination. Download the park map, close supply gaps in town and remove any saved unverified desert pin that could tempt a late relocation.",
+              "de": "Mache ihn zum endgültigen Ziel. Lade die Parkkarte herunter, schließe Versorgungslücken im Ort und entferne jede ungeprüfte Wüstenmarkierung, die zu einem späten Wechsel verleiten könnte."
+            },
+            "sourceIds": [
+              "ab-park",
+              "ab-brochure",
+              "ab-access"
+            ]
+          },
+          {
+            "label": {
+              "en": "Wind, closure or heat makes the site unsuitable",
+              "de": "Wind, Sperrung oder Hitze machen den Ort ungeeignet"
+            },
+            "body": {
+              "en": "Change the booking or remain indoors. Do not use rougher roads to escape a problem that already affects the desert, and never let a high score replace the current park decision.",
+              "de": "Ändere die Buchung oder bleibe im Schutzraum. Nutze keine raueren Straßen, um einem Problem zu entkommen, das bereits die Wüste betrifft, und ersetze die aktuelle Parkentscheidung niemals durch einen hohen Wert."
+            },
+            "sourceIds": [
+              "ab-park",
+              "ab-brochure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "pitch-reading",
+        "kind": "prose",
+        "heading": {
+          "en": "Read the assigned ground before the shadows join",
+          "de": "Den zugewiesenen Boden lesen, bevor die Schatten kommen"
+        },
+        "paragraphs": {
+          "en": [
+            "Check in, locate toilets and inspect the pitch for uneven ground, neighbouring tents and the direction vehicle lights would face. Choose a compact observing area inside the site boundary. Set the tent, chairs and optics while every trip hazard is visible, then complete cooking and other bright tasks.",
+            "Dust and wind favour simple equipment. Begin with naked-eye orientation and binoculars rather than opening cases across the campsite. Dim warm screens, keep light directed down and preserve the quiet of people who may be sleeping nearby. The campground is a shared base, not a private observatory field."
+          ],
+          "de": [
+            "Melde dich an, finde die Toiletten und prüfe den Stellplatz auf Unebenheiten, Nachbarzelte und die Richtung möglicher Fahrzeuglichter. Wähle einen kompakten Beobachtungsbereich innerhalb der Platzgrenze. Stelle Zelt, Stühle und Optik auf, solange Stolperstellen sichtbar sind, und erledige Kochen sowie andere helle Aufgaben.",
+            "Staub und Wind sprechen für einfache Ausrüstung. Beginne mit Orientierung durch bloßes Auge und Fernglas, statt Koffer über den Platz zu verteilen. Dimme warme Bildschirme, richte Licht nach unten und wahre die Ruhe schlafender Nachbarn. Der Campingplatz ist eine gemeinsame Basis und kein privates Observatoriumsfeld."
+          ]
+        },
+        "sourceIds": [
+          "ab-access",
+          "ab-darksky",
+          "ab-brochure"
+        ]
+      },
+      {
+        "id": "parked-night",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the car cool with the desert",
+          "de": "Das Auto mit der Wüste abkühlen lassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Finish every vehicle task",
+              "de": "Jede Fahrzeugaufgabe beenden"
+            },
+            "body": {
+              "en": "Park correctly, unload once, secure food and place water within reach. Identify the few-step route back to shelter before dark adaptation begins.",
+              "de": "Parke korrekt, lade einmal aus, sichere Lebensmittel und stelle Wasser griffbereit. Erkenne den kurzen Rückweg zum Schutzraum vor Beginn der Dunkeladaption."
+            },
+            "sourceIds": [
+              "ab-access",
+              "ab-park"
+            ]
+          },
+          {
+            "time": {
+              "en": "After twilight",
+              "de": "Nach der Dämmerung"
+            },
+            "title": {
+              "en": "Observe without narrowing the night too soon",
+              "de": "Beobachten, ohne die Nacht zu früh einzuengen"
+            },
+            "body": {
+              "en": "Give the broad sky time before using a telescope. A fixed chair and binocular sweep reveal more than repeated walks around the campground with a screen.",
+              "de": "Gib dem weiten Himmel Zeit, bevor ein Teleskop eingesetzt wird. Ein fester Stuhl und Fernglasrunden zeigen mehr als wiederholte Wege mit Bildschirm über den Campingplatz."
+            },
+            "sourceIds": [
+              "ab-darksky"
+            ]
+          },
+          {
+            "time": {
+              "en": "When conditions change",
+              "de": "Wenn sich Bedingungen ändern"
+            },
+            "title": {
+              "en": "Move into shelter, not through the park",
+              "de": "In den Schutzraum wechseln, nicht durch den Park"
+            },
+            "body": {
+              "en": "Secure optics against dust and enter the tent or vehicle. Wind or wildlife discomfort is a reason to stop, not to seek another night location.",
+              "de": "Sichere Optik gegen Staub und gehe ins Zelt oder Fahrzeug. Wind oder Unbehagen wegen Wildtieren sind Gründe zum Beenden und nicht zur Suche nach einem anderen Nachtort."
+            },
+            "sourceIds": [
+              "ab-access",
+              "ab-brochure"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "ab-park",
+      "ab-access",
+      "ab-brochure",
+      "ab-darksky"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "usk-reservoir-compact-night",
+    "slug": "usk-reservoir-compact-night",
+    "destinationId": "brecon-beacons",
+    "recommendedSiteId": "usk-reservoir-dark-sky-site",
+    "title": {
+      "en": "A compact dark-sky evening at Usk Reservoir",
+      "de": "Ein kompakter Dark-Sky-Abend am Usk Reservoir"
+    },
+    "seoDescription": {
+      "en": "Use the official Usk Reservoir dark-sky site with its narrow approach, mountain weather and public hard surface understood before sunset.",
+      "de": "Nutze den offiziellen Dark-Sky-Standort am Usk Reservoir und kläre schmale Zufahrt, Bergwetter und öffentliche befestigte Fläche vor Sonnenuntergang."
+    },
+    "standfirst": {
+      "en": "Usk Reservoir is useful because it turns a broad Welsh dark-sky reserve into a named public location. The hills screen light, but the narrow approach and exposed weather need more attention than the darkness itself. Save the exact site, reach the signed car park in daylight and keep the observing footprint on the hard surface away from water and operational infrastructure.",
+      "de": "Der Usk Reservoir ist nützlich, weil er aus einem weiten walisischen Dark-Sky-Reservat einen benannten öffentlichen Standort macht. Die Hügel schirmen Licht ab, doch schmale Zufahrt und exponiertes Wetter verlangen mehr Aufmerksamkeit als die Dunkelheit selbst. Speichere den exakten Ort, erreiche den ausgeschilderten Parkplatz bei Tageslicht und halte die Beobachtung auf der befestigten Fläche fern von Wasser und Betriebsanlagen."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Official site",
+          "de": "Offizieller Ort"
+        },
+        "value": {
+          "en": "Usk Reservoir dark-sky site",
+          "de": "Dark-Sky-Standort Usk Reservoir"
+        },
+        "sourceIds": [
+          "bb-places",
+          "bb-sky"
+        ]
+      },
+      {
+        "label": {
+          "en": "Approach",
+          "de": "Zufahrt"
+        },
+        "value": {
+          "en": "Narrow rural road from Trecastle",
+          "de": "Schmale Landstraße ab Trecastle"
+        },
+        "sourceIds": [
+          "bb-places"
+        ]
+      },
+      {
+        "label": {
+          "en": "Observe from",
+          "de": "Beobachten von"
+        },
+        "value": {
+          "en": "Public hard surface",
+          "de": "Öffentlicher befestigter Untergrund"
+        },
+        "sourceIds": [
+          "bb-places"
+        ]
+      },
+      {
+        "label": {
+          "en": "Deciding factor",
+          "de": "Entscheidender Faktor"
+        },
+        "value": {
+          "en": "Current mountain weather",
+          "de": "Aktuelles Bergwetter"
+        },
+        "sourceIds": [
+          "bb-safety"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "named-baseline",
+        "kind": "prose",
+        "heading": {
+          "en": "Use the named site, not the reserve pin",
+          "de": "Den benannten Ort statt der Reservatsmarkierung nutzen"
+        },
+        "paragraphs": {
+          "en": [
+            "Save the official Usk description and route, then identify one researched lower fallback. The reserve coordinate is too broad for navigation and says nothing about parking or safe footing. On the final approach from Trecastle, allow time to yield and never block gates or operational access.",
+            "At the car park, read posted restrictions and identify the exit while the road remains visible. Use the hills' light shielding from the public surface. There is no need to move toward a water edge or infrastructure for a wider view, and a dramatic foreground is not worth leaving the known area."
+          ],
+          "de": [
+            "Speichere die offizielle Beschreibung und Route zum Usk und bestimme eine geprüfte, tiefer gelegene Alternative. Die Reservatskoordinate ist für Navigation zu breit und sagt nichts über Parkplatz oder sicheren Untergrund. Plane auf der letzten Zufahrt ab Trecastle Zeit zum Ausweichen ein und blockiere weder Tore noch Betriebszufahrten.",
+            "Lies am Parkplatz veröffentlichte Einschränkungen und erkenne die Ausfahrt, solange die Straße sichtbar ist. Nutze die Lichtabschirmung der Hügel von der öffentlichen Fläche. Für einen weiteren Blick musst du dich weder dem Wasser noch Anlagen nähern. Ein dramatischer Vordergrund rechtfertigt das Verlassen des bekannten Bereichs nicht."
+          ]
+        },
+        "sourceIds": [
+          "bb-places",
+          "bb-sky",
+          "bb-safety"
+        ]
+      },
+      {
+        "id": "mountain-window",
+        "kind": "decisions",
+        "heading": {
+          "en": "Weather decides how short the final road should be",
+          "de": "Das Wetter bestimmt, wie kurz die letzte Straße sein darf"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Dry road, manageable wind and clear retreat",
+              "de": "Trockene Straße, mäßiger Wind und klare Rückfahrt"
+            },
+            "body": {
+              "en": "Continue to Usk in daylight and make it the only site. Set a departure time that preserves alertness for the narrow return.",
+              "de": "Fahre bei Tageslicht zum Usk und mache ihn zum einzigen Standort. Lege eine Abfahrtszeit fest, die Aufmerksamkeit für die schmale Rückfahrt bewahrt."
+            },
+            "sourceIds": [
+              "bb-places",
+              "bb-safety"
+            ]
+          },
+          {
+            "label": {
+              "en": "Fog, rain, ice or strong wind",
+              "de": "Nebel, Regen, Eis oder starker Wind"
+            },
+            "body": {
+              "en": "Use the lower confirmed fallback or cancel. Do not wait until the reservoir road has become the hardest part of the evening.",
+              "de": "Nutze die tiefer gelegene bestätigte Alternative oder sage ab. Warte nicht, bis die Reservoirstraße zum schwierigsten Teil des Abends geworden ist."
+            },
+            "sourceIds": [
+              "bb-safety",
+              "bb-places"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "usk-sequence",
+        "kind": "schedule",
+        "heading": {
+          "en": "Keep arrival and departure reversible",
+          "de": "Ankunft und Abfahrt umkehrbar halten"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Remaining daylight",
+              "de": "Verbleibendes Tageslicht"
+            },
+            "title": {
+              "en": "Read signs, surface and exit",
+              "de": "Schilder, Untergrund und Ausfahrt lesen"
+            },
+            "body": {
+              "en": "Park legally, inspect the stable footprint and keep gates clear. Place only the equipment that can be packed without bright light.",
+              "de": "Parke legal, prüfe die stabile Fläche und halte Tore frei. Stelle nur Ausrüstung auf, die ohne helles Licht eingepackt werden kann."
+            },
+            "sourceIds": [
+              "bb-places"
+            ]
+          },
+          {
+            "time": {
+              "en": "During adaptation",
+              "de": "Während der Dunkeladaption"
+            },
+            "title": {
+              "en": "Let the hills provide the shielding",
+              "de": "Die Hügel abschirmen lassen"
+            },
+            "body": {
+              "en": "Keep screens low, begin with naked-eye orientation and share the public surface. Stay away from water edges and operational equipment.",
+              "de": "Halte Bildschirme niedrig, beginne mit bloßem Auge und teile die öffentliche Fläche. Bleibe fern von Wasserkanten und Betriebsanlagen."
+            },
+            "sourceIds": [
+              "bb-sky",
+              "bb-places"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before fog or fatigue deepens",
+              "de": "Bevor Nebel oder Müdigkeit zunehmen"
+            },
+            "title": {
+              "en": "Reverse the daylight approach",
+              "de": "Die Tageszufahrt umkehren"
+            },
+            "body": {
+              "en": "Pack every small item, warm up and leave on the known road. Use full legal vehicle lighting once the car enters public traffic.",
+              "de": "Packe jedes Kleinteil ein, wärme dich auf und fahre auf der bekannten Straße zurück. Nutze im öffentlichen Verkehr die vollständige vorgeschriebene Fahrzeugbeleuchtung."
+            },
+            "sourceIds": [
+              "bb-safety"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "bb-places",
+      "bb-sky",
+      "bb-safety",
+      "bb-darksky"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "eifel-sternenblick-bench-night",
+    "slug": "eifel-sternenblick-bench-night",
+    "destinationId": "eifel",
+    "recommendedSiteId": "vogelsang-star-observatory",
+    "title": {
+      "en": "A bench-led night at an Eifel SternenBlick",
+      "de": "Eine Nacht am Eifeler SternenBlick"
+    },
+    "seoDescription": {
+      "en": "Choose a named Eifel SternenBlick facility for an accessible observing evening that keeps visitors outside protected nocturnal habitat.",
+      "de": "Wähle einen benannten Eifeler SternenBlick für einen zugänglichen Beobachtungsabend außerhalb geschützter nächtlicher Lebensräume."
+    },
+    "standfirst": {
+      "en": "The Eifel solves a common access problem with designed SternenBlick sites around the protected core. Benches, interpretation and a known approach create a better public night than a shortcut into woodland. Choose the exact facility in advance, inspect its paths before dark and let the reclining bench carry the experience. National-park habitat remains undisturbed.",
+      "de": "Die Eifel löst ein häufiges Zugangsproblem mit gestalteten SternenBlick-Standorten rund um den geschützten Kern. Bänke, Informationen und bekannte Zufahrten schaffen eine bessere öffentliche Nacht als eine Abkürzung in den Wald. Wähle die genaue Anlage im Voraus, prüfe ihre Wege vor der Dunkelheit und lasse die Liegebank das Erlebnis tragen. Der Lebensraum im Nationalpark bleibt ungestört."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Facility",
+          "de": "Anlage"
+        },
+        "value": {
+          "en": "Named SternenBlick outside the protected core",
+          "de": "Benannter SternenBlick außerhalb des Schutzkerns"
+        },
+        "sourceIds": [
+          "ei-views",
+          "ei-park"
+        ]
+      },
+      {
+        "label": {
+          "en": "Useful features",
+          "de": "Nützliche Merkmale"
+        },
+        "value": {
+          "en": "Bench, interpretation and open horizon",
+          "de": "Bank, Informationen und freier Horizont"
+        },
+        "sourceIds": [
+          "ei-views"
+        ]
+      },
+      {
+        "label": {
+          "en": "Guided option",
+          "de": "Geführte Option"
+        },
+        "value": {
+          "en": "Book a SternenGuide when desired",
+          "de": "Bei Bedarf SternenGuide buchen"
+        },
+        "sourceIds": [
+          "ei-guides",
+          "ei-meet"
+        ]
+      },
+      {
+        "label": {
+          "en": "Not part of the plan",
+          "de": "Nicht Teil des Plans"
+        },
+        "value": {
+          "en": "Sleeping in the car, fire or woodland shortcut",
+          "de": "Schlafen im Auto, Feuer oder Waldabkürzung"
+        },
+        "sourceIds": [
+          "ei-rules"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "facility-choice",
+        "kind": "decisions",
+        "heading": {
+          "en": "Choose between a bench and a guide",
+          "de": "Zwischen Bank und Guide wählen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "You want a quiet independent hour",
+              "de": "Du möchtest eine ruhige eigenständige Stunde"
+            },
+            "body": {
+              "en": "Select the exact SternenBlick from the official directory, save its access and use the designed bench and surface. The facility already solves horizon and visitor-footprint questions.",
+              "de": "Wähle den genauen SternenBlick aus dem offiziellen Verzeichnis, speichere seinen Zugang und nutze Bank sowie vorgesehene Fläche. Die Anlage löst bereits Fragen zu Horizont und Besucherbereich."
+            },
+            "sourceIds": [
+              "ei-views"
+            ]
+          },
+          {
+            "label": {
+              "en": "You want interpretation or are new to the sky",
+              "de": "Du möchtest Einordnung oder bist neu am Himmel"
+            },
+            "body": {
+              "en": "Book a listed SternenGuide or meeting instead of expecting an informal programme at every facility. Confirm date, language and meeting place directly.",
+              "de": "Buche einen gelisteten SternenGuide oder Treffpunkt, statt an jeder Anlage ein spontanes Programm zu erwarten. Bestätige Datum, Sprache und Treffpunkt direkt."
+            },
+            "sourceIds": [
+              "ei-guides",
+              "ei-meet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "designed-surface",
+        "kind": "schedule",
+        "heading": {
+          "en": "Let the public design do the work",
+          "de": "Die öffentliche Gestaltung arbeiten lassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before darkness",
+              "de": "Vor der Dunkelheit"
+            },
+            "title": {
+              "en": "Inspect panels, paths and horizon",
+              "de": "Tafeln, Wege und Horizont prüfen"
+            },
+            "body": {
+              "en": "Park legally, identify the quiet return and keep equipment on the designed surface. Do not extend the plan into woodland or a protected core trail.",
+              "de": "Parke legal, erkenne den ruhigen Rückweg und halte Ausrüstung auf der gestalteten Fläche. Erweitere den Plan weder in den Wald noch auf einen Weg im Schutzkern."
+            },
+            "sourceIds": [
+              "ei-views",
+              "ei-rules"
+            ]
+          },
+          {
+            "time": {
+              "en": "Once seated",
+              "de": "Nach dem Hinsetzen"
+            },
+            "title": {
+              "en": "Use the bench before the binoculars",
+              "de": "Die Bank vor dem Fernglas nutzen"
+            },
+            "body": {
+              "en": "Recline, allow full adaptation and trace the largest constellations. Optics become more useful once directions and the open part of the horizon are understood.",
+              "de": "Lehne dich zurück, lasse die Augen vollständig adaptieren und verfolge die größten Sternbilder. Optik wird nützlicher, sobald Richtungen und offener Horizont verstanden sind."
+            },
+            "sourceIds": [
+              "ei-park",
+              "ei-views"
+            ]
+          },
+          {
+            "time": {
+              "en": "At departure",
+              "de": "Bei der Abfahrt"
+            },
+            "title": {
+              "en": "Leave habitat dark",
+              "de": "Lebensraum dunkel lassen"
+            },
+            "body": {
+              "en": "Collect every item and use the known path. Return to accommodation without sleeping in the vehicle, lighting a fire or cutting through nocturnal habitat.",
+              "de": "Sammle alle Gegenstände ein und nutze den bekannten Weg. Kehre zur Unterkunft zurück, ohne im Fahrzeug zu schlafen, Feuer zu machen oder nächtlichen Lebensraum zu durchqueren."
+            },
+            "sourceIds": [
+              "ei-rules",
+              "ei-park"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "night-ecology",
+        "kind": "note",
+        "heading": {
+          "en": "Access rules are also night-ecology rules",
+          "de": "Zugangsregeln sind zugleich Regeln der Nachtökologie"
+        },
+        "body": {
+          "en": "The park protects more than darkness for human observers. Remaining at a named facility limits noise, light and movement in habitat used by nocturnal wildlife. A slightly different horizon is not worth moving into the core area.",
+          "de": "Der Park schützt mehr als Dunkelheit für menschliche Beobachter. Wer an einer benannten Anlage bleibt, begrenzt Lärm, Licht und Bewegung in Lebensräumen nachtaktiver Tiere. Ein etwas anderer Horizont rechtfertigt keinen Wechsel in den Kernbereich."
+        },
+        "sourceIds": [
+          "ei-park",
+          "ei-rules",
+          "ei-views"
+        ],
+        "tone": "context"
+      }
+    ],
+    "sourceIds": [
+      "ei-park",
+      "ei-views",
+      "ei-guides",
+      "ei-meet",
+      "ei-rules"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "kielder-single-venue-event",
+    "slug": "kielder-single-venue-event",
+    "destinationId": "kielder",
+    "recommendedSiteId": "stonehaugh-stargazing-pavilion",
+    "title": {
+      "en": "One booked venue in Kielder Forest",
+      "de": "Ein gebuchter Ort im Kielder Forest"
+    },
+    "seoDescription": {
+      "en": "Plan a Kielder night around one confirmed observatory or pavilion event, with the forest approach and cloudy-night value resolved before travel.",
+      "de": "Plane eine Kielder-Nacht rund um eine bestätigte Veranstaltung am Observatorium oder Pavillon und kläre Waldzufahrt sowie Wert bei Wolken vor der Reise."
+    },
+    "standfirst": {
+      "en": "Kielder becomes straightforward when the last kilometre is settled before dark. Choose one real event, read its exact arrival instructions and stay with that venue. This route uses the Stonehaugh Stargazing Pavilion as the modest community-scale option; a Kielder Observatory booking is a different appointment. Venue-hopping through the forest adds navigation without adding a better sky.",
+      "de": "Kielder wird einfach, wenn der letzte Kilometer vor der Dunkelheit geklärt ist. Wähle eine reale Veranstaltung, lies ihre genauen Ankunftshinweise und bleibe an diesem Ort. Diese Route nutzt den Stonehaugh Stargazing Pavilion als kleinere gemeinschaftliche Option. Eine Buchung am Kielder Observatory ist ein anderer Termin. Wechsel zwischen Veranstaltungsorten im Wald erhöhen die Navigation, nicht die Himmelsqualität."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Chosen model",
+          "de": "Gewähltes Modell"
+        },
+        "value": {
+          "en": "Stonehaugh Stargazing Pavilion event",
+          "de": "Veranstaltung am Stonehaugh Stargazing Pavilion"
+        },
+        "sourceIds": [
+          "ki-forest",
+          "ki-dark"
+        ]
+      },
+      {
+        "label": {
+          "en": "Alternative",
+          "de": "Alternative"
+        },
+        "value": {
+          "en": "Separately booked Kielder Observatory programme",
+          "de": "Separat gebuchtes Kielder-Observatory-Programm"
+        },
+        "sourceIds": [
+          "ki-observatory"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before travel",
+          "de": "Vor der Reise"
+        },
+        "value": {
+          "en": "Confirm event, parking and forest notices",
+          "de": "Veranstaltung, Parkplatz und Waldhinweise bestätigen"
+        },
+        "sourceIds": [
+          "ki-forest",
+          "ki-visit"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night rule",
+          "de": "Nachtregel"
+        },
+        "value": {
+          "en": "No unverified car-park detour",
+          "de": "Kein ungeprüfter Parkplatzumweg"
+        },
+        "sourceIds": [
+          "ki-forest",
+          "ki-visit"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "venue-not-brand",
+        "kind": "prose",
+        "heading": {
+          "en": "Book a venue, not the Kielder name",
+          "de": "Einen Ort buchen und nicht den Namen Kielder"
+        },
+        "paragraphs": {
+          "en": [
+            "The observatory and pavilion offer different scales, calendars and access arrangements. Select the event whose content, duration and group needs fit, then verify it is actually operating. A sold-out observatory listing has no guaranteed waiting line and does not justify an informal arrival.",
+            "For Stonehaugh, use the current forest and dark-sky information to confirm the pavilion, parking and any local event details. Save the exact approach offline. Forestry barriers, notices and payment conditions remain effective after sunset even when another clearing looks more convenient."
+          ],
+          "de": [
+            "Observatorium und Pavillon besitzen unterschiedliche Größen, Kalender und Zugangsmodelle. Wähle die Veranstaltung, deren Inhalt, Dauer und Gruppenanforderungen passen, und bestätige ihren tatsächlichen Betrieb. Eine ausverkaufte Observatoriumsveranstaltung besitzt keine garantierte Warteschlange und rechtfertigt keine informelle Anreise.",
+            "Nutze für Stonehaugh die aktuellen Wald- und Dark-Sky-Informationen zu Pavillon, Parkplatz und möglicher Veranstaltung. Speichere die genaue Zufahrt offline. Forstschranken, Hinweise und Zahlungsbedingungen gelten auch nach Sonnenuntergang, selbst wenn eine andere Lichtung bequemer wirkt."
+          ]
+        },
+        "sourceIds": [
+          "ki-observatory",
+          "ki-forest",
+          "ki-dark",
+          "ki-visit"
+        ]
+      },
+      {
+        "id": "cloud-value",
+        "kind": "decisions",
+        "heading": {
+          "en": "Ask what remains when the sky closes",
+          "de": "Fragen, was bei geschlossenem Himmel bleibt"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "The event includes indoor or interpretive content",
+              "de": "Die Veranstaltung enthält Innen- oder Vermittlungsinhalte"
+            },
+            "body": {
+              "en": "A cloudy forecast may still justify the journey if that content is valuable to the group and the operator confirms the event. Arrive with the correct expectation.",
+              "de": "Eine wolkige Prognose kann die Reise weiterhin rechtfertigen, wenn diese Inhalte für die Gruppe wertvoll sind und der Anbieter die Veranstaltung bestätigt. Reise mit der passenden Erwartung an."
+            },
+            "sourceIds": [
+              "ki-observatory",
+              "ki-dark"
+            ]
+          },
+          {
+            "label": {
+              "en": "The visit depends entirely on an open sky",
+              "de": "Der Besuch hängt vollständig von klarem Himmel ab"
+            },
+            "body": {
+              "en": "Use the operator's current weather process and be willing to reschedule. Do not replace a cancelled programme with a search across unfamiliar forest car parks.",
+              "de": "Nutze das aktuelle Wetterverfahren des Anbieters und sei bereit umzubuchen. Ersetze ein abgesagtes Programm nicht durch die Suche auf unbekannten Waldparkplätzen."
+            },
+            "sourceIds": [
+              "ki-observatory",
+              "ki-forest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "forest-approach",
+        "kind": "schedule",
+        "heading": {
+          "en": "The forest approach belongs to the ticket",
+          "de": "Die Waldzufahrt gehört zum Ticket"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before full darkness",
+              "de": "Vor vollständiger Dunkelheit"
+            },
+            "title": {
+              "en": "Finish food, clothing and junctions",
+              "de": "Essen, Kleidung und Abzweigungen klären"
+            },
+            "body": {
+              "en": "Follow the published route, obey barriers and identify the final junctions while visible. Complete predictable tasks before check-in.",
+              "de": "Folge der veröffentlichten Route, beachte Schranken und erkenne die letzten Abzweigungen, solange sie sichtbar sind. Erledige vorhersehbare Aufgaben vor dem Check-in."
+            },
+            "sourceIds": [
+              "ki-forest",
+              "ki-visit"
+            ]
+          },
+          {
+            "time": {
+              "en": "At the venue",
+              "de": "Am Veranstaltungsort"
+            },
+            "title": {
+              "en": "Stay inside its lighting culture",
+              "de": "In der Lichtkultur des Ortes bleiben"
+            },
+            "body": {
+              "en": "Follow host instructions and use personal equipment only when invited. Expertise is present, so questions add more than another phone screen.",
+              "de": "Folge den Hinweisen der Gastgeber und nutze eigene Ausrüstung nur nach Einladung. Fachwissen ist vorhanden. Fragen bringen mehr als ein weiterer Telefonbildschirm."
+            },
+            "sourceIds": [
+              "ki-dark",
+              "ki-observatory"
+            ]
+          },
+          {
+            "time": {
+              "en": "After the event",
+              "de": "Nach der Veranstaltung"
+            },
+            "title": {
+              "en": "Take the saved route to lodging",
+              "de": "Auf gespeicherter Route zur Unterkunft"
+            },
+            "body": {
+              "en": "Warm up, confirm driver alertness and leave directly. A late forest car park whose hours and surface were not inspected does not belong to the same booking.",
+              "de": "Wärme dich auf, prüfe die Aufmerksamkeit der fahrenden Person und fahre direkt ab. Ein später Waldparkplatz ohne geprüfte Zeiten und Oberfläche gehört nicht zur selben Buchung."
+            },
+            "sourceIds": [
+              "ki-forest",
+              "ki-visit"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "ki-observatory",
+      "ki-forest",
+      "ki-dark",
+      "ki-visit"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "wimbleball-weather-led-night",
+    "slug": "wimbleball-weather-led-night",
+    "destinationId": "exmoor",
+    "recommendedSiteId": "wimbleball-dark-sky-hub",
+    "title": {
+      "en": "A weather-led night at Wimbleball",
+      "de": "Eine wettergeführte Nacht am Wimbleball"
+    },
+    "seoDescription": {
+      "en": "Plan a Wimbleball Lake dark-sky evening with the named hub, parking, reservoir exposure and Exmoor weather checked before leaving the village.",
+      "de": "Plane einen Dark-Sky-Abend am Wimbleball Lake und prüfe benannten Hub, Parkplatz, exponierte Reservoirlage und Exmoor-Wetter vor der Abfahrt."
+    },
+    "standfirst": {
+      "en": "Exmoor rewards site selection more than mileage. Wimbleball gives the night a named dark-sky hub, but reservoir exposure means wind and rain can matter quickly. Confirm the exact parking and land conditions, reach the public surface in daylight and keep the return short. A darker unnamed lane is not an upgrade when access and footing are unknown.",
+      "de": "Im Exmoor zählt die Standortwahl mehr als die gefahrene Strecke. Wimbleball gibt der Nacht einen benannten Dark-Sky-Hub, doch die exponierte Reservoirlage lässt Wind und Regen schnell wichtig werden. Bestätige Parkplatz und Geländebedingungen, erreiche die öffentliche Fläche bei Tageslicht und halte die Rückfahrt kurz. Eine dunklere namenlose Spur ist keine Verbesserung, wenn Zugang und Untergrund unbekannt sind."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Chosen site",
+          "de": "Gewählter Ort"
+        },
+        "value": {
+          "en": "Wimbleball dark-sky hub",
+          "de": "Dark-Sky-Hub Wimbleball"
+        },
+        "sourceIds": [
+          "ex-wimble",
+          "ex-guide"
+        ]
+      },
+      {
+        "label": {
+          "en": "Check",
+          "de": "Prüfen"
+        },
+        "value": {
+          "en": "Current parking and land access",
+          "de": "Aktuellen Parkplatz- und Landzugang"
+        },
+        "sourceIds": [
+          "ex-wimble",
+          "ex-safety"
+        ]
+      },
+      {
+        "label": {
+          "en": "Main exposure",
+          "de": "Hauptrisiko"
+        },
+        "value": {
+          "en": "Wind and rain around the reservoir",
+          "de": "Wind und Regen am Reservoir"
+        },
+        "sourceIds": [
+          "ex-safety"
+        ]
+      },
+      {
+        "label": {
+          "en": "Fallback principle",
+          "de": "Alternativprinzip"
+        },
+        "value": {
+          "en": "A named lower or sheltered site",
+          "de": "Ein benannter tieferer oder geschützter Ort"
+        },
+        "sourceIds": [
+          "ex-guide",
+          "ex-trail"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "weather-first",
+        "kind": "note",
+        "heading": {
+          "en": "The forecast changes the site, not just the clothing",
+          "de": "Die Prognose verändert den Ort und nicht nur die Kleidung"
+        },
+        "body": {
+          "en": "Reservoir wind can make a technically clear night unpleasant or unsafe. Read current local weather and access information before leaving the base. If rain, gusts or poor visibility undermine the public surface, use a researched named fallback or keep the evening indoors. Do not improvise on an unverified moorland lane.",
+          "de": "Wind am Reservoir kann eine technisch klare Nacht unangenehm oder unsicher machen. Lies lokale Wetter- und Zugangsinformationen vor der Abfahrt. Wenn Regen, Böen oder schlechte Sicht die öffentliche Fläche beeinträchtigen, nutze eine geprüfte benannte Alternative oder bleibe drinnen. Improvisiere nicht auf einer ungeprüften Moorlandstraße."
+        },
+        "sourceIds": [
+          "ex-safety",
+          "ex-wimble",
+          "ex-guide"
+        ],
+        "tone": "warning"
+      },
+      {
+        "id": "hub-footprint",
+        "kind": "schedule",
+        "heading": {
+          "en": "A short route protects a long look",
+          "de": "Eine kurze Route schützt einen langen Blick"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Confirm parking and the return line",
+              "de": "Parkplatz und Rückweg bestätigen"
+            },
+            "body": {
+              "en": "Use the official hub information, park only as permitted and inspect the hard surface, water boundary and exit. Keep gates and visitor movement open.",
+              "de": "Nutze die offiziellen Hub-Informationen, parke nur wie erlaubt und prüfe befestigte Fläche, Wassergrenze und Ausfahrt. Halte Tore und Besucherbewegung frei."
+            },
+            "sourceIds": [
+              "ex-wimble",
+              "ex-safety"
+            ]
+          },
+          {
+            "time": {
+              "en": "As the reservoir darkens",
+              "de": "Wenn das Reservoir dunkel wird"
+            },
+            "title": {
+              "en": "Use one sheltered footprint",
+              "de": "Eine geschützte Fläche nutzen"
+            },
+            "body": {
+              "en": "Set compact equipment where wind is manageable without moving toward the shore. Begin broad, shield light and share the public location quietly.",
+              "de": "Stelle kompakte Ausrüstung dort auf, wo Wind beherrschbar bleibt, ohne zum Ufer zu wechseln. Beginne mit weitem Blick, schirme Licht ab und teile den öffentlichen Ort ruhig."
+            },
+            "sourceIds": [
+              "ex-guide",
+              "ex-wimble"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before wet or cold dominates",
+              "de": "Bevor Nässe oder Kälte bestimmen"
+            },
+            "title": {
+              "en": "Pack while hands remain reliable",
+              "de": "Einpacken, solange Hände zuverlässig sind"
+            },
+            "body": {
+              "en": "Dry and count equipment, follow the known path and return to the planned accommodation. Leave another Exmoor site for another evening.",
+              "de": "Trockne und zähle Ausrüstung, folge dem bekannten Weg und kehre zur geplanten Unterkunft zurück. Ein anderer Exmoor-Ort gehört zu einem anderen Abend."
+            },
+            "sourceIds": [
+              "ex-safety",
+              "ex-trail"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "site-not-mileage",
+        "kind": "prose",
+        "heading": {
+          "en": "A named modest site beats an anonymous darker verge",
+          "de": "Ein benannter mäßiger Ort schlägt einen namenlosen dunkleren Rand"
+        },
+        "paragraphs": {
+          "en": [
+            "The official Exmoor material identifies practical viewing places and routes. That knowledge includes parking and legitimate public use, which a light-pollution map cannot provide. Use Wimbleball because its role is understood, not because every part of its horizon is perfect.",
+            "If trees, visitors or local light affect one direction, turn attention to the open part of the sky rather than relocating. The value of the night lies in uninterrupted adaptation and a safe return. Extra mileage rarely restores either once the group has begun packing."
+          ],
+          "de": [
+            "Die offiziellen Exmoor-Informationen nennen praktische Beobachtungsorte und Routen. Dieses Wissen umfasst Parken und legitime öffentliche Nutzung, was eine Lichtverschmutzungskarte nicht liefern kann. Nutze Wimbleball, weil seine Rolle verstanden ist und nicht weil jeder Horizont perfekt wäre.",
+            "Wenn Bäume, Besucher oder lokales Licht eine Richtung beeinflussen, richte die Aufmerksamkeit auf den offenen Himmelsbereich, statt den Ort zu wechseln. Der Wert der Nacht liegt in ungestörter Dunkeladaption und sicherer Rückkehr. Zusätzliche Kilometer stellen beides selten wieder her, sobald die Gruppe mit dem Einpacken begonnen hat."
+          ]
+        },
+        "sourceIds": [
+          "ex-guide",
+          "ex-wimble",
+          "ex-trail"
+        ]
+      }
+    ],
+    "sourceIds": [
+      "ex-guide",
+      "ex-trail",
+      "ex-wimble",
+      "ex-safety"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "yulara-after-park-sky",
+    "slug": "yulara-after-park-sky",
+    "destinationId": "uluru",
+    "recommendedSiteId": "yulara-authorised-astronomy-zone",
+    "title": {
+      "en": "From Uluṟu at sunset to an authorised Yulara sky",
+      "de": "Sonnenuntergang am Uluṟu, Sterne in Yulara"
+    },
+    "seoDescription": {
+      "en": "Separate an Uluṟu park visit from a respectful stargazing session at a confirmed location outside the park boundary near Yulara.",
+      "de": "Trenne den Besuch von Uluṟu von einer respektvollen Sternenbeobachtung an einem bestätigten Ort außerhalb der Parkgrenze bei Yulara."
+    },
+    "standfirst": {
+      "en": "Uluṟu is Country with opening hours, cultural responsibilities and photography guidance. The national park closes at night, so the astronomy session belongs at a confirmed outside-park location near Yulara or within an authorised experience. Leave the park early enough to cross the boundary calmly, then let restraint shape the image as much as exposure settings do.",
+      "de": "Uluṟu ist Country mit Öffnungszeiten, kultureller Verantwortung und Fotohinweisen. Der Nationalpark schließt nachts. Die Astronomiesitzung gehört deshalb an einen bestätigten Ort außerhalb des Parks bei Yulara oder in ein autorisiertes Angebot. Verlasse den Park früh genug für eine ruhige Grenzüberfahrt und lasse Zurückhaltung das Bild ebenso prägen wie die Belichtung."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Day visit",
+          "de": "Tagesbesuch"
+        },
+        "value": {
+          "en": "Inside Uluṟu-Kata Tjuṯa National Park",
+          "de": "Im Uluṟu-Kata-Tjuṯa-Nationalpark"
+        },
+        "sourceIds": [
+          "uluru-hours",
+          "uluru-itinerary"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night site",
+          "de": "Nachtstandort"
+        },
+        "value": {
+          "en": "Confirmed location outside the park near Yulara",
+          "de": "Bestätigter Ort außerhalb des Parks bei Yulara"
+        },
+        "sourceIds": [
+          "uluru-photo",
+          "uluru-guide"
+        ]
+      },
+      {
+        "label": {
+          "en": "Hard boundary",
+          "de": "Feste Grenze"
+        },
+        "value": {
+          "en": "Exit within the published park hours",
+          "de": "Innerhalb der veröffentlichten Parkzeiten ausfahren"
+        },
+        "sourceIds": [
+          "uluru-hours",
+          "uluru-faq"
+        ]
+      },
+      {
+        "label": {
+          "en": "Conduct",
+          "de": "Verhalten"
+        },
+        "value": {
+          "en": "Follow cultural and photography guidance",
+          "de": "Kultur- und Fotohinweise befolgen"
+        },
+        "sourceIds": [
+          "uluru-respect",
+          "uluru-photo"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "country-first",
+        "kind": "note",
+        "heading": {
+          "en": "A technically possible photograph can still be the wrong one",
+          "de": "Ein technisch mögliches Foto kann trotzdem falsch sein"
+        },
+        "body": {
+          "en": "Read the official cultural and photography guidance before composing around Uluṟu. Remain on marked routes, avoid sensitive details and never use artificial light to turn the rock or surrounding Country into a night set. Respect continues after the Cultural Centre closes and does not depend on whether a boundary is physically guarded.",
+          "de": "Lies die offiziellen Kultur- und Fotohinweise, bevor Uluṟu Teil der Bildgestaltung wird. Bleibe auf markierten Wegen, meide sensible Details und nutze kein künstliches Licht, um Felsen oder umliegendes Country zur Nachtkulisse zu machen. Respekt endet nicht mit der Schließung des Cultural Centre und hängt nicht von einer bewachten Grenze ab."
+        },
+        "sourceIds": [
+          "uluru-respect",
+          "uluru-photo"
+        ],
+        "tone": "context"
+      },
+      {
+        "id": "two-places",
+        "kind": "prose",
+        "heading": {
+          "en": "The sunset stop and the star site are different places",
+          "de": "Sonnenuntergang und Sternenstandort sind verschiedene Orte"
+        },
+        "paragraphs": {
+          "en": [
+            "Check the day's park hours and calculate the drive to the exit, not merely the time of sunset. Kata Tjuṯa needs an earlier departure because it lies farther from the gate. Save the route to Yulara and confirm the outside-park lookout or operator before entering the park, where a weak connection should not force a night decision.",
+            "Beyond the boundary, use only the previously confirmed dune or resort-area location. Park on an established surface, keep clear of the highway and wait for vision to adapt before opening optics. If the access point feels ambiguous, return to accommodation. Darkness does not establish public access to an unnamed track."
+          ],
+          "de": [
+            "Prüfe die Öffnungszeiten des Tages und berechne die Fahrt bis zur Ausfahrt, nicht nur den Sonnenuntergang. Kata Tjuṯa verlangt wegen der größeren Entfernung zum Tor eine frühere Abfahrt. Speichere die Route nach Yulara und bestätige Aussichtspunkt oder Anbieter außerhalb des Parks vor der Einfahrt, damit schwacher Empfang keine Nachtentscheidung erzwingt.",
+            "Nutze hinter der Grenze ausschließlich den zuvor bestätigten Dünen- oder Resortstandort. Parke auf einer vorgesehenen Fläche, halte Abstand zur Straße und warte mit der Optik auf die Dunkeladaption. Wenn der Zugang unklar wirkt, kehre zur Unterkunft zurück. Dunkelheit begründet keinen öffentlichen Zugang zu einer namenlosen Spur."
+          ]
+        },
+        "sourceIds": [
+          "uluru-hours",
+          "uluru-itinerary",
+          "uluru-guide",
+          "uluru-safety"
+        ]
+      },
+      {
+        "id": "uluru-evening",
+        "kind": "schedule",
+        "heading": {
+          "en": "Leave the park with time still in hand",
+          "de": "Den Park mit ausreichender Zeitreserve verlassen"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "While the Cultural Centre is open",
+              "de": "Während das Cultural Centre geöffnet ist"
+            },
+            "title": {
+              "en": "Understand the place before framing it",
+              "de": "Den Ort verstehen, bevor er gerahmt wird"
+            },
+            "body": {
+              "en": "Use the cultural material and marked routes to learn why visitor conduct and restricted photography matter. Pack water and warm layers for the later outside-park session.",
+              "de": "Nutze kulturelle Informationen und markierte Wege, um die Bedeutung von Verhalten und Fotobeschränkungen zu verstehen. Packe Wasser und warme Kleidung für die spätere Sitzung außerhalb des Parks."
+            },
+            "sourceIds": [
+              "uluru-respect",
+              "uluru-photo",
+              "uluru-safety"
+            ]
+          },
+          {
+            "time": {
+              "en": "Before the published closing boundary",
+              "de": "Vor der veröffentlichten Schließzeit"
+            },
+            "title": {
+              "en": "Drive all the way out",
+              "de": "Vollständig aus dem Park fahren"
+            },
+            "body": {
+              "en": "Leave the sunset area with the full distance to the gate included. Do not treat closing time as the moment to start packing or attempt to test a gate after dark.",
+              "de": "Verlasse den Sonnenuntergangsbereich unter Einrechnung der gesamten Strecke zum Tor. Nutze die Schließzeit weder als Beginn des Einpackens noch zum Testen eines Tores nach Einbruch der Dunkelheit."
+            },
+            "sourceIds": [
+              "uluru-hours",
+              "uluru-faq",
+              "uluru-itinerary"
+            ]
+          },
+          {
+            "time": {
+              "en": "After arrival near Yulara",
+              "de": "Nach der Ankunft bei Yulara"
+            },
+            "title": {
+              "en": "Let the confirmed site become dark",
+              "de": "Den bestätigten Ort dunkel werden lassen"
+            },
+            "body": {
+              "en": "Settle within its established footprint, keep lights low and observe without returning toward the park. Finish at the booked accommodation or legal resort campground.",
+              "de": "Komme innerhalb der vorgesehenen Fläche an, halte Licht niedrig und beobachte ohne Rückfahrt in Richtung Park. Beende den Abend an der gebuchten Unterkunft oder dem legalen Resort-Campingplatz."
+            },
+            "sourceIds": [
+              "uluru-photo",
+              "uluru-guide"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "uluru-hours",
+      "uluru-faq",
+      "uluru-photo",
+      "uluru-respect",
+      "uluru-safety",
+      "uluru-itinerary",
+      "uluru-guide"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "kitt-peak-booked-descent-night",
+    "slug": "kitt-peak-booked-descent-night",
+    "destinationId": "kitt-peak",
+    "recommendedSiteId": "kitt-peak-visitor-center-night-program",
+    "title": {
+      "en": "A booked Kitt Peak night with a deliberate descent",
+      "de": "Eine gebuchte Kitt-Peak-Nacht mit geplanter Abfahrt"
+    },
+    "seoDescription": {
+      "en": "Plan a Kitt Peak Visitor Center night programme from Tucson, with booking, summit weather and the mountain descent treated as one appointment.",
+      "de": "Plane ein Nachtprogramm am Kitt Peak Visitor Center ab Tucson und behandle Buchung, Gipfelwetter und Bergabfahrt als einen Termin."
+    },
+    "standfirst": {
+      "en": "The telescope is not the main planning problem at Kitt Peak. Access is. A useful night begins with the exact Visitor Center programme, its current email and a vehicle ready for the mountain road. Stay inside the guided format and leave the summit on the instructed route. Cloud never turns a booking into independent observatory access.",
+      "de": "Das Teleskop ist am Kitt Peak nicht das wichtigste Planungsproblem. Entscheidend ist der Zugang. Eine gute Nacht beginnt mit dem konkreten Visitor-Center-Programm, seiner aktuellen Nachricht und einem Fahrzeug für die Bergstraße. Bleibe im geführten Format und verlasse den Gipfel auf der angewiesenen Route. Bewölkung macht aus einer Buchung keinen eigenständigen Observatoriumszugang."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Requirement",
+          "de": "Voraussetzung"
+        },
+        "value": {
+          "en": "Valid night-programme booking",
+          "de": "Gültige Buchung für ein Nachtprogramm"
+        },
+        "sourceIds": [
+          "kp-booking",
+          "kp-programmes"
+        ]
+      },
+      {
+        "label": {
+          "en": "Meeting point",
+          "de": "Treffpunkt"
+        },
+        "value": {
+          "en": "Kitt Peak Visitor Center",
+          "de": "Kitt Peak Visitor Center"
+        },
+        "sourceIds": [
+          "kp-visits"
+        ]
+      },
+      {
+        "label": {
+          "en": "Before ascent",
+          "de": "Vor der Auffahrt"
+        },
+        "value": {
+          "en": "Check road and summit weather",
+          "de": "Straßen- und Gipfelwetter prüfen"
+        },
+        "sourceIds": [
+          "kp-access",
+          "kp-weather"
+        ]
+      },
+      {
+        "label": {
+          "en": "Finish",
+          "de": "Abschluss"
+        },
+        "value": {
+          "en": "Direct descent toward Tucson",
+          "de": "Direkte Abfahrt in Richtung Tucson"
+        },
+        "sourceIds": [
+          "kp-access",
+          "kp-visits"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "programme-fit",
+        "kind": "decisions",
+        "heading": {
+          "en": "Choose the appointment before choosing equipment",
+          "de": "Den Termin vor der Ausrüstung wählen"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "The published programme fits the group",
+              "de": "Das veröffentlichte Programm passt zur Gruppe"
+            },
+            "body": {
+              "en": "Reserve the exact date and format, then use the confirmation for arrival time, age or mobility requirements and weather procedure. Save it offline. A general Visitor Center page is not a substitute for a place on a limited event.",
+              "de": "Reserviere genaues Datum und Format und entnimm der Bestätigung Ankunftszeit, Alters- oder Mobilitätsanforderungen und Wetterverfahren. Speichere sie offline. Eine allgemeine Visitor-Center-Seite ersetzt keinen Platz in einer begrenzten Veranstaltung."
+            },
+            "sourceIds": [
+              "kp-programmes",
+              "kp-booking",
+              "kp-visits"
+            ]
+          },
+          {
+            "label": {
+              "en": "The event is unavailable or changed",
+              "de": "Die Veranstaltung ist nicht verfügbar oder geändert"
+            },
+            "body": {
+              "en": "Choose another date or another public astronomy venue. Do not drive west hoping for a waiting list, and do not interpret a cancellation as permission to stop on telescope roads.",
+              "de": "Wähle ein anderes Datum oder einen anderen öffentlichen Astronomiestandort. Fahre nicht in der Hoffnung auf eine Warteliste nach Westen und deute eine Absage nicht als Erlaubnis für Halte an Teleskopstraßen."
+            },
+            "sourceIds": [
+              "kp-booking",
+              "kp-access"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "summit-appointment",
+        "kind": "schedule",
+        "heading": {
+          "en": "One ascent, one programme, one descent",
+          "de": "Eine Auffahrt, ein Programm, eine Abfahrt"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before Tucson is behind you",
+              "de": "Bevor Tucson zurückbleibt"
+            },
+            "title": {
+              "en": "Confirm the mountain",
+              "de": "Den Berg bestätigen"
+            },
+            "body": {
+              "en": "Read the latest programme message, road and weather notices. Fill fuel, carry water, closed shoes and layers suited to the summit rather than the city forecast.",
+              "de": "Lies die jüngste Programmmitteilung sowie Straßen- und Wetterhinweise. Tanke, nimm Wasser, geschlossene Schuhe und Kleidung für den Gipfel statt für die Stadtprognose mit."
+            },
+            "sourceIds": [
+              "kp-booking",
+              "kp-weather",
+              "kp-access"
+            ]
+          },
+          {
+            "time": {
+              "en": "At check-in",
+              "de": "Beim Check-in"
+            },
+            "title": {
+              "en": "Hand the rhythm to the guide",
+              "de": "Den Rhythmus dem Guide überlassen"
+            },
+            "body": {
+              "en": "Follow constellation, binocular and telescope activities as offered. Keep personal lights low and ask before placing a tripod or opening equipment beyond the programme.",
+              "de": "Folge den angebotenen Sternbild-, Fernglas- und Teleskopteilen. Halte eigenes Licht niedrig und frage vor dem Aufstellen eines Stativs oder zusätzlicher Ausrüstung."
+            },
+            "sourceIds": [
+              "kp-programmes",
+              "kp-booking"
+            ]
+          },
+          {
+            "time": {
+              "en": "When staff closes the evening",
+              "de": "Wenn das Personal den Abend beendet"
+            },
+            "title": {
+              "en": "Secure the car before discussing the sky",
+              "de": "Das Fahrzeug sichern, bevor der Himmel besprochen wird"
+            },
+            "body": {
+              "en": "Pack optics, check driver alertness and descend without a photographic stop. Conversation can continue after the vehicle has safely left the mountain.",
+              "de": "Verstaue Optik, prüfe die Aufmerksamkeit der fahrenden Person und fahre ohne Fotostopp ab. Gespräche können weitergehen, sobald das Fahrzeug den Berg sicher verlassen hat."
+            },
+            "sourceIds": [
+              "kp-access",
+              "kp-visits"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sovereign-research-site",
+        "kind": "note",
+        "heading": {
+          "en": "Visit a research site on sovereign land with restraint",
+          "de": "Einen Forschungsstandort auf souveränem Land zurückhaltend besuchen"
+        },
+        "body": {
+          "en": "Remain within Visitor Center areas and the programme's route. Kitt Peak hosts scientific facilities and lies on the Tohono O'odham Nation. Closed roads, work areas and staff instructions are boundaries, not optional suggestions for a better angle.",
+          "de": "Bleibe in den Bereichen des Visitor Center und auf der Programmroute. Kitt Peak beherbergt wissenschaftliche Einrichtungen und liegt auf dem Gebiet der Tohono O’odham Nation. Gesperrte Straßen, Arbeitsbereiche und Anweisungen des Personals sind Grenzen und keine unverbindlichen Hinweise für einen besseren Blickwinkel."
+        },
+        "sourceIds": [
+          "kp-visits",
+          "kp-access",
+          "kp-programmes"
+        ],
+        "tone": "context"
+      }
+    ],
+    "sourceIds": [
+      "kp-visits",
+      "kp-programmes",
+      "kp-booking",
+      "kp-access",
+      "kp-weather"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "vicuna-mamalluca-ticketed-night",
+    "slug": "vicuna-mamalluca-ticketed-night",
+    "destinationId": "elqui-valley",
+    "recommendedSiteId": "mamalluca-observatory",
+    "title": {
+      "en": "A Vicuña evening built around Mamalluca",
+      "de": "Ein Abend in Vicuña rund um Mamalluca"
+    },
+    "seoDescription": {
+      "en": "Book the correct Mamalluca astronomy programme, complete its Vicuña check-in and return to the same valley base without an improvised roadside extension.",
+      "de": "Buche das passende Mamalluca-Astronomieprogramm, erledige den Check-in in Vicuña und kehre ohne improvisierte Straßenverlängerung zur selben Talbasis zurück."
+    },
+    "standfirst": {
+      "en": "Elqui's dark-sky reputation does not tell a first-time visitor where to park. Mamalluca turns it into an appointment with a language, duration, meeting procedure and telescopes. Complete the published Vicuña sales-office step, confirm transport and let the booked programme be the night. Anonymous agricultural roads can wait until ownership and permission are explicit.",
+      "de": "Der Ruf des Elqui-Tals als dunkler Himmel verrät Erstbesuchern keinen Parkplatz. Mamalluca macht daraus einen Termin mit Sprache, Dauer, Treffverfahren und Teleskopen. Erledige den veröffentlichten Schritt im Verkaufsbüro von Vicuña, bestätige den Transport und lasse das gebuchte Programm die Nacht sein. Anonyme Landwirtschaftswege warten, bis Eigentum und Erlaubnis eindeutig sind."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Base",
+          "de": "Basis"
+        },
+        "value": {
+          "en": "Vicuña",
+          "de": "Vicuña"
+        },
+        "sourceIds": [
+          "elqui-sernatur-destination"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night product",
+          "de": "Nachtangebot"
+        },
+        "value": {
+          "en": "Booked Mamalluca programme",
+          "de": "Gebuchtes Mamalluca-Programm"
+        },
+        "sourceIds": [
+          "elqui-mamalluca",
+          "elqui-english"
+        ]
+      },
+      {
+        "label": {
+          "en": "Check-in",
+          "de": "Check-in"
+        },
+        "value": {
+          "en": "Current Vicuña sales-office procedure",
+          "de": "Aktuelles Verfahren im Verkaufsbüro von Vicuña"
+        },
+        "sourceIds": [
+          "elqui-mamalluca",
+          "elqui-english"
+        ]
+      },
+      {
+        "label": {
+          "en": "Transport",
+          "de": "Transport"
+        },
+        "value": {
+          "en": "Confirm separately; it is not assumed",
+          "de": "Separat bestätigen; nicht vorausgesetzt"
+        },
+        "sourceIds": [
+          "elqui-mamalluca"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "ticket-selection",
+        "kind": "prose",
+        "heading": {
+          "en": "Language and Moon change the value of the ticket",
+          "de": "Sprache und Mond verändern den Wert des Tickets"
+        },
+        "paragraphs": {
+          "en": [
+            "Compare the official programme descriptions rather than buying the first available time. The standard, English-language and premium products differ in interpretation and format. Confirm the exact language, duration and current price on the live booking page, then consider whether a bright Moon supports the objects and experience you actually want.",
+            "Transport is a separate practical question. Decide who drives or which transfer is confirmed before completing the evening plan. A ticket should not end with a search for a vehicle or a dark side road after the programme."
+          ],
+          "de": [
+            "Vergleiche die offiziellen Programmbeschreibungen, statt die erste verfügbare Uhrzeit zu kaufen. Standard-, englischsprachige und Premium-Angebote unterscheiden sich in Vermittlung und Format. Bestätige Sprache, Dauer und aktuellen Preis auf der Live-Buchungsseite und prüfe, ob ein heller Mond die gewünschten Objekte und das erwartete Erlebnis unterstützt.",
+            "Der Transport ist eine eigene praktische Frage. Lege vor Abschluss der Abendplanung fest, wer fährt oder welcher Transfer bestätigt ist. Ein Ticket sollte nicht nach dem Programm in der Suche nach einem Fahrzeug oder einer dunklen Nebenstraße enden."
+          ]
+        },
+        "sourceIds": [
+          "elqui-mamalluca",
+          "elqui-english",
+          "elqui-premium",
+          "elqui-starlight"
+        ]
+      },
+      {
+        "id": "vicuna-procedure",
+        "kind": "schedule",
+        "heading": {
+          "en": "Vicuña remains part of the astronomy route",
+          "de": "Vicuña bleibt Teil der Astronomieroute"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before departure",
+              "de": "Vor der Abfahrt"
+            },
+            "title": {
+              "en": "Complete the published office step",
+              "de": "Den veröffentlichten Büroschritt abschließen"
+            },
+            "body": {
+              "en": "Use the current instructions for Torre Bauer by the main square, payment and check-in. Do not arrive at the dome expecting a payment process the official page says is unavailable there.",
+              "de": "Nutze die aktuellen Hinweise zu Torre Bauer am Hauptplatz sowie zu Zahlung und Check-in. Erscheine nicht an der Kuppel in der Erwartung eines Zahlungsverfahrens, das laut offizieller Seite dort nicht angeboten wird."
+            },
+            "sourceIds": [
+              "elqui-mamalluca",
+              "elqui-english"
+            ]
+          },
+          {
+            "time": {
+              "en": "During the session",
+              "de": "Während der Sitzung"
+            },
+            "title": {
+              "en": "Begin with the southern horizon",
+              "de": "Mit dem Südhorizont beginnen"
+            },
+            "body": {
+              "en": "Let the guide establish directions and seasonal landmarks before using the Dobsonian and dome telescope. Keep screens away so the interpretation connects the actual valley sky rather than a generic app view.",
+              "de": "Lass den Guide Richtungen und saisonale Orientierungspunkte erklären, bevor Dobson- und Kuppelteleskop genutzt werden. Halte Bildschirme fern, damit die Vermittlung den realen Talhimmel statt einer allgemeinen App-Ansicht erschließt."
+            },
+            "sourceIds": [
+              "elqui-mamalluca",
+              "elqui-english"
+            ]
+          },
+          {
+            "time": {
+              "en": "After the programme",
+              "de": "Nach dem Programm"
+            },
+            "title": {
+              "en": "Return to the known base",
+              "de": "Zur bekannten Basis zurückkehren"
+            },
+            "body": {
+              "en": "Use the confirmed transport to Vicuña or lodging. Note any interest for a second visit, but do not follow an unverified road into agricultural land.",
+              "de": "Nutze den bestätigten Transport nach Vicuña oder zur Unterkunft. Notiere Interessen für einen zweiten Besuch, fahre aber nicht über einen ungeprüften Weg in landwirtschaftliche Flächen."
+            },
+            "sourceIds": [
+              "elqui-sernatur-destination",
+              "elqui-sernatur-register"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "valley-access",
+        "kind": "note",
+        "heading": {
+          "en": "A dark valley is not a blanket access permit",
+          "de": "Ein dunkles Tal ist keine pauschale Zugangserlaubnis"
+        },
+        "body": {
+          "en": "If an independent second night is planned, verify the landowner, parking surface and return route directly. Registration and official tourism listings help identify accountable operators; they do not make every dark roadside public.",
+          "de": "Für eine eigenständige zweite Nacht müssen Eigentümer, Parkfläche und Rückweg direkt bestätigt werden. Registrierung und offizielle Tourismuslisten helfen bei der Wahl verantwortlicher Anbieter. Sie machen nicht jeden dunklen Straßenrand öffentlich."
+        },
+        "sourceIds": [
+          "elqui-sernatur-register",
+          "elqui-sernatur-destination"
+        ],
+        "tone": "warning"
+      }
+    ],
+    "sourceIds": [
+      "elqui-mamalluca",
+      "elqui-english",
+      "elqui-premium",
+      "elqui-sernatur-register",
+      "elqui-sernatur-destination",
+      "elqui-starlight"
+    ],
+    "lastReviewedAt": "2026-08-29"
+  },
+  {
+    "version": 1,
+    "id": "camp-blackman-still-night",
+    "slug": "camp-blackman-still-night",
+    "destinationId": "warrumbungle",
+    "recommendedSiteId": "camp-blackman",
+    "title": {
+      "en": "A still night from Camp Blackman",
+      "de": "Eine ruhige Nacht vom Camp Blackman"
+    },
+    "seoDescription": {
+      "en": "Use a booked Camp Blackman pitch as the legal observing base in Warrumbungle, paired with a separate daylight visit to Siding Spring.",
+      "de": "Nutze einen gebuchten Stellplatz im Camp Blackman als legale Beobachtungsbasis im Warrumbungle und trenne davon einen Tagesbesuch in Siding Spring."
+    },
+    "standfirst": {
+      "en": "Warrumbungle's strongest observing platform is not a secret lookout. It is a lawful campsite where the vehicle can stop moving, camp tasks can finish before dark and the return drive can wait until morning. Camp Blackman supplies that base. Siding Spring belongs to daylight visitor hours and should deepen the astronomy context rather than become an after-hours destination.",
+      "de": "Die stärkste Beobachtungsplattform im Warrumbungle ist kein geheimer Aussichtspunkt. Es ist ein legaler Campingplatz, an dem das Fahrzeug stehen bleibt, Aufgaben vor der Dunkelheit erledigt werden und die Rückfahrt bis morgens warten kann. Camp Blackman bietet diese Basis. Siding Spring gehört in die Tageszeiten und vertieft den astronomischen Kontext, statt zum Ziel nach Betriebsschluss zu werden."
+    },
+    "facts": [
+      {
+        "label": {
+          "en": "Night base",
+          "de": "Nachtbasis"
+        },
+        "value": {
+          "en": "Booked Camp Blackman pitch",
+          "de": "Gebuchter Stellplatz im Camp Blackman"
+        },
+        "sourceIds": [
+          "warr-camp",
+          "warr-park"
+        ]
+      },
+      {
+        "label": {
+          "en": "Water",
+          "de": "Wasser"
+        },
+        "value": {
+          "en": "Bring drinking and cooking water",
+          "de": "Trink- und Kochwasser mitbringen"
+        },
+        "sourceIds": [
+          "warr-camp",
+          "warr-visitor"
+        ]
+      },
+      {
+        "label": {
+          "en": "Research visit",
+          "de": "Forschungsbesuch"
+        },
+        "value": {
+          "en": "Siding Spring during public daytime access",
+          "de": "Siding Spring während öffentlicher Tageszeiten"
+        },
+        "sourceIds": [
+          "warr-siding",
+          "warr-starry-story"
+        ]
+      },
+      {
+        "label": {
+          "en": "Night movement",
+          "de": "Nachtbewegung"
+        },
+        "value": {
+          "en": "Observe inside the assigned campsite",
+          "de": "Innerhalb des zugewiesenen Campingplatzes beobachten"
+        },
+        "sourceIds": [
+          "warr-camp",
+          "warr-dark-sky"
+        ]
+      }
+    ],
+    "blocks": [
+      {
+        "id": "camp-solves-return",
+        "kind": "prose",
+        "heading": {
+          "en": "The booked pitch solves the return drive",
+          "de": "Der gebuchte Stellplatz löst die Rückfahrt"
+        },
+        "paragraphs": {
+          "en": [
+            "Confirm the campground booking, park alerts and fire conditions before entering the park. Download the map and carry all drinking and cooking water, food and bedding for a night that may become much colder than the afternoon. A lawful base matters more than squeezing another viewpoint into the itinerary.",
+            "Reach Camp Blackman in daylight, locate amenities and inspect the assigned pitch for branches, uneven ground and neighbouring tents. Place chairs and compact optics where they do not invade another site or a vehicle lane. Once cooking and bright tasks are complete, park the car for the night."
+          ],
+          "de": [
+            "Bestätige Campingplatzbuchung, Parkwarnungen und Feuerlage vor der Einfahrt. Lade die Karte herunter und bring Trink- und Kochwasser, Essen und Bettzeug für eine Nacht mit, die deutlich kälter als der Nachmittag werden kann. Eine legale Basis zählt mehr als ein zusätzlicher Aussichtspunkt im Reiseplan.",
+            "Erreiche Camp Blackman bei Tageslicht, finde die Einrichtungen und prüfe den zugewiesenen Platz auf Äste, Unebenheiten und benachbarte Zelte. Stelle Stühle und kompakte Optik so auf, dass weder andere Plätze noch Fahrspuren belegt werden. Nach Kochen und hellen Aufgaben bleibt das Fahrzeug bis morgens stehen."
+          ]
+        },
+        "sourceIds": [
+          "warr-camp",
+          "warr-visitor",
+          "warr-park"
+        ]
+      },
+      {
+        "id": "day-science-night-camp",
+        "kind": "decisions",
+        "heading": {
+          "en": "Science by day, independent sky from camp",
+          "de": "Wissenschaft am Tag, eigenständiger Himmel vom Camp"
+        },
+        "items": [
+          {
+            "label": {
+              "en": "Siding Spring is open to visitors",
+              "de": "Siding Spring ist für Besucher geöffnet"
+            },
+            "body": {
+              "en": "Use the current public information and finish the visit within its conditions. Learn about the research instruments, then return to camp while orientation is still easy. The summit is not the night foreground.",
+              "de": "Nutze die aktuellen Besucherinformationen und beende den Besuch innerhalb der Bedingungen. Lerne die Forschungsinstrumente kennen und kehre zum Camp zurück, solange die Orientierung einfach ist. Der Gipfel ist nicht der nächtliche Vordergrund."
+            },
+            "sourceIds": [
+              "warr-siding",
+              "warr-starry-story"
+            ]
+          },
+          {
+            "label": {
+              "en": "Alerts, fire or weather undermine the camp night",
+              "de": "Warnungen, Feuer oder Wetter gefährden die Campnacht"
+            },
+            "body": {
+              "en": "Follow the park decision and alter or cancel the stay. Dark-sky status does not reduce fire, branch, heat, frost or access risk, and no roadside alternative should be invented after arrival.",
+              "de": "Folge der Entscheidung des Parks und ändere oder storniere den Aufenthalt. Dark-Sky-Status mindert weder Feuer-, Ast-, Hitze-, Frost- noch Zugangsrisiken. Nach der Ankunft wird keine Straßenalternative erfunden."
+            },
+            "sourceIds": [
+              "warr-visitor",
+              "warr-park"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "blackman-hours",
+        "kind": "schedule",
+        "heading": {
+          "en": "Make the campsite still before making it dark",
+          "de": "Den Campingplatz ruhig machen, bevor er dunkel wird"
+        },
+        "items": [
+          {
+            "time": {
+              "en": "Before sunset",
+              "de": "Vor Sonnenuntergang"
+            },
+            "title": {
+              "en": "Finish water, food and walking lines",
+              "de": "Wasser, Essen und Laufwege klären"
+            },
+            "body": {
+              "en": "Prepare the meal, secure food, set warm layers and identify the short path between equipment, tent and facilities. Remove every avoidable reason for bright light later.",
+              "de": "Bereite Essen vor, sichere Lebensmittel, lege warme Kleidung bereit und erkenne den kurzen Weg zwischen Ausrüstung, Zelt und Einrichtungen. Beseitige jeden vermeidbaren Grund für helles Licht später."
+            },
+            "sourceIds": [
+              "warr-camp",
+              "warr-visitor"
+            ]
+          },
+          {
+            "time": {
+              "en": "When the camp settles",
+              "de": "Wenn das Camp ruhig wird"
+            },
+            "title": {
+              "en": "Start broad and simple",
+              "de": "Breit und einfach beginnen"
+            },
+            "body": {
+              "en": "Allow dark adaptation, use the naked-eye sky and then binoculars. Shield necessary low light below an awning or toward the ground and respect sleeping neighbours.",
+              "de": "Beginne mit Dunkeladaption, bloßem Auge und anschließend Fernglas. Schirme notwendiges schwaches Licht unter einem Vordach oder zum Boden ab und respektiere schlafende Nachbarn."
+            },
+            "sourceIds": [
+              "warr-dark-sky",
+              "warr-camp"
+            ]
+          },
+          {
+            "time": {
+              "en": "When cold or wind dominates",
+              "de": "Wenn Kälte oder Wind bestimmen"
+            },
+            "title": {
+              "en": "Pack and sleep where the booking says",
+              "de": "Einpacken und am gebuchten Platz schlafen"
+            },
+            "body": {
+              "en": "Secure optics against moisture and dust, count accessories and enter the tent or vehicle without relocating through the park. Driving resumes after rest and daylight.",
+              "de": "Schütze Optik vor Feuchtigkeit und Staub, zähle Zubehör und gehe ins Zelt oder Fahrzeug, ohne den Standort im Park zu wechseln. Die Fahrt beginnt nach Ruhe und Tageslicht erneut."
+            },
+            "sourceIds": [
+              "warr-camp",
+              "warr-visitor"
+            ]
+          }
+        ]
+      }
+    ],
+    "sourceIds": [
+      "warr-park",
+      "warr-visitor",
+      "warr-camp",
+      "warr-dark-sky",
+      "warr-starry-story",
+      "warr-siding"
+    ],
+    "lastReviewedAt": "2026-08-29"
   }
 ]

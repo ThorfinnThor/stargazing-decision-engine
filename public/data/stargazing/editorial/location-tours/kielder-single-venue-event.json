@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "kielder-single-venue-event",
+  "slug": "kielder-single-venue-event",
+  "destinationId": "kielder",
+  "recommendedSiteId": "stonehaugh-stargazing-pavilion",
+  "title": {
+    "en": "One booked venue in Kielder Forest",
+    "de": "Ein gebuchter Ort im Kielder Forest"
+  },
+  "seoDescription": {
+    "en": "Plan a Kielder night around one confirmed observatory or pavilion event, with the forest approach and cloudy-night value resolved before travel.",
+    "de": "Plane eine Kielder-Nacht rund um eine bestätigte Veranstaltung am Observatorium oder Pavillon und kläre Waldzufahrt sowie Wert bei Wolken vor der Reise."
+  },
+  "standfirst": {
+    "en": "Kielder becomes straightforward when the last kilometre is settled before dark. Choose one real event, read its exact arrival instructions and stay with that venue. This route uses the Stonehaugh Stargazing Pavilion as the modest community-scale option; a Kielder Observatory booking is a different appointment. Venue-hopping through the forest adds navigation without adding a better sky.",
+    "de": "Kielder wird einfach, wenn der letzte Kilometer vor der Dunkelheit geklärt ist. Wähle eine reale Veranstaltung, lies ihre genauen Ankunftshinweise und bleibe an diesem Ort. Diese Route nutzt den Stonehaugh Stargazing Pavilion als kleinere gemeinschaftliche Option. Eine Buchung am Kielder Observatory ist ein anderer Termin. Wechsel zwischen Veranstaltungsorten im Wald erhöhen die Navigation, nicht die Himmelsqualität."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen model",
+        "de": "Gewähltes Modell"
+      },
+      "value": {
+        "en": "Stonehaugh Stargazing Pavilion event",
+        "de": "Veranstaltung am Stonehaugh Stargazing Pavilion"
+      },
+      "sourceIds": [
+        "ki-forest",
+        "ki-dark"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Separately booked Kielder Observatory programme",
+        "de": "Separat gebuchtes Kielder-Observatory-Programm"
+      },
+      "sourceIds": [
+        "ki-observatory"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before travel",
+        "de": "Vor der Reise"
+      },
+      "value": {
+        "en": "Confirm event, parking and forest notices",
+        "de": "Veranstaltung, Parkplatz und Waldhinweise bestätigen"
+      },
+      "sourceIds": [
+        "ki-forest",
+        "ki-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night rule",
+        "de": "Nachtregel"
+      },
+      "value": {
+        "en": "No unverified car-park detour",
+        "de": "Kein ungeprüfter Parkplatzumweg"
+      },
+      "sourceIds": [
+        "ki-forest",
+        "ki-visit"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "venue-not-brand",
+      "kind": "prose",
+      "heading": {
+        "en": "Book a venue, not the Kielder name",
+        "de": "Einen Ort buchen und nicht den Namen Kielder"
+      },
+      "paragraphs": {
+        "en": [
+          "The observatory and pavilion offer different scales, calendars and access arrangements. Select the event whose content, duration and group needs fit, then verify it is actually operating. A sold-out observatory listing has no guaranteed waiting line and does not justify an informal arrival.",
+          "For Stonehaugh, use the current forest and dark-sky information to confirm the pavilion, parking and any local event details. Save the exact approach offline. Forestry barriers, notices and payment conditions remain effective after sunset even when another clearing looks more convenient."
+        ],
+        "de": [
+          "Observatorium und Pavillon besitzen unterschiedliche Größen, Kalender und Zugangsmodelle. Wähle die Veranstaltung, deren Inhalt, Dauer und Gruppenanforderungen passen, und bestätige ihren tatsächlichen Betrieb. Eine ausverkaufte Observatoriumsveranstaltung besitzt keine garantierte Warteschlange und rechtfertigt keine informelle Anreise.",
+          "Nutze für Stonehaugh die aktuellen Wald- und Dark-Sky-Informationen zu Pavillon, Parkplatz und möglicher Veranstaltung. Speichere die genaue Zufahrt offline. Forstschranken, Hinweise und Zahlungsbedingungen gelten auch nach Sonnenuntergang, selbst wenn eine andere Lichtung bequemer wirkt."
+        ]
+      },
+      "sourceIds": [
+        "ki-observatory",
+        "ki-forest",
+        "ki-dark",
+        "ki-visit"
+      ]
+    },
+    {
+      "id": "cloud-value",
+      "kind": "decisions",
+      "heading": {
+        "en": "Ask what remains when the sky closes",
+        "de": "Fragen, was bei geschlossenem Himmel bleibt"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "The event includes indoor or interpretive content",
+            "de": "Die Veranstaltung enthält Innen- oder Vermittlungsinhalte"
+          },
+          "body": {
+            "en": "A cloudy forecast may still justify the journey if that content is valuable to the group and the operator confirms the event. Arrive with the correct expectation.",
+            "de": "Eine wolkige Prognose kann die Reise weiterhin rechtfertigen, wenn diese Inhalte für die Gruppe wertvoll sind und der Anbieter die Veranstaltung bestätigt. Reise mit der passenden Erwartung an."
+          },
+          "sourceIds": [
+            "ki-observatory",
+            "ki-dark"
+          ]
+        },
+        {
+          "label": {
+            "en": "The visit depends entirely on an open sky",
+            "de": "Der Besuch hängt vollständig von klarem Himmel ab"
+          },
+          "body": {
+            "en": "Use the operator's current weather process and be willing to reschedule. Do not replace a cancelled programme with a search across unfamiliar forest car parks.",
+            "de": "Nutze das aktuelle Wetterverfahren des Anbieters und sei bereit umzubuchen. Ersetze ein abgesagtes Programm nicht durch die Suche auf unbekannten Waldparkplätzen."
+          },
+          "sourceIds": [
+            "ki-observatory",
+            "ki-forest"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "forest-approach",
+      "kind": "schedule",
+      "heading": {
+        "en": "The forest approach belongs to the ticket",
+        "de": "Die Waldzufahrt gehört zum Ticket"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before full darkness",
+            "de": "Vor vollständiger Dunkelheit"
+          },
+          "title": {
+            "en": "Finish food, clothing and junctions",
+            "de": "Essen, Kleidung und Abzweigungen klären"
+          },
+          "body": {
+            "en": "Follow the published route, obey barriers and identify the final junctions while visible. Complete predictable tasks before check-in.",
+            "de": "Folge der veröffentlichten Route, beachte Schranken und erkenne die letzten Abzweigungen, solange sie sichtbar sind. Erledige vorhersehbare Aufgaben vor dem Check-in."
+          },
+          "sourceIds": [
+            "ki-forest",
+            "ki-visit"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the venue",
+            "de": "Am Veranstaltungsort"
+          },
+          "title": {
+            "en": "Stay inside its lighting culture",
+            "de": "In der Lichtkultur des Ortes bleiben"
+          },
+          "body": {
+            "en": "Follow host instructions and use personal equipment only when invited. Expertise is present, so questions add more than another phone screen.",
+            "de": "Folge den Hinweisen der Gastgeber und nutze eigene Ausrüstung nur nach Einladung. Fachwissen ist vorhanden. Fragen bringen mehr als ein weiterer Telefonbildschirm."
+          },
+          "sourceIds": [
+            "ki-dark",
+            "ki-observatory"
+          ]
+        },
+        {
+          "time": {
+            "en": "After the event",
+            "de": "Nach der Veranstaltung"
+          },
+          "title": {
+            "en": "Take the saved route to lodging",
+            "de": "Auf gespeicherter Route zur Unterkunft"
+          },
+          "body": {
+            "en": "Warm up, confirm driver alertness and leave directly. A late forest car park whose hours and surface were not inspected does not belong to the same booking.",
+            "de": "Wärme dich auf, prüfe die Aufmerksamkeit der fahrenden Person und fahre direkt ab. Ein später Waldparkplatz ohne geprüfte Zeiten und Oberfläche gehört nicht zur selben Buchung."
+          },
+          "sourceIds": [
+            "ki-forest",
+            "ki-visit"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "ki-observatory",
+    "ki-forest",
+    "ki-dark",
+    "ki-visit"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

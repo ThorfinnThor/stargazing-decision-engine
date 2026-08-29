@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "natural-bridges-campground-night",
+  "slug": "natural-bridges-campground-night",
+  "destinationId": "natural-bridges",
+  "recommendedSiteId": "natural-bridges-campground",
+  "title": {
+    "en": "A campground night at Natural Bridges",
+    "de": "Eine Campingplatznacht am Natural Bridges"
+  },
+  "seoDescription": {
+    "en": "Plan a Natural Bridges night from the park campground, keeping summer heat, limited services and monument rules inside one legal base.",
+    "de": "Plane eine Nacht am Natural Bridges vom Parkcampingplatz aus und berücksichtige Sommerhitze, begrenzte Versorgung und Monumentregeln innerhalb einer legalen Basis."
+  },
+  "standfirst": {
+    "en": "Natural Bridges earned dark-sky recognition, but remoteness makes the practical base more important than the designation. A legal park campground removes the need for a late drive and keeps the session near shelter. Confirm seasonal operation and availability, bring water and supplies and observe from the assigned area. The scenic road remains a daylight landscape.",
+    "de": "Natural Bridges besitzt Dark-Sky-Anerkennung, doch die Abgelegenheit macht die praktische Basis wichtiger als die Auszeichnung. Ein legaler Parkcampingplatz verhindert eine späte Fahrt und hält die Sitzung nahe am Schutzraum. Bestätige saisonalen Betrieb und Verfügbarkeit, bring Wasser und Vorräte mit und beobachte vom zugewiesenen Bereich. Die Panoramastraße bleibt eine Tageslandschaft."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night base",
+        "de": "Nachtbasis"
+      },
+      "value": {
+        "en": "Natural Bridges campground",
+        "de": "Campingplatz Natural Bridges"
+      },
+      "sourceIds": [
+        "nb-camp"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before arrival",
+        "de": "Vor der Ankunft"
+      },
+      "value": {
+        "en": "Confirm seasonal availability and weather",
+        "de": "Saisonale Verfügbarkeit und Wetter bestätigen"
+      },
+      "sourceIds": [
+        "nb-camp",
+        "nb-weather"
+      ]
+    },
+    {
+      "label": {
+        "en": "Bring",
+        "de": "Mitbringen"
+      },
+      "value": {
+        "en": "Water, food and heat/cold layers",
+        "de": "Wasser, Essen sowie Kleidung für Hitze und Kälte"
+      },
+      "sourceIds": [
+        "nb-safety",
+        "nb-summer"
+      ]
+    },
+    {
+      "label": {
+        "en": "Driving",
+        "de": "Fahren"
+      },
+      "value": {
+        "en": "Finish scenic-road travel before dark",
+        "de": "Fahrten auf der Panoramastraße vor Dunkelheit beenden"
+      },
+      "sourceIds": [
+        "nb-safety",
+        "nb-camp"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "remote-base",
+      "kind": "prose",
+      "heading": {
+        "en": "Remoteness increases the value of a legal bed",
+        "de": "Abgelegenheit erhöht den Wert eines legalen Schlafplatzes"
+      },
+      "paragraphs": {
+        "en": [
+          "Check campground operation, site availability, monument alerts and weather before travelling. Carry enough water, food and fuel margin for the stay. Summer heat can remain serious late in the day, while high-desert temperature may fall sharply after sunset.",
+          "Arrive while the site number, toilets, walking line and neighbouring pitches are visible. Keep the setup inside the assigned footprint and finish every vehicle or cooking task before dark. The legal bed means there is no reason to search the scenic drive for an unofficial overnight position."
+        ],
+        "de": [
+          "Prüfe Campingplatzbetrieb, Platzverfügbarkeit, Monumentwarnungen und Wetter vor der Reise. Nimm genügend Wasser, Essen und Kraftstoffreserve für den Aufenthalt mit. Sommerhitze kann bis spät am Tag ernst bleiben, während die Hochwüste nach Sonnenuntergang stark abkühlt.",
+          "Komme an, solange Platznummer, Toiletten, Laufweg und Nachbarplätze sichtbar sind. Halte den Aufbau innerhalb der zugewiesenen Fläche und beende Fahrzeug- sowie Kochaufgaben vor der Dunkelheit. Der legale Schlafplatz beseitigt jeden Grund, an der Panoramastraße nach einer inoffiziellen Übernachtung zu suchen."
+        ]
+      },
+      "sourceIds": [
+        "nb-camp",
+        "nb-safety",
+        "nb-summer",
+        "nb-weather"
+      ]
+    },
+    {
+      "id": "season-limit",
+      "kind": "decisions",
+      "heading": {
+        "en": "Heat and season can cancel a famous sky",
+        "de": "Hitze und Saison können einen berühmten Himmel absagen"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Camp open and temperatures manageable",
+            "de": "Camp offen und Temperaturen beherrschbar"
+          },
+          "body": {
+            "en": "Use the pitch as the observing site and keep the session close to shelter and water. A chair and binoculars are enough for a first visit.",
+            "de": "Nutze den Platz als Beobachtungsort und halte die Sitzung nahe Schutzraum und Wasser. Stuhl und Fernglas reichen für einen ersten Besuch."
+          },
+          "sourceIds": [
+            "nb-camp",
+            "nb-safety"
+          ]
+        },
+        {
+          "label": {
+            "en": "Extreme heat, storm or closed facilities",
+            "de": "Extreme Hitze, Sturm oder geschlossene Einrichtungen"
+          },
+          "body": {
+            "en": "Change the date or base. Night opening does not make unsafe daytime travel, a damaged road or absent water support acceptable.",
+            "de": "Ändere Datum oder Basis. Nachtöffnung macht weder unsichere Tagesfahrt noch beschädigte Straße oder fehlende Wasserversorgung akzeptabel."
+          },
+          "sourceIds": [
+            "nb-summer",
+            "nb-weather",
+            "nb-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "camp-darkness",
+      "kind": "schedule",
+      "heading": {
+        "en": "Keep the bridges for daylight and the stars for camp",
+        "de": "Brücken am Tag, Sterne am Camp"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Late afternoon",
+            "de": "Später Nachmittag"
+          },
+          "title": {
+            "en": "Complete the scenic visit and check in",
+            "de": "Panoramabesuch beenden und einchecken"
+          },
+          "body": {
+            "en": "Finish bridge overlooks and road travel while terrain is readable, then settle the campground without rushing.",
+            "de": "Beende Brückenaussichten und Straßenfahrten, solange das Gelände lesbar ist, und richte danach den Campingplatz ohne Hektik ein."
+          },
+          "sourceIds": [
+            "nb-safety",
+            "nb-camp"
+          ]
+        },
+        {
+          "time": {
+            "en": "After dark",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe within the known footprint",
+            "de": "Innerhalb der bekannten Fläche beobachten"
+          },
+          "body": {
+            "en": "Dim lights, adapt and work from broad naked-eye views toward optics. Keep roads and neighbouring sites clear.",
+            "de": "Dimme Licht, adaptiere und gehe vom weiten Blick mit bloßem Auge zur Optik über. Halte Straßen und Nachbarplätze frei."
+          },
+          "sourceIds": [
+            "nb-camp"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sleep",
+            "de": "Vor dem Schlafen"
+          },
+          "title": {
+            "en": "Secure the desert kit",
+            "de": "Wüstenausrüstung sichern"
+          },
+          "body": {
+            "en": "Count accessories, protect optics and enter the booked shelter. Driving and another bridge stop wait for morning.",
+            "de": "Zähle Zubehör, schütze Optik und gehe in den gebuchten Schutzraum. Fahrt und weiterer Brückenstopp warten bis morgens."
+          },
+          "sourceIds": [
+            "nb-camp",
+            "nb-safety"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "nb-summer",
+    "nb-safety",
+    "nb-camp",
+    "nb-weather"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

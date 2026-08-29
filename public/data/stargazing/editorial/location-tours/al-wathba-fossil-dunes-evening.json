@@ -1,0 +1,204 @@
+{
+  "version": 1,
+  "id": "al-wathba-fossil-dunes-evening",
+  "slug": "al-wathba-fossil-dunes-evening",
+  "destinationId": "al-wathba",
+  "recommendedSiteId": "al-wathba-fossil-dunes",
+  "title": {
+    "en": "An authorised evening at Al Wathba Fossil Dunes",
+    "de": "Ein autorisierter Abend an den Al Wathba Fossil Dunes"
+  },
+  "seoDescription": {
+    "en": "Plan an Al Wathba Fossil Dunes evening around current opening, site rules and protected formations rather than an unrestricted desert assumption.",
+    "de": "Plane einen Abend an den Al Wathba Fossil Dunes nach aktuellen Öffnungszeiten, Standortregeln und geschützten Formationen statt nach einer Annahme unbegrenzter Wüste."
+  },
+  "standfirst": {
+    "en": "Al Wathba Fossil Dunes provide a defined visitor landscape near Abu Dhabi, but the formations are protected and access follows current Environment Agency guidance. Check opening and visitor conditions on the day, arrive while paths and barriers are visible and remain on authorised surfaces. The desert beyond the facility is not automatically included in the visit.",
+    "de": "Die Al Wathba Fossil Dunes bilden eine definierte Besucherlandschaft bei Abu Dhabi. Die Formationen sind jedoch geschützt, und der Zugang folgt aktuellen Hinweisen der Environment Agency. Prüfe Öffnung und Besuchsbedingungen am Tag selbst, komme bei sichtbaren Wegen und Barrieren an und bleibe auf erlaubten Flächen. Die Wüste außerhalb der Anlage gehört nicht automatisch zum Besuch."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Visitor site",
+        "de": "Besucherort"
+      },
+      "value": {
+        "en": "Al Wathba Fossil Dunes",
+        "de": "Al Wathba Fossil Dunes"
+      },
+      "sourceIds": [
+        "wathba-ead",
+        "wathba-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Authority",
+        "de": "Zuständigkeit"
+      },
+      "value": {
+        "en": "Environment Agency Abu Dhabi guidance",
+        "de": "Hinweise der Environment Agency Abu Dhabi"
+      },
+      "sourceIds": [
+        "wathba-ead",
+        "wathba-news"
+      ]
+    },
+    {
+      "label": {
+        "en": "Surface",
+        "de": "Fläche"
+      },
+      "value": {
+        "en": "Authorised paths and visitor areas",
+        "de": "Erlaubte Wege und Besucherbereiche"
+      },
+      "sourceIds": [
+        "wathba-visit"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before driving",
+        "de": "Vor der Fahrt"
+      },
+      "value": {
+        "en": "Confirm current opening and conditions",
+        "de": "Aktuelle Öffnung und Bedingungen bestätigen"
+      },
+      "sourceIds": [
+        "wathba-ead",
+        "wathba-visit"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "formation-boundary",
+      "kind": "note",
+      "heading": {
+        "en": "The formations are the reason for the boundary",
+        "de": "Die Formationen sind der Grund für die Grenze"
+      },
+      "body": {
+        "en": "Do not climb, touch or light fossil-dune structures for a photograph. Follow barriers, paths and staff directions, and keep tripod feet on surfaces where visitors are permitted. Protected geology remains vulnerable after sunset even when damage would be difficult to see.",
+        "de": "Klettere nicht auf fossile Dünenformationen, berühre sie nicht und beleuchte sie nicht für ein Foto. Folge Barrieren, Wegen und Personalhinweisen und stelle Stativfüße nur auf erlaubte Besucherflächen. Geschützte Geologie bleibt nach Sonnenuntergang empfindlich, auch wenn Schäden schwer sichtbar wären."
+      },
+      "sourceIds": [
+        "wathba-ead",
+        "wathba-visit",
+        "wathba-news"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "opening-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "Use only the evening the site currently offers",
+        "de": "Nur den Abend nutzen, den der Standort aktuell anbietet"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Opening and evening access are explicit",
+            "de": "Öffnung und Abendzugang sind eindeutig"
+          },
+          "body": {
+            "en": "Arrive within the published window, identify the final departure time and keep the whole session inside the visitor facility.",
+            "de": "Komme innerhalb des veröffentlichten Fensters an, erkenne die späteste Abfahrtszeit und halte die gesamte Sitzung innerhalb der Besucheranlage."
+          },
+          "sourceIds": [
+            "wathba-ead",
+            "wathba-visit"
+          ]
+        },
+        {
+          "label": {
+            "en": "Hours, event or access remain unclear",
+            "de": "Zeiten, Veranstaltung oder Zugang bleiben unklar"
+          },
+          "body": {
+            "en": "Contact the authority or choose another confirmed public site. Do not infer permission from an old announcement or drive onto adjacent desert tracks.",
+            "de": "Kontaktiere die Behörde oder wähle einen anderen bestätigten öffentlichen Ort. Leite keine Erlaubnis aus einer alten Mitteilung ab und befahre keine benachbarten Wüstenspuren."
+          },
+          "sourceIds": [
+            "wathba-news",
+            "wathba-ead"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fossil-dune-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let daylight explain the foreground",
+        "de": "Tageslicht erklärt den Vordergrund"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Read paths, barriers and exit",
+            "de": "Wege, Barrieren und Ausfahrt lesen"
+          },
+          "body": {
+            "en": "Park as directed, learn the visitor circulation and compose without leaving authorised surfaces. Carry water and clothing for the current desert conditions.",
+            "de": "Parke nach Anweisung, lerne die Besucherführung und gestalte Bilder ohne erlaubte Flächen zu verlassen. Nimm Wasser und Kleidung für aktuelle Wüstenbedingungen mit."
+          },
+          "sourceIds": [
+            "wathba-visit",
+            "wathba-ead"
+          ]
+        },
+        {
+          "time": {
+            "en": "During twilight",
+            "de": "Während der Dämmerung"
+          },
+          "title": {
+            "en": "Move attention from rock to sky",
+            "de": "Aufmerksamkeit vom Gestein zum Himmel verschieben"
+          },
+          "body": {
+            "en": "Stop foreground exploration, protect night vision and observe from the established area. Keep artificial light off the formations.",
+            "de": "Beende die Vordergrunderkundung, schütze Dunkeladaption und beobachte vom vorgesehenen Bereich. Halte künstliches Licht von den Formationen fern."
+          },
+          "sourceIds": [
+            "wathba-ead",
+            "wathba-news"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before the access window closes",
+            "de": "Bevor das Zugangsfenster schließt"
+          },
+          "title": {
+            "en": "Leave through the visitor route",
+            "de": "Über die Besucherroute abfahren"
+          },
+          "body": {
+            "en": "Pack completely and depart on time. Adjacent desert does not become an overflow location after the facility closes.",
+            "de": "Packe vollständig ein und fahre pünktlich ab. Benachbarte Wüste wird nach Schließung der Anlage nicht zum Ausweichstandort."
+          },
+          "sourceIds": [
+            "wathba-visit",
+            "wathba-ead"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "wathba-ead",
+    "wathba-news",
+    "wathba-visit"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

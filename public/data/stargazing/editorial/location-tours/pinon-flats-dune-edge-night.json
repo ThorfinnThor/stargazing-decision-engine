@@ -1,0 +1,205 @@
+{
+  "version": 1,
+  "id": "pinon-flats-dune-edge-night",
+  "slug": "pinon-flats-dune-edge-night",
+  "destinationId": "great-sand-dunes",
+  "recommendedSiteId": "pinon-flats-campground",
+  "title": {
+    "en": "A dune-edge night from Piñon Flats",
+    "de": "Eine Nacht am Dünenrand vom Piñon Flats"
+  },
+  "seoDescription": {
+    "en": "Use Piñon Flats Campground as a legal Great Sand Dunes observing base, with sand travel, storms and temperature planned before dark.",
+    "de": "Nutze den Piñon Flats Campground als legale Beobachtungsbasis an den Great Sand Dunes und plane Sandwege, Gewitter sowie Temperatur vor der Dunkelheit."
+  },
+  "standfirst": {
+    "en": "Great Sand Dunes can tempt visitors into a long night walk, but the safer first experience stays near Piñon Flats Campground. The dunes and mountain skyline are already present from the legal base. Finish any sand exploration before darkness, monitor storms and temperature and keep the telescope close to shelter. Night does not make the dune field easier to navigate.",
+    "de": "Great Sand Dunes kann zu einer langen Nachtwanderung verleiten, doch die sicherere erste Erfahrung bleibt nahe dem Piñon Flats Campground. Dünen und Bergsilhouette sind bereits von der legalen Basis sichtbar. Beende jede Sanderkundung vor der Dunkelheit, beobachte Gewitter und Temperatur und halte das Teleskop nahe am Schutzraum. Die Nacht macht das Dünenfeld nicht leichter navigierbar."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Piñon Flats Campground",
+        "de": "Piñon Flats Campground"
+      },
+      "sourceIds": [
+        "gsd-camp"
+      ]
+    },
+    {
+      "label": {
+        "en": "Walking limit",
+        "de": "Weggrenze"
+      },
+      "value": {
+        "en": "Finish dune exploration before dark",
+        "de": "Dünenerkundung vor Dunkelheit beenden"
+      },
+      "sourceIds": [
+        "gsd-safety",
+        "gsd-night"
+      ]
+    },
+    {
+      "label": {
+        "en": "Weather",
+        "de": "Wetter"
+      },
+      "value": {
+        "en": "Monitor storms, wind and temperature",
+        "de": "Gewitter, Wind und Temperatur beobachten"
+      },
+      "sourceIds": [
+        "gsd-weather",
+        "gsd-safety"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observe",
+        "de": "Beobachten"
+      },
+      "value": {
+        "en": "From the assigned campground footprint",
+        "de": "Von der zugewiesenen Campingfläche"
+      },
+      "sourceIds": [
+        "gsd-camp",
+        "gsd-night"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "dunes-not-route",
+      "kind": "note",
+      "heading": {
+        "en": "The dune field is scenery, not the return route",
+        "de": "Das Dünenfeld ist Landschaft und kein Rückweg"
+      },
+      "body": {
+        "en": "Sand erases lines, slows walking and hides changes in slope. Complete any hike under daylight rules and return to the campground before navigation depends on a lamp. An open sky over the dunes can be appreciated from the legal base without carrying equipment deep into the field.",
+        "de": "Sand löscht Linien, verlangsamt Wege und verbirgt Hangwechsel. Beende jede Wanderung unter Tagesbedingungen und kehre zum Campingplatz zurück, bevor Navigation von einer Lampe abhängt. Der offene Himmel über den Dünen lässt sich von der legalen Basis erleben, ohne Ausrüstung tief ins Feld zu tragen."
+      },
+      "sourceIds": [
+        "gsd-safety",
+        "gsd-night"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "storm-or-sky",
+      "kind": "decisions",
+      "heading": {
+        "en": "Lightning outranks the night plan",
+        "de": "Blitz hat Vorrang vor dem Nachtplan"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Stable weather and comfortable wind",
+            "de": "Stabiles Wetter und angenehmer Wind"
+          },
+          "body": {
+            "en": "Set a compact observing area inside the pitch after camp tasks finish. Keep optics protected from blowing sand and begin with the mountain-and-dune horizon.",
+            "de": "Richte nach Abschluss der Campaufgaben einen kompakten Beobachtungsbereich im Stellplatz ein. Schütze Optik vor Flugsand und beginne mit Berg- und Dünenhorizont."
+          },
+          "sourceIds": [
+            "gsd-weather",
+            "gsd-camp",
+            "gsd-night"
+          ]
+        },
+        {
+          "label": {
+            "en": "Thunder, strong wind or falling temperature",
+            "de": "Gewitter, starker Wind oder fallende Temperatur"
+          },
+          "body": {
+            "en": "Move into shelter and stop. Do not cross the campground or dunes looking for a clearer pocket, and follow all park weather guidance.",
+            "de": "Gehe in den Schutzraum und beende. Durchquere weder Campingplatz noch Dünen auf der Suche nach einer klareren Stelle und befolge alle Wetterhinweise des Parks."
+          },
+          "sourceIds": [
+            "gsd-weather",
+            "gsd-safety"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pinon-session",
+      "kind": "schedule",
+      "heading": {
+        "en": "Bring the sky to a prepared campsite",
+        "de": "Den Himmel zu einem vorbereiteten Campingplatz bringen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Return from sand and settle the pitch",
+            "de": "Vom Sand zurückkehren und Platz einrichten"
+          },
+          "body": {
+            "en": "Check in, secure food, learn the path to facilities and place warm layers and water within reach.",
+            "de": "Checke ein, sichere Essen, lerne den Weg zu Einrichtungen und lege warme Kleidung sowie Wasser bereit."
+          },
+          "sourceIds": [
+            "gsd-camp",
+            "gsd-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "During twilight",
+            "de": "Während der Dämmerung"
+          },
+          "title": {
+            "en": "Secure optics before wind finds them",
+            "de": "Optik sichern, bevor der Wind sie findet"
+          },
+          "body": {
+            "en": "Use stable cases and the smallest practical setup. Finish bright tasks while footing and neighbours remain visible.",
+            "de": "Nutze stabile Koffer und den kleinsten sinnvollen Aufbau. Beende helle Aufgaben, solange Untergrund und Nachbarn sichtbar sind."
+          },
+          "sourceIds": [
+            "gsd-weather",
+            "gsd-camp"
+          ]
+        },
+        {
+          "time": {
+            "en": "After the session",
+            "de": "Nach der Sitzung"
+          },
+          "title": {
+            "en": "Sleep at the base already chosen",
+            "de": "An der bereits gewählten Basis schlafen"
+          },
+          "body": {
+            "en": "Clean sand from equipment, store it safely and remain at the booked pitch. The next drive begins after daylight and a fresh weather check.",
+            "de": "Entferne Sand von der Ausrüstung, lagere sie sicher und bleibe am gebuchten Platz. Die nächste Fahrt beginnt nach Tageslicht und neuer Wetterprüfung."
+          },
+          "sourceIds": [
+            "gsd-camp",
+            "gsd-weather"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "gsd-night",
+    "gsd-camp",
+    "gsd-weather",
+    "gsd-safety"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

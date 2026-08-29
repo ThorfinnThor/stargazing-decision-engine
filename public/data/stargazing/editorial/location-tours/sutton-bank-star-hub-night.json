@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "id": "sutton-bank-star-hub-night",
+  "slug": "sutton-bank-star-hub-night",
+  "destinationId": "north-york-moors",
+  "recommendedSiteId": "sutton-bank-star-hub",
+  "title": {
+    "en": "A Star Hub evening at Sutton Bank",
+    "de": "Ein Star-Hub-Abend am Sutton Bank"
+  },
+  "seoDescription": {
+    "en": "Plan a Sutton Bank Star Hub night using the official site, event calendar and current access rather than a broad moorland coordinate.",
+    "de": "Plane eine Nacht am Sutton Bank Star Hub anhand von offiziellem Standort, Veranstaltungskalender und aktuellem Zugang statt einer weiten Moorlandkoordinate."
+  },
+  "standfirst": {
+    "en": "Sutton Bank gives the North York Moors a precise public astronomy address. Choose between a listed event and an independent visit to the hub, then confirm parking and opening conditions before travel. The escarpment view is already enough. A second forest site after dark adds an unfamiliar road without improving the value of a settled session.",
+    "de": "Sutton Bank gibt den North York Moors eine präzise öffentliche Astronomieadresse. Wähle zwischen einer gelisteten Veranstaltung und einem eigenständigen Besuch am Hub und bestätige Parken sowie Öffnungsbedingungen vor der Reise. Der Blick vom Steilhang reicht bereits aus. Ein zweiter Waldstandort nach Einbruch der Dunkelheit fügt nur eine unbekannte Straße hinzu."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Site",
+        "de": "Ort"
+      },
+      "value": {
+        "en": "Sutton Bank Star Hub",
+        "de": "Sutton Bank Star Hub"
+      },
+      "sourceIds": [
+        "nym-sites",
+        "nym-hub"
+      ]
+    },
+    {
+      "label": {
+        "en": "Format",
+        "de": "Format"
+      },
+      "value": {
+        "en": "Independent visit or listed event",
+        "de": "Eigenständiger Besuch oder gelistete Veranstaltung"
+      },
+      "sourceIds": [
+        "nym-events",
+        "nym-hub"
+      ]
+    },
+    {
+      "label": {
+        "en": "Before travel",
+        "de": "Vor der Reise"
+      },
+      "value": {
+        "en": "Confirm parking and current access",
+        "de": "Parken und aktuellen Zugang bestätigen"
+      },
+      "sourceIds": [
+        "nym-sites",
+        "nym-hub"
+      ]
+    },
+    {
+      "label": {
+        "en": "Route limit",
+        "de": "Routengrenze"
+      },
+      "value": {
+        "en": "One hub for the entire evening",
+        "de": "Ein Hub für den gesamten Abend"
+      },
+      "sourceIds": [
+        "nym-sites"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "hub-or-event",
+      "kind": "decisions",
+      "heading": {
+        "en": "Decide whether the night needs a host",
+        "de": "Entscheiden, ob die Nacht einen Gastgeber braucht"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "You want guided interpretation",
+            "de": "Du möchtest geführte Einordnung"
+          },
+          "body": {
+            "en": "Choose a current event and follow its booking, meeting and weather instructions. A place on the calendar is different from simply arriving at the hub.",
+            "de": "Wähle eine aktuelle Veranstaltung und folge Buchungs-, Treff- und Wetterhinweisen. Ein Termin im Kalender unterscheidet sich von einer bloßen Ankunft am Hub."
+          },
+          "sourceIds": [
+            "nym-events",
+            "nym-hub"
+          ]
+        },
+        {
+          "label": {
+            "en": "You want a quiet independent session",
+            "de": "Du möchtest eine ruhige eigenständige Sitzung"
+          },
+          "body": {
+            "en": "Confirm ordinary site and parking access, arrive in daylight and use the designed public footprint. Do not assume event facilities or staff will be present.",
+            "de": "Bestätige gewöhnlichen Standort- und Parkplatzugang, komme bei Tageslicht an und nutze die gestaltete öffentliche Fläche. Setze weder Veranstaltungseinrichtungen noch Personal voraus."
+          },
+          "sourceIds": [
+            "nym-sites",
+            "nym-hub"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bank-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let one escarpment become familiar",
+        "de": "Einen Steilhang vertraut werden lassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Read the hub and exit",
+            "de": "Hub und Ausfahrt lesen"
+          },
+          "body": {
+            "en": "Park under current rules, inspect paths and horizon and place compact equipment clear of other visitors.",
+            "de": "Parke nach aktuellen Regeln, prüfe Wege und Horizont und stelle kompakte Ausrüstung frei von anderen Besuchern auf."
+          },
+          "sourceIds": [
+            "nym-hub",
+            "nym-sites"
+          ]
+        },
+        {
+          "time": {
+            "en": "After adaptation",
+            "de": "Nach der Dunkeladaption"
+          },
+          "title": {
+            "en": "Work with the open direction",
+            "de": "Mit der offenen Richtung arbeiten"
+          },
+          "body": {
+            "en": "Use the escarpment horizon, keep light low and allow a long uninterrupted view before optics narrow the field.",
+            "de": "Nutze den Horizont des Steilhangs, halte Licht niedrig und erlaube einen langen ungestörten Blick, bevor Optik das Feld einengt."
+          },
+          "sourceIds": [
+            "nym-hub"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned end",
+            "de": "Zum geplanten Ende"
+          },
+          "title": {
+            "en": "Return without collecting another site",
+            "de": "Zurückkehren ohne weiteren Standort"
+          },
+          "body": {
+            "en": "Pack, take the known route to lodging and leave Dalby or another hub for a separately researched night.",
+            "de": "Packe ein, nutze die bekannte Route zur Unterkunft und lasse Dalby oder einen anderen Hub für eine separat geprüfte Nacht."
+          },
+          "sourceIds": [
+            "nym-sites"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "moor-address",
+      "kind": "prose",
+      "heading": {
+        "en": "A named address matters more than a broad dark moor",
+        "de": "Eine benannte Adresse zählt mehr als ein weites dunkles Moor"
+      },
+      "paragraphs": {
+        "en": [
+          "Official site information supplies the details a darkness map cannot provide. It identifies where visitors are expected, how the hub is used and which events actually exist. Save that information offline and treat temporary signs or closures as authoritative.",
+          "If cloud, wind or access makes Sutton Bank unsuitable, change the evening rather than searching minor roads. A calm return preserves more value than moving between public places whose after-dark conditions were never checked."
+        ],
+        "de": [
+          "Offizielle Standortinformationen liefern Details, die eine Dunkelheitskarte nicht bietet. Sie zeigen, wo Besucher erwartet werden, wie der Hub genutzt wird und welche Veranstaltungen tatsächlich stattfinden. Speichere diese Informationen offline und behandle temporäre Schilder oder Sperren als maßgeblich.",
+          "Wenn Wolken, Wind oder Zugang Sutton Bank ungeeignet machen, ändere den Abend statt Nebenstraßen zu durchsuchen. Eine ruhige Rückkehr bewahrt mehr Wert als ein Wechsel zwischen öffentlichen Orten, deren Nachtbedingungen nie geprüft wurden."
+        ]
+      },
+      "sourceIds": [
+        "nym-sites",
+        "nym-events",
+        "nym-hub"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "nym-sites",
+    "nym-events",
+    "nym-hub"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
