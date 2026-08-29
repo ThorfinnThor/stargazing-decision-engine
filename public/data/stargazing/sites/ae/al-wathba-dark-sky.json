@@ -2,14 +2,19 @@
   "id": "al-wathba-dark-sky",
   "slug": "al-wathba-dark-sky",
   "destinationId": "al-wathba",
-  "name": "Al Wathba desert observing area",
+  "name": "Al Wathba regional reference area",
   "lat": 24.22,
   "lon": 54.62,
   "elevationM": 15,
   "siteType": "desert",
-  "publicAccess": "yes",
-  "accessScore": 72,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 74,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.ead.gov.ae/en/Experience-Green-Abu-Dhabi/Places-To-Go/Al-Wathba-Fossil-Dunes",
+  "accessNotes": {
+    "en": "This coordinate supports regional sky calculations but is not a verified public night-observing surface. The nearby Fossil Dunes reserve is currently closed; do not travel here for stargazing until an authority publishes a legal night location and current access rules.",
+    "de": "Diese Koordinate dient regionalen Himmelsberechnungen, ist aber keine bestätigte öffentliche Nachtbeobachtungsfläche. Das nahe Fossil-Dunes-Reservat ist derzeit geschlossen; reise erst zum Stargazing an, wenn eine Behörde einen legalen Nachtplatz und aktuelle Zugangsregeln veröffentlicht."
+  }
 }

@@ -2,14 +2,19 @@
   "id": "rila-dark-sky",
   "slug": "rila-dark-sky",
   "destinationId": "rila",
-  "name": "Rila mountain observing area",
+  "name": "Rila regional reference area",
   "lat": 42.1,
   "lon": 23.6,
   "elevationM": 1800,
   "siteType": "mountain",
-  "publicAccess": "yes",
-  "accessScore": 72,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 80,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://rilanationalpark.bg/tourism/general-information/rules-and-prohibitions-2.html",
+  "accessNotes": {
+    "en": "This mountain coordinate is a regional sky reference rather than a road-accessible night site. Any after-dark plan must use marked routes and legal accommodation while respecting current national-park, rescue, weather, and lift information.",
+    "de": "Diese Bergkoordinate ist eine regionale Himmelsreferenz statt eines straßenseitig erreichbaren Nachtplatzes. Jeder Plan nach Einbruch der Dunkelheit muss markierte Routen und legale Unterkunft nutzen sowie aktuelle Nationalpark-, Rettungs-, Wetter- und Liftinformationen beachten."
+  }
 }

@@ -2,14 +2,19 @@
   "id": "bieszczady-dark-sky",
   "slug": "bieszczady-dark-sky",
   "destinationId": "bieszczady",
-  "name": "Bieszczady dark-sky area",
+  "name": "Bieszczady regional reference area",
   "lat": 49.1,
   "lon": 22.7,
   "elevationM": 700,
   "siteType": "mountain",
-  "publicAccess": "yes",
-  "accessScore": 74,
+  "publicAccess": "unknown",
+  "accessScore": null,
   "active": true,
   "priority": 77,
-  "certificationIds": []
+  "certificationIds": [],
+  "notesSourceUrl": "https://www.gwiezdnebieszczady.pl/o-inicjatywe/",
+  "accessNotes": {
+    "en": "The starry-sky park covers a large inhabited and protected mountain region; this coordinate is not a public observing pad. Use the organiser's confirmed meeting point for a dated astronomy show or independently verify a legal parking and overnight arrangement.",
+    "de": "Der Sternenpark umfasst eine große bewohnte und geschützte Bergregion; diese Koordinate ist kein öffentlicher Beobachtungsplatz. Nutze den bestätigten Treffpunkt einer terminierten Astronomievorführung oder prüfe selbst eine legale Park- und Übernachtungsregelung."
+  }
 }
