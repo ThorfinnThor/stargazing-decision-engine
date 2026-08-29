@@ -1,0 +1,194 @@
+{
+  "version": 1,
+  "id": "mesquite-flat-measured-desert-night",
+  "slug": "mesquite-flat-measured-desert-night",
+  "destinationId": "death-valley",
+  "recommendedSiteId": "mesquite-flat-sand-dunes",
+  "title": {
+    "en": "A measured desert night at Mesquite Flat",
+    "de": "Eine besonnene Wüstennacht am Mesquite Flat"
+  },
+  "seoDescription": {
+    "en": "Plan a Death Valley stargazing session at Mesquite Flat Sand Dunes without confusing a night visit with camping or underestimating heat and road conditions.",
+    "de": "Plane eine Sternensitzung an den Mesquite Flat Sand Dunes, ohne einen Nachtbesuch mit Camping zu verwechseln oder Hitze und Straßenzustand zu unterschätzen."
+  },
+  "standfirst": {
+    "en": "Mesquite Flat Sand Dunes are one of the National Park Service's named Death Valley stargazing locations. The useful version of this night stays close to the established access, begins with a short daylight reconnaissance and ends before fatigue encourages poor desert decisions. A park that remains open at night is not an invitation to camp at the turnout.",
+    "de": "Die Mesquite Flat Sand Dunes gehören zu den vom National Park Service genannten Orten für Sternbeobachtung im Death Valley. Die sinnvolle Variante bleibt nahe am vorgesehenen Zugang, beginnt mit einer kurzen Erkundung bei Tageslicht und endet, bevor Müdigkeit zu schlechten Wüstenentscheidungen führt. Ein nachts geöffneter Park erlaubt kein Camping an der Haltebucht."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe near",
+        "de": "Beobachten bei"
+      },
+      "value": {
+        "en": "Mesquite Flat Sand Dunes access",
+        "de": "Zugang zu den Mesquite Flat Sand Dunes"
+      },
+      "sourceIds": [
+        "deva-night",
+        "deva-dunes"
+      ]
+    },
+    {
+      "label": {
+        "en": "Non-negotiable",
+        "de": "Nicht verhandelbar"
+      },
+      "value": {
+        "en": "Current heat, flood and road checks",
+        "de": "Aktuelle Prüfungen zu Hitze, Fluten und Straßen"
+      },
+      "sourceIds": [
+        "deva-safety",
+        "deva-conditions"
+      ]
+    },
+    {
+      "label": {
+        "en": "Not permitted",
+        "de": "Nicht erlaubt"
+      },
+      "value": {
+        "en": "Camping at the turnout or on paved roads",
+        "de": "Camping an der Haltebucht oder auf befestigten Straßen"
+      },
+      "sourceIds": [
+        "deva-camping",
+        "deva-rules"
+      ]
+    },
+    {
+      "label": {
+        "en": "Session shape",
+        "de": "Ablauf"
+      },
+      "value": {
+        "en": "Reconnaissance, fixed observing point, direct return",
+        "de": "Erkundung, fester Beobachtungspunkt, direkte Rückfahrt"
+      },
+      "sourceIds": [
+        "deva-dunes",
+        "deva-safety"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "desert-go-no-go",
+      "kind": "note",
+      "heading": {
+        "en": "Heat and flooding decide before astronomy does",
+        "de": "Hitze und Überflutung entscheiden vor der Astronomie"
+      },
+      "body": {
+        "en": "Read current park conditions and safety guidance on the day of the visit. Extreme heat can remain dangerous after sunset, and storms can damage or close roads far from the rain itself. Carry ample water, keep fuel margins and abandon the plan when official warnings or physical discomfort make the desert unsuitable.",
+        "de": "Lies am Besuchstag die aktuellen Parkbedingungen und Sicherheitshinweise. Extreme Hitze kann nach Sonnenuntergang gefährlich bleiben, und Unwetter können Straßen weit entfernt vom eigentlichen Regen beschädigen oder sperren. Nimm reichlich Wasser mit, halte Kraftstoffreserve und brich ab, wenn offizielle Warnungen oder körperliches Unwohlsein die Wüste ungeeignet machen."
+      },
+      "sourceIds": [
+        "deva-safety",
+        "deva-conditions"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "dune-edge",
+      "kind": "prose",
+      "heading": {
+        "en": "Use the dunes as a horizon, not a night hike",
+        "de": "Die Dünen sind Horizont und keine Nachtwanderung"
+      },
+      "paragraphs": {
+        "en": [
+          "Arrive early enough to understand the parking area and walk a short distance onto firm, visible terrain if current rules and conditions permit. The dunes provide an open foreground without requiring a deep crossing. Choose the return line while footprints, plants and surface changes are still readable.",
+          "Once the sky darkens, remain with the known position. Sand travel becomes slower and less predictable at night, while wind can erase the visual cues that made the route obvious. A chair, binoculars and a low light for the final walk are more useful than equipment that must be carried far from the car."
+        ],
+        "de": [
+          "Komme früh genug an, um den Parkplatz zu verstehen und bei passenden Regeln und Bedingungen eine kurze Strecke auf festen, sichtbaren Untergrund zu gehen. Die Dünen schaffen einen offenen Vordergrund, ohne eine tiefe Querung zu verlangen. Wähle die Rücklinie, solange Fußspuren, Pflanzen und Oberflächenwechsel noch erkennbar sind.",
+          "Bleibe nach Einbruch der Dunkelheit am bekannten Platz. Bewegungen im Sand werden nachts langsamer und schwerer einschätzbar, während Wind die Hinweise löschen kann, die den Rückweg eindeutig machten. Stuhl, Fernglas und eine schwache Lampe für den letzten Weg sind nützlicher als Ausrüstung, die weit vom Auto getragen werden muss."
+        ]
+      },
+      "sourceIds": [
+        "deva-dunes",
+        "deva-night",
+        "deva-safety"
+      ]
+    },
+    {
+      "id": "mesquite-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "A desert session with a declared ending",
+        "de": "Eine Wüstensitzung mit festgelegtem Ende"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Late afternoon",
+            "de": "Später Nachmittag"
+          },
+          "title": {
+            "en": "Inspect the approach and your supplies",
+            "de": "Zufahrt und Vorräte prüfen"
+          },
+          "body": {
+            "en": "Confirm the road remains open, fill water bottles and note the route to legal accommodation or campground. Tell someone outside the group where the evening is planned when communications may be limited.",
+            "de": "Bestätige die offene Straße, fülle Wasserflaschen und notiere die Route zur legalen Unterkunft oder zum Campingplatz. Informiere jemanden außerhalb der Gruppe über den Abendplan, wenn Kommunikation eingeschränkt sein kann."
+          },
+          "sourceIds": [
+            "deva-conditions",
+            "deva-safety",
+            "deva-camping"
+          ]
+        },
+        {
+          "time": {
+            "en": "During twilight",
+            "de": "Während der Dämmerung"
+          },
+          "title": {
+            "en": "Stop walking before navigation becomes the activity",
+            "de": "Den Fußweg beenden, bevor Navigation zur Hauptaufgabe wird"
+          },
+          "body": {
+            "en": "Set the observing position, mark the return direction and let vision adapt. The NPS recommends moving away from developed light, but that advice does not require a long or risky night crossing of the dune field.",
+            "de": "Lege den Beobachtungsplatz fest, merke dir die Rückrichtung und beginne die Dunkeladaption. Der NPS empfiehlt Abstand zu entwickelter Beleuchtung. Daraus folgt jedoch keine lange oder riskante Nachtquerung des Dünenfelds."
+          },
+          "sourceIds": [
+            "deva-night",
+            "deva-dunes"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the agreed cutoff",
+            "de": "Zur vereinbarten Endzeit"
+          },
+          "title": {
+            "en": "Return instead of sleeping at the access",
+            "de": "Zurückkehren statt am Zugang zu schlafen"
+          },
+          "body": {
+            "en": "Pack, follow the known line to the vehicle and continue to the planned legal overnight place. A late finish does not change camping rules for turnouts or paved roads.",
+            "de": "Packe ein, folge der bekannten Linie zum Fahrzeug und fahre zum geplanten legalen Übernachtungsort. Ein spätes Ende verändert die Campingregeln für Haltebuchten oder befestigte Straßen nicht."
+          },
+          "sourceIds": [
+            "deva-camping",
+            "deva-rules",
+            "deva-safety"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "deva-night",
+    "deva-dunes",
+    "deva-safety",
+    "deva-conditions",
+    "deva-camping",
+    "deva-rules"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

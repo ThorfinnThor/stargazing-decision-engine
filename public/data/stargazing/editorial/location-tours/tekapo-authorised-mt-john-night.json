@@ -1,0 +1,209 @@
+{
+  "version": 1,
+  "id": "tekapo-authorised-mt-john-night",
+  "slug": "tekapo-authorised-mt-john-night",
+  "destinationId": "aoraki-mackenzie",
+  "recommendedSiteId": "mt-john-night-observing",
+  "title": {
+    "en": "An authorised night on Mount John from Tekapo",
+    "de": "Eine autorisierte Nacht am Mount John ab Tekapo"
+  },
+  "seoDescription": {
+    "en": "Plan a Mount John night through an authorised Tekapo astronomy experience while keeping public daytime access and research operations distinct.",
+    "de": "Plane eine Nacht am Mount John über ein autorisiertes Astronomieangebot in Tekapo und trenne öffentlichen Tageszugang klar vom Forschungsbetrieb."
+  },
+  "standfirst": {
+    "en": "Mount John is an active University of Canterbury research observatory, not an independent night lookout. Public night access belongs to authorised Dark Sky Project experiences, while daytime visits follow separate arrangements. Stay in Tekapo, choose the format that suits the group and let the booked transport and operating rules carry the evening up and down the mountain.",
+    "de": "Mount John ist ein aktives Forschungsobservatorium der University of Canterbury und kein frei nutzbarer Nachtstandort. Öffentlicher Nachtzugang erfolgt über autorisierte Angebote des Dark Sky Project, während Tagesbesuche eigenen Regeln folgen. Bleibe in Tekapo, wähle ein passendes Format und lasse gebuchten Transport und Betriebsregeln den Abend auf den Berg und zurück führen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night access",
+        "de": "Nachtzugang"
+      },
+      "value": {
+        "en": "Authorised Dark Sky Project experience",
+        "de": "Autorisiertes Angebot des Dark Sky Project"
+      },
+      "sourceIds": [
+        "uc-visitors",
+        "mackenzie-dark-sky-project"
+      ]
+    },
+    {
+      "label": {
+        "en": "Site",
+        "de": "Standort"
+      },
+      "value": {
+        "en": "Working University of Canterbury observatory",
+        "de": "Aktives Observatorium der University of Canterbury"
+      },
+      "sourceIds": [
+        "uc-public-access",
+        "uc-visitors"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Lake Tekapo",
+        "de": "Lake Tekapo"
+      },
+      "sourceIds": [
+        "mackenzie-astro-directory"
+      ]
+    },
+    {
+      "label": {
+        "en": "Keep separate",
+        "de": "Getrennt halten"
+      },
+      "value": {
+        "en": "Aoraki/Mount Cook National Park excursions",
+        "de": "Ausflüge in den Aoraki/Mount Cook National Park"
+      },
+      "sourceIds": [
+        "doc-aoraki"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "research-boundary",
+      "kind": "note",
+      "heading": {
+        "en": "A night ticket does not turn the observatory into public ground",
+        "de": "Ein Nachtticket macht das Observatorium nicht zu öffentlichem Gelände"
+      },
+      "body": {
+        "en": "The summit remains a working scientific site. Follow the authorised operator's meeting, transport, light and movement instructions, and do not arrive independently expecting to stay after daytime public access ends. The distinction protects both visitors and research observations.",
+        "de": "Der Gipfel bleibt ein wissenschaftlicher Arbeitsort. Befolge Treffpunkt, Transport-, Licht- und Bewegungshinweise des autorisierten Anbieters und reise nicht eigenständig mit der Erwartung an, nach Ende des öffentlichen Tageszugangs zu bleiben. Diese Trennung schützt Besucher und wissenschaftliche Beobachtung."
+      },
+      "sourceIds": [
+        "uc-visitors",
+        "uc-public-access",
+        "mackenzie-dark-sky-project"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "tekapo-format",
+      "kind": "decisions",
+      "heading": {
+        "en": "Choose the night by format rather than by summit name",
+        "de": "Die Nacht nach dem Format wählen und nicht nach dem Gipfelnamen"
+      },
+      "introduction": {
+        "en": "Tekapo offers different astronomy experiences, and not every group needs the same altitude, duration or equipment.",
+        "de": "Tekapo bietet unterschiedliche Astronomieerlebnisse. Nicht jede Gruppe braucht dieselbe Höhe, Dauer oder Ausrüstung."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Mount John is the priority",
+            "de": "Mount John ist die Priorität"
+          },
+          "body": {
+            "en": "Book the authorised product that explicitly includes the summit observatory and verify transport, duration and weather arrangements in the current confirmation. Research access and daytime visitor information cannot substitute for that booking.",
+            "de": "Buche das autorisierte Produkt, das ausdrücklich das Gipfelobservatorium einschließt, und prüfe Transport, Dauer und Wetterregelung in der aktuellen Bestätigung. Forschungszugang und Tagesinformationen ersetzen diese Buchung nicht."
+          },
+          "sourceIds": [
+            "uc-visitors",
+            "mackenzie-dark-sky-project"
+          ]
+        },
+        {
+          "label": {
+            "en": "Comfort or flexibility matters more",
+            "de": "Komfort oder Flexibilität sind wichtiger"
+          },
+          "body": {
+            "en": "Use the official regional astronomy directory to compare Tekapo-based experiences before choosing. A lower or shorter session can be the better decision for children, limited mobility, cold sensitivity or an uncertain sky.",
+            "de": "Vergleiche über das offizielle regionale Astronomieverzeichnis die Angebote in Tekapo. Eine niedrigere oder kürzere Sitzung kann für Kinder, eingeschränkte Mobilität, Kälteempfindlichkeit oder unsicheren Himmel die bessere Wahl sein."
+          },
+          "sourceIds": [
+            "mackenzie-astro-directory",
+            "mackenzie-dark-sky-project"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mt-john-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let Tekapo carry the practical work",
+        "de": "Tekapo übernimmt die praktische Basis"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before dinner",
+            "de": "Vor dem Abendessen"
+          },
+          "title": {
+            "en": "Reconfirm the operating message",
+            "de": "Aktuelle Betriebsnachricht bestätigen"
+          },
+          "body": {
+            "en": "Check the meeting place, pickup, clothing advice and cloud policy. Eat early enough that the group can reach the operator without rushing or searching for a summit road in fading light.",
+            "de": "Prüfe Treffpunkt, Abholung, Kleidungshinweise und Wolkenregelung. Iss früh genug, damit die Gruppe den Anbieter ohne Hektik erreicht und nicht im schwindenden Licht nach einer Gipfelstraße sucht."
+          },
+          "sourceIds": [
+            "mackenzie-dark-sky-project",
+            "uc-visitors"
+          ]
+        },
+        {
+          "time": {
+            "en": "On the mountain",
+            "de": "Auf dem Berg"
+          },
+          "title": {
+            "en": "Follow the observatory's rhythm",
+            "de": "Dem Rhythmus des Observatoriums folgen"
+          },
+          "body": {
+            "en": "Keep lights and movement within the guide's instructions. Listen to the naked-eye orientation before concentrating on instruments, because the reserve and southern sky are easier to understand as a whole than as a sequence of telescope queues.",
+            "de": "Halte Licht und Bewegung innerhalb der Hinweise des Guides. Höre zunächst der Orientierung mit bloßem Auge zu, denn Reservat und Südhimmel sind als Ganzes leichter verständlich als als Abfolge von Teleskopwarteschlangen."
+          },
+          "sourceIds": [
+            "uc-public-access",
+            "mackenzie-dark-sky-project"
+          ]
+        },
+        {
+          "time": {
+            "en": "After the return",
+            "de": "Nach der Rückkehr"
+          },
+          "title": {
+            "en": "End the night in Tekapo",
+            "de": "Die Nacht in Tekapo beenden"
+          },
+          "body": {
+            "en": "Do not add an after-midnight drive to Aoraki/Mount Cook. National-park roads, tracks and facilities require their own current checks, and the booked Mount John session already supplies a complete astronomical evening.",
+            "de": "Füge keine Fahrt nach Mitternacht zum Aoraki/Mount Cook hinzu. Straßen, Wege und Einrichtungen des Nationalparks verlangen eigene aktuelle Prüfungen. Die gebuchte Mount-John-Sitzung bildet bereits einen vollständigen astronomischen Abend."
+          },
+          "sourceIds": [
+            "doc-aoraki",
+            "mackenzie-dark-sky-project"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "uc-visitors",
+    "uc-public-access",
+    "mackenzie-dark-sky-project",
+    "mackenzie-astro-directory",
+    "doc-aoraki"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

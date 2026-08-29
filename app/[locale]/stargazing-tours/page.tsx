@@ -33,7 +33,7 @@ export default async function LocationToursPage({ params }: { params: Promise<{ 
     <PageHomeNav locale={locale} />
     <header className="event-header">
       <p className="eyebrow">{isGerman ? "Eigenständige Nachtpläne" : "Independent night plans"}</p>
-      <h1>{isGerman ? "Zehn Orte, zehn unterschiedliche Nächte." : "Ten places, ten different nights."}</h1>
+      <h1>{isGerman ? "Zwanzig Orte, zwanzig unterschiedliche Nächte." : "Twenty places, twenty different nights."}</h1>
       <p className="lede">{isGerman ? "Jede Tour beantwortet die konkreten Fragen eines Standorts. Zugang, Anfahrt, Programm und Grenzen folgen den geprüften lokalen Quellen." : "Each tour answers the practical questions of one place. Access, approach, program and boundaries follow reviewed local sources."}</p>
     </header>
     <section className="location-tour-index-grid">

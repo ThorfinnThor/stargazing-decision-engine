@@ -156,7 +156,7 @@ for (const locale of config.locales) {
   }));
   pages.push(makePage({
     id: `location-tours-${locale}`, pageType: "location-tours", locale, path: `/${locale}/stargazing-tours/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/`])),
-    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Zehn Orte, zehn unterschiedliche Nächte." : "Ten places, ten different nights.",
+    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Zwanzig Orte, zwanzig unterschiedliche Nächte." : "Twenty places, twenty different nights.",
     description: locale === "de" ? "Quellenbasierte Nachtpläne für konkrete Beobachtungsorte mit Zugang, Anfahrt und klaren Grenzen." : "Source-backed night plans for specific observing locations, with access, approach and practical boundaries.",
     lastModified: latestTimestamp(...locationTours.map((tour) => tour.lastReviewedAt)), resultCount: locationTours.length, confidence: "high", uniqueInsightCount: locationTours.length, internalLinkCount: locationTours.length + 1,
   }));

@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "id": "namibrand-two-night-concession-sky",
+  "slug": "namibrand-two-night-concession-sky",
+  "destinationId": "namibrand",
+  "recommendedSiteId": "wolwedans-dune-camp",
+  "title": {
+    "en": "Two settled nights at Wolwedans Dune Camp",
+    "de": "Zwei ruhige Nächte im Wolwedans Dune Camp"
+  },
+  "seoDescription": {
+    "en": "Build a NamibRand stargazing stay around booked concession access, host-approved observing space and two nights at the same desert camp.",
+    "de": "Plane einen NamibRand-Aufenthalt mit gebuchtem Konzessionszugang, einem vom Gastgeber freigegebenen Beobachtungsplatz und zwei Nächten im selben Wüstencamp."
+  },
+  "standfirst": {
+    "en": "NamibRand is a private nature reserve, so the useful astronomy plan begins with a booked concession stay rather than a public roadside coordinate. Wolwedans Dune Camp provides a defined base inside the reserve. Stay for two nights, ask the host where night observing is permitted and let stillness replace the instinct to drive farther into the desert.",
+    "de": "NamibRand ist ein privates Naturreservat. Eine sinnvolle Astronomieplanung beginnt daher mit einem gebuchten Aufenthalt bei einem Konzessionsbetrieb und nicht mit einer öffentlichen Straßenkoordinate. Das Wolwedans Dune Camp bietet eine feste Basis im Reservat. Bleibe zwei Nächte, frage den Gastgeber nach dem erlaubten Beobachtungsplatz und ersetze den Drang zur Weiterfahrt durch Ruhe."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Access model",
+        "de": "Zugangsmodell"
+      },
+      "value": {
+        "en": "Booked reserve concession",
+        "de": "Gebuchter Konzessionsbetrieb im Reservat"
+      },
+      "sourceIds": [
+        "namibrand-home",
+        "namibrand-contact"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Wolwedans Dune Camp",
+        "de": "Wolwedans Dune Camp"
+      },
+      "sourceIds": [
+        "namibrand-home"
+      ]
+    },
+    {
+      "label": {
+        "en": "Useful stay",
+        "de": "Sinnvolle Dauer"
+      },
+      "value": {
+        "en": "Two nights at one camp",
+        "de": "Zwei Nächte in einem Camp"
+      },
+      "sourceIds": [
+        "namibrand-home",
+        "darksky-namibrand"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observe only",
+        "de": "Nur beobachten"
+      },
+      "value": {
+        "en": "Where the host confirms access",
+        "de": "Wo der Gastgeber den Zugang bestätigt"
+      },
+      "sourceIds": [
+        "namibrand-contact",
+        "darksky-namibrand"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "reserve-contract",
+      "kind": "prose",
+      "heading": {
+        "en": "The booking is also the access agreement",
+        "de": "Die Buchung ist zugleich die Zugangsvereinbarung"
+      },
+      "paragraphs": {
+        "en": [
+          "NamibRand is managed through conservation and tourism concessions, not as an open network of public night roads. Confirm the camp transfer, arrival window and observing possibilities directly with the booked operator. A map pin inside the reserve does not establish permission to leave the camp, cross another concession or stop a vehicle wherever the horizon looks clean.",
+          "This constraint improves the night when it is accepted early. With accommodation, meals and the return route already resolved, attention can stay on the changing desert sky. Ask the host which nearby surface is safe, whether staff accompany guests and how exterior lights are managed before carrying equipment outside."
+        ],
+        "de": [
+          "NamibRand wird über Naturschutz und touristische Konzessionen betrieben und ist kein offenes Netz öffentlicher Nachtstraßen. Bestätige Camptransfer, Ankunftsfenster und Beobachtungsmöglichkeiten direkt beim gebuchten Anbieter. Eine Kartenmarkierung im Reservat begründet weder das Recht, das Camp zu verlassen, noch eine andere Konzession zu queren oder an beliebiger Stelle anzuhalten.",
+          "Diese Einschränkung verbessert den Abend, wenn sie früh akzeptiert wird. Unterkunft, Essen und Rückweg stehen bereits fest, sodass die Aufmerksamkeit beim wechselnden Wüstenhimmel bleiben kann. Frage den Gastgeber, welche nahe Fläche sicher ist, ob Mitarbeitende Gäste begleiten und wie Außenlicht gehandhabt wird, bevor Ausrüstung hinausgetragen wird."
+        ]
+      },
+      "sourceIds": [
+        "namibrand-home",
+        "namibrand-contact",
+        "darksky-namibrand"
+      ]
+    },
+    {
+      "id": "two-night-rhythm",
+      "kind": "schedule",
+      "heading": {
+        "en": "The second night is the real luxury",
+        "de": "Die zweite Nacht ist der eigentliche Luxus"
+      },
+      "introduction": {
+        "en": "Two evenings at the same camp remove the pressure to force a result from the first sky.",
+        "de": "Zwei Abende im selben Camp nehmen den Druck, aus dem ersten Himmel unbedingt ein Ergebnis zu erzwingen."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "First afternoon",
+            "de": "Erster Nachmittag"
+          },
+          "title": {
+            "en": "Learn the camp before planning the stars",
+            "de": "Das Camp kennenlernen, bevor die Sterne geplant werden"
+          },
+          "body": {
+            "en": "Complete the arrival briefing, identify permitted paths and discuss the night plan with staff. Keep the first setup small enough to move or pack immediately when the host asks.",
+            "de": "Schließe die Einweisung ab, erkenne erlaubte Wege und bespreche den Nachtplan mit dem Personal. Halte den ersten Aufbau so klein, dass er auf Hinweis des Gastgebers sofort versetzt oder eingepackt werden kann."
+          },
+          "sourceIds": [
+            "namibrand-home",
+            "namibrand-contact"
+          ]
+        },
+        {
+          "time": {
+            "en": "First night",
+            "de": "Erste Nacht"
+          },
+          "title": {
+            "en": "Use the sky to understand the site",
+            "de": "Mit dem Himmel den Standort verstehen"
+          },
+          "body": {
+            "en": "Notice the horizon, local lighting and wind before pursuing a list of objects. Naked-eye orientation and binoculars reveal whether the approved position suits a longer session the following evening.",
+            "de": "Achte auf Horizont, lokale Beleuchtung und Wind, bevor eine Objektliste verfolgt wird. Orientierung mit bloßem Auge und Fernglas zeigen, ob der freigegebene Platz für eine längere Sitzung am folgenden Abend passt."
+          },
+          "sourceIds": [
+            "darksky-namibrand",
+            "namibrand-contact"
+          ]
+        },
+        {
+          "time": {
+            "en": "Second night",
+            "de": "Zweite Nacht"
+          },
+          "title": {
+            "en": "Return with a narrower purpose",
+            "de": "Mit einem engeren Ziel zurückkehren"
+          },
+          "body": {
+            "en": "Choose one constellation region, a binocular sweep or a modest photographic plan based on the first night. Familiarity with the camp now supplies more value than a late vehicle transfer to another concession.",
+            "de": "Wähle anhand der ersten Nacht eine Sternbildregion, eine Fernglasrunde oder einen bescheidenen Fotoplan. Die Vertrautheit mit dem Camp ist nun wertvoller als ein später Fahrzeugtransfer zu einer anderen Konzession."
+          },
+          "sourceIds": [
+            "darksky-namibrand",
+            "namibrand-home"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "conservation-movement",
+      "kind": "note",
+      "heading": {
+        "en": "Darkness does not remove the reserve's boundaries",
+        "de": "Dunkelheit hebt die Grenzen des Reservats nicht auf"
+      },
+      "body": {
+        "en": "Remain within the area and hours approved by the host. Do not walk into dunes, use unapproved tracks or request unnecessary vehicle movement for a darker foreground. The reserve's night-sky quality exists inside a conservation landscape, and visitor restraint is part of preserving both.",
+        "de": "Bleibe innerhalb des vom Gastgeber freigegebenen Bereichs und Zeitfensters. Gehe nicht eigenständig in Dünen, nutze keine unbestätigten Wege und verlange keine unnötige Fahrzeugfahrt für einen dunkleren Vordergrund. Die Qualität des Nachthimmels besteht innerhalb einer Schutzlandschaft. Zur Bewahrung beider gehört Zurückhaltung."
+      },
+      "sourceIds": [
+        "namibrand-home",
+        "darksky-namibrand"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "namibrand-home",
+    "namibrand-contact",
+    "darksky-namibrand"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
