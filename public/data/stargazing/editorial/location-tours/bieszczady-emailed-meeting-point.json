@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "id": "bieszczady-emailed-meeting-point",
+  "slug": "bieszczady-emailed-meeting-point",
+  "destinationId": "bieszczady",
+  "recommendedSiteId": "lutowiska-astronomy-show-area",
+  "title": {
+    "en": "Follow the Bieszczady meeting-point email",
+    "de": "Der Bieszczady-Treffpunkt steht in der E-Mail"
+  },
+  "seoDescription": {
+    "en": "Book a dated Bieszczady astronomy show, use the organiser's emailed meeting point and return directly to legal lodging near Lutowiska.",
+    "de": "Buche eine datierte Bieszczady-Astronomieshow, nutze den per E-Mail gesendeten Treffpunkt und kehre direkt zur legalen Unterkunft bei Lutowiska zurück."
+  },
+  "standfirst": {
+    "en": "Bieszczady Starry Sky Park names a region, not a universal after-dark car park. Its astronomy shows solve that ambiguity by assigning a date, paid booking and exact meeting point through the organiser. Stay near Lutowiska, wait for the actual instructions and navigate to that address before darkness. The show is the night's permission and structure. Trails, empty parking areas and the wider national park keep their own rules after the programme ends.",
+    "de": "Der Bieszczady Starry Sky Park bezeichnet eine Region und keinen allgemeinen Nachtparkplatz. Seine Astronomieshows lösen diese Unklarheit durch Datum, kostenpflichtige Buchung und genauen Treffpunkt des Veranstalters. Übernachte nahe Lutowiska, warte auf die tatsächlichen Anweisungen und fahre vor der Dunkelheit zu dieser Adresse. Die Show ist Erlaubnis und Struktur der Nacht. Wege, leere Parkplätze und der weitere Nationalpark behalten nach Programmende ihre eigenen Regeln."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night product",
+        "de": "Nachtangebot"
+      },
+      "value": {
+        "en": "Dated paid astronomy show",
+        "de": "Datierte kostenpflichtige Astronomieshow"
+      },
+      "sourceIds": [
+        "biesz-shows"
+      ]
+    },
+    {
+      "label": {
+        "en": "Meeting point",
+        "de": "Treffpunkt"
+      },
+      "value": {
+        "en": "Use the organiser's current email",
+        "de": "Aktuelle E-Mail des Veranstalters nutzen"
+      },
+      "sourceIds": [
+        "biesz-shows"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Legal lodging near Lutowiska",
+        "de": "Legale Unterkunft nahe Lutowiska"
+      },
+      "sourceIds": [
+        "biesz-about",
+        "biesz-shows"
+      ]
+    },
+    {
+      "label": {
+        "en": "Protected area",
+        "de": "Schutzgebiet"
+      },
+      "value": {
+        "en": "National-park safety and trail rules still apply",
+        "de": "Sicherheits- und Wegregeln des Nationalparks gelten weiterhin"
+      },
+      "sourceIds": [
+        "biesz-safety",
+        "biesz-trails"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "email-is-the-coordinate",
+      "kind": "note",
+      "heading": {
+        "en": "Do not replace the organiser's address with a map guess",
+        "de": "Die Veranstalteradresse nicht durch eine Kartenschätzung ersetzen"
+      },
+      "body": {
+        "en": "The representative Lutowiska record is not the guaranteed location of every show. Use the current email for meeting point, time, payment, equipment and weather instructions. If that message has not arrived or remains ambiguous, contact the organiser before travelling. A regional dark-sky label, trailhead or apparently empty car park cannot substitute for the dated arrangement.",
+        "de": "Der repräsentative Datensatz bei Lutowiska ist nicht der garantierte Ort jeder Show. Nutze die aktuelle E-Mail für Treffpunkt, Zeit, Zahlung, Ausrüstung und Wetterhinweise. Ist diese Nachricht nicht angekommen oder unklar, kontaktiere den Veranstalter vor der Fahrt. Regionale Dark-Sky-Auszeichnung, Weganfang oder scheinbar leerer Parkplatz ersetzen die datierte Vereinbarung nicht."
+      },
+      "sourceIds": [
+        "biesz-shows",
+        "biesz-about",
+        "biesz-trails"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "show-night",
+      "kind": "schedule",
+      "heading": {
+        "en": "A local room protects the end of the programme",
+        "de": "Ein lokales Zimmer schützt das Programmende"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before booking lodging",
+            "de": "Vor der Unterkunftsbuchung"
+          },
+          "title": {
+            "en": "Match the room to the dated show",
+            "de": "Das Zimmer an die datierte Show anpassen"
+          },
+          "body": {
+            "en": "Confirm the event and choose legal accommodation near enough for a simple return. Save the host contact, meeting-point email and road route offline, and read current national-park safety information.",
+            "de": "Bestätige die Veranstaltung und wähle eine legale Unterkunft nah genug für eine einfache Rückkehr. Speichere Gastgeberkontakt, Treffpunkt-E-Mail und Straßenroute offline und lies aktuelle Sicherheitsinformationen des Nationalparks."
+          },
+          "sourceIds": [
+            "biesz-shows",
+            "biesz-safety"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before the announced start",
+            "de": "Vor dem angekündigten Beginn"
+          },
+          "title": {
+            "en": "Arrive at the emailed place",
+            "de": "Am per E-Mail genannten Ort ankommen"
+          },
+          "body": {
+            "en": "Park and gather as directed, prepare warm and waterproof layers and let the organiser lead light and equipment use. Do not leave the group for a nearby field or trail.",
+            "de": "Parke und versammle dich nach Anweisung, bereite warme wasserdichte Kleidung vor und überlasse Licht- sowie Ausrüstungsnutzung der Leitung. Verlasse die Gruppe nicht für ein nahes Feld oder einen Weg."
+          },
+          "sourceIds": [
+            "biesz-shows",
+            "biesz-safety",
+            "biesz-trails"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the show finish",
+            "de": "Am Ende der Show"
+          },
+          "title": {
+            "en": "Return without a second sky search",
+            "de": "Ohne zweite Himmelssuche zurückkehren"
+          },
+          "body": {
+            "en": "Pack, follow the known road to lodging and leave mountain trails and parking areas unused at night. Weather disappointment does not expand visitor rights inside the protected region.",
+            "de": "Packe ein, folge der bekannten Straße zur Unterkunft und nutze Bergwege sowie Parkplätze nachts nicht weiter. Wetterenttäuschung erweitert keine Besucherrechte in der geschützten Region."
+          },
+          "sourceIds": [
+            "biesz-safety",
+            "biesz-trails",
+            "biesz-shows"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "region-and-event",
+      "kind": "prose",
+      "heading": {
+        "en": "The park explains the landscape; the show explains tonight",
+        "de": "Der Park erklärt die Landschaft, die Show den heutigen Abend"
+      },
+      "paragraphs": {
+        "en": [
+          "Use the Starry Sky Park material to understand the initiative and the value of protecting darkness. Use the event page for the practical night. These roles are complementary, but neither grants access to every road, meadow or trail across the inhabited mountain region.",
+          "Mountain cloud, rain, snow, cold and wind may alter or cancel a show. Follow the organiser's procedure together with national-park warnings. If the event cannot proceed, spend the evening at the booked accommodation rather than building an independent route from old photographs or another participant's recommendation."
+        ],
+        "de": [
+          "Nutze das Material des Starry Sky Park, um Initiative und Wert des Dunkelheitsschutzes zu verstehen. Nutze die Veranstaltungsseite für die praktische Nacht. Beide Rollen ergänzen sich, doch keine gewährt Zugang zu jeder Straße, Wiese oder jedem Weg in der bewohnten Bergregion.",
+          "Bergwolken, Regen, Schnee, Kälte und Wind können eine Show verändern oder absagen. Folge dem Verfahren des Veranstalters zusammen mit den Warnungen des Nationalparks. Kann die Veranstaltung nicht stattfinden, verbringe den Abend in der gebuchten Unterkunft, statt aus alten Fotos oder Empfehlungen anderer Teilnehmer eine eigenständige Route zu bauen."
+        ]
+      },
+      "sourceIds": [
+        "biesz-about",
+        "biesz-shows",
+        "biesz-safety",
+        "biesz-trails"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "biesz-shows",
+    "biesz-about",
+    "biesz-safety",
+    "biesz-trails"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

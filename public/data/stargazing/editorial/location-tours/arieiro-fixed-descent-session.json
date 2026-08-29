@@ -1,0 +1,211 @@
+{
+  "version": 1,
+  "id": "arieiro-fixed-descent-session",
+  "slug": "arieiro-fixed-descent-session",
+  "destinationId": "pico-do-arieiro",
+  "recommendedSiteId": "pico-arieiro-observing-area",
+  "title": {
+    "en": "An Arieiro session with a fixed descent",
+    "de": "Eine Arieiro-Sitzung mit festem Rückweg"
+  },
+  "seoDescription": {
+    "en": "Check Pico do Arieiro parking, shuttle, roads and mountain conditions before a short authorised summit session with a fixed descent.",
+    "de": "Prüfe Parken, Shuttle, Straßen und Bergbedingungen am Pico do Arieiro vor einer kurzen erlaubten Gipfelsitzung mit festem Rückweg."
+  },
+  "standfirst": {
+    "en": "Pico do Arieiro can rise above Madeira's cloud layer, but that famous view does not guarantee an uncomplicated night. Parking and shuttle operations change, mountain routes close, and the exposed summit can move from dry to wet or icy quickly. Use the official visitor area only when current information supports an evening visit. Arrive before darkness, stay on a stable authorised surface and set the descent time before the first telescope case is opened.",
+    "de": "Der Pico do Arieiro kann über Madeiras Wolkenschicht liegen, doch dieser berühmte Blick garantiert keine unkomplizierte Nacht. Park- und Shuttlebetrieb ändern sich, Bergwege schließen, und der exponierte Gipfel kann rasch von trocken zu nass oder eisig wechseln. Nutze den offiziellen Besucherbereich nur, wenn aktuelle Informationen einen Abendbesuch tragen. Komme vor der Dunkelheit an, bleibe auf einer stabilen erlaubten Fläche und lege die Abfahrtszeit fest, bevor der erste Teleskopkoffer geöffnet wird."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Primary area",
+        "de": "Hauptbereich"
+      },
+      "value": {
+        "en": "Official Pico do Arieiro visitor area",
+        "de": "Offizieller Besucherbereich am Pico do Arieiro"
+      },
+      "sourceIds": [
+        "arieiro-official"
+      ]
+    },
+    {
+      "label": {
+        "en": "Operations",
+        "de": "Betrieb"
+      },
+      "value": {
+        "en": "Parking, shuttle and timed access require rechecking",
+        "de": "Parken, Shuttle und Zeitfenster erneut prüfen"
+      },
+      "sourceIds": [
+        "arieiro-official",
+        "arieiro-ifcn"
+      ]
+    },
+    {
+      "label": {
+        "en": "Trail status",
+        "de": "Wegstatus"
+      },
+      "value": {
+        "en": "Closures apply even under clear stars",
+        "de": "Sperren gelten auch unter klarem Himmel"
+      },
+      "sourceIds": [
+        "arieiro-trail",
+        "arieiro-ifcn"
+      ]
+    },
+    {
+      "label": {
+        "en": "Empenas",
+        "de": "Empenas"
+      },
+      "value": {
+        "en": "Published road hours end at 21:00",
+        "de": "Veröffentlichte Straßennutzung endet um 21:00 Uhr"
+      },
+      "sourceIds": [
+        "arieiro-empenas"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "summit-or-lower",
+      "kind": "decisions",
+      "heading": {
+        "en": "The webcam is evidence, not permission",
+        "de": "Die Webcam ist ein Hinweis, keine Erlaubnis"
+      },
+      "introduction": {
+        "en": "Choose the summit only when operations and surface conditions agree with the picture.",
+        "de": "Wähle den Gipfel nur, wenn Betrieb und Oberflächenzustand zum Bild passen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Road, parking and visitor access are confirmed",
+            "de": "Straße, Parken und Besucherzugang sind bestätigt"
+          },
+          "body": {
+            "en": "Use the official area for a compact session. Save the parking or shuttle arrangement, identify the exact closing constraint and keep the equipment small enough to pack immediately if cloud or wind arrives.",
+            "de": "Nutze den offiziellen Bereich für eine kompakte Sitzung. Speichere Park- oder Shuttle-Regelung, erkenne die genaue Schließgrenze und halte die Ausrüstung so klein, dass sie bei Wolken oder Wind sofort verpackt ist."
+          },
+          "sourceIds": [
+            "arieiro-official",
+            "arieiro-ifcn"
+          ]
+        },
+        {
+          "label": {
+            "en": "Access or mountain conditions remain uncertain",
+            "de": "Zugang oder Bergbedingungen bleiben unsicher"
+          },
+          "body": {
+            "en": "Stay lower or use a booked Madeira astronomy experience with a confirmed site. Do not test a closed route, roadside shoulder or Empenas after its published road hours simply because the summit appears clear.",
+            "de": "Bleibe tiefer oder nutze ein gebuchtes Madeira-Astronomieangebot mit bestätigtem Ort. Teste weder gesperrte Route noch Straßenrand oder Empenas nach den veröffentlichten Straßennutzungszeiten, nur weil der Gipfel klar wirkt."
+          },
+          "sourceIds": [
+            "arieiro-ifcn",
+            "arieiro-trail",
+            "arieiro-empenas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arieiro-clock",
+      "kind": "schedule",
+      "heading": {
+        "en": "Build the session backwards from the descent",
+        "de": "Die Sitzung rückwärts von der Abfahrt planen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "In Funchal or the lower base",
+            "de": "In Funchal oder an der tieferen Basis"
+          },
+          "title": {
+            "en": "Resolve transport before altitude",
+            "de": "Transport vor der Höhe klären"
+          },
+          "body": {
+            "en": "Read the official visitor and route notices, confirm how the vehicle reaches and leaves the area and compare a mountain forecast with visible conditions. Pack insulation, waterproof layers and water within immediate reach.",
+            "de": "Lies offizielle Besucher- und Routenhinweise, bestätige Zu- und Abfahrt des Fahrzeugs und vergleiche Bergvorhersage mit sichtbaren Bedingungen. Packe Isolation, Regenschutz und Wasser griffbereit."
+          },
+          "sourceIds": [
+            "arieiro-official",
+            "arieiro-trail",
+            "arieiro-ifcn"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the surface, not the skyline",
+            "de": "Die Fläche statt nur der Skyline lernen"
+          },
+          "body": {
+            "en": "Identify barriers, pedestrian movement, the shortest safe return to the vehicle and any operating boundary. Set up only where visitors are permitted and where a tripod cannot obstruct the shared area.",
+            "de": "Erkenne Barrieren, Fußverkehr, den kürzesten sicheren Weg zum Fahrzeug und jede Betriebsgrenze. Baue nur auf erlaubten Besucherflächen auf, auf denen ein Stativ den gemeinsam genutzten Bereich nicht blockiert."
+          },
+          "sourceIds": [
+            "arieiro-official",
+            "arieiro-ifcn"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the predetermined cutoff",
+            "de": "Zum vorher festgelegten Ende"
+          },
+          "title": {
+            "en": "Leave before the mountain chooses for you",
+            "de": "Abfahren, bevor der Berg entscheidet"
+          },
+          "body": {
+            "en": "Pack while the road and team are still comfortable. Descend on the verified route without adding Empenas or a trailhead as a second session; their separate restrictions still apply.",
+            "de": "Packe ein, solange Straße und Gruppe noch sicher sind. Fahre auf der bestätigten Route ab, ohne Empenas oder einen Weganfang als zweite Sitzung anzuhängen; deren eigene Einschränkungen gelten weiterhin."
+          },
+          "sourceIds": [
+            "arieiro-official",
+            "arieiro-empenas",
+            "arieiro-trail"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "exposed-island-mountain",
+      "kind": "note",
+      "heading": {
+        "en": "Cloud below you can become cloud around you",
+        "de": "Wolken unter dir können Wolken um dich werden"
+      },
+      "body": {
+        "en": "Treat wind, rain, icing, poor visibility and sudden cloud immersion as reasons to end the session, not as photographic atmosphere. The PR1 route status is a safety boundary and a night sky does not reopen a closed trail. Keep observation within the visitor surface already inspected in daylight. If the descent driver is cold, tired or uncertain, astronomy has already finished.",
+        "de": "Behandle Wind, Regen, Vereisung, schlechte Sicht und plötzlich einfallende Wolken als Gründe für das Ende und nicht als fotografische Stimmung. Der Status der PR1-Route ist eine Sicherheitsgrenze, und ein klarer Nachthimmel öffnet keinen gesperrten Weg. Beobachte nur auf der bei Tageslicht geprüften Besucherfläche. Ist die fahrende Person kalt, müde oder unsicher, ist die Astronomie bereits beendet."
+      },
+      "sourceIds": [
+        "arieiro-trail",
+        "arieiro-ifcn",
+        "arieiro-official"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "arieiro-official",
+    "arieiro-trail",
+    "arieiro-ifcn",
+    "arieiro-empenas"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

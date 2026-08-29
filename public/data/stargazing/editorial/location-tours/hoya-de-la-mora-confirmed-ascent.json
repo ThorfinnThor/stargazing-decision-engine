@@ -1,0 +1,191 @@
+{
+  "version": 1,
+  "id": "hoya-de-la-mora-confirmed-ascent",
+  "slug": "hoya-de-la-mora-confirmed-ascent",
+  "destinationId": "sierra-nevada",
+  "recommendedSiteId": "hoya-de-la-mora-perseids-route",
+  "title": {
+    "en": "Hoya de la Mora by confirmed route",
+    "de": "Hoya de la Mora auf bestätigter Route"
+  },
+  "seoDescription": {
+    "en": "Join Hoya de la Mora only through a current astronomy event, with high-mountain weather, transport and descent settled before departure.",
+    "de": "Nutze Hoya de la Mora nur über eine aktuelle Astronomieveranstaltung und kläre Bergwetter, Transport und Abstieg vor der Abfahrt."
+  },
+  "standfirst": {
+    "en": "Hoya de la Mora becomes a credible astronomy night when an organiser publishes a real event, meeting point and transport plan. It is not a back entrance to the Sierra Nevada Observatory, whose public visits take place by day and whose night access is prohibited. Treat the evening as a supervised high-mountain appointment. Confirm the route, dress for the summit rather than Granada and descend with the same group that brought you up.",
+    "de": "Hoya de la Mora wird zu einer glaubwürdigen Astronomienacht, wenn ein Veranstalter einen konkreten Termin, Treffpunkt und Transportplan veröffentlicht. Der Ort ist kein Hintereingang zum Sierra Nevada Observatory, dessen öffentliche Besuche tagsüber stattfinden und dessen Nachtzugang verboten ist. Behandle den Abend als betreuten Hochgebirgstermin. Bestätige die Route, kleide dich für den Gipfel statt für Granada und steige mit derselben Gruppe ab, mit der du hinaufgekommen bist."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Valid access",
+        "de": "Gültiger Zugang"
+      },
+      "value": {
+        "en": "A currently published organised event",
+        "de": "Eine aktuell veröffentlichte organisierte Veranstaltung"
+      },
+      "sourceIds": [
+        "sierra-event",
+        "sierra-home"
+      ]
+    },
+    {
+      "label": {
+        "en": "Research campus",
+        "de": "Forschungscampus"
+      },
+      "value": {
+        "en": "Day visits only; no public night entry",
+        "de": "Nur Tagesbesuche; kein öffentlicher Nachtzugang"
+      },
+      "sourceIds": [
+        "sierra-osn"
+      ]
+    },
+    {
+      "label": {
+        "en": "Mountain exposure",
+        "de": "Bergexposition"
+      },
+      "value": {
+        "en": "Cold, wind, ice and altitude can stop the plan",
+        "de": "Kälte, Wind, Eis und Höhe können den Plan stoppen"
+      },
+      "sourceIds": [
+        "sierra-event",
+        "sierra-home"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return",
+        "de": "Rückweg"
+      },
+      "value": {
+        "en": "Use the event's organised descent",
+        "de": "Den organisierten Abstieg der Veranstaltung nutzen"
+      },
+      "sourceIds": [
+        "sierra-event"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "campus-is-not-the-route",
+      "kind": "note",
+      "heading": {
+        "en": "The observatory boundary is unambiguous",
+        "de": "Die Grenze des Observatoriums ist eindeutig"
+      },
+      "body": {
+        "en": "Do not drive toward the research domes expecting an informal viewpoint, a late check-in or access after a daytime visit. The observatory operates as a scientific workplace, and its published visitor programme does not permit night visits. Hoya de la Mora is a separate event location with its own conditions. Save the organiser's confirmation and follow temporary barriers, staff instructions and road closures even if navigation software suggests continuing uphill.",
+        "de": "Fahre nicht zu den Forschungskuppeln in der Erwartung eines informellen Aussichtspunkts, eines späten Check-ins oder eines Zugangs nach einem Tagesbesuch. Das Observatorium ist ein wissenschaftlicher Arbeitsplatz, und sein veröffentlichtes Besucherprogramm erlaubt keine Nachtbesuche. Hoya de la Mora ist ein separater Veranstaltungsort mit eigenen Bedingungen. Speichere die Bestätigung des Veranstalters und folge temporären Barrieren, Personalhinweisen und Straßensperren, auch wenn die Navigation eine Weiterfahrt bergauf vorschlägt."
+      },
+      "sourceIds": [
+        "sierra-osn",
+        "sierra-event"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "mountain-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let the organiser control the mountain clock",
+        "de": "Den Bergzeitplan dem Veranstalter überlassen"
+      },
+      "introduction": {
+        "en": "A fixed group rhythm removes the two weakest parts of an independent summit attempt: uncertain access and a fatigued descent.",
+        "de": "Ein fester Gruppenrhythmus beseitigt die beiden schwächsten Teile eines eigenständigen Gipfelversuchs: unsicheren Zugang und einen erschöpften Abstieg."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving the valley",
+            "de": "Vor dem Verlassen des Tals"
+          },
+          "title": {
+            "en": "Read the complete event message",
+            "de": "Die vollständige Veranstaltungsnachricht lesen"
+          },
+          "body": {
+            "en": "Confirm meeting point, transport, fitness requirement, clothing, cancellation procedure and expected return. Carry water, insulation and any medication needed at altitude; a clear city forecast is not mountain clearance.",
+            "de": "Bestätige Treffpunkt, Transport, Fitnessanforderung, Kleidung, Absageverfahren und erwartete Rückkehr. Nimm Wasser, Isolation und in der Höhe benötigte Medikamente mit; eine klare Stadtvorhersage ist keine Bergfreigabe."
+          },
+          "sourceIds": [
+            "sierra-event",
+            "sierra-home"
+          ]
+        },
+        {
+          "time": {
+            "en": "On the supervised route",
+            "de": "Auf der betreuten Route"
+          },
+          "title": {
+            "en": "Keep observation separate from movement",
+            "de": "Beobachtung und Bewegung trennen"
+          },
+          "body": {
+            "en": "Stop before looking upward, keep pace with the leader and use only restrained downward light. Uneven ground, cold and altitude deserve attention whenever the group moves; the sky can wait until everyone is stationary.",
+            "de": "Halte an, bevor du nach oben schaust, bleibe im Tempo der Leitung und nutze nur zurückhaltendes Licht zum Boden. Unebener Grund, Kälte und Höhe verdienen bei jeder Bewegung Aufmerksamkeit; der Himmel wartet, bis alle stehen."
+          },
+          "sourceIds": [
+            "sierra-event",
+            "sierra-home"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the announced finish",
+            "de": "Zum angekündigten Ende"
+          },
+          "title": {
+            "en": "Descend with the plan intact",
+            "de": "Mit intaktem Plan absteigen"
+          },
+          "body": {
+            "en": "Pack before hands become numb, remain with the group and use its return transport. Do not add an observatory road, an unlit trail or another summit stop after the programme closes.",
+            "de": "Packe ein, bevor die Hände taub werden, bleibe bei der Gruppe und nutze deren Rücktransport. Ergänze nach Programmende weder Observatoriumsstraße noch unbeleuchteten Weg oder weiteren Gipfelstopp."
+          },
+          "sourceIds": [
+            "sierra-event",
+            "sierra-osn"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "altitude-go-decision",
+      "kind": "prose",
+      "heading": {
+        "en": "A good sky does not make a good ascent",
+        "de": "Ein guter Himmel macht noch keinen guten Aufstieg"
+      },
+      "paragraphs": {
+        "en": [
+          "Check current mountain information close to departure and accept cancellation without trying to rescue the evening independently. Wind, ice, snow, cloud immersion or altitude symptoms can end a technically clear night. The event leader's decision has more authority than the monthly destination score.",
+          "Base below the mountain so the session ends with a known bed and no further driving search. If no suitable event is operating, keep the observatory for a separate daytime visit and choose another explicitly authorised astronomy activity. Elevation is never compensation for missing permission."
+        ],
+        "de": [
+          "Prüfe aktuelle Berginformationen kurz vor der Abfahrt und akzeptiere eine Absage, ohne den Abend eigenständig retten zu wollen. Wind, Eis, Schnee, Wolkeneinbruch oder Höhensymptome können eine astronomisch klare Nacht beenden. Die Entscheidung der Veranstaltungsleitung hat mehr Gewicht als der monatliche Destinationswert.",
+          "Nutze eine Basis unterhalb des Berges, damit die Sitzung mit einem bekannten Bett endet und keine weitere Suchfahrt entsteht. Findet keine passende Veranstaltung statt, behalte das Observatorium als separaten Tagesbesuch und wähle ein anderes ausdrücklich autorisiertes Astronomieangebot. Höhe ersetzt niemals eine fehlende Erlaubnis."
+        ]
+      },
+      "sourceIds": [
+        "sierra-osn",
+        "sierra-event",
+        "sierra-home"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "sierra-osn",
+    "sierra-event",
+    "sierra-home"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

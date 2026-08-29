@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "id": "collowara-night-la-silla-day",
+  "slug": "collowara-night-la-silla-day",
+  "destinationId": "la-silla",
+  "recommendedSiteId": "collowara-tourist-observatory",
+  "title": {
+    "en": "Collowara at night, La Silla by day",
+    "de": "Collowara bei Nacht, La Silla am Tag"
+  },
+  "seoDescription": {
+    "en": "Pair a directly confirmed Collowara tourist-observatory night near Andacollo with a separate registered daytime visit to ESO's La Silla.",
+    "de": "Verbinde eine direkt bestätigte Nacht am Besucherobservatorium Collowara bei Andacollo mit einem getrennten registrierten Tagesbesuch bei ESO La Silla."
+  },
+  "standfirst": {
+    "en": "La Silla and Collowara answer different visitor questions. ESO offers registered daytime tours of its research site, while Collowara is identified as a tourist observatory with telescopes and must be contacted directly for a current night session. Do not try to turn the La Silla day ticket into evening access. Keep the two appointments on separate blocks, base near Andacollo for Collowara and confirm the night operator before crossing an inland road after sunset.",
+    "de": "La Silla und Collowara beantworten unterschiedliche Besucherfragen. ESO bietet registrierte Tagestouren seines Forschungsstandorts, während Collowara als Besucherobservatorium mit Teleskopen ausgewiesen ist und für eine aktuelle Nachtsitzung direkt kontaktiert werden muss. Verwandle das La-Silla-Tagesticket nicht in Abendzugang. Halte beide Termine getrennt, nutze für Collowara eine Basis bei Andacollo und bestätige den Nachtanbieter, bevor du nach Sonnenuntergang eine Inlandstraße befährst."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Night venue",
+        "de": "Nachtort"
+      },
+      "value": {
+        "en": "Collowara tourist observatory",
+        "de": "Besucherobservatorium Collowara"
+      },
+      "sourceIds": [
+        "lasilla-collowara"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night requirement",
+        "de": "Nachtanforderung"
+      },
+      "value": {
+        "en": "Confirm session and operating status directly",
+        "de": "Sitzung und Betriebsstatus direkt bestätigen"
+      },
+      "sourceIds": [
+        "lasilla-collowara"
+      ]
+    },
+    {
+      "label": {
+        "en": "La Silla",
+        "de": "La Silla"
+      },
+      "value": {
+        "en": "Registered guided visit during published daytime access",
+        "de": "Registrierter geführter Besuch während veröffentlichter Tageszeiten"
+      },
+      "sourceIds": [
+        "lasilla-visits",
+        "lasilla-travel"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Stay near Andacollo for the night programme",
+        "de": "Für das Nachtprogramm nahe Andacollo übernachten"
+      },
+      "sourceIds": [
+        "lasilla-collowara"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "two-observatories",
+      "kind": "prose",
+      "heading": {
+        "en": "Two domes do not share one visitor policy",
+        "de": "Zwei Kuppeln teilen keine Besucherregel"
+      },
+      "paragraphs": {
+        "en": [
+          "Register a La Silla visit through ESO and follow its published daytime conditions, transport information and site rules. Visitor accommodation and private movement inside the research site are not part of ordinary public access. Finish that visit as scheduled and leave the evening free of assumptions about remaining near the telescopes.",
+          "For the night, contact Collowara directly and ask for the exact date, start, language, meeting point, road advice, weather decision and return time. Chile Travel establishes it as an astrotourism venue; the operator's current reply establishes whether this particular session exists. Keep that reply with an offline route from the Andacollo base."
+        ],
+        "de": [
+          "Registriere einen La-Silla-Besuch über ESO und folge den veröffentlichten Tagesbedingungen, Transporthinweisen und Standortregeln. Besucherunterkunft und private Bewegung innerhalb des Forschungsstandorts gehören nicht zum gewöhnlichen öffentlichen Zugang. Beende diesen Besuch wie vorgesehen und halte den Abend frei von Annahmen über einen Verbleib nahe den Teleskopen.",
+          "Kontaktiere Collowara für die Nacht direkt und frage nach genauem Datum, Beginn, Sprache, Treffpunkt, Straßenhinweis, Wetterentscheidung und Rückkehrzeit. Chile Travel weist den Ort als Astrotourismusangebot aus; die aktuelle Antwort des Betreibers entscheidet, ob diese konkrete Sitzung stattfindet. Speichere sie zusammen mit einer Offline-Route von der Basis in Andacollo."
+        ]
+      },
+      "sourceIds": [
+        "lasilla-visits",
+        "lasilla-travel",
+        "lasilla-collowara"
+      ]
+    },
+    {
+      "id": "collowara-evening",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let Andacollo hold the night together",
+        "de": "Andacollo hält die Nacht zusammen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before the inland drive",
+            "de": "Vor der Fahrt ins Inland"
+          },
+          "title": {
+            "en": "Receive a current reply",
+            "de": "Eine aktuelle Antwort erhalten"
+          },
+          "body": {
+            "en": "Confirm that Collowara is operating and reserve as required. Check fuel, road condition, cold-weather layers and who drives back; a directory entry is not a same-day opening notice.",
+            "de": "Bestätige den Betrieb von Collowara und reserviere falls erforderlich. Prüfe Treibstoff, Straßenzustand, Kleidung für Kälte und die fahrende Person für die Rückkehr; ein Verzeichniseintrag ist keine tagesaktuelle Öffnungsmeldung."
+          },
+          "sourceIds": [
+            "lasilla-collowara"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before darkness",
+            "de": "Vor der Dunkelheit"
+          },
+          "title": {
+            "en": "Reach the named visitor entrance",
+            "de": "Den benannten Besuchereingang erreichen"
+          },
+          "body": {
+            "en": "Arrive with enough light to recognise parking, paths and programme facilities. Follow staff telescope and lighting instructions rather than spreading a private setup beyond the hosted area.",
+            "de": "Komme bei genügend Licht an, um Parkplatz, Wege und Programmeinrichtungen zu erkennen. Folge den Teleskop- und Lichtanweisungen des Personals, statt eine private Ausrüstung über den betreuten Bereich hinaus auszubreiten."
+          },
+          "sourceIds": [
+            "lasilla-collowara"
+          ]
+        },
+        {
+          "time": {
+            "en": "After the hosted session",
+            "de": "Nach der betreuten Sitzung"
+          },
+          "title": {
+            "en": "Return to the same base",
+            "de": "Zur selben Basis zurückkehren"
+          },
+          "body": {
+            "en": "Pack, confirm driver alertness and return toward the booked Andacollo accommodation. La Silla is not a second night stop, and a research-site access road is not a fallback observing area.",
+            "de": "Packe ein, prüfe die Aufmerksamkeit der fahrenden Person und kehre zur gebuchten Unterkunft bei Andacollo zurück. La Silla ist kein zweiter Nachtstopp, und eine Forschungszufahrt ist kein Ersatzbeobachtungsplatz."
+          },
+          "sourceIds": [
+            "lasilla-travel",
+            "lasilla-visits",
+            "lasilla-collowara"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "day-night-separation",
+      "kind": "note",
+      "heading": {
+        "en": "Separation improves both visits",
+        "de": "Die Trennung verbessert beide Besuche"
+      },
+      "body": {
+        "en": "Schedule La Silla and Collowara far enough apart that registration, daylight travel, meals and rest remain realistic. A late rush from one institution to another creates road and check-in risk without adding useful sky time. If Collowara cannot confirm the night, retain the La Silla day visit and replace the evening with another explicitly booked public astronomy product rather than waiting outside either observatory.",
+        "de": "Plane La Silla und Collowara mit genügend Abstand, damit Registrierung, Tagesfahrt, Essen und Ruhe realistisch bleiben. Eine späte Eile von einer Institution zur anderen erzeugt Straßen- und Check-in-Risiken, ohne nützliche Himmelszeit hinzuzufügen. Kann Collowara die Nacht nicht bestätigen, behalte den La-Silla-Tagesbesuch und ersetze den Abend durch ein anderes ausdrücklich gebuchtes öffentliches Astronomieangebot, statt vor einem der Observatorien zu warten."
+      },
+      "sourceIds": [
+        "lasilla-visits",
+        "lasilla-travel",
+        "lasilla-collowara"
+      ],
+      "tone": "context"
+    }
+  ],
+  "sourceIds": [
+    "lasilla-visits",
+    "lasilla-travel",
+    "lasilla-collowara"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

@@ -1,0 +1,188 @@
+{
+  "version": 1,
+  "id": "lake-st-clair-walk-from-bed",
+  "slug": "lake-st-clair-walk-from-bed",
+  "destinationId": "central-tasmania",
+  "recommendedSiteId": "lake-st-clair-overnight-area",
+  "title": {
+    "en": "Lake St Clair without a night drive",
+    "de": "Lake St Clair ohne Nachtfahrt"
+  },
+  "seoDescription": {
+    "en": "Book a legal Lake St Clair stay, inspect a nearby permitted surface in daylight and observe within walking distance of bed after checking park alerts.",
+    "de": "Buche einen legalen Aufenthalt am Lake St Clair, prüfe tagsüber eine nahe erlaubte Fläche und beobachte nach Kontrolle der Parkwarnungen in Bettnähe."
+  },
+  "standfirst": {
+    "en": "Central Tasmania is too broad to function as an observing address. Lake St Clair is useful because a legal stay can place parking, shelter and the night's endpoint together inside a managed national park. It is not advertised as a standalone astronomy field, so the plan remains modest. Check in before dusk, ask which nearby visitor surfaces may be used, inspect one short walking route and let the car remain parked until daylight.",
+    "de": "Zentraltasmanien ist zu groß, um als Beobachtungsadresse zu funktionieren. Lake St Clair ist sinnvoll, weil ein legaler Aufenthalt Parken, Schutz und Endpunkt der Nacht in einem verwalteten Nationalpark zusammenführen kann. Der Ort wird nicht als eigenständiges Astronomiefeld beworben, daher bleibt der Plan zurückhaltend. Checke vor der Dämmerung ein, frage nach nutzbaren nahen Besucherflächen, prüfe einen kurzen Fußweg und lasse das Auto bis zum Tageslicht stehen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Legal base",
+        "de": "Legale Basis"
+      },
+      "value": {
+        "en": "Booked Lake St Clair accommodation or camping",
+        "de": "Gebuchte Unterkunft oder Camping am Lake St Clair"
+      },
+      "sourceIds": [
+        "tas-lake",
+        "tas-know"
+      ]
+    },
+    {
+      "label": {
+        "en": "Observing area",
+        "de": "Beobachtungsfläche"
+      },
+      "value": {
+        "en": "A permitted visitor surface confirmed on site",
+        "de": "Eine vor Ort bestätigte erlaubte Besucherfläche"
+      },
+      "sourceIds": [
+        "tas-lake"
+      ]
+    },
+    {
+      "label": {
+        "en": "Travel-day check",
+        "de": "Prüfung am Reisetag"
+      },
+      "value": {
+        "en": "Park alerts, road and track status",
+        "de": "Parkwarnungen sowie Straßen- und Wegstatus"
+      },
+      "sourceIds": [
+        "tas-alerts",
+        "tas-know"
+      ]
+    },
+    {
+      "label": {
+        "en": "Night transport",
+        "de": "Nachttransport"
+      },
+      "value": {
+        "en": "Walk from bed; reassess roads after daylight",
+        "de": "Vom Bett zu Fuß; Straßen nach Tageslicht neu prüfen"
+      },
+      "sourceIds": [
+        "tas-lake",
+        "tas-alerts"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "regional-coordinate",
+      "kind": "prose",
+      "heading": {
+        "en": "Replace the regional pin with a checked-in room",
+        "de": "Die Regionsmarkierung durch einen Check-in ersetzen"
+      },
+      "paragraphs": {
+        "en": [
+          "Reserve the exact accommodation or campsite and read what facilities, arrival arrangements and vehicle access apply. The broad Central Tasmania sky point is a climate reference, not permission to stop on a dark road. A booking creates a lawful endpoint but still does not identify every lawn, shore or track as an observing area.",
+          "Ask staff where a small, quiet setup can stand without entering a closed track, disturbing guests or moving toward wildlife habitat. Walk that line in daylight and note steps, water edges, tree cover and necessary gates. Binoculars and a chair usually suit this close-to-bed plan better than equipment that demands repeated trips to the car."
+        ],
+        "de": [
+          "Reserviere die genaue Unterkunft oder den Campingplatz und lies, welche Einrichtungen, Ankunftsregelungen und Fahrzeugzugänge gelten. Der allgemeine Himmelsreferenzpunkt für Zentraltasmanien ist eine Klimareferenz und keine Erlaubnis für einen Halt auf dunkler Straße. Eine Buchung schafft einen legalen Endpunkt, weist aber nicht jede Wiese, jedes Ufer oder jeden Weg als Beobachtungsfläche aus.",
+          "Frage das Personal, wo eine kleine ruhige Ausrüstung stehen kann, ohne gesperrten Weg zu betreten, Gäste zu stören oder in Richtung Wildtierlebensraum zu gehen. Laufe diese Linie bei Tageslicht und erkenne Stufen, Wasserkanten, Baumbestand und notwendige Tore. Fernglas und Stuhl passen meist besser zu diesem bettnahen Plan als Ausrüstung mit wiederholten Wegen zum Auto."
+        ]
+      },
+      "sourceIds": [
+        "tas-lake",
+        "tas-know"
+      ]
+    },
+    {
+      "id": "tasmanian-change",
+      "kind": "note",
+      "heading": {
+        "en": "The alert board outranks the climate month",
+        "de": "Die Warnmeldung steht über dem Klimamonat"
+      },
+      "body": {
+        "en": "Read current park alerts again on arrival. Mountain cloud, rain, frost, smoke, wind, flooding or a closed track can change the useful surface and the route back to shelter. Do not move to an untreated road or lakeshore when the chosen area fails. A night with no observing is still safer than converting a protected park into a search for darkness.",
+        "de": "Lies aktuelle Parkwarnungen bei der Ankunft erneut. Bergwolken, Regen, Frost, Rauch, Wind, Überflutung oder ein gesperrter Weg können die nutzbare Fläche und den Rückweg zum Schutz ändern. Weiche nicht auf unbehandelte Straße oder Seeufer aus, wenn der gewählte Bereich ausfällt. Eine Nacht ohne Beobachtung ist sicherer als die Verwandlung eines Schutzparks in eine Suche nach Dunkelheit."
+      },
+      "sourceIds": [
+        "tas-alerts",
+        "tas-know",
+        "tas-lake"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "st-clair-hours",
+      "kind": "schedule",
+      "heading": {
+        "en": "Park once and make the night smaller",
+        "de": "Einmal parken und die Nacht kleiner machen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "At afternoon check-in",
+            "de": "Beim Check-in am Nachmittag"
+          },
+          "title": {
+            "en": "Ask one precise night question",
+            "de": "Eine genaue Nachtfrage stellen"
+          },
+          "body": {
+            "en": "Confirm the permitted nearby surface, route, quiet expectations and any wildlife or closure concern. Store food correctly, place waterproof clothing and prepare every bright task before dusk.",
+            "de": "Bestätige nahe erlaubte Fläche, Route, Ruheanforderungen und mögliche Wildtier- oder Sperrhinweise. Lagere Essen korrekt, lege wasserdichte Kleidung bereit und erledige jede helle Aufgabe vor der Dämmerung."
+          },
+          "sourceIds": [
+            "tas-lake",
+            "tas-know"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the sky clears",
+            "de": "Wenn der Himmel aufklart"
+          },
+          "title": {
+            "en": "Walk only the inspected line",
+            "de": "Nur die geprüfte Linie gehen"
+          },
+          "body": {
+            "en": "Carry compact optics and a low shielded light to the approved surface. Stay away from water edges, vegetation and sleeping areas, and return immediately when rain or visibility changes.",
+            "de": "Trage kompakte Optik und ein schwaches abgeschirmtes Licht zur erlaubten Fläche. Halte Abstand zu Wasserkanten, Vegetation und Schlafbereichen und kehre bei Regen oder Sichtänderung sofort zurück."
+          },
+          "sourceIds": [
+            "tas-lake",
+            "tas-alerts"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the first sign of fatigue",
+            "de": "Beim ersten Zeichen von Müdigkeit"
+          },
+          "title": {
+            "en": "Walk back to the booked shelter",
+            "de": "Zum gebuchten Schutz zurückgehen"
+          },
+          "body": {
+            "en": "Pack, use the same short route and sleep. The vehicle remains parked, and every road or trail decision waits for daylight and another alert check.",
+            "de": "Packe ein, nutze denselben kurzen Weg und schlafe. Das Fahrzeug bleibt stehen, und jede Straßen- oder Wegentscheidung wartet auf Tageslicht und eine weitere Warnprüfung."
+          },
+          "sourceIds": [
+            "tas-alerts",
+            "tas-know"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "tas-lake",
+    "tas-alerts",
+    "tas-know"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}

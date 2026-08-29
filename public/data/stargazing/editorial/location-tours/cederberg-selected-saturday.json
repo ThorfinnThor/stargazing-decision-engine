@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "id": "cederberg-selected-saturday",
+  "slug": "cederberg-selected-saturday",
+  "destinationId": "cederberg",
+  "recommendedSiteId": "cederberg-astronomical-observatory",
+  "title": {
+    "en": "One Saturday at Cederberg Observatory",
+    "de": "Ein Samstag am Cederberg Observatory"
+  },
+  "seoDescription": {
+    "en": "Reserve a selected-Saturday Cederberg Observatory programme, check its roster, Moon and weather, and sleep nearby after the session.",
+    "de": "Reserviere ein ausgewähltes Samstagsprogramm am Cederberg Observatory, prüfe Plan, Mond und Wetter und schlafe nach der Sitzung in der Nähe."
+  },
+  "standfirst": {
+    "en": "Cederberg's darkness covers a large landscape, but the public observatory gives a visitor something more useful than a regional map pin. It publishes selected Saturday viewing and ticket information, with telescope observing dependent on clear weather and Moon phase. Choose the date from the current roster, reserve it and book a nearby bed before arranging the drive. The session should end at that bed, not with a late search across unfamiliar mountain roads.",
+    "de": "Die Dunkelheit des Cederberg umfasst eine große Landschaft, doch das öffentliche Observatorium bietet Besuchern mehr als eine regionale Kartenmarkierung. Es veröffentlicht Beobachtungen an ausgewählten Samstagen und Ticketinformationen, wobei Teleskopbeobachtung von klarem Wetter und Mondphase abhängt. Wähle das Datum aus dem aktuellen Plan, reserviere es und buche vor der Fahrt ein nahes Bett. Die Sitzung soll dort enden und nicht mit einer späten Suche auf unbekannten Bergstraßen."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Public nights",
+        "de": "Öffentliche Nächte"
+      },
+      "value": {
+        "en": "Selected Saturdays on the current roster",
+        "de": "Ausgewählte Samstage im aktuellen Plan"
+      },
+      "sourceIds": [
+        "cederberg-roster"
+      ]
+    },
+    {
+      "label": {
+        "en": "Entry",
+        "de": "Eintritt"
+      },
+      "value": {
+        "en": "Reserve through the observatory ticket process",
+        "de": "Über das Ticketverfahren des Observatoriums reservieren"
+      },
+      "sourceIds": [
+        "cederberg-tickets"
+      ]
+    },
+    {
+      "label": {
+        "en": "Telescope condition",
+        "de": "Teleskopbedingung"
+      },
+      "value": {
+        "en": "Clear weather and suitable Moon phase",
+        "de": "Klares Wetter und geeignete Mondphase"
+      },
+      "sourceIds": [
+        "cederberg-roster",
+        "cederberg-tourism"
+      ]
+    },
+    {
+      "label": {
+        "en": "Afterwards",
+        "de": "Danach"
+      },
+      "value": {
+        "en": "Use prebooked nearby accommodation",
+        "de": "Vorgebuchte nahe Unterkunft nutzen"
+      },
+      "sourceIds": [
+        "cederberg-tourism"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "roster-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "The roster decides whether the observatory is your night",
+        "de": "Der Plan entscheidet über die Observatoriumsnacht"
+      },
+      "items": [
+        {
+          "label": {
+            "en": "The date is listed and tickets are confirmed",
+            "de": "Das Datum ist gelistet und Tickets sind bestätigt"
+          },
+          "body": {
+            "en": "Save the confirmation, start time, directions and weather contact. Arrange accommodation close enough that the route after the programme is short, known and independent of mobile reception.",
+            "de": "Speichere Bestätigung, Beginn, Anfahrt und Wetterkontakt. Organisiere eine Unterkunft so nah, dass die Route nach dem Programm kurz, bekannt und unabhängig vom Mobilfunkempfang ist."
+          },
+          "sourceIds": [
+            "cederberg-roster",
+            "cederberg-tickets",
+            "cederberg-tourism"
+          ]
+        },
+        {
+          "label": {
+            "en": "Full Moon, weather or roster removes viewing",
+            "de": "Vollmond, Wetter oder Plan verhindern die Beobachtung"
+          },
+          "body": {
+            "en": "Use the observatory's decision and move the visit or cancel. Do not convert the wider Cederberg coordinate into an assumed public pull-off or enter private land to recover the night.",
+            "de": "Folge der Entscheidung des Observatoriums und verschiebe oder storniere den Besuch. Verwandle die weitere Cederberg-Koordinate nicht in einen angenommenen öffentlichen Halteplatz und betrete kein Privatland, um die Nacht zu retten."
+          },
+          "sourceIds": [
+            "cederberg-roster",
+            "cederberg-tourism"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "not-a-regional-pin",
+      "kind": "note",
+      "heading": {
+        "en": "Dark countryside still has owners, gates and roads",
+        "de": "Dunkles Land hat weiterhin Eigentümer, Tore und Straßen"
+      },
+      "body": {
+        "en": "The regional dark-sky record is not a verified roadside observing site. Stay with the ticketed observatory area or obtain explicit current permission from a named accommodation or land parcel. Do not follow anonymous coordinates, open a gate or stop on a narrow road shoulder after the programme. A cancelled public session reduces access as well as telescope availability.",
+        "de": "Der regionale Dark-Sky-Datensatz ist kein verifizierter Beobachtungsplatz am Straßenrand. Bleibe beim ticketierten Observatoriumsbereich oder hole eine ausdrückliche aktuelle Erlaubnis einer benannten Unterkunft oder Fläche ein. Folge keinen anonymen Koordinaten, öffne kein Tor und halte nach dem Programm nicht auf einem schmalen Straßenrand. Eine abgesagte öffentliche Sitzung verringert sowohl den Zugang als auch die Teleskopverfügbarkeit."
+      },
+      "sourceIds": [
+        "cederberg-tourism",
+        "cederberg-roster"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "saturday-flow",
+      "kind": "schedule",
+      "heading": {
+        "en": "Let one Saturday finish quietly",
+        "de": "Einen Samstag ruhig enden lassen"
+      },
+      "items": [
+        {
+          "time": {
+            "en": "On the same morning",
+            "de": "Am selben Morgen"
+          },
+          "title": {
+            "en": "Ask whether the telescopes will open",
+            "de": "Fragen, ob die Teleskope öffnen"
+          },
+          "body": {
+            "en": "Recheck the roster and the observatory's weather procedure. Pack warm clothing and a low light even in a dry season, and keep the accommodation contact and route offline.",
+            "de": "Prüfe Plan und Wetterverfahren des Observatoriums erneut. Packe auch in trockener Jahreszeit warme Kleidung und schwaches Licht und speichere Unterkunftskontakt sowie Route offline."
+          },
+          "sourceIds": [
+            "cederberg-roster",
+            "cederberg-tickets"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before the programme",
+            "de": "Vor dem Programm"
+          },
+          "title": {
+            "en": "Arrive while the last road is legible",
+            "de": "Ankommen, solange die letzte Straße lesbar ist"
+          },
+          "body": {
+            "en": "Park where directed, identify the short return line and let staff organise the observing space. Complete food, clothing and bright tasks before visitors begin adapting to darkness.",
+            "de": "Parke nach Anweisung, erkenne den kurzen Rückweg und lass das Personal den Beobachtungsraum organisieren. Beende Essen, Kleidung und helle Aufgaben, bevor Besucher sich an die Dunkelheit gewöhnen."
+          },
+          "sourceIds": [
+            "cederberg-tickets",
+            "cederberg-tourism"
+          ]
+        },
+        {
+          "time": {
+            "en": "When the host closes",
+            "de": "Wenn der Gastgeber schließt"
+          },
+          "title": {
+            "en": "Take the known route to bed",
+            "de": "Auf bekannter Route zum Bett"
+          },
+          "body": {
+            "en": "Pack at the venue and travel only to the prebooked accommodation. Leave independent farm-road exploration and another viewpoint for a separately researched daylight plan.",
+            "de": "Packe am Veranstaltungsort ein und fahre nur zur vorgebuchten Unterkunft. Eigenständige Erkundung von Farmstraßen und weitere Aussichtspunkte bleiben einem separat geprüften Tagesplan vorbehalten."
+          },
+          "sourceIds": [
+            "cederberg-tourism",
+            "cederberg-roster"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "cederberg-tickets",
+    "cederberg-roster",
+    "cederberg-tourism"
+  ],
+  "lastReviewedAt": "2026-08-29"
+}
