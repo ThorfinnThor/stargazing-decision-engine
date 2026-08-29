@@ -173,16 +173,21 @@
     "id": "canyonlands-dark-sky",
     "slug": "canyonlands-dark-sky",
     "destinationId": "canyonlands",
-    "name": "Canyonlands dark-sky area",
+    "name": "Canyonlands broad dark-sky reference area",
     "lat": 38.2,
     "lon": -109.9,
     "elevationM": 1800,
     "siteType": "desert",
-    "publicAccess": "yes",
-    "accessScore": 76,
+    "publicAccess": "unknown",
+    "accessScore": null,
     "active": true,
     "priority": 91,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/cany/planyourvisit/stargazing.htm",
+    "accessNotes": {
+      "en": "This broad coordinate supports regional climate scoring but does not identify a verified public parking or observing surface. Use a confirmed paved Island in the Sky overlook and current NPS access notices instead.",
+      "de": "Diese breite Koordinate dient der regionalen Klimabewertung, bezeichnet aber keine bestätigte öffentliche Park- oder Beobachtungsfläche. Nutze stattdessen einen bestätigten asphaltierten Aussichtspunkt auf Island in the Sky und aktuelle NPS-Zugangshinweise."
+    }
   },
   {
     "id": "cederberg-astronomical-observatory",
@@ -263,16 +268,21 @@
     "id": "cherry-springs-dark-sky",
     "slug": "cherry-springs-dark-sky",
     "destinationId": "cherry-springs",
-    "name": "Cherry Springs dark-sky field",
+    "name": "Cherry Springs Overnight Astronomy Observation Field",
     "lat": 41.65,
     "lon": -77.82,
-    "elevationM": 600,
-    "siteType": "forest",
-    "publicAccess": "yes",
-    "accessScore": 82,
+    "elevationM": 701,
+    "siteType": "dark-sky-field",
+    "publicAccess": "limited",
+    "accessScore": 72,
     "active": true,
     "priority": 84,
-    "certificationIds": []
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cherry-springs-state-park/stargazing",
+    "accessNotes": {
+      "en": "This is the registered, fee-based Overnight Astronomy Observation Field. Arrive in daylight to park and set up on the field, display the permit, and follow its strict red-light and vehicle-movement rules.",
+      "de": "Dies ist das registrierungs- und gebührenpflichtige Overnight Astronomy Observation Field. Komm bei Tageslicht zum Parken und Aufbau auf dem Feld, zeige das Permit und befolge die strengen Rotlicht- und Fahrzeugregeln."
+    }
   },
   {
     "id": "cherry-springs-public-viewing-area",
