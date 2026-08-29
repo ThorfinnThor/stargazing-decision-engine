@@ -79,6 +79,9 @@ for (const guide of destinations) {
   destinationSignatures.set(signature, [...(destinationSignatures.get(signature) ?? []), guide.slug]);
 }
 const repeatedStructures = [...destinationSignatures.entries()].filter(([, slugs]) => slugs.length > 1).sort((a, b) => b[1].length - a[1].length);
+const destinationHardFailures = banned.some((item) => item.corpus === "destination")
+  || duplicateExact.some((group) => group.occurrences.some((item) => item.corpus === "destination"))
+  || repeatedStructures.length > 0;
 const corpusSummary = (["destination", "location-tour", "gear"] as const).map((corpus) => ({
   corpus,
   pages: new Set(units.filter((unit) => unit.corpus === corpus).map((unit) => unit.slug)).size,
@@ -114,7 +117,9 @@ const lines = [
   "",
   "## Editorial decision",
   "",
-  "The ten location tours are suitable for publication when their build, source, SEO, and visual checks pass. The older destination and gear corpus should not be described as fully compliant until the repeated-structure findings have been reviewed page by page. Revisions should be handled in subject-based batches, preserving the cited facts while changing information order and voice where needed.",
+  destinationHardFailures
+    ? "The destination corpus still has hard phrase, duplicate-copy, or repeated-structure findings. Revisions should continue in subject-based batches, preserving the cited facts while changing information order and voice where needed."
+    : "The destination corpus passes the hard phrase, exact-duplication, and repeated-structure checks. Publication still depends on source, schema, build, SEO, and visual verification; this text audit does not replace those gates.",
 ];
 writeFileSync(resolve(root, "docs/editorial-writing-audit.md"), `${lines.join("\n")}\n`, "utf8");
 console.log(`Editorial audit: ${units.length} text units, ${banned.length} banned phrases, ${duplicateExact.length} exact duplicate groups, ${repeatedOpenings.length} repeated openings.`);
