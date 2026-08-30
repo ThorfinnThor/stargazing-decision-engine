@@ -1289,8 +1289,8 @@ h1 span {
 
 .location-tour-header h1 {
   max-width: 28ch;
-  font-size: clamp(2.65rem, 5vw, 5rem);
-  line-height: 0.96;
+  font-size: clamp(2.35rem, 4.4vw, 4.4rem);
+  line-height: 1;
   text-wrap: balance;
 }
 
@@ -1411,7 +1411,7 @@ h1 span {
 .location-tour-sources > p { max-width: 46rem; color: var(--muted); line-height: 1.7; }
 .location-tour-sources ol { max-width: 58rem; margin: 2rem 0 0; padding-left: 1.5rem; }
 .location-tour-sources li { padding: 0.8rem 0 0.8rem 0.5rem; border-bottom: 1px solid rgb(255 255 255 / 12%); }
-.location-tour-sources li span { display: block; margin-top: 0.3rem; color: var(--muted); font: 0.62rem/1.4 ui-monospace, monospace; text-transform: uppercase; }
+.location-tour-sources li span { display: block; margin-top: 0.3rem; color: var(--muted); font: 0.72rem/1.5 ui-monospace, monospace; text-transform: uppercase; }
 .location-tour-back { padding: 0 0 clamp(4rem, 8vw, 7rem); }
 
 .location-tour-index-grid {
@@ -2677,6 +2677,24 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .location-tour-header h1 {
+    max-width: none;
+    font-size: clamp(2rem, 9vw, 2.2rem);
+    line-height: 1.02;
+    text-wrap: pretty;
+  }
+
+  .location-tour-page .eyebrow,
+  .location-tour-facts dt,
+  .location-tour-schedule li > span,
+  .location-tour-time,
+  .location-tour-sources li span,
+  .location-tour-index-grid span,
+  .location-tour-index-grid small {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
   .location-tour-facts {
     grid-template-columns: 1fr;
   }
