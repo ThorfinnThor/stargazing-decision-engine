@@ -34,10 +34,13 @@ test("automatic widgets are limited to destinations with reviewed provider match
     "atacama",
     "canyonlands",
     "death-valley",
+    "hanle",
     "jasper",
     "la-palma",
     "mauna-kea",
+    "north-york-moors",
     "pico-do-arieiro",
+    "rila",
     "tenerife",
     "uluru",
   ]);
