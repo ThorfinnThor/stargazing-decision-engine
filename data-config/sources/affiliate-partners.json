@@ -53,7 +53,17 @@
         "enabled": true,
         "campaign": "Stargazing",
         "scriptUrl": "https://widget.getyourguide.com/dist/pa.umd.production.min.js",
-        "destinationIds": ["la-palma"]
+        "destinationIds": [
+          "la-palma",
+          "tenerife",
+          "atacama",
+          "jasper",
+          "mauna-kea",
+          "uluru",
+          "pico-do-arieiro",
+          "death-valley",
+          "canyonlands"
+        ]
       },
       "urlTemplate": null,
       "allowedHosts": ["getyourguide.com", "www.getyourguide.com", "widget.getyourguide.com"],
