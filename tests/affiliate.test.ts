@@ -180,9 +180,12 @@ test("reviewed GetYourGuide catalog contains only the approved direct stargazing
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const getYourGuideOffers = actual.offers.filter((offer) => offer.partnerId === "getyourguide-activities" && offer.enabled);
   const expectedDestinations = [
+    "alqueva",
+    "aoraki-mackenzie",
     "atacama",
     "canyonlands",
     "death-valley",
+    "elqui-valley",
     "hanle",
     "jasper",
     "la-palma",
