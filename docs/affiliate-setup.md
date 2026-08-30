@@ -13,9 +13,11 @@ recommendations, and the interface labels that distinction explicitly.
 
 ## Viator and GetYourGuide activity links
 
-Only direct links copied from the official partner tools may be added. Do not
-construct or scrape product URLs. Replace the account-specific value in the
-copied URL with `{affiliateId}` before committing it.
+Only canonical links to complete product pages on the provider's own domain may
+be added. The tracking-parameter structure must come from the official partner
+tools already issued for the account; do not invent product IDs from search
+snippets or scrape dynamic inventory. Replace the account-specific value in the
+tracking URL with `{affiliateId}` before committing it.
 
 - Viator links must retain `pid`, `mcid`, and `medium`. The offer template uses
   `{affiliateId}` as the `pid` value.
@@ -61,12 +63,21 @@ do Arieiro, Death Valley, Canyonlands, North York Moors, Hanle, and Rila.
 Ambiguous or incorrect provider matches are kept disabled even when the
 destination has bookable activity inventory.
 
-The direct GetYourGuide product review was completed on 2026-08-30. Reviewed
-stargazing offers are published for La Palma, Tenerife, Alqueva near Monsaraz,
-Aoraki Mackenzie at Mount John, Elqui Valley at Mamalluca, Atacama, Jasper,
-Mauna Kea, Uluru, Death Valley, Canyonlands via nearby Moab, and Hanle. No exact
-stargazing product was found for Pico do Arieiro, North York Moors, or Rila, so
-those destinations deliberately retain only their reviewed automatic widget.
+The direct-product review and same-day link revalidation were completed on
+2026-08-30. Reviewed GetYourGuide stargazing offers are published for La Palma,
+Tenerife, Alqueva near Monsaraz, Aoraki Mackenzie at Mount John, Elqui Valley at
+Mamalluca, Atacama, Jasper, Mauna Kea, Uluru, Pico do Arieiro via a Madeira-wide
+activity, Death Valley, Canyonlands via nearby Moab, and Hanle. Reviewed Viator
+offers are published for La Palma, Atacama, and Pico do Arieiro via a
+Madeira-wide activity. No exact active product was found for North York Moors
+or Rila, so those destinations deliberately retain only their reviewed
+automatic widget.
+
+The former GetYourGuide Atacama product `1230238` stopped resolving to a
+bookable product page and was removed. It was replaced by active product
+`852357`; an independently reviewed Viator option (`396238P1`) was added at the
+same time. The Madeira cards explicitly state that neither operator guarantees
+Pico do Arieiro as the observing site.
 The Alqueva card distinguishes the Monsaraz activity from the Cumeada field
 guide, the Death Valley card identifies its Las Vegas departure, the
 Canyonlands card identifies its Moab location outside the national park, and
@@ -79,6 +90,11 @@ product URL no longer resolved to a live product page. That boundary excludes,
 among others, an Abu Dhabi desert safari that is not tied to the Al Wathba
 observation site and a former Sierra Nevada telescope listing whose product URL
 now redirects to a general regional catalog.
+
+The destination-by-destination result and exclusion reasons are recorded in
+`docs/affiliate-direct-offer-audit-2026-08-30.md`. A search-engine snippet or a
+provider category page is not sufficient evidence: each published card must
+resolve to a complete current product page on the provider's own domain.
 
 The site remains statically generated. Only the third-party widget contents are
 loaded in the browser. If the GetYourGuide script is blocked, the editorial
