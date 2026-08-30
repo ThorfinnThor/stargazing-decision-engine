@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, PublishedAffiliateActivityOffer, ShortTripFile, SiteMonthlySummary } from "./types.js";
+import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, ShortTripFile, SiteMonthlySummary } from "./types.js";
 import type { NightPreviewFile } from "../astronomy/types.js";
 
 export interface SeoPageRecord {
@@ -68,6 +68,11 @@ export function loadLocationTour(slug: string): LocationTour {
 export function loadAffiliateActivityOffers(): PublishedAffiliateActivityOffer[] {
   const filePath = resolve(publicDataRoot, "affiliate/activity-offers.json");
   return existsSync(filePath) ? JSON.parse(readFileSync(filePath, "utf8")) as PublishedAffiliateActivityOffer[] : [];
+}
+
+export function loadAffiliateDestinationSearches(): PublishedAffiliateDestinationSearch[] {
+  const filePath = resolve(publicDataRoot, "affiliate/destination-searches.json");
+  return existsSync(filePath) ? JSON.parse(readFileSync(filePath, "utf8")) as PublishedAffiliateDestinationSearch[] : [];
 }
 
 export function loadSites(): ObservationSite[] {

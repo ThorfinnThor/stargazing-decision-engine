@@ -185,6 +185,11 @@ export interface OriginCity {
 
 export type AffiliatePartnerType = "hotel" | "activity" | "camping" | "car_rental" | "gear";
 
+export interface AffiliateDestinationSearchVariant {
+  id: string;
+  queryTemplate: string;
+}
+
 export interface AffiliatePartner {
   id: string;
   name: string;
@@ -192,6 +197,7 @@ export interface AffiliatePartner {
   enabled: boolean;
   affiliateId: string;
   destinationSearchEnabled: boolean;
+  destinationSearchVariants?: AffiliateDestinationSearchVariant[];
   urlTemplate: string | null;
   allowedHosts: string[];
   requiredQueryParameters: string[];
@@ -230,6 +236,15 @@ export interface PublishedAffiliateActivityOffer {
   description: LocalizedEditorialText;
   redirectPath: string;
   lastReviewedAt: string;
+}
+
+export interface PublishedAffiliateDestinationSearch {
+  partnerId: string;
+  partnerName: string;
+  destinationId: string;
+  destinationSlug: string;
+  variantId: string;
+  redirectPath: string;
 }
 
 export interface GearCategory {

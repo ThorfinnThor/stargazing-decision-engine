@@ -1,9 +1,15 @@
 # Affiliate setup
 
-Affiliate links remain disabled until a partner and at least one reviewed offer
-are explicitly enabled. Partner settings live in
+Affiliate output remains disabled until a partner is explicitly enabled.
+Curated product cards additionally require an enabled, reviewed offer. Partner settings live in
 `data-config/sources/affiliate-partners.json`; individually reviewed activity
 links live in `data-config/sources/affiliate-activity-offers.json`.
+
+An enabled destination-search partner may also define
+`destinationSearchVariants`. The Viator configuration currently builds two
+static searches for every active destination: a stargazing query and a broader
+destination-activity query. These are search links, not reviewed product
+recommendations, and the interface labels that distinction explicitly.
 
 ## Viator and GetYourGuide activity links
 
@@ -40,9 +46,10 @@ no markup.
 ## Static redirect boundary
 
 Curated activity links use `/go/{partner}/offer/{offer}/`. Destination searches,
-where explicitly supported, use `/go/{partner}/{destination}/`. Every redirect
-is generated during the data build. There is no runtime redirect endpoint and
-no request parameter can select an outbound URL.
+where explicitly supported, use `/go/{partner}/{destination}/{variant}/` (or
+the legacy `/go/{partner}/{destination}/` for a partner without variants).
+Every redirect is generated during the data build. There is no runtime redirect
+endpoint and no request parameter can select an outbound URL.
 
 Build validation rejects unknown partners, destination/tour mismatches,
 non-HTTPS targets, hosts outside the partner allowlist, missing tracking

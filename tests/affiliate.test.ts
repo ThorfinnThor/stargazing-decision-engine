@@ -44,6 +44,32 @@ test("enabled affiliate URLs are encoded and host allow-listed", () => {
   assert.equal(parsed.searchParams.get("aid"), "abc123");
 });
 
+test("destination search variants produce distinct stargazing and general Viator searches", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "viator-activities", name: "Viator", type: "activity", enabled: true, affiliateId: "P123", destinationSearchEnabled: true,
+      destinationSearchVariants: [{ id: "stargazing", queryTemplate: "stargazing {query}" }, { id: "activities", queryTemplate: "{query}" }],
+      urlTemplate: "https://www.viator.com/searchResults/all?text={query}&pid={affiliateId}&mcid=42383&medium=link",
+      allowedHosts: ["www.viator.com"], requiredQueryParameters: ["pid", "mcid", "medium"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  validateAffiliateConfig(partners);
+  const stargazing = buildAffiliateUrl(partners, "viator-activities", destination, "stargazing");
+  const activities = buildAffiliateUrl(partners, "viator-activities", destination, "activities");
+  assert.equal(new URL(stargazing ?? "").searchParams.get("text"), "stargazing Monsaraz & Alqueva");
+  assert.equal(new URL(activities ?? "").searchParams.get("text"), "Monsaraz & Alqueva");
+  assert.equal(buildAffiliateUrl(partners, "viator-activities", destination), null);
+});
+
+test("destination search variants reject unsupported placeholders", () => {
+  const invalid: AffiliateConfig = {
+    ...config,
+    partners: [{ ...config.partners[0], destinationSearchVariants: [{ id: "broken", queryTemplate: "{query} {month}" }] }],
+  };
+  assert.throws(() => validateAffiliateConfig(invalid), /unsupported placeholder/i);
+});
+
 test("affiliate validation rejects an unallow-listed template host", () => {
   assert.throws(() => validateAffiliateConfig({ ...config, partners: [{ ...config.partners[0], urlTemplate: "https://evil.example/?q={query}&aid={affiliateId}", allowedHosts: ["booking.com"] }] }), /allow-listed/i);
 });
