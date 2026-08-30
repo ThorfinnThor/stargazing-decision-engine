@@ -39,6 +39,26 @@ These IDs are public tracking identifiers rather than credentials; they are
 necessarily present in the generated outbound URL. Passwords, API keys, and
 other private account credentials must never be committed.
 
+## GetYourGuide automatic widget and Integration Analyzer
+
+The enabled GetYourGuide partner may define one JSON-backed `widget` record
+with the official automatic-widget script URL, partner campaign, and enabled
+state. `GetYourGuideAnalytics` loads that script once in both application root
+layouts through `next/script`. It is therefore available on every generated
+page without converting the site to runtime rendering.
+
+Only destinations in the widget record's reviewed `destinationIds` allowlist
+render the automatic widget on their destination and location-tour pages.
+GetYourGuide selects three live activities from the page location, surrounding
+copy, and metadata. Those results are provider-selected live inventory, not
+individually reviewed editorial recommendations. A destination enters the
+allowlist only after its rendered results pass a relevance check. The page
+labels that boundary and keeps the reviewed direct-offer cards separate.
+
+The site remains statically generated. Only the third-party widget contents are
+loaded in the browser. If the GetYourGuide script is blocked, the editorial
+guide, static Viator searches, and reviewed offer links remain usable.
+
 An activity becomes visible only when both its partner and its offer are set to
 `enabled: true`. Until then the destination and location-tour components return
 no markup.

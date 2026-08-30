@@ -45,11 +45,18 @@
       "id": "getyourguide-activities",
       "name": "GetYourGuide",
       "type": "activity",
-      "enabled": false,
-      "affiliateId": "",
+      "enabled": true,
+      "affiliateId": "BKWM9K1",
       "destinationSearchEnabled": false,
+      "widget": {
+        "type": "auto",
+        "enabled": true,
+        "campaign": "Stargazing",
+        "scriptUrl": "https://widget.getyourguide.com/dist/pa.umd.production.min.js",
+        "destinationIds": ["la-palma"]
+      },
       "urlTemplate": null,
-      "allowedHosts": ["getyourguide.com", "www.getyourguide.com"],
+      "allowedHosts": ["getyourguide.com", "www.getyourguide.com", "widget.getyourguide.com"],
       "requiredQueryParameters": ["partner_id"],
       "disclosure": {
         "en": "Affiliate link to GetYourGuide. We may earn a commission at no extra cost to you.",

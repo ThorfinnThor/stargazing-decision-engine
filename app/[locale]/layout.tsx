@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 
+import { GetYourGuideAnalytics } from "@/components/getyourguide-integration";
 import { LegalFooter } from "@/components/legal-footer";
 import { isLocale, locales } from "@/lib/i18n/config";
 import { buildRootMetadata } from "@/lib/seo/root-metadata";
@@ -24,7 +25,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale}>
       <head><link rel="describedby" href="/llms.txt" /></head>
-      <body>{children}<LegalFooter locale={locale} /></body>
+      <body>{children}<LegalFooter locale={locale} /><GetYourGuideAnalytics /></body>
     </html>
   );
 }

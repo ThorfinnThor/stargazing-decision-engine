@@ -70,6 +70,22 @@ test("destination search variants reject unsupported placeholders", () => {
   assert.throws(() => validateAffiliateConfig(invalid), /unsupported placeholder/i);
 });
 
+test("GetYourGuide automatic widget requires an allow-listed HTTPS script", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: true, affiliateId: "BKWM9K1", destinationSearchEnabled: false,
+      widget: { type: "auto", enabled: true, campaign: "Stargazing", scriptUrl: "https://widget.getyourguide.com/dist/pa.umd.production.min.js", destinationIds: ["la-palma"] },
+      urlTemplate: null, allowedHosts: ["www.getyourguide.com", "widget.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  assert.doesNotThrow(() => validateAffiliateConfig(partners));
+  assert.throws(() => validateAffiliateConfig({
+    ...partners,
+    partners: [{ ...partners.partners[0], widget: { ...partners.partners[0].widget!, scriptUrl: "https://tracking.example/widget.js" } }],
+  }), /not allow-listed/i);
+});
+
 test("affiliate validation rejects an unallow-listed template host", () => {
   assert.throws(() => validateAffiliateConfig({ ...config, partners: [{ ...config.partners[0], urlTemplate: "https://evil.example/?q={query}&aid={affiliateId}", allowedHosts: ["booking.com"] }] }), /allow-listed/i);
 });
@@ -95,6 +111,30 @@ test("curated Viator activity links retain all required tracking parameters", ()
   const url = buildAffiliateActivityUrl(partners, offers.offers[0]);
   assert.ok(url);
   assert.equal(new URL(url).searchParams.get("pid"), "P123");
+});
+
+test("curated GetYourGuide links retain partner and campaign tracking", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: true, affiliateId: "BKWM9K1", destinationSearchEnabled: false, urlTemplate: null,
+      allowedHosts: ["www.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  const offers: AffiliateActivityOfferConfig = {
+    version: 1,
+    offers: [{
+      id: "la-palma-stargazing", partnerId: "getyourguide-activities", destinationId: destination.id, locationTourSlugs: [locationTour.slug], enabled: true,
+      title: { en: "Stargazing", de: "Sternbeobachtung" }, description: { en: "Guided night", de: "Geführte Nacht" },
+      urlTemplate: "https://www.getyourguide.com/example?partner_id={affiliateId}&utm_medium=online_publisher&cmp=Stargazing", lastReviewedAt: "2026-08-30",
+    }],
+  };
+  validateAffiliateConfig(partners);
+  validateAffiliateActivityOffers(offers, partners, [destination], [locationTour]);
+  const url = buildAffiliateActivityUrl(partners, offers.offers[0]);
+  assert.ok(url);
+  assert.equal(new URL(url).searchParams.get("partner_id"), "BKWM9K1");
+  assert.equal(new URL(url).searchParams.get("cmp"), "Stargazing");
 });
 
 test("curated activity links reject missing provider tracking parameters", () => {
