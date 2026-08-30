@@ -6,6 +6,7 @@ import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary,
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 import { isTravelEligibleSite } from "../../lib/access/travel.js";
 import { isGearGuideEditorialReady } from "../../lib/gear/gear.js";
+import { validateProductionSiteOrigin } from "../../lib/seo/site-url.js";
 
 interface PageDefinition extends IndexabilityRequirements {
   pageType: string;
@@ -47,7 +48,7 @@ interface SeoPage {
 }
 
 const configFile = readJson<SeoConfig>(resolve(root, "data-config/seo/project-seo-config.json"));
-const config: SeoConfig = { ...configFile, siteUrl: process.env.NEXT_PUBLIC_APP_URL?.trim() || configFile.siteUrl };
+const config: SeoConfig = { ...configFile, siteUrl: validateProductionSiteOrigin(configFile.siteUrl) };
 const definitions = readJson<PageDefinition[]>(resolve(root, "data-config/seo/page-definitions.json"));
 const seed = readJson<SeedData>(generatedPath("seed.normalized.json"));
 const manifest = readJson<Manifest>(publicPath("manifest.json"));

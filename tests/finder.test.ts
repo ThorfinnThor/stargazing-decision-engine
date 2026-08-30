@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import type { FinderDestination, FinderMonth, MonthNumber, PublicAccess } from "../lib/data/types.js";
-import { findDestinations, type FinderPreferences } from "../lib/finder/finder.js";
+import { analyzeDestinations, findDestinations, type FinderPreferences } from "../lib/finder/finder.js";
 
 function month(month: MonthNumber, options: Partial<FinderMonth> = {}): FinderMonth {
   return {
@@ -57,7 +57,9 @@ test("temperature preference changes match order while confidence remains part o
 
 test("low-confidence months cannot enter finder recommendations", () => {
   const low = destination("low", "yes", "europe", [month(1, { confidenceLevel: "low", confidenceScore: 40 })]);
-  assert.deepEqual(findDestinations([low], defaults), []);
+  const analysis = analyzeDestinations([low], defaults);
+  assert.deepEqual(analysis.matches, []);
+  assert.deepEqual(analysis.exclusions, { lowConfidence: 1, noData: 0, noUsableWindow: 0 });
 });
 
 test("months without a usable stargazing window cannot be rescued by a component priority", () => {
@@ -69,4 +71,18 @@ test("months without a usable stargazing window cannot be rescued by a component
     confidenceLevel: "high",
   })]);
   assert.deepEqual(findDestinations([polarSummer], { ...defaults, month: 7, priority: "darkness" }), []);
+  assert.deepEqual(analyzeDestinations([polarSummer], { ...defaults, month: 7, priority: "darkness" }).exclusions, {
+    lowConfidence: 0,
+    noData: 0,
+    noUsableWindow: 1,
+  });
+});
+
+test("finder distinguishes missing month data from confidence and observing-window exclusions", () => {
+  const januaryOnly = destination("january", "yes", "europe", [month(1)]);
+  assert.deepEqual(analyzeDestinations([januaryOnly], { ...defaults, month: 2 }).exclusions, {
+    lowConfidence: 0,
+    noData: 1,
+    noUsableWindow: 0,
+  });
 });

@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 
 import type { Locale } from "@/lib/i18n/config";
 
@@ -44,13 +44,34 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
 }) {
   const [query, setQuery] = useState("");
   const [continent, setContinent] = useState("all");
+  const [hydrated, setHydrated] = useState(false);
   const isGerman = locale === "de";
   const continents = useMemo(() => [...new Set(destinations.map((destination) => destination.continent))].sort(), [destinations]);
+
+  useEffect(() => {
+    const search = new URLSearchParams(window.location.search);
+    const requestedContinent = search.get("region") ?? "all";
+    setQuery(search.get("q") ?? "");
+    setContinent(continents.includes(requestedContinent) ? requestedContinent : "all");
+    setHydrated(true);
+  }, [continents]);
+
+  useEffect(() => {
+    if (!hydrated) return;
+    const url = new URL(window.location.href);
+    const trimmedQuery = query.trim();
+    if (trimmedQuery) url.searchParams.set("q", trimmedQuery);
+    else url.searchParams.delete("q");
+    if (continent !== "all") url.searchParams.set("region", continent);
+    else url.searchParams.delete("region");
+    window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
+  }, [continent, hydrated, query]);
+
   const normalizedQuery = query.trim().toLocaleLowerCase(locale);
   const visibleDestinations = useMemo(() => destinations.filter((destination) => {
     if (continent !== "all" && destination.continent !== continent) return false;
     if (!normalizedQuery) return true;
-    const searchable = [destination.name, destination.countryName, destination.countryCode, destination.continent, ...destination.tags]
+    const searchable = [destination.name, destination.countryName, destination.countryCode, destination.continent, continentLabels[locale][destination.continent], ...destination.tags]
       .join(" ")
       .toLocaleLowerCase(locale);
     return searchable.includes(normalizedQuery);
@@ -94,7 +115,7 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
             <a className="destination-card" href={destination.href} key={destination.id}>
               <div className="card-topline">
                 <span>{destination.countryCode}</span>
-                <span>{destination.continent}</span>
+                <span>{continentLabels[locale][destination.continent] ?? destination.continent}</span>
               </div>
               <h3>{destination.name}</h3>
               <p>{destination.tags.slice(0, 2).join(" · ")}{destination.nightAccessStatus === "closed"

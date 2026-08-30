@@ -2,6 +2,7 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { publicDataDir, readJson } from "../pipeline/io.js";
+import { validateProductionSiteOrigin } from "../../lib/seo/site-url.js";
 import { createSchemaValidator } from "./validate-schemas.js";
 
 interface SeoPage { id: string; path: string; canonical: string; alternatePaths: Record<string, string>; title: string; h1: string; lastModified: string; indexable: boolean; reasons: string[] }
@@ -14,6 +15,11 @@ if (!existsSync(registryPath)) errors.push("SEO registry is missing");
 if (errors.length === 0) {
   const registry = readJson<SeoRegistry>(registryPath);
   const config = readJson<SeoConfig>(resolve(process.cwd(), "data-config/seo/project-seo-config.json"));
+  try {
+    validateProductionSiteOrigin(config.siteUrl);
+  } catch (error) {
+    errors.push(error instanceof Error ? error.message : String(error));
+  }
   const validate = createSchemaValidator().getSchema("https://stargazing.local/schema/seo-registry.json");
   if (!validate?.(registry)) errors.push(JSON.stringify(validate?.errors ?? "SEO registry schema missing"));
   if (registry.siteUrl !== config.siteUrl) errors.push(`SEO registry site URL ${registry.siteUrl} does not match project config ${config.siteUrl}`);

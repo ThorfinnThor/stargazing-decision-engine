@@ -18,7 +18,7 @@ The interface deliberately exposes only five primary inputs:
 1. month;
 2. region;
 3. preferred mean night temperature;
-4. ranking priority; and
+4. preference focus; and
 5. reviewed night-access level.
 
 Camping is not offered as a filter because the current catalog has no complete,
@@ -33,6 +33,11 @@ only unrestricted public access. Months with low score confidence are excluded.
 Months whose published Stargazing Trip score is zero are also excluded, because
 they contain no usable astronomical observing window and cannot be rescued by a
 single component priority.
+
+The interface keeps low-confidence months out of recommendations but reports
+how many otherwise relevant destinations were withheld for that reason. Missing
+data and a genuine zero observing window remain separate internal exclusion
+states, so uncertainty is not presented as an ordinary filter mismatch.
 
 ## Match calculation
 
@@ -62,6 +67,8 @@ destination name.
 
 The finder compares historical climatology, calibrated darkness, astronomy,
 access, and source confidence. It is not a weather forecast and does not claim
-that a future night will be clear. Filter state is stored only in the URL query
-string. Finder and query-state pages use `noindex, follow`; static destination
-and editorial pages remain the canonical searchable surfaces.
+that a future night will be clear. Filter state is stored in the URL query
+string with `replaceState`, so one Finder visit remains one browser-history
+entry while still being shareable and restorable. Finder and query-state pages
+use `noindex, follow`; static destination and editorial pages remain the
+canonical searchable surfaces.
