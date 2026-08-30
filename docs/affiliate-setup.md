@@ -55,6 +55,11 @@ individually reviewed editorial recommendations. A destination enters the
 allowlist only after its rendered results pass a relevance check. The page
 labels that boundary and keeps the reviewed direct-offer cards separate.
 
+The first relevance audit was completed on 2026-08-30. The initial allowlist
+contains La Palma, Tenerife, Atacama, Jasper, Mauna Kea, Uluru, Pico do Arieiro,
+Death Valley, and Canyonlands. Ambiguous or incorrect provider matches are kept
+disabled even when the destination has bookable activity inventory.
+
 The site remains statically generated. Only the third-party widget contents are
 loaded in the browser. If the GetYourGuide script is blocked, the editorial
 guide, static Viator searches, and reviewed offer links remain usable.

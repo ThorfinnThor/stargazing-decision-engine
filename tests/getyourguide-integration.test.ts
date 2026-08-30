@@ -24,6 +24,25 @@ test("automatic GetYourGuide widget is rendered on destination and location-tour
   assert.match(integration, /We have not reviewed these live results individually/);
 });
 
+test("automatic widgets are limited to destinations with reviewed provider matches", () => {
+  const config = JSON.parse(read("data-config/sources/affiliate-partners.json"));
+  const partner = config.partners.find(
+    (entry: { id: string }) => entry.id === "getyourguide-activities",
+  );
+
+  assert.deepEqual([...partner.widget.destinationIds].sort(), [
+    "atacama",
+    "canyonlands",
+    "death-valley",
+    "jasper",
+    "la-palma",
+    "mauna-kea",
+    "pico-do-arieiro",
+    "tenerife",
+    "uluru",
+  ]);
+});
+
 test("privacy notice identifies the GetYourGuide script and automatic selection", () => {
   const privacy = read("app/[locale]/privacy/page.tsx");
   assert.match(privacy, /GetYourGuide Integration Analyzer/);
