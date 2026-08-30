@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 
 import { LocationTourContent } from "@/components/location-tour-content";
 import { AffiliateActivityOffers } from "@/components/affiliate-activity-offers";
+import { AffiliateDestinationSearches } from "@/components/affiliate-destination-searches";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { listLocationTours, loadDestination, loadDestinationEditorialGuide, loadLocationTour, loadSeoPage } from "@/lib/data/load";
@@ -58,6 +59,7 @@ export default async function LocationTourPage({ params }: { params: Promise<{ l
     </header>
     <LocationTourContent tour={tour} locale={locale} availableSources={guide.sources} />
     <AffiliateActivityOffers destinationId={destination.id} locationTourSlug={tour.slug} locale={locale} />
+    <AffiliateDestinationSearches destinationId={destination.id} destinationName={destination.name} locale={locale} />
     <nav className="location-tour-back"><Link href={`/${locale}/stargazing-tours/`}>{isGerman ? "Alle Standort-Touren" : "All location tours"} →</Link></nav>
   </main>;
 }

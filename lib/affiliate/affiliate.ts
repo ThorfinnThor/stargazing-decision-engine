@@ -37,8 +37,17 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
     if (partner.destinationSearchEnabled) {
       if (!partner.urlTemplate?.includes("{query}")) throw new Error(`${partner.id}: destination-search URL template must include {query}`);
       parseAffiliateTemplate(partner, partner.urlTemplate, partner.id);
+      const variantIds = new Set<string>();
+      for (const variant of partner.destinationSearchVariants ?? []) {
+        if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(variant.id) || variantIds.has(variant.id)) throw new Error(`${partner.id}: destination-search variant ID is invalid or duplicated: ${variant.id}`);
+        variantIds.add(variant.id);
+        if (!variant.queryTemplate.includes("{query}")) throw new Error(`${partner.id}/${variant.id}: query template must include {query}`);
+        if (variant.queryTemplate.replaceAll("{query}", "").includes("{")) throw new Error(`${partner.id}/${variant.id}: query template contains an unsupported placeholder`);
+      }
     } else if (partner.urlTemplate !== null) {
       throw new Error(`${partner.id}: curated-only partner must not define a destination-search URL template`);
+    } else if ((partner.destinationSearchVariants?.length ?? 0) > 0) {
+      throw new Error(`${partner.id}: disabled destination search must not define variants`);
     }
     if (partner.enabled && !environmentAffiliateId(partner)) throw new Error(`${partner.id}: enabled partner requires an affiliate ID`);
   }
@@ -71,12 +80,17 @@ export function getAffiliatePartner(config: AffiliateConfig, partnerId: string) 
   return config.partners.find((partner) => partner.id === partnerId) ?? null;
 }
 
-export function buildAffiliateUrl(config: AffiliateConfig, partnerId: string, destination: Destination) {
+export function buildAffiliateUrl(config: AffiliateConfig, partnerId: string, destination: Destination, variantId?: string) {
   const partner = getAffiliatePartner(config, partnerId);
   if (!partner || !partner.enabled || !partner.destinationSearchEnabled || !partner.urlTemplate) return null;
+  const variants = partner.destinationSearchVariants ?? [];
+  const variant = variantId ? variants.find((item) => item.id === variantId) : null;
+  if (variantId && !variant) return null;
+  if (!variantId && variants.length > 0) return null;
   const affiliateId = environmentAffiliateId(partner);
   if (partner.urlTemplate.includes("{affiliateId}") && !affiliateId) return null;
-  const rawUrl = partner.urlTemplate.replaceAll("{query}", encodeURIComponent(destination.affiliateQuery)).replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
+  const query = variant ? variant.queryTemplate.replaceAll("{query}", destination.affiliateQuery) : destination.affiliateQuery;
+  const rawUrl = partner.urlTemplate.replaceAll("{query}", encodeURIComponent(query)).replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
   let parsed: URL;
   try { parsed = new URL(rawUrl); } catch { return null; }
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
