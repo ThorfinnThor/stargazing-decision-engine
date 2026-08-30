@@ -1,8 +1,8 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 
-import { buildAffiliateUrl, validateAffiliateConfig } from "../lib/affiliate/affiliate.js";
-import type { AffiliateConfig, Destination } from "../lib/data/types.js";
+import { buildAffiliateActivityUrl, buildAffiliateUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../lib/affiliate/affiliate.js";
+import type { AffiliateActivityOfferConfig, AffiliateConfig, Destination, LocationTour } from "../lib/data/types.js";
 
 const destination: Destination = {
   id: "destination", slug: "destination", name: "Destination", countryCode: "DE", countryName: "Germany", continent: "Europe", regionSlugs: [], timezone: "Europe/Berlin", active: true, priority: 1, tags: [], observationSiteIds: [], stayAreaIds: [], affiliateQuery: "Monsaraz & Alqueva",
@@ -10,7 +10,22 @@ const destination: Destination = {
 
 const config: AffiliateConfig = {
   version: 1,
-  partners: [{ id: "stay-search", type: "hotel", enabled: false, affiliateId: "", urlTemplate: "https://booking.com/search?ss={query}&aid={affiliateId}", allowedHosts: ["booking.com"], disclosure: { en: "Disclosure", de: "Hinweis" } }],
+  partners: [{ id: "stay-search", name: "Stay Search", type: "hotel", enabled: false, affiliateId: "", destinationSearchEnabled: true, urlTemplate: "https://booking.com/search?ss={query}&aid={affiliateId}", allowedHosts: ["booking.com"], requiredQueryParameters: ["aid"], disclosure: { en: "Disclosure", de: "Hinweis" } }],
+};
+
+const locationTour: LocationTour = {
+  version: 1,
+  id: "destination-tour",
+  slug: "destination-tour",
+  destinationId: destination.id,
+  recommendedSiteId: "site",
+  title: { en: "Destination night", de: "Nacht am Ziel" },
+  seoDescription: { en: "Description", de: "Beschreibung" },
+  standfirst: { en: "Standfirst", de: "Vorspann" },
+  facts: [],
+  blocks: [],
+  sourceIds: [],
+  lastReviewedAt: "2026-08-30",
 };
 
 test("disabled affiliate partners cannot produce a CTA URL", () => {
@@ -30,5 +45,66 @@ test("enabled affiliate URLs are encoded and host allow-listed", () => {
 });
 
 test("affiliate validation rejects an unallow-listed template host", () => {
-  assert.throws(() => validateAffiliateConfig({ ...config, partners: [{ ...config.partners[0], urlTemplate: "https://evil.example/?q={query}", allowedHosts: ["booking.com"] }] }), /allow-listed/i);
+  assert.throws(() => validateAffiliateConfig({ ...config, partners: [{ ...config.partners[0], urlTemplate: "https://evil.example/?q={query}&aid={affiliateId}", allowedHosts: ["booking.com"] }] }), /allow-listed/i);
+});
+
+test("curated Viator activity links retain all required tracking parameters", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "viator-activities", name: "Viator", type: "activity", enabled: true, affiliateId: "P123", destinationSearchEnabled: false, urlTemplate: null,
+      allowedHosts: ["www.viator.com"], requiredQueryParameters: ["pid", "mcid", "medium"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  const offers: AffiliateActivityOfferConfig = {
+    version: 1,
+    offers: [{
+      id: "destination-stargazing", partnerId: "viator-activities", destinationId: destination.id, locationTourSlugs: [locationTour.slug], enabled: true,
+      title: { en: "Stargazing", de: "Sternbeobachtung" }, description: { en: "Guided night", de: "Geführte Nacht" },
+      urlTemplate: "https://www.viator.com/tours/example?pid={affiliateId}&mcid=42383&medium=link", lastReviewedAt: "2026-08-30",
+    }],
+  };
+  validateAffiliateConfig(partners);
+  validateAffiliateActivityOffers(offers, partners, [destination], [locationTour]);
+  const url = buildAffiliateActivityUrl(partners, offers.offers[0]);
+  assert.ok(url);
+  assert.equal(new URL(url).searchParams.get("pid"), "P123");
+});
+
+test("curated activity links reject missing provider tracking parameters", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: false, affiliateId: "", destinationSearchEnabled: false, urlTemplate: null,
+      allowedHosts: ["www.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  const offers: AffiliateActivityOfferConfig = {
+    version: 1,
+    offers: [{
+      id: "destination-stargazing", partnerId: "getyourguide-activities", destinationId: destination.id, locationTourSlugs: [locationTour.slug], enabled: false,
+      title: { en: "Stargazing", de: "Sternbeobachtung" }, description: { en: "Guided night", de: "Geführte Nacht" },
+      urlTemplate: "https://www.getyourguide.com/example?campaign={affiliateId}", lastReviewedAt: "2026-08-30",
+    }],
+  };
+  assert.throws(() => validateAffiliateActivityOffers(offers, partners, [destination], [locationTour]), /partner_id/i);
+});
+
+test("curated activity offers must map to a tour from the same destination", () => {
+  const partners: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: false, affiliateId: "", destinationSearchEnabled: false, urlTemplate: null,
+      allowedHosts: ["www.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  const offers: AffiliateActivityOfferConfig = {
+    version: 1,
+    offers: [{
+      id: "destination-stargazing", partnerId: "getyourguide-activities", destinationId: destination.id, locationTourSlugs: [locationTour.slug], enabled: false,
+      title: { en: "Stargazing", de: "Sternbeobachtung" }, description: { en: "Guided night", de: "Geführte Nacht" },
+      urlTemplate: "https://www.getyourguide.com/example?partner_id={affiliateId}", lastReviewedAt: "2026-08-30",
+    }],
+  };
+  assert.throws(() => validateAffiliateActivityOffers(offers, partners, [destination], [{ ...locationTour, destinationId: "elsewhere" }]), /does not match/i);
 });

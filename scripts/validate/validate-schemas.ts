@@ -21,6 +21,7 @@ export const schemaFiles = [
   "short-trip.schema.json",
   "seo-registry.schema.json",
   "affiliate-partners.schema.json",
+  "affiliate-activity-offers.schema.json",
   "meteor-shower.schema.json",
   "search-index.schema.json",
   "gear-guide.schema.json",

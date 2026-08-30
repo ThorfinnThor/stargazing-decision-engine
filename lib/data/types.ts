@@ -187,17 +187,49 @@ export type AffiliatePartnerType = "hotel" | "activity" | "camping" | "car_renta
 
 export interface AffiliatePartner {
   id: string;
+  name: string;
   type: AffiliatePartnerType;
   enabled: boolean;
   affiliateId: string;
-  urlTemplate: string;
+  destinationSearchEnabled: boolean;
+  urlTemplate: string | null;
   allowedHosts: string[];
+  requiredQueryParameters: string[];
   disclosure: { en: string; de: string };
 }
 
 export interface AffiliateConfig {
   version: 1;
   partners: AffiliatePartner[];
+}
+
+export interface AffiliateActivityOffer {
+  id: string;
+  partnerId: string;
+  destinationId: string;
+  locationTourSlugs: string[];
+  enabled: boolean;
+  title: LocalizedEditorialText;
+  description: LocalizedEditorialText;
+  urlTemplate: string;
+  lastReviewedAt: string;
+}
+
+export interface AffiliateActivityOfferConfig {
+  version: 1;
+  offers: AffiliateActivityOffer[];
+}
+
+export interface PublishedAffiliateActivityOffer {
+  id: string;
+  partnerId: string;
+  partnerName: string;
+  destinationId: string;
+  locationTourSlugs: string[];
+  title: LocalizedEditorialText;
+  description: LocalizedEditorialText;
+  redirectPath: string;
+  lastReviewedAt: string;
 }
 
 export interface GearCategory {
