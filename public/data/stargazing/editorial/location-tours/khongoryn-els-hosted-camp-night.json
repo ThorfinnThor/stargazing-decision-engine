@@ -5,16 +5,16 @@
   "destinationId": "gobi",
   "recommendedSiteId": "khongoryn-els-visitor-zone",
   "title": {
-    "en": "A hosted night at Khongoryn Els",
-    "de": "Eine betreute Nacht bei Khongoryn Els"
+    "en": "Khongoryn Els through a registered operator and named camp",
+    "de": "Khongoryn Els mit registriertem Anbieter und benanntem Camp"
   },
   "seoDescription": {
     "en": "Reach Khongoryn Els with a confirmed guide or ger camp, settle before dusk and observe from a host-approved surface beside shelter.",
     "de": "Erreiche Khongoryn Els mit bestätigtem Guide oder Ger-Camp, richte dich vor der Dämmerung ein und beobachte auf einer erlaubten Fläche am Schutzraum."
   },
   "standfirst": {
-    "en": "The Gobi rewards preparation at a scale that a map pin cannot express. Khongoryn Els is a useful destination only when a confirmed guide or ger camp connects transport, water, shelter and local land arrangements. Book that chain as one itinerary. Reach camp before dusk, ask the host where guests may observe and keep the session within walking distance of shelter. The dark desert beyond camp is not an invitation to separate from the operator.",
-    "de": "Die Gobi belohnt Vorbereitung in einem Maßstab, den eine Kartenmarkierung nicht ausdrückt. Khongoryn Els ist erst dann ein brauchbares Ziel, wenn ein bestätigter Guide oder ein Ger-Camp Transport, Wasser, Schutz und lokale Landregelungen verbindet. Buche diese Kette als einen Reiseplan. Erreiche das Camp vor der Dämmerung, frage den Gastgeber nach der erlaubten Beobachtungsfläche und bleibe in Fußweite zum Schutz. Die dunkle Wüste außerhalb des Camps ist keine Einladung, sich vom Anbieter zu trennen."
+    "en": "A map pin is not enough for Khongoryn Els. Book through an operator listed by the Mongolia Tourism Organization and require the written itinerary to name Khongoryn Els, the overnight camp, transport, meals and the responsible local contact. Reach that camp before dusk and ask the host where guests may observe. If the operator listing, camp name or night arrangement is missing, the route is not ready to use.",
+    "de": "Eine Kartenmarkierung reicht für Khongoryn Els nicht aus. Buche über einen bei der Mongolia Tourism Organization gelisteten Anbieter und verlange einen Reiseplan, der Khongoryn Els, das Übernachtungscamp, Transport, Mahlzeiten und die verantwortliche Kontaktperson nennt. Erreiche dieses Camp vor der Dämmerung und frage dort nach der erlaubten Beobachtungsfläche. Fehlen Registereintrag, Campname oder Nachtregelung, ist die Route nicht einsatzbereit."
   },
   "facts": [
     {
@@ -23,12 +23,12 @@
         "de": "Zugangsmodell"
       },
       "value": {
-        "en": "Confirmed guide or booked ger camp",
-        "de": "Bestätigter Guide oder gebuchtes Ger-Camp"
+        "en": "MTO-listed operator with a named overnight camp",
+        "de": "Bei MTO gelisteter Anbieter mit benanntem Übernachtungscamp"
       },
       "sourceIds": [
         "gobi-mto",
-        "gobi-home"
+        "gobi-operator-registry"
       ]
     },
     {
@@ -119,7 +119,7 @@
       "kind": "prose",
       "heading": {
         "en": "Let the eye travel while the body stays near camp",
-        "de": "Der Blick reist, während der Körper am Camp bleibt"
+        "de": "Die Beobachtung bleibt in sicherer Nähe zum Camp"
       },
       "paragraphs": {
         "en": [
@@ -142,7 +142,7 @@
       "kind": "schedule",
       "heading": {
         "en": "Make survival tasks boring before the stars appear",
-        "de": "Versorgungsaufgaben werden vor den Sternen langweilig"
+        "de": "Wasser, Wärme und Rückweg sind vor Einbruch der Dunkelheit geklärt"
       },
       "items": [
         {
@@ -205,7 +205,8 @@
   "sourceIds": [
     "gobi-mto",
     "gobi-home",
-    "gobi-ministry"
+    "gobi-ministry",
+    "gobi-operator-registry"
   ],
-  "lastReviewedAt": "2026-08-29"
+  "lastReviewedAt": "2026-08-30"
 }

@@ -5,16 +5,16 @@
   "destinationId": "hortobagy",
   "recommendedSiteId": "hortobagy-fishpond-night-walk",
   "title": {
-    "en": "A guided night walk in Hortobágy",
-    "de": "Eine geführte Nachtwanderung im Hortobágy"
+    "en": "A bookable 2026 astronomy programme in Hortobágy",
+    "de": "Ein buchbares Astronomieprogramm 2026 im Hortobágy"
   },
   "seoDescription": {
     "en": "Use a current Hortobágy night event for legitimate access to the fishpond landscape while keeping protected-area rules central.",
     "de": "Nutze eine aktuelle Hortobágy-Nachtveranstaltung für legitimen Zugang zur Fischteichlandschaft und stelle Schutzgebietsregeln in den Mittelpunkt."
   },
   "standfirst": {
-    "en": "Hortobágy is a living protected landscape, not an empty plain available after closing. A current park night walk or astronomy event supplies the correct meeting place, route and host. Book the actual date, bring only compact equipment and remain with the group. Independent movement around fishponds and wildlife habitat is not part of the ticket.",
-    "de": "Hortobágy ist eine lebendige Schutzlandschaft und keine leere Ebene nach Betriebsschluss. Eine aktuelle Nachtwanderung oder Astronomieveranstaltung des Parks liefert Treffpunkt, Route und Gastgeber. Buche das konkrete Datum, bring nur kompakte Ausrüstung mit und bleibe bei der Gruppe. Eigenständige Bewegung an Fischteichen und in Wildtierlebensräumen gehört nicht zum Ticket."
+    "en": "Hortobágy is a living protected landscape, not an empty plain available after closing. The park publishes a dated 2026 observatory programme and releases the exact registration details for each event. Choose a date that is actually listed, complete the required pre-registration and follow its meeting instructions. If the programme is absent or cancelled for weather, the fishpond landscape does not become an independent night route.",
+    "de": "Hortobágy ist eine lebendige Schutzlandschaft und keine leere Ebene nach Betriebsschluss. Der Park veröffentlicht ein datiertes Observatoriumsprogramm für 2026 und ergänzt die Anmeldedetails zu den einzelnen Terminen. Wähle einen tatsächlich gelisteten Termin, melde dich wie verlangt an und folge den Treffpunkthinweisen. Fehlt das Programm oder fällt es wegen des Wetters aus, wird die Fischteichlandschaft nicht zur eigenständigen Nachtroute."
   },
   "facts": [
     {
@@ -27,7 +27,7 @@
         "de": "Aktuelle parkgeführte Nachtwanderung oder Astronomieveranstaltung"
       },
       "sourceIds": [
-        "hort-event",
+        "hort-programs-2026",
         "hort-park"
       ]
     },
@@ -55,7 +55,7 @@
         "de": "Nur die veröffentlichte Treffroute"
       },
       "sourceIds": [
-        "hort-event"
+        "hort-programs-2026"
       ]
     },
     {
@@ -68,7 +68,7 @@
         "de": "Kompakt und vom Guide akzeptiert"
       },
       "sourceIds": [
-        "hort-event"
+        "hort-programs-2026"
       ]
     }
   ],
@@ -81,11 +81,11 @@
         "de": "Die Veranstaltung ist das Zugangsmodell"
       },
       "body": {
-        "en": "Confirm that the programme exists on the chosen date, including language, meeting point, duration and weather procedure. A past festival listing or general park opening does not create a night route. If no current event is offered, choose a legal accommodation-based alternative rather than entering protected land independently.",
-        "de": "Bestätige, dass das Programm am gewählten Datum stattfindet, einschließlich Sprache, Treffpunkt, Dauer und Wetterverfahren. Ein früherer Festivaleintrag oder allgemeine Parköffnung schafft keine Nachtroute. Gibt es keine aktuelle Veranstaltung, wähle eine legale Alternative an einer Unterkunft, statt Schutzland eigenständig zu betreten."
+        "en": "Use the park's current 2026 programme page, not an archived meteor event. Confirm the chosen date, registration deadline, language, meeting point, duration and weather procedure. If no current event is offered, choose a legal accommodation-based alternative rather than entering protected land independently.",
+        "de": "Nutze die aktuelle Programmseite für 2026 und nicht einen archivierten Meteortermin. Bestätige Datum, Anmeldeschluss, Sprache, Treffpunkt, Dauer und Wetterverfahren. Gibt es keine aktuelle Veranstaltung, wähle eine legale Alternative an einer Unterkunft, statt Schutzland eigenständig zu betreten."
       },
       "sourceIds": [
-        "hort-event",
+        "hort-programs-2026",
         "hort-park"
       ],
       "tone": "warning"
@@ -180,7 +180,8 @@
   "sourceIds": [
     "hort-world",
     "hort-park",
-    "hort-event"
+    "hort-event",
+    "hort-programs-2026"
   ],
-  "lastReviewedAt": "2026-08-29"
+  "lastReviewedAt": "2026-08-30"
 }

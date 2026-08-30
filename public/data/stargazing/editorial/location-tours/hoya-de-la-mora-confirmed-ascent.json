@@ -5,16 +5,16 @@
   "destinationId": "sierra-nevada",
   "recommendedSiteId": "hoya-de-la-mora-perseids-route",
   "title": {
-    "en": "Hoya de la Mora by confirmed route",
-    "de": "Hoya de la Mora auf bestätigter Route"
+    "en": "Hoya de la Mora only through a newly published event",
+    "de": "Hoya de la Mora nur mit neu veröffentlichtem Termin"
   },
   "seoDescription": {
     "en": "Join Hoya de la Mora only through a current astronomy event, with high-mountain weather, transport and descent settled before departure.",
     "de": "Nutze Hoya de la Mora nur über eine aktuelle Astronomieveranstaltung und kläre Bergwetter, Transport und Abstieg vor der Abfahrt."
   },
   "standfirst": {
-    "en": "Hoya de la Mora becomes a credible astronomy night when an organiser publishes a real event, meeting point and transport plan. It is not a back entrance to the Sierra Nevada Observatory, whose public visits take place by day and whose night access is prohibited. Treat the evening as a supervised high-mountain appointment. Confirm the route, dress for the summit rather than Granada and descend with the same group that brought you up.",
-    "de": "Hoya de la Mora wird zu einer glaubwürdigen Astronomienacht, wenn ein Veranstalter einen konkreten Termin, Treffpunkt und Transportplan veröffentlicht. Der Ort ist kein Hintereingang zum Sierra Nevada Observatory, dessen öffentliche Besuche tagsüber stattfinden und dessen Nachtzugang verboten ist. Behandle den Abend als betreuten Hochgebirgstermin. Bestätige die Route, kleide dich für den Gipfel statt für Granada und steige mit derselben Gruppe ab, mit der du hinaufgekommen bist."
+    "en": "The cited Perseids ascent is an archived 2025 event, not a ticket for the current season. Hoya de la Mora is usable for this plan only after Sierra Nevada publishes a new astronomy date with registration, meeting point, route and descent. The area is not a back entrance to the research observatory, whose public visits are daytime only. If the current astronomy calendar contains no suitable event, choose another authorised venue rather than copying the archived route independently.",
+    "de": "Der zitierte Perseidenaufstieg ist ein archivierter Termin aus dem Jahr 2025 und kein Ticket für die aktuelle Saison. Hoya de la Mora ist für diesen Plan erst nutzbar, wenn Sierra Nevada einen neuen Astronomietermin mit Anmeldung, Treffpunkt, Route und Abstieg veröffentlicht. Der Bereich ist kein Hintereingang zum Forschungsobservatorium, dessen öffentliche Besuche nur tagsüber stattfinden. Enthält der aktuelle Astronomiekalender keinen passenden Termin, wähle einen anderen autorisierten Ort, statt die archivierte Route eigenständig nachzugehen."
   },
   "facts": [
     {
@@ -23,12 +23,13 @@
         "de": "Gültiger Zugang"
       },
       "value": {
-        "en": "A currently published organised event",
-        "de": "Eine aktuell veröffentlichte organisierte Veranstaltung"
+        "en": "A new date on the current official astronomy calendar",
+        "de": "Ein neuer Termin im aktuellen offiziellen Astronomiekalender"
       },
       "sourceIds": [
         "sierra-event",
-        "sierra-home"
+        "sierra-home",
+        "sierra-astronomy-calendar"
       ]
     },
     {
@@ -185,7 +186,8 @@
   "sourceIds": [
     "sierra-osn",
     "sierra-event",
-    "sierra-home"
+    "sierra-home",
+    "sierra-astronomy-calendar"
   ],
-  "lastReviewedAt": "2026-08-29"
+  "lastReviewedAt": "2026-08-30"
 }

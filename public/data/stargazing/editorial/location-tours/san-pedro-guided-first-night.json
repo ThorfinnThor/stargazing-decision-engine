@@ -5,16 +5,16 @@
   "destinationId": "atacama",
   "recommendedSiteId": "san-pedro-astronomy-tour-zone",
   "title": {
-    "en": "A guided first astronomy night from San Pedro",
-    "de": "Eine geführte erste Astronomienacht ab San Pedro"
+    "en": "A first astronomy night with a registered San Pedro provider",
+    "de": "Die erste Astronomienacht mit registriertem Anbieter in San Pedro"
   },
   "seoDescription": {
     "en": "Organise a first Atacama stargazing evening through a registered San Pedro operator, with protected-area visits and high-altitude travel kept separate.",
     "de": "Organisiere den ersten Sternenabend in der Atacama über einen registrierten Anbieter in San Pedro und trenne Schutzgebietsbesuche von Reisen in große Höhe."
   },
   "standfirst": {
-    "en": "San Pedro de Atacama is the useful base, not a licence to drive onto any dark piece of plateau. For a first night, a registered astronomy excursion provides a known observing area, transport and interpretation while leaving protected lagoons and higher-altitude landscapes to their own daytime plans. Confirm exactly what the operator includes before the pickup.",
-    "de": "San Pedro de Atacama ist die sinnvolle Basis und keine Erlaubnis, jede dunkle Fläche des Hochlands anzufahren. Für die erste Nacht bietet eine registrierte Astronomieexkursion einen bekannten Beobachtungsbereich, Transport und Einordnung. Geschützte Lagunen und höher gelegene Landschaften behalten eigene Tagespläne. Kläre vor der Abholung genau, was der Anbieter einschließt."
+    "en": "San Pedro de Atacama is the useful base, not a licence to drive onto any dark piece of plateau. For a first night, choose an astronomy provider whose SERNATUR registration is current when you book, then confirm the observing area, transport and interpretation in writing. Protected lagoons and higher-altitude landscapes remain separate daytime plans. If the registration or meeting place cannot be verified, do not treat the reservation as complete.",
+    "de": "San Pedro de Atacama ist die sinnvolle Basis und keine Erlaubnis, jede dunkle Fläche des Hochlands anzufahren. Wähle für die erste Nacht einen Astronomieanbieter, dessen SERNATUR-Registrierung bei der Buchung gültig ist, und lasse dir Beobachtungsort, Transport und Führung schriftlich bestätigen. Geschützte Lagunen und höher gelegene Landschaften bleiben eigene Tagespläne. Sind Registrierung oder Treffpunkt nicht überprüfbar, ist die Buchung nicht vollständig."
   },
   "facts": [
     {
@@ -41,7 +41,8 @@
       },
       "sourceIds": [
         "chile-stargazing",
-        "chile-three-experiences"
+        "chile-three-experiences",
+        "atacama-sernatur-directory"
       ]
     },
     {
@@ -169,12 +170,13 @@
             "de": "Nachricht des Anbieters bestätigen"
           },
           "body": {
-            "en": "Check pickup location, start time, clothing advice and cancellation procedure. Keep the address and contact details offline, and eat before the group assembles unless the booking says otherwise.",
-            "de": "Prüfe Abholort, Startzeit, Kleidungshinweise und Absageverfahren. Speichere Adresse und Kontaktdaten offline und iss vor dem Treffen, sofern die Buchung nichts anderes vorsieht."
+            "en": "Look up the provider in the official SERNATUR registry, then check pickup location, start time, clothing advice and cancellation procedure. Save the registration result, address and contact details offline; if the entry is not current, choose another provider.",
+            "de": "Prüfe den Anbieter im offiziellen SERNATUR-Register und kläre anschließend Abholort, Startzeit, Kleidungshinweise und Absageverfahren. Speichere Registerstatus, Adresse und Kontaktdaten offline. Ist der Eintrag nicht gültig, wähle einen anderen Anbieter."
           },
           "sourceIds": [
             "chile-stargazing",
-            "chile-three-experiences"
+            "chile-three-experiences",
+            "atacama-sernatur-directory"
           ]
         },
         {
@@ -220,7 +222,8 @@
     "chile-san-pedro",
     "chile-stargazing",
     "chile-three-experiences",
-    "conaf-flamencos"
+    "conaf-flamencos",
+    "atacama-sernatur-directory"
   ],
-  "lastReviewedAt": "2026-08-29"
+  "lastReviewedAt": "2026-08-30"
 }
