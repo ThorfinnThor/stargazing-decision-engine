@@ -19,6 +19,9 @@ pnpm typecheck
 pnpm test
 pnpm data:pipeline
 pnpm build
+pnpm validate:static-output
+pnpm exec playwright install chromium
+pnpm test:e2e
 ```
 
 The production build uses Next.js static export. Cloudflare never performs remote
@@ -26,8 +29,9 @@ source ingestion and the application has no runtime database.
 
 SEO governance is generated as static JSON before the build. It controls page
 indexability, canonicals, hreflang, robots, sitemap, and WebPage structured
-data. Set `NEXT_PUBLIC_APP_URL` to the production origin before deployment;
-the local fallback is `https://stargazing.local`.
+data. The canonical production origin is fixed in the reviewed SEO config and
+validated as `https://stargazingindex.com`; deployment or preview environment
+variables cannot replace it.
 
 ## ERA5 ingestion
 

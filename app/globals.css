@@ -473,6 +473,49 @@ h1 span {
   color: #596070;
 }
 
+.finder-error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+  padding: 1rem 0 2rem;
+  border-bottom: 1px solid rgb(17 19 26 / 22%);
+}
+
+.finder-error-actions button,
+.finder-error-actions a {
+  min-height: 2.75rem;
+  padding: 0.65rem 0;
+  border: 0;
+  border-bottom: 1px solid #8b641b;
+  background: transparent;
+  color: #76530f;
+  cursor: pointer;
+  font: 700 0.68rem/1.4 monospace;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.finder-error-actions button:focus-visible,
+.finder-error-actions a:focus-visible {
+  outline: 2px solid #8b641b;
+  outline-offset: 3px;
+}
+
+.finder-exclusion-notice {
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.25rem;
+  border-left: 3px solid #8b641b;
+  background: rgb(139 100 27 / 9%);
+  color: #4e5667;
+  line-height: 1.6;
+}
+
+.finder-exclusion-notice strong {
+  color: #76530f;
+}
+
 .trip-page .event-header h1 {
   max-width: 56rem;
 }
