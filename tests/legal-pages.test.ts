@@ -24,9 +24,10 @@ test("every localized page receives directly reachable legal navigation", () => 
   assert.match(layout, /<LegalFooter locale=\{locale\}/);
 });
 
-test("the public site does not use cookies, analytics, or persistent browser storage", () => {
+test("the public site avoids own persistent storage and unapproved analytics providers", () => {
   const client = read("components/sky/random-homepage-sky.tsx");
   assert.doesNotMatch(client, /sessionStorage|localStorage|document\.cookie/);
   const rootLayouts = `${read("app/(root)/layout.tsx")}\n${read("app/[locale]/layout.tsx")}`;
-  assert.doesNotMatch(rootLayouts, /gtag|GoogleAnalytics|PostHog|analytics/i);
+  assert.doesNotMatch(rootLayouts, /gtag|GoogleAnalytics|PostHog/i);
+  assert.match(rootLayouts, /GetYourGuideAnalytics/);
 });

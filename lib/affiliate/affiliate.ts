@@ -2,7 +2,7 @@ import type { AffiliateActivityOffer, AffiliateActivityOfferConfig, AffiliateCon
 
 const partnerTypes = new Set(["hotel", "activity", "camping", "car_rental", "gear"]);
 
-function environmentAffiliateId(partner: AffiliatePartner) {
+export function affiliatePartnerId(partner: AffiliatePartner) {
   const key = `AFFILIATE_${partner.id.replace(/[^A-Za-z0-9]/g, "_").toUpperCase()}_ID`;
   return process.env[key]?.trim() || partner.affiliateId.trim();
 }
@@ -49,7 +49,16 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
     } else if ((partner.destinationSearchVariants?.length ?? 0) > 0) {
       throw new Error(`${partner.id}: disabled destination search must not define variants`);
     }
-    if (partner.enabled && !environmentAffiliateId(partner)) throw new Error(`${partner.id}: enabled partner requires an affiliate ID`);
+    if (partner.widget) {
+      if (partner.widget.type !== "auto") throw new Error(`${partner.id}: unsupported widget type`);
+      if (!/^[A-Za-z0-9_-]+$/.test(partner.widget.campaign)) throw new Error(`${partner.id}: invalid widget campaign`);
+      if (partner.widget.destinationIds.length === 0 || new Set(partner.widget.destinationIds).size !== partner.widget.destinationIds.length) throw new Error(`${partner.id}: widget destination IDs must be unique and non-empty`);
+      let widgetUrl: URL;
+      try { widgetUrl = new URL(partner.widget.scriptUrl); } catch { throw new Error(`${partner.id}: widget script URL is invalid`); }
+      if (widgetUrl.protocol !== "https:" || !hostAllowed(widgetUrl.hostname, partner.allowedHosts)) throw new Error(`${partner.id}: widget script host is not allow-listed HTTPS`);
+      if (partner.widget.enabled && !partner.enabled) throw new Error(`${partner.id}: enabled widget requires an enabled partner`);
+    }
+    if (partner.enabled && !affiliatePartnerId(partner)) throw new Error(`${partner.id}: enabled partner requires an affiliate ID`);
   }
 }
 
@@ -87,7 +96,7 @@ export function buildAffiliateUrl(config: AffiliateConfig, partnerId: string, de
   const variant = variantId ? variants.find((item) => item.id === variantId) : null;
   if (variantId && !variant) return null;
   if (!variantId && variants.length > 0) return null;
-  const affiliateId = environmentAffiliateId(partner);
+  const affiliateId = affiliatePartnerId(partner);
   if (partner.urlTemplate.includes("{affiliateId}") && !affiliateId) return null;
   const query = variant ? variant.queryTemplate.replaceAll("{query}", destination.affiliateQuery) : destination.affiliateQuery;
   const rawUrl = partner.urlTemplate.replaceAll("{query}", encodeURIComponent(query)).replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
@@ -100,7 +109,7 @@ export function buildAffiliateUrl(config: AffiliateConfig, partnerId: string, de
 export function buildAffiliateActivityUrl(config: AffiliateConfig, offer: AffiliateActivityOffer) {
   const partner = getAffiliatePartner(config, offer.partnerId);
   if (!partner || !partner.enabled || !offer.enabled) return null;
-  const affiliateId = environmentAffiliateId(partner);
+  const affiliateId = affiliatePartnerId(partner);
   if (!affiliateId) return null;
   const rawUrl = offer.urlTemplate.replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
   let parsed: URL;

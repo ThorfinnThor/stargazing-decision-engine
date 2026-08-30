@@ -20,6 +20,12 @@ const redirects = readJson<{ version: 2; entries: Array<{ kind: string; partner:
 const publishedOffers = readJson<PublishedAffiliateActivityOffer[]>(resolve(root, "public/data/stargazing/affiliate/activity-offers.json"));
 const publishedSearches = readJson<PublishedAffiliateDestinationSearch[]>(resolve(root, "public/data/stargazing/affiliate/destination-searches.json"));
 const activeDestinations = loadDestinations().filter((destination) => destination.active);
+const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
+for (const partner of config.partners.filter((item) => item.widget?.enabled)) {
+  for (const destinationId of partner.widget?.destinationIds ?? []) {
+    if (!activeDestinationIds.has(destinationId)) throw new Error(`${partner.id}: widget destination does not exist or is inactive: ${destinationId}`);
+  }
+}
 const enabledSearchPartners = config.partners.filter((partner) => partner.enabled && partner.destinationSearchEnabled);
 const enabledSearchVariants = enabledSearchPartners.reduce((sum, partner) => sum + (partner.destinationSearchVariants?.length || 1), 0);
 const enabledOffers = offers.offers.filter((offer) => offer.enabled).length;

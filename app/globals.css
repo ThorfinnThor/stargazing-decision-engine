@@ -665,6 +665,46 @@ h1 span {
   text-transform: uppercase;
 }
 
+.getyourguide-auto-widget {
+  max-width: 78rem;
+  margin: clamp(3rem, 7vw, 6rem) auto;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgb(142 197 255 / 26%);
+  background: rgb(18 28 52 / 42%);
+}
+
+.getyourguide-auto-widget > header {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.7fr) minmax(20rem, 1.3fr);
+  gap: 0.7rem clamp(2rem, 7vw, 7rem);
+}
+
+.getyourguide-auto-widget > header .eyebrow { grid-column: 1 / -1; }
+
+.getyourguide-auto-widget > header h2 {
+  margin: 0;
+  color: #fff;
+  font: 400 clamp(1.8rem, 3vw, 3rem)/1.04 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.04em;
+}
+
+.getyourguide-auto-widget > header > p:last-child {
+  max-width: 46rem;
+  margin: 0;
+  color: #d9deea;
+  line-height: 1.7;
+}
+
+.getyourguide-auto-widget-frame {
+  min-height: 12rem;
+  margin-top: 2rem;
+  padding: clamp(0.75rem, 2vw, 1.25rem);
+  overflow: hidden;
+  border: 1px solid rgb(142 197 255 / 22%);
+  background: #f7f3ea;
+  color-scheme: light;
+}
+
 .affiliate-activity-grid small {
   margin-top: 0.8rem;
   color: var(--muted);
@@ -2667,7 +2707,8 @@ h3 {
   .destination-editorial-sources,
   .destination-related,
   .affiliate-activity-offers > header,
-  .affiliate-destination-searches > header {
+  .affiliate-destination-searches > header,
+  .getyourguide-auto-widget > header {
     grid-template-columns: 1fr;
   }
 

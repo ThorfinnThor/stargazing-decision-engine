@@ -8,6 +8,7 @@ import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } f
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateActivityOffers } from "@/components/affiliate-activity-offers";
 import { AffiliateDestinationSearches } from "@/components/affiliate-destination-searches";
+import { GetYourGuideAutoWidget } from "@/components/getyourguide-integration";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
@@ -157,6 +158,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
       </aside>}
       <AffiliateActivityOffers destinationId={destination.id} locale={locale} />
       <AffiliateDestinationSearches destinationId={destination.id} destinationName={destination.name} locale={locale} />
+      <GetYourGuideAutoWidget destinationId={destination.id} destinationName={destination.name} locale={locale} />
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>

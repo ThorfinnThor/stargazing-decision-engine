@@ -190,6 +190,14 @@ export interface AffiliateDestinationSearchVariant {
   queryTemplate: string;
 }
 
+export interface AffiliateWidgetConfig {
+  type: "auto";
+  enabled: boolean;
+  campaign: string;
+  scriptUrl: string;
+  destinationIds: string[];
+}
+
 export interface AffiliatePartner {
   id: string;
   name: string;
@@ -198,6 +206,7 @@ export interface AffiliatePartner {
   affiliateId: string;
   destinationSearchEnabled: boolean;
   destinationSearchVariants?: AffiliateDestinationSearchVariant[];
+  widget?: AffiliateWidgetConfig;
   urlTemplate: string | null;
   allowedHosts: string[];
   requiredQueryParameters: string[];
