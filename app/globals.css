@@ -502,9 +502,98 @@ h1 span {
 
 .affiliate-disclosure {
   max-width: 70rem;
-  margin: 1.5rem auto 0;
+  margin: 1.25rem 0 0;
   color: var(--muted);
   font-size: 0.8rem;
+}
+
+.affiliate-activity-offers {
+  max-width: 78rem;
+  margin: clamp(3rem, 7vw, 6rem) auto;
+  padding: clamp(2rem, 5vw, 4rem);
+  border: 1px solid rgb(142 197 255 / 26%);
+  background: rgb(18 28 52 / 42%);
+}
+
+.affiliate-activity-offers > header {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.7fr) minmax(20rem, 1.3fr);
+  gap: 0.7rem clamp(2rem, 7vw, 7rem);
+}
+
+.affiliate-activity-offers > header .eyebrow { grid-column: 1 / -1; }
+
+.affiliate-activity-offers > header h2 {
+  margin: 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
+}
+
+.affiliate-activity-offers > header > p:last-child {
+  max-width: 46rem;
+  margin: 0;
+  color: #d9deea;
+  line-height: 1.7;
+}
+
+.affiliate-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top: 2rem;
+  border-top: 1px solid rgb(142 197 255 / 22%);
+  border-left: 1px solid rgb(142 197 255 / 22%);
+}
+
+.affiliate-activity-grid article {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1.5rem;
+  border-right: 1px solid rgb(142 197 255 / 22%);
+  border-bottom: 1px solid rgb(142 197 255 / 22%);
+}
+
+.affiliate-activity-partner {
+  margin: 0 0 1.25rem;
+  color: var(--blue);
+  font: 0.65rem/1.4 ui-monospace, monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.affiliate-activity-grid h3 {
+  margin: 0;
+  color: #fff;
+  font: 400 clamp(1.3rem, 2vw, 1.8rem)/1.12 Georgia, "Times New Roman", serif;
+}
+
+.affiliate-activity-grid article > p:not(.affiliate-activity-partner) {
+  color: #d9deea;
+  line-height: 1.65;
+}
+
+.affiliate-activity-grid a {
+  width: fit-content;
+  margin-top: auto;
+  padding: 0.65rem 0;
+  border-bottom: 1px solid var(--gold);
+  color: var(--gold);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.affiliate-activity-grid small {
+  margin-top: 0.8rem;
+  color: var(--muted);
+  font: 0.62rem/1.4 ui-monospace, monospace;
+  text-transform: uppercase;
 }
 
 .event-header,
@@ -2500,9 +2589,12 @@ h3 {
   .destination-tour,
   .destination-field-notes,
   .destination-editorial-sources,
-  .destination-related {
+  .destination-related,
+  .affiliate-activity-offers > header {
     grid-template-columns: 1fr;
   }
+
+  .affiliate-activity-grid { grid-template-columns: 1fr; }
 
   .destination-editorial-standfirst,
   .destination-editorial-angle {

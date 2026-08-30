@@ -1,18 +1,50 @@
 # Affiliate setup
 
-Affiliate links are disabled by default in
-`data-config/sources/affiliate-partners.json`. A partner can be activated only
-when its HTTPS template resolves to an explicitly allow-listed host and its
-affiliate ID is present in configuration or in the corresponding environment
-variable (`AFFILIATE_<PARTNER_ID>_ID`).
+Affiliate links are disabled by default. Partner settings live in
+`data-config/sources/affiliate-partners.json`; individually reviewed activity
+links live in `data-config/sources/affiliate-activity-offers.json`.
 
-Travel redirects use the static route `/go/{partner}/{destination}`. The route
-is generated only for enabled partners and active destinations. It rejects
-unknown or disabled partners, never accepts a raw destination URL, and returns
-`noindex, nofollow`, `no-store`, and `no-referrer` headers. Links rendered in
-content must use `rel="sponsored nofollow"`.
+## Viator and GetYourGuide activity links
 
-Affiliate configuration cannot affect destination, calendar, meteor, or
-short-trip rankings. Disclosure copy is bilingual and remains visible in the
-page templates even while the partner catalog is dormant. No live booking or
-availability claim is made.
+Only direct links copied from the official partner tools may be added. Do not
+construct or scrape product URLs. Replace the account-specific value in the
+copied URL with `{affiliateId}` before committing it.
+
+- Viator links must retain `pid`, `mcid`, and `medium`. The offer template uses
+  `{affiliateId}` as the `pid` value.
+- GetYourGuide links must retain `partner_id`. The offer template uses
+  `{affiliateId}` as that value.
+- Every offer must name the destination and at least one matching location-tour
+  slug, contain original bilingual summary copy, and include the date on which
+  the product page was reviewed.
+- Prices, ratings, availability, and cancellation promises are deliberately not
+  copied into the static catalog because they can change.
+
+The relevant account IDs are supplied only at build time:
+
+```text
+AFFILIATE_VIATOR_ACTIVITIES_ID
+AFFILIATE_GETYOURGUIDE_ACTIVITIES_ID
+```
+
+An activity becomes visible only when both its partner and its offer are set to
+`enabled: true`. Until then the destination and location-tour components return
+no markup.
+
+## Static redirect boundary
+
+Curated activity links use `/go/{partner}/offer/{offer}/`. Destination searches,
+where explicitly supported, use `/go/{partner}/{destination}/`. Every redirect
+is generated during the data build. There is no runtime redirect endpoint and
+no request parameter can select an outbound URL.
+
+Build validation rejects unknown partners, destination/tour mismatches,
+non-HTTPS targets, hosts outside the partner allowlist, missing tracking
+parameters, and enabled records without a build-time affiliate ID. The public
+offer JSON contains only display copy and the internal redirect path, never the
+external target URL.
+
+Rendered links use `rel="sponsored nofollow"`, each card says that it is an
+affiliate link, and redirect pages are marked `noindex,nofollow`. Affiliate
+configuration cannot affect destination, calendar, meteor, short-trip, or
+stargazing rankings.

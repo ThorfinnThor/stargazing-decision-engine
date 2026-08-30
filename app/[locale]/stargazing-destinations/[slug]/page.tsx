@@ -6,7 +6,7 @@ import { listDestinationEditorialGuides, listLocationTours, loadDestination, loa
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
+import { AffiliateActivityOffers } from "@/components/affiliate-activity-offers";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
@@ -154,6 +154,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </div>
         <Link href={`/${locale}/stargazing-tours/${locationTour.slug}/`}>{isGerman ? "Tour öffnen" : "Open the tour"} →</Link>
       </aside>}
+      <AffiliateActivityOffers destinationId={destination.id} locale={locale} />
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>
@@ -167,7 +168,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           </Link>)}
         </div>
       </nav>}
-      <AffiliateDisclosure locale={locale} />
     </main>
   );
 }
