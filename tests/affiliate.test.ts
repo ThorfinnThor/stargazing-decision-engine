@@ -190,6 +190,7 @@ test("reviewed GetYourGuide catalog contains only the approved direct stargazing
     "jasper",
     "la-palma",
     "mauna-kea",
+    "pico-do-arieiro",
     "tenerife",
     "uluru",
   ];
@@ -202,5 +203,21 @@ test("reviewed GetYourGuide catalog contains only the approved direct stargazing
     assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
     assert.equal(url.searchParams.get("cmp"), "Stargazing");
     assert.match(url.pathname, /-t\d+\/$/);
+  }
+});
+
+test("reviewed Viator catalog contains only approved direct stargazing offers", () => {
+  const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
+  const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
+  const expectedDestinations = ["atacama", "la-palma", "pico-do-arieiro"];
+
+  assert.deepEqual(viatorOffers.map((offer) => offer.destinationId).sort(), expectedDestinations);
+  for (const offer of viatorOffers) {
+    const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
+    assert.equal(url.hostname, "www.viator.com");
+    assert.equal(url.searchParams.get("pid"), "P00314274");
+    assert.equal(url.searchParams.get("mcid"), "42383");
+    assert.equal(url.searchParams.get("medium"), "link");
+    assert.match(url.pathname, /\/tours\//);
   }
 });
