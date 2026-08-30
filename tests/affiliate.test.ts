@@ -1,4 +1,5 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { buildAffiliateActivityUrl, buildAffiliateUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../lib/affiliate/affiliate.js";
@@ -173,4 +174,30 @@ test("curated activity offers must map to a tour from the same destination", () 
     }],
   };
   assert.throws(() => validateAffiliateActivityOffers(offers, partners, [destination], [{ ...locationTour, destinationId: "elsewhere" }]), /does not match/i);
+});
+
+test("reviewed GetYourGuide catalog contains only the approved direct stargazing offers", () => {
+  const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
+  const getYourGuideOffers = actual.offers.filter((offer) => offer.partnerId === "getyourguide-activities" && offer.enabled);
+  const expectedDestinations = [
+    "atacama",
+    "canyonlands",
+    "death-valley",
+    "hanle",
+    "jasper",
+    "la-palma",
+    "mauna-kea",
+    "tenerife",
+    "uluru",
+  ];
+
+  assert.deepEqual(getYourGuideOffers.map((offer) => offer.destinationId).sort(), expectedDestinations);
+  for (const offer of getYourGuideOffers) {
+    const url = new URL(offer.urlTemplate.replace("{affiliateId}", "BKWM9K1"));
+    assert.equal(url.hostname, "www.getyourguide.com");
+    assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
+    assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
+    assert.equal(url.searchParams.get("cmp"), "Stargazing");
+    assert.match(url.pathname, /-t\d+\/$/);
+  }
 });
