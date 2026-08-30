@@ -1,6 +1,7 @@
 # Affiliate setup
 
-Affiliate links are disabled by default. Partner settings live in
+Affiliate links remain disabled until a partner and at least one reviewed offer
+are explicitly enabled. Partner settings live in
 `data-config/sources/affiliate-partners.json`; individually reviewed activity
 links live in `data-config/sources/affiliate-activity-offers.json`.
 
@@ -20,12 +21,17 @@ copied URL with `{affiliateId}` before committing it.
 - Prices, ratings, availability, and cancellation promises are deliberately not
   copied into the static catalog because they can change.
 
-The relevant account IDs are supplied only at build time:
+The partner ID may be stored in the partner record or supplied at build time,
+with the environment value taking precedence:
 
 ```text
 AFFILIATE_VIATOR_ACTIVITIES_ID
 AFFILIATE_GETYOURGUIDE_ACTIVITIES_ID
 ```
+
+These IDs are public tracking identifiers rather than credentials; they are
+necessarily present in the generated outbound URL. Passwords, API keys, and
+other private account credentials must never be committed.
 
 An activity becomes visible only when both its partner and its offer are set to
 `enabled: true`. Until then the destination and location-tour components return
