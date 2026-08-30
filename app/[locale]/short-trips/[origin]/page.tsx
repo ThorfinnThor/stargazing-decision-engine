@@ -38,6 +38,14 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   if (!resolved) notFound();
   const { trip, locale, seo } = resolved;
   const isGerman = locale === "de";
+  const tableLabels = {
+    rank: "#",
+    destination: isGerman ? "Ziel" : "Destination",
+    distance: isGerman ? "Distanz" : "Distance",
+    band: "Band",
+    score: isGerman ? "Wert" : "Score",
+    bestMonths: isGerman ? "Beste Monate" : "Best months",
+  };
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? `Short stargazing trips from ${trip.originName}`, description: seo?.description ?? `Destination ranking from ${trip.originName}.`, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/short-trips/${trip.originSlug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   return (
     <main className="trip-page" lang={isGerman ? "de" : "en"}>
@@ -56,16 +64,16 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
       <section className="event-summary" aria-labelledby="trip-results-title">
         <h2 id="trip-results-title">{isGerman ? "Beste Ziele" : "Best destinations"}</h2>
         <div className="event-table-wrap">
-          <table className="event-table">
-            <thead><tr><th>#</th><th>{isGerman ? "Ziel" : "Destination"}</th><th>{isGerman ? "Distanz" : "Distance"}</th><th>{isGerman ? "Band" : "Band"}</th><th>{isGerman ? "Wert" : "Score"}</th><th>{isGerman ? "Beste Monate" : "Best months"}</th></tr></thead>
+          <table className="event-table short-trip-table">
+            <thead><tr><th>{tableLabels.rank}</th><th>{tableLabels.destination}</th><th>{tableLabels.distance}</th><th>{tableLabels.band}</th><th>{tableLabels.score}</th><th>{tableLabels.bestMonths}</th></tr></thead>
             <tbody>{trip.entries.map((entry) => (
               <tr key={entry.destinationId}>
-                <td>{entry.rank}</td>
-                <td><strong>{entry.destinationName}</strong><br /><small>{entry.stayArea?.name ?? (isGerman ? "Kein Übernachtungsgebiet kuratiert" : "No curated stay area")}</small></td>
-                <td>{entry.distanceKm} km</td>
-                <td>{entry.distanceBand}</td>
-                <td>{entry.shortTripScore}</td>
-                <td>{entry.bestMonths.map((month) => `${formatMonth(month.month, locale)} (${month.score})`).join(", ")}</td>
+                <td data-label={tableLabels.rank}>{entry.rank}</td>
+                <td data-label={tableLabels.destination}><strong>{entry.destinationName}</strong><br /><small>{entry.stayArea?.name ?? (isGerman ? "Kein Übernachtungsgebiet kuratiert" : "No curated stay area")}</small></td>
+                <td data-label={tableLabels.distance}>{entry.distanceKm} km</td>
+                <td data-label={tableLabels.band}>{entry.distanceBand}</td>
+                <td data-label={tableLabels.score}>{entry.shortTripScore}</td>
+                <td data-label={tableLabels.bestMonths}>{entry.bestMonths.map((month) => `${formatMonth(month.month, locale)} (${month.score})`).join(", ")}</td>
               </tr>
             ))}</tbody>
           </table>
