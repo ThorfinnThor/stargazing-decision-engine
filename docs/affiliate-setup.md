@@ -61,6 +61,15 @@ do Arieiro, Death Valley, Canyonlands, North York Moors, Hanle, and Rila.
 Ambiguous or incorrect provider matches are kept disabled even when the
 destination has bookable activity inventory.
 
+The direct GetYourGuide product review was completed on 2026-08-30. Reviewed
+stargazing offers are published for La Palma, Tenerife, Atacama, Jasper, Mauna
+Kea, Uluru, Death Valley, Canyonlands via nearby Moab, and Hanle. No exact
+stargazing product was found for Pico do Arieiro, North York Moors, or Rila, so
+those destinations deliberately retain only their reviewed automatic widget.
+The Death Valley card identifies its Las Vegas departure, the Canyonlands card
+identifies its Moab location outside the national park, and the Hanle card
+identifies the offer as a multi-day high-altitude journey.
+
 The site remains statically generated. Only the third-party widget contents are
 loaded in the browser. If the GetYourGuide script is blocked, the editorial
 guide, static Viator searches, and reviewed offer links remain usable.
