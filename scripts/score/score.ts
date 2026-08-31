@@ -76,6 +76,34 @@ const profiles: Record<string, ScoreProfile> = {
   gobi: { clear: 0.78, darkness: 94, elevation: 56, comfort: 42, dew: 0.08 },
   bieszczady: { clear: 0.5, darkness: 76, elevation: 52, comfort: 54, dew: 0.44, highLatitude: true },
   rila: { clear: 0.64, darkness: 82, elevation: 80, comfort: 52, dew: 0.28, highLatitude: true },
+  // Synthetic build fixtures for the second catalog cohort. Production pages
+  // are not released from these values; the ingestion workflow replaces them
+  // with reviewed ERA5, Black Marble, and Copernicus DEM snapshots.
+  "joshua-tree": { clear: 0.82, darkness: 90, elevation: 48, comfort: 72, dew: 0.08 },
+  sedona: { clear: 0.78, darkness: 82, elevation: 58, comfort: 70, dew: 0.1 },
+  acadia: { clear: 0.5, darkness: 75, elevation: 24, comfort: 54, dew: 0.46, highLatitude: true },
+  "grand-canyon": { clear: 0.8, darkness: 92, elevation: 76, comfort: 62, dew: 0.09 },
+  "bryce-canyon": { clear: 0.78, darkness: 93, elevation: 88, comfort: 54, dew: 0.1 },
+  "capitol-reef": { clear: 0.82, darkness: 94, elevation: 64, comfort: 62, dew: 0.08 },
+  arches: { clear: 0.8, darkness: 91, elevation: 54, comfort: 64, dew: 0.08 },
+  badlands: { clear: 0.66, darkness: 87, elevation: 38, comfort: 58, dew: 0.22, highLatitude: true },
+  "waterton-lakes": { clear: 0.54, darkness: 86, elevation: 66, comfort: 46, dew: 0.34, highLatitude: true },
+  "wood-buffalo": { clear: 0.56, darkness: 94, elevation: 22, comfort: 38, dew: 0.3, highLatitude: true },
+  kejimkujik: { clear: 0.48, darkness: 82, elevation: 18, comfort: 54, dew: 0.5, highLatitude: true },
+  "mayo-dark-sky": { clear: 0.4, darkness: 82, elevation: 30, comfort: 50, dew: 0.58, highLatitude: true },
+  eryri: { clear: 0.4, darkness: 70, elevation: 48, comfort: 50, dew: 0.58, highLatitude: true },
+  "yorkshire-dales": { clear: 0.42, darkness: 70, elevation: 36, comfort: 54, dew: 0.54, highLatitude: true },
+  "south-downs": { clear: 0.48, darkness: 60, elevation: 22, comfort: 62, dew: 0.46, highLatitude: true },
+  kalbarri: { clear: 0.82, darkness: 90, elevation: 24, comfort: 72, dew: 0.1 },
+  "river-murray": { clear: 0.74, darkness: 82, elevation: 18, comfort: 70, dew: 0.16 },
+  "great-barrier-island": { clear: 0.58, darkness: 88, elevation: 22, comfort: 62, dew: 0.36 },
+  wairarapa: { clear: 0.58, darkness: 82, elevation: 30, comfort: 58, dew: 0.34 },
+  kaikoura: { clear: 0.6, darkness: 84, elevation: 34, comfort: 56, dew: 0.32 },
+  oudtshoorn: { clear: 0.78, darkness: 87, elevation: 42, comfort: 72, dew: 0.1 },
+  "headlands-michigan": { clear: 0.48, darkness: 74, elevation: 18, comfort: 48, dew: 0.48, highLatitude: true },
+  "wadi-rum": { clear: 0.88, darkness: 94, elevation: 42, comfort: 72, dew: 0.04 },
+  jaisalmer: { clear: 0.86, darkness: 84, elevation: 24, comfort: 72, dew: 0.05 },
+  aenos: { clear: 0.68, darkness: 82, elevation: 68, comfort: 62, dew: 0.18 },
 };
 
 const input = readJson<SeedData>(generatedPath("seed.normalized.json"));

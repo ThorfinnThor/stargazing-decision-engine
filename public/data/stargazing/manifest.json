@@ -1,7 +1,7 @@
 {
-  "datasetVersion": "real-2026-08-26.1",
+  "datasetVersion": "mixed-2026-08-26.1",
   "schemaVersion": 1,
-  "algorithmVersion": "site-score-1.1.0",
+  "algorithmVersion": "site-score-1.1.0+seed-fallback-0.1.0",
   "generatedAt": "2026-08-26T21:36:54.756157Z",
   "climateNormal": {
     "startYear": 1991,
@@ -17,7 +17,7 @@
     ]
   },
   "sourceVersions": {
-    "dataset": "reviewed-real-snapshots",
+    "dataset": "reviewed-real-snapshots-with-seed-fallback",
     "siteScores": "site-score-1.1.0",
     "calendar": "astronomy-calendar-real-1.0.0",
     "meteorShowers": "imo-2027+real-site-score-1.1.0",
@@ -26,22 +26,22 @@
     "images": "attribution-manifest-2026-08-21"
   },
   "counts": {
-    "destinations": 50,
-    "observationSites": 100,
-    "stayAreas": 50,
+    "destinations": 75,
+    "observationSites": 150,
+    "stayAreas": 74,
     "originCities": 23,
-    "siteClimateRows": 1200,
-    "siteScoreRows": 1200,
+    "siteClimateRows": 1800,
+    "siteScoreRows": 1800,
     "realScoreSites": 100,
-    "seedScoreSites": 0,
+    "seedScoreSites": 50,
     "realSiteScoreRows": 1200,
     "calendarFiles": 1800,
     "meteorShowerFiles": 11,
     "shortTripFiles": 23,
-    "gearCategories": 10,
-    "gearGuides": 10,
+    "gearCategories": 13,
+    "gearGuides": 13,
     "gearProducts": 2,
-    "imageAssets": 150,
+    "imageAssets": 225,
     "approvedImageAssets": 50
   },
   "snapshotHashes": {},

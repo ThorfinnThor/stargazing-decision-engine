@@ -1,5 +1,63 @@
 [
   {
+    "id": "acadia",
+    "slug": "acadia",
+    "name": "Acadia",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "maine",
+      "north-america"
+    ],
+    "timezone": "America/New_York",
+    "active": true,
+    "priority": 85,
+    "tags": [
+      "coast",
+      "national-park",
+      "dark-sky",
+      "maritime"
+    ],
+    "observationSiteIds": [
+      "seawall-acadia",
+      "jordan-pond-acadia"
+    ],
+    "stayAreaIds": [
+      "bar-harbor"
+    ],
+    "affiliateQuery": "Acadia National Park Maine"
+  },
+  {
+    "id": "aenos",
+    "slug": "aenos",
+    "name": "Mount Aenos",
+    "countryCode": "GR",
+    "countryName": "Greece",
+    "continent": "europe",
+    "regionSlugs": [
+      "ionian-islands",
+      "europe"
+    ],
+    "timezone": "Europe/Athens",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "island",
+      "mountain",
+      "dark-sky-park",
+      "forest"
+    ],
+    "observationSiteIds": [
+      "aenos-entrance-view-area",
+      "aenos-picnic-area"
+    ],
+    "stayAreaIds": [
+      "sami-kefalonia"
+    ],
+    "affiliateQuery": "Mount Aenos Kefalonia Greece"
+  },
+  {
     "id": "al-wathba",
     "slug": "al-wathba",
     "name": "Al Wathba",
@@ -116,6 +174,34 @@
     "affiliateQuery": "Aoraki Mackenzie New Zealand"
   },
   {
+    "id": "arches",
+    "slug": "arches",
+    "name": "Arches",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "desert",
+      "national-park",
+      "dark-sky"
+    ],
+    "observationSiteIds": [
+      "balanced-rock-night",
+      "panorama-point-arches"
+    ],
+    "stayAreaIds": [
+      "moab"
+    ],
+    "affiliateQuery": "Arches National Park Moab Utah"
+  },
+  {
     "id": "atacama",
     "slug": "atacama",
     "name": "Atacama Plateau",
@@ -143,6 +229,34 @@
       "san-pedro-de-atacama"
     ],
     "affiliateQuery": "Atacama Desert Chile"
+  },
+  {
+    "id": "badlands",
+    "slug": "badlands",
+    "name": "Badlands",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "south-dakota",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "prairie",
+      "national-park",
+      "dark-sky"
+    ],
+    "observationSiteIds": [
+      "cedar-pass-badlands",
+      "pinnacles-overlook-badlands"
+    ],
+    "stayAreaIds": [
+      "wall-south-dakota"
+    ],
+    "affiliateQuery": "Badlands National Park South Dakota"
   },
   {
     "id": "bieszczady",
@@ -232,6 +346,35 @@
     "affiliateQuery": "Bannau Brycheiniog stargazing Wales"
   },
   {
+    "id": "bryce-canyon",
+    "slug": "bryce-canyon",
+    "name": "Bryce Canyon",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 90,
+    "tags": [
+      "high-altitude",
+      "national-park",
+      "dark-sky",
+      "cold"
+    ],
+    "observationSiteIds": [
+      "sunset-point-bryce",
+      "paria-view-bryce"
+    ],
+    "stayAreaIds": [
+      "bryce-canyon-city"
+    ],
+    "affiliateQuery": "Bryce Canyon National Park Utah"
+  },
+  {
     "id": "canyonlands",
     "slug": "canyonlands",
     "name": "Canyonlands",
@@ -259,6 +402,34 @@
       "moab"
     ],
     "affiliateQuery": "Canyonlands National Park stargazing"
+  },
+  {
+    "id": "capitol-reef",
+    "slug": "capitol-reef",
+    "name": "Capitol Reef",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 89,
+    "tags": [
+      "desert",
+      "national-park",
+      "dark-sky"
+    ],
+    "observationSiteIds": [
+      "panorama-point-capitol-reef",
+      "fruita-campground-night"
+    ],
+    "stayAreaIds": [
+      "torrey"
+    ],
+    "affiliateQuery": "Capitol Reef National Park Utah"
   },
   {
     "id": "cederberg",
@@ -522,6 +693,35 @@
     "affiliateQuery": "Elqui Valley Chile stargazing"
   },
   {
+    "id": "eryri",
+    "slug": "eryri",
+    "name": "Eryri",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "wales",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "national-park",
+      "cloud-variable"
+    ],
+    "observationSiteIds": [
+      "llyn-y-dywarchen",
+      "bwlch-y-groes-dark-sky"
+    ],
+    "stayAreaIds": [
+      "beddgelert"
+    ],
+    "affiliateQuery": "Eryri Snowdonia Wales"
+  },
+  {
     "id": "exmoor",
     "slug": "exmoor",
     "name": "Exmoor National Park",
@@ -608,6 +808,35 @@
     "affiliateQuery": "Gobi Desert Mongolia stargazing"
   },
   {
+    "id": "grand-canyon",
+    "slug": "grand-canyon",
+    "name": "Grand Canyon",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "arizona",
+      "north-america"
+    ],
+    "timezone": "America/Phoenix",
+    "active": true,
+    "priority": 94,
+    "tags": [
+      "high-desert",
+      "national-park",
+      "dark-sky",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "mather-point-night",
+      "desert-view-night"
+    ],
+    "stayAreaIds": [
+      "grand-canyon-village"
+    ],
+    "affiliateQuery": "Grand Canyon South Rim Arizona"
+  },
+  {
     "id": "grasslands",
     "slug": "grasslands",
     "name": "Grasslands National Park",
@@ -635,6 +864,35 @@
       "val-marie"
     ],
     "affiliateQuery": "Grasslands National Park stargazing"
+  },
+  {
+    "id": "great-barrier-island",
+    "slug": "great-barrier-island",
+    "name": "Aotea Great Barrier Island",
+    "countryCode": "NZ",
+    "countryName": "New Zealand",
+    "continent": "oceania",
+    "regionSlugs": [
+      "auckland-region",
+      "oceania"
+    ],
+    "timezone": "Pacific/Auckland",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "island",
+      "dark-sky-sanctuary",
+      "coast",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "medlands-beach-night",
+      "windy-canyon-aotea"
+    ],
+    "stayAreaIds": [
+      "claris-aotea"
+    ],
+    "affiliateQuery": "Aotea Great Barrier Island New Zealand"
   },
   {
     "id": "great-basin",
@@ -724,6 +982,35 @@
     "affiliateQuery": "Hanle Ladakh India stargazing"
   },
   {
+    "id": "headlands-michigan",
+    "slug": "headlands-michigan",
+    "name": "Headlands",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "michigan",
+      "north-america"
+    ],
+    "timezone": "America/Detroit",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "lake",
+      "dark-sky-park",
+      "accessible",
+      "forest"
+    ],
+    "observationSiteIds": [
+      "headlands-waterfront-event-center",
+      "mcgulpin-point"
+    ],
+    "stayAreaIds": [
+      "mackinaw-city"
+    ],
+    "affiliateQuery": "Headlands Dark Sky Park Michigan"
+  },
+  {
     "id": "hortobagy",
     "slug": "hortobagy",
     "name": "Hortobágy",
@@ -751,6 +1038,35 @@
       "hortobagy-town"
     ],
     "affiliateQuery": "Hortobagy Hungary stargazing"
+  },
+  {
+    "id": "jaisalmer",
+    "slug": "jaisalmer",
+    "name": "Jaisalmer",
+    "countryCode": "IN",
+    "countryName": "India",
+    "continent": "asia",
+    "regionSlugs": [
+      "rajasthan",
+      "asia"
+    ],
+    "timezone": "Asia/Kolkata",
+    "active": true,
+    "priority": 85,
+    "tags": [
+      "desert",
+      "guided",
+      "culture",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "sam-sand-dunes-camp-zone",
+      "khuri-village-camp-zone"
+    ],
+    "stayAreaIds": [
+      "jaisalmer-city"
+    ],
+    "affiliateQuery": "Jaisalmer Thar Desert India"
   },
   {
     "id": "jasper",
@@ -782,6 +1098,64 @@
     "affiliateQuery": "Jasper National Park Canada"
   },
   {
+    "id": "joshua-tree",
+    "slug": "joshua-tree",
+    "name": "Joshua Tree",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "california",
+      "north-america"
+    ],
+    "timezone": "America/Los_Angeles",
+    "active": true,
+    "priority": 91,
+    "tags": [
+      "desert",
+      "dark-sky",
+      "national-park",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "hidden-valley-joshua-tree",
+      "cottonwood-joshua-tree"
+    ],
+    "stayAreaIds": [
+      "twentynine-palms"
+    ],
+    "affiliateQuery": "Joshua Tree National Park California"
+  },
+  {
+    "id": "kaikoura",
+    "slug": "kaikoura",
+    "name": "Kaikōura",
+    "countryCode": "NZ",
+    "countryName": "New Zealand",
+    "continent": "oceania",
+    "regionSlugs": [
+      "south-island",
+      "oceania"
+    ],
+    "timezone": "Pacific/Auckland",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "coast",
+      "dark-sky-sanctuary",
+      "mountains",
+      "southern-sky"
+    ],
+    "observationSiteIds": [
+      "south-bay-kaikoura",
+      "point-kean-night-area"
+    ],
+    "stayAreaIds": [
+      "kaikoura-town"
+    ],
+    "affiliateQuery": "Kaikoura New Zealand"
+  },
+  {
     "id": "kalahari",
     "slug": "kalahari",
     "name": "Kalahari Desert",
@@ -809,6 +1183,64 @@
       "kgalagadi"
     ],
     "affiliateQuery": "Kalahari South Africa stargazing"
+  },
+  {
+    "id": "kalbarri",
+    "slug": "kalbarri",
+    "name": "Kalbarri",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "continent": "oceania",
+    "regionSlugs": [
+      "western-australia",
+      "oceania"
+    ],
+    "timezone": "Australia/Perth",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "coast",
+      "outback",
+      "dark-sky",
+      "national-park"
+    ],
+    "observationSiteIds": [
+      "kalbarri-skywalk-night",
+      "meanarra-hill-lookout"
+    ],
+    "stayAreaIds": [
+      "kalbarri-town"
+    ],
+    "affiliateQuery": "Kalbarri Western Australia"
+  },
+  {
+    "id": "kejimkujik",
+    "slug": "kejimkujik",
+    "name": "Kejimkujik",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "continent": "north-america",
+    "regionSlugs": [
+      "nova-scotia",
+      "north-america"
+    ],
+    "timezone": "America/Halifax",
+    "active": true,
+    "priority": 83,
+    "tags": [
+      "forest",
+      "dark-sky",
+      "national-park",
+      "lake"
+    ],
+    "observationSiteIds": [
+      "jeremys-bay-kejimkujik",
+      "sky-circle-kejimkujik"
+    ],
+    "stayAreaIds": [
+      "annapolis-royal"
+    ],
+    "affiliateQuery": "Kejimkujik National Park Nova Scotia"
   },
   {
     "id": "kerry",
@@ -985,6 +1417,35 @@
     "affiliateQuery": "Mauna Kea Hawaii stargazing"
   },
   {
+    "id": "mayo-dark-sky",
+    "slug": "mayo-dark-sky",
+    "name": "Mayo Dark Sky Park",
+    "countryCode": "IE",
+    "countryName": "Ireland",
+    "continent": "europe",
+    "regionSlugs": [
+      "county-mayo",
+      "europe"
+    ],
+    "timezone": "Europe/Dublin",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "peatland",
+      "dark-sky",
+      "atlantic",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "claggan-mountain-coastal-trail",
+      "brogan-carroll-bothy"
+    ],
+    "stayAreaIds": [
+      "newport-mayo"
+    ],
+    "affiliateQuery": "Mayo Dark Sky Park Ireland"
+  },
+  {
     "id": "mcdonald-observatory",
     "slug": "mcdonald-observatory",
     "name": "McDonald Observatory",
@@ -1159,6 +1620,35 @@
     "affiliateQuery": "North York Moors stargazing"
   },
   {
+    "id": "oudtshoorn",
+    "slug": "oudtshoorn",
+    "name": "Oudtshoorn",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "western-cape",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "semi-desert",
+      "southern-sky",
+      "private-reserve",
+      "dry"
+    ],
+    "observationSiteIds": [
+      "buffelsdrift-night-experience",
+      "de-zeekoe-night-area"
+    ],
+    "stayAreaIds": [
+      "oudtshoorn-town"
+    ],
+    "affiliateQuery": "Oudtshoorn Klein Karoo South Africa"
+  },
+  {
     "id": "pico-do-arieiro",
     "slug": "pico-do-arieiro",
     "name": "Pico do Arieiro",
@@ -1217,6 +1707,64 @@
     "affiliateQuery": "Rila Mountains Bulgaria stargazing"
   },
   {
+    "id": "river-murray",
+    "slug": "river-murray",
+    "name": "River Murray",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "continent": "oceania",
+    "regionSlugs": [
+      "south-australia",
+      "oceania"
+    ],
+    "timezone": "Australia/Adelaide",
+    "active": true,
+    "priority": 85,
+    "tags": [
+      "river",
+      "dark-sky",
+      "low-elevation",
+      "road-trip"
+    ],
+    "observationSiteIds": [
+      "big-bend-astro-pad",
+      "towitta-astro-pad"
+    ],
+    "stayAreaIds": [
+      "mannum"
+    ],
+    "affiliateQuery": "River Murray Dark Sky Reserve South Australia"
+  },
+  {
+    "id": "sedona",
+    "slug": "sedona",
+    "name": "Sedona",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "arizona",
+      "north-america"
+    ],
+    "timezone": "America/Phoenix",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "desert",
+      "dark-sky-community",
+      "accessible",
+      "red-rock"
+    ],
+    "observationSiteIds": [
+      "two-trees-observing-area",
+      "turkey-creek-trailhead-night"
+    ],
+    "stayAreaIds": [
+      "sedona-town"
+    ],
+    "affiliateQuery": "Sedona Arizona"
+  },
+  {
     "id": "sierra-nevada",
     "slug": "sierra-nevada",
     "name": "Sierra Nevada",
@@ -1244,6 +1792,35 @@
       "capileira"
     ],
     "affiliateQuery": "Sierra Nevada Spain stargazing"
+  },
+  {
+    "id": "south-downs",
+    "slug": "south-downs",
+    "name": "South Downs",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "england",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 79,
+    "tags": [
+      "chalk-downland",
+      "dark-sky",
+      "accessible",
+      "near-city"
+    ],
+    "observationSiteIds": [
+      "old-winchester-hill",
+      "iping-common-dark-sky"
+    ],
+    "stayAreaIds": [
+      "petersfield"
+    ],
+    "affiliateQuery": "South Downs National Park England"
   },
   {
     "id": "sutherland",
@@ -1333,6 +1910,64 @@
     "affiliateQuery": "Uluru Australia stargazing"
   },
   {
+    "id": "wadi-rum",
+    "slug": "wadi-rum",
+    "name": "Wadi Rum",
+    "countryCode": "JO",
+    "countryName": "Jordan",
+    "continent": "asia",
+    "regionSlugs": [
+      "aqaba",
+      "asia"
+    ],
+    "timezone": "Asia/Amman",
+    "active": true,
+    "priority": 93,
+    "tags": [
+      "desert",
+      "unesco",
+      "guided",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "wadi-rum-visitor-centre",
+      "wadi-rum-booked-camp"
+    ],
+    "stayAreaIds": [
+      "wadi-rum-village"
+    ],
+    "affiliateQuery": "Wadi Rum Jordan"
+  },
+  {
+    "id": "wairarapa",
+    "slug": "wairarapa",
+    "name": "Wairarapa",
+    "countryCode": "NZ",
+    "countryName": "New Zealand",
+    "continent": "oceania",
+    "regionSlugs": [
+      "north-island",
+      "oceania"
+    ],
+    "timezone": "Pacific/Auckland",
+    "active": true,
+    "priority": 91,
+    "tags": [
+      "dark-sky-reserve",
+      "farmland",
+      "southern-sky",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "star-safari-wairarapa",
+      "stonehenge-aotearoa-night"
+    ],
+    "stayAreaIds": [
+      "martinborough"
+    ],
+    "affiliateQuery": "Wairarapa New Zealand"
+  },
+  {
     "id": "warrumbungle",
     "slug": "warrumbungle",
     "name": "Warrumbungle",
@@ -1360,6 +1995,34 @@
       "coonabarabran"
     ],
     "affiliateQuery": "Warrumbungle National Park Australia"
+  },
+  {
+    "id": "waterton-lakes",
+    "slug": "waterton-lakes",
+    "name": "Waterton Lakes",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "continent": "north-america",
+    "regionSlugs": [
+      "alberta",
+      "north-america"
+    ],
+    "timezone": "America/Edmonton",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "mountain",
+      "dark-sky",
+      "national-park"
+    ],
+    "observationSiteIds": [
+      "townsite-campground-waterton",
+      "cameron-bay-waterton"
+    ],
+    "stayAreaIds": [
+      "waterton-park"
+    ],
+    "affiliateQuery": "Waterton Lakes National Park Alberta"
   },
   {
     "id": "westhavelland",
@@ -1417,6 +2080,63 @@
       "witsand-town"
     ],
     "affiliateQuery": "Witsand Nature Reserve South Africa"
+  },
+  {
+    "id": "wood-buffalo",
+    "slug": "wood-buffalo",
+    "name": "Wood Buffalo",
+    "countryCode": "CA",
+    "countryName": "Canada",
+    "continent": "north-america",
+    "regionSlugs": [
+      "northwest-territories",
+      "north-america"
+    ],
+    "timezone": "America/Yellowknife",
+    "active": true,
+    "priority": 93,
+    "tags": [
+      "boreal",
+      "dark-sky",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "pine-lake-wood-buffalo",
+      "salt-river-day-use"
+    ],
+    "stayAreaIds": [
+      "fort-smith"
+    ],
+    "affiliateQuery": "Wood Buffalo National Park Canada"
+  },
+  {
+    "id": "yorkshire-dales",
+    "slug": "yorkshire-dales",
+    "name": "Yorkshire Dales",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "england",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 80,
+    "tags": [
+      "upland",
+      "dark-sky",
+      "villages",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "hawes-dark-sky",
+      "malham-national-park-centre"
+    ],
+    "stayAreaIds": [
+      "hawes"
+    ],
+    "affiliateQuery": "Yorkshire Dales National Park England"
   },
   {
     "id": "zselic",

@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "wairarapa-one-site-night",
+  "slug": "wairarapa-one-site-night",
+  "destinationId": "wairarapa",
+  "recommendedSiteId": "star-safari-wairarapa",
+  "title": {
+    "en": "A booked Wairarapa astronomy evening, not a farm-gate search",
+    "de": "Ein gebuchter Astronomieabend in Wairarapa statt Suche am Farmtor"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Martinborough to Star Safari, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Martinborough zu Star Safari, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Choose one dated programme near Martinborough, arrive early enough to find the entrance and return directly after the host closes the session. This self-guided route uses Star Safari as the fixed site and Martinborough as the return base. Booking status, rural road visibility, livestock and changeable North Island weather decide whether the evening can proceed. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Wähle ein terminiertes Programm nahe Martinborough, komme früh genug für die Einfahrt und kehre nach Ende der Sitzung direkt zurück. Diese selbst geführte Route nutzt Star Safari als festen Ort und Martinborough als Rückkehrbasis. Buchungsstatus, Sicht auf Landstraßen, Weidetiere und wechselhaftes Nordinselwetter entscheiden, ob der Abend stattfinden kann. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Star Safari",
+        "de": "Star Safari"
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Martinborough",
+        "de": "Martinborough"
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Stonehenge Aotearoa, only as a separately verified plan",
+        "de": "Stonehenge Aotearoa, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "wairarapa-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Star Safari",
+        "de": "Der Abendrhythmus an Star Safari"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Martinborough, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Martinborough, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "wairarapa-place",
+            "wairarapa-access",
+            "wairarapa-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Star Safari, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Star Safari lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "wairarapa-place",
+            "wairarapa-access",
+            "wairarapa-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Star Safari systematically, inspect the ground and return directly to Martinborough. Do not trade a safe finish for a late move toward Stonehenge Aotearoa or an unverified roadside horizon.",
+            "de": "Verlasse Star Safari systematisch, prüfe den Boden und kehre direkt nach Martinborough zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Stonehenge Aotearoa oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "wairarapa-place",
+            "wairarapa-access",
+            "wairarapa-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wairarapa-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Wairarapa route",
+        "de": "Was die Route in Wairarapa absagt"
+      },
+      "body": {
+        "en": "Booking status, rural road visibility, livestock and changeable North Island weather decide whether the evening can proceed. Treat that limit as a decision made before equipment leaves the vehicle. A weather cancellation becomes a local indoor evening or a new booking, not an unsupported attempt on another farm road. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Buchungsstatus, Sicht auf Landstraßen, Weidetiere und wechselhaftes Nordinselwetter entscheiden, ob der Abend stattfinden kann. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Eine wetterbedingte Absage wird zu einem lokalen Innenabend oder neuer Buchung und nicht zu einem unbestätigten Versuch auf einer anderen Farmstraße. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "wairarapa-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Star Safari is enough for one night",
+        "de": "Warum Star Safari für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Wairarapa combines a certified reserve with working farms and two established visitor experiences. Star Safari provides a hosted small-group setting. Stonehenge Aotearoa offers a different cultural and astronomical programme. Neither turns surrounding private land into public observing space. This tour commits to Star Safari because a single known site preserves attention for the sky and the return. Stonehenge Aotearoa is useful information for another date, not a target to add after darkness.",
+          "Respect hosts, gates, neighbours and farm biosecurity; do not stop on private verges to extend a paid session. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Wairarapa verbindet ein zertifiziertes Reservat mit aktiven Farmen und zwei etablierten Besuchserlebnissen. Star Safari bietet eine betreute Kleingruppe. Stonehenge Aotearoa folgt einem anderen kulturellen und astronomischen Programm. Keines macht umliegendes Privatland zur öffentlichen Beobachtungsfläche. Diese Tour legt sich auf Star Safari fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Stonehenge Aotearoa ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Respektiere Gastgeber, Tore, Nachbarn und Farm-Biosicherheit. Halte nicht auf privaten Seitenstreifen, um eine gebuchte Sitzung zu verlängern. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "wairarapa-place",
+        "wairarapa-access",
+        "wairarapa-status"
+      ]
+    },
+    {
+      "id": "wairarapa-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Martinborough",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Martinborough"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Star Safari is confirmed",
+            "de": "Star Safari ist bestätigt"
+          },
+          "body": {
+            "en": "For Star Safari, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Star Safari nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "wairarapa-place",
+            "wairarapa-access",
+            "wairarapa-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "A weather cancellation becomes a local indoor evening or a new booking, not an unsupported attempt on another farm road. Do not substitute Stonehenge Aotearoa unless its own authority, route and timing have been checked before departure.",
+            "de": "Eine wetterbedingte Absage wird zu einem lokalen Innenabend oder neuer Buchung und nicht zu einem unbestätigten Versuch auf einer anderen Farmstraße. Ersetze den Ort nicht durch Stonehenge Aotearoa, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "wairarapa-place",
+            "wairarapa-access",
+            "wairarapa-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "wairarapa-place",
+    "wairarapa-access",
+    "wairarapa-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

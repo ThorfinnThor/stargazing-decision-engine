@@ -6,15 +6,15 @@ This report checks source copy against `docs/editorial-writing-standard.md`. It 
 
 | Corpus | Pages | Text units | Banned phrases | Em dashes | Colons |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| destination | 50 | 2218 | 0 | 4 | 146 |
-| location-tour | 50 | 1028 | 0 | 0 | 0 |
-| gear | 10 | 598 | 0 | 2 | 32 |
+| destination | 75 | 3318 | 0 | 4 | 146 |
+| location-tour | 75 | 1678 | 0 | 0 | 0 |
+| gear | 13 | 772 | 0 | 2 | 35 |
 
 ## Findings
 
 - Exact cross-page duplicate passages: 0
-- Repeated twelve-word openings across pages: 4
-- The repeated openings are limited to factual published-specification labels in gear comparison bullets.
+- Repeated twelve-word openings across pages: 247
+- The repeated openings are not limited to factual gear labels and require prose review.
 - Repeated destination section-ID sequences: 0
 - The new location-tour corpus passes the hard phrase and exact-duplication checks.
 

@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "waterton-lakes-one-site-night",
+  "slug": "waterton-lakes-one-site-night",
+  "destinationId": "waterton-lakes",
+  "recommendedSiteId": "townsite-campground-waterton",
+  "title": {
+    "en": "A Waterton night that stays close to the townsite",
+    "de": "Eine Waterton-Nacht nahe dem Townsite"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Waterton Park to Townsite Campground, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Waterton Park zu Townsite Campground, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Observe from the booked campground footprint or a confirmed lakeside area, then return on the known townsite route. This self-guided route uses Townsite Campground as the fixed site and Waterton Park as the return base. Bear activity, strong gusts, wildfire measures and winter shutdowns override every astronomy score. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Beobachte innerhalb des gebuchten Campingbereichs oder an einer bestätigten Seeuferfläche und kehre auf der bekannten Townsite-Route zurück. Diese selbst geführte Route nutzt Townsite Campground als festen Ort und Waterton Park als Rückkehrbasis. Bärenaktivität, starke Böen, Waldbrandmaßnahmen und Wintersperren stehen über jedem Astronomiewert. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Townsite Campground",
+        "de": "Townsite Campground"
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Waterton Park",
+        "de": "Waterton Park"
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Cameron Bay day-use area, only as a separately verified plan",
+        "de": "Cameron Bay day-use area, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "waterton-lakes-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Waterton Park",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Waterton Park"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Townsite Campground is confirmed",
+            "de": "Townsite Campground ist bestätigt"
+          },
+          "body": {
+            "en": "For Townsite Campground, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Townsite Campground nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "waterton-lakes-place",
+            "waterton-lakes-access",
+            "waterton-lakes-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Wind or wildlife near the site moves the session into shelter; it does not justify a drive onto a seasonal road. Do not substitute Cameron Bay day-use area unless its own authority, route and timing have been checked before departure.",
+            "de": "Wind oder Wildtiere nahe dem Ort verlagern die Sitzung in den Schutz und rechtfertigen keine Fahrt auf eine saisonale Straße. Ersetze den Ort nicht durch Cameron Bay day-use area, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "waterton-lakes-place",
+            "waterton-lakes-access",
+            "waterton-lakes-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waterton-lakes-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Townsite Campground is enough for one night",
+        "de": "Warum Townsite Campground für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Waterton's mountain darkness comes with wind, wildlife and seasonal closures. A reserved Townsite campsite offers the most defensible overnight base. Cameron Bay needs confirmation that the day-use area and approach remain available after dark. This tour commits to Townsite Campground because a single known site preserves attention for the sky and the return. Cameron Bay day-use area is useful information for another date, not a target to add after darkness.",
+          "Store food correctly, avoid shoreline vegetation and never approach wildlife for a night photograph. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Watertons Bergdunkelheit bringt Wind, Wildtiere und saisonale Sperren mit sich. Ein reservierter Townsite-Stellplatz bietet die verlässlichste Nachtbasis. Für Cameron Bay muss bestätigt sein, dass Tagesfläche und Zufahrt nachts verfügbar bleiben. Diese Tour legt sich auf Townsite Campground fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Cameron Bay day-use area ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Lagere Essen korrekt, meide Ufervegetation und nähere dich für Nachtfotos niemals Wildtieren. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ]
+    },
+    {
+      "id": "waterton-lakes-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Townsite Campground",
+        "de": "Der Abendrhythmus an Townsite Campground"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Waterton Park, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Waterton Park, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "waterton-lakes-place",
+            "waterton-lakes-access",
+            "waterton-lakes-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Townsite Campground, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Townsite Campground lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "waterton-lakes-place",
+            "waterton-lakes-access",
+            "waterton-lakes-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Townsite Campground systematically, inspect the ground and return directly to Waterton Park. Do not trade a safe finish for a late move toward Cameron Bay day-use area or an unverified roadside horizon.",
+            "de": "Verlasse Townsite Campground systematisch, prüfe den Boden und kehre direkt nach Waterton Park zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Cameron Bay day-use area oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "waterton-lakes-place",
+            "waterton-lakes-access",
+            "waterton-lakes-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "waterton-lakes-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Waterton Lakes route",
+        "de": "Was die Route in Waterton Lakes absagt"
+      },
+      "body": {
+        "en": "Bear activity, strong gusts, wildfire measures and winter shutdowns override every astronomy score. Treat that limit as a decision made before equipment leaves the vehicle. Wind or wildlife near the site moves the session into shelter; it does not justify a drive onto a seasonal road. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Bärenaktivität, starke Böen, Waldbrandmaßnahmen und Wintersperren stehen über jedem Astronomiewert. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Wind oder Wildtiere nahe dem Ort verlagern die Sitzung in den Schutz und rechtfertigen keine Fahrt auf eine saisonale Straße. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "waterton-lakes-place",
+        "waterton-lakes-access",
+        "waterton-lakes-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "waterton-lakes-place",
+    "waterton-lakes-access",
+    "waterton-lakes-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

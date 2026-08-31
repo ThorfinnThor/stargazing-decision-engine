@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "south-downs-one-site-night",
+  "slug": "south-downs-one-site-night",
+  "destinationId": "south-downs",
+  "recommendedSiteId": "old-winchester-hill",
+  "title": {
+    "en": "A South Downs session that respects the last mile",
+    "de": "Eine South-Downs-Sitzung mit Respekt für den letzten Kilometer"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Petersfield to Old Winchester Hill, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Petersfield zu Old Winchester Hill, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Choose one official stargazing site, inspect its return path before twilight and finish before transport or parking restrictions become uncertain. This self-guided route uses Old Winchester Hill as the fixed site and Petersfield as the return base. Car-park gates, residents, livestock, muddy paths and nature-reserve restrictions decide whether the final kilometre works. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Wähle einen offiziellen Stargazing-Ort, prüfe seinen Rückweg vor der Dämmerung und beende die Sitzung, bevor Transport- oder Parkregeln unsicher werden. Diese selbst geführte Route nutzt Old Winchester Hill als festen Ort und Petersfield als Rückkehrbasis. Parkplatztore, Anwohner, Weidetiere, schlammige Wege und Naturschutzregeln entscheiden, ob der letzte Kilometer funktioniert. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Old Winchester Hill",
+        "de": "Old Winchester Hill"
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Petersfield",
+        "de": "Petersfield"
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Iping Common, only as a separately verified plan",
+        "de": "Iping Common, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "south-downs-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Old Winchester Hill",
+        "de": "Der Abendrhythmus an Old Winchester Hill"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Petersfield, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Petersfield, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "south-downs-place",
+            "south-downs-access",
+            "south-downs-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Old Winchester Hill, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Old Winchester Hill lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "south-downs-place",
+            "south-downs-access",
+            "south-downs-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Old Winchester Hill systematically, inspect the ground and return directly to Petersfield. Do not trade a safe finish for a late move toward Iping Common or an unverified roadside horizon.",
+            "de": "Verlasse Old Winchester Hill systematisch, prüfe den Boden und kehre direkt nach Petersfield zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Iping Common oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "south-downs-place",
+            "south-downs-access",
+            "south-downs-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "south-downs-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the South Downs route",
+        "de": "Was die Route in South Downs absagt"
+      },
+      "body": {
+        "en": "Car-park gates, residents, livestock, muddy paths and nature-reserve restrictions decide whether the final kilometre works. Treat that limit as a decision made before equipment leaves the vehicle. If access is unclear, observe from the accommodation area rather than treating another rural car park as interchangeable. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Parkplatztore, Anwohner, Weidetiere, schlammige Wege und Naturschutzregeln entscheiden, ob der letzte Kilometer funktioniert. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Bei unklarem Zugang beobachte nahe der Unterkunft, statt einen anderen ländlichen Parkplatz als austauschbar zu behandeln. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "south-downs-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Old Winchester Hill is enough for one night",
+        "de": "Warum Old Winchester Hill für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "South Downs darkness exists close to towns, villages and sensitive chalk habitat. Old Winchester Hill gives elevation and an official discovery-site context. Iping Common is lower and ecologically delicate, so current parking and reserve guidance must be read literally. This tour commits to Old Winchester Hill because a single known site preserves attention for the sky and the return. Iping Common is useful information for another date, not a target to add after darkness.",
+          "Use the smallest practical light, stay on paths and keep voices, vehicles and tripods away from homes and protected vegetation. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Die Dunkelheit der South Downs liegt nahe an Städten, Dörfern und empfindlichem Kalkrasen. Old Winchester Hill bietet Höhe und den Kontext eines offiziellen Discovery Site. Iping Common liegt tiefer und ist ökologisch sensibel, daher gelten aktuelle Park- und Reservatshinweise wörtlich. Diese Tour legt sich auf Old Winchester Hill fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Iping Common ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Nutze das kleinste praktikable Licht, bleibe auf Wegen und halte Stimmen, Fahrzeuge sowie Stative von Häusern und geschützter Vegetation fern. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "south-downs-place",
+        "south-downs-access",
+        "south-downs-status"
+      ]
+    },
+    {
+      "id": "south-downs-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Petersfield",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Petersfield"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Old Winchester Hill is confirmed",
+            "de": "Old Winchester Hill ist bestätigt"
+          },
+          "body": {
+            "en": "For Old Winchester Hill, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Old Winchester Hill nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "south-downs-place",
+            "south-downs-access",
+            "south-downs-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "If access is unclear, observe from the accommodation area rather than treating another rural car park as interchangeable. Do not substitute Iping Common unless its own authority, route and timing have been checked before departure.",
+            "de": "Bei unklarem Zugang beobachte nahe der Unterkunft, statt einen anderen ländlichen Parkplatz als austauschbar zu behandeln. Ersetze den Ort nicht durch Iping Common, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "south-downs-place",
+            "south-downs-access",
+            "south-downs-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "south-downs-place",
+    "south-downs-access",
+    "south-downs-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

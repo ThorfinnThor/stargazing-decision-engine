@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "joshua-tree-one-site-night",
+  "slug": "joshua-tree-one-site-night",
+  "destinationId": "joshua-tree",
+  "recommendedSiteId": "hidden-valley-joshua-tree",
+  "title": {
+    "en": "A desert night between Hidden Valley and Cottonwood",
+    "de": "Eine Wüstennacht zwischen Hidden Valley und Cottonwood"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Twentynine Palms to Hidden Valley picnic area, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Twentynine Palms zu Hidden Valley picnic area, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Use Hidden Valley as a compact evening stop, or reserve Cottonwood and observe from the campground area without adding a cross-park drive after fatigue sets in. This self-guided route uses Hidden Valley picnic area as the fixed site and Twentynine Palms as the return base. Desert heat, scarce water, long driving distances and unlit roads remain the controlling risks. Parking at a named site does not permit roadside camping or movement into closed ground. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Nutze Hidden Valley als kompakten Abendstopp oder reserviere Cottonwood und beobachte im Bereich des Campingplatzes, ohne später müde noch quer durch den Park zu fahren. Diese selbst geführte Route nutzt Hidden Valley picnic area als festen Ort und Twentynine Palms als Rückkehrbasis. Wüstenhitze, knappes Wasser, lange Fahrstrecken und unbeleuchtete Straßen bleiben die entscheidenden Risiken. Ein Parkplatz an einem genannten Ort erlaubt weder Straßenrand-Camping noch das Betreten gesperrter Flächen. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Hidden Valley picnic area",
+        "de": "Hidden Valley picnic area"
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Twentynine Palms",
+        "de": "Twentynine Palms"
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Cottonwood Campground, only as a separately verified plan",
+        "de": "Cottonwood Campground, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "joshua-tree-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Twentynine Palms",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Twentynine Palms"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Hidden Valley picnic area is confirmed",
+            "de": "Hidden Valley picnic area ist bestätigt"
+          },
+          "body": {
+            "en": "For Hidden Valley picnic area, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Hidden Valley picnic area nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "joshua-tree-place",
+            "joshua-tree-access",
+            "joshua-tree-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "If alerts, heat or wind undermine the plan, keep the evening near the booked accommodation in Twentynine Palms rather than improvising a remote pull-out. Do not substitute Cottonwood Campground unless its own authority, route and timing have been checked before departure.",
+            "de": "Wenn Meldungen, Hitze oder Wind den Plan entwerten, bleibe nahe der gebuchten Unterkunft in Twentynine Palms, statt spontan eine abgelegene Haltebucht zu nutzen. Ersetze den Ort nicht durch Cottonwood Campground, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "joshua-tree-place",
+            "joshua-tree-access",
+            "joshua-tree-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joshua-tree-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Hidden Valley picnic area is enough for one night",
+        "de": "Warum Hidden Valley picnic area für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Joshua Tree offers several legal places to look up after dark, but they solve different trips. Hidden Valley suits a shorter evening from the park's northern entrances. Cottonwood makes more sense when the southern campground is already part of the itinerary. This tour commits to Hidden Valley picnic area because a single known site preserves attention for the sky and the return. Cottonwood Campground is useful information for another date, not a target to add after darkness.",
+          "Stay on durable surfaces, shield every light and leave Joshua trees, rocks and nocturnal wildlife undisturbed. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Joshua Tree bietet mehrere legale Orte für eine Nachtbeobachtung, doch sie passen zu unterschiedlichen Reisen. Hidden Valley eignet sich für einen kürzeren Abend von den nördlichen Eingängen. Cottonwood ist sinnvoller, wenn der südliche Campingplatz ohnehin Teil der Route ist. Diese Tour legt sich auf Hidden Valley picnic area fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Cottonwood Campground ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Bleibe auf robusten Flächen, schirme jedes Licht ab und lasse Joshua Trees, Felsen sowie nachtaktive Tiere ungestört. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ]
+    },
+    {
+      "id": "joshua-tree-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Hidden Valley picnic area",
+        "de": "Der Abendrhythmus an Hidden Valley picnic area"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Twentynine Palms, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Twentynine Palms, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "joshua-tree-place",
+            "joshua-tree-access",
+            "joshua-tree-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Hidden Valley picnic area, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Hidden Valley picnic area lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "joshua-tree-place",
+            "joshua-tree-access",
+            "joshua-tree-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Hidden Valley picnic area systematically, inspect the ground and return directly to Twentynine Palms. Do not trade a safe finish for a late move toward Cottonwood Campground or an unverified roadside horizon.",
+            "de": "Verlasse Hidden Valley picnic area systematisch, prüfe den Boden und kehre direkt nach Twentynine Palms zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Cottonwood Campground oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "joshua-tree-place",
+            "joshua-tree-access",
+            "joshua-tree-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "joshua-tree-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Joshua Tree route",
+        "de": "Was die Route in Joshua Tree absagt"
+      },
+      "body": {
+        "en": "Desert heat, scarce water, long driving distances and unlit roads remain the controlling risks. Parking at a named site does not permit roadside camping or movement into closed ground. Treat that limit as a decision made before equipment leaves the vehicle. If alerts, heat or wind undermine the plan, keep the evening near the booked accommodation in Twentynine Palms rather than improvising a remote pull-out. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Wüstenhitze, knappes Wasser, lange Fahrstrecken und unbeleuchtete Straßen bleiben die entscheidenden Risiken. Ein Parkplatz an einem genannten Ort erlaubt weder Straßenrand-Camping noch das Betreten gesperrter Flächen. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Wenn Meldungen, Hitze oder Wind den Plan entwerten, bleibe nahe der gebuchten Unterkunft in Twentynine Palms, statt spontan eine abgelegene Haltebucht zu nutzen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "joshua-tree-place",
+        "joshua-tree-access",
+        "joshua-tree-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "joshua-tree-place",
+    "joshua-tree-access",
+    "joshua-tree-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

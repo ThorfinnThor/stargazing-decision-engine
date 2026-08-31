@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "acadia-one-site-night",
+  "slug": "acadia-one-site-night",
+  "destinationId": "acadia",
+  "recommendedSiteId": "seawall-acadia",
+  "title": {
+    "en": "A coastal sky from Seawall, without a Cadillac detour",
+    "de": "Küstenhimmel an Seawall ohne Cadillac-Umweg"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Bar Harbor to Seawall picnic area, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Bar Harbor zu Seawall picnic area, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Base the evening around Seawall, inspect the shoreline boundary before dark and return on the same road without chasing breaks in cloud across Mount Desert Island. This self-guided route uses Seawall picnic area as the fixed site and Bar Harbor as the return base. Cadillac Summit Road has timed and nightly restrictions, while fog, sea spray and wildlife make improvised coastal movement poor practice. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Plane den Abend um Seawall, prüfe die Küstengrenze vor Dunkelheit und fahre auf derselben Straße zurück, statt Wolkenlücken über Mount Desert Island zu verfolgen. Diese selbst geführte Route nutzt Seawall picnic area als festen Ort und Bar Harbor als Rückkehrbasis. Die Cadillac Summit Road hat zeitliche und nächtliche Beschränkungen. Nebel, Gischt und Wildtiere machen spontane Bewegungen an der Küste unvernünftig. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Seawall picnic area",
+        "de": "Seawall picnic area"
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Bar Harbor",
+        "de": "Bar Harbor"
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Jordan Pond north lot, only as a separately verified plan",
+        "de": "Jordan Pond north lot, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "acadia-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Seawall picnic area",
+        "de": "Der Abendrhythmus an Seawall picnic area"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Bar Harbor, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Bar Harbor, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "acadia-place",
+            "acadia-access",
+            "acadia-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Seawall picnic area, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Seawall picnic area lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "acadia-place",
+            "acadia-access",
+            "acadia-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Seawall picnic area systematically, inspect the ground and return directly to Bar Harbor. Do not trade a safe finish for a late move toward Jordan Pond north lot or an unverified roadside horizon.",
+            "de": "Verlasse Seawall picnic area systematisch, prüfe den Boden und kehre direkt nach Bar Harbor zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Jordan Pond north lot oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "acadia-place",
+            "acadia-access",
+            "acadia-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "acadia-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Acadia route",
+        "de": "Was die Route in Acadia absagt"
+      },
+      "body": {
+        "en": "Cadillac Summit Road has timed and nightly restrictions, while fog, sea spray and wildlife make improvised coastal movement poor practice. Treat that limit as a decision made before equipment leaves the vehicle. Dense fog is a reason to end the coastal session early, not to climb higher on a restricted summit road. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Die Cadillac Summit Road hat zeitliche und nächtliche Beschränkungen. Nebel, Gischt und Wildtiere machen spontane Bewegungen an der Küste unvernünftig. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Dichter Nebel ist ein Grund, die Küstensitzung früh zu beenden, und kein Anlass, auf einer beschränkten Gipfelstraße höher zu fahren. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "acadia-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Seawall picnic area is enough for one night",
+        "de": "Warum Seawall picnic area für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Acadia rewards a site chosen for the actual night rather than the most famous summit. Seawall provides an open southwest coast and a straightforward return toward Southwest Harbor. Jordan Pond can work when the park road and parking arrangements have been checked for that date. This tour commits to Seawall picnic area because a single known site preserves attention for the sky and the return. Jordan Pond north lot is useful information for another date, not a target to add after darkness.",
+          "Use the established picnic and parking footprint, keep off wet rocks and protect the quiet of nearby campgrounds and homes. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "In Acadia lohnt sich ein Ort, der zur tatsächlichen Nacht passt, mehr als der berühmteste Gipfel. Seawall bietet eine offene Südwestküste und eine klare Rückfahrt Richtung Southwest Harbor. Jordan Pond funktioniert, wenn Parkstraße und Parkregeln für das Datum geprüft sind. Diese Tour legt sich auf Seawall picnic area fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Jordan Pond north lot ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Nutze bestehende Picknick- und Parkflächen, bleibe von nassen Felsen fern und schütze die Ruhe naher Campingplätze und Häuser. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "acadia-place",
+        "acadia-access",
+        "acadia-status"
+      ]
+    },
+    {
+      "id": "acadia-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Bar Harbor",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Bar Harbor"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Seawall picnic area is confirmed",
+            "de": "Seawall picnic area ist bestätigt"
+          },
+          "body": {
+            "en": "For Seawall picnic area, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Seawall picnic area nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "acadia-place",
+            "acadia-access",
+            "acadia-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Dense fog is a reason to end the coastal session early, not to climb higher on a restricted summit road. Do not substitute Jordan Pond north lot unless its own authority, route and timing have been checked before departure.",
+            "de": "Dichter Nebel ist ein Grund, die Küstensitzung früh zu beenden, und kein Anlass, auf einer beschränkten Gipfelstraße höher zu fahren. Ersetze den Ort nicht durch Jordan Pond north lot, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "acadia-place",
+            "acadia-access",
+            "acadia-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "acadia-place",
+    "acadia-access",
+    "acadia-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

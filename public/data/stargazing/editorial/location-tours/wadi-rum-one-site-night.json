@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "wadi-rum-one-site-night",
+  "slug": "wadi-rum-one-site-night",
+  "destinationId": "wadi-rum",
+  "recommendedSiteId": "wadi-rum-visitor-centre",
+  "title": {
+    "en": "Wadi Rum astronomy from a booked camp, not an open map pin",
+    "de": "Wadi-Rum-Astronomie vom gebuchten Camp statt von einem Kartenpunkt"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Wadi Rum Village to Wadi Rum Visitor Centre, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Wadi Rum Village zu Wadi Rum Visitor Centre, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Register at the visitor centre, meet the confirmed operator and observe only from the camp or stop selected for that itinerary. This self-guided route uses Wadi Rum Visitor Centre as the fixed site and Wadi Rum Village as the return base. Heat, cold, sand, flash floods, navigation and protected-area rules make independent night driving unsuitable. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Registriere dich am Besucherzentrum, triff den bestätigten Anbieter und beobachte nur vom Camp oder Stopp des gebuchten Plans. Diese selbst geführte Route nutzt Wadi Rum Visitor Centre als festen Ort und Wadi Rum Village als Rückkehrbasis. Hitze, Kälte, Sand, Sturzfluten, Navigation und Schutzgebietsregeln machen unabhängiges Nachtfahren ungeeignet. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Wadi Rum Visitor Centre",
+        "de": "Wadi Rum Visitor Centre"
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Wadi Rum Village",
+        "de": "Wadi Rum Village"
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Booked Wadi Rum desert camp, only as a separately verified plan",
+        "de": "Booked Wadi Rum desert camp, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "wadi-rum-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Wadi Rum Visitor Centre",
+        "de": "Der Abendrhythmus an Wadi Rum Visitor Centre"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Wadi Rum Village, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Wadi Rum Village, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "wadi-rum-place",
+            "wadi-rum-access",
+            "wadi-rum-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Wadi Rum Visitor Centre, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Wadi Rum Visitor Centre lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "wadi-rum-place",
+            "wadi-rum-access",
+            "wadi-rum-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Wadi Rum Visitor Centre systematically, inspect the ground and return directly to Wadi Rum Village. Do not trade a safe finish for a late move toward Booked Wadi Rum desert camp or an unverified roadside horizon.",
+            "de": "Verlasse Wadi Rum Visitor Centre systematisch, prüfe den Boden und kehre direkt nach Wadi Rum Village zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Booked Wadi Rum desert camp oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "wadi-rum-place",
+            "wadi-rum-access",
+            "wadi-rum-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wadi-rum-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Wadi Rum route",
+        "de": "Was die Route in Wadi Rum absagt"
+      },
+      "body": {
+        "en": "Heat, cold, sand, flash floods, navigation and protected-area rules make independent night driving unsuitable. Treat that limit as a decision made before equipment leaves the vehicle. Wind, flood risk or a cancelled booking means staying in Wadi Rum Village or Aqaba, not hiring an informal night drive. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Hitze, Kälte, Sand, Sturzfluten, Navigation und Schutzgebietsregeln machen unabhängiges Nachtfahren ungeeignet. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Wind, Sturzflutrisiko oder stornierte Buchung bedeuten Aufenthalt in Wadi Rum Village oder Aqaba und keine informelle Nachtfahrt. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "wadi-rum-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Wadi Rum Visitor Centre is enough for one night",
+        "de": "Warum Wadi Rum Visitor Centre für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Wadi Rum is a protected desert landscape where a map coordinate cannot replace a registered local arrangement. The visitor centre is the gateway, not the overnight observing field. A booked camp or guide should define transport, the exact place and the return. This tour commits to Wadi Rum Visitor Centre because a single known site preserves attention for the sky and the return. Booked Wadi Rum desert camp is useful information for another date, not a target to add after darkness.",
+          "Respect Bedouin hosts, archaeology and quiet; leave no waste and never drive or walk away from the agreed route. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Wadi Rum ist eine geschützte Wüstenlandschaft, in der ein Kartenpunkt keine registrierte lokale Regelung ersetzt. Das Besucherzentrum ist das Tor und nicht das nächtliche Beobachtungsfeld. Ein gebuchtes Camp oder ein Guide definiert Transport, genauen Ort und Rückkehr. Diese Tour legt sich auf Wadi Rum Visitor Centre fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Booked Wadi Rum desert camp ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Respektiere beduinische Gastgeber, Archäologie und Ruhe. Hinterlasse keinen Abfall und entferne dich nie fahrend oder gehend von der vereinbarten Route. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "wadi-rum-place",
+        "wadi-rum-access",
+        "wadi-rum-status"
+      ]
+    },
+    {
+      "id": "wadi-rum-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Wadi Rum Village",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Wadi Rum Village"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Wadi Rum Visitor Centre is confirmed",
+            "de": "Wadi Rum Visitor Centre ist bestätigt"
+          },
+          "body": {
+            "en": "For Wadi Rum Visitor Centre, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Wadi Rum Visitor Centre nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "wadi-rum-place",
+            "wadi-rum-access",
+            "wadi-rum-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Wind, flood risk or a cancelled booking means staying in Wadi Rum Village or Aqaba, not hiring an informal night drive. Do not substitute Booked Wadi Rum desert camp unless its own authority, route and timing have been checked before departure.",
+            "de": "Wind, Sturzflutrisiko oder stornierte Buchung bedeuten Aufenthalt in Wadi Rum Village oder Aqaba und keine informelle Nachtfahrt. Ersetze den Ort nicht durch Booked Wadi Rum desert camp, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "wadi-rum-place",
+            "wadi-rum-access",
+            "wadi-rum-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "wadi-rum-place",
+    "wadi-rum-access",
+    "wadi-rum-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

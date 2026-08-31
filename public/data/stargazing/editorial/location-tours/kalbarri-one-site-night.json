@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "kalbarri-one-site-night",
+  "slug": "kalbarri-one-site-night",
+  "destinationId": "kalbarri",
+  "recommendedSiteId": "kalbarri-skywalk-night",
+  "title": {
+    "en": "Kalbarri after sunset without treating the gorge as a night trail",
+    "de": "Kalbarri nach Sonnenuntergang ohne die Schlucht zum Nachtweg zu machen"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Kalbarri to Kalbarri Skywalk, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Kalbarri zu Kalbarri Skywalk, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Visit the Skywalk in daylight first, return only if current access permits it and stay entirely on the built platform and car-park route. This self-guided route uses Kalbarri Skywalk as the fixed site and Kalbarri as the return base. Heat, fire, road closures, unlit structures and the distance from help make current park and emergency notices essential. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Besuche den Skywalk zuerst bei Tageslicht, kehre nur bei aktuell erlaubtem Zugang zurück und bleibe vollständig auf Plattform und Parkplatzweg. Diese selbst geführte Route nutzt Kalbarri Skywalk als festen Ort und Kalbarri als Rückkehrbasis. Hitze, Feuer, Straßensperren, unbeleuchtete Anlagen und die Entfernung zu Hilfe machen aktuelle Park- und Notfallmeldungen unverzichtbar. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Kalbarri Skywalk",
+        "de": "Kalbarri Skywalk"
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Kalbarri",
+        "de": "Kalbarri"
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Meanarra Hill lookout, only as a separately verified plan",
+        "de": "Meanarra Hill lookout, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "kalbarri-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Kalbarri route",
+        "de": "Was die Route in Kalbarri absagt"
+      },
+      "body": {
+        "en": "Heat, fire, road closures, unlit structures and the distance from help make current park and emergency notices essential. Treat that limit as a decision made before equipment leaves the vehicle. Any access doubt shifts the session to Meanarra or the town edge after a separate check, never to an unsigned gorge track. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Hitze, Feuer, Straßensperren, unbeleuchtete Anlagen und die Entfernung zu Hilfe machen aktuelle Park- und Notfallmeldungen unverzichtbar. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Jeder Zugangszweifel verlagert die Sitzung nach separater Prüfung zu Meanarra oder an den Ortsrand, niemals auf einen unmarkierten Schluchtweg. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "kalbarri-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Kalbarri",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Kalbarri"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Kalbarri Skywalk is confirmed",
+            "de": "Kalbarri Skywalk ist bestätigt"
+          },
+          "body": {
+            "en": "For Kalbarri Skywalk, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Kalbarri Skywalk nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "kalbarri-place",
+            "kalbarri-access",
+            "kalbarri-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Any access doubt shifts the session to Meanarra or the town edge after a separate check, never to an unsigned gorge track. Do not substitute Meanarra Hill lookout unless its own authority, route and timing have been checked before departure.",
+            "de": "Jeder Zugangszweifel verlagert die Sitzung nach separater Prüfung zu Meanarra oder an den Ortsrand, niemals auf einen unmarkierten Schluchtweg. Ersetze den Ort nicht durch Meanarra Hill lookout, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "kalbarri-place",
+            "kalbarri-access",
+            "kalbarri-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kalbarri-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Kalbarri Skywalk",
+        "de": "Der Abendrhythmus an Kalbarri Skywalk"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Kalbarri, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Kalbarri, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "kalbarri-place",
+            "kalbarri-access",
+            "kalbarri-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Kalbarri Skywalk, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Kalbarri Skywalk lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "kalbarri-place",
+            "kalbarri-access",
+            "kalbarri-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Kalbarri Skywalk systematically, inspect the ground and return directly to Kalbarri. Do not trade a safe finish for a late move toward Meanarra Hill lookout or an unverified roadside horizon.",
+            "de": "Verlasse Kalbarri Skywalk systematisch, prüfe den Boden und kehre direkt nach Kalbarri zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Meanarra Hill lookout oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "kalbarri-place",
+            "kalbarri-access",
+            "kalbarri-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kalbarri-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Kalbarri Skywalk is enough for one night",
+        "de": "Warum Kalbarri Skywalk für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Kalbarri offers an unusually open western sky, but the national-park gorge remains a hot, remote environment. The Skywalk can support a carefully checked visit from its established platform. Meanarra Hill keeps the alternative closer to town. This tour commits to Kalbarri Skywalk because a single known site preserves attention for the sky and the return. Meanarra Hill lookout is useful information for another date, not a target to add after darkness.",
+          "Do not enter gorge trails at night, feed wildlife or use bright lights across other visitors and the Murchison landscape. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Kalbarri bietet einen ungewöhnlich offenen Westhimmel, doch die Nationalparkschlucht bleibt heiß und abgelegen. Der Skywalk kann nach sorgfältiger Prüfung von seiner festen Plattform genutzt werden. Meanarra Hill hält die Alternative näher am Ort. Diese Tour legt sich auf Kalbarri Skywalk fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Meanarra Hill lookout ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Betrete nachts keine Schluchtwege, füttere keine Tiere und richte kein helles Licht auf Besucher oder die Murchison-Landschaft. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "kalbarri-place",
+        "kalbarri-access",
+        "kalbarri-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "kalbarri-place",
+    "kalbarri-access",
+    "kalbarri-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

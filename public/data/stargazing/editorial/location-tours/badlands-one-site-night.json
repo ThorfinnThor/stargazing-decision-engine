@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "badlands-one-site-night",
+  "slug": "badlands-one-site-night",
+  "destinationId": "badlands",
+  "recommendedSiteId": "cedar-pass-badlands",
+  "title": {
+    "en": "Prairie weather and one chosen overlook in Badlands",
+    "de": "Präriewetter und ein gewählter Aussichtspunkt in Badlands"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Wall to Cedar Pass Campground, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Wall zu Cedar Pass Campground, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Arrive at Pinnacles in daylight, use the formal overlook and return toward Wall without stopping on narrow shoulders. This self-guided route uses Cedar Pass Campground as the fixed site and Wall as the return base. Severe storms, wildlife on roads and unguarded terrain can turn a clear-looking evening unsafe quickly. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Erreiche Pinnacles bei Tageslicht, nutze den formalen Aussichtspunkt und fahre ohne Stopps auf schmalen Seitenstreifen Richtung Wall zurück. Diese selbst geführte Route nutzt Cedar Pass Campground als festen Ort und Wall als Rückkehrbasis. Starke Gewitter, Tiere auf Straßen und ungesichertes Gelände können einen klar wirkenden Abend rasch unsicher machen. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Cedar Pass Campground",
+        "de": "Cedar Pass Campground"
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Wall",
+        "de": "Wall"
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Pinnacles Overlook, only as a separately verified plan",
+        "de": "Pinnacles Overlook, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "badlands-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Badlands route",
+        "de": "Was die Route in Badlands absagt"
+      },
+      "body": {
+        "en": "Severe storms, wildlife on roads and unguarded terrain can turn a clear-looking evening unsafe quickly. Treat that limit as a decision made before equipment leaves the vehicle. Lightning or animals near the parking area ends the session; a vehicle is shelter only when official safety guidance supports it. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Starke Gewitter, Tiere auf Straßen und ungesichertes Gelände können einen klar wirkenden Abend rasch unsicher machen. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Blitze oder Tiere nahe dem Parkplatz beenden die Sitzung. Ein Fahrzeug ist nur Schutz, wenn offizielle Sicherheitshinweise dies stützen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "badlands-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Wall",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Wall"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Cedar Pass Campground is confirmed",
+            "de": "Cedar Pass Campground ist bestätigt"
+          },
+          "body": {
+            "en": "For Cedar Pass Campground, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Cedar Pass Campground nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "badlands-place",
+            "badlands-access",
+            "badlands-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Lightning or animals near the parking area ends the session; a vehicle is shelter only when official safety guidance supports it. Do not substitute Pinnacles Overlook unless its own authority, route and timing have been checked before departure.",
+            "de": "Blitze oder Tiere nahe dem Parkplatz beenden die Sitzung. Ein Fahrzeug ist nur Schutz, wenn offizielle Sicherheitshinweise dies stützen. Ersetze den Ort nicht durch Pinnacles Overlook, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "badlands-place",
+            "badlands-access",
+            "badlands-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "badlands-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Cedar Pass Campground",
+        "de": "Der Abendrhythmus an Cedar Pass Campground"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Wall, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Wall, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "badlands-place",
+            "badlands-access",
+            "badlands-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Cedar Pass Campground, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Cedar Pass Campground lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "badlands-place",
+            "badlands-access",
+            "badlands-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Cedar Pass Campground systematically, inspect the ground and return directly to Wall. Do not trade a safe finish for a late move toward Pinnacles Overlook or an unverified roadside horizon.",
+            "de": "Verlasse Cedar Pass Campground systematisch, prüfe den Boden und kehre direkt nach Wall zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Pinnacles Overlook oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "badlands-place",
+            "badlands-access",
+            "badlands-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "badlands-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Cedar Pass Campground is enough for one night",
+        "de": "Warum Cedar Pass Campground für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Badlands exposes an enormous sky, but also wind, lightning, bison and abrupt drop-offs. Pinnacles Overlook serves an independent visit. Cedar Pass is preferable when a booked campsite removes the need for a late drive. This tour commits to Cedar Pass Campground because a single known site preserves attention for the sky and the return. Pinnacles Overlook is useful information for another date, not a target to add after darkness.",
+          "Stay behind established edges, give wildlife a wide berth and leave the prairie quiet. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Badlands öffnet einen riesigen Himmel, aber auch Wind, Blitz, Bisons und abrupte Kanten. Pinnacles Overlook eignet sich unabhängig. Cedar Pass ist besser, wenn ein gebuchter Stellplatz die späte Fahrt vermeidet. Diese Tour legt sich auf Cedar Pass Campground fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Pinnacles Overlook ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Bleibe hinter etablierten Kanten, halte großen Abstand zu Wildtieren und lasse die Prärie ruhig. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "badlands-place",
+        "badlands-access",
+        "badlands-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "badlands-place",
+    "badlands-access",
+    "badlands-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

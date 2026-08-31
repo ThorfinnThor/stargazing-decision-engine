@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "river-murray-one-site-night",
+  "slug": "river-murray-one-site-night",
+  "destinationId": "river-murray",
+  "recommendedSiteId": "big-bend-astro-pad",
+  "title": {
+    "en": "One River Murray astro pad and no late river crossing",
+    "de": "Ein River-Murray-Astro-Pad ohne späte Flussquerung"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Mannum to Big Bend astronomy pad, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Mannum zu Big Bend astronomy pad, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Select Big Bend or Towitta from the accommodation route, reach it before dusk and return without adding a ferry or cross-reserve detour. This self-guided route uses Big Bend astronomy pad as the fixed site and Mannum as the return base. Ferry schedules, river fog, livestock, heat and long rural roads determine which side of the Murray should be chosen. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Wähle Big Bend oder Towitta nach der Unterkunftsroute, erreiche den Ort vor der Dämmerung und kehre ohne Fähre oder Umweg durch das Reservat zurück. Diese selbst geführte Route nutzt Big Bend astronomy pad als festen Ort und Mannum als Rückkehrbasis. Fährzeiten, Flussnebel, Weidetiere, Hitze und lange Landstraßen bestimmen, welche Seite des Murray gewählt wird. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Big Bend astronomy pad",
+        "de": "Big Bend astronomy pad"
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Mannum",
+        "de": "Mannum"
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Towitta astronomy pad, only as a separately verified plan",
+        "de": "Towitta astronomy pad, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "river-murray-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Mannum",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Mannum"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Big Bend astronomy pad is confirmed",
+            "de": "Big Bend astronomy pad ist bestätigt"
+          },
+          "body": {
+            "en": "For Big Bend astronomy pad, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Big Bend astronomy pad nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "river-murray-place",
+            "river-murray-access",
+            "river-murray-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Fog or a missed ferry is solved by staying on the current riverbank, not by accelerating through unfamiliar rural roads. Do not substitute Towitta astronomy pad unless its own authority, route and timing have been checked before departure.",
+            "de": "Nebel oder eine verpasste Fähre werden durch Verbleib am aktuellen Ufer gelöst, nicht durch schnelleres Fahren auf unbekannten Landstraßen. Ersetze den Ort nicht durch Towitta astronomy pad, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "river-murray-place",
+            "river-murray-access",
+            "river-murray-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "river-murray-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Big Bend astronomy pad is enough for one night",
+        "de": "Warum Big Bend astronomy pad für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "The River Murray reserve has an advantage many large dark-sky regions lack. Its published astronomy pads make the destination precise. Big Bend opens toward rural sky east of the river. Towitta suits a western approach; they should not become two stops in one tired night. This tour commits to Big Bend astronomy pad because a single known site preserves attention for the sky and the return. Towitta astronomy pad is useful information for another date, not a target to add after darkness.",
+          "Use the astronomy pad footprint, close gates, avoid crops and stock and keep vehicle lights pointed away from observers. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Das River-Murray-Reservat besitzt einen Vorteil, der vielen großen Dark-Sky-Regionen fehlt. Seine veröffentlichten Astronomie-Pads machen das Ziel präzise. Big Bend öffnet den ländlichen Himmel östlich des Flusses. Towitta passt zu einer westlichen Anfahrt. Beide gehören nicht in eine müde Nacht. Diese Tour legt sich auf Big Bend astronomy pad fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Towitta astronomy pad ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Nutze die Fläche des Astronomy Pads, schließe Tore, meide Felder und Tiere und richte Fahrzeuglicht von Beobachtern weg. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ]
+    },
+    {
+      "id": "river-murray-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Big Bend astronomy pad",
+        "de": "Der Abendrhythmus an Big Bend astronomy pad"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Mannum, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Mannum, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "river-murray-place",
+            "river-murray-access",
+            "river-murray-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Big Bend astronomy pad, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Big Bend astronomy pad lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "river-murray-place",
+            "river-murray-access",
+            "river-murray-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Big Bend astronomy pad systematically, inspect the ground and return directly to Mannum. Do not trade a safe finish for a late move toward Towitta astronomy pad or an unverified roadside horizon.",
+            "de": "Verlasse Big Bend astronomy pad systematisch, prüfe den Boden und kehre direkt nach Mannum zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Towitta astronomy pad oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "river-murray-place",
+            "river-murray-access",
+            "river-murray-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "river-murray-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the River Murray route",
+        "de": "Was die Route in River Murray absagt"
+      },
+      "body": {
+        "en": "Ferry schedules, river fog, livestock, heat and long rural roads determine which side of the Murray should be chosen. Treat that limit as a decision made before equipment leaves the vehicle. Fog or a missed ferry is solved by staying on the current riverbank, not by accelerating through unfamiliar rural roads. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Fährzeiten, Flussnebel, Weidetiere, Hitze und lange Landstraßen bestimmen, welche Seite des Murray gewählt wird. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Nebel oder eine verpasste Fähre werden durch Verbleib am aktuellen Ufer gelöst, nicht durch schnelleres Fahren auf unbekannten Landstraßen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "river-murray-place",
+        "river-murray-access",
+        "river-murray-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "river-murray-place",
+    "river-murray-access",
+    "river-murray-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

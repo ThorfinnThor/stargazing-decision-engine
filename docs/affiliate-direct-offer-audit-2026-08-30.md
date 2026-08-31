@@ -1,6 +1,6 @@
 # Direct stargazing offer audit — 2026-08-30
 
-This audit covers all 50 active destinations against current GetYourGuide and
+The original audit covers the first 50 active destinations against current GetYourGuide and
 Viator inventory. A direct card is published only when the provider's own
 product URL resolves to a complete, bookable, location-relevant night-
 astronomy experience. Search snippets, category pages, editorial articles,
@@ -15,17 +15,30 @@ qualify.
 | Tenerife | 910985 | — | Teide telescope session |
 | Alqueva | 1108246 | — | Monsaraz activity, distinct from Cumeada |
 | Atacama | 852357 | 396238P1 | San Pedro astronomy sessions; dead GYG 1230238 removed |
-| Aoraki Mackenzie | 408459 | — | Authorised Mount John summit programme |
-| Jasper | 456519 | — | Planetarium plus conditional telescope viewing |
+| Aoraki Mackenzie | 408459, 268167 | 50255P3 | Mount John summit programme plus a distinct Tekapo Springs astronomy-and-hot-pools format |
+| Jasper | 456519 | 348239P1 | The same planetarium operator on both marketplaces; telescope viewing remains conditional on the sky |
 | Mauna Kea | 352716 | — | Slope activity, not a summit tour |
-| Elqui Valley | 1001148 | — | Mamalluca programme |
+| Elqui Valley | 1001148, 590139 | — | Separate Mamalluca and Pangue Observatory programmes with different locations and durations |
 | Uluru | 678894 | — | Authorised activity; park-access terms still apply |
 | Hanle | 667535 | — | Multi-day high-altitude journey from Leh |
 | Pico do Arieiro | 1146847 | 410282P1 | Madeira-wide activities; Pico do Arieiro is not guaranteed |
 | Death Valley | 617830 | — | Full-day Las Vegas departure |
 | Canyonlands | 1027645 | — | Moab-area session outside the national park |
+| Joshua Tree | — | 445161P1 | Guided session at an operator-selected remote site; no transport included |
+| Sedona | 1063724 | 483700P2 | Telescope and video-astronomy listings for the same local format |
+| Kalbarri | 794940 | — | Guided Skywalk visit with transfer from Kalbarri |
+| Wairarapa | 1090703 | — | Hosted Star Safari session with a cloud alternative |
+| Oudtshoorn | — | 20510P2 | One-hour Klein Karoo astronomy session; venue confirmed for the date |
+| Wadi Rum | — | 233668P1 | Observatory programme with transfers from many Wadi Rum camps |
 
-All 16 published offer URLs were reviewed on 2026-08-30. Dynamic price,
+The original 16 published offer URLs were reviewed on 2026-08-30. Eleven
+additional exact-product URLs for Elqui Valley, Aoraki Mackenzie, Jasper,
+Joshua Tree, Sedona, Kalbarri, Wairarapa, Oudtshoorn, and Wadi Rum were
+reviewed on 2026-08-31, bringing the curated catalog to 27 offers. The
+follow-up for the 25-destination expansion prioritised exact astronomy matches;
+the remaining new destinations retain only general activity searches until a
+complete provider-catalog re-audit finds a qualifying product.
+Dynamic price,
 availability, rating, and cancellation claims remain on the provider page and
 are not copied into the static catalog.
 

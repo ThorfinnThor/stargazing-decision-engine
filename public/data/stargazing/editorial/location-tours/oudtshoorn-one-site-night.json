@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "oudtshoorn-one-site-night",
+  "slug": "oudtshoorn-one-site-night",
+  "destinationId": "oudtshoorn",
+  "recommendedSiteId": "buffelsdrift-night-experience",
+  "title": {
+    "en": "Klein Karoo stars inside a booked property",
+    "de": "Klein-Karoo-Sterne innerhalb eines gebuchten Grundstücks"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Oudtshoorn to Buffelsdrift Game Lodge, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Oudtshoorn zu Buffelsdrift Game Lodge, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Book the lodge or farm first, confirm the meeting point and keep the entire evening within the host's lit and unlit movement rules. This self-guided route uses Buffelsdrift Game Lodge as the fixed site and Oudtshoorn as the return base. Wildlife, private farm boundaries, gravel roads, summer heat and programme availability rule out casual roadside observation. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Buche Lodge oder Farm zuerst, bestätige den Treffpunkt und halte den ganzen Abend innerhalb der Bewegungs- und Lichtregeln des Gastgebers. Diese selbst geführte Route nutzt Buffelsdrift Game Lodge als festen Ort und Oudtshoorn als Rückkehrbasis. Wildtiere, private Farmgrenzen, Schotterstraßen, Sommerhitze und Programmverfügbarkeit schließen beiläufige Straßenrandbeobachtung aus. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Buffelsdrift Game Lodge",
+        "de": "Buffelsdrift Game Lodge"
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Oudtshoorn",
+        "de": "Oudtshoorn"
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "De Zeekoe farm stay, only as a separately verified plan",
+        "de": "De Zeekoe farm stay, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "oudtshoorn-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Oudtshoorn",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Oudtshoorn"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Buffelsdrift Game Lodge is confirmed",
+            "de": "Buffelsdrift Game Lodge ist bestätigt"
+          },
+          "body": {
+            "en": "For Buffelsdrift Game Lodge, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Buffelsdrift Game Lodge nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "oudtshoorn-place",
+            "oudtshoorn-access",
+            "oudtshoorn-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "If the host cancels for weather or wildlife, remain at the accommodation and reschedule instead of searching farm roads. Do not substitute De Zeekoe farm stay unless its own authority, route and timing have been checked before departure.",
+            "de": "Sagt der Gastgeber wegen Wetter oder Wildtieren ab, bleibe in der Unterkunft und buche neu, statt Farmstraßen abzusuchen. Ersetze den Ort nicht durch De Zeekoe farm stay, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "oudtshoorn-place",
+            "oudtshoorn-access",
+            "oudtshoorn-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oudtshoorn-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Buffelsdrift Game Lodge is enough for one night",
+        "de": "Warum Buffelsdrift Game Lodge für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Oudtshoorn's dry interior sky is attractive, but the most responsible night access is tied to a host. Buffelsdrift advertises a guided stargazing activity. De Zeekoe can support a quieter stay-based session only with direct permission for the exact area. This tour commits to Buffelsdrift Game Lodge because a single known site preserves attention for the sky and the return. De Zeekoe farm stay is useful information for another date, not a target to add after darkness.",
+          "Follow every wildlife instruction, use no food or flash outside approved areas and never leave the property route alone at night. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Oudtshoorns trockener Binnenhimmel ist attraktiv, doch der verantwortungsvollste Nachtzugang ist an einen Gastgeber gebunden. Buffelsdrift bietet eine geführte Stargazing-Aktivität an. De Zeekoe kann eine ruhigere, unterkunftsgebundene Sitzung nur mit direkter Erlaubnis für die genaue Fläche tragen. Diese Tour legt sich auf Buffelsdrift Game Lodge fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. De Zeekoe farm stay ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Befolge alle Wildtierhinweise, nutze außerhalb erlaubter Flächen weder Essen noch Blitz und verlasse die Grundstücksroute nachts nie allein. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ]
+    },
+    {
+      "id": "oudtshoorn-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Buffelsdrift Game Lodge",
+        "de": "Der Abendrhythmus an Buffelsdrift Game Lodge"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Oudtshoorn, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Oudtshoorn, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "oudtshoorn-place",
+            "oudtshoorn-access",
+            "oudtshoorn-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Buffelsdrift Game Lodge, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Buffelsdrift Game Lodge lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "oudtshoorn-place",
+            "oudtshoorn-access",
+            "oudtshoorn-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Buffelsdrift Game Lodge systematically, inspect the ground and return directly to Oudtshoorn. Do not trade a safe finish for a late move toward De Zeekoe farm stay or an unverified roadside horizon.",
+            "de": "Verlasse Buffelsdrift Game Lodge systematisch, prüfe den Boden und kehre direkt nach Oudtshoorn zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu De Zeekoe farm stay oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "oudtshoorn-place",
+            "oudtshoorn-access",
+            "oudtshoorn-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oudtshoorn-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Oudtshoorn route",
+        "de": "Was die Route in Oudtshoorn absagt"
+      },
+      "body": {
+        "en": "Wildlife, private farm boundaries, gravel roads, summer heat and programme availability rule out casual roadside observation. Treat that limit as a decision made before equipment leaves the vehicle. If the host cancels for weather or wildlife, remain at the accommodation and reschedule instead of searching farm roads. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Wildtiere, private Farmgrenzen, Schotterstraßen, Sommerhitze und Programmverfügbarkeit schließen beiläufige Straßenrandbeobachtung aus. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Sagt der Gastgeber wegen Wetter oder Wildtieren ab, bleibe in der Unterkunft und buche neu, statt Farmstraßen abzusuchen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "oudtshoorn-place",
+        "oudtshoorn-access",
+        "oudtshoorn-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "oudtshoorn-place",
+    "oudtshoorn-access",
+    "oudtshoorn-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

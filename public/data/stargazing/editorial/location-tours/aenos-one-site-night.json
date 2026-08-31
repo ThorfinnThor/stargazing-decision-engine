@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "aenos-one-site-night",
+  "slug": "aenos-one-site-night",
+  "destinationId": "aenos",
+  "recommendedSiteId": "aenos-entrance-view-area",
+  "title": {
+    "en": "Mount Aenos with the forest road settled before dusk",
+    "de": "Mount Aenos mit geklärter Waldstraße vor der Dämmerung"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Sami, Kefalonia to Mount Aenos entrance viewing area, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Sami, Kefalonia zu Mount Aenos entrance viewing area, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Check the park on the travel day, inspect the entrance area in daylight and descend on the same route before fatigue builds. This self-guided route uses Mount Aenos entrance viewing area as the fixed site and Sami, Kefalonia as the return base. Fire restrictions, wind, fog, road gates and forest navigation can close the useful night window even under clear coastal skies. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Prüfe den Park am Reisetag, erkunde den Eingangsbereich bei Tageslicht und fahre auf derselben Route ab, bevor Müdigkeit wächst. Diese selbst geführte Route nutzt Mount Aenos entrance viewing area als festen Ort und Sami, Kefalonia als Rückkehrbasis. Feuerbeschränkungen, Wind, Nebel, Straßentore und Waldnavigation können das nutzbare Nachtfenster trotz klarer Küste schließen. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Mount Aenos entrance viewing area",
+        "de": "Mount Aenos entrance viewing area"
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Sami, Kefalonia",
+        "de": "Sami, Kefalonia"
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Mount Aenos picnic area, only as a separately verified plan",
+        "de": "Mount Aenos picnic area, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "aenos-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Sami, Kefalonia",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Sami, Kefalonia"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Mount Aenos entrance viewing area is confirmed",
+            "de": "Mount Aenos entrance viewing area ist bestätigt"
+          },
+          "body": {
+            "en": "For Mount Aenos entrance viewing area, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Mount Aenos entrance viewing area nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "aenos-place",
+            "aenos-access",
+            "aenos-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "A closed gate or rising wind redirects the evening to a legal coastal area near the accommodation, not deeper into the forest. Do not substitute Mount Aenos picnic area unless its own authority, route and timing have been checked before departure.",
+            "de": "Ein geschlossenes Tor oder stärkerer Wind verlagert den Abend an eine legale Küstenfläche nahe der Unterkunft und nicht tiefer in den Wald. Ersetze den Ort nicht durch Mount Aenos picnic area, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "aenos-place",
+            "aenos-access",
+            "aenos-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aenos-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Mount Aenos entrance viewing area is enough for one night",
+        "de": "Warum Mount Aenos entrance viewing area für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Mount Aenos brings a dark mountain into an island holiday, but the fir forest and park road require more discipline than a coastal viewpoint. The entrance area is the safer independent reference. Interior picnic areas depend on explicit current access. This tour commits to Mount Aenos entrance viewing area because a single known site preserves attention for the sky and the return. Mount Aenos picnic area is useful information for another date, not a target to add after darkness.",
+          "Use no flame, protect the endemic fir forest, keep roads open and follow every seasonal fire instruction. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Mount Aenos bringt einen dunklen Berg in einen Inselurlaub, doch Tannenwald und Parkstraße verlangen mehr Disziplin als ein Küstenaussichtspunkt. Der Eingangsbereich ist die sicherere unabhängige Referenz. Innere Picknickflächen hängen von ausdrücklich aktuellem Zugang ab. Diese Tour legt sich auf Mount Aenos entrance viewing area fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Mount Aenos picnic area ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Nutze kein Feuer, schütze den endemischen Tannenwald, halte Straßen frei und befolge alle saisonalen Feuerhinweise. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ]
+    },
+    {
+      "id": "aenos-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Mount Aenos entrance viewing area",
+        "de": "Der Abendrhythmus an Mount Aenos entrance viewing area"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Sami, Kefalonia, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Sami, Kefalonia, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "aenos-place",
+            "aenos-access",
+            "aenos-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Mount Aenos entrance viewing area, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Mount Aenos entrance viewing area lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "aenos-place",
+            "aenos-access",
+            "aenos-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Mount Aenos entrance viewing area systematically, inspect the ground and return directly to Sami, Kefalonia. Do not trade a safe finish for a late move toward Mount Aenos picnic area or an unverified roadside horizon.",
+            "de": "Verlasse Mount Aenos entrance viewing area systematisch, prüfe den Boden und kehre direkt nach Sami, Kefalonia zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Mount Aenos picnic area oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "aenos-place",
+            "aenos-access",
+            "aenos-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aenos-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Mount Aenos route",
+        "de": "Was die Route in Mount Aenos absagt"
+      },
+      "body": {
+        "en": "Fire restrictions, wind, fog, road gates and forest navigation can close the useful night window even under clear coastal skies. Treat that limit as a decision made before equipment leaves the vehicle. A closed gate or rising wind redirects the evening to a legal coastal area near the accommodation, not deeper into the forest. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Feuerbeschränkungen, Wind, Nebel, Straßentore und Waldnavigation können das nutzbare Nachtfenster trotz klarer Küste schließen. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Ein geschlossenes Tor oder stärkerer Wind verlagert den Abend an eine legale Küstenfläche nahe der Unterkunft und nicht tiefer in den Wald. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "aenos-place",
+        "aenos-access",
+        "aenos-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "aenos-place",
+    "aenos-access",
+    "aenos-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

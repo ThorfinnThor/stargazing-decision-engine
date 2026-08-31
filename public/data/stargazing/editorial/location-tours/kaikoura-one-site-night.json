@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "kaikoura-one-site-night",
+  "slug": "kaikoura-one-site-night",
+  "destinationId": "kaikoura",
+  "recommendedSiteId": "south-bay-kaikoura",
+  "title": {
+    "en": "Kaikōura between mountain weather and a live shoreline",
+    "de": "Kaikōura zwischen Bergwetter und lebendiger Küste"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Kaikōura to South Bay recreation area, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Kaikōura zu South Bay recreation area, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Use South Bay as the default, mark the vehicle and safe water boundary before twilight and avoid moving around the peninsula after dark. This self-guided route uses South Bay recreation area as the fixed site and Kaikōura as the return base. Marine fog, strong wind, earthquake-related closures, wildlife and waves can alter access faster than a monthly climate score suggests. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Nutze South Bay als Standard, erkenne Fahrzeug und sichere Wassergrenze vor der Dämmerung und wechsle nachts nicht um die Halbinsel. Diese selbst geführte Route nutzt South Bay recreation area als festen Ort und Kaikōura als Rückkehrbasis. Seenebel, starker Wind, erdbebenbedingte Sperren, Wildtiere und Wellen können den Zugang schneller verändern, als ein Monatswert vermuten lässt. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "South Bay recreation area",
+        "de": "South Bay recreation area"
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Kaikōura",
+        "de": "Kaikōura"
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Point Kean car park, only as a separately verified plan",
+        "de": "Point Kean car park, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "kaikoura-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Kaikōura route",
+        "de": "Was die Route in Kaikōura absagt"
+      },
+      "body": {
+        "en": "Marine fog, strong wind, earthquake-related closures, wildlife and waves can alter access faster than a monthly climate score suggests. Treat that limit as a decision made before equipment leaves the vehicle. Fog or high wind moves the evening back to town; the mountain side is not an automatic escape from coastal conditions. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Seenebel, starker Wind, erdbebenbedingte Sperren, Wildtiere und Wellen können den Zugang schneller verändern, als ein Monatswert vermuten lässt. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Nebel oder starker Wind verlagern den Abend in den Ort. Die Bergseite ist kein automatischer Ausweg aus Küstenbedingungen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "kaikoura-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Kaikōura",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Kaikōura"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "South Bay recreation area is confirmed",
+            "de": "South Bay recreation area ist bestätigt"
+          },
+          "body": {
+            "en": "For South Bay recreation area, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für South Bay recreation area nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "kaikoura-place",
+            "kaikoura-access",
+            "kaikoura-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Fog or high wind moves the evening back to town; the mountain side is not an automatic escape from coastal conditions. Do not substitute Point Kean car park unless its own authority, route and timing have been checked before departure.",
+            "de": "Nebel oder starker Wind verlagern den Abend in den Ort. Die Bergseite ist kein automatischer Ausweg aus Küstenbedingungen. Ersetze den Ort nicht durch Point Kean car park, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "kaikoura-place",
+            "kaikoura-access",
+            "kaikoura-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaikoura-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at South Bay recreation area",
+        "de": "Der Abendrhythmus an South Bay recreation area"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Kaikōura, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Kaikōura, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "kaikoura-place",
+            "kaikoura-access",
+            "kaikoura-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At South Bay recreation area, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An South Bay recreation area lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "kaikoura-place",
+            "kaikoura-access",
+            "kaikoura-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave South Bay recreation area systematically, inspect the ground and return directly to Kaikōura. Do not trade a safe finish for a late move toward Point Kean car park or an unverified roadside horizon.",
+            "de": "Verlasse South Bay recreation area systematisch, prüfe den Boden und kehre direkt nach Kaikōura zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Point Kean car park oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "kaikoura-place",
+            "kaikoura-access",
+            "kaikoura-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kaikoura-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why South Bay recreation area is enough for one night",
+        "de": "Warum South Bay recreation area für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Kaikōura's darkness is framed by mountains and ocean, which makes the horizon memorable and the shoreline dynamic. South Bay offers a broad established recreation area. Point Kean requires extra care around seals, tide, track limits and current parking rules. This tour commits to South Bay recreation area because a single known site preserves attention for the sky and the return. Point Kean car park is useful information for another date, not a target to add after darkness.",
+          "Give seals generous distance, stay out of nesting and tidal areas and keep the recreation route clear. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Kaikōuras Dunkelheit wird von Bergen und Meer gerahmt. Das macht den Horizont eindrucksvoll und die Küste dynamisch. South Bay bietet eine breite etablierte Freizeitfläche. Point Kean verlangt besondere Vorsicht bei Robben, Tide, Weggrenzen und aktuellen Parkregeln. Diese Tour legt sich auf South Bay recreation area fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Point Kean car park ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Halte großen Abstand zu Robben, bleibe aus Brut- und Gezeitenflächen und halte die Freizeitrouten frei. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "kaikoura-place",
+        "kaikoura-access",
+        "kaikoura-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "kaikoura-place",
+    "kaikoura-access",
+    "kaikoura-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

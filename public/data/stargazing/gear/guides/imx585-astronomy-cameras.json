@@ -1,0 +1,277 @@
+{
+  "slug": "imx585-astronomy-cameras",
+  "title": {
+    "en": "Three IMX585 colour cameras compared by cooling and control architecture",
+    "de": "Drei IMX585-Farbkameras nach Kühlung und Steuerung verglichen"
+  },
+  "category": "astronomy-cameras",
+  "summary": {
+    "en": "The shared Sony IMX585 sensor does not make these cameras equivalent: cooling, guide integration, storage, hubs, power and software define three different systems.",
+    "de": "Der gemeinsame Sony-IMX585-Sensor macht diese Kameras nicht gleich. Kühlung, Guiding, Speicher, Hubs, Strom und Software ergeben drei unterschiedliche Systeme."
+  },
+  "decisionSummary": {
+    "en": "Choose ZWO's ASI585MC Pro for a conventional cooled USB camera with a two-port hub, Player One's Uranus-C Pro when its dual tilt plates, carbon-fibre body and two Type-C ports fit the train, or the ASI585MC Air when integrated guiding, control and 256 GB storage justify the heavier proprietary all-in-one architecture. Match field of view and pixel scale before comparing electronics.",
+    "de": "Wähle ZWOs ASI585MC Pro für eine konventionelle gekühlte USB-Kamera mit Zwei-Port-Hub, Player Ones Uranus-C Pro, wenn zwei Tilt-Platten, Carbongehäuse und zwei Type-C-Ports zum Aufbau passen, oder die ASI585MC Air, wenn integriertes Guiding, Steuerung und 256 GB Speicher die schwerere proprietäre Komplettarchitektur rechtfertigen. Vergleiche vor der Elektronik zuerst Gesichtsfeld und Pixelmaßstab."
+  },
+  "audience": {
+    "en": "Imagers who have already calculated the IMX585 field of view for their telescope and now need to choose between a conventional cooled camera and an integrated control system.",
+    "de": "Fotografierende, die das IMX585-Gesichtsfeld für ihr Teleskop bereits berechnet haben und nun zwischen konventioneller Kühlkamera und integriertem Steuersystem wählen."
+  },
+  "buyingCriteria": [
+    {
+      "en": "Field of view and angular sampling with 2.9 µm pixels",
+      "de": "Gesichtsfeld und Winkelauflösung mit 2,9-µm-Pixeln"
+    },
+    {
+      "en": "Cooling delta, dew management and the required 12 V supply",
+      "de": "Kühldifferenz, Tauschutz und erforderliche 12-V-Versorgung"
+    },
+    {
+      "en": "Back focus, thread interfaces, tilt adjustment and filter spacing",
+      "de": "Arbeitsabstand, Gewinde, Tilt-Einstellung und Filterabstand"
+    },
+    {
+      "en": "Driver, capture-software and guiding workflow on the intended operating system",
+      "de": "Treiber-, Aufnahmesoftware- und Guiding-Ablauf im vorgesehenen Betriebssystem"
+    }
+  ],
+  "items": [
+    {
+      "name": {
+        "en": "ZWO ASI585MC Pro",
+        "de": "ZWO ASI585MC Pro"
+      },
+      "whyItMatters": {
+        "en": "ASI585MC Pro represents the conventional cooled ZWO path, pairing the 1/1.2-inch colour sensor with a 35 °C published cooling delta, 512 MB buffer, USB 3.0 data and a two-port USB 2.0 hub.",
+        "de": "Die ASI585MC Pro steht für den konventionellen gekühlten ZWO-Weg. Sie verbindet den 1/1,2-Zoll-Farbsensor mit 35 °C veröffentlichter Kühldifferenz, 512 MB Puffer, USB 3.0 und Zwei-Port-USB-2.0-Hub."
+      },
+      "coreSpecs": {
+        "Sensor": "Sony IMX585 colour, 11.2 × 6.3 mm",
+        "Resolution": "3840 × 2160; 2.9 µm pixels",
+        "Cooling": "two-stage TEC, more than 35 °C below ambient",
+        "Buffer": "512 MB DDR3",
+        "Interface": "USB 3.0 plus two-port USB 2.0 hub"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Sensor": "Sony IMX585 colour, 11.2 × 6.3 mm",
+          "Resolution": "3840 × 2160; 2.9 µm pixels",
+          "Cooling": "two-stage TEC, more than 35 °C below ambient",
+          "Buffer": "512 MB DDR3",
+          "Interface": "USB 3.0 plus two-port USB 2.0 hub"
+        },
+        "de": {
+          "Sensor": "Sony IMX585 Farbe, 11,2 × 6,3 mm",
+          "Auflösung": "3840 × 2160; 2,9-µm-Pixel",
+          "Kühlung": "zweistufige TEC, mehr als 35 °C unter Umgebung",
+          "Puffer": "512 MB DDR3",
+          "Schnittstelle": "USB 3.0 plus Zwei-Port-USB-2.0-Hub"
+        }
+      },
+      "pros": {
+        "en": [
+          "Conventional camera architecture keeps capture-computer choice open",
+          "Published hub and 512 MB buffer simplify a compact cabled imaging train"
+        ],
+        "de": [
+          "Konventionelle Kameraarchitektur lässt die Wahl des Aufnahmecomputers offen",
+          "Veröffentlichter Hub und 512-MB-Puffer erleichtern einen kompakten verkabelten Aufbau"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Requires an external computer or controller and separate guiding hardware",
+          "Cooling performance and dew control still depend on ambient conditions and a suitable power supply"
+        ],
+        "de": [
+          "Benötigt externen Computer oder Controller sowie separates Guiding",
+          "Kühlleistung und Tauschutz hängen weiterhin von Umgebung und geeigneter Stromversorgung ab"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "ZWO ASI585MC Pro colour astronomy camera",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "ZWO",
+        "title": "ASI585MC/MM Pro",
+        "url": "https://www.zwoastro.com/product/asi585mc-mm-pro/",
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "name": {
+        "en": "Player One Uranus-C Pro",
+        "de": "Player One Uranus-C Pro"
+      },
+      "whyItMatters": {
+        "en": "Uranus-C Pro uses the same sensor class but publishes a 420 g carbon-fibre body, front and rear tilt plates, 35–40 °C cooling delta, anti-dew heater and two Type-C data connections.",
+        "de": "Die Uranus-C Pro nutzt dieselbe Sensorklasse, veröffentlicht aber ein 420-g-Carbongehäuse, vordere und hintere Tilt-Platte, 35–40 °C Kühldifferenz, Anti-Tau-Heizung und zwei Type-C-Datenanschlüsse."
+      },
+      "coreSpecs": {
+        "Sensor": "Sony IMX585 colour, 11.2 × 6.3 mm",
+        "Resolution": "3856 × 2180; 2.9 µm pixels",
+        "Cooling": "two-stage TEC, 35–40 °C below ambient",
+        "Buffer": "512 MB DDR3",
+        "Body and ports": "420 g carbon fibre; two Type-C ports"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Sensor": "Sony IMX585 colour, 11.2 × 6.3 mm",
+          "Resolution": "3856 × 2180; 2.9 µm pixels",
+          "Cooling": "two-stage TEC, 35–40 °C below ambient",
+          "Buffer": "512 MB DDR3",
+          "Body and ports": "420 g carbon fibre; two Type-C ports"
+        },
+        "de": {
+          "Sensor": "Sony IMX585 Farbe, 11,2 × 6,3 mm",
+          "Auflösung": "3856 × 2180; 2,9-µm-Pixel",
+          "Kühlung": "zweistufige TEC, 35–40 °C unter Umgebung",
+          "Puffer": "512 MB DDR3",
+          "Gehäuse und Ports": "420 g Carbon; zwei Type-C-Ports"
+        }
+      },
+      "pros": {
+        "en": [
+          "Front and rear tilt-adjustment options address more imaging-train orientations",
+          "Published carbon-fibre mass and anti-dew heater support a compact cooled train"
+        ],
+        "de": [
+          "Vordere und hintere Tilt-Optionen passen zu mehr Ausrichtungen des Aufnahmezugs",
+          "Veröffentlichte Carbonmasse und Anti-Tau-Heizung unterstützen einen kompakten gekühlten Aufbau"
+        ]
+      },
+      "cons": {
+        "en": [
+          "The manufacturer specifies a minimum 5 A power adapter although maximum camera consumption is listed as 3 A",
+          "Its accessory and driver ecosystem differs from ZWO's integrated controller path"
+        ],
+        "de": [
+          "Der Hersteller verlangt mindestens ein 5-A-Netzteil, obwohl maximal 3 A Kameraverbrauch genannt werden",
+          "Zubehör- und Treiberökosystem unterscheiden sich vom integrierten ZWO-Controller-Weg"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Player One Uranus-C Pro IMX585",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Player One Astronomy",
+        "title": "Uranus-C Pro USB3.0 Color Cooled Camera",
+        "url": "https://www.player-one-astronomy.com/product/uranus-c-pro-usb3-0-color-camera-imx585/",
+        "checkedAt": "2026-08-31"
+      }
+    },
+    {
+      "name": {
+        "en": "ZWO ASI585MC Air",
+        "de": "ZWO ASI585MC Air"
+      },
+      "whyItMatters": {
+        "en": "ASI585MC Air changes the system boundary by integrating an IMX585 imaging sensor, separate monochrome guide sensor, ASIAIR control, 256 GB storage, Wi-Fi and four USB 2.0 hub ports in one 620 g body.",
+        "de": "Die ASI585MC Air verschiebt die Systemgrenze. Sie integriert IMX585-Aufnahmesensor, separaten monochromen Guidingsensor, ASIAIR-Steuerung, 256 GB Speicher, WLAN und vier USB-2.0-Hubports in einem 620-g-Gehäuse."
+      },
+      "coreSpecs": {
+        "Main sensor": "Sony IMX585 colour, 3840 × 2160",
+        "Guide sensor": "SC2210 mono, 1920 × 1080",
+        "Cooling": "30–35 °C below ambient",
+        "Control and storage": "ASIAIR, dual-band Wi-Fi, 256 GB eMMC",
+        "Weight and power": "620 g; 12 V, 3 A whole unit"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Main sensor": "Sony IMX585 colour, 3840 × 2160",
+          "Guide sensor": "SC2210 mono, 1920 × 1080",
+          "Cooling": "30–35 °C below ambient",
+          "Control and storage": "ASIAIR, dual-band Wi-Fi, 256 GB eMMC",
+          "Weight and power": "620 g; 12 V, 3 A whole unit"
+        },
+        "de": {
+          "Hauptsensor": "Sony IMX585 Farbe, 3840 × 2160",
+          "Guidingsensor": "SC2210 Mono, 1920 × 1080",
+          "Kühlung": "30–35 °C unter Umgebung",
+          "Steuerung und Speicher": "ASIAIR, Dualband-WLAN, 256 GB eMMC",
+          "Gewicht und Strom": "620 g; 12 V, 3 A Gesamtgerät"
+        }
+      },
+      "pros": {
+        "en": [
+          "Imaging, guiding, storage and smart control reduce the number of separate boxes",
+          "Four USB 2.0 ports and two 12 V outputs centralise accessory connections"
+        ],
+        "de": [
+          "Aufnahme, Guiding, Speicher und Smart-Steuerung reduzieren separate Boxen",
+          "Vier USB-2.0-Ports und zwei 12-V-Ausgänge bündeln Zubehöranschlüsse"
+        ]
+      },
+      "cons": {
+        "en": [
+          "The integrated system weighs more and ties the workflow closely to ASIAIR software",
+          "Published full-frame rate is lower than the conventional Pro camera's high-speed USB mode"
+        ],
+        "de": [
+          "Das integrierte System wiegt mehr und bindet den Ablauf eng an ASIAIR-Software",
+          "Die veröffentlichte Vollbildrate liegt unter dem schnellen USB-Modus der konventionellen Pro-Kamera"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "ZWO ASI585MC Air smart astronomy camera",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "ZWO",
+        "title": "ASI585MM/MC Air",
+        "url": "https://www.zwoastro.com/product/asi585air/",
+        "checkedAt": "2026-08-31"
+      }
+    }
+  ],
+  "tradeoffs": {
+    "en": [
+      "A shared sensor does not create a shared image scale unless telescope focal length is also the same.",
+      "Cooling delta is measured below ambient and does not promise a fixed sensor temperature in every climate.",
+      "An integrated controller removes cables and boxes but narrows the software architecture and concentrates failure in one device.",
+      "Quoted read noise, quantum efficiency and full well come from each manufacturer, not a common independent bench test."
+    ],
+    "de": [
+      "Ein gemeinsamer Sensor erzeugt nur bei gleicher Teleskopbrennweite denselben Bildmaßstab.",
+      "Die Kühldifferenz wird unter Umgebung gemessen und verspricht nicht in jedem Klima eine feste Sensortemperatur.",
+      "Ein integrierter Controller entfernt Kabel und Boxen, verengt aber die Softwarearchitektur und bündelt Ausfallrisiken.",
+      "Angegebene Auslesegeräusche, Quanteneffizienz und Full Well stammen vom jeweiligen Hersteller und nicht aus einem gemeinsamen unabhängigen Test."
+    ]
+  },
+  "faq": [
+    {
+      "question": {
+        "en": "Does the IMX585 fit every deep-sky target?",
+        "de": "Passt der IMX585 zu jedem Deep-Sky-Ziel?"
+      },
+      "answer": {
+        "en": "No. Its 11.2 × 6.3 mm active area produces a relatively narrow field on long focal lengths. Calculate the actual field around the intended nebula or galaxy and check angular sampling before choosing a camera architecture.",
+        "de": "Nein. Die aktive Fläche von 11,2 × 6,3 mm ergibt an langen Brennweiten ein relativ enges Feld. Berechne das tatsächliche Feld um Nebel oder Galaxie und prüfe die Winkelauflösung vor der Architekturwahl."
+      }
+    },
+    {
+      "question": {
+        "en": "Can the Air model replace every external computer?",
+        "de": "Kann das Air-Modell jeden externen Computer ersetzen?"
+      },
+      "answer": {
+        "en": "It integrates ASIAIR control for supported workflows, but software, accessory and automation compatibility must be checked against the exact equipment list. A specialised desktop capture or processing workflow may still require another computer.",
+        "de": "Es integriert ASIAIR-Steuerung für unterstützte Abläufe, doch Software-, Zubehör- und Automationskompatibilität müssen mit der konkreten Ausrüstung abgeglichen werden. Spezialisierte Desktop-Aufnahme oder Verarbeitung kann weiterhin einen anderen Computer verlangen."
+      }
+    },
+    {
+      "question": {
+        "en": "Is the highest cooling delta automatically best?",
+        "de": "Ist die höchste Kühldifferenz automatisch am besten?"
+      },
+      "answer": {
+        "en": "No. Stable repeatable temperature, adequate power, controlled dew and a sensible set point matter more than chasing the lowest possible number. Compare manufacturer curves and operating limits for the climate in which the camera will run.",
+        "de": "Nein. Stabile wiederholbare Temperatur, ausreichender Strom, kontrollierter Tau und ein sinnvoller Sollwert zählen mehr als die tiefste Zahl. Vergleiche Herstellerkurven und Betriebsgrenzen für das tatsächliche Klima."
+      }
+    }
+  ],
+  "affiliateDisclosure": {
+    "en": "This comparison uses current manufacturer specifications and makes no claim of common laboratory testing, hands-on use, live price or affiliate relationship. Software support and package contents should be rechecked before purchase.",
+    "de": "Dieser Vergleich nutzt aktuelle Herstellerdaten und behauptet weder gemeinsamen Labortest noch Praxiseinsatz, Live-Preis oder Affiliate-Beziehung. Softwareunterstützung und Lieferumfang sollten vor dem Kauf erneut geprüft werden."
+  },
+  "lastReviewedAt": "2026-08-31"
+}

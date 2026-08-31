@@ -1,12 +1,158 @@
 [
-  { "id": "beginner-telescopes", "slug": "beginner-telescopes", "name": { "en": "Beginner telescopes", "de": "Einsteiger-Teleskope" }, "description": { "en": "Portable aperture and mount trade-offs for first visual observations.", "de": "Abwägungen zwischen Öffnung und Montierung für erste visuelle Beobachtungen." } },
-  { "id": "binoculars", "slug": "binoculars", "name": { "en": "Binoculars", "de": "Ferngläser" }, "description": { "en": "Simple, wide-field tools for scanning constellations and dark skies.", "de": "Einfache Weitfeld-Werkzeuge zum Erkunden von Sternbildern und dunklem Himmel." } },
-  { "id": "red-flashlights", "slug": "red-flashlights", "name": { "en": "Red flashlights", "de": "Rotlichtlampen" }, "description": { "en": "Low-glare lighting for preserving dark adaptation.", "de": "Blendarmes Licht zum Erhalt der Dunkeladaption." } },
-  { "id": "observing-chairs", "slug": "observing-chairs", "name": { "en": "Observing chairs", "de": "Beobachtungsstühle" }, "description": { "en": "Stable seating that makes longer sessions more comfortable.", "de": "Stabile Sitzgelegenheiten für längere Beobachtungssitzungen." } },
-  { "id": "tripods", "slug": "tripods", "name": { "en": "Tripods", "de": "Stative" }, "description": { "en": "Support and vibration trade-offs for binoculars and small instruments.", "de": "Stabilitäts- und Vibrationsabwägungen für Ferngläser und kleine Instrumente." } },
-  { "id": "star-trackers", "slug": "star-trackers", "name": { "en": "Star trackers", "de": "Startracker" }, "description": { "en": "Portable tracking considerations for astrophotography setups.", "de": "Überlegungen zu mobilen Nachführungen für Astrofotografie." } },
-  { "id": "dew-control", "slug": "dew-control", "name": { "en": "Dew control", "de": "Tauschutz" }, "description": { "en": "Practical ways to keep optics clear in humid conditions.", "de": "Praktische Wege, Optiken bei feuchten Bedingungen klar zu halten." } },
-  { "id": "portable-power", "slug": "portable-power", "name": { "en": "Portable power", "de": "Mobile Stromversorgung" }, "description": { "en": "Capacity and connector considerations for field equipment.", "de": "Überlegungen zu Kapazität und Anschlüssen für Feldequipment." } },
-  { "id": "eyepieces", "slug": "eyepieces", "name": { "en": "Eyepieces", "de": "Okulare" }, "description": { "en": "Magnification, exit pupil, eye relief, and field-of-view choices for visual observing.", "de": "Vergrößerung, Austrittspupille, Augenabstand und Gesichtsfeld für die visuelle Beobachtung." } },
-  { "id": "astronomy-filters", "slug": "astronomy-filters", "name": { "en": "Astronomy filters", "de": "Astronomiefilter" }, "description": { "en": "What visual filters can improve, what they cannot fix, and when no filter is the better choice.", "de": "Was visuelle Filter verbessern können, was sie nicht lösen und wann kein Filter die bessere Wahl ist." } }
+  {
+    "id": "beginner-telescopes",
+    "slug": "beginner-telescopes",
+    "name": {
+      "en": "Beginner telescopes",
+      "de": "Einsteiger-Teleskope"
+    },
+    "description": {
+      "en": "Portable aperture and mount trade-offs for first visual observations.",
+      "de": "Abwägungen zwischen Öffnung und Montierung für erste visuelle Beobachtungen."
+    }
+  },
+  {
+    "id": "binoculars",
+    "slug": "binoculars",
+    "name": {
+      "en": "Binoculars",
+      "de": "Ferngläser"
+    },
+    "description": {
+      "en": "Simple, wide-field tools for scanning constellations and dark skies.",
+      "de": "Einfache Weitfeld-Werkzeuge zum Erkunden von Sternbildern und dunklem Himmel."
+    }
+  },
+  {
+    "id": "red-flashlights",
+    "slug": "red-flashlights",
+    "name": {
+      "en": "Red flashlights",
+      "de": "Rotlichtlampen"
+    },
+    "description": {
+      "en": "Low-glare lighting for preserving dark adaptation.",
+      "de": "Blendarmes Licht zum Erhalt der Dunkeladaption."
+    }
+  },
+  {
+    "id": "observing-chairs",
+    "slug": "observing-chairs",
+    "name": {
+      "en": "Observing chairs",
+      "de": "Beobachtungsstühle"
+    },
+    "description": {
+      "en": "Stable seating that makes longer sessions more comfortable.",
+      "de": "Stabile Sitzgelegenheiten für längere Beobachtungssitzungen."
+    }
+  },
+  {
+    "id": "tripods",
+    "slug": "tripods",
+    "name": {
+      "en": "Tripods",
+      "de": "Stative"
+    },
+    "description": {
+      "en": "Support and vibration trade-offs for binoculars and small instruments.",
+      "de": "Stabilitäts- und Vibrationsabwägungen für Ferngläser und kleine Instrumente."
+    }
+  },
+  {
+    "id": "star-trackers",
+    "slug": "star-trackers",
+    "name": {
+      "en": "Star trackers",
+      "de": "Startracker"
+    },
+    "description": {
+      "en": "Portable tracking considerations for astrophotography setups.",
+      "de": "Überlegungen zu mobilen Nachführungen für Astrofotografie."
+    }
+  },
+  {
+    "id": "dew-control",
+    "slug": "dew-control",
+    "name": {
+      "en": "Dew control",
+      "de": "Tauschutz"
+    },
+    "description": {
+      "en": "Practical ways to keep optics clear in humid conditions.",
+      "de": "Praktische Wege, Optiken bei feuchten Bedingungen klar zu halten."
+    }
+  },
+  {
+    "id": "portable-power",
+    "slug": "portable-power",
+    "name": {
+      "en": "Portable power",
+      "de": "Mobile Stromversorgung"
+    },
+    "description": {
+      "en": "Capacity and connector considerations for field equipment.",
+      "de": "Überlegungen zu Kapazität und Anschlüssen für Feldequipment."
+    }
+  },
+  {
+    "id": "eyepieces",
+    "slug": "eyepieces",
+    "name": {
+      "en": "Eyepieces",
+      "de": "Okulare"
+    },
+    "description": {
+      "en": "Magnification, exit pupil, eye relief, and field-of-view choices for visual observing.",
+      "de": "Vergrößerung, Austrittspupille, Augenabstand und Gesichtsfeld für die visuelle Beobachtung."
+    }
+  },
+  {
+    "id": "astronomy-filters",
+    "slug": "astronomy-filters",
+    "name": {
+      "en": "Astronomy filters",
+      "de": "Astronomiefilter"
+    },
+    "description": {
+      "en": "What visual filters can improve, what they cannot fix, and when no filter is the better choice.",
+      "de": "Was visuelle Filter verbessern können, was sie nicht lösen und wann kein Filter die bessere Wahl ist."
+    }
+  },
+  {
+    "id": "smartphone-adapters",
+    "slug": "smartphone-adapters",
+    "name": {
+      "en": "Smartphone adapters",
+      "de": "Smartphone-Adapter"
+    },
+    "description": {
+      "en": "Eyepiece clamps and alignment controls for afocal Moon and planet imaging with a phone.",
+      "de": "Okularklemmen und Ausrichtung für afokale Mond- und Planetenbilder mit dem Smartphone."
+    }
+  },
+  {
+    "id": "astronomy-cameras",
+    "slug": "astronomy-cameras",
+    "name": {
+      "en": "Astronomy cameras",
+      "de": "Astronomiekameras"
+    },
+    "description": {
+      "en": "Sensor, cooling, control and power trade-offs for dedicated telescope cameras.",
+      "de": "Abwägungen bei Sensor, Kühlung, Steuerung und Strom für dedizierte Teleskopkameras."
+    }
+  },
+  {
+    "id": "large-binoculars",
+    "slug": "large-binoculars",
+    "name": {
+      "en": "Large binoculars",
+      "de": "Große Ferngläser"
+    },
+    "description": {
+      "en": "High-magnification binoculars whose field of view, mass and support define their astronomy use.",
+      "de": "Hoch vergrößernde Ferngläser, deren Gesichtsfeld, Masse und Stütze den Astronomieeinsatz bestimmen."
+    }
+  }
 ]
