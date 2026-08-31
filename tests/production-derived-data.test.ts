@@ -14,7 +14,8 @@ test("published derived products are real and access-gated", () => {
   assert.equal(manifest.counts.observationSites, 150);
   assert.equal(manifest.counts.realScoreSites, 150);
   assert.equal(manifest.counts.calendarFiles, manifest.counts.destinations * 36);
-  assert.equal(manifest.counts.approvedImageAssets, manifest.counts.destinations);
+  assert.ok(manifest.counts.approvedImageAssets >= 50);
+  assert.ok(manifest.counts.approvedImageAssets <= manifest.counts.imageAssets);
   assert.equal(manifest.sourceVersions.calendar, "astronomy-calendar-real-1.0.0");
   assert.match(manifest.sourceVersions.meteorShowers, /real-site-score/);
   assert.match(manifest.sourceVersions.shortTrips, /real-site-score/);

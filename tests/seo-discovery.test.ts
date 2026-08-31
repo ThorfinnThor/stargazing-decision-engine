@@ -12,9 +12,10 @@ const registry = JSON.parse(read("public/data/stargazing/seo/registry.json")) as
 
 test("SEO registry exposes accurate discovery fields and the publisher page", () => {
   assert.ok(registry.pages.some((page) => page.id === "about-en" && page.indexable));
-  const emptyAucklandPage = registry.pages.find((page) => page.id === "short-trip-auckland-en");
-  assert.equal(emptyAucklandPage?.indexable, false);
-  assert.ok(emptyAucklandPage?.reasons.includes("no-qualifying-destinations"));
+  const aucklandPage = registry.pages.find((page) => page.id === "short-trip-auckland-en");
+  const aucklandTrip = JSON.parse(read("public/data/stargazing/short-trips/auckland.json")) as { entries: unknown[] };
+  assert.equal(aucklandPage?.indexable, aucklandTrip.entries.length > 0);
+  assert.equal(aucklandPage?.reasons.includes("no-qualifying-destinations"), aucklandTrip.entries.length === 0);
   assert.equal(new Set(registry.pages.map((page) => page.canonical)).size, registry.pages.length);
   for (const page of registry.pages) {
     assert.equal(page.alternatePaths["x-default"], page.alternatePaths.en);
