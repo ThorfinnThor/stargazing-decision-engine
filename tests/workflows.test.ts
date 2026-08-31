@@ -16,11 +16,19 @@ test("GitHub workflows keep static quality gates explicit", () => {
 test("GitHub workflows use the packageManager pnpm version", () => {
   for (const name of ["ci.yml", "calendar-refresh.yml", "health-check.yml", "data-ingest.yml", "darkness-calibration.yml"]) {
     const contents = workflow(name);
-    assertIncludes(contents, "pnpm/action-setup@v4");
-    if (/pnpm\/action-setup@v4\n\s+with:\n\s+version:/.test(contents)) {
+    assertIncludes(contents, "actions/checkout@v7");
+    assertIncludes(contents, "pnpm/setup@v2");
+    assertIncludes(contents, "runtime: node@22");
+    assertIncludes(contents, "install: false");
+    assertIncludes(contents, "pnpm install --frozen-lockfile");
+    const setupBlock = contents.slice(contents.indexOf("pnpm/setup@v2"), contents.indexOf("pnpm/setup@v2") + 220);
+    if (/\n\s+version:/.test(setupBlock)) {
       throw new Error(`${name} must read the pnpm version from package.json`);
     }
   }
+
+  assertIncludes(workflow("data-ingest.yml"), "actions/setup-python@v7");
+  assertIncludes(workflow("darkness-calibration.yml"), "actions/setup-python@v7");
 });
 
 test("ingestion is manual and commits only after the full gate", () => {
