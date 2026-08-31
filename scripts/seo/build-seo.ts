@@ -142,7 +142,9 @@ for (const locale of config.locales) {
     id: `home-${locale}`, pageType: "home", locale, path: homePath, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/`])),
     title: locale === "de" ? "Stargazing für dunkle Himmel" : "Stargazing for dark skies",
     h1: locale === "de" ? "Wissen, wann sich die Reise lohnt." : "Know when the night is worth the journey.",
-    description: locale === "de" ? "Datenbasierte Entscheidungshilfe für Sternbeobachtung." : "A data-driven decision engine for stargazing travel.",
+    description: locale === "de"
+      ? "Vergleiche geprüfte Sternbeobachtungsziele nach Monat, Dunkelheit, Klima, Zugang und Höhe, bevor du eine Dark-Sky-Reise planst."
+      : "Compare reviewed stargazing destinations by month, darkness, climate, access, and elevation before planning a dark-sky trip.",
     lastModified: latestTimestamp(dataLastModified, gearLastModified),
     resultCount: seed.destinations.length, confidence: "low", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + shortTrips.length,
   }));
@@ -170,7 +172,7 @@ for (const locale of config.locales) {
   }
   pages.push(makePage({
     id: `gear-${locale}`, pageType: "gear", locale, path: `/${locale}/gear/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/gear/`])),
-    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Quellenbasierte Gear-Vergleiche ohne Preis- oder Verfügbarkeitsversprechen." : "Source-backed gear comparisons without price or availability claims.", lastModified: gearLastModified, resultCount: editoriallyReadyGearGuides.length, confidence: "high", uniqueInsightCount: editoriallyReadyGearGuides.length, internalLinkCount: editoriallyReadyGearGuides.length + seed.destinations.length,
+    title: locale === "de" ? "Ausrüstung für Sternbeobachtung" : "Stargazing gear guides", h1: locale === "de" ? "Ausrüstung für klare Nächte." : "Gear for clear nights.", description: locale === "de" ? "Unabhängige, quellenbasierte Vergleiche von Teleskopen, Ferngläsern und praktischem Zubehör für Sternbeobachtung und Astrofotografie." : "Independent, source-backed comparisons of telescopes, binoculars, and practical equipment for stargazing and astrophotography.", lastModified: gearLastModified, resultCount: editoriallyReadyGearGuides.length, confidence: "high", uniqueInsightCount: editoriallyReadyGearGuides.length, internalLinkCount: editoriallyReadyGearGuides.length + seed.destinations.length,
   }));
   pages.push(makePage({
     id: `methodology-${locale}`, pageType: "methodology", locale, path: `/${locale}/methodology/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/methodology/`])),
@@ -178,7 +180,7 @@ for (const locale of config.locales) {
   }));
   pages.push(makePage({
     id: `about-${locale}`, pageType: "about", locale, path: `/${locale}/about/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/about/`])),
-    title: locale === "de" ? "Über Stargazing Index" : "About Stargazing Index", h1: locale === "de" ? "Entscheidungen für bessere Nächte." : "Decisions for better nights.", description: locale === "de" ? "Mission, Arbeitsweise und redaktionelle Verantwortung von Stargazing Index." : "The mission, working principles, and editorial responsibility behind Stargazing Index.", lastModified: editorialLastModified, resultCount: 3, confidence: "high", uniqueInsightCount: 3, internalLinkCount: 3,
+    title: locale === "de" ? "Über Stargazing Index" : "About Stargazing Index", h1: locale === "de" ? "Entscheidungen für bessere Nächte." : "Decisions for better nights.", description: locale === "de" ? "So verbindet Stargazing Index Klimadaten, Astronomie, Standortrecherche und redaktionelle Prüfung zu nachvollziehbaren Reiseentscheidungen." : "How Stargazing Index combines climate data, astronomy, location research, and editorial review into practical travel decisions.", lastModified: editorialLastModified, resultCount: 3, confidence: "high", uniqueInsightCount: 3, internalLinkCount: 3,
   }));
   for (const destination of seed.destinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
@@ -199,7 +201,10 @@ for (const locale of config.locales) {
     pages.push(makePage({
       id: `meteor-${event.year}-${event.slug}-${locale}`, pageType: "meteor-shower", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/meteor-showers/${event.year}/${event.slug}/`])),
       title: `${event.name[locale]} ${event.year}`, h1: `${event.name[locale]} ${event.year}`,
-      description: locale === "de" ? `Beobachtungsleitfaden für ${event.name[locale]}.` : `Viewing guide for ${event.name[locale]}.`, resultCount: event.topSites.length, confidence: event.confidenceLevel, uniqueInsightCount: event.topSites.length >= 2 ? 3 : event.topSites.length, internalLinkCount: event.topDestinations.length + 2,
+      description: locale === "de"
+        ? `Plane die Beobachtung der ${event.name[locale]} ${event.year} mit Maximum, Mondbedingungen und geprüften Zielen für eine praktische Sternennacht.`
+        : `Plan the ${event.name[locale]} ${event.year} with peak timing, Moon conditions, and reviewed destinations for a practical observing night.`,
+      resultCount: event.topSites.length, confidence: event.confidenceLevel, uniqueInsightCount: event.topSites.length >= 2 ? 3 : event.topSites.length, internalLinkCount: event.topDestinations.length + 2,
       lastModified: event.verifiedAt,
     }));
   }
@@ -210,7 +215,9 @@ for (const locale of config.locales) {
       id: `short-trip-${trip.originSlug}-${locale}`, pageType: "short-trip", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/short-trips/${trip.originSlug}/`])),
       title: locale === "de" ? `Kurze Sternreisen ab ${trip.originName}` : `Short stargazing trips from ${trip.originName}`, h1: locale === "de" ? `Ab ${trip.originName}` : `From ${trip.originName}`,
       description: hasResults
-        ? locale === "de" ? `Ranking dunkler Himmelsziele ab ${trip.originName}.` : `Ranking of dark-sky destinations from ${trip.originName}.`
+        ? locale === "de"
+          ? `Vergleiche geprüfte Dark-Sky-Ziele bis ${trip.maxShortTripKm} km ab ${trip.originName}, eingeordnet nach historischen Sternbeobachtungsbedingungen und Entfernung.`
+          : `Compare reviewed dark-sky destinations within ${trip.maxShortTripKm} km of ${trip.originName}, ranked by historical stargazing conditions and distance.`
         : locale === "de" ? `Derzeit erfüllt kein geprüftes Ziel die Kriterien für eine kurze Sternreise ab ${trip.originName}.` : `No reviewed destination currently meets the criteria for a short stargazing trip from ${trip.originName}.`,
       resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
       lastModified: dataLastModified,

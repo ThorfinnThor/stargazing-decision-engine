@@ -6,7 +6,7 @@ This report checks source copy against `docs/editorial-writing-standard.md`. It 
 
 | Corpus | Pages | Text units | Banned phrases | Em dashes | Colons |
 | --- | ---: | ---: | ---: | ---: | ---: |
-| destination | 50 | 2218 | 0 | 4 | 144 |
+| destination | 50 | 2218 | 0 | 4 | 146 |
 | location-tour | 50 | 1028 | 0 | 0 | 0 |
 | gear | 10 | 598 | 0 | 2 | 32 |
 

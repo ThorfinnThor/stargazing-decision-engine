@@ -38,6 +38,35 @@ HTML. A public `site:stargazingindex.com` search returned no results. That searc
 is not a definitive index report; Google Search Console is required to confirm
 the real crawl and indexing state.
 
+## Full production crawl and editorial follow-up
+
+A second production audit on 2026-08-31 crawled all 252 URLs listed in the XML
+sitemap. Every URL returned HTTP 200. The crawl found no missing or conflicting
+canonical, no indexable page carrying `noindex`, no reciprocal-language error,
+no page without exactly one H1, no duplicate title or description, and no
+affiliate link missing a sponsored relationship. `robots.txt`, `sitemap.xml`,
+and `llms.txt` also returned HTTP 200 with the expected content types.
+
+The useful follow-up was editorial rather than architectural. Page metadata now
+uses each reviewed title without automatically appending a second brand suffix.
+Twenty-one destination guides in both languages received concise,
+destination-specific descriptions instead of a repeated explanatory tail. Four
+gear descriptions and thin descriptions on the home, about, gear index, meteor
+shower, and short-trip page types were also tightened or expanded for clearer
+search snippets. A validator now rejects destination descriptions outside
+80–180 characters and catches the mechanical article errors found during this
+audit.
+
+Affiliate disclosures now appear before commercial offers and explain the
+commission relationship, absence of extra user cost, and editorial independence.
+All existing Viator and GetYourGuide links remain covered by the affiliate
+validator and use the required sponsored relationship. The audit did not add
+speculative structured data, hidden LLM copy, or keyword variants.
+
+Some descriptive titles remain longer than a traditional 65-character audit
+heuristic. That number is not a search-engine eligibility rule, and meaningful,
+unique titles were retained where mechanical shortening would reduce clarity.
+
 ## Manual launch actions
 
 ### P0 — Google Search Console

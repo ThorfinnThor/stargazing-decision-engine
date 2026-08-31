@@ -15,6 +15,26 @@ function normalized(value: string) {
   return value.toLocaleLowerCase("en").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 }
 
+const mechanicalCopyPatterns = [
+  /\bthe the\b/i,
+  /\bthe a village-hosted\b/i,
+  /\bneither the name (?:the|a)\b/i,
+  /\baus das\b/i,
+  /\bweder der name (?:das|die)\b/i,
+  /\bcarry the latest the\b/i,
+  /\bbei eine\b/i,
+  /\b(?:für|von) ein bestätigter\b/i,
+  /\bbestätige ein bestätigter\b/i,
+  /\bthe useful .+ plan depends on\b/i,
+  /\bein brauchbarer plan für .+ hängt von\b/i,
+  /[.!?]\s+(?:the|a village-hosted|das|die|eine dorfbegleitete)\b/u,
+];
+
+function requireCleanCopy(value: string, label: string) {
+  const pattern = mechanicalCopyPatterns.find((candidate) => candidate.test(value));
+  if (pattern) throw new Error(`${label} contains a mechanical copy artifact matching ${pattern}`);
+}
+
 export function validateDestinationEditorialGuides(guides: DestinationEditorialGuide[], destinations: Destination[]) {
   if (guides.length === 0) throw new Error("Destination editorial catalog cannot be empty");
   const destinationsById = new Map(destinations.map((destination) => [destination.id, destination]));
@@ -46,8 +66,13 @@ export function validateDestinationEditorialGuides(guides: DestinationEditorialG
       }
     };
 
+    requireCleanCopy(JSON.stringify(guide), `${guide.slug} editorial copy`);
+
     for (const locale of ["en", "de"] as const) {
       requireWords(guide.seoDescription[locale], 12, `${guide.slug} ${locale} SEO description`);
+      if (guide.seoDescription[locale].length < 80 || guide.seoDescription[locale].length > 180) {
+        throw new Error(`${guide.slug} ${locale} SEO description must contain 80–180 characters`);
+      }
       requireWords(guide.standfirst[locale], 40, `${guide.slug} ${locale} standfirst`);
       requireWords(guide.editorialAngle[locale], 20, `${guide.slug} ${locale} editorial angle`);
       requireWords(guide.tour.summary[locale], 35, `${guide.slug} ${locale} tour summary`);
