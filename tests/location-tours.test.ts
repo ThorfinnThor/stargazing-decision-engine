@@ -34,8 +34,10 @@ test("location-tour structured data exposes the destination and every declared s
   const destination = destinations.find((item) => item.id === tour.destinationId);
   const guide = guides.find((item) => item.destinationId === tour.destinationId);
   assert.ok(destination && guide);
-  const data = buildLocationTourStructuredData({ destination, tour, locale: "en", url: `https://stargazingindex.com/en/stargazing-tours/${tour.slug}/`, sources: guide.sources });
+  const data = buildLocationTourStructuredData({ destination, tour, locale: "en", url: `https://stargazingindex.com/en/stargazing-tours/${tour.slug}/`, sources: guide.sources, image: "/images/destinations/la-palma.webp" });
   const article = data["@graph"][0];
   assert.deepEqual(article.citation, guide.sources.filter((source) => tour.sourceIds.includes(source.id)).map((source) => source.url));
   assert.equal((article.about as { name: string }).name, destination.name);
+  assert.equal((article.author as { name: string }).name, "Schayan Yousefian");
+  assert.equal(article.image, "https://stargazingindex.com/images/destinations/la-palma.webp");
 });

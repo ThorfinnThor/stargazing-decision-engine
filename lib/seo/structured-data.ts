@@ -22,6 +22,28 @@ const sectionNames = {
   },
 } as const;
 
+function authorEntity(origin: string, locale: "en" | "de") {
+  return {
+    "@type": "Person",
+    name: legal.owner,
+    url: `${origin}/${locale}/about/#about-editorial-title`,
+  };
+}
+
+function publisherEntity(origin: string) {
+  return {
+    "@type": "Organization",
+    "@id": `${origin}/#publisher`,
+    name: legal.siteName,
+    legalName: legal.businessName,
+    url: `${origin}/`,
+  };
+}
+
+function absoluteMediaUrl(pageUrl: string, mediaUrl?: string | null) {
+  return mediaUrl ? new URL(mediaUrl, pageUrl).href : undefined;
+}
+
 function humanize(segment: string) {
   return decodeURIComponent(segment)
     .replaceAll("-", " ")
@@ -68,9 +90,12 @@ export function buildLocationTourStructuredData(options: {
   locale: "en" | "de";
   url: string;
   sources: DestinationEditorialSource[];
+  image?: string | null;
 }) {
   const { destination, tour, locale, url, sources } = options;
   const cited = sources.filter((source) => tour.sourceIds.includes(source.id));
+  const origin = new URL(url).origin;
+  const image = absoluteMediaUrl(url, options.image);
   return {
     "@context": "https://schema.org",
     "@graph": [{
@@ -80,9 +105,12 @@ export function buildLocationTourStructuredData(options: {
       description: tour.seoDescription[locale],
       dateModified: tour.lastReviewedAt,
       inLanguage: locale,
+      isAccessibleForFree: true,
       mainEntityOfPage: { "@id": `${url}#webpage` },
       about: { "@type": "TouristDestination", name: destination.name, addressCountry: destination.countryCode },
-      publisher: { "@id": `${new URL(url).origin}/#publisher` },
+      author: authorEntity(origin, locale),
+      publisher: publisherEntity(origin),
+      ...(image ? { image } : {}),
       citation: cited.map((source) => source.url),
     }],
   };
@@ -154,9 +182,12 @@ export function buildDestinationEditorialStructuredData(options: {
   guide: DestinationEditorialGuide;
   locale: "en" | "de";
   url: string;
+  image?: string | null;
 }) {
   const { destination, guide, locale, url } = options;
   const articleId = `${url}#editorial-guide`;
+  const origin = new URL(url).origin;
+  const image = absoluteMediaUrl(url, options.image);
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -167,13 +198,16 @@ export function buildDestinationEditorialStructuredData(options: {
         description: guide.seoDescription[locale],
         dateModified: guide.lastReviewedAt,
         inLanguage: locale,
+        isAccessibleForFree: true,
         mainEntityOfPage: { "@id": `${url}#webpage` },
         about: {
           "@type": "TouristDestination",
           name: destination.name,
           addressCountry: destination.countryCode,
         },
-        publisher: { "@id": `${new URL(url).origin}/#publisher` },
+        author: authorEntity(origin, locale),
+        publisher: publisherEntity(origin),
+        ...(image ? { image } : {}),
         citation: guide.sources.map((source) => source.url),
       },
       {
@@ -196,6 +230,7 @@ export function buildGearGuideStructuredData(options: {
 }) {
   const { guide, locale, url } = options;
   const sourceUrls = guide.items.flatMap((item) => item.source ? [item.source.url] : []);
+  const origin = new URL(url).origin;
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -206,8 +241,10 @@ export function buildGearGuideStructuredData(options: {
         description: guide.summary[locale],
         dateModified: guide.lastReviewedAt,
         inLanguage: locale,
+        isAccessibleForFree: true,
         mainEntityOfPage: { "@id": `${url}#webpage` },
-        publisher: { "@id": `${new URL(url).origin}/#publisher` },
+        author: authorEntity(origin, locale),
+        publisher: publisherEntity(origin),
         citation: sourceUrls,
         about: guide.items.map((item) => ({ "@type": "Thing", name: item.name[locale] })),
       },

@@ -31,9 +31,12 @@ test("destination editorial structured data links the guide, FAQ, and cited prim
   const guide = guides[0];
   const destination = seed.destinations.find((candidate) => candidate.id === guide.destinationId);
   assert.ok(destination);
-  const value = buildDestinationEditorialStructuredData({ destination, guide, locale: "en", url: `https://stargazingindex.com/en/stargazing-destinations/${guide.slug}/` });
-  const article = value["@graph"].find((item) => item["@type"] === "Article");
+  const value = buildDestinationEditorialStructuredData({ destination, guide, locale: "en", url: `https://stargazingindex.com/en/stargazing-destinations/${guide.slug}/`, image: "/images/destinations/la-palma.webp" });
+  const article = value["@graph"].find((item) => item["@type"] === "Article") as Record<string, unknown> | undefined;
   const faq = value["@graph"].find((item) => item["@type"] === "FAQPage");
   assert.deepEqual(article?.citation, guide.sources.map((source) => source.url));
+  assert.equal((article?.author as { name: string }).name, "Schayan Yousefian");
+  assert.equal(article?.image, "https://stargazingindex.com/images/destinations/la-palma.webp");
+  assert.equal(article?.isAccessibleForFree, true);
   assert.equal((faq?.mainEntity as unknown[]).length, guide.faq.length);
 });

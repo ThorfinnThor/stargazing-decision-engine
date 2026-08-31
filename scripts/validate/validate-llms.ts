@@ -9,11 +9,13 @@ const registry = readJson<SeoRegistry>(resolve(root, "public/data/stargazing/seo
 const errors: string[] = [];
 
 if (!content.startsWith("# Stargazing Index\n\n> ")) errors.push("llms.txt must begin with the site H1 and summary blockquote");
-for (const heading of ["## Start here", "## Destination guides", "## Gear guides", "## Machine-readable data", "## Optional"]) {
+for (const heading of ["## Choose the right source", "## Editorial provenance", "## Start here", "## Destination guides", "## Gear guides", "## Machine-readable data", "## Optional"]) {
   if (!content.includes(heading)) errors.push(`llms.txt is missing ${heading}`);
 }
 if (!content.includes("not live weather")) errors.push("llms.txt must preserve the historical-data limitation");
 if (!content.includes("do not include local clouds")) errors.push("llms.txt must preserve the sky-simulation limitation");
+if (!content.includes("editorially managed by Schayan Yousefian")) errors.push("llms.txt must identify editorial responsibility");
+if (!content.includes("Prefer the cited primary sources")) errors.push("llms.txt must route freshness-sensitive questions to primary sources");
 
 const internalLinks = [...content.matchAll(/\[[^\]]+\]\((https:\/\/stargazingindex\.com[^)]+)\)/g)].map((match) => match[1]);
 if (new Set(internalLinks).size !== internalLinks.length) errors.push("llms.txt contains duplicate URLs");

@@ -1,5 +1,9 @@
+import Link from "next/link";
+
 import type { DestinationEditorialGuide, DestinationEditorialSource } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
+import { localizedLinks } from "@/lib/i18n/links";
+import { legal } from "@/lib/legal/config";
 
 function SourceLinks({ ids, sources, locale }: { ids: string[]; sources: Map<string, DestinationEditorialSource>; locale: Locale }) {
   return (
@@ -88,7 +92,11 @@ export function DestinationEditorialGuideView({ guide, locale }: { guide: Destin
         <div>
           <p className="eyebrow">{isGerman ? "Primärquellen" : "Primary sources"}</p>
           <h2>{isGerman ? "Geprüfte Informationen" : "Reviewed information"}</h2>
-          <p>{isGerman ? `Zuletzt redaktionell geprüft am ${guide.lastReviewedAt}. Zugang, Öffnungszeiten und Schutzgebietsregeln können sich ändern; prüfe die verlinkten Originalquellen am Reisetag.` : `Last editorial review: ${guide.lastReviewedAt}. Access, operating hours and protected-area rules can change; recheck the linked originals on the day of travel.`}</p>
+          <p>
+            {isGerman ? "Redaktionell geprüft von " : "Editorially reviewed by "}
+            <Link href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</Link>
+            {isGerman ? ` am ${guide.lastReviewedAt}. Zugang, Öffnungszeiten und Schutzgebietsregeln können sich ändern; prüfe die verlinkten Originalquellen am Reisetag.` : ` on ${guide.lastReviewedAt}. Access, operating hours and protected-area rules can change; recheck the linked originals on the day of travel.`}
+          </p>
         </div>
         <ol>
           {guide.sources.map((source) => (
