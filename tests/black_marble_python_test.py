@@ -10,7 +10,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "import
 from black_marble_common import parse_granule_name, required_tiles, site_bounding_box  # noqa: E402
 from extract_black_marble import decode_radiance  # noqa: E402
 import fetch_black_marble  # noqa: E402
-from fetch_black_marble import earthdata_client, retry_network  # noqa: E402
+from fetch_black_marble import earthdata_client, retry_network, retry_nonempty_results  # noqa: E402
 
 
 class BlackMarbleGeometryTests(unittest.TestCase):
@@ -59,6 +59,21 @@ class BlackMarbleGeometryTests(unittest.TestCase):
                 initial_delay_seconds=0,
                 sleeper=lambda _delay: None,
             )
+
+    def test_empty_search_results_are_retried(self):
+        calls = []
+        delays = []
+
+        def operation():
+            calls.append(1)
+            return [] if len(calls) < 3 else ["granule"]
+
+        self.assertEqual(
+            retry_nonempty_results("search", operation, attempts=4, initial_delay_seconds=1, sleeper=delays.append),
+            ["granule"],
+        )
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(delays, [1, 2])
 
     def test_earthdata_login_is_reused_for_a_batch(self):
         class FakeEarthaccess:
