@@ -5,7 +5,6 @@ import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { loadMeteorShowerEvent, listMeteorShowerEvents, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 
 export const dynamic = "force-static";
@@ -80,7 +79,6 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
 
       <footer className="event-footer">
         <p>{isGerman ? "Quelle:" : "Source:"} <a href={event.sourceUrl} rel="noreferrer">{event.source}</a> · {isGerman ? "Geprüft" : "Verified"} {event.verifiedAt}</p>
-        <AffiliateDisclosure locale={locale} />
       </footer>
     </main>
   );

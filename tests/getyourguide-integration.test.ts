@@ -17,8 +17,10 @@ test("GetYourGuide Integration Analyzer is present in both static root layouts",
 test("automatic GetYourGuide widget is rendered on destination and location-tour pages", () => {
   const destination = read("app/[locale]/stargazing-destinations/[slug]/page.tsx");
   const tour = read("app/[locale]/stargazing-tours/[slug]/page.tsx");
-  assert.match(destination, /<GetYourGuideAutoWidget/);
-  assert.match(tour, /<GetYourGuideAutoWidget/);
+  assert.match(destination, /<AffiliateDestinationModules/);
+  assert.match(tour, /<AffiliateDestinationModules/);
+  const modules = read("components/affiliate-destination-modules.tsx");
+  assert.match(modules, /<GetYourGuideAutoWidget/);
   const integration = read("components/getyourguide-integration.tsx");
   assert.match(integration, /data-gyg-widget="auto"/);
   assert.match(integration, /We have not reviewed these live results individually/);

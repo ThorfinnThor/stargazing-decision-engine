@@ -1,4 +1,3 @@
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { affiliateRel } from "@/lib/affiliate/affiliate";
 import { loadAffiliateActivityOffers } from "@/lib/data/load";
 import type { Locale } from "@/lib/i18n/config";
@@ -28,6 +27,5 @@ export function AffiliateActivityOffers({ destinationId, locationTourSlug, local
         <small>{isGerman ? `Link geprüft am ${offer.lastReviewedAt}` : `Link reviewed ${offer.lastReviewedAt}`}</small>
       </article>)}
     </div>
-    <AffiliateDisclosure locale={locale} />
   </section>;
 }

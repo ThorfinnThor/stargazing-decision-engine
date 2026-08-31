@@ -1,6 +1,5 @@
 import Script from "next/script";
 
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { affiliatePartnerId, getAffiliatePartner } from "@/lib/affiliate/affiliate";
 import { loadAffiliateConfig } from "@/lib/affiliate/config";
 import type { Locale } from "@/lib/i18n/config";
@@ -11,6 +10,11 @@ function loadEnabledWidget() {
   const partnerId = affiliatePartnerId(partner);
   if (!partnerId) return null;
   return { partnerId, partnerName: partner.name, ...partner.widget };
+}
+
+export function hasGetYourGuideAutoWidget(destinationId: string) {
+  const widget = loadEnabledWidget();
+  return Boolean(widget?.destinationIds.includes(destinationId));
 }
 
 export function GetYourGuideAnalytics() {
@@ -40,6 +44,5 @@ export function GetYourGuideAutoWidget({ destinationId, destinationName, locale 
     <div className="getyourguide-auto-widget-frame">
       <div data-gyg-widget="auto" data-gyg-partner-id={widget.partnerId} data-gyg-cmp={widget.campaign} />
     </div>
-    <AffiliateDisclosure locale={locale} />
   </section>;
 }

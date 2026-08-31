@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { listGearGuides, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildGearGuideStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
@@ -108,7 +107,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
         <h2 id="related-guides-title">{isGerman ? "Weitere Ausrüstungs-Guides" : "Related gear guides"}</h2>
         <div className="foundation-grid gear-guide-grid">{relatedGuides.map((related) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, related.slug)} key={related.slug}><div className="card-topline"><span>{related.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{related.title[locale]}</h3><p>{related.summary[locale]}</p></a>)}</div>
       </section>
-      <footer className="event-footer"><p>{guide.affiliateDisclosure[locale]} {isGerman ? "Zuletzt geprüft" : "Last reviewed"}: {guide.lastReviewedAt}.</p><AffiliateDisclosure locale={locale} /></footer>
+      <footer className="event-footer"><p>{guide.affiliateDisclosure[locale]} {isGerman ? "Zuletzt geprüft" : "Last reviewed"}: {guide.lastReviewedAt}.</p></footer>
     </main>
   );
 }
