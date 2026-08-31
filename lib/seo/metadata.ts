@@ -46,7 +46,10 @@ export function buildSeoMetadata(options: {
       };
 
   return {
-    title,
+    // Keep the reviewed page title intact. The locale layout has a branded
+    // fallback template, but repeating the brand on every editorial page
+    // pushes many otherwise useful titles beyond a readable search snippet.
+    title: { absolute: title },
     description,
     robots: seo?.indexable === false ? { index: false, follow: true } : undefined,
     alternates: seo ? { canonical, languages: seo.alternatePaths } : undefined,

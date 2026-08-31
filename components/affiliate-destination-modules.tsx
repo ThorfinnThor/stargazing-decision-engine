@@ -27,9 +27,9 @@ export function AffiliateDestinationModules({
   if (!hasOffers && !hasSearches && !hasWidget) return null;
 
   return <>
+    <AffiliateDisclosure locale={locale} />
     <AffiliateActivityOffers destinationId={destinationId} locationTourSlug={locationTourSlug} locale={locale} />
     <AffiliateDestinationSearches destinationId={destinationId} destinationName={destinationName} locale={locale} />
     <GetYourGuideActivitiesWidget destinationId={destinationId} destinationName={destinationName} destinationQuery={destinationQuery} locale={locale} />
-    <AffiliateDisclosure locale={locale} />
   </>;
 }

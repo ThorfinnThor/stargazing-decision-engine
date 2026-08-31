@@ -582,10 +582,18 @@ h1 span {
 }
 
 .affiliate-disclosure {
-  max-width: 70rem;
-  margin: 1.25rem 0 0;
-  color: var(--muted);
-  font-size: 0.8rem;
+  max-width: 78rem;
+  margin: clamp(3rem, 7vw, 6rem) auto 0;
+  padding: 0 clamp(2rem, 5vw, 4rem);
+  color: #d9deea;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+.affiliate-disclosure + .affiliate-activity-offers,
+.affiliate-disclosure + .affiliate-destination-searches,
+.affiliate-disclosure + .getyourguide-activities-widget {
+  margin-top: 1rem;
 }
 
 .affiliate-activity-offers {

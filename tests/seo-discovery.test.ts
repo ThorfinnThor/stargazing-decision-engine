@@ -60,6 +60,7 @@ test("editorial metadata exposes article semantics, review time, and author iden
     },
   });
   const openGraph = metadata.openGraph as Record<string, unknown>;
+  assert.deepEqual(metadata.title, { absolute: "Example field guide" });
   assert.equal(openGraph.type, "article");
   assert.equal(openGraph.modifiedTime, "2026-08-28");
   assert.deepEqual(openGraph.authors, ["https://stargazingindex.com/en/about/#about-editorial-title"]);
