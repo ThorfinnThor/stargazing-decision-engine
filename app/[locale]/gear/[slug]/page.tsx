@@ -8,6 +8,7 @@ import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { isGearGuideEditorialReady } from "@/lib/gear/gear";
+import { legal } from "@/lib/legal/config";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -31,7 +32,17 @@ function readParams(params: { locale: string; slug: string }) {
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
-  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.guide.title[resolved.locale], description: resolved.guide.summary[resolved.locale] });
+  return buildSeoMetadata({
+    seo: resolved.seo,
+    locale: resolved.locale,
+    title: resolved.guide.title[resolved.locale],
+    description: resolved.guide.summary[resolved.locale],
+    article: {
+      modifiedTime: resolved.guide.lastReviewedAt,
+      section: resolved.locale === "de" ? "Astronomie-Ausrüstung" : "Astronomy gear",
+      authors: [`https://stargazingindex.com/${resolved.locale}/about/#about-editorial-title`],
+    },
+  });
 }
 
 export default async function GearGuidePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -107,7 +118,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
         <h2 id="related-guides-title">{isGerman ? "Weitere Ausrüstungs-Guides" : "Related gear guides"}</h2>
         <div className="foundation-grid gear-guide-grid">{relatedGuides.map((related) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, related.slug)} key={related.slug}><div className="card-topline"><span>{related.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{related.title[locale]}</h3><p>{related.summary[locale]}</p></a>)}</div>
       </section>
-      <footer className="event-footer"><p>{guide.affiliateDisclosure[locale]} {isGerman ? "Zuletzt geprüft" : "Last reviewed"}: {guide.lastReviewedAt}.</p></footer>
+      <footer className="event-footer"><p>{guide.affiliateDisclosure[locale]} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
     </main>
   );
 }

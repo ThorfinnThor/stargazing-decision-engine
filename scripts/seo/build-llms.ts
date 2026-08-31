@@ -7,6 +7,10 @@ import { readJson, root } from "../pipeline/io.js";
 const registry = readJson<SeoRegistry>(resolve(root, "public/data/stargazing/seo/registry.json"));
 const origin = registry.siteUrl.replace(/\/$/, "");
 const indexableEnglishPages = registry.pages.filter((page) => page.indexable && page.locale === "en");
+const latestContentDate = indexableEnglishPages
+  .map((page) => page.lastModified)
+  .sort((left, right) => Date.parse(right) - Date.parse(left))[0]
+  .slice(0, 10);
 
 function absolute(path: string) {
   return `${origin}${path}`;
@@ -26,6 +30,18 @@ const content = `# Stargazing Index
 > Stargazing Index is a bilingual, data-driven guide for choosing stargazing destinations, months, observing sites, and astronomy gear. Its reviewed field guides, independent routes, and source-backed comparisons are supported by reproducible JSON data and clearly stated limitations.
 
 The primary language is English. German versions use the same paths under \`/de/\`; each page declares reciprocal language alternates. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
+
+## Choose the right source
+
+- Use a destination guide to answer where to observe, which months have the strongest historical conditions, how access works, and which limitations affect the decision.
+- Use a location tour for one concrete, source-backed evening plan at a named observing site.
+- Use a short-trip guide to compare qualifying destinations from a specific origin city. A short-trip page can be deliberately excluded from indexing when no destination passes its evidence and distance gates.
+- Use a gear guide for specification-based product comparisons. These guides do not publish live prices or claim unreported hands-on tests.
+- Prefer the cited primary sources on each guide for current closures, bookings, opening times, protected-area rules, and manufacturer specifications.
+
+## Editorial provenance
+
+Stargazing Index is editorially managed by Schayan Yousefian. Every destination guide, location tour, and gear guide shows its responsible editor, review date, evidence, and material limitations. The latest review date represented in this index is ${latestContentDate}. Corrections can be submitted through the contact page. Affiliate relationships do not alter destination scores, rankings, or editorial conclusions.
 
 ## Start here
 

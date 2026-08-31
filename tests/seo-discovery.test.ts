@@ -3,6 +3,7 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
+import { buildSeoMetadata } from "../lib/seo/metadata.js";
 import { buildWebPageStructuredData } from "../lib/seo/structured-data.js";
 import type { SeoRegistry } from "../lib/data/load.js";
 
@@ -29,6 +30,8 @@ test("sitemap and robots sources preserve canonical, language, freshness, and AI
   const robots = read("app/robots.ts");
   assert.match(robots, /OAI-SearchBot/);
   assert.match(robots, /ChatGPT-User/);
+  assert.match(robots, /Claude-SearchBot/);
+  assert.match(robots, /Claude-User/);
   assert.match(robots, /sitemap\.xml/);
 });
 
@@ -38,7 +41,28 @@ test("llms.txt is curated and states material product limitations", () => {
   assert.match(content, /historical climate normals and darkness data, not live weather/i);
   assert.match(content, /do not include local clouds/i);
   assert.match(content, /manufacturer specifications/i);
+  assert.match(content, /Choose the right source/);
+  assert.match(content, /editorially managed by Schayan Yousefian/);
   assert.match(content, /\/data\/stargazing\/manifest\.json/);
+});
+
+test("editorial metadata exposes article semantics, review time, and author identity", () => {
+  const metadata = buildSeoMetadata({
+    seo: null,
+    locale: "en",
+    title: "Example field guide",
+    description: "A source-backed guide.",
+    image: "/images/destinations/la-palma.webp",
+    article: {
+      modifiedTime: "2026-08-28",
+      section: "Stargazing destinations",
+      authors: ["https://stargazingindex.com/en/about/#about-editorial-title"],
+    },
+  });
+  const openGraph = metadata.openGraph as Record<string, unknown>;
+  assert.equal(openGraph.type, "article");
+  assert.equal(openGraph.modifiedTime, "2026-08-28");
+  assert.deepEqual(openGraph.authors, ["https://stargazingindex.com/en/about/#about-editorial-title"]);
 });
 
 test("structured data connects pages to the site, publisher, and breadcrumbs", () => {

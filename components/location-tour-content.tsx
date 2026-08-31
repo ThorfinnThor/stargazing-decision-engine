@@ -1,5 +1,9 @@
+import Link from "next/link";
+
 import type { DestinationEditorialSource, LocationTour } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
+import { localizedLinks } from "@/lib/i18n/links";
+import { legal } from "@/lib/legal/config";
 
 function Citations({ ids, sources }: { ids: string[]; sources: Map<string, DestinationEditorialSource> }) {
   return <span className="editorial-citations">{ids.map((id) => {
@@ -54,7 +58,11 @@ export function LocationTourContent({ tour, locale, availableSources }: { tour: 
     <footer className="location-tour-sources">
       <p className="eyebrow">{isGerman ? "Geprüfte Primärquellen" : "Reviewed primary sources"}</p>
       <h2>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</h2>
-      <p>{isGerman ? `Redaktionell geprüft am ${tour.lastReviewedAt}. Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern.` : `Editorial review: ${tour.lastReviewedAt}. Bookings, opening times, gate hours and protected-area rules can change.`}</p>
+      <p>
+        {isGerman ? "Redaktionell geprüft von " : "Editorially reviewed by "}
+        <Link href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</Link>
+        {isGerman ? ` am ${tour.lastReviewedAt}. Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern.` : ` on ${tour.lastReviewedAt}. Bookings, opening times, gate hours and protected-area rules can change.`}
+      </p>
       <ol>{[...sources.values()].map((source) => <li key={source.id} id={`tour-source-${source.id}`}>
         <a href={source.url} rel="noreferrer">{source.publisher}: {source.title}</a>
         <span>{source.authority.replaceAll("-", " ")} · {source.checkedAt}</span>

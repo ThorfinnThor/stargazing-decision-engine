@@ -11,6 +11,8 @@ export default function robots(): MetadataRoute.Robots {
       { userAgent: "*", allow: "/" },
       { userAgent: "OAI-SearchBot", allow: "/" },
       { userAgent: "ChatGPT-User", allow: "/" },
+      { userAgent: "Claude-SearchBot", allow: "/" },
+      { userAgent: "Claude-User", allow: "/" },
     ],
     host: registry.siteUrl.replace(/\/$/, ""),
     sitemap: `${registry.siteUrl.replace(/\/$/, "")}/sitemap.xml`,

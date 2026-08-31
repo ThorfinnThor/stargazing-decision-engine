@@ -47,6 +47,9 @@ test("gear guide structured data exposes citations, comparison order, and FAQ wi
   const itemList = value["@graph"].find((item) => item["@type"] === "ItemList");
   const faq = value["@graph"].find((item) => item["@type"] === "FAQPage");
   assert.equal((article?.citation as string[]).length, 3);
+  assert.equal((article?.author as { name: string }).name, "Schayan Yousefian");
+  assert.equal((article?.publisher as { name: string }).name, "Stargazing Index");
+  assert.equal(article?.isAccessibleForFree, true);
   assert.equal(itemList?.numberOfItems, 3);
   assert.equal((faq?.mainEntity as unknown[]).length, guide.faq.length);
   assert.equal(JSON.stringify(value).includes('"offers"'), false);

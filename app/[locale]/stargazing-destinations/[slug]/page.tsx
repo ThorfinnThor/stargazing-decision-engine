@@ -88,7 +88,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const resolved = readParams(await params);
   if (!resolved) return {};
   const fallbackDescription = resolved.locale === "de" ? `Himmelsführer für ${resolved.destination.name}.` : `Dark-sky guide for ${resolved.destination.name}.`;
-  return buildSeoMetadata({ seo: resolved.seo, locale: resolved.locale, title: resolved.guide?.seoTitle[resolved.locale] ?? resolved.destination.name, description: resolved.guide?.seoDescription[resolved.locale] ?? fallbackDescription, image: resolved.image?.localPath ?? null });
+  return buildSeoMetadata({
+    seo: resolved.seo,
+    locale: resolved.locale,
+    title: resolved.guide?.seoTitle[resolved.locale] ?? resolved.destination.name,
+    description: resolved.guide?.seoDescription[resolved.locale] ?? fallbackDescription,
+    image: resolved.image?.localPath ?? null,
+    article: resolved.guide ? {
+      modifiedTime: resolved.guide.lastReviewedAt,
+      section: resolved.locale === "de" ? "Reiseziele für Sternbeobachtung" : "Stargazing destinations",
+      authors: [`https://stargazingindex.com/${resolved.locale}/about/#about-editorial-title`],
+    } : undefined,
+  });
 }
 
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
@@ -99,7 +110,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const canonical = seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`;
-  const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical }) : null;
+  const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical, image: image?.localPath }) : null;
   const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
     <main className="event-page destination-profile-page" lang={isGerman ? "de" : "en"}>
