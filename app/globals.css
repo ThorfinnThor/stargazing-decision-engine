@@ -534,6 +534,44 @@ h1 span {
   min-height: 12rem;
 }
 
+.short-trip-empty {
+  max-width: 48rem;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgb(142 197 255 / 25%);
+  background: rgb(17 23 42 / 65%);
+}
+
+.short-trip-empty p {
+  margin: 0;
+  color: #d9deea;
+}
+
+.short-trip-empty p + p {
+  margin-top: 0.85rem;
+}
+
+.short-trip-empty a {
+  display: inline-flex;
+  gap: 0.6rem;
+  margin-top: 1.35rem;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-underline-offset: 0.35rem;
+}
+
+.short-trip-destination-link {
+  color: #fff;
+  text-decoration-color: rgb(142 197 255 / 55%);
+  text-underline-offset: 0.25rem;
+}
+
+.short-trip-destination-link:hover {
+  color: var(--blue);
+}
+
 .gear-guide-card .card-topline {
   margin-bottom: 2rem;
 }

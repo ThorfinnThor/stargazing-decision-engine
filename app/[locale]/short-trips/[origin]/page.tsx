@@ -7,6 +7,7 @@ import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { localizedLinks } from "@/lib/i18n/links";
 import { formatMonth } from "@/lib/i18n/months";
 
 export const dynamic = "force-static";
@@ -25,12 +26,32 @@ function readParams(params: { locale: string; origin: string }) {
   }
 }
 
+const distanceBandLabels: Record<string, Record<Locale, string>> = {
+  near: { en: "Under 100 km", de: "Unter 100 km" },
+  regional: { en: "100–250 km", de: "100–250 km" },
+  weekend: { en: "250–500 km", de: "250–500 km" },
+  "long-weekend": { en: "500–800 km", de: "500–800 km" },
+  far: { en: "Over 800 km", de: "Über 800 km" },
+};
+
+function formatDistanceBand(band: string, locale: Locale) {
+  return distanceBandLabels[band]?.[locale] ?? band;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; origin: string }> }): Promise<Metadata> {
   const resolved = readParams(await params);
   if (!resolved) return {};
   const title = resolved.locale === "de" ? `Kurze Sternreisen ab ${resolved.trip.originName}` : `Short stargazing trips from ${resolved.trip.originName}`;
+  const hasResults = resolved.trip.entries.length > 0;
   const seo = resolved.seo;
-  return buildSeoMetadata({ seo, locale: resolved.locale, title, description: resolved.locale === "de" ? `Ranking dunkler Himmelsziele ab ${resolved.trip.originName}.` : `Ranking of dark-sky destinations from ${resolved.trip.originName}.` });
+  return buildSeoMetadata({
+    seo,
+    locale: resolved.locale,
+    title,
+    description: hasResults
+      ? resolved.locale === "de" ? `Ranking dunkler Himmelsziele ab ${resolved.trip.originName}.` : `Ranking of dark-sky destinations from ${resolved.trip.originName}.`
+      : resolved.locale === "de" ? `Derzeit erfüllt kein geprüftes Ziel die Kriterien für eine kurze Sternreise ab ${resolved.trip.originName}.` : `No reviewed destination currently meets the criteria for a short stargazing trip from ${resolved.trip.originName}.`,
+  });
 }
 
 export default async function ShortTripsPage({ params }: { params: Promise<{ locale: string; origin: string }> }) {
@@ -38,11 +59,12 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   if (!resolved) notFound();
   const { trip, locale, seo } = resolved;
   const isGerman = locale === "de";
+  const hasResults = trip.entries.length > 0;
   const tableLabels = {
     rank: "#",
     destination: isGerman ? "Ziel" : "Destination",
     distance: isGerman ? "Distanz" : "Distance",
-    band: "Band",
+    band: isGerman ? "Entfernungsbereich" : "Distance range",
     score: isGerman ? "Wert" : "Score",
     bestMonths: isGerman ? "Beste Monate" : "Best months",
   };
@@ -56,28 +78,53 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
         <h1>{isGerman ? `Ab ${trip.originName}` : `From ${trip.originName}`}</h1>
         <p className="lede">
           {isGerman
-            ? `Ziele bis ${trip.maxShortTripKm} km, gewichtet nach historischem Realwert und Luftlinienentfernung.`
-            : `Destinations within ${trip.maxShortTripKm} km, weighted by historical real scores and great-circle distance.`}
+            ? `Geprüfte Ziele bis ${trip.maxShortTripKm} km, bewertet nach historischen Sternbeobachtungswerten und Luftlinienentfernung.`
+            : `Reviewed destinations within ${trip.maxShortTripKm} km, ranked by historical stargazing scores and great-circle distance.`}
         </p>
         <p className="event-note">{isGerman ? "Entfernung ist keine Fahrzeit. Die veröffentlichten Werte sind keine Verfügbarkeits- oder Wetterprognose." : "Distance is not driving time. Published values are not availability or weather forecasts."}</p>
       </header>
       <section className="event-summary" aria-labelledby="trip-results-title">
-        <h2 id="trip-results-title">{isGerman ? "Beste Ziele" : "Best destinations"}</h2>
-        <div className="event-table-wrap">
+        <h2 id="trip-results-title">
+          {hasResults
+            ? trip.entries.length === 1
+              ? isGerman ? "Ein Ziel erfüllt die Kriterien" : "One destination meets the criteria"
+              : isGerman ? "Beste Ziele" : "Best destinations"
+            : isGerman ? "Noch kein passendes Ziel" : "No qualifying destination yet"}
+        </h2>
+        {hasResults ? <div className="event-table-wrap">
           <table className="event-table short-trip-table">
             <thead><tr><th>{tableLabels.rank}</th><th>{tableLabels.destination}</th><th>{tableLabels.distance}</th><th>{tableLabels.band}</th><th>{tableLabels.score}</th><th>{tableLabels.bestMonths}</th></tr></thead>
             <tbody>{trip.entries.map((entry) => (
               <tr key={entry.destinationId}>
                 <td data-label={tableLabels.rank}>{entry.rank}</td>
-                <td data-label={tableLabels.destination}><strong>{entry.destinationName}</strong><br /><small>{entry.stayArea?.name ?? (isGerman ? "Kein Übernachtungsgebiet kuratiert" : "No curated stay area")}</small></td>
+                <td data-label={tableLabels.destination}>
+                  <a className="short-trip-destination-link" href={localizedLinks.destination(locale, entry.destinationSlug)}><strong>{entry.destinationName}</strong></a>
+                  <br /><small>{entry.stayArea?.name ?? (isGerman ? "Kein Übernachtungsgebiet kuratiert" : "No curated stay area")}</small>
+                </td>
                 <td data-label={tableLabels.distance}>{entry.distanceKm} km</td>
-                <td data-label={tableLabels.band}>{entry.distanceBand}</td>
+                <td data-label={tableLabels.band}>{formatDistanceBand(entry.distanceBand, locale)}</td>
                 <td data-label={tableLabels.score}>{entry.shortTripScore}</td>
                 <td data-label={tableLabels.bestMonths}>{entry.bestMonths.map((month) => `${formatMonth(month.month, locale)} (${month.score})`).join(", ")}</td>
               </tr>
             ))}</tbody>
           </table>
-        </div>
+        </div> : (
+          <div className="short-trip-empty">
+            <p>
+              {isGerman
+                ? `Im geprüften Datensatz liegt derzeit kein öffentlich zugängliches Ziel mit ausreichender Datenqualität innerhalb von ${trip.maxShortTripKm} km Luftlinie um ${trip.originName}. Wir erweitern den Radius nicht künstlich und empfehlen keine ungeprüften Orte.`
+                : `The reviewed dataset currently contains no publicly accessible destination with sufficient data quality within ${trip.maxShortTripKm} km great-circle distance of ${trip.originName}. We do not inflate the radius or recommend unreviewed places to fill the list.`}
+            </p>
+            <p>
+              {isGerman
+                ? "Im Finder kannst du stattdessen alle geprüften Ziele vergleichen, ohne sie als kurze Reise auszugeben."
+                : "Use the finder to compare every reviewed destination without treating a long journey as a short trip."}
+            </p>
+            <a href={localizedLinks.finder(locale)}>
+              {isGerman ? "Alle geprüften Ziele öffnen" : "Explore all reviewed destinations"} <span aria-hidden="true">→</span>
+            </a>
+          </div>
+        )}
       </section>
       <AffiliateDisclosure locale={locale} />
     </main>

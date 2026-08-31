@@ -205,11 +205,16 @@ for (const locale of config.locales) {
   }
   for (const trip of shortTrips) {
     const path = `/${locale}/short-trips/${trip.originSlug}/`;
+    const hasResults = trip.entries.length > 0;
     pages.push(makePage({
       id: `short-trip-${trip.originSlug}-${locale}`, pageType: "short-trip", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/short-trips/${trip.originSlug}/`])),
       title: locale === "de" ? `Kurze Sternreisen ab ${trip.originName}` : `Short stargazing trips from ${trip.originName}`, h1: locale === "de" ? `Ab ${trip.originName}` : `From ${trip.originName}`,
-      description: locale === "de" ? `Ranking dunkler Himmelsziele ab ${trip.originName}.` : `Ranking of dark-sky destinations from ${trip.originName}.`, resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
+      description: hasResults
+        ? locale === "de" ? `Ranking dunkler Himmelsziele ab ${trip.originName}.` : `Ranking of dark-sky destinations from ${trip.originName}.`
+        : locale === "de" ? `Derzeit erfüllt kein geprüftes Ziel die Kriterien für eine kurze Sternreise ab ${trip.originName}.` : `No reviewed destination currently meets the criteria for a short stargazing trip from ${trip.originName}.`,
+      resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
       lastModified: dataLastModified,
+      forceNoindexReason: hasResults ? undefined : "no-qualifying-destinations",
     }));
   }
   for (const guide of gearGuides) {
