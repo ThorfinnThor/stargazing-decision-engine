@@ -1,4 +1,3 @@
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { affiliateRel } from "@/lib/affiliate/affiliate";
 import { loadAffiliateDestinationSearches } from "@/lib/data/load";
 import type { Locale } from "@/lib/i18n/config";
@@ -36,6 +35,5 @@ export function AffiliateDestinationSearches({ destinationId, destinationName, l
         <a href={activities.redirectPath} rel={affiliateRel()}>{isGerman ? "Alle Aktivitäten bei Viator ansehen" : "Browse all activities on Viator"} →</a>
       </article>}
     </div>
-    <AffiliateDisclosure locale={locale} />
   </section>;
 }

@@ -29,6 +29,8 @@ const locationTour: LocationTour = {
   lastReviewedAt: "2026-08-30",
 };
 
+const source = (path: string) => readFileSync(path, "utf8");
+
 test("disabled affiliate partners cannot produce a CTA URL", () => {
   validateAffiliateConfig(config);
   assert.equal(buildAffiliateUrl(config, "stay-search", destination), null);
@@ -220,4 +222,27 @@ test("reviewed Viator catalog contains only approved direct stargazing offers", 
     assert.equal(url.searchParams.get("medium"), "link");
     assert.match(url.pathname, /\/tours\//);
   }
+});
+
+test("affiliate disclosures appear only with rendered affiliate integrations", () => {
+  for (const path of [
+    "app/[locale]/short-trips/[origin]/page.tsx",
+    "app/[locale]/meteor-showers/[year]/[slug]/page.tsx",
+    "app/[locale]/gear/page.tsx",
+    "app/[locale]/gear/[slug]/page.tsx",
+  ]) {
+    assert.doesNotMatch(source(path), /AffiliateDisclosure/);
+  }
+
+  for (const path of [
+    "components/affiliate-activity-offers.tsx",
+    "components/affiliate-destination-searches.tsx",
+    "components/getyourguide-integration.tsx",
+  ]) {
+    assert.doesNotMatch(source(path), /AffiliateDisclosure/);
+  }
+
+  const destinationModules = source("components/affiliate-destination-modules.tsx");
+  assert.equal((destinationModules.match(/<AffiliateDisclosure locale=\{locale\}/g) ?? []).length, 1);
+  assert.match(destinationModules, /if \(!hasOffers && !hasSearches && !hasWidget\) return null/);
 });

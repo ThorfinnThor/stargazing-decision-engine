@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { listShortTripOrigins, loadSeoPage, loadShortTrip } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
-import { AffiliateDisclosure } from "@/components/affiliate-disclosure";
 import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
@@ -126,7 +125,6 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
           </div>
         )}
       </section>
-      <AffiliateDisclosure locale={locale} />
     </main>
   );
 }
