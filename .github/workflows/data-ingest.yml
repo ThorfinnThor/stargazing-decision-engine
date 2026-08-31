@@ -145,6 +145,10 @@ jobs:
           else
             echo "Skipping real score generation: darkness calibration is not calibrated yet."
           fi
+      - name: Rebuild the rolling astronomy calendar for the expanded catalog
+        run: |
+          pnpm data:calendar:real -- --start "$(date -u +%Y-%m)" --months 36 --replace
+          pnpm data:calendar:manifest
       - run: pnpm data:rebuild
       - run: pnpm data:validate
       - run: pnpm data:p3:images:validate
