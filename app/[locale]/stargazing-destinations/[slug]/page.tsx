@@ -154,7 +154,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </div>
         <Link href={`/${locale}/stargazing-tours/${locationTour.slug}/`}>{isGerman ? "Tour öffnen" : "Open the tour"} →</Link>
       </aside>}
-      <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} locale={locale} />
+      <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locale={locale} />
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>

@@ -191,10 +191,12 @@ export interface AffiliateDestinationSearchVariant {
 }
 
 export interface AffiliateWidgetConfig {
-  type: "auto";
+  type: "activities";
   enabled: boolean;
   campaign: string;
   scriptUrl: string;
+  frameUrl: string;
+  itemCount: number;
   destinationIds: string[];
 }
 

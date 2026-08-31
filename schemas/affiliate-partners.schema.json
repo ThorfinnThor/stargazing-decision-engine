@@ -38,12 +38,14 @@
         "widget": {
           "type": "object",
           "additionalProperties": false,
-          "required": ["type", "enabled", "campaign", "scriptUrl", "destinationIds"],
+          "required": ["type", "enabled", "campaign", "scriptUrl", "frameUrl", "itemCount", "destinationIds"],
           "properties": {
-            "type": { "const": "auto" },
+            "type": { "const": "activities" },
             "enabled": { "type": "boolean" },
             "campaign": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
             "scriptUrl": { "type": "string", "pattern": "^https://" },
+            "frameUrl": { "type": "string", "pattern": "^https://" },
+            "itemCount": { "type": "integer", "minimum": 1, "maximum": 5 },
             "destinationIds": {
               "type": "array",
               "minItems": 1,

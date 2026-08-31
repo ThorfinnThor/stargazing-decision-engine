@@ -49,10 +49,12 @@
       "affiliateId": "BKWM9K1",
       "destinationSearchEnabled": false,
       "widget": {
-        "type": "auto",
+        "type": "activities",
         "enabled": true,
         "campaign": "Stargazing",
         "scriptUrl": "https://widget.getyourguide.com/dist/pa.umd.production.min.js",
+        "frameUrl": "https://widget.getyourguide.com/default/activities.frame",
+        "itemCount": 3,
         "destinationIds": [
           "la-palma",
           "tenerife",

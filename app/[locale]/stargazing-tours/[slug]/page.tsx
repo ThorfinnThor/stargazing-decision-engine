@@ -57,7 +57,7 @@ export default async function LocationTourPage({ params }: { params: Promise<{ l
       <p><Link href={`/${locale}/stargazing-destinations/${destination.slug}/`}>{isGerman ? `Zum Datenprofil für ${destination.name}` : `View the ${destination.name} data profile`} →</Link></p>
     </header>
     <LocationTourContent tour={tour} locale={locale} availableSources={guide.sources} />
-    <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} locationTourSlug={tour.slug} locale={locale} />
+    <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locationTourSlug={tour.slug} locale={locale} />
     <nav className="location-tour-back"><Link href={`/${locale}/stargazing-tours/`}>{isGerman ? "Alle Standort-Touren" : "All location tours"} →</Link></nav>
   </main>;
 }
