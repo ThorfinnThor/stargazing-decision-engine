@@ -38,6 +38,7 @@ test("ingestion is manual and commits only after the full gate", () => {
   assertIncludes(ingest, "pnpm data:score:real");
   assertIncludes(ingest, "pnpm data:score:real:validate");
   assertIncludes(ingest, "pnpm data:dem:fetch --site \"$site\" --public-fallback");
+  assertIncludes(ingest, "xargs -r -n 1 -P 3");
   assertIncludes(ingest, "pnpm test");
   assertIncludes(ingest, "pnpm build");
   assertIncludes(ingest, "git diff --cached --quiet");

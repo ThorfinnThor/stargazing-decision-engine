@@ -100,7 +100,8 @@ jobs:
           REFRESH_DEM: ${{ inputs.refresh_dem }}
         run: |
           set -euo pipefail
-          while IFS= read -r site; do
+          refresh_site() {
+            local site="$1"
             if [[ "$REFRESH_ERA5" == "true" ]]; then
               pnpm data:era5:fetch --site "$site"
               pnpm data:era5:process --site "$site"
@@ -116,7 +117,13 @@ jobs:
               pnpm data:dem:fetch --site "$site" --public-fallback
               pnpm data:dem:process --site "$site"
             fi
-          done < /tmp/stargazing-sites
+          }
+          export -f refresh_site
+          export REFRESH_ERA5 REFRESH_BLACK_MARBLE REFRESH_DEM
+          # Every task writes only to its own site-scoped files. Three workers
+          # keep the 50-site batch inside the hosted-runner limit while the
+          # single validation/build/commit gate below remains all-or-nothing.
+          xargs -r -n 1 -P 3 bash -c 'refresh_site "$1"' _ < /tmp/stargazing-sites
       - name: Rebuild image manifest
         if: ${{ inputs.refresh_images }}
         run: pnpm data:images
