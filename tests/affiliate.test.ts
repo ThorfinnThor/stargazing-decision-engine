@@ -73,12 +73,12 @@ test("destination search variants reject unsupported placeholders", () => {
   assert.throws(() => validateAffiliateConfig(invalid), /unsupported placeholder/i);
 });
 
-test("GetYourGuide automatic widget requires an allow-listed HTTPS script", () => {
+test("GetYourGuide destination widget requires allow-listed HTTPS sources", () => {
   const partners: AffiliateConfig = {
     version: 1,
     partners: [{
       id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: true, affiliateId: "BKWM9K1", destinationSearchEnabled: false,
-      widget: { type: "auto", enabled: true, campaign: "Stargazing", scriptUrl: "https://widget.getyourguide.com/dist/pa.umd.production.min.js", destinationIds: ["la-palma"] },
+      widget: { type: "activities", enabled: true, campaign: "Stargazing", scriptUrl: "https://widget.getyourguide.com/dist/pa.umd.production.min.js", frameUrl: "https://widget.getyourguide.com/default/activities.frame", itemCount: 3, destinationIds: ["la-palma"] },
       urlTemplate: null, allowedHosts: ["www.getyourguide.com", "widget.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
     }],
   };
@@ -86,6 +86,10 @@ test("GetYourGuide automatic widget requires an allow-listed HTTPS script", () =
   assert.throws(() => validateAffiliateConfig({
     ...partners,
     partners: [{ ...partners.partners[0], widget: { ...partners.partners[0].widget!, scriptUrl: "https://tracking.example/widget.js" } }],
+  }), /not allow-listed/i);
+  assert.throws(() => validateAffiliateConfig({
+    ...partners,
+    partners: [{ ...partners.partners[0], widget: { ...partners.partners[0].widget!, frameUrl: "https://tracking.example/widget.frame" } }],
   }), /not allow-listed/i);
 });
 

@@ -12,7 +12,7 @@ function loadEnabledWidget() {
   return { partnerId, partnerName: partner.name, ...partner.widget };
 }
 
-export function hasGetYourGuideAutoWidget(destinationId: string) {
+export function hasGetYourGuideActivitiesWidget(destinationId: string) {
   const widget = loadEnabledWidget();
   return Boolean(widget?.destinationIds.includes(destinationId));
 }
@@ -28,21 +28,29 @@ export function GetYourGuideAnalytics() {
   />;
 }
 
-export function GetYourGuideAutoWidget({ destinationId, destinationName, locale }: { destinationId: string; destinationName: string; locale: Locale }) {
+export function GetYourGuideActivitiesWidget({ destinationId, destinationName, destinationQuery, locale }: { destinationId: string; destinationName: string; destinationQuery: string; locale: Locale }) {
   const widget = loadEnabledWidget();
   if (!widget || !widget.destinationIds.includes(destinationId)) return null;
   const isGerman = locale === "de";
 
-  return <section className="getyourguide-auto-widget" aria-labelledby={`getyourguide-widget-title-${destinationId}`}>
+  return <section className="getyourguide-activities-widget" aria-labelledby={`getyourguide-widget-title-${destinationId}`}>
     <header>
-      <p className="eyebrow">{isGerman ? "Automatische Live-Auswahl" : "Automatic live selection"} · {widget.partnerName}</p>
+      <p className="eyebrow">{isGerman ? "Live-Aktivitäten für die Destination" : "Live destination activities"} · {widget.partnerName}</p>
       <h2 id={`getyourguide-widget-title-${destinationId}`}>{isGerman ? `Weitere Erlebnisse rund um ${destinationName}` : `More experiences around ${destinationName}`}</h2>
       <p>{isGerman
-        ? "GetYourGuide wählt anhand des Standorts und des Seiteninhalts drei aktuell buchbare Aktivitäten aus. Diese Live-Ergebnisse wurden von uns nicht einzeln geprüft. Prüfe vor der Buchung Treffpunkt, Leistungen, Preis und Bedingungen beim Anbieter."
-        : "GetYourGuide uses the location and page content to select three currently bookable activities. We have not reviewed these live results individually. Check the meeting point, inclusions, price, and terms with the provider before booking."}</p>
+        ? `GetYourGuide zeigt aktuell buchbare Aktivitäten für ${destinationName}. Diese Live-Ergebnisse wurden von uns nicht einzeln geprüft. Prüfe vor der Buchung Treffpunkt, Leistungen, Preis und Bedingungen beim Anbieter.`
+        : `GetYourGuide shows currently bookable activities for ${destinationName}. We have not reviewed these live results individually. Check the meeting point, inclusions, price, and terms with the provider before booking.`}</p>
     </header>
-    <div className="getyourguide-auto-widget-frame">
-      <div data-gyg-widget="auto" data-gyg-partner-id={widget.partnerId} data-gyg-cmp={widget.campaign} />
+    <div className="getyourguide-activities-widget-frame">
+      <div
+        data-gyg-href={widget.frameUrl}
+        data-gyg-locale-code={isGerman ? "de-DE" : "en-US"}
+        data-gyg-widget="activities"
+        data-gyg-number-of-items={widget.itemCount}
+        data-gyg-partner-id={widget.partnerId}
+        data-gyg-cmp={widget.campaign}
+        data-gyg-q={destinationQuery}
+      />
     </div>
   </section>;
 }
