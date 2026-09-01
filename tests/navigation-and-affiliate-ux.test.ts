@@ -31,3 +31,21 @@ test("every active destination has both GetYourGuide search variants", () => {
     assert.deepEqual(variants, ["activities", "stargazing"]);
   }
 });
+
+test("long destination and tour content uses progressive disclosure without changing gear guides", () => {
+  const destinationPage = read("app/[locale]/stargazing-destinations/[slug]/page.tsx");
+  const destinationGuide = read("components/destination-editorial-guide.tsx");
+  const locationTour = read("components/location-tour-content.tsx");
+  const locationTourIndex = read("components/location-tour-index-filter.tsx");
+  const gearGuide = read("app/[locale]/gear/[slug]/page.tsx");
+
+  assert.match(destinationPage, /className="destination-section-nav"/);
+  assert.match(destinationPage, /destination-access-summary/);
+  assert.match(destinationGuide, /destination-editorial-section/);
+  assert.match(destinationGuide, /destination-content-disclosure/);
+  assert.match(locationTour, /location-tour-block/);
+  assert.match(locationTour, /<details className="location-tour-sources"/);
+  assert.match(locationTourIndex, /hidden=\{index >= limit\}/);
+  assert.match(locationTourIndex, /setLimit\(\(current\) => current \+ 12\)/);
+  assert.doesNotMatch(gearGuide, /content-disclosure-state/);
+});

@@ -125,6 +125,12 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
           ? isGerman ? "1991–2020 Klima-Normalperiode; keine Live-Wettervorhersage." : "1991–2020 climate normal; not a live weather forecast."
           : isGerman ? "Seed-Daten mit niedriger Konfidenz; keine Live-Wettervorhersage." : "Seed data with low confidence; not a live weather forecast."}</p>
       </header>
+      <nav className="destination-section-nav" aria-label={isGerman ? "Inhalt dieses Zielprofils" : "Destination profile contents"}>
+        <a href="#destination-decision">{isGerman ? "Kurzantwort" : "Quick answer"}</a>
+        <a href="#night-sky">{isGerman ? "Himmel und Monate" : "Sky and months"}</a>
+        <a href="#destination-activities">{isGerman ? "Touren und Aktivitäten" : "Tours and activities"}</a>
+        {guide && <a href="#destination-field-guide">{isGerman ? "Vor-Ort-Guide" : "Field guide"}</a>}
+      </nav>
       <DestinationDecisionSummary sites={sites} siteViews={siteViews} guide={guide} locale={locale} hasRealScores={hasRealScores} />
       {image?.status === "approved" && image.localPath && <figure className="destination-figure">
         <img src={image.localPath} alt={image.alt[locale]} loading="eager" decoding="async" />
@@ -133,8 +139,12 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </figcaption>
       </figure>}
       <DestinationSiteExplorer options={siteViews} locale={locale} />
-      <section className="event-summary" aria-labelledby="destination-access-title">
-        <h2 id="destination-access-title">{isGerman ? "Zugang bei Nacht" : "Night access"}</h2>
+      <details className="event-summary destination-access-summary">
+        <summary id="destination-access-title">
+          <strong>{isGerman ? "Zugang bei Nacht" : "Night access"}</strong>
+          <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Details anzeigen" : "Show details"}</span><span>{isGerman ? "Details schließen" : "Close details"}</span></span>
+        </summary>
+        <div className="destination-access-content">
         {sites.map((site) => (
           <div key={site.id}>
             <p><strong>{site.name}:</strong> {site.publicAccess === "yes"
@@ -153,8 +163,9 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         {sites.every((site) => site.publicAccess === "no") && <p className="event-note">
           {isGerman ? "Dieses Profil beschreibt die astronomischen Bedingungen und ist keine Reiseempfehlung für den angegebenen Standort." : "This profile describes astronomical conditions and is not a travel recommendation for the listed site."}
         </p>}
-      </section>
-      {guide && <DestinationEditorialGuideView guide={guide} locale={locale} />}
+        </div>
+      </details>
+      <div id="destination-activities" className="destination-activities">
       {locationTour && <aside className="destination-location-tour">
         <div>
           <p className="eyebrow">{isGerman ? "Konkreter Nachtplan" : "A specific night plan"}</p>
@@ -164,6 +175,8 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         <Link href={`/${locale}/stargazing-tours/${locationTour.slug}/`}>{isGerman ? "Tour öffnen" : "Open the tour"} →</Link>
       </aside>}
       <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locale={locale} />
+      </div>
+      {guide && <DestinationEditorialGuideView guide={guide} locale={locale} />}
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>
