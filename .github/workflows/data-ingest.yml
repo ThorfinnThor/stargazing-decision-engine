@@ -155,7 +155,7 @@ jobs:
       - name: Rebuild the rolling astronomy calendar for the expanded catalog
         run: |
           set -euo pipefail
-          calendar_start="$(find public/data/stargazing/calendar -mindepth 2 -maxdepth 2 -name '*.json' -print | sed -E 's#^.*/([0-9]{4}-[0-9]{2})\.json$#\1#' | sort | head -n 1)"
+          calendar_start="$(find public/data/stargazing/calendar -mindepth 2 -maxdepth 2 -name '*.json' -print | sed -E 's#^.*/([0-9]{4}-[0-9]{2})\.json$#\1#' | sort | sed -n '1p')"
           [[ "$calendar_start" =~ ^[0-9]{4}-[0-9]{2}$ ]]
           while IFS= read -r destination; do
             pnpm data:calendar:real -- --start "$calendar_start" --months 36 --destination "$destination"
