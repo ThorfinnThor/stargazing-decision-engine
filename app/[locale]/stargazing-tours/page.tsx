@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { PageHomeNav } from "@/components/page-home-nav";
+import { LocationTourIndexFilter } from "@/components/location-tour-index-filter";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { listLocationTours, loadDestination, loadSeoPage } from "@/lib/data/load";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -30,22 +29,14 @@ export default async function LocationToursPage({ params }: { params: Promise<{ 
   const { locale, tours } = resolved;
   const isGerman = locale === "de";
   return <main className="event-page location-tours-index" lang={locale}>
-    <PageHomeNav locale={locale} />
     <header className="event-header">
       <p className="eyebrow">{isGerman ? "Eigenständige Nachtpläne" : "Independent night plans"}</p>
-      <h1>{isGerman ? "Fünfzig Orte, fünfzig unterschiedliche Nächte." : "Fifty places, fifty different nights."}</h1>
+      <h1>{isGerman ? `${tours.length} Orte, ${tours.length} unterschiedliche Nächte.` : `${tours.length} places, ${tours.length} different nights.`}</h1>
       <p className="lede">{isGerman ? "Jede Tour beantwortet die konkreten Fragen eines Standorts. Zugang, Anfahrt, Programm und Grenzen folgen den geprüften lokalen Quellen." : "Each tour answers the practical questions of one place. Access, approach, program and boundaries follow reviewed local sources."}</p>
     </header>
-    <section className="location-tour-index-grid">
-      {tours.map((tour, index) => {
-        const destination = loadDestination(tour.destinationId);
-        return <Link key={tour.id} href={`/${locale}/stargazing-tours/${tour.slug}/`}>
-          <span>{String(index + 1).padStart(2, "0")}</span>
-          <small>{destination.name} · {destination.countryName}</small>
-          <h2>{tour.title[locale]}</h2>
-          <p>{tour.seoDescription[locale]}</p>
-        </Link>;
-      })}
-    </section>
+    <LocationTourIndexFilter locale={locale} tours={tours.map((tour, index) => {
+      const destination = loadDestination(tour.destinationId);
+      return { id: tour.id, href: `/${locale}/stargazing-tours/${tour.slug}/`, number: String(index + 1).padStart(2, "0"), destinationName: destination.name, countryName: destination.countryName, continent: destination.continent, title: tour.title[locale], description: tour.seoDescription[locale] };
+    })} />
   </main>;
 }

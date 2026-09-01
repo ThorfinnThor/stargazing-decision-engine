@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHomeNav } from "@/components/page-home-nav";
 import { AffiliateGearProductLink } from "@/components/affiliate-gear-product-link";
 import { AffiliateGearLink } from "@/components/affiliate-gear-link";
 import { buildAstroshopProductUrl } from "@/lib/affiliate/affiliate";
@@ -62,7 +61,6 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
     <main className="event-page gear-guide-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(guideStructuredData) }} />
-      <PageHomeNav locale={locale} />
       <header className="event-header gear-guide-header">
         <p className="eyebrow">{isGerman ? "Gear-Guide · technische Analyse" : "Gear guide · specification analysis"}</p>
         <h1>{guide.title[locale]}</h1>
@@ -83,36 +81,21 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
       </section>
       <section className="event-summary" aria-labelledby="gear-comparison-title">
         <h2 id="gear-comparison-title">{isGerman ? "Vergleich" : "Comparison"}</h2>
-        <div className="event-table-wrap">
-          <table className="event-table gear-comparison-table">
-            <thead>
-              <tr>
-                <th>{isGerman ? "Option" : "Option"}</th>
-                <th>{isGerman ? "Warum wichtig" : "Why it matters"}</th>
-                <th>{isGerman ? "Technische Daten" : "Core specs"}</th>
-                <th>{isGerman ? "Stärken / Grenzen" : "Pros / cons"}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {guide.items.map((item) => {
-                const coreSpecs = item.localizedCoreSpecs?.[locale] ?? item.coreSpecs;
-                const match = astroshopProductMatches.find((candidate) => candidate.guideSlug === guide.slug && candidate.productName === item.name.en);
-                const affiliateProduct = buildAstroshopProductUrl(affiliateConfig, item, match);
-                return <tr key={item.name.en}>
-                  <td data-label={isGerman ? "Option" : "Option"}>
-                    <strong>{item.name[locale]}</strong>
-                    {affiliateProduct ? <><br /><AffiliateGearProductLink href={affiliateProduct.url} direct={affiliateProduct.direct} locale={locale} /></> : null}
-                  </td>
-                  <td data-label={isGerman ? "Warum wichtig" : "Why it matters"}>{item.whyItMatters[locale]}</td>
-                  <td data-label={isGerman ? "Technische Daten" : "Core specs"}>{Object.entries(coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td>
-                  <td data-label={isGerman ? "Stärken / Grenzen" : "Pros / cons"}>
-                    <span className="gear-pro-con"><strong>{isGerman ? "Stärken:" : "Pros:"}</strong> {item.pros[locale].join(", ")}</span>
-                    <span className="gear-pro-con"><strong>{isGerman ? "Grenzen:" : "Cons:"}</strong> {item.cons[locale].join(", ")}</span>
-                  </td>
-                </tr>;
-              })}
-            </tbody>
-          </table>
+        <div className="gear-comparison-grid">
+          {guide.items.map((item, index) => {
+            const coreSpecs = item.localizedCoreSpecs?.[locale] ?? item.coreSpecs;
+            const match = astroshopProductMatches.find((candidate) => candidate.guideSlug === guide.slug && candidate.productName === item.name.en);
+            const affiliateProduct = buildAstroshopProductUrl(affiliateConfig, item, match);
+            return <article className="gear-comparison-card" key={item.name.en}>
+              <header><span>{String(index + 1).padStart(2, "0")}</span><h3>{item.name[locale]}</h3>{affiliateProduct ? <AffiliateGearProductLink href={affiliateProduct.url} direct={affiliateProduct.direct} locale={locale} /> : null}</header>
+              <section><p className="gear-comparison-label">{isGerman ? "Warum diese Option" : "Why this option"}</p><p>{item.whyItMatters[locale]}</p></section>
+              <dl>{Object.entries(coreSpecs).map(([key, value]) => <div key={key}><dt>{key}</dt><dd>{value}</dd></div>)}</dl>
+              <div className="gear-comparison-verdicts">
+                <section><p className="gear-comparison-label">{isGerman ? "Stärken" : "Strengths"}</p><ul>{item.pros[locale].map((value) => <li key={value}>{value}</li>)}</ul></section>
+                <section><p className="gear-comparison-label">{isGerman ? "Grenzen" : "Limitations"}</p><ul>{item.cons[locale].map((value) => <li key={value}>{value}</li>)}</ul></section>
+              </div>
+            </article>;
+          })}
         </div>
         {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? `Herstellerquellen zuletzt redaktionell geprüft: ${guide.lastReviewedAt}. Vorteile und Grenzen sind redaktionelle Schlussfolgerungen aus den veröffentlichten technischen Daten.` : `Manufacturer sources last reviewed by the editorial team: ${guide.lastReviewedAt}. Pros and limitations are editorial inferences from the published specifications.`}</p> : null}
       </section>

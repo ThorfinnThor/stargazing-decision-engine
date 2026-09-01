@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHomeNav } from "@/components/page-home-nav";
 import { listGearGuides, loadGearCategories, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -40,7 +39,6 @@ export default async function GearIndexPage({ params }: { params: Promise<{ loca
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Ausrüstung · Guides" : "Gear · guides"}</p><h1>{isGerman ? "Ausrüstung für klare Nächte." : "Gear for clear nights."}</h1><p className="lede">{isGerman ? "Quellenbasierte Vergleiche für Sternbeobachtung, ohne Preis- oder Verfügbarkeitsversprechen und ohne unbestätigte Praxistest-Behauptungen." : "Source-backed comparisons for stargazing, without price or availability promises or unsupported hands-on claims."}</p></header>
       <section className="event-summary" aria-labelledby="gear-methodology-title"><h2 id="gear-methodology-title">{isGerman ? "Transparente Bewertung" : "Transparent evaluation"}</h2><p>{isGerman ? "Wir vergleichen Einsatzgebiet, technische Passung und reale Trade-offs. Solange wir ein Produkt nicht selbst geprüft haben, kennzeichnen wir die Inhalte ausdrücklich als Spezifikationsanalyse." : "We compare intended use, technical fit, and real trade-offs. Unless we have tested a product ourselves, the content is explicitly identified as specification analysis."}</p><a className="text-link" href={localizedLinks.methodology(locale)}>{isGerman ? "So bewerten wir Ausrüstung →" : "How we evaluate gear →"}</a></section>
       <section className="catalog" aria-labelledby="gear-categories-title"><div className="catalog-intro"><h2 id="gear-categories-title">{isGerman ? "Kategorien" : "Categories"}</h2></div><div className="catalog-grid">{categories.map((category) => <article className="destination-card" key={category.id}><h3>{category.name[locale]}</h3><p>{category.description[locale]}</p></article>)}</div></section>

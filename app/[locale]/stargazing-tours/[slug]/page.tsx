@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 
 import { LocationTourContent } from "@/components/location-tour-content";
 import { AffiliateDestinationModules } from "@/components/affiliate-destination-modules";
-import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { listLocationTours, loadDestination, loadDestinationEditorialGuide, loadImageManifest, loadLocationTour, loadSeoPage } from "@/lib/data/load";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -61,15 +60,13 @@ export default async function LocationTourPage({ params }: { params: Promise<{ l
   return <main className="event-page location-tour-page" lang={locale}>
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(editorialStructuredData) }} />
-    <PageHomeNav locale={locale} />
     <header className="event-header location-tour-header">
       <p className="eyebrow">{isGerman ? "Standort-Tour" : "Location tour"} · {destination.name}</p>
       <h1>{tour.title[locale]}</h1>
       <p className="lede">{tour.standfirst[locale]}</p>
       <p><Link href={`/${locale}/stargazing-destinations/${destination.slug}/`}>{isGerman ? `Zum Datenprofil für ${destination.name}` : `View the ${destination.name} data profile`} →</Link></p>
     </header>
-    <LocationTourContent tour={tour} locale={locale} availableSources={guide.sources} />
-    <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locationTourSlug={tour.slug} locale={locale} />
+    <LocationTourContent tour={tour} locale={locale} availableSources={guide.sources} activityModules={<AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locationTourSlug={tour.slug} locale={locale} />} />
     <nav className="location-tour-back"><Link href={`/${locale}/stargazing-tours/`}>{isGerman ? "Alle Standort-Touren" : "All location tours"} →</Link></nav>
   </main>;
 }

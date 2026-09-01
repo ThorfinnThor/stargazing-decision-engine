@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { PageHomeNav } from "@/components/page-home-nav";
 import { loadSeoPage } from "@/lib/data/load";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
@@ -42,7 +41,6 @@ export default async function MethodologyPage({ params }: { params: Promise<{ lo
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <PageHomeNav locale={locale} />
       <header className="event-header"><p className="eyebrow">{isGerman ? "Redaktion · Methodik" : "Editorial · methodology"}</p><h1>{title}</h1><p className="lede">{description}</p></header>
       <section className="event-summary" aria-labelledby="method-scope-title"><h2 id="method-scope-title">{isGerman ? "Was wir bewerten" : "What we evaluate"}</h2><p>{isGerman ? "Ein Guide beginnt mit einem konkreten Beobachtungsproblem. Wir prüfen Einsatzgebiet, optische oder elektrische Kompatibilität, Stabilität, Transport, Strombedarf, Sicherheit und die Trade-offs zwischen diesen Faktoren." : "Each guide starts with a specific observing problem. We evaluate intended use, optical or electrical compatibility, stability, portability, power needs, safety, and the trade-offs between those factors."}</p><p>{isGerman ? "Wir vergleichen zuerst Produktklassen und technische Lösungen. Marken oder Modelle werden erst genannt, wenn sie mit belastbaren, aktuellen Daten fair vergleichbar sind." : "We compare product classes and technical approaches first. Brands or models are named only when reliable, current information supports a fair comparison."}</p></section>
       <section className="event-summary" aria-labelledby="method-evidence-title"><h2 id="method-evidence-title">{isGerman ? "Wie wir Nachweise kennzeichnen" : "How we label evidence"}</h2><ul><li>{isGerman ? "Spezifikationsanalyse: technische Daten, Kompatibilität und nachvollziehbare optische oder elektrische Zusammenhänge." : "Specification analysis: published specifications, compatibility, and reproducible optical or electrical relationships."}</li><li>{isGerman ? "Praxistest: wird nur dann verwendet, wenn ein klar dokumentierter Test tatsächlich durchgeführt wurde. Die aktuellen Guides beanspruchen das nicht." : "Hands-on test: used only when a documented test was actually performed. The current guides do not make that claim."}</li><li>{isGerman ? "Preis und Verfügbarkeit: werden nicht als dauerhaft gültig dargestellt. Ohne klaren Zeitstempel gibt es keine Live-Preisbehauptung." : "Price and availability: never presented as permanent facts. No live-price claim appears without a clear timestamp."}</li></ul></section>

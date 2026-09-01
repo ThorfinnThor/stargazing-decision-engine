@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 
 import type { Locale } from "@/lib/i18n/config";
+import { formatMonth } from "@/lib/i18n/months";
 
 type CatalogDestination = {
   id: string;
@@ -16,6 +17,7 @@ type CatalogDestination = {
   score: number | null;
   scoreLabel: string;
   bestMonthLabel: string;
+  bestMonth: number | null;
 };
 
 const continentLabels: Record<Locale, Record<string, string>> = {
@@ -44,6 +46,9 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
 }) {
   const [query, setQuery] = useState("");
   const [continent, setContinent] = useState("all");
+  const [month, setMonth] = useState("all");
+  const [access, setAccess] = useState("all");
+  const [minimumScore, setMinimumScore] = useState("all");
   const [hydrated, setHydrated] = useState(false);
   const isGerman = locale === "de";
   const continents = useMemo(() => [...new Set(destinations.map((destination) => destination.continent))].sort(), [destinations]);
@@ -53,6 +58,9 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
     const requestedContinent = search.get("region") ?? "all";
     setQuery(search.get("q") ?? "");
     setContinent(continents.includes(requestedContinent) ? requestedContinent : "all");
+    setMonth(/^([1-9]|1[0-2])$/.test(search.get("month") ?? "") ? search.get("month")! : "all");
+    setAccess(["eligible", "closed", "unverified"].includes(search.get("access") ?? "") ? search.get("access")! : "all");
+    setMinimumScore(["70", "80", "90"].includes(search.get("score") ?? "") ? search.get("score")! : "all");
     setHydrated(true);
   }, [continents]);
 
@@ -64,19 +72,28 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
     else url.searchParams.delete("q");
     if (continent !== "all") url.searchParams.set("region", continent);
     else url.searchParams.delete("region");
+    if (month !== "all") url.searchParams.set("month", month);
+    else url.searchParams.delete("month");
+    if (access !== "all") url.searchParams.set("access", access);
+    else url.searchParams.delete("access");
+    if (minimumScore !== "all") url.searchParams.set("score", minimumScore);
+    else url.searchParams.delete("score");
     window.history.replaceState(null, "", `${url.pathname}${url.search}${url.hash}`);
-  }, [continent, hydrated, query]);
+  }, [access, continent, hydrated, minimumScore, month, query]);
 
   const normalizedQuery = query.trim().toLocaleLowerCase(locale);
   const visibleDestinations = useMemo(() => destinations.filter((destination) => {
     if (continent !== "all" && destination.continent !== continent) return false;
+    if (month !== "all" && destination.bestMonth !== Number(month)) return false;
+    if (access !== "all" && destination.nightAccessStatus !== access) return false;
+    if (minimumScore !== "all" && (destination.score === null || destination.score < Number(minimumScore))) return false;
     if (!normalizedQuery) return true;
     const searchable = [destination.name, destination.countryName, destination.countryCode, destination.continent, continentLabels[locale][destination.continent], ...destination.tags]
       .join(" ")
       .toLocaleLowerCase(locale);
     return searchable.includes(normalizedQuery);
-  }), [continent, destinations, locale, normalizedQuery]);
-  const hasFilters = Boolean(normalizedQuery) || continent !== "all";
+  }), [access, continent, destinations, locale, minimumScore, month, normalizedQuery]);
+  const hasFilters = Boolean(normalizedQuery) || continent !== "all" || month !== "all" || access !== "all" || minimumScore !== "all";
 
   return (
     <div>
@@ -91,6 +108,29 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
           />
         </label>
         <label>
+          <span>{isGerman ? "Bester Monat" : "Best month"}</span>
+          <select value={month} onChange={(event) => setMonth(event.target.value)}>
+            <option value="all">{isGerman ? "Alle Monate" : "All months"}</option>
+            {Array.from({ length: 12 }, (_, index) => index + 1).map((value) => <option value={value} key={value}>{formatMonth(value, locale)}</option>)}
+          </select>
+        </label>
+        <label>
+          <span>{isGerman ? "Nachtzugang" : "Night access"}</span>
+          <select value={access} onChange={(event) => setAccess(event.target.value)}>
+            <option value="all">{isGerman ? "Jeder Status" : "Any status"}</option>
+            <option value="eligible">{isGerman ? "Öffentlich zugänglich" : "Public access"}</option>
+            <option value="unverified">{isGerman ? "Nicht verifiziert" : "Not verified"}</option>
+            <option value="closed">{isGerman ? "Nicht öffentlich" : "Not public"}</option>
+          </select>
+        </label>
+        <label>
+          <span>{isGerman ? "Mindestwert" : "Minimum score"}</span>
+          <select value={minimumScore} onChange={(event) => setMinimumScore(event.target.value)}>
+            <option value="all">{isGerman ? "Jeder Wert" : "Any score"}</option>
+            <option value="70">70+</option><option value="80">80+</option><option value="90">90+</option>
+          </select>
+        </label>
+        <label>
           <span>{isGerman ? "Region" : "Region"}</span>
           <select value={continent} onChange={(event) => setContinent(event.target.value)}>
             <option value="all">{isGerman ? "Alle Regionen" : "All regions"}</option>
@@ -102,7 +142,7 @@ export function DestinationCatalogFilter({ destinations, locale, bestMonthLabel 
             <strong>{visibleDestinations.length}</strong> {isGerman ? `von ${destinations.length} Zielen` : `of ${destinations.length} destinations`}
           </p>
           {hasFilters ? (
-            <button type="button" onClick={() => { setQuery(""); setContinent("all"); }}>
+            <button type="button" onClick={() => { setQuery(""); setContinent("all"); setMonth("all"); setAccess("all"); setMinimumScore("all"); }}>
               {isGerman ? "Filter löschen" : "Clear filters"}
             </button>
           ) : null}

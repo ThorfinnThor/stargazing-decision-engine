@@ -52,26 +52,13 @@ export function HomePage({ locale }: { locale: Locale }) {
     score: bestMonth?.score ?? null,
     scoreLabel: dataStatus === "real" ? copy.realScore : copy.seedScore,
     bestMonthLabel: bestMonth ? formatMonth(bestMonth.month, locale) : "—",
+    bestMonth: bestMonth?.month ?? null,
   }));
 
   return (
     <main lang={copy.htmlLang}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       <section className="hero" aria-labelledby="hero-title">
-        <nav className="nav" aria-label="Primary navigation">
-          <a className="brand" href="#top" aria-label="Stargazing home">
-            <span className="brand-mark" aria-hidden="true">✦</span>
-            <span>STARGAZING</span>
-          </a>
-          <div className="locale-nav" aria-label="Language switcher">
-            {(["en", "de"] as const).map((item) => (
-              <a className={item === locale ? "active" : ""} href={localizedLinks.home(item)} key={item}>
-                {item.toUpperCase()}
-              </a>
-            ))}
-          </div>
-        </nav>
-
         <div className="hero-copy" id="top">
           <p className="eyebrow">{copy.eyebrow}</p>
           <h1 id="hero-title">
@@ -98,9 +85,6 @@ export function HomePage({ locale }: { locale: Locale }) {
           {catalogNote ? <p className="catalog-note">{catalogNote}</p> : null}
         </div>
         <DestinationCatalogFilter destinations={catalogDestinations} locale={locale} bestMonthLabel={copy.bestMonth} />
-        <p className="catalog-footnote">
-          {copy.dataset} {manifest.datasetVersion} · {manifest.counts.destinations} {copy.destinations} · {copy.climateNormal} {manifest.climateNormal.startYear}–{manifest.climateNormal.endYear}
-        </p>
       </section>
 
       <section className="foundation" aria-labelledby="short-trips-title">
@@ -127,12 +111,12 @@ export function HomePage({ locale }: { locale: Locale }) {
           <p className="eyebrow dark">{locale === "de" ? "Standort-Touren" : "Location tours"}</p>
           <h2 id="location-tours-title">{locale === "de" ? "Eine konkrete Nacht statt allgemeiner Reisetipps." : "One specific night, not generic travel advice."}</h2>
         </div>
-        <div className="foundation-grid short-trip-links">
-          <a className="destination-card" href={localizedLinks.locationTours(locale)}>
-            <div className="card-topline"><span>{locationTours.length} {locale === "de" ? "Touren" : "tours"}</span><span>→</span></div>
-            <h3>{locale === "de" ? "Alle Standort-Touren" : "All location tours"}</h3>
-            <p>{locale === "de" ? "Geprüfte Nachtpläne mit Zugang, Anfahrt und klaren Grenzen." : "Reviewed night plans with access, approach and practical boundaries."}</p>
-          </a>
+        <a className="location-tour-index-cta" href={localizedLinks.locationTours(locale)}>
+          <span><strong>{locationTours.length}</strong> {locale === "de" ? "individuelle Nachtpläne" : "individual night plans"}</span>
+          <span>{locale === "de" ? "Alle Standort-Touren durchsuchen" : "Search all location tours"} →</span>
+        </a>
+        <p className="featured-tour-label">{locale === "de" ? "Ausgewählte Nachtpläne" : "Featured night plans"}</p>
+        <div className="foundation-grid short-trip-links featured-tour-grid">
           {locationTours.slice(0, 3).map((tour) => <a className="destination-card" href={localizedLinks.locationTour(locale, tour.slug)} key={tour.id}>
             <div className="card-topline"><span>{loadDestination(tour.destinationId).name}</span><span>→</span></div>
             <h3>{tour.title[locale]}</h3>
