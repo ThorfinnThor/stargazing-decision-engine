@@ -101,7 +101,6 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
                 return <tr key={item.name.en}>
                   <td data-label={isGerman ? "Option" : "Option"}>
                     <strong>{item.name[locale]}</strong>
-                    {item.source ? <><br /><a className="gear-source-link" href={item.source.url} rel="noreferrer">{item.source.publisher}: {item.source.title} ↗</a></> : null}
                     {affiliateProduct ? <><br /><AffiliateGearProductLink href={affiliateProduct.url} direct={affiliateProduct.direct} locale={locale} /></> : null}
                   </td>
                   <td data-label={isGerman ? "Warum wichtig" : "Why it matters"}>{item.whyItMatters[locale]}</td>
@@ -115,7 +114,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
             </tbody>
           </table>
         </div>
-        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? `Quellen zuletzt geprüft: ${guide.lastReviewedAt}. Vorteile und Grenzen sind redaktionelle Schlussfolgerungen aus den verlinkten Herstellerdaten.` : `Sources last checked: ${guide.lastReviewedAt}. Pros and limitations are editorial inferences from the linked manufacturer specifications.`}</p> : null}
+        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? `Herstellerquellen zuletzt redaktionell geprüft: ${guide.lastReviewedAt}. Vorteile und Grenzen sind redaktionelle Schlussfolgerungen aus den veröffentlichten technischen Daten.` : `Manufacturer sources last reviewed by the editorial team: ${guide.lastReviewedAt}. Pros and limitations are editorial inferences from the published specifications.`}</p> : null}
       </section>
       <section className="event-summary" aria-labelledby="gear-tradeoffs-title"><h2 id="gear-tradeoffs-title">{isGerman ? "Abwägungen" : "Trade-offs"}</h2><ul>{guide.tradeoffs[locale].map((tradeoff) => <li key={tradeoff}>{tradeoff}</li>)}</ul><h2>FAQ</h2>{guide.faq.map((item) => <details key={item.question.en}><summary>{item.question[locale]}</summary><p>{item.answer[locale]}</p></details>)}</section>
       <section className="event-summary" aria-labelledby="gear-method-title">
