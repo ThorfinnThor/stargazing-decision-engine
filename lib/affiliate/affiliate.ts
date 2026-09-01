@@ -1,4 +1,4 @@
-import type { AffiliateActivityOffer, AffiliateActivityOfferConfig, AffiliateConfig, AffiliatePartner, Destination, LocationTour } from "../data/types.js";
+import type { AffiliateActivityOffer, AffiliateActivityOfferConfig, AffiliateConfig, AffiliatePartner, AstroshopProductMatch, Destination, GearGuide, GearGuideItem, LocationTour } from "../data/types.js";
 
 const partnerTypes = new Set(["hotel", "activity", "camping", "car_rental", "gear"]);
 
@@ -133,6 +133,32 @@ export function buildAffiliatePartnerUrl(config: AffiliateConfig, partnerId: str
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
   if (partner.requiredQueryParameters.some((parameter) => !parsed.searchParams.has(parameter))) return null;
   return parsed.toString();
+}
+
+export function validateAstroshopProductMatches(matches: AstroshopProductMatch[], guides: GearGuide[]) {
+  const knownProducts = new Set(guides.flatMap((guide) => guide.items.map((item) => `${guide.slug}\u0000${item.name.en}`)));
+  const keys = new Set<string>();
+  for (const match of matches) {
+    const key = `${match.guideSlug}\u0000${match.productName}`;
+    if (!knownProducts.has(key)) throw new Error(`Astroshop match references an unknown product: ${match.guideSlug}/${match.productName}`);
+    if (keys.has(key)) throw new Error(`Duplicate Astroshop product match: ${match.guideSlug}/${match.productName}`);
+    keys.add(key);
+    if (!match.path.startsWith("/") || match.path.startsWith("//") || match.path.includes("?") || !/\/p,\d+$/.test(match.path)) throw new Error(`Invalid Astroshop product path: ${match.path}`);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(match.checkedAt)) throw new Error(`${match.guideSlug}/${match.productName}: checkedAt must use YYYY-MM-DD`);
+  }
+}
+
+export function buildAstroshopProductUrl(config: AffiliateConfig, item: GearGuideItem, match?: AstroshopProductMatch) {
+  const partner = getAffiliatePartner(config, "astroshop-gear");
+  if (!partner || partner.type !== "gear" || !partner.enabled) return null;
+  const affiliateId = affiliatePartnerId(partner);
+  if (!affiliateId) return null;
+  const parsed = new URL(match ? match.path : "/", "https://www.astroshop.de");
+  if (!match) parsed.searchParams.set("q", item.partnerSearchQuery);
+  parsed.searchParams.set("affiliate_id", affiliateId);
+  if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
+  if (partner.requiredQueryParameters.some((parameter) => !parsed.searchParams.has(parameter))) return null;
+  return { url: parsed.toString(), direct: Boolean(match) };
 }
 
 export function affiliateRel() {
