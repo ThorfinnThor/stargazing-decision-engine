@@ -35,13 +35,48 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.site-header {
+  position: relative;
+  z-index: 30;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: clamp(1rem, 3vw, 2.5rem);
+  align-items: center;
+  min-height: 4.5rem;
+  padding: 0 clamp(1.25rem, 6vw, 6rem);
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+  background: rgb(8 11 23 / 96%);
+}
+
+.site-header-brand {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  color: #fff;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-header-brand span { color: var(--gold); font-size: 1.05rem; }
+.site-header-menu { display: flex; gap: clamp(0.8rem, 2vw, 1.8rem); justify-content: center; }
+.site-header-menu a,
+.site-header-locales a { color: #c9cfdd; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.06em; text-decoration: none; text-transform: uppercase; }
+.site-header-menu a:hover,
+.site-header-menu a:focus-visible,
+.site-header-locales a:hover,
+.site-header-locales a:focus-visible,
+.site-header-locales a.active { color: var(--gold); }
+.site-header-locales { display: flex; gap: 0.8rem; }
+
 a {
   color: inherit;
 }
 
 .hero {
   position: relative;
-  min-height: 48rem;
+  min-height: 52rem;
   overflow: hidden;
   padding: 0 clamp(1.25rem, 6vw, 6rem) 5rem;
   background:
@@ -786,6 +821,13 @@ h1 span {
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.affiliate-provider-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  margin-top: auto;
 }
 
 .getyourguide-activities-widget {
@@ -1710,11 +1752,53 @@ h1 span {
 .location-tour-facts {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  max-width: 78rem;
-  margin: 0 auto;
+  margin: 0;
   border-top: 1px solid rgb(255 255 255 / 16%);
   border-bottom: 1px solid rgb(255 255 255 / 16%);
 }
+
+.location-tour-section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  max-width: 78rem;
+  margin: 0 auto 2rem;
+  border: 1px solid rgb(142 197 255 / 24%);
+}
+
+.location-tour-section-nav a {
+  flex: 1 1 12rem;
+  padding: 0.9rem 1rem;
+  border-right: 1px solid rgb(142 197 255 / 18%);
+  color: #cbd5e7;
+  font: 700 0.66rem/1.4 ui-monospace, monospace;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.location-tour-section-nav a:hover,
+.location-tour-section-nav a:focus-visible { background: rgb(142 197 255 / 8%); color: var(--gold); }
+
+.location-tour-overview {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.55fr) minmax(26rem, 1.45fr);
+  gap: clamp(2rem, 6vw, 5rem);
+  max-width: 78rem;
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 4rem) 0;
+  border-top: 1px solid rgb(255 255 255 / 16%);
+  border-bottom: 1px solid rgb(255 255 255 / 16%);
+}
+
+.location-tour-overview > div > h2 { margin: 0 0 1rem; color: #fff; font: 400 clamp(1.8rem, 3vw, 2.8rem)/1.05 Georgia, "Times New Roman", serif; }
+.location-tour-overview > div > p:last-child { color: var(--muted); line-height: 1.65; }
+.location-tour-activities { max-width: 78rem; margin: 0 auto; padding-top: 1px; }
+.location-tour-activities .affiliate-disclosure,
+.location-tour-activities .affiliate-activity-offers,
+.location-tour-activities .affiliate-destination-searches,
+.location-tour-activities .getyourguide-activities-widget { margin-right: 0; margin-left: 0; }
 
 .location-tour-facts div { min-width: 0; padding: 1.5rem; }
 .location-tour-facts div + div { border-left: 1px solid rgb(255 255 255 / 14%); }
@@ -1735,7 +1819,7 @@ h1 span {
 }
 
 .location-tour-body > * {
-  padding: clamp(3.5rem, 8vw, 7rem) 0;
+  padding: clamp(3rem, 6vw, 5rem) 0;
   border-bottom: 1px solid rgb(255 255 255 / 14%);
 }
 
@@ -1823,6 +1907,39 @@ h1 span {
 .location-tour-index-grid p { max-width: 36rem; color: var(--muted); line-height: 1.65; }
 .location-tour-index-grid > a:hover,
 .location-tour-index-grid > a:focus-visible { background: rgb(142 197 255 / 6%); }
+
+.tour-index-filter {
+  display: grid;
+  grid-template-columns: minmax(16rem, 1fr) minmax(12rem, 0.5fr) minmax(11rem, auto);
+  max-width: 78rem;
+  margin: 0 auto 1.5rem;
+  border-top: 1px solid rgb(255 255 255 / 14%);
+  border-left: 1px solid rgb(255 255 255 / 14%);
+}
+.tour-index-filter label,
+.tour-index-filter-count { display: flex; min-height: 6.5rem; padding: 1rem; border-right: 1px solid rgb(255 255 255 / 14%); border-bottom: 1px solid rgb(255 255 255 / 14%); }
+.tour-index-filter label { flex-direction: column; gap: 0.6rem; color: var(--blue); font: 0.68rem/1.4 ui-monospace, monospace; letter-spacing: 0.07em; text-transform: uppercase; }
+.tour-index-filter input,
+.tour-index-filter select { width: 100%; min-height: 2.7rem; padding: 0.65rem 0.75rem; border: 1px solid rgb(142 197 255 / 28%); border-radius: 0; background: #0e1425; color: #fff; }
+.tour-index-filter-count { flex-direction: column; gap: 0.2rem; justify-content: center; color: var(--muted); font: 0.68rem/1.4 ui-monospace, monospace; text-transform: uppercase; }
+.tour-index-filter-count strong { color: #fff; font: 400 1.8rem/1 Georgia, "Times New Roman", serif; }
+.tour-index-filter-count button { width: fit-content; margin-top: 0.5rem; padding: 0; border: 0; border-bottom: 1px solid var(--gold); background: transparent; color: var(--gold); cursor: pointer; font: 700 0.65rem/1.6 ui-monospace, monospace; text-transform: uppercase; }
+.tour-index-empty { max-width: 78rem; margin: 0 auto 5rem; padding: 2rem; border: 1px solid rgb(255 255 255 / 14%); color: var(--muted); }
+
+.gear-comparison-grid { display: grid; gap: 1.25rem; }
+.gear-comparison-card { display: grid; grid-template-columns: minmax(13rem, 0.65fr) minmax(16rem, 1fr); gap: 1.5rem 2rem; padding: clamp(1.5rem, 3vw, 2.5rem); border: 1px solid rgb(142 197 255 / 23%); background: rgb(17 23 42 / 48%); content-visibility: auto; contain-intrinsic-block-size: auto 34rem; }
+.gear-comparison-card > header { grid-row: 1 / span 2; }
+.gear-comparison-card > header > span,
+.gear-comparison-label { color: var(--blue); font: 700 0.65rem/1.4 ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
+.gear-comparison-card h3 { margin: 1rem 0 0.5rem; color: #fff; font: 400 clamp(1.45rem, 2.5vw, 2.1rem)/1.08 Georgia, "Times New Roman", serif; letter-spacing: -0.03em; text-transform: none; }
+.gear-comparison-card section > p:not(.gear-comparison-label) { color: #d9deea; line-height: 1.7; }
+.gear-comparison-card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); margin: 0; border-top: 1px solid rgb(255 255 255 / 13%); border-left: 1px solid rgb(255 255 255 / 13%); }
+.gear-comparison-card dl div { padding: 0.85rem; border-right: 1px solid rgb(255 255 255 / 13%); border-bottom: 1px solid rgb(255 255 255 / 13%); }
+.gear-comparison-card dt { color: var(--muted); font-size: 0.68rem; text-transform: uppercase; }
+.gear-comparison-card dd { margin: 0.35rem 0 0; color: #fff; line-height: 1.5; }
+.gear-comparison-verdicts { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.gear-comparison-verdicts section { padding: 1.25rem; border: 1px solid rgb(255 255 255 / 13%); }
+.gear-comparison-verdicts ul { margin-top: 0.8rem; color: #d9deea; }
 
 .site-legal-footer {
   display: grid;
@@ -2594,11 +2711,31 @@ h1 span {
 
 .catalog-filter {
   display: grid;
-  grid-template-columns: minmax(15rem, 1fr) minmax(12rem, 0.4fr) minmax(11rem, auto);
+  grid-template-columns: repeat(5, minmax(9rem, 1fr));
   margin-bottom: 1.5rem;
   border-top: 1px solid rgb(17 19 26 / 20%);
   border-left: 1px solid rgb(17 19 26 / 20%);
 }
+
+.catalog-filter-summary { grid-column: 1 / -1; min-height: auto; }
+
+.location-tour-index-cta {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem 0 2.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgb(17 19 26 / 28%);
+  background: var(--night);
+  color: #fff;
+  text-decoration: none;
+}
+.location-tour-index-cta strong { margin-right: 0.35rem; color: var(--gold); font: 400 2rem/1 Georgia, "Times New Roman", serif; }
+.location-tour-index-cta > span:last-child { color: var(--gold); font-size: 0.72rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
+.featured-tour-label { color: #5f6674; font: 0.7rem/1.4 ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
+.featured-tour-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgb(17 19 26 / 20%); }
+.destination-card { content-visibility: auto; contain-intrinsic-block-size: auto 15rem; }
 
 .catalog-filter label,
 .catalog-filter-summary {
@@ -2863,6 +3000,24 @@ h3 {
 }
 
 @media (max-width: 800px) {
+  .site-header {
+    grid-template-columns: 1fr auto;
+    gap: 0.75rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .site-header-menu {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgb(255 255 255 / 12%);
+  }
+
+  .site-header-menu a { white-space: nowrap; }
+
   .gear-decision-summary,
   .destination-decision-heading,
   .destination-decision-grid {
@@ -2941,7 +3096,8 @@ h3 {
   }
 
   .destination-location-tour,
-  .location-tour-prose { grid-template-columns: 1fr; }
+  .location-tour-prose,
+  .location-tour-overview { grid-template-columns: 1fr; }
   .destination-location-tour > a { justify-self: start; }
   .location-tour-prose h2 { grid-row: auto; }
   .location-tour-prose p { grid-column: 1; }
@@ -3044,9 +3200,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .catalog-filter {
-    grid-template-columns: minmax(0, 1fr) minmax(12rem, 0.55fr);
-  }
+  .catalog-filter { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
   .catalog-filter-summary {
     grid-column: 1 / -1;
@@ -3076,11 +3230,20 @@ h3 {
 }
 
 @media (max-width: 520px) {
+  .site-header-brand strong { font-size: 0.66rem; }
+
+  .site-header-locales { gap: 0.5rem; }
+
   .location-tour-header h1 {
     max-width: none;
     font-size: clamp(2rem, 9vw, 2.2rem);
     line-height: 1.02;
     text-wrap: pretty;
+  }
+
+  .gear-guide-page .event-header h1 {
+    font-size: clamp(2.2rem, 11vw, 2.8rem);
+    line-height: 1;
   }
 
   .location-tour-page .eyebrow,
@@ -3113,6 +3276,7 @@ h3 {
   }
 
   .catalog-filter,
+  .tour-index-filter,
   .finder-controls,
   .finder-results {
     grid-template-columns: 1fr;
@@ -3121,6 +3285,17 @@ h3 {
   .catalog-filter-summary {
     grid-column: auto;
   }
+
+  .tour-index-filter-count { grid-column: auto; }
+
+  .gear-comparison-card dl,
+  .gear-comparison-verdicts { grid-template-columns: 1fr; }
+
+  .location-tour-section-nav { display: grid; grid-template-columns: 1fr 1fr; }
+
+  .location-tour-index-cta { align-items: flex-start; flex-direction: column; gap: 1rem; }
+
+  .featured-tour-grid { grid-template-columns: 1fr; }
 
   .catalog-grid {
     grid-template-columns: 1fr;
@@ -3152,3 +3327,9 @@ h3 {
     scroll-behavior: auto;
   }
 }
+  .tour-index-filter { grid-template-columns: 1fr 1fr; }
+  .tour-index-filter-count { grid-column: 1 / -1; }
+
+  .gear-comparison-card { grid-template-columns: 1fr; }
+  .gear-comparison-card > header { grid-row: auto; }
+  .gear-comparison-verdicts { grid-column: auto; }

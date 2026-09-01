@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { FinderClient } from "@/components/finder-client";
 import { loadSeoPage } from "@/lib/data/load";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
-import { localizedLinks } from "@/lib/i18n/links";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 
@@ -36,8 +35,7 @@ export default async function FinderPage({ params }: { params: Promise<{ locale:
   return (
     <main className="finder-page" lang={locale}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <nav className="finder-nav" aria-label={de ? "Finder-Navigation" : "Finder navigation"}><a href={localizedLinks.home(locale)}>← {de ? "Startseite" : "Home"}</a><div>{locales.map((item) => <a className={item === locale ? "active" : ""} href={localizedLinks.finder(item)} key={item}>{item.toUpperCase()}</a>)}</div></nav>
-      <header className="finder-header"><p className="eyebrow">{de ? "Clientseitig · fünf Eingaben" : "Client-side · five inputs"}</p><h1>{de ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip."}</h1><p className="lede">{description}</p></header>
+      <header className="finder-header"><p className="eyebrow">{de ? "Reiseplanung" : "Trip planning"}</p><h1>{de ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip."}</h1><p className="lede">{description}</p></header>
       <section className="finder-body" aria-label={de ? "Finder und Ergebnisse" : "Finder and results"}><FinderClient locale={locale} /></section>
     </main>
   );

@@ -8,7 +8,6 @@ import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } f
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { AffiliateDestinationModules } from "@/components/affiliate-destination-modules";
 import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/sky/destination-site-explorer";
-import { PageHomeNav } from "@/components/page-home-nav";
 import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
 import { DestinationDecisionSummary } from "@/components/destination-decision-summary";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -116,7 +115,6 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
     <main className="event-page destination-profile-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       {editorialStructuredData && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(editorialStructuredData) }} />}
-      <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Zielprofil" : "Destination profile"}</p>
         <h1>{destination.name}</h1>

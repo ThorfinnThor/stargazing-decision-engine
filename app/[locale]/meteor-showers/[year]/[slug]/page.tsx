@@ -5,7 +5,6 @@ import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { loadMeteorShowerEvent, listMeteorShowerEvents, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
-import { PageHomeNav } from "@/components/page-home-nav";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -44,7 +43,6 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
   return (
     <main className="event-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Meteorstrom · Beobachtungsleitfaden" : "Meteor shower · viewing guide"}</p>
         <h1>{name} <span>{year}</span></h1>

@@ -1,38 +1,48 @@
 import Link from "next/link";
+import type { ReactNode } from "react";
 
 import type { DestinationEditorialSource, LocationTour } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { legal } from "@/lib/legal/config";
 
-function Citations({ ids, sources }: { ids: string[]; sources: Map<string, DestinationEditorialSource> }) {
+function Citations({ ids, sources, sourceNumbers }: { ids: string[]; sources: Map<string, DestinationEditorialSource>; sourceNumbers: Map<string, number> }) {
   return <span className="editorial-citations">{ids.map((id) => {
     const source = sources.get(id);
-    return source ? <a key={id} href={`#tour-source-${id}`} title={`${source.publisher}: ${source.title}`}>[{[...sources.keys()].indexOf(id) + 1}]</a> : null;
+    return source ? <a key={id} href={`#tour-source-${id}`} title={`${source.publisher}: ${source.title}`}>[{sourceNumbers.get(id)}]</a> : null;
   })}</span>;
 }
 
-export function LocationTourContent({ tour, locale, availableSources }: { tour: LocationTour; locale: Locale; availableSources: DestinationEditorialSource[] }) {
+export function LocationTourContent({ tour, locale, availableSources, activityModules }: { tour: LocationTour; locale: Locale; availableSources: DestinationEditorialSource[]; activityModules?: ReactNode }) {
   const isGerman = locale === "de";
   const sources = new Map(availableSources.filter((source) => tour.sourceIds.includes(source.id)).map((source) => [source.id, source]));
+  const sourceNumbers = new Map([...sources.keys()].map((id, index) => [id, index + 1]));
   return <>
-    <section className="location-tour-facts" aria-label={isGerman ? "Tour auf einen Blick" : "Tour at a glance"}>
+    <nav className="location-tour-section-nav" aria-label={isGerman ? "Inhalt dieses Nachtplans" : "Night plan contents"}>
+      <a href="#tour-overview">{isGerman ? "Auf einen Blick" : "At a glance"}</a><a href="#tour-plan">{isGerman ? "Ablauf und Entscheidungen" : "Plan and decisions"}</a><a href="#tour-activities">{isGerman ? "Buchbare Aktivitäten" : "Bookable activities"}</a><a href="#tour-sources">{isGerman ? "Quellen" : "Sources"}</a>
+    </nav>
+    <section className="location-tour-overview" id="tour-overview" aria-labelledby="tour-overview-title">
+      <div><p className="eyebrow">{isGerman ? "Die praktische Antwort" : "The practical answer"}</p><h2 id="tour-overview-title">{isGerman ? "Auf einen Blick" : "At a glance"}</h2><p>{isGerman ? "Die wichtigsten Angaben für Anfahrt, Zugang und Vorbereitung, bevor der ausführliche Nachtplan beginnt." : "The essential access, arrival, and preparation details before the full night plan begins."}</p></div>
+    <dl className="location-tour-facts" aria-label={isGerman ? "Tour auf einen Blick" : "Tour at a glance"}>
       {tour.facts.map((fact) => <div key={fact.label.en}>
         <dt>{fact.label[locale]}</dt>
-        <dd>{fact.value[locale]}<Citations ids={fact.sourceIds} sources={sources} /></dd>
+        <dd>{fact.value[locale]}<Citations ids={fact.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></dd>
       </div>)}
+    </dl>
     </section>
 
-    <article className="location-tour-body">
+    {activityModules ? <div id="tour-activities" className="location-tour-activities">{activityModules}</div> : null}
+
+    <article className="location-tour-body" id="tour-plan">
       {tour.blocks.map((block) => {
         if (block.kind === "prose") return <section key={block.id} className="location-tour-prose">
           <h2>{block.heading[locale]}</h2>
-          {block.paragraphs[locale].map((paragraph, index) => <p key={paragraph}>{paragraph}{index === block.paragraphs[locale].length - 1 && <Citations ids={block.sourceIds} sources={sources} />}</p>)}
+          {block.paragraphs[locale].map((paragraph, index) => <p key={paragraph}>{paragraph}{index === block.paragraphs[locale].length - 1 && <Citations ids={block.sourceIds} sources={sources} sourceNumbers={sourceNumbers} />}</p>)}
         </section>;
         if (block.kind === "note") return <aside key={block.id} className={`location-tour-note location-tour-note-${block.tone}`}>
           <p className="eyebrow">{block.tone === "warning" ? isGerman ? "Grenze" : "Boundary" : block.tone === "practical" ? isGerman ? "Vor Ort" : "In the field" : isGerman ? "Einordnung" : "Context"}</p>
           <h2>{block.heading[locale]}</h2>
-          <p>{block.body[locale]}<Citations ids={block.sourceIds} sources={sources} /></p>
+          <p>{block.body[locale]}<Citations ids={block.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
         </aside>;
         if (block.kind === "schedule") return <section key={block.id} className="location-tour-schedule">
           <h2>{block.heading[locale]}</h2>
@@ -41,7 +51,7 @@ export function LocationTourContent({ tour, locale, availableSources }: { tour: 
             <span>{String(index + 1).padStart(2, "0")}</span>
             <p className="location-tour-time">{item.time[locale]}</p>
             <h3>{item.title[locale]}</h3>
-            <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} /></p>
+            <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
           </li>)}</ol>
         </section>;
         return <section key={block.id} className="location-tour-decisions">
@@ -49,13 +59,13 @@ export function LocationTourContent({ tour, locale, availableSources }: { tour: 
           {block.introduction && <p>{block.introduction[locale]}</p>}
           <div>{block.items.map((item) => <article key={item.label.en}>
             <h3>{item.label[locale]}</h3>
-            <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} /></p>
+            <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
           </article>)}</div>
         </section>;
       })}
     </article>
 
-    <footer className="location-tour-sources">
+    <footer className="location-tour-sources" id="tour-sources">
       <p className="eyebrow">{isGerman ? "Geprüfte Primärquellen" : "Reviewed primary sources"}</p>
       <h2>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</h2>
       <p>

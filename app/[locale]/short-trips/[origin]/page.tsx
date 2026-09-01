@@ -4,7 +4,6 @@ import { notFound } from "next/navigation";
 import { listShortTripOrigins, loadSeoPage, loadShortTrip } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
-import { PageHomeNav } from "@/components/page-home-nav";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { formatMonth } from "@/lib/i18n/months";
@@ -71,7 +70,6 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
   return (
     <main className="trip-page" lang={isGerman ? "de" : "en"}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
-      <PageHomeNav locale={locale} />
       <header className="event-header">
         <p className="eyebrow">{isGerman ? "Kurze Sternreisen · Zielranking" : "Short stargazing trips · destination ranking"}</p>
         <h1>{isGerman ? `Ab ${trip.originName}` : `From ${trip.originName}`}</h1>
@@ -111,8 +109,8 @@ export default async function ShortTripsPage({ params }: { params: Promise<{ loc
           <div className="short-trip-empty">
             <p>
               {isGerman
-                ? `Im geprüften Datensatz liegt derzeit kein öffentlich zugängliches Ziel mit ausreichender Datenqualität innerhalb von ${trip.maxShortTripKm} km Luftlinie um ${trip.originName}. Wir erweitern den Radius nicht künstlich und empfehlen keine ungeprüften Orte.`
-                : `The reviewed dataset currently contains no publicly accessible destination with sufficient data quality within ${trip.maxShortTripKm} km great-circle distance of ${trip.originName}. We do not inflate the radius or recommend unreviewed places to fill the list.`}
+                ? `Im aktuellen Zielverzeichnis liegt derzeit kein öffentlich zugänglicher Ort mit ausreichenden Informationen innerhalb von ${trip.maxShortTripKm} km Luftlinie um ${trip.originName}. Wir erweitern den Radius nicht künstlich und empfehlen keine ungeprüften Orte.`
+                : `The current destination index contains no publicly accessible place with sufficient information within ${trip.maxShortTripKm} km great-circle distance of ${trip.originName}. We do not inflate the radius or recommend unreviewed places to fill the list.`}
             </p>
             <p>
               {isGerman
