@@ -13,7 +13,7 @@ test("both localized homepages and language navigation render without browser er
   const errors = captureConsoleErrors(page);
   await page.goto("/en/");
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-  await page.locator(".locale-nav").getByRole("link", { name: "DE" }).click();
+  await page.locator(".site-header-locales").getByRole("link", { name: "DE" }).click();
   await expect(page).toHaveURL(/\/de\/$/);
   await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
   expect(errors).toEqual([]);
