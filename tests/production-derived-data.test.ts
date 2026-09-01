@@ -20,9 +20,12 @@ test("published derived products are real and access-gated", () => {
   assert.match(manifest.sourceVersions.meteorShowers, /real-site-score/);
   assert.match(manifest.sourceVersions.shortTrips, /real-site-score/);
 
-  const calendar = read<CalendarFile>("public/data/stargazing/calendar/alqueva/2026-08.json");
+  const alquevaCalendarDirectory = resolve(process.cwd(), "public/data/stargazing/calendar/alqueva");
+  const firstCalendarFile = readdirSync(alquevaCalendarDirectory).filter((file) => /^\d{4}-\d{2}\.json$/.test(file)).sort()[0];
+  assert.ok(firstCalendarFile);
+  const calendar = read<CalendarFile>(`public/data/stargazing/calendar/alqueva/${firstCalendarFile}`);
   assert.equal(calendar.algorithmVersion, "astronomy-calendar-1.0.0");
-  assert.equal(calendar.nights.length, 31);
+  assert.equal(calendar.nights.length, new Date(Date.UTC(calendar.year, calendar.month, 0)).getUTCDate());
 
   const sites = read<ObservationSite[]>("data-config/sources/observation-sites.json");
   assert.equal(sites.length, 150);
