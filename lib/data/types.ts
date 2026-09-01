@@ -220,6 +220,13 @@ export interface AffiliateConfig {
   partners: AffiliatePartner[];
 }
 
+export interface AstroshopProductMatch {
+  guideSlug: string;
+  productName: string;
+  path: string;
+  checkedAt: string;
+}
+
 export interface AffiliateActivityOffer {
   id: string;
   partnerId: string;

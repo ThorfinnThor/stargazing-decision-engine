@@ -1122,6 +1122,24 @@ h1 span {
   line-height: 1.35;
 }
 
+.gear-affiliate-product-link {
+  display: inline-block;
+  margin-top: 0.65rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgb(238 197 93 / 65%);
+  color: var(--gold);
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+.gear-affiliate-product-link:hover,
+.gear-affiliate-product-link:focus-visible {
+  border-color: var(--gold);
+  color: #ffe08c;
+}
+
 .gear-pro-con {
   display: block;
 }

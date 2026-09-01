@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { PageHomeNav } from "@/components/page-home-nav";
+import { AffiliateGearProductLink } from "@/components/affiliate-gear-product-link";
+import { AffiliateGearLink } from "@/components/affiliate-gear-link";
+import { buildAstroshopProductUrl } from "@/lib/affiliate/affiliate";
+import { loadAffiliateConfig, loadAstroshopProductMatches } from "@/lib/affiliate/config";
 import { listGearGuides, loadGearGuide, loadSeoPage } from "@/lib/data/load";
 import { buildGearGuideStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -9,7 +13,6 @@ import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { isGearGuideEditorialReady } from "@/lib/gear/gear";
 import { legal } from "@/lib/legal/config";
-import { AffiliateGearLink } from "@/components/affiliate-gear-link";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -51,6 +54,8 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   if (!resolved) notFound();
   const { locale, guide, relatedGuides, seo } = resolved;
   const isGerman = locale === "de";
+  const affiliateConfig = loadAffiliateConfig();
+  const astroshopProductMatches = loadAstroshopProductMatches();
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const guideStructuredData = buildGearGuideStructuredData({ guide, locale, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/` });
   return (
@@ -91,10 +96,13 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
             <tbody>
               {guide.items.map((item) => {
                 const coreSpecs = item.localizedCoreSpecs?.[locale] ?? item.coreSpecs;
+                const match = astroshopProductMatches.find((candidate) => candidate.guideSlug === guide.slug && candidate.productName === item.name.en);
+                const affiliateProduct = buildAstroshopProductUrl(affiliateConfig, item, match);
                 return <tr key={item.name.en}>
                   <td data-label={isGerman ? "Option" : "Option"}>
                     <strong>{item.name[locale]}</strong>
                     {item.source ? <><br /><a className="gear-source-link" href={item.source.url} rel="noreferrer">{item.source.publisher}: {item.source.title} ↗</a></> : null}
+                    {affiliateProduct ? <><br /><AffiliateGearProductLink href={affiliateProduct.url} direct={affiliateProduct.direct} locale={locale} /></> : null}
                   </td>
                   <td data-label={isGerman ? "Warum wichtig" : "Why it matters"}>{item.whyItMatters[locale]}</td>
                   <td data-label={isGerman ? "Technische Daten" : "Core specs"}>{Object.entries(coreSpecs).map(([key, value]) => `${key}: ${value}`).join(" · ")}</td>
@@ -121,8 +129,8 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
       </section>
       <AffiliateGearLink locale={locale} />
       <footer className="event-footer"><p>{isGerman
-        ? "Dieser Guide enthält einen gekennzeichneten Astroshop-Affiliate-Link. Die Produktauswahl und Bewertung bleiben unabhängig."
-        : "This guide contains a labelled Astroshop affiliate link. Product selection and evaluation remain independent."} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
+        ? "Dieser Guide enthält gekennzeichnete Astroshop-Affiliate-Links. Die Produktauswahl und Bewertung bleiben unabhängig."
+        : "This guide contains labelled Astroshop affiliate links. Product selection and evaluation remain independent."} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
     </main>
   );
 }
