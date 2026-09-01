@@ -34,18 +34,21 @@ export function LocationTourContent({ tour, locale, availableSources, activityMo
     {activityModules ? <div id="tour-activities" className="location-tour-activities">{activityModules}</div> : null}
 
     <article className="location-tour-body" id="tour-plan">
-      {tour.blocks.map((block) => {
-        if (block.kind === "prose") return <section key={block.id} className="location-tour-prose">
-          <h2>{block.heading[locale]}</h2>
+      {tour.blocks.map((block, blockIndex) => <details className={`location-tour-block location-tour-block-${block.kind}`} key={block.id}>
+        <summary>
+          <span className="location-tour-block-number">{String(blockIndex + 1).padStart(2, "0")}</span>
+          <strong>{block.heading[locale]}</strong>
+          <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Öffnen" : "Open"}</span><span>{isGerman ? "Schließen" : "Close"}</span></span>
+        </summary>
+        {block.kind === "prose" ? <section className="location-tour-prose">
+          <h2 className="sr-only">{block.heading[locale]}</h2>
           {block.paragraphs[locale].map((paragraph, index) => <p key={paragraph}>{paragraph}{index === block.paragraphs[locale].length - 1 && <Citations ids={block.sourceIds} sources={sources} sourceNumbers={sourceNumbers} />}</p>)}
-        </section>;
-        if (block.kind === "note") return <aside key={block.id} className={`location-tour-note location-tour-note-${block.tone}`}>
+        </section> : block.kind === "note" ? <aside className={`location-tour-note location-tour-note-${block.tone}`}>
           <p className="eyebrow">{block.tone === "warning" ? isGerman ? "Grenze" : "Boundary" : block.tone === "practical" ? isGerman ? "Vor Ort" : "In the field" : isGerman ? "Einordnung" : "Context"}</p>
-          <h2>{block.heading[locale]}</h2>
+          <h2 className="sr-only">{block.heading[locale]}</h2>
           <p>{block.body[locale]}<Citations ids={block.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
-        </aside>;
-        if (block.kind === "schedule") return <section key={block.id} className="location-tour-schedule">
-          <h2>{block.heading[locale]}</h2>
+        </aside> : block.kind === "schedule" ? <section className="location-tour-schedule">
+          <h2 className="sr-only">{block.heading[locale]}</h2>
           {block.introduction && <p>{block.introduction[locale]}</p>}
           <ol>{block.items.map((item, index) => <li key={item.title.en}>
             <span>{String(index + 1).padStart(2, "0")}</span>
@@ -53,30 +56,33 @@ export function LocationTourContent({ tour, locale, availableSources, activityMo
             <h3>{item.title[locale]}</h3>
             <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
           </li>)}</ol>
-        </section>;
-        return <section key={block.id} className="location-tour-decisions">
-          <h2>{block.heading[locale]}</h2>
+        </section> : <section className="location-tour-decisions">
+          <h2 className="sr-only">{block.heading[locale]}</h2>
           {block.introduction && <p>{block.introduction[locale]}</p>}
           <div>{block.items.map((item) => <article key={item.label.en}>
             <h3>{item.label[locale]}</h3>
             <p>{item.body[locale]}<Citations ids={item.sourceIds} sources={sources} sourceNumbers={sourceNumbers} /></p>
           </article>)}</div>
-        </section>;
-      })}
+        </section>}
+      </details>)}
     </article>
 
-    <footer className="location-tour-sources" id="tour-sources">
-      <p className="eyebrow">{isGerman ? "Geprüfte Primärquellen" : "Reviewed primary sources"}</p>
-      <h2>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</h2>
-      <p>
-        {isGerman ? "Redaktionell geprüft von " : "Editorially reviewed by "}
-        <Link href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</Link>
-        {isGerman ? ` am ${tour.lastReviewedAt}. Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern.` : ` on ${tour.lastReviewedAt}. Bookings, opening times, gate hours and protected-area rules can change.`}
-      </p>
-      <ol>{[...sources.values()].map((source) => <li key={source.id} id={`tour-source-${source.id}`}>
-        <a href={source.url} rel="noreferrer">{source.publisher}: {source.title}</a>
-        <span>{source.authority.replaceAll("-", " ")} · {source.checkedAt}</span>
-      </li>)}</ol>
-    </footer>
+    <details className="location-tour-sources" id="tour-sources">
+      <summary>
+        <span><span className="eyebrow">{isGerman ? "Geprüfte Primärquellen" : "Reviewed primary sources"}</span><strong>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</strong></span>
+        <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Quellen anzeigen" : "Show sources"}</span><span>{isGerman ? "Quellen schließen" : "Close sources"}</span></span>
+      </summary>
+      <div className="location-tour-sources-content">
+        <p>
+          {isGerman ? "Redaktionell geprüft von " : "Editorially reviewed by "}
+          <Link href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</Link>
+          {isGerman ? ` am ${tour.lastReviewedAt}. Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern.` : ` on ${tour.lastReviewedAt}. Bookings, opening times, gate hours and protected-area rules can change.`}
+        </p>
+        <ol>{[...sources.values()].map((source) => <li key={source.id} id={`tour-source-${source.id}`}>
+          <a href={source.url} rel="noreferrer">{source.publisher}: {source.title}</a>
+          <span>{source.authority.replaceAll("-", " ")} · {source.checkedAt}</span>
+        </li>)}</ol>
+      </div>
+    </details>
   </>;
 }

@@ -59,7 +59,7 @@ export function DestinationDecisionSummary({
   const arrivalHint = guide?.tour.steps[1]?.timeHint[locale] ?? null;
   const planningTopics = guide?.fieldNotes.slice(0, 3).map((note) => note.title[locale]) ?? [];
 
-  return <section className="destination-decision" aria-labelledby="destination-decision-title">
+  return <section className="destination-decision" id="destination-decision" aria-labelledby="destination-decision-title">
     <div className="destination-decision-heading">
       <div>
         <p className="eyebrow">{isGerman ? "Die Entscheidung" : "The decision"}</p>

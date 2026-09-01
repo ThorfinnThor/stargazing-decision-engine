@@ -9,14 +9,11 @@ export function AffiliateDestinationSearches({ destinationId, destinationName, l
   const activities = searches.filter((search) => search.variantId === "activities");
   if (!stargazing.length && !activities.length) return null;
 
-  return <section className="affiliate-destination-searches" aria-labelledby={`affiliate-search-title-${destinationId}`}>
-    <header>
-      <p className="eyebrow">{isGerman ? "Weitere buchbare Möglichkeiten" : "More bookable options"}</p>
-      <h2 id={`affiliate-search-title-${destinationId}`}>{isGerman ? `Aktivitäten rund um ${destinationName}` : `Activities around ${destinationName}`}</h2>
-      <p>{isGerman
-        ? "Die Links öffnen aktuelle Suchen bei Viator und GetYourGuide. Ergebnisse, Termine, Preise und Verfügbarkeit werden von den jeweiligen Plattformen bereitgestellt und können sich ändern."
-        : "The links open current searches on Viator and GetYourGuide. Results, dates, prices, and availability are provided by each platform and can change."}</p>
-    </header>
+  return <details className="affiliate-destination-searches">
+    <summary id={`affiliate-search-title-${destinationId}`}>
+      <span><span className="eyebrow">{isGerman ? "Weitere buchbare Möglichkeiten" : "More bookable options"}</span><strong>{isGerman ? `Aktivitäten rund um ${destinationName}` : `Activities around ${destinationName}`}</strong></span>
+      <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Suchen anzeigen" : "Show searches"}</span><span>{isGerman ? "Suchen schließen" : "Close searches"}</span></span>
+    </summary>
     <div className="affiliate-destination-search-grid">
       {stargazing.length > 0 && <article className="affiliate-destination-search-featured">
         <p className="affiliate-activity-partner">{isGerman ? "Stargazing-Suche" : "Stargazing search"}</p>
@@ -35,5 +32,5 @@ export function AffiliateDestinationSearches({ destinationId, destinationName, l
         <div className="affiliate-provider-links">{activities.map((search) => <a href={search.redirectPath} rel={affiliateRel()} key={search.partnerId}>{isGerman ? `Bei ${search.partnerName} suchen` : `Search on ${search.partnerName}`} →</a>)}</div>
       </article>}
     </div>
-  </section>;
+  </details>;
 }

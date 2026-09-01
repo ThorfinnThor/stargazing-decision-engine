@@ -30,6 +30,12 @@ export function AffiliateDestinationModules({
     <AffiliateDisclosure locale={locale} />
     <AffiliateActivityOffers destinationId={destinationId} locationTourSlug={locationTourSlug} locale={locale} />
     <AffiliateDestinationSearches destinationId={destinationId} destinationName={destinationName} locale={locale} />
-    <GetYourGuideActivitiesWidget destinationId={destinationId} destinationName={destinationName} destinationQuery={destinationQuery} locale={locale} />
+    {hasWidget ? <details className="affiliate-widget-disclosure">
+      <summary>
+        <strong>{locale === "de" ? `Live-Angebote für ${destinationName}` : `Live availability for ${destinationName}`}</strong>
+        <span className="content-disclosure-state" aria-hidden="true"><span>{locale === "de" ? "Angebote anzeigen" : "Show live offers"}</span><span>{locale === "de" ? "Angebote schließen" : "Close live offers"}</span></span>
+      </summary>
+      <GetYourGuideActivitiesWidget destinationId={destinationId} destinationName={destinationName} destinationQuery={destinationQuery} locale={locale} />
+    </details> : null}
   </>;
 }

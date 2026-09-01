@@ -66,19 +66,25 @@ export function DestinationSiteExplorer({ options, locale }: { options: Destinat
       <DestinationSkySection key={selected.location.id} location={selected.location} previews={selected.previews} locale={locale} />
     </section>
 
-    <section className="event-summary" id="destination-months" aria-labelledby="destination-months-title">
-      <h2 id="destination-months-title">{isGerman ? `Monatliche Werte · ${selected.site.name}` : `Monthly scores · ${selected.site.name}`}</h2>
+    <details className="event-summary destination-data-disclosure" id="destination-months">
+      <summary id="destination-months-title">
+        <strong>{isGerman ? `Monatliche Werte · ${selected.site.name}` : `Monthly scores · ${selected.site.name}`}</strong>
+        <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Monate anzeigen" : "Show months"}</span><span>{isGerman ? "Monate schließen" : "Close months"}</span></span>
+      </summary>
       <div className="event-table-wrap">
         <table className="event-table">
           <thead><tr><th>{isGerman ? "Monat" : "Month"}</th><th>{isGerman ? "Sternbeobachtung" : "Stargazing"}</th><th>{isGerman ? "Konfidenz" : "Confidence"}</th></tr></thead>
           <tbody>{selected.monthly.months.map((month) => <tr key={month.month}><td>{formatMonth(month.month, locale)}</td><td>{month.score}</td><td>{month.confidenceLevel}</td></tr>)}</tbody>
         </table>
       </div>
-    </section>
+    </details>
 
-    {selected.monthly.caveats.length > 0 ? <section className="event-summary" aria-labelledby="destination-caveats-title">
-      <h2 id="destination-caveats-title">{isGerman ? "Datengrenzen" : "Data limitations"}</h2>
+    {selected.monthly.caveats.length > 0 ? <details className="event-summary destination-data-disclosure">
+      <summary id="destination-caveats-title">
+        <strong>{isGerman ? "Datengrenzen" : "Data limitations"}</strong>
+        <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Hinweise anzeigen" : "Show limitations"}</span><span>{isGerman ? "Hinweise schließen" : "Close limitations"}</span></span>
+      </summary>
       <ul>{selected.monthly.caveats.map((caveat) => <li key={caveat}>{caveat}</li>)}</ul>
-    </section> : null}
+    </details> : null}
   </div>;
 }
