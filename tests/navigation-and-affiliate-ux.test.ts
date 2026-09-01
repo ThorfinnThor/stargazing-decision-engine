@@ -41,6 +41,7 @@ test("long destination and tour content uses progressive disclosure without chan
 
   assert.match(destinationPage, /className="destination-section-nav"/);
   assert.match(destinationPage, /destination-access-summary/);
+  assert.match(destinationPage, /showIndependentRoute=\{!locationTour\}/);
   assert.match(destinationGuide, /destination-editorial-section/);
   assert.match(destinationGuide, /destination-content-disclosure/);
   assert.match(locationTour, /location-tour-block/);
@@ -48,4 +49,18 @@ test("long destination and tour content uses progressive disclosure without chan
   assert.match(locationTourIndex, /hidden=\{index >= limit\}/);
   assert.match(locationTourIndex, /setLimit\(\(current\) => current \+ 12\)/);
   assert.doesNotMatch(gearGuide, /content-disclosure-state/);
+});
+
+test("bookable searches open by default and public pages share the compact title scale", () => {
+  const destinationSearches = read("components/affiliate-destination-searches.tsx");
+  const destinationModules = read("components/affiliate-destination-modules.tsx");
+  const styles = read("app/globals.css");
+
+  assert.match(destinationSearches, /className="affiliate-destination-searches" open/);
+  assert.match(destinationModules, /className="affiliate-widget-disclosure" open/);
+  assert.match(styles, /--type-page-title: clamp\(2\.3rem, 4vw, 3\.75rem\)/);
+  assert.match(styles, /--type-section-title: clamp\(1\.7rem, 2\.8vw, 2\.65rem\)/);
+  assert.match(styles, /\.hero-copy h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
+  assert.match(styles, /\.event-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
+  assert.match(styles, /\.finder-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
 });

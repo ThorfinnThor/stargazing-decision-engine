@@ -183,11 +183,18 @@ export function buildDestinationEditorialStructuredData(options: {
   locale: "en" | "de";
   url: string;
   image?: string | null;
+  includeIndependentRoute?: boolean;
 }) {
   const { destination, guide, locale, url } = options;
   const articleId = `${url}#editorial-guide`;
   const origin = new URL(url).origin;
   const image = absoluteMediaUrl(url, options.image);
+  const citedSourceIds = new Set([
+    ...guide.sections.flatMap((section) => section.sourceIds),
+    ...guide.fieldNotes.flatMap((note) => note.sourceIds),
+    ...guide.faq.flatMap((item) => item.sourceIds),
+    ...(options.includeIndependentRoute === false ? [] : [guide.tour.sourceIds, ...guide.tour.steps.map((step) => step.sourceIds)].flat()),
+  ]);
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -208,7 +215,7 @@ export function buildDestinationEditorialStructuredData(options: {
         author: authorEntity(origin, locale),
         publisher: publisherEntity(origin),
         ...(image ? { image } : {}),
-        citation: guide.sources.map((source) => source.url),
+        citation: guide.sources.filter((source) => citedSourceIds.has(source.id)).map((source) => source.url),
       },
       {
         "@type": "FAQPage",

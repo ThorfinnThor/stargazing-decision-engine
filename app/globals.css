@@ -18,6 +18,8 @@
   --constellation-active-opacity: 0.75;
   --constellation-label-opacity: 0.7;
   --constellation-star-active: #f4efe4;
+  --type-page-title: clamp(2.3rem, 4vw, 3.75rem);
+  --type-section-title: clamp(1.7rem, 2.8vw, 2.65rem);
 }
 
 * {
@@ -160,7 +162,7 @@ a {
 }
 
 .hero-copy h1 {
-  font-size: clamp(3.2rem, 7vw, 7rem);
+  font-size: var(--type-page-title);
 }
 
 .eyebrow {
@@ -182,7 +184,7 @@ p {
 h1 {
   margin-bottom: 1.8rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(3.2rem, 8vw, 7.8rem);
+  font-size: var(--type-page-title);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.9;
@@ -324,7 +326,7 @@ h1 span {
 
 .finder-header h1 {
   max-width: 68rem;
-  font-size: clamp(3.2rem, 7vw, 7rem);
+  font-size: var(--type-page-title);
 }
 
 .finder-body {
@@ -685,7 +687,7 @@ h1 span {
   margin: 0;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.8rem, 3vw, 3rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.04;
@@ -928,7 +930,7 @@ h1 span {
 .event-header h1 {
   max-width: 56rem;
   margin-bottom: 1.5rem;
-  font-size: clamp(3rem, 7vw, 7rem);
+  font-size: var(--type-page-title);
 }
 
 .event-header h1 span {
@@ -950,7 +952,7 @@ h1 span {
 .event-summary h2 {
   margin-bottom: 1.5rem;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
 }
 
@@ -1001,7 +1003,7 @@ h1 span {
 
 .gear-guide-page .event-header h1 {
   max-width: 70rem;
-  font-size: clamp(3rem, 5.4vw, 5.4rem);
+  font-size: var(--type-page-title);
   line-height: 0.96;
   text-wrap: balance;
 }
@@ -1036,7 +1038,7 @@ h1 span {
 
 .gear-decision-summary h2 {
   margin-bottom: 1.25rem;
-  font-size: clamp(2rem, 3.2vw, 3.1rem);
+  font-size: var(--type-section-title);
   line-height: 1.05;
 }
 
@@ -1238,7 +1240,7 @@ h1 span {
 
 .destination-profile-page .event-header h1 {
   max-width: 58rem;
-  font-size: clamp(2.6rem, 4.5vw, 4rem);
+  font-size: var(--type-page-title);
   line-height: 0.96;
   text-wrap: balance;
 }
@@ -1266,7 +1268,7 @@ h1 span {
   max-width: 35rem;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.85rem, 3vw, 2.75rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1.02;
@@ -1727,7 +1729,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 }
 
 .destination-tour-heading h2 {
-  font-size: clamp(2rem, 2.7vw, 2.75rem);
+  font-size: var(--type-section-title);
 }
 
 .destination-tour-heading dl {
@@ -1836,7 +1838,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 }
 
 .destination-editorial-sources h2 {
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: var(--type-section-title);
 }
 
 .destination-editorial-sources ol {
@@ -1872,7 +1874,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 .destination-related h2 {
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2rem, 3vw, 3rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
   letter-spacing: -0.04em;
   line-height: 1;
@@ -1957,7 +1959,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 
 .location-tour-header h1 {
   max-width: 32ch;
-  font-size: clamp(2.1rem, 3.2vw, 3.25rem);
+  font-size: var(--type-page-title);
   line-height: 1.04;
   text-wrap: balance;
 }
@@ -1966,7 +1968,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 
 .location-tours-index .event-header h1 {
   max-width: 50rem;
-  font-size: clamp(2.3rem, 3.8vw, 3.75rem);
+  font-size: var(--type-page-title);
   line-height: 1;
   text-wrap: balance;
 }
@@ -2088,7 +2090,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
   margin: 0 0 1.5rem;
   color: #fff;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(1.85rem, 3vw, 3rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 1.04;
@@ -2266,7 +2268,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
   }
 
   .legal-page .event-header h1 {
-    font-size: clamp(2.35rem, 12vw, 3rem);
+    font-size: var(--type-page-title);
     hyphens: auto;
   }
 }
@@ -2681,7 +2683,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 .night-recommendation h2 {
   margin: 0;
   color: #fff;
-  font-size: clamp(1.8rem, 3vw, 3.1rem);
+  font-size: var(--type-section-title);
   line-height: 1;
 }
 
@@ -3213,7 +3215,7 @@ h2 {
   max-width: 46rem;
   margin-bottom: 0;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.4rem, 5vw, 5rem);
+  font-size: var(--type-section-title);
   font-weight: 400;
   letter-spacing: -0.045em;
   line-height: 0.98;
@@ -3525,13 +3527,13 @@ h3 {
 
   .location-tour-header h1 {
     max-width: none;
-    font-size: clamp(1.85rem, 8vw, 2.1rem);
+    font-size: var(--type-page-title);
     line-height: 1.08;
     text-wrap: pretty;
   }
 
   .gear-guide-page .event-header h1 {
-    font-size: clamp(2.2rem, 11vw, 2.8rem);
+    font-size: var(--type-page-title);
     line-height: 1;
   }
 

@@ -17,9 +17,16 @@ function SourceLinks({ ids, sources, locale }: { ids: string[]; sources: Map<str
   );
 }
 
-export function DestinationEditorialGuideView({ guide, locale }: { guide: DestinationEditorialGuide; locale: Locale }) {
-  const sources = new Map(guide.sources.map((source) => [source.id, source]));
+export function DestinationEditorialGuideView({ guide, locale, showIndependentRoute = true }: { guide: DestinationEditorialGuide; locale: Locale; showIndependentRoute?: boolean }) {
   const isGerman = locale === "de";
+  const visibleSourceIds = new Set([
+    ...guide.sections.flatMap((section) => section.sourceIds),
+    ...guide.fieldNotes.flatMap((note) => note.sourceIds),
+    ...guide.faq.flatMap((item) => item.sourceIds),
+    ...(showIndependentRoute ? [guide.tour.sourceIds, ...guide.tour.steps.map((step) => step.sourceIds)].flat() : []),
+  ]);
+  const visibleSources = guide.sources.filter((source) => visibleSourceIds.has(source.id));
+  const sources = new Map(visibleSources.map((source) => [source.id, source]));
   return (
     <article className="destination-editorial" id="destination-field-guide" aria-labelledby="destination-editorial-title">
       <header className="destination-editorial-intro">
@@ -47,7 +54,7 @@ export function DestinationEditorialGuideView({ guide, locale }: { guide: Destin
         ))}
       </div>
 
-      <details className="destination-content-disclosure">
+      {showIndependentRoute ? <details className="destination-content-disclosure">
         <summary>
           <span><span className="eyebrow">{isGerman ? "Eigenständige Nachtroute" : "Independent night route"}</span><strong>{guide.tour.title[locale]}</strong></span>
           <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Route anzeigen" : "Show route"}</span><span>{isGerman ? "Route schließen" : "Close route"}</span></span>
@@ -72,7 +79,7 @@ export function DestinationEditorialGuideView({ guide, locale }: { guide: Destin
             ))}
           </ol>
         </section>
-      </details>
+      </details> : null}
 
       <details className="destination-content-disclosure">
         <summary>
@@ -117,7 +124,7 @@ export function DestinationEditorialGuideView({ guide, locale }: { guide: Destin
             </p>
           </div>
           <ol>
-            {guide.sources.map((source) => (
+            {visibleSources.map((source) => (
               <li key={source.id} id={`source-${source.id}`}>
                 <a href={source.url} rel="noreferrer">{source.publisher}: {source.title}</a>
                 <span>{source.authority.replaceAll("-", " ")} · {source.checkedAt}</span>
