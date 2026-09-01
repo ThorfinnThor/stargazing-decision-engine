@@ -1,0 +1,158 @@
+{
+  "siteId": "windy-canyon-aotea",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1742,
+          "totalPixelCount": 1742
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1742,
+          "totalPixelCount": 1742
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1742,
+          "totalPixelCount": 1742
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 14498,
+          "totalPixelCount": 14498
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 14498,
+          "totalPixelCount": 14498
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 14498,
+          "totalPixelCount": 14498
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.009713,
+      "coverage": 0.999825,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.009713,
+          "coverage": 0.99986,
+          "validPixelCount": 85696,
+          "totalPixelCount": 85708
+        },
+        {
+          "year": 2024,
+          "radiance": 0.009774,
+          "coverage": 0.999825,
+          "validPixelCount": 85693,
+          "totalPixelCount": 85708
+        },
+        {
+          "year": 2023,
+          "radiance": 0.009443,
+          "coverage": 0.999837,
+          "validPixelCount": 85694,
+          "totalPixelCount": 85708
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0,
+  "radiance30to75": 0.009713,
+  "alanExposure": 0.000967,
+  "darknessScore": 100,
+  "coverage": 0.999825,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:39:22.010390Z"
+}

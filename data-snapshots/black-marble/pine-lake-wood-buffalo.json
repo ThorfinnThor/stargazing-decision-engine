@@ -1,0 +1,163 @@
+{
+  "siteId": "pine-lake-wood-buffalo",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.654858,
+      "coverage": 0.834711,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.654858,
+          "coverage": 1,
+          "validPixelCount": 121,
+          "totalPixelCount": 121
+        },
+        {
+          "year": 2024,
+          "radiance": 0.523616,
+          "coverage": 1,
+          "validPixelCount": 121,
+          "totalPixelCount": 121
+        },
+        {
+          "year": 2023,
+          "radiance": 0.878376,
+          "coverage": 0.834711,
+          "validPixelCount": 101,
+          "totalPixelCount": 121
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.705809,
+      "coverage": 0.855749,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.705809,
+          "coverage": 1,
+          "validPixelCount": 2870,
+          "totalPixelCount": 2870
+        },
+        {
+          "year": 2024,
+          "radiance": 0.412409,
+          "coverage": 1,
+          "validPixelCount": 2870,
+          "totalPixelCount": 2870
+        },
+        {
+          "year": 2023,
+          "radiance": 0.875352,
+          "coverage": 0.855749,
+          "validPixelCount": 2456,
+          "totalPixelCount": 2870
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.720469,
+      "coverage": 0.8999,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.720469,
+          "coverage": 0.995365,
+          "validPixelCount": 23835,
+          "totalPixelCount": 23946
+        },
+        {
+          "year": 2024,
+          "radiance": 0.431553,
+          "coverage": 0.999457,
+          "validPixelCount": 23933,
+          "totalPixelCount": 23946
+        },
+        {
+          "year": 2023,
+          "radiance": 0.832317,
+          "coverage": 0.8999,
+          "validPixelCount": 21549,
+          "totalPixelCount": 23946
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.735129,
+      "coverage": 0.836735,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.735129,
+          "coverage": 0.984489,
+          "validPixelCount": 139251,
+          "totalPixelCount": 141445
+        },
+        {
+          "year": 2024,
+          "radiance": 0.443655,
+          "coverage": 0.999788,
+          "validPixelCount": 141415,
+          "totalPixelCount": 141445
+        },
+        {
+          "year": 2023,
+          "radiance": 0.861227,
+          "coverage": 0.836735,
+          "validPixelCount": 118352,
+          "totalPixelCount": 141445
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.654858,
+  "radiance2to10": 0.705809,
+  "radiance10to30": 0.720469,
+  "radiance30to75": 0.735129,
+  "alanExposure": 0.523381,
+  "darknessScore": 61.77,
+  "coverage": 0.834711,
+  "warnings": [
+    "0to2 minimum yearly coverage is 0.834711",
+    "2to10 minimum yearly coverage is 0.855749",
+    "10to30 minimum yearly coverage is 0.8999",
+    "30to75 minimum yearly coverage is 0.836735"
+  ],
+  "retrievedAt": "2026-09-01T01:31:02.333566Z"
+}

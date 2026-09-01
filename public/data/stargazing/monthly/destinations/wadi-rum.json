@@ -1,73 +1,72 @@
 {
   "destinationId": "wadi-rum",
   "siteId": "wadi-rum-visitor-centre",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:39:03.745265Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
   ],
   "months": [
     {
       "month": 1,
-      "score": 85.98,
-      "confidenceLevel": "low"
+      "score": 85,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 86.39,
-      "confidenceLevel": "low"
+      "score": 87,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 87.54,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 89.1,
-      "confidenceLevel": "low"
+      "score": 90,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 90.66,
-      "confidenceLevel": "low"
+      "score": 90,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 91.81,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 92.23,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 91.81,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 90.66,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 89.1,
-      "confidenceLevel": "low"
+      "score": 90,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 87.54,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 86.39,
-      "confidenceLevel": "low"
+      "score": 87,
+      "confidenceLevel": "high"
     }
   ]
 }

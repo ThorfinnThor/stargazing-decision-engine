@@ -3,7 +3,7 @@
   "originName": "Cape Town",
   "countryCode": "ZA",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
@@ -204,6 +204,106 @@
         "Stay area metadata: Sutherland town."
       ],
       "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 3,
+      "destinationId": "oudtshoorn",
+      "destinationSlug": "oudtshoorn",
+      "destinationName": "Oudtshoorn",
+      "distanceKm": 356.18,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 84
+        },
+        {
+          "month": 7,
+          "score": 84
+        },
+        {
+          "month": 1,
+          "score": 82
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 81,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 80,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 81,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 81,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 78,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 80,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 84,
+      "distanceUtility": 60,
+      "shortTripScore": 78,
+      "bestSiteId": "buffelsdrift-night-experience",
+      "stayArea": {
+        "id": "oudtshoorn-town",
+        "name": "Oudtshoorn",
+        "affiliateQuery": "Oudtshoorn South Africa"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 84 in month 6.",
+        "Distance is 356.18 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Oudtshoorn."
+      ],
+      "confidenceLevel": "high"
     }
   ]
 }

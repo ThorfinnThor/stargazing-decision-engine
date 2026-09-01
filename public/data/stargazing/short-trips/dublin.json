@@ -3,7 +3,7 @@
   "originName": "Dublin",
   "countryCode": "IE",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
@@ -307,6 +307,306 @@
     },
     {
       "rank": 4,
+      "destinationId": "eryri",
+      "destinationSlug": "eryri",
+      "destinationName": "Eryri",
+      "distanceKm": 192.49,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 58
+        },
+        {
+          "month": 3,
+          "score": 55
+        },
+        {
+          "month": 9,
+          "score": 55
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 58,
+      "distanceUtility": 85,
+      "shortTripScore": 64.75,
+      "bestSiteId": "bwlch-y-groes-dark-sky",
+      "stayArea": {
+        "id": "beddgelert",
+        "name": "Beddgelert",
+        "affiliateQuery": "Beddgelert United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 58 in month 4.",
+        "Distance is 192.49 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Beddgelert."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 5,
+      "destinationId": "mayo-dark-sky",
+      "destinationSlug": "mayo-dark-sky",
+      "destinationName": "Mayo Dark Sky Park",
+      "distanceKm": 242.41,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 56
+        },
+        {
+          "month": 3,
+          "score": 55
+        },
+        {
+          "month": 2,
+          "score": 54
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 53,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 56,
+      "distanceUtility": 85,
+      "shortTripScore": 63.25,
+      "bestSiteId": "claggan-mountain-coastal-trail",
+      "stayArea": {
+        "id": "newport-mayo",
+        "name": "Newport, County Mayo",
+        "affiliateQuery": "Newport, County Mayo Ireland"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 56 in month 4.",
+        "Distance is 242.41 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Newport, County Mayo."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 6,
+      "destinationId": "south-downs",
+      "destinationSlug": "south-downs",
+      "destinationName": "South Downs",
+      "distanceKm": 455.9,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 9,
+          "score": 64
+        },
+        {
+          "month": 4,
+          "score": 62
+        },
+        {
+          "month": 3,
+          "score": 60
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 58,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 64,
+      "distanceUtility": 60,
+      "shortTripScore": 63,
+      "bestSiteId": "iping-common-dark-sky",
+      "stayArea": {
+        "id": "petersfield",
+        "name": "Petersfield",
+        "affiliateQuery": "Petersfield United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 64 in month 9.",
+        "Distance is 455.9 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Petersfield."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 7,
       "destinationId": "exmoor",
       "destinationSlug": "exmoor",
       "destinationName": "Exmoor National Park",
@@ -406,7 +706,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "destinationId": "kerry",
       "destinationSlug": "kerry",
       "destinationName": "Kerry International Dark Sky Reserve",
@@ -506,7 +806,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "destinationId": "north-york-moors",
       "destinationSlug": "north-york-moors",
       "destinationName": "North York Moors",
@@ -606,7 +906,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "destinationId": "kielder",
       "destinationSlug": "kielder",
       "destinationName": "Kielder Forest",
@@ -702,6 +1002,106 @@
         "Best month score 58 in month 3.",
         "Distance is 323.42 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Kielder village."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 11,
+      "destinationId": "yorkshire-dales",
+      "destinationSlug": "yorkshire-dales",
+      "destinationName": "Yorkshire Dales",
+      "distanceKm": 286.67,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 55
+        },
+        {
+          "month": 3,
+          "score": 54
+        },
+        {
+          "month": 9,
+          "score": 54
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 55,
+      "distanceUtility": 60,
+      "shortTripScore": 56.25,
+      "bestSiteId": "hawes-dark-sky",
+      "stayArea": {
+        "id": "hawes",
+        "name": "Hawes",
+        "affiliateQuery": "Hawes United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 55 in month 4.",
+        "Distance is 286.67 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Hawes."
       ],
       "confidenceLevel": "high"
     }

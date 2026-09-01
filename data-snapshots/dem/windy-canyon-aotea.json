@@ -1,0 +1,33 @@
+{
+  "siteId": "windy-canyon-aotea",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -36.199,
+    175.447
+  ],
+  "tile": "S37_00_E175_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S37_00_E175_00_DEM/Copernicus_DSM_COG_10_S37_00_E175_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 291.791,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 243.624,
+      "validSampleCount": 246
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 182.843,
+      "validSampleCount": 4068
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:39:29.301736Z"
+}

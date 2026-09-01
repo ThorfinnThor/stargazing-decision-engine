@@ -1,73 +1,72 @@
 {
   "destinationId": "river-murray",
   "siteId": "big-bend-astro-pad",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:17:58.263865Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
   ],
   "months": [
     {
       "month": 1,
-      "score": 74.43,
-      "confidenceLevel": "low"
+      "score": 92,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 74.84,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 75.99,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 77.55,
-      "confidenceLevel": "low"
+      "score": 87,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 79.11,
-      "confidenceLevel": "low"
+      "score": 79,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 80.26,
-      "confidenceLevel": "low"
+      "score": 76,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 80.68,
-      "confidenceLevel": "low"
+      "score": 78,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 80.26,
-      "confidenceLevel": "low"
+      "score": 82,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 79.11,
-      "confidenceLevel": "low"
+      "score": 85,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 77.55,
-      "confidenceLevel": "low"
+      "score": 86,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 75.99,
-      "confidenceLevel": "low"
+      "score": 86,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 74.84,
-      "confidenceLevel": "low"
+      "score": 88,
+      "confidenceLevel": "high"
     }
   ]
 }

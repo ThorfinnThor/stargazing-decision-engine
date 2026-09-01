@@ -1,0 +1,33 @@
+{
+  "siteId": "headlands-waterfront-event-center",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    45.779,
+    -84.782
+  ],
+  "tile": "N45_00_W085_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N45_00_W085_00_DEM/Copernicus_DSM_COG_10_N45_00_W085_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 226.984,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 225.129,
+      "validSampleCount": 290
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 197.373,
+      "validSampleCount": 4710
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:22:46.721968Z"
+}

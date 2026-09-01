@@ -3,7 +3,7 @@
   "originName": "Denver",
   "countryCode": "US",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
@@ -292,15 +292,111 @@
       "distanceUtility": 60,
       "shortTripScore": 86.25,
       "bestSiteId": "island-in-the-sky-night-area",
-      "stayArea": {
-        "id": "moab",
-        "name": "Moab",
-        "affiliateQuery": "Moab Canyonlands"
-      },
+      "stayArea": null,
       "campingAvailable": null,
       "reasons": [
         "Best month score 95 in month 6.",
         "Distance is 440.42 km by great-circle calculation; no road time is estimated.",
+        "No curated stay-area metadata is available."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 4,
+      "destinationId": "arches",
+      "destinationSlug": "arches",
+      "destinationName": "Arches",
+      "distanceKm": 410.5,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 94
+        },
+        {
+          "month": 9,
+          "score": 94
+        },
+        {
+          "month": 10,
+          "score": 93
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 83,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 83,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 89,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 91,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 93,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 89,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 84,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 94,
+      "distanceUtility": 60,
+      "shortTripScore": 85.5,
+      "bestSiteId": "balanced-rock-night",
+      "stayArea": {
+        "id": "moab",
+        "name": "Moab",
+        "affiliateQuery": "Moab United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 94 in month 6.",
+        "Distance is 410.5 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Moab."
       ],
       "confidenceLevel": "moderate"

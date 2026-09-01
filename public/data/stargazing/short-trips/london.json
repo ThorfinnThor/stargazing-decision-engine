@@ -3,10 +3,110 @@
   "originName": "London",
   "countryCode": "GB",
   "maxShortTripKm": 350,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "south-downs",
+      "destinationSlug": "south-downs",
+      "destinationName": "South Downs",
+      "distanceKm": 73.01,
+      "distanceBand": "near",
+      "bestMonths": [
+        {
+          "month": 9,
+          "score": 64
+        },
+        {
+          "month": 4,
+          "score": 62
+        },
+        {
+          "month": 3,
+          "score": 60
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 58,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 64,
+      "distanceUtility": 100,
+      "shortTripScore": 73,
+      "bestSiteId": "iping-common-dark-sky",
+      "stayArea": {
+        "id": "petersfield",
+        "name": "Petersfield",
+        "affiliateQuery": "Petersfield United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 64 in month 9.",
+        "Distance is 73.01 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Petersfield."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
       "destinationId": "exmoor",
       "destinationSlug": "exmoor",
       "destinationName": "Exmoor National Park",
@@ -106,7 +206,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "brecon-beacons",
       "destinationSlug": "brecon-beacons",
       "destinationName": "Bannau Brycheiniog",
@@ -206,7 +306,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 3,
+      "rank": 4,
       "destinationId": "elan-valley",
       "destinationSlug": "elan-valley",
       "destinationName": "Elan Valley",
@@ -306,7 +406,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "north-york-moors",
       "destinationSlug": "north-york-moors",
       "destinationName": "North York Moors",
@@ -402,6 +502,206 @@
         "Best month score 60 in month 4.",
         "Distance is 312.91 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Dalby village."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 6,
+      "destinationId": "eryri",
+      "destinationSlug": "eryri",
+      "destinationName": "Eryri",
+      "distanceKm": 271.41,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 58
+        },
+        {
+          "month": 3,
+          "score": 55
+        },
+        {
+          "month": 9,
+          "score": 55
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 58,
+      "distanceUtility": 60,
+      "shortTripScore": 58.5,
+      "bestSiteId": "bwlch-y-groes-dark-sky",
+      "stayArea": {
+        "id": "beddgelert",
+        "name": "Beddgelert",
+        "affiliateQuery": "Beddgelert United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 58 in month 4.",
+        "Distance is 271.41 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Beddgelert."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 7,
+      "destinationId": "yorkshire-dales",
+      "destinationSlug": "yorkshire-dales",
+      "destinationName": "Yorkshire Dales",
+      "distanceKm": 340.52,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 55
+        },
+        {
+          "month": 3,
+          "score": 54
+        },
+        {
+          "month": 9,
+          "score": 54
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 55,
+      "distanceUtility": 60,
+      "shortTripScore": 56.25,
+      "bestSiteId": "hawes-dark-sky",
+      "stayArea": {
+        "id": "hawes",
+        "name": "Hawes",
+        "affiliateQuery": "Hawes United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 55 in month 4.",
+        "Distance is 340.52 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Hawes."
       ],
       "confidenceLevel": "high"
     }

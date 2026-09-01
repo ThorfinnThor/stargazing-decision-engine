@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "capitol-reef",
+      "destinationSlug": "capitol-reef",
+      "destinationName": "Capitol Reef",
+      "siteId": "fruita-campground-night",
+      "siteSlug": "fruita-campground-night",
+      "siteName": "Fruita Campground",
+      "climateScore": 95,
+      "moonScore": 12.45,
+      "radiantScore": 99.01,
+      "viewingScore": 71.04,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 1,
+        "totalDarknessHours": 7
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 60.72,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -138,34 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 60.75,
-        "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "alqueva",
-      "destinationSlug": "alqueva",
-      "destinationName": "Alqueva",
-      "siteId": "alqueva-lake-edge",
-      "siteSlug": "alqueva-lake-edge",
-      "siteName": "Alqueva lake-edge observing area",
-      "climateScore": 91,
-      "moonScore": 16.24,
-      "radiantScore": 98.5,
-      "viewingScore": 70.07,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "Europe/Lisbon",
-        "moonIlluminationFraction": 0.9026,
-        "moonlessHours": 1.33,
-        "totalDarknessHours": 6.99
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 60.09,
         "darkRadiantHours": 5.5
       },
       "caveats": [

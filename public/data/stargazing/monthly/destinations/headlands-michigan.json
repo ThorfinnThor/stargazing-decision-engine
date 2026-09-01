@@ -1,73 +1,72 @@
 {
   "destinationId": "headlands-michigan",
   "siteId": "headlands-waterfront-event-center",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:22:46.721968Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
   ],
   "months": [
     {
       "month": 1,
-      "score": 54.47,
-      "confidenceLevel": "low"
+      "score": 54,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 54.89,
-      "confidenceLevel": "low"
+      "score": 63,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 56.04,
-      "confidenceLevel": "low"
+      "score": 70,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 57.6,
-      "confidenceLevel": "low"
+      "score": 70,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 59.16,
-      "confidenceLevel": "low"
+      "score": 72,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 60.31,
-      "confidenceLevel": "low"
+      "score": 71,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 60.73,
-      "confidenceLevel": "low"
+      "score": 76,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 60.31,
-      "confidenceLevel": "low"
+      "score": 79,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 59.16,
-      "confidenceLevel": "low"
+      "score": 75,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 57.6,
-      "confidenceLevel": "low"
+      "score": 67,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 56.04,
-      "confidenceLevel": "low"
+      "score": 58,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 54.89,
-      "confidenceLevel": "low"
+      "score": 52,
+      "confidenceLevel": "high"
     }
   ]
 }

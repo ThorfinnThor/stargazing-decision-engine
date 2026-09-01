@@ -1,0 +1,158 @@
+{
+  "siteId": "cottonwood-joshua-tree",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.00157,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.00157,
+          "coverage": 1,
+          "validPixelCount": 1689,
+          "totalPixelCount": 1689
+        },
+        {
+          "year": 2024,
+          "radiance": 0.001547,
+          "coverage": 1,
+          "validPixelCount": 1689,
+          "totalPixelCount": 1689
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007198,
+          "coverage": 1,
+          "validPixelCount": 1689,
+          "totalPixelCount": 1689
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.095118,
+      "coverage": 0.999787,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.095118,
+          "coverage": 1,
+          "validPixelCount": 14075,
+          "totalPixelCount": 14075
+        },
+        {
+          "year": 2024,
+          "radiance": 0.087291,
+          "coverage": 0.999787,
+          "validPixelCount": 14072,
+          "totalPixelCount": 14075
+        },
+        {
+          "year": 2023,
+          "radiance": 0.106758,
+          "coverage": 0.999929,
+          "validPixelCount": 14074,
+          "totalPixelCount": 14075
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.388676,
+      "coverage": 0.999723,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.478987,
+          "coverage": 0.999904,
+          "validPixelCount": 83148,
+          "totalPixelCount": 83156
+        },
+        {
+          "year": 2024,
+          "radiance": 1.37706,
+          "coverage": 0.999723,
+          "validPixelCount": 83133,
+          "totalPixelCount": 83156
+        },
+        {
+          "year": 2023,
+          "radiance": 1.388676,
+          "coverage": 0.999856,
+          "validPixelCount": 83144,
+          "totalPixelCount": 83156
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.00157,
+  "radiance10to30": 0.095118,
+  "radiance30to75": 1.388676,
+  "alanExposure": 0.101174,
+  "darknessScore": 84.88,
+  "coverage": 0.999723,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:20:11.004978Z"
+}

@@ -1,0 +1,33 @@
+{
+  "siteId": "point-kean-night-area",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -42.423,
+    173.71
+  ],
+  "tile": "S43_00_E173_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S43_00_E173_00_DEM/Copernicus_DSM_COG_10_S43_00_E173_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 39.732,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 37.089,
+      "validSampleCount": 276
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 0.241,
+      "validSampleCount": 4463
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:32:20.751008Z"
+}

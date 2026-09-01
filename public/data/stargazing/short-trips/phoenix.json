@@ -3,7 +3,7 @@
   "originName": "Phoenix",
   "countryCode": "US",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
@@ -107,6 +107,106 @@
     },
     {
       "rank": 2,
+      "destinationId": "sedona",
+      "destinationSlug": "sedona",
+      "destinationName": "Sedona",
+      "distanceKm": 151.94,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 5,
+          "score": 92
+        },
+        {
+          "month": 6,
+          "score": 92
+        },
+        {
+          "month": 9,
+          "score": 92
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 91,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 85,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 88,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 91,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 88,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 84,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 92,
+      "distanceUtility": 85,
+      "shortTripScore": 90.25,
+      "bestSiteId": "turkey-creek-trailhead-night",
+      "stayArea": {
+        "id": "sedona-town",
+        "name": "Sedona",
+        "affiliateQuery": "Sedona United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 92 in month 5.",
+        "Distance is 151.94 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Sedona."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 3,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -206,7 +306,307 @@
       "confidenceLevel": "moderate"
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "destinationId": "grand-canyon",
+      "destinationSlug": "grand-canyon",
+      "destinationName": "Grand Canyon",
+      "distanceKm": 289.16,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 97
+        },
+        {
+          "month": 9,
+          "score": 97
+        },
+        {
+          "month": 10,
+          "score": 97
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 96,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 97,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 97,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 97,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 93,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 97,
+      "distanceUtility": 60,
+      "shortTripScore": 87.75,
+      "bestSiteId": "desert-view-night",
+      "stayArea": {
+        "id": "grand-canyon-village",
+        "name": "Grand Canyon Village",
+        "affiliateQuery": "Grand Canyon Village United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 97 in month 6.",
+        "Distance is 289.16 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Grand Canyon Village."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 5,
+      "destinationId": "bryce-canyon",
+      "destinationSlug": "bryce-canyon",
+      "destinationName": "Bryce Canyon",
+      "distanceKm": 464.88,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 96
+        },
+        {
+          "month": 9,
+          "score": 95
+        },
+        {
+          "month": 8,
+          "score": 94
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 79,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 78,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 83,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 96,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 91,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 96,
+      "distanceUtility": 60,
+      "shortTripScore": 87,
+      "bestSiteId": "sunset-point-bryce",
+      "stayArea": {
+        "id": "bryce-canyon-city",
+        "name": "Bryce Canyon City",
+        "affiliateQuery": "Bryce Canyon City United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 96 in month 6.",
+        "Distance is 464.88 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Bryce Canyon City."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 6,
+      "destinationId": "joshua-tree",
+      "destinationSlug": "joshua-tree",
+      "destinationName": "Joshua Tree",
+      "distanceKm": 346.79,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 94
+        },
+        {
+          "month": 5,
+          "score": 93
+        },
+        {
+          "month": 10,
+          "score": 93
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 94,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 91,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 94,
+      "distanceUtility": 60,
+      "shortTripScore": 85.5,
+      "bestSiteId": "cottonwood-joshua-tree",
+      "stayArea": {
+        "id": "twentynine-palms",
+        "name": "Twentynine Palms",
+        "affiliateQuery": "Twentynine Palms United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 94 in month 4.",
+        "Distance is 346.79 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Twentynine Palms."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 7,
       "destinationId": "anza-borrego",
       "destinationSlug": "anza-borrego",
       "destinationName": "Anza-Borrego Desert",

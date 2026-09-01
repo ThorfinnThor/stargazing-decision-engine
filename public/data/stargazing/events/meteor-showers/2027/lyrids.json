@@ -91,6 +91,34 @@
     },
     {
       "rank": 3,
+      "destinationId": "grand-canyon",
+      "destinationSlug": "grand-canyon",
+      "destinationName": "Grand Canyon",
+      "siteId": "desert-view-night",
+      "siteSlug": "desert-view-night",
+      "siteName": "Desert View",
+      "climateScore": 95,
+      "moonScore": 9.55,
+      "radiantScore": 99.01,
+      "viewingScore": 70.17,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.9388,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 7.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 85.02,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "mcdonald-observatory",
       "destinationSlug": "mcdonald-observatory",
       "destinationName": "McDonald Observatory",
@@ -118,7 +146,7 @@
       ]
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -138,34 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 83.8,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "kitt-peak",
-      "destinationSlug": "kitt-peak",
-      "destinationName": "Kitt Peak",
-      "siteId": "kitt-peak-observatory",
-      "siteSlug": "kitt-peak-observatory",
-      "siteName": "Kitt Peak observatory area",
-      "climateScore": 94,
-      "moonScore": 9.19,
-      "radiantScore": 99.01,
-      "viewingScore": 69.56,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Phoenix",
-        "moonIlluminationFraction": 0.9388,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.9
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 86.88,
         "darkRadiantHours": 5.67
       },
       "caveats": [
@@ -261,6 +261,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "grand-canyon",
+      "destinationSlug": "grand-canyon",
+      "destinationName": "Grand Canyon",
+      "siteId": "desert-view-night",
+      "siteSlug": "desert-view-night",
+      "siteName": "Desert View",
+      "climateScore": 95,
+      "moonScore": 9.55,
+      "radiantScore": 99.01,
+      "viewingScore": 70.17,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.9388,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 7.53
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 85.02,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -281,34 +309,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 84.75,
         "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "mcdonald-observatory",
-      "destinationSlug": "mcdonald-observatory",
-      "destinationName": "McDonald Observatory",
-      "siteId": "davis-mountains-skyline-drive",
-      "siteSlug": "davis-mountains-skyline-drive",
-      "siteName": "Davis Mountains Skyline Drive",
-      "climateScore": 94,
-      "moonScore": 10.46,
-      "radiantScore": 98.5,
-      "viewingScore": 69.84,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.9427,
-        "moonlessHours": 1,
-        "totalDarknessHours": 8.01
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 85.91,
-        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

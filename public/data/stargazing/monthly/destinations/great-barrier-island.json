@@ -1,73 +1,72 @@
 {
   "destinationId": "great-barrier-island",
   "siteId": "medlands-beach-night",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:29:04.882092Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
   ],
   "months": [
     {
       "month": 1,
-      "score": 66.63,
-      "confidenceLevel": "low"
+      "score": 78,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 67.04,
-      "confidenceLevel": "low"
+      "score": 76,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 68.19,
-      "confidenceLevel": "low"
+      "score": 78,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 69.75,
-      "confidenceLevel": "low"
+      "score": 75,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 71.31,
-      "confidenceLevel": "low"
+      "score": 74,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 72.46,
-      "confidenceLevel": "low"
+      "score": 72,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 72.88,
-      "confidenceLevel": "low"
+      "score": 74,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 72.46,
-      "confidenceLevel": "low"
+      "score": 75,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 71.31,
-      "confidenceLevel": "low"
+      "score": 76,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 69.75,
-      "confidenceLevel": "low"
+      "score": 74,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 68.19,
-      "confidenceLevel": "low"
+      "score": 71,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 67.04,
-      "confidenceLevel": "low"
+      "score": 72,
+      "confidenceLevel": "high"
     }
   ]
 }

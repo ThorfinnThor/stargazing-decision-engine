@@ -1,73 +1,72 @@
 {
   "destinationId": "jaisalmer",
   "siteId": "sam-sand-dunes-camp-zone",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:33:11.182130Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility"
   ],
   "months": [
     {
       "month": 1,
-      "score": 81.55,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "high"
     },
     {
       "month": 2,
-      "score": 81.97,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "high"
     },
     {
       "month": 3,
-      "score": 83.11,
-      "confidenceLevel": "low"
+      "score": 83,
+      "confidenceLevel": "high"
     },
     {
       "month": 4,
-      "score": 84.68,
-      "confidenceLevel": "low"
+      "score": 81,
+      "confidenceLevel": "high"
     },
     {
       "month": 5,
-      "score": 86.24,
-      "confidenceLevel": "low"
+      "score": 78,
+      "confidenceLevel": "high"
     },
     {
       "month": 6,
-      "score": 87.38,
-      "confidenceLevel": "low"
+      "score": 77,
+      "confidenceLevel": "high"
     },
     {
       "month": 7,
-      "score": 87.8,
-      "confidenceLevel": "low"
+      "score": 62,
+      "confidenceLevel": "high"
     },
     {
       "month": 8,
-      "score": 87.38,
-      "confidenceLevel": "low"
+      "score": 66,
+      "confidenceLevel": "high"
     },
     {
       "month": 9,
-      "score": 86.24,
-      "confidenceLevel": "low"
+      "score": 80,
+      "confidenceLevel": "high"
     },
     {
       "month": 10,
-      "score": 84.68,
-      "confidenceLevel": "low"
+      "score": 82,
+      "confidenceLevel": "high"
     },
     {
       "month": 11,
-      "score": 83.11,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "high"
     },
     {
       "month": 12,
-      "score": 81.97,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "high"
     }
   ]
 }

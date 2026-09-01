@@ -1,0 +1,158 @@
+{
+  "siteId": "sam-sand-dunes-camp-zone",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 1.903811,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.55105,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2024,
+          "radiance": 1.903811,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2023,
+          "radiance": 1.563569,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.231876,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.320561,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        },
+        {
+          "year": 2024,
+          "radiance": 0.231876,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        },
+        {
+          "year": 2023,
+          "radiance": 0.207342,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.025254,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.023204,
+          "coverage": 1,
+          "validPixelCount": 13116,
+          "totalPixelCount": 13116
+        },
+        {
+          "year": 2024,
+          "radiance": 0.025254,
+          "coverage": 1,
+          "validPixelCount": 13116,
+          "totalPixelCount": 13116
+        },
+        {
+          "year": 2023,
+          "radiance": 0.033014,
+          "coverage": 1,
+          "validPixelCount": 13116,
+          "totalPixelCount": 13116
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.176273,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.1952,
+          "coverage": 1,
+          "validPixelCount": 77504,
+          "totalPixelCount": 77504
+        },
+        {
+          "year": 2024,
+          "radiance": 0.176273,
+          "coverage": 1,
+          "validPixelCount": 77504,
+          "totalPixelCount": 77504
+        },
+        {
+          "year": 2023,
+          "radiance": 0.165567,
+          "coverage": 1,
+          "validPixelCount": 77504,
+          "totalPixelCount": 77504
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 1.903811,
+  "radiance2to10": 0.231876,
+  "radiance10to30": 0.025254,
+  "radiance30to75": 0.176273,
+  "alanExposure": 0.562248,
+  "darknessScore": 59.64,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:33:03.938829Z"
+}

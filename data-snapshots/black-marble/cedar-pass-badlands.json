@@ -1,0 +1,158 @@
+{
+  "siteId": "cedar-pass-badlands",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.015405,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.015405,
+          "coverage": 1,
+          "validPixelCount": 1945,
+          "totalPixelCount": 1945
+        },
+        {
+          "year": 2024,
+          "radiance": 0.01347,
+          "coverage": 1,
+          "validPixelCount": 1945,
+          "totalPixelCount": 1945
+        },
+        {
+          "year": 2023,
+          "radiance": 0.019284,
+          "coverage": 1,
+          "validPixelCount": 1945,
+          "totalPixelCount": 1945
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.006386,
+      "coverage": 0.999938,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.006386,
+          "coverage": 1,
+          "validPixelCount": 16209,
+          "totalPixelCount": 16209
+        },
+        {
+          "year": 2024,
+          "radiance": 0.005196,
+          "coverage": 0.999938,
+          "validPixelCount": 16208,
+          "totalPixelCount": 16209
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007299,
+          "coverage": 1,
+          "validPixelCount": 16209,
+          "totalPixelCount": 16209
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.033281,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.033281,
+          "coverage": 1,
+          "validPixelCount": 95731,
+          "totalPixelCount": 95731
+        },
+        {
+          "year": 2024,
+          "radiance": 0.030051,
+          "coverage": 1,
+          "validPixelCount": 95731,
+          "totalPixelCount": 95731
+        },
+        {
+          "year": 2023,
+          "radiance": 0.035155,
+          "coverage": 1,
+          "validPixelCount": 95731,
+          "totalPixelCount": 95731
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.015405,
+  "radiance10to30": 0.006386,
+  "radiance30to75": 0.033281,
+  "alanExposure": 0.008815,
+  "darknessScore": 89.94,
+  "coverage": 0.999938,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:19:08.239040Z"
+}

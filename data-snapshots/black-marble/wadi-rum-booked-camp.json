@@ -1,0 +1,158 @@
+{
+  "siteId": "wadi-rum-booked-camp",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.071259,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.096638,
+          "coverage": 1,
+          "validPixelCount": 1618,
+          "totalPixelCount": 1618
+        },
+        {
+          "year": 2024,
+          "radiance": 0.054791,
+          "coverage": 1,
+          "validPixelCount": 1618,
+          "totalPixelCount": 1618
+        },
+        {
+          "year": 2023,
+          "radiance": 0.071259,
+          "coverage": 1,
+          "validPixelCount": 1618,
+          "totalPixelCount": 1618
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.3953,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.46369,
+          "coverage": 1,
+          "validPixelCount": 13467,
+          "totalPixelCount": 13467
+        },
+        {
+          "year": 2024,
+          "radiance": 0.373022,
+          "coverage": 1,
+          "validPixelCount": 13467,
+          "totalPixelCount": 13467
+        },
+        {
+          "year": 2023,
+          "radiance": 0.3953,
+          "coverage": 1,
+          "validPixelCount": 13467,
+          "totalPixelCount": 13467
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.007236,
+      "coverage": 0.996843,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.062417,
+          "coverage": 0.997459,
+          "validPixelCount": 79308,
+          "totalPixelCount": 79510
+        },
+        {
+          "year": 2024,
+          "radiance": 1.007236,
+          "coverage": 0.997145,
+          "validPixelCount": 79283,
+          "totalPixelCount": 79510
+        },
+        {
+          "year": 2023,
+          "radiance": 0.998324,
+          "coverage": 0.996843,
+          "validPixelCount": 79259,
+          "totalPixelCount": 79510
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.071259,
+  "radiance10to30": 0.3953,
+  "radiance30to75": 1.007236,
+  "alanExposure": 0.140293,
+  "darknessScore": 82.74,
+  "coverage": 0.996843,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:38:36.636647Z"
+}

@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "capitol-reef",
+      "destinationSlug": "capitol-reef",
+      "destinationName": "Capitol Reef",
+      "siteId": "panorama-point-capitol-reef",
+      "siteSlug": "panorama-point-capitol-reef",
+      "siteName": "Panorama Point",
+      "climateScore": 93,
+      "moonScore": 80.48,
+      "radiantScore": 95.16,
+      "viewingScore": 89.68,
+      "moonConditions": {
+        "dateLocal": "2027-12-22",
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.2042,
+        "moonlessHours": 9.17,
+        "totalDarknessHours": 11.34
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 47.89,
+        "darkRadiantHours": 11.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 46.57,
         "darkRadiantHours": 11.33
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 95,
-      "moonScore": 78.88,
-      "radiantScore": 90.1,
-      "viewingScore": 89.18,
-      "moonConditions": {
-        "dateLocal": "2027-12-22",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.2078,
-        "moonlessHours": 8.59,
-        "totalDarknessHours": 10.91
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 38.7,
-        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

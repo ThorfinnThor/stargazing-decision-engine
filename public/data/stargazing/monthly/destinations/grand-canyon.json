@@ -1,73 +1,73 @@
 {
   "destinationId": "grand-canyon",
   "siteId": "mather-point-night",
-  "dataStatus": "seed",
-  "algorithmVersion": "seed-fixture-0.1.0",
-  "generatedAt": "2026-08-20T00:00:00.000Z",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:27:03.857636Z",
   "caveats": [
-    "Not production climate data",
-    "Not a weather forecast"
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
   ],
   "months": [
     {
       "month": 1,
-      "score": 80.2,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 2,
-      "score": 80.62,
-      "confidenceLevel": "low"
+      "score": 84,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 3,
-      "score": 81.76,
-      "confidenceLevel": "low"
+      "score": 89,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 4,
-      "score": 83.32,
-      "confidenceLevel": "low"
+      "score": 93,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 5,
-      "score": 84.89,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 6,
-      "score": 86.03,
-      "confidenceLevel": "low"
+      "score": 96,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 7,
-      "score": 86.45,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 8,
-      "score": 86.03,
-      "confidenceLevel": "low"
+      "score": 93,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 9,
-      "score": 84.89,
-      "confidenceLevel": "low"
+      "score": 96,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 10,
-      "score": 83.32,
-      "confidenceLevel": "low"
+      "score": 95,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 11,
-      "score": 81.76,
-      "confidenceLevel": "low"
+      "score": 91,
+      "confidenceLevel": "moderate"
     },
     {
       "month": 12,
-      "score": 80.62,
-      "confidenceLevel": "low"
+      "score": 85,
+      "confidenceLevel": "moderate"
     }
   ]
 }

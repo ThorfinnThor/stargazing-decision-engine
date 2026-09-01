@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "capitol-reef",
+      "destinationSlug": "capitol-reef",
+      "destinationName": "Capitol Reef",
+      "siteId": "panorama-point-capitol-reef",
+      "siteSlug": "panorama-point-capitol-reef",
+      "siteName": "Panorama Point",
+      "climateScore": 92,
+      "moonScore": 92.56,
+      "radiantScore": 94.48,
+      "viewingScore": 92.66,
+      "moonConditions": {
+        "dateLocal": "2027-01-03",
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.1115,
+        "moonlessHours": 10.61,
+        "totalDarknessHours": 11.27
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 58.72,
+        "darkRadiantHours": 4.33
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 50.16,
         "darkRadiantHours": 3.17
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "great-sand-dunes",
-      "destinationSlug": "great-sand-dunes",
-      "destinationName": "Great Sand Dunes",
-      "siteId": "great-sand-dunes-dark-sky",
-      "siteSlug": "great-sand-dunes-dark-sky",
-      "siteName": "Dunes Parking Area",
-      "climateScore": 91,
-      "moonScore": 92.05,
-      "radiantScore": 93.41,
-      "viewingScore": 91.8,
-      "moonConditions": {
-        "dateLocal": "2027-01-03",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.1115,
-        "moonlessHours": 10.5,
-        "totalDarknessHours": 11.24
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 57.24,
-        "darkRadiantHours": 4.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,26 +289,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 96,
-      "moonScore": 91.04,
-      "radiantScore": 83.84,
-      "viewingScore": 92.08,
+      "destinationId": "capitol-reef",
+      "destinationSlug": "capitol-reef",
+      "destinationName": "Capitol Reef",
+      "siteId": "panorama-point-capitol-reef",
+      "siteSlug": "panorama-point-capitol-reef",
+      "siteName": "Panorama Point",
+      "climateScore": 92,
+      "moonScore": 92.56,
+      "radiantScore": 94.48,
+      "viewingScore": 92.66,
       "moonConditions": {
         "dateLocal": "2027-01-03",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.114,
-        "moonlessHours": 10,
-        "totalDarknessHours": 10.86
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.1115,
+        "moonlessHours": 10.61,
+        "totalDarknessHours": 11.27
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 50.16,
-        "darkRadiantHours": 3.17
+        "maximumAltitudeDeg": 58.72,
+        "darkRadiantHours": 4.33
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

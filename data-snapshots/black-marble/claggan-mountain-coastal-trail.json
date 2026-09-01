@@ -1,0 +1,158 @@
+{
+  "siteId": "claggan-mountain-coastal-trail",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 101,
+          "totalPixelCount": 101
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 101,
+          "totalPixelCount": 101
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 101,
+          "totalPixelCount": 101
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.020215,
+      "coverage": 0.99205,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.012713,
+          "coverage": 0.99205,
+          "validPixelCount": 2371,
+          "totalPixelCount": 2390
+        },
+        {
+          "year": 2024,
+          "radiance": 0.020215,
+          "coverage": 0.993724,
+          "validPixelCount": 2375,
+          "totalPixelCount": 2390
+        },
+        {
+          "year": 2023,
+          "radiance": 0.041323,
+          "coverage": 0.993305,
+          "validPixelCount": 2374,
+          "totalPixelCount": 2390
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.05748,
+      "coverage": 0.993618,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.050048,
+          "coverage": 0.995226,
+          "validPixelCount": 19806,
+          "totalPixelCount": 19901
+        },
+        {
+          "year": 2024,
+          "radiance": 0.05748,
+          "coverage": 0.994774,
+          "validPixelCount": 19797,
+          "totalPixelCount": 19901
+        },
+        {
+          "year": 2023,
+          "radiance": 0.101134,
+          "coverage": 0.993618,
+          "validPixelCount": 19774,
+          "totalPixelCount": 19901
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.068441,
+      "coverage": 0.992078,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.054167,
+          "coverage": 0.993193,
+          "validPixelCount": 116725,
+          "totalPixelCount": 117525
+        },
+        {
+          "year": 2024,
+          "radiance": 0.068441,
+          "coverage": 0.99281,
+          "validPixelCount": 116680,
+          "totalPixelCount": 117525
+        },
+        {
+          "year": 2023,
+          "radiance": 0.100463,
+          "coverage": 0.992078,
+          "validPixelCount": 116594,
+          "totalPixelCount": 117525
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.020215,
+  "radiance10to30": 0.05748,
+  "radiance30to75": 0.068441,
+  "alanExposure": 0.021008,
+  "darknessScore": 89.27,
+  "coverage": 0.99205,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:20:04.715325Z"
+}
