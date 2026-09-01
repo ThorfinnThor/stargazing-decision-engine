@@ -40,3 +40,19 @@ test("destination editorial structured data links the guide, FAQ, and cited prim
   assert.equal(article?.isAccessibleForFree, true);
   assert.equal((faq?.mainEntity as unknown[]).length, guide.faq.length);
 });
+
+test("destination structured data omits sources used only by a separate night route", () => {
+  const guide = guides.find((candidate) => candidate.slug === "la-palma");
+  const destination = seed.destinations.find((candidate) => candidate.id === guide?.destinationId);
+  assert.ok(guide);
+  assert.ok(destination);
+  const value = buildDestinationEditorialStructuredData({ destination, guide, locale: "en", url: "https://stargazingindex.com/en/stargazing-destinations/la-palma/", includeIndependentRoute: false });
+  const graph = value["@graph"] as Array<Record<string, unknown>>;
+  const article = graph.find((entry) => entry["@type"] === "Article");
+  const visibleSourceIds = new Set([
+    ...guide.sections.flatMap((section) => section.sourceIds),
+    ...guide.fieldNotes.flatMap((note) => note.sourceIds),
+    ...guide.faq.flatMap((item) => item.sourceIds),
+  ]);
+  assert.deepEqual(article?.citation, guide.sources.filter((source) => visibleSourceIds.has(source.id)).map((source) => source.url));
+});

@@ -109,7 +109,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const canonical = seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`;
-  const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical, image: image?.localPath }) : null;
+  const editorialStructuredData = guide ? buildDestinationEditorialStructuredData({ destination, guide, locale, url: canonical, image: image?.localPath, includeIndependentRoute: !locationTour }) : null;
   const hasRealScores = siteViews.length > 0 && siteViews.every((view) => view.monthly.dataStatus === "real");
   return (
     <main className="event-page destination-profile-page" lang={isGerman ? "de" : "en"}>
@@ -176,7 +176,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
       </aside>}
       <AffiliateDestinationModules destinationId={destination.id} destinationName={destination.name} destinationQuery={destination.affiliateQuery} locale={locale} />
       </div>
-      {guide && <DestinationEditorialGuideView guide={guide} locale={locale} />}
+      {guide && <DestinationEditorialGuideView guide={guide} locale={locale} showIndependentRoute={!locationTour} />}
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>

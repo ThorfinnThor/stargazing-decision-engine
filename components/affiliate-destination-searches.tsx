@@ -9,7 +9,7 @@ export function AffiliateDestinationSearches({ destinationId, destinationName, l
   const activities = searches.filter((search) => search.variantId === "activities");
   if (!stargazing.length && !activities.length) return null;
 
-  return <details className="affiliate-destination-searches">
+  return <details className="affiliate-destination-searches" open>
     <summary id={`affiliate-search-title-${destinationId}`}>
       <span><span className="eyebrow">{isGerman ? "Weitere buchbare Möglichkeiten" : "More bookable options"}</span><strong>{isGerman ? `Aktivitäten rund um ${destinationName}` : `Activities around ${destinationName}`}</strong></span>
       <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Suchen anzeigen" : "Show searches"}</span><span>{isGerman ? "Suchen schließen" : "Close searches"}</span></span>
