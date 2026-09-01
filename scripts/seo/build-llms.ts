@@ -57,7 +57,7 @@ ${section("Destination guides", "destination")}${section("Location tours", "loca
 - [Destination index](${absolute("/data/stargazing/destinations/index.json")}): Destination identifiers, countries, time zones, tags, and related observing sites.
 - [Observation-site index](${absolute("/data/stargazing/sites/index.json")}): Coordinates, elevation, access status, and source-backed access notes.
 - [Editorial destination-guide index](${absolute("/data/stargazing/editorial/destinations/index.json")}): Reviewed guide identifiers, word counts, source counts, and revision dates.
-- [Editorial gear-guide index](${absolute("/data/stargazing/gear/index.json")}): Bilingual specification comparisons with cited primary sources and dormant affiliate fields.
+- [Editorial gear-guide index](${absolute("/data/stargazing/gear/index.json")}): Bilingual specification comparisons with cited primary sources and clearly labelled affiliate links where a partner is approved.
 - [SEO registry](${absolute("/data/stargazing/seo/registry.json")}): Canonicals, language alternates, descriptions, modification dates, and indexability decisions.
 
 ## Optional
