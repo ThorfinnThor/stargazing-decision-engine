@@ -1,0 +1,33 @@
+{
+  "siteId": "meanarra-hill-lookout",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -27.694,
+    114.174
+  ],
+  "tile": "S28_00_E114_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S28_00_E114_00_DEM/Copernicus_DSM_COG_10_S28_00_E114_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 0.0,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 0.0,
+      "validSampleCount": 222
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 7.106,
+      "validSampleCount": 3708
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:28:31.699920Z"
+}

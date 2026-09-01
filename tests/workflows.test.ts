@@ -38,6 +38,10 @@ test("ingestion is manual and commits only after the full gate", () => {
   assertIncludes(ingest, "pnpm data:score:real");
   assertIncludes(ingest, "pnpm data:score:real:validate");
   assertIncludes(ingest, "pnpm data:dem:fetch --site \"$site\" --public-fallback");
+  assertIncludes(ingest, "xargs -r -n 1 -P 3");
+  assertIncludes(ingest, "data-config/sources/observation-sites.json | sort -u > /tmp/stargazing-destinations");
+  assertIncludes(ingest, 'pnpm data:calendar:real -- --start "$calendar_start" --months 36 --destination "$destination"');
+  assertIncludes(ingest, "pnpm data:calendar:manifest");
   assertIncludes(ingest, "pnpm test");
   assertIncludes(ingest, "pnpm build");
   assertIncludes(ingest, "git diff --cached --quiet");

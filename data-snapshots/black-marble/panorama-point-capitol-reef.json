@@ -1,0 +1,158 @@
+{
+  "siteId": "panorama-point-capitol-reef",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1793,
+          "totalPixelCount": 1793
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1793,
+          "totalPixelCount": 1793
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1793,
+          "totalPixelCount": 1793
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.009981,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.010763,
+          "coverage": 1,
+          "validPixelCount": 14910,
+          "totalPixelCount": 14910
+        },
+        {
+          "year": 2024,
+          "radiance": 0.007889,
+          "coverage": 1,
+          "validPixelCount": 14910,
+          "totalPixelCount": 14910
+        },
+        {
+          "year": 2023,
+          "radiance": 0.009981,
+          "coverage": 1,
+          "validPixelCount": 14910,
+          "totalPixelCount": 14910
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.005837,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.006098,
+          "coverage": 1,
+          "validPixelCount": 88094,
+          "totalPixelCount": 88094
+        },
+        {
+          "year": 2024,
+          "radiance": 0.004106,
+          "coverage": 1,
+          "validPixelCount": 88094,
+          "totalPixelCount": 88094
+        },
+        {
+          "year": 2023,
+          "radiance": 0.005837,
+          "coverage": 1,
+          "validPixelCount": 88094,
+          "totalPixelCount": 88094
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0.009981,
+  "radiance30to75": 0.005837,
+  "alanExposure": 0.002072,
+  "darknessScore": 99.42,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:30:07.846506Z"
+}

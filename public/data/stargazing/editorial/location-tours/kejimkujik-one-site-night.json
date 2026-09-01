@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "kejimkujik-one-site-night",
+  "slug": "kejimkujik-one-site-night",
+  "destinationId": "kejimkujik",
+  "recommendedSiteId": "jeremys-bay-kejimkujik",
+  "title": {
+    "en": "A forest night at Kejimkujik's Sky Circle",
+    "de": "Eine Waldnacht am Sky Circle in Kejimkujik"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Annapolis Royal to Jeremy's Bay Campground, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Annapolis Royal zu Jeremy's Bay Campground, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Check the Sky Circle schedule or reserve Jeremy's Bay, walk the short route before dusk and keep the return entirely within the known campground network. This self-guided route uses Jeremy's Bay Campground as the fixed site and Annapolis Royal as the return base. Seasonal operations, insects, fog, wildlife and wooded navigation make a confirmed programme or campsite more valuable than a random clearing. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Prüfe den Sky-Circle-Termin oder reserviere Jeremy's Bay, gehe die kurze Route vor der Dämmerung und halte den Rückweg vollständig im bekannten Campingnetz. Diese selbst geführte Route nutzt Jeremy's Bay Campground als festen Ort und Annapolis Royal als Rückkehrbasis. Saisonbetrieb, Insekten, Nebel, Wildtiere und Navigation im Wald machen ein bestätigtes Programm oder einen Stellplatz wertvoller als irgendeine Lichtung. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Jeremy's Bay Campground",
+        "de": "Jeremy's Bay Campground"
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Annapolis Royal",
+        "de": "Annapolis Royal"
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Kejimkujik Sky Circle, only as a separately verified plan",
+        "de": "Kejimkujik Sky Circle, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "kejimkujik-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Jeremy's Bay Campground",
+        "de": "Der Abendrhythmus an Jeremy's Bay Campground"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Annapolis Royal, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Annapolis Royal, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "kejimkujik-place",
+            "kejimkujik-access",
+            "kejimkujik-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Jeremy's Bay Campground, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Jeremy's Bay Campground lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "kejimkujik-place",
+            "kejimkujik-access",
+            "kejimkujik-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Jeremy's Bay Campground systematically, inspect the ground and return directly to Annapolis Royal. Do not trade a safe finish for a late move toward Kejimkujik Sky Circle or an unverified roadside horizon.",
+            "de": "Verlasse Jeremy's Bay Campground systematisch, prüfe den Boden und kehre direkt nach Annapolis Royal zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Kejimkujik Sky Circle oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "kejimkujik-place",
+            "kejimkujik-access",
+            "kejimkujik-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kejimkujik-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Kejimkujik route",
+        "de": "Was die Route in Kejimkujik absagt"
+      },
+      "body": {
+        "en": "Seasonal operations, insects, fog, wildlife and wooded navigation make a confirmed programme or campsite more valuable than a random clearing. Treat that limit as a decision made before equipment leaves the vehicle. A cancelled programme or wet, foggy forest moves the evening under shelter instead of to an unmarked lakeshore. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Saisonbetrieb, Insekten, Nebel, Wildtiere und Navigation im Wald machen ein bestätigtes Programm oder einen Stellplatz wertvoller als irgendeine Lichtung. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Ein abgesagtes Programm oder nasser, nebliger Wald verlagert den Abend in den Schutz statt an ein unmarkiertes Ufer. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "kejimkujik-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Jeremy's Bay Campground is enough for one night",
+        "de": "Warum Jeremy's Bay Campground für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Kejimkujik places its astronomy inside a forest and lake landscape rather than on an exposed summit. The Sky Circle is the clearest programme-led choice. Jeremy's Bay works for campers who can keep the session inside their legal overnight plan. This tour commits to Jeremy's Bay Campground because a single known site preserves attention for the sky and the return. Kejimkujik Sky Circle is useful information for another date, not a target to add after darkness.",
+          "Protect Mi'kmaw cultural context, quiet hours, shoreline habitat and other campers' dark adaptation. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Kejimkujik legt seine Astronomie in eine Wald- und Seenlandschaft statt auf einen exponierten Gipfel. Der Sky Circle ist die klarste programmgebundene Wahl. Jeremy's Bay passt für Camper, die die Sitzung in ihren legalen Übernachtungsplan integrieren. Diese Tour legt sich auf Jeremy's Bay Campground fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Kejimkujik Sky Circle ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Respektiere Mi'kmaw-Kulturkontext, Ruhezeiten, Uferlebensräume und die Dunkeladaption anderer Camper. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "kejimkujik-place",
+        "kejimkujik-access",
+        "kejimkujik-status"
+      ]
+    },
+    {
+      "id": "kejimkujik-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Annapolis Royal",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Annapolis Royal"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Jeremy's Bay Campground is confirmed",
+            "de": "Jeremy's Bay Campground ist bestätigt"
+          },
+          "body": {
+            "en": "For Jeremy's Bay Campground, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Jeremy's Bay Campground nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "kejimkujik-place",
+            "kejimkujik-access",
+            "kejimkujik-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "A cancelled programme or wet, foggy forest moves the evening under shelter instead of to an unmarked lakeshore. Do not substitute Kejimkujik Sky Circle unless its own authority, route and timing have been checked before departure.",
+            "de": "Ein abgesagtes Programm oder nasser, nebliger Wald verlagert den Abend in den Schutz statt an ein unmarkiertes Ufer. Ersetze den Ort nicht durch Kejimkujik Sky Circle, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "kejimkujik-place",
+            "kejimkujik-access",
+            "kejimkujik-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "kejimkujik-place",
+    "kejimkujik-access",
+    "kejimkujik-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

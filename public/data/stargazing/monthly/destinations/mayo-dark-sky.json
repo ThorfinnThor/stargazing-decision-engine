@@ -1,0 +1,73 @@
+{
+  "destinationId": "mayo-dark-sky",
+  "siteId": "claggan-mountain-coastal-trail",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:20:13.611514Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "Stargazing score is forced to zero when ERA5 contains no astronomical-night hours"
+  ],
+  "months": [
+    {
+      "month": 1,
+      "score": 53,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 2,
+      "score": 54,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 3,
+      "score": 55,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 4,
+      "score": 56,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 5,
+      "score": 54,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 6,
+      "score": 0,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 7,
+      "score": 51,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 8,
+      "score": 53,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 9,
+      "score": 54,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 10,
+      "score": 54,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 11,
+      "score": 53,
+      "confidenceLevel": "high"
+    },
+    {
+      "month": 12,
+      "score": 53,
+      "confidenceLevel": "high"
+    }
+  ]
+}

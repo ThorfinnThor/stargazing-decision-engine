@@ -1,0 +1,158 @@
+{
+  "siteId": "hidden-valley-joshua-tree",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1697,
+          "totalPixelCount": 1697
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1697,
+          "totalPixelCount": 1697
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1697,
+          "totalPixelCount": 1697
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.09836,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.136087,
+          "coverage": 1,
+          "validPixelCount": 14116,
+          "totalPixelCount": 14116
+        },
+        {
+          "year": 2024,
+          "radiance": 1.049389,
+          "coverage": 1,
+          "validPixelCount": 14116,
+          "totalPixelCount": 14116
+        },
+        {
+          "year": 2023,
+          "radiance": 1.09836,
+          "coverage": 1,
+          "validPixelCount": 14116,
+          "totalPixelCount": 14116
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.368126,
+      "coverage": 0.999856,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.450727,
+          "coverage": 0.999928,
+          "validPixelCount": 83406,
+          "totalPixelCount": 83412
+        },
+        {
+          "year": 2024,
+          "radiance": 1.344449,
+          "coverage": 0.999856,
+          "validPixelCount": 83400,
+          "totalPixelCount": 83412
+        },
+        {
+          "year": 2023,
+          "radiance": 1.368126,
+          "coverage": 0.999904,
+          "validPixelCount": 83404,
+          "totalPixelCount": 83412
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 1.09836,
+  "radiance30to75": 1.368126,
+  "alanExposure": 0.197383,
+  "darknessScore": 79.61,
+  "coverage": 0.999856,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:22:54.593168Z"
+}

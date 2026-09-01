@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "grand-canyon-one-site-night",
+  "slug": "grand-canyon-one-site-night",
+  "destinationId": "grand-canyon",
+  "recommendedSiteId": "mather-point-night",
+  "title": {
+    "en": "A South Rim observing night with the edge kept visible",
+    "de": "Eine Beobachtungsnacht am South Rim mit sichtbarer Kante"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Grand Canyon Village to Mather Point, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Grand Canyon Village zu Mather Point, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Walk the Mather Point approach while it is light, choose a position behind established barriers and return to the village before cold or fatigue changes judgement. This self-guided route uses Mather Point as the fixed site and Grand Canyon Village as the return base. Cliff edges, altitude, winter ice, summer storms and long night drives outweigh small differences in modeled sky quality between overlooks. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Gehe den Zugang zu Mather Point bei Licht ab, wähle einen Platz hinter bestehenden Barrieren und kehre ins Village zurück, bevor Kälte oder Müdigkeit das Urteil verändern. Diese selbst geführte Route nutzt Mather Point als festen Ort und Grand Canyon Village als Rückkehrbasis. Abbruchkanten, Höhe, Wintereis, Sommergewitter und lange Nachtfahrten wiegen schwerer als kleine Unterschiede der modellierten Himmelsqualität zwischen Aussichtspunkten. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Mather Point",
+        "de": "Mather Point"
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Grand Canyon Village",
+        "de": "Grand Canyon Village"
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Desert View, only as a separately verified plan",
+        "de": "Desert View, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "grand-canyon-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Grand Canyon route",
+        "de": "Was die Route in Grand Canyon absagt"
+      },
+      "body": {
+        "en": "Cliff edges, altitude, winter ice, summer storms and long night drives outweigh small differences in modeled sky quality between overlooks. Treat that limit as a decision made before equipment leaves the vehicle. If wind, ice or lightning develops, use the nearby indoor and lodging plan rather than moving to another rim viewpoint in darkness. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Abbruchkanten, Höhe, Wintereis, Sommergewitter und lange Nachtfahrten wiegen schwerer als kleine Unterschiede der modellierten Himmelsqualität zwischen Aussichtspunkten. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Bei Wind, Eis oder Blitz nutze den nahen Innenraum- und Unterkunftsplan, statt in der Dunkelheit zu einem anderen Rim-Aussichtspunkt zu wechseln. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "grand-canyon-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Grand Canyon Village",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Grand Canyon Village"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Mather Point is confirmed",
+            "de": "Mather Point ist bestätigt"
+          },
+          "body": {
+            "en": "For Mather Point, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Mather Point nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "grand-canyon-place",
+            "grand-canyon-access",
+            "grand-canyon-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "If wind, ice or lightning develops, use the nearby indoor and lodging plan rather than moving to another rim viewpoint in darkness. Do not substitute Desert View unless its own authority, route and timing have been checked before departure.",
+            "de": "Bei Wind, Eis oder Blitz nutze den nahen Innenraum- und Unterkunftsplan, statt in der Dunkelheit zu einem anderen Rim-Aussichtspunkt zu wechseln. Ersetze den Ort nicht durch Desert View, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "grand-canyon-place",
+            "grand-canyon-access",
+            "grand-canyon-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grand-canyon-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Mather Point",
+        "de": "Der Abendrhythmus an Mather Point"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Grand Canyon Village, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Grand Canyon Village, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "grand-canyon-place",
+            "grand-canyon-access",
+            "grand-canyon-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Mather Point, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Mather Point lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "grand-canyon-place",
+            "grand-canyon-access",
+            "grand-canyon-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Mather Point systematically, inspect the ground and return directly to Grand Canyon Village. Do not trade a safe finish for a late move toward Desert View or an unverified roadside horizon.",
+            "de": "Verlasse Mather Point systematisch, prüfe den Boden und kehre direkt nach Grand Canyon Village zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Desert View oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "grand-canyon-place",
+            "grand-canyon-access",
+            "grand-canyon-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "grand-canyon-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Mather Point is enough for one night",
+        "de": "Warum Mather Point für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Grand Canyon darkness is exceptional, yet the rim itself makes careless night movement unacceptable. Mather Point is the practical default because its established visitor infrastructure is close to Grand Canyon Village. Desert View belongs to a deliberate east-rim itinerary, not a late chase for a darker horizon. This tour commits to Mather Point because a single known site preserves attention for the sky and the return. Desert View is useful information for another date, not a target to add after darkness.",
+          "Never step beyond railings for a photograph, keep paths open and use only shielded light directed at the ground. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Die Dunkelheit am Grand Canyon ist außergewöhnlich, doch die Abbruchkante verbietet unvorsichtige Nachtbewegung. Mather Point ist wegen der bestehenden Infrastruktur nahe Grand Canyon Village die praktische Standardwahl. Desert View gehört zu einer geplanten Ost-Rim-Route und nicht zu einer späten Jagd nach dunklerem Horizont. Diese Tour legt sich auf Mather Point fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Desert View ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Steige für ein Foto niemals über Geländer, halte Wege offen und nutze nur abgeschirmtes, nach unten gerichtetes Licht. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "grand-canyon-place",
+        "grand-canyon-access",
+        "grand-canyon-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "grand-canyon-place",
+    "grand-canyon-access",
+    "grand-canyon-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

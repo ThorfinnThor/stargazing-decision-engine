@@ -3,6 +3,207 @@
   "originName": "Auckland",
   "countryCode": "NZ",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
-  "entries": []
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "entries": [
+    {
+      "rank": 1,
+      "destinationId": "great-barrier-island",
+      "destinationSlug": "great-barrier-island",
+      "destinationName": "Aotea Great Barrier Island",
+      "distanceKm": 92.42,
+      "distanceBand": "near",
+      "bestMonths": [
+        {
+          "month": 1,
+          "score": 78
+        },
+        {
+          "month": 3,
+          "score": 78
+        },
+        {
+          "month": 2,
+          "score": 76
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 78,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 78,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 75,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 74,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 72,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 74,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 75,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 74,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 71,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 72,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 78,
+      "distanceUtility": 100,
+      "shortTripScore": 83.5,
+      "bestSiteId": "medlands-beach-night",
+      "stayArea": {
+        "id": "claris-aotea",
+        "name": "Claris",
+        "affiliateQuery": "Claris New Zealand"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 78 in month 1.",
+        "Distance is 92.42 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Claris."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
+      "destinationId": "wairarapa",
+      "destinationSlug": "wairarapa",
+      "destinationName": "Wairarapa",
+      "distanceKm": 481.62,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 2,
+          "score": 72
+        },
+        {
+          "month": 3,
+          "score": 71
+        },
+        {
+          "month": 1,
+          "score": 70
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 70,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 72,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 71,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 70,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 66,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 65,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 65,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 72,
+      "distanceUtility": 60,
+      "shortTripScore": 69,
+      "bestSiteId": "star-safari-wairarapa",
+      "stayArea": {
+        "id": "martinborough",
+        "name": "Martinborough",
+        "affiliateQuery": "Martinborough New Zealand"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 72 in month 2.",
+        "Distance is 481.62 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Martinborough."
+      ],
+      "confidenceLevel": "high"
+    }
+  ]
 }

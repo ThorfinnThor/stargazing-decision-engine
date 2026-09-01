@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "mayo-dark-sky-one-site-night",
+  "slug": "mayo-dark-sky-one-site-night",
+  "destinationId": "mayo-dark-sky",
+  "recommendedSiteId": "claggan-mountain-coastal-trail",
+  "title": {
+    "en": "An Atlantic dark-sky night with a dry return",
+    "de": "Eine Atlantik-Dark-Sky-Nacht mit trockenem Rückweg"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Newport, County Mayo to Claggan Mountain Coastal Trail, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Newport, County Mayo zu Claggan Mountain Coastal Trail, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Start from Newport with offline directions, inspect the chosen path in daylight and set a firm return time before rain reduces visibility. This self-guided route uses Claggan Mountain Coastal Trail as the fixed site and Newport, County Mayo as the return base. Fast showers, saturated ground, wind and weak mobile coverage can matter more than the climatological monthly score. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Starte in Newport mit Offline-Navigation, prüfe den gewählten Weg bei Tageslicht und setze eine feste Rückkehrzeit, bevor Regen die Sicht mindert. Diese selbst geführte Route nutzt Claggan Mountain Coastal Trail als festen Ort und Newport, County Mayo als Rückkehrbasis. Schnelle Schauer, durchnässter Boden, Wind und schwacher Mobilfunk können wichtiger sein als der klimatologische Monatswert. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Claggan Mountain Coastal Trail",
+        "de": "Claggan Mountain Coastal Trail"
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Newport, County Mayo",
+        "de": "Newport, County Mayo"
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Brogan Carroll Bothy, only as a separately verified plan",
+        "de": "Brogan Carroll Bothy, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "mayo-dark-sky-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Mayo Dark Sky Park route",
+        "de": "Was die Route in Mayo Dark Sky Park absagt"
+      },
+      "body": {
+        "en": "Fast showers, saturated ground, wind and weak mobile coverage can matter more than the climatological monthly score. Treat that limit as a decision made before equipment leaves the vehicle. When Atlantic cloud closes in, a village-based evening is the sensible fallback; moving between remote sites rarely restores a useful sky. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Schnelle Schauer, durchnässter Boden, Wind und schwacher Mobilfunk können wichtiger sein als der klimatologische Monatswert. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Wenn Atlantikwolken schließen, ist ein Abend im Ort die sinnvolle Alternative. Wechsel zwischen abgelegenen Orten bringt selten einen brauchbaren Himmel zurück. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "mayo-dark-sky-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Newport, County Mayo",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Newport, County Mayo"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Claggan Mountain Coastal Trail is confirmed",
+            "de": "Claggan Mountain Coastal Trail ist bestätigt"
+          },
+          "body": {
+            "en": "For Claggan Mountain Coastal Trail, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Claggan Mountain Coastal Trail nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "mayo-dark-sky-place",
+            "mayo-dark-sky-access",
+            "mayo-dark-sky-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "When Atlantic cloud closes in, a village-based evening is the sensible fallback; moving between remote sites rarely restores a useful sky. Do not substitute Brogan Carroll Bothy unless its own authority, route and timing have been checked before departure.",
+            "de": "Wenn Atlantikwolken schließen, ist ein Abend im Ort die sinnvolle Alternative. Wechsel zwischen abgelegenen Orten bringt selten einen brauchbaren Himmel zurück. Ersetze den Ort nicht durch Brogan Carroll Bothy, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "mayo-dark-sky-place",
+            "mayo-dark-sky-access",
+            "mayo-dark-sky-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mayo-dark-sky-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Claggan Mountain Coastal Trail",
+        "de": "Der Abendrhythmus an Claggan Mountain Coastal Trail"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Newport, County Mayo, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Newport, County Mayo, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "mayo-dark-sky-place",
+            "mayo-dark-sky-access",
+            "mayo-dark-sky-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Claggan Mountain Coastal Trail, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Claggan Mountain Coastal Trail lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "mayo-dark-sky-place",
+            "mayo-dark-sky-access",
+            "mayo-dark-sky-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Claggan Mountain Coastal Trail systematically, inspect the ground and return directly to Newport, County Mayo. Do not trade a safe finish for a late move toward Brogan Carroll Bothy or an unverified roadside horizon.",
+            "de": "Verlasse Claggan Mountain Coastal Trail systematisch, prüfe den Boden und kehre direkt nach Newport, County Mayo zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Brogan Carroll Bothy oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "mayo-dark-sky-place",
+            "mayo-dark-sky-access",
+            "mayo-dark-sky-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mayo-dark-sky-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Claggan Mountain Coastal Trail is enough for one night",
+        "de": "Warum Claggan Mountain Coastal Trail für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Mayo's official viewing points sit in a wet Atlantic landscape where low elevation does not mean simple conditions. Claggan offers a coastal approach. Brogan Carroll Bothy shifts the experience inland and should be chosen before departure, not after cloud arrives. This tour commits to Claggan Mountain Coastal Trail because a single known site preserves attention for the sky and the return. Brogan Carroll Bothy is useful information for another date, not a target to add after darkness.",
+          "Remain on signed routes, close gates, keep peat and coastal vegetation intact and direct light away from homes. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Mayos offizielle Aussichtspunkte liegen in einer nassen Atlantiklandschaft, in der geringe Höhe keine einfachen Bedingungen bedeutet. Claggan bietet einen Küstenzugang. Brogan Carroll Bothy verlagert das Erlebnis ins Inland und wird vor der Abfahrt gewählt, nicht erst bei Wolken. Diese Tour legt sich auf Claggan Mountain Coastal Trail fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Brogan Carroll Bothy ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Bleibe auf beschilderten Routen, schließe Tore, schütze Torf und Küstenvegetation und richte Licht von Häusern weg. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "mayo-dark-sky-place",
+        "mayo-dark-sky-access",
+        "mayo-dark-sky-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "mayo-dark-sky-place",
+    "mayo-dark-sky-access",
+    "mayo-dark-sky-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

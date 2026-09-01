@@ -3,7 +3,7 @@
   "originName": "Edinburgh",
   "countryCode": "GB",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
@@ -307,6 +307,106 @@
     },
     {
       "rank": 4,
+      "destinationId": "yorkshire-dales",
+      "destinationSlug": "yorkshire-dales",
+      "destinationName": "Yorkshire Dales",
+      "distanceKm": 193.94,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 55
+        },
+        {
+          "month": 3,
+          "score": 54
+        },
+        {
+          "month": 9,
+          "score": 54
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 55,
+      "distanceUtility": 85,
+      "shortTripScore": 62.5,
+      "bestSiteId": "hawes-dark-sky",
+      "stayArea": {
+        "id": "hawes",
+        "name": "Hawes",
+        "affiliateQuery": "Hawes United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 55 in month 4.",
+        "Distance is 193.94 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Hawes."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 5,
       "destinationId": "elan-valley",
       "destinationSlug": "elan-valley",
       "destinationName": "Elan Valley",
@@ -406,7 +506,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "destinationId": "brecon-beacons",
       "destinationSlug": "brecon-beacons",
       "destinationName": "Bannau Brycheiniog",
@@ -502,6 +602,106 @@
         "Best month score 60 in month 4.",
         "Distance is 445.55 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Brecon."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 7,
+      "destinationId": "eryri",
+      "destinationSlug": "eryri",
+      "destinationName": "Eryri",
+      "distanceKm": 360.98,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 58
+        },
+        {
+          "month": 3,
+          "score": 55
+        },
+        {
+          "month": 9,
+          "score": 55
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 58,
+      "distanceUtility": 60,
+      "shortTripScore": 58.5,
+      "bestSiteId": "bwlch-y-groes-dark-sky",
+      "stayArea": {
+        "id": "beddgelert",
+        "name": "Beddgelert",
+        "affiliateQuery": "Beddgelert United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 58 in month 4.",
+        "Distance is 360.98 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Beddgelert."
       ],
       "confidenceLevel": "high"
     }

@@ -1,0 +1,73 @@
+{
+  "destinationId": "arches",
+  "siteId": "balanced-rock-night",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-01T01:15:34.944276Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
+  ],
+  "months": [
+    {
+      "month": 1,
+      "score": 83,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 2,
+      "score": 83,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 3,
+      "score": 87,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 4,
+      "score": 88,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 5,
+      "score": 89,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 6,
+      "score": 94,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 7,
+      "score": 90,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 8,
+      "score": 91,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 9,
+      "score": 94,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 10,
+      "score": 93,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 11,
+      "score": 89,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 12,
+      "score": 84,
+      "confidenceLevel": "moderate"
+    }
+  ]
+}

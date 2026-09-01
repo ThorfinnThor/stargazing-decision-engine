@@ -1,0 +1,158 @@
+{
+  "siteId": "malham-national-park-centre",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 98,
+          "totalPixelCount": 98
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 98,
+          "totalPixelCount": 98
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 98,
+          "totalPixelCount": 98
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.11828,
+      "coverage": 0.974937,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.107204,
+          "coverage": 0.983292,
+          "validPixelCount": 2354,
+          "totalPixelCount": 2394
+        },
+        {
+          "year": 2024,
+          "radiance": 0.11828,
+          "coverage": 0.980368,
+          "validPixelCount": 2347,
+          "totalPixelCount": 2394
+        },
+        {
+          "year": 2023,
+          "radiance": 0.369723,
+          "coverage": 0.974937,
+          "validPixelCount": 2334,
+          "totalPixelCount": 2394
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.510955,
+      "coverage": 0.939304,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.510955,
+          "coverage": 0.954892,
+          "validPixelCount": 19052,
+          "totalPixelCount": 19952
+        },
+        {
+          "year": 2024,
+          "radiance": 0.500582,
+          "coverage": 0.951935,
+          "validPixelCount": 18993,
+          "totalPixelCount": 19952
+        },
+        {
+          "year": 2023,
+          "radiance": 0.67218,
+          "coverage": 0.939304,
+          "validPixelCount": 18741,
+          "totalPixelCount": 19952
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 3.410911,
+      "coverage": 0.905199,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 3.42719,
+          "coverage": 0.91949,
+          "validPixelCount": 108349,
+          "totalPixelCount": 117836
+        },
+        {
+          "year": 2024,
+          "radiance": 3.270472,
+          "coverage": 0.915875,
+          "validPixelCount": 107923,
+          "totalPixelCount": 117836
+        },
+        {
+          "year": 2023,
+          "radiance": 3.410911,
+          "coverage": 0.905199,
+          "validPixelCount": 106665,
+          "totalPixelCount": 117836
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.11828,
+  "radiance10to30": 0.510955,
+  "radiance30to75": 3.410911,
+  "alanExposure": 0.243857,
+  "darknessScore": 77.07,
+  "coverage": 0.905199,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:26:07.727796Z"
+}

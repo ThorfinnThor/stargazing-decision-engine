@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "great-barrier-island-one-site-night",
+  "slug": "great-barrier-island-one-site-night",
+  "destinationId": "great-barrier-island",
+  "recommendedSiteId": "medlands-beach-night",
+  "title": {
+    "en": "Aotea from a beach you already know in daylight",
+    "de": "Aotea von einem Strand, den du bei Tageslicht kennst"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Claris to Medlands Beach, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Claris zu Medlands Beach, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Stay near Claris or Medlands, inspect the beach access at low-risk daylight and keep the night session above the active tide line. This self-guided route uses Medlands Beach as the fixed site and Claris as the return base. Ferry and flight disruption, tides, rough roads, limited services and conservation rules make the island plan dependent on preparation before arrival. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Übernachte nahe Claris oder Medlands, prüfe den Strandzugang bei sicherem Tageslicht und halte die Nachtsitzung oberhalb der aktiven Flutlinie. Diese selbst geführte Route nutzt Medlands Beach als festen Ort und Claris als Rückkehrbasis. Fähr- und Flugausfälle, Tide, raue Straßen, begrenzte Services und Naturschutzregeln machen den Inselplan von Vorbereitung vor der Ankunft abhängig. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Medlands Beach",
+        "de": "Medlands Beach"
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Claris",
+        "de": "Claris"
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Windy Canyon trailhead, only as a separately verified plan",
+        "de": "Windy Canyon trailhead, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "great-barrier-island-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Medlands Beach is enough for one night",
+        "de": "Warum Medlands Beach für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Aotea's sanctuary status describes island-wide darkness, not permission to enter every beach, track or property at night. Medlands is the simpler independent setting when tide, access and accommodation are nearby. Windy Canyon remains a daylight hiking route unless current local guidance explicitly supports the intended use. This tour commits to Medlands Beach because a single known site preserves attention for the sky and the return. Windy Canyon trailhead is useful information for another date, not a target to add after darkness.",
+          "Protect nesting birds, dunes and residents' privacy, carry all waste and use no open flame on the beach. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Aoteas Sanctuary-Status beschreibt inselweite Dunkelheit und keine Erlaubnis, jeden Strand, Weg oder jedes Grundstück nachts zu betreten. Medlands ist einfacher, wenn Tide, Zugang und Unterkunft nahe liegen. Windy Canyon bleibt eine Tageswanderroute, solange aktuelle lokale Hinweise die geplante Nutzung nicht ausdrücklich tragen. Diese Tour legt sich auf Medlands Beach fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Windy Canyon trailhead ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Schütze brütende Vögel, Dünen und die Privatsphäre der Bewohner, nimm allen Abfall mit und nutze kein offenes Feuer am Strand. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ]
+    },
+    {
+      "id": "great-barrier-island-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Medlands Beach",
+        "de": "Der Abendrhythmus an Medlands Beach"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Claris, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Claris, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "great-barrier-island-place",
+            "great-barrier-island-access",
+            "great-barrier-island-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Medlands Beach, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Medlands Beach lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "great-barrier-island-place",
+            "great-barrier-island-access",
+            "great-barrier-island-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Medlands Beach systematically, inspect the ground and return directly to Claris. Do not trade a safe finish for a late move toward Windy Canyon trailhead or an unverified roadside horizon.",
+            "de": "Verlasse Medlands Beach systematisch, prüfe den Boden und kehre direkt nach Claris zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Windy Canyon trailhead oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "great-barrier-island-place",
+            "great-barrier-island-access",
+            "great-barrier-island-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "great-barrier-island-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Claris",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Claris"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Medlands Beach is confirmed",
+            "de": "Medlands Beach ist bestätigt"
+          },
+          "body": {
+            "en": "For Medlands Beach, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Medlands Beach nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "great-barrier-island-place",
+            "great-barrier-island-access",
+            "great-barrier-island-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Bad marine weather means observing briefly near the booked accommodation, not attempting an unfamiliar island road or coastal track. Do not substitute Windy Canyon trailhead unless its own authority, route and timing have been checked before departure.",
+            "de": "Schlechtes Seewetter bedeutet kurze Beobachtung nahe der Unterkunft statt einer unbekannten Inselstraße oder Küstenroute. Ersetze den Ort nicht durch Windy Canyon trailhead, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "great-barrier-island-place",
+            "great-barrier-island-access",
+            "great-barrier-island-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "great-barrier-island-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Aotea Great Barrier Island route",
+        "de": "Was die Route in Aotea Great Barrier Island absagt"
+      },
+      "body": {
+        "en": "Ferry and flight disruption, tides, rough roads, limited services and conservation rules make the island plan dependent on preparation before arrival. Treat that limit as a decision made before equipment leaves the vehicle. Bad marine weather means observing briefly near the booked accommodation, not attempting an unfamiliar island road or coastal track. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Fähr- und Flugausfälle, Tide, raue Straßen, begrenzte Services und Naturschutzregeln machen den Inselplan von Vorbereitung vor der Ankunft abhängig. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Schlechtes Seewetter bedeutet kurze Beobachtung nahe der Unterkunft statt einer unbekannten Inselstraße oder Küstenroute. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "great-barrier-island-place",
+        "great-barrier-island-access",
+        "great-barrier-island-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "great-barrier-island-place",
+    "great-barrier-island-access",
+    "great-barrier-island-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

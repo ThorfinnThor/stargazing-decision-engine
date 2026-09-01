@@ -13,12 +13,12 @@ const products = read<GearProductMetadata[]>("data-config/gear/products.json");
 
 test("gear catalog validates as specification analysis with dormant affiliate hooks", () => {
   assert.doesNotThrow(() => validateGearCatalog(categories, guides, products));
-  assert.equal(categories.length, 10);
-  assert.equal(guides.length, 10);
+  assert.equal(categories.length, 13);
+  assert.equal(guides.length, 13);
   assert.ok(guides.every((guide) => guide.buyingCriteria.length >= 3));
   assert.ok(guides.every((guide) => guide.items.length >= 2));
   assert.ok(guides.every((guide) => guide.faq.length >= 2));
-  assert.ok(guides.every((guide) => guide.lastReviewedAt === "2026-08-28"));
+  assert.ok(guides.every((guide) => /^2026-08-(28|31)$/.test(guide.lastReviewedAt)));
   assert.ok(guides.every((guide) => guide.items.every((item) => item.recommendationBasis === "specification_analysis" && item.affiliatePartnerId === null)));
   assert.ok(products.every((product) => product.affiliatePartnerId === null));
 });
@@ -110,6 +110,9 @@ test("only fully sourced, comparison-depth gear guides are editorially ready", (
     "portable-power",
     "eyepieces",
     "astronomy-filters",
+    "smartphone-telescope-adapters",
+    "imx585-astronomy-cameras",
+    "mounted-astronomy-binoculars",
   ]);
   assert.ok(ready.every((guide) => gearGuideEditorialIssues(guide).length === 0));
   assert.ok(guides.filter((guide) => !isGearGuideEditorialReady(guide)).every((guide) => gearGuideEditorialIssues(guide).includes("product-without-primary-source")));

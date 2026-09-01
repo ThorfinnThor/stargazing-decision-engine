@@ -185,23 +185,28 @@ test("curated activity offers must map to a tour from the same destination", () 
 test("reviewed GetYourGuide catalog contains only the approved direct stargazing offers", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const getYourGuideOffers = actual.offers.filter((offer) => offer.partnerId === "getyourguide-activities" && offer.enabled);
-  const expectedDestinations = [
-    "alqueva",
-    "aoraki-mackenzie",
-    "atacama",
-    "canyonlands",
-    "death-valley",
-    "elqui-valley",
-    "hanle",
-    "jasper",
-    "la-palma",
-    "mauna-kea",
-    "pico-do-arieiro",
-    "tenerife",
-    "uluru",
+  const expectedOffers = [
+    "getyourguide-alqueva-monsaraz-stargazing-1108246",
+    "getyourguide-aoraki-mount-john-stargazing-408459",
+    "getyourguide-aoraki-tekapo-hot-pools-268167",
+    "getyourguide-atacama-big-telescopes-852357",
+    "getyourguide-canyonlands-moab-stargazing-1027645",
+    "getyourguide-death-valley-starry-night-617830",
+    "getyourguide-elqui-mamalluca-stargazing-1001148",
+    "getyourguide-elqui-pangue-observatory-590139",
+    "getyourguide-hanle-two-night-stargazing-667535",
+    "getyourguide-jasper-planetarium-telescope-456519",
+    "getyourguide-kalbarri-stargazing-794940",
+    "getyourguide-la-palma-stargazing-683919",
+    "getyourguide-madeira-stargazing-1146847",
+    "getyourguide-mauna-kea-stargazing-352716",
+    "getyourguide-sedona-video-astronomy-1063724",
+    "getyourguide-tenerife-teide-stargazing-910985",
+    "getyourguide-uluru-astronomy-678894",
+    "getyourguide-wairarapa-star-safari-1090703",
   ];
 
-  assert.deepEqual(getYourGuideOffers.map((offer) => offer.destinationId).sort(), expectedDestinations);
+  assert.deepEqual(getYourGuideOffers.map((offer) => offer.id).sort(), expectedOffers);
   for (const offer of getYourGuideOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "BKWM9K1"));
     assert.equal(url.hostname, "www.getyourguide.com");
@@ -215,9 +220,19 @@ test("reviewed GetYourGuide catalog contains only the approved direct stargazing
 test("reviewed Viator catalog contains only approved direct stargazing offers", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
-  const expectedDestinations = ["atacama", "la-palma", "pico-do-arieiro"];
+  const expectedOffers = [
+    "viator-aoraki-tekapo-soak-stars-50255p3",
+    "viator-atacama-under-night-sky-396238p1",
+    "viator-jasper-planetarium-telescope-348239p1",
+    "viator-joshua-tree-stargazing-445161p1",
+    "viator-la-palma-stargazing-279280p2",
+    "viator-madeira-astronomy-410282p1",
+    "viator-oudtshoorn-high-five-20510p2",
+    "viator-sedona-video-astronomy-483700p2",
+    "viator-wadi-rum-stargazing-233668p1",
+  ];
 
-  assert.deepEqual(viatorOffers.map((offer) => offer.destinationId).sort(), expectedDestinations);
+  assert.deepEqual(viatorOffers.map((offer) => offer.id).sort(), expectedOffers);
   for (const offer of viatorOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
     assert.equal(url.hostname, "www.viator.com");

@@ -1,5 +1,45 @@
 [
   {
+    "id": "aenos-entrance-view-area",
+    "slug": "aenos-entrance-view-area",
+    "destinationId": "aenos",
+    "name": "Mount Aenos entrance viewing area",
+    "lat": 38.162,
+    "lon": 20.663,
+    "elevationM": 1120,
+    "siteType": "national-park-entrance",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://aenosnationalpark.gr/en/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Mount Aenos entrance viewing area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Mount Aenos entrance viewing area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "aenos-picnic-area",
+    "slug": "aenos-picnic-area",
+    "destinationId": "aenos",
+    "name": "Mount Aenos picnic area",
+    "lat": 38.189,
+    "lon": 20.63,
+    "elevationM": 930,
+    "siteType": "forest-picnic-area",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://aenosnationalpark.gr/o-drymos/periigisi-ston-drymo/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Mount Aenos picnic area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Mount Aenos picnic area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "al-wathba-dark-sky",
     "slug": "al-wathba-dark-sky",
     "destinationId": "al-wathba",
@@ -95,6 +135,26 @@
     }
   },
   {
+    "id": "balanced-rock-night",
+    "slug": "balanced-rock-night",
+    "destinationId": "arches",
+    "name": "Balanced Rock",
+    "lat": 38.7006,
+    "lon": -109.5637,
+    "elevationM": 1580,
+    "siteType": "desert-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 84,
+    "active": true,
+    "priority": 92,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/arch/learn/nature/lightscape.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Balanced Rock. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Balanced Rock. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "bieszczady-dark-sky",
     "slug": "bieszczady-dark-sky",
     "destinationId": "bieszczady",
@@ -112,6 +172,26 @@
     "accessNotes": {
       "en": "The starry-sky park covers a large inhabited and protected mountain region; this coordinate is not a public observing pad. Use the organiser's confirmed meeting point for a dated astronomy show or independently verify a legal parking and overnight arrangement.",
       "de": "Der Sternenpark umfasst eine große bewohnte und geschützte Bergregion; diese Koordinate ist kein öffentlicher Beobachtungsplatz. Nutze den bestätigten Treffpunkt einer terminierten Astronomievorführung oder prüfe selbst eine legale Park- und Übernachtungsregelung."
+    }
+  },
+  {
+    "id": "big-bend-astro-pad",
+    "slug": "big-bend-astro-pad",
+    "destinationId": "river-murray",
+    "name": "Big Bend astronomy pad",
+    "lat": -34.633067,
+    "lon": 139.665983,
+    "elevationM": 45,
+    "siteType": "astronomy-pad",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.themurrayriver.com/dark-sky/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Big Bend astronomy pad. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Big Bend astronomy pad. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -170,6 +250,86 @@
     }
   },
   {
+    "id": "brogan-carroll-bothy",
+    "slug": "brogan-carroll-bothy",
+    "destinationId": "mayo-dark-sky",
+    "name": "Brogan Carroll Bothy",
+    "lat": 53.98932,
+    "lon": -9.57282,
+    "elevationM": 90,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 78,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.mayodarkskypark.ie/visit/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Brogan Carroll Bothy. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Brogan Carroll Bothy. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "buffelsdrift-night-experience",
+    "slug": "buffelsdrift-night-experience",
+    "destinationId": "oudtshoorn",
+    "name": "Buffelsdrift Game Lodge",
+    "lat": -33.516,
+    "lon": 22.244,
+    "elevationM": 340,
+    "siteType": "private-reserve-lodge",
+    "publicAccess": "limited",
+    "accessScore": 76,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.buffelsdrift.com/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Buffelsdrift Game Lodge. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Buffelsdrift Game Lodge. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "bwlch-y-groes-dark-sky",
+    "slug": "bwlch-y-groes-dark-sky",
+    "destinationId": "eryri",
+    "name": "Bwlch y Groes",
+    "lat": 52.715,
+    "lon": -3.582,
+    "elevationM": 545,
+    "siteType": "mountain-pass",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://snowdonia.gov.wales/discover/dark-skies/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Bwlch y Groes. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Bwlch y Groes. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "cameron-bay-waterton",
+    "slug": "cameron-bay-waterton",
+    "destinationId": "waterton-lakes",
+    "name": "Cameron Bay day-use area",
+    "lat": 49.027,
+    "lon": -114.041,
+    "elevationM": 1290,
+    "siteType": "lakeside-day-use",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/ab/waterton/visit/heures-hours",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Cameron Bay day-use area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Cameron Bay day-use area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "camp-blackman",
     "slug": "camp-blackman",
     "destinationId": "warrumbungle",
@@ -207,6 +367,26 @@
     "accessNotes": {
       "en": "This broad coordinate supports regional climate scoring but does not identify a verified public parking or observing surface. Use a confirmed paved Island in the Sky overlook and current NPS access notices instead.",
       "de": "Diese breite Koordinate dient der regionalen Klimabewertung, bezeichnet aber keine bestätigte öffentliche Park- oder Beobachtungsfläche. Nutze stattdessen einen bestätigten asphaltierten Aussichtspunkt auf Island in the Sky und aktuelle NPS-Zugangshinweise."
+    }
+  },
+  {
+    "id": "cedar-pass-badlands",
+    "slug": "cedar-pass-badlands",
+    "destinationId": "badlands",
+    "name": "Cedar Pass Campground",
+    "lat": 43.747,
+    "lon": -101.941,
+    "elevationM": 760,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 78,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/badl/planyourvisit/eatingsleeping.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Cedar Pass Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Cedar Pass Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -330,6 +510,26 @@
     }
   },
   {
+    "id": "claggan-mountain-coastal-trail",
+    "slug": "claggan-mountain-coastal-trail",
+    "destinationId": "mayo-dark-sky",
+    "name": "Claggan Mountain Coastal Trail",
+    "lat": 53.95745,
+    "lon": -9.79335,
+    "elevationM": 20,
+    "siteType": "coastal-trailhead",
+    "publicAccess": "yes",
+    "accessScore": 80,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.mayodarkskypark.ie/visit/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Claggan Mountain Coastal Trail. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Claggan Mountain Coastal Trail. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "clatteringshaws-loch",
     "slug": "clatteringshaws-loch",
     "destinationId": "galloway",
@@ -387,6 +587,26 @@
     "accessNotes": {
       "en": "This roadside viewpoint lies within the Kerry dark-sky area. Verify safe parking and current local conditions, keep the road clear, and avoid disturbing nearby residents.",
       "de": "Dieser Straßen-Aussichtspunkt liegt im Kerry-Dark-Sky-Gebiet. Prüfe sichere Parkmöglichkeiten und lokale Bedingungen, halte die Straße frei und störe Anwohner nicht."
+    }
+  },
+  {
+    "id": "cottonwood-joshua-tree",
+    "slug": "cottonwood-joshua-tree",
+    "destinationId": "joshua-tree",
+    "name": "Cottonwood Campground",
+    "lat": 33.7458,
+    "lon": -115.8014,
+    "elevationM": 930,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 76,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/jotr/planyourvisit/campgrounds.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Cottonwood Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Cottonwood Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -465,6 +685,26 @@
     }
   },
   {
+    "id": "de-zeekoe-night-area",
+    "slug": "de-zeekoe-night-area",
+    "destinationId": "oudtshoorn",
+    "name": "De Zeekoe farm stay",
+    "lat": -33.66,
+    "lon": 22.196,
+    "elevationM": 310,
+    "siteType": "farm-stay",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://dezeekoe.co.za/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for De Zeekoe farm stay. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für De Zeekoe farm stay. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "death-valley-dark-sky",
     "slug": "death-valley-dark-sky",
     "destinationId": "death-valley",
@@ -478,6 +718,26 @@
     "active": true,
     "priority": 94,
     "certificationIds": []
+  },
+  {
+    "id": "desert-view-night",
+    "slug": "desert-view-night",
+    "destinationId": "grand-canyon",
+    "name": "Desert View",
+    "lat": 36.0409,
+    "lon": -111.8262,
+    "elevationM": 2265,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 75,
+    "active": true,
+    "priority": 94,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/grca/planyourvisit/desert-view.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Desert View. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Desert View. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
   },
   {
     "id": "eifel-dark-sky",
@@ -635,6 +895,26 @@
     }
   },
   {
+    "id": "fruita-campground-night",
+    "slug": "fruita-campground-night",
+    "destinationId": "capitol-reef",
+    "name": "Fruita Campground",
+    "lat": 38.283,
+    "lon": -111.248,
+    "elevationM": 1680,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 76,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/care/planyourvisit/campinga.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Fruita Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Fruita Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "galloway-dark-sky-park",
     "slug": "galloway-dark-sky-park",
     "destinationId": "galloway",
@@ -760,6 +1040,66 @@
     }
   },
   {
+    "id": "hawes-dark-sky",
+    "slug": "hawes-dark-sky",
+    "destinationId": "yorkshire-dales",
+    "name": "Dales Countryside Museum, Hawes",
+    "lat": 54.303,
+    "lon": -2.201,
+    "elevationM": 255,
+    "siteType": "visitor-centre-grounds",
+    "publicAccess": "limited",
+    "accessScore": 76,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.yorkshiredales.org.uk/be-inspired/what-to-do/what-to-do-to-enjoy-the-stars/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Dales Countryside Museum, Hawes. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Dales Countryside Museum, Hawes. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "headlands-waterfront-event-center",
+    "slug": "headlands-waterfront-event-center",
+    "destinationId": "headlands-michigan",
+    "name": "Headlands waterfront viewing area",
+    "lat": 45.779,
+    "lon": -84.782,
+    "elevationM": 185,
+    "siteType": "dark-sky-park",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.midarkskypark.org/visit/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Headlands waterfront viewing area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Headlands waterfront viewing area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "hidden-valley-joshua-tree",
+    "slug": "hidden-valley-joshua-tree",
+    "destinationId": "joshua-tree",
+    "name": "Hidden Valley picnic area",
+    "lat": 34.0124,
+    "lon": -116.168,
+    "elevationM": 1280,
+    "siteType": "park-picnic-area",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/jotr/planyourvisit/stargazing.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Hidden Valley picnic area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Hidden Valley picnic area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "hortobagy-dark-sky",
     "slug": "hortobagy-dark-sky",
     "destinationId": "hortobagy",
@@ -815,6 +1155,26 @@
     }
   },
   {
+    "id": "iping-common-dark-sky",
+    "slug": "iping-common-dark-sky",
+    "destinationId": "south-downs",
+    "name": "Iping Common",
+    "lat": 50.995,
+    "lon": -0.784,
+    "elevationM": 55,
+    "siteType": "nature-reserve-car-park",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.southdowns.gov.uk/dark-night-skies/where-to-stargaze/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Iping Common. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Iping Common. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "island-in-the-sky-night-area",
     "slug": "island-in-the-sky-night-area",
     "destinationId": "canyonlands",
@@ -850,6 +1210,46 @@
     "certificationIds": []
   },
   {
+    "id": "jeremys-bay-kejimkujik",
+    "slug": "jeremys-bay-kejimkujik",
+    "destinationId": "kejimkujik",
+    "name": "Jeremy's Bay Campground",
+    "lat": 44.408,
+    "lon": -65.245,
+    "elevationM": 95,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 78,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/ns/kejimkujik/activ/camping",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Jeremy's Bay Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Jeremy's Bay Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "jordan-pond-acadia",
+    "slug": "jordan-pond-acadia",
+    "destinationId": "acadia",
+    "name": "Jordan Pond north lot",
+    "lat": 44.3204,
+    "lon": -68.2546,
+    "elevationM": 85,
+    "siteType": "park-parking-area",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/acad/planyourvisit/park-loop-road.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Jordan Pond north lot. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Jordan Pond north lot. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "kalahari-dark-sky",
     "slug": "kalahari-dark-sky",
     "destinationId": "kalahari",
@@ -863,6 +1263,26 @@
     "active": true,
     "priority": 89,
     "certificationIds": []
+  },
+  {
+    "id": "kalbarri-skywalk-night",
+    "slug": "kalbarri-skywalk-night",
+    "destinationId": "kalbarri",
+    "name": "Kalbarri Skywalk",
+    "lat": -27.823,
+    "lon": 114.473,
+    "elevationM": 150,
+    "siteType": "national-park-skywalk",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://exploreparks.dbca.wa.gov.au/site/kalbarri-skywalk?widget=1",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Kalbarri Skywalk. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Kalbarri Skywalk. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
   },
   {
     "id": "kerry-dark-sky",
@@ -897,6 +1317,26 @@
     "accessNotes": {
       "en": "Mongolia's official tourism material promotes South Gobi stargazing, but remote access requires local logistics. Use a registered guide or booked ger camp, suitable 4×4 transport, and confirmed land-use arrangements.",
       "de": "Offizielles mongolisches Tourismusmaterial bewirbt Stargazing in der Südgobi; der abgelegene Zugang erfordert jedoch lokale Logistik. Nutze einen registrierten Guide oder ein gebuchtes Ger-Camp, geeignetes 4×4-Fahrzeug und bestätigte Landnutzung."
+    }
+  },
+  {
+    "id": "khuri-village-camp-zone",
+    "slug": "khuri-village-camp-zone",
+    "destinationId": "jaisalmer",
+    "name": "Khuri village camp zone",
+    "lat": 26.619,
+    "lon": 70.723,
+    "elevationM": 230,
+    "siteType": "desert-village",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.incredibleindia.gov.in/en/rajasthan/jaisalmer",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Khuri village camp zone. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Khuri village camp zone. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1035,6 +1475,26 @@
     }
   },
   {
+    "id": "llyn-y-dywarchen",
+    "slug": "llyn-y-dywarchen",
+    "destinationId": "eryri",
+    "name": "Llyn y Dywarchen",
+    "lat": 53.074,
+    "lon": -4.146,
+    "elevationM": 250,
+    "siteType": "lake-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 78,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://snowdonia.gov.wales/discover/dark-skies/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Llyn y Dywarchen. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Llyn y Dywarchen. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "lutowiska-astronomy-show-area",
     "slug": "lutowiska-astronomy-show-area",
     "destinationId": "bieszczady",
@@ -1052,6 +1512,26 @@
     "accessNotes": {
       "en": "The Starry Sky Park runs dated, paid astronomy shows by prior email arrangement. Use the organiser's confirmed meeting point rather than relying on this representative village coordinate.",
       "de": "Der Sternenpark veranstaltet terminierte, kostenpflichtige Astronomievorführungen nach vorheriger E-Mail-Abstimmung. Nutze den bestätigten Treffpunkt des Veranstalters statt dich auf diese repräsentative Dorfkoordinate zu verlassen."
+    }
+  },
+  {
+    "id": "malham-national-park-centre",
+    "slug": "malham-national-park-centre",
+    "destinationId": "yorkshire-dales",
+    "name": "Malham National Park Centre",
+    "lat": 54.061,
+    "lon": -2.153,
+    "elevationM": 205,
+    "siteType": "visitor-centre-grounds",
+    "publicAccess": "limited",
+    "accessScore": 74,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.yorkshiredales.org.uk/park-authority/looking-after/dark-sky/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Malham National Park Centre. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Malham National Park Centre. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1092,6 +1572,26 @@
     "accessNotes": {
       "en": "The National Park Service recommends Mather Overlook for stargazing. It is not an overnight campsite; check mountain-road closures and weather before driving up.",
       "de": "Der National Park Service empfiehlt Mather Overlook zum Stargazing. Es ist kein Übernachtungsplatz; prüfe vor der Auffahrt Straßensperrungen und Bergwetter."
+    }
+  },
+  {
+    "id": "mather-point-night",
+    "slug": "mather-point-night",
+    "destinationId": "grand-canyon",
+    "name": "Mather Point",
+    "lat": 36.0613,
+    "lon": -112.107,
+    "elevationM": 2160,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 84,
+    "active": true,
+    "priority": 94,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/grca/learn/nature/night-skies.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Mather Point. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Mather Point. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1152,6 +1652,66 @@
     "accessNotes": {
       "en": "Public evening Star Parties are offered on scheduled dates; advance reservations are recommended.",
       "de": "Öffentliche abendliche Star Parties finden an festgelegten Terminen statt; eine vorherige Reservierung wird empfohlen."
+    }
+  },
+  {
+    "id": "mcgulpin-point",
+    "slug": "mcgulpin-point",
+    "destinationId": "headlands-michigan",
+    "name": "McGulpin Point",
+    "lat": 45.787,
+    "lon": -84.773,
+    "elevationM": 180,
+    "siteType": "lighthouse-grounds",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.mcgulpinpoint.org/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for McGulpin Point. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für McGulpin Point. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "meanarra-hill-lookout",
+    "slug": "meanarra-hill-lookout",
+    "destinationId": "kalbarri",
+    "name": "Meanarra Hill lookout",
+    "lat": -27.694,
+    "lon": 114.174,
+    "elevationM": 190,
+    "siteType": "hilltop-lookout",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://exploreparks.dbca.wa.gov.au/site/meanarra-hill-lookout",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Meanarra Hill lookout. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Meanarra Hill lookout. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "medlands-beach-night",
+    "slug": "medlands-beach-night",
+    "destinationId": "great-barrier-island",
+    "name": "Medlands Beach",
+    "lat": -36.263,
+    "lon": 175.496,
+    "elevationM": 5,
+    "siteType": "beach",
+    "publicAccess": "yes",
+    "accessScore": 76,
+    "active": true,
+    "priority": 92,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.greatbarrier.co.nz/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Medlands Beach. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Medlands Beach. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1375,6 +1935,66 @@
     }
   },
   {
+    "id": "old-winchester-hill",
+    "slug": "old-winchester-hill",
+    "destinationId": "south-downs",
+    "name": "Old Winchester Hill",
+    "lat": 50.978,
+    "lon": -1.088,
+    "elevationM": 198,
+    "siteType": "hilltop-car-park",
+    "publicAccess": "limited",
+    "accessScore": 70,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.southdowns.gov.uk/dark-night-skies/where-to-stargaze/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Old Winchester Hill. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Old Winchester Hill. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "panorama-point-arches",
+    "slug": "panorama-point-arches",
+    "destinationId": "arches",
+    "name": "Panorama Point",
+    "lat": 38.734,
+    "lon": -109.504,
+    "elevationM": 1535,
+    "siteType": "desert-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 80,
+    "active": true,
+    "priority": 92,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/arch/learn/nature/lightscape.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Panorama Point. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Panorama Point. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "panorama-point-capitol-reef",
+    "slug": "panorama-point-capitol-reef",
+    "destinationId": "capitol-reef",
+    "name": "Panorama Point",
+    "lat": 38.288,
+    "lon": -111.244,
+    "elevationM": 1770,
+    "siteType": "desert-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/care/learn/nature/night-sky.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Panorama Point. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Panorama Point. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "paranal-public-night-tour",
     "slug": "paranal-public-night-tour",
     "destinationId": "cerro-paranal",
@@ -1415,6 +2035,26 @@
     }
   },
   {
+    "id": "paria-view-bryce",
+    "slug": "paria-view-bryce",
+    "destinationId": "bryce-canyon",
+    "name": "Paria View",
+    "lat": 37.6347,
+    "lon": -112.1645,
+    "elevationM": 2470,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/brca/planyourvisit/conditions.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Paria View. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Paria View. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "pico-arieiro-observing-area",
     "slug": "pico-arieiro-observing-area",
     "destinationId": "pico-do-arieiro",
@@ -1435,6 +2075,46 @@
     }
   },
   {
+    "id": "pine-lake-wood-buffalo",
+    "slug": "pine-lake-wood-buffalo",
+    "destinationId": "wood-buffalo",
+    "name": "Pine Lake Campground",
+    "lat": 60.728,
+    "lon": -112.257,
+    "elevationM": 225,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 74,
+    "active": true,
+    "priority": 93,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/nt/woodbuffalo/activ/camping",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Pine Lake Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Pine Lake Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "pinnacles-overlook-badlands",
+    "slug": "pinnacles-overlook-badlands",
+    "destinationId": "badlands",
+    "name": "Pinnacles Overlook",
+    "lat": 43.886,
+    "lon": -102.235,
+    "elevationM": 970,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 80,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/thingstodo/night-sky-badl.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Pinnacles Overlook. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Pinnacles Overlook. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "pinon-flats-campground",
     "slug": "pinon-flats-campground",
     "destinationId": "great-sand-dunes",
@@ -1452,6 +2132,26 @@
     "accessNotes": {
       "en": "Piñon Flats provides open views from a seasonal, reservation-only campground. Book a campsite and check operating dates, fire rules, altitude, and park alerts.",
       "de": "Piñon Flats bietet freie Sicht von einem saisonalen Campingplatz mit Reservierungspflicht. Buche einen Stellplatz und prüfe Saison, Feuerregeln, Höhenlage und Parkmeldungen."
+    }
+  },
+  {
+    "id": "point-kean-night-area",
+    "slug": "point-kean-night-area",
+    "destinationId": "kaikoura",
+    "name": "Point Kean car park",
+    "lat": -42.423,
+    "lon": 173.71,
+    "elevationM": 5,
+    "siteType": "coastal-car-park",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/marlborough/places/kaikoura-area/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Point Kean car park. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Point Kean car park. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1515,6 +2215,46 @@
     }
   },
   {
+    "id": "salt-river-day-use",
+    "slug": "salt-river-day-use",
+    "destinationId": "wood-buffalo",
+    "name": "Salt River day-use area",
+    "lat": 60.117,
+    "lon": -112.123,
+    "elevationM": 205,
+    "siteType": "day-use-area",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 93,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/nt/woodbuffalo/visit/heures-hours",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Salt River day-use area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Salt River day-use area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "sam-sand-dunes-camp-zone",
+    "slug": "sam-sand-dunes-camp-zone",
+    "destinationId": "jaisalmer",
+    "name": "Sam Sand Dunes camp zone",
+    "lat": 26.838,
+    "lon": 70.536,
+    "elevationM": 225,
+    "siteType": "desert-tourism-zone",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.tourism.rajasthan.gov.in/jaisalmer.html",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Sam Sand Dunes camp zone. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Sam Sand Dunes camp zone. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "san-pedro-astronomy-tour-zone",
     "slug": "san-pedro-astronomy-tour-zone",
     "destinationId": "atacama",
@@ -1532,6 +2272,26 @@
     "accessNotes": {
       "en": "Official tourism guidance describes guided night excursions outside San Pedro, including Ayllu de Solor and the Cordillera de la Sal. Use a registered operator; the coordinate represents the tour zone, not unrestricted land access.",
       "de": "Die offizielle Tourismusinformation beschreibt geführte Nachtausflüge außerhalb von San Pedro, unter anderem zum Ayllu de Solor und zur Cordillera de la Sal. Nutze einen registrierten Anbieter; die Koordinate steht für die Tourzone, nicht für freien Landzugang."
+    }
+  },
+  {
+    "id": "seawall-acadia",
+    "slug": "seawall-acadia",
+    "destinationId": "acadia",
+    "name": "Seawall picnic area",
+    "lat": 44.249,
+    "lon": -68.299,
+    "elevationM": 8,
+    "siteType": "coastal-picnic-area",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/acad/planyourvisit/stargazing.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Seawall picnic area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Seawall picnic area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1575,6 +2335,26 @@
     }
   },
   {
+    "id": "sky-circle-kejimkujik",
+    "slug": "sky-circle-kejimkujik",
+    "destinationId": "kejimkujik",
+    "name": "Kejimkujik Sky Circle",
+    "lat": 44.405,
+    "lon": -65.25,
+    "elevationM": 90,
+    "siteType": "astronomy-area",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/ns/kejimkujik/activ/decouverte-tours/etoile-star",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Kejimkujik Sky Circle. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Kejimkujik Sky Circle. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "sotol-vista-overlook",
     "slug": "sotol-vista-overlook",
     "destinationId": "big-bend",
@@ -1595,6 +2375,46 @@
     }
   },
   {
+    "id": "south-bay-kaikoura",
+    "slug": "south-bay-kaikoura",
+    "destinationId": "kaikoura",
+    "name": "South Bay recreation area",
+    "lat": -42.429,
+    "lon": 173.681,
+    "elevationM": 8,
+    "siteType": "coastal-recreation-area",
+    "publicAccess": "yes",
+    "accessScore": 74,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://kaikouradarksky.nz/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for South Bay recreation area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für South Bay recreation area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "star-safari-wairarapa",
+    "slug": "star-safari-wairarapa",
+    "destinationId": "wairarapa",
+    "name": "Star Safari",
+    "lat": -41.1425,
+    "lon": 175.5175,
+    "elevationM": 90,
+    "siteType": "private-observatory",
+    "publicAccess": "limited",
+    "accessScore": 82,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://star-safari.nz/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Star Safari. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Star Safari. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "stonehaugh-stargazing-pavilion",
     "slug": "stonehaugh-stargazing-pavilion",
     "destinationId": "kielder",
@@ -1612,6 +2432,46 @@
     "accessNotes": {
       "en": "Visit Kielder lists the Stonehaugh Stargazing Pavilion as a dark-sky place. Check forest notices, parking, weather, and local quiet rules before visiting.",
       "de": "Visit Kielder führt den Stonehaugh Stargazing Pavilion als Dark-Sky-Ort. Prüfe vor dem Besuch Waldhinweise, Parken, Wetter und lokale Ruhegebote."
+    }
+  },
+  {
+    "id": "stonehenge-aotearoa-night",
+    "slug": "stonehenge-aotearoa-night",
+    "destinationId": "wairarapa",
+    "name": "Stonehenge Aotearoa",
+    "lat": -40.996,
+    "lon": 175.676,
+    "elevationM": 170,
+    "siteType": "astronomy-centre",
+    "publicAccess": "limited",
+    "accessScore": 78,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://stonehenge-aotearoa.nz/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Stonehenge Aotearoa. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Stonehenge Aotearoa. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "sunset-point-bryce",
+    "slug": "sunset-point-bryce",
+    "destinationId": "bryce-canyon",
+    "name": "Sunset Point",
+    "lat": 37.6283,
+    "lon": -112.178,
+    "elevationM": 2435,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "yes",
+    "accessScore": 82,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/brca/planyourvisit/astronomyprograms.htm",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Sunset Point. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Sunset Point. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1695,6 +2555,66 @@
     }
   },
   {
+    "id": "towitta-astro-pad",
+    "slug": "towitta-astro-pad",
+    "destinationId": "river-murray",
+    "name": "Towitta astronomy pad",
+    "lat": -34.524117,
+    "lon": 139.24845,
+    "elevationM": 105,
+    "siteType": "astronomy-pad",
+    "publicAccess": "yes",
+    "accessScore": 80,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.themurrayriver.com/dark-sky/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Towitta astronomy pad. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Towitta astronomy pad. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "townsite-campground-waterton",
+    "slug": "townsite-campground-waterton",
+    "destinationId": "waterton-lakes",
+    "name": "Townsite Campground",
+    "lat": 49.0507,
+    "lon": -113.907,
+    "elevationM": 1280,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 76,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/ab/waterton/activ/camping",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Townsite Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Townsite Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "turkey-creek-trailhead-night",
+    "slug": "turkey-creek-trailhead-night",
+    "destinationId": "sedona",
+    "name": "Turkey Creek trailhead",
+    "lat": 34.803,
+    "lon": -111.857,
+    "elevationM": 1250,
+    "siteType": "trailhead",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.fs.usda.gov/recarea/coconino/recarea/?recid=55330",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Turkey Creek trailhead. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Turkey Creek trailhead. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "twee-rivieren-rest-camp",
     "slug": "twee-rivieren-rest-camp",
     "destinationId": "kalahari",
@@ -1712,6 +2632,26 @@
     "accessNotes": {
       "en": "Twee Rivieren is a bookable SANParks rest camp in Kgalagadi. Night movement is restricted to designated camp areas; reservations, gate times, wildlife rules, and border procedures apply.",
       "de": "Twee Rivieren ist ein buchbares SANParks-Restcamp im Kgalagadi. Nächtliche Bewegung ist auf ausgewiesene Campbereiche beschränkt; Reservierung, Torzeiten, Wildtierregeln und Grenzverfahren gelten."
+    }
+  },
+  {
+    "id": "two-trees-observing-area",
+    "slug": "two-trees-observing-area",
+    "destinationId": "sedona",
+    "name": "Two Trees observing area",
+    "lat": 34.858,
+    "lon": -111.817,
+    "elevationM": 1320,
+    "siteType": "community-observing-area",
+    "publicAccess": "yes",
+    "accessScore": 80,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://visitsedona.com/sedona-secret-7/stargazing/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Two Trees observing area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Two Trees observing area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -1775,6 +2715,46 @@
     }
   },
   {
+    "id": "wadi-rum-booked-camp",
+    "slug": "wadi-rum-booked-camp",
+    "destinationId": "wadi-rum",
+    "name": "Booked Wadi Rum desert camp",
+    "lat": 29.56,
+    "lon": 35.43,
+    "elevationM": 980,
+    "siteType": "desert-camp",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 93,
+    "certificationIds": [],
+    "notesSourceUrl": "https://international.visitjordan.com/Wheretogo/Wadi-Rum",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Booked Wadi Rum desert camp. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Booked Wadi Rum desert camp. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "wadi-rum-visitor-centre",
+    "slug": "wadi-rum-visitor-centre",
+    "destinationId": "wadi-rum",
+    "name": "Wadi Rum Visitor Centre",
+    "lat": 29.64,
+    "lon": 35.434,
+    "elevationM": 930,
+    "siteType": "protected-area-gateway",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 93,
+    "certificationIds": [],
+    "notesSourceUrl": "https://wadirum.jo/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Wadi Rum Visitor Centre. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Wadi Rum Visitor Centre. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "westhavelland-core",
     "slug": "westhavelland-core",
     "destinationId": "westhavelland",
@@ -1807,6 +2787,26 @@
     "accessNotes": {
       "en": "Wimbleball is a designated dark-sky location with a stargazing platform and camping. Confirm parking or campsite access, event arrangements, and site hours before a late visit.",
       "de": "Wimbleball ist ein ausgewiesener Dark-Sky-Ort mit Beobachtungsplattform und Camping. Bestätige Parkplatz- oder Campingzugang, Veranstaltungen und Öffnungszeiten vor einem späten Besuch."
+    }
+  },
+  {
+    "id": "windy-canyon-aotea",
+    "slug": "windy-canyon-aotea",
+    "destinationId": "great-barrier-island",
+    "name": "Windy Canyon trailhead",
+    "lat": -36.199,
+    "lon": 175.447,
+    "elevationM": 210,
+    "siteType": "trailhead",
+    "publicAccess": "limited",
+    "accessScore": 52,
+    "active": true,
+    "priority": 92,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.doc.govt.nz/parks-and-recreation/places-to-go/auckland/places/great-barrier-island-aotea/",
+    "accessNotes": {
+      "en": "Use only the published visitor arrangement for Windy Canyon trailhead. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
+      "de": "Nutze nur die veröffentlichte Besucherregelung für Windy Canyon trailhead. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {

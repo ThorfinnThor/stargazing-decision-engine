@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "jaisalmer-one-site-night",
+  "slug": "jaisalmer-one-site-night",
+  "destinationId": "jaisalmer",
+  "recommendedSiteId": "sam-sand-dunes-camp-zone",
+  "title": {
+    "en": "A Thar Desert night with transport agreed in advance",
+    "de": "Eine Thar-Wüstennacht mit vorab geklärtem Transport"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Jaisalmer to Sam Sand Dunes camp zone, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Jaisalmer zu Sam Sand Dunes camp zone, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Book a named camp with round-trip transport from Jaisalmer, confirm the exact dune zone and keep the observing period inside the hosted programme. This self-guided route uses Sam Sand Dunes camp zone as the fixed site and Jaisalmer as the return base. Heat, cold, sand, traffic, informal sales and poorly specified camp locations can undermine both safety and darkness. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Buche ein benanntes Camp mit Hin- und Rücktransport ab Jaisalmer, bestätige die genaue Dünenzone und halte die Beobachtung innerhalb des betreuten Programms. Diese selbst geführte Route nutzt Sam Sand Dunes camp zone als festen Ort und Jaisalmer als Rückkehrbasis. Hitze, Kälte, Sand, Verkehr, informeller Verkauf und ungenau beschriebene Camp-Lagen können Sicherheit und Dunkelheit beeinträchtigen. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Sam Sand Dunes camp zone",
+        "de": "Sam Sand Dunes camp zone"
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Jaisalmer",
+        "de": "Jaisalmer"
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Khuri village camp zone, only as a separately verified plan",
+        "de": "Khuri village camp zone, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "jaisalmer-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Jaisalmer route",
+        "de": "Was die Route in Jaisalmer absagt"
+      },
+      "body": {
+        "en": "Heat, cold, sand, traffic, informal sales and poorly specified camp locations can undermine both safety and darkness. Treat that limit as a decision made before equipment leaves the vehicle. An unclear operator, dust storm or transport change is reason to remain in Jaisalmer and rebook through a traceable provider. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Hitze, Kälte, Sand, Verkehr, informeller Verkauf und ungenau beschriebene Camp-Lagen können Sicherheit und Dunkelheit beeinträchtigen. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Ein unklarer Anbieter, Staubsturm oder Transportwechsel ist Grund, in Jaisalmer zu bleiben und bei einem nachvollziehbaren Anbieter neu zu buchen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "jaisalmer-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Jaisalmer",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Jaisalmer"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Sam Sand Dunes camp zone is confirmed",
+            "de": "Sam Sand Dunes camp zone ist bestätigt"
+          },
+          "body": {
+            "en": "For Sam Sand Dunes camp zone, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Sam Sand Dunes camp zone nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "jaisalmer-place",
+            "jaisalmer-access",
+            "jaisalmer-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "An unclear operator, dust storm or transport change is reason to remain in Jaisalmer and rebook through a traceable provider. Do not substitute Khuri village camp zone unless its own authority, route and timing have been checked before departure.",
+            "de": "Ein unklarer Anbieter, Staubsturm oder Transportwechsel ist Grund, in Jaisalmer zu bleiben und bei einem nachvollziehbaren Anbieter neu zu buchen. Ersetze den Ort nicht durch Khuri village camp zone, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "jaisalmer-place",
+            "jaisalmer-access",
+            "jaisalmer-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaisalmer-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Sam Sand Dunes camp zone",
+        "de": "Der Abendrhythmus an Sam Sand Dunes camp zone"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Jaisalmer, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Jaisalmer, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "jaisalmer-place",
+            "jaisalmer-access",
+            "jaisalmer-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Sam Sand Dunes camp zone, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Sam Sand Dunes camp zone lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "jaisalmer-place",
+            "jaisalmer-access",
+            "jaisalmer-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Sam Sand Dunes camp zone systematically, inspect the ground and return directly to Jaisalmer. Do not trade a safe finish for a late move toward Khuri village camp zone or an unverified roadside horizon.",
+            "de": "Verlasse Sam Sand Dunes camp zone systematisch, prüfe den Boden und kehre direkt nach Jaisalmer zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Khuri village camp zone oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "jaisalmer-place",
+            "jaisalmer-access",
+            "jaisalmer-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "jaisalmer-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Sam Sand Dunes camp zone is enough for one night",
+        "de": "Warum Sam Sand Dunes camp zone für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Jaisalmer's desert sky is inseparable from camp quality, transport and the chosen tourism zone. Sam is busy and easy to book. Khuri can feel quieter, but it still requires a confirmed host and vehicle rather than independent movement onto dunes. This tour commits to Sam Sand Dunes camp zone because a single known site preserves attention for the sky and the return. Khuri village camp zone is useful information for another date, not a target to add after darkness.",
+          "Avoid driving over vegetation, leave no plastic or food waste and respect village, livestock and cultural boundaries. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Jaisalmers Wüstenhimmel ist untrennbar mit Campqualität, Transport und der gewählten Tourismuszone verbunden. Sam ist belebt und leicht buchbar. Khuri kann ruhiger wirken, verlangt aber ebenfalls einen bestätigten Gastgeber und ein Fahrzeug statt unabhängiger Bewegung auf Dünen. Diese Tour legt sich auf Sam Sand Dunes camp zone fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Khuri village camp zone ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Fahre nicht über Vegetation, hinterlasse weder Plastik noch Essensreste und respektiere Dorf-, Tier- und Kulturgrenzen. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "jaisalmer-place",
+        "jaisalmer-access",
+        "jaisalmer-status"
+      ]
+    }
+  ],
+  "sourceIds": [
+    "jaisalmer-place",
+    "jaisalmer-access",
+    "jaisalmer-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "wood-buffalo-one-site-night",
+  "slug": "wood-buffalo-one-site-night",
+  "destinationId": "wood-buffalo",
+  "recommendedSiteId": "pine-lake-wood-buffalo",
+  "title": {
+    "en": "Wood Buffalo from a booked boreal base",
+    "de": "Wood Buffalo von einer gebuchten borealen Basis"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Fort Smith to Pine Lake Campground, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Fort Smith zu Pine Lake Campground, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Book Pine Lake, download the route and alerts in Fort Smith, then keep astronomy beside camp rather than roaming the park road. This self-guided route uses Pine Lake Campground as the fixed site and Fort Smith as the return base. Remote communications, bison, bears, wildfire smoke and long distances make independent rescue assumptions unacceptable. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Buche Pine Lake, lade Route und Meldungen in Fort Smith herunter und halte die Astronomie am Camp, statt nachts die Parkstraße abzufahren. Diese selbst geführte Route nutzt Pine Lake Campground als festen Ort und Fort Smith als Rückkehrbasis. Abgelegene Kommunikation, Bisons, Bären, Waldbrandrauch und lange Distanzen machen selbst erfundene Rettungsannahmen unzulässig. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Pine Lake Campground",
+        "de": "Pine Lake Campground"
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Fort Smith",
+        "de": "Fort Smith"
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Salt River day-use area, only as a separately verified plan",
+        "de": "Salt River day-use area, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "wood-buffalo-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Pine Lake Campground is enough for one night",
+        "de": "Warum Pine Lake Campground für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Wood Buffalo's scale is the attraction and the main planning hazard. Pine Lake Campground gives a legal base with a known road. Salt River is an alternative only after current hours, road and wildlife advice are confirmed. This tour commits to Pine Lake Campground because a single known site preserves attention for the sky and the return. Salt River day-use area is useful information for another date, not a target to add after darkness.",
+          "Follow all food-storage and wildlife rules, keep generators and light restrained and leave shorelines intact. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Die Größe von Wood Buffalo ist Attraktion und zentrales Planungsrisiko zugleich. Pine Lake Campground bietet eine legale Basis an bekannter Straße. Salt River ist nur nach Bestätigung von Zeiten, Straße und Wildtierhinweisen eine Alternative. Diese Tour legt sich auf Pine Lake Campground fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Salt River day-use area ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Befolge alle Regeln zu Essen und Wildtieren, begrenze Generatoren und Licht und lasse Ufer intakt. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ]
+    },
+    {
+      "id": "wood-buffalo-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Pine Lake Campground",
+        "de": "Der Abendrhythmus an Pine Lake Campground"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Fort Smith, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Fort Smith, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "wood-buffalo-place",
+            "wood-buffalo-access",
+            "wood-buffalo-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Pine Lake Campground, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Pine Lake Campground lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "wood-buffalo-place",
+            "wood-buffalo-access",
+            "wood-buffalo-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Pine Lake Campground systematically, inspect the ground and return directly to Fort Smith. Do not trade a safe finish for a late move toward Salt River day-use area or an unverified roadside horizon.",
+            "de": "Verlasse Pine Lake Campground systematisch, prüfe den Boden und kehre direkt nach Fort Smith zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Salt River day-use area oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "wood-buffalo-place",
+            "wood-buffalo-access",
+            "wood-buffalo-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wood-buffalo-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Fort Smith",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Fort Smith"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Pine Lake Campground is confirmed",
+            "de": "Pine Lake Campground ist bestätigt"
+          },
+          "body": {
+            "en": "For Pine Lake Campground, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Pine Lake Campground nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "wood-buffalo-place",
+            "wood-buffalo-access",
+            "wood-buffalo-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Smoke, road damage or wildlife activity cancels the remote leg; Fort Smith is the fallback, not another unsigned track. Do not substitute Salt River day-use area unless its own authority, route and timing have been checked before departure.",
+            "de": "Rauch, Straßenschäden oder Wildtieraktivität streichen den abgelegenen Abschnitt. Fort Smith ist die Alternative, nicht ein anderer unmarkierter Weg. Ersetze den Ort nicht durch Salt River day-use area, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "wood-buffalo-place",
+            "wood-buffalo-access",
+            "wood-buffalo-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "wood-buffalo-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Wood Buffalo route",
+        "de": "Was die Route in Wood Buffalo absagt"
+      },
+      "body": {
+        "en": "Remote communications, bison, bears, wildfire smoke and long distances make independent rescue assumptions unacceptable. Treat that limit as a decision made before equipment leaves the vehicle. Smoke, road damage or wildlife activity cancels the remote leg; Fort Smith is the fallback, not another unsigned track. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Abgelegene Kommunikation, Bisons, Bären, Waldbrandrauch und lange Distanzen machen selbst erfundene Rettungsannahmen unzulässig. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Rauch, Straßenschäden oder Wildtieraktivität streichen den abgelegenen Abschnitt. Fort Smith ist die Alternative, nicht ein anderer unmarkierter Weg. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "wood-buffalo-place",
+        "wood-buffalo-access",
+        "wood-buffalo-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "wood-buffalo-place",
+    "wood-buffalo-access",
+    "wood-buffalo-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

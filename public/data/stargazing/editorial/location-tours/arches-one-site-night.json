@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "arches-one-site-night",
+  "slug": "arches-one-site-night",
+  "destinationId": "arches",
+  "recommendedSiteId": "balanced-rock-night",
+  "title": {
+    "en": "One paved Arches viewpoint after the traffic thins",
+    "de": "Ein befestigter Aussichtspunkt in Arches nach dem Tagesverkehr"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Moab to Balanced Rock, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Moab zu Balanced Rock, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Use Balanced Rock for a shorter walk and Panorama Point only when its parking is confirmed, then return directly to Moab. This self-guided route uses Balanced Rock as the fixed site and Moab as the return base. Traffic, limited parking, exposed desert weather and wildlife on the park road control the evening more than a minor darkness difference. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Nutze Balanced Rock für einen kurzen Weg und Panorama Point nur bei bestätigtem Parkplatz, danach fahre direkt nach Moab zurück. Diese selbst geführte Route nutzt Balanced Rock als festen Ort und Moab als Rückkehrbasis. Verkehr, begrenzte Parkplätze, exponiertes Wüstenwetter und Wildtiere auf der Parkstraße bestimmen den Abend stärker als kleine Dunkelheitsunterschiede. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Balanced Rock",
+        "de": "Balanced Rock"
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Moab",
+        "de": "Moab"
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Panorama Point, only as a separately verified plan",
+        "de": "Panorama Point, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "arches-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Balanced Rock",
+        "de": "Der Abendrhythmus an Balanced Rock"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Moab, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Moab, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "arches-place",
+            "arches-access",
+            "arches-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Balanced Rock, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Balanced Rock lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "arches-place",
+            "arches-access",
+            "arches-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Balanced Rock systematically, inspect the ground and return directly to Moab. Do not trade a safe finish for a late move toward Panorama Point or an unverified roadside horizon.",
+            "de": "Verlasse Balanced Rock systematisch, prüfe den Boden und kehre direkt nach Moab zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Panorama Point oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "arches-place",
+            "arches-access",
+            "arches-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "arches-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Arches route",
+        "de": "Was die Route in Arches absagt"
+      },
+      "body": {
+        "en": "Traffic, limited parking, exposed desert weather and wildlife on the park road control the evening more than a minor darkness difference. Treat that limit as a decision made before equipment leaves the vehicle. Crowded parking or a storm warning means leaving the park rather than circling between overlooks. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Verkehr, begrenzte Parkplätze, exponiertes Wüstenwetter und Wildtiere auf der Parkstraße bestimmen den Abend stärker als kleine Dunkelheitsunterschiede. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Voller Parkplatz oder Gewitterwarnung bedeutet, den Park zu verlassen, statt zwischen Aussichtspunkten zu kreisen. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "arches-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Balanced Rock is enough for one night",
+        "de": "Warum Balanced Rock für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Arches is busiest by day, while its best independent astronomy plan is deliberately small. Balanced Rock and Panorama Point both have established parking; choose one before entering and resist site-hopping after dark. This tour commits to Balanced Rock because a single known site preserves attention for the sky and the return. Panorama Point is useful information for another date, not a target to add after darkness.",
+          "Do not climb formations, leave equipment on cryptobiotic soil or aim white light toward other observers. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Arches ist tagsüber stark besucht, während der beste unabhängige Astronomieplan bewusst klein bleibt. Balanced Rock und Panorama Point besitzen etablierte Parkplätze. Wähle einen vor der Einfahrt und verzichte nachts auf Standortwechsel. Diese Tour legt sich auf Balanced Rock fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Panorama Point ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Klettere nicht auf Formationen, stelle Ausrüstung nicht auf kryptobiotischen Boden und richte kein Weißlicht auf andere Beobachter. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "arches-place",
+        "arches-access",
+        "arches-status"
+      ]
+    },
+    {
+      "id": "arches-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Moab",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Moab"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Balanced Rock is confirmed",
+            "de": "Balanced Rock ist bestätigt"
+          },
+          "body": {
+            "en": "For Balanced Rock, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Balanced Rock nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "arches-place",
+            "arches-access",
+            "arches-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Crowded parking or a storm warning means leaving the park rather than circling between overlooks. Do not substitute Panorama Point unless its own authority, route and timing have been checked before departure.",
+            "de": "Voller Parkplatz oder Gewitterwarnung bedeutet, den Park zu verlassen, statt zwischen Aussichtspunkten zu kreisen. Ersetze den Ort nicht durch Panorama Point, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "arches-place",
+            "arches-access",
+            "arches-status"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "arches-place",
+    "arches-access",
+    "arches-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

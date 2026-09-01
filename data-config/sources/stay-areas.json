@@ -1,52 +1,890 @@
 [
-  { "id": "garafia", "destinationId": "la-palma", "name": "Garafía", "lat": 28.81, "lon": -17.94, "affiliateQuery": "Garafia La Palma", "observationSiteIds": ["roque-de-los-muchachos", "llanos-del-jable"] },
-  { "id": "vilaflor", "destinationId": "tenerife", "name": "Vilaflor", "lat": 28.16, "lon": -16.64, "affiliateQuery": "Vilaflor Tenerife", "observationSiteIds": ["teide-high-zone", "minas-de-san-jose-viewpoint"] },
-  { "id": "guelpe", "destinationId": "westhavelland", "name": "Gülpe", "lat": 52.68, "lon": 12.24, "affiliateQuery": "Guelpe Westhavelland", "observationSiteIds": ["westhavelland-core", "parey-guelpe-observing-site"] },
-  { "id": "monsaraz", "destinationId": "alqueva", "name": "Monsaraz", "lat": 38.44, "lon": -7.38, "affiliateQuery": "Monsaraz Alqueva", "observationSiteIds": ["alqueva-lake-edge", "cumeada-dark-sky-observatory"] },
-  { "id": "cairnsmore", "destinationId": "galloway", "name": "Cairnsmore of Fleet", "lat": 54.96, "lon": -4.27, "affiliateQuery": "Galloway Forest", "observationSiteIds": ["galloway-dark-sky-park", "clatteringshaws-loch"] },
-  { "id": "san-pedro-de-atacama", "destinationId": "atacama", "name": "San Pedro de Atacama", "lat": -22.91, "lon": -68.20, "affiliateQuery": "San Pedro de Atacama", "observationSiteIds": ["atacama-plateau", "san-pedro-astronomy-tour-zone"] },
-  { "id": "terlingua", "destinationId": "big-bend", "name": "Terlingua", "lat": 29.32, "lon": -103.61, "affiliateQuery": "Terlingua Big Bend", "observationSiteIds": ["big-bend-panther-junction", "sotol-vista-overlook"] },
-  { "id": "lake-tekapo", "destinationId": "aoraki-mackenzie", "name": "Lake Tekapo", "lat": -44.00, "lon": 170.48, "affiliateQuery": "Lake Tekapo New Zealand", "observationSiteIds": ["lake-tekapo-basin", "mt-john-night-observing"] },
-  { "id": "sesriem", "destinationId": "namibrand", "name": "Sesriem", "lat": -24.48, "lon": 15.79, "affiliateQuery": "Sesriem Namibia", "observationSiteIds": ["namibrand-reserve", "wolwedans-dune-camp"] },
-  { "id": "jasper-townsite", "destinationId": "jasper", "name": "Jasper townsite", "lat": 52.88, "lon": -118.08, "affiliateQuery": "Jasper Alberta", "observationSiteIds": ["jasper-medicine-lake", "pyramid-island"] },
-  { "id": "cherry-springs-town", "destinationId": "cherry-springs", "name": "Cherry Springs area", "lat": 41.65, "lon": -77.82, "affiliateQuery": "Cherry Springs Pennsylvania", "observationSiteIds": ["cherry-springs-dark-sky", "cherry-springs-public-viewing-area"] },
-  { "id": "great-basin-baker", "destinationId": "great-basin", "name": "Baker", "lat": 39.01, "lon": -114.13, "affiliateQuery": "Baker Nevada Great Basin", "observationSiteIds": ["great-basin-wheeler-peak", "mather-overlook"] },
-  { "id": "mauna-kea-waimea", "destinationId": "mauna-kea", "name": "Waimea", "lat": 20.02, "lon": -155.67, "affiliateQuery": "Waimea Hawaii Mauna Kea", "observationSiteIds": ["mauna-kea-summit", "maunakea-visitor-information-station"] },
-  { "id": "kitt-peak-tucson", "destinationId": "kitt-peak", "name": "Tucson", "lat": 32.22, "lon": -110.97, "affiliateQuery": "Tucson Arizona Kitt Peak", "observationSiteIds": ["kitt-peak-observatory", "kitt-peak-visitor-center-night-program"] },
-  { "id": "paihuano", "destinationId": "elqui-valley", "name": "Paihuano", "lat": -30.03, "lon": -70.52, "affiliateQuery": "Paihuano Elqui Valley", "observationSiteIds": ["elqui-paihuano", "mamalluca-observatory"] },
-  { "id": "caherdaniel", "destinationId": "kerry", "name": "Caherdaniel", "lat": 51.77, "lon": -10.13, "affiliateQuery": "Caherdaniel Kerry", "observationSiteIds": ["kerry-dark-sky", "coomakista-pass-viewpoint"] },
-  { "id": "dalby-village", "destinationId": "north-york-moors", "name": "Dalby village", "lat": 54.25, "lon": -0.68, "affiliateQuery": "Dalby North York Moors", "observationSiteIds": ["dalby-forest-dark-sky", "sutton-bank-star-hub"] },
-  { "id": "rhayader", "destinationId": "elan-valley", "name": "Rhayader", "lat": 52.30, "lon": -3.51, "affiliateQuery": "Rhayader Elan Valley", "observationSiteIds": ["elan-valley-reservoir", "craig-goch-dam"] },
-  { "id": "hortobagy-town", "destinationId": "hortobagy", "name": "Hortobágy village", "lat": 47.58, "lon": 21.15, "affiliateQuery": "Hortobagy village Hungary", "observationSiteIds": ["hortobagy-dark-sky", "hortobagy-fishpond-night-walk"] },
-  { "id": "zselic-village", "destinationId": "zselic", "name": "Zselic area", "lat": 46.23, "lon": 17.82, "affiliateQuery": "Zselic Hungary", "observationSiteIds": ["zselic-starry-sky", "zselic-public-observatory"] },
-  { "id": "coonabarabran", "destinationId": "warrumbungle", "name": "Coonabarabran", "lat": -31.28, "lon": 149.28, "affiliateQuery": "Coonabarabran Warrumbungle", "observationSiteIds": ["siding-spring-observing-area", "camp-blackman"] },
-  { "id": "yulara", "destinationId": "uluru", "name": "Yulara", "lat": -25.24, "lon": 130.99, "affiliateQuery": "Yulara Uluru", "observationSiteIds": ["uluru-dark-sky", "yulara-authorised-astronomy-zone"] },
-  { "id": "hanle-village", "destinationId": "hanle", "name": "Hanle village", "lat": 32.78, "lon": 78.97, "affiliateQuery": "Hanle Ladakh", "observationSiteIds": ["hanle-dark-sky", "hanle-astronomy-ambassador-zone"] },
-  { "id": "witsand-town", "destinationId": "witsand", "name": "Witsand Nature Reserve area", "lat": -28.552, "lon": 22.485, "affiliateQuery": "Witsand Nature Reserve Northern Cape", "observationSiteIds": ["witsand-dark-sky", "witsand-overnight-camp"] },
-  { "id": "al-wathba", "destinationId": "al-wathba", "name": "Al Wathba", "lat": 24.22, "lon": 54.62, "affiliateQuery": "Al Wathba Abu Dhabi", "observationSiteIds": ["al-wathba-dark-sky", "al-wathba-fossil-dunes"] },
-  { "id": "lynmouth", "destinationId": "exmoor", "name": "Lynmouth", "lat": 51.23, "lon": -3.83, "affiliateQuery": "Lynmouth Exmoor", "observationSiteIds": ["exmoor-dark-sky", "wimbleball-dark-sky-hub"] },
-  { "id": "kielder-village", "destinationId": "kielder", "name": "Kielder village", "lat": 55.23, "lon": -2.58, "affiliateQuery": "Kielder village", "observationSiteIds": ["kielder-dark-sky", "stonehaugh-stargazing-pavilion"] },
-  { "id": "schleiden", "destinationId": "eifel", "name": "Schleiden", "lat": 50.53, "lon": 6.48, "affiliateQuery": "Schleiden Eifel", "observationSiteIds": ["eifel-dark-sky", "vogelsang-star-observatory"] },
-  { "id": "brecon-town", "destinationId": "brecon-beacons", "name": "Brecon", "lat": 51.95, "lon": -3.39, "affiliateQuery": "Brecon Wales", "observationSiteIds": ["brecon-dark-sky", "usk-reservoir-dark-sky-site"] },
-  { "id": "ager", "destinationId": "montsec", "name": "Àger", "lat": 42.00, "lon": 0.76, "affiliateQuery": "Ager Montsec", "observationSiteIds": ["montsec-observing-area", "montsec-astronomical-park"] },
-  { "id": "capileira", "destinationId": "sierra-nevada", "name": "Capileira", "lat": 36.96, "lon": -3.36, "affiliateQuery": "Capileira Sierra Nevada", "observationSiteIds": ["sierra-nevada-observatory", "hoya-de-la-mora-perseids-route"] },
-  { "id": "funchal", "destinationId": "pico-do-arieiro", "name": "Funchal", "lat": 32.65, "lon": -16.91, "affiliateQuery": "Funchal Madeira", "observationSiteIds": ["pico-arieiro-observing-area", "empenas-viewpoint"] },
-  { "id": "furnace-creek", "destinationId": "death-valley", "name": "Furnace Creek", "lat": 36.46, "lon": -116.87, "affiliateQuery": "Furnace Creek Death Valley", "observationSiteIds": ["death-valley-dark-sky", "mesquite-flat-sand-dunes"] },
-  { "id": "moab", "destinationId": "canyonlands", "name": "Moab", "lat": 38.57, "lon": -109.55, "affiliateQuery": "Moab Canyonlands", "observationSiteIds": ["canyonlands-dark-sky", "island-in-the-sky-night-area"] },
-  { "id": "mosca", "destinationId": "great-sand-dunes", "name": "Mosca", "lat": 37.65, "lon": -105.59, "affiliateQuery": "Mosca Great Sand Dunes", "observationSiteIds": ["great-sand-dunes-dark-sky", "pinon-flats-campground"] },
-  { "id": "blanding", "destinationId": "natural-bridges", "name": "Blanding", "lat": 37.62, "lon": -109.48, "affiliateQuery": "Blanding Utah", "observationSiteIds": ["natural-bridges-dark-sky", "natural-bridges-campground"] },
-  { "id": "borrego-springs", "destinationId": "anza-borrego", "name": "Borrego Springs", "lat": 33.26, "lon": -116.38, "affiliateQuery": "Borrego Springs", "observationSiteIds": ["anza-borrego-dark-sky", "borrego-palm-canyon-campground"] },
-  { "id": "fort-davis", "destinationId": "mcdonald-observatory", "name": "Fort Davis", "lat": 30.59, "lon": -103.89, "affiliateQuery": "Fort Davis Texas", "observationSiteIds": ["mcdonald-observatory", "davis-mountains-skyline-drive"] },
-  { "id": "notre-dame-des-bois", "destinationId": "mont-megantic", "name": "Notre-Dame-des-Bois", "lat": 45.39, "lon": -71.08, "affiliateQuery": "Notre-Dame-des-Bois Quebec", "observationSiteIds": ["mont-megantic-observatory", "mont-megantic-astrolab"] },
-  { "id": "val-marie", "destinationId": "grasslands", "name": "Val Marie", "lat": 49.37, "lon": -107.73, "affiliateQuery": "Val Marie Saskatchewan", "observationSiteIds": ["grasslands-dark-sky", "frenchman-valley-campground"] },
-  { "id": "barreal", "destinationId": "el-leoncito", "name": "Barreal", "lat": -31.63, "lon": -69.48, "affiliateQuery": "Barreal Argentina", "observationSiteIds": ["el-leoncito-observatory", "el-leoncito-cesco-night-visit"] },
-  { "id": "antofagasta", "destinationId": "cerro-paranal", "name": "Antofagasta", "lat": -23.65, "lon": -70.40, "affiliateQuery": "Antofagasta Chile", "observationSiteIds": ["cerro-paranal-observatory", "paranal-public-night-tour"] },
-  { "id": "vicuna", "destinationId": "la-silla", "name": "Vicuña", "lat": -30.03, "lon": -70.71, "affiliateQuery": "Vicuna Chile", "observationSiteIds": ["la-silla-observatory", "collowara-tourist-observatory"] },
-  { "id": "clanwilliam", "destinationId": "cederberg", "name": "Clanwilliam", "lat": -32.18, "lon": 18.89, "affiliateQuery": "Clanwilliam Cederberg", "observationSiteIds": ["cederberg-dark-sky", "cederberg-astronomical-observatory"] },
-  { "id": "sutherland-town", "destinationId": "sutherland", "name": "Sutherland town", "lat": -32.40, "lon": 20.66, "affiliateQuery": "Sutherland Northern Cape", "observationSiteIds": ["sutherland-observatory", "sutherland-planetarium-amphitheatre"] },
-  { "id": "kgalagadi", "destinationId": "kalahari", "name": "Kgalagadi area", "lat": -26.47, "lon": 20.61, "affiliateQuery": "Kgalagadi South Africa", "observationSiteIds": ["kalahari-dark-sky", "twee-rivieren-rest-camp"] },
-  { "id": "deloraine", "destinationId": "central-tasmania", "name": "Deloraine", "lat": -41.52, "lon": 146.66, "affiliateQuery": "Deloraine Tasmania", "observationSiteIds": ["central-tasmania-dark-sky", "lake-st-clair-overnight-area"] },
-  { "id": "dalanzadgad", "destinationId": "gobi", "name": "Dalanzadgad", "lat": 43.57, "lon": 104.43, "affiliateQuery": "Dalanzadgad Mongolia", "observationSiteIds": ["gobi-dark-sky", "khongoryn-els-visitor-zone"] },
-  { "id": "ustrzyki-dolne", "destinationId": "bieszczady", "name": "Ustrzyki Dolne", "lat": 49.43, "lon": 22.59, "affiliateQuery": "Ustrzyki Dolne Poland", "observationSiteIds": ["bieszczady-dark-sky", "lutowiska-astronomy-show-area"] },
-  { "id": "borovets", "destinationId": "rila", "name": "Borovets", "lat": 42.27, "lon": 23.60, "affiliateQuery": "Borovets Rila Bulgaria", "observationSiteIds": ["rila-dark-sky", "musala-hut-night-area"] }
+  {
+    "id": "garafia",
+    "destinationId": "la-palma",
+    "name": "Garafía",
+    "lat": 28.81,
+    "lon": -17.94,
+    "affiliateQuery": "Garafia La Palma",
+    "observationSiteIds": [
+      "roque-de-los-muchachos",
+      "llanos-del-jable"
+    ]
+  },
+  {
+    "id": "vilaflor",
+    "destinationId": "tenerife",
+    "name": "Vilaflor",
+    "lat": 28.16,
+    "lon": -16.64,
+    "affiliateQuery": "Vilaflor Tenerife",
+    "observationSiteIds": [
+      "teide-high-zone",
+      "minas-de-san-jose-viewpoint"
+    ]
+  },
+  {
+    "id": "guelpe",
+    "destinationId": "westhavelland",
+    "name": "Gülpe",
+    "lat": 52.68,
+    "lon": 12.24,
+    "affiliateQuery": "Guelpe Westhavelland",
+    "observationSiteIds": [
+      "westhavelland-core",
+      "parey-guelpe-observing-site"
+    ]
+  },
+  {
+    "id": "monsaraz",
+    "destinationId": "alqueva",
+    "name": "Monsaraz",
+    "lat": 38.44,
+    "lon": -7.38,
+    "affiliateQuery": "Monsaraz Alqueva",
+    "observationSiteIds": [
+      "alqueva-lake-edge",
+      "cumeada-dark-sky-observatory"
+    ]
+  },
+  {
+    "id": "cairnsmore",
+    "destinationId": "galloway",
+    "name": "Cairnsmore of Fleet",
+    "lat": 54.96,
+    "lon": -4.27,
+    "affiliateQuery": "Galloway Forest",
+    "observationSiteIds": [
+      "galloway-dark-sky-park",
+      "clatteringshaws-loch"
+    ]
+  },
+  {
+    "id": "san-pedro-de-atacama",
+    "destinationId": "atacama",
+    "name": "San Pedro de Atacama",
+    "lat": -22.91,
+    "lon": -68.2,
+    "affiliateQuery": "San Pedro de Atacama",
+    "observationSiteIds": [
+      "atacama-plateau",
+      "san-pedro-astronomy-tour-zone"
+    ]
+  },
+  {
+    "id": "terlingua",
+    "destinationId": "big-bend",
+    "name": "Terlingua",
+    "lat": 29.32,
+    "lon": -103.61,
+    "affiliateQuery": "Terlingua Big Bend",
+    "observationSiteIds": [
+      "big-bend-panther-junction",
+      "sotol-vista-overlook"
+    ]
+  },
+  {
+    "id": "lake-tekapo",
+    "destinationId": "aoraki-mackenzie",
+    "name": "Lake Tekapo",
+    "lat": -44,
+    "lon": 170.48,
+    "affiliateQuery": "Lake Tekapo New Zealand",
+    "observationSiteIds": [
+      "lake-tekapo-basin",
+      "mt-john-night-observing"
+    ]
+  },
+  {
+    "id": "sesriem",
+    "destinationId": "namibrand",
+    "name": "Sesriem",
+    "lat": -24.48,
+    "lon": 15.79,
+    "affiliateQuery": "Sesriem Namibia",
+    "observationSiteIds": [
+      "namibrand-reserve",
+      "wolwedans-dune-camp"
+    ]
+  },
+  {
+    "id": "jasper-townsite",
+    "destinationId": "jasper",
+    "name": "Jasper townsite",
+    "lat": 52.88,
+    "lon": -118.08,
+    "affiliateQuery": "Jasper Alberta",
+    "observationSiteIds": [
+      "jasper-medicine-lake",
+      "pyramid-island"
+    ]
+  },
+  {
+    "id": "cherry-springs-town",
+    "destinationId": "cherry-springs",
+    "name": "Cherry Springs area",
+    "lat": 41.65,
+    "lon": -77.82,
+    "affiliateQuery": "Cherry Springs Pennsylvania",
+    "observationSiteIds": [
+      "cherry-springs-dark-sky",
+      "cherry-springs-public-viewing-area"
+    ]
+  },
+  {
+    "id": "great-basin-baker",
+    "destinationId": "great-basin",
+    "name": "Baker",
+    "lat": 39.01,
+    "lon": -114.13,
+    "affiliateQuery": "Baker Nevada Great Basin",
+    "observationSiteIds": [
+      "great-basin-wheeler-peak",
+      "mather-overlook"
+    ]
+  },
+  {
+    "id": "mauna-kea-waimea",
+    "destinationId": "mauna-kea",
+    "name": "Waimea",
+    "lat": 20.02,
+    "lon": -155.67,
+    "affiliateQuery": "Waimea Hawaii Mauna Kea",
+    "observationSiteIds": [
+      "mauna-kea-summit",
+      "maunakea-visitor-information-station"
+    ]
+  },
+  {
+    "id": "kitt-peak-tucson",
+    "destinationId": "kitt-peak",
+    "name": "Tucson",
+    "lat": 32.22,
+    "lon": -110.97,
+    "affiliateQuery": "Tucson Arizona Kitt Peak",
+    "observationSiteIds": [
+      "kitt-peak-observatory",
+      "kitt-peak-visitor-center-night-program"
+    ]
+  },
+  {
+    "id": "paihuano",
+    "destinationId": "elqui-valley",
+    "name": "Paihuano",
+    "lat": -30.03,
+    "lon": -70.52,
+    "affiliateQuery": "Paihuano Elqui Valley",
+    "observationSiteIds": [
+      "elqui-paihuano",
+      "mamalluca-observatory"
+    ]
+  },
+  {
+    "id": "caherdaniel",
+    "destinationId": "kerry",
+    "name": "Caherdaniel",
+    "lat": 51.77,
+    "lon": -10.13,
+    "affiliateQuery": "Caherdaniel Kerry",
+    "observationSiteIds": [
+      "kerry-dark-sky",
+      "coomakista-pass-viewpoint"
+    ]
+  },
+  {
+    "id": "dalby-village",
+    "destinationId": "north-york-moors",
+    "name": "Dalby village",
+    "lat": 54.25,
+    "lon": -0.68,
+    "affiliateQuery": "Dalby North York Moors",
+    "observationSiteIds": [
+      "dalby-forest-dark-sky",
+      "sutton-bank-star-hub"
+    ]
+  },
+  {
+    "id": "rhayader",
+    "destinationId": "elan-valley",
+    "name": "Rhayader",
+    "lat": 52.3,
+    "lon": -3.51,
+    "affiliateQuery": "Rhayader Elan Valley",
+    "observationSiteIds": [
+      "elan-valley-reservoir",
+      "craig-goch-dam"
+    ]
+  },
+  {
+    "id": "hortobagy-town",
+    "destinationId": "hortobagy",
+    "name": "Hortobágy village",
+    "lat": 47.58,
+    "lon": 21.15,
+    "affiliateQuery": "Hortobagy village Hungary",
+    "observationSiteIds": [
+      "hortobagy-dark-sky",
+      "hortobagy-fishpond-night-walk"
+    ]
+  },
+  {
+    "id": "zselic-village",
+    "destinationId": "zselic",
+    "name": "Zselic area",
+    "lat": 46.23,
+    "lon": 17.82,
+    "affiliateQuery": "Zselic Hungary",
+    "observationSiteIds": [
+      "zselic-starry-sky",
+      "zselic-public-observatory"
+    ]
+  },
+  {
+    "id": "coonabarabran",
+    "destinationId": "warrumbungle",
+    "name": "Coonabarabran",
+    "lat": -31.28,
+    "lon": 149.28,
+    "affiliateQuery": "Coonabarabran Warrumbungle",
+    "observationSiteIds": [
+      "siding-spring-observing-area",
+      "camp-blackman"
+    ]
+  },
+  {
+    "id": "yulara",
+    "destinationId": "uluru",
+    "name": "Yulara",
+    "lat": -25.24,
+    "lon": 130.99,
+    "affiliateQuery": "Yulara Uluru",
+    "observationSiteIds": [
+      "uluru-dark-sky",
+      "yulara-authorised-astronomy-zone"
+    ]
+  },
+  {
+    "id": "hanle-village",
+    "destinationId": "hanle",
+    "name": "Hanle village",
+    "lat": 32.78,
+    "lon": 78.97,
+    "affiliateQuery": "Hanle Ladakh",
+    "observationSiteIds": [
+      "hanle-dark-sky",
+      "hanle-astronomy-ambassador-zone"
+    ]
+  },
+  {
+    "id": "witsand-town",
+    "destinationId": "witsand",
+    "name": "Witsand Nature Reserve area",
+    "lat": -28.552,
+    "lon": 22.485,
+    "affiliateQuery": "Witsand Nature Reserve Northern Cape",
+    "observationSiteIds": [
+      "witsand-dark-sky",
+      "witsand-overnight-camp"
+    ]
+  },
+  {
+    "id": "al-wathba",
+    "destinationId": "al-wathba",
+    "name": "Al Wathba",
+    "lat": 24.22,
+    "lon": 54.62,
+    "affiliateQuery": "Al Wathba Abu Dhabi",
+    "observationSiteIds": [
+      "al-wathba-dark-sky",
+      "al-wathba-fossil-dunes"
+    ]
+  },
+  {
+    "id": "lynmouth",
+    "destinationId": "exmoor",
+    "name": "Lynmouth",
+    "lat": 51.23,
+    "lon": -3.83,
+    "affiliateQuery": "Lynmouth Exmoor",
+    "observationSiteIds": [
+      "exmoor-dark-sky",
+      "wimbleball-dark-sky-hub"
+    ]
+  },
+  {
+    "id": "kielder-village",
+    "destinationId": "kielder",
+    "name": "Kielder village",
+    "lat": 55.23,
+    "lon": -2.58,
+    "affiliateQuery": "Kielder village",
+    "observationSiteIds": [
+      "kielder-dark-sky",
+      "stonehaugh-stargazing-pavilion"
+    ]
+  },
+  {
+    "id": "schleiden",
+    "destinationId": "eifel",
+    "name": "Schleiden",
+    "lat": 50.53,
+    "lon": 6.48,
+    "affiliateQuery": "Schleiden Eifel",
+    "observationSiteIds": [
+      "eifel-dark-sky",
+      "vogelsang-star-observatory"
+    ]
+  },
+  {
+    "id": "brecon-town",
+    "destinationId": "brecon-beacons",
+    "name": "Brecon",
+    "lat": 51.95,
+    "lon": -3.39,
+    "affiliateQuery": "Brecon Wales",
+    "observationSiteIds": [
+      "brecon-dark-sky",
+      "usk-reservoir-dark-sky-site"
+    ]
+  },
+  {
+    "id": "ager",
+    "destinationId": "montsec",
+    "name": "Àger",
+    "lat": 42,
+    "lon": 0.76,
+    "affiliateQuery": "Ager Montsec",
+    "observationSiteIds": [
+      "montsec-observing-area",
+      "montsec-astronomical-park"
+    ]
+  },
+  {
+    "id": "capileira",
+    "destinationId": "sierra-nevada",
+    "name": "Capileira",
+    "lat": 36.96,
+    "lon": -3.36,
+    "affiliateQuery": "Capileira Sierra Nevada",
+    "observationSiteIds": [
+      "sierra-nevada-observatory",
+      "hoya-de-la-mora-perseids-route"
+    ]
+  },
+  {
+    "id": "funchal",
+    "destinationId": "pico-do-arieiro",
+    "name": "Funchal",
+    "lat": 32.65,
+    "lon": -16.91,
+    "affiliateQuery": "Funchal Madeira",
+    "observationSiteIds": [
+      "pico-arieiro-observing-area",
+      "empenas-viewpoint"
+    ]
+  },
+  {
+    "id": "furnace-creek",
+    "destinationId": "death-valley",
+    "name": "Furnace Creek",
+    "lat": 36.46,
+    "lon": -116.87,
+    "affiliateQuery": "Furnace Creek Death Valley",
+    "observationSiteIds": [
+      "death-valley-dark-sky",
+      "mesquite-flat-sand-dunes"
+    ]
+  },
+  {
+    "id": "moab",
+    "destinationId": "arches",
+    "name": "Moab",
+    "lat": 38.5733,
+    "lon": -109.5498,
+    "affiliateQuery": "Moab United States",
+    "observationSiteIds": [
+      "balanced-rock-night",
+      "panorama-point-arches"
+    ]
+  },
+  {
+    "id": "mosca",
+    "destinationId": "great-sand-dunes",
+    "name": "Mosca",
+    "lat": 37.65,
+    "lon": -105.59,
+    "affiliateQuery": "Mosca Great Sand Dunes",
+    "observationSiteIds": [
+      "great-sand-dunes-dark-sky",
+      "pinon-flats-campground"
+    ]
+  },
+  {
+    "id": "blanding",
+    "destinationId": "natural-bridges",
+    "name": "Blanding",
+    "lat": 37.62,
+    "lon": -109.48,
+    "affiliateQuery": "Blanding Utah",
+    "observationSiteIds": [
+      "natural-bridges-dark-sky",
+      "natural-bridges-campground"
+    ]
+  },
+  {
+    "id": "borrego-springs",
+    "destinationId": "anza-borrego",
+    "name": "Borrego Springs",
+    "lat": 33.26,
+    "lon": -116.38,
+    "affiliateQuery": "Borrego Springs",
+    "observationSiteIds": [
+      "anza-borrego-dark-sky",
+      "borrego-palm-canyon-campground"
+    ]
+  },
+  {
+    "id": "fort-davis",
+    "destinationId": "mcdonald-observatory",
+    "name": "Fort Davis",
+    "lat": 30.59,
+    "lon": -103.89,
+    "affiliateQuery": "Fort Davis Texas",
+    "observationSiteIds": [
+      "mcdonald-observatory",
+      "davis-mountains-skyline-drive"
+    ]
+  },
+  {
+    "id": "notre-dame-des-bois",
+    "destinationId": "mont-megantic",
+    "name": "Notre-Dame-des-Bois",
+    "lat": 45.39,
+    "lon": -71.08,
+    "affiliateQuery": "Notre-Dame-des-Bois Quebec",
+    "observationSiteIds": [
+      "mont-megantic-observatory",
+      "mont-megantic-astrolab"
+    ]
+  },
+  {
+    "id": "val-marie",
+    "destinationId": "grasslands",
+    "name": "Val Marie",
+    "lat": 49.37,
+    "lon": -107.73,
+    "affiliateQuery": "Val Marie Saskatchewan",
+    "observationSiteIds": [
+      "grasslands-dark-sky",
+      "frenchman-valley-campground"
+    ]
+  },
+  {
+    "id": "barreal",
+    "destinationId": "el-leoncito",
+    "name": "Barreal",
+    "lat": -31.63,
+    "lon": -69.48,
+    "affiliateQuery": "Barreal Argentina",
+    "observationSiteIds": [
+      "el-leoncito-observatory",
+      "el-leoncito-cesco-night-visit"
+    ]
+  },
+  {
+    "id": "antofagasta",
+    "destinationId": "cerro-paranal",
+    "name": "Antofagasta",
+    "lat": -23.65,
+    "lon": -70.4,
+    "affiliateQuery": "Antofagasta Chile",
+    "observationSiteIds": [
+      "cerro-paranal-observatory",
+      "paranal-public-night-tour"
+    ]
+  },
+  {
+    "id": "vicuna",
+    "destinationId": "la-silla",
+    "name": "Vicuña",
+    "lat": -30.03,
+    "lon": -70.71,
+    "affiliateQuery": "Vicuna Chile",
+    "observationSiteIds": [
+      "la-silla-observatory",
+      "collowara-tourist-observatory"
+    ]
+  },
+  {
+    "id": "clanwilliam",
+    "destinationId": "cederberg",
+    "name": "Clanwilliam",
+    "lat": -32.18,
+    "lon": 18.89,
+    "affiliateQuery": "Clanwilliam Cederberg",
+    "observationSiteIds": [
+      "cederberg-dark-sky",
+      "cederberg-astronomical-observatory"
+    ]
+  },
+  {
+    "id": "sutherland-town",
+    "destinationId": "sutherland",
+    "name": "Sutherland town",
+    "lat": -32.4,
+    "lon": 20.66,
+    "affiliateQuery": "Sutherland Northern Cape",
+    "observationSiteIds": [
+      "sutherland-observatory",
+      "sutherland-planetarium-amphitheatre"
+    ]
+  },
+  {
+    "id": "kgalagadi",
+    "destinationId": "kalahari",
+    "name": "Kgalagadi area",
+    "lat": -26.47,
+    "lon": 20.61,
+    "affiliateQuery": "Kgalagadi South Africa",
+    "observationSiteIds": [
+      "kalahari-dark-sky",
+      "twee-rivieren-rest-camp"
+    ]
+  },
+  {
+    "id": "deloraine",
+    "destinationId": "central-tasmania",
+    "name": "Deloraine",
+    "lat": -41.52,
+    "lon": 146.66,
+    "affiliateQuery": "Deloraine Tasmania",
+    "observationSiteIds": [
+      "central-tasmania-dark-sky",
+      "lake-st-clair-overnight-area"
+    ]
+  },
+  {
+    "id": "dalanzadgad",
+    "destinationId": "gobi",
+    "name": "Dalanzadgad",
+    "lat": 43.57,
+    "lon": 104.43,
+    "affiliateQuery": "Dalanzadgad Mongolia",
+    "observationSiteIds": [
+      "gobi-dark-sky",
+      "khongoryn-els-visitor-zone"
+    ]
+  },
+  {
+    "id": "ustrzyki-dolne",
+    "destinationId": "bieszczady",
+    "name": "Ustrzyki Dolne",
+    "lat": 49.43,
+    "lon": 22.59,
+    "affiliateQuery": "Ustrzyki Dolne Poland",
+    "observationSiteIds": [
+      "bieszczady-dark-sky",
+      "lutowiska-astronomy-show-area"
+    ]
+  },
+  {
+    "id": "borovets",
+    "destinationId": "rila",
+    "name": "Borovets",
+    "lat": 42.27,
+    "lon": 23.6,
+    "affiliateQuery": "Borovets Rila Bulgaria",
+    "observationSiteIds": [
+      "rila-dark-sky",
+      "musala-hut-night-area"
+    ]
+  },
+  {
+    "id": "twentynine-palms",
+    "destinationId": "joshua-tree",
+    "name": "Twentynine Palms",
+    "lat": 34.1356,
+    "lon": -116.0542,
+    "affiliateQuery": "Twentynine Palms United States",
+    "observationSiteIds": [
+      "hidden-valley-joshua-tree",
+      "cottonwood-joshua-tree"
+    ]
+  },
+  {
+    "id": "sedona-town",
+    "destinationId": "sedona",
+    "name": "Sedona",
+    "lat": 34.8697,
+    "lon": -111.761,
+    "affiliateQuery": "Sedona United States",
+    "observationSiteIds": [
+      "two-trees-observing-area",
+      "turkey-creek-trailhead-night"
+    ]
+  },
+  {
+    "id": "bar-harbor",
+    "destinationId": "acadia",
+    "name": "Bar Harbor",
+    "lat": 44.3876,
+    "lon": -68.2039,
+    "affiliateQuery": "Bar Harbor United States",
+    "observationSiteIds": [
+      "seawall-acadia",
+      "jordan-pond-acadia"
+    ]
+  },
+  {
+    "id": "grand-canyon-village",
+    "destinationId": "grand-canyon",
+    "name": "Grand Canyon Village",
+    "lat": 36.0544,
+    "lon": -112.1401,
+    "affiliateQuery": "Grand Canyon Village United States",
+    "observationSiteIds": [
+      "mather-point-night",
+      "desert-view-night"
+    ]
+  },
+  {
+    "id": "bryce-canyon-city",
+    "destinationId": "bryce-canyon",
+    "name": "Bryce Canyon City",
+    "lat": 37.6283,
+    "lon": -112.1677,
+    "affiliateQuery": "Bryce Canyon City United States",
+    "observationSiteIds": [
+      "sunset-point-bryce",
+      "paria-view-bryce"
+    ]
+  },
+  {
+    "id": "torrey",
+    "destinationId": "capitol-reef",
+    "name": "Torrey",
+    "lat": 38.298,
+    "lon": -111.419,
+    "affiliateQuery": "Torrey United States",
+    "observationSiteIds": [
+      "panorama-point-capitol-reef",
+      "fruita-campground-night"
+    ]
+  },
+  {
+    "id": "wall-south-dakota",
+    "destinationId": "badlands",
+    "name": "Wall",
+    "lat": 43.992,
+    "lon": -102.241,
+    "affiliateQuery": "Wall United States",
+    "observationSiteIds": [
+      "cedar-pass-badlands",
+      "pinnacles-overlook-badlands"
+    ]
+  },
+  {
+    "id": "waterton-park",
+    "destinationId": "waterton-lakes",
+    "name": "Waterton Park",
+    "lat": 49.05,
+    "lon": -113.91,
+    "affiliateQuery": "Waterton Park Canada",
+    "observationSiteIds": [
+      "townsite-campground-waterton",
+      "cameron-bay-waterton"
+    ]
+  },
+  {
+    "id": "fort-smith",
+    "destinationId": "wood-buffalo",
+    "name": "Fort Smith",
+    "lat": 60.005,
+    "lon": -111.884,
+    "affiliateQuery": "Fort Smith Canada",
+    "observationSiteIds": [
+      "pine-lake-wood-buffalo",
+      "salt-river-day-use"
+    ]
+  },
+  {
+    "id": "annapolis-royal",
+    "destinationId": "kejimkujik",
+    "name": "Annapolis Royal",
+    "lat": 44.741,
+    "lon": -65.515,
+    "affiliateQuery": "Annapolis Royal Canada",
+    "observationSiteIds": [
+      "jeremys-bay-kejimkujik",
+      "sky-circle-kejimkujik"
+    ]
+  },
+  {
+    "id": "newport-mayo",
+    "destinationId": "mayo-dark-sky",
+    "name": "Newport, County Mayo",
+    "lat": 53.886,
+    "lon": -9.546,
+    "affiliateQuery": "Newport, County Mayo Ireland",
+    "observationSiteIds": [
+      "claggan-mountain-coastal-trail",
+      "brogan-carroll-bothy"
+    ]
+  },
+  {
+    "id": "beddgelert",
+    "destinationId": "eryri",
+    "name": "Beddgelert",
+    "lat": 53.011,
+    "lon": -4.101,
+    "affiliateQuery": "Beddgelert United Kingdom",
+    "observationSiteIds": [
+      "llyn-y-dywarchen",
+      "bwlch-y-groes-dark-sky"
+    ]
+  },
+  {
+    "id": "hawes",
+    "destinationId": "yorkshire-dales",
+    "name": "Hawes",
+    "lat": 54.304,
+    "lon": -2.202,
+    "affiliateQuery": "Hawes United Kingdom",
+    "observationSiteIds": [
+      "hawes-dark-sky",
+      "malham-national-park-centre"
+    ]
+  },
+  {
+    "id": "petersfield",
+    "destinationId": "south-downs",
+    "name": "Petersfield",
+    "lat": 51.005,
+    "lon": -0.933,
+    "affiliateQuery": "Petersfield United Kingdom",
+    "observationSiteIds": [
+      "old-winchester-hill",
+      "iping-common-dark-sky"
+    ]
+  },
+  {
+    "id": "kalbarri-town",
+    "destinationId": "kalbarri",
+    "name": "Kalbarri",
+    "lat": -27.711,
+    "lon": 114.165,
+    "affiliateQuery": "Kalbarri Australia",
+    "observationSiteIds": [
+      "kalbarri-skywalk-night",
+      "meanarra-hill-lookout"
+    ]
+  },
+  {
+    "id": "mannum",
+    "destinationId": "river-murray",
+    "name": "Mannum",
+    "lat": -34.912,
+    "lon": 139.313,
+    "affiliateQuery": "Mannum Australia",
+    "observationSiteIds": [
+      "big-bend-astro-pad",
+      "towitta-astro-pad"
+    ]
+  },
+  {
+    "id": "claris-aotea",
+    "destinationId": "great-barrier-island",
+    "name": "Claris",
+    "lat": -36.242,
+    "lon": 175.472,
+    "affiliateQuery": "Claris New Zealand",
+    "observationSiteIds": [
+      "medlands-beach-night",
+      "windy-canyon-aotea"
+    ]
+  },
+  {
+    "id": "martinborough",
+    "destinationId": "wairarapa",
+    "name": "Martinborough",
+    "lat": -41.219,
+    "lon": 175.46,
+    "affiliateQuery": "Martinborough New Zealand",
+    "observationSiteIds": [
+      "star-safari-wairarapa",
+      "stonehenge-aotearoa-night"
+    ]
+  },
+  {
+    "id": "kaikoura-town",
+    "destinationId": "kaikoura",
+    "name": "Kaikōura",
+    "lat": -42.4,
+    "lon": 173.681,
+    "affiliateQuery": "Kaikōura New Zealand",
+    "observationSiteIds": [
+      "south-bay-kaikoura",
+      "point-kean-night-area"
+    ]
+  },
+  {
+    "id": "oudtshoorn-town",
+    "destinationId": "oudtshoorn",
+    "name": "Oudtshoorn",
+    "lat": -33.59,
+    "lon": 22.202,
+    "affiliateQuery": "Oudtshoorn South Africa",
+    "observationSiteIds": [
+      "buffelsdrift-night-experience",
+      "de-zeekoe-night-area"
+    ]
+  },
+  {
+    "id": "mackinaw-city",
+    "destinationId": "headlands-michigan",
+    "name": "Mackinaw City",
+    "lat": 45.777,
+    "lon": -84.727,
+    "affiliateQuery": "Mackinaw City United States",
+    "observationSiteIds": [
+      "headlands-waterfront-event-center",
+      "mcgulpin-point"
+    ]
+  },
+  {
+    "id": "wadi-rum-village",
+    "destinationId": "wadi-rum",
+    "name": "Wadi Rum Village",
+    "lat": 29.574,
+    "lon": 35.422,
+    "affiliateQuery": "Wadi Rum Village Jordan",
+    "observationSiteIds": [
+      "wadi-rum-visitor-centre",
+      "wadi-rum-booked-camp"
+    ]
+  },
+  {
+    "id": "jaisalmer-city",
+    "destinationId": "jaisalmer",
+    "name": "Jaisalmer",
+    "lat": 26.9157,
+    "lon": 70.9083,
+    "affiliateQuery": "Jaisalmer India",
+    "observationSiteIds": [
+      "sam-sand-dunes-camp-zone",
+      "khuri-village-camp-zone"
+    ]
+  },
+  {
+    "id": "sami-kefalonia",
+    "destinationId": "aenos",
+    "name": "Sami, Kefalonia",
+    "lat": 38.25,
+    "lon": 20.646,
+    "affiliateQuery": "Sami, Kefalonia Greece",
+    "observationSiteIds": [
+      "aenos-entrance-view-area",
+      "aenos-picnic-area"
+    ]
+  }
 ]

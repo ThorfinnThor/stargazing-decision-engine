@@ -1,0 +1,33 @@
+{
+  "siteId": "panorama-point-arches",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    38.734,
+    -109.504
+  ],
+  "tile": "N38_00_W110_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N38_00_W110_00_DEM/Copernicus_DSM_COG_10_N38_00_W110_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1326.643,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1328.905,
+      "validSampleCount": 262
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1340.237,
+      "validSampleCount": 4212
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:29:46.552153Z"
+}

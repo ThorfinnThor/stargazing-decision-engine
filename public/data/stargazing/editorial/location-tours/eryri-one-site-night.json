@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "eryri-one-site-night",
+  "slug": "eryri-one-site-night",
+  "destinationId": "eryri",
+  "recommendedSiteId": "llyn-y-dywarchen",
+  "title": {
+    "en": "Eryri from a lake edge, not a summit at night",
+    "de": "Eryri vom Seeufer statt vom Gipfel bei Nacht"
+  },
+  "seoDescription": {
+    "en": "Follow a sourced one-site stargazing route from Beddgelert to Llyn y Dywarchen, with daylight arrival, current-condition checks and a direct return.",
+    "de": "Folge einer belegten Ein-Ort-Stargazing-Route von Beddgelert zu Llyn y Dywarchen, mit Tageslicht-Ankunft, aktueller Prüfung und direkter Rückkehr."
+  },
+  "standfirst": {
+    "en": "Base in Beddgelert, use Llyn y Dywarchen as the fixed destination and avoid linking several passes after dark. This self-guided route uses Llyn y Dywarchen as the fixed site and Beddgelert as the return base. Mountain weather, narrow roads, livestock and water edges make a daytime reconnaissance essential even for short sessions. The plan therefore values a verified entrance, an early arrival and an uneventful journey home more than an extra stop.",
+    "de": "Nutze Beddgelert als Basis, Llyn y Dywarchen als festen Zielort und verbinde nachts nicht mehrere Pässe. Diese selbst geführte Route nutzt Llyn y Dywarchen als festen Ort und Beddgelert als Rückkehrbasis. Bergwetter, schmale Straßen, Weidetiere und Wasserkanten machen eine Erkundung bei Tageslicht selbst für kurze Sitzungen notwendig. Der Plan bewertet deshalb bestätigten Zugang, frühe Ankunft und eine ereignislose Heimfahrt höher als einen zusätzlichen Stopp."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Chosen site",
+        "de": "Gewählter Ort"
+      },
+      "value": {
+        "en": "Llyn y Dywarchen",
+        "de": "Llyn y Dywarchen"
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Base",
+        "de": "Basis"
+      },
+      "value": {
+        "en": "Beddgelert",
+        "de": "Beddgelert"
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival",
+        "de": "Ankunft"
+      },
+      "value": {
+        "en": "Before sunset, after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ]
+    },
+    {
+      "label": {
+        "en": "Alternative",
+        "de": "Alternative"
+      },
+      "value": {
+        "en": "Bwlch y Groes, only as a separately verified plan",
+        "de": "Bwlch y Groes, nur als separat geprüfter Plan"
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "eryri-tour-choices",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two choices before leaving Beddgelert",
+        "de": "Zwei Entscheidungen vor der Abfahrt aus Beddgelert"
+      },
+      "introduction": {
+        "en": "The route works only when access and conditions agree.",
+        "de": "Die Route funktioniert nur, wenn Zugang und Bedingungen übereinstimmen."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Llyn y Dywarchen is confirmed",
+            "de": "Llyn y Dywarchen ist bestätigt"
+          },
+          "body": {
+            "en": "For Llyn y Dywarchen, use the published route, arrive in daylight and keep the session at the selected site. Save the source and return directions offline so poor reception cannot change the agreed boundary.",
+            "de": "Für Llyn y Dywarchen nutzt du die veröffentlichte Route, kommst bei Tageslicht und bleibst am gewählten Ort. Speichere Quelle und Rückweg offline, damit schlechter Empfang die vereinbarte Grenze nicht verändert."
+          },
+          "sourceIds": [
+            "eryri-place",
+            "eryri-access",
+            "eryri-status"
+          ]
+        },
+        {
+          "label": {
+            "en": "Any essential detail is uncertain",
+            "de": "Ein wesentliches Detail ist unsicher"
+          },
+          "body": {
+            "en": "Rain, fog or standing water means returning to Beddgelert; a higher road is not a reliable escape from Welsh weather. Do not substitute Bwlch y Groes unless its own authority, route and timing have been checked before departure.",
+            "de": "Regen, Nebel oder stehendes Wasser bedeuten die Rückkehr nach Beddgelert. Eine höhere Straße ist kein verlässlicher Ausweg aus walisischem Wetter. Ersetze den Ort nicht durch Bwlch y Groes, solange dessen eigene Behörde, Route und Zeit nicht vor der Abfahrt geprüft wurden."
+          },
+          "sourceIds": [
+            "eryri-place",
+            "eryri-access",
+            "eryri-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eryri-tour-ground",
+      "kind": "prose",
+      "heading": {
+        "en": "Why Llyn y Dywarchen is enough for one night",
+        "de": "Warum Llyn y Dywarchen für eine Nacht genügt"
+      },
+      "paragraphs": {
+        "en": [
+          "Eryri does not require a night summit to produce a powerful sky. Llyn y Dywarchen offers a lower, legible landscape. Bwlch y Groes is exposed and only belongs in a plan backed by current road, weather and parking information. This tour commits to Llyn y Dywarchen because a single known site preserves attention for the sky and the return. Bwlch y Groes is useful information for another date, not a target to add after darkness.",
+          "Park only where permitted, leave gates as found and keep light and noise away from farms and wildlife. Spend the first unlit minutes identifying cardinal directions and the broadest open horizon. Equipment should serve that observation rather than turning the evening into a complicated setup exercise."
+        ],
+        "de": [
+          "Eryri braucht keinen Nachtgipfel für einen eindrucksvollen Himmel. Llyn y Dywarchen bietet eine niedrigere, lesbare Landschaft. Bwlch y Groes ist exponiert und gehört nur in einen Plan mit aktuellen Straßen-, Wetter- und Parkinformationen. Diese Tour legt sich auf Llyn y Dywarchen fest, weil ein bekannter Ort Aufmerksamkeit für Himmel und Rückweg erhält. Bwlch y Groes ist nützliche Information für ein anderes Datum und kein Ziel, das nach Einbruch der Dunkelheit ergänzt wird.",
+          "Parke nur erlaubt, hinterlasse Tore wie vorgefunden und halte Licht sowie Lärm von Höfen und Wildtieren fern. Nutze die ersten unbeleuchteten Minuten für Himmelsrichtungen und den offensten Horizont. Ausrüstung dient dieser Beobachtung, statt den Abend in eine komplizierte Aufbauübung zu verwandeln."
+        ]
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ]
+    },
+    {
+      "id": "eryri-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The evening rhythm at Llyn y Dywarchen",
+        "de": "Der Abendrhythmus an Llyn y Dywarchen"
+      },
+      "introduction": {
+        "en": "Timing is built around visibility on arrival and attention on return.",
+        "de": "Die Zeitplanung richtet sich nach Sicht bei Ankunft und Aufmerksamkeit bei Rückkehr."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Learn the last kilometre",
+            "de": "Den letzten Kilometer lernen"
+          },
+          "body": {
+            "en": "Travel from Beddgelert, inspect the legal parking position, safe observation area and retreat while all surfaces are visible. Recheck current conditions before committing to the session.",
+            "de": "Fahre aus Beddgelert, prüfe legalen Parkplatz, sichere Beobachtungsfläche und Rückzug, solange alle Flächen sichtbar sind. Prüfe aktuelle Bedingungen erneut, bevor du dich auf die Sitzung festlegst."
+          },
+          "sourceIds": [
+            "eryri-place",
+            "eryri-access",
+            "eryri-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe before adding equipment",
+            "de": "Vor zusätzlicher Ausrüstung beobachten"
+          },
+          "body": {
+            "en": "At Llyn y Dywarchen, allow full dark adaptation, orient with the naked eye and add only equipment that can be managed without obstructing anyone. Keep the setup inside the footprint inspected earlier.",
+            "de": "An Llyn y Dywarchen lässt du die Augen vollständig adaptieren, orientierst dich mit bloßem Auge und ergänzt nur Ausrüstung, die ohne Behinderung anderer nutzbar ist. Halte den Aufbau innerhalb der zuvor geprüften Fläche."
+          },
+          "sourceIds": [
+            "eryri-place",
+            "eryri-access",
+            "eryri-status"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the planned stop time",
+            "de": "Zur geplanten Endzeit"
+          },
+          "title": {
+            "en": "Leave on the known route",
+            "de": "Auf der bekannten Route fahren"
+          },
+          "body": {
+            "en": "Leave Llyn y Dywarchen systematically, inspect the ground and return directly to Beddgelert. Do not trade a safe finish for a late move toward Bwlch y Groes or an unverified roadside horizon.",
+            "de": "Verlasse Llyn y Dywarchen systematisch, prüfe den Boden und kehre direkt nach Beddgelert zurück. Tausche ein sicheres Ende nicht gegen einen späten Wechsel zu Bwlch y Groes oder einen unbestätigten Straßenhorizont."
+          },
+          "sourceIds": [
+            "eryri-place",
+            "eryri-access",
+            "eryri-status"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "eryri-tour-veto",
+      "kind": "note",
+      "heading": {
+        "en": "What cancels the Eryri route",
+        "de": "Was die Route in Eryri absagt"
+      },
+      "body": {
+        "en": "Mountain weather, narrow roads, livestock and water edges make a daytime reconnaissance essential even for short sessions. Treat that limit as a decision made before equipment leaves the vehicle. Rain, fog or standing water means returning to Beddgelert; a higher road is not a reliable escape from Welsh weather. A shorter evening is a successful outcome when it prevents an exposed or unsupported return.",
+        "de": "Bergwetter, schmale Straßen, Weidetiere und Wasserkanten machen eine Erkundung bei Tageslicht selbst für kurze Sitzungen notwendig. Behandle diese Grenze als Entscheidung, bevor Ausrüstung das Fahrzeug verlässt. Regen, Nebel oder stehendes Wasser bedeuten die Rückkehr nach Beddgelert. Eine höhere Straße ist kein verlässlicher Ausweg aus walisischem Wetter. Ein kürzerer Abend ist erfolgreich, wenn er eine exponierte oder ungesicherte Rückkehr verhindert."
+      },
+      "sourceIds": [
+        "eryri-place",
+        "eryri-access",
+        "eryri-status"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "eryri-place",
+    "eryri-access",
+    "eryri-status"
+  ],
+  "lastReviewedAt": "2026-08-31"
+}

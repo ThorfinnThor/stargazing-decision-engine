@@ -3,10 +3,110 @@
   "originName": "Los Angeles",
   "countryCode": "US",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "joshua-tree",
+      "destinationSlug": "joshua-tree",
+      "destinationName": "Joshua Tree",
+      "distanceKm": 227.96,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 94
+        },
+        {
+          "month": 5,
+          "score": 93
+        },
+        {
+          "month": 10,
+          "score": 93
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 94,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 91,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 94,
+      "distanceUtility": 85,
+      "shortTripScore": 91.75,
+      "bestSiteId": "cottonwood-joshua-tree",
+      "stayArea": {
+        "id": "twentynine-palms",
+        "name": "Twentynine Palms",
+        "affiliateQuery": "Twentynine Palms United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 94 in month 4.",
+        "Distance is 227.96 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Twentynine Palms."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
       "destinationId": "anza-borrego",
       "destinationSlug": "anza-borrego",
       "destinationName": "Anza-Borrego Desert",
@@ -106,7 +206,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",

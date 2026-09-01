@@ -1,0 +1,33 @@
+{
+  "siteId": "star-safari-wairarapa",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -41.1425,
+    175.5175
+  ],
+  "tile": "S42_00_E175_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S42_00_E175_00_DEM/Copernicus_DSM_COG_10_S42_00_E175_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 179.52,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 161.933,
+      "validSampleCount": 265
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 150.772,
+      "validSampleCount": 4365
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:35:52.115601Z"
+}

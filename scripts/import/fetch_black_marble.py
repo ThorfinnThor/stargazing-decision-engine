@@ -44,6 +44,23 @@ def retry_network(label: str, operation, attempts: int = 4, initial_delay_second
             sleeper(delay)
 
 
+def retry_nonempty_results(
+    label: str,
+    operation,
+    attempts: int = 4,
+    initial_delay_seconds: float = 5,
+    sleeper=time.sleep,
+):
+    """Retry Earthdata searches that transiently return no granules."""
+    return retry_network(
+        label,
+        lambda: operation() or (_ for _ in ()).throw(RuntimeError("Earthdata returned no granules")),
+        attempts=attempts,
+        initial_delay_seconds=initial_delay_seconds,
+        sleeper=sleeper,
+    )
+
+
 def earthdata_client():
     """Authenticate once and reuse the Earthdata client for a batch."""
     global _EARTHACCESS
@@ -63,6 +80,8 @@ def earthdata_client():
 def retrieve(site_slug: str, target_kind: str = "site") -> None:
     config = load_json(ROOT / "data-config" / "sources" / "black-marble.json")
     site = resolve_target(ROOT, site_slug, target_kind)
+    darkness_config = load_json(ROOT / "data-config" / "scoring" / "darkness.json")
+    calibrated_years = darkness_config.get("blackMarbleYears", []) if darkness_config.get("status") == "calibrated" else []
 
     target = RAW_ROOT / site_slug
     metadata_path = target / "metadata.json"
@@ -84,9 +103,13 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
     tiles = set(required_tiles(bounds))
     earthaccess = earthdata_client()
     selected_by_year: dict[int, list] = {}
-    first_candidate_year = datetime.now(timezone.utc).year - 1
+    if target_kind == "site" and calibrated_years:
+        candidate_years = sorted((int(year) for year in calibrated_years), reverse=True)
+    else:
+        first_candidate_year = datetime.now(timezone.utc).year - 1
+        candidate_years = list(range(first_candidate_year, config["availableFromYear"] - 1, -1))
 
-    for year in range(first_candidate_year, config["availableFromYear"] - 1, -1):
+    for year in candidate_years:
         by_tile: dict[str, object] = {}
         for tile in sorted(tiles):
             # CMR records expose the human-readable producer filename through
@@ -94,7 +117,7 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
             # VNP46A4 is annual, but its ending timestamp is in the following
             # year, so the temporal window intentionally ends on January 1 of
             # the next year.
-            results = retry_network(
+            results = retry_nonempty_results(
                 f"Earthdata search for {year} {tile}",
                 lambda: earthaccess.search_data(
                     short_name=config["product"],
@@ -115,6 +138,11 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         raise SystemExit(
             f"Found only {len(selected_by_year)} complete VNP46A4 year(s) for {site_slug}; "
             f"required {config['baselineYearCount']}."
+        )
+    if target_kind == "site" and calibrated_years and sorted(selected_by_year) != sorted(calibrated_years):
+        raise SystemExit(
+            f"Black Marble years for {site_slug} do not match the calibrated baseline: "
+            f"found {sorted(selected_by_year)}, required {sorted(calibrated_years)}."
         )
 
     target.mkdir(parents=True, exist_ok=True)

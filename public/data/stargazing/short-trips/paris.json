@@ -3,10 +3,110 @@
   "originName": "Paris",
   "countryCode": "FR",
   "maxShortTripKm": 400,
-  "generatedAt": "2026-08-26T21:36:54.756157Z",
+  "generatedAt": "2026-09-01T01:39:29.301736Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "south-downs",
+      "destinationSlug": "south-downs",
+      "destinationName": "South Downs",
+      "distanceKm": 326.96,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 9,
+          "score": 64
+        },
+        {
+          "month": 4,
+          "score": 62
+        },
+        {
+          "month": 3,
+          "score": 60
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 58,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 64,
+      "distanceUtility": 60,
+      "shortTripScore": 63,
+      "bestSiteId": "iping-common-dark-sky",
+      "stayArea": {
+        "id": "petersfield",
+        "name": "Petersfield",
+        "affiliateQuery": "Petersfield United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 64 in month 9.",
+        "Distance is 326.96 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Petersfield."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
       "destinationId": "eifel",
       "destinationSlug": "eifel",
       "destinationName": "Eifel Dark Sky Park",

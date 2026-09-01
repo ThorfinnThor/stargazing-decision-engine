@@ -1,0 +1,33 @@
+{
+  "siteId": "townsite-campground-waterton",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    49.0507,
+    -113.907
+  ],
+  "tile": "N49_00_W114_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N49_00_W114_00_DEM/Copernicus_DSM_COG_10_N49_00_W114_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1283.536,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1283.586,
+      "validSampleCount": 305
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1284.926,
+      "validSampleCount": 5022
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:37:28.026903Z"
+}

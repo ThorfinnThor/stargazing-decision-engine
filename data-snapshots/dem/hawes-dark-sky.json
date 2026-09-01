@@ -1,0 +1,33 @@
+{
+  "siteId": "hawes-dark-sky",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    54.303,
+    -2.201
+  ],
+  "tile": "N54_00_W003_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N54_00_W003_00_DEM/Copernicus_DSM_COG_10_N54_00_W003_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 251.784,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 252.425,
+      "validSampleCount": 222
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 254.83,
+      "validSampleCount": 3763
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-01T01:21:33.493037Z"
+}
