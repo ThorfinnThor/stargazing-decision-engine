@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { buildAffiliateActivityUrl, buildAffiliateUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../lib/affiliate/affiliate.js";
+import { buildAffiliateActivityUrl, buildAffiliatePartnerUrl, buildAffiliateUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../lib/affiliate/affiliate.js";
 import type { AffiliateActivityOfferConfig, AffiliateConfig, Destination, LocationTour } from "../lib/data/types.js";
 
 const destination: Destination = {
@@ -34,6 +34,19 @@ const source = (path: string) => readFileSync(path, "utf8");
 test("disabled affiliate partners cannot produce a CTA URL", () => {
   validateAffiliateConfig(config);
   assert.equal(buildAffiliateUrl(config, "stay-search", destination), null);
+});
+
+test("gear partner URL preserves Astroshop tracking and host allowlist", () => {
+  const gearConfig: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "astroshop-gear", name: "Astroshop", type: "gear", enabled: true, affiliateId: "StargazingIndex", destinationSearchEnabled: false,
+      urlTemplate: "https://www.astroshop.de/?affiliate_id={affiliateId}", allowedHosts: ["www.astroshop.de"], requiredQueryParameters: ["affiliate_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  validateAffiliateConfig(gearConfig);
+  const url = buildAffiliatePartnerUrl(gearConfig, "astroshop-gear");
+  assert.equal(url, "https://www.astroshop.de/?affiliate_id=StargazingIndex");
 });
 
 test("enabled affiliate URLs are encoded and host allow-listed", () => {

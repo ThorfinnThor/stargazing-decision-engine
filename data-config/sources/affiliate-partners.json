@@ -77,6 +77,21 @@
         "en": "Affiliate link to GetYourGuide. We may earn a commission at no extra cost to you.",
         "de": "Affiliate-Link zu GetYourGuide. Wir können ohne Mehrkosten für dich eine Provision erhalten."
       }
+    },
+    {
+      "id": "astroshop-gear",
+      "name": "Astroshop",
+      "type": "gear",
+      "enabled": true,
+      "affiliateId": "StargazingIndex",
+      "destinationSearchEnabled": false,
+      "urlTemplate": "https://www.astroshop.de/?affiliate_id={affiliateId}",
+      "allowedHosts": ["astroshop.de", "www.astroshop.de"],
+      "requiredQueryParameters": ["affiliate_id"],
+      "disclosure": {
+        "en": "Affiliate link to Astroshop. We may earn a commission at no extra cost to you.",
+        "de": "Affiliate-Link zu Astroshop. Wir können ohne Mehrkosten für dich eine Provision erhalten."
+      }
     }
   ]
 }

@@ -44,7 +44,7 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
         if (!variant.queryTemplate.includes("{query}")) throw new Error(`${partner.id}/${variant.id}: query template must include {query}`);
         if (variant.queryTemplate.replaceAll("{query}", "").includes("{")) throw new Error(`${partner.id}/${variant.id}: query template contains an unsupported placeholder`);
       }
-    } else if (partner.urlTemplate !== null) {
+    } else if (partner.urlTemplate !== null && partner.type !== "gear") {
       throw new Error(`${partner.id}: curated-only partner must not define a destination-search URL template`);
     } else if ((partner.destinationSearchVariants?.length ?? 0) > 0) {
       throw new Error(`${partner.id}: disabled destination search must not define variants`);
@@ -115,6 +115,19 @@ export function buildAffiliateActivityUrl(config: AffiliateConfig, offer: Affili
   const affiliateId = affiliatePartnerId(partner);
   if (!affiliateId) return null;
   const rawUrl = offer.urlTemplate.replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
+  let parsed: URL;
+  try { parsed = new URL(rawUrl); } catch { return null; }
+  if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
+  if (partner.requiredQueryParameters.some((parameter) => !parsed.searchParams.has(parameter))) return null;
+  return parsed.toString();
+}
+
+export function buildAffiliatePartnerUrl(config: AffiliateConfig, partnerId: string) {
+  const partner = getAffiliatePartner(config, partnerId);
+  if (!partner || partner.type !== "gear" || !partner.enabled || !partner.urlTemplate) return null;
+  const affiliateId = affiliatePartnerId(partner);
+  if (!affiliateId) return null;
+  const rawUrl = partner.urlTemplate.replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
   let parsed: URL;
   try { parsed = new URL(rawUrl); } catch { return null; }
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;

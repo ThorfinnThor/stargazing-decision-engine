@@ -9,6 +9,7 @@ import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { isGearGuideEditorialReady } from "@/lib/gear/gear";
 import { legal } from "@/lib/legal/config";
+import { AffiliateGearLink } from "@/components/affiliate-gear-link";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -118,7 +119,10 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
         <h2 id="related-guides-title">{isGerman ? "Weitere Ausrüstungs-Guides" : "Related gear guides"}</h2>
         <div className="foundation-grid gear-guide-grid">{relatedGuides.map((related) => <a className="destination-card gear-guide-card" href={localizedLinks.gearGuide(locale, related.slug)} key={related.slug}><div className="card-topline"><span>{related.category.replaceAll("-", " ")}</span><span>→</span></div><h3>{related.title[locale]}</h3><p>{related.summary[locale]}</p></a>)}</div>
       </section>
-      <footer className="event-footer"><p>{guide.affiliateDisclosure[locale]} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
+      <AffiliateGearLink locale={locale} />
+      <footer className="event-footer"><p>{isGerman
+        ? "Dieser Guide enthält einen gekennzeichneten Astroshop-Affiliate-Link. Die Produktauswahl und Bewertung bleiben unabhängig."
+        : "This guide contains a labelled Astroshop affiliate link. Product selection and evaluation remain independent."} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
     </main>
   );
 }
