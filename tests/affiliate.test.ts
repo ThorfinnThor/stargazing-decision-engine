@@ -250,8 +250,8 @@ test("regional activity sections contain no more than two direct GetYourGuide pr
     assert.equal(offer.partnerId, "getyourguide-activities");
     destinationCounts.set(offer.destinationId, (destinationCounts.get(offer.destinationId) ?? 0) + 1);
   }
-  assert.equal(regionalOffers.length, 84);
-  assert.equal(destinationCounts.size, 46);
+  assert.equal(regionalOffers.length, 90);
+  assert.equal(destinationCounts.size, 50);
   for (const count of destinationCounts.values()) assert.ok(count <= 2);
 });
 
