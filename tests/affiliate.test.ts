@@ -232,49 +232,38 @@ test("reviewed GetYourGuide catalog contains only direct tracked product pages",
     assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
     assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
     assert.ok(url.searchParams.get("cmp"));
-    const isDirectProductPath = /-t\d+\/$/.test(url.pathname);
-    const isExactProductSelector = url.pathname === "/s"
-      && /^\d+$/.test(url.searchParams.get("et") ?? "")
-      && /^\d+$/.test(url.searchParams.get("lc") ?? "");
-    assert.ok(isDirectProductPath || isExactProductSelector);
+    assert.match(url.pathname, /-t\d+\/$/);
   }
 });
 
-test("reviewed Viator catalog contains only direct tracked product pages", () => {
+test("Viator offers stay disabled until their affiliate links resolve to product detail pages", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
-  for (const offer of viatorOffers) {
-    const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
-    assert.equal(url.hostname, "www.viator.com");
-    assert.equal(url.searchParams.get("pid"), "P00314274");
-    assert.equal(url.searchParams.get("mcid"), "42383");
-    assert.equal(url.searchParams.get("medium"), "link");
-    assert.match(url.pathname, /\/tours\//);
-  }
+  assert.equal(viatorOffers.length, 0);
 });
 
 test("the first ten destinations use the reviewed offer inventory without automatic fallbacks", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const firstTen = ["la-palma", "tenerife", "westhavelland", "alqueva", "galloway", "atacama", "big-bend", "aoraki-mackenzie", "namibrand", "jasper"];
   const expectedCounts: Record<string, { stargazing: number; regional: number }> = {
-    "la-palma": { stargazing: 5, regional: 2 },
-    "tenerife": { stargazing: 3, regional: 1 },
+    "la-palma": { stargazing: 2, regional: 0 },
+    "tenerife": { stargazing: 3, regional: 0 },
     "westhavelland": { stargazing: 0, regional: 0 },
     "alqueva": { stargazing: 2, regional: 1 },
     "galloway": { stargazing: 0, regional: 1 },
-    "atacama": { stargazing: 3, regional: 1 },
-    "big-bend": { stargazing: 0, regional: 2 },
-    "aoraki-mackenzie": { stargazing: 3, regional: 0 },
+    "atacama": { stargazing: 1, regional: 1 },
+    "big-bend": { stargazing: 0, regional: 0 },
+    "aoraki-mackenzie": { stargazing: 1, regional: 0 },
     "namibrand": { stargazing: 0, regional: 0 },
-    "jasper": { stargazing: 2, regional: 2 },
+    "jasper": { stargazing: 2, regional: 1 },
   };
   for (const destinationId of firstTen) {
     const offers = actual.offers.filter((offer) => offer.enabled && offer.destinationId === destinationId);
     assert.equal(offers.filter((offer) => (offer.kind ?? "stargazing") === "stargazing").length, expectedCounts[destinationId].stargazing);
     assert.equal(offers.filter((offer) => offer.kind === "regional").length, expectedCounts[destinationId].regional);
   }
-  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2"), true);
-  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4"), true);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2" && offer.enabled), false);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4" && offer.enabled), false);
 });
 
 test("affiliate disclosures appear only with rendered affiliate integrations", () => {
