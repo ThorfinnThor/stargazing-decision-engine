@@ -119,7 +119,7 @@ test("GetYourGuide destination widget requires allow-listed HTTPS sources", () =
     version: 1,
     partners: [{
       id: "getyourguide-activities", name: "GetYourGuide", type: "activity", enabled: true, affiliateId: "BKWM9K1", destinationSearchEnabled: false,
-      widget: { type: "activities", enabled: true, campaign: "Stargazing", scriptUrl: "https://widget.getyourguide.com/dist/pa.umd.production.min.js", frameUrl: "https://widget.getyourguide.com/default/activities.frame", itemCount: 3, destinationIds: ["la-palma"] },
+      widget: { type: "activities", enabled: true, campaign: "Stargazing", scriptUrl: "https://widget.getyourguide.com/dist/pa.umd.production.min.js", frameUrl: "https://widget.getyourguide.com/default/activities.frame", itemCount: 3, destinationScope: "selected", destinationIds: ["la-palma"] },
       urlTemplate: null, allowedHosts: ["www.getyourguide.com", "widget.getyourguide.com"], requiredQueryParameters: ["partner_id"], disclosure: { en: "Disclosure", de: "Hinweis" },
     }],
   };

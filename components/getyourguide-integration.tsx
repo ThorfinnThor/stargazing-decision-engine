@@ -12,9 +12,13 @@ function loadEnabledWidget() {
   return { partnerId, partnerName: partner.name, ...partner.widget };
 }
 
+function widgetIncludesDestination(widget: NonNullable<ReturnType<typeof loadEnabledWidget>>, destinationId: string) {
+  return widget.destinationScope === "all-active" || Boolean(widget.destinationIds?.includes(destinationId));
+}
+
 export function hasGetYourGuideActivitiesWidget(destinationId: string) {
   const widget = loadEnabledWidget();
-  return Boolean(widget?.destinationIds.includes(destinationId));
+  return Boolean(widget && widgetIncludesDestination(widget, destinationId));
 }
 
 export function GetYourGuideAnalytics() {
@@ -30,7 +34,7 @@ export function GetYourGuideAnalytics() {
 
 export function GetYourGuideActivitiesWidget({ destinationId, destinationName, destinationQuery, locale }: { destinationId: string; destinationName: string; destinationQuery: string; locale: Locale }) {
   const widget = loadEnabledWidget();
-  if (!widget || !widget.destinationIds.includes(destinationId)) return null;
+  if (!widget || !widgetIncludesDestination(widget, destinationId)) return null;
   const isGerman = locale === "de";
 
   return <section className="getyourguide-activities-widget" aria-labelledby={`getyourguide-widget-title-${destinationId}`}>
@@ -38,8 +42,8 @@ export function GetYourGuideActivitiesWidget({ destinationId, destinationName, d
       <p className="eyebrow">{isGerman ? "Live-Aktivitäten für die Destination" : "Live destination activities"} · {widget.partnerName}</p>
       <h2 id={`getyourguide-widget-title-${destinationId}`}>{isGerman ? `Weitere Erlebnisse rund um ${destinationName}` : `More experiences around ${destinationName}`}</h2>
       <p>{isGerman
-        ? `GetYourGuide zeigt aktuell buchbare Aktivitäten für ${destinationName}. Diese Live-Ergebnisse wurden von uns nicht einzeln geprüft. Prüfe vor der Buchung Treffpunkt, Leistungen, Preis und Bedingungen beim Anbieter.`
-        : `GetYourGuide shows currently bookable activities for ${destinationName}. We have not reviewed these live results individually. Check the meeting point, inclusions, price, and terms with the provider before booking.`}</p>
+        ? `GetYourGuide zeigt aktuell buchbare Aktivitäten für ${destinationName}. Prüfe vor der Buchung Treffpunkt, Leistungen, Preis und Bedingungen direkt beim Anbieter.`
+        : `GetYourGuide shows currently bookable activities for ${destinationName}. Check the meeting point, inclusions, price, and terms directly with the provider before booking.`}</p>
     </header>
     <div className="getyourguide-activities-widget-frame">
       <div

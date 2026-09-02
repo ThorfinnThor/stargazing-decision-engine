@@ -197,7 +197,8 @@ export interface AffiliateWidgetConfig {
   scriptUrl: string;
   frameUrl: string;
   itemCount: number;
-  destinationIds: string[];
+  destinationScope: "all-active" | "selected";
+  destinationIds?: string[];
 }
 
 export interface AffiliatePartner {

@@ -180,7 +180,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
       {guide && relatedDestinations.length > 0 && <nav className="destination-related" aria-labelledby="destination-related-title">
         <div>
           <p className="eyebrow">{isGerman ? "Weiterplanen" : "Continue planning"}</p>
-          <h2 id="destination-related-title">{isGerman ? "Weitere redaktionelle Himmelsführer" : "More editorial sky guides"}</h2>
+          <h2 id="destination-related-title">{isGerman ? "Weitere Himmelsführer" : "More sky guides"}</h2>
         </div>
         <div className="destination-related-grid">
           {relatedDestinations.map((related, index) => <Link key={related.id} href={`/${locale}/stargazing-destinations/${related.slug}/`}>
