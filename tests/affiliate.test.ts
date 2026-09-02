@@ -297,7 +297,8 @@ test("affiliate disclosures appear only with rendered affiliate integrations", (
   }
 
   const destinationModules = source("components/affiliate-destination-modules.tsx");
-  assert.equal((destinationModules.match(/<AffiliateDisclosure locale=\{locale\}/g) ?? []).length, 1);
-  assert.match(destinationModules, /hasOffers \? <AffiliateDisclosure locale=\{locale\} \/> : null/);
+  assert.equal((destinationModules.match(/<AffiliateDisclosure id=\{disclosureId\} locale=\{locale\}/g) ?? []).length, 1);
+  assert.match(destinationModules, /hasOffers \? <AffiliateDisclosure id=\{disclosureId\} locale=\{locale\} \/> : null/);
+  assert.match(destinationModules, /disclosureId=\{hasOffers \? disclosureId : undefined\}/);
   assert.ok(destinationModules.indexOf("<AffiliateDisclosure") < destinationModules.indexOf("<AffiliateActivityOffers"));
 });

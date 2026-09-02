@@ -12,13 +12,14 @@ export function AffiliateDestinationModules({
   locationTourSlug?: string;
   locale: Locale;
 }) {
+  const disclosureId = `affiliate-disclosure-${locationTourSlug ?? destinationId}`;
   const hasOffers = loadAffiliateActivityOffers().some((offer) => (
     offer.destinationId === destinationId
     && (!locationTourSlug || offer.locationTourSlugs.includes(locationTourSlug))
   ));
 
   return <>
-    {hasOffers ? <AffiliateDisclosure locale={locale} /> : null}
-    <AffiliateActivityOffers destinationId={destinationId} locationTourSlug={locationTourSlug} locale={locale} />
+    {hasOffers ? <AffiliateDisclosure id={disclosureId} locale={locale} /> : null}
+    <AffiliateActivityOffers destinationId={destinationId} locationTourSlug={locationTourSlug} locale={locale} disclosureId={hasOffers ? disclosureId : undefined} />
   </>;
 }

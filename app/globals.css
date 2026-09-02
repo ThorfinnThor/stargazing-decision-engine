@@ -621,11 +621,14 @@ h1 span {
 .affiliate-disclosure {
   max-width: 78rem;
   margin: clamp(3rem, 7vw, 6rem) auto 0;
-  padding: 0 clamp(2rem, 5vw, 4rem);
-  color: #d9deea;
-  font-size: 0.78rem;
-  line-height: 1.6;
+  padding: 0.7rem clamp(2rem, 5vw, 4rem);
+  border-left: 2px solid rgb(233 196 106 / 70%);
+  color: #cbd3e4;
+  font-size: 0.75rem;
+  line-height: 1.55;
 }
+
+.affiliate-disclosure strong { color: #fff; font-weight: 700; }
 
 .affiliate-disclosure + .affiliate-activity-offers,
 .affiliate-disclosure + .affiliate-destination-searches,
@@ -670,15 +673,56 @@ h1 span {
 .affiliate-activity-offers {
   max-width: 78rem;
   margin: clamp(3rem, 7vw, 6rem) auto;
-  padding: clamp(2rem, 5vw, 4rem);
+  padding: clamp(1.5rem, 3.5vw, 2.75rem);
   border: 1px solid rgb(142 197 255 / 26%);
   background: rgb(18 28 52 / 42%);
 }
 
+.affiliate-stargazing-offers {
+  border-color: rgb(233 196 106 / 48%);
+  background: linear-gradient(145deg, rgb(55 43 20 / 36%), rgb(18 28 52 / 44%));
+  box-shadow: inset 3px 0 0 rgb(233 196 106 / 78%);
+}
+
+.affiliate-regional-offers {
+  border-color: rgb(142 197 255 / 20%);
+  background: rgb(12 19 38 / 52%);
+}
+
+.affiliate-offer-status {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.65fr) minmax(20rem, 1.35fr);
+  gap: 0.75rem clamp(2rem, 7vw, 7rem);
+  max-width: 78rem;
+  margin: 1rem auto;
+  padding: 1.2rem clamp(1.4rem, 3vw, 2.25rem);
+  border: 1px solid rgb(142 197 255 / 18%);
+  border-left: 3px solid rgb(142 197 255 / 55%);
+  background: rgb(9 15 31 / 56%);
+}
+
+.affiliate-offer-status .eyebrow { margin: 0 0 0.45rem; }
+
+.affiliate-offer-status h2 {
+  margin: 0;
+  color: #fff;
+  font: 400 clamp(1.2rem, 1.7vw, 1.55rem)/1.12 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.025em;
+}
+
+.affiliate-offer-status > p {
+  align-self: center;
+  max-width: 48rem;
+  margin: 0;
+  color: #cbd3e4;
+  font-size: 0.86rem;
+  line-height: 1.6;
+}
+
 .affiliate-activity-offers > header {
   display: grid;
-  grid-template-columns: minmax(14rem, 0.7fr) minmax(20rem, 1.3fr);
-  gap: 0.7rem clamp(2rem, 7vw, 7rem);
+  grid-template-columns: minmax(14rem, 0.75fr) minmax(20rem, 1.25fr);
+  gap: 0.6rem clamp(2rem, 6vw, 6rem);
 }
 
 .affiliate-activity-offers > header .eyebrow { grid-column: 1 / -1; }
@@ -696,58 +740,84 @@ h1 span {
 .affiliate-activity-offers > header > p:last-child {
   max-width: 46rem;
   margin: 0;
-  color: #d9deea;
-  line-height: 1.7;
+  color: #cbd3e4;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .affiliate-activity-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
-  margin-top: 1.5rem;
-  border-top: 1px solid rgb(142 197 255 / 22%);
-  border-left: 1px solid rgb(142 197 255 / 22%);
+  gap: 0.8rem;
+  margin-top: 1.25rem;
 }
 
 .affiliate-activity-grid article {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: 1.15rem;
-  border-right: 1px solid rgb(142 197 255 / 22%);
-  border-bottom: 1px solid rgb(142 197 255 / 22%);
+  padding: 1.1rem;
+  border: 1px solid rgb(142 197 255 / 22%);
+  background: rgb(8 11 23 / 46%);
+}
+
+.affiliate-activity-card-stargazing {
+  border-color: rgb(233 196 106 / 34%) !important;
+  background: rgb(8 11 23 / 62%) !important;
 }
 
 .affiliate-activity-partner {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.65rem;
   color: var(--blue);
   font: 0.58rem/1.4 ui-monospace, monospace;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
+.affiliate-activity-card-stargazing .affiliate-activity-partner { color: var(--gold); }
+
 .affiliate-activity-grid h3 {
   margin: 0;
   color: #fff;
-  font: 400 clamp(1.05rem, 1.4vw, 1.35rem)/1.14 Georgia, "Times New Roman", serif;
+  font: 400 clamp(1.05rem, 1.3vw, 1.28rem)/1.18 Georgia, "Times New Roman", serif;
+  text-wrap: balance;
 }
 
 .affiliate-activity-grid article > p:not(.affiliate-activity-partner) {
+  margin: 0.65rem 0 0.9rem;
   color: #d9deea;
-  font-size: 0.9rem;
-  line-height: 1.55;
+  font-size: 0.84rem;
+  line-height: 1.58;
 }
 
 .affiliate-activity-grid a {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  justify-content: center;
   width: fit-content;
   margin-top: auto;
-  padding: 0.65rem 0;
-  border-bottom: 1px solid var(--gold);
+  padding: 0.62rem 0.78rem;
+  border: 1px solid rgb(142 197 255 / 42%);
   color: var(--gold);
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.affiliate-activity-card-stargazing a {
+  border-color: var(--gold);
+  background: var(--gold);
+  color: var(--night);
+}
+
+.affiliate-activity-grid a:hover,
+.affiliate-activity-grid a:focus-visible {
+  border-color: #fff;
+  background: #fff;
+  color: var(--night);
 }
 
 .affiliate-destination-searches {
@@ -1498,7 +1568,7 @@ h1 span {
 .destination-activities .affiliate-disclosure,
 .location-tour-activities .affiliate-disclosure {
   margin-top: 1.25rem;
-  padding: 0;
+  padding: 0.7rem 0.9rem;
 }
 
 .destination-activities .affiliate-activity-offers,
@@ -1508,6 +1578,9 @@ h1 span {
   margin: 1rem auto;
   padding: clamp(1.4rem, 3vw, 2.25rem);
 }
+
+.destination-activities .affiliate-offer-status,
+.location-tour-activities .affiliate-offer-status { margin: 1rem 0; }
 
 .destination-activities .affiliate-destination-searches,
 .location-tour-activities .affiliate-destination-searches { padding: 0; }
@@ -3331,6 +3404,7 @@ h3 {
   .destination-field-notes,
   .destination-editorial-sources,
   .destination-related,
+  .affiliate-offer-status,
   .affiliate-activity-offers > header,
   .affiliate-destination-searches > header,
   .getyourguide-activities-widget > header {
@@ -3585,6 +3659,10 @@ h3 {
   .affiliate-activity-grid {
     grid-template-columns: minmax(0, 1fr);
     overflow: visible;
+  }
+
+  .affiliate-activity-grid a {
+    width: 100%;
   }
 
   .destination-related-grid a + a {
