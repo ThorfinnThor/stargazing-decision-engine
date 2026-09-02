@@ -1,10 +1,7 @@
-import Link from "next/link";
 import type { ReactNode } from "react";
 
 import type { DestinationEditorialSource, LocationTour } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
-import { localizedLinks } from "@/lib/i18n/links";
-import { legal } from "@/lib/legal/config";
 
 function Citations({ ids, sources, sourceNumbers }: { ids: string[]; sources: Map<string, DestinationEditorialSource>; sourceNumbers: Map<string, number> }) {
   return <span className="editorial-citations">{ids.map((id) => {
@@ -69,15 +66,11 @@ export function LocationTourContent({ tour, locale, availableSources, activityMo
 
     <details className="location-tour-sources" id="tour-sources">
       <summary>
-        <span><span className="eyebrow">{isGerman ? "Geprüfte Primärquellen" : "Reviewed primary sources"}</span><strong>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</strong></span>
+        <span><span className="eyebrow">{isGerman ? "Primärquellen" : "Primary sources"}</span><strong>{isGerman ? "Zugang am Reisetag erneut prüfen" : "Recheck access on the day of travel"}</strong></span>
         <span className="content-disclosure-state" aria-hidden="true"><span>{isGerman ? "Quellen anzeigen" : "Show sources"}</span><span>{isGerman ? "Quellen schließen" : "Close sources"}</span></span>
       </summary>
       <div className="location-tour-sources-content">
-        <p>
-          {isGerman ? "Redaktionell geprüft von " : "Editorially reviewed by "}
-          <Link href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</Link>
-          {isGerman ? ` am ${tour.lastReviewedAt}. Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern.` : ` on ${tour.lastReviewedAt}. Bookings, opening times, gate hours and protected-area rules can change.`}
-        </p>
+        <p>{isGerman ? "Buchungen, Öffnungszeiten, Torzeiten und Schutzgebietsregeln können sich ändern. Prüfe die verlinkten Originalquellen am Reisetag." : "Bookings, opening times, gate hours and protected-area rules can change. Recheck the linked original sources on the day of travel."}</p>
         <ol>{[...sources.values()].map((source) => <li key={source.id} id={`tour-source-${source.id}`}>
           <a href={source.url} rel="noreferrer">{source.publisher}: {source.title}</a>
           <span>{source.authority.replaceAll("-", " ")} · {source.checkedAt}</span>

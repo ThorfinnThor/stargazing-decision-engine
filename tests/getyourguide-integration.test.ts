@@ -14,7 +14,7 @@ test("GetYourGuide Integration Analyzer is present in both static root layouts",
   assert.match(integration, /data-gyg-partner-id/);
 });
 
-test("destination-pinned GetYourGuide widget is rendered on destination and location-tour pages", () => {
+test("destination-aware GetYourGuide widget is rendered on destination and location-tour pages", () => {
   const destination = read("app/[locale]/stargazing-destinations/[slug]/page.tsx");
   const tour = read("app/[locale]/stargazing-tours/[slug]/page.tsx");
   assert.match(destination, /<AffiliateDestinationModules/);
@@ -28,34 +28,24 @@ test("destination-pinned GetYourGuide widget is rendered on destination and loca
   assert.match(integration, /data-gyg-q=\{destinationQuery\}/);
   assert.match(destination, /destinationQuery=\{destination\.affiliateQuery\}/);
   assert.match(tour, /destinationQuery=\{destination\.affiliateQuery\}/);
-  assert.match(integration, /We have not reviewed these live results individually/);
+  assert.match(integration, /Check the meeting point, inclusions, price, and terms directly with the provider/);
 });
 
-test("destination-pinned widgets are limited to destinations with reviewed provider matches", () => {
+test("GetYourGuide widgets cover every active destination without a hand-maintained allowlist", () => {
   const config = JSON.parse(read("data-config/sources/affiliate-partners.json"));
   const partner = config.partners.find(
     (entry: { id: string }) => entry.id === "getyourguide-activities",
   );
 
-  assert.deepEqual([...partner.widget.destinationIds].sort(), [
-    "atacama",
-    "canyonlands",
-    "death-valley",
-    "hanle",
-    "jasper",
-    "la-palma",
-    "mauna-kea",
-    "north-york-moors",
-    "pico-do-arieiro",
-    "rila",
-    "tenerife",
-    "uluru",
-  ]);
+  assert.equal(partner.widget.destinationScope, "all-active");
+  assert.equal(partner.widget.destinationIds, undefined);
+  const integration = read("components/getyourguide-integration.tsx");
+  assert.match(integration, /widget\.destinationScope === "all-active"/);
 });
 
 test("privacy notice identifies the GetYourGuide script and destination selection", () => {
   const privacy = read("app/[locale]/privacy/page.tsx");
   assert.match(privacy, /GetYourGuide Integration Analyzer/);
   assert.match(privacy, /widget\.getyourguide\.com/);
-  assert.match(privacy, /destination-based GetYourGuide widgets/);
+  assert.match(privacy, /Every destination and location-tour page/);
 });

@@ -64,3 +64,13 @@ test("bookable searches open by default and public pages share the compact title
   assert.match(styles, /\.event-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
   assert.match(styles, /\.finder-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
 });
+
+test("public content does not display editorial review bylines", () => {
+  const destinationGuide = read("components/destination-editorial-guide.tsx");
+  const locationTour = read("components/location-tour-content.tsx");
+  const gearGuide = read("app/[locale]/gear/[slug]/page.tsx");
+  const activityOffers = read("components/affiliate-activity-offers.tsx");
+  for (const file of [destinationGuide, locationTour, gearGuide, activityOffers]) {
+    assert.doesNotMatch(file, /Editorially reviewed by|Redaktionell geprüft von|Link reviewed|Link geprüft am/);
+  }
+});

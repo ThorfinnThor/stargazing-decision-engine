@@ -11,7 +11,6 @@ import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { isGearGuideEditorialReady } from "@/lib/gear/gear";
-import { legal } from "@/lib/legal/config";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -97,7 +96,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
             </article>;
           })}
         </div>
-        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? `Herstellerquellen zuletzt redaktionell geprüft: ${guide.lastReviewedAt}. Vorteile und Grenzen sind redaktionelle Schlussfolgerungen aus den veröffentlichten technischen Daten.` : `Manufacturer sources last reviewed by the editorial team: ${guide.lastReviewedAt}. Pros and limitations are editorial inferences from the published specifications.`}</p> : null}
+        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? "Vorteile und Grenzen sind fachliche Schlussfolgerungen aus den verlinkten Herstellerangaben. Produktspezifikationen können sich ändern." : "Pros and limitations are informed conclusions from the linked manufacturer specifications. Product specifications can change."}</p> : null}
       </section>
       <section className="event-summary" aria-labelledby="gear-tradeoffs-title"><h2 id="gear-tradeoffs-title">{isGerman ? "Abwägungen" : "Trade-offs"}</h2><ul>{guide.tradeoffs[locale].map((tradeoff) => <li key={tradeoff}>{tradeoff}</li>)}</ul><h2>FAQ</h2>{guide.faq.map((item) => <details key={item.question.en}><summary>{item.question[locale]}</summary><p>{item.answer[locale]}</p></details>)}</section>
       <section className="event-summary" aria-labelledby="gear-method-title">
@@ -112,7 +111,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
       <AffiliateGearLink locale={locale} />
       <footer className="event-footer"><p>{isGerman
         ? "Dieser Guide enthält gekennzeichnete Astroshop-Affiliate-Links. Die Produktauswahl und Bewertung bleiben unabhängig."
-        : "This guide contains labelled Astroshop affiliate links. Product selection and evaluation remain independent."} {isGerman ? "Redaktionell geprüft von" : "Editorially reviewed by"} <a href={`${localizedLinks.about(locale)}#about-editorial-title`}>{legal.owner}</a> {isGerman ? "am" : "on"} {guide.lastReviewedAt}.</p></footer>
+        : "This guide contains labelled Astroshop affiliate links. Product selection and evaluation remain independent."}</p></footer>
     </main>
   );
 }

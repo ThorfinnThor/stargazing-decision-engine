@@ -22,7 +22,7 @@ const publishedSearches = readJson<PublishedAffiliateDestinationSearch[]>(resolv
 const activeDestinations = loadDestinations().filter((destination) => destination.active);
 const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
 for (const partner of config.partners.filter((item) => item.widget?.enabled)) {
-  for (const destinationId of partner.widget?.destinationIds ?? []) {
+  for (const destinationId of partner.widget?.destinationScope === "selected" ? partner.widget.destinationIds ?? [] : []) {
     if (!activeDestinationIds.has(destinationId)) throw new Error(`${partner.id}: widget destination does not exist or is inactive: ${destinationId}`);
   }
 }

@@ -65,20 +65,7 @@
         "scriptUrl": "https://widget.getyourguide.com/dist/pa.umd.production.min.js",
         "frameUrl": "https://widget.getyourguide.com/default/activities.frame",
         "itemCount": 3,
-        "destinationIds": [
-          "la-palma",
-          "tenerife",
-          "atacama",
-          "jasper",
-          "mauna-kea",
-          "uluru",
-          "pico-do-arieiro",
-          "death-valley",
-          "canyonlands",
-          "north-york-moors",
-          "hanle",
-          "rila"
-        ]
+        "destinationScope": "all-active"
       },
       "urlTemplate": "https://www.getyourguide.com/s/?q={query}&partner_id={affiliateId}&utm_medium=online_publisher&cmp=StargazingIndex",
       "allowedHosts": ["getyourguide.com", "www.getyourguide.com", "widget.getyourguide.com"],

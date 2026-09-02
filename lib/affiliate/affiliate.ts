@@ -53,7 +53,9 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
       if (partner.widget.type !== "activities") throw new Error(`${partner.id}: unsupported widget type`);
       if (!/^[A-Za-z0-9_-]+$/.test(partner.widget.campaign)) throw new Error(`${partner.id}: invalid widget campaign`);
       if (!Number.isInteger(partner.widget.itemCount) || partner.widget.itemCount < 1 || partner.widget.itemCount > 5) throw new Error(`${partner.id}: widget item count must be between 1 and 5`);
-      if (partner.widget.destinationIds.length === 0 || new Set(partner.widget.destinationIds).size !== partner.widget.destinationIds.length) throw new Error(`${partner.id}: widget destination IDs must be unique and non-empty`);
+      if (!new Set(["all-active", "selected"]).has(partner.widget.destinationScope)) throw new Error(`${partner.id}: unsupported widget destination scope`);
+      if (partner.widget.destinationScope === "all-active" && partner.widget.destinationIds) throw new Error(`${partner.id}: all-active widget scope must not define destination IDs`);
+      if (partner.widget.destinationScope === "selected" && (!partner.widget.destinationIds?.length || new Set(partner.widget.destinationIds).size !== partner.widget.destinationIds.length)) throw new Error(`${partner.id}: selected widget destination IDs must be unique and non-empty`);
       for (const [label, rawUrl] of [["script", partner.widget.scriptUrl], ["frame", partner.widget.frameUrl]] as const) {
         let widgetUrl: URL;
         try { widgetUrl = new URL(rawUrl); } catch { throw new Error(`${partner.id}: widget ${label} URL is invalid`); }

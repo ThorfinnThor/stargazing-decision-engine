@@ -24,7 +24,6 @@ export function AffiliateActivityOffers({ destinationId, locationTourSlug, local
         <h3>{offer.title[locale]}</h3>
         <p>{offer.description[locale]}</p>
         <a href={offer.redirectPath} rel={affiliateRel()}>{isGerman ? `Details bei ${offer.partnerName} prüfen` : `Check details on ${offer.partnerName}`} →</a>
-        <small>{isGerman ? `Link geprüft am ${offer.lastReviewedAt}` : `Link reviewed ${offer.lastReviewedAt}`}</small>
       </article>)}
     </div>
   </section>;
