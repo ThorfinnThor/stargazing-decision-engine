@@ -71,6 +71,7 @@ for (const offer of offers.offers.filter((item) => item.enabled)) {
     partnerName: partner.name,
     destinationId: offer.destinationId,
     locationTourSlugs: offer.locationTourSlugs,
+    kind: offer.kind ?? "stargazing",
     title: offer.title,
     description: offer.description,
     redirectPath,

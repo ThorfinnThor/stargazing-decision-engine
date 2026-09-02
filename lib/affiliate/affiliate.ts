@@ -80,6 +80,7 @@ export function validateAffiliateActivityOffers(config: AffiliateActivityOfferCo
     if (!destinationIds.has(offer.destinationId)) throw new Error(`${offer.id}: destination does not exist`);
     if (!offer.title.en.trim() || !offer.title.de.trim() || !offer.description.en.trim() || !offer.description.de.trim()) throw new Error(`${offer.id}: bilingual title and description are required`);
     if (!/^\d{4}-\d{2}-\d{2}$/.test(offer.lastReviewedAt)) throw new Error(`${offer.id}: lastReviewedAt must use YYYY-MM-DD`);
+    if (offer.kind && offer.kind !== "stargazing" && offer.kind !== "regional") throw new Error(`${offer.id}: unsupported offer kind`);
     if (offer.locationTourSlugs.length === 0) throw new Error(`${offer.id}: at least one location tour mapping is required`);
     for (const slug of new Set(offer.locationTourSlugs)) {
       const tour = tourBySlug.get(slug);

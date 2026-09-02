@@ -22,18 +22,8 @@
       "type": "activity",
       "enabled": true,
       "affiliateId": "P00314274",
-      "destinationSearchEnabled": true,
-      "destinationSearchVariants": [
-        {
-          "id": "stargazing",
-          "queryTemplate": "stargazing {query}"
-        },
-        {
-          "id": "activities",
-          "queryTemplate": "{query}"
-        }
-      ],
-      "urlTemplate": "https://www.viator.com/searchResults/all?text={query}&pid={affiliateId}&mcid=42383&medium=link&campaign=StargazingIndex",
+      "destinationSearchEnabled": false,
+      "urlTemplate": null,
       "allowedHosts": ["viator.com", "www.viator.com"],
       "requiredQueryParameters": ["pid", "mcid", "medium"],
       "disclosure": {
@@ -47,27 +37,17 @@
       "type": "activity",
       "enabled": true,
       "affiliateId": "BKWM9K1",
-      "destinationSearchEnabled": true,
-      "destinationSearchVariants": [
-        {
-          "id": "stargazing",
-          "queryTemplate": "stargazing {query}"
-        },
-        {
-          "id": "activities",
-          "queryTemplate": "{query}"
-        }
-      ],
+      "destinationSearchEnabled": false,
       "widget": {
         "type": "activities",
-        "enabled": true,
+        "enabled": false,
         "campaign": "Stargazing",
         "scriptUrl": "https://widget.getyourguide.com/dist/pa.umd.production.min.js",
         "frameUrl": "https://widget.getyourguide.com/default/activities.frame",
         "itemCount": 3,
         "destinationScope": "all-active"
       },
-      "urlTemplate": "https://www.getyourguide.com/s/?q={query}&partner_id={affiliateId}&utm_medium=online_publisher&cmp=StargazingIndex",
+      "urlTemplate": null,
       "allowedHosts": ["getyourguide.com", "www.getyourguide.com", "widget.getyourguide.com"],
       "requiredQueryParameters": ["partner_id"],
       "disclosure": {

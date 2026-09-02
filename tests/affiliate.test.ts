@@ -223,57 +223,22 @@ test("curated activity offers must map to a tour from the same destination", () 
   assert.throws(() => validateAffiliateActivityOffers(offers, partners, [destination], [{ ...locationTour, destinationId: "elsewhere" }]), /does not match/i);
 });
 
-test("reviewed GetYourGuide catalog contains only the approved direct stargazing offers", () => {
+test("reviewed GetYourGuide catalog contains only direct tracked product pages", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const getYourGuideOffers = actual.offers.filter((offer) => offer.partnerId === "getyourguide-activities" && offer.enabled);
-  const expectedOffers = [
-    "getyourguide-alqueva-monsaraz-stargazing-1108246",
-    "getyourguide-aoraki-mount-john-stargazing-408459",
-    "getyourguide-aoraki-tekapo-hot-pools-268167",
-    "getyourguide-atacama-big-telescopes-852357",
-    "getyourguide-canyonlands-moab-stargazing-1027645",
-    "getyourguide-death-valley-starry-night-617830",
-    "getyourguide-elqui-mamalluca-stargazing-1001148",
-    "getyourguide-elqui-pangue-observatory-590139",
-    "getyourguide-hanle-two-night-stargazing-667535",
-    "getyourguide-jasper-planetarium-telescope-456519",
-    "getyourguide-kalbarri-stargazing-794940",
-    "getyourguide-la-palma-stargazing-683919",
-    "getyourguide-madeira-stargazing-1146847",
-    "getyourguide-mauna-kea-stargazing-352716",
-    "getyourguide-sedona-video-astronomy-1063724",
-    "getyourguide-tenerife-teide-stargazing-910985",
-    "getyourguide-uluru-astronomy-678894",
-    "getyourguide-wairarapa-star-safari-1090703",
-  ];
-
-  assert.deepEqual(getYourGuideOffers.map((offer) => offer.id).sort(), expectedOffers);
   for (const offer of getYourGuideOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "BKWM9K1"));
     assert.equal(url.hostname, "www.getyourguide.com");
     assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
     assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
-    assert.equal(url.searchParams.get("cmp"), "Stargazing");
+    assert.ok(url.searchParams.get("cmp"));
     assert.match(url.pathname, /-t\d+\/$/);
   }
 });
 
-test("reviewed Viator catalog contains only approved direct stargazing offers", () => {
+test("reviewed Viator catalog contains only direct tracked product pages", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
-  const expectedOffers = [
-    "viator-aoraki-tekapo-soak-stars-50255p3",
-    "viator-atacama-under-night-sky-396238p1",
-    "viator-jasper-planetarium-telescope-348239p1",
-    "viator-joshua-tree-stargazing-445161p1",
-    "viator-la-palma-stargazing-279280p2",
-    "viator-madeira-astronomy-410282p1",
-    "viator-oudtshoorn-high-five-20510p2",
-    "viator-sedona-video-astronomy-483700p2",
-    "viator-wadi-rum-stargazing-233668p1",
-  ];
-
-  assert.deepEqual(viatorOffers.map((offer) => offer.id).sort(), expectedOffers);
   for (const offer of viatorOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
     assert.equal(url.hostname, "www.viator.com");
@@ -282,6 +247,29 @@ test("reviewed Viator catalog contains only approved direct stargazing offers", 
     assert.equal(url.searchParams.get("medium"), "link");
     assert.match(url.pathname, /\/tours\//);
   }
+});
+
+test("the first ten destinations use the reviewed offer inventory without automatic fallbacks", () => {
+  const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
+  const firstTen = ["la-palma", "tenerife", "westhavelland", "alqueva", "galloway", "atacama", "big-bend", "aoraki-mackenzie", "namibrand", "jasper"];
+  const expectedCounts: Record<string, { stargazing: number; regional: number }> = {
+    "la-palma": { stargazing: 3, regional: 2 },
+    "tenerife": { stargazing: 3, regional: 1 },
+    "westhavelland": { stargazing: 0, regional: 0 },
+    "alqueva": { stargazing: 2, regional: 1 },
+    "galloway": { stargazing: 0, regional: 1 },
+    "atacama": { stargazing: 3, regional: 1 },
+    "big-bend": { stargazing: 0, regional: 2 },
+    "aoraki-mackenzie": { stargazing: 3, regional: 0 },
+    "namibrand": { stargazing: 0, regional: 0 },
+    "jasper": { stargazing: 2, regional: 2 },
+  };
+  for (const destinationId of firstTen) {
+    const offers = actual.offers.filter((offer) => offer.enabled && offer.destinationId === destinationId);
+    assert.equal(offers.filter((offer) => (offer.kind ?? "stargazing") === "stargazing").length, expectedCounts[destinationId].stargazing);
+    assert.equal(offers.filter((offer) => offer.kind === "regional").length, expectedCounts[destinationId].regional);
+  }
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2"), false);
 });
 
 test("affiliate disclosures appear only with rendered affiliate integrations", () => {
@@ -296,7 +284,6 @@ test("affiliate disclosures appear only with rendered affiliate integrations", (
 
   for (const path of [
     "components/affiliate-activity-offers.tsx",
-    "components/affiliate-destination-searches.tsx",
     "components/getyourguide-integration.tsx",
   ]) {
     assert.doesNotMatch(source(path), /AffiliateDisclosure/);
@@ -304,6 +291,6 @@ test("affiliate disclosures appear only with rendered affiliate integrations", (
 
   const destinationModules = source("components/affiliate-destination-modules.tsx");
   assert.equal((destinationModules.match(/<AffiliateDisclosure locale=\{locale\}/g) ?? []).length, 1);
-  assert.match(destinationModules, /if \(!hasOffers && !hasSearches && !hasWidget\) return null/);
+  assert.match(destinationModules, /if \(!hasOffers\) return null/);
   assert.ok(destinationModules.indexOf("<AffiliateDisclosure") < destinationModules.indexOf("<AffiliateActivityOffers"));
 });

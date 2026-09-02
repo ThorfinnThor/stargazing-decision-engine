@@ -14,38 +14,32 @@ test("GetYourGuide Integration Analyzer is present in both static root layouts",
   assert.match(integration, /data-gyg-partner-id/);
 });
 
-test("destination-aware GetYourGuide widget is rendered on destination and location-tour pages", () => {
+test("destination and location-tour pages use curated offers without an automatic widget", () => {
   const destination = read("app/[locale]/stargazing-destinations/[slug]/page.tsx");
   const tour = read("app/[locale]/stargazing-tours/[slug]/page.tsx");
   assert.match(destination, /<AffiliateDestinationModules/);
   assert.match(tour, /<AffiliateDestinationModules/);
   const modules = read("components/affiliate-destination-modules.tsx");
-  assert.match(modules, /<GetYourGuideActivitiesWidget/);
+  assert.doesNotMatch(modules, /GetYourGuideActivitiesWidget|AffiliateDestinationSearches/);
   const integration = read("components/getyourguide-integration.tsx");
-  assert.match(integration, /data-gyg-widget="activities"/);
-  assert.match(integration, /data-gyg-href=\{widget\.frameUrl\}/);
-  assert.match(integration, /data-gyg-number-of-items=\{widget\.itemCount\}/);
-  assert.match(integration, /data-gyg-q=\{destinationQuery\}/);
-  assert.match(destination, /destinationQuery=\{destination\.affiliateQuery\}/);
-  assert.match(tour, /destinationQuery=\{destination\.affiliateQuery\}/);
-  assert.match(integration, /Check the meeting point, inclusions, price, and terms directly with the provider/);
+  assert.doesNotMatch(integration, /data-gyg-widget="activities"|data-gyg-q/);
 });
 
-test("GetYourGuide widgets cover every active destination without a hand-maintained allowlist", () => {
+test("automatic GetYourGuide search and widget output are disabled", () => {
   const config = JSON.parse(read("data-config/sources/affiliate-partners.json"));
   const partner = config.partners.find(
     (entry: { id: string }) => entry.id === "getyourguide-activities",
   );
 
-  assert.equal(partner.widget.destinationScope, "all-active");
-  assert.equal(partner.widget.destinationIds, undefined);
+  assert.equal(partner.destinationSearchEnabled, false);
+  assert.equal(partner.widget.enabled, false);
   const integration = read("components/getyourguide-integration.tsx");
-  assert.match(integration, /widget\.destinationScope === "all-active"/);
+  assert.doesNotMatch(integration, /destinationScope|destinationIds/);
 });
 
-test("privacy notice identifies the GetYourGuide script and destination selection", () => {
+test("privacy notice identifies analytics and excludes automatic result widgets", () => {
   const privacy = read("app/[locale]/privacy/page.tsx");
   assert.match(privacy, /GetYourGuide Integration Analyzer/);
   assert.match(privacy, /widget\.getyourguide\.com/);
-  assert.match(privacy, /Every destination and location-tour page/);
+  assert.match(privacy, /We do not use automatic results widgets/);
 });
