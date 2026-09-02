@@ -250,8 +250,8 @@ test("regional activity sections contain no more than two direct GetYourGuide pr
     assert.equal(offer.partnerId, "getyourguide-activities");
     destinationCounts.set(offer.destinationId, (destinationCounts.get(offer.destinationId) ?? 0) + 1);
   }
-  assert.equal(regionalOffers.length, 69);
-  assert.equal(destinationCounts.size, 37);
+  assert.equal(regionalOffers.length, 84);
+  assert.equal(destinationCounts.size, 46);
   for (const count of destinationCounts.values()) assert.ok(count <= 2);
 });
 
@@ -298,6 +298,6 @@ test("affiliate disclosures appear only with rendered affiliate integrations", (
 
   const destinationModules = source("components/affiliate-destination-modules.tsx");
   assert.equal((destinationModules.match(/<AffiliateDisclosure locale=\{locale\}/g) ?? []).length, 1);
-  assert.match(destinationModules, /if \(!hasOffers\) return null/);
+  assert.match(destinationModules, /hasOffers \? <AffiliateDisclosure locale=\{locale\} \/> : null/);
   assert.ok(destinationModules.indexOf("<AffiliateDisclosure") < destinationModules.indexOf("<AffiliateActivityOffers"));
 });

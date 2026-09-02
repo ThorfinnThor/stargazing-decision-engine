@@ -16,10 +16,9 @@ export function AffiliateDestinationModules({
     offer.destinationId === destinationId
     && (!locationTourSlug || offer.locationTourSlugs.includes(locationTourSlug))
   ));
-  if (!hasOffers) return null;
 
   return <>
-    <AffiliateDisclosure locale={locale} />
+    {hasOffers ? <AffiliateDisclosure locale={locale} /> : null}
     <AffiliateActivityOffers destinationId={destinationId} locationTourSlug={locationTourSlug} locale={locale} />
   </>;
 }

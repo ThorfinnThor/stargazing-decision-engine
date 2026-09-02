@@ -56,6 +56,8 @@ test("curated activity links open in new tabs and public pages share the compact
   assert.match(activityOffers, /target="_blank"/);
   assert.match(activityOffers, /Relevant guided options/);
   assert.match(activityOffers, /More to do nearby/);
+  assert.match(activityOffers, /No direct stargazing tour currently available/);
+  assert.match(activityOffers, /not astronomy tours/);
   assert.match(styles, /--type-page-title: clamp\(2\.3rem, 4vw, 3\.75rem\)/);
   assert.match(styles, /--type-section-title: clamp\(1\.7rem, 2\.8vw, 2\.65rem\)/);
   assert.match(styles, /\.hero-copy h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
