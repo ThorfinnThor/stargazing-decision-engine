@@ -29,6 +29,7 @@
         "destinationId": { "type": "string", "minLength": 1 },
         "locationTourSlugs": { "type": "array", "minItems": 1, "uniqueItems": true, "items": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" } },
         "enabled": { "type": "boolean" },
+        "kind": { "enum": ["stargazing", "regional"] },
         "title": { "$ref": "#/$defs/localizedText" },
         "description": { "$ref": "#/$defs/localizedText" },
         "urlTemplate": { "type": "string", "pattern": "^https://" },

@@ -1,24 +1,5 @@
 [
   {
-    "id": "viator-la-palma-stargazing-279280p2",
-    "partnerId": "viator-activities",
-    "partnerName": "Viator",
-    "destinationId": "la-palma",
-    "locationTourSlugs": [
-      "llanos-del-jable-independent-night"
-    ],
-    "title": {
-      "en": "Private guided stargazing on La Palma",
-      "de": "Private geführte Himmelsbeobachtung auf La Palma"
-    },
-    "description": {
-      "en": "A private two-hour observing session near El Paso with a guide and professional telescopes. Confirm the meeting point, start time, language, and current cancellation terms on Viator before booking.",
-      "de": "Eine private, etwa zweistündige Beobachtung bei El Paso mit Guide und professionellen Teleskopen. Prüfe vor der Buchung Treffpunkt, Startzeit, Sprache und die aktuellen Stornierungsbedingungen bei Viator."
-    },
-    "redirectPath": "/go/viator-activities/offer/viator-la-palma-stargazing-279280p2/",
-    "lastReviewedAt": "2026-08-30"
-  },
-  {
     "id": "getyourguide-la-palma-stargazing-683919",
     "partnerId": "getyourguide-activities",
     "partnerName": "GetYourGuide",
@@ -26,6 +7,7 @@
     "locationTourSlugs": [
       "llanos-del-jable-independent-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Guided stargazing on La Palma",
       "de": "Geführte Sternbeobachtung auf La Palma"
@@ -45,6 +27,7 @@
     "locationTourSlugs": [
       "teide-two-stop-volcanic-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Telescope stargazing in Teide National Park",
       "de": "Teleskopbeobachtung im Teide-Nationalpark"
@@ -64,6 +47,7 @@
     "locationTourSlugs": [
       "cumeada-booked-observation"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Guided telescope stargazing near Monsaraz",
       "de": "Geführte Teleskopbeobachtung bei Monsaraz"
@@ -83,6 +67,7 @@
     "locationTourSlugs": [
       "tekapo-authorised-mt-john-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Mount John summit stargazing from Lake Tekapo",
       "de": "Sternbeobachtung auf dem Mount John ab Lake Tekapo"
@@ -102,6 +87,7 @@
     "locationTourSlugs": [
       "vicuna-mamalluca-ticketed-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Mamalluca Observatory astronomy experience",
       "de": "Astronomieprogramm am Mamalluca-Observatorium"
@@ -121,6 +107,7 @@
     "locationTourSlugs": [
       "san-pedro-guided-first-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Small-group astronomy with large telescopes near San Pedro",
       "de": "Astronomie in kleiner Gruppe mit großen Teleskopen bei San Pedro"
@@ -140,6 +127,7 @@
     "locationTourSlugs": [
       "san-pedro-guided-first-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Small-group telescope night outside San Pedro",
       "de": "Teleskopnacht in kleiner Gruppe außerhalb von San Pedro"
@@ -159,6 +147,7 @@
     "locationTourSlugs": [
       "arieiro-fixed-descent-session"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Small-group telescope stargazing on Madeira",
       "de": "Teleskopbeobachtung in kleiner Gruppe auf Madeira"
@@ -178,6 +167,7 @@
     "locationTourSlugs": [
       "arieiro-fixed-descent-session"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Private astronomy session on Madeira",
       "de": "Private Astronomiesession auf Madeira"
@@ -197,6 +187,7 @@
     "locationTourSlugs": [
       "pyramid-island-status-checked-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Jasper planetarium and telescope experience",
       "de": "Planetarium und Teleskopbeobachtung in Jasper"
@@ -216,6 +207,7 @@
     "locationTourSlugs": [
       "maunakea-vis-respectful-evening"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Mauna Kea stargazing and night-sky photography",
       "de": "Sternbeobachtung und Nachtfotografie am Mauna Kea"
@@ -235,6 +227,7 @@
     "locationTourSlugs": [
       "yulara-after-park-sky"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Uluru astronomy and night-sky photography",
       "de": "Astronomie und Nachtfotografie am Uluru"
@@ -254,6 +247,7 @@
     "locationTourSlugs": [
       "mesquite-flat-measured-desert-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Death Valley sunset and starry-night tour from Las Vegas",
       "de": "Death Valley bei Sonnenuntergang und Sternenhimmel ab Las Vegas"
@@ -273,6 +267,7 @@
     "locationTourSlugs": [
       "island-in-the-sky-paved-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Professional stargazing experience near Moab",
       "de": "Geführte Sternbeobachtung bei Moab"
@@ -292,6 +287,7 @@
     "locationTourSlugs": [
       "hanle-ambassador-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Two-night Hanle stargazing journey from Leh",
       "de": "Zwei Nächte Sternbeobachtung in Hanle ab Leh"
@@ -311,6 +307,7 @@
     "locationTourSlugs": [
       "vicuna-mamalluca-ticketed-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Pangue Observatory Milky Way stargazing tour",
       "de": "Milchstraßen-Beobachtung am Pangue-Observatorium"
@@ -323,63 +320,6 @@
     "lastReviewedAt": "2026-08-31"
   },
   {
-    "id": "getyourguide-aoraki-tekapo-hot-pools-268167",
-    "partnerId": "getyourguide-activities",
-    "partnerName": "GetYourGuide",
-    "destinationId": "aoraki-mackenzie",
-    "locationTourSlugs": [
-      "tekapo-authorised-mt-john-night"
-    ],
-    "title": {
-      "en": "Lake Tekapo hot-pools stargazing experience",
-      "de": "Sternbeobachtung in den heißen Becken von Lake Tekapo"
-    },
-    "description": {
-      "en": "A guided Lake Tekapo programme that combines an astronomy session with time in the heated pools. It does not replace the Mount John summit experience and may use an indoor astronomy alternative when the sky is obscured. Confirm minimum age, pool requirements, seasonal start time, and the current weather arrangement before booking.",
-      "de": "Ein geführtes Programm in Lake Tekapo, das eine Astronomieeinheit mit Zeit in den beheizten Becken verbindet. Es ersetzt nicht das Gipfelprogramm am Mount John und kann bei bedecktem Himmel auf ein Innenprogramm ausweichen. Prüfe vor der Buchung Mindestalter, Anforderungen für die Becken, saisonale Startzeit und die aktuelle Wetterregelung."
-    },
-    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-aoraki-tekapo-hot-pools-268167/",
-    "lastReviewedAt": "2026-08-31"
-  },
-  {
-    "id": "viator-aoraki-tekapo-soak-stars-50255p3",
-    "partnerId": "viator-activities",
-    "partnerName": "Viator",
-    "destinationId": "aoraki-mackenzie",
-    "locationTourSlugs": [
-      "tekapo-authorised-mt-john-night"
-    ],
-    "title": {
-      "en": "Tekapo Soak in the Stars experience",
-      "de": "Tekapo Soak in the Stars"
-    },
-    "description": {
-      "en": "A Tekapo Springs programme with guided sky interpretation followed by the hot-pool portion of the evening. The listing describes an indoor alternative when stars are hidden, so check the weather terms, age threshold, accessibility, transport availability, and supplied clothing before booking.",
-      "de": "Ein Programm der Tekapo Springs mit geführter Himmelserklärung und anschließendem Aufenthalt in den heißen Becken. Laut Angebot gibt es bei verdecktem Himmel eine Innenalternative. Prüfe vor der Buchung Wetterbedingungen, Altersgrenze, Barrierefreiheit, mögliche Transfers und bereitgestellte Kleidung."
-    },
-    "redirectPath": "/go/viator-activities/offer/viator-aoraki-tekapo-soak-stars-50255p3/",
-    "lastReviewedAt": "2026-08-31"
-  },
-  {
-    "id": "viator-jasper-planetarium-telescope-348239p1",
-    "partnerId": "viator-activities",
-    "partnerName": "Viator",
-    "destinationId": "jasper",
-    "locationTourSlugs": [
-      "pyramid-island-status-checked-night"
-    ],
-    "title": {
-      "en": "Jasper planetarium and telescope combo",
-      "de": "Planetarium- und Teleskopprogramm in Jasper"
-    },
-    "description": {
-      "en": "A 90-minute programme at the Jasper Planetarium with a dome presentation and outdoor telescope viewing when conditions permit. Confirm the selected start time, check-in at the lodge, accessibility needs, cold-weather preparation, and the provider's cloud contingency before booking.",
-      "de": "Ein 90-minütiges Programm im Jasper Planetarium mit Kuppelvorführung und Teleskopbeobachtung im Freien, sofern die Bedingungen dies zulassen. Prüfe vor der Buchung Startzeit, Check-in in der Lodge, Anforderungen an die Barrierefreiheit, Kälteschutz und die Schlechtwetterregelung des Anbieters."
-    },
-    "redirectPath": "/go/viator-activities/offer/viator-jasper-planetarium-telescope-348239p1/",
-    "lastReviewedAt": "2026-08-31"
-  },
-  {
     "id": "viator-joshua-tree-stargazing-445161p1",
     "partnerId": "viator-activities",
     "partnerName": "Viator",
@@ -387,6 +327,7 @@
     "locationTourSlugs": [
       "joshua-tree-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Professional stargazing tour in Joshua Tree",
       "de": "Professionelle Sternbeobachtung in Joshua Tree"
@@ -406,6 +347,7 @@
     "locationTourSlugs": [
       "sedona-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Sedona telescopes and video astronomy tour",
       "de": "Teleskop- und Videoastronomie-Tour in Sedona"
@@ -425,6 +367,7 @@
     "locationTourSlugs": [
       "sedona-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Sedona stargazing with telescopes and video astronomy",
       "de": "Sternbeobachtung mit Teleskopen und Videoastronomie in Sedona"
@@ -444,6 +387,7 @@
     "locationTourSlugs": [
       "kalbarri-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Kalbarri Skywalk stargazing tour",
       "de": "Sternbeobachtung am Kalbarri Skywalk"
@@ -463,6 +407,7 @@
     "locationTourSlugs": [
       "wairarapa-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Wairarapa Star Safari with astronomers",
       "de": "Wairarapa Star Safari mit Astronomen"
@@ -482,6 +427,7 @@
     "locationTourSlugs": [
       "oudtshoorn-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Klein Karoo High 5 stargazing experience",
       "de": "Klein Karoo High 5 Sternbeobachtung"
@@ -501,6 +447,7 @@
     "locationTourSlugs": [
       "wadi-rum-one-site-night"
     ],
+    "kind": "stargazing",
     "title": {
       "en": "Wadi Rum stargazing adventure",
       "de": "Sternbeobachtungsabenteuer im Wadi Rum"
@@ -511,5 +458,385 @@
     },
     "redirectPath": "/go/viator-activities/offer/viator-wadi-rum-stargazing-233668p1/",
     "lastReviewedAt": "2026-08-31"
+  },
+  {
+    "id": "getyourguide-la-palma-roque-stargazing-428879",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "la-palma",
+    "locationTourSlugs": [
+      "llanos-del-jable-independent-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Roque de los Muchachos sunset and stargazing tour",
+      "de": "Sonnenuntergang und Sternbeobachtung am Roque de los Muchachos"
+    },
+    "description": {
+      "en": "A guided evening with island pickup, sunset near Roque de los Muchachos, local wine, and telescope observing. The tour does not include entry to the observatory buildings; confirm pickup coverage and the weather plan before booking.",
+      "de": "Ein geführter Abend mit Abholung auf der Insel, Sonnenuntergang nahe Roque de los Muchachos, lokalem Wein und Teleskopbeobachtung. Der Eintritt in die Observatoriumsgebäude ist nicht enthalten. Prüfe vor der Buchung Abholgebiet und Wetterregelung."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-la-palma-roque-stargazing-428879/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-la-palma-premium-stargazing-445597",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "la-palma",
+    "locationTourSlugs": [
+      "llanos-del-jable-independent-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Small-group premium stargazing on La Palma",
+      "de": "Premium-Sternbeobachtung in kleiner Gruppe auf La Palma"
+    },
+    "description": {
+      "en": "A fixed-location observing session for a small group in the Roque de los Muchachos area. Guests travel in their own vehicle, so check the confirmed meeting point, road conditions, language, and weather policy before leaving.",
+      "de": "Eine Beobachtung in kleiner Gruppe an einem festen Standort im Gebiet Roque de los Muchachos. Die Anreise erfolgt mit dem eigenen Fahrzeug. Prüfe deshalb Treffpunkt, Straßenlage, Sprache und Wetterregelung vor der Abfahrt."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-la-palma-premium-stargazing-445597/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-la-palma-volcanoes-south-479938",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "la-palma",
+    "locationTourSlugs": [
+      "llanos-del-jable-independent-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Guided southern volcano trek on La Palma",
+      "de": "Geführte Vulkanwanderung im Süden von La Palma"
+    },
+    "description": {
+      "en": "A daytime guided route through La Palma's southern volcanic landscape. Check the pickup option, walking distance, footwear requirements, and current trail conditions before booking.",
+      "de": "Eine geführte Tagestour durch die Vulkanlandschaft im Süden von La Palma. Prüfe vor der Buchung Abholung, Gehstrecke, Anforderungen an das Schuhwerk und die aktuellen Wegbedingungen."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-la-palma-volcanoes-south-479938/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-la-palma-whale-dolphin-41935p116",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "la-palma",
+    "locationTourSlugs": [
+      "llanos-del-jable-independent-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Small-boat whale and dolphin watching on La Palma",
+      "de": "Wal- und Delfinbeobachtung im kleinen Boot auf La Palma"
+    },
+    "description": {
+      "en": "A marine-wildlife trip departing on La Palma rather than another Canary Island. Confirm the departure harbour, sea conditions, duration, and cancellation terms before booking.",
+      "de": "Eine Tour zur Beobachtung von Meerestieren mit Abfahrt auf La Palma und nicht auf einer anderen Kanareninsel. Prüfe vor der Buchung Abfahrtshafen, Seegang, Dauer und Stornierungsbedingungen."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-la-palma-whale-dolphin-41935p116/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-tenerife-teide-stargazing-168526",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "tenerife",
+    "locationTourSlugs": [
+      "teide-two-stop-volcanic-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Teide National Park stargazing experience",
+      "de": "Sternbeobachtung im Teide-Nationalpark"
+    },
+    "description": {
+      "en": "A compact guided session in Teide National Park using telescopes and naked-eye orientation. Confirm the meeting point, transport responsibility, selected language, start time, and cloud policy before booking.",
+      "de": "Eine kompakte geführte Beobachtung im Teide-Nationalpark mit Teleskopen und Orientierung am Himmel. Prüfe vor der Buchung Treffpunkt, eigene Anreise, Sprache, Startzeit und Wolkenregelung."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-tenerife-teide-stargazing-168526/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-tenerife-sunset-stargazing-393838",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "tenerife",
+    "locationTourSlugs": [
+      "teide-two-stop-volcanic-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Teide sunset and telescope night tour",
+      "de": "Sonnenuntergang und Teleskopnacht am Teide"
+    },
+    "description": {
+      "en": "A longer Teide excursion combining a sunset stop with guided telescope observing after dark. Check pickup coverage, total duration, meal arrangements, warm-clothing advice, and the weather alternative before booking.",
+      "de": "Ein längerer Teide-Ausflug mit Sonnenuntergangsstopp und geführter Teleskopbeobachtung nach Einbruch der Dunkelheit. Prüfe Abholgebiet, Gesamtdauer, Verpflegung, Kleidungshinweise und Wetteralternative."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-tenerife-sunset-stargazing-393838/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-tenerife-teide-half-day-24167p1",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "tenerife",
+    "locationTourSlugs": [
+      "teide-two-stop-volcanic-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Teide National Park half-day tour",
+      "de": "Halbtagestour durch den Teide-Nationalpark"
+    },
+    "description": {
+      "en": "A daytime visit to the Teide landscape that can help with orientation before a separate night session. Confirm the pickup zone, route, cable-car inclusion, and return time before booking.",
+      "de": "Ein Tagesausflug in die Teide-Landschaft, der bei der Orientierung vor einer separaten Nachtbeobachtung helfen kann. Prüfe Abholgebiet, Route, Seilbahnleistung und Rückkehrzeit."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-tenerife-teide-half-day-24167p1/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-alqueva-dark-sky-expedition-1226438",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "alqueva",
+    "locationTourSlugs": [
+      "cumeada-booked-observation"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Two-day Monsaraz and Alqueva dark-sky expedition",
+      "de": "Zweitägige Dark-Sky-Reise nach Monsaraz und Alqueva"
+    },
+    "description": {
+      "en": "A two-day guided trip from the Algarve that includes Monsaraz, Alqueva, and a planned stargazing programme. Confirm the departure area, accommodation, group format, observing venue, and weather arrangements before booking.",
+      "de": "Eine zweitägige geführte Reise ab der Algarve mit Monsaraz, Alqueva und einem vorgesehenen Sternbeobachtungsprogramm. Prüfe Abfahrtsgebiet, Unterkunft, Gruppengröße, Beobachtungsort und Wetterregelung."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-alqueva-dark-sky-expedition-1226438/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-alqueva-monsaraz-boat-895271",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "alqueva",
+    "locationTourSlugs": [
+      "cumeada-booked-observation"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Small-group boat tour on Lake Alqueva",
+      "de": "Bootstour in kleiner Gruppe auf dem Alqueva-Stausee"
+    },
+    "description": {
+      "en": "A boat trip from the Monsaraz side of Lake Alqueva. Confirm the exact pier, duration, accessibility, seasonal schedule, and wind-related cancellation terms before booking.",
+      "de": "Eine Bootstour auf der Monsaraz-Seite des Alqueva-Stausees. Prüfe genauen Anleger, Dauer, Barrierefreiheit, Saisonzeiten und windbedingte Stornierungsregeln."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-alqueva-monsaraz-boat-895271/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-galloway-murrays-canyon-478462",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "galloway",
+    "locationTourSlugs": [
+      "clatteringshaws-self-sufficient-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Murray's Canyon adventure in Galloway Forest",
+      "de": "Canyoning-Abenteuer im Murray's Canyon im Galloway Forest"
+    },
+    "description": {
+      "en": "A guided daytime canyon activity within the Galloway Forest area. It is physically demanding and unrelated to stargazing, so check age limits, equipment, swimming ability, meeting point, and weather terms carefully.",
+      "de": "Eine geführte Canyoning-Aktivität am Tag im Gebiet des Galloway Forest. Sie ist körperlich anspruchsvoll und keine Sternbeobachtung. Prüfe Altersgrenzen, Ausrüstung, Schwimmfähigkeit, Treffpunkt und Wetterregeln sorgfältig."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-galloway-murrays-canyon-478462/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-atacama-astronomer-356273p1",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "atacama",
+    "locationTourSlugs": [
+      "san-pedro-guided-first-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Astronomer-led telescope tour near San Pedro",
+      "de": "Teleskoptour mit Astronom bei San Pedro"
+    },
+    "description": {
+      "en": "A guided night-sky session from San Pedro de Atacama with telescope observing and an astrophotography component. Confirm pickup, language, group size, moon restrictions, and the provider's cloud policy before booking.",
+      "de": "Eine geführte Nachthimmelbeobachtung ab San Pedro de Atacama mit Teleskopen und einem Astrofotografie-Teil. Prüfe Abholung, Sprache, Gruppengröße, Mondeinschränkungen und Wolkenregelung."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-atacama-astronomer-356273p1/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-atacama-moon-valley-943688",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "atacama",
+    "locationTourSlugs": [
+      "san-pedro-guided-first-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Moon Valley sunset tour from San Pedro",
+      "de": "Sonnenuntergangstour ins Valle de la Luna ab San Pedro"
+    },
+    "description": {
+      "en": "A guided afternoon and sunset visit to Moon Valley from San Pedro de Atacama. Confirm pickup, park fees, walking difficulty, water requirements, and the return time before booking.",
+      "de": "Ein geführter Nachmittags- und Sonnenuntergangsausflug ins Valle de la Luna ab San Pedro de Atacama. Prüfe Abholung, Parkgebühren, Schwierigkeit, Wasserbedarf und Rückkehrzeit."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-atacama-moon-valley-943688/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-big-bend-rio-grande-175240p1",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "big-bend",
+    "locationTourSlugs": [
+      "sotol-vista-paved-road-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Rio Grande canyon float in Big Bend",
+      "de": "Bootstour durch die Canyons des Rio Grande im Big Bend"
+    },
+    "description": {
+      "en": "A full-day river trip in the Big Bend area. Confirm the launch location, border-document requirements, water levels, physical demands, included equipment, and return time before booking.",
+      "de": "Eine ganztägige Flusstour im Gebiet Big Bend. Prüfe Startort, mögliche Grenzdokumente, Wasserstand, körperliche Anforderungen, enthaltene Ausrüstung und Rückkehrzeit."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-big-bend-rio-grande-175240p1/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-big-bend-driving-audio-259428p34",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "big-bend",
+    "locationTourSlugs": [
+      "sotol-vista-paved-road-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Big Bend self-guided driving audio tour",
+      "de": "Selbstgeführte Audio-Fahrt durch den Big-Bend-Nationalpark"
+    },
+    "description": {
+      "en": "An offline-capable driving audio tour for the national park. Confirm the covered roads, download requirements, vehicle access, park entry, and current road closures before setting out.",
+      "de": "Eine offline nutzbare Audio-Tour für Fahrten durch den Nationalpark. Prüfe abgedeckte Straßen, Download, Fahrzeugzugang, Parkeintritt und aktuelle Straßensperrungen vor der Abfahrt."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-big-bend-driving-audio-259428p34/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-aoraki-tekapo-stargazing-307036p1",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "aoraki-mackenzie",
+    "locationTourSlugs": [
+      "tekapo-authorised-mt-john-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Small-group stargazing in Lake Tekapo",
+      "de": "Sternbeobachtung in kleiner Gruppe in Lake Tekapo"
+    },
+    "description": {
+      "en": "A guided Lake Tekapo session with telescope observing at the operator's site. It is separate from the Mount John summit programme, so confirm transport, meeting point, duration, clothing, and cloud arrangements before booking.",
+      "de": "Eine geführte Teleskopbeobachtung am Standort des Anbieters in Lake Tekapo. Sie ist vom Mount-John-Gipfelprogramm getrennt. Prüfe Transfer, Treffpunkt, Dauer, Kleidung und Wolkenregelung."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-aoraki-tekapo-stargazing-307036p1/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-aoraki-silver-river-466651p4",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "aoraki-mackenzie",
+    "locationTourSlugs": [
+      "tekapo-authorised-mt-john-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Silver River stargazing in Lake Tekapo",
+      "de": "Silver-River-Sternbeobachtung in Lake Tekapo"
+    },
+    "description": {
+      "en": "A guided telescope experience in Lake Tekapo run by Silver River. Confirm the precise venue, transport, group format, weather alternative, accessibility, and supplied equipment before booking.",
+      "de": "Eine geführte Teleskopbeobachtung von Silver River in Lake Tekapo. Prüfe genauen Ort, Anreise, Gruppengröße, Wetteralternative, Barrierefreiheit und bereitgestellte Ausrüstung."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-aoraki-silver-river-466651p4/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-jasper-dark-sky-package-462848",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "jasper",
+    "locationTourSlugs": [
+      "pyramid-island-status-checked-night"
+    ],
+    "kind": "stargazing",
+    "title": {
+      "en": "Jasper Planetarium dark-sky package",
+      "de": "Dark-Sky-Paket des Jasper Planetariums"
+    },
+    "description": {
+      "en": "An extended Jasper Planetarium experience combining the dome programme with guided outdoor telescope observing when conditions allow. Confirm duration, check-in location, weather substitute, age rules, and accessibility before booking.",
+      "de": "Ein erweitertes Programm des Jasper Planetariums mit Kuppelvorführung und geführter Teleskopbeobachtung im Freien, sofern das Wetter es zulässt. Prüfe Dauer, Check-in, Schlechtwetterersatz, Altersregeln und Barrierefreiheit."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-jasper-dark-sky-package-462848/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "getyourguide-jasper-maligne-wildlife-29290",
+    "partnerId": "getyourguide-activities",
+    "partnerName": "GetYourGuide",
+    "destinationId": "jasper",
+    "locationTourSlugs": [
+      "pyramid-island-status-checked-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Jasper wildlife tour with Maligne Lake cruise",
+      "de": "Jasper-Wildlifetour mit Bootsfahrt auf dem Maligne Lake"
+    },
+    "description": {
+      "en": "A daytime Jasper excursion combining wildlife viewing with the Maligne Valley and a lake cruise. Confirm pickup, cruise operation dates, total duration, mobility requirements, and wildlife expectations before booking.",
+      "de": "Ein Tagesausflug in Jasper mit Tierbeobachtung, Maligne Valley und Bootsfahrt. Prüfe Abholung, Betriebstage der Bootsfahrt, Gesamtdauer, Mobilitätsanforderungen und realistische Erwartungen an Tiersichtungen."
+    },
+    "redirectPath": "/go/getyourguide-activities/offer/getyourguide-jasper-maligne-wildlife-29290/",
+    "lastReviewedAt": "2026-09-02"
+  },
+  {
+    "id": "viator-jasper-evening-wildlife-5400p3",
+    "partnerId": "viator-activities",
+    "partnerName": "Viator",
+    "destinationId": "jasper",
+    "locationTourSlugs": [
+      "pyramid-island-status-checked-night"
+    ],
+    "kind": "regional",
+    "title": {
+      "en": "Jasper evening wildlife tour",
+      "de": "Tierbeobachtung am Abend in Jasper"
+    },
+    "description": {
+      "en": "A guided evening wildlife drive in the Jasper area. It is not a stargazing tour and sightings are never guaranteed; confirm pickup, duration, accessibility, and seasonal start time before booking.",
+      "de": "Eine geführte Tierbeobachtungsfahrt am Abend in der Region Jasper. Sie ist keine Sternbeobachtung und Sichtungen sind nie garantiert. Prüfe Abholung, Dauer, Barrierefreiheit und saisonale Startzeit."
+    },
+    "redirectPath": "/go/viator-activities/offer/viator-jasper-evening-wildlife-5400p3/",
+    "lastReviewedAt": "2026-09-02"
   }
 ]

@@ -234,6 +234,7 @@ export interface AffiliateActivityOffer {
   destinationId: string;
   locationTourSlugs: string[];
   enabled: boolean;
+  kind?: "stargazing" | "regional";
   title: LocalizedEditorialText;
   description: LocalizedEditorialText;
   urlTemplate: string;
@@ -251,6 +252,7 @@ export interface PublishedAffiliateActivityOffer {
   partnerName: string;
   destinationId: string;
   locationTourSlugs: string[];
+  kind: "stargazing" | "regional";
   title: LocalizedEditorialText;
   description: LocalizedEditorialText;
   redirectPath: string;

@@ -3567,7 +3567,6 @@ h3 {
     flex-direction: column;
   }
 
-  .affiliate-activity-grid,
   .destination-related-grid {
     grid-auto-columns: minmax(16rem, 86%);
     grid-auto-flow: column;
@@ -3577,10 +3576,14 @@ h3 {
     scroll-snap-type: inline mandatory;
   }
 
-  .affiliate-activity-grid article,
   .destination-related-grid a {
     min-height: 16rem;
     scroll-snap-align: start;
+  }
+
+  .affiliate-activity-grid {
+    grid-template-columns: minmax(0, 1fr);
+    overflow: visible;
   }
 
   .destination-related-grid a + a {

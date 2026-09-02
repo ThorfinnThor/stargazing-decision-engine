@@ -3,8 +3,6 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
-import { loadAffiliateDestinationSearches, loadDestinations } from "../lib/data/load.js";
-
 const read = (path: string) => readFileSync(resolve(process.cwd(), path), "utf8");
 
 test("the localized layout provides one global menu and public pages no longer render the old home-only nav", () => {
@@ -22,13 +20,13 @@ test("homepage destination filters expose practical travel choices without a bui
   assert.match(filter, /Minimum score/);
 });
 
-test("every active destination has both GetYourGuide search variants", () => {
-  const destinations = loadDestinations().filter((destination) => destination.active);
-  const searches = loadAffiliateDestinationSearches().filter((search) => search.partnerId === "getyourguide-activities");
-  assert.equal(searches.length, destinations.length * 2);
-  for (const destination of destinations) {
-    const variants = searches.filter((search) => search.destinationId === destination.id).map((search) => search.variantId).sort();
-    assert.deepEqual(variants, ["activities", "stargazing"]);
+test("destination pages render only individually curated activity offers", () => {
+  const modules = read("components/affiliate-destination-modules.tsx");
+  const partners = JSON.parse(read("data-config/sources/affiliate-partners.json"));
+  assert.doesNotMatch(modules, /AffiliateDestinationSearches|GetYourGuideActivitiesWidget/);
+  for (const partner of partners.partners.filter((entry: { type: string }) => entry.type === "activity")) {
+    assert.equal(partner.destinationSearchEnabled, false);
+    if (partner.widget) assert.equal(partner.widget.enabled, false);
   }
 });
 
@@ -51,13 +49,13 @@ test("long destination and tour content uses progressive disclosure without chan
   assert.doesNotMatch(gearGuide, /content-disclosure-state/);
 });
 
-test("bookable searches open by default and public pages share the compact title scale", () => {
-  const destinationSearches = read("components/affiliate-destination-searches.tsx");
-  const destinationModules = read("components/affiliate-destination-modules.tsx");
+test("curated activity links open in new tabs and public pages share the compact title scale", () => {
+  const activityOffers = read("components/affiliate-activity-offers.tsx");
   const styles = read("app/globals.css");
 
-  assert.match(destinationSearches, /className="affiliate-destination-searches" open/);
-  assert.match(destinationModules, /className="affiliate-widget-disclosure" open/);
+  assert.match(activityOffers, /target="_blank"/);
+  assert.match(activityOffers, /Relevant guided options/);
+  assert.match(activityOffers, /More to do nearby/);
   assert.match(styles, /--type-page-title: clamp\(2\.3rem, 4vw, 3\.75rem\)/);
   assert.match(styles, /--type-section-title: clamp\(1\.7rem, 2\.8vw, 2\.65rem\)/);
   assert.match(styles, /\.hero-copy h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
