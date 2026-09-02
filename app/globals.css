@@ -702,8 +702,8 @@ h1 span {
 
 .affiliate-activity-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+  margin-top: 1.5rem;
   border-top: 1px solid rgb(142 197 255 / 22%);
   border-left: 1px solid rgb(142 197 255 / 22%);
 }
@@ -712,15 +712,15 @@ h1 span {
   display: flex;
   flex-direction: column;
   min-width: 0;
-  padding: 1.5rem;
+  padding: 1.15rem;
   border-right: 1px solid rgb(142 197 255 / 22%);
   border-bottom: 1px solid rgb(142 197 255 / 22%);
 }
 
 .affiliate-activity-partner {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0.85rem;
   color: var(--blue);
-  font: 0.65rem/1.4 ui-monospace, monospace;
+  font: 0.58rem/1.4 ui-monospace, monospace;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -728,12 +728,13 @@ h1 span {
 .affiliate-activity-grid h3 {
   margin: 0;
   color: #fff;
-  font: 400 clamp(1.3rem, 2vw, 1.8rem)/1.12 Georgia, "Times New Roman", serif;
+  font: 400 clamp(1.05rem, 1.4vw, 1.35rem)/1.14 Georgia, "Times New Roman", serif;
 }
 
 .affiliate-activity-grid article > p:not(.affiliate-activity-partner) {
   color: #d9deea;
-  line-height: 1.65;
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .affiliate-activity-grid a {
@@ -742,7 +743,7 @@ h1 span {
   padding: 0.65rem 0;
   border-bottom: 1px solid var(--gold);
   color: var(--gold);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   text-decoration: none;

@@ -232,7 +232,11 @@ test("reviewed GetYourGuide catalog contains only direct tracked product pages",
     assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
     assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
     assert.ok(url.searchParams.get("cmp"));
-    assert.match(url.pathname, /-t\d+\/$/);
+    const isDirectProductPath = /-t\d+\/$/.test(url.pathname);
+    const isExactProductSelector = url.pathname === "/s"
+      && /^\d+$/.test(url.searchParams.get("et") ?? "")
+      && /^\d+$/.test(url.searchParams.get("lc") ?? "");
+    assert.ok(isDirectProductPath || isExactProductSelector);
   }
 });
 
@@ -253,7 +257,7 @@ test("the first ten destinations use the reviewed offer inventory without automa
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const firstTen = ["la-palma", "tenerife", "westhavelland", "alqueva", "galloway", "atacama", "big-bend", "aoraki-mackenzie", "namibrand", "jasper"];
   const expectedCounts: Record<string, { stargazing: number; regional: number }> = {
-    "la-palma": { stargazing: 3, regional: 2 },
+    "la-palma": { stargazing: 5, regional: 2 },
     "tenerife": { stargazing: 3, regional: 1 },
     "westhavelland": { stargazing: 0, regional: 0 },
     "alqueva": { stargazing: 2, regional: 1 },
@@ -269,7 +273,8 @@ test("the first ten destinations use the reviewed offer inventory without automa
     assert.equal(offers.filter((offer) => (offer.kind ?? "stargazing") === "stargazing").length, expectedCounts[destinationId].stargazing);
     assert.equal(offers.filter((offer) => offer.kind === "regional").length, expectedCounts[destinationId].regional);
   }
-  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2"), false);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2"), true);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4"), true);
 });
 
 test("affiliate disclosures appear only with rendered affiliate integrations", () => {
