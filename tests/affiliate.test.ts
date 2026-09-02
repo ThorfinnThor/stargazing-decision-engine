@@ -242,20 +242,33 @@ test("Viator offers stay disabled until their affiliate links resolve to product
   assert.equal(viatorOffers.length, 0);
 });
 
+test("regional activity sections contain no more than two direct GetYourGuide products per destination", () => {
+  const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
+  const regionalOffers = actual.offers.filter((offer) => offer.enabled && offer.kind === "regional");
+  const destinationCounts = new Map<string, number>();
+  for (const offer of regionalOffers) {
+    assert.equal(offer.partnerId, "getyourguide-activities");
+    destinationCounts.set(offer.destinationId, (destinationCounts.get(offer.destinationId) ?? 0) + 1);
+  }
+  assert.equal(regionalOffers.length, 69);
+  assert.equal(destinationCounts.size, 37);
+  for (const count of destinationCounts.values()) assert.ok(count <= 2);
+});
+
 test("the first ten destinations use the reviewed offer inventory without automatic fallbacks", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const firstTen = ["la-palma", "tenerife", "westhavelland", "alqueva", "galloway", "atacama", "big-bend", "aoraki-mackenzie", "namibrand", "jasper"];
   const expectedCounts: Record<string, { stargazing: number; regional: number }> = {
-    "la-palma": { stargazing: 2, regional: 0 },
-    "tenerife": { stargazing: 3, regional: 0 },
+    "la-palma": { stargazing: 2, regional: 2 },
+    "tenerife": { stargazing: 3, regional: 2 },
     "westhavelland": { stargazing: 0, regional: 0 },
-    "alqueva": { stargazing: 2, regional: 1 },
-    "galloway": { stargazing: 0, regional: 1 },
-    "atacama": { stargazing: 1, regional: 1 },
-    "big-bend": { stargazing: 0, regional: 0 },
-    "aoraki-mackenzie": { stargazing: 1, regional: 0 },
-    "namibrand": { stargazing: 0, regional: 0 },
-    "jasper": { stargazing: 2, regional: 1 },
+    "alqueva": { stargazing: 1, regional: 2 },
+    "galloway": { stargazing: 0, regional: 2 },
+    "atacama": { stargazing: 0, regional: 2 },
+    "big-bend": { stargazing: 0, regional: 1 },
+    "aoraki-mackenzie": { stargazing: 0, regional: 2 },
+    "namibrand": { stargazing: 0, regional: 2 },
+    "jasper": { stargazing: 1, regional: 2 },
   };
   for (const destinationId of firstTen) {
     const offers = actual.offers.filter((offer) => offer.enabled && offer.destinationId === destinationId);
