@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { buildAffiliateActivityUrl, buildAffiliatePartnerUrl, buildAffiliateUrl, buildAstroshopProductUrl, validateAffiliateActivityOffers, validateAffiliateConfig, validateAstroshopProductMatches } from "../lib/affiliate/affiliate.js";
-import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch, Destination, GearGuide, LocationTour } from "../lib/data/types.js";
+import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch, Destination, GearGuide, LocationTour, PublishedAffiliateActivityOffer } from "../lib/data/types.js";
 
 const destination: Destination = {
   id: "destination", slug: "destination", name: "Destination", countryCode: "DE", countryName: "Germany", continent: "Europe", regionSlugs: [], timezone: "Europe/Berlin", active: true, priority: 1, tags: [], observationSiteIds: [], stayAreaIds: [], affiliateQuery: "Monsaraz & Alqueva",
@@ -234,6 +234,25 @@ test("reviewed GetYourGuide catalog contains only direct tracked product pages",
     assert.ok(url.searchParams.get("cmp"));
     assert.match(url.pathname, /-t\d+\/$/);
   }
+});
+
+test("published GetYourGuide offers expose direct analyzer-compatible links and retain fallback redirects", () => {
+  const sourceConfig = JSON.parse(source("data-config/sources/affiliate-activity-offers.json")) as AffiliateActivityOfferConfig;
+  const published = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as Array<PublishedAffiliateActivityOffer>;
+  const enabled = new Map(sourceConfig.offers.filter((offer) => offer.enabled).map((offer) => [offer.id, offer]));
+  assert.equal(published.length, enabled.size);
+  for (const offer of published) {
+    const sourceOffer = enabled.get(offer.id);
+    assert.ok(sourceOffer, `${offer.id} must have an enabled source offer`);
+    const expectedUrl = sourceOffer.urlTemplate.replace("{affiliateId}", "BKWM9K1");
+    assert.equal(offer.affiliateUrl, expectedUrl);
+    assert.match(offer.affiliateUrl, /^https:\/\/www\.getyourguide\.com\//);
+    assert.equal(new URL(offer.affiliateUrl).searchParams.get("partner_id"), "BKWM9K1");
+    assert.equal(offer.redirectPath, `/go/getyourguide-activities/offer/${offer.id}/`);
+  }
+  const activityOffers = source("components/affiliate-activity-offers.tsx");
+  assert.match(activityOffers, /href=\{offer\.affiliateUrl\}/);
+  assert.doesNotMatch(activityOffers, /href=\{offer\.redirectPath\}/);
 });
 
 test("Viator offers stay disabled until their affiliate links resolve to product detail pages", () => {

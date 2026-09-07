@@ -1,7 +1,7 @@
 import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
-import { validateAffiliateActivityOffers, validateAffiliateConfig } from "../../lib/affiliate/affiliate.js";
+import { buildAffiliateActivityUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../../lib/affiliate/affiliate.js";
 import type { AffiliateActivityOfferConfig, AffiliateConfig, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch } from "../../lib/data/types.js";
 import { listLocationTours, loadDestinations } from "../../lib/data/load.js";
 import { readJson, root } from "../pipeline/io.js";
@@ -36,6 +36,14 @@ if (redirects.entries.length !== expectedRedirects) throw new Error(`Expected ${
 if (new Set(redirects.entries.map((entry) => entry.path)).size !== redirects.entries.length) throw new Error("Affiliate redirect paths must be unique");
 if (publishedOffers.length !== enabledOffers) throw new Error("Published affiliate offer count does not match enabled source offers");
 if (new Set(publishedOffers.map((offer) => offer.id)).size !== publishedOffers.length) throw new Error("Published affiliate offer IDs must be unique");
+const enabledOfferById = new Map(offers.offers.filter((offer) => offer.enabled).map((offer) => [offer.id, offer]));
+for (const offer of publishedOffers) {
+  const sourceOffer = enabledOfferById.get(offer.id);
+  if (!sourceOffer) throw new Error(`Published affiliate offer has no enabled source: ${offer.id}`);
+  const expectedUrl = buildAffiliateActivityUrl(config, sourceOffer);
+  if (!expectedUrl || offer.affiliateUrl !== expectedUrl) throw new Error(`Published affiliate URL does not match its validated source: ${offer.id}`);
+  if (!redirects.entries.some((entry) => entry.kind === "activity-offer" && entry.path === offer.redirectPath)) throw new Error(`Published affiliate offer is missing its fallback redirect: ${offer.id}`);
+}
 if (publishedSearches.length !== expectedSearches) throw new Error("Published destination-search count does not match enabled variants");
 if (new Set(publishedSearches.map((search) => `${search.partnerId}/${search.destinationId}/${search.variantId}`)).size !== publishedSearches.length) throw new Error("Published destination searches must be unique");
 const expectedSearchKeys = new Set(enabledSearchPartners.flatMap((partner) => activeDestinations.flatMap((destination) => (

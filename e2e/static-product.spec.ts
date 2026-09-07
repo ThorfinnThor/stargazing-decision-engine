@@ -108,3 +108,32 @@ test("critical pages have no horizontal overflow at 320 px", async ({ page }) =>
     await expect.poll(() => page.evaluate(() => document.documentElement.scrollWidth <= document.documentElement.clientWidth)).toBe(true);
   }
 });
+
+test("destination and tour affiliate CTAs expose direct analyzer-compatible GetYourGuide links", async ({ page }) => {
+  for (const path of [
+    "/en/stargazing-destinations/la-palma/",
+    "/en/stargazing-tours/llanos-del-jable-independent-night/",
+  ]) {
+    await page.goto(path);
+
+    const links = page.locator(".affiliate-activity-card a");
+    await expect(links.first()).toBeAttached();
+    expect(await links.count()).toBeGreaterThan(0);
+
+    for (const link of await links.all()) {
+      const href = await link.getAttribute("href");
+      expect(href).toMatch(/^https:\/\/www\.getyourguide\.com\//);
+      expect(href).not.toContain("/go/getyourguide-activities/");
+
+      const affiliateUrl = new URL(href!);
+      expect(affiliateUrl.searchParams.get("partner_id")).toBe("BKWM9K1");
+      expect(affiliateUrl.searchParams.get("utm_medium")).toBe("online_publisher");
+      expect(affiliateUrl.searchParams.get("cmp")).toBeTruthy();
+      await expect(link).toHaveAttribute("target", "_blank");
+      await expect(link).toHaveAttribute("rel", /sponsored/);
+      await expect(link).toHaveAttribute("rel", /nofollow/);
+      await expect(link).toHaveAttribute("rel", /noopener/);
+      await expect(link).toHaveAttribute("rel", /noreferrer/);
+    }
+  }
+});

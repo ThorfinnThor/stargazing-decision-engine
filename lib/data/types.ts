@@ -255,6 +255,7 @@ export interface PublishedAffiliateActivityOffer {
   kind: "stargazing" | "regional";
   title: LocalizedEditorialText;
   description: LocalizedEditorialText;
+  affiliateUrl: string;
   redirectPath: string;
   lastReviewedAt: string;
 }

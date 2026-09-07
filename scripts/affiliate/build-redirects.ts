@@ -74,6 +74,7 @@ for (const offer of offers.offers.filter((item) => item.enabled)) {
     kind: offer.kind ?? "stargazing",
     title: offer.title,
     description: offer.description,
+    affiliateUrl: url,
     redirectPath,
     lastReviewedAt: offer.lastReviewedAt,
   });
