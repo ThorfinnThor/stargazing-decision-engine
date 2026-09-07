@@ -298,6 +298,22 @@ test("the first ten destinations use the reviewed offer inventory without automa
   assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4" && offer.enabled), false);
 });
 
+test("57-destination audit additions retain verified product identity and tour mapping", () => {
+  const offers = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[];
+  const expected = [["brecon-beacons","1079824"],["bryce-canyon","1118327"],["capitol-reef","492007"],["arches","597462"],["kaikoura","1269017"],["oudtshoorn","433401"],["wadi-rum","1100097"]];
+  for (const [destinationId, productId] of expected) {
+    const offer = offers.find((item) => item.destinationId === destinationId && item.id.endsWith(productId));
+    assert.ok(offer);
+    assert.equal(offer.kind, "stargazing");
+    assert.ok(offer.locationTourSlugs.length > 0);
+    const url = new URL(offer.affiliateUrl);
+    assert.ok(url.pathname.endsWith(`-t${productId}/`));
+    assert.equal(url.searchParams.get("referral_redirect"), "1");
+    assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
+  }
+  assert.equal(offers.some((offer) => offer.affiliateUrl.includes("-t1167432/")), false);
+});
+
 test("affiliate disclosures appear only with rendered affiliate integrations", () => {
   for (const path of [
     "app/[locale]/short-trips/[origin]/page.tsx",
