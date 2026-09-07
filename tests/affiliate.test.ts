@@ -283,9 +283,9 @@ test("the first ten destinations use the reviewed offer inventory without automa
     "westhavelland": { stargazing: 0, regional: 0 },
     "alqueva": { stargazing: 1, regional: 2 },
     "galloway": { stargazing: 0, regional: 2 },
-    "atacama": { stargazing: 0, regional: 2 },
+    "atacama": { stargazing: 1, regional: 2 },
     "big-bend": { stargazing: 0, regional: 1 },
-    "aoraki-mackenzie": { stargazing: 0, regional: 2 },
+    "aoraki-mackenzie": { stargazing: 1, regional: 2 },
     "namibrand": { stargazing: 0, regional: 2 },
     "jasper": { stargazing: 1, regional: 2 },
   };
