@@ -281,7 +281,7 @@ test("the first ten destinations use the reviewed offer inventory without automa
     "la-palma": { stargazing: 2, regional: 2 },
     "tenerife": { stargazing: 3, regional: 2 },
     "westhavelland": { stargazing: 0, regional: 0 },
-    "alqueva": { stargazing: 1, regional: 2 },
+    "alqueva": { stargazing: 2, regional: 2 },
     "galloway": { stargazing: 0, regional: 2 },
     "atacama": { stargazing: 1, regional: 2 },
     "big-bend": { stargazing: 0, regional: 1 },
