@@ -54,6 +54,8 @@ test("curated activity links open in new tabs and public pages share the compact
   const styles = read("app/globals.css");
 
   assert.match(activityOffers, /target="_blank"/);
+  assert.match(activityOffers, /href=\{offer\.affiliateUrl\}/);
+  assert.match(activityOffers, /noopener noreferrer/);
   assert.match(activityOffers, /Guided stargazing options/);
   assert.match(activityOffers, /Other activities around/);
   assert.match(activityOffers, /No suitable tour currently listed/);

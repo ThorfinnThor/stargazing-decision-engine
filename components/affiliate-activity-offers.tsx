@@ -25,9 +25,9 @@ export function AffiliateActivityOffers({ destinationId, locationTourSlug, local
         aria-label={`${kind === "stargazing"
           ? isGerman ? "Tour ansehen" : "View tour"
           : isGerman ? "Aktivität ansehen" : "View activity"}: ${offer.title[locale]} (${isGerman ? "öffnet neuen Tab" : "opens in a new tab"})`}
-        href={offer.redirectPath}
+        href={offer.affiliateUrl}
         target="_blank"
-        rel={affiliateRel()}
+        rel={`${affiliateRel()} noopener noreferrer`}
       >{kind === "stargazing"
           ? isGerman ? `Tour bei ${offer.partnerName} ansehen` : `View tour on ${offer.partnerName}`
           : isGerman ? `Aktivität bei ${offer.partnerName} ansehen` : `View activity on ${offer.partnerName}`} <span aria-hidden="true">↗</span></a>
