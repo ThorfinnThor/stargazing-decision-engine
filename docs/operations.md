@@ -19,6 +19,35 @@ and serves the committed static output.
 No ingestion workflow may force-push, commit raw downloads, or bypass a
 failed validation. A failed job leaves the last committed dataset untouched.
 
+Scheduled health and calendar workflows intentionally run from committed data,
+without an ingestion rebuild. Tests shared with those workflows must not read
+ignored `generated/intermediate` files. Destination editorial tests read
+`data-config/sources/destinations.json`; a regression check enforces this contract.
+
+## Backlog status, 2026-09-08
+
+- The catalog contains 75 destinations and 150 real-scored observation sites,
+  with 75 bilingual destination guides and 75 bilingual location tours. Expansion
+  to 100 remains unfinished, not hidden by a presentation filter.
+- The missing intermediate-file dependency behind the failed health and calendar
+  runs has been removed from the editorial test. Verify both dispatched workflows
+  after merge before calling the operational repair complete.
+- Images: 25 destination assets and 150 optional site assets remain pending.
+- The editorial audit now lists the actual repeated-opening occurrences. Many
+  link a destination guide to its corresponding tour; they still need editorial
+  review rather than a numerical claim of 247 unrelated-page defects.
+- Cloudflare Crawler Hints was confirmed enabled in the dashboard on 2026-09-08.
+  OAI-SearchBot, ChatGPT-User and Claude-SearchBot were explicitly blocked.
+  Changing those controls awaits user confirmation. Claude-User's blocked switch
+  was disabled in this view and requires investigation of the controlling rule.
+- Bing Webmaster Tools requires the user's existing-account sign-in. No account
+  was created and no additional permissions were granted.
+- Infrastructure deletion remains deferred until ownership, DNS use and rollback
+  requirements are established. No deployment has been deleted.
+
+The dated August audits record historical verification, not current catalog counts
+or a guarantee that dashboard configuration remains unchanged.
+
 ## Credential and source failures
 
 - `CDSAPI_KEY`: accept the ERA5 dataset terms before retrying. Rotate the

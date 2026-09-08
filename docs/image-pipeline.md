@@ -19,10 +19,11 @@ author, license, license URL, attribution, alt text, and review date.
 
 P3 candidates are kept separately in
 `data-config/sources/p3-image-candidates.json`. They include source-page and
-download provenance and are not consumed directly by page rendering. All 50
-reviewed records have now been copied into `destination-images.json` after
-local WebP conversion; all 50 destination records are approved and have a
-self-hosted asset. The production validator checks that every copied
+download provenance and are not consumed directly by page rendering. The original
+50 reviewed records were copied into `destination-images.json` after local WebP
+conversion. As of 2026-09-08, the 75-destination catalog has 50 approved images
+and 25 pending images; all 150 individual observation-site images remain pending.
+Pending records do not publish an asset. The production validator checks that every copied
 provenance field still matches the audit register exactly.
 
 The build never fetches remote images and does not silently fall back to an

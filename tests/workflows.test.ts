@@ -81,6 +81,11 @@ test("derived-data commits trigger the Cloudflare Git integration without deploy
 });
 
 test("scheduled static health validation does not require ignored intermediate files", () => {
+  const editorialTest = readFileSync(join(root, "tests/destination-editorial-guides.test.ts"), "utf8");
+  if (editorialTest.includes("generated/intermediate")) {
+    throw new Error("editorial tests must run from committed data in scheduled workflows");
+  }
+  assertIncludes(editorialTest, "data-config/sources/destinations.json");
   const imageValidator = readFileSync(join(root, "scripts/validate/validate-images.ts"), "utf8");
   if (imageValidator.includes("generatedPath") || imageValidator.includes("generated/intermediate")) {
     throw new Error("image validation must be reproducible from committed source configuration");

@@ -127,13 +127,14 @@ index. Its five controls rank reviewed, travel-eligible destinations without
 changing the published Stargazing Trip score and without making a live-weather
 claim. See [`docs/finder-methodology.md`](docs/finder-methodology.md).
 
-Affiliate links are disabled by default and isolated behind allow-listed static
-redirects. See [`docs/affiliate-setup.md`](docs/affiliate-setup.md).
+Affiliate links use allow-listed partner configuration. Verified GetYourGuide
+activity CTAs use direct tracked product URLs; static redirects remain available
+as fallbacks. Viator stays disabled. See [`docs/affiliate-setup.md`](docs/affiliate-setup.md).
 
 Gear guides are static specification-analysis pages with no scraped prices or
 availability claims. See [`docs/gear-methodology.md`](docs/gear-methodology.md).
 
-The current catalog contains 50 destinations with 100 complete reviewed real
+The current catalog contains 75 destinations with 150 complete reviewed real
 observation-site score snapshots. Every destination exposes two site-specific
 sky and monthly-score views. Synthetic scoring remains only as an isolated development
 fixture and cannot feed calendars, meteor rankings, short trips, or the
