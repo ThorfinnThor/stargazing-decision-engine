@@ -20,6 +20,9 @@ ROOT = Path(__file__).resolve().parents[2]
 RAW_ROOT = ROOT / "raw-downloads" / "black-marble"
 _EARTHACCESS = None
 LAADS_ARCHIVE_ROOT = "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200"
+CMR_GRANULE_SEARCH = "https://cmr.earthdata.nasa.gov/search/granules.json"
+EARTHDATA_CLOUD_HOST = "data.laadsdaac.earthdatacloud.nasa.gov"
+HDF5_SIGNATURE = b"\x89HDF\r\n\x1a\n"
 
 
 def load_json(path: Path):
@@ -101,6 +104,113 @@ def laads_request(url: str, token: str, *, stream: bool = False):
     )
     response.raise_for_status()
     return response
+
+
+def cmr_granule_entry(payload: dict, product: str, year: int, tile: str, collection_version: str) -> tuple[str, str]:
+    """Return the reviewed producer filename and Earthdata Cloud URL from CMR JSON."""
+    version = f"{int(collection_version):03d}"
+    expected = re.compile(rf"^{re.escape(product)}\.A{year}001\.{re.escape(tile)}\.{version}\.\d+\.h5$")
+    matches: list[tuple[str, str]] = []
+    for entry in payload.get("feed", {}).get("entry", []):
+        name = str(entry.get("producer_granule_id", ""))
+        if not expected.fullmatch(name):
+            continue
+        urls = [
+            str(link.get("href", ""))
+            for link in entry.get("links", [])
+            if str(link.get("href", "")).startswith(f"https://{EARTHDATA_CLOUD_HOST}/")
+        ]
+        if urls:
+            matches.append((name, sorted(urls)[0]))
+    if not matches:
+        raise RuntimeError(f"CMR returned no Earthdata Cloud granule for {product} {year} {tile} collection {version}")
+    return sorted(matches)[-1]
+
+
+def retrieve_via_cmr(
+    *,
+    site_slug: str,
+    config: dict,
+    tiles: set[str],
+    candidate_years: list[int],
+    target: Path,
+) -> dict[int, list[Path]]:
+    """Discover through public CMR metadata and download from Earthdata Cloud.
+
+    This path does not need the URS login host. The EDL token is presented to
+    Earthdata Cloud, which returns a method-specific signed download URL.
+    """
+    token = os.environ.get("EARTHDATA_TOKEN")
+    if not token:
+        raise SystemExit("EARTHDATA_TOKEN is required for a Black Marble cache miss.")
+    try:
+        import requests  # type: ignore
+    except ImportError as error:
+        raise SystemExit("Install requirements-data.txt before CMR retrieval.") from error
+
+    selected_by_year: dict[int, list[Path]] = {}
+    for year in candidate_years:
+        discovered: list[tuple[str, str]] = []
+        for tile in sorted(tiles):
+            pattern = f"{config['product']}.A{year}001.{tile}.{int(config['collectionVersion']):03d}.*"
+
+            def discover() -> tuple[str, str]:
+                response = requests.get(
+                    CMR_GRANULE_SEARCH,
+                    params={
+                        "short_name": config["product"],
+                        "version": config["collectionVersion"],
+                        "producer_granule_id": pattern,
+                        "options[producer_granule_id][pattern]": "true",
+                        "page_size": "10",
+                    },
+                    headers={"Accept": "application/json", "User-Agent": "stargazing-index-data-ingest/1.0"},
+                    timeout=(30, 180),
+                )
+                response.raise_for_status()
+                return cmr_granule_entry(response.json(), config["product"], year, tile, config["collectionVersion"])
+
+            discovered.append(retry_network(f"CMR search for {year} {tile}", discover))
+
+        year_dir = target / str(year)
+        year_dir.mkdir(parents=True, exist_ok=True)
+        downloaded: list[Path] = []
+        for name, url in discovered:
+            destination = year_dir / name
+
+            def download() -> Path:
+                temporary = destination.with_suffix(f"{destination.suffix}.part")
+                temporary.unlink(missing_ok=True)
+                with requests.get(
+                    url,
+                    headers={"Authorization": f"Bearer {token}", "User-Agent": "stargazing-index-data-ingest/1.0"},
+                    timeout=(30, 300),
+                    stream=True,
+                    allow_redirects=True,
+                ) as response:
+                    response.raise_for_status()
+                    chunks = response.iter_content(chunk_size=1024 * 1024)
+                    first = next(chunks, b"")
+                    if not first.startswith(HDF5_SIGNATURE):
+                        content_type = response.headers.get("content-type", "unknown")
+                        raise RuntimeError(
+                            f"Earthdata Cloud did not return HDF5 for {name} "
+                            f"(content-type {content_type}, final URL {response.url}). "
+                            "Refresh the EDL token and confirm the LAADS application is authorized."
+                        )
+                    with temporary.open("wb") as handle:
+                        handle.write(first)
+                        for chunk in chunks:
+                            if chunk:
+                                handle.write(chunk)
+                temporary.replace(destination)
+                return destination
+
+            downloaded.append(retry_network(f"Earthdata Cloud download for {site_slug} {year} {name}", download))
+        selected_by_year[year] = downloaded
+        if len(selected_by_year) == config["baselineYearCount"]:
+            break
+    return selected_by_year
 
 
 def retrieve_via_laads(
@@ -189,11 +299,22 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         candidate_years = list(range(first_candidate_year, config["availableFromYear"] - 1, -1))
 
     selected_by_year: dict[int, list] = {}
-    provider = "LAADS archive" if os.environ.get("BLACK_MARBLE_PROVIDER") == "laads" else "Earthdata Search"
+    provider_key = os.environ.get("BLACK_MARBLE_PROVIDER")
+    provider = {"laads": "LAADS archive", "cmr": "CMR and Earthdata Cloud"}.get(
+        provider_key, "Earthdata Search"
+    )
     earthaccess = None
     try:
         if provider == "LAADS archive":
             selected_by_year = retrieve_via_laads(
+                site_slug=site_slug,
+                config=config,
+                tiles=tiles,
+                candidate_years=candidate_years,
+                target=target,
+            )
+        elif provider == "CMR and Earthdata Cloud":
+            selected_by_year = retrieve_via_cmr(
                 site_slug=site_slug,
                 config=config,
                 tiles=tiles,
@@ -227,8 +348,8 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
                 if len(selected_by_year) == config["baselineYearCount"]:
                     break
     except Exception as error:
-        provider = "LAADS archive"
-        selected_by_year = retrieve_via_laads(
+        provider = "CMR and Earthdata Cloud"
+        selected_by_year = retrieve_via_cmr(
             site_slug=site_slug,
             config=config,
             tiles=tiles,
@@ -238,7 +359,7 @@ def retrieve(site_slug: str, target_kind: str = "site") -> None:
         if earthaccess is not None:
             print(
                 f"Earthdata Search was unavailable ({error.__class__.__name__}); "
-                "used the official LAADS archive with the same EDL token.",
+                "used public CMR metadata and Earthdata Cloud with the same EDL token.",
                 file=sys.stderr,
             )
 
