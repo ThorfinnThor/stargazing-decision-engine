@@ -159,9 +159,9 @@ Measured locally on 2026-08-27 after the V2.1 production static export:
   ratio capped to 2.
 - The Moon is rasterized at 256 px, then downsampled with high-quality Canvas
   smoothing; its glow is rendered separately so the lunar limb remains crisp.
-- Upcoming-night selection produced a valid astronomical night for all 50
+- Upcoming-night selection produced a valid astronomical night for all 100
   destinations in 43.26 ms total during the fixed-date verification run.
-- The computation regression covers all 100 observation sites at eight instants
+- The computation regression covers all 200 observation sites at eight instants
   across a complete day. Every site produces either its own live astronomical
   night or its own valid upcoming-night snapshot; locations are never
   substituted.

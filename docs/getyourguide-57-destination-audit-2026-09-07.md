@@ -1,5 +1,8 @@
 # GetYourGuide audit of 57 uncovered destinations
 
+> Historical snapshot. The 75-destination figures below describe the catalog at
+> audit time. The current catalog total is maintained in `README.md`.
+
 Audit date: 2026-09-07
 
 ## Scope and result

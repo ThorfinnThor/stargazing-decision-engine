@@ -10,20 +10,20 @@ import { buildLocationTourStructuredData } from "../lib/seo/structured-data.js";
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
 const tours = read<LocationTour[]>("data-config/editorial/location-tours.json");
 
-test("all seventy-five location tours are bilingual, sourced, and structurally varied", () => {
+test("all one hundred location tours are bilingual, sourced, and structurally varied", () => {
   assert.doesNotThrow(() => validateLocationTours({
     tours,
     destinations: read<Destination[]>("data-config/sources/destinations.json"),
     sites: read<ObservationSite[]>("data-config/sources/observation-sites.json"),
     guides: read<DestinationEditorialGuide[]>("data-config/editorial/destination-guides.json"),
   }));
-  assert.equal(tours.length, 75);
+  assert.equal(tours.length, 100);
   assert.ok(tours.every((tour) => locationTourWordCount(tour, "en") >= 300 && locationTourWordCount(tour, "de") >= 300));
   assert.equal(new Set(tours.map((tour) => tour.standfirst.en)).size, tours.length);
   assert.ok(tours.every((tour) => new Set(tour.blocks.map((block) => block.kind)).size >= 3));
   assert.deepEqual(
     new Set(tours.slice(-25).map((tour) => tour.destinationId)),
-    new Set(["joshua-tree", "sedona", "acadia", "grand-canyon", "bryce-canyon", "capitol-reef", "arches", "badlands", "waterton-lakes", "wood-buffalo", "kejimkujik", "mayo-dark-sky", "eryri", "yorkshire-dales", "south-downs", "kalbarri", "river-murray", "great-barrier-island", "wairarapa", "kaikoura", "oudtshoorn", "headlands-michigan", "wadi-rum", "jaisalmer", "aenos"]),
+    new Set(["central-idaho", "cosmic-campground", "flagstaff", "watoga", "mesa-verde", "chaco-culture", "craters-of-the-moon", "antelope-island", "pic-du-midi", "cevennes", "alpes-azur-mercantour", "rhoen", "winklmoosalm", "lauwersmeer", "de-boschplaat", "mon-and-nyord", "bukk", "albanya", "iriomote-ishigaki", "kozushima", "om-dark-sky", "bulbjerg", "bisei", "minami-rokuroshi", "lapalala"]),
   );
 });
 

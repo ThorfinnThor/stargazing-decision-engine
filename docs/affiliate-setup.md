@@ -57,7 +57,9 @@ individually reviewed editorial recommendations. A destination enters the
 allowlist only after its rendered results pass a relevance check. The page
 labels that boundary and keeps the reviewed direct-offer cards separate.
 
-The relevance audit of all 50 destinations was completed on 2026-08-30. The
+The first relevance audit covered the then-current 50 destinations on
+2026-08-30. Later dated affiliate audits document the subsequent catalog
+expansions; these figures are historical rather than the current catalog size. The
 allowlist contains La Palma, Tenerife, Atacama, Jasper, Mauna Kea, Uluru, Pico
 do Arieiro, Death Valley, Canyonlands, North York Moors, Hanle, and Rila.
 Ambiguous or incorrect provider matches are kept disabled even when the

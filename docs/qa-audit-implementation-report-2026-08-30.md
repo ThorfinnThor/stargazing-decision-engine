@@ -1,5 +1,9 @@
 # Audit implementation report — 2026-08-30
 
+> Historical snapshot. Counts and test totals below describe the 2026-08-30
+> release. The current catalog status is maintained in `README.md` and
+> `docs/operations.md` and now covers 100 destinations and 200 observation sites.
+
 ## Summary
 
 - Findings reviewed: 11

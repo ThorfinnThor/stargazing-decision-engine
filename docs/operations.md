@@ -26,16 +26,17 @@ ignored `generated/intermediate` files. Destination editorial tests read
 
 ## Backlog status, 2026-09-08
 
-- The catalog contains 75 destinations and 150 real-scored observation sites,
-  with 75 bilingual destination guides and 75 bilingual location tours. Expansion
-  to 100 remains unfinished, not hidden by a presentation filter.
-- The missing intermediate-file dependency behind the failed health and calendar
-  runs has been removed from the editorial test. Verify both dispatched workflows
-  after merge before calling the operational repair complete.
-- Images: 25 destination assets and 150 optional site assets remain pending.
-- The editorial audit now lists the actual repeated-opening occurrences. Many
-  link a destination guide to its corresponding tour; they still need editorial
-  review rather than a numerical claim of 247 unrelated-page defects.
+- The catalog contains 100 destinations and 200 observation sites, with 100
+  bilingual destination guides and 100 bilingual location tours. Every production
+  site must have a real score snapshot before the build can pass.
+- Calendar generation evaluates expensive Moon and Milky Way calculations only
+  inside exact astronomical-darkness intervals. A one-month, 75-destination
+  benchmark completed in 3.13 seconds after this change.
+- All 25 destination-image gaps present at the start of the 2026-09-08 backlog
+  pass now have locally stored, license-audited assets. Images introduced with a
+  later catalog expansion remain publication-blocked until separately reviewed.
+- The editorial audit reports zero banned phrases, exact duplicate groups and
+  repeated twelve-word openings across the 100 destination guides and tours.
 - Cloudflare Crawler Hints was confirmed enabled in the dashboard on 2026-09-08.
   OAI-SearchBot, ChatGPT-User and Claude-SearchBot were explicitly blocked.
   Changing those controls awaits user confirmation. Claude-User's blocked switch
