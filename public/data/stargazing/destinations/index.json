@@ -87,6 +87,62 @@
     "affiliateQuery": "Al Wathba Abu Dhabi stargazing"
   },
   {
+    "id": "albanya",
+    "slug": "albanya",
+    "name": "Albanyà",
+    "countryCode": "ES",
+    "countryName": "Spain",
+    "continent": "europe",
+    "regionSlugs": [
+      "catalonia",
+      "europe"
+    ],
+    "timezone": "Europe/Madrid",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "dark-sky-park",
+      "observatory",
+      "mountain"
+    ],
+    "observationSiteIds": [
+      "bassegoda-observatory",
+      "coll-de-la-creu-albanya"
+    ],
+    "stayAreaIds": [
+      "albanya-village"
+    ],
+    "affiliateQuery": "Albanya Girona Spain"
+  },
+  {
+    "id": "alpes-azur-mercantour",
+    "slug": "alpes-azur-mercantour",
+    "name": "Alpes Azur Mercantour",
+    "countryCode": "FR",
+    "countryName": "France",
+    "continent": "europe",
+    "regionSlugs": [
+      "provence-alpes-cote-d-azur",
+      "europe"
+    ],
+    "timezone": "Europe/Paris",
+    "active": true,
+    "priority": 93,
+    "tags": [
+      "dark-sky-reserve",
+      "alpine",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "valberg-sentinel",
+      "col-de-la-cayolle"
+    ],
+    "stayAreaIds": [
+      "valberg"
+    ],
+    "affiliateQuery": "Mercantour France"
+  },
+  {
     "id": "alqueva",
     "slug": "alqueva",
     "name": "Alqueva",
@@ -114,6 +170,34 @@
       "monsaraz"
     ],
     "affiliateQuery": "Alqueva Portugal"
+  },
+  {
+    "id": "antelope-island",
+    "slug": "antelope-island",
+    "name": "Antelope Island",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "utah",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 87,
+    "tags": [
+      "dark-sky-park",
+      "lake",
+      "wildlife"
+    ],
+    "observationSiteIds": [
+      "white-rock-bay",
+      "bridger-bay"
+    ],
+    "stayAreaIds": [
+      "layton-utah"
+    ],
+    "affiliateQuery": "Antelope Island Utah"
   },
   {
     "id": "anza-borrego",
@@ -317,6 +401,34 @@
     "affiliateQuery": "Big Bend National Park Texas"
   },
   {
+    "id": "bisei",
+    "slug": "bisei",
+    "name": "Bisei Town",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "continent": "asia",
+    "regionSlugs": [
+      "okayama",
+      "asia"
+    ],
+    "timezone": "Asia/Tokyo",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "dark-sky-community",
+      "observatory",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "bisei-observatory",
+      "hoshizora-park-bisei"
+    ],
+    "stayAreaIds": [
+      "ibara"
+    ],
+    "affiliateQuery": "Okayama Japan"
+  },
+  {
     "id": "brecon-beacons",
     "slug": "brecon-beacons",
     "name": "Bannau Brycheiniog",
@@ -373,6 +485,62 @@
       "bryce-canyon-city"
     ],
     "affiliateQuery": "Bryce Canyon National Park Utah"
+  },
+  {
+    "id": "bukk",
+    "slug": "bukk",
+    "name": "Bükk National Park",
+    "countryCode": "HU",
+    "countryName": "Hungary",
+    "continent": "europe",
+    "regionSlugs": [
+      "northern-hungary",
+      "europe"
+    ],
+    "timezone": "Europe/Budapest",
+    "active": true,
+    "priority": 85,
+    "tags": [
+      "dark-sky-park",
+      "forest",
+      "astronomy-centre"
+    ],
+    "observationSiteIds": [
+      "bukki-csillagda",
+      "repashuta"
+    ],
+    "stayAreaIds": [
+      "miskolc"
+    ],
+    "affiliateQuery": "Bukk National Park Hungary"
+  },
+  {
+    "id": "bulbjerg",
+    "slug": "bulbjerg",
+    "name": "Bulbjerg",
+    "countryCode": "DK",
+    "countryName": "Denmark",
+    "continent": "europe",
+    "regionSlugs": [
+      "north-jutland",
+      "europe"
+    ],
+    "timezone": "Europe/Copenhagen",
+    "active": true,
+    "priority": 83,
+    "tags": [
+      "dark-sky-park",
+      "coast",
+      "dunes"
+    ],
+    "observationSiteIds": [
+      "bulbjerg-cliff-lot",
+      "lild-strand-edge"
+    ],
+    "stayAreaIds": [
+      "lild-strand"
+    ],
+    "affiliateQuery": "Thy Denmark"
   },
   {
     "id": "canyonlands",
@@ -461,6 +629,34 @@
     "affiliateQuery": "Cederberg South Africa stargazing"
   },
   {
+    "id": "central-idaho",
+    "slug": "central-idaho",
+    "name": "Central Idaho",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "idaho",
+      "north-america"
+    ],
+    "timezone": "America/Boise",
+    "active": true,
+    "priority": 94,
+    "tags": [
+      "dark-sky-reserve",
+      "mountain",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "stanley-lake",
+      "redfish-lake"
+    ],
+    "stayAreaIds": [
+      "stanley-idaho"
+    ],
+    "affiliateQuery": "Stanley Idaho"
+  },
+  {
     "id": "central-tasmania",
     "slug": "central-tasmania",
     "name": "Central Tasmania",
@@ -519,6 +715,62 @@
     "affiliateQuery": "Cerro Paranal Chile observatory"
   },
   {
+    "id": "cevennes",
+    "slug": "cevennes",
+    "name": "Cévennes",
+    "countryCode": "FR",
+    "countryName": "France",
+    "continent": "europe",
+    "regionSlugs": [
+      "occitanie",
+      "europe"
+    ],
+    "timezone": "Europe/Paris",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "dark-sky-reserve",
+      "mountain",
+      "national-park"
+    ],
+    "observationSiteIds": [
+      "mont-aigoual",
+      "mas-de-la-barque"
+    ],
+    "stayAreaIds": [
+      "florac"
+    ],
+    "affiliateQuery": "Cevennes France"
+  },
+  {
+    "id": "chaco-culture",
+    "slug": "chaco-culture",
+    "name": "Chaco Culture",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "new-mexico",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 93,
+    "tags": [
+      "dark-sky-park",
+      "archaeology",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "gallo-campground",
+      "chaco-astronomy-center"
+    ],
+    "stayAreaIds": [
+      "farmington-new-mexico"
+    ],
+    "affiliateQuery": "Chaco Culture New Mexico"
+  },
+  {
     "id": "cherry-springs",
     "slug": "cherry-springs",
     "name": "Cherry Springs",
@@ -546,6 +798,90 @@
       "cherry-springs-town"
     ],
     "affiliateQuery": "Cherry Springs Pennsylvania"
+  },
+  {
+    "id": "cosmic-campground",
+    "slug": "cosmic-campground",
+    "name": "Cosmic Campground",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "new-mexico",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "dark-sky-sanctuary",
+      "campground",
+      "remote"
+    ],
+    "observationSiteIds": [
+      "cosmic-observation-pads",
+      "cosmic-campground-sites"
+    ],
+    "stayAreaIds": [
+      "glenwood-new-mexico"
+    ],
+    "affiliateQuery": "Glenwood New Mexico"
+  },
+  {
+    "id": "craters-of-the-moon",
+    "slug": "craters-of-the-moon",
+    "name": "Craters of the Moon",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "idaho",
+      "north-america"
+    ],
+    "timezone": "America/Boise",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "dark-sky-park",
+      "volcanic",
+      "national-monument"
+    ],
+    "observationSiteIds": [
+      "lava-flow-campground",
+      "north-crater-flow-lot"
+    ],
+    "stayAreaIds": [
+      "arco-idaho"
+    ],
+    "affiliateQuery": "Craters of the Moon Idaho"
+  },
+  {
+    "id": "de-boschplaat",
+    "slug": "de-boschplaat",
+    "name": "De Boschplaat",
+    "countryCode": "NL",
+    "countryName": "Netherlands",
+    "continent": "europe",
+    "regionSlugs": [
+      "terschelling",
+      "europe"
+    ],
+    "timezone": "Europe/Amsterdam",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "dark-sky-park",
+      "island",
+      "wetland"
+    ],
+    "observationSiteIds": [
+      "wierschuur-boschplaat",
+      "panoramadune-oosterend"
+    ],
+    "stayAreaIds": [
+      "oosterend-terschelling"
+    ],
+    "affiliateQuery": "Terschelling Netherlands"
   },
   {
     "id": "death-valley",
@@ -749,6 +1085,34 @@
       "lynmouth"
     ],
     "affiliateQuery": "Exmoor National Park stargazing"
+  },
+  {
+    "id": "flagstaff",
+    "slug": "flagstaff",
+    "name": "Flagstaff",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "arizona",
+      "north-america"
+    ],
+    "timezone": "America/Phoenix",
+    "active": true,
+    "priority": 90,
+    "tags": [
+      "dark-sky-community",
+      "observatory",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "lowell-observatory",
+      "buffalo-park-flagstaff"
+    ],
+    "stayAreaIds": [
+      "flagstaff-city"
+    ],
+    "affiliateQuery": "Flagstaff Arizona"
   },
   {
     "id": "galloway",
@@ -1038,6 +1402,34 @@
       "hortobagy-town"
     ],
     "affiliateQuery": "Hortobagy Hungary stargazing"
+  },
+  {
+    "id": "iriomote-ishigaki",
+    "slug": "iriomote-ishigaki",
+    "name": "Iriomote-Ishigaki",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "continent": "asia",
+    "regionSlugs": [
+      "okinawa",
+      "asia"
+    ],
+    "timezone": "Asia/Tokyo",
+    "active": true,
+    "priority": 92,
+    "tags": [
+      "dark-sky-park",
+      "island",
+      "subtropical"
+    ],
+    "observationSiteIds": [
+      "kabira-bay-visitor-area",
+      "hoshizuna-beach-iriomote"
+    ],
+    "stayAreaIds": [
+      "ishigaki-city"
+    ],
+    "affiliateQuery": "Ishigaki Okinawa Japan"
   },
   {
     "id": "jaisalmer",
@@ -1330,6 +1722,34 @@
     "affiliateQuery": "Kitt Peak Arizona"
   },
   {
+    "id": "kozushima",
+    "slug": "kozushima",
+    "name": "Kozushima",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "continent": "asia",
+    "regionSlugs": [
+      "tokyo-islands",
+      "asia"
+    ],
+    "timezone": "Asia/Tokyo",
+    "active": true,
+    "priority": 89,
+    "tags": [
+      "dark-sky-park",
+      "island",
+      "coast"
+    ],
+    "observationSiteIds": [
+      "yotane-hiroba",
+      "akasaki-promenade"
+    ],
+    "stayAreaIds": [
+      "kozushima-village"
+    ],
+    "affiliateQuery": "Kozushima Japan"
+  },
+  {
     "id": "la-palma",
     "slug": "la-palma",
     "name": "La Palma",
@@ -1386,6 +1806,63 @@
       "vicuna"
     ],
     "affiliateQuery": "La Silla Observatory Chile"
+  },
+  {
+    "id": "lapalala",
+    "slug": "lapalala",
+    "name": "Lapalala Wilderness",
+    "countryCode": "ZA",
+    "countryName": "South Africa",
+    "continent": "africa",
+    "regionSlugs": [
+      "limpopo",
+      "africa"
+    ],
+    "timezone": "Africa/Johannesburg",
+    "active": true,
+    "priority": 94,
+    "tags": [
+      "dark-sky-park",
+      "private-reserve",
+      "wildlife"
+    ],
+    "observationSiteIds": [
+      "noka-camp-lapalala",
+      "melote-house-lapalala"
+    ],
+    "stayAreaIds": [
+      "lapalala-reserve"
+    ],
+    "affiliateQuery": "Waterberg Limpopo South Africa"
+  },
+  {
+    "id": "lauwersmeer",
+    "slug": "lauwersmeer",
+    "name": "Lauwersmeer",
+    "countryCode": "NL",
+    "countryName": "Netherlands",
+    "continent": "europe",
+    "regionSlugs": [
+      "friesland",
+      "groningen",
+      "europe"
+    ],
+    "timezone": "Europe/Amsterdam",
+    "active": true,
+    "priority": 84,
+    "tags": [
+      "dark-sky-park",
+      "wetland",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "activiteitencentrum-lauwersmeer",
+      "dark-sky-platform-lauwersmeer"
+    ],
+    "stayAreaIds": [
+      "lauwersoog"
+    ],
+    "affiliateQuery": "Lauwersmeer Netherlands"
   },
   {
     "id": "mauna-kea",
@@ -1473,6 +1950,90 @@
       "fort-davis"
     ],
     "affiliateQuery": "McDonald Observatory Texas stargazing"
+  },
+  {
+    "id": "mesa-verde",
+    "slug": "mesa-verde",
+    "name": "Mesa Verde",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "colorado",
+      "north-america"
+    ],
+    "timezone": "America/Denver",
+    "active": true,
+    "priority": 91,
+    "tags": [
+      "dark-sky-park",
+      "archaeology",
+      "high-desert"
+    ],
+    "observationSiteIds": [
+      "morefield-campground",
+      "far-view-area"
+    ],
+    "stayAreaIds": [
+      "cortez-colorado"
+    ],
+    "affiliateQuery": "Mesa Verde Colorado"
+  },
+  {
+    "id": "minami-rokuroshi",
+    "slug": "minami-rokuroshi",
+    "name": "Minami-Rokuroshi",
+    "countryCode": "JP",
+    "countryName": "Japan",
+    "continent": "asia",
+    "regionSlugs": [
+      "fukui",
+      "asia"
+    ],
+    "timezone": "Asia/Tokyo",
+    "active": true,
+    "priority": 82,
+    "tags": [
+      "urban-night-sky-place",
+      "observatory",
+      "highland"
+    ],
+    "observationSiteIds": [
+      "fukui-nature-center",
+      "rokuroshi-highland"
+    ],
+    "stayAreaIds": [
+      "ono-city"
+    ],
+    "affiliateQuery": "Ono Fukui Japan"
+  },
+  {
+    "id": "mon-and-nyord",
+    "slug": "mon-and-nyord",
+    "name": "Møn and Nyord",
+    "countryCode": "DK",
+    "countryName": "Denmark",
+    "continent": "europe",
+    "regionSlugs": [
+      "zealand",
+      "europe"
+    ],
+    "timezone": "Europe/Copenhagen",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "dark-sky-park",
+      "coast",
+      "island"
+    ],
+    "observationSiteIds": [
+      "mons-klint-visitor-area",
+      "nyord-village-edge"
+    ],
+    "stayAreaIds": [
+      "stege"
+    ],
+    "affiliateQuery": "Mon Denmark"
   },
   {
     "id": "mont-megantic",
@@ -1620,6 +2181,35 @@
     "affiliateQuery": "North York Moors stargazing"
   },
   {
+    "id": "om-dark-sky",
+    "slug": "om-dark-sky",
+    "name": "OM Dark Sky Park",
+    "countryCode": "GB",
+    "countryName": "United Kingdom",
+    "continent": "europe",
+    "regionSlugs": [
+      "northern-ireland",
+      "europe"
+    ],
+    "timezone": "Europe/London",
+    "active": true,
+    "priority": 86,
+    "tags": [
+      "dark-sky-park",
+      "observatory",
+      "forest",
+      "bookable-programmes"
+    ],
+    "observationSiteIds": [
+      "om-observatory-terrace",
+      "beaghmore-stone-circles"
+    ],
+    "stayAreaIds": [
+      "cookstown"
+    ],
+    "affiliateQuery": "Davagh Forest Northern Ireland"
+  },
+  {
     "id": "oudtshoorn",
     "slug": "oudtshoorn",
     "name": "Oudtshoorn",
@@ -1649,6 +2239,34 @@
     "affiliateQuery": "Oudtshoorn Klein Karoo South Africa"
   },
   {
+    "id": "pic-du-midi",
+    "slug": "pic-du-midi",
+    "name": "Pic du Midi",
+    "countryCode": "FR",
+    "countryName": "France",
+    "continent": "europe",
+    "regionSlugs": [
+      "pyrenees",
+      "europe"
+    ],
+    "timezone": "Europe/Paris",
+    "active": true,
+    "priority": 95,
+    "tags": [
+      "dark-sky-reserve",
+      "observatory",
+      "high-altitude"
+    ],
+    "observationSiteIds": [
+      "pic-du-midi-summit",
+      "col-du-tourmalet"
+    ],
+    "stayAreaIds": [
+      "bagneres-de-bigorre"
+    ],
+    "affiliateQuery": "Pic du Midi France"
+  },
+  {
     "id": "pico-do-arieiro",
     "slug": "pico-do-arieiro",
     "name": "Pico do Arieiro",
@@ -1676,6 +2294,36 @@
       "funchal"
     ],
     "affiliateQuery": "Pico do Arieiro Madeira stargazing"
+  },
+  {
+    "id": "rhoen",
+    "slug": "rhoen",
+    "name": "Rhön",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "continent": "europe",
+    "regionSlugs": [
+      "hesse",
+      "bavaria",
+      "thuringia",
+      "europe"
+    ],
+    "timezone": "Europe/Berlin",
+    "active": true,
+    "priority": 88,
+    "tags": [
+      "dark-sky-reserve",
+      "biosphere",
+      "accessible"
+    ],
+    "observationSiteIds": [
+      "hohe-geba",
+      "wasserkuppe"
+    ],
+    "stayAreaIds": [
+      "fulda"
+    ],
+    "affiliateQuery": "Rhön Germany"
   },
   {
     "id": "rila",
@@ -2025,6 +2673,34 @@
     "affiliateQuery": "Waterton Lakes National Park Alberta"
   },
   {
+    "id": "watoga",
+    "slug": "watoga",
+    "name": "Watoga State Park",
+    "countryCode": "US",
+    "countryName": "United States",
+    "continent": "north-america",
+    "regionSlugs": [
+      "west-virginia",
+      "north-america"
+    ],
+    "timezone": "America/New_York",
+    "active": true,
+    "priority": 83,
+    "tags": [
+      "dark-sky-park",
+      "forest",
+      "campground"
+    ],
+    "observationSiteIds": [
+      "watoga-riverside-campground",
+      "watoga-beaver-creek"
+    ],
+    "stayAreaIds": [
+      "marlinton"
+    ],
+    "affiliateQuery": "Pocahontas County West Virginia"
+  },
+  {
     "id": "westhavelland",
     "slug": "westhavelland",
     "name": "Westhavelland",
@@ -2051,6 +2727,34 @@
       "guelpe"
     ],
     "affiliateQuery": "Westhavelland Germany"
+  },
+  {
+    "id": "winklmoosalm",
+    "slug": "winklmoosalm",
+    "name": "Winklmoosalm",
+    "countryCode": "DE",
+    "countryName": "Germany",
+    "continent": "europe",
+    "regionSlugs": [
+      "bavaria",
+      "europe"
+    ],
+    "timezone": "Europe/Berlin",
+    "active": true,
+    "priority": 87,
+    "tags": [
+      "dark-sky-park",
+      "alpine",
+      "guided-programmes"
+    ],
+    "observationSiteIds": [
+      "winklmoosalm-plateau",
+      "hemmersuppenalm"
+    ],
+    "stayAreaIds": [
+      "reit-im-winkl"
+    ],
+    "affiliateQuery": "Reit im Winkl Germany"
   },
   {
     "id": "witsand",

@@ -1,5 +1,8 @@
 # GetYourGuide gap audit — 2026-09-02
 
+> Historical snapshot. The counts below describe the catalog reviewed on this
+> date and are not the current destination total.
+
 ## Scope and rules
 
 This audit covers the 27 destinations that had no enabled affiliate offer after the direct-product cleanup. A product was enabled only when its current GetYourGuide detail page established a concrete relationship to the destination or a clearly described regional base. Search pages, name collisions, incidental pass-throughs, distant gateway cities, expired events, and products from a different geographic entity were rejected.

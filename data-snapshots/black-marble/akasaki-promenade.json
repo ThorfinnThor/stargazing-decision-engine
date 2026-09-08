@@ -1,0 +1,158 @@
+{
+  "siteId": "akasaki-promenade",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.06062,
+      "coverage": 0.997646,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.06062,
+          "coverage": 0.998234,
+          "validPixelCount": 1696,
+          "totalPixelCount": 1699
+        },
+        {
+          "year": 2024,
+          "radiance": 0.057406,
+          "coverage": 0.997646,
+          "validPixelCount": 1695,
+          "totalPixelCount": 1699
+        },
+        {
+          "year": 2023,
+          "radiance": 0.064802,
+          "coverage": 0.997646,
+          "validPixelCount": 1695,
+          "totalPixelCount": 1699
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.013646,
+      "coverage": 0.999012,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.01303,
+          "coverage": 0.999012,
+          "validPixelCount": 14150,
+          "totalPixelCount": 14164
+        },
+        {
+          "year": 2024,
+          "radiance": 0.013646,
+          "coverage": 0.999223,
+          "validPixelCount": 14153,
+          "totalPixelCount": 14164
+        },
+        {
+          "year": 2023,
+          "radiance": 0.016175,
+          "coverage": 0.999153,
+          "validPixelCount": 14152,
+          "totalPixelCount": 14164
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.023702,
+      "coverage": 0.998828,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.023521,
+          "coverage": 0.998924,
+          "validPixelCount": 83555,
+          "totalPixelCount": 83645
+        },
+        {
+          "year": 2024,
+          "radiance": 0.023702,
+          "coverage": 0.998828,
+          "validPixelCount": 83547,
+          "totalPixelCount": 83645
+        },
+        {
+          "year": 2023,
+          "radiance": 0.027361,
+          "coverage": 0.999079,
+          "validPixelCount": 83568,
+          "totalPixelCount": 83645
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.06062,
+  "radiance10to30": 0.013646,
+  "radiance30to75": 0.023702,
+  "alanExposure": 0.022032,
+  "darknessScore": 89.21,
+  "coverage": 0.997646,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:27:48.645683Z"
+}

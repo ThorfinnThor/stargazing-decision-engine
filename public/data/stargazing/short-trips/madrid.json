@@ -3,7 +3,7 @@
   "originName": "Madrid",
   "countryCode": "ES",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "generatedAt": "2026-09-08T13:49:31.088236Z",
   "entries": [
     {
       "rank": 1,
@@ -302,6 +302,106 @@
         "Best month score 85 in month 7.",
         "Distance is 370.49 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Capileira."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 4,
+      "destinationId": "pic-du-midi",
+      "destinationSlug": "pic-du-midi",
+      "destinationName": "Pic du Midi",
+      "distanceKm": 424.75,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 2,
+          "score": 67
+        },
+        {
+          "month": 9,
+          "score": 66
+        },
+        {
+          "month": 12,
+          "score": 66
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 65,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 67,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 65,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 59,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 56,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 58,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 62,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 65,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 66,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 65,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 65,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 66,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 67,
+      "distanceUtility": 60,
+      "shortTripScore": 65.25,
+      "bestSiteId": "pic-du-midi-summit",
+      "stayArea": {
+        "id": "bagneres-de-bigorre",
+        "name": "Bagnères-de-Bigorre",
+        "affiliateQuery": "Bagnères-de-Bigorre France"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 67 in month 2.",
+        "Distance is 424.75 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Bagnères-de-Bigorre."
       ],
       "confidenceLevel": "moderate"
     }

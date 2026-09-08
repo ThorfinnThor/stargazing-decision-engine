@@ -1,0 +1,158 @@
+{
+  "siteId": "mas-de-la-barque",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.011221,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.011221,
+          "coverage": 1,
+          "validPixelCount": 1968,
+          "totalPixelCount": 1968
+        },
+        {
+          "year": 2024,
+          "radiance": 0.00822,
+          "coverage": 1,
+          "validPixelCount": 1968,
+          "totalPixelCount": 1968
+        },
+        {
+          "year": 2023,
+          "radiance": 0.014057,
+          "coverage": 1,
+          "validPixelCount": 1968,
+          "totalPixelCount": 1968
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.094696,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.092629,
+          "coverage": 1,
+          "validPixelCount": 16391,
+          "totalPixelCount": 16391
+        },
+        {
+          "year": 2024,
+          "radiance": 0.094696,
+          "coverage": 1,
+          "validPixelCount": 16391,
+          "totalPixelCount": 16391
+        },
+        {
+          "year": 2023,
+          "radiance": 0.132794,
+          "coverage": 1,
+          "validPixelCount": 16391,
+          "totalPixelCount": 16391
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.490067,
+      "coverage": 0.999576,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.490067,
+          "coverage": 0.999618,
+          "validPixelCount": 96719,
+          "totalPixelCount": 96756
+        },
+        {
+          "year": 2024,
+          "radiance": 0.487055,
+          "coverage": 0.999576,
+          "validPixelCount": 96715,
+          "totalPixelCount": 96756
+        },
+        {
+          "year": 2023,
+          "radiance": 0.595178,
+          "coverage": 0.999742,
+          "validPixelCount": 96731,
+          "totalPixelCount": 96756
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.011221,
+  "radiance10to30": 0.094696,
+  "radiance30to75": 0.490067,
+  "alanExposure": 0.056801,
+  "darknessScore": 87.31,
+  "coverage": 0.999576,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:31:00.411603Z"
+}

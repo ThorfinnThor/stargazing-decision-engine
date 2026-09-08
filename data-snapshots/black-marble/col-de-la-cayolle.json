@@ -1,0 +1,158 @@
+{
+  "siteId": "col-de-la-cayolle",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 83,
+          "totalPixelCount": 83
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.003138,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.003138,
+          "coverage": 1,
+          "validPixelCount": 1964,
+          "totalPixelCount": 1964
+        },
+        {
+          "year": 2024,
+          "radiance": 0.002997,
+          "coverage": 1,
+          "validPixelCount": 1964,
+          "totalPixelCount": 1964
+        },
+        {
+          "year": 2023,
+          "radiance": 0.003287,
+          "coverage": 1,
+          "validPixelCount": 1964,
+          "totalPixelCount": 1964
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.047693,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.047693,
+          "coverage": 1,
+          "validPixelCount": 16347,
+          "totalPixelCount": 16347
+        },
+        {
+          "year": 2024,
+          "radiance": 0.045327,
+          "coverage": 1,
+          "validPixelCount": 16347,
+          "totalPixelCount": 16347
+        },
+        {
+          "year": 2023,
+          "radiance": 0.049272,
+          "coverage": 1,
+          "validPixelCount": 16347,
+          "totalPixelCount": 16347
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.721891,
+      "coverage": 0.999917,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.721891,
+          "coverage": 0.999917,
+          "validPixelCount": 96537,
+          "totalPixelCount": 96545
+        },
+        {
+          "year": 2024,
+          "radiance": 0.708172,
+          "coverage": 0.999917,
+          "validPixelCount": 96537,
+          "totalPixelCount": 96545
+        },
+        {
+          "year": 2023,
+          "radiance": 0.750983,
+          "coverage": 0.999969,
+          "validPixelCount": 96542,
+          "totalPixelCount": 96545
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.003138,
+  "radiance10to30": 0.047693,
+  "radiance30to75": 0.721891,
+  "alanExposure": 0.062271,
+  "darknessScore": 87.01,
+  "coverage": 0.999917,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:29:02.708452Z"
+}

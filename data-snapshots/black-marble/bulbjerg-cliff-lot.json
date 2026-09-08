@@ -1,0 +1,158 @@
+{
+  "siteId": "bulbjerg-cliff-lot",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 110,
+          "totalPixelCount": 110
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 110,
+          "totalPixelCount": 110
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 110,
+          "totalPixelCount": 110
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.01139,
+      "coverage": 0.99691,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.009373,
+          "coverage": 0.997296,
+          "validPixelCount": 2582,
+          "totalPixelCount": 2589
+        },
+        {
+          "year": 2024,
+          "radiance": 0.01139,
+          "coverage": 0.99691,
+          "validPixelCount": 2581,
+          "totalPixelCount": 2589
+        },
+        {
+          "year": 2023,
+          "radiance": 0.016424,
+          "coverage": 0.998455,
+          "validPixelCount": 2585,
+          "totalPixelCount": 2589
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.086718,
+      "coverage": 0.991148,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.086718,
+          "coverage": 0.991519,
+          "validPixelCount": 21395,
+          "totalPixelCount": 21578
+        },
+        {
+          "year": 2024,
+          "radiance": 0.097528,
+          "coverage": 0.991148,
+          "validPixelCount": 21387,
+          "totalPixelCount": 21578
+        },
+        {
+          "year": 2023,
+          "radiance": 0.086326,
+          "coverage": 0.992539,
+          "validPixelCount": 21417,
+          "totalPixelCount": 21578
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.260085,
+      "coverage": 0.982044,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.260085,
+          "coverage": 0.982044,
+          "validPixelCount": 125241,
+          "totalPixelCount": 127531
+        },
+        {
+          "year": 2024,
+          "radiance": 0.260928,
+          "coverage": 0.98264,
+          "validPixelCount": 125317,
+          "totalPixelCount": 127531
+        },
+        {
+          "year": 2023,
+          "radiance": 0.258414,
+          "coverage": 0.983541,
+          "validPixelCount": 125432,
+          "totalPixelCount": 127531
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.01139,
+  "radiance10to30": 0.086718,
+  "radiance30to75": 0.260085,
+  "alanExposure": 0.03899,
+  "darknessScore": 88.29,
+  "coverage": 0.982044,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:28:48.018936Z"
+}

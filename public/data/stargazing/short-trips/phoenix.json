@@ -3,7 +3,7 @@
   "originName": "Phoenix",
   "countryCode": "US",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "generatedAt": "2026-09-08T13:49:31.088236Z",
   "entries": [
     {
       "rank": 1,
@@ -407,6 +407,106 @@
     },
     {
       "rank": 5,
+      "destinationId": "cosmic-campground",
+      "destinationSlug": "cosmic-campground",
+      "destinationName": "Cosmic Campground",
+      "distanceKm": 292.4,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 5,
+          "score": 96
+        },
+        {
+          "month": 6,
+          "score": 96
+        },
+        {
+          "month": 4,
+          "score": 95
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 91,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 96,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 96,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 82,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 96,
+      "distanceUtility": 60,
+      "shortTripScore": 87,
+      "bestSiteId": "cosmic-observation-pads",
+      "stayArea": {
+        "id": "glenwood-new-mexico",
+        "name": "Glenwood",
+        "affiliateQuery": "Glenwood United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 96 in month 5.",
+        "Distance is 292.4 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Glenwood."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 6,
       "destinationId": "bryce-canyon",
       "destinationSlug": "bryce-canyon",
       "destinationName": "Bryce Canyon",
@@ -506,7 +606,107 @@
       "confidenceLevel": "moderate"
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "destinationId": "chaco-culture",
+      "destinationSlug": "chaco-culture",
+      "destinationName": "Chaco Culture",
+      "distanceKm": 474.38,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 95
+        },
+        {
+          "month": 9,
+          "score": 95
+        },
+        {
+          "month": 5,
+          "score": 94
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 92,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 88,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 95,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 94,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 91,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 87,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 95,
+      "distanceUtility": 60,
+      "shortTripScore": 86.25,
+      "bestSiteId": "chaco-astronomy-center",
+      "stayArea": {
+        "id": "farmington-new-mexico",
+        "name": "Farmington",
+        "affiliateQuery": "Farmington United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 95 in month 6.",
+        "Distance is 474.38 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Farmington."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 8,
       "destinationId": "joshua-tree",
       "destinationSlug": "joshua-tree",
       "destinationName": "Joshua Tree",
@@ -606,7 +806,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "destinationId": "anza-borrego",
       "destinationSlug": "anza-borrego",
       "destinationName": "Anza-Borrego Desert",
@@ -704,6 +904,106 @@
         "Stay area metadata: Borrego Springs."
       ],
       "confidenceLevel": "high"
+    },
+    {
+      "rank": 10,
+      "destinationId": "flagstaff",
+      "destinationSlug": "flagstaff",
+      "destinationName": "Flagstaff",
+      "distanceKm": 201.41,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 81
+        },
+        {
+          "month": 5,
+          "score": 80
+        },
+        {
+          "month": 9,
+          "score": 80
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 71,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 74,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 77,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 81,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 71,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 74,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 79,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 75,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 71,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 81,
+      "distanceUtility": 85,
+      "shortTripScore": 82,
+      "bestSiteId": "buffalo-park-flagstaff",
+      "stayArea": {
+        "id": "flagstaff-city",
+        "name": "Flagstaff",
+        "affiliateQuery": "Flagstaff United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 81 in month 6.",
+        "Distance is 201.41 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Flagstaff."
+      ],
+      "confidenceLevel": "moderate"
     }
   ]
 }

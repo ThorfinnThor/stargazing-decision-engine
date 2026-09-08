@@ -21,8 +21,10 @@ P3 candidates are kept separately in
 `data-config/sources/p3-image-candidates.json`. They include source-page and
 download provenance and are not consumed directly by page rendering. The original
 50 reviewed records were copied into `destination-images.json` after local WebP
-conversion. As of 2026-09-08, the 75-destination catalog has 50 approved images
-and 25 pending images; all 150 individual observation-site images remain pending.
+conversion. A second source audit on 2026-09-08 promoted the remaining 25 images
+from that catalog, leaving all 75 pre-expansion destinations with approved local
+assets. The later 100-destination expansion adds 25 explicit pending records;
+all 200 individual observation-site images remain pending.
 Pending records do not publish an asset. The production validator checks that every copied
 provenance field still matches the audit register exactly.
 

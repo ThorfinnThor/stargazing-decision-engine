@@ -1,0 +1,158 @@
+{
+  "siteId": "north-crater-flow-lot",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 76,
+          "totalPixelCount": 76
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 76,
+          "totalPixelCount": 76
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 76,
+          "totalPixelCount": 76
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1943,
+          "totalPixelCount": 1943
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1943,
+          "totalPixelCount": 1943
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1943,
+          "totalPixelCount": 1943
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.010964,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.011754,
+          "coverage": 1,
+          "validPixelCount": 16136,
+          "totalPixelCount": 16136
+        },
+        {
+          "year": 2024,
+          "radiance": 0.009921,
+          "coverage": 1,
+          "validPixelCount": 16136,
+          "totalPixelCount": 16136
+        },
+        {
+          "year": 2023,
+          "radiance": 0.010964,
+          "coverage": 1,
+          "validPixelCount": 16136,
+          "totalPixelCount": 16136
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.045192,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.048858,
+          "coverage": 1,
+          "validPixelCount": 95264,
+          "totalPixelCount": 95264
+        },
+        {
+          "year": 2024,
+          "radiance": 0.040425,
+          "coverage": 1,
+          "validPixelCount": 95264,
+          "totalPixelCount": 95264
+        },
+        {
+          "year": 2023,
+          "radiance": 0.045192,
+          "coverage": 1,
+          "validPixelCount": 95264,
+          "totalPixelCount": 95264
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0.010964,
+  "radiance30to75": 0.045192,
+  "alanExposure": 0.006056,
+  "darknessScore": 92.71,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:32:00.390221Z"
+}

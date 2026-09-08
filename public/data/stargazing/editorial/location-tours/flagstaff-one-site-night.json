@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "flagstaff-one-site-night",
+  "slug": "flagstaff-one-site-night",
+  "destinationId": "flagstaff",
+  "recommendedSiteId": "lowell-observatory",
+  "title": {
+    "en": "Choose between a booked observatory evening and a city park",
+    "de": "Zwischen gebuchtem Observatoriumsabend und Stadtpark wählen"
+  },
+  "seoDescription": {
+    "en": "A sourced one-site route for Flagstaff, using Lowell Observatory visitor campus, daylight arrival and a verified return to Flagstaff.",
+    "de": "Eine belegte Ein-Ort-Route für Flagstaff mit Lowell Observatory visitor campus, Tageslicht-Ankunft und bestätigter Rückkehr nach Flagstaff."
+  },
+  "standfirst": {
+    "en": "The standalone route answers one practical question about an evening at Lowell Observatory visitor campus. Book Lowell when interpretation matters; choose Buffalo only after confirming legal evening access and a simple return. Event capacity, park hours, winter ice and nearby urban light make the two experiences fundamentally different. This independent plan commits to Lowell Observatory visitor campus, leaves Buffalo Park for another verified night and treats a calm return to Flagstaff as part of successful observing.",
+    "de": "Die eigenständige Route beantwortet eine praktische Frage zum Abend am Lowell Observatory visitor campus. Buche Lowell, wenn Vermittlung zählt; wähle Buffalo nur nach bestätigtem Abendzugang und einfachem Rückweg. Veranstaltungskapazität, Parkzeiten, Wintereis und städtisches Licht machen beide Erlebnisse grundlegend verschieden. Dieser unabhängige Plan legt sich auf Lowell Observatory visitor campus fest, bewahrt Buffalo Park für eine andere bestätigte Nacht und versteht die ruhige Rückkehr nach Flagstaff als Teil einer erfolgreichen Beobachtung."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachten an"
+      },
+      "value": {
+        "en": "Lowell Observatory visitor campus",
+        "de": "Lowell Observatory visitor campus"
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return base",
+        "de": "Rückkehrbasis"
+      },
+      "value": {
+        "en": "Flagstaff",
+        "de": "Flagstaff"
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival rule",
+        "de": "Ankunftsregel"
+      },
+      "value": {
+        "en": "Before sunset after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Separate alternative",
+        "de": "Getrennte Alternative"
+      },
+      "value": {
+        "en": "Buffalo Park",
+        "de": "Buffalo Park"
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "flagstaff-tour-decisions",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two outcomes are enough in Flagstaff",
+        "de": "Zwei Ergebnisse genügen in Flagstaff"
+      },
+      "introduction": {
+        "en": "A supported night proceeds; an unsupported one stops.",
+        "de": "Eine bestätigte Nacht findet statt, eine unbestätigte endet."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Lowell Observatory visitor campus is confirmed",
+            "de": "Lowell Observatory visitor campus ist bestätigt"
+          },
+          "body": {
+            "en": "A confirmed evening at Lowell Observatory visitor campus has a deliberately narrow shape. Arrive in daylight, remain at the selected site and return directly to Flagstaff. Do not add Buffalo Park merely because time remains.",
+            "de": "Ein bestätigter Abend am Lowell Observatory visitor campus folgt bewusst einem engen Ablauf. Komme bei Tageslicht, bleibe am gewählten Ort und kehre direkt nach Flagstaff zurück. Ergänze Buffalo Park nicht nur wegen verbleibender Zeit."
+          },
+          "sourceIds": [
+            "flagstaff-designation",
+            "flagstaff-access",
+            "flagstaff-visitor"
+          ]
+        },
+        {
+          "label": {
+            "en": "A critical detail is missing",
+            "de": "Ein kritisches Detail fehlt"
+          },
+          "body": {
+            "en": "When outdoor conditions deteriorate, keep the evening within a booked indoor programme or postpone it. The safer decision is complete and does not need a replacement roadside stop.",
+            "de": "Wenn sich Außenbedingungen verschlechtern, bleibe bei einem gebuchten Innenprogramm oder verschiebe den Abend. Die sicherere Entscheidung ist vollständig und braucht keinen Ersatzhalt am Straßenrand."
+          },
+          "sourceIds": [
+            "flagstaff-designation",
+            "flagstaff-access",
+            "flagstaff-visitor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "flagstaff-tour-warning",
+      "kind": "note",
+      "heading": {
+        "en": "The non-negotiable Flagstaff boundary",
+        "de": "Die unverhandelbare Grenze in Flagstaff"
+      },
+      "body": {
+        "en": "At Lowell Observatory visitor campus, the cancellation boundary is checked before anything is unloaded. Event capacity, park hours, winter ice and nearby urban light make the two experiences fundamentally different. This limit is checked before equipment leaves the vehicle and remains valid even under a geometrically clear sky. When outdoor conditions deteriorate, keep the evening within a booked indoor programme or postpone it.",
+        "de": "Am Lowell Observatory visitor campus wird die Absagegrenze geprüft, bevor etwas ausgeladen wird. Veranstaltungskapazität, Parkzeiten, Wintereis und städtisches Licht machen beide Erlebnisse grundlegend verschieden. Diese Grenze wird geprüft, bevor Ausrüstung das Fahrzeug verlässt, und gilt auch bei geometrisch klarem Himmel. Wenn sich Außenbedingungen verschlechtern, bleibe bei einem gebuchten Innenprogramm oder verschiebe den Abend."
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "flagstaff-tour-place",
+      "kind": "prose",
+      "heading": {
+        "en": "Why the route stops at Lowell Observatory visitor campus",
+        "de": "Warum die Route an Lowell Observatory visitor campus endet"
+      },
+      "paragraphs": {
+        "en": [
+          "This route deliberately narrows Flagstaff to one known place for the evening. Flagstaff protects darkness inside a working city. Lowell Observatory provides structured public astronomy with tickets and hours, whereas Buffalo Park is an outdoor recreation space whose current rules and closing arrangements need their own check. This route makes Lowell Observatory visitor campus the only observing stop so attention stays with the sky and the known return. Buffalo Park is useful for a different date after its own current check.",
+          "A compact setup matters at Lowell Observatory visitor campus because the visitor footprint is shared. Respect programme staff, shared paths and the city's long-standing low-light culture. Begin with an empty-handed look at the horizon. Equipment is added only after the safe footprint, shared paths and final packing sequence are clear."
+        ],
+        "de": [
+          "Diese Route begrenzt Flagstaff bewusst auf einen bekannten Ort für den Abend. Flagstaff schützt Dunkelheit innerhalb einer lebendigen Stadt. Lowell Observatory bietet öffentliche Astronomie mit Tickets und Zeiten, während Buffalo Park eine Erholungsfläche ist, deren aktuelle Regeln und Schließung separat geprüft werden. Diese Route macht Lowell Observatory visitor campus zum einzigen Beobachtungshalt, damit die Aufmerksamkeit bei Himmel und bekanntem Rückweg bleibt. Buffalo Park ist nach eigener aktueller Prüfung für ein anderes Datum nützlich.",
+          "Ein kompakter Aufbau zählt am Lowell Observatory visitor campus, weil die Besucherfläche geteilt wird. Respektiere Programmteam, gemeinsame Wege und die langjährige lichtarme Kultur der Stadt. Beginne mit einem Blick ohne Ausrüstung auf den Horizont. Ausrüstung kommt erst hinzu, wenn sichere Fläche, gemeinsame Wege und letzte Packreihenfolge klar sind."
+        ]
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access",
+        "flagstaff-visitor"
+      ]
+    },
+    {
+      "id": "flagstaff-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The usable sequence for Flagstaff",
+        "de": "Die brauchbare Reihenfolge für Flagstaff"
+      },
+      "introduction": {
+        "en": "The route protects daylight on arrival and attention on departure.",
+        "de": "Die Route bewahrt Tageslicht bei Ankunft und Aufmerksamkeit bei Abfahrt."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before travel",
+            "de": "Vor der Fahrt"
+          },
+          "title": {
+            "en": "Confirm access and return",
+            "de": "Zugang und Rückkehr bestätigen"
+          },
+          "body": {
+            "en": "The go or no-go decision for Lowell Observatory visitor campus is made back in Flagstaff. Event capacity, park hours, winter ice and nearby urban light make the two experiences fundamentally different. Open the current authority, weather and route information before leaving Flagstaff. Save the evidence and navigation offline.",
+            "de": "Die Entscheidung für oder gegen Lowell Observatory visitor campus fällt bereits in Flagstaff. Veranstaltungskapazität, Parkzeiten, Wintereis und städtisches Licht machen beide Erlebnisse grundlegend verschieden. Öffne aktuelle Verwaltungs-, Wetter- und Routeninformationen vor der Abfahrt aus Flagstaff. Speichere Nachweis und Navigation offline."
+          },
+          "sourceIds": [
+            "flagstaff-designation",
+            "flagstaff-access",
+            "flagstaff-visitor"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Settle at Lowell Observatory visitor campus",
+            "de": "An Lowell Observatory visitor campus ankommen"
+          },
+          "body": {
+            "en": "Arrival at Lowell Observatory visitor campus has one purpose before the sky becomes fully dark. Book Lowell when interpretation matters; choose Buffalo only after confirming legal evening access and a simple return. Read signs, edges and the walking surface before unloading, then keep the vehicle in its legal position until departure.",
+            "de": "Die Ankunft am Lowell Observatory visitor campus hat vor vollständiger Dunkelheit einen klaren Zweck. Buche Lowell, wenn Vermittlung zählt; wähle Buffalo nur nach bestätigtem Abendzugang und einfachem Rückweg. Lies Schilder, Kanten und Gehfläche vor dem Ausladen und lasse das Fahrzeug bis zur Abfahrt legal stehen."
+          },
+          "sourceIds": [
+            "flagstaff-designation",
+            "flagstaff-access",
+            "flagstaff-visitor"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe without expanding the footprint",
+            "de": "Beobachten ohne die Fläche zu erweitern"
+          },
+          "body": {
+            "en": "Once darkness reaches Lowell Observatory visitor campus, movement should become smaller rather than wider. Respect programme staff, shared paths and the city's long-standing low-light culture. Let the eyes adapt and add only equipment that can remain within the inspected area. Leave by the same route before fatigue builds.",
+            "de": "Wenn es am Lowell Observatory visitor campus dunkel wird, sollten die Bewegungen kleiner statt weiter werden. Respektiere Programmteam, gemeinsame Wege und die langjährige lichtarme Kultur der Stadt. Lasse die Augen adaptieren und ergänze nur Ausrüstung innerhalb der geprüften Fläche. Fahre auf derselben Route ab, bevor Müdigkeit wächst."
+          },
+          "sourceIds": [
+            "flagstaff-designation",
+            "flagstaff-access",
+            "flagstaff-visitor"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "flagstaff-designation",
+    "flagstaff-access",
+    "flagstaff-visitor"
+  ],
+  "lastReviewedAt": "2026-09-08"
+}

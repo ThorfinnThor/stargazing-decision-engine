@@ -10,7 +10,13 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts" / "import
 from black_marble_common import parse_granule_name, required_tiles, site_bounding_box  # noqa: E402
 from extract_black_marble import decode_radiance  # noqa: E402
 import fetch_black_marble  # noqa: E402
-from fetch_black_marble import earthdata_client, retry_network, retry_nonempty_results  # noqa: E402
+from fetch_black_marble import (  # noqa: E402
+    cmr_granule_entry,
+    earthdata_client,
+    laads_granule_names,
+    retry_network,
+    retry_nonempty_results,
+)
 
 
 class BlackMarbleGeometryTests(unittest.TestCase):
@@ -26,6 +32,43 @@ class BlackMarbleGeometryTests(unittest.TestCase):
         self.assertEqual(
             parse_granule_name("VNP46A4.A2025001.h18v04.002.2026123456789.h5"),
             (2025, "h18v04"),
+        )
+
+    def test_laads_listing_selects_only_requested_collection_and_tile(self):
+        listing = """
+        VNP46A4.A2025001.h18v04.001.2026123456789.h5
+        VNP46A4.A2025001.h18v04.002.2026123456790.h5
+        VNP46A4.A2025001.h19v04.002.2026123456791.h5
+        """
+        self.assertEqual(
+            laads_granule_names(listing, "VNP46A4", 2025, "h18v04", "2"),
+            ["VNP46A4.A2025001.h18v04.002.2026123456790.h5"],
+        )
+
+    def test_cmr_entry_selects_the_direct_earthdata_cloud_download(self):
+        payload = {
+            "feed": {
+                "entry": [
+                    {
+                        "producer_granule_id": "VNP46A4.A2025001.h18v04.002.2026123456790.h5",
+                        "links": [
+                            {"href": "https://ladsweb.modaps.eosdis.nasa.gov/archive/allData/5200/VNP46A4"},
+                            {
+                                "href": "https://data.laadsdaac.earthdatacloud.nasa.gov/prod-lads/VNP46A4/"
+                                "VNP46A4.A2025001.h18v04.002.2026123456790.h5"
+                            },
+                        ],
+                    }
+                ]
+            }
+        }
+        self.assertEqual(
+            cmr_granule_entry(payload, "VNP46A4", 2025, "h18v04", "2"),
+            (
+                "VNP46A4.A2025001.h18v04.002.2026123456790.h5",
+                "https://data.laadsdaac.earthdatacloud.nasa.gov/prod-lads/VNP46A4/"
+                "VNP46A4.A2025001.h18v04.002.2026123456790.h5",
+            ),
         )
 
     def test_radiance_metadata_is_applied_before_validation(self):

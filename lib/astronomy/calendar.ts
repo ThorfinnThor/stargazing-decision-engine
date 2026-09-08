@@ -21,11 +21,6 @@ interface LocalParts {
   second: number;
 }
 
-interface Sample {
-  date: Date;
-  moonAltitudeDeg: number;
-}
-
 const localFormatterCache = new Map<string, Intl.DateTimeFormat>();
 
 function formatter(timezone: string) {
@@ -178,7 +173,18 @@ function exactDarknessWindow(start: Date, end: Date, observer: Observer, thresho
   } else {
     darkHours = sunAltitude(new Date((start.getTime() + end.getTime()) / 2), observer) <= threshold ? hours(start, end) : 0;
   }
-  return { dusk, dawn, darkHours: Math.min(24, darkHours) };
+  const intervals: Array<{ start: Date; end: Date }> = [];
+  if (dusk && dawn) {
+    if (dusk < dawn) intervals.push({ start: dusk, end: dawn });
+    else intervals.push({ start, end: dawn }, { start: dusk, end });
+  } else if (dusk) {
+    intervals.push({ start: dusk, end });
+  } else if (dawn) {
+    intervals.push({ start, end: dawn });
+  } else if (darkHours > 0) {
+    intervals.push({ start, end });
+  }
+  return { dusk, dawn, darkHours: Math.min(24, darkHours), intervals };
 }
 
 export function buildCalendarNight(options: {
@@ -196,16 +202,6 @@ export function buildCalendarNight(options: {
   const end = localDateTimeToUtc(addLocalDate(dateLocal, 1), 12, timezone);
   const exactDarkness = exactDarknessWindow(start, end, observer, config.astronomicalTwilightDeg);
   const stepMs = config.sampleMinutes * 60_000;
-  const edgeSamples: Sample[] = [];
-  for (let date = new Date(start); date < end; date = new Date(Math.min(date.getTime() + stepMs, end.getTime()))) {
-    const moon = moonMetrics(date, observer);
-    edgeSamples.push({ date: new Date(date), moonAltitudeDeg: moon.altitude });
-    if (date.getTime() + stepMs >= end.getTime()) break;
-  }
-  if (edgeSamples.at(-1)?.date.getTime() !== end.getTime()) {
-    const moon = moonMetrics(end, observer);
-    edgeSamples.push({ date: end, moonAltitudeDeg: moon.altitude });
-  }
 
   let sampledDarkHours = 0;
   let moonlessHours = 0;
@@ -214,24 +210,24 @@ export function buildCalendarNight(options: {
   const milkyWayIntervals: Array<{ durationHours: number; astronomicalDark: boolean; moonless: boolean; galacticCenterAltitudeDeg: number }> = [];
 
   // The 10-minute raster is represented by midpoint samples; each midpoint owns one interval.
-  for (let index = 0; index < edgeSamples.length - 1; index += 1) {
-    const left = edgeSamples[index];
-    const right = edgeSamples[index + 1];
-    const durationHours = (right.date.getTime() - left.date.getTime()) / 3_600_000;
-    const midpoint = new Date((left.date.getTime() + right.date.getTime()) / 2);
+  const startMs = start.getTime();
+  const endMs = end.getTime();
+  for (let leftMs = startMs; leftMs < endMs; leftMs += stepMs) {
+    const rightMs = Math.min(leftMs + stepMs, endMs);
+    const durationHours = (rightMs - leftMs) / 3_600_000;
+    const midpoint = new Date((leftMs + rightMs) / 2);
+    const midpointMs = midpoint.getTime();
+    const dark = exactDarkness.intervals.some((interval) => midpointMs >= interval.start.getTime() && midpointMs <= interval.end.getTime());
+    if (!dark) continue;
     const moon = moonMetrics(midpoint, observer);
-    const sun = sunAltitude(midpoint, observer);
-    const dark = sun <= config.astronomicalTwilightDeg;
     const galacticAltitude = milkyWayConfig ? galacticCenterAltitudeDeg(midpoint, observer, milkyWayConfig) : -90;
-    if (milkyWayConfig) milkyWayIntervals.push({ durationHours, astronomicalDark: dark, moonless: dark && moon.altitude <= config.moonlessMoonAltitudeDeg, galacticCenterAltitudeDeg: galacticAltitude });
-    if (dark) {
-      sampledDarkHours += durationHours;
-      moonMaxAltitude = Math.max(moonMaxAltitude, moon.altitude);
-      if (moon.altitude <= config.moonlessMoonAltitudeDeg) {
-        moonlessHours += durationHours;
-      } else {
-        moonAboveDarkHours += durationHours;
-      }
+    if (milkyWayConfig) milkyWayIntervals.push({ durationHours, astronomicalDark: true, moonless: moon.altitude <= config.moonlessMoonAltitudeDeg, galacticCenterAltitudeDeg: galacticAltitude });
+    sampledDarkHours += durationHours;
+    moonMaxAltitude = Math.max(moonMaxAltitude, moon.altitude);
+    if (moon.altitude <= config.moonlessMoonAltitudeDeg) {
+      moonlessHours += durationHours;
+    } else {
+      moonAboveDarkHours += durationHours;
     }
   }
   // Exact twilight can differ from midpoint bins by at most one sampling interval.

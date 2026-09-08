@@ -1,0 +1,33 @@
+{
+  "siteId": "col-de-la-cayolle",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    44.259,
+    6.745
+  ],
+  "tile": "N44_00_E006_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N44_00_E006_00_DEM/Copernicus_DSM_COG_10_N44_00_E006_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 2333.768,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2329.173,
+      "validSampleCount": 290
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2337.9,
+      "validSampleCount": 4588
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:48:34.009903Z"
+}

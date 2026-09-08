@@ -1,0 +1,158 @@
+{
+  "siteId": "morefield-campground",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.050774,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.070359,
+          "coverage": 1,
+          "validPixelCount": 1769,
+          "totalPixelCount": 1769
+        },
+        {
+          "year": 2024,
+          "radiance": 0.033963,
+          "coverage": 1,
+          "validPixelCount": 1769,
+          "totalPixelCount": 1769
+        },
+        {
+          "year": 2023,
+          "radiance": 0.050774,
+          "coverage": 1,
+          "validPixelCount": 1769,
+          "totalPixelCount": 1769
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.186968,
+      "coverage": 0.999864,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.214167,
+          "coverage": 0.999864,
+          "validPixelCount": 14712,
+          "totalPixelCount": 14714
+        },
+        {
+          "year": 2024,
+          "radiance": 0.171075,
+          "coverage": 1,
+          "validPixelCount": 14714,
+          "totalPixelCount": 14714
+        },
+        {
+          "year": 2023,
+          "radiance": 0.186968,
+          "coverage": 1,
+          "validPixelCount": 14714,
+          "totalPixelCount": 14714
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.317498,
+      "coverage": 0.999988,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.336606,
+          "coverage": 0.999988,
+          "validPixelCount": 86917,
+          "totalPixelCount": 86918
+        },
+        {
+          "year": 2024,
+          "radiance": 0.298757,
+          "coverage": 1,
+          "validPixelCount": 86918,
+          "totalPixelCount": 86918
+        },
+        {
+          "year": 2023,
+          "radiance": 0.317498,
+          "coverage": 1,
+          "validPixelCount": 86918,
+          "totalPixelCount": 86918
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.050774,
+  "radiance10to30": 0.186968,
+  "radiance30to75": 0.317498,
+  "alanExposure": 0.068142,
+  "darknessScore": 86.69,
+  "coverage": 0.999864,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:31:41.878751Z"
+}

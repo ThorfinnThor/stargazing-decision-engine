@@ -63,6 +63,34 @@
     },
     {
       "rank": 2,
+      "destinationId": "central-idaho",
+      "destinationSlug": "central-idaho",
+      "destinationName": "Central Idaho",
+      "siteId": "redfish-lake",
+      "siteSlug": "redfish-lake",
+      "siteName": "Redfish Lake visitor area",
+      "climateScore": 98,
+      "moonScore": 13.85,
+      "radiantScore": 100,
+      "viewingScore": 73.16,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Boise",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 1,
+        "totalDarknessHours": 6.14
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 62.07,
+        "darkRadiantHours": 6.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -90,7 +118,35 @@
       ]
     },
     {
-      "rank": 3,
+      "rank": 4,
+      "destinationId": "craters-of-the-moon",
+      "destinationSlug": "craters-of-the-moon",
+      "destinationName": "Craters of the Moon",
+      "siteId": "lava-flow-campground",
+      "siteSlug": "lava-flow-campground",
+      "siteName": "Lava Flow Campground",
+      "climateScore": 96,
+      "moonScore": 13.52,
+      "radiantScore": 100,
+      "viewingScore": 72.06,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Boise",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 0.99,
+        "totalDarknessHours": 6.26
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 62.3,
+        "darkRadiantHours": 6.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "great-basin",
       "destinationSlug": "great-basin",
       "destinationName": "Great Basin",
@@ -111,62 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 61.04,
         "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "capitol-reef",
-      "destinationSlug": "capitol-reef",
-      "destinationName": "Capitol Reef",
-      "siteId": "fruita-campground-night",
-      "siteSlug": "fruita-campground-night",
-      "siteName": "Fruita Campground",
-      "climateScore": 95,
-      "moonScore": 12.45,
-      "radiantScore": 99.01,
-      "viewingScore": 71.04,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9184,
-        "moonlessHours": 1,
-        "totalDarknessHours": 7
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 60.72,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "natural-bridges",
-      "destinationSlug": "natural-bridges",
-      "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-campground",
-      "siteSlug": "natural-bridges-campground",
-      "siteName": "Natural Bridges campground",
-      "climateScore": 94,
-      "moonScore": 13.82,
-      "radiantScore": 98.5,
-      "viewingScore": 70.85,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9184,
-        "moonlessHours": 1.15,
-        "totalDarknessHours": 7.08
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 60.75,
-        "darkRadiantHours": 5.5
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -205,6 +205,62 @@
     },
     {
       "rank": 2,
+      "destinationId": "central-idaho",
+      "destinationSlug": "central-idaho",
+      "destinationName": "Central Idaho",
+      "siteId": "redfish-lake",
+      "siteSlug": "redfish-lake",
+      "siteName": "Redfish Lake visitor area",
+      "climateScore": 98,
+      "moonScore": 13.85,
+      "radiantScore": 100,
+      "viewingScore": 73.16,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Boise",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 1,
+        "totalDarknessHours": 6.14
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 62.07,
+        "darkRadiantHours": 6.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 3,
+      "destinationId": "central-idaho",
+      "destinationSlug": "central-idaho",
+      "destinationName": "Central Idaho",
+      "siteId": "stanley-lake",
+      "siteSlug": "stanley-lake",
+      "siteName": "Stanley Lake day-use area",
+      "climateScore": 98,
+      "moonScore": 13.75,
+      "radiantScore": 100,
+      "viewingScore": 73.13,
+      "moonConditions": {
+        "dateLocal": "2027-08-13",
+        "timezone": "America/Boise",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 0.99,
+        "totalDarknessHours": 6.13
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 62.07,
+        "darkRadiantHours": 6.17
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 4,
       "destinationId": "death-valley",
       "destinationSlug": "death-valley",
       "destinationName": "Death Valley",
@@ -232,83 +288,27 @@
       ]
     },
     {
-      "rank": 3,
-      "destinationId": "great-basin",
-      "destinationSlug": "great-basin",
-      "destinationName": "Great Basin",
-      "siteId": "mather-overlook",
-      "siteSlug": "mather-overlook",
-      "siteName": "Mather Overlook",
-      "climateScore": 96,
-      "moonScore": 12.52,
-      "radiantScore": 99.01,
-      "viewingScore": 71.56,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9205,
-        "moonlessHours": 1,
-        "totalDarknessHours": 6.91
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 61.04,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 4,
-      "destinationId": "great-basin",
-      "destinationSlug": "great-basin",
-      "destinationName": "Great Basin",
-      "siteId": "great-basin-wheeler-peak",
-      "siteSlug": "great-basin-wheeler-peak",
-      "siteName": "Great Basin Wheeler Peak area",
-      "climateScore": 96,
-      "moonScore": 12.41,
-      "radiantScore": 99.01,
-      "viewingScore": 71.53,
-      "moonConditions": {
-        "dateLocal": "2027-08-13",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9205,
-        "moonlessHours": 0.99,
-        "totalDarknessHours": 6.91
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 61.07,
-        "darkRadiantHours": 5.67
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
       "rank": 5,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "death-valley-dark-sky",
-      "siteSlug": "death-valley-dark-sky",
-      "siteName": "Death Valley dark-sky area",
-      "climateScore": 95,
-      "moonScore": 13.74,
-      "radiantScore": 98.5,
-      "viewingScore": 71.32,
+      "destinationId": "craters-of-the-moon",
+      "destinationSlug": "craters-of-the-moon",
+      "destinationName": "Craters of the Moon",
+      "siteId": "lava-flow-campground",
+      "siteSlug": "lava-flow-campground",
+      "siteName": "Lava Flow Campground",
+      "climateScore": 96,
+      "moonScore": 13.52,
+      "radiantScore": 100,
+      "viewingScore": 72.06,
       "moonConditions": {
         "dateLocal": "2027-08-13",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9205,
-        "moonlessHours": 1.17,
-        "totalDarknessHours": 7.21
+        "timezone": "America/Boise",
+        "moonIlluminationFraction": 0.9184,
+        "moonlessHours": 0.99,
+        "totalDarknessHours": 6.26
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 60.13,
-        "darkRadiantHours": 5.5
+        "maximumAltitudeDeg": 62.3,
+        "darkRadiantHours": 6.17
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "cosmic-campground",
+      "destinationSlug": "cosmic-campground",
+      "destinationName": "Cosmic Campground",
+      "siteId": "cosmic-campground-sites",
+      "siteSlug": "cosmic-campground-sites",
+      "siteName": "Cosmic Campground camping loop",
+      "climateScore": 95,
+      "moonScore": 9.25,
+      "radiantScore": 99.01,
+      "viewingScore": 70.08,
+      "moonConditions": {
+        "dateLocal": "2027-04-22",
+        "timezone": "America/Denver",
+        "moonIlluminationFraction": 0.9408,
+        "moonlessHours": 0.83,
+        "totalDarknessHours": 7.77
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 87.74,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "mcdonald-observatory",
       "destinationSlug": "mcdonald-observatory",
       "destinationName": "McDonald Observatory",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 85.91,
         "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "natural-bridges",
-      "destinationSlug": "natural-bridges",
-      "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-campground",
-      "siteSlug": "natural-bridges-campground",
-      "siteName": "Natural Bridges campground",
-      "climateScore": 94,
-      "moonScore": 9.66,
-      "radiantScore": 99.01,
-      "viewingScore": 69.7,
-      "moonConditions": {
-        "dateLocal": "2027-04-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.9408,
-        "moonlessHours": 0.83,
-        "totalDarknessHours": 7.37
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 83.8,
-        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

@@ -1,0 +1,158 @@
+{
+  "siteId": "coll-de-la-creu-albanya",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.074492,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.07716,
+          "coverage": 1,
+          "validPixelCount": 1898,
+          "totalPixelCount": 1898
+        },
+        {
+          "year": 2024,
+          "radiance": 0.06026,
+          "coverage": 1,
+          "validPixelCount": 1898,
+          "totalPixelCount": 1898
+        },
+        {
+          "year": 2023,
+          "radiance": 0.074492,
+          "coverage": 1,
+          "validPixelCount": 1898,
+          "totalPixelCount": 1898
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.559484,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.559484,
+          "coverage": 1,
+          "validPixelCount": 15829,
+          "totalPixelCount": 15829
+        },
+        {
+          "year": 2024,
+          "radiance": 1.441578,
+          "coverage": 1,
+          "validPixelCount": 15829,
+          "totalPixelCount": 15829
+        },
+        {
+          "year": 2023,
+          "radiance": 1.560862,
+          "coverage": 1,
+          "validPixelCount": 15829,
+          "totalPixelCount": 15829
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.598878,
+      "coverage": 0.992903,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.598878,
+          "coverage": 0.992903,
+          "validPixelCount": 92892,
+          "totalPixelCount": 93556
+        },
+        {
+          "year": 2024,
+          "radiance": 1.540479,
+          "coverage": 0.994399,
+          "validPixelCount": 93032,
+          "totalPixelCount": 93556
+        },
+        {
+          "year": 2023,
+          "radiance": 1.662089,
+          "coverage": 0.993052,
+          "validPixelCount": 92906,
+          "totalPixelCount": 93556
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.074492,
+  "radiance10to30": 1.559484,
+  "radiance30to75": 1.598878,
+  "alanExposure": 0.258033,
+  "darknessScore": 76.29,
+  "coverage": 0.992903,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:29:06.806019Z"
+}

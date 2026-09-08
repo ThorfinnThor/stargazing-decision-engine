@@ -1,0 +1,245 @@
+{
+  "version": 1,
+  "id": "craters-of-the-moon-one-site-night",
+  "slug": "craters-of-the-moon-one-site-night",
+  "destinationId": "craters-of-the-moon",
+  "recommendedSiteId": "lava-flow-campground",
+  "title": {
+    "en": "Keep the lava-field night close to the campground",
+    "de": "Die Nacht im Lavafeld nahe am Campingplatz halten"
+  },
+  "seoDescription": {
+    "en": "A sourced one-site route for Craters of the Moon, using Lava Flow Campground, daylight arrival and a verified return to Arco.",
+    "de": "Eine belegte Ein-Ort-Route für Craters of the Moon mit Lava Flow Campground, Tageslicht-Ankunft und bestätigter Rückkehr nach Arco."
+  },
+  "standfirst": {
+    "en": "The standalone route answers one practical question about an evening at Lava Flow Campground. Settle at the campground in daylight and keep every observation on an established hard surface. Sharp lava, snow, heat, wind and seasonal road operations limit movement after sunset. This independent plan commits to Lava Flow Campground, leaves North Crater Flow parking area for another verified night and treats a calm return to Arco as part of successful observing.",
+    "de": "Die eigenständige Route beantwortet eine praktische Frage zum Abend am Lava Flow Campground. Richte dich bei Tageslicht am Campingplatz ein und halte jede Beobachtung auf einer etablierten festen Fläche. Scharfe Lava, Schnee, Hitze, Wind und saisonaler Straßenbetrieb begrenzen Bewegungen nach Sonnenuntergang. Dieser unabhängige Plan legt sich auf Lava Flow Campground fest, bewahrt North Crater Flow parking area für eine andere bestätigte Nacht und versteht die ruhige Rückkehr nach Arco als Teil einer erfolgreichen Beobachtung."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachten an"
+      },
+      "value": {
+        "en": "Lava Flow Campground",
+        "de": "Lava Flow Campground"
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return base",
+        "de": "Rückkehrbasis"
+      },
+      "value": {
+        "en": "Arco",
+        "de": "Arco"
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival rule",
+        "de": "Ankunftsregel"
+      },
+      "value": {
+        "en": "Before sunset after a same-day access check",
+        "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ]
+    },
+    {
+      "label": {
+        "en": "Separate alternative",
+        "de": "Getrennte Alternative"
+      },
+      "value": {
+        "en": "North Crater Flow parking area",
+        "de": "North Crater Flow parking area"
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "craters-of-the-moon-tour-decisions",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two outcomes are enough in Craters of the Moon",
+        "de": "Zwei Ergebnisse genügen in Craters of the Moon"
+      },
+      "introduction": {
+        "en": "A supported night proceeds; an unsupported one stops.",
+        "de": "Eine bestätigte Nacht findet statt, eine unbestätigte endet."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Lava Flow Campground is confirmed",
+            "de": "Lava Flow Campground ist bestätigt"
+          },
+          "body": {
+            "en": "A confirmed evening at Lava Flow Campground has a deliberately narrow shape. Arrive in daylight, remain at the selected site and return directly to Arco. Do not add North Crater Flow parking area merely because time remains.",
+            "de": "Ein bestätigter Abend am Lava Flow Campground folgt bewusst einem engen Ablauf. Komme bei Tageslicht, bleibe am gewählten Ort und kehre direkt nach Arco zurück. Ergänze North Crater Flow parking area nicht nur wegen verbleibender Zeit."
+          },
+          "sourceIds": [
+            "craters-of-the-moon-designation",
+            "craters-of-the-moon-access",
+            "craters-of-the-moon-visitor"
+          ]
+        },
+        {
+          "label": {
+            "en": "A critical detail is missing",
+            "de": "Ein kritisches Detail fehlt"
+          },
+          "body": {
+            "en": "A closed loop road reduces the plan to the open visitor footprint or postpones it entirely. The safer decision is complete and does not need a replacement roadside stop.",
+            "de": "Eine geschlossene Loop Road reduziert den Plan auf die offene Besucherfläche oder verschiebt ihn vollständig. Die sicherere Entscheidung ist vollständig und braucht keinen Ersatzhalt am Straßenrand."
+          },
+          "sourceIds": [
+            "craters-of-the-moon-designation",
+            "craters-of-the-moon-access",
+            "craters-of-the-moon-visitor"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "craters-of-the-moon-tour-warning",
+      "kind": "note",
+      "heading": {
+        "en": "The non-negotiable Craters of the Moon boundary",
+        "de": "Die unverhandelbare Grenze in Craters of the Moon"
+      },
+      "body": {
+        "en": "At Lava Flow Campground, the cancellation boundary is checked before anything is unloaded. Sharp lava, snow, heat, wind and seasonal road operations limit movement after sunset. This limit is checked before equipment leaves the vehicle and remains valid even under a geometrically clear sky. A closed loop road reduces the plan to the open visitor footprint or postpones it entirely.",
+        "de": "Am Lava Flow Campground wird die Absagegrenze geprüft, bevor etwas ausgeladen wird. Scharfe Lava, Schnee, Hitze, Wind und saisonaler Straßenbetrieb begrenzen Bewegungen nach Sonnenuntergang. Diese Grenze wird geprüft, bevor Ausrüstung das Fahrzeug verlässt, und gilt auch bei geometrisch klarem Himmel. Eine geschlossene Loop Road reduziert den Plan auf die offene Besucherfläche oder verschiebt ihn vollständig."
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ],
+      "tone": "warning"
+    },
+    {
+      "id": "craters-of-the-moon-tour-place",
+      "kind": "prose",
+      "heading": {
+        "en": "Why the route stops at Lava Flow Campground",
+        "de": "Warum die Route an Lava Flow Campground endet"
+      },
+      "paragraphs": {
+        "en": [
+          "This route deliberately narrows Craters of the Moon to one known place for the evening. Craters of the Moon has broad sky above terrain that is unforgiving underfoot. Lava Flow Campground provides a controlled base; North Crater Flow is an alternative only when loop-road access and parking hours are confirmed. This route makes Lava Flow Campground the only observing stop so attention stays with the sky and the known return. North Crater Flow parking area is useful for a different date after its own current check.",
+          "A compact setup matters at Lava Flow Campground because the visitor footprint is shared. Protect crusts, caves and vegetation by refusing off-trail shortcuts even when a horizon looks close. Begin with an empty-handed look at the horizon. Equipment is added only after the safe footprint, shared paths and final packing sequence are clear."
+        ],
+        "de": [
+          "Diese Route begrenzt Craters of the Moon bewusst auf einen bekannten Ort für den Abend. Craters of the Moon bietet weiten Himmel über Gelände, das nachts keinen Fehler verzeiht. Lava Flow Campground ist die kontrollierte Basis; North Crater Flow gilt nur bei bestätigter Loop-Road-Zufahrt und Parkzeit als Alternative. Diese Route macht Lava Flow Campground zum einzigen Beobachtungshalt, damit die Aufmerksamkeit bei Himmel und bekanntem Rückweg bleibt. North Crater Flow parking area ist nach eigener aktueller Prüfung für ein anderes Datum nützlich.",
+          "Ein kompakter Aufbau zählt am Lava Flow Campground, weil die Besucherfläche geteilt wird. Schütze Krusten, Höhlen und Vegetation, indem du auch bei nah wirkendem Horizont keine Abkürzung abseits des Wegs nimmst. Beginne mit einem Blick ohne Ausrüstung auf den Horizont. Ausrüstung kommt erst hinzu, wenn sichere Fläche, gemeinsame Wege und letzte Packreihenfolge klar sind."
+        ]
+      },
+      "sourceIds": [
+        "craters-of-the-moon-designation",
+        "craters-of-the-moon-access",
+        "craters-of-the-moon-visitor"
+      ]
+    },
+    {
+      "id": "craters-of-the-moon-tour-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The usable sequence for Craters of the Moon",
+        "de": "Die brauchbare Reihenfolge für Craters of the Moon"
+      },
+      "introduction": {
+        "en": "The route protects daylight on arrival and attention on departure.",
+        "de": "Die Route bewahrt Tageslicht bei Ankunft und Aufmerksamkeit bei Abfahrt."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before travel",
+            "de": "Vor der Fahrt"
+          },
+          "title": {
+            "en": "Confirm access and return",
+            "de": "Zugang und Rückkehr bestätigen"
+          },
+          "body": {
+            "en": "The go or no-go decision for Lava Flow Campground is made back in Arco. Sharp lava, snow, heat, wind and seasonal road operations limit movement after sunset. Open the current authority, weather and route information before leaving Arco. Save the evidence and navigation offline.",
+            "de": "Die Entscheidung für oder gegen Lava Flow Campground fällt bereits in Arco. Scharfe Lava, Schnee, Hitze, Wind und saisonaler Straßenbetrieb begrenzen Bewegungen nach Sonnenuntergang. Öffne aktuelle Verwaltungs-, Wetter- und Routeninformationen vor der Abfahrt aus Arco. Speichere Nachweis und Navigation offline."
+          },
+          "sourceIds": [
+            "craters-of-the-moon-designation",
+            "craters-of-the-moon-access",
+            "craters-of-the-moon-visitor"
+          ]
+        },
+        {
+          "time": {
+            "en": "Before sunset",
+            "de": "Vor Sonnenuntergang"
+          },
+          "title": {
+            "en": "Settle at Lava Flow Campground",
+            "de": "An Lava Flow Campground ankommen"
+          },
+          "body": {
+            "en": "Arrival at Lava Flow Campground has one purpose before the sky becomes fully dark. Settle at the campground in daylight and keep every observation on an established hard surface. Read signs, edges and the walking surface before unloading, then keep the vehicle in its legal position until departure.",
+            "de": "Die Ankunft am Lava Flow Campground hat vor vollständiger Dunkelheit einen klaren Zweck. Richte dich bei Tageslicht am Campingplatz ein und halte jede Beobachtung auf einer etablierten festen Fläche. Lies Schilder, Kanten und Gehfläche vor dem Ausladen und lasse das Fahrzeug bis zur Abfahrt legal stehen."
+          },
+          "sourceIds": [
+            "craters-of-the-moon-designation",
+            "craters-of-the-moon-access",
+            "craters-of-the-moon-visitor"
+          ]
+        },
+        {
+          "time": {
+            "en": "After darkness",
+            "de": "Nach Einbruch der Dunkelheit"
+          },
+          "title": {
+            "en": "Observe without expanding the footprint",
+            "de": "Beobachten ohne die Fläche zu erweitern"
+          },
+          "body": {
+            "en": "Once darkness reaches Lava Flow Campground, movement should become smaller rather than wider. Protect crusts, caves and vegetation by refusing off-trail shortcuts even when a horizon looks close. Let the eyes adapt and add only equipment that can remain within the inspected area. Leave by the same route before fatigue builds.",
+            "de": "Wenn es am Lava Flow Campground dunkel wird, sollten die Bewegungen kleiner statt weiter werden. Schütze Krusten, Höhlen und Vegetation, indem du auch bei nah wirkendem Horizont keine Abkürzung abseits des Wegs nimmst. Lasse die Augen adaptieren und ergänze nur Ausrüstung innerhalb der geprüften Fläche. Fahre auf derselben Route ab, bevor Müdigkeit wächst."
+          },
+          "sourceIds": [
+            "craters-of-the-moon-designation",
+            "craters-of-the-moon-access",
+            "craters-of-the-moon-visitor"
+          ]
+        }
+      ]
+    }
+  ],
+  "sourceIds": [
+    "craters-of-the-moon-designation",
+    "craters-of-the-moon-access",
+    "craters-of-the-moon-visitor"
+  ],
+  "lastReviewedAt": "2026-09-08"
+}

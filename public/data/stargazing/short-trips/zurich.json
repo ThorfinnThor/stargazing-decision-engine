@@ -3,10 +3,310 @@
   "originName": "Zurich",
   "countryCode": "CH",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "generatedAt": "2026-09-08T13:49:31.088236Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "alpes-azur-mercantour",
+      "destinationSlug": "alpes-azur-mercantour",
+      "destinationName": "Alpes Azur Mercantour",
+      "distanceKm": 385.74,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 1,
+          "score": 81
+        },
+        {
+          "month": 8,
+          "score": 81
+        },
+        {
+          "month": 2,
+          "score": 80
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 81,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 78,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 71,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 63,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 79,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 81,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 72,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 75,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 80,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 81,
+      "distanceUtility": 60,
+      "shortTripScore": 75.75,
+      "bestSiteId": "valberg-sentinel",
+      "stayArea": {
+        "id": "valberg",
+        "name": "Valberg",
+        "affiliateQuery": "Valberg France"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 81 in month 1.",
+        "Distance is 385.74 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Valberg."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 2,
+      "destinationId": "rhoen",
+      "destinationSlug": "rhoen",
+      "destinationName": "Rhön",
+      "distanceKm": 361.71,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 68
+        },
+        {
+          "month": 9,
+          "score": 67
+        },
+        {
+          "month": 8,
+          "score": 66
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 66,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 68,
+      "distanceUtility": 60,
+      "shortTripScore": 66,
+      "bestSiteId": "wasserkuppe",
+      "stayArea": {
+        "id": "fulda",
+        "name": "Fulda",
+        "affiliateQuery": "Fulda Germany"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 68 in month 4.",
+        "Distance is 361.71 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Fulda."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 3,
+      "destinationId": "winklmoosalm",
+      "destinationSlug": "winklmoosalm",
+      "destinationName": "Winklmoosalm",
+      "distanceKm": 304.75,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 1,
+          "score": 64
+        },
+        {
+          "month": 4,
+          "score": 64
+        },
+        {
+          "month": 3,
+          "score": 63
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 61,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 64,
+      "distanceUtility": 60,
+      "shortTripScore": 63,
+      "bestSiteId": "winklmoosalm-plateau",
+      "stayArea": {
+        "id": "reit-im-winkl",
+        "name": "Reit im Winkl",
+        "affiliateQuery": "Reit im Winkl Germany"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 64 in month 1.",
+        "Distance is 304.75 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Reit im Winkl."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "eifel",
       "destinationSlug": "eifel",
       "destinationName": "Eifel Dark Sky Park",

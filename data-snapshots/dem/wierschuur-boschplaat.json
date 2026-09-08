@@ -1,0 +1,33 @@
+{
+  "siteId": "wierschuur-boschplaat",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    53.42,
+    5.44
+  ],
+  "tile": "N53_00_E005_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N53_00_E005_00_DEM/Copernicus_DSM_COG_10_N53_00_E005_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 0.961,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1.068,
+      "validSampleCount": 227
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1.201,
+      "validSampleCount": 3690
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:49:26.904892Z"
+}

@@ -1,5 +1,9 @@
 # SEO, generative-search, and LLM discovery audit — 2026-08-31
 
+> Historical snapshot. Catalog and media counts in this dated audit describe
+> the 2026-08-31 release. Current counts and open operational work are maintained
+> in `README.md` and `docs/operations.md`.
+
 ## Outcome
 
 The site already has the foundations required for conventional and generative

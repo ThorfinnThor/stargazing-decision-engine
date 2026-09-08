@@ -1,0 +1,33 @@
+{
+  "siteId": "panoramadune-oosterend",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    53.407,
+    5.395
+  ],
+  "tile": "N53_00_E005_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N53_00_E005_00_DEM/Copernicus_DSM_COG_10_N53_00_E005_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 3.45,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2.991,
+      "validSampleCount": 226
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2.84,
+      "validSampleCount": 3680
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:49:12.739210Z"
+}

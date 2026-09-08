@@ -105,32 +105,41 @@ jobs:
           REFRESH_ERA5: ${{ inputs.refresh_era5 }}
           REFRESH_BLACK_MARBLE: ${{ inputs.refresh_black_marble }}
           REFRESH_DEM: ${{ inputs.refresh_dem }}
+          # CMR discovery plus Earthdata Cloud downloads use the existing EDL
+          # token without requiring the unavailable URS login host.
+          BLACK_MARBLE_PROVIDER: cmr
         run: |
           set -euo pipefail
-          refresh_site() {
-            local site="$1"
-            if [[ "$REFRESH_ERA5" == "true" ]]; then
+          refresh_source() {
+            set -euo pipefail
+            local source="$1"
+            local site="$2"
+            if [[ "$source" == "era5" ]]; then
               pnpm data:era5:fetch --site "$site"
               pnpm data:era5:process --site "$site"
-            fi
-            if [[ "$REFRESH_BLACK_MARBLE" == "true" ]]; then
+            elif [[ "$source" == "black-marble" ]]; then
               pnpm data:black-marble:fetch --site "$site"
               pnpm data:black-marble:extract --site "$site"
               pnpm data:black-marble:process --site "$site"
-            fi
-            if [[ "$REFRESH_DEM" == "true" ]]; then
+            elif [[ "$source" == "dem" ]]; then
               # The public COG mirror has stable, directly addressable tile
               # keys; CDSE eodata collection prefixes use a different layout.
               pnpm data:dem:fetch --site "$site" --public-fallback
               pnpm data:dem:process --site "$site"
             fi
           }
-          export -f refresh_site
-          export REFRESH_ERA5 REFRESH_BLACK_MARBLE REFRESH_DEM
-          # Every task writes only to its own site-scoped files. Three workers
-          # keep the 50-site batch inside the hosted-runner limit while the
-          # single validation/build/commit gate below remains all-or-nothing.
-          xargs -r -n 1 -P 3 bash -c 'refresh_site "$1"' _ < /tmp/stargazing-sites
+          export -f refresh_source
+          # Authenticate and validate the smallest Black Marble batch first,
+          # before spending time on the much larger ERA5 point histories.
+          if [[ "$REFRESH_BLACK_MARBLE" == "true" ]]; then
+            xargs -r -n 1 -P 3 bash -c 'refresh_source black-marble "$1"' _ < /tmp/stargazing-sites
+          fi
+          if [[ "$REFRESH_ERA5" == "true" ]]; then
+            xargs -r -n 1 -P 3 bash -c 'refresh_source era5 "$1"' _ < /tmp/stargazing-sites
+          fi
+          if [[ "$REFRESH_DEM" == "true" ]]; then
+            xargs -r -n 1 -P 3 bash -c 'refresh_source dem "$1"' _ < /tmp/stargazing-sites
+          fi
       - name: Rebuild image manifest
         if: ${{ inputs.refresh_images }}
         run: pnpm data:images
