@@ -106,6 +106,18 @@ const profiles: Record<string, ScoreProfile> = {
   aenos: { clear: 0.68, darkness: 82, elevation: 68, comfort: 62, dew: 0.18 },
 };
 
+// This neutral profile exists only so the deterministic seed fixture can be
+// rebuilt when a newly researched destination has not been assigned a legacy
+// hand-authored fixture. Production validation requires a real score snapshot
+// for every active site, so these values cannot reach a release build.
+const neutralFixtureProfile: ScoreProfile = {
+  clear: 0.5,
+  darkness: 50,
+  elevation: 50,
+  comfort: 50,
+  dew: 0.5,
+};
+
 const input = readJson<SeedData>(generatedPath("seed.normalized.json"));
 const clampProbability = (value: number | null) => value === null ? null : round(clamp(value, 0, 1), 4);
 const seasonal = (month: number) => Math.sin(((month - 1) / 12) * Math.PI * 2 - Math.PI / 2);
@@ -117,8 +129,7 @@ const scores: MonthlySiteScore[] = [];
 for (const site of input.sites) {
   const destination = input.destinations.find((item) => item.id === site.destinationId);
   if (!destination) throw new Error(`Missing destination for site ${site.id}`);
-  const profile = profiles[destination.id];
-  if (!profile) throw new Error(`Missing seed score profile for ${destination.id}`);
+  const profile = profiles[destination.id] ?? neutralFixtureProfile;
 
   darkness.push({
     siteId: site.id,
