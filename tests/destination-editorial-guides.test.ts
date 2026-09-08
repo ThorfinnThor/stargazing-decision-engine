@@ -9,12 +9,12 @@ import type { Destination, DestinationEditorialGuide } from "../lib/data/types.j
 
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
 const guides = read<DestinationEditorialGuide[]>("data-config/editorial/destination-guides.json");
-const seed = read<{ destinations: Destination[] }>("generated/intermediate/seed.normalized.json");
+const destinations = read<Destination[]>("data-config/sources/destinations.json");
 
 test("destination editorial guides meet bilingual depth, uniqueness, and source coverage gates", () => {
-  assert.doesNotThrow(() => validateDestinationEditorialGuides(guides, seed.destinations));
+  assert.doesNotThrow(() => validateDestinationEditorialGuides(guides, destinations));
   assert.ok(guides.length >= 50);
-  assert.deepEqual(seed.destinations.filter((destination) => destination.active && !guides.some((guide) => guide.slug === destination.slug)).map((destination) => destination.slug), []);
+  assert.deepEqual(destinations.filter((destination) => destination.active && !guides.some((guide) => guide.slug === destination.slug)).map((destination) => destination.slug), []);
   assert.ok(guides.every((guide) => destinationGuideWordCount(guide, "en") >= 650));
   assert.ok(guides.every((guide) => destinationGuideWordCount(guide, "de") >= 650));
   assert.ok(guides.every((guide) => guide.sections.length >= 3 && guide.tour.steps.length >= 4 && guide.sources.length >= 3));
@@ -29,7 +29,7 @@ test("each destination guide has its own sourced route rather than a shared temp
 
 test("destination editorial structured data links the guide, FAQ, and cited primary sources", () => {
   const guide = guides[0];
-  const destination = seed.destinations.find((candidate) => candidate.id === guide.destinationId);
+  const destination = destinations.find((candidate) => candidate.id === guide.destinationId);
   assert.ok(destination);
   const value = buildDestinationEditorialStructuredData({ destination, guide, locale: "en", url: `https://stargazingindex.com/en/stargazing-destinations/${guide.slug}/`, image: "/images/destinations/la-palma.webp" });
   const article = value["@graph"].find((item) => item["@type"] === "Article") as Record<string, unknown> | undefined;
@@ -43,7 +43,7 @@ test("destination editorial structured data links the guide, FAQ, and cited prim
 
 test("destination structured data omits sources used only by a separate night route", () => {
   const guide = guides.find((candidate) => candidate.slug === "la-palma");
-  const destination = seed.destinations.find((candidate) => candidate.id === guide?.destinationId);
+  const destination = destinations.find((candidate) => candidate.id === guide?.destinationId);
   assert.ok(guide);
   assert.ok(destination);
   const value = buildDestinationEditorialStructuredData({ destination, guide, locale: "en", url: "https://stargazingindex.com/en/stargazing-destinations/la-palma/", includeIndependentRoute: false });

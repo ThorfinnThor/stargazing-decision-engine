@@ -114,6 +114,7 @@ const lines = [
   "",
   ...repeatedStructures.slice(0, 10).map(([signature, slugs]) => `- ${slugs.length} destination guides share the section-ID sequence \`${signature}\`: ${slugs.join(", ")}.`),
   ...banned.slice(0, 20).map((item) => `- ${item.corpus}/${item.slug} (${item.locale}, ${item.field}) contains \`${item.phrase}\`.`),
+  ...repeatedOpenings.map((group) => `- Repeated opening \`${group.fingerprint}\`: ${group.occurrences.map((item) => `${item.corpus}/${item.slug} (${item.field})`).join("; ")}.`),
   "",
   "## Editorial decision",
   "",
@@ -123,3 +124,4 @@ const lines = [
 ];
 writeFileSync(resolve(root, "docs/editorial-writing-audit.md"), `${lines.join("\n")}\n`, "utf8");
 console.log(`Editorial audit: ${units.length} text units, ${banned.length} banned phrases, ${duplicateExact.length} exact duplicate groups, ${repeatedOpenings.length} repeated openings.`);
+if (process.argv.includes("--details")) console.log(JSON.stringify(repeatedOpenings));
