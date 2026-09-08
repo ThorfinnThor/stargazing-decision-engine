@@ -34,7 +34,9 @@ ignored `generated/intermediate` files. Destination editorial tests read
   benchmark completed in 3.13 seconds after this change.
 - All 100 destinations now have locally stored, license-audited assets. The final
   25 expansion images were promoted only after source metadata, license and visual
-  relevance checks passed; individual observation-site images remain pending.
+  relevance checks passed. All 200 observation-site records reuse their parent
+  destination asset as explicitly labelled regional context, with copied provenance
+  checked against a dedicated mapping audit.
 - The strengthened editorial audit reports zero banned phrases, exact duplicate
   passages, repeated long sentences, repeated twelve-word openings and repeated
   destination section-ID sequences. Redundant sentences within individual pages
