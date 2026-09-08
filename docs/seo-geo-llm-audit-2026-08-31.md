@@ -113,11 +113,10 @@ so a second checked-in IndexNow client would be redundant.
    pages for speculative keyword variants.
 3. **Source freshness:** recheck time-sensitive access rules, bookings, closures,
    and gear specifications on the dates displayed by each guide.
-4. **Observation-site media:** the 50 destination images are approved and live;
-   the 100 observation-site records still have publication-blocked placeholders.
-   Promote a site image only after local WebP creation and complete approved
-   licence provenance. These images are not currently required by the rendered
-   destination pages.
+4. **Observation-site media:** resolved on 2026-09-08. All 200 site records reuse
+   their parent destination's approved local asset as explicitly labelled regional
+   context. The dedicated mapping audit verifies the copied licence provenance and
+   prevents wording that claims the image depicts the exact observing position.
 5. **Infrastructure inventory:** obsolete deployments or aliases still cannot be
    deleted safely without an external inventory of Cloudflare projects, DNS,
    aliases, build hooks, and rollback requirements.

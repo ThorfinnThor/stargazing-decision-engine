@@ -53,6 +53,7 @@
     "data:gear": "node --import tsx scripts/gear/build-gear.ts",
     "data:gear:validate": "node --import tsx scripts/validate/validate-gear.ts",
     "data:images": "node --import tsx scripts/images/build-image-manifest.ts",
+    "data:images:sites:inherit": "node scripts/images/promote-site-images-from-destinations.mjs",
     "data:images:validate": "node --import tsx scripts/validate/validate-images.ts",
     "data:astronomy:catalog": "node --import tsx scripts/astronomy/build-star-catalog.ts",
     "data:astronomy:constellations": "node --import tsx scripts/astronomy/build-constellation-lines.ts",

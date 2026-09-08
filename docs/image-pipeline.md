@@ -25,10 +25,14 @@ conversion. A second source audit on 2026-09-08 promoted the remaining 25 images
 from that catalog, leaving all 75 pre-expansion destinations with approved local
 assets. A separate metadata and visual review then cleared the 25 destinations in
 the 100-destination expansion. All 100 destination records now point to approved,
-locally stored assets with complete provenance. All 200 individual observation-site
-images remain pending.
-Pending records do not publish an asset. The production validator checks that every copied
-provenance field still matches the audit register exactly.
+locally stored assets with complete provenance. The 200 individual observation-site
+records reuse those approved destination assets as regional context. Their alt text
+names the observation site and explicitly describes the image as regional context;
+it does not claim that the photograph depicts the exact observing position. The
+mapping and copied provenance are recorded in
+`data-config/sources/site-image-audit-2026-09-08.json` and validated on every build.
+Pending records do not publish an asset. The production validator checks that every
+copied provenance field still matches the audit register exactly.
 
 The build never fetches remote images and does not silently fall back to an
 unlicensed asset. See [`docs/licensing.md`](licensing.md) for the source policy.
