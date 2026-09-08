@@ -1,0 +1,33 @@
+{
+  "siteId": "watoga-riverside-campground",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    38.102,
+    -80.156
+  ],
+  "tile": "N38_00_W081_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N38_00_W081_00_DEM/Copernicus_DSM_COG_10_N38_00_W081_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 834.252,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 860.331,
+      "validSampleCount": 262
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 897.996,
+      "validSampleCount": 4175
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:49:26.437502Z"
+}

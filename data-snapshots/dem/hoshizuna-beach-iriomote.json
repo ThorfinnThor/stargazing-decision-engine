@@ -1,0 +1,33 @@
+{
+  "siteId": "hoshizuna-beach-iriomote",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    24.435,
+    123.775
+  ],
+  "tile": "N24_00_E123_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N24_00_E123_00_DEM/Copernicus_DSM_COG_10_N24_00_E123_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 11.567,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 10.416,
+      "validSampleCount": 218
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 3.315,
+      "validSampleCount": 3623
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:48:50.567868Z"
+}

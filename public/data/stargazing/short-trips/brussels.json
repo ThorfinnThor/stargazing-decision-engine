@@ -3,10 +3,110 @@
   "originName": "Brussels",
   "countryCode": "BE",
   "maxShortTripKm": 400,
-  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "generatedAt": "2026-09-08T13:49:31.088236Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "rhoen",
+      "destinationSlug": "rhoen",
+      "destinationName": "Rhön",
+      "distanceKm": 395.5,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 68
+        },
+        {
+          "month": 9,
+          "score": 67
+        },
+        {
+          "month": 8,
+          "score": 66
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 68,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 66,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 68,
+      "distanceUtility": 60,
+      "shortTripScore": 66,
+      "bestSiteId": "wasserkuppe",
+      "stayArea": {
+        "id": "fulda",
+        "name": "Fulda",
+        "affiliateQuery": "Fulda Germany"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 68 in month 4.",
+        "Distance is 395.5 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Fulda."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
       "destinationId": "eifel",
       "destinationSlug": "eifel",
       "destinationName": "Eifel Dark Sky Park",
@@ -106,7 +206,107 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 2,
+      "rank": 3,
+      "destinationId": "de-boschplaat",
+      "destinationSlug": "de-boschplaat",
+      "destinationName": "De Boschplaat",
+      "distanceKm": 295.23,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 64
+        },
+        {
+          "month": 9,
+          "score": 60
+        },
+        {
+          "month": 3,
+          "score": 59
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 53,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 64,
+      "distanceUtility": 60,
+      "shortTripScore": 63,
+      "bestSiteId": "wierschuur-boschplaat",
+      "stayArea": {
+        "id": "oosterend-terschelling",
+        "name": "Oosterend, Terschelling",
+        "affiliateQuery": "Oosterend, Terschelling Netherlands"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 64 in month 4.",
+        "Distance is 295.23 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Oosterend, Terschelling."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "south-downs",
       "destinationSlug": "south-downs",
       "destinationName": "South Downs",
@@ -202,6 +402,106 @@
         "Best month score 64 in month 9.",
         "Distance is 360.27 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Petersfield."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 5,
+      "destinationId": "lauwersmeer",
+      "destinationSlug": "lauwersmeer",
+      "destinationName": "Lauwersmeer",
+      "distanceKm": 308.69,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 62
+        },
+        {
+          "month": 3,
+          "score": 58
+        },
+        {
+          "month": 9,
+          "score": 58
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 51,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 50,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 62,
+      "distanceUtility": 60,
+      "shortTripScore": 61.5,
+      "bestSiteId": "activiteitencentrum-lauwersmeer",
+      "stayArea": {
+        "id": "lauwersoog",
+        "name": "Lauwersoog",
+        "affiliateQuery": "Lauwersoog Netherlands"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 62 in month 4.",
+        "Distance is 308.69 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Lauwersoog."
       ],
       "confidenceLevel": "high"
     }

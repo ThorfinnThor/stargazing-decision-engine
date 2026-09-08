@@ -1,0 +1,33 @@
+{
+  "siteId": "cosmic-campground-sites",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    33.48,
+    -108.923
+  ],
+  "tile": "N33_00_W109_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N33_00_W109_00_DEM/Copernicus_DSM_COG_10_N33_00_W109_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1632.576,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1631.427,
+      "validSampleCount": 244
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1626.269,
+      "validSampleCount": 3949
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:48:37.732482Z"
+}

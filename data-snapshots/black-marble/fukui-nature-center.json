@@ -1,0 +1,158 @@
+{
+  "siteId": "fukui-nature-center",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.46154,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.46154,
+          "coverage": 1,
+          "validPixelCount": 1737,
+          "totalPixelCount": 1737
+        },
+        {
+          "year": 2024,
+          "radiance": 0.433179,
+          "coverage": 1,
+          "validPixelCount": 1737,
+          "totalPixelCount": 1737
+        },
+        {
+          "year": 2023,
+          "radiance": 0.48623,
+          "coverage": 1,
+          "validPixelCount": 1737,
+          "totalPixelCount": 1737
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.216125,
+      "coverage": 0.999862,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.216125,
+          "coverage": 1,
+          "validPixelCount": 14474,
+          "totalPixelCount": 14474
+        },
+        {
+          "year": 2024,
+          "radiance": 0.204398,
+          "coverage": 0.999931,
+          "validPixelCount": 14473,
+          "totalPixelCount": 14474
+        },
+        {
+          "year": 2023,
+          "radiance": 0.250205,
+          "coverage": 0.999862,
+          "validPixelCount": 14472,
+          "totalPixelCount": 14474
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.041462,
+      "coverage": 0.997146,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.050335,
+          "coverage": 0.997146,
+          "validPixelCount": 85258,
+          "totalPixelCount": 85502
+        },
+        {
+          "year": 2024,
+          "radiance": 0.999666,
+          "coverage": 0.997439,
+          "validPixelCount": 85283,
+          "totalPixelCount": 85502
+        },
+        {
+          "year": 2023,
+          "radiance": 1.041462,
+          "coverage": 0.997298,
+          "validPixelCount": 85271,
+          "totalPixelCount": 85502
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.46154,
+  "radiance10to30": 0.216125,
+  "radiance30to75": 1.041462,
+  "alanExposure": 0.214564,
+  "darknessScore": 78.67,
+  "coverage": 0.997146,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:29:41.693457Z"
+}

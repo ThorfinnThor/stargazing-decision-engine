@@ -1,0 +1,33 @@
+{
+  "siteId": "winklmoosalm-plateau",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    47.657,
+    12.579
+  ],
+  "tile": "N47_00_E012_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N47_00_E012_00_DEM/Copernicus_DSM_COG_10_N47_00_E012_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1151.936,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1146.477,
+      "validSampleCount": 301
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1152.354,
+      "validSampleCount": 4887
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:49:31.088236Z"
+}

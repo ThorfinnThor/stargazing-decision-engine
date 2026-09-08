@@ -3,7 +3,7 @@
   "originName": "Edinburgh",
   "countryCode": "GB",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-09-01T01:39:29.301736Z",
+  "generatedAt": "2026-09-08T13:49:31.088236Z",
   "entries": [
     {
       "rank": 1,
@@ -702,6 +702,106 @@
         "Best month score 58 in month 4.",
         "Distance is 360.98 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Beddgelert."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 8,
+      "destinationId": "om-dark-sky",
+      "destinationSlug": "om-dark-sky",
+      "destinationName": "OM Dark Sky Park",
+      "distanceKm": 271.23,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 55
+        },
+        {
+          "month": 10,
+          "score": 53
+        },
+        {
+          "month": 2,
+          "score": 52
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 49,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 55,
+      "distanceUtility": 60,
+      "shortTripScore": 56.25,
+      "bestSiteId": "om-observatory-terrace",
+      "stayArea": {
+        "id": "cookstown",
+        "name": "Cookstown",
+        "affiliateQuery": "Cookstown United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 55 in month 4.",
+        "Distance is 271.23 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Cookstown."
       ],
       "confidenceLevel": "high"
     }

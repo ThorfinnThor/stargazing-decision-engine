@@ -1,0 +1,158 @@
+{
+  "siteId": "panoramadune-oosterend",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 95,
+          "totalPixelCount": 95
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.024494,
+      "coverage": 0.996607,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.014597,
+          "coverage": 0.99788,
+          "validPixelCount": 2353,
+          "totalPixelCount": 2358
+        },
+        {
+          "year": 2024,
+          "radiance": 0.024494,
+          "coverage": 0.996607,
+          "validPixelCount": 2350,
+          "totalPixelCount": 2358
+        },
+        {
+          "year": 2023,
+          "radiance": 0.036866,
+          "coverage": 0.997031,
+          "validPixelCount": 2351,
+          "totalPixelCount": 2358
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.17018,
+      "coverage": 0.98203,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.184005,
+          "coverage": 0.98371,
+          "validPixelCount": 19324,
+          "totalPixelCount": 19644
+        },
+        {
+          "year": 2024,
+          "radiance": 0.166345,
+          "coverage": 0.98203,
+          "validPixelCount": 19291,
+          "totalPixelCount": 19644
+        },
+        {
+          "year": 2023,
+          "radiance": 0.17018,
+          "coverage": 0.984474,
+          "validPixelCount": 19339,
+          "totalPixelCount": 19644
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.469515,
+      "coverage": 0.971477,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.469515,
+          "coverage": 0.974778,
+          "validPixelCount": 113084,
+          "totalPixelCount": 116010
+        },
+        {
+          "year": 2024,
+          "radiance": 0.470907,
+          "coverage": 0.973899,
+          "validPixelCount": 112982,
+          "totalPixelCount": 116010
+        },
+        {
+          "year": 2023,
+          "radiance": 0.387881,
+          "coverage": 0.971477,
+          "validPixelCount": 112701,
+          "totalPixelCount": 116010
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.024494,
+  "radiance10to30": 0.17018,
+  "radiance30to75": 0.469515,
+  "alanExposure": 0.069326,
+  "darknessScore": 86.62,
+  "coverage": 0.971477,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:32:24.483900Z"
+}

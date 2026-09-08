@@ -1,0 +1,158 @@
+{
+  "siteId": "activiteitencentrum-lauwersmeer",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 97,
+          "totalPixelCount": 97
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 97,
+          "totalPixelCount": 97
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 97,
+          "totalPixelCount": 97
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.164367,
+      "coverage": 0.970713,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.126387,
+          "coverage": 0.973684,
+          "validPixelCount": 2294,
+          "totalPixelCount": 2356
+        },
+        {
+          "year": 2024,
+          "radiance": 0.164367,
+          "coverage": 0.97708,
+          "validPixelCount": 2302,
+          "totalPixelCount": 2356
+        },
+        {
+          "year": 2023,
+          "radiance": 0.250999,
+          "coverage": 0.970713,
+          "validPixelCount": 2287,
+          "totalPixelCount": 2356
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.549587,
+      "coverage": 0.940841,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.544941,
+          "coverage": 0.942012,
+          "validPixelCount": 18503,
+          "totalPixelCount": 19642
+        },
+        {
+          "year": 2024,
+          "radiance": 0.549587,
+          "coverage": 0.944405,
+          "validPixelCount": 18550,
+          "totalPixelCount": 19642
+        },
+        {
+          "year": 2023,
+          "radiance": 0.626463,
+          "coverage": 0.940841,
+          "validPixelCount": 18480,
+          "totalPixelCount": 19642
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.761222,
+      "coverage": 0.953256,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.73049,
+          "coverage": 0.959079,
+          "validPixelCount": 111186,
+          "totalPixelCount": 115930
+        },
+        {
+          "year": 2024,
+          "radiance": 0.771277,
+          "coverage": 0.954274,
+          "validPixelCount": 110629,
+          "totalPixelCount": 115930
+        },
+        {
+          "year": 2023,
+          "radiance": 0.761222,
+          "coverage": 0.953256,
+          "validPixelCount": 110511,
+          "totalPixelCount": 115930
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.164367,
+  "radiance10to30": 0.549587,
+  "radiance30to75": 0.761222,
+  "alanExposure": 0.167952,
+  "darknessScore": 81.23,
+  "coverage": 0.940841,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:27:52.168711Z"
+}

@@ -1,0 +1,33 @@
+{
+  "siteId": "melote-house-lapalala",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -23.82,
+    28.3
+  ],
+  "tile": "S24_00_E028_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S24_00_E028_00_DEM/Copernicus_DSM_COG_10_S24_00_E028_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1081.52,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1084.651,
+      "validSampleCount": 218
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1049.782,
+      "validSampleCount": 3595
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:48:59.603096Z"
+}

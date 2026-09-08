@@ -1,0 +1,158 @@
+{
+  "siteId": "buffalo-park-flagstaff",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 7.060368,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 7.060368,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        },
+        {
+          "year": 2024,
+          "radiance": 7.784539,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        },
+        {
+          "year": 2023,
+          "radiance": 6.260331,
+          "coverage": 1,
+          "validPixelCount": 74,
+          "totalPixelCount": 74
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 2.380472,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.467701,
+          "coverage": 1,
+          "validPixelCount": 1714,
+          "totalPixelCount": 1714
+        },
+        {
+          "year": 2024,
+          "radiance": 2.323813,
+          "coverage": 1,
+          "validPixelCount": 1714,
+          "totalPixelCount": 1714
+        },
+        {
+          "year": 2023,
+          "radiance": 2.380472,
+          "coverage": 1,
+          "validPixelCount": 1714,
+          "totalPixelCount": 1714
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.048188,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.050564,
+          "coverage": 1,
+          "validPixelCount": 14329,
+          "totalPixelCount": 14329
+        },
+        {
+          "year": 2024,
+          "radiance": 0.038857,
+          "coverage": 1,
+          "validPixelCount": 14329,
+          "totalPixelCount": 14329
+        },
+        {
+          "year": 2023,
+          "radiance": 0.048188,
+          "coverage": 1,
+          "validPixelCount": 14329,
+          "totalPixelCount": 14329
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.077267,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.083747,
+          "coverage": 1,
+          "validPixelCount": 84643,
+          "totalPixelCount": 84643
+        },
+        {
+          "year": 2024,
+          "radiance": 0.077267,
+          "coverage": 1,
+          "validPixelCount": 84643,
+          "totalPixelCount": 84643
+        },
+        {
+          "year": 2023,
+          "radiance": 0.077067,
+          "coverage": 1,
+          "validPixelCount": 84643,
+          "totalPixelCount": 84643
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 7.060368,
+  "radiance2to10": 2.380472,
+  "radiance10to30": 0.048188,
+  "radiance30to75": 0.077267,
+  "alanExposure": 1.319038,
+  "darknessScore": 42.44,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:28:25.985809Z"
+}

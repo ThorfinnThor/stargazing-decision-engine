@@ -1,0 +1,158 @@
+{
+  "siteId": "nyord-village-edge",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 104,
+          "totalPixelCount": 104
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 104,
+          "totalPixelCount": 104
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 104,
+          "totalPixelCount": 104
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.060496,
+      "coverage": 0.986547,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.055756,
+          "coverage": 0.988178,
+          "validPixelCount": 2424,
+          "totalPixelCount": 2453
+        },
+        {
+          "year": 2024,
+          "radiance": 0.060496,
+          "coverage": 0.988178,
+          "validPixelCount": 2424,
+          "totalPixelCount": 2453
+        },
+        {
+          "year": 2023,
+          "radiance": 0.071428,
+          "coverage": 0.986547,
+          "validPixelCount": 2420,
+          "totalPixelCount": 2453
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.148115,
+      "coverage": 0.979977,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.132794,
+          "coverage": 0.980565,
+          "validPixelCount": 20030,
+          "totalPixelCount": 20427
+        },
+        {
+          "year": 2024,
+          "radiance": 0.148115,
+          "coverage": 0.979977,
+          "validPixelCount": 20018,
+          "totalPixelCount": 20427
+        },
+        {
+          "year": 2023,
+          "radiance": 0.155238,
+          "coverage": 0.980271,
+          "validPixelCount": 20024,
+          "totalPixelCount": 20427
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.839762,
+      "coverage": 0.967422,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.839762,
+          "coverage": 0.971739,
+          "validPixelCount": 117285,
+          "totalPixelCount": 120696
+        },
+        {
+          "year": 2024,
+          "radiance": 0.850261,
+          "coverage": 0.971482,
+          "validPixelCount": 117254,
+          "totalPixelCount": 120696
+        },
+        {
+          "year": 2023,
+          "radiance": 0.828047,
+          "coverage": 0.967422,
+          "validPixelCount": 116764,
+          "totalPixelCount": 120696
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.060496,
+  "radiance10to30": 0.148115,
+  "radiance30to75": 0.839762,
+  "alanExposure": 0.099303,
+  "darknessScore": 84.98,
+  "coverage": 0.967422,
+  "warnings": [],
+  "retrievedAt": "2026-09-08T13:32:05.896314Z"
+}
