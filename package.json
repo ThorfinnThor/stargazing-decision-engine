@@ -43,6 +43,7 @@
     "data:tours": "node --import tsx scripts/editorial/build-location-tours.ts",
     "data:tours:validate": "node --import tsx scripts/validate/validate-location-tours.ts",
     "data:editorial:audit": "node --import tsx scripts/editorial/audit-writing.ts",
+    "data:editorial:remediate-repetitions": "node scripts/editorial/remediate-audit-repetitions.mjs",
     "data:seo": "node --import tsx scripts/seo/build-seo.ts",
     "data:llms": "node --import tsx scripts/seo/build-llms.ts",
     "data:llms:validate": "node --import tsx scripts/validate/validate-llms.ts",

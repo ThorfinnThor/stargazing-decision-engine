@@ -16,7 +16,13 @@ const bannedPhrases = [
 ];
 const normalize = (value: string) => value.toLocaleLowerCase("en").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 const prefix = (value: string, count = 12) => normalize(value).split(" ").slice(0, count).join(" ");
-const sentences = (value: string) => value.match(/[^.!?]+[.!?]+(?:[”'"])?|[^.!?]+$/g)?.map((sentence) => sentence.trim()).filter(Boolean) ?? [];
+const segmenters = {
+  en: new Intl.Segmenter("en", { granularity: "sentence" }),
+  de: new Intl.Segmenter("de", { granularity: "sentence" }),
+};
+const sentences = (value: string, locale: Locale) => [...segmenters[locale].segment(value)]
+  .map(({ segment }) => segment.trim())
+  .filter(Boolean);
 const units: TextUnit[] = [];
 const add = (corpus: Corpus, slug: string, locale: Locale, field: string, value: string) => units.push({ corpus, slug, locale, field, value });
 
@@ -77,7 +83,7 @@ const repeated = (selector: (unit: TextUnit) => string, minimumLength: number) =
 const duplicateExact = repeated((unit) => normalize(unit.value), 80);
 const repeatedOpenings = repeated((unit) => prefix(unit.value), 45).filter((group) => group.occurrences.every((item) => !item.field.startsWith("heading")));
 const sentenceGroups = new Map<string, TextUnit[]>();
-for (const unit of units) for (const sentence of sentences(unit.value)) {
+for (const unit of units) for (const sentence of sentences(unit.value, unit.locale)) {
   if (normalize(sentence).split(" ").length < 12) continue;
   const key = `${unit.locale}:${normalize(sentence)}`;
   sentenceGroups.set(key, [...(sentenceGroups.get(key) ?? []), unit]);
@@ -131,7 +137,9 @@ const lines = [
   `- Cross-page subset: ${crossPageDuplicateSentences.length}`,
   `- Repeated within at least one page: ${withinPageDuplicateSentences.length}`,
   `- Repeated twelve-word openings across pages: ${repeatedOpenings.length}`,
-  `- The repeated openings are ${repeatedOpenings.every((group) => group.occurrences.every((item) => item.corpus === "gear" && /published|veröffentlicht/.test(item.value))) ? "limited to factual published-specification labels in gear comparison bullets" : "not limited to factual gear labels and require prose review"}.`,
+  repeatedOpenings.length === 0
+    ? "- No repeated twelve-word openings remain."
+    : `- The repeated openings are ${repeatedOpenings.every((group) => group.occurrences.every((item) => item.corpus === "gear" && /published|veröffentlicht/.test(item.value))) ? "limited to factual published-specification labels in gear comparison bullets" : "not limited to factual gear labels and require prose review"}.`,
   `- Repeated destination section-ID sequences: ${repeatedStructures.length}`,
   `- The location-tour corpus ${banned.some((item) => item.corpus === "location-tour") || duplicateExact.some((group) => group.occurrences.some((item) => item.corpus === "location-tour")) || duplicateSentences.some((group) => group.occurrences.some((item) => item.corpus === "location-tour")) ? "needs correction" : "passes the hard phrase and exact-duplication checks"}.`,
   "",
@@ -150,4 +158,6 @@ const lines = [
 ];
 writeFileSync(resolve(root, "docs/editorial-writing-audit.md"), `${lines.join("\n")}\n`, "utf8");
 console.log(`Editorial audit: ${units.length} text units, ${banned.length} banned phrases, ${duplicateExact.length} exact duplicate groups, ${duplicateSentences.length} repeated long sentences, ${repeatedOpenings.length} repeated openings.`);
-if (process.argv.includes("--details")) console.log(JSON.stringify(repeatedOpenings));
+if (process.argv.includes("--details")) {
+  console.log(JSON.stringify({ duplicateExact, duplicateSentences, repeatedOpenings }, null, 2));
+}

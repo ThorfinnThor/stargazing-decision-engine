@@ -23,8 +23,10 @@ download provenance and are not consumed directly by page rendering. The origina
 50 reviewed records were copied into `destination-images.json` after local WebP
 conversion. A second source audit on 2026-09-08 promoted the remaining 25 images
 from that catalog, leaving all 75 pre-expansion destinations with approved local
-assets. The later 100-destination expansion adds 25 explicit pending records;
-all 200 individual observation-site images remain pending.
+assets. A separate metadata and visual review then cleared the 25 destinations in
+the 100-destination expansion. All 100 destination records now point to approved,
+locally stored assets with complete provenance. All 200 individual observation-site
+images remain pending.
 Pending records do not publish an asset. The production validator checks that every copied
 provenance field still matches the audit register exactly.
 
