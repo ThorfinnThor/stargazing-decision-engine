@@ -35,8 +35,11 @@ ignored `generated/intermediate` files. Destination editorial tests read
 - All 25 destination-image gaps present at the start of the 2026-09-08 backlog
   pass now have locally stored, license-audited assets. Images introduced with a
   later catalog expansion remain publication-blocked until separately reviewed.
-- The editorial audit reports zero banned phrases, exact duplicate groups and
-  repeated twelve-word openings across the 100 destination guides and tours.
+- The strengthened editorial audit reports zero banned phrases and zero repeated
+  destination section-ID sequences. It also records one exact duplicate passage,
+  1,005 repeated long-sentence groups (492 spanning multiple pages), and six
+  repeated twelve-word openings. These findings are a documented editorial
+  remediation backlog; no automated filler was substituted for human editing.
 - Cloudflare Crawler Hints was confirmed enabled in the dashboard on 2026-09-08.
   OAI-SearchBot, ChatGPT-User and Claude-SearchBot were explicitly blocked.
   Changing those controls awaits user confirmation. Claude-User's blocked switch
