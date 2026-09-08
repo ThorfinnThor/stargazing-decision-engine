@@ -105,9 +105,13 @@ jobs:
           REFRESH_ERA5: ${{ inputs.refresh_era5 }}
           REFRESH_BLACK_MARBLE: ${{ inputs.refresh_black_marble }}
           REFRESH_DEM: ${{ inputs.refresh_dem }}
+          # LAADS accepts the existing EDL bearer token directly and avoids a
+          # separate login-host dependency before every site download.
+          BLACK_MARBLE_PROVIDER: laads
         run: |
           set -euo pipefail
           refresh_site() {
+            set -euo pipefail
             local site="$1"
             if [[ "$REFRESH_ERA5" == "true" ]]; then
               pnpm data:era5:fetch --site "$site"
