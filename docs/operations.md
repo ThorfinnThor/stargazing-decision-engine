@@ -32,14 +32,14 @@ ignored `generated/intermediate` files. Destination editorial tests read
 - Calendar generation evaluates expensive Moon and Milky Way calculations only
   inside exact astronomical-darkness intervals. A one-month, 75-destination
   benchmark completed in 3.13 seconds after this change.
-- All 25 destination-image gaps present at the start of the 2026-09-08 backlog
-  pass now have locally stored, license-audited assets. Images introduced with a
-  later catalog expansion remain publication-blocked until separately reviewed.
-- The strengthened editorial audit reports zero banned phrases and zero repeated
-  destination section-ID sequences. It also records one exact duplicate passage,
-  1,005 repeated long-sentence groups (492 spanning multiple pages), and six
-  repeated twelve-word openings. These findings are a documented editorial
-  remediation backlog; no automated filler was substituted for human editing.
+- All 100 destinations now have locally stored, license-audited assets. The final
+  25 expansion images were promoted only after source metadata, license and visual
+  relevance checks passed; individual observation-site images remain pending.
+- The strengthened editorial audit reports zero banned phrases, exact duplicate
+  passages, repeated long sentences, repeated twelve-word openings and repeated
+  destination section-ID sequences. Redundant sentences within individual pages
+  were removed, while recurring cross-page guidance was rewritten around the
+  relevant site, access decision and return route.
 - Cloudflare Crawler Hints was confirmed enabled in the dashboard on 2026-09-08.
   OAI-SearchBot, ChatGPT-User and Claude-SearchBot were explicitly blocked.
   Changing those controls awaits user confirmation. Claude-User's blocked switch

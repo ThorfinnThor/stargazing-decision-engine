@@ -9,10 +9,11 @@ const sharpPackage = fs.readdirSync(path.join(root, "node_modules/.pnpm")).find(
 if (!sharpPackage) throw new Error("The workspace dependency tree does not contain sharp");
 const { default: sharp } = await import(pathToFileURL(path.join(root, "node_modules/.pnpm", sharpPackage, "node_modules/sharp/lib/index.js")));
 const dryRun = process.argv.includes("--dry-run");
+const expansion = process.argv.includes("--expansion");
 const reviewedAt = "2026-09-08";
 const contact = "StargazingIndex image research (info@stargazingindex.com)";
 
-const selections = [
+const originalSelections = [
   ["joshua-tree", "Joshua Tree National Park (California, USA) -- 2012 -- 5669.jpg", "Joshua trees and granite formations in Joshua Tree National Park", "Joshua Trees und Granitformationen im Joshua-Tree-Nationalpark"],
   ["sedona", "Sedona Cliffs, Arizona, USA 2024-5.jpg", "Red-rock cliffs around Sedona, Arizona", "Rote Felsklippen rund um Sedona in Arizona"],
   ["acadia", "Acadia National Park, Maine (d0f17ce3-9ef6-4b96-a485-dd6408c4f67f).jpg", "Rocky Atlantic coast in Acadia National Park", "Felsige Atlantikküste im Acadia-Nationalpark"],
@@ -38,7 +39,38 @@ const selections = [
   ["wadi-rum", "Wadi Rum 03.jpg", "Sandstone landscape in Wadi Rum, Jordan", "Sandsteinlandschaft im Wadi Rum in Jordanien"],
   ["jaisalmer", "Sam dunes (Jaisalmer).jpg", "Sand dunes near Jaisalmer", "Sanddünen bei Jaisalmer"],
   ["aenos", "Mount Ainos in Kefalonia Greece.jpg", "Mount Ainos above Kefalonia, Greece", "Mount Ainos über Kefalonia in Griechenland"],
-].map(([destinationSlug, fileTitle, altEn, altDe]) => ({ destinationSlug, fileTitle, alt: { en: altEn, de: altDe } }));
+];
+
+const expansionSelections = [
+  ["central-idaho", "Sawtooth Valley ID1.jpg", "The Sawtooth Valley and mountain skyline in central Idaho", "Das Sawtooth Valley und die Bergsilhouette in Zentral-Idaho"],
+  ["cosmic-campground", "View at Cosmic CG (23887529197).jpg", "Open horizon at Cosmic Campground in New Mexico", "Freier Horizont am Cosmic Campground in New Mexico"],
+  ["flagstaff", "The San Francisco peaks of flagstaff.jpg", "The San Francisco Peaks above Flagstaff, Arizona", "Die San Francisco Peaks über Flagstaff in Arizona"],
+  ["watoga", "Watoga State Park.jpg", "Forest and lake landscape in Watoga State Park", "Wald- und Seenlandschaft im Watoga State Park"],
+  ["mesa-verde", "Sunset at Mesa Verde - panoramio.jpg", "Sunset over the mesas of Mesa Verde National Park", "Sonnenuntergang über den Tafelbergen des Mesa-Verde-Nationalparks"],
+  ["chaco-culture", "Chaco Culture National Historical Park-27.jpg", "Desert landscape and ancestral structures at Chaco Culture", "Wüstenlandschaft und historische Pueblo-Bauten in Chaco Culture"],
+  ["craters-of-the-moon", "Craters of the Moon National Monument - Idaho (14562760344).jpg", "Lava landscape in Craters of the Moon National Monument", "Lavalandschaft im Craters of the Moon National Monument"],
+  ["antelope-island", "Antelope Island State Park, Utah71.jpg", "Open landscape on Antelope Island in Utah", "Offene Landschaft auf Antelope Island in Utah"],
+  ["pic-du-midi", "Observatoire du Pic du Midi.jpg", "Pic du Midi observatory above the Pyrenees", "Das Observatorium Pic du Midi über den Pyrenäen"],
+  ["cevennes", "Landscape of Cevennes 01.jpg", "Mountain landscape in the Cévennes", "Berglandschaft in den Cevennen"],
+  ["alpes-azur-mercantour", "Le Mercantour - Flickr - loutraje.jpg", "Mountain landscape in Mercantour National Park", "Berglandschaft im Mercantour-Nationalpark"],
+  ["rhoen", "Blick vom Wachtküppel nach Nordosten.jpg", "Long view across the Rhön from Wachtküppel", "Weiter Blick vom Wachtküppel über die Rhön"],
+  ["winklmoosalm", "GER — BY — Landkreis Traunstein — Reit im Winkl — Winklmoos-Alm (Ausblick südlich).JPG", "Southern mountain view from Winklmoos-Alm", "Südlicher Bergblick von der Winklmoos-Alm"],
+  ["lauwersmeer", "Dark Sky Park Lauwersmeer Nationaal Park Ballastplaatbos Suyderoogh 5.jpg", "Observation platform and woodland in Lauwersmeer Dark Sky Park", "Beobachtungsplattform und Wald im Dark Sky Park Lauwersmeer"],
+  ["de-boschplaat", "Boschplaat Terschelling bij vloed 1991.jpg", "The Boschplaat nature reserve on Terschelling at high tide", "Das Naturschutzgebiet Boschplaat auf Terschelling bei Flut"],
+  ["mon-and-nyord", "Nyord - panoramio (1).jpg", "Open coastal landscape on Nyord near Møn", "Offene Küstenlandschaft auf Nyord bei Møn"],
+  ["bukk", "Bél-kő kilátás.jpg", "View across Bükk National Park from Bél-kő", "Blick vom Bél-kő über den Bükk-Nationalpark"],
+  ["albanya", "Albanyà 2014 07 25 01 M8.jpg", "Mountain landscape around Albanyà in Catalonia", "Berglandschaft rund um Albanyà in Katalonien"],
+  ["iriomote-ishigaki", "名蔵湾 - panoramio.jpg", "Nagura Bay and mangrove landscape in Iriomote-Ishigaki National Park", "Nagura Bay und Mangrovenlandschaft im Iriomote-Ishigaki-Nationalpark"],
+  ["kozushima", "Mount Nijurokuya Urui Island.jpg", "Mountain and ocean view on Kōzushima", "Berg- und Meerblick auf Kōzushima"],
+  ["bulbjerg", "Bulbjerg (74).jpg", "The limestone cliff and coast at Bulbjerg", "Kalksteinklippe und Küste bei Bulbjerg"],
+  ["bisei", "2024-03-18 美星天文台の外観.png", "Bisei Astronomical Observatory in Okayama", "Das Bisei Astronomical Observatory in Okayama"],
+  ["minami-rokuroshi", "Rokuroshi Plateau.JPG", "Open landscape on the Rokuroshi Plateau", "Offene Landschaft auf dem Rokuroshi-Plateau"],
+  ["lapalala", "Lapalala Wilderness.jpg", "Bushveld landscape in Lapalala Wilderness", "Bushveld-Landschaft in der Lapalala Wilderness"],
+  ["om-dark-sky", "Isle of Man Landscape.jpg", "Coastal uplands on the Isle of Man", "Küstenhochland auf der Isle of Man"],
+];
+
+const selections = (expansion ? expansionSelections : originalSelections)
+  .map(([destinationSlug, fileTitle, altEn, altDe]) => ({ destinationSlug, fileTitle, alt: { en: altEn, de: altDe } }));
 
 function decode(value = "") {
   return value
@@ -149,6 +181,11 @@ try {
   }
 
   if (!dryRun) {
+    const auditPath = path.join(root, "data-config/sources/destination-image-audit-2026-09-08.json");
+    const previousCandidates = expansion && fs.existsSync(auditPath)
+      ? JSON.parse(fs.readFileSync(auditPath, "utf8")).candidates ?? []
+      : [];
+    const combinedCandidates = [...previousCandidates.filter((candidate) => !auditCandidates.some((next) => next.destinationSlug === candidate.destinationSlug)), ...auditCandidates];
     const audit = {
       version: 1,
       generatedAt: `${reviewedAt}T00:00:00.000Z`,
@@ -161,12 +198,12 @@ try {
         reviewedAt,
         reviewedBy: "Codex",
         status: "approved-for-publication",
-        visualReviewCount: selections.length,
-        metadataVerificationCount: selections.length,
+        visualReviewCount: combinedCandidates.length,
+        metadataVerificationCount: combinedCandidates.length,
       },
-      candidates: auditCandidates,
+      candidates: combinedCandidates,
     };
-    fs.writeFileSync(path.join(root, "data-config/sources/destination-image-audit-2026-09-08.json"), `${JSON.stringify(audit, null, 2)}\n`);
+    fs.writeFileSync(auditPath, `${JSON.stringify(audit, null, 2)}\n`);
     fs.writeFileSync(destinationImagesPath, `${JSON.stringify(destinationImages, null, 2)}\n`);
   }
 } finally {
