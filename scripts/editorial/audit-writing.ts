@@ -16,6 +16,7 @@ const bannedPhrases = [
 ];
 const normalize = (value: string) => value.toLocaleLowerCase("en").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
 const prefix = (value: string, count = 12) => normalize(value).split(" ").slice(0, count).join(" ");
+const sentences = (value: string) => value.match(/[^.!?]+[.!?]+(?:[”'"])?|[^.!?]+$/g)?.map((sentence) => sentence.trim()).filter(Boolean) ?? [];
 const units: TextUnit[] = [];
 const add = (corpus: Corpus, slug: string, locale: Locale, field: string, value: string) => units.push({ corpus, slug, locale, field, value });
 
@@ -29,6 +30,7 @@ for (const guide of destinations) for (const locale of ["en", "de"] as const) {
   }
   add("destination", guide.slug, locale, "tour:title", guide.tour.title[locale]);
   add("destination", guide.slug, locale, "tour:summary", guide.tour.summary[locale]);
+  add("destination", guide.slug, locale, "tour:suitability", guide.tour.suitability[locale]);
   for (const step of guide.tour.steps) add("destination", guide.slug, locale, `tour-step:${step.id}`, step.body[locale]);
   for (const note of guide.fieldNotes) add("destination", guide.slug, locale, `field-note:${note.id}`, note.body[locale]);
   for (const item of guide.faq) add("destination", guide.slug, locale, `faq:${item.question.en}`, item.answer[locale]);
@@ -41,6 +43,7 @@ for (const tour of tours) for (const locale of ["en", "de"] as const) {
     add("location-tour", tour.slug, locale, `heading:${block.id}`, block.heading[locale]);
     if (block.kind === "prose") block.paragraphs[locale].forEach((value, index) => add("location-tour", tour.slug, locale, `paragraph:${block.id}:${index}`, value));
     if (block.kind === "note") add("location-tour", tour.slug, locale, `note:${block.id}`, block.body[locale]);
+    if (block.kind === "schedule" && block.introduction) add("location-tour", tour.slug, locale, `introduction:${block.id}`, block.introduction[locale]);
     if (block.kind === "schedule" || block.kind === "decisions") for (const [index, item] of block.items.entries()) add("location-tour", tour.slug, locale, `item:${block.id}:${index}`, item.body[locale]);
   }
 }
@@ -73,6 +76,15 @@ const repeated = (selector: (unit: TextUnit) => string, minimumLength: number) =
 };
 const duplicateExact = repeated((unit) => normalize(unit.value), 80);
 const repeatedOpenings = repeated((unit) => prefix(unit.value), 45).filter((group) => group.occurrences.every((item) => !item.field.startsWith("heading")));
+const sentenceGroups = new Map<string, TextUnit[]>();
+for (const unit of units) for (const sentence of sentences(unit.value)) {
+  if (normalize(sentence).split(" ").length < 12) continue;
+  const key = `${unit.locale}:${normalize(sentence)}`;
+  sentenceGroups.set(key, [...(sentenceGroups.get(key) ?? []), unit]);
+}
+const duplicateSentences = [...sentenceGroups.entries()]
+  .filter(([, values]) => new Set(values.map((value) => `${value.corpus}:${value.slug}:${value.field}`)).size > 1)
+  .map(([fingerprint, values]) => ({ fingerprint, occurrences: values }));
 const destinationSignatures = new Map<string, string[]>();
 for (const guide of destinations) {
   const signature = guide.sections.map((section) => section.id).join(" > ");
@@ -81,6 +93,7 @@ for (const guide of destinations) {
 const repeatedStructures = [...destinationSignatures.entries()].filter(([, slugs]) => slugs.length > 1).sort((a, b) => b[1].length - a[1].length);
 const destinationHardFailures = banned.some((item) => item.corpus === "destination")
   || duplicateExact.some((group) => group.occurrences.some((item) => item.corpus === "destination"))
+  || duplicateSentences.some((group) => group.occurrences.some((item) => item.corpus === "destination"))
   || repeatedStructures.length > 0;
 const corpusSummary = (["destination", "location-tour", "gear"] as const).map((corpus) => ({
   corpus,
@@ -105,15 +118,17 @@ const lines = [
   "## Findings",
   "",
   `- Exact cross-page duplicate passages: ${duplicateExact.length}`,
+  `- Exact cross-page duplicate sentences of twelve or more words: ${duplicateSentences.length}`,
   `- Repeated twelve-word openings across pages: ${repeatedOpenings.length}`,
   `- The repeated openings are ${repeatedOpenings.every((group) => group.occurrences.every((item) => item.corpus === "gear" && /published|veröffentlicht/.test(item.value))) ? "limited to factual published-specification labels in gear comparison bullets" : "not limited to factual gear labels and require prose review"}.`,
   `- Repeated destination section-ID sequences: ${repeatedStructures.length}`,
-  `- The new location-tour corpus ${banned.some((item) => item.corpus === "location-tour") || duplicateExact.some((group) => group.occurrences.some((item) => item.corpus === "location-tour")) ? "needs correction" : "passes the hard phrase and exact-duplication checks"}.`,
+  `- The new location-tour corpus ${banned.some((item) => item.corpus === "location-tour") || duplicateExact.some((group) => group.occurrences.some((item) => item.corpus === "location-tour")) || duplicateSentences.some((group) => group.occurrences.some((item) => item.corpus === "location-tour")) ? "needs correction" : "passes the hard phrase and exact-duplication checks"}.`,
   "",
   "## Highest-priority existing patterns",
   "",
   ...repeatedStructures.slice(0, 10).map(([signature, slugs]) => `- ${slugs.length} destination guides share the section-ID sequence \`${signature}\`: ${slugs.join(", ")}.`),
   ...banned.slice(0, 20).map((item) => `- ${item.corpus}/${item.slug} (${item.locale}, ${item.field}) contains \`${item.phrase}\`.`),
+  ...duplicateSentences.slice(0, 20).map((group) => `- Repeated sentence \`${group.fingerprint}\`: ${group.occurrences.map((item) => `${item.corpus}/${item.slug} (${item.field})`).join("; ")}.`),
   ...repeatedOpenings.map((group) => `- Repeated opening \`${group.fingerprint}\`: ${group.occurrences.map((item) => `${item.corpus}/${item.slug} (${item.field})`).join("; ")}.`),
   "",
   "## Editorial decision",
