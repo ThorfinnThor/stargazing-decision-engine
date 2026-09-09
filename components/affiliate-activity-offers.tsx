@@ -1,3 +1,4 @@
+import { buildGetYourGuideWidgetModel, GetYourGuideActivitiesWidget } from "@/components/getyourguide-activities-widget";
 import { affiliateRel } from "@/lib/affiliate/affiliate";
 import { loadAffiliateActivityOffers, loadDestinations } from "@/lib/data/load";
 import type { Locale } from "@/lib/i18n/config";
@@ -11,6 +12,9 @@ export function AffiliateActivityOffers({ destinationId, locationTourSlug, local
   ));
   const stargazingOffers = offers.filter((offer) => offer.kind === "stargazing");
   const regionalOffers = offers.filter((offer) => offer.kind === "regional");
+  const getYourGuideWidget = buildGetYourGuideWidgetModel(stargazingOffers, locale);
+  const widgetOfferIds = new Set(getYourGuideWidget?.offerIds ?? []);
+  const cardStargazingOffers = stargazingOffers.filter((offer) => !widgetOfferIds.has(offer.id));
   const hasDirectStargazing = stargazingOffers.length > 0;
   const sectionId = locationTourSlug ?? destinationId;
 
@@ -43,7 +47,8 @@ export function AffiliateActivityOffers({ destinationId, locationTourSlug, local
           ? "Diese konkreten Touren passen zum Reiseziel und zum Thema. Termine, Treffpunkt, Sprache und Stornierung prüfst du vor der Buchung beim Anbieter."
           : "These specific tours match the destination and subject. Confirm dates, meeting point, language, and cancellation terms before booking."}</p>
       </header>
-      {renderOffers(stargazingOffers, "stargazing")}
+      {getYourGuideWidget ? <GetYourGuideActivitiesWidget model={getYourGuideWidget} /> : null}
+      {cardStargazingOffers.length > 0 ? renderOffers(cardStargazingOffers, "stargazing") : null}
     </section> : null}
     {!hasDirectStargazing ? <aside className="affiliate-offer-status" aria-labelledby={`affiliate-no-stargazing-title-${sectionId}`}>
       <div>

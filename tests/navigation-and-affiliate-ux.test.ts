@@ -20,14 +20,19 @@ test("homepage destination filters expose practical travel choices without a bui
   assert.match(filter, /Minimum score/);
 });
 
-test("destination pages render only individually curated activity offers", () => {
+test("destination pages render only individually curated activity offers and widgets", () => {
   const modules = read("components/affiliate-destination-modules.tsx");
+  const offers = read("components/affiliate-activity-offers.tsx");
+  const widget = read("components/getyourguide-activities-widget.tsx");
   const partners = JSON.parse(read("data-config/sources/affiliate-partners.json"));
-  assert.doesNotMatch(modules, /AffiliateDestinationSearches|GetYourGuideActivitiesWidget/);
+  assert.doesNotMatch(modules, /AffiliateDestinationSearches/);
+  assert.match(offers, /GetYourGuideActivitiesWidget/);
+  assert.match(widget, /data-gyg-tour-ids/);
+  assert.doesNotMatch(widget, /data-gyg-widget="auto"|data-gyg-q/);
   for (const partner of partners.partners.filter((entry: { type: string }) => entry.type === "activity")) {
     assert.equal(partner.destinationSearchEnabled, false);
-    if (partner.widget) assert.equal(partner.widget.enabled, false);
   }
+  assert.equal(partners.partners.find((entry: { id: string }) => entry.id === "getyourguide-activities").widget.enabled, true);
 });
 
 test("long destination and tour content uses progressive disclosure without changing gear guides", () => {
@@ -66,6 +71,7 @@ test("curated activity links open in new tabs and public pages share the compact
   assert.match(activityOffers, /View tour on/);
   assert.match(activityOffers, /View activity on/);
   assert.match(activityOffers, /opens in a new tab/);
+  assert.match(activityOffers, /cardStargazingOffers/);
   assert.match(styles, /\.affiliate-stargazing-offers[\s\S]*?border-color: rgb\(233 196 106 \/ 48%\)/);
   assert.match(styles, /\.affiliate-offer-status[\s\S]*?border-left: 3px solid/);
   assert.match(styles, /--type-page-title: clamp\(2\.3rem, 4vw, 3\.75rem\)/);

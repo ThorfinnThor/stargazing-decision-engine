@@ -1,6 +1,7 @@
 import type { AffiliateActivityOffer, AffiliateActivityOfferConfig, AffiliateConfig, AffiliatePartner, AstroshopProductMatch, Destination, GearGuide, GearGuideItem, LocationTour } from "../data/types.js";
 
 const partnerTypes = new Set(["hotel", "activity", "camping", "car_rental", "gear"]);
+const getYourGuideHosts = new Set(["getyourguide.com", "www.getyourguide.com"]);
 
 export function affiliatePartnerId(partner: AffiliatePartner) {
   const key = `AFFILIATE_${partner.id.replace(/[^A-Za-z0-9]/g, "_").toUpperCase()}_ID`;
@@ -9,6 +10,13 @@ export function affiliatePartnerId(partner: AffiliatePartner) {
 
 export function hostAllowed(host: string, allowedHosts: string[]) {
   return allowedHosts.map((value) => value.toLowerCase()).includes(host.toLowerCase());
+}
+
+export function getGetYourGuideActivityId(rawUrl: string) {
+  let parsed: URL;
+  try { parsed = new URL(rawUrl); } catch { return null; }
+  if (parsed.protocol !== "https:" || !getYourGuideHosts.has(parsed.hostname.toLowerCase())) return null;
+  return parsed.pathname.match(/-t(\d+)\/?$/)?.[1] ?? null;
 }
 
 function parseAffiliateTemplate(partner: AffiliatePartner, template: string, label: string) {
@@ -88,6 +96,10 @@ export function validateAffiliateActivityOffers(config: AffiliateActivityOfferCo
     }
     parseAffiliateTemplate(partner, offer.urlTemplate, offer.id);
     if (offer.enabled && !partner.enabled) throw new Error(`${offer.id}: enabled offer requires an enabled partner`);
+    if (offer.enabled && partner.id === "getyourguide-activities" && (offer.kind ?? "stargazing") === "stargazing" && partner.widget?.enabled) {
+      const resolvedUrl = buildAffiliateActivityUrl(partners, offer);
+      if (!resolvedUrl || !getGetYourGuideActivityId(resolvedUrl)) throw new Error(`${offer.id}: enabled GetYourGuide widget offer must use a direct activity URL ending in -t<id>`);
+    }
   }
 }
 

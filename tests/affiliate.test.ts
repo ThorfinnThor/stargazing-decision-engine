@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import test from "node:test";
 
-import { buildAffiliateActivityUrl, buildAffiliatePartnerUrl, buildAffiliateUrl, buildAstroshopProductUrl, validateAffiliateActivityOffers, validateAffiliateConfig, validateAstroshopProductMatches } from "../lib/affiliate/affiliate.js";
+import { buildAffiliateActivityUrl, buildAffiliatePartnerUrl, buildAffiliateUrl, buildAstroshopProductUrl, getGetYourGuideActivityId, validateAffiliateActivityOffers, validateAffiliateConfig, validateAstroshopProductMatches } from "../lib/affiliate/affiliate.js";
 import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch, Destination, GearGuide, LocationTour, PublishedAffiliateActivityOffer } from "../lib/data/types.js";
 
 const destination: Destination = {
@@ -183,6 +183,13 @@ test("curated GetYourGuide links retain partner and campaign tracking", () => {
   assert.ok(url);
   assert.equal(new URL(url).searchParams.get("partner_id"), "BKWM9K1");
   assert.equal(new URL(url).searchParams.get("cmp"), "Stargazing");
+});
+
+test("GetYourGuide activity IDs are read only from direct product URLs", () => {
+  assert.equal(getGetYourGuideActivityId("https://www.getyourguide.com/la-palma-l417/example-t683919/?partner_id=BKWM9K1"), "683919");
+  assert.equal(getGetYourGuideActivityId("https://www.getyourguide.com/s?partner_id=BKWM9K1&lc=417"), null);
+  assert.equal(getGetYourGuideActivityId("https://example.com/example-t683919/"), null);
+  assert.equal(getGetYourGuideActivityId("not-a-url"), null);
 });
 
 test("curated activity links reject missing provider tracking parameters", () => {
