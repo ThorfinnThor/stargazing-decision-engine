@@ -3,7 +3,7 @@ import { readFileSync } from "node:fs";
 import test from "node:test";
 
 import { buildAffiliateActivityUrl, buildAffiliatePartnerUrl, buildAffiliateUrl, buildAstroshopProductUrl, getGetYourGuideActivityId, validateAffiliateActivityOffers, validateAffiliateConfig, validateAstroshopProductMatches } from "../lib/affiliate/affiliate.js";
-import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch, Destination, GearGuide, LocationTour, PublishedAffiliateActivityOffer } from "../lib/data/types.js";
+import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch, Destination, GearGuide, LocationTour, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, StayArea } from "../lib/data/types.js";
 
 const destination: Destination = {
   id: "destination", slug: "destination", name: "Destination", countryCode: "DE", countryName: "Germany", continent: "Europe", regionSlugs: [], timezone: "Europe/Berlin", active: true, priority: 1, tags: [], observationSiteIds: [], stayAreaIds: [], affiliateQuery: "Monsaraz & Alqueva",
@@ -86,6 +86,64 @@ test("enabled affiliate URLs are encoded and host allow-listed", () => {
   assert.equal(parsed.hostname, "booking.com");
   assert.equal(parsed.searchParams.get("ss"), "Monsaraz & Alqueva");
   assert.equal(parsed.searchParams.get("aid"), "abc123");
+});
+
+test("Booking.com destination searches preserve the CJ click ID, per-destination SID, and encoded target", () => {
+  const partners = JSON.parse(source("data-config/sources/affiliate-partners.json")) as AffiliateConfig;
+  const laPalma = { ...destination, id: "la-palma", slug: "la-palma", affiliateQuery: "La Palma, Canary Islands, Spain" };
+  validateAffiliateConfig(partners);
+  const url = buildAffiliateUrl(partners, "booking-stay-search", laPalma);
+  assert.ok(url);
+  const click = new URL(url);
+  assert.equal(click.protocol, "https:");
+  assert.equal(click.hostname, "www.jdoqocy.com");
+  assert.equal(click.pathname, "/click-101879720-15734849");
+  assert.equal(click.searchParams.get("sid"), "stargazingindex-la-palma");
+  assert.match(url, /La%2520Palma%252C%2520Canary%2520Islands%252C%2520Spain/);
+  const target = new URL(click.searchParams.get("url") ?? "");
+  assert.equal(target.hostname, "www.booking.com");
+  assert.equal(target.pathname, "/searchresults.html");
+  assert.equal(target.searchParams.get("ss"), "La Palma, Canary Islands, Spain");
+});
+
+test("nested affiliate destination targets must use an allow-listed HTTPS host", () => {
+  const invalid: AffiliateConfig = {
+    version: 1,
+    partners: [{
+      id: "stay-search", name: "Stay Search", type: "hotel", enabled: true, affiliateId: "click-id", destinationSearchEnabled: true,
+      urlTemplate: "https://tracking.example/click-{affiliateId}?sid={destinationSlug}&url={destinationUrl}",
+      destinationUrlTemplate: "https://evil.example/search?ss={query}",
+      allowedHosts: ["tracking.example", "booking.com"], requiredQueryParameters: ["sid", "url"], disclosure: { en: "Disclosure", de: "Hinweis" },
+    }],
+  };
+  assert.throws(() => validateAffiliateConfig(invalid), /destination URL host is not allow-listed/i);
+});
+
+test("all published Booking.com searches use the primary recorded stay area and a unique destination SID", () => {
+  const destinations = JSON.parse(source("data-config/sources/destinations.json")) as Destination[];
+  const stayAreas = JSON.parse(source("data-config/sources/stay-areas.json")) as StayArea[];
+  const stayAreaById = new Map(stayAreas.map((stayArea) => [stayArea.id, stayArea]));
+  const published = JSON.parse(source("public/data/stargazing/affiliate/destination-searches.json")) as PublishedAffiliateDestinationSearch[];
+  const bookingSearches = published.filter((search) => search.partnerId === "booking-stay-search");
+  const activeDestinations = destinations.filter((item) => item.active);
+
+  assert.equal(bookingSearches.length, activeDestinations.length);
+  assert.equal(new Set(bookingSearches.map((search) => search.destinationId)).size, activeDestinations.length);
+  for (const destinationItem of activeDestinations) {
+    const primaryStayArea = destinationItem.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
+    assert.ok(primaryStayArea, `${destinationItem.id} needs a primary stay area`);
+    const html = source(`public/go/booking-stay-search/${destinationItem.slug}/index.html`);
+    const match = html.match(/location\.replace\("([^"]+)"\)/);
+    assert.ok(match, `${destinationItem.id} needs a static Booking.com redirect`);
+    const click = new URL(match[1]);
+    assert.equal(click.hostname, "www.jdoqocy.com");
+    assert.equal(click.pathname, "/click-101879720-15734849");
+    assert.equal(click.searchParams.get("sid"), `stargazingindex-${destinationItem.slug}`);
+    const booking = new URL(click.searchParams.get("url") ?? "");
+    assert.equal(booking.hostname, "www.booking.com");
+    assert.equal(booking.pathname, "/searchresults.html");
+    assert.equal(booking.searchParams.get("ss"), primaryStayArea.affiliateQuery);
+  }
 });
 
 test("destination search variants produce distinct stargazing and general Viator searches", () => {
@@ -340,7 +398,8 @@ test("affiliate disclosures appear only with rendered affiliate integrations", (
 
   const destinationModules = source("components/affiliate-destination-modules.tsx");
   assert.equal((destinationModules.match(/<AffiliateDisclosure id=\{disclosureId\} locale=\{locale\}/g) ?? []).length, 1);
-  assert.match(destinationModules, /hasOffers \? <AffiliateDisclosure id=\{disclosureId\} locale=\{locale\} \/> : null/);
+  assert.match(destinationModules, /hasAffiliateContent \? <AffiliateDisclosure id=\{disclosureId\} locale=\{locale\} \/> : null/);
   assert.match(destinationModules, /disclosureId=\{hasOffers \? disclosureId : undefined\}/);
+  assert.match(destinationModules, /<AffiliateStaySearch destinationId=\{destinationId\}/);
   assert.ok(destinationModules.indexOf("<AffiliateDisclosure") < destinationModules.indexOf("<AffiliateActivityOffers"));
 });

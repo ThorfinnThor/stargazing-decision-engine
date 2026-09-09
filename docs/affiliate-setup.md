@@ -6,10 +6,23 @@ Curated product cards additionally require an enabled, reviewed offer. Partner s
 links live in `data-config/sources/affiliate-activity-offers.json`.
 
 An enabled destination-search partner may also define
-`destinationSearchVariants`. The Viator configuration currently builds two
-static searches for every active destination: a stargazing query and a broader
-destination-activity query. These are search links, not reviewed product
+`destinationSearchVariants`. Search links are not reviewed product
 recommendations, and the interface labels that distinction explicitly.
+
+## Booking.com accommodation searches
+
+Booking.com accommodation links use the account's CJ evergreen click link. The
+configured click identifier is public tracking metadata, not a password or API
+key. Each active destination receives a static redirect with a distinct
+`sid=stargazingindex-{destination-slug}` value. The nested Booking.com target is
+encoded inside CJ's `url` parameter and searches the destination's primary
+stay area rather than a broad stargazing keyword.
+
+The accommodation block is intentionally a search CTA, not a hotel
+recommendation or a claim about live inventory. It reminds readers to check the
+night-time drive from a property to the selected observing site. Links open in
+a new tab and the affiliate disclosure appears before the first affiliate
+module on the page.
 
 ## Viator and GetYourGuide activity links
 
@@ -35,6 +48,7 @@ with the environment value taking precedence:
 ```text
 AFFILIATE_VIATOR_ACTIVITIES_ID
 AFFILIATE_GETYOURGUIDE_ACTIVITIES_ID
+AFFILIATE_BOOKING_STAY_SEARCH_ID
 ```
 
 These IDs are public tracking identifiers rather than credentials; they are
@@ -100,7 +114,7 @@ resolve to a complete current product page on the provider's own domain.
 
 The site remains statically generated. Only the third-party widget contents are
 loaded in the browser. If the GetYourGuide script is blocked, the editorial
-guide, static Viator searches, and reviewed offer links remain usable.
+guide, Booking.com accommodation search, and reviewed offer links remain usable.
 
 An activity becomes visible only when both its partner and its offer are set to
 `enabled: true`. Until then the destination and location-tour components return
@@ -117,8 +131,9 @@ endpoint and no request parameter can select an outbound URL.
 Build validation rejects unknown partners, destination/tour mismatches,
 non-HTTPS targets, hosts outside the partner allowlist, missing tracking
 parameters, and enabled records without a build-time affiliate ID. The public
-offer JSON contains only display copy and the internal redirect path, never the
-external target URL.
+destination-search JSON contains only partner metadata and the internal
+redirect path. Curated activity data also exposes its reviewed direct provider
+URL because the GetYourGuide analyzer and manual widget require it.
 
 Rendered links use `rel="sponsored nofollow"`, each card says that it is an
 affiliate link, and redirect pages are marked `noindex,nofollow`. Affiliate

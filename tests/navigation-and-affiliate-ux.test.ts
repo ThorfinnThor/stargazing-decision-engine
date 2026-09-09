@@ -25,7 +25,7 @@ test("destination pages render only individually curated activity offers and wid
   const offers = read("components/affiliate-activity-offers.tsx");
   const widget = read("components/getyourguide-activities-widget.tsx");
   const partners = JSON.parse(read("data-config/sources/affiliate-partners.json"));
-  assert.doesNotMatch(modules, /AffiliateDestinationSearches/);
+  assert.doesNotMatch(modules, /<AffiliateDestinationSearches/);
   assert.match(offers, /GetYourGuideActivitiesWidget/);
   assert.match(widget, /data-gyg-tour-ids/);
   assert.doesNotMatch(widget, /data-gyg-widget="auto"|data-gyg-q/);
@@ -79,6 +79,23 @@ test("curated activity links open in new tabs and public pages share the compact
   assert.match(styles, /\.hero-copy h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
   assert.match(styles, /\.event-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
   assert.match(styles, /\.finder-header h1 \{[\s\S]*?font-size: var\(--type-page-title\)/);
+});
+
+test("Booking.com accommodation searches are destination-specific and open in a new tab", () => {
+  const modules = read("components/affiliate-destination-modules.tsx");
+  const staySearch = read("components/affiliate-stay-search.tsx");
+  const partners = JSON.parse(read("data-config/sources/affiliate-partners.json"));
+  const booking = partners.partners.find((entry: { id: string }) => entry.id === "booking-stay-search");
+
+  assert.equal(booking.enabled, true);
+  assert.match(booking.urlTemplate, /sid=stargazingindex-\{destinationSlug\}/);
+  assert.match(booking.urlTemplate, /\{destinationUrl\}/);
+  assert.match(booking.destinationUrlTemplate, /booking\.com\/searchresults\.html\?ss=\{query\}/);
+  assert.match(modules, /<AffiliateStaySearch/);
+  assert.match(staySearch, /href=\{search\.redirectPath\}/);
+  assert.match(staySearch, /target="_blank"/);
+  assert.match(staySearch, /affiliateRel\(\)/);
+  assert.match(staySearch, /opens in a new tab/);
 });
 
 test("public content does not display editorial review bylines", () => {

@@ -21,7 +21,12 @@ export function getGetYourGuideActivityId(rawUrl: string) {
 
 function parseAffiliateTemplate(partner: AffiliatePartner, template: string, label: string) {
   if (!template.includes("{affiliateId}")) throw new Error(`${label}: URL template must include {affiliateId}`);
-  const sample = template.replaceAll("{query}", "Sample%20destination").replaceAll("{affiliateId}", "sample-id");
+  const sample = template
+    .replaceAll("{query}", "Sample%20destination")
+    .replaceAll("{destinationSlug}", "sample-destination")
+    .replaceAll("{destinationUrl}", encodeURIComponent("https://www.booking.com/searchresults.html?ss=Sample%20destination"))
+    .replaceAll("{affiliateId}", "sample-id");
+  if (sample.includes("{")) throw new Error(`${label}: URL template contains an unsupported placeholder`);
   let parsed: URL;
   try { parsed = new URL(sample); } catch { throw new Error(`${label}: URL template is not a valid absolute URL`); }
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) throw new Error(`${label}: URL host is not allow-listed HTTPS`);
@@ -43,7 +48,18 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
     if (partner.requiredQueryParameters.some((parameter) => !/^[A-Za-z0-9_-]+$/.test(parameter))) throw new Error(`${partner.id}: invalid required query parameter`);
     if (!partner.disclosure.en.trim() || !partner.disclosure.de.trim()) throw new Error(`${partner.id}: bilingual disclosure is required`);
     if (partner.destinationSearchEnabled) {
-      if (!partner.urlTemplate?.includes("{query}")) throw new Error(`${partner.id}: destination-search URL template must include {query}`);
+      if (!partner.urlTemplate || (!partner.urlTemplate.includes("{query}") && !partner.urlTemplate.includes("{destinationUrl}"))) throw new Error(`${partner.id}: destination-search URL template must include {query} or {destinationUrl}`);
+      if (partner.destinationUrlTemplate) {
+        if (!partner.urlTemplate.includes("{destinationUrl}")) throw new Error(`${partner.id}: destination URL template requires {destinationUrl} in the affiliate URL template`);
+        if (!partner.destinationUrlTemplate.includes("{query}")) throw new Error(`${partner.id}: destination URL template must include {query}`);
+        const nestedSample = partner.destinationUrlTemplate.replaceAll("{query}", "Sample%20destination");
+        if (nestedSample.includes("{")) throw new Error(`${partner.id}: destination URL template contains an unsupported placeholder`);
+        let nestedUrl: URL;
+        try { nestedUrl = new URL(nestedSample); } catch { throw new Error(`${partner.id}: destination URL template is not a valid absolute URL`); }
+        if (nestedUrl.protocol !== "https:" || !hostAllowed(nestedUrl.hostname, partner.allowedHosts)) throw new Error(`${partner.id}: destination URL host is not allow-listed HTTPS`);
+      } else if (partner.urlTemplate.includes("{destinationUrl}")) {
+        throw new Error(`${partner.id}: {destinationUrl} requires a destination URL template`);
+      }
       parseAffiliateTemplate(partner, partner.urlTemplate, partner.id);
       const variantIds = new Set<string>();
       for (const variant of partner.destinationSearchVariants ?? []) {
@@ -54,6 +70,8 @@ export function validateAffiliateConfig(config: AffiliateConfig) {
       }
     } else if (partner.urlTemplate !== null && partner.type !== "gear") {
       throw new Error(`${partner.id}: curated-only partner must not define a destination-search URL template`);
+    } else if (partner.destinationUrlTemplate) {
+      throw new Error(`${partner.id}: disabled destination search must not define a destination URL template`);
     } else if ((partner.destinationSearchVariants?.length ?? 0) > 0) {
       throw new Error(`${partner.id}: disabled destination search must not define variants`);
     }
@@ -117,10 +135,23 @@ export function buildAffiliateUrl(config: AffiliateConfig, partnerId: string, de
   const affiliateId = affiliatePartnerId(partner);
   if (partner.urlTemplate.includes("{affiliateId}") && !affiliateId) return null;
   const query = variant ? variant.queryTemplate.replaceAll("{query}", destination.affiliateQuery) : destination.affiliateQuery;
-  const rawUrl = partner.urlTemplate.replaceAll("{query}", encodeURIComponent(query)).replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
+  let destinationUrl = "";
+  if (partner.destinationUrlTemplate) {
+    destinationUrl = partner.destinationUrlTemplate.replaceAll("{query}", encodeURIComponent(query));
+    let nested: URL;
+    try { nested = new URL(destinationUrl); } catch { return null; }
+    if (nested.protocol !== "https:" || !hostAllowed(nested.hostname, partner.allowedHosts)) return null;
+    destinationUrl = nested.toString();
+  }
+  const rawUrl = partner.urlTemplate
+    .replaceAll("{query}", encodeURIComponent(query))
+    .replaceAll("{destinationSlug}", encodeURIComponent(destination.slug))
+    .replaceAll("{destinationUrl}", encodeURIComponent(destinationUrl))
+    .replaceAll("{affiliateId}", encodeURIComponent(affiliateId));
   let parsed: URL;
   try { parsed = new URL(rawUrl); } catch { return null; }
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
+  if (partner.requiredQueryParameters.some((parameter) => !parsed.searchParams.has(parameter))) return null;
   return parsed.toString();
 }
 

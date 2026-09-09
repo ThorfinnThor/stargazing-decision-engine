@@ -632,6 +632,7 @@ h1 span {
 
 .affiliate-disclosure + .affiliate-activity-offers,
 .affiliate-disclosure + .affiliate-destination-searches,
+.affiliate-disclosure + .affiliate-stay-search,
 .affiliate-disclosure + .getyourguide-activities-widget {
   margin-top: 1rem;
 }
@@ -818,6 +819,63 @@ h1 span {
   border-color: #fff;
   background: #fff;
   color: var(--night);
+}
+
+.affiliate-stay-search {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.72fr) minmax(20rem, 1.28fr);
+  gap: 1rem clamp(2rem, 6vw, 6rem);
+  max-width: 78rem;
+  margin: clamp(3rem, 7vw, 6rem) auto;
+  padding: clamp(1.4rem, 3vw, 2.25rem);
+  border: 1px solid rgb(233 196 106 / 34%);
+  background: linear-gradient(145deg, rgb(55 43 20 / 25%), rgb(9 15 31 / 62%));
+}
+
+.affiliate-stay-search .eyebrow { margin: 0 0 0.6rem; }
+
+.affiliate-stay-search h2 {
+  margin: 0;
+  color: #fff;
+  font: 400 clamp(1.45rem, 2.3vw, 2.1rem)/1.08 Georgia, "Times New Roman", serif;
+  letter-spacing: -0.035em;
+  text-wrap: balance;
+}
+
+.affiliate-stay-search-copy {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.affiliate-stay-search-copy p {
+  max-width: 48rem;
+  margin: 0;
+  color: #d9deea;
+  font-size: 0.88rem;
+  line-height: 1.62;
+}
+
+.affiliate-stay-search a {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.68rem 0.82rem;
+  border: 1px solid var(--gold);
+  background: var(--gold);
+  color: var(--night);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.affiliate-stay-search a:hover,
+.affiliate-stay-search a:focus-visible {
+  border-color: #fff;
+  background: #fff;
 }
 
 .affiliate-destination-searches {
@@ -1589,8 +1647,10 @@ h1 span {
 
 .destination-activities .affiliate-activity-offers,
 .destination-activities .affiliate-destination-searches,
+.destination-activities .affiliate-stay-search,
 .location-tour-activities .affiliate-activity-offers,
-.location-tour-activities .affiliate-destination-searches {
+.location-tour-activities .affiliate-destination-searches,
+.location-tour-activities .affiliate-stay-search {
   margin: 1rem auto;
   padding: clamp(1.4rem, 3vw, 2.25rem);
 }
@@ -2125,6 +2185,7 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
 .location-tour-activities .affiliate-disclosure,
 .location-tour-activities .affiliate-activity-offers,
 .location-tour-activities .affiliate-destination-searches,
+.location-tour-activities .affiliate-stay-search,
 .location-tour-activities .getyourguide-activities-widget { margin-right: 0; margin-left: 0; }
 
 .location-tour-facts div { min-width: 0; padding: 1.15rem; }
@@ -3422,6 +3483,7 @@ h3 {
   .destination-related,
   .affiliate-offer-status,
   .affiliate-activity-offers > header,
+  .affiliate-stay-search,
   .affiliate-destination-searches > header,
   .getyourguide-activities-widget > header {
     grid-template-columns: 1fr;
@@ -3678,6 +3740,11 @@ h3 {
   }
 
   .affiliate-activity-grid a {
+    width: 100%;
+  }
+
+  .affiliate-stay-search a {
+    justify-content: center;
     width: 100%;
   }
 

@@ -5,15 +5,16 @@
       "id": "booking-stay-search",
       "name": "Booking.com",
       "type": "hotel",
-      "enabled": false,
-      "affiliateId": "",
+      "enabled": true,
+      "affiliateId": "101879720-15734849",
       "destinationSearchEnabled": true,
-      "urlTemplate": "https://www.booking.com/searchresults.html?ss={query}&aid={affiliateId}",
-      "allowedHosts": ["booking.com", "www.booking.com"],
-      "requiredQueryParameters": ["aid"],
+      "urlTemplate": "https://www.jdoqocy.com/click-{affiliateId}?sid=stargazingindex-{destinationSlug}&url={destinationUrl}",
+      "destinationUrlTemplate": "https://www.booking.com/searchresults.html?ss={query}",
+      "allowedHosts": ["jdoqocy.com", "www.jdoqocy.com", "booking.com", "www.booking.com"],
+      "requiredQueryParameters": ["sid", "url"],
       "disclosure": {
-        "en": "Affiliate link. We may earn a commission at no extra cost to you.",
-        "de": "Affiliate-Link. Wir können ohne Mehrkosten für dich eine Provision erhalten."
+        "en": "Affiliate link to Booking.com via CJ. We may earn a commission at no extra cost to you.",
+        "de": "Affiliate-Link zu Booking.com über CJ. Wir können ohne Mehrkosten für dich eine Provision erhalten."
       }
     },
     {
