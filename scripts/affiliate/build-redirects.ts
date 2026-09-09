@@ -5,8 +5,8 @@ import { buildAffiliateActivityUrl, buildAffiliateUrl, getAffiliatePartner, vali
 import { loadAffiliateActivityOffers, loadAffiliateConfig } from "../../lib/affiliate/config.js";
 import { listLocationTours, loadDestinations } from "../../lib/data/load.js";
 import { buildStaticAffiliateRedirectHtml } from "../../lib/affiliate/static-redirect.js";
-import type { PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch } from "../../lib/data/types.js";
-import { publicPath, writeJson } from "../pipeline/io.js";
+import type { PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, StayArea } from "../../lib/data/types.js";
+import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 import { writeFileSync } from "node:fs";
 
 const legacyDirectory = publicPath("go");
@@ -17,6 +17,8 @@ mkdirSync(directory, { recursive: true });
 const config = loadAffiliateConfig();
 const offers = loadAffiliateActivityOffers();
 const destinations = loadDestinations();
+const stayAreas = readJson<StayArea[]>(resolve(root, "data-config/sources/stay-areas.json"));
+const stayAreaById = new Map(stayAreas.map((stayArea) => [stayArea.id, stayArea]));
 const tours = listLocationTours();
 validateAffiliateConfig(config);
 validateAffiliateActivityOffers(offers, config, destinations, tours);
@@ -29,10 +31,14 @@ const entries: RedirectEntry[] = [];
 const publishedDestinationSearches: PublishedAffiliateDestinationSearch[] = [];
 for (const partner of config.partners.filter((item) => item.enabled && item.destinationSearchEnabled)) {
   for (const destination of destinations.filter((item) => item.active)) {
+    const primaryStayArea = destination.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
+    const searchDestination = partner.type === "hotel" && primaryStayArea
+      ? { ...destination, affiliateQuery: primaryStayArea.affiliateQuery }
+      : destination;
     const variants = partner.destinationSearchVariants?.length ? partner.destinationSearchVariants : [{ id: "default", queryTemplate: "{query}" }];
     for (const variant of variants) {
       const variantId = partner.destinationSearchVariants?.length ? variant.id : undefined;
-      const url = buildAffiliateUrl(config, partner.id, destination, variantId);
+      const url = buildAffiliateUrl(config, partner.id, searchDestination, variantId);
       if (!url) throw new Error(`Unable to build enabled affiliate URL for ${partner.id}/${destination.slug}/${variant.id}`);
       const redirectPath = variantId
         ? `/go/${partner.id}/${destination.slug}/${variant.id}/`

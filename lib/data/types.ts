@@ -211,6 +211,7 @@ export interface AffiliatePartner {
   destinationSearchVariants?: AffiliateDestinationSearchVariant[];
   widget?: AffiliateWidgetConfig;
   urlTemplate: string | null;
+  destinationUrlTemplate?: string;
   allowedHosts: string[];
   requiredQueryParameters: string[];
   disclosure: { en: string; de: string };

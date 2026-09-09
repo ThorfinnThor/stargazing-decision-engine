@@ -1,15 +1,10 @@
 import { buildGetYourGuideWidgetModel, GetYourGuideActivitiesWidget } from "@/components/getyourguide-activities-widget";
 import { affiliateRel } from "@/lib/affiliate/affiliate";
-import { loadAffiliateActivityOffers, loadDestinations } from "@/lib/data/load";
+import type { PublishedAffiliateActivityOffer } from "@/lib/data/types";
 import type { Locale } from "@/lib/i18n/config";
 
-export function AffiliateActivityOffers({ destinationId, locationTourSlug, locale, disclosureId }: { destinationId: string; locationTourSlug?: string; locale: Locale; disclosureId?: string }) {
+export function AffiliateActivityOffers({ destinationId, destinationName, offers, locationTourSlug, locale, disclosureId }: { destinationId: string; destinationName: string; offers: PublishedAffiliateActivityOffer[]; locationTourSlug?: string; locale: Locale; disclosureId?: string }) {
   const isGerman = locale === "de";
-  const destinationName = loadDestinations().find((destination) => destination.id === destinationId)?.name ?? destinationId;
-  const offers = loadAffiliateActivityOffers().filter((offer) => (
-    offer.destinationId === destinationId
-    && (!locationTourSlug || offer.locationTourSlugs.includes(locationTourSlug))
-  ));
   const stargazingOffers = offers.filter((offer) => offer.kind === "stargazing");
   const regionalOffers = offers.filter((offer) => offer.kind === "regional");
   const getYourGuideWidget = buildGetYourGuideWidgetModel(stargazingOffers, locale);
