@@ -970,14 +970,30 @@ h1 span {
 }
 
 .getyourguide-activities-widget-frame {
-  min-height: 12rem;
-  margin-top: 2rem;
-  padding: clamp(0.75rem, 2vw, 1.25rem);
+  min-height: clamp(20rem, 40vw, 35rem);
+  margin-top: 1.25rem;
+  padding: clamp(0.5rem, 1.5vw, 1rem);
   overflow: hidden;
   border: 1px solid rgb(142 197 255 / 22%);
   background: #f7f3ea;
   color-scheme: light;
 }
+
+.getyourguide-activities-widget-frame iframe {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border: 0;
+}
+
+.getyourguide-widget-fallback {
+  display: block;
+  padding: 1rem;
+  color: #25314c;
+  font-size: 0.78rem;
+}
+
+.getyourguide-widget-fallback a { color: #15284d; }
 
 .affiliate-activity-grid small {
   margin-top: 0.8rem;
