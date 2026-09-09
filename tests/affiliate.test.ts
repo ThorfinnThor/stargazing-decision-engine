@@ -73,7 +73,7 @@ test("every gear item receives a tracked Astroshop product or product-search URL
       assert.equal(parsed.searchParams.get("q"), item.partnerSearchQuery);
     }
   }
-  assert.equal(direct, 23);
+  assert.equal(direct, 36);
   assert.equal(search, 16);
 });
 

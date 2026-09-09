@@ -1,17 +1,17 @@
 {
   "slug": "portable-power",
   "title": {
-    "en": "Portable power stations compared for an astronomy field kit",
-    "de": "Mobile Powerstations für das Astronomie-Feld-Set im Vergleich"
+    "en": "Portable power for telescope mounts and complete field kits",
+    "de": "Mobile Stromversorgung für Montierungen und komplette Feldsets"
   },
   "category": "portable-power",
   "summary": {
-    "en": "Compare three 286–288 Wh LiFePO4 power stations by the USB, regulated 12 V, and AC outputs used by trackers, cameras, laptops, and dew heaters.",
-    "de": "Vergleiche drei LiFePO4-Powerstations mit 286–288 Wh anhand der USB-, 12-V- und AC-Ausgänge für Tracker, Kameras, Laptops und Taubänder."
+    "en": "Compare a compact telescope battery with larger 286–288 Wh power stations, matching connectors, capacity and carrying weight to your actual equipment.",
+    "de": "Vergleiche einen kompakten Teleskopakku mit größeren 286–288-Wh-Powerstations und stimme Anschlüsse, Kapazität und Tragegewicht auf deine tatsächliche Ausrüstung ab."
   },
   "decisionSummary": {
-    "en": "Choose the 2.8 kg Anker SOLIX C300 DC when USB-C and 12 V are enough and avoiding an inverter saves mass, the 3.75 kg Jackery Explorer 300 Plus when one compact AC outlet and two 100 W USB-C ports fit the load plan, or the 4.7 kg EcoFlow RIVER 3 Plus when 600 W AC, a 126 W car outlet, and later capacity expansion justify the extra weight.",
-    "de": "Wähle die 2,8-kg-Anker SOLIX C300 DC, wenn USB-C und 12 V genügen und der Verzicht auf einen Wechselrichter Gewicht spart, die 3,75-kg-Jackery Explorer 300 Plus, wenn eine kompakte AC-Steckdose und zwei 100-W-USB-C-Ports zum Lastplan passen, oder die 4,7-kg-EcoFlow RIVER 3 Plus, wenn 600 W AC, 126-W-Fahrzeugausgang und spätere Kapazitätserweiterung das Mehrgewicht rechtfertigen."
+    "en": "A small mount does not always need a full power station. PowerTank Lithium keeps the load compact if its ports and shutoff behaviour suit the equipment. Anker is the larger DC-only alternative; Jackery adds AC, while EcoFlow offers more AC output and expansion. Add up the whole night's demand before selecting capacity.",
+    "de": "Eine kleine Montierung braucht nicht immer eine komplette Powerstation. PowerTank Lithium bleibt kompakt, wenn Anschlüsse und Abschaltverhalten zur Ausrüstung passen. Anker ist die größere reine DC-Alternative. Jackery ergänzt AC, während EcoFlow mehr AC-Leistung und Erweiterungsmöglichkeiten bietet. Rechne den Bedarf der ganzen Nacht aus, bevor du die Kapazität wählst."
   },
   "audience": {
     "en": "Observers and imagers powering trackers, cameras, dew heaters, mini computers, or laptops away from mains electricity who can calculate a realistic watt-hour budget.",
@@ -42,8 +42,8 @@
         "de": "Anker SOLIX C300 DC"
       },
       "whyItMatters": {
-        "en": "This 288 Wh DC-only unit removes the AC inverter and publishes two 140 W two-way USB-C ports, making it the lightest option here when every astronomy load can run from USB or its vehicle-style DC output.",
-        "de": "Diese reine DC-Einheit mit 288 Wh verzichtet auf einen AC-Wechselrichter und dokumentiert zwei bidirektionale 140-W-USB-C-Ports; damit ist sie hier am leichtesten, sofern jede Astronomielast über USB oder den Fahrzeug-DC-Ausgang läuft."
+        "en": "Anker's 288 Wh DC-only unit avoids an AC inverter and offers two 140 W two-way USB-C ports. Its 2.8 kg mass is lower than the larger Jackery and EcoFlow stations, but above the small PowerTank.",
+        "de": "Ankers reine DC-Einheit mit 288 Wh verzichtet auf einen AC-Wechselrichter und bietet zwei bidirektionale 140-W-USB-C-Ports. Ihre 2,8 kg liegen unter den größeren Stationen von Jackery und EcoFlow, aber über dem kleinen PowerTank."
       },
       "coreSpecs": {
         "capacity": "288 Wh LiFePO4",
@@ -69,11 +69,11 @@
       },
       "pros": {
         "en": [
-          "Lowest published mass in this comparison",
+          "Lower mass than the similarly sized Jackery and EcoFlow stations",
           "Avoids AC conversion when the complete setup is USB-C or 12 V compatible"
         ],
         "de": [
-          "Leichteste veröffentlichte Gerätemasse innerhalb des Powerstation-Vergleichs",
+          "Geringeres Gewicht als die ähnlich großen Stationen von Jackery und EcoFlow",
           "Vermeidet AC-Wandlung, wenn das vollständige Set USB-C- oder 12-V-kompatibel ist"
         ]
       },
@@ -164,8 +164,8 @@
         "de": "EcoFlow RIVER 3 Plus"
       },
       "whyItMatters": {
-        "en": "The RIVER 3 Plus has slightly less nominal energy at 286 Wh but the highest published continuous AC output here at 600 W, a 126 W car outlet, and a stackable battery path up to 858 Wh.",
-        "de": "Die RIVER 3 Plus hat mit 286 Wh etwas weniger Nennenergie, aber mit 600 W die höchste veröffentlichte AC-Dauerleistung hier, eine 126-W-Fahrzeugbuchse und einen stapelbaren Erweiterungspfad bis 858 Wh."
+        "en": "The RIVER 3 Plus has 286 Wh, slightly less nominal energy than the Anker and Jackery but the highest published continuous AC output here at 600 W, a 126 W car outlet, and a stackable battery path up to 858 Wh.",
+        "de": "Die RIVER 3 Plus hat mit 286 Wh etwas weniger Nennenergie als Anker und Jackery, aber mit 600 W die höchste veröffentlichte AC-Dauerleistung hier, eine 126-W-Fahrzeugbuchse und einen stapelbaren Erweiterungspfad bis 858 Wh."
       },
       "coreSpecs": {
         "capacity": "286 Wh LiFePO4",
@@ -218,6 +218,65 @@
         "url": "https://www.ecoflow.com/uk/river-3-plus-portable-power-station",
         "checkedAt": "2026-08-28"
       }
+    },
+    {
+      "name": {
+        "en": "Celestron PowerTank Lithium",
+        "de": "Celestron PowerTank Lithium"
+      },
+      "whyItMatters": {
+        "en": "PowerTank Lithium supplies a compatible mount and small USB devices rather than a whole field system. Check current draw because prolonged loads below 250 mA can trigger automatic shutdown.",
+        "de": "PowerTank Lithium versorgt eine kompatible Montierung und kleine USB-Geräte statt eines ganzen Feldsystems. Prüfe die Stromaufnahme, denn länger anliegende Lasten unter 250 mA können die automatische Abschaltung auslösen."
+      },
+      "coreSpecs": {
+        "spec1": "84.4 Wh",
+        "spec2": "12 V / 3 A, centre positive",
+        "spec3": "5 V / 1 A and 2.1 A",
+        "spec4": "1.02 kg"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Capacity": "84.4 Wh",
+          "Telescope output": "12 V / 3 A, centre positive",
+          "USB": "5 V / 1 A and 2.1 A",
+          "Mass": "1.02 kg"
+        },
+        "de": {
+          "Kapazität": "84,4 Wh",
+          "Teleskopausgang": "12 V / 3 A, Plus innen",
+          "USB": "5 V / 1 A und 2,1 A",
+          "Gewicht": "1,02 kg"
+        }
+      },
+      "pros": {
+        "en": [
+          "Tripod strap keeps it near the mount",
+          "Lighter than the larger power stations here"
+        ],
+        "de": [
+          "Stativgurt hält ihn nahe der Montierung",
+          "Leichter als die größeren Powerstations hier"
+        ]
+      },
+      "cons": {
+        "en": [
+          "No AC or USB-C output",
+          "Less capacity; check low-current shutdown"
+        ],
+        "de": [
+          "Kein AC- oder USB-C-Ausgang",
+          "Weniger Kapazität; Abschaltung bei kleiner Last prüfen"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Celestron PowerTank Lithium",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Celestron",
+        "title": "PowerTank Lithium specifications",
+        "url": "https://www.celestron.com/products/powertank-lithium",
+        "checkedAt": "2026-09-09"
+      }
     }
   ],
   "tradeoffs": {
@@ -225,13 +284,13 @@
       "Nominal watt-hours are not delivered watt-hours: battery management, DC conversion, inverter use, temperature, cable loss, and shutdown reserve reduce useful energy.",
       "A DC-only station is lighter and can be efficient for compatible loads, but an AC-only camera charger can turn that advantage into an adapter problem.",
       "More AC output does not lengthen runtime; capacity and the actual average load determine runtime.",
-      "LiFePO4 chemistry improves cycle-life expectations, yet every cited unit prohibits charging below 0 °C, so winter power needs thermal planning rather than wishful thinking."
+      "Charging and operating temperature limits are different. Read the exact battery manual before winter use, keep connections dry and never improvise heating to charge a cold battery."
     ],
     "de": [
       "Nenn-Wattstunden sind keine abgegebenen Wattstunden: Batteriemanagement, DC-Wandlung, Wechselrichter, Temperatur, Kabelverluste und Abschaltreserve reduzieren die nutzbare Energie.",
       "Eine reine DC-Station ist leichter und für kompatible Lasten effizient; ein reines AC-Kameraladegerät kann diesen Vorteil jedoch in ein Adapterproblem verwandeln.",
       "Mehr AC-Ausgangsleistung verlängert nicht die Laufzeit; Kapazität und reale Durchschnittslast bestimmen sie.",
-      "LiFePO4 verbessert die erwartbare Zyklenfestigkeit, doch alle zitierten Geräte verbieten Laden unter 0 °C; Winterbetrieb braucht deshalb ein Wärmekonzept statt Hoffnung."
+      "Lade- und Betriebstemperaturen sind unterschiedliche Grenzen. Lies vor dem Wintereinsatz das konkrete Akkuhandbuch, halte Anschlüsse trocken und improvisiere keine Erwärmung zum Laden eines kalten Akkus."
     ]
   },
   "faq": [
@@ -261,8 +320,8 @@
         "de": "Kann ich diese Akkus unter dem Gefrierpunkt laden?"
       },
       "answer": {
-        "en": "Not according to the cited operating limits: the Jackery and EcoFlow documentation specifies charging from 0 °C, and the Anker unit should likewise be operated within its current manual. Keep the station dry and within its documented temperature range; never improvise unsafe heating.",
-        "de": "Nicht nach den zitierten Betriebsgrenzen: Jackery und EcoFlow geben Laden ab 0 °C an; auch die Anker-Einheit muss innerhalb ihres aktuellen Handbuchs betrieben werden. Halte die Station trocken und im dokumentierten Temperaturbereich; improvisiere niemals unsichere Erwärmung."
+        "en": "Do not assume that a battery rated for cold-weather operation may also be charged below freezing. Follow the exact model's charging limits, not its discharge range. Jackery and EcoFlow specify charging from 0 °C; consult the current Anker or Celestron manual for those batteries.",
+        "de": "Aus einer Freigabe für kalten Betrieb folgt keine Freigabe zum Laden unter dem Gefrierpunkt. Beachte die Ladegrenzen des konkreten Modells, nicht seinen Entladebereich. Jackery und EcoFlow nennen Laden ab 0 °C. Für Anker und Celestron ist das jeweilige aktuelle Handbuch maßgeblich."
       }
     },
     {
@@ -280,5 +339,5 @@
     "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured runtime test, or claim of hands-on use.",
     "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene Laufzeitmessungen oder die Behauptung eines Praxistests."
   },
-  "lastReviewedAt": "2026-08-28"
+  "lastReviewedAt": "2026-09-09"
 }
