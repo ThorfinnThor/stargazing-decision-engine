@@ -103,7 +103,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
             </article>;
           })}
         </div>
-        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? "Vorteile und Grenzen sind fachliche Schlussfolgerungen aus den verlinkten Herstellerangaben. Produktspezifikationen können sich ändern." : "Pros and limitations are informed conclusions from the linked manufacturer specifications. Product specifications can change."}</p> : null}
+        {guide.items.some((item) => item.source) ? <p className="event-note">{isGerman ? "Vorteile und Grenzen sind fachliche Schlussfolgerungen aus den verlinkten Hersteller- und Händlerangaben. Produktspezifikationen können sich ändern." : "Pros and limitations are informed conclusions from the linked manufacturer and retailer specifications. Product specifications can change."}</p> : null}
       </section>
       <section className="event-summary" aria-labelledby="gear-audience-title">
         <h2 id="gear-audience-title">{isGerman ? "Welche Option passt zu dir?" : "Which option fits your needs?"}</h2>

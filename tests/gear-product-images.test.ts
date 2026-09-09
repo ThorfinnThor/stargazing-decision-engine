@@ -11,7 +11,7 @@ const matches = read<{guideSlug: string; productName: string; path: string}[]>("
 const evidence = read<{products: {id: string; productName: string; usedImageSrc: string; generatedHref: string}[]}>("docs/gear-product-image-permissions-2026-09-09.json");
 
 test("each published image matches a real guide item, exact affiliate product, and captured permission", () => {
-  assert.equal(images.length, 23);
+  assert.equal(images.length, 36);
   for (const image of images) {
     assert.ok(guides.find(g => g.slug === image.guideSlug)?.items.some(p => p.name.en === image.productName));
     const match = matches.find(m => m.guideSlug === image.guideSlug && m.productName === image.productName);
@@ -27,7 +27,7 @@ test("each published image matches a real guide item, exact affiliate product, a
 
 test("unapproved manufacturer candidates never enter the published image catalog", () => {
   const audit = read<{products: {guideSlug: string; productName: string; status: string}[]}>("docs/gear-product-image-audit-2026-09-09.json");
-  assert.equal(audit.products.length, 39);
+  assert.equal(audit.products.length, 52);
   for (const item of audit.products) {
     const published = images.some(i => i.guideSlug === item.guideSlug && i.productName === item.productName);
     assert.equal(published, item.status === "approved-affiliate-media");

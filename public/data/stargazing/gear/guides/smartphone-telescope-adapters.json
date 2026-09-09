@@ -1,17 +1,17 @@
 {
   "slug": "smartphone-telescope-adapters",
   "title": {
-    "en": "Three smartphone telescope adapters with very different alignment controls",
-    "de": "Drei Smartphone-Teleskopadapter mit sehr unterschiedlicher Ausrichtung"
+    "en": "Smartphone telescope adapters compared by fit and adjustment",
+    "de": "Smartphone-Teleskopadapter nach Passform und Einstellung verglichen"
   },
   "category": "smartphone-adapters",
   "summary": {
-    "en": "A specification-led comparison of a three-axis metal-and-polymer clamp, a compact three-axis adapter, and a simple 1.25-inch eyepiece holder.",
-    "de": "Ein datenbasierter Vergleich aus Drei-Achs-Klemme mit Metall und Polymer, kompaktem Drei-Achs-Adapter und einfacher 1,25-Zoll-Okularhalterung."
+    "en": "Compare four phone adapters, from simple clamps to three-axis controls, using the actual phone and eyepiece dimensions before buying.",
+    "de": "Vergleiche vier Smartphone-Adapter von einfachen Klemmen bis zu Drei-Achs-Reglern und prüfe vor dem Kauf die tatsächlichen Maße von Telefon und Okular."
   },
   "decisionSummary": {
-    "en": "Choose the Celestron NexYZ when broad eyepiece compatibility and separate X, Y and Z controls matter most, the Move Shoot Move Tridaptor when a lighter three-axis design fits the phone and eyepiece ranges, or the Explore Scientific adapter only for a compatible 32–34 mm eyepiece when minimum mechanical complexity is the priority. None guarantees an unobstructed camera view with every multi-lens phone.",
-    "de": "Wähle den Celestron NexYZ, wenn breite Okularkompatibilität und getrennte X-, Y- und Z-Regler zählen, den Move Shoot Move Tridaptor für ein leichteres Drei-Achs-System innerhalb seiner Telefon- und Okularbereiche oder den Explore Scientific nur für ein kompatibles 32–34-mm-Okular, wenn minimale Mechanik Vorrang hat. Keiner garantiert bei jedem Mehrfachkamera-Smartphone ein freies Bild."
+    "en": "NexYZ and Tridaptor let you adjust alignment on three axes. The simpler Omegon adds a 25–48 mm eyepiece range and a tripod thread, while Explore Scientific fits only 32–34 mm housings. Measure the eyepiece body and phone with its case before choosing; the telescope barrel size is not the clamp diameter.",
+    "de": "NexYZ und Tridaptor erlauben die Ausrichtung auf drei Achsen. Der einfachere Omegon ergänzt einen Okularbereich von 25–48 mm und ein Stativgewinde. Explore Scientific passt nur an 32–34-mm-Gehäuse. Miss Okularkörper und Telefon samt Hülle vor der Wahl. Das Teleskopsteckmaß ist nicht der Klemmdurchmesser."
   },
   "audience": {
     "en": "Observers who want afocal phone images of the Moon or bright planets and need to match a real phone case, camera position and eyepiece barrel before buying.",
@@ -221,6 +221,65 @@
         "url": "https://explorescientific.com/products/smartphone-camera-adaptor",
         "checkedAt": "2026-08-31"
       }
+    },
+    {
+      "name": {
+        "en": "Omegon Smartphone Adapter 25–48 mm",
+        "de": "Omegon Smartphone Adapter 25–48 mm"
+      },
+      "whyItMatters": {
+        "en": "Omegon's clamp accepts 25–48 mm eyepiece housings and phones 54–90 mm wide. Its 1/4-inch thread also mounts a phone on a photo tripod, while telescope use relies on manually centring the camera over the eyepiece.",
+        "de": "Omegons Klemme nimmt Okulargehäuse von 25–48 mm und Telefone mit 54–90 mm Breite auf. Das 1/4-Zoll-Gewinde ermöglicht die Nutzung am Fotostativ. Am Teleskop wird die Kamera manuell über dem Okular zentriert."
+      },
+      "coreSpecs": {
+        "spec1": "25–48 mm outer diameter",
+        "spec2": "54–90 mm",
+        "spec3": "170 g",
+        "spec4": "1/4-inch"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Eyepiece housing": "25–48 mm outer diameter",
+          "Phone width": "54–90 mm",
+          "Mass": "170 g",
+          "Tripod thread": "1/4-inch"
+        },
+        "de": {
+          "Okulargehäuse": "25–48 mm Außendurchmesser",
+          "Telefonbreite": "54–90 mm",
+          "Gewicht": "170 g",
+          "Stativgewinde": "1/4 Zoll"
+        }
+      },
+      "pros": {
+        "en": [
+          "Wider eyepiece range than the 32–34 mm Explore Scientific holder",
+          "Also usable as a phone holder on a photo tripod"
+        ],
+        "de": [
+          "Breiterer Okularbereich als beim 32–34-mm-Halter von Explore Scientific",
+          "Auch als Telefonhalter am Fotostativ nutzbar"
+        ]
+      },
+      "cons": {
+        "en": [
+          "No separate three-axis fine controls",
+          "Large eyepiece housings and obstructive cases can prevent a secure fit"
+        ],
+        "de": [
+          "Keine getrennten Drei-Achs-Feinregler",
+          "Große Okulargehäuse und störende Hüllen können eine sichere Passform verhindern"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Omegon Smartphone Adapter 25–48 mm",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astroshop / NIMAX",
+        "title": "Omegon Smartphone Adapter 25-48mm",
+        "url": "https://www.astroshop.de/smartphone-digicam-klemmen/omegon-smartphone-adapter-25-48mm/p,83059",
+        "checkedAt": "2026-09-09"
+      }
     }
   ],
   "tradeoffs": {
@@ -273,5 +332,5 @@
     "en": "This guide compares current manufacturer dimensions and mechanisms. It contains no live prices, affiliate identifiers, hands-on fit claim or promise that every phone and eyepiece combination will work.",
     "de": "Dieser Guide vergleicht aktuelle Herstellermaße und Mechanismen. Er enthält keine Live-Preise, Affiliate-Kennungen, Praxistest-Behauptung oder Zusage, dass jede Telefon-Okular-Kombination funktioniert."
   },
-  "lastReviewedAt": "2026-08-31"
+  "lastReviewedAt": "2026-09-09"
 }

@@ -6,12 +6,12 @@
   },
   "category": "eyepieces",
   "summary": {
-    "en": "Compare three 1.25-inch eyepieces around 11–12.5 mm and see how field of view, eye relief, waterproofing, and mass affect observing.",
-    "de": "Vergleiche drei 1,25-Zoll-Okulare um 11–12,5 mm und erfahre, wie Gesichtsfeld, Augenabstand, Wasserschutz und Gewicht die Beobachtung verändern."
+    "en": "Compare five eyepieces around 11–12.5 mm, from a small Plössl to wider-field designs, with attention to eye relief, balance and fit.",
+    "de": "Vergleiche fünf Okulare um 11–12,5 mm vom kleinen Plössl bis zum Weitwinkelmodell und berücksichtige dabei Augenabstand, Balance und Passform."
   },
   "decisionSummary": {
-    "en": "Choose the 51.5 g Celestron Omni 12 mm when a light 50-degree Plössl and 8 mm eye relief suit the observer, the 345 g Baader Morpheus 12.5 mm when 20 mm eye relief and a 76-degree field matter most, or the 279 g Explore Scientific 11 mm when the widest 82-degree field is worth accepting 15.6 mm eye relief and slightly higher magnification.",
-    "de": "Wähle das 51,5-g-Celestron Omni 12 mm, wenn ein leichtes 50-Grad-Plössl mit 8 mm Augenabstand passt, das 345-g-Baader Morpheus 12,5 mm, wenn 20 mm Augenabstand und 76 Grad Feld am wichtigsten sind, oder das 279-g-Explore Scientific 11 mm, wenn das größte 82-Grad-Feld etwas weniger Augenabstand und leicht höhere Vergrößerung rechtfertigt."
+    "en": "The Omni is the light, narrow-field option. Pentax XF and X-Cel LX add a 60-degree view at the same focal length; the Pentax specifies 18 mm eye relief. Morpheus and Explore Scientific go wider but add weight. There is little reason to own all five at such similar magnifications.",
+    "de": "Das Omni ist die leichte Option mit engem Feld. Pentax XF und X-Cel LX ergänzen bei gleicher Brennweite einen 60-Grad-Blick. Pentax nennt 18 mm Augenabstand. Morpheus und Explore Scientific zeigen mehr Feld, bringen aber mehr Gewicht mit. Bei so ähnlichen Vergrößerungen gibt es kaum einen Grund, alle fünf zu besitzen."
   },
   "audience": {
     "en": "Visual observers comparing a first medium-power upgrade for a telescope with a 1.25-inch focuser, especially those balancing eyeglasses, manual tracking, and mount stability.",
@@ -130,22 +130,22 @@
       },
       "pros": {
         "en": [
-          "The longest manufacturer-specified eye relief among these eyepieces",
+          "20 mm specified eye relief supports an eyeglass fit check",
           "Dual barrel geometry, M43 thread, two eyeguard styles, and phosphorescent markings are documented"
         ],
         "de": [
-          "Größter vom Hersteller angegebener Augenabstand unter den verglichenen Okularen",
+          "20 mm angegebener Augenabstand sind für eine Passprobe mit Brille interessant",
           "Doppelte Steckhülsengeometrie, M43-Gewinde, zwei Augenmuscheltypen und nachleuchtende Beschriftung sind dokumentiert"
         ]
       },
       "cons": {
         "en": [
-          "Highest published mass here, which can alter balance on a light mount",
-          "Slightly longer focal length means slightly lower magnification than the other two in the same telescope"
+          "Its 345 g mass can alter balance on a light mount",
+          "Its 12.5 mm focal length gives slightly lower magnification than the 11 and 12 mm alternatives"
         ],
         "de": [
-          "Höchstes veröffentlichtes Gewicht hier; das kann die Balance einer leichten Montierung verändern",
-          "Etwas längere Brennweite bedeutet im selben Teleskop etwas geringere Vergrößerung als bei den beiden anderen"
+          "Seine 345 g können die Balance einer leichten Montierung verändern",
+          "Seine 12,5 mm Brennweite ergeben etwas weniger Vergrößerung als die Alternativen mit 11 und 12 mm"
         ]
       },
       "recommendationBasis": "specification_analysis",
@@ -218,6 +218,124 @@
         "url": "https://explorescientific.com/products/82-11mm",
         "checkedAt": "2026-08-28"
       }
+    },
+    {
+      "name": {
+        "en": "Pentax SMC XF 12 mm",
+        "de": "Pentax SMC XF 12 mm"
+      },
+      "whyItMatters": {
+        "en": "The Pentax XF offers 18 mm eye relief and a 60-degree field in a 155 g body. It bridges the small Omni and the heavier wide-angle eyepieces without changing the 12 mm focal length.",
+        "de": "Das Pentax XF verbindet 18 mm Augenabstand und 60 Grad Feld mit einem 155-g-Gehäuse. Es ergänzt das kleine Omni und die schwereren Weitwinkelokulare, ohne die 12-mm-Brennweite zu ändern."
+      },
+      "coreSpecs": {
+        "spec1": "12 mm",
+        "spec2": "60°",
+        "spec3": "18 mm",
+        "spec4": "155 g / 1.25-inch"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Focal length": "12 mm",
+          "Apparent field": "60°",
+          "Eye relief": "18 mm",
+          "Mass / barrel": "155 g / 1.25-inch"
+        },
+        "de": {
+          "Brennweite": "12 mm",
+          "Scheinbares Feld": "60°",
+          "Augenabstand": "18 mm",
+          "Gewicht / Steckmaß": "155 g / 1,25 Zoll"
+        }
+      },
+      "pros": {
+        "en": [
+          "Longer specified eye relief than the Omni at the same focal length",
+          "Lower mass than Morpheus and Explore Scientific"
+        ],
+        "de": [
+          "Mehr angegebener Augenabstand als beim Omni bei gleicher Brennweite",
+          "Geringeres Gewicht als Morpheus und Explore Scientific"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Less field than the 76° and 82° alternatives",
+          "Heavier than the Omni; comfort with glasses still needs checking"
+        ],
+        "de": [
+          "Kleineres Feld als die Alternativen mit 76 und 82 Grad",
+          "Schwerer als das Omni; Einblick mit Brille weiterhin prüfen"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Pentax SMC XF 12 mm",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astroshop / NIMAX",
+        "title": "Pentax Okular SMC XF 12mm 1,25&quot;",
+        "url": "https://www.astroshop.de/okulare/pentax-okular-smc-xf-12mm-1-25-/p,12351",
+        "checkedAt": "2026-09-09"
+      }
+    },
+    {
+      "name": {
+        "en": "Celestron X-Cel LX 12 mm",
+        "de": "Celestron X-Cel LX 12 mm"
+      },
+      "whyItMatters": {
+        "en": "The X-Cel LX keeps the focal length at 12 mm while adding a 60-degree view, twist-up eyecup and rubber grip. Its appeal is handling and a wider field than the Omni, not a claimed advantage from an optical test.",
+        "de": "Das X-Cel LX bleibt bei 12 mm, ergänzt aber 60 Grad Feld, eine drehbare Augenmuschel und einen Gummigriff. Sein Unterschied liegt in Handhabung und größerem Feld gegenüber dem Omni, nicht in einem behaupteten Vorteil aus einem Optiktest."
+      },
+      "coreSpecs": {
+        "spec1": "12 mm",
+        "spec2": "60°",
+        "spec3": "6 elements, fully multi-coated",
+        "spec4": "1.25-inch / twist-up"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Focal length": "12 mm",
+          "Apparent field": "60°",
+          "Optical layout": "6 elements, fully multi-coated",
+          "Barrel / eyecup": "1.25-inch / twist-up"
+        },
+        "de": {
+          "Brennweite": "12 mm",
+          "Scheinbares Feld": "60°",
+          "Optischer Aufbau": "6 Linsen, vollständig mehrfachvergütet",
+          "Steckmaß / Augenmuschel": "1,25 Zoll / drehbar"
+        }
+      },
+      "pros": {
+        "en": [
+          "Wider apparent field than the Omni at the same focal length",
+          "Rubber grip and adjustable eyecup aid handling"
+        ],
+        "de": [
+          "Größeres scheinbares Feld als beim Omni bei gleicher Brennweite",
+          "Gummigriff und verstellbare Augenmuschel erleichtern die Handhabung"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Less apparent field than Morpheus or Explore Scientific",
+          "Parfocal matching applies within the X-Cel LX series, not this mixed selection"
+        ],
+        "de": [
+          "Kleineres scheinbares Feld als Morpheus oder Explore Scientific",
+          "Die parfokale Abstimmung gilt innerhalb der X-Cel-LX-Serie, nicht für diese gemischte Auswahl"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Celestron X-Cel LX 12 mm",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astroshop / NIMAX",
+        "title": "Celestron X-Cel LX Okular 12mm 1,25&quot;",
+        "url": "https://www.astroshop.de/okulare/celestron-x-cel-lx-okular-12mm-1-25-/p,21921",
+        "checkedAt": "2026-09-09"
+      }
     }
   ],
   "tradeoffs": {
@@ -280,5 +398,5 @@
     "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured optical test, or claim of hands-on use.",
     "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene optische Messungen oder die Behauptung eines Praxistests."
   },
-  "lastReviewedAt": "2026-08-28"
+  "lastReviewedAt": "2026-09-09"
 }

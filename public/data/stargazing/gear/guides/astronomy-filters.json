@@ -1,17 +1,17 @@
 {
   "slug": "astronomy-filters",
   "title": {
-    "en": "CLS, UHC-E, or UHC? Three visual filter passbands compared",
-    "de": "CLS, UHC-E oder UHC? Drei visuelle Filterkurven im Vergleich"
+    "en": "Visual nebula filters: CLS, UHC, OIII and H-beta",
+    "de": "Visuelle Nebelfilter: CLS, UHC, OIII und H-beta"
   },
   "category": "astronomy-filters",
   "summary": {
-    "en": "A source-backed comparison of three Astronomik visual filters that separates their published passbands, intended targets, aperture guidance, and real limits.",
-    "de": "Ein quellenbasierter Vergleich dreier visueller Astronomik-Filter, der veröffentlichte Durchlassbereiche, Zielklassen, Öffnungshinweise und reale Grenzen trennt."
+    "en": "Compare broad, narrowband and line filters by the light your target emits, rather than treating every nebula filter as interchangeable.",
+    "de": "Vergleiche Breitband-, Schmalband- und Linienfilter nach dem Licht des gewünschten Ziels, statt alle Nebelfilter als austauschbar zu behandeln."
   },
   "decisionSummary": {
-    "en": "Choose the wide CLS only when its broad-spectrum urban use matches the target, the 45 nm UHC-E for emission nebulae and comets in smaller telescopes, or the narrower 25 nm UHC for emission and planetary nebulae when the aperture can support its more selective passband. None restores light removed by the filter or replaces a dark site.",
-    "de": "Wähle den breiten CLS nur, wenn sein urbaner Breitbandeinsatz zum Ziel passt, den 45-nm-UHC-E für Emissionsnebel und Kometen an kleineren Teleskopen oder den engeren 25-nm-UHC für Emissions- und planetarische Nebel, wenn die Öffnung den selektiveren Durchlass unterstützt. Keiner ersetzt verlorenes Licht oder einen dunklen Standort."
+    "en": "UHC covers a broader mix of nebular emission than either OIII or H-beta. OIII is useful for suitable oxygen-emitting targets; H-beta belongs on a short, deliberate target list. CLS and UHC-E leave more spectrum through, but none restores a dark sky or improves every object.",
+    "de": "UHC deckt mehr verschiedene Nebelemissionen ab als OIII oder H-beta allein. OIII passt zu geeigneten sauerstoffemittierenden Zielen. H-beta gehört zu einer bewusst ausgewählten, kurzen Zielliste. CLS und UHC-E lassen mehr Spektrum durch. Keiner stellt jedoch einen dunklen Himmel her oder verbessert jedes Objekt."
   },
   "audience": {
     "en": "Visual observers choosing a first threaded deep-sky filter who want comparable manufacturer data instead of an unsupported universal light-pollution cure.",
@@ -164,8 +164,8 @@
         "de": "Astronomik UHC"
       },
       "whyItMatters": {
-        "en": "The standard UHC is the most selective option here at 25 nm FWHM and 480–505 nm, with 95% typical transmission at H-beta and both OIII lines and manufacturer positioning for emission nebulae in medium or larger telescopes.",
-        "de": "Der Standard-UHC ist mit 25 nm FWHM und 480–505 nm die selektivste Option hier; typisch 95 % Transmission an H-beta und beiden OIII-Linien treffen auf die Herstellerpositionierung für Emissionsnebel an mittleren oder größeren Teleskopen."
+        "en": "The standard UHC combines H-beta and both OIII lines in a documented 25 nm FWHM window. It sits between the broader UHC-E and the target-specific OIII and H-beta options, rather than being the most selective filter here.",
+        "de": "Der Standard-UHC verbindet H-beta und beide OIII-Linien in einem dokumentierten Fenster mit 25 nm FWHM. Er liegt zwischen dem breiteren UHC-E und den zielspezifischen OIII- und H-beta-Optionen, statt hier der selektivste Filter zu sein."
       },
       "coreSpecs": {
         "fwhm": "25 nm",
@@ -191,11 +191,11 @@
       },
       "pros": {
         "en": [
-          "Narrowest documented FWHM in this comparison while retaining H-beta and both OIII lines",
+          "Passes H-beta and both OIII lines in one filter",
           "Exact transmission, passband, aperture, and focal-ratio guidance are published"
         ],
         "de": [
-          "Engste dokumentierte FWHM im Vergleich bei Erhalt von H-beta und beiden OIII-Linien",
+          "Lässt H-beta und beide OIII-Linien in einem Filter passieren",
           "Exakte Transmission, Durchlass-, Öffnungs- und Öffnungsverhältnis-Hinweise sind veröffentlicht"
         ]
       },
@@ -218,20 +218,138 @@
         "url": "https://www.astronomik.com/en/Visual-Filters/UHC/",
         "checkedAt": "2026-08-28"
       }
+    },
+    {
+      "name": {
+        "en": "Astronomik OIII visual 1.25-inch",
+        "de": "Astronomik OIII visual 1.25-inch"
+      },
+      "whyItMatters": {
+        "en": "This visual OIII filter targets nebulae emitting strongly in oxygen lines, including suitable planetary nebulae and supernova remnants. It sacrifices much of the surrounding star field, so buy it for known targets rather than permanent use.",
+        "de": "Dieser visuelle OIII-Filter passt zu Nebeln mit starker Sauerstoffemission, darunter geeignete planetarische Nebel und Supernovaüberreste. Er dämpft einen großen Teil des Sternfelds. Wähle ihn für bekannte Ziele statt als dauerhaftes Okularzubehör."
+      },
+      "coreSpecs": {
+        "spec1": "OIII emission-line filter",
+        "spec2": "Visual nebula observing",
+        "spec3": "1.25-inch",
+        "spec4": "Aluminium cell"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Passband type": "OIII emission-line filter",
+          "Use": "Visual nebula observing",
+          "Thread": "1.25-inch",
+          "Housing": "Aluminium cell"
+        },
+        "de": {
+          "Durchlasstyp": "OIII-Linienfilter",
+          "Einsatz": "Visuelle Nebelbeobachtung",
+          "Gewinde": "1,25 Zoll",
+          "Fassung": "Aluminium"
+        }
+      },
+      "pros": {
+        "en": [
+          "Selects oxygen emission instead of the wider UHC combination",
+          "Fits compatible 1.25-inch eyepiece filter threads"
+        ],
+        "de": [
+          "Wählt Sauerstoffemission statt der breiteren UHC-Kombination",
+          "Passt an kompatible 1,25-Zoll-Okularfiltergewinde"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Stars and broad-spectrum targets are strongly dimmed",
+          "Does not replace H-beta for targets dominated by that emission"
+        ],
+        "de": [
+          "Sterne und breitbandige Ziele werden stark gedämpft",
+          "Ersetzt bei H-beta-dominierten Zielen keinen H-beta-Filter"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Astronomik OIII visual 1.25-inch",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astroshop / NIMAX",
+        "title": "Astronomik OIII Filter 1,25&quot;",
+        "url": "https://www.astroshop.de/oiii-filter/astronomik-oiii-filter-1-25-/p,16758",
+        "checkedAt": "2026-09-09"
+      }
+    },
+    {
+      "name": {
+        "en": "Astronomik H-beta 1.25-inch",
+        "de": "Astronomik H-beta 1.25-inch"
+      },
+      "whyItMatters": {
+        "en": "H-beta is a specialist choice for a small set of emission nebulae, not an upgrade everyone needs after UHC. The Horsehead is a relevant target, but the filter neither guarantees visibility nor replaces a dark observing site.",
+        "de": "H-beta ist eine Speziallösung für wenige Emissionsnebel und kein Pflichtkauf nach einem UHC. Der Pferdekopf ist ein passendes Ziel. Der Filter garantiert aber keine Sichtbarkeit und ersetzt keinen dunklen Beobachtungsplatz."
+      },
+      "coreSpecs": {
+        "spec1": "Hydrogen-beta emission-line filter",
+        "spec2": "Selected emission nebulae",
+        "spec3": "1.25-inch",
+        "spec4": "Aluminium cell"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Passband type": "Hydrogen-beta emission-line filter",
+          "Use": "Selected emission nebulae",
+          "Thread": "1.25-inch",
+          "Housing": "Aluminium cell"
+        },
+        "de": {
+          "Durchlasstyp": "Wasserstoff-beta-Linienfilter",
+          "Einsatz": "Ausgewählte Emissionsnebel",
+          "Gewinde": "1,25 Zoll",
+          "Fassung": "Aluminium"
+        }
+      },
+      "pros": {
+        "en": [
+          "A distinct target-specific alternative to OIII",
+          "Fits compatible 1.25-inch eyepiece threads"
+        ],
+        "de": [
+          "Eigenständige zielspezifische Alternative zu OIII",
+          "Passt an kompatible 1,25-Zoll-Okulargewinde"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Useful on far fewer targets than a general nebula filter",
+          "Not an all-purpose filter for galaxies, clusters or planets"
+        ],
+        "de": [
+          "Für deutlich weniger Ziele nützlich als ein allgemeiner Nebelfilter",
+          "Kein Allzweckfilter für Galaxien, Sternhaufen oder Planeten"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Astronomik H-beta 1.25-inch",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Astroshop / NIMAX",
+        "title": "Astronomik Filter H-Beta 1,25&#039;&#039;",
+        "url": "https://www.astroshop.de/h-beta-filter/astronomik-filter-h-beta-1-25-/p,24077",
+        "checkedAt": "2026-09-09"
+      }
     }
   ],
   "tradeoffs": {
     "en": [
-      "This is a controlled same-manufacturer specification comparison, not an independent visual ranking or transmission-bench test.",
+      "The models share a manufacturer, but the narrow line filters serve different targets from CLS and UHC. This comparison does not claim measured visual or transmission rankings.",
       "A narrower passband can raise contrast on compatible line-emitting nebulae while removing more continuum light, including starlight and light from unsuitable targets.",
       "Aperture guidance is the manufacturer's practical recommendation, not a physical cutoff; exit pupil, observer adaptation, target surface brightness, and sky quality still matter.",
-      "The red H-alpha passband is part of the published curve, but strong red transmission alone does not guarantee a prominent visual H-alpha response from the dark-adapted human eye."
+      "A transmission curve must be read for the exact model. Do not carry the CLS or UHC red passband over to OIII or H-beta, or assume that passing more red light makes a nebula easier to see."
     ],
     "de": [
-      "Dies ist ein kontrollierter Datenvergleich desselben Herstellers, kein unabhängiges visuelles Ranking oder Transmissions-Labortest.",
+      "Die Modelle stammen vom selben Hersteller, doch die engen Linienfilter dienen anderen Zielen als CLS und UHC. Dieser Vergleich behauptet keine gemessene visuelle oder spektrale Rangfolge.",
       "Ein engerer Durchlass kann bei passenden Linienemissionsnebeln den Kontrast erhöhen, entfernt aber mehr Kontinuumslicht einschließlich Sternlicht und Licht ungeeigneter Ziele.",
       "Die Öffnungsangabe ist eine praktische Herstellerempfehlung, keine physikalische Grenze; Austrittspupille, Dunkeladaption, Flächenhelligkeit und Himmel bleiben relevant.",
-      "Der rote H-alpha-Durchlass gehört zur veröffentlichten Kurve; hohe rote Transmission allein garantiert aber keine auffällige visuelle H-alpha-Wirkung des dunkeladaptierten Auges."
+      "Eine Transmissionskurve gilt für das konkrete Modell. Übertrage den roten CLS- oder UHC-Durchlass nicht auf OIII oder H-beta und setze mehr rotes Licht nicht mit besserer Nebelsicht gleich."
     ]
   },
   "faq": [
@@ -251,8 +369,8 @@
         "de": "Welchen sollte ich für Galaxien und Sternhaufen nutzen?"
       },
       "answer": {
-        "en": "Astronomik names those broad-spectrum targets for the wider CLS, especially in urban use, but also rates the CLS rather unsuitable for visual observing at a dark site. The two UHC filters are positioned primarily for emission nebulae and can dim continuum targets.",
-        "de": "Astronomik nennt diese breitbandigen Ziele beim weiteren CLS besonders für urbanen Einsatz, bewertet den CLS unter dunklem Himmel visuell aber als eher ungeeignet. Beide UHC-Filter sind primär für Emissionsnebel positioniert und können Kontinuumsziele abdunkeln."
+        "en": "Astronomik names those broad-spectrum targets for the wider CLS, especially in urban use, but also rates the CLS rather unsuitable for visual observing at a dark site. The two UHC filters are positioned primarily for emission nebulae and can dim continuum targets. OIII and H-beta are even more target-specific and are not general galaxy or cluster filters.",
+        "de": "Astronomik nennt diese breitbandigen Ziele beim weiteren CLS besonders für urbanen Einsatz, bewertet den CLS unter dunklem Himmel visuell aber als eher ungeeignet. Beide UHC-Filter sind primär für Emissionsnebel positioniert und können Kontinuumsziele abdunkeln. OIII und H-beta sind noch zielspezifischer und keine allgemeinen Galaxien- oder Sternhaufenfilter."
       }
     },
     {
@@ -267,8 +385,8 @@
     },
     {
       "question": {
-        "en": "Can a CLS or UHC filter be used for the Sun?",
-        "de": "Kann ein CLS- oder UHC-Filter für die Sonne verwendet werden?"
+        "en": "Can any of these filters be used for the Sun?",
+        "de": "Kann einer dieser Filter für die Sonne verwendet werden?"
       },
       "answer": {
         "en": "Absolutely not. None is a solar safety filter. Solar observing requires a certified, undamaged front-aperture solar filter designed and secured for the exact telescope before concentrated sunlight enters the optical system.",
@@ -280,5 +398,5 @@
     "en": "This source-backed guide compares current manufacturer specifications from one product family to keep passband data directly comparable. It contains no live prices, affiliate identifiers, independent transmission measurement, or claim of hands-on use.",
     "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten einer Produktfamilie, damit Durchlasswerte direkt vergleichbar bleiben. Er enthält weder Live-Preise noch Affiliate-Kennungen, unabhängige Transmissionsmessungen oder die Behauptung eines Praxistests."
   },
-  "lastReviewedAt": "2026-08-28"
+  "lastReviewedAt": "2026-09-09"
 }
