@@ -31,7 +31,9 @@ test("destination and gear templates expose decision-first layout contracts with
   assert.match(destinationPage, /DestinationDecisionSummary/);
   assert.match(destinationPage, /guide \? guide\.seoDescription\[locale\]/);
   assert.doesNotMatch(destinationGuide, /destination-editorial-standfirst/);
-  assert.match(gearPage, /gear-decision-summary/);
+  assert.ok(gearPage.indexOf('id="gear-comparison-title"') < gearPage.indexOf('id="gear-audience-title"'));
+  assert.match(gearPage, /gear-product-details/);
+  assert.doesNotMatch(gearPage, /How this guide was made|So entstand dieser Guide/);
   assert.match(gearPage, /gear-related-guides/);
   assert.match(styles, /\.event-summary > h2:not\(:first-child\)/);
   assert.match(styles, /\.gear-related-guides \.gear-guide-card h3/);
