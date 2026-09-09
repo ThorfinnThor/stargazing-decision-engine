@@ -73,8 +73,8 @@ test("every gear item receives a tracked Astroshop product or product-search URL
       assert.equal(parsed.searchParams.get("q"), item.partnerSearchQuery);
     }
   }
-  assert.equal(direct, 22);
-  assert.equal(search, 17);
+  assert.equal(direct, 23);
+  assert.equal(search, 16);
 });
 
 test("enabled affiliate URLs are encoded and host allow-listed", () => {

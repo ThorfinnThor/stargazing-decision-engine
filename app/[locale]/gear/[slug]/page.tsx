@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 
 import { AffiliateGearProductLink } from "@/components/affiliate-gear-product-link";
 import { AffiliateGearLink } from "@/components/affiliate-gear-link";
+import { GearProductImage } from "@/components/gear-product-image";
+import { loadGearProductImages } from "@/lib/gear/product-images";
 import { buildAstroshopProductUrl } from "@/lib/affiliate/affiliate";
 import { loadAffiliateConfig, loadAstroshopProductMatches } from "@/lib/affiliate/config";
 import { listGearGuides, loadGearCategories, loadGearGuide, loadSeoPage } from "@/lib/data/load";
@@ -55,6 +57,7 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
   const categories = loadGearCategories();
   const affiliateConfig = loadAffiliateConfig();
   const astroshopProductMatches = loadAstroshopProductMatches();
+  const productImages = loadGearProductImages().filter((image) => image.guideSlug === guide.slug);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? guide.title[locale], description: seo?.description ?? guide.summary[locale], url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const guideStructuredData = buildGearGuideStructuredData({ guide, locale, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/gear/${guide.slug}/` });
   return (
@@ -79,7 +82,9 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
             const coreSpecs = item.localizedCoreSpecs?.[locale] ?? item.coreSpecs;
             const match = astroshopProductMatches.find((candidate) => candidate.guideSlug === guide.slug && candidate.productName === item.name.en);
             const affiliateProduct = buildAstroshopProductUrl(affiliateConfig, item, match);
+            const productImage = productImages.find((image) => image.productName === item.name.en);
             return <article className="gear-comparison-card" key={item.name.en}>
+              {productImage && affiliateProduct?.direct ? <GearProductImage image={productImage} name={item.name[locale]} href={affiliateProduct.url} /> : null}
               <header><span>{String(index + 1).padStart(2, "0")}</span><h3>{item.name[locale]}</h3></header>
               <div className="gear-product-highlights">
                 <p><strong>{isGerman ? "Stärke" : "Strength"}</strong>{item.pros[locale][0]}</p>
