@@ -11,11 +11,11 @@ const categories = read<GearCategory[]>("data-config/gear/categories.json");
 const guides = read<GearGuide[]>("data-config/gear/guides.json");
 const products = read<GearProductMetadata[]>("data-config/gear/products.json");
 
-test("expanded catalog retains 52 distinct sourced products and synchronized public guides", () => {
+test("expanded catalog retains 55 distinct sourced products and synchronized public guides", () => {
   const added = read<{added: {guideSlug: string; productName: string; articleId: string; sourceUrl: string}[]}>("docs/gear-catalog-expansion-2026-09-09.json").added;
   assert.equal(added.length, 13);
-  assert.equal(guides.flatMap(g => g.items).length, 52);
-  assert.equal(new Set(guides.flatMap(g => g.items.map(i => i.name.en))).size, 52);
+  assert.equal(guides.flatMap(g => g.items).length, 55);
+  assert.equal(new Set(guides.flatMap(g => g.items.map(i => i.name.en))).size, 55);
   const matches = read<{guideSlug: string; productName: string; path: string}[]>("data-config/gear/astroshop-product-matches.json");
   for (const entry of added) {
     const guide = guides.find(g => g.slug === entry.guideSlug);
@@ -23,7 +23,7 @@ test("expanded catalog retains 52 distinct sourced products and synchronized pub
     assert.ok(item);
     assert.equal(item.source?.url, entry.sourceUrl);
     assert.equal(item.source?.checkedAt, "2026-09-09");
-    assert.equal(guide?.lastReviewedAt, "2026-09-09");
+    assert.ok(["2026-09-09", "2026-09-10"].includes(guide!.lastReviewedAt));
     assert.ok(matches.find(m => m.guideSlug === entry.guideSlug && m.productName === entry.productName)?.path.endsWith("/p," + entry.articleId));
   }
   for (const guide of guides) {
@@ -39,7 +39,7 @@ test("gear catalog validates as specification analysis with dormant affiliate ho
   assert.ok(guides.every((guide) => guide.buyingCriteria.length >= 3));
   assert.ok(guides.every((guide) => guide.items.length >= 2));
   assert.ok(guides.every((guide) => guide.faq.length >= 2));
-  assert.ok(guides.every((guide) => /^(2026-08-(28|31)|2026-09-09)$/.test(guide.lastReviewedAt)));
+  assert.ok(guides.every((guide) => /^(2026-08-(28|31)|2026-09-(09|10))$/.test(guide.lastReviewedAt)));
   assert.ok(guides.every((guide) => guide.items.every((item) => item.recommendationBasis === "specification_analysis" && item.affiliatePartnerId === null)));
   assert.ok(products.every((product) => product.affiliatePartnerId === null));
 });

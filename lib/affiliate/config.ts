@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
+import { validateAmazonGearConfig, type AmazonGearConfig } from "./amazon";
 
 import type { AffiliateActivityOfferConfig, AffiliateConfig, AstroshopProductMatch } from "../data/types.js";
 
@@ -13,4 +14,10 @@ export function loadAffiliateActivityOffers(): AffiliateActivityOfferConfig {
 
 export function loadAstroshopProductMatches(): AstroshopProductMatch[] {
   return JSON.parse(readFileSync(resolve(process.cwd(), "data-config/gear/astroshop-product-matches.json"), "utf8")) as AstroshopProductMatch[];
+}
+
+export function loadAmazonGearConfig(): AmazonGearConfig {
+  const config = JSON.parse(readFileSync(resolve(process.cwd(), "data-config/gear/amazon-product-matches.json"), "utf8")) as AmazonGearConfig;
+  validateAmazonGearConfig(config);
+  return config;
 }

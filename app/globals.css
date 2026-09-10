@@ -3855,6 +3855,7 @@ h3 {
 .gear-product-highlights strong { display: block; margin-bottom: 0.35rem; color: var(--blue); font-size: 0.75rem; }
 .gear-comparison-card .gear-affiliate-product-link { display: flex; align-items: center; justify-content: center; min-height: 2.8rem; margin: 0; padding: 0.75rem; background: var(--gold); border: 1px solid var(--gold); border-radius: 0.25rem; color: #141822; font-size: 0.8rem; line-height: 1.4; text-align: center; text-decoration: none; }
 .gear-comparison-card .gear-affiliate-product-link:hover { background: #ffe29a; color: #141822; }
+.gear-retailer-links { display: grid; gap: 0.6rem; }
 .gear-guide-page .gear-product-details summary { padding: 0.9rem 0; color: var(--blue); font-size: 0.85rem; }
 .gear-guide-page .gear-product-details p, .gear-product-details li, .gear-product-details dd { font-size: 0.84rem; line-height: 1.6; }
 .gear-comparison-card dl { grid-template-columns: 1fr; }
