@@ -1,17 +1,17 @@
 {
   "slug": "star-trackers",
   "title": {
-    "en": "Travel star trackers compared: three routes into tracked nightscapes",
-    "de": "Reise-Star-Tracker im Vergleich: drei Wege zu nachgeführten Nachtlandschaften"
+    "en": "Travel star trackers for lightweight cameras and longer lenses",
+    "de": "Reise-Star-Tracker für leichte Kameras und längere Objektive"
   },
   "category": "star-trackers",
   "summary": {
-    "en": "Compare three portable star trackers while accounting for the wedge, counterweight, ball head, and polar-alignment parts a complete field kit may need.",
-    "de": "Vergleiche drei mobile Star-Tracker samt Wedge, Gegengewicht, Kugelkopf und den Ausrichtungshilfen, die ein vollständiges Feld-Set benötigt."
+    "en": "Compare four portable star trackers while accounting for the wedge, counterweight, ball head, and polar-alignment parts a complete field kit may need.",
+    "de": "Vergleiche vier mobile Star-Tracker samt Wedge, Gegengewicht, Kugelkopf und den Ausrichtungshilfen, die ein vollständiges Feld-Set benötigt."
   },
   "decisionSummary": {
-    "en": "Choose the 430 g MSM NOMAD when walking weight and a camera-lens workflow dominate, the Sky-Watcher Star Adventurer when its published bundle structure and AA-battery option fit your kit, or the iOptron SkyGuider Pro when a built-in polar scope, rechargeable battery, and documented ST-4 port matter.",
-    "de": "Wähle den 430-g-MSM NOMAD, wenn Fußweg und Kamera-Objektiv-Workflow dominieren, den Sky-Watcher Star Adventurer, wenn seine dokumentierten Bundles und AA-Stromversorgung zum Set passen, oder den iOptron SkyGuider Pro, wenn eingebautes Polsucherfernrohr, Akku und dokumentierter ST-4-Port wichtig sind."
+    "en": "NOMAD keeps body weight low. Polarie offers replaceable AA batteries for light cameras; Sky-Watcher and iOptron allow heavier combinations, but their quoted payloads do not guarantee sharp exposures at every focal length. Include the wedge, ball head and alignment accessories when comparing complete kits.",
+    "de": "NOMAD hält das Gehäusegewicht niedrig. Polarie bietet austauschbare AA-Batterien für leichte Kameras. Sky-Watcher und iOptron erlauben schwerere Kombinationen, doch ihre Traglastangaben garantieren keine scharfen Aufnahmen bei jeder Brennweite. Vergleiche komplette Sets einschließlich Wedge, Kugelkopf und Ausrichtungszubehör."
   },
   "audience": {
     "en": "Travelling photographers moving from fixed-tripod Milky Way images to tracked wide-field exposures and willing to learn polar alignment.",
@@ -79,11 +79,11 @@
       },
       "cons": {
         "en": [
-          "Lowest published maximum payload in this comparison",
+          "Lower maximum payload than the 5 kg Sky-Watcher and iOptron",
           "Laser or phone alignment hardware depends on hemisphere-specific bundle; laser rules must be checked locally"
         ],
         "de": [
-          "Niedrigste veröffentlichte Maximaltraglast in diesem Vergleich",
+          "Geringere Maximaltraglast als die 5-kg-Modelle von Sky-Watcher und iOptron",
           "Laser- oder Smartphone-Ausrichtung hängt vom hemisphärenspezifischen Bundle ab; lokale Laserregeln müssen geprüft werden"
         ]
       },
@@ -218,6 +218,65 @@
         "url": "https://www.ioptron.com/product-p/3552.htm",
         "checkedAt": "2026-08-28"
       }
+    },
+    {
+      "name": {
+        "en": "Vixen Polarie Star Tracker",
+        "de": "Vixen Polarie Star Tracker"
+      },
+      "whyItMatters": {
+        "en": "The original Polarie is a travel alternative with replaceable AA batteries. Its approximately 2 kg load limit includes the camera ball head, so it belongs with light camera-and-lens combinations rather than heavy telescope setups.",
+        "de": "Die ursprüngliche Polarie ist eine Reisealternative mit austauschbaren AA-Batterien. Ihre Lastgrenze von etwa 2 kg schließt den Kamera-Kugelkopf ein. Sie passt deshalb zu leichten Kamera-Objektiv-Kombinationen statt schweren Teleskopsystemen."
+      },
+      "coreSpecs": {
+        "Body mass": "740 g without batteries",
+        "Load limit": "approximately 2 kg including ball head",
+        "Power": "2×AA or external USB Mini-B",
+        "Tracking": "sidereal, half-sidereal, solar, lunar"
+      },
+      "localizedCoreSpecs": {
+        "en": {
+          "Body mass": "740 g without batteries",
+          "Load limit": "approximately 2 kg including ball head",
+          "Power": "2×AA or external USB Mini-B",
+          "Tracking": "sidereal, half-sidereal, solar, lunar"
+        },
+        "de": {
+          "Gehäusegewicht": "740 g ohne Batterien",
+          "Lastgrenze": "etwa 2 kg inklusive Kugelkopf",
+          "Strom": "2×AA oder extern über USB Mini-B",
+          "Nachführung": "siderisch, halbsiderisch, solar, lunar"
+        }
+      },
+      "pros": {
+        "en": [
+          "Replaceable batteries",
+          "Built-in sight hole and detachable compass"
+        ],
+        "de": [
+          "Austauschbare Batterien",
+          "Eingebautes Peilloch und abnehmbarer Kompass"
+        ]
+      },
+      "cons": {
+        "en": [
+          "Tripod, ball head and precision polar scope are additional equipment",
+          "Lower standard payload than NOMAD; not the newer Polarie U"
+        ],
+        "de": [
+          "Stativ, Kugelkopf und Präzisions-Polsucher sind zusätzliches Zubehör",
+          "Geringere Standardtraglast als NOMAD; nicht die neuere Polarie U"
+        ]
+      },
+      "recommendationBasis": "specification_analysis",
+      "partnerSearchQuery": "Vixen Polarie Star Tracker",
+      "affiliatePartnerId": null,
+      "source": {
+        "publisher": "Vixen / Bresser",
+        "title": "Original POLARIE Star Tracker specifications",
+        "url": "https://www.bresser.de/p/vixen-polarie-star-tracker-astrofoto-montierung-X002453",
+        "checkedAt": "2026-09-10"
+      }
     }
   ],
   "tradeoffs": {
@@ -277,8 +336,8 @@
     }
   ],
   "affiliateDisclosure": {
-    "en": "This source-backed guide compares current manufacturer specifications. It contains no live prices, affiliate identifiers, measured tracking test, or claim of hands-on use.",
-    "de": "Dieser quellenbasierte Guide vergleicht aktuelle Herstellerdaten. Er enthält weder Live-Preise noch Affiliate-Kennungen, eigene Nachführmessungen oder die Behauptung eines Praxistests."
+    "en": "Retailer links may earn us a commission. The comparisons use published specifications, not hands-on testing. Prices and availability are shown by the retailer.",
+    "de": "Über Händlerlinks können wir eine Provision erhalten. Die Vergleiche beruhen auf veröffentlichten Spezifikationen, nicht auf eigenen Praxistests. Preise und Verfügbarkeit zeigt der Händler."
   },
-  "lastReviewedAt": "2026-08-28"
+  "lastReviewedAt": "2026-09-10"
 }

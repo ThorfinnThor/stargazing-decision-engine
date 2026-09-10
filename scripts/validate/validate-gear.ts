@@ -2,6 +2,7 @@ import { existsSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { validateAstroshopProductMatches } from "../../lib/affiliate/affiliate.js";
+import { validateAmazonGearConfig, type AmazonGearConfig } from "../../lib/affiliate/amazon.js";
 import { validateGearCatalog } from "../../lib/gear/gear.js";
 import type { AstroshopProductMatch, GearCategory, GearGuide, GearProductMetadata } from "../../lib/data/types.js";
 import { publicDataDir, readJson, root } from "../pipeline/io.js";
@@ -13,6 +14,7 @@ const products = readJson<GearProductMetadata[]>(resolve(root, "data-config/gear
 const astroshopMatches = readJson<AstroshopProductMatch[]>(resolve(root, "data-config/gear/astroshop-product-matches.json"));
 validateGearCatalog(categories, guides, products);
 validateAstroshopProductMatches(astroshopMatches, guides);
+validateAmazonGearConfig(readJson<AmazonGearConfig>(resolve(root, "data-config/gear/amazon-product-matches.json")), guides);
 const ajv = createSchemaValidator();
 const errors: string[] = [];
 const categoryValidate = ajv.getSchema("https://stargazing.local/schema/gear-category.json");

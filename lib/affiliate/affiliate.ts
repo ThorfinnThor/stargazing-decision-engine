@@ -195,16 +195,17 @@ export function validateAstroshopProductMatches(matches: AstroshopProductMatch[]
 }
 
 export function buildAstroshopProductUrl(config: AffiliateConfig, item: GearGuideItem, match?: AstroshopProductMatch) {
+  // A generic shop search is not evidence that the compared model is sold there.
+  if (!match || match.productName !== item.name.en || !/^\/(?!\/)[^?#]*\/p,\d+$/.test(match.path)) return null;
   const partner = getAffiliatePartner(config, "astroshop-gear");
   if (!partner || partner.type !== "gear" || !partner.enabled) return null;
   const affiliateId = affiliatePartnerId(partner);
   if (!affiliateId) return null;
-  const parsed = new URL(match ? match.path : "/", "https://www.astroshop.de");
-  if (!match) parsed.searchParams.set("q", item.partnerSearchQuery);
+  const parsed = new URL(match.path, "https://www.astroshop.de");
   parsed.searchParams.set("affiliate_id", affiliateId);
   if (parsed.protocol !== "https:" || !hostAllowed(parsed.hostname, partner.allowedHosts)) return null;
   if (partner.requiredQueryParameters.some((parameter) => !parsed.searchParams.has(parameter))) return null;
-  return { url: parsed.toString(), direct: Boolean(match) };
+  return { url: parsed.toString(), direct: true };
 }
 
 export function affiliateRel() {

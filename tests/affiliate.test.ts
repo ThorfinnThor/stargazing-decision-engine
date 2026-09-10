@@ -49,32 +49,46 @@ test("gear partner URL preserves Astroshop tracking and host allowlist", () => {
   assert.equal(url, "https://www.astroshop.de/?affiliate_id=StargazingIndex");
 });
 
-test("every gear item receives a tracked Astroshop product or product-search URL", () => {
+test("only exact gear matches receive an Astroshop link; missing matches never fall back to searches", () => {
   const gearConfig = JSON.parse(source("data-config/sources/affiliate-partners.json")) as AffiliateConfig;
   const guides = JSON.parse(source("data-config/gear/guides.json")) as GearGuide[];
   const matches = JSON.parse(source("data-config/gear/astroshop-product-matches.json")) as AstroshopProductMatch[];
   validateAstroshopProductMatches(matches, guides);
   const matchedKeys = new Set(matches.map((match) => `${match.guideSlug}\u0000${match.productName}`));
   let direct = 0;
-  let search = 0;
+  let omitted = 0;
   for (const guide of guides) for (const item of guide.items) {
     const match = matches.find((candidate) => candidate.guideSlug === guide.slug && candidate.productName === item.name.en);
     const result = buildAstroshopProductUrl(gearConfig, item, match);
-    assert.ok(result, `${guide.slug}/${item.name.en} must produce an Astroshop link`);
+    if (!match) {
+      omitted += 1;
+      assert.equal(result, null, `${guide.slug}/${item.name.en} must not produce a search link`);
+      continue;
+    }
+    assert.ok(result, `${guide.slug}/${item.name.en} must retain its exact Astroshop link`);
     const parsed = new URL(result.url);
     assert.equal(parsed.hostname, "www.astroshop.de");
     assert.equal(parsed.searchParams.get("affiliate_id"), "StargazingIndex");
-    if (result.direct) {
-      direct += 1;
-      assert.match(parsed.pathname, /\/p,\d+$/);
-      assert.ok(matchedKeys.has(`${guide.slug}\u0000${item.name.en}`));
-    } else {
-      search += 1;
-      assert.equal(parsed.searchParams.get("q"), item.partnerSearchQuery);
-    }
+    direct += 1;
+    assert.equal(result.direct, true);
+    assert.equal(parsed.searchParams.has("q"), false);
+    assert.match(parsed.pathname, /\/p,\d+$/);
+    assert.ok(matchedKeys.has(`${guide.slug}\u0000${item.name.en}`));
   }
   assert.equal(direct, 36);
-  assert.equal(search, 16);
+  assert.equal(omitted, 19);
+});
+
+test("gear affiliate links reject another model or an invalid product path", () => {
+  const gearConfig = JSON.parse(source("data-config/sources/affiliate-partners.json")) as AffiliateConfig;
+  const guides = JSON.parse(source("data-config/gear/guides.json")) as GearGuide[];
+  const matches = JSON.parse(source("data-config/gear/astroshop-product-matches.json")) as AstroshopProductMatch[];
+  const item = guides[0].items[0];
+  const match = matches.find((candidate) => candidate.productName === item.name.en)!;
+  assert.equal(buildAstroshopProductUrl(gearConfig, item, { ...match, productName: "Another model" }), null);
+  for (const path of ["/", "/?q=another", "//example.com/p,123", "/product/p,123?q=another", "/product/p,123#another"]) {
+    assert.equal(buildAstroshopProductUrl(gearConfig, item, { ...match, path }), null);
+  }
 });
 
 test("enabled affiliate URLs are encoded and host allow-listed", () => {
