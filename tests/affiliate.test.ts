@@ -141,11 +141,20 @@ test("all published Booking.com searches use the primary recorded stay area and 
   const bookingSearches = published.filter((search) => search.partnerId === "booking-stay-search");
   const activeDestinations = destinations.filter((item) => item.active);
 
-  assert.equal(bookingSearches.length, activeDestinations.length);
-  assert.equal(new Set(bookingSearches.map((search) => search.destinationId)).size, activeDestinations.length);
+  const bookableDestinations = activeDestinations.filter((destinationItem) => {
+    const primaryStayArea = destinationItem.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
+    return primaryStayArea?.bookingSearchEnabled !== false;
+  });
+
+  assert.equal(bookingSearches.length, bookableDestinations.length);
+  assert.equal(new Set(bookingSearches.map((search) => search.destinationId)).size, bookableDestinations.length);
   for (const destinationItem of activeDestinations) {
     const primaryStayArea = destinationItem.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
     assert.ok(primaryStayArea, `${destinationItem.id} needs a primary stay area`);
+    if (primaryStayArea.bookingSearchEnabled === false) {
+      assert.equal(bookingSearches.some((search) => search.destinationId === destinationItem.id), false);
+      continue;
+    }
     const html = source(`public/go/booking-stay-search/${destinationItem.slug}/index.html`);
     const match = html.match(/location\.replace\("([^"]+)"\)/);
     assert.ok(match, `${destinationItem.id} needs a static Booking.com redirect`);
@@ -158,6 +167,26 @@ test("all published Booking.com searches use the primary recorded stay area and 
     assert.equal(booking.pathname, "/searchresults.html");
     assert.equal(booking.searchParams.get("ss"), primaryStayArea.affiliateQuery);
   }
+});
+
+test("ambiguous Booking.com stay areas use qualified destinations or suppress the CTA", () => {
+  const stayAreas = JSON.parse(source("data-config/sources/stay-areas.json")) as StayArea[];
+  const expected = new Map([
+    ["guelpe", "Gülpe Brandenburg Germany"],
+    ["witsand-town", "Olifantshoek Northern Cape South Africa"],
+    ["lapalala-reserve", "Vaalwater South Africa"],
+    ["stanley-idaho", "Stanley Idaho United States"],
+    ["glenwood-new-mexico", "Glenwood New Mexico United States"],
+    ["cortez-colorado", "Cortez Colorado United States"],
+    ["farmington-new-mexico", "Farmington New Mexico United States"],
+    ["ono-city", "Ōno Fukui Japan"],
+  ]);
+  for (const [id, query] of expected) {
+    const area = stayAreas.find((candidate) => candidate.id === id);
+    assert.equal(area?.affiliateQuery, query);
+    assert.notEqual(area?.bookingSearchEnabled, false);
+  }
+  assert.equal(stayAreas.find((candidate) => candidate.id === "fort-smith")?.bookingSearchEnabled, false);
 });
 
 test("destination search variants produce distinct stargazing and general Viator searches", () => {

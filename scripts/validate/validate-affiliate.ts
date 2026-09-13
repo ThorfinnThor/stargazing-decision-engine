@@ -2,7 +2,7 @@ import { existsSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { buildAffiliateActivityUrl, validateAffiliateActivityOffers, validateAffiliateConfig } from "../../lib/affiliate/affiliate.js";
-import type { AffiliateActivityOfferConfig, AffiliateConfig, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch } from "../../lib/data/types.js";
+import type { AffiliateActivityOfferConfig, AffiliateConfig, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, StayArea } from "../../lib/data/types.js";
 import { listLocationTours, loadDestinations } from "../../lib/data/load.js";
 import { readJson, root } from "../pipeline/io.js";
 import { createSchemaValidator } from "./validate-schemas.js";
@@ -20,6 +20,13 @@ const redirects = readJson<{ version: 2; entries: Array<{ kind: string; partner:
 const publishedOffers = readJson<PublishedAffiliateActivityOffer[]>(resolve(root, "public/data/stargazing/affiliate/activity-offers.json"));
 const publishedSearches = readJson<PublishedAffiliateDestinationSearch[]>(resolve(root, "public/data/stargazing/affiliate/destination-searches.json"));
 const activeDestinations = loadDestinations().filter((destination) => destination.active);
+const stayAreas = readJson<StayArea[]>(resolve(root, "data-config/sources/stay-areas.json"));
+const stayAreaById = new Map(stayAreas.map((stayArea) => [stayArea.id, stayArea]));
+const searchDestinationsFor = (partner: AffiliateConfig["partners"][number]) => activeDestinations.filter((destination) => {
+  if (partner.type !== "hotel") return true;
+  const primaryStayArea = destination.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
+  return primaryStayArea?.bookingSearchEnabled !== false;
+});
 const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
 for (const partner of config.partners.filter((item) => item.widget?.enabled)) {
   for (const destinationId of partner.widget?.destinationScope === "selected" ? partner.widget.destinationIds ?? [] : []) {
@@ -27,9 +34,10 @@ for (const partner of config.partners.filter((item) => item.widget?.enabled)) {
   }
 }
 const enabledSearchPartners = config.partners.filter((partner) => partner.enabled && partner.destinationSearchEnabled);
-const enabledSearchVariants = enabledSearchPartners.reduce((sum, partner) => sum + (partner.destinationSearchVariants?.length || 1), 0);
 const enabledOffers = offers.offers.filter((offer) => offer.enabled).length;
-const expectedSearches = enabledSearchVariants * activeDestinations.length;
+const expectedSearches = enabledSearchPartners.reduce((sum, partner) => (
+  sum + (partner.destinationSearchVariants?.length || 1) * searchDestinationsFor(partner).length
+), 0);
 const expectedRedirects = expectedSearches + enabledOffers;
 if (redirects.version !== 2) throw new Error("Affiliate redirect manifest version is invalid");
 if (redirects.entries.length !== expectedRedirects) throw new Error(`Expected ${expectedRedirects} affiliate redirect(s), found ${redirects.entries.length}`);
@@ -46,7 +54,7 @@ for (const offer of publishedOffers) {
 }
 if (publishedSearches.length !== expectedSearches) throw new Error("Published destination-search count does not match enabled variants");
 if (new Set(publishedSearches.map((search) => `${search.partnerId}/${search.destinationId}/${search.variantId}`)).size !== publishedSearches.length) throw new Error("Published destination searches must be unique");
-const expectedSearchKeys = new Set(enabledSearchPartners.flatMap((partner) => activeDestinations.flatMap((destination) => (
+const expectedSearchKeys = new Set(enabledSearchPartners.flatMap((partner) => searchDestinationsFor(partner).flatMap((destination) => (
   (partner.destinationSearchVariants?.length ? partner.destinationSearchVariants.map((variant) => variant.id) : ["default"])
     .map((variantId) => `${partner.id}/${destination.id}/${variantId}`)
 ))));
