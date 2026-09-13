@@ -32,6 +32,7 @@ const publishedDestinationSearches: PublishedAffiliateDestinationSearch[] = [];
 for (const partner of config.partners.filter((item) => item.enabled && item.destinationSearchEnabled)) {
   for (const destination of destinations.filter((item) => item.active)) {
     const primaryStayArea = destination.stayAreaIds.map((id) => stayAreaById.get(id)).find(Boolean);
+    if (partner.type === "hotel" && primaryStayArea?.bookingSearchEnabled === false) continue;
     const searchDestination = partner.type === "hotel" && primaryStayArea
       ? { ...destination, affiliateQuery: primaryStayArea.affiliateQuery }
       : destination;

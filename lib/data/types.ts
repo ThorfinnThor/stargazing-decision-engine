@@ -169,6 +169,7 @@ export interface StayArea {
   lat: number;
   lon: number;
   affiliateQuery: string;
+  bookingSearchEnabled?: boolean;
   observationSiteIds: string[];
 }
 

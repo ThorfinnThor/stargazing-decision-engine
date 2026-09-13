@@ -75,6 +75,7 @@ for (const area of stayAreas) {
   assertCoordinate(area.lat, area.lon, `Stay area ${area.id}`);
   if (!destinationIds.has(area.destinationId)) throw new Error(`Stay area ${area.id} references an unknown destination`);
   if (area.observationSiteIds.some((id) => !siteIds.has(id))) throw new Error(`Stay area ${area.id} references an unknown site`);
+  if (area.bookingSearchEnabled !== undefined && typeof area.bookingSearchEnabled !== "boolean") throw new Error(`Stay area ${area.id} has an invalid Booking.com search flag`);
 }
 
 for (const origin of origins) assertCoordinate(origin.lat, origin.lon, `Origin ${origin.id}`);
