@@ -1,5 +1,5 @@
 {
-  "siteId": "boi-valley",
+  "siteId": "aigues-boi-taull-starlight",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    42.52,
-    0.83
+    42.4793803,
+    0.8666296
   ],
   "tile": "N42_00_E000_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N42_00_E000_00_DEM/Copernicus_DSM_COG_10_N42_00_E000_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 1205.113,
+  "elevationM": 2049.31,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 1226.636,
-      "validSampleCount": 274
+      "elevationM": 2047.257,
+      "validSampleCount": 272
     },
     {
       "radiusKm": 1,
-      "elevationM": 1272.628,
-      "validSampleCount": 4467
+      "elevationM": 2109.149,
+      "validSampleCount": 4464
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:59:13.741691Z"
+  "retrievedAt": "2026-09-17T15:26:00.234927Z"
 }
