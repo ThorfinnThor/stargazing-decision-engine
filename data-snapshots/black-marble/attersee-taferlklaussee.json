@@ -1,0 +1,158 @@
+{
+  "siteId": "attersee-taferlklaussee",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 84,
+          "totalPixelCount": 84
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 84,
+          "totalPixelCount": 84
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 84,
+          "totalPixelCount": 84
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.047927,
+      "coverage": 0.997618,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.030753,
+          "coverage": 0.998571,
+          "validPixelCount": 2096,
+          "totalPixelCount": 2099
+        },
+        {
+          "year": 2024,
+          "radiance": 0.047927,
+          "coverage": 0.998094,
+          "validPixelCount": 2095,
+          "totalPixelCount": 2099
+        },
+        {
+          "year": 2023,
+          "radiance": 0.066618,
+          "coverage": 0.997618,
+          "validPixelCount": 2094,
+          "totalPixelCount": 2099
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.481154,
+      "coverage": 0.997649,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.439437,
+          "coverage": 0.997878,
+          "validPixelCount": 17402,
+          "totalPixelCount": 17439
+        },
+        {
+          "year": 2024,
+          "radiance": 0.481154,
+          "coverage": 0.997936,
+          "validPixelCount": 17403,
+          "totalPixelCount": 17439
+        },
+        {
+          "year": 2023,
+          "radiance": 0.525607,
+          "coverage": 0.997649,
+          "validPixelCount": 17398,
+          "totalPixelCount": 17439
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.724563,
+      "coverage": 0.999311,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.699394,
+          "coverage": 0.999418,
+          "validPixelCount": 102997,
+          "totalPixelCount": 103057
+        },
+        {
+          "year": 2024,
+          "radiance": 0.724563,
+          "coverage": 0.99936,
+          "validPixelCount": 102991,
+          "totalPixelCount": 103057
+        },
+        {
+          "year": 2023,
+          "radiance": 0.785458,
+          "coverage": 0.999311,
+          "validPixelCount": 102986,
+          "totalPixelCount": 103057
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.047927,
+  "radiance10to30": 0.481154,
+  "radiance30to75": 0.724563,
+  "alanExposure": 0.127465,
+  "darknessScore": 83.44,
+  "coverage": 0.997618,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T20:10:03.026637Z"
+}
