@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T14:03:42.223Z",
+  "generatedAt": "2026-09-17T14:13:19.943Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
@@ -126,10 +126,6 @@
           ],
           "requiredChanges": [
             {
-              "scope": "sierra-morena-snapshots",
-              "reason": "Regenerate climate, Black Marble, DEM and real-score snapshots for both corrected site coordinates before considering activation."
-            },
-            {
               "scope": "sierra-morena-access",
               "reason": "Obtain current operator or municipal confirmation of an actual bookable programme before clearing the factual gate; until then the guide must remain confirmation-first and the destination inactive."
             }
@@ -185,10 +181,7 @@
             "dem": true,
             "scores": true
           },
-          "coordinateMismatches": [
-            "climate",
-            "dem"
-          ],
+          "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
@@ -200,26 +193,13 @@
             "dem": true,
             "scores": true
           },
-          "coordinateMismatches": [
-            "climate",
-            "dem"
-          ],
+          "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
       "missingSnapshots": [],
-      "staleSnapshots": [
-        "sierra-morena-constantina:climate",
-        "sierra-morena-constantina:black-marble",
-        "sierra-morena-constantina:dem",
-        "sierra-morena-constantina:scores",
-        "sierra-morena-almadén:climate",
-        "sierra-morena-almadén:black-marble",
-        "sierra-morena-almadén:dem",
-        "sierra-morena-almadén:scores"
-      ],
+      "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshot-coordinates-stale",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
