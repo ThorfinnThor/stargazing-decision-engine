@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T16:47:08.809Z",
+  "generatedAt": "2026-09-17T20:15:44.033Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
@@ -843,10 +843,10 @@
           "id": "attersee-dixi-stargazing",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -855,28 +855,18 @@
           "id": "attersee-taferlklaussee",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "attersee-dixi-stargazing:climate",
-        "attersee-dixi-stargazing:black-marble",
-        "attersee-dixi-stargazing:dem",
-        "attersee-dixi-stargazing:scores",
-        "attersee-taferlklaussee:climate",
-        "attersee-taferlklaussee:black-marble",
-        "attersee-taferlklaussee:dem",
-        "attersee-taferlklaussee:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
