@@ -17,6 +17,7 @@ const stayAreas = readJson("data-config/sources/stay-areas.json");
 const destinationImages = readJson("data-config/sources/destination-images.json");
 const siteImages = readJson("data-config/sources/site-images.json");
 const sourceAudit = readJson("docs/staged-source-audit.json");
+const factualReviews = readJson("data-config/sources/staged-factual-reviews.json");
 
 const stagedDestinations = destinations.filter((destination) => destination.active === false);
 const byDestination = (records) => new Map(records.map((record) => [record.destinationId, record]));
@@ -30,6 +31,7 @@ for (const area of stayAreas) {
 const destinationImageBySlug = new Map(destinationImages.map((image) => [image.slug, image]));
 const siteImageBySlug = new Map(siteImages.map((image) => [image.slug, image]));
 const sourceResultByUrl = new Map(sourceAudit.records.map((record) => [record.url, record]));
+const factualReviewByDestination = new Map(factualReviews.records.map((record) => [record.destinationId, record]));
 
 const snapshotKinds = ["climate", "black-marble", "dem", "scores"];
 const snapshotState = (siteId) => Object.fromEntries(
@@ -63,6 +65,8 @@ const records = stagedDestinations.map((destination) => {
   const blockedSources = sourceResults.filter((source) => source.classification === "blocked");
   const destinationImageStatus = destinationImageBySlug.get(destination.id)?.status ?? "missing";
   const pendingSiteImages = siteStates.filter((site) => site.imageStatus !== "approved");
+  const factualReview = factualReviewByDestination.get(destination.id);
+  const factualReviewStatus = factualReview?.status ?? "required";
   const blockers = [];
   if (!guide) blockers.push("guide-missing");
   if (!tour) blockers.push("tour-missing");
@@ -71,7 +75,8 @@ const records = stagedDestinations.map((destination) => {
   if (missingSnapshots.length > 0) blockers.push("source-snapshots-missing");
   if (sourceBreakages.length > 0) blockers.push("source-reachability-broken");
   if (blockedSources.length > 0) blockers.push("source-access-manual-review-required");
-  blockers.push("source-factual-review-required");
+  if (factualReviewStatus === "required") blockers.push("source-factual-review-required");
+  if (factualReviewStatus === "changes-required") blockers.push("source-factual-changes-required");
   if (destinationImageStatus !== "approved") blockers.push("destination-image-license-pending");
   if (pendingSiteImages.length > 0) blockers.push("site-image-license-pending");
 
@@ -89,7 +94,8 @@ const records = stagedDestinations.map((destination) => {
       reachable: sourceResults.filter((source) => source.classification === "reachable").length,
       blocked: blockedSources.length,
       broken: sourceBreakages.length,
-      factualReview: "required",
+      factualReview: factualReviewStatus,
+      factualReviewRecord: factualReview ?? null,
       records: sourceResults,
     },
     destinationImageStatus,
@@ -113,6 +119,8 @@ const report = {
     withApprovedDestinationImage: records.filter((record) => record.destinationImageStatus === "approved").length,
     withAllSiteImagesApproved: records.filter((record) => record.sites.every((site) => site.imageStatus === "approved")).length,
     requiringFactualSourceReview: records.filter((record) => record.sources.factualReview === "required").length,
+    requiringFactualChanges: records.filter((record) => record.sources.factualReview === "changes-required").length,
+    withVerifiedFactualReview: records.filter((record) => record.sources.factualReview === "verified").length,
     readyForActivation: records.filter((record) => record.readyForActivation).length,
   },
   records,

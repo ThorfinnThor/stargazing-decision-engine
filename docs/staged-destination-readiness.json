@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T13:45:57.569Z",
+  "generatedAt": "2026-09-17T13:52:40.238Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -10,7 +10,9 @@
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 50,
+    "requiringFactualSourceReview": 49,
+    "requiringFactualChanges": 1,
+    "withVerifiedFactualReview": 0,
     "readyForActivation": 0
   },
   "records": [
@@ -29,6 +31,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "isle-of-sark-source-1",
@@ -98,7 +101,40 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "sierra-morena",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/legislacion-autonomica-nacional/parques-naturales/parque-natural-sierra-morena-sevilla",
+            "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
+            "https://www.juntadeandalucia.es/medioambiente/portal/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/sierra-morena-de-sevilla/255035",
+            "https://www.constantina.org/es/actualidad/eventos/Observacion-Astronomica-en-el-Castillo-de-Constantina/",
+            "https://patricia.dipusevilla.es/ver-punto/es/01924e2c-b988-7723-8be2-c6a80751e360",
+            "https://www.almadendelaplata.es/es/temas/turismo/observatorio-astronomico/",
+            "https://www.almadendelaplata.es/es/temas/turismo/la-traviesa/"
+          ],
+          "verifiedFindings": [
+            "The Andalusian tourism authority identifies Sierra Morena as a Starlight Reserve and destination spanning the Sierra Norte de Sevilla natural park.",
+            "The Constantina municipality documents a registered astronomy event at Castillo de Constantina; the provincial heritage register supplies the castle name and coordinates.",
+            "The Almadén de la Plata municipality identifies its astronomical observatory at Mirador de La Traviesa, about five kilometres outside the town."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "sierra-morena-constantina",
+              "reason": "The current generic site name is not used by the reviewed authorities. Model the documented Castillo de Constantina location and do not imply unsupervised night access from a dated, registration-only event."
+            },
+            {
+              "scope": "sierra-morena-almadén",
+              "reason": "The current coordinate is near the town centre, while the municipal source places the observatory at Mirador de La Traviesa about five kilometres away. Verify the exact observatory coordinate before regenerating all location-dependent snapshots."
+            },
+            {
+              "scope": "sierra-morena-editorial",
+              "reason": "Rewrite the guide and tour around the documented place names and current access evidence; the existing sources do not support a general independent night itinerary at either site."
+            }
+          ]
+        },
         "records": [
           {
             "id": "sierra-morena-source-1",
@@ -147,7 +183,7 @@
       ],
       "missingSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -168,6 +204,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "monfrague-source-1",
@@ -237,6 +274,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "sierra-de-gredos-source-1",
@@ -306,6 +344,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "javalambre-source-1",
@@ -375,6 +414,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "aigues-tortes-source-1",
@@ -444,6 +484,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "vercors-source-1",
@@ -513,6 +554,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "attersee-traunsee-source-1",
@@ -582,6 +624,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "grossmugl-source-1",
@@ -651,6 +694,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "poloniny-source-1",
@@ -720,6 +764,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "izera-source-1",
@@ -789,6 +834,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "tara-serbia-source-1",
@@ -859,6 +905,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "kopaonik-source-1",
@@ -928,6 +975,7 @@
         "blocked": 2,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "richtersveld-source-1",
@@ -998,6 +1046,7 @@
         "blocked": 2,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "mapungubwe-source-1",
@@ -1068,6 +1117,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "makgadikgadi-source-1",
@@ -1137,6 +1187,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "tsumkwe-source-1",
@@ -1206,6 +1257,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "rakiura-source-1",
@@ -1276,6 +1328,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "kangaroo-island-source-1",
@@ -1345,6 +1398,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "mudgee-source-1",
@@ -1414,6 +1468,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "great-western-woodlands-source-1",
@@ -1483,6 +1538,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "torrance-barrens-source-1",
@@ -1553,6 +1609,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "fundy-source-1",
@@ -1623,6 +1680,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "manitoulin-source-1",
@@ -1692,6 +1750,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "massacre-rim-source-1",
@@ -1762,6 +1821,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "grand-canyon-parashant-source-1",
@@ -1831,6 +1891,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "oracle-state-park-source-1",
@@ -1901,6 +1962,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "enchanted-rock-source-1",
@@ -1971,6 +2033,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "staunton-river-source-1",
@@ -2041,6 +2104,7 @@
         "blocked": 3,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "kissimmee-prairie-source-1",
@@ -2111,6 +2175,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "big-cypress-source-1",
@@ -2181,6 +2246,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "lassen-volcanic-source-1",
@@ -2251,6 +2317,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "dinosaur-national-monument-source-1",
@@ -2321,6 +2388,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "medicine-rocks-source-1",
@@ -2391,6 +2459,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "newport-wisconsin-source-1",
@@ -2461,6 +2530,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "boundary-waters-source-1",
@@ -2530,6 +2600,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "sturt-stony-desert-source-1",
@@ -2599,6 +2670,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "alula-source-1",
@@ -2669,6 +2741,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "jebel-akhdar-source-1",
@@ -2738,6 +2811,7 @@
         "blocked": 2,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "rann-of-kutch-source-1",
@@ -2808,6 +2882,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "achi-village-source-1",
@@ -2877,6 +2952,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "sani-pass-source-1",
@@ -2947,6 +3023,7 @@
         "blocked": 2,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "drakensberg-source-1",
@@ -3017,6 +3094,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "northern-damaraland-source-1",
@@ -3086,6 +3164,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "coral-pink-sand-dunes-source-1",
@@ -3156,6 +3235,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "cedar-breaks-source-1",
@@ -3226,6 +3306,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "puna-argentina-source-1",
@@ -3295,6 +3376,7 @@
         "blocked": 1,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "isla-navarino-source-1",
@@ -3365,6 +3447,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "uyuni-source-1",
@@ -3434,6 +3517,7 @@
         "blocked": 0,
         "broken": 0,
         "factualReview": "required",
+        "factualReviewRecord": null,
         "records": [
           {
             "id": "kidepo-valley-source-1",
