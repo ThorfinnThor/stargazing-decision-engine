@@ -4045,46 +4045,6 @@
     }
   },
   {
-    "id": "javalambre-observatory-road",
-    "slug": "javalambre-observatory-road",
-    "destinationId": "javalambre",
-    "name": "Javalambre access area",
-    "lat": 40.04,
-    "lon": -1.01,
-    "elevationM": 1950,
-    "siteType": "mountain-road",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 89,
-    "certificationIds": [],
-    "notesSourceUrl": "https://oajweb.cefca.es/oaj/principal",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Javalambre access area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Javalambre access area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "arcos-salinas-viewpoint",
-    "slug": "arcos-salinas-viewpoint",
-    "destinationId": "javalambre",
-    "name": "Arcos de las Salinas viewpoint",
-    "lat": 40.02,
-    "lon": -1,
-    "elevationM": 1080,
-    "siteType": "village-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 70,
-    "active": false,
-    "priority": 89,
-    "certificationIds": [],
-    "notesSourceUrl": "https://oajweb.cefca.es/oaj/principal",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Arcos de las Salinas viewpoint. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Arcos de las Salinas viewpoint nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "aigues-estany-sant-maurici",
     "slug": "aigues-estany-sant-maurici",
     "destinationId": "aigues-tortes",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "The provincial tourism authority lists Hoyos del Espino in its purpose-built stellar-viewpoint network, and the municipality documents a 22:30 astronomy event at Mirador Estelar Mesegosillo (Las Cocinillas). That event confirms night use of the named facility, not unrestricted parking or camping; follow current signs and municipal notices.",
       "de": "Die Tourismusbehörde der Provinz führt Hoyos del Espino in ihrem Netz angelegter Sternen-Aussichtspunkte, und die Gemeinde dokumentiert um 22:30 Uhr eine Astronomieveranstaltung am Mirador Estelar Mesegosillo (Las Cocinillas). Die Veranstaltung bestätigt die nächtliche Nutzung des benannten Ortes, aber weder uneingeschränktes Parken noch Camping; beachte aktuelle Schilder und kommunale Hinweise."
+    }
+  },
+  {
+    "id": "javalambre-galactica",
+    "slug": "javalambre-galactica",
+    "destinationId": "javalambre",
+    "name": "Galáctica astronomy centre",
+    "lat": 39.9991162,
+    "lon": -1.0407695,
+    "elevationM": 1126,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": false,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://galactica.org.es/prepara-tu-visita/",
+    "accessNotes": {
+      "en": "The official visitor page confirms bookable nighttime telescope activities and onsite parking. Use this site only with a dated reservation or published programme; weather may cancel the observation, and the coordinate grants neither access outside the booking nor permission to camp.",
+      "de": "Die offizielle Besuchsseite bestätigt buchbare nächtliche Teleskopaktivitäten und einen Parkplatz vor Ort. Nutze diesen Ort nur mit datierter Reservierung oder veröffentlichtem Programm; das Wetter kann die Beobachtung absagen, und die Koordinate gewährt weder Zugang außerhalb der Buchung noch eine Campingerlaubnis."
+    }
+  },
+  {
+    "id": "javalambre-oaj-guided-visit",
+    "slug": "javalambre-oaj-guided-visit",
+    "destinationId": "javalambre",
+    "name": "Observatorio Astrofísico de Javalambre guided visit",
+    "lat": 40.0412972,
+    "lon": -1.0164167,
+    "elevationM": 1957,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": false,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://oaj.cefca.es/oaj_visits/visits",
+    "accessNotes": {
+      "en": "CEFCA publishes the summit coordinate and 1,957-metre elevation and directs public visits through Galáctica. Galáctica states that this is an outreach tour, not direct observing. Use only a booked guided visit and its official access instructions; do not treat the research observatory or its gate as an independent night-observing site.",
+      "de": "CEFCA veröffentlicht die Gipfelkoordinate und 1.957 Meter Höhe und verweist öffentliche Besuche an Galáctica. Galáctica erklärt, dass dies eine Wissensführung und keine direkte Beobachtung ist. Nutze ausschließlich eine gebuchte Führung mit deren offiziellen Zufahrtshinweisen; behandle weder das Forschungsobservatorium noch sein Tor als selbstständigen Nachtbeobachtungsplatz."
     }
   }
 ]

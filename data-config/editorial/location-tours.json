@@ -22518,8 +22518,8 @@
           "de": "Ankunftsregel"
         },
         "value": {
-          "en": "Before sunset after a same-day access check",
-          "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+          "en": "At the booked time using the operator's instructions",
+          "de": "Zur gebuchten Zeit nach Betreiberanweisung"
         },
         "sourceIds": [
           "sierra-morena-source-1",
@@ -22612,16 +22612,16 @@
           },
           {
             "time": {
-              "en": "Before sunset",
-              "de": "Vor Sonnenuntergang"
+              "en": "At the booked arrival time",
+              "de": "Zur gebuchten Ankunftszeit"
             },
             "title": {
-              "en": "Settle at Observatorio Astronómico de Almadén de la Plata",
-              "de": "An Observatorio Astronómico de Almadén de la Plata ankommen"
+              "en": "Check in at Observatorio Astronómico de Almadén de la Plata",
+              "de": "An Observatorio Astronómico de Almadén de la Plata einchecken"
             },
             "body": {
-              "en": "Use daylight to read signs, identify the legal footprint and place the vehicle once. Keep Castillo de Constantina for a separately checked visit. Do not unload until the route back is still obvious.",
-              "de": "Nutze das Tageslicht für Schilder, legale Fläche und einmaliges Abstellen. Bewahre Castillo de Constantina für einen separat geprüften Besuch. Lade erst aus, wenn der Rückweg weiterhin eindeutig ist. So bleibt die Abfahrt auch bei Dunkelheit verständlich."
+              "en": "Follow the booking instructions for Observatorio Astronómico de Almadén de la Plata, use only the assigned arrival route and parking, and keep Castillo de Constantina for a separately booked visit. A reservation for one venue grants no access to the other.",
+              "de": "Folge den Buchungshinweisen für Observatorio Astronómico de Almadén de la Plata, nutze nur die zugewiesene Anfahrt und den vorgesehenen Parkplatz und bewahre Castillo de Constantina für einen separat gebuchten Besuch. Eine Reservierung für einen Ort gewährt keinen Zugang zum anderen."
             },
             "sourceIds": [
               "sierra-morena-source-1",
@@ -22642,8 +22642,8 @@
               "de": "Beobachten ohne die Fläche zu erweitern"
             },
             "body": {
-              "en": "Let adaptation settle, keep light low and add only equipment that remains clear of shared movement and the route back to Almadén de la Plata. Recheck wind, temperature and nearby activity before extending the session.",
-              "de": "Lass die Augen anpassen, halte Licht niedrig und ergänze nur Ausrüstung ohne Behinderung gemeinsamer Wege und des Rückwegs nach Almadén de la Plata. Prüfe Wind, Temperatur und Aktivität in der Nähe erneut, bevor du die Sitzung verlängerst."
+              "en": "Follow staff instructions and remain inside the booked programme footprint. Keep personal light low, do not interfere with instruments or other visitors, and accept the operator's weather decision. Use only equipment covered by the booking and leave exactly as instructed when the programme ends.",
+              "de": "Folge den Anweisungen des Personals und bleibe innerhalb der gebuchten Programmfläche. Halte eigenes Licht niedrig, störe weder Instrumente noch andere Gäste und akzeptiere die Wetterentscheidung des Betreibers. Nutze nur von der Buchung abgedeckte Ausrüstung und verlasse den Ort zum Programmende genau nach Anweisung."
             },
             "sourceIds": [
               "sierra-morena-source-1",
@@ -23293,18 +23293,18 @@
     "id": "javalambre-one-site-night",
     "slug": "javalambre-one-site-night",
     "destinationId": "javalambre",
-    "recommendedSiteId": "javalambre-observatory-road",
+    "recommendedSiteId": "javalambre-galactica",
     "title": {
-      "en": "Javalambre: The public foothills rather than an observatory gate",
-      "de": "Javalambre: Das öffentliche Vorland statt eines Observatoriumstors"
+      "en": "Javalambre: A booked Galáctica observing programme, with the OAJ kept as a separate guided science visit rather than an independent night site.",
+      "de": "Javalambre: Ein gebuchtes Beobachtungsprogramm bei Galáctica; der OAJ bleibt eine getrennte Wissenschaftsführung und kein selbstständiger Nachtplatz."
     },
     "seoDescription": {
-      "en": "Plan a source-led stargazing night in Javalambre with Javalambre access area, access checks and a practical return route.",
-      "de": "Plane eine quellenbasierte Beobachtungsnacht in Javalambre mit Javalambre access area, Zugangsprüfung und sicherem Rückweg."
+      "en": "Plan a source-led Javalambre astronomy visit only after a current programme and access are confirmed.",
+      "de": "Plane einen quellenbasierten Astronomiebesuch in Javalambre nur nach Bestätigung eines aktuellen Programms und Zugangs."
     },
     "standfirst": {
-      "en": "Javalambre rewards a specific plan. The public foothills rather than an observatory gate This guide separates the named observing places from the live decisions that remain with visitors and the managing authority. It is written for a real evening, including the point at which postponing is the correct decision, and keeps the practical return visible throughout the planning.",
-      "de": "Javalambre belohnt einen konkreten Plan. Das öffentliche Vorland statt eines Observatoriumstors Dieser Guide trennt benannte Beobachtungsorte von den aktuellen Entscheidungen der Gäste und der zuständigen Verwaltung. Er beschreibt einen echten Abend einschließlich des Punkts, an dem Verschieben die richtige Entscheidung ist, und hält den praktischen Rückweg während der Planung sichtbar."
+      "en": "Javalambre has documented astronomy venues, but the reviewed pages do not establish a current independent night-observing site. This staged guide starts with a programme or operator confirmation and treats postponement as the only valid outcome when that confirmation is absent. The regional Starlight designation confirms sky quality, not tonight's admission, parking or programme.",
+      "de": "Javalambre besitzt dokumentierte Astronomieorte, doch die geprüften Seiten belegen keinen aktuell selbstständig nutzbaren Nachtbeobachtungsplatz. Dieser vorbereitete Guide beginnt mit der Bestätigung durch Programm oder Betreiber und sieht ohne diese Bestätigung ausschließlich eine Verschiebung vor. Die regionale Starlight-Auszeichnung bestätigt die Himmelsqualität, aber weder heutigen Zutritt noch Parkplatz oder Programm."
     },
     "facts": [
       {
@@ -23313,13 +23313,16 @@
           "de": "Beobachten an"
         },
         "value": {
-          "en": "Javalambre access area",
-          "de": "Javalambre access area"
+          "en": "Galáctica astronomy centre",
+          "de": "Galáctica astronomy centre"
         },
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ]
       },
       {
@@ -23334,7 +23337,10 @@
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ]
       },
       {
@@ -23343,13 +23349,16 @@
           "de": "Ankunftsregel"
         },
         "value": {
-          "en": "Before sunset after a same-day access check",
-          "de": "Vor Sonnenuntergang nach Zugangskontrolle am selben Tag"
+          "en": "At the booked time using the operator's instructions",
+          "de": "Zur gebuchten Zeit nach Betreiberanweisung"
         },
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ]
       },
       {
@@ -23358,13 +23367,16 @@
           "de": "Getrennte Alternative"
         },
         "value": {
-          "en": "Arcos de las Salinas viewpoint",
-          "de": "Arcos de las Salinas viewpoint"
+          "en": "Observatorio Astrofísico de Javalambre guided visit",
+          "de": "Observatorio Astrofísico de Javalambre guided visit"
         },
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ]
       }
     ],
@@ -23373,23 +23385,26 @@
         "id": "javalambre-route-place",
         "kind": "prose",
         "heading": {
-          "en": "Why this route stops at Javalambre access area",
-          "de": "Warum diese Route an Javalambre access area endet"
+          "en": "Why this route stops at Galáctica astronomy centre",
+          "de": "Warum diese Route an Galáctica astronomy centre endet"
         },
         "paragraphs": {
           "en": [
-            "The public foothills rather than an observatory gate The route keeps Javalambre access area as the decision point, treats Arcos de las Salinas viewpoint as a separate option and makes the return part of a successful night. The single-stop design protects attention, dark adaptation and the known return to Arcos de las Salinas.",
+            "Galáctica is usable only with a current activity booking; the OAJ is a separate guided science visit and explicitly not a direct observing session. Neither booking authorizes access to the other venue. The single-stop design protects attention, dark adaptation and the known return to Arcos de las Salinas.",
             "Read signs and boundaries before unloading. A named place is useful only when its current visitor arrangement is understood."
           ],
           "de": [
-            "Das öffentliche Vorland statt eines Observatoriumstors Die Route macht Javalambre access area zum Entscheidungspunkt, behandelt Arcos de las Salinas viewpoint als getrennte Option und versteht die Rückkehr als Teil einer gelungenen Nacht. Das Ein-Ort-Design schützt Aufmerksamkeit, Dunkeladaption und die bekannte Rückkehr nach Arcos de las Salinas.",
+            "Galáctica ist nur mit aktueller Aktivitätsbuchung nutzbar; der OAJ ist eine getrennte Wissenschaftsführung und ausdrücklich keine direkte Beobachtungssitzung. Keine Buchung erlaubt den Zugang zum jeweils anderen Ort. Das Ein-Ort-Design schützt Aufmerksamkeit, Dunkeladaption und die bekannte Rückkehr nach Arcos de las Salinas.",
             "Lies Schilder und Grenzen vor dem Ausladen. Ein benannter Ort hilft nur, wenn seine aktuelle Besucherregelung verstanden ist."
           ]
         },
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ]
       },
       {
@@ -23420,26 +23435,32 @@
             "sourceIds": [
               "javalambre-source-1",
               "javalambre-source-2",
-              "javalambre-source-3"
+              "javalambre-source-3",
+              "javalambre-source-4",
+              "javalambre-source-5",
+              "javalambre-source-6"
             ]
           },
           {
             "time": {
-              "en": "Before sunset",
-              "de": "Vor Sonnenuntergang"
+              "en": "At the booked arrival time",
+              "de": "Zur gebuchten Ankunftszeit"
             },
             "title": {
-              "en": "Settle at Javalambre access area",
-              "de": "An Javalambre access area ankommen"
+              "en": "Check in at Galáctica astronomy centre",
+              "de": "An Galáctica astronomy centre einchecken"
             },
             "body": {
-              "en": "Use daylight to read signs, identify the legal footprint and place the vehicle once. Keep Arcos de las Salinas viewpoint for a separately checked visit. Do not unload until the route back is still obvious.",
-              "de": "Nutze das Tageslicht für Schilder, legale Fläche und einmaliges Abstellen. Bewahre Arcos de las Salinas viewpoint für einen separat geprüften Besuch. Lade erst aus, wenn der Rückweg weiterhin eindeutig ist. So bleibt die Abfahrt auch bei Dunkelheit verständlich."
+              "en": "Follow the booking instructions for Galáctica astronomy centre, use only the assigned arrival route and parking, and keep Observatorio Astrofísico de Javalambre guided visit for a separately booked visit. A reservation for one venue grants no access to the other.",
+              "de": "Folge den Buchungshinweisen für Galáctica astronomy centre, nutze nur die zugewiesene Anfahrt und den vorgesehenen Parkplatz und bewahre Observatorio Astrofísico de Javalambre guided visit für einen separat gebuchten Besuch. Eine Reservierung für einen Ort gewährt keinen Zugang zum anderen."
             },
             "sourceIds": [
               "javalambre-source-1",
               "javalambre-source-2",
-              "javalambre-source-3"
+              "javalambre-source-3",
+              "javalambre-source-4",
+              "javalambre-source-5",
+              "javalambre-source-6"
             ]
           },
           {
@@ -23452,13 +23473,16 @@
               "de": "Beobachten ohne die Fläche zu erweitern"
             },
             "body": {
-              "en": "Let adaptation settle, keep light low and add only equipment that remains clear of shared movement and the route back to Arcos de las Salinas. Recheck wind, temperature and nearby activity before extending the session.",
-              "de": "Lass die Augen anpassen, halte Licht niedrig und ergänze nur Ausrüstung ohne Behinderung gemeinsamer Wege und des Rückwegs nach Arcos de las Salinas. Prüfe Wind, Temperatur und Aktivität in der Nähe erneut, bevor du die Sitzung verlängerst."
+              "en": "Follow staff instructions and remain inside the booked programme footprint. Keep personal light low, do not interfere with instruments or other visitors, and accept the operator's weather decision. Use only equipment covered by the booking and leave exactly as instructed when the programme ends.",
+              "de": "Folge den Anweisungen des Personals und bleibe innerhalb der gebuchten Programmfläche. Halte eigenes Licht niedrig, störe weder Instrumente noch andere Gäste und akzeptiere die Wetterentscheidung des Betreibers. Nutze nur von der Buchung abgedeckte Ausrüstung und verlasse den Ort zum Programmende genau nach Anweisung."
             },
             "sourceIds": [
               "javalambre-source-1",
               "javalambre-source-2",
-              "javalambre-source-3"
+              "javalambre-source-3",
+              "javalambre-source-4",
+              "javalambre-source-5",
+              "javalambre-source-6"
             ]
           }
         ]
@@ -23481,13 +23505,16 @@
               "de": "Zugang und Rückkehr sind bestätigt"
             },
             "body": {
-              "en": "Stay at Javalambre access area, keep the vehicle settled and return to Arcos de las Salinas by the route learned in daylight.",
-              "de": "Bleibe an Javalambre access area, lasse das Fahrzeug stehen und kehre auf der bei Tageslicht erlernten Route nach Arcos de las Salinas zurück."
+              "en": "Stay at Galáctica astronomy centre, keep the vehicle settled and return to Arcos de las Salinas by the route learned in daylight.",
+              "de": "Bleibe an Galáctica astronomy centre, lasse das Fahrzeug stehen und kehre auf der bei Tageslicht erlernten Route nach Arcos de las Salinas zurück."
             },
             "sourceIds": [
               "javalambre-source-1",
               "javalambre-source-2",
-              "javalambre-source-3"
+              "javalambre-source-3",
+              "javalambre-source-4",
+              "javalambre-source-5",
+              "javalambre-source-6"
             ]
           },
           {
@@ -23502,7 +23529,10 @@
             "sourceIds": [
               "javalambre-source-1",
               "javalambre-source-2",
-              "javalambre-source-3"
+              "javalambre-source-3",
+              "javalambre-source-4",
+              "javalambre-source-5",
+              "javalambre-source-6"
             ]
           }
         ]
@@ -23521,7 +23551,10 @@
         "sourceIds": [
           "javalambre-source-1",
           "javalambre-source-2",
-          "javalambre-source-3"
+          "javalambre-source-3",
+          "javalambre-source-4",
+          "javalambre-source-5",
+          "javalambre-source-6"
         ],
         "tone": "warning"
       }
@@ -23529,9 +23562,12 @@
     "sourceIds": [
       "javalambre-source-1",
       "javalambre-source-2",
-      "javalambre-source-3"
+      "javalambre-source-3",
+      "javalambre-source-4",
+      "javalambre-source-5",
+      "javalambre-source-6"
     ],
-    "lastReviewedAt": "2026-09-16"
+    "lastReviewedAt": "2026-09-17"
   },
   {
     "version": 1,

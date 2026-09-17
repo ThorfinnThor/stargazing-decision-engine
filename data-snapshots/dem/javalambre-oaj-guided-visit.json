@@ -1,5 +1,5 @@
 {
-  "siteId": "javalambre-observatory-road",
+  "siteId": "javalambre-oaj-guided-visit",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,29 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    40.04,
-    -1.01
+    40.0412972,
+    -1.0164167
   ],
   "tile": "N40_00_W002_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N40_00_W002_00_DEM/Copernicus_DSM_COG_10_N40_00_W002_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 1768.057,
+  "elevationM": 1944.884,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 1757.116,
-      "validSampleCount": 270
+      "elevationM": 1928.713,
+      "validSampleCount": 258
     },
     {
       "radiusKm": 1,
-      "elevationM": null,
-      "validSampleCount": 0
+      "elevationM": 1829.289,
+      "validSampleCount": 4301
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
-  "warnings": [
-    "1 km neighborhood crosses the downloaded tile boundary and was omitted"
-  ],
-  "retrievedAt": "2026-09-17T11:59:08.495025Z"
+  "warnings": [],
+  "retrievedAt": "2026-09-17T15:03:15.663924Z"
 }

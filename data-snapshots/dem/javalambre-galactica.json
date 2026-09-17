@@ -1,5 +1,5 @@
 {
-  "siteId": "arcos-salinas-viewpoint",
+  "siteId": "javalambre-galactica",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,13 +7,13 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    40.02,
-    -1
+    39.9991162,
+    -1.0407695
   ],
-  "tile": "N40_00_W001_00",
-  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N40_00_W001_00_DEM/Copernicus_DSM_COG_10_N40_00_W001_00_DEM.tif",
+  "tile": "N39_00_W002_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N39_00_W002_00_DEM/Copernicus_DSM_COG_10_N39_00_W002_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 1231.781,
+  "elevationM": 1125.626,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
@@ -32,5 +32,5 @@
     "0.25 km neighborhood crosses the downloaded tile boundary and was omitted",
     "1 km neighborhood crosses the downloaded tile boundary and was omitted"
   ],
-  "retrievedAt": "2026-09-17T11:59:13.102826Z"
+  "retrievedAt": "2026-09-17T15:03:15.298797Z"
 }
