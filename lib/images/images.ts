@@ -31,8 +31,9 @@ function normalizeAsset(asset: ImageAssetConfig, label: string, fallbackAlt: { e
 
 function validateCoverage<T extends { slug: string }>(items: T[], configs: ImageAssetConfig[], kind: string) {
   const expected = new Set(items.map((item) => item.slug));
-  const actual = new Set(configs.map((item) => item.slug));
-  if (actual.size !== configs.length || configs.some((item) => !expected.has(item.slug)) || actual.size !== expected.size) throw new Error(`${kind} image config must cover each active target exactly once`);
+  const activeConfigs = configs.filter((item) => expected.has(item.slug));
+  const actual = new Set(activeConfigs.map((item) => item.slug));
+  if (actual.size !== activeConfigs.length || actual.size !== expected.size) throw new Error(`${kind} image config must cover each active target exactly once`);
 }
 
 export function buildImageManifest(options: { destinations: Destination[]; sites: ObservationSite[]; destinationImages: ImageAssetConfig[]; siteImages: ImageAssetConfig[]; generatedAt: string; publicRoot: string }): ImageManifest {

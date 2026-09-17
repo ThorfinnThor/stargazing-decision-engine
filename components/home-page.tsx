@@ -1,4 +1,4 @@
-import { listGearGuides, listLocationTours, listShortTripOrigins, loadDestination, loadDestinations, loadDestinationMonthly, loadGearGuide, loadManifest, loadNightPreviews, loadSeoPage, loadShortTrip, loadSites } from "@/lib/data/load";
+import { listGearGuides, listLocationTours, listMeteorShowerEvents, listShortTripOrigins, loadDestination, loadDestinations, loadDestinationMonthly, loadGearGuide, loadManifest, loadMeteorShowerEvent, loadNightPreviews, loadSeoPage, loadShortTrip, loadSites } from "@/lib/data/load";
 import { isTravelEligibleSite } from "@/lib/access/travel";
 import { buildHomepageSkyCandidates } from "@/lib/astronomy/homepage-candidates";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
@@ -24,6 +24,10 @@ export function HomePage({ locale }: { locale: Locale }) {
   }).filter((trip) => trip.destinationCount > 0);
   const gearGuides = listGearGuides().map(loadGearGuide);
   const locationTours = listLocationTours();
+  const meteorShowers = listMeteorShowerEvents()
+    .map(({ year, slug }) => loadMeteorShowerEvent(year, slug))
+    .filter((event) => loadSeoPage(localizedLinks.meteorShower(locale, event.year, event.slug))?.indexable)
+    .sort((left, right) => left.peakDate.localeCompare(right.peakDate));
   const seo = loadSeoPage(`/${locale}/`);
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? "Stargazing Index", description: seo?.description ?? copy.lede, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
   const sites = loadSites();
@@ -97,6 +101,20 @@ export function HomePage({ locale }: { locale: Locale }) {
             <div className="card-topline"><span>{destinationCount} {locale === "de" ? (destinationCount === 1 ? "Ziel" : "Ziele") : (destinationCount === 1 ? "destination" : "destinations")}</span><span>→</span></div>
             <h3>{originName}</h3>
             <p>{locale === "de" ? "Dunkle Orte für eine realistische Kurzreise." : "Dark-sky places for a practical short trip."}</p>
+          </a>)}
+        </div>
+      </section>
+
+      <section className="foundation" aria-labelledby="meteor-showers-title">
+        <div className="section-heading">
+          <p className="eyebrow dark">{locale === "de" ? "Meteorschauer" : "Meteor showers"}</p>
+          <h2 id="meteor-showers-title">{locale === "de" ? "Plane die stärksten Schauer des Jahres." : "Plan the year’s strongest showers."}</h2>
+        </div>
+        <div className="foundation-grid short-trip-links">
+          {meteorShowers.map((event) => <a className="destination-card" href={localizedLinks.meteorShower(locale, event.year, event.slug)} key={event.id}>
+            <div className="card-topline"><span>{event.year} · {event.iauCode}</span><span>→</span></div>
+            <h3>{event.name[locale]}</h3>
+            <p>{locale === "de" ? `Maximum am ${event.peakDate}. Mondbedingungen und geeignete Ziele vergleichen.` : `Peak date ${event.peakDate}. Compare Moon conditions and suitable destinations.`}</p>
           </a>)}
         </div>
       </section>

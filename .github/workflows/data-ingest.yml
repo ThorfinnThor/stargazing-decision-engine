@@ -8,6 +8,15 @@ on:
         required: true
         default: all
         type: string
+      catalog_scope:
+        description: "Catalog cohort to ingest"
+        required: true
+        default: active
+        type: choice
+        options:
+          - active
+          - staged
+          - all
       refresh_era5:
         description: "Fetch and process ERA5 climate snapshots"
         required: true
@@ -44,7 +53,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    # A complete three-source refresh for 50 new sites is intentionally one
+    # A complete three-source refresh for 100 staged sites is intentionally one
     # auditable batch and can take several hours on the hosted runner.
     timeout-minutes: 360
     env:
@@ -69,20 +78,28 @@ jobs:
       - name: Install optional ingestion dependencies
         if: ${{ inputs.refresh_era5 || inputs.refresh_black_marble || inputs.refresh_dem }}
         run: python -m pip install -r requirements-data.txt
-      - name: Resolve requested active sites
+      - name: Resolve requested sites
         id: sites
         env:
           REQUESTED_DESTINATIONS: ${{ inputs.destinations }}
+          CATALOG_SCOPE: ${{ inputs.catalog_scope }}
         run: |
           set -euo pipefail
+          select_scope='def in_scope:
+            ($scope == "all")
+            or ($scope == "active" and .active == true)
+            or ($scope == "staged" and .active == false);'
           if [[ "$REQUESTED_DESTINATIONS" == "all" ]]; then
-            jq -r '.[] | select(.active) | .slug' data-config/sources/observation-sites.json > /tmp/stargazing-sites
+            jq -r --arg scope "$CATALOG_SCOPE" "$select_scope .[] | select(in_scope) | .slug" \
+              data-config/sources/observation-sites.json > /tmp/stargazing-sites
           else
             : > /tmp/stargazing-sites
             IFS=',' read -ra requested <<< "$REQUESTED_DESTINATIONS"
             for item in "${requested[@]}"; do
               slug="$(printf '%s' "$item" | xargs)"
-              jq -r --arg slug "$slug" '.[] | select(.active and (.slug == $slug or .destinationId == $slug)) | .slug' data-config/sources/observation-sites.json >> /tmp/stargazing-sites
+              jq -r --arg scope "$CATALOG_SCOPE" --arg slug "$slug" \
+                "$select_scope .[] | select(in_scope and (.slug == \$slug or .destinationId == \$slug)) | .slug" \
+                data-config/sources/observation-sites.json >> /tmp/stargazing-sites
             done
             sort -u /tmp/stargazing-sites -o /tmp/stargazing-sites
           fi
@@ -90,10 +107,16 @@ jobs:
           jq -r --rawfile selected /tmp/stargazing-sites '
             ($selected | split("\n") | map(select(length > 0))) as $site_slugs
             | .[]
-            | select(.active and (.slug as $slug | $site_slugs | index($slug)))
+            | select(.slug as $slug | $site_slugs | index($slug))
             | .destinationId
           ' data-config/sources/observation-sites.json | sort -u > /tmp/stargazing-destinations
           test -s /tmp/stargazing-destinations
+          jq -r --rawfile selected /tmp/stargazing-destinations '
+            ($selected | split("\n") | map(select(length > 0))) as $destination_ids
+            | .[]
+            | select(.active and (.id as $id | $destination_ids | index($id)))
+            | .slug
+          ' data-config/sources/destinations.json | sort -u > /tmp/stargazing-active-destinations
           echo "count=$(wc -l < /tmp/stargazing-sites | tr -d ' ')" >> "$GITHUB_OUTPUT"
           cat /tmp/stargazing-sites
       - name: Prepare normalized source data
@@ -164,12 +187,16 @@ jobs:
       - name: Rebuild the rolling astronomy calendar for the expanded catalog
         run: |
           set -euo pipefail
-          calendar_start="$(find public/data/stargazing/calendar -mindepth 2 -maxdepth 2 -name '*.json' -print | sed -E 's#^.*/([0-9]{4}-[0-9]{2})\.json$#\1#' | sort | sed -n '1p')"
-          [[ "$calendar_start" =~ ^[0-9]{4}-[0-9]{2}$ ]]
-          while IFS= read -r destination; do
-            pnpm data:calendar:real -- --start "$calendar_start" --months 36 --destination "$destination"
-          done < /tmp/stargazing-destinations
-          pnpm data:calendar:manifest
+          if [[ -s /tmp/stargazing-active-destinations ]]; then
+            calendar_start="$(find public/data/stargazing/calendar -mindepth 2 -maxdepth 2 -name '*.json' -print | sed -E 's#^.*/([0-9]{4}-[0-9]{2})\.json$#\1#' | sort | sed -n '1p')"
+            [[ "$calendar_start" =~ ^[0-9]{4}-[0-9]{2}$ ]]
+            while IFS= read -r destination; do
+              pnpm data:calendar:real -- --start "$calendar_start" --months 36 --destination "$destination"
+            done < /tmp/stargazing-active-destinations
+            pnpm data:calendar:manifest
+          else
+            echo "Skipping public calendar refresh: the selected cohort contains no active destinations."
+          fi
       - run: pnpm data:rebuild
       - run: pnpm data:validate
       - run: pnpm data:p3:images:validate

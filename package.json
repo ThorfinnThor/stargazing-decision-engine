@@ -17,6 +17,7 @@
     "data:schemas:validate": "node --import tsx scripts/validate/validate-schemas.ts",
     "data:seed:validate": "node --import tsx scripts/validate/validate-seed-config.ts",
     "data:seed": "node --import tsx scripts/import/build-seed.ts",
+    "data:catalog:expand-150": "node scripts/catalog/expand-to-150.mjs",
     "data:era5:fetch": "python3 scripts/import/fetch-era5.py",
     "data:era5:process": "node --import tsx scripts/import/process-era5.ts",
     "data:era5:validate": "node --import tsx scripts/validate/validate-climate-snapshots.ts",

@@ -1,0 +1,33 @@
+{
+  "siteId": "alula-hegra",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    26.8,
+    37.96
+  ],
+  "tile": "N26_00_E037_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N26_00_E037_00_DEM/Copernicus_DSM_COG_10_N26_00_E037_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 771.823,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 770.946,
+      "validSampleCount": 227
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 770.845,
+      "validSampleCount": 3701
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T12:01:08.299589Z"
+}

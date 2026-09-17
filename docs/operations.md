@@ -26,9 +26,12 @@ ignored `generated/intermediate` files. Destination editorial tests read
 
 ## Backlog status, 2026-09-08
 
-- The catalog contains 100 destinations and 200 observation sites, with 100
-  bilingual destination guides and 100 bilingual location tours. Every production
-  site must have a real score snapshot before the build can pass.
+- The production catalog contains 100 active destinations and 200 observation
+  sites, with 100 bilingual destination guides and 100 bilingual location tours.
+  Fifty additional destinations, 100 sites, guides and tours are staged in the
+  source catalog and remain inactive until their real score snapshots are
+  ingested. Every production site must have a real score snapshot before the
+  build can pass.
 - Calendar generation evaluates expensive Moon and Milky Way calculations only
   inside exact astronomical-darkness intervals. A one-month, 75-destination
   benchmark completed in 3.13 seconds after this change.

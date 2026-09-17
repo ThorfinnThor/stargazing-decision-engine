@@ -1,0 +1,158 @@
+{
+  "siteId": "torrance-barrens-boardwalk",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 86,
+          "totalPixelCount": 86
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 86,
+          "totalPixelCount": 86
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 86,
+          "totalPixelCount": 86
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.007713,
+      "coverage": 0.999496,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.007713,
+          "coverage": 0.999496,
+          "validPixelCount": 1985,
+          "totalPixelCount": 1986
+        },
+        {
+          "year": 2024,
+          "radiance": 0.004093,
+          "coverage": 1,
+          "validPixelCount": 1986,
+          "totalPixelCount": 1986
+        },
+        {
+          "year": 2023,
+          "radiance": 0.008027,
+          "coverage": 0.999496,
+          "validPixelCount": 1985,
+          "totalPixelCount": 1986
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.461684,
+      "coverage": 0.995522,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.477184,
+          "coverage": 0.997035,
+          "validPixelCount": 16475,
+          "totalPixelCount": 16524
+        },
+        {
+          "year": 2024,
+          "radiance": 0.383673,
+          "coverage": 0.995764,
+          "validPixelCount": 16454,
+          "totalPixelCount": 16524
+        },
+        {
+          "year": 2023,
+          "radiance": 0.461684,
+          "coverage": 0.995522,
+          "validPixelCount": 16450,
+          "totalPixelCount": 16524
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.658802,
+      "coverage": 0.995739,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.689708,
+          "coverage": 0.997019,
+          "validPixelCount": 97328,
+          "totalPixelCount": 97619
+        },
+        {
+          "year": 2024,
+          "radiance": 0.60509,
+          "coverage": 0.99663,
+          "validPixelCount": 97290,
+          "totalPixelCount": 97619
+        },
+        {
+          "year": 2023,
+          "radiance": 0.658802,
+          "coverage": 0.995739,
+          "validPixelCount": 97203,
+          "totalPixelCount": 97619
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.007713,
+  "radiance10to30": 0.461684,
+  "radiance30to75": 0.658802,
+  "alanExposure": 0.109853,
+  "darknessScore": 84.41,
+  "coverage": 0.995522,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:14:48.148665Z"
+}

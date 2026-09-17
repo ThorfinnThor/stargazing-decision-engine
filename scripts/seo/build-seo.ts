@@ -51,6 +51,7 @@ const configFile = readJson<SeoConfig>(resolve(root, "data-config/seo/project-se
 const config: SeoConfig = { ...configFile, siteUrl: validateProductionSiteOrigin(configFile.siteUrl) };
 const definitions = readJson<PageDefinition[]>(resolve(root, "data-config/seo/page-definitions.json"));
 const seed = readJson<SeedData>(generatedPath("seed.normalized.json"));
+const activeDestinations = seed.destinations.filter((destination) => destination.active);
 const manifest = readJson<Manifest>(publicPath("manifest.json"));
 const meteorOutputs = readdirSync(generatedDir).filter((file) => /^meteor-showers-\d{4}\.json$/.test(file)).map((file) => readJson<MeteorOutput>(generatedPath(file)));
 const events = meteorOutputs.flatMap((output) => output.events);
@@ -146,7 +147,7 @@ for (const locale of config.locales) {
       ? "Vergleiche geprüfte Sternbeobachtungsziele nach Monat, Dunkelheit, Klima, Zugang und Höhe, bevor du eine Dark-Sky-Reise planst."
       : "Compare reviewed stargazing destinations by month, darkness, climate, access, and elevation before planning a dark-sky trip.",
     lastModified: latestTimestamp(dataLastModified, gearLastModified),
-    resultCount: seed.destinations.length, confidence: "low", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + shortTrips.length,
+    resultCount: activeDestinations.length, confidence: "low", uniqueInsightCount: 3, internalLinkCount: activeDestinations.length + shortTrips.length,
   }));
   pages.push(makePage({
     id: `finder-${locale}`, pageType: "finder", locale, path: `/${locale}/finder/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/finder/`])),
@@ -154,16 +155,16 @@ for (const locale of config.locales) {
     h1: locale === "de" ? "Finde die Nacht, die zu dir passt." : "Find the night that fits your trip.",
     description: locale === "de" ? "Clientseitiger Finder für geprüfte Sternbeobachtungsziele nach Monat, Region, Temperatur, Priorität und Zugang." : "Client-side finder for reviewed stargazing destinations by month, region, temperature, priority, and access.",
     lastModified: dataLastModified,
-    resultCount: seed.destinations.length, confidence: "moderate", uniqueInsightCount: 3, internalLinkCount: seed.destinations.length + 1,
+    resultCount: activeDestinations.length, confidence: "moderate", uniqueInsightCount: 3, internalLinkCount: activeDestinations.length + 1,
     forceNoindexReason: "interactive-query-surface",
   }));
   pages.push(makePage({
     id: `location-tours-${locale}`, pageType: "location-tours", locale, path: `/${locale}/stargazing-tours/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/`])),
-    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Fünfzig Orte, fünfzig unterschiedliche Nächte." : "Fifty places, fifty different nights.",
+    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Hundert Orte, hundert unterschiedliche Nächte." : "One hundred places, one hundred different nights.",
     description: locale === "de" ? "Quellenbasierte Nachtpläne für konkrete Beobachtungsorte mit Zugang, Anfahrt und klaren Grenzen." : "Source-backed night plans for specific observing locations, with access, approach and practical boundaries.",
     lastModified: latestTimestamp(...locationTours.map((tour) => tour.lastReviewedAt)), resultCount: locationTours.length, confidence: "high", uniqueInsightCount: locationTours.length, internalLinkCount: locationTours.length + 1,
   }));
-  for (const tour of locationTours) {
+  for (const tour of locationTours.filter((item) => activeDestinations.some((destination) => destination.id === item.destinationId))) {
     const path = `/${locale}/stargazing-tours/${tour.slug}/`;
     pages.push(makePage({
       id: `location-tour-${tour.slug}-${locale}`, pageType: "location-tour", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/${tour.slug}/`])),
@@ -182,7 +183,7 @@ for (const locale of config.locales) {
     id: `about-${locale}`, pageType: "about", locale, path: `/${locale}/about/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/about/`])),
     title: locale === "de" ? "Über Stargazing Index" : "About Stargazing Index", h1: locale === "de" ? "Entscheidungen für bessere Nächte." : "Decisions for better nights.", description: locale === "de" ? "So verbindet Stargazing Index Klimadaten, Astronomie, Standortrecherche und redaktionelle Prüfung zu nachvollziehbaren Reiseentscheidungen." : "How Stargazing Index combines climate data, astronomy, location research, and editorial review into practical travel decisions.", lastModified: editorialLastModified, resultCount: 3, confidence: "high", uniqueInsightCount: 3, internalLinkCount: 3,
   }));
-  for (const destination of seed.destinations) {
+  for (const destination of activeDestinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
     const published = readJson<DestinationMonthlySummary>(publicPath(`monthly/destinations/${destination.slug}.json`));
     const destinationScores = published.months;
@@ -219,7 +220,7 @@ for (const locale of config.locales) {
           ? `Vergleiche geprüfte Dark-Sky-Ziele bis ${trip.maxShortTripKm} km ab ${trip.originName}, eingeordnet nach historischen Sternbeobachtungsbedingungen und Entfernung.`
           : `Compare reviewed dark-sky destinations within ${trip.maxShortTripKm} km of ${trip.originName}, ranked by historical stargazing conditions and distance.`
         : locale === "de" ? `Derzeit erfüllt kein geprüftes Ziel die Kriterien für eine kurze Sternreise ab ${trip.originName}.` : `No reviewed destination currently meets the criteria for a short stargazing trip from ${trip.originName}.`,
-      resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + seed.destinations.length,
+      resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + activeDestinations.length,
       lastModified: dataLastModified,
       forceNoindexReason: hasResults ? undefined : "no-qualifying-destinations",
     }));

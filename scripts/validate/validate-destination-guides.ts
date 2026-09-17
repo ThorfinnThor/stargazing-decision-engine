@@ -13,7 +13,9 @@ validateDestinationEditorialGuides(guides, destinations);
 const directory = resolve(publicDataDir, "editorial/destinations");
 if (!existsSync(directory)) throw new Error("Published destination editorial directory is missing");
 const publishedFiles = readdirSync(directory).filter((file) => file.endsWith(".json") && file !== "index.json");
-if (publishedFiles.length !== guides.length) throw new Error("Published editorial guide count does not match configuration");
+const activeDestinationIds = new Set(destinations.filter((destination) => destination.active).map((destination) => destination.id));
+const publishedGuides = guides.filter((guide) => activeDestinationIds.has(guide.destinationId));
+if (publishedFiles.length !== publishedGuides.length) throw new Error("Published editorial guide count does not match active configuration");
 const schema = createSchemaValidator().getSchema("https://stargazing.local/schema/destination-editorial-guide.json");
 for (const file of publishedFiles) {
   const guide = readJson<DestinationEditorialGuide>(resolve(directory, file));

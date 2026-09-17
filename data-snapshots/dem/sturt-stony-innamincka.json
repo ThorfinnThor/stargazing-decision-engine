@@ -1,0 +1,33 @@
+{
+  "siteId": "sturt-stony-innamincka",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -27.75,
+    140.73
+  ],
+  "tile": "S28_00_E140_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S28_00_E140_00_DEM/Copernicus_DSM_COG_10_S28_00_E140_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 43.645,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 45.431,
+      "validSampleCount": 229
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 49.246,
+      "validSampleCount": 3717
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T12:01:02.968331Z"
+}

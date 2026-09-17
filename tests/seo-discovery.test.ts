@@ -36,6 +36,16 @@ test("sitemap and robots sources preserve canonical, language, freshness, and AI
   assert.match(robots, /sitemap\.xml/);
 });
 
+test("indexable meteor guides are discoverable and link to their recommended destinations", () => {
+  const home = read("components/home-page.tsx");
+  assert.match(home, /listMeteorShowerEvents/);
+  assert.match(home, /loadSeoPage\(localizedLinks\.meteorShower/);
+  assert.match(home, /localizedLinks\.meteorShower\(locale, event\.year, event\.slug\)/);
+
+  const meteorPage = read("app/[locale]/meteor-showers/[year]/[slug]/page.tsx");
+  assert.match(meteorPage, /localizedLinks\.destination\(locale, row\.destinationSlug\)/);
+});
+
 test("llms.txt is curated and states material product limitations", () => {
   const content = read("public/llms.txt");
   assert.match(content, /^# Stargazing Index\n\n> /);

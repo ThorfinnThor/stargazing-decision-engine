@@ -1,0 +1,158 @@
+{
+  "siteId": "kissimmee-prairie-camp",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 67,
+          "totalPixelCount": 67
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 67,
+          "totalPixelCount": 67
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 67,
+          "totalPixelCount": 67
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.10285,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.10285,
+          "coverage": 1,
+          "validPixelCount": 1580,
+          "totalPixelCount": 1580
+        },
+        {
+          "year": 2024,
+          "radiance": 0.091442,
+          "coverage": 1,
+          "validPixelCount": 1580,
+          "totalPixelCount": 1580
+        },
+        {
+          "year": 2023,
+          "radiance": 0.124432,
+          "coverage": 1,
+          "validPixelCount": 1580,
+          "totalPixelCount": 1580
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.392772,
+      "coverage": 0.999545,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.392772,
+          "coverage": 0.999697,
+          "validPixelCount": 13192,
+          "totalPixelCount": 13196
+        },
+        {
+          "year": 2024,
+          "radiance": 0.375419,
+          "coverage": 0.999545,
+          "validPixelCount": 13190,
+          "totalPixelCount": 13196
+        },
+        {
+          "year": 2023,
+          "radiance": 0.439191,
+          "coverage": 0.999545,
+          "validPixelCount": 13190,
+          "totalPixelCount": 13196
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.512069,
+      "coverage": 0.992015,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.589542,
+          "coverage": 0.993042,
+          "validPixelCount": 77352,
+          "totalPixelCount": 77894
+        },
+        {
+          "year": 2024,
+          "radiance": 1.478668,
+          "coverage": 0.992015,
+          "validPixelCount": 77272,
+          "totalPixelCount": 77894
+        },
+        {
+          "year": 2023,
+          "radiance": 1.512069,
+          "coverage": 0.992066,
+          "validPixelCount": 77276,
+          "totalPixelCount": 77894
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.10285,
+  "radiance10to30": 0.392772,
+  "radiance30to75": 1.512069,
+  "alanExposure": 0.171174,
+  "darknessScore": 81.05,
+  "coverage": 0.992015,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:16:27.359812Z"
+}

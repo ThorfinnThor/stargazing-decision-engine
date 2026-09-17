@@ -1,0 +1,158 @@
+{
+  "siteId": "rakiura-horseshoe",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 88,
+          "totalPixelCount": 88
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 88,
+          "totalPixelCount": 88
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 88,
+          "totalPixelCount": 88
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.000854,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000563,
+          "coverage": 1,
+          "validPixelCount": 2055,
+          "totalPixelCount": 2055
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000854,
+          "coverage": 1,
+          "validPixelCount": 2055,
+          "totalPixelCount": 2055
+        },
+        {
+          "year": 2023,
+          "radiance": 0.001442,
+          "coverage": 1,
+          "validPixelCount": 2055,
+          "totalPixelCount": 2055
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 17122,
+          "totalPixelCount": 17122
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 17122,
+          "totalPixelCount": 17122
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000093,
+          "coverage": 1,
+          "validPixelCount": 17122,
+          "totalPixelCount": 17122
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.054254,
+      "coverage": 0.999575,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.054254,
+          "coverage": 0.999575,
+          "validPixelCount": 101124,
+          "totalPixelCount": 101167
+        },
+        {
+          "year": 2024,
+          "radiance": 0.053292,
+          "coverage": 0.999595,
+          "validPixelCount": 101126,
+          "totalPixelCount": 101167
+        },
+        {
+          "year": 2023,
+          "radiance": 0.054672,
+          "coverage": 0.999694,
+          "validPixelCount": 101136,
+          "totalPixelCount": 101167
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.000854,
+  "radiance10to30": 0,
+  "radiance30to75": 0.054254,
+  "alanExposure": 0.00554,
+  "darknessScore": 93.58,
+  "coverage": 0.999575,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:13:31.940334Z"
+}

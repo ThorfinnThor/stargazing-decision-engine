@@ -10,21 +10,18 @@ import { buildLocationTourStructuredData } from "../lib/seo/structured-data.js";
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
 const tours = read<LocationTour[]>("data-config/editorial/location-tours.json");
 
-test("all one hundred location tours are bilingual, sourced, and structurally varied", () => {
+test("all configured location tours are bilingual, sourced, and structurally varied", () => {
   assert.doesNotThrow(() => validateLocationTours({
     tours,
     destinations: read<Destination[]>("data-config/sources/destinations.json"),
     sites: read<ObservationSite[]>("data-config/sources/observation-sites.json"),
     guides: read<DestinationEditorialGuide[]>("data-config/editorial/destination-guides.json"),
   }));
-  assert.equal(tours.length, 100);
+  assert.equal(tours.length, 150);
   assert.ok(tours.every((tour) => locationTourWordCount(tour, "en") >= 300 && locationTourWordCount(tour, "de") >= 300));
   assert.equal(new Set(tours.map((tour) => tour.standfirst.en)).size, tours.length);
   assert.ok(tours.every((tour) => new Set(tour.blocks.map((block) => block.kind)).size >= 3));
-  assert.deepEqual(
-    new Set(tours.slice(-25).map((tour) => tour.destinationId)),
-    new Set(["central-idaho", "cosmic-campground", "flagstaff", "watoga", "mesa-verde", "chaco-culture", "craters-of-the-moon", "antelope-island", "pic-du-midi", "cevennes", "alpes-azur-mercantour", "rhoen", "winklmoosalm", "lauwersmeer", "de-boschplaat", "mon-and-nyord", "bukk", "albanya", "iriomote-ishigaki", "kozushima", "om-dark-sky", "bulbjerg", "bisei", "minami-rokuroshi", "lapalala"]),
-  );
+  assert.equal(new Set(tours.slice(-50).map((tour) => tour.destinationId)).size, 50);
 });
 
 test("location-tour structured data exposes the destination and every declared source", () => {

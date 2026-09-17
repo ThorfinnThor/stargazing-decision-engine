@@ -1,0 +1,158 @@
+{
+  "siteId": "staunton-river-park",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.645048,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.68851,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2024,
+          "radiance": 0.541982,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2023,
+          "radiance": 0.645048,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.523209,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.538481,
+          "coverage": 1,
+          "validPixelCount": 1753,
+          "totalPixelCount": 1753
+        },
+        {
+          "year": 2024,
+          "radiance": 0.32682,
+          "coverage": 1,
+          "validPixelCount": 1753,
+          "totalPixelCount": 1753
+        },
+        {
+          "year": 2023,
+          "radiance": 0.523209,
+          "coverage": 1,
+          "validPixelCount": 1753,
+          "totalPixelCount": 1753
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.69818,
+      "coverage": 0.998495,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.706132,
+          "coverage": 0.998495,
+          "validPixelCount": 14600,
+          "totalPixelCount": 14622
+        },
+        {
+          "year": 2024,
+          "radiance": 0.518591,
+          "coverage": 0.999111,
+          "validPixelCount": 14609,
+          "totalPixelCount": 14622
+        },
+        {
+          "year": 2023,
+          "radiance": 0.69818,
+          "coverage": 0.998701,
+          "validPixelCount": 14603,
+          "totalPixelCount": 14622
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.09305,
+      "coverage": 0.998876,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.172476,
+          "coverage": 0.998876,
+          "validPixelCount": 86234,
+          "totalPixelCount": 86331
+        },
+        {
+          "year": 2024,
+          "radiance": 0.931025,
+          "coverage": 0.999131,
+          "validPixelCount": 86256,
+          "totalPixelCount": 86331
+        },
+        {
+          "year": 2023,
+          "radiance": 1.09305,
+          "coverage": 0.999039,
+          "validPixelCount": 86248,
+          "totalPixelCount": 86331
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.645048,
+  "radiance2to10": 0.523209,
+  "radiance10to30": 0.69818,
+  "radiance30to75": 1.09305,
+  "alanExposure": 0.503538,
+  "darknessScore": 62.85,
+  "coverage": 0.998495,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:16:02.632000Z"
+}

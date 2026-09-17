@@ -10,15 +10,17 @@ const sites = readJson<ObservationSite[]>(resolve(root, "data-config/sources/obs
 const guides = readJson<DestinationEditorialGuide[]>(resolve(root, "data-config/editorial/destination-guides.json"));
 const tours = readJson<LocationTour[]>(resolve(root, "data-config/editorial/location-tours.json"));
 validateLocationTours({ tours, destinations, sites, guides });
+const activeDestinationIds = new Set(destinations.filter((destination) => destination.active).map((destination) => destination.id));
+const publishedTours = tours.filter((tour) => activeDestinationIds.has(tour.destinationId));
 
 const tourDirectory = publicPath("editorial/location-tours");
-const expectedFiles = new Set(["index.json", ...tours.map((tour) => `${tour.slug}.json`)]);
+const expectedFiles = new Set(["index.json", ...publishedTours.map((tour) => `${tour.slug}.json`)]);
 if (existsSync(tourDirectory)) {
   for (const file of readdirSync(tourDirectory)) {
     if (file.endsWith(".json") && !expectedFiles.has(file)) unlinkSync(resolve(tourDirectory, file));
   }
 }
 
-writeJson(publicPath("editorial/location-tours/index.json"), tours);
-for (const tour of tours) writeJson(publicPath(`editorial/location-tours/${tour.slug}.json`), tour);
-console.log(`Built ${tours.length} location tours (${tours.reduce((sum, tour) => sum + locationTourWordCount(tour, "en") + locationTourWordCount(tour, "de"), 0)} bilingual words).`);
+writeJson(publicPath("editorial/location-tours/index.json"), publishedTours);
+for (const tour of publishedTours) writeJson(publicPath(`editorial/location-tours/${tour.slug}.json`), tour);
+console.log(`Built ${publishedTours.length} active location tours (${tours.length} configured, ${publishedTours.reduce((sum, tour) => sum + locationTourWordCount(tour, "en") + locationTourWordCount(tour, "de"), 0)} bilingual words).`);

@@ -4,7 +4,7 @@ import { tmpdir } from "node:os";
 import { resolve } from "node:path";
 import test from "node:test";
 
-import { extractStaticReferences, resolveExportedTarget, validateStaticOutput } from "../lib/static-output/links.js";
+import { extractStaticLinks, extractStaticReferences, findOrphanedStaticPages, resolveExportedTarget, validateStaticOutput } from "../lib/static-output/links.js";
 
 function fixture() {
   const directory = mkdtempSync(resolve(tmpdir(), "stargazing-static-links-"));
@@ -25,6 +25,12 @@ test("static reference extraction handles links, assets, and encoded query strin
   ]);
 });
 
+test("static link extraction ignores canonical and asset references", () => {
+  assert.deepEqual(extractStaticLinks('<link rel="canonical" href="/en/"><a class="card" href="/en/about/">About</a><script src="/app.js"></script>'), [
+    "/en/about/",
+  ]);
+});
+
 test("static output validation resolves trailing slashes, relative links, assets, and locale parity", () => {
   const directory = fixture();
   assert.ok(resolveExportedTarget(directory, "/en/about/"));
@@ -42,4 +48,11 @@ test("static output validation reports broken links and missing localized routes
   const result = validateStaticOutput(directory, "https://stargazingindex.com");
   assert.deepEqual(result.broken.map((item) => item.targetPath), ["/missing/"]);
   assert.deepEqual(result.localeParityGaps, [{ source: "/en/only", expected: "/de/only" }]);
+});
+
+test("orphan validation requires an incoming anchor from another page", () => {
+  const directory = fixture();
+  assert.deepEqual(findOrphanedStaticPages(directory, "https://stargazingindex.com", ["/en/", "/en/about/", "/de/about/"]), []);
+  writeFileSync(resolve(directory, "en/index.html"), '<link rel="canonical" href="/en/about/">');
+  assert.deepEqual(findOrphanedStaticPages(directory, "https://stargazingindex.com", ["/en/about/"]), [{ path: "/en/about/" }]);
 });
