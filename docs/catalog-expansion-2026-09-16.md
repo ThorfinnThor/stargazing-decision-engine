@@ -47,6 +47,14 @@ municipal sources document night astronomy events at both named facilities.
 The old internal site identifiers and their obsolete snapshots were removed;
 the replacement sites remain inactive and their images remain pending.
 
+The Javalambre factual review replaced two generic map points with Galáctica and
+the officially located Observatorio Astrofísico de Javalambre. Galáctica is a
+bookable public astronomy programme with dated night activities; the separate
+OAJ visit is an outreach tour and explicitly not a direct observing session.
+Both records are therefore programme-only, not independent-access promises. The
+old internal site identifiers and their obsolete snapshots were removed; the
+replacement sites remain inactive and their images remain pending.
+
 The staged records include bilingual destination guides, location tours, stay
 areas, observation-site metadata, source records and image requests. Their
 images remain `pending`; no image is treated as licensed until a documented

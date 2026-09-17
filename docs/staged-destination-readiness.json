@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T14:44:32.931Z",
+  "generatedAt": "2026-09-17T14:56:50.275Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 47,
+    "requiringFactualSourceReview": 46,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 2,
+    "withVerifiedFactualReview": 3,
     "readyForActivation": 0
   },
   "records": [
@@ -431,28 +431,70 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 6,
+        "reachable": 6,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "javalambre",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://galactica.org.es/prepara-tu-visita/",
+            "https://galactica.org.es/actividades/",
+            "https://galactica.org.es/sobre-nosotros/",
+            "https://oaj.cefca.es/oaj_visits/visits",
+            "https://oajweb.cefca.es/oaj/principal",
+            "https://www.cefca.es/observatory/location",
+            "https://www.turismodearagon.com/ficha/galactica/",
+            "https://experiencias.turismodearagon.com/portfolio/noches-galacticas/",
+            "https://www.google.com/maps/place/Gal%C3%A1ctica/@39.999116,-1.040769,11z/data=!4m6!3m5!1s0xd5e1d3fc810e70d:0xd1d3d6938cd956c7!8m2!3d39.9991162!4d-1.0407695!16s%2Fg%2F11gfdpdmcz?hl=es"
+          ],
+          "verifiedFindings": [
+            "Galáctica's official visitor page documents bookable nighttime observations with professional telescopes, onsite parking, cold-weather advice and a weather-dependent cancellation process.",
+            "Galáctica's current activity calendar lists dated evening astronomy sessions, so the centre is represented as a booking-only programme venue rather than an independently accessible night site.",
+            "The official directions link identifies Galáctica at 39.9991162, -1.0407695, replacing the generic Arcos de las Salinas map point.",
+            "CEFCA locates the Observatorio Astrofísico de Javalambre at 40.0412972, -1.0164167 and 1,957 metres, while warning that its tracks require careful access planning and recommending a 4x4 vehicle.",
+            "The OAJ and Galáctica visitor pages route public OAJ visits through Galáctica and explicitly describe the OAJ visit as outreach rather than direct observing; it is therefore not presented as an independent night-observing stop.",
+            "Neither a Galáctica booking nor the regional Starlight context grants camping, after-hours access or permission to approach the research observatory outside the booked visitor arrangement."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "javalambre-source-1",
-            "url": "https://oajweb.cefca.es/oaj/principal",
+            "url": "https://galactica.org.es/prepara-tu-visita/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "javalambre-source-2",
-            "url": "https://oaj.cefca.es/oaj_visits/visits",
+            "url": "https://galactica.org.es/actividades/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "javalambre-source-3",
-            "url": "https://www.galactica.org.es/",
+            "url": "https://galactica.org.es/sobre-nosotros/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "javalambre-source-4",
+            "url": "https://oaj.cefca.es/oaj_visits/visits",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "javalambre-source-5",
+            "url": "https://oajweb.cefca.es/oaj/principal",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "javalambre-source-6",
+            "url": "https://experiencias.turismodearagon.com/portfolio/noches-galacticas/",
             "classification": "reachable",
             "status": 200
           }
@@ -461,34 +503,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "javalambre-observatory-road",
+          "id": "javalambre-galactica",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "arcos-salinas-viewpoint",
+          "id": "javalambre-oaj-guided-visit",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "javalambre-galactica:climate",
+        "javalambre-galactica:black-marble",
+        "javalambre-galactica:dem",
+        "javalambre-galactica:scores",
+        "javalambre-oaj-guided-visit:climate",
+        "javalambre-oaj-guided-visit:black-marble",
+        "javalambre-oaj-guided-visit:dem",
+        "javalambre-oaj-guided-visit:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
