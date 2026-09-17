@@ -1,0 +1,3430 @@
+{
+  "version": 1,
+  "checkedAt": "2026-09-17T13:34:47.091Z",
+  "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
+  "cohort": {
+    "destinations": 50,
+    "sites": 100,
+    "sourceRecords": 150,
+    "uniqueUrls": 144
+  },
+  "summary": {
+    "reachable": 116,
+    "blocked": 28,
+    "missing": 0,
+    "http-error": 0,
+    "error": 0
+  },
+  "records": [
+    {
+      "url": "https://azstateparks.com/",
+      "references": [
+        {
+          "destinationId": "oracle-state-park",
+          "kind": "guide",
+          "sourceId": "oracle-state-park-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://azstateparks.com/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 846,
+      "error": null
+    },
+    {
+      "url": "https://azstateparks.com/oracle",
+      "references": [
+        {
+          "destinationId": "oracle-state-park",
+          "kind": "guide",
+          "sourceId": "oracle-state-park-source-1"
+        },
+        {
+          "destinationId": "oracle-state-park",
+          "kind": "site",
+          "siteId": "oracle-state-park"
+        },
+        {
+          "destinationId": "oracle-state-park",
+          "kind": "site",
+          "siteId": "oracle-charouleau"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://azstateparks.com/oracle",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 667,
+      "error": null
+    },
+    {
+      "url": "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 863,
+      "error": null
+    },
+    {
+      "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+      "references": [
+        {
+          "destinationId": "makgadikgadi",
+          "kind": "guide",
+          "sourceId": "makgadikgadi-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 596,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/",
+      "references": [
+        {
+          "destinationId": "alula",
+          "kind": "guide",
+          "sourceId": "alula-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 88,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/big-cypress-national-preserve/",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/big-cypress-national-preserve/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/cedar-breaks-national-monument/",
+      "references": [
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "guide",
+          "sourceId": "cedar-breaks-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/cedar-breaks-national-monument/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 79,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/coral-pink-sand-dunes-state-park/",
+      "references": [
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "guide",
+          "sourceId": "coral-pink-sand-dunes-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/coral-pink-sand-dunes-state-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 99,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/dinosaur-national-monument/",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/dinosaur-national-monument/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 85,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/enchanted-rock-state-natural-area/",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/enchanted-rock-state-natural-area/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 92,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/kissimmee-prairie-preserve-state-park/",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/kissimmee-prairie-preserve-state-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 90,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/lassen-volcanic-national-park/",
+      "references": [
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "guide",
+          "sourceId": "lassen-volcanic-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/lassen-volcanic-national-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-1"
+        },
+        {
+          "destinationId": "massacre-rim",
+          "kind": "site",
+          "siteId": "massacre-rim-viewpoint"
+        },
+        {
+          "destinationId": "massacre-rim",
+          "kind": "site",
+          "siteId": "denio-outskirts"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 87,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/medicine-rocks-state-park/",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/medicine-rocks-state-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/newport-state-park/",
+      "references": [
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "guide",
+          "sourceId": "newport-wisconsin-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/newport-state-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 104,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
+      "references": [
+        {
+          "destinationId": "oracle-state-park",
+          "kind": "guide",
+          "sourceId": "oracle-state-park-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 94,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/sark-dark-sky-community/",
+      "references": [
+        {
+          "destinationId": "isle-of-sark",
+          "kind": "guide",
+          "sourceId": "isle-of-sark-source-1"
+        },
+        {
+          "destinationId": "isle-of-sark",
+          "kind": "site",
+          "siteId": "sark-lighthouse"
+        },
+        {
+          "destinationId": "isle-of-sark",
+          "kind": "site",
+          "siteId": "sark-windmill"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/sark-dark-sky-community/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 100,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/staunton-river-state-park/",
+      "references": [
+        {
+          "destinationId": "staunton-river",
+          "kind": "guide",
+          "sourceId": "staunton-river-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/staunton-river-state-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 83,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/places/torrance-barrens-dark-sky-reserve/",
+      "references": [
+        {
+          "destinationId": "torrance-barrens",
+          "kind": "guide",
+          "sourceId": "torrance-barrens-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://darksky.org/places/torrance-barrens-dark-sky-reserve/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://dnr.wisconsin.gov/",
+      "references": [
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "guide",
+          "sourceId": "newport-wisconsin-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://dnr.wisconsin.gov/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 325,
+      "error": null
+    },
+    {
+      "url": "https://dnr.wisconsin.gov/topic/parks/newport",
+      "references": [
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "guide",
+          "sourceId": "newport-wisconsin-source-1"
+        },
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "site",
+          "siteId": "newport-porte-des-morts"
+        },
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "site",
+          "siteId": "newport-campground"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://dnr.wisconsin.gov/topic/parks/newport",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 322,
+      "error": null
+    },
+    {
+      "url": "https://experienceoman.om/",
+      "references": [
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "guide",
+          "sourceId": "jebel-akhdar-source-1"
+        },
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "site",
+          "siteId": "jebel-akhdar-diana"
+        },
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "site",
+          "siteId": "jebel-akhdar-saiq"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://experienceoman.om/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 557,
+      "error": null
+    },
+    {
+      "url": "https://floridastateparks.org/",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://floridastateparks.org/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 70,
+      "error": null
+    },
+    {
+      "url": "https://floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-1"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-prairie-north"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-prairie-camp"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 62,
+      "error": null
+    },
+    {
+      "url": "https://npkopaonik.com/en/",
+      "references": [
+        {
+          "destinationId": "kopaonik",
+          "kind": "guide",
+          "sourceId": "kopaonik-source-1"
+        },
+        {
+          "destinationId": "kopaonik",
+          "kind": "site",
+          "siteId": "kopaonik-pancic"
+        },
+        {
+          "destinationId": "kopaonik",
+          "kind": "site",
+          "siteId": "kopaonik-sunacana"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://www.hotels-in-belgrade.com/en/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1125,
+      "error": null
+    },
+    {
+      "url": "https://oaj.cefca.es/oaj_visits/visits",
+      "references": [
+        {
+          "destinationId": "javalambre",
+          "kind": "guide",
+          "sourceId": "javalambre-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://oaj.cefca.es/oaj_visits/visits",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 519,
+      "error": null
+    },
+    {
+      "url": "https://oajweb.cefca.es/oaj/principal",
+      "references": [
+        {
+          "destinationId": "javalambre",
+          "kind": "guide",
+          "sourceId": "javalambre-source-1"
+        },
+        {
+          "destinationId": "javalambre",
+          "kind": "site",
+          "siteId": "javalambre-observatory-road"
+        },
+        {
+          "destinationId": "javalambre",
+          "kind": "site",
+          "siteId": "arcos-salinas-viewpoint"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://oajweb.cefca.es/oaj/principal",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 274,
+      "error": null
+    },
+    {
+      "url": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/inici/",
+      "references": [
+        {
+          "destinationId": "aigues-tortes",
+          "kind": "guide",
+          "sourceId": "aigues-tortes-source-1"
+        },
+        {
+          "destinationId": "aigues-tortes",
+          "kind": "site",
+          "siteId": "aigues-estany-sant-maurici"
+        },
+        {
+          "destinationId": "aigues-tortes",
+          "kind": "site",
+          "siteId": "boi-valley"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/inici/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 203,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/pn-np/nb/fundy",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-1"
+        },
+        {
+          "destinationId": "fundy",
+          "kind": "site",
+          "siteId": "fundy-headquarters"
+        },
+        {
+          "destinationId": "fundy",
+          "kind": "site",
+          "siteId": "fundy-point-wolfe"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 626,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/voyage-travel",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/voyage-travel",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 644,
+      "error": null
+    },
+    {
+      "url": "https://rakiura.org.nz/",
+      "references": [
+        {
+          "destinationId": "rakiura",
+          "kind": "guide",
+          "sourceId": "rakiura-source-1"
+        },
+        {
+          "destinationId": "rakiura",
+          "kind": "site",
+          "siteId": "oban-bay"
+        },
+        {
+          "destinationId": "rakiura",
+          "kind": "site",
+          "siteId": "rakiura-horseshoe"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://rakiura.org.nz/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1468,
+      "error": null
+    },
+    {
+      "url": "https://sark.co.uk/getting-around/",
+      "references": [
+        {
+          "destinationId": "isle-of-sark",
+          "kind": "guide",
+          "sourceId": "isle-of-sark-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sark.co.uk/getting-around",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 214,
+      "error": null
+    },
+    {
+      "url": "https://slovakia.travel/en/national-park-of-poloniny",
+      "references": [
+        {
+          "destinationId": "poloniny",
+          "kind": "guide",
+          "sourceId": "poloniny-source-1"
+        },
+        {
+          "destinationId": "poloniny",
+          "kind": "site",
+          "siteId": "poloniny-runina"
+        },
+        {
+          "destinationId": "poloniny",
+          "kind": "site",
+          "siteId": "poloniny-topola"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://slovakia.travel/en/national-park-of-poloniny",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 95,
+      "error": null
+    },
+    {
+      "url": "https://stateparks.mt.gov/",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://fwp.mt.gov/stateparks/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 1648,
+      "error": null
+    },
+    {
+      "url": "https://stateparks.mt.gov/medicine-rocks/",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-1"
+        },
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "site",
+          "siteId": "medicine-rocks-park"
+        },
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "site",
+          "siteId": "medicine-rocks-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://fwp.mt.gov/stateparks/medicine-rocks/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 1545,
+      "error": null
+    },
+    {
+      "url": "https://stateparks.utah.gov/",
+      "references": [
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "guide",
+          "sourceId": "coral-pink-sand-dunes-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://stateparks.utah.gov/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 56,
+      "error": null
+    },
+    {
+      "url": "https://stateparks.utah.gov/parks/coral-pink/",
+      "references": [
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "guide",
+          "sourceId": "coral-pink-sand-dunes-source-1"
+        },
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "site",
+          "siteId": "coral-pink-park"
+        },
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "site",
+          "siteId": "coral-pink-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://stateparks.utah.gov/parks/coral-pink/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 62,
+      "error": null
+    },
+    {
+      "url": "https://sva.jp/",
+      "references": [
+        {
+          "destinationId": "achi-village",
+          "kind": "guide",
+          "sourceId": "achi-village-source-1"
+        },
+        {
+          "destinationId": "achi-village",
+          "kind": "site",
+          "siteId": "achi-heavens-sonohara"
+        },
+        {
+          "destinationId": "achi-village",
+          "kind": "site",
+          "siteId": "achi-village"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://sva.jp/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 893,
+      "error": null
+    },
+    {
+      "url": "https://tourismnewbrunswick.ca/listing/fundy-national-park",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://tourismnewbrunswick.ca/listing/fundy-national-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 57,
+      "error": null
+    },
+    {
+      "url": "https://turismoextremadura.juntaex.es/es/explora/Monfraguee-National-Park/",
+      "references": [
+        {
+          "destinationId": "monfrague",
+          "kind": "guide",
+          "sourceId": "monfrague-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://turismoextremadura.juntaex.es/es/explora/Monfraguee-National-Park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 3787,
+      "error": null
+    },
+    {
+      "url": "https://turystyczna.szklarskaporeba.pl/en/47-szklarskaporeba-model-of-the-solar-system-in-the-jizera-mountains",
+      "references": [
+        {
+          "destinationId": "izera",
+          "kind": "guide",
+          "sourceId": "izera-source-1"
+        },
+        {
+          "destinationId": "izera",
+          "kind": "site",
+          "siteId": "izerska-hala"
+        },
+        {
+          "destinationId": "izera",
+          "kind": "site",
+          "siteId": "stóg-izerski"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://turystyczna.szklarskaporeba.pl/en/47-szklarskaporeba-model-of-the-solar-system-in-the-jizera-mountains",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 211,
+      "error": null
+    },
+    {
+      "url": "https://ugandawildlife.org/",
+      "references": [
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "guide",
+          "sourceId": "kidepo-valley-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://ugandawildlife.org/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 74,
+      "error": null
+    },
+    {
+      "url": "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
+      "references": [
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "guide",
+          "sourceId": "kidepo-valley-source-1"
+        },
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "site",
+          "siteId": "kidepo-narus"
+        },
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "site",
+          "siteId": "kidepo-kanangorok"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 54,
+      "error": null
+    },
+    {
+      "url": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
+      "references": [
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-1"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "site",
+          "siteId": "damaraland-twyfelfontein"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "site",
+          "siteId": "damaraland-palmwag"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 4816,
+      "error": null
+    },
+    {
+      "url": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
+      "references": [
+        {
+          "destinationId": "tsumkwe",
+          "kind": "guide",
+          "sourceId": "tsumkwe-source-1"
+        },
+        {
+          "destinationId": "tsumkwe",
+          "kind": "site",
+          "siteId": "tsumkwe-community"
+        },
+        {
+          "destinationId": "tsumkwe",
+          "kind": "site",
+          "siteId": "naye-naye"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 3632,
+      "error": null
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/985/",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://whc.unesco.org/en/list/985/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 66,
+      "error": null
+    },
+    {
+      "url": "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
+      "references": [
+        {
+          "destinationId": "sierra-morena",
+          "kind": "guide",
+          "sourceId": "sierra-morena-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://www.argentina.gob.ar/ambiente",
+      "references": [
+        {
+          "destinationId": "puna-argentina",
+          "kind": "guide",
+          "sourceId": "puna-argentina-source-1"
+        },
+        {
+          "destinationId": "puna-argentina",
+          "kind": "site",
+          "siteId": "puna-salinas"
+        },
+        {
+          "destinationId": "puna-argentina",
+          "kind": "site",
+          "siteId": "puna-humahuaca"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.argentina.gob.ar/jefatura/turismo-y-ambiente/ambiente",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 118,
+      "error": null
+    },
+    {
+      "url": "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
+      "references": [
+        {
+          "destinationId": "puna-argentina",
+          "kind": "guide",
+          "sourceId": "puna-argentina-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 90,
+      "error": null
+    },
+    {
+      "url": "https://www.australiasgoldenoutback.com/",
+      "references": [
+        {
+          "destinationId": "great-western-woodlands",
+          "kind": "guide",
+          "sourceId": "great-western-woodlands-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.australiasgoldenoutback.com/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 234,
+      "error": null
+    },
+    {
+      "url": "https://www.auvergnerhonealpes-tourisme.com/en/",
+      "references": [
+        {
+          "destinationId": "vercors",
+          "kind": "guide",
+          "sourceId": "vercors-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.auvergnerhonealpes-tourisme.com/en/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 287,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 783,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/national-conservation-lands/arizona/grandcanyon-parashant",
+      "references": [
+        {
+          "destinationId": "grand-canyon-parashant",
+          "kind": "guide",
+          "sourceId": "grand-canyon-parashant-source-1"
+        },
+        {
+          "destinationId": "grand-canyon-parashant",
+          "kind": "site",
+          "siteId": "parashant-tuweep"
+        },
+        {
+          "destinationId": "grand-canyon-parashant",
+          "kind": "site",
+          "siteId": "parashant-mount-trumbull"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/national-conservation-lands/arizona/grandcanyon-parashant",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 770,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/office/winnemucca-district-office",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/office/winnemucca-district-office",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 840,
+      "error": null
+    },
+    {
+      "url": "https://www.botswanatourism.co.bw/",
+      "references": [
+        {
+          "destinationId": "makgadikgadi",
+          "kind": "guide",
+          "sourceId": "makgadikgadi-source-1"
+        },
+        {
+          "destinationId": "makgadikgadi",
+          "kind": "site",
+          "siteId": "nata-bird-sanctuary"
+        },
+        {
+          "destinationId": "makgadikgadi",
+          "kind": "site",
+          "siteId": "makgadikgadi-kubu"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.botswanatourism.co.bw/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 593,
+      "error": null
+    },
+    {
+      "url": "https://www.ciemneniebo.pl/news/english-translation/izera-dark-sky-park",
+      "references": [
+        {
+          "destinationId": "izera",
+          "kind": "guide",
+          "sourceId": "izera-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ciemneniebo.pl/news/english-translation/izera-dark-sky-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 329,
+      "error": null
+    },
+    {
+      "url": "https://www.conaf.cl/parques-nacionales/",
+      "references": [
+        {
+          "destinationId": "isla-navarino",
+          "kind": "guide",
+          "sourceId": "isla-navarino-source-1"
+        },
+        {
+          "destinationId": "isla-navarino",
+          "kind": "site",
+          "siteId": "navarino-puerto-williams"
+        },
+        {
+          "destinationId": "isla-navarino",
+          "kind": "site",
+          "siteId": "navarino-dientes"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.conaf.cl/parques-nacionales/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 877,
+      "error": null
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/",
+      "references": [
+        {
+          "destinationId": "staunton-river",
+          "kind": "guide",
+          "sourceId": "staunton-river-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.dcr.virginia.gov/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 191,
+      "error": null
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+      "references": [
+        {
+          "destinationId": "staunton-river",
+          "kind": "guide",
+          "sourceId": "staunton-river-source-1"
+        },
+        {
+          "destinationId": "staunton-river",
+          "kind": "site",
+          "siteId": "staunton-river-park"
+        },
+        {
+          "destinationId": "staunton-river",
+          "kind": "site",
+          "siteId": "staunton-river-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 273,
+      "error": null
+    },
+    {
+      "url": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 495,
+      "error": null
+    },
+    {
+      "url": "https://www.doc.govt.nz/rakiura",
+      "references": [
+        {
+          "destinationId": "rakiura",
+          "kind": "guide",
+          "sourceId": "rakiura-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.doc.govt.nz/rakiura",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 2119,
+      "error": null
+    },
+    {
+      "url": "https://www.dpaw.wa.gov.au/",
+      "references": [
+        {
+          "destinationId": "great-western-woodlands",
+          "kind": "guide",
+          "sourceId": "great-western-woodlands-source-1"
+        },
+        {
+          "destinationId": "great-western-woodlands",
+          "kind": "site",
+          "siteId": "great-western-boorabbin"
+        },
+        {
+          "destinationId": "great-western-woodlands",
+          "kind": "site",
+          "siteId": "great-western-holland"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.dbca.wa.gov.au/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1048,
+      "error": null
+    },
+    {
+      "url": "https://www.drome-tourism.com/en/",
+      "references": [
+        {
+          "destinationId": "vercors",
+          "kind": "guide",
+          "sourceId": "vercors-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.drome-tourism.com/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 116,
+      "error": null
+    },
+    {
+      "url": "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
+      "references": [
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "guide",
+          "sourceId": "jebel-akhdar-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 1558,
+      "error": null
+    },
+    {
+      "url": "https://www.ekologija.gov.rs/",
+      "references": [
+        {
+          "destinationId": "tara-serbia",
+          "kind": "guide",
+          "sourceId": "tara-serbia-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ekologija.gov.rs/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 734,
+      "error": null
+    },
+    {
+      "url": "https://www.environment.nsw.gov.au/",
+      "references": [
+        {
+          "destinationId": "mudgee",
+          "kind": "guide",
+          "sourceId": "mudgee-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.environment.nsw.gov.au/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1772,
+      "error": null
+    },
+    {
+      "url": "https://www.environment.sa.gov.au/",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-3"
+        },
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.environment.sa.gov.au/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 3205,
+      "error": null
+    },
+    {
+      "url": "https://www.experiencealula.com/en",
+      "references": [
+        {
+          "destinationId": "alula",
+          "kind": "guide",
+          "sourceId": "alula-source-1"
+        },
+        {
+          "destinationId": "alula",
+          "kind": "site",
+          "siteId": "alula-harrat"
+        },
+        {
+          "destinationId": "alula",
+          "kind": "site",
+          "siteId": "alula-hegra"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.experiencealula.com/en",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=utf-8",
+      "durationMs": 122,
+      "error": null
+    },
+    {
+      "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
+      "references": [
+        {
+          "destinationId": "boundary-waters",
+          "kind": "guide",
+          "sourceId": "boundary-waters-source-1"
+        },
+        {
+          "destinationId": "boundary-waters",
+          "kind": "site",
+          "siteId": "boundary-waters-moose-lake"
+        },
+        {
+          "destinationId": "boundary-waters",
+          "kind": "site",
+          "siteId": "boundary-waters-seagull"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.fs.usda.gov/r09/superior/recreation",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2825,
+      "error": null
+    },
+    {
+      "url": "https://www.fs.usda.gov/superior",
+      "references": [
+        {
+          "destinationId": "boundary-waters",
+          "kind": "guide",
+          "sourceId": "boundary-waters-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.fs.usda.gov/r09/superior",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1028,
+      "error": null
+    },
+    {
+      "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+      "references": [
+        {
+          "destinationId": "boundary-waters",
+          "kind": "guide",
+          "sourceId": "boundary-waters-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.fs.usda.gov/visit/know-before-you-go",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 714,
+      "error": null
+    },
+    {
+      "url": "https://www.galactica.org.es/",
+      "references": [
+        {
+          "destinationId": "javalambre",
+          "kind": "guide",
+          "sourceId": "javalambre-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://galactica.org.es/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 331,
+      "error": null
+    },
+    {
+      "url": "https://www.go-nagano.net/en/",
+      "references": [
+        {
+          "destinationId": "achi-village",
+          "kind": "guide",
+          "sourceId": "achi-village-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.go-nagano.net/en/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 129,
+      "error": null
+    },
+    {
+      "url": "https://www.gob.cl/en/",
+      "references": [
+        {
+          "destinationId": "isla-navarino",
+          "kind": "guide",
+          "sourceId": "isla-navarino-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.gob.cl/en/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 73,
+      "error": null
+    },
+    {
+      "url": "https://www.gov.bw/",
+      "references": [
+        {
+          "destinationId": "makgadikgadi",
+          "kind": "guide",
+          "sourceId": "makgadikgadi-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.gov.bw/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1523,
+      "error": null
+    },
+    {
+      "url": "https://www.gov.ls/",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.gov.ls/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1714,
+      "error": null
+    },
+    {
+      "url": "https://www.grossmugl.gv.at/",
+      "references": [
+        {
+          "destinationId": "grossmugl",
+          "kind": "guide",
+          "sourceId": "grossmugl-source-1"
+        },
+        {
+          "destinationId": "grossmugl",
+          "kind": "site",
+          "siteId": "grossmugl-starwalk"
+        },
+        {
+          "destinationId": "grossmugl",
+          "kind": "site",
+          "siteId": "leiserberge"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.grossmugl.gv.at/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 154,
+      "error": null
+    },
+    {
+      "url": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+      "references": [
+        {
+          "destinationId": "grossmugl",
+          "kind": "guide",
+          "sourceId": "grossmugl-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 169,
+      "error": null
+    },
+    {
+      "url": "https://www.gujarattourism.com/",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-1"
+        },
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "site",
+          "siteId": "rann-dhordo"
+        },
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "site",
+          "siteId": "rann-kalo-dungar"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.gujarattourism.com/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 187,
+      "error": null
+    },
+    {
+      "url": "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 199,
+      "error": null
+    },
+    {
+      "url": "https://www.incredibleindia.gov.in/en/gujarat",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.incredibleindia.gov.in/en/gujarat",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=utf-8",
+      "durationMs": 81,
+      "error": null
+    },
+    {
+      "url": "https://www.jujuy.gob.ar/",
+      "references": [
+        {
+          "destinationId": "puna-argentina",
+          "kind": "guide",
+          "sourceId": "puna-argentina-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://jujuy.gob.ar/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 3701,
+      "error": null
+    },
+    {
+      "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/legislacion-autonomica-nacional/parques-naturales/parque-natural-sierra-morena-sevilla",
+      "references": [
+        {
+          "destinationId": "sierra-morena",
+          "kind": "guide",
+          "sourceId": "sierra-morena-source-1"
+        },
+        {
+          "destinationId": "sierra-morena",
+          "kind": "site",
+          "siteId": "sierra-morena-constantina"
+        },
+        {
+          "destinationId": "sierra-morena",
+          "kind": "site",
+          "siteId": "sierra-morena-almadén"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/legislacion-autonomica-nacional/parques-naturales/parque-natural-sierra-morena-sevilla",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 5504,
+      "error": null
+    },
+    {
+      "url": "https://www.juntadeandalucia.es/medioambiente/portal/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/sierra-morena-de-sevilla/255035",
+      "references": [
+        {
+          "destinationId": "sierra-morena",
+          "kind": "guide",
+          "sourceId": "sierra-morena-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.juntadeandalucia.es/medioambiente/portal/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/sierra-morena-de-sevilla/255035",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 3688,
+      "error": null
+    },
+    {
+      "url": "https://www.kznwildlife.com/",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.kznwildlife.com/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 95,
+      "error": null
+    },
+    {
+      "url": "https://www.limpopo.gov.za/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.limpopo.gov.za/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 611,
+      "error": null
+    },
+    {
+      "url": "https://www.manitoulin-island.com/",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.manitoulin-island.com/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 355,
+      "error": null
+    },
+    {
+      "url": "https://www.meft.gov.na/",
+      "references": [
+        {
+          "destinationId": "tsumkwe",
+          "kind": "guide",
+          "sourceId": "tsumkwe-source-2"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.meft.gov.na/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 553,
+      "error": null
+    },
+    {
+      "url": "https://www.miteco.gob.es/en/parques-nacionales-oapn/",
+      "references": [
+        {
+          "destinationId": "aigues-tortes",
+          "kind": "guide",
+          "sourceId": "aigues-tortes-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.miteco.gob.es/en/parques-nacionales-oapn.html",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 132,
+      "error": null
+    },
+    {
+      "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague.html",
+      "references": [
+        {
+          "destinationId": "monfrague",
+          "kind": "guide",
+          "sourceId": "monfrague-source-1"
+        },
+        {
+          "destinationId": "monfrague",
+          "kind": "site",
+          "siteId": "monfrague-castillo"
+        },
+        {
+          "destinationId": "monfrague",
+          "kind": "site",
+          "siteId": "monfrague-salto-gitano"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 99,
+      "error": null
+    },
+    {
+      "url": "https://www.nacso.org.na/",
+      "references": [
+        {
+          "destinationId": "tsumkwe",
+          "kind": "guide",
+          "sourceId": "tsumkwe-source-3"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://nacso.org.na/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1280,
+      "error": null
+    },
+    {
+      "url": "https://www.nationalparks.nsw.gov.au/",
+      "references": [
+        {
+          "destinationId": "mudgee",
+          "kind": "guide",
+          "sourceId": "mudgee-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nationalparks.nsw.gov.au/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 1290,
+      "error": null
+    },
+    {
+      "url": "https://www.naturpark-attersee-traunsee.at/",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.naturpark-attersee-traunsee.at/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 827,
+      "error": null
+    },
+    {
+      "url": "https://www.newzealand.com/int/stewart-island/",
+      "references": [
+        {
+          "destinationId": "rakiura",
+          "kind": "guide",
+          "sourceId": "rakiura-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.newzealand.com/int/stewart-island/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 65,
+      "error": null
+    },
+    {
+      "url": "https://www.niederoesterreich.at/orte-und-gemeinden/a-grossmugl",
+      "references": [
+        {
+          "destinationId": "grossmugl",
+          "kind": "guide",
+          "sourceId": "grossmugl-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.niederoesterreich.at/gemeinde/grossmugl",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 575,
+      "error": null
+    },
+    {
+      "url": "https://www.nppoloniny.sk/",
+      "references": [
+        {
+          "destinationId": "poloniny",
+          "kind": "guide",
+          "sourceId": "poloniny-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nppoloniny.sk/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1364,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/bicy/index.htm",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-1"
+        },
+        {
+          "destinationId": "big-cypress",
+          "kind": "site",
+          "siteId": "big-cypress-wagonwheel"
+        },
+        {
+          "destinationId": "big-cypress",
+          "kind": "site",
+          "siteId": "big-cypress-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/bicy/index.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 51,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 55,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/cebr/index.htm",
+      "references": [
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "guide",
+          "sourceId": "cedar-breaks-source-1"
+        },
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "site",
+          "siteId": "cedar-breaks-sunset"
+        },
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "site",
+          "siteId": "cedar-breaks-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/cebr/index.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 56,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/cebr/planyourvisit/conditions.htm",
+      "references": [
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "guide",
+          "sourceId": "cedar-breaks-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/cebr/planyourvisit/conditions.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 47,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/dino/index.htm",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-1"
+        },
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "site",
+          "siteId": "dinosaur-jensen"
+        },
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "site",
+          "siteId": "dinosaur-harpers"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/dino/index.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 52,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 50,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/lavo/index.htm",
+      "references": [
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "guide",
+          "sourceId": "lassen-volcanic-source-1"
+        },
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "site",
+          "siteId": "lassen-manazanita"
+        },
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "site",
+          "siteId": "lassen-summit"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/lavo/index.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 49,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
+      "references": [
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "guide",
+          "sourceId": "lassen-volcanic-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 52,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/para/index.htm",
+      "references": [
+        {
+          "destinationId": "grand-canyon-parashant",
+          "kind": "guide",
+          "sourceId": "grand-canyon-parashant-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/para/index.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 48,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/para/planyourvisit/brochure.htm",
+      "references": [
+        {
+          "destinationId": "grand-canyon-parashant",
+          "kind": "guide",
+          "sourceId": "grand-canyon-parashant-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/para/planyourvisit/brochure.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 48,
+      "error": null
+    },
+    {
+      "url": "https://www.nptara.rs/en/",
+      "references": [
+        {
+          "destinationId": "tara-serbia",
+          "kind": "guide",
+          "sourceId": "tara-serbia-source-1"
+        },
+        {
+          "destinationId": "tara-serbia",
+          "kind": "site",
+          "siteId": "tara-mitrovac"
+        },
+        {
+          "destinationId": "tara-serbia",
+          "kind": "site",
+          "siteId": "tara-banjica"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.nptara.rs/en/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 846,
+      "error": null
+    },
+    {
+      "url": "https://www.oberoesterreich.at/en/",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.upperaustria.com/en",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 493,
+      "error": null
+    },
+    {
+      "url": "https://www.ontario.ca/page/crown-land-use-policy-atlas",
+      "references": [
+        {
+          "destinationId": "torrance-barrens",
+          "kind": "guide",
+          "sourceId": "torrance-barrens-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ontario.ca/page/crown-land-use-policy-atlas",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 331,
+      "error": null
+    },
+    {
+      "url": "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
+      "references": [
+        {
+          "destinationId": "torrance-barrens",
+          "kind": "guide",
+          "sourceId": "torrance-barrens-source-1"
+        },
+        {
+          "destinationId": "torrance-barrens",
+          "kind": "site",
+          "siteId": "torrance-barrens-main"
+        },
+        {
+          "destinationId": "torrance-barrens",
+          "kind": "site",
+          "siteId": "torrance-barrens-boardwalk"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 342,
+      "error": null
+    },
+    {
+      "url": "https://www.ontarioparks.com/",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-1"
+        },
+        {
+          "destinationId": "manitoulin",
+          "kind": "site",
+          "siteId": "manitoulin-meldrum"
+        },
+        {
+          "destinationId": "manitoulin",
+          "kind": "site",
+          "siteId": "manitoulin-shearer"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.ontarioparks.ca/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 691,
+      "error": null
+    },
+    {
+      "url": "https://www.parc-du-vercors.fr/",
+      "references": [
+        {
+          "destinationId": "vercors",
+          "kind": "guide",
+          "sourceId": "vercors-source-1"
+        },
+        {
+          "destinationId": "vercors",
+          "kind": "site",
+          "siteId": "col-de-la-machine"
+        },
+        {
+          "destinationId": "vercors",
+          "kind": "site",
+          "siteId": "vassieux-plateau"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parc-du-vercors.fr/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 92,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 5613,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-1"
+        },
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "site",
+          "siteId": "sturt-stony-innamincka"
+        },
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "site",
+          "siteId": "sturt-stony-cooper"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 6487,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-1"
+        },
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "site",
+          "siteId": "kangaroo-west-bay"
+        },
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "site",
+          "siteId": "kangaroo-flinders"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 3302,
+      "error": null
+    },
+    {
+      "url": "https://www.poland.travel/attachments/article/6505/PRZYRODA_EN.pdf",
+      "references": [
+        {
+          "destinationId": "izera",
+          "kind": "guide",
+          "sourceId": "izera-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.poland.travel/attachments/article/6505/PRZYRODA_EN.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 124,
+      "error": null
+    },
+    {
+      "url": "https://www.rcu.gov.sa/en",
+      "references": [
+        {
+          "destinationId": "alula",
+          "kind": "guide",
+          "sourceId": "alula-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.rcu.gov.sa/en",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 289,
+      "error": null
+    },
+    {
+      "url": "https://www.rop.gov.om/",
+      "references": [
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "guide",
+          "sourceId": "jebel-akhdar-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.rop.gov.om/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 388,
+      "error": null
+    },
+    {
+      "url": "https://www.sanparks.org/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-2"
+        },
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.sanparks.org/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 90,
+      "error": null
+    },
+    {
+      "url": "https://www.sanparks.org/parks/maloti-drakensberg",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-3"
+        },
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-1"
+        },
+        {
+          "destinationId": "drakensberg",
+          "kind": "site",
+          "siteId": "drakensberg-giants-castle"
+        },
+        {
+          "destinationId": "drakensberg",
+          "kind": "site",
+          "siteId": "drakensberg-camp"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.sanparks.org/parks/maloti-drakensberg",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 91,
+      "error": null
+    },
+    {
+      "url": "https://www.sanparks.org/parks/mapungubwe",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-1"
+        },
+        {
+          "destinationId": "mapungubwe",
+          "kind": "site",
+          "siteId": "mapungubwe-confluence"
+        },
+        {
+          "destinationId": "mapungubwe",
+          "kind": "site",
+          "siteId": "mapungubwe-camp"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.sanparks.org/parks/mapungubwe",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 95,
+      "error": null
+    },
+    {
+      "url": "https://www.sanparks.org/parks/richtersveld",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-1"
+        },
+        {
+          "destinationId": "richtersveld",
+          "kind": "site",
+          "siteId": "richtersveld-potjiespram"
+        },
+        {
+          "destinationId": "richtersveld",
+          "kind": "site",
+          "siteId": "richtersveld-de-hoop"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.sanparks.org/parks/richtersveld",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 89,
+      "error": null
+    },
+    {
+      "url": "https://www.sark.co.uk/travel",
+      "references": [
+        {
+          "destinationId": "isle-of-sark",
+          "kind": "guide",
+          "sourceId": "isle-of-sark-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sark.co.uk/travel",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 73,
+      "error": null
+    },
+    {
+      "url": "https://www.serbia.travel/en",
+      "references": [
+        {
+          "destinationId": "tara-serbia",
+          "kind": "guide",
+          "sourceId": "tara-serbia-source-2"
+        },
+        {
+          "destinationId": "kopaonik",
+          "kind": "guide",
+          "sourceId": "kopaonik-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.serbia.travel/en/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 198,
+      "error": null
+    },
+    {
+      "url": "https://www.sernap.gob.bo/",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sernap.gob.bo/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2217,
+      "error": null
+    },
+    {
+      "url": "https://www.sernatur.cl/",
+      "references": [
+        {
+          "destinationId": "isla-navarino",
+          "kind": "guide",
+          "sourceId": "isla-navarino-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sernatur.cl/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 847,
+      "error": null
+    },
+    {
+      "url": "https://www.sopsr.sk/web/",
+      "references": [
+        {
+          "destinationId": "poloniny",
+          "kind": "guide",
+          "sourceId": "poloniny-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sopsr.sk/web/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 199,
+      "error": null
+    },
+    {
+      "url": "https://www.southafrica.net/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.southafrica.net/de/de/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 222,
+      "error": null
+    },
+    {
+      "url": "https://www.southaustralia.com/places-to-go/kangaroo-island",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://southaustralia.com/destinations/kangaroo-island",
+      "redirected": true,
+      "redirectCount": 2,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 1991,
+      "error": null
+    },
+    {
+      "url": "https://www.srbija.gov.rs/",
+      "references": [
+        {
+          "destinationId": "kopaonik",
+          "kind": "guide",
+          "sourceId": "kopaonik-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.srbija.gov.rs/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 113,
+      "error": null
+    },
+    {
+      "url": "https://www.sternenpark-attersee-traunsee.at/",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-1"
+        },
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "site",
+          "siteId": "attersee-nussdorf"
+        },
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "site",
+          "siteId": "traunsee-altaussee"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.sternenpark-attersee-traunsee.at/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 477,
+      "error": null
+    },
+    {
+      "url": "https://www.tourism.go.ug/",
+      "references": [
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "guide",
+          "sourceId": "kidepo-valley-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.tourism.go.ug/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 84,
+      "error": null
+    },
+    {
+      "url": "https://www.traveltexas.com/articles/post/unforgettable-texas-landscapes/",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-1"
+        },
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "site",
+          "siteId": "enchanted-rock-summit"
+        },
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "site",
+          "siteId": "enchanted-rock-camp"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.traveltexas.com/articles/post/unforgettable-texas-landscapes/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 84,
+      "error": null
+    },
+    {
+      "url": "https://www.turismoavila.com/",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismoavila.com/web/inicio/",
+      "redirected": true,
+      "redirectCount": 3,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 330,
+      "error": null
+    },
+    {
+      "url": "https://www.turismocastillayleon.com/en/nature",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-1"
+        },
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "site",
+          "siteId": "garganta-de-los-infernós"
+        },
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "site",
+          "siteId": "guisando-gredos"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismocastillayleon.com/en/nature",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 257,
+      "error": null
+    },
+    {
+      "url": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 234,
+      "error": null
+    },
+    {
+      "url": "https://www.turismoextremadura.com/en/",
+      "references": [
+        {
+          "destinationId": "monfrague",
+          "kind": "guide",
+          "sourceId": "monfrague-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismoextremadura.com/en/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 427,
+      "error": null
+    },
+    {
+      "url": "https://www.turismoyculturas.gob.bo/",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-1"
+        },
+        {
+          "destinationId": "uyuni",
+          "kind": "site",
+          "siteId": "uyuni-salt-flat"
+        },
+        {
+          "destinationId": "uyuni",
+          "kind": "site",
+          "siteId": "uyuni-tahua"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismoyculturas.gob.bo/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1506,
+      "error": null
+    },
+    {
+      "url": "https://www.vill.achi.lg.jp/",
+      "references": [
+        {
+          "destinationId": "achi-village",
+          "kind": "guide",
+          "sourceId": "achi-village-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.vill.achi.lg.jp/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 852,
+      "error": null
+    },
+    {
+      "url": "https://www.visitfredericksburgtx.com/things-to-do/outdoors/enchanted-rock/",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.visitfredericksburgtx.com/things-to-do/outdoors/enchanted-rock/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 659,
+      "error": null
+    },
+    {
+      "url": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-1"
+        },
+        {
+          "destinationId": "sani-pass",
+          "kind": "site",
+          "siteId": "sani-pass-border"
+        },
+        {
+          "destinationId": "sani-pass",
+          "kind": "site",
+          "siteId": "sani-top"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 99,
+      "error": null
+    },
+    {
+      "url": "https://www.visitmudgeeregion.com.au/",
+      "references": [
+        {
+          "destinationId": "mudgee",
+          "kind": "guide",
+          "sourceId": "mudgee-source-1"
+        },
+        {
+          "destinationId": "mudgee",
+          "kind": "site",
+          "siteId": "mudgee-observatory"
+        },
+        {
+          "destinationId": "mudgee",
+          "kind": "site",
+          "siteId": "gulgong"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.visitmudgeeregion.com.au/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 158,
+      "error": null
+    },
+    {
+      "url": "https://www.visitpirineus.com/en/",
+      "references": [
+        {
+          "destinationId": "aigues-tortes",
+          "kind": "guide",
+          "sourceId": "aigues-tortes-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.visitpirineus.com/en",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 122,
+      "error": null
+    },
+    {
+      "url": "https://www.wa.gov.au/service/environment",
+      "references": [
+        {
+          "destinationId": "great-western-woodlands",
+          "kind": "guide",
+          "sourceId": "great-western-woodlands-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.wa.gov.au/service/environment",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 50,
+      "error": null
+    }
+  ]
+}
