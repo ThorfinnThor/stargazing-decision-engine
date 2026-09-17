@@ -1,0 +1,33 @@
+{
+  "siteId": "gredos-navarredonda-mirador",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    40.36303,
+    -5.12396
+  ],
+  "tile": "N40_00_W006_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N40_00_W006_00_DEM/Copernicus_DSM_COG_10_N40_00_W006_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1598.189,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1588.856,
+      "validSampleCount": 261
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1570.77,
+      "validSampleCount": 4318
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T14:40:49.349594Z"
+}
