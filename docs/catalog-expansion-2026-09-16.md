@@ -33,6 +33,13 @@ request points with the current observation-site coordinates. A coordinate
 change marks every location-dependent snapshot for that site as stale until the
 climate, Black Marble, DEM and real-score batch has been regenerated.
 
+The Monfragüe factual review corrected both staged map points to the named
+Castillo de Monfragüe and Salto del Gitano locations. Current biosphere-reserve
+tourism pages explicitly identify both as astronomy locations, while the
+national-park rules still require designated parking, no camping and a
+wildlife-sensitive visit. The destination and both sites remain inactive, and
+their images remain pending, until every other activation gate is complete.
+
 The staged records include bilingual destination guides, location tours, stay
 areas, observation-site metadata, source records and image requests. Their
 images remain `pending`; no image is treated as licensed until a documented
