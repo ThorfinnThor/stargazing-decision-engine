@@ -41,6 +41,10 @@ const shortTripOutputs = readdirSync(generatedDir)
   .filter((file) => /^short-trips-[a-z0-9-]+\.json$/.test(file))
   .map((file) => readJson<ShortTripOutput>(generatedPath(file)));
 if (shortTripOutputs.length === 0) throw new Error("No generated short-trip file found");
+const publishedDestinations = seed.destinations.filter((destination) => destination.active);
+const publishedDestinationIds = new Set(publishedDestinations.map((destination) => destination.id));
+const publishedSites = seed.sites.filter((site) => site.active && publishedDestinationIds.has(site.destinationId));
+const publishedStayAreas = seed.stayAreas.filter((area) => publishedDestinationIds.has(area.destinationId));
 
 function collectJsonFiles(directory: string): string[] {
   if (!existsSync(directory)) return [];
@@ -63,7 +67,7 @@ const gearProducts = readJson<GearProductMetadata[]>(resolve(process.cwd(), "dat
 const destinationImages = readJson<Array<{ status: string }>>(resolve(process.cwd(), "data-config/sources/destination-images.json"));
 const siteImages = readJson<Array<{ status: string }>>(resolve(process.cwd(), "data-config/sources/site-images.json"));
 const realScoreDirectory = resolve(root, "data-snapshots/scores");
-const realScoreSnapshots = new Map<string, SiteScoreSnapshot>(
+const allRealScoreSnapshots = new Map<string, SiteScoreSnapshot>(
   existsSync(realScoreDirectory)
     ? readdirSync(realScoreDirectory)
       .filter((file) => file.endsWith(".json"))
@@ -73,9 +77,13 @@ const realScoreSnapshots = new Map<string, SiteScoreSnapshot>(
       })
     : [],
 );
-for (const siteId of realScoreSnapshots.keys()) {
-  if (!seed.sites.some((site) => site.id === siteId)) throw new Error(`Real score snapshot does not match an active site: ${siteId}`);
+for (const siteId of allRealScoreSnapshots.keys()) {
+  if (!seed.sites.some((site) => site.id === siteId)) throw new Error(`Real score snapshot does not match a catalog site: ${siteId}`);
 }
+const publishedSiteIds = new Set(publishedSites.map((site) => site.id));
+const realScoreSnapshots = new Map(
+  [...allRealScoreSnapshots].filter(([siteId]) => publishedSiteIds.has(siteId)),
+);
 
 function realClimate(siteId: string): MonthlySiteClimate[] {
   const snapshot = readJson<Era5ClimateSnapshot>(resolve(root, "data-snapshots/climate", `${siteId}.json`));
@@ -132,9 +140,9 @@ function scoreSource(destination: Destination) {
   return { site, scores, real };
 }
 
-writeJson(publicPath("destinations/index.json"), seed.destinations);
-writeJson(publicPath("sites/index.json"), seed.sites);
-writeJson(publicPath("search/destination-index.json"), seed.destinations.map((destination) => {
+writeJson(publicPath("destinations/index.json"), publishedDestinations);
+writeJson(publicPath("sites/index.json"), publishedSites);
+writeJson(publicPath("search/destination-index.json"), publishedDestinations.map((destination) => {
   const { site, scores, real } = scoreSource(destination);
   const climate = real ? realClimate(site.id) : scored.climate.filter((item) => item.siteId === site.id);
   const climateByMonth = new Map(climate.map((month) => [month.month, month]));
@@ -165,7 +173,7 @@ writeJson(publicPath("search/destination-index.json"), seed.destinations.map((de
   } satisfies FinderDestination;
 }));
 
-for (const destination of seed.destinations) {
+for (const destination of publishedDestinations) {
   writeJson(publicPath(`destinations/${destination.countryCode.toLowerCase()}/${destination.slug}.json`), destination);
   const { site, scores: destinationScores, real } = scoreSource(destination);
   writeJson(publicPath(`monthly/destinations/${destination.slug}.json`), {
@@ -179,7 +187,7 @@ for (const destination of seed.destinations) {
   } satisfies DestinationMonthlySummary);
 }
 
-for (const site of seed.sites) {
+for (const site of publishedSites) {
   const destination = seed.destinations.find((item) => item.id === site.destinationId);
   if (!destination) throw new Error(`Missing destination for ${site.id}`);
   const real = realScoreSnapshots.get(site.id);
@@ -213,7 +221,7 @@ const realScoreSiteCount = realScores.length;
 const latestRealGeneratedAt = realScores.map((snapshot) => snapshot.generatedAt).sort().at(-1);
 const generatedAt = latestRealGeneratedAt && latestRealGeneratedAt > seedGeneratedAt ? latestRealGeneratedAt : seedGeneratedAt;
 const datasetDate = generatedAt.slice(0, 10);
-const datasetStatus = realScoreSiteCount === 0 ? "seed" : realScoreSiteCount === seed.sites.length ? "real" : "mixed";
+const datasetStatus = realScoreSiteCount === 0 ? "seed" : realScoreSiteCount === publishedSites.length ? "real" : "mixed";
 const blackMarbleSnapshots = realScores.map((snapshot) => readJson<BlackMarbleSnapshot>(resolve(root, "data-snapshots/black-marble", `${snapshot.siteId}.json`)));
 const blackMarbleYears = [...new Set(blackMarbleSnapshots.flatMap((snapshot) => snapshot.blackMarbleYears))].sort();
 
@@ -236,14 +244,14 @@ writeJson(publicPath("manifest.json"), {
     images: "attribution-manifest-2026-08-21",
   },
   counts: {
-    destinations: seed.destinations.length,
-    observationSites: seed.sites.length,
-    stayAreas: seed.stayAreas.length,
+    destinations: publishedDestinations.length,
+    observationSites: publishedSites.length,
+    stayAreas: publishedStayAreas.length,
     originCities: seed.origins.length,
     siteClimateRows: scored.climate.length,
     siteScoreRows: scored.scores.length,
     realScoreSites: realScoreSiteCount,
-    seedScoreSites: seed.sites.length - realScoreSiteCount,
+    seedScoreSites: publishedSites.length - realScoreSiteCount,
     realSiteScoreRows: realScores.reduce((sum, snapshot) => sum + snapshot.months.length, 0),
     calendarFiles: calendarFiles.length,
     meteorShowerFiles: meteorOutputs.reduce((sum, meteor) => sum + meteor.events.length, 0),
@@ -258,4 +266,4 @@ writeJson(publicPath("manifest.json"), {
   fileChecksums: {},
 });
 
-console.log(`Exported static JSON for ${seed.destinations.length} destinations (${realScoreSiteCount} real, ${seed.sites.length - realScoreSiteCount} seed).`);
+console.log(`Exported static JSON for ${publishedDestinations.length} active destinations (${realScoreSiteCount} real, ${publishedSites.length - realScoreSiteCount} seed).`);

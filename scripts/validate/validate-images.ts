@@ -135,8 +135,9 @@ if (siteImageAudit) {
     || siteImageAudit.audit.uniqueSourceAssetCount !== new Set(siteImageAudit.records.map((record) => record.localPath)).size) {
     errors.push("site image audit counts do not match its records");
   }
-  if (siteImageAudit.records.length !== seed.sites.length
-    || new Set(siteImageAudit.records.map((record) => record.siteSlug)).size !== seed.sites.length) {
+  const activeSites = seed.sites.filter((site) => site.active);
+  if (siteImageAudit.records.length !== activeSites.length
+    || new Set(siteImageAudit.records.map((record) => record.siteSlug)).size !== activeSites.length) {
     errors.push("site image audit does not cover every observation site exactly once");
   }
   for (const record of siteImageAudit.records) {

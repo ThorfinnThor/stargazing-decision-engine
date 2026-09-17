@@ -13,16 +13,17 @@ test("published destination summaries prefer complete real score snapshots and d
   const destinations = readJson<Destination[]>("data-config/sources/destinations.json");
   const sites = readJson<ObservationSite[]>("data-config/sources/observation-sites.json");
   const scoreDirectory = resolve(process.cwd(), "data-snapshots/scores");
+  const activeSiteIds = new Set(sites.filter((site) => site.active).map((site) => site.id));
   const snapshots = new Map<string, SiteScoreSnapshot>(
     existsSync(scoreDirectory)
       ? readdirSync(scoreDirectory).filter((file) => file.endsWith(".json")).map((file) => {
         const snapshot = readJson<SiteScoreSnapshot>(`data-snapshots/scores/${file}`);
-        return [snapshot.siteId, snapshot];
-      })
+        return [snapshot.siteId, snapshot] as const;
+      }).filter(([siteId]) => activeSiteIds.has(siteId))
       : [],
   );
 
-  for (const destination of destinations) {
+  for (const destination of destinations.filter((item) => item.active)) {
     const summary = readJson<DestinationMonthlySummary>(`public/data/stargazing/monthly/destinations/${destination.slug}.json`);
     const realSite = destination.observationSiteIds
       .map((siteId) => sites.find((site) => site.id === siteId))
@@ -49,5 +50,5 @@ test("published destination summaries prefer complete real score snapshots and d
 
   const manifest = readJson<Manifest>("public/data/stargazing/manifest.json");
   assert.equal(manifest.counts.realScoreSites, snapshots.size);
-  assert.equal(manifest.counts.seedScoreSites, sites.length - snapshots.size);
+  assert.equal(manifest.counts.seedScoreSites, sites.filter((site) => site.active).length - snapshots.size);
 });

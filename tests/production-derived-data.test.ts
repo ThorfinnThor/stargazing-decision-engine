@@ -28,7 +28,7 @@ test("published derived products are real and access-gated", () => {
   assert.equal(calendar.nights.length, new Date(Date.UTC(calendar.year, calendar.month, 0)).getUTCDate());
 
   const sites = read<ObservationSite[]>("data-config/sources/observation-sites.json");
-  assert.equal(sites.length, 200);
+  assert.equal(sites.filter((site) => site.active).length, 200);
   const eligible = new Set(sites.filter(isTravelEligibleSite).map((site) => site.id));
   for (const file of readdirSync(resolve(process.cwd(), "public/data/stargazing/short-trips"))) {
     const trip = read<ShortTripFile>(`public/data/stargazing/short-trips/${file}`);

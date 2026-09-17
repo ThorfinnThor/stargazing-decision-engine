@@ -5,6 +5,7 @@ import { isLocale, locales, type Locale } from "@/lib/i18n/config";
 import { loadMeteorShowerEvent, listMeteorShowerEvents, loadSeoPage } from "@/lib/data/load";
 import { buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
+import { localizedLinks } from "@/lib/i18n/links";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -70,7 +71,7 @@ export default async function MeteorShowerPage({ params }: { params: Promise<{ l
         <div className="event-table-wrap">
           <table className="event-table">
             <thead><tr><th>#</th><th>{isGerman ? "Ziel" : "Destination"}</th><th>{isGerman ? "Ort" : "Site"}</th><th>{isGerman ? "Wert" : "Score"}</th><th>{isGerman ? "Mondlos" : "Moonless"}</th></tr></thead>
-            <tbody>{event.topDestinations.map((row) => <tr key={row.destinationId}><td>{row.rank}</td><td>{row.destinationName}</td><td>{row.siteName}</td><td>{row.viewingScore}</td><td>{row.moonConditions.moonlessHours.toFixed(2)} h</td></tr>)}</tbody>
+            <tbody>{event.topDestinations.map((row) => <tr key={row.destinationId}><td>{row.rank}</td><td><a href={localizedLinks.destination(locale, row.destinationSlug)}>{row.destinationName}</a></td><td>{row.siteName}</td><td>{row.viewingScore}</td><td>{row.moonConditions.moonlessHours.toFixed(2)} h</td></tr>)}</tbody>
           </table>
         </div>
       </section>

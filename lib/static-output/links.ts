@@ -14,6 +14,10 @@ export interface StaticOutputValidation {
   localeParityGaps: Array<{ source: string; expected: string }>;
 }
 
+export interface OrphanedStaticPage {
+  path: string;
+}
+
 function walkFiles(directory: string): string[] {
   return readdirSync(directory, { withFileTypes: true }).flatMap((entry) => {
     const path = resolve(directory, entry.name);
@@ -41,6 +45,38 @@ export function extractStaticReferences(html: string) {
   return [...html.matchAll(/\b(?:href|src)=(?:"([^"]*)"|'([^']*)')/gi)]
     .map((match) => decodeAttribute(match[1] ?? match[2] ?? ""))
     .filter(Boolean);
+}
+
+export function extractStaticLinks(html: string) {
+  return [...html.matchAll(/<a\b[^>]*>/gi)]
+    .map((match) => match[0].match(/\bhref=(?:"([^"]*)"|'([^']*)')/i))
+    .map((match) => decodeAttribute(match?.[1] ?? match?.[2] ?? ""))
+    .filter(Boolean);
+}
+
+export function findOrphanedStaticPages(outputDirectory: string, siteOrigin: string, targetPaths: string[]): OrphanedStaticPage[] {
+  const origin = new URL(siteOrigin).origin;
+  const targets = new Map(targetPaths.map((path) => [path, new Set<string>()]));
+  const htmlFiles = walkFiles(outputDirectory).filter((file) => file.endsWith(".html"));
+
+  for (const file of htmlFiles) {
+    const source = toPublicPath(outputDirectory, file);
+    const base = new URL(source, `${origin}/`);
+    for (const reference of extractStaticLinks(readFileSync(file, "utf8"))) {
+      try {
+        const target = new URL(reference, base);
+        if (target.origin === origin && target.pathname !== source && targets.has(target.pathname)) {
+          targets.get(target.pathname)?.add(source);
+        }
+      } catch {
+        // Invalid references are reported by validateStaticOutput.
+      }
+    }
+  }
+
+  return [...targets.entries()]
+    .filter(([, sources]) => sources.size === 0)
+    .map(([path]) => ({ path }));
 }
 
 export function resolveExportedTarget(outputDirectory: string, pathname: string) {
