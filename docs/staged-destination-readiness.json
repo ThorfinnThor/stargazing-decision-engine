@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T14:13:19.943Z",
+  "generatedAt": "2026-09-17T14:30:03.166Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -10,9 +10,9 @@
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 49,
+    "requiringFactualSourceReview": 48,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 0,
+    "withVerifiedFactualReview": 1,
     "readyForActivation": 0
   },
   "records": [
@@ -216,28 +216,59 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 5,
+        "reachable": 5,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "monfrague",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://turismomonfrague.es/astroturismo/",
+            "https://turismomonfrague.es/imprescindible/castillo-de-monfrague/",
+            "https://turismomonfrague.es/imprescindible/salto-del-gitano/",
+            "https://www.miteco.gob.es/content/dam/miteco/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/normas_tcm30-67044.pdf",
+            "https://www.miteco.gob.es/en/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague/guia-visitante/itinerarios.html"
+          ],
+          "verifiedFindings": [
+            "The Cáceres provincial biosphere-reserve tourism authority explicitly identifies both Castillo de Monfragüe and Salto del Gitano as places for astronomical observation.",
+            "The authority's castle page describes designated parking followed by an approximately 20-minute walk and stairs; its route link locates the castle at 39.8281476, -6.0514947.",
+            "The authority's Salto del Gitano page describes access by car, motorcycle, bicycle or a signed walk from Villarreal de San Carlos; its route link locates the viewpoint at 39.8285483, -6.0578331.",
+            "The national-park visitor rules require use of designated viewpoint parking, prohibit camping and limit caravan or motorhome parking between 22:00 and 06:00 to no more than two consecutive hours.",
+            "The national-park itinerary page confirms Castillo de Monfragüe as a signed self-guided route and Salto del Gitano as a principal park viewpoint; current notices still take precedence over the prepared itinerary."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "monfrague-source-1",
-            "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague.html",
+            "url": "https://turismomonfrague.es/astroturismo/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "monfrague-source-2",
-            "url": "https://www.turismoextremadura.com/en/",
+            "url": "https://turismomonfrague.es/imprescindible/castillo-de-monfrague/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "monfrague-source-3",
-            "url": "https://turismoextremadura.juntaex.es/es/explora/Monfraguee-National-Park/",
+            "url": "https://turismomonfrague.es/imprescindible/salto-del-gitano/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "monfrague-source-4",
+            "url": "https://www.miteco.gob.es/content/dam/miteco/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/normas_tcm30-67044.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "monfrague-source-5",
+            "url": "https://www.miteco.gob.es/en/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague/guia-visitante/itinerarios.html",
             "classification": "reachable",
             "status": 200
           }
@@ -273,7 +304,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
