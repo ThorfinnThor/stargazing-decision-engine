@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T14:22:09.822Z",
+  "generatedAt": "2026-09-17T14:30:03.166Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
@@ -285,10 +285,7 @@
             "dem": true,
             "scores": true
           },
-          "coordinateMismatches": [
-            "climate",
-            "dem"
-          ],
+          "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
@@ -300,26 +297,13 @@
             "dem": true,
             "scores": true
           },
-          "coordinateMismatches": [
-            "climate",
-            "dem"
-          ],
+          "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
       "missingSnapshots": [],
-      "staleSnapshots": [
-        "monfrague-castillo:climate",
-        "monfrague-castillo:black-marble",
-        "monfrague-castillo:dem",
-        "monfrague-castillo:scores",
-        "monfrague-salto-gitano:climate",
-        "monfrague-salto-gitano:black-marble",
-        "monfrague-salto-gitano:dem",
-        "monfrague-salto-gitano:scores"
-      ],
+      "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshot-coordinates-stale",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
