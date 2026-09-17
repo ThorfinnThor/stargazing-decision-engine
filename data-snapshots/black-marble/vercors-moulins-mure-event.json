@@ -1,0 +1,158 @@
+{
+  "siteId": "vercors-moulins-mure-event",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.001435,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.001435,
+          "coverage": 1,
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000796,
+          "coverage": 1,
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
+        },
+        {
+          "year": 2023,
+          "radiance": 0.003539,
+          "coverage": 1,
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.260104,
+      "coverage": 0.999698,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.260104,
+          "coverage": 0.999758,
+          "validPixelCount": 16544,
+          "totalPixelCount": 16548
+        },
+        {
+          "year": 2024,
+          "radiance": 0.243623,
+          "coverage": 0.999698,
+          "validPixelCount": 16543,
+          "totalPixelCount": 16548
+        },
+        {
+          "year": 2023,
+          "radiance": 0.319376,
+          "coverage": 0.99994,
+          "validPixelCount": 16547,
+          "totalPixelCount": 16548
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.658155,
+      "coverage": 0.999263,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.658155,
+          "coverage": 0.999263,
+          "validPixelCount": 97580,
+          "totalPixelCount": 97652
+        },
+        {
+          "year": 2024,
+          "radiance": 0.630716,
+          "coverage": 0.999416,
+          "validPixelCount": 97595,
+          "totalPixelCount": 97652
+        },
+        {
+          "year": 2023,
+          "radiance": 0.75769,
+          "coverage": 0.999529,
+          "validPixelCount": 97606,
+          "totalPixelCount": 97652
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.001435,
+  "radiance10to30": 0.260104,
+  "radiance30to75": 0.658155,
+  "alanExposure": 0.08568,
+  "darknessScore": 85.73,
+  "coverage": 0.999263,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T15:49:22.252465Z"
+}

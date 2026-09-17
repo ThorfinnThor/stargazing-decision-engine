@@ -1,0 +1,33 @@
+{
+  "siteId": "vercors-moulins-mure-event",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    44.914771,
+    5.379652
+  ],
+  "tile": "N44_00_E005_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N44_00_E005_00_DEM/Copernicus_DSM_COG_10_N44_00_E005_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1087.26,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1080.373,
+      "validSampleCount": 288
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1074.608,
+      "validSampleCount": 4646
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T15:50:20.001236Z"
+}
