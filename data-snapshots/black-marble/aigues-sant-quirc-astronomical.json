@@ -1,0 +1,158 @@
+{
+  "siteId": "aigues-sant-quirc-astronomical",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.115519,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.115519,
+          "coverage": 1,
+          "validPixelCount": 1903,
+          "totalPixelCount": 1903
+        },
+        {
+          "year": 2024,
+          "radiance": 0.103487,
+          "coverage": 1,
+          "validPixelCount": 1903,
+          "totalPixelCount": 1903
+        },
+        {
+          "year": 2023,
+          "radiance": 0.136113,
+          "coverage": 1,
+          "validPixelCount": 1903,
+          "totalPixelCount": 1903
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.213821,
+      "coverage": 0.999811,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.213821,
+          "coverage": 0.999937,
+          "validPixelCount": 15879,
+          "totalPixelCount": 15880
+        },
+        {
+          "year": 2024,
+          "radiance": 0.211149,
+          "coverage": 1,
+          "validPixelCount": 15880,
+          "totalPixelCount": 15880
+        },
+        {
+          "year": 2023,
+          "radiance": 0.241327,
+          "coverage": 0.999811,
+          "validPixelCount": 15877,
+          "totalPixelCount": 15880
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.217658,
+      "coverage": 0.999861,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.217658,
+          "coverage": 0.999904,
+          "validPixelCount": 93774,
+          "totalPixelCount": 93783
+        },
+        {
+          "year": 2024,
+          "radiance": 0.197959,
+          "coverage": 0.999957,
+          "validPixelCount": 93779,
+          "totalPixelCount": 93783
+        },
+        {
+          "year": 2023,
+          "radiance": 0.23521,
+          "coverage": 0.999861,
+          "validPixelCount": 93770,
+          "totalPixelCount": 93783
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.115519,
+  "radiance10to30": 0.213821,
+  "radiance30to75": 0.217658,
+  "alanExposure": 0.081555,
+  "darknessScore": 85.96,
+  "coverage": 0.999811,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T15:24:23.092117Z"
+}
