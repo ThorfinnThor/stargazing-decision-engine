@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T15:43:18.035Z",
+  "generatedAt": "2026-09-17T15:53:53.238Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
@@ -723,10 +723,10 @@
           "id": "vercors-trieves-observatory",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -735,28 +735,18 @@
           "id": "vercors-moulins-mure-event",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "vercors-trieves-observatory:climate",
-        "vercors-trieves-observatory:black-marble",
-        "vercors-trieves-observatory:dem",
-        "vercors-trieves-observatory:scores",
-        "vercors-moulins-mure-event:climate",
-        "vercors-moulins-mure-event:black-marble",
-        "vercors-moulins-mure-event:dem",
-        "vercors-moulins-mure-event:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
