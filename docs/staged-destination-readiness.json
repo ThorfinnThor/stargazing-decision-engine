@@ -1,0 +1,3492 @@
+{
+  "version": 1,
+  "generatedAt": "2026-09-17T13:45:57.569Z",
+  "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
+  "summary": {
+    "destinations": 50,
+    "sites": 100,
+    "withCompleteSnapshots": 50,
+    "withCleanSourceReachability": 50,
+    "withBlockedSources": 24,
+    "withApprovedDestinationImage": 0,
+    "withAllSiteImagesApproved": 0,
+    "requiringFactualSourceReview": 50,
+    "readyForActivation": 0
+  },
+  "records": [
+    {
+      "destinationId": "isle-of-sark",
+      "name": "Isle of Sark",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "isle-of-sark-source-1",
+            "url": "https://darksky.org/places/sark-dark-sky-community/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "isle-of-sark-source-2",
+            "url": "https://www.sark.co.uk/travel",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "isle-of-sark-source-3",
+            "url": "https://sark.co.uk/getting-around/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "sark-lighthouse",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "sark-windmill",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "sierra-morena",
+      "name": "Sierra Morena",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "sierra-morena-source-1",
+            "url": "https://www.juntadeandalucia.es/medioambiente/portal/areas-tematicas/espacios-protegidos/legislacion-autonomica-nacional/parques-naturales/parque-natural-sierra-morena-sevilla",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-morena-source-2",
+            "url": "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-morena-source-3",
+            "url": "https://www.juntadeandalucia.es/medioambiente/portal/web/ventanadelvisitante/detalle-buscador-mapa/-/asset_publisher/Jlbxh2qB3NwR/content/sierra-morena-de-sevilla/255035",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "sierra-morena-constantina",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "sierra-morena-almadén",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "monfrague",
+      "name": "Monfragüe",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "monfrague-source-1",
+            "url": "https://www.miteco.gob.es/es/parques-nacionales-oapn/red-parques-nacionales/parques-nacionales/monfrague.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "monfrague-source-2",
+            "url": "https://www.turismoextremadura.com/en/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "monfrague-source-3",
+            "url": "https://turismoextremadura.juntaex.es/es/explora/Monfraguee-National-Park/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "monfrague-castillo",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "monfrague-salto-gitano",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "sierra-de-gredos",
+      "name": "Sierra de Gredos",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "sierra-de-gredos-source-1",
+            "url": "https://www.turismocastillayleon.com/en/nature",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-de-gredos-source-2",
+            "url": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-de-gredos-source-3",
+            "url": "https://www.turismoavila.com/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "garganta-de-los-infernós",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "guisando-gredos",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "javalambre",
+      "name": "Javalambre",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "javalambre-source-1",
+            "url": "https://oajweb.cefca.es/oaj/principal",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "javalambre-source-2",
+            "url": "https://oaj.cefca.es/oaj_visits/visits",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "javalambre-source-3",
+            "url": "https://www.galactica.org.es/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "javalambre-observatory-road",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "arcos-salinas-viewpoint",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "aigues-tortes",
+      "name": "Aigüestortes",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "aigues-tortes-source-1",
+            "url": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/inici/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "aigues-tortes-source-2",
+            "url": "https://www.miteco.gob.es/en/parques-nacionales-oapn/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "aigues-tortes-source-3",
+            "url": "https://www.visitpirineus.com/en/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "aigues-estany-sant-maurici",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "boi-valley",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "vercors",
+      "name": "Vercors",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "vercors-source-1",
+            "url": "https://www.parc-du-vercors.fr/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "vercors-source-2",
+            "url": "https://www.drome-tourism.com/en/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "vercors-source-3",
+            "url": "https://www.auvergnerhonealpes-tourisme.com/en/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "col-de-la-machine",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "vassieux-plateau",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "attersee-traunsee",
+      "name": "Attersee-Traunsee",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "attersee-traunsee-source-1",
+            "url": "https://www.sternenpark-attersee-traunsee.at/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-2",
+            "url": "https://www.oberoesterreich.at/en/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-3",
+            "url": "https://www.naturpark-attersee-traunsee.at/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "attersee-nussdorf",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "traunsee-altaussee",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "grossmugl",
+      "name": "Großmugl",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "grossmugl-source-1",
+            "url": "https://www.grossmugl.gv.at/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-2",
+            "url": "https://www.niederoesterreich.at/orte-und-gemeinden/a-grossmugl",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-3",
+            "url": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "grossmugl-starwalk",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "leiserberge",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "poloniny",
+      "name": "Poloniny",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "poloniny-source-1",
+            "url": "https://slovakia.travel/en/national-park-of-poloniny",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-2",
+            "url": "https://www.sopsr.sk/web/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-3",
+            "url": "https://www.nppoloniny.sk/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "poloniny-runina",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "poloniny-topola",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "izera",
+      "name": "Izera Dark-Sky Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "izera-source-1",
+            "url": "https://turystyczna.szklarskaporeba.pl/en/47-szklarskaporeba-model-of-the-solar-system-in-the-jizera-mountains",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-2",
+            "url": "https://www.ciemneniebo.pl/news/english-translation/izera-dark-sky-park",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-3",
+            "url": "https://www.poland.travel/attachments/article/6505/PRZYRODA_EN.pdf",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "izerska-hala",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "stóg-izerski",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "tara-serbia",
+      "name": "Tara National Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "tara-serbia-source-1",
+            "url": "https://www.nptara.rs/en/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "tara-serbia-source-2",
+            "url": "https://www.serbia.travel/en",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-3",
+            "url": "https://www.ekologija.gov.rs/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "tara-mitrovac",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "tara-banjica",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "kopaonik",
+      "name": "Kopaonik",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "kopaonik-source-1",
+            "url": "https://npkopaonik.com/en/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-2",
+            "url": "https://www.serbia.travel/en",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-3",
+            "url": "https://www.srbija.gov.rs/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "kopaonik-pancic",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "kopaonik-sunacana",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "richtersveld",
+      "name": "Richtersveld",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 1,
+        "blocked": 2,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "richtersveld-source-1",
+            "url": "https://www.sanparks.org/parks/richtersveld",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-2",
+            "url": "https://www.sanparks.org/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-3",
+            "url": "https://www.southafrica.net/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "richtersveld-potjiespram",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "richtersveld-de-hoop",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "mapungubwe",
+      "name": "Mapungubwe",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 1,
+        "blocked": 2,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "mapungubwe-source-1",
+            "url": "https://www.sanparks.org/parks/mapungubwe",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-2",
+            "url": "https://www.sanparks.org/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-3",
+            "url": "https://www.limpopo.gov.za/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "mapungubwe-confluence",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "mapungubwe-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "makgadikgadi",
+      "name": "Makgadikgadi Pans",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "makgadikgadi-source-1",
+            "url": "https://www.botswanatourism.co.bw/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-2",
+            "url": "https://www.gov.bw/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-3",
+            "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "nata-bird-sanctuary",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "makgadikgadi-kubu",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "tsumkwe",
+      "name": "Tsumkwe",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "tsumkwe-source-1",
+            "url": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-2",
+            "url": "https://www.meft.gov.na/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-3",
+            "url": "https://www.nacso.org.na/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "tsumkwe-community",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "naye-naye",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "rakiura",
+      "name": "Rakiura Stewart Island",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "rakiura-source-1",
+            "url": "https://rakiura.org.nz/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "rakiura-source-2",
+            "url": "https://www.doc.govt.nz/rakiura",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "rakiura-source-3",
+            "url": "https://www.newzealand.com/int/stewart-island/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "oban-bay",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "rakiura-horseshoe",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "kangaroo-island",
+      "name": "Kangaroo Island",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "kangaroo-island-source-1",
+            "url": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-2",
+            "url": "https://www.southaustralia.com/places-to-go/kangaroo-island",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-3",
+            "url": "https://www.environment.sa.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "kangaroo-west-bay",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "kangaroo-flinders",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "mudgee",
+      "name": "Mudgee",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "mudgee-source-1",
+            "url": "https://www.visitmudgeeregion.com.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-2",
+            "url": "https://www.nationalparks.nsw.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-3",
+            "url": "https://www.environment.nsw.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "mudgee-observatory",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "gulgong",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "great-western-woodlands",
+      "name": "Great Western Woodlands",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "great-western-woodlands-source-1",
+            "url": "https://www.dpaw.wa.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-2",
+            "url": "https://www.australiasgoldenoutback.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-3",
+            "url": "https://www.wa.gov.au/service/environment",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "great-western-boorabbin",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "great-western-holland",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "torrance-barrens",
+      "name": "Torrance Barrens",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "torrance-barrens-source-1",
+            "url": "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-2",
+            "url": "https://www.ontario.ca/page/crown-land-use-policy-atlas",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-3",
+            "url": "https://darksky.org/places/torrance-barrens-dark-sky-reserve/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "torrance-barrens-main",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "torrance-barrens-boardwalk",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "fundy",
+      "name": "Fundy National Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "fundy-source-1",
+            "url": "https://parks.canada.ca/pn-np/nb/fundy",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "fundy-source-2",
+            "url": "https://parks.canada.ca/voyage-travel",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "fundy-source-3",
+            "url": "https://tourismnewbrunswick.ca/listing/fundy-national-park",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "fundy-headquarters",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "fundy-point-wolfe",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "manitoulin",
+      "name": "Manitoulin Island",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "manitoulin-source-1",
+            "url": "https://www.ontarioparks.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-2",
+            "url": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-3",
+            "url": "https://www.manitoulin-island.com/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "manitoulin-meldrum",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "manitoulin-shearer",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "massacre-rim",
+      "name": "Massacre Rim",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "massacre-rim-source-1",
+            "url": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "massacre-rim-source-2",
+            "url": "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-3",
+            "url": "https://www.blm.gov/office/winnemucca-district-office",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "massacre-rim-viewpoint",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "denio-outskirts",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "grand-canyon-parashant",
+      "name": "Grand Canyon-Parashant",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "grand-canyon-parashant-source-1",
+            "url": "https://www.blm.gov/national-conservation-lands/arizona/grandcanyon-parashant",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-2",
+            "url": "https://www.nps.gov/para/index.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-3",
+            "url": "https://www.nps.gov/para/planyourvisit/brochure.htm",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "parashant-tuweep",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "parashant-mount-trumbull",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "oracle-state-park",
+      "name": "Oracle State Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "oracle-state-park-source-1",
+            "url": "https://azstateparks.com/oracle",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-2",
+            "url": "https://azstateparks.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-3",
+            "url": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "oracle-state-park",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "oracle-charouleau",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "enchanted-rock",
+      "name": "Enchanted Rock",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "enchanted-rock-source-1",
+            "url": "https://www.traveltexas.com/articles/post/unforgettable-texas-landscapes/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "enchanted-rock-source-2",
+            "url": "https://www.visitfredericksburgtx.com/things-to-do/outdoors/enchanted-rock/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "enchanted-rock-source-3",
+            "url": "https://darksky.org/places/enchanted-rock-state-natural-area/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "enchanted-rock-summit",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "enchanted-rock-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "staunton-river",
+      "name": "Staunton River State Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "staunton-river-source-1",
+            "url": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "staunton-river-source-2",
+            "url": "https://www.dcr.virginia.gov/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "staunton-river-source-3",
+            "url": "https://darksky.org/places/staunton-river-state-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "staunton-river-park",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "staunton-river-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "kissimmee-prairie",
+      "name": "Kissimmee Prairie",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 0,
+        "blocked": 3,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "kissimmee-prairie-source-1",
+            "url": "https://floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "kissimmee-prairie-source-2",
+            "url": "https://floridastateparks.org/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "kissimmee-prairie-source-3",
+            "url": "https://darksky.org/places/kissimmee-prairie-preserve-state-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "kissimmee-prairie-north",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "kissimmee-prairie-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "big-cypress",
+      "name": "Big Cypress",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "big-cypress-source-1",
+            "url": "https://www.nps.gov/bicy/index.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "big-cypress-source-2",
+            "url": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "big-cypress-source-3",
+            "url": "https://darksky.org/places/big-cypress-national-preserve/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "big-cypress-wagonwheel",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "big-cypress-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "lassen-volcanic",
+      "name": "Lassen Volcanic",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "lassen-volcanic-source-1",
+            "url": "https://www.nps.gov/lavo/index.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "lassen-volcanic-source-2",
+            "url": "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "lassen-volcanic-source-3",
+            "url": "https://darksky.org/places/lassen-volcanic-national-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "lassen-manazanita",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "lassen-summit",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "dinosaur-national-monument",
+      "name": "Dinosaur National Monument",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "dinosaur-national-monument-source-1",
+            "url": "https://www.nps.gov/dino/index.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "dinosaur-national-monument-source-2",
+            "url": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "dinosaur-national-monument-source-3",
+            "url": "https://darksky.org/places/dinosaur-national-monument/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "dinosaur-jensen",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "dinosaur-harpers",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "medicine-rocks",
+      "name": "Medicine Rocks",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "medicine-rocks-source-1",
+            "url": "https://stateparks.mt.gov/medicine-rocks/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "medicine-rocks-source-2",
+            "url": "https://stateparks.mt.gov/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "medicine-rocks-source-3",
+            "url": "https://darksky.org/places/medicine-rocks-state-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "medicine-rocks-park",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "medicine-rocks-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "newport-wisconsin",
+      "name": "Newport State Park",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "newport-wisconsin-source-1",
+            "url": "https://dnr.wisconsin.gov/topic/parks/newport",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "newport-wisconsin-source-2",
+            "url": "https://dnr.wisconsin.gov/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "newport-wisconsin-source-3",
+            "url": "https://darksky.org/places/newport-state-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "newport-porte-des-morts",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "newport-campground",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "boundary-waters",
+      "name": "Boundary Waters",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "boundary-waters-source-1",
+            "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-2",
+            "url": "https://www.fs.usda.gov/superior",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-3",
+            "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "boundary-waters-moose-lake",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "boundary-waters-seagull",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "sturt-stony-desert",
+      "name": "Sturt Stony Desert",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "sturt-stony-desert-source-1",
+            "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-2",
+            "url": "https://www.parks.sa.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-3",
+            "url": "https://www.environment.sa.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "sturt-stony-innamincka",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "sturt-stony-cooper",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "alula",
+      "name": "AlUla",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "alula-source-1",
+            "url": "https://www.experiencealula.com/en",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "alula-source-2",
+            "url": "https://www.rcu.gov.sa/en",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "alula-source-3",
+            "url": "https://darksky.org/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "alula-harrat",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "alula-hegra",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "jebel-akhdar",
+      "name": "Jebel Akhdar",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "jebel-akhdar-source-1",
+            "url": "https://experienceoman.om/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "jebel-akhdar-source-2",
+            "url": "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "jebel-akhdar-source-3",
+            "url": "https://www.rop.gov.om/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "jebel-akhdar-diana",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "jebel-akhdar-saiq",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "rann-of-kutch",
+      "name": "Rann of Kutch",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 1,
+        "blocked": 2,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "rann-of-kutch-source-1",
+            "url": "https://www.gujarattourism.com/",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "rann-of-kutch-source-2",
+            "url": "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "rann-of-kutch-source-3",
+            "url": "https://www.incredibleindia.gov.in/en/gujarat",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "rann-dhordo",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "rann-kalo-dungar",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "achi-village",
+      "name": "Achi Village",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "achi-village-source-1",
+            "url": "https://sva.jp/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "achi-village-source-2",
+            "url": "https://www.vill.achi.lg.jp/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "achi-village-source-3",
+            "url": "https://www.go-nagano.net/en/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "achi-heavens-sonohara",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "achi-village",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "sani-pass",
+      "name": "Sani Pass",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "sani-pass-source-1",
+            "url": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sani-pass-source-2",
+            "url": "https://www.gov.ls/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sani-pass-source-3",
+            "url": "https://www.sanparks.org/parks/maloti-drakensberg",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "sani-pass-border",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "sani-top",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "drakensberg",
+      "name": "Maloti-Drakensberg",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 1,
+        "blocked": 2,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "drakensberg-source-1",
+            "url": "https://www.sanparks.org/parks/maloti-drakensberg",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "drakensberg-source-2",
+            "url": "https://www.kznwildlife.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "drakensberg-source-3",
+            "url": "https://whc.unesco.org/en/list/985/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "drakensberg-giants-castle",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "drakensberg-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "northern-damaraland",
+      "name": "Northern Damaraland",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "northern-damaraland-source-1",
+            "url": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "northern-damaraland-source-2",
+            "url": "https://www.meft.gov.na/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "northern-damaraland-source-3",
+            "url": "https://www.nacso.org.na/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "damaraland-twyfelfontein",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "damaraland-palmwag",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "coral-pink-sand-dunes",
+      "name": "Coral Pink Sand Dunes",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "coral-pink-sand-dunes-source-1",
+            "url": "https://stateparks.utah.gov/parks/coral-pink/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "coral-pink-sand-dunes-source-2",
+            "url": "https://stateparks.utah.gov/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "coral-pink-sand-dunes-source-3",
+            "url": "https://darksky.org/places/coral-pink-sand-dunes-state-park/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "coral-pink-park",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "coral-pink-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "cedar-breaks",
+      "name": "Cedar Breaks",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "cedar-breaks-source-1",
+            "url": "https://www.nps.gov/cebr/index.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "cedar-breaks-source-2",
+            "url": "https://www.nps.gov/cebr/planyourvisit/conditions.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "cedar-breaks-source-3",
+            "url": "https://darksky.org/places/cedar-breaks-national-monument/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "cedar-breaks-sunset",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "cedar-breaks-camp",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "puna-argentina",
+      "name": "Puna de Atacama",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "puna-argentina-source-1",
+            "url": "https://www.argentina.gob.ar/ambiente",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "puna-argentina-source-2",
+            "url": "https://www.jujuy.gob.ar/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "puna-argentina-source-3",
+            "url": "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "puna-salinas",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "puna-humahuaca",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "isla-navarino",
+      "name": "Isla Navarino",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 2,
+        "blocked": 1,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "isla-navarino-source-1",
+            "url": "https://www.conaf.cl/parques-nacionales/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "isla-navarino-source-2",
+            "url": "https://www.sernatur.cl/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "isla-navarino-source-3",
+            "url": "https://www.gob.cl/en/",
+            "classification": "blocked",
+            "status": 403
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "navarino-puerto-williams",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "navarino-dientes",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-access-manual-review-required",
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "uyuni",
+      "name": "Uyuni",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "uyuni-source-1",
+            "url": "https://www.turismoyculturas.gob.bo/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "uyuni-source-2",
+            "url": "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "uyuni-source-3",
+            "url": "https://www.sernap.gob.bo/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "uyuni-salt-flat",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "uyuni-tahua",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    },
+    {
+      "destinationId": "kidepo-valley",
+      "name": "Kidepo Valley",
+      "active": false,
+      "editorial": {
+        "guide": true,
+        "tour": true,
+        "stayAreas": 1
+      },
+      "sources": {
+        "total": 3,
+        "reachable": 3,
+        "blocked": 0,
+        "broken": 0,
+        "factualReview": "required",
+        "records": [
+          {
+            "id": "kidepo-valley-source-1",
+            "url": "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kidepo-valley-source-2",
+            "url": "https://ugandawildlife.org/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kidepo-valley-source-3",
+            "url": "https://www.tourism.go.ug/",
+            "classification": "reachable",
+            "status": 200
+          }
+        ]
+      },
+      "destinationImageStatus": "pending",
+      "sites": [
+        {
+          "id": "kidepo-narus",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        },
+        {
+          "id": "kidepo-kanangorok",
+          "active": false,
+          "snapshots": {
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
+          },
+          "imageStatus": "pending"
+        }
+      ],
+      "missingSnapshots": [],
+      "activationBlockers": [
+        "source-factual-review-required",
+        "destination-image-license-pending",
+        "site-image-license-pending"
+      ],
+      "readyForActivation": false
+    }
+  ]
+}
