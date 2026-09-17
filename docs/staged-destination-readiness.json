@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T15:06:51.682Z",
+  "generatedAt": "2026-09-17T15:22:51.993Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 46,
+    "requiringFactualSourceReview": 45,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 3,
+    "withVerifiedFactualReview": 4,
     "readyForActivation": 0
   },
   "records": [
@@ -545,28 +545,68 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 6,
+        "reachable": 6,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "aigues-tortes",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.vallboi.cat/en/starlight-destination",
+            "https://www.vallboi.cat/en/viewpoint/sant-quirc-de-durro-hermitages-viewpoint",
+            "https://pirineu365.cat/estiu/boitaull/estacio/",
+            "https://pirineu365.cat/wp-content/uploads/2026/05/BT_Planol-estiu-2026.pdf",
+            "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/",
+            "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/coneix-la-nostra-feina/normativa/",
+            "https://www.openstreetmap.org/way/197863351"
+          ],
+          "verifiedFindings": [
+            "The official Vall de Boí destination page identifies the national park and surrounding valley as a Starlight destination and explicitly names astronomical viewpoints at Boí Taüll and Sant Quirc de Durro.",
+            "The Boí Taüll Starlight viewpoint is located on the accessible walkway from car park P2, includes a planisphere for independent night-sky interpretation and hosts observing sessions on selected dates; the official station map confirms the parking, accessible route and Starlight facility layout.",
+            "The mapped P2 parking arrival area is 42.4793803, 0.8666296. It is used as the navigable coordinate because the official destination describes the viewpoint as reached from that car park rather than publishing a separate point coordinate.",
+            "The official Sant Quirc viewpoint page embeds the coordinate 42.4951864, 0.8111783 and states that independent visitors must walk about 20 minutes from the parking area at Durro's entrance; taxi access may be arranged.",
+            "The national-park authority states that private vehicles must remain at authorized entrance parking and that access inside the park continues on foot or by 4x4 taxi. Estany de Sant Maurici therefore cannot be presented as an independent drive-up observing stop.",
+            "Boí replaces Espot as the guide base because both verified astronomical viewpoints are in Vall de Boí; current signs, station operations, mountain weather and the published return route still determine whether either night visit proceeds."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "aigues-tortes-source-1",
-            "url": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/inici/",
+            "url": "https://www.vallboi.cat/en/starlight-destination",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "aigues-tortes-source-2",
-            "url": "https://www.miteco.gob.es/en/parques-nacionales-oapn/",
+            "url": "https://www.vallboi.cat/en/viewpoint/sant-quirc-de-durro-hermitages-viewpoint",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "aigues-tortes-source-3",
-            "url": "https://www.visitpirineus.com/en/",
+            "url": "https://pirineu365.cat/estiu/boitaull/estacio/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "aigues-tortes-source-4",
+            "url": "https://pirineu365.cat/wp-content/uploads/2026/05/BT_Planol-estiu-2026.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "aigues-tortes-source-5",
+            "url": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/gaudeix-del-parc/com-accedir-hi/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "aigues-tortes-source-6",
+            "url": "https://parcsnaturals.gencat.cat/en/xarxa-de-parcs/aiguestortes/coneix-la-nostra-feina/normativa/",
             "classification": "reachable",
             "status": 200
           }
@@ -575,34 +615,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "aigues-estany-sant-maurici",
+          "id": "aigues-boi-taull-starlight",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "boi-valley",
+          "id": "aigues-sant-quirc-astronomical",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "aigues-boi-taull-starlight:climate",
+        "aigues-boi-taull-starlight:black-marble",
+        "aigues-boi-taull-starlight:dem",
+        "aigues-boi-taull-starlight:scores",
+        "aigues-sant-quirc-astronomical:climate",
+        "aigues-sant-quirc-astronomical:black-marble",
+        "aigues-sant-quirc-astronomical:dem",
+        "aigues-sant-quirc-astronomical:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

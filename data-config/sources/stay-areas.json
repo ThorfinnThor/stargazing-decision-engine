@@ -1237,18 +1237,6 @@
     ]
   },
   {
-    "id": "espot",
-    "destinationId": "aigues-tortes",
-    "name": "Espot",
-    "lat": 42.58,
-    "lon": 1.09,
-    "affiliateQuery": "Espot Spain",
-    "observationSiteIds": [
-      "aigues-estany-sant-maurici",
-      "boi-valley"
-    ]
-  },
-  {
     "id": "vassieux-en-vercors",
     "destinationId": "vercors",
     "name": "Vassieux-en-Vercors",
@@ -1786,6 +1774,18 @@
     "observationSiteIds": [
       "sierra-morena-almadén",
       "sierra-morena-constantina"
+    ]
+  },
+  {
+    "id": "boi",
+    "destinationId": "aigues-tortes",
+    "name": "Boí",
+    "lat": 42.5222,
+    "lon": 0.834,
+    "affiliateQuery": "Boí Spain",
+    "observationSiteIds": [
+      "aigues-boi-taull-starlight",
+      "aigues-sant-quirc-astronomical"
     ]
   }
 ]
