@@ -1,0 +1,33 @@
+{
+  "siteId": "navarino-dientes",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -54.98,
+    -67.55
+  ],
+  "tile": "S55_00_W068_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S55_00_W068_00_DEM/Copernicus_DSM_COG_10_S55_00_W068_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 576.995,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 572.695,
+      "validSampleCount": 240
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 550.239,
+      "validSampleCount": 3812
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T12:01:40.947051Z"
+}

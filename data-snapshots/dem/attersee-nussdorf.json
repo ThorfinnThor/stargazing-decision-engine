@@ -1,0 +1,33 @@
+{
+  "siteId": "attersee-nussdorf",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    47.9,
+    13.53
+  ],
+  "tile": "N47_00_E013_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N47_00_E013_00_DEM/Copernicus_DSM_COG_10_N47_00_E013_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 483.488,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 480.891,
+      "validSampleCount": 305
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 474.631,
+      "validSampleCount": 4913
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:59:19.268079Z"
+}

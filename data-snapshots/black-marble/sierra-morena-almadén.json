@@ -1,0 +1,158 @@
+{
+  "siteId": "sierra-morena-almadén",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.570108,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.009626,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.012283,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        },
+        {
+          "year": 2024,
+          "radiance": 0.002937,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        },
+        {
+          "year": 2023,
+          "radiance": 0.009626,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.230842,
+      "coverage": 0.999865,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.239621,
+          "coverage": 0.999865,
+          "validPixelCount": 14829,
+          "totalPixelCount": 14831
+        },
+        {
+          "year": 2024,
+          "radiance": 0.171836,
+          "coverage": 1,
+          "validPixelCount": 14831,
+          "totalPixelCount": 14831
+        },
+        {
+          "year": 2023,
+          "radiance": 0.230842,
+          "coverage": 0.999933,
+          "validPixelCount": 14830,
+          "totalPixelCount": 14831
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 2.024668,
+      "coverage": 0.999384,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.024668,
+          "coverage": 0.999384,
+          "validPixelCount": 87546,
+          "totalPixelCount": 87600
+        },
+        {
+          "year": 2024,
+          "radiance": 1.902381,
+          "coverage": 0.999897,
+          "validPixelCount": 87591,
+          "totalPixelCount": 87600
+        },
+        {
+          "year": 2023,
+          "radiance": 2.035819,
+          "coverage": 0.999806,
+          "validPixelCount": 87583,
+          "totalPixelCount": 87600
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.009626,
+  "radiance10to30": 0.230842,
+  "radiance30to75": 2.024668,
+  "alanExposure": 0.144709,
+  "darknessScore": 82.5,
+  "coverage": 0.999384,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:09:16.057748Z"
+}

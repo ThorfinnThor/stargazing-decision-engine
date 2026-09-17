@@ -1,0 +1,158 @@
+{
+  "siteId": "coral-pink-park",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 69,
+          "totalPixelCount": 69
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 69,
+          "totalPixelCount": 69
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 69,
+          "totalPixelCount": 69
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.001064,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.001064,
+          "coverage": 1,
+          "validPixelCount": 1765,
+          "totalPixelCount": 1765
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000643,
+          "coverage": 1,
+          "validPixelCount": 1765,
+          "totalPixelCount": 1765
+        },
+        {
+          "year": 2023,
+          "radiance": 0.00176,
+          "coverage": 1,
+          "validPixelCount": 1765,
+          "totalPixelCount": 1765
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.102572,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.128274,
+          "coverage": 1,
+          "validPixelCount": 14672,
+          "totalPixelCount": 14672
+        },
+        {
+          "year": 2024,
+          "radiance": 0.094679,
+          "coverage": 1,
+          "validPixelCount": 14672,
+          "totalPixelCount": 14672
+        },
+        {
+          "year": 2023,
+          "radiance": 0.102572,
+          "coverage": 1,
+          "validPixelCount": 14672,
+          "totalPixelCount": 14672
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.190407,
+      "coverage": 0.999931,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.231493,
+          "coverage": 0.999977,
+          "validPixelCount": 86633,
+          "totalPixelCount": 86635
+        },
+        {
+          "year": 2024,
+          "radiance": 0.190407,
+          "coverage": 0.999965,
+          "validPixelCount": 86632,
+          "totalPixelCount": 86635
+        },
+        {
+          "year": 2023,
+          "radiance": 0.18954,
+          "coverage": 0.999931,
+          "validPixelCount": 86629,
+          "totalPixelCount": 86635
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.001064,
+  "radiance10to30": 0.102572,
+  "radiance30to75": 0.190407,
+  "alanExposure": 0.032395,
+  "darknessScore": 88.65,
+  "coverage": 0.999931,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:20:44.029873Z"
+}

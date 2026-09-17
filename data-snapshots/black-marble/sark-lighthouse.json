@@ -1,0 +1,158 @@
+{
+  "siteId": "sark-lighthouse",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 91,
+          "totalPixelCount": 91
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.008151,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.003387,
+          "coverage": 1,
+          "validPixelCount": 2158,
+          "totalPixelCount": 2158
+        },
+        {
+          "year": 2024,
+          "radiance": 0.008151,
+          "coverage": 1,
+          "validPixelCount": 2158,
+          "totalPixelCount": 2158
+        },
+        {
+          "year": 2023,
+          "radiance": 0.010128,
+          "coverage": 1,
+          "validPixelCount": 2158,
+          "totalPixelCount": 2158
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.085183,
+      "coverage": 0.998167,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.084614,
+          "coverage": 0.998778,
+          "validPixelCount": 17978,
+          "totalPixelCount": 18000
+        },
+        {
+          "year": 2024,
+          "radiance": 0.085183,
+          "coverage": 0.998667,
+          "validPixelCount": 17976,
+          "totalPixelCount": 18000
+        },
+        {
+          "year": 2023,
+          "radiance": 0.087751,
+          "coverage": 0.998167,
+          "validPixelCount": 17967,
+          "totalPixelCount": 18000
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.145295,
+      "coverage": 0.998326,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.123426,
+          "coverage": 0.999069,
+          "validPixelCount": 106244,
+          "totalPixelCount": 106343
+        },
+        {
+          "year": 2024,
+          "radiance": 0.145295,
+          "coverage": 0.999013,
+          "validPixelCount": 106238,
+          "totalPixelCount": 106343
+        },
+        {
+          "year": 2023,
+          "radiance": 0.1598,
+          "coverage": 0.998326,
+          "validPixelCount": 106165,
+          "totalPixelCount": 106343
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.008151,
+  "radiance10to30": 0.085183,
+  "radiance30to75": 0.145295,
+  "alanExposure": 0.028264,
+  "darknessScore": 88.87,
+  "coverage": 0.998167,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:09:11.779866Z"
+}

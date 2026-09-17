@@ -1,0 +1,158 @@
+{
+  "siteId": "lassen-manazanita",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.000574,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.000574,
+          "coverage": 1,
+          "validPixelCount": 1850,
+          "totalPixelCount": 1850
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1850,
+          "totalPixelCount": 1850
+        },
+        {
+          "year": 2023,
+          "radiance": 0.001792,
+          "coverage": 1,
+          "validPixelCount": 1850,
+          "totalPixelCount": 1850
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.006603,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.008134,
+          "coverage": 1,
+          "validPixelCount": 15396,
+          "totalPixelCount": 15396
+        },
+        {
+          "year": 2024,
+          "radiance": 0.003838,
+          "coverage": 1,
+          "validPixelCount": 15396,
+          "totalPixelCount": 15396
+        },
+        {
+          "year": 2023,
+          "radiance": 0.006603,
+          "coverage": 1,
+          "validPixelCount": 15396,
+          "totalPixelCount": 15396
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.297607,
+      "coverage": 0.999703,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.325406,
+          "coverage": 0.999703,
+          "validPixelCount": 90961,
+          "totalPixelCount": 90988
+        },
+        {
+          "year": 2024,
+          "radiance": 0.273404,
+          "coverage": 0.99989,
+          "validPixelCount": 90978,
+          "totalPixelCount": 90988
+        },
+        {
+          "year": 2023,
+          "radiance": 0.297607,
+          "coverage": 0.99978,
+          "validPixelCount": 90968,
+          "totalPixelCount": 90988
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.000574,
+  "radiance10to30": 0.006603,
+  "radiance30to75": 0.297607,
+  "alanExposure": 0.027212,
+  "darknessScore": 88.93,
+  "coverage": 0.999703,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:16:54.852326Z"
+}

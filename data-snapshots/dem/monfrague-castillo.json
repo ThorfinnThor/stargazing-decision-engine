@@ -1,0 +1,33 @@
+{
+  "siteId": "monfrague-castillo",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    39.84,
+    -6.06
+  ],
+  "tile": "N39_00_W007_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N39_00_W007_00_DEM/Copernicus_DSM_COG_10_N39_00_W007_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 218.013,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 230.643,
+      "validSampleCount": 270
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 271.653,
+      "validSampleCount": 4296
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:59:02.554167Z"
+}

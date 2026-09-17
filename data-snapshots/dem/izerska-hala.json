@@ -1,0 +1,33 @@
+{
+  "siteId": "izerska-hala",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    50.88,
+    15.34
+  ],
+  "tile": "N50_00_E015_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N50_00_E015_00_DEM/Copernicus_DSM_COG_10_N50_00_E015_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1003.693,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 993.191,
+      "validSampleCount": 214
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 959.226,
+      "validSampleCount": 3478
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-17T11:59:30.169146Z"
+}
