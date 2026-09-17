@@ -1,5 +1,5 @@
 {
-  "siteId": "vassieux-plateau",
+  "siteId": "vercors-moulins-mure-event",
   "source": "VNP46A4",
   "collectionVersion": "2",
   "radianceLayer": "AllAngle_Composite_Snow_Free",
@@ -27,22 +27,22 @@
           "year": 2025,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 86,
-          "totalPixelCount": 86
+          "validPixelCount": 80,
+          "totalPixelCount": 80
         },
         {
           "year": 2024,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 86,
-          "totalPixelCount": 86
+          "validPixelCount": 80,
+          "totalPixelCount": 80
         },
         {
           "year": 2023,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 86,
-          "totalPixelCount": 86
+          "validPixelCount": 80,
+          "totalPixelCount": 80
         }
       ]
     },
@@ -53,29 +53,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.3,
-      "radiance": 0.003243,
+      "radiance": 0.001435,
       "coverage": 1,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.003243,
+          "radiance": 0.001435,
           "coverage": 1,
-          "validPixelCount": 1986,
-          "totalPixelCount": 1986
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
         },
         {
           "year": 2024,
-          "radiance": 0.002099,
+          "radiance": 0.000796,
           "coverage": 1,
-          "validPixelCount": 1986,
-          "totalPixelCount": 1986
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
         },
         {
           "year": 2023,
-          "radiance": 0.006121,
+          "radiance": 0.003539,
           "coverage": 1,
-          "validPixelCount": 1986,
-          "totalPixelCount": 1986
+          "validPixelCount": 1983,
+          "totalPixelCount": 1983
         }
       ]
     },
@@ -86,29 +86,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.15,
-      "radiance": 0.248407,
-      "coverage": 0.999697,
+      "radiance": 0.260104,
+      "coverage": 0.999698,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.248407,
+          "radiance": 0.260104,
           "coverage": 0.999758,
-          "validPixelCount": 16520,
-          "totalPixelCount": 16524
+          "validPixelCount": 16544,
+          "totalPixelCount": 16548
         },
         {
           "year": 2024,
-          "radiance": 0.231807,
-          "coverage": 0.999697,
-          "validPixelCount": 16519,
-          "totalPixelCount": 16524
+          "radiance": 0.243623,
+          "coverage": 0.999698,
+          "validPixelCount": 16543,
+          "totalPixelCount": 16548
         },
         {
           "year": 2023,
-          "radiance": 0.303681,
-          "coverage": 0.999939,
-          "validPixelCount": 16523,
-          "totalPixelCount": 16524
+          "radiance": 0.319376,
+          "coverage": 0.99994,
+          "validPixelCount": 16547,
+          "totalPixelCount": 16548
         }
       ]
     },
@@ -119,40 +119,40 @@
       "upperInclusive": true,
       "statistic": "mean",
       "alanWeight": 0.1,
-      "radiance": 0.649737,
-      "coverage": 0.999273,
+      "radiance": 0.658155,
+      "coverage": 0.999263,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.649737,
-          "coverage": 0.999273,
-          "validPixelCount": 97548,
-          "totalPixelCount": 97619
+          "radiance": 0.658155,
+          "coverage": 0.999263,
+          "validPixelCount": 97580,
+          "totalPixelCount": 97652
         },
         {
           "year": 2024,
-          "radiance": 0.623293,
-          "coverage": 0.999426,
-          "validPixelCount": 97563,
-          "totalPixelCount": 97619
+          "radiance": 0.630716,
+          "coverage": 0.999416,
+          "validPixelCount": 97595,
+          "totalPixelCount": 97652
         },
         {
           "year": 2023,
-          "radiance": 0.749517,
+          "radiance": 0.75769,
           "coverage": 0.999529,
-          "validPixelCount": 97573,
-          "totalPixelCount": 97619
+          "validPixelCount": 97606,
+          "totalPixelCount": 97652
         }
       ]
     }
   ],
   "radiance0to2": 0,
-  "radiance2to10": 0.003243,
-  "radiance10to30": 0.248407,
-  "radiance30to75": 0.649737,
-  "alanExposure": 0.084313,
-  "darknessScore": 85.8,
-  "coverage": 0.999273,
+  "radiance2to10": 0.001435,
+  "radiance10to30": 0.260104,
+  "radiance30to75": 0.658155,
+  "alanExposure": 0.08568,
+  "darknessScore": 85.73,
+  "coverage": 0.999263,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:10:43.543917Z"
+  "retrievedAt": "2026-09-17T15:49:22.252465Z"
 }

@@ -4045,46 +4045,6 @@
     }
   },
   {
-    "id": "col-de-la-machine",
-    "slug": "col-de-la-machine",
-    "destinationId": "vercors",
-    "name": "Col de la Machine",
-    "lat": 44.88,
-    "lon": 5.27,
-    "elevationM": 1015,
-    "siteType": "mountain-pass",
-    "publicAccess": "limited",
-    "accessScore": 60,
-    "active": false,
-    "priority": 84,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.parc-du-vercors.fr/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Col de la Machine. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Col de la Machine nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "vassieux-plateau",
-    "slug": "vassieux-plateau",
-    "destinationId": "vercors",
-    "name": "Vassieux plateau",
-    "lat": 44.9,
-    "lon": 5.37,
-    "elevationM": 1050,
-    "siteType": "plateau-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 68,
-    "active": false,
-    "priority": 84,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.parc-du-vercors.fr/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Vassieux plateau. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Vassieux plateau nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "attersee-nussdorf",
     "slug": "attersee-nussdorf",
     "destinationId": "attersee-traunsee",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "The official destination recommends Sant Quirc for its astronomical interpretation table and publishes the viewpoint coordinate. Its dedicated access page says the only independent approach is a roughly 20-minute walk from the parking area at Durro's entrance; taxi access can be arranged. Arrive in daylight, use the signed path and do not assume vehicle access to the hermitage.",
       "de": "Die offizielle Destination empfiehlt Sant Quirc wegen seiner astronomischen Orientierungstafel und veröffentlicht die Koordinate des Aussichtspunkts. Die eigene Zugangsseite nennt als einzigen selbstständigen Zugang einen etwa 20-minütigen Fußweg vom Parkplatz am Ortseingang von Durro; eine Taxifahrt kann vereinbart werden. Komme bei Tageslicht, nutze den ausgeschilderten Weg und setze keine Fahrzeugzufahrt zur Einsiedelei voraus."
+    }
+  },
+  {
+    "id": "vercors-trieves-observatory",
+    "slug": "vercors-trieves-observatory",
+    "destinationId": "vercors",
+    "name": "Observatoire d'astronomie du Trièves",
+    "lat": 44.90013,
+    "lon": 5.554026,
+    "elevationM": 1260,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": false,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.trieves-vercors.fr/activites/culture-et-patrimoine/524177_observatoire-dastronomie-du-trieves/",
+    "accessNotes": {
+      "en": "The Trièves tourism office publishes the observatory's exact coordinate, visitor entrance and dated public sessions with telescope observing. Attend only during a currently listed public session or after direct group confirmation; follow the entrance directions behind Résidence Les Dolomites and do not infer independent access outside the programme.",
+      "de": "Das Tourismusbüro Trièves veröffentlicht die genaue Koordinate, den Besuchereingang und datierte öffentliche Termine mit Teleskopbeobachtung. Besuche den Ort nur zu einem aktuell aufgeführten öffentlichen Termin oder nach direkter Gruppenbestätigung; folge der Zugangsbeschreibung hinter der Résidence Les Dolomites und leite außerhalb des Programms keinen selbstständigen Zutritt ab."
+    }
+  },
+  {
+    "id": "vercors-moulins-mure-event",
+    "slug": "vercors-moulins-mure-event",
+    "destinationId": "vercors",
+    "name": "Moulins de la Mure astronomy event",
+    "lat": 44.914771,
+    "lon": 5.379652,
+    "elevationM": 1087,
+    "siteType": "event-venue",
+    "publicAccess": "limited",
+    "accessScore": 36,
+    "active": false,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.vercors-drome.com/sejour-vacances-vercors/7922765_11eme-nuit-des-etoiles-moulins-de-la-mure/",
+    "accessNotes": {
+      "en": "Vercors Drôme Tourisme documents the 2026 Nuit des étoiles at this exact coordinate, including evening constellation interpretation and weather fallback. That dated listing does not establish routine night access: use the mills only when a new event is published and follow its current meeting, parking and weather instructions.",
+      "de": "Vercors Drôme Tourisme dokumentiert die Nuit des étoiles 2026 an dieser genauen Koordinate einschließlich abendlicher Sternbildführung und Schlechtwetteralternative. Dieser datierte Eintrag begründet keinen regulären Nachtzugang: Nutze die Mühlen nur bei einer neu veröffentlichten Veranstaltung und befolge deren aktuelle Treffpunkt-, Park- und Wetterhinweise."
     }
   }
 ]

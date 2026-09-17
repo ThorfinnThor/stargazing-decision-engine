@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T15:31:27.658Z",
+  "generatedAt": "2026-09-17T15:53:53.238Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -10,9 +10,9 @@
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 45,
+    "requiringFactualSourceReview": 44,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 4,
+    "withVerifiedFactualReview": 5,
     "readyForActivation": 0
   },
   "records": [
@@ -657,28 +657,61 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 5,
+        "reachable": 5,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "vercors",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.parc-du-vercors.fr/cielnocturne",
+            "https://darksky.org/places/regional-natural-park-of-vercors/",
+            "https://www.trieves-vercors.fr/activites/culture-et-patrimoine/524177_observatoire-dastronomie-du-trieves/",
+            "https://www.trieves-vercors.fr/en/trieves-highlights/gresse-en-vercors/524177_trieves-astronomy-observatory/",
+            "https://www.trieves-vercors.fr/wp-content/uploads/2026/01/gressehiver26-web.pdf",
+            "https://www.vercors-drome.com/sejour-vacances-vercors/7922765_11eme-nuit-des-etoiles-moulins-de-la-mure/"
+          ],
+          "verifiedFindings": [
+            "The Vercors park authority and DarkSky International confirm that the southern three-quarters of the park form a 1,600-square-kilometre International Dark Sky Reserve designated in 2023, with a 245-square-kilometre core zone.",
+            "The Trièves tourism office identifies the public astronomy observatory at Résidence Les Dolomites, publishes the exact coordinate 44.90013, 5.554026 and gives precise visitor entrance directions.",
+            "The observatory's current listing publishes telescope-observing sessions for July, August and December 2026 and February, July and August 2027; the site is therefore represented as programme-only, not as independently open at night.",
+            "The official Gresse-en-Vercors visitor map marks both the astronomy observatory and nearby visitor parking, corroborating the named visitor setting without turning the coordinate into permission for after-hours access or camping.",
+            "Vercors Drôme Tourisme documents the 2026 Nuit des étoiles at Moulins de la Mure, including the exact coordinate 44.914771, 5.379652, evening sky interpretation and a weather fallback. The dated event does not establish routine access, so the venue is usable only when a new programme is published.",
+            "The generic Col de la Machine and Vassieux plateau pins lacked source support as specific astronomy visitor sites and are replaced by these two documented programme venues; Gresse-en-Vercors becomes the return base for the primary observatory plan."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "vercors-source-1",
-            "url": "https://www.parc-du-vercors.fr/",
+            "url": "https://www.parc-du-vercors.fr/cielnocturne",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "vercors-source-2",
-            "url": "https://www.drome-tourism.com/en/",
+            "url": "https://www.trieves-vercors.fr/activites/culture-et-patrimoine/524177_observatoire-dastronomie-du-trieves/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "vercors-source-3",
-            "url": "https://www.auvergnerhonealpes-tourisme.com/en/",
+            "url": "https://www.trieves-vercors.fr/en/trieves-highlights/gresse-en-vercors/524177_trieves-astronomy-observatory/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "vercors-source-4",
+            "url": "https://www.trieves-vercors.fr/wp-content/uploads/2026/01/gressehiver26-web.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "vercors-source-5",
+            "url": "https://www.vercors-drome.com/sejour-vacances-vercors/7922765_11eme-nuit-des-etoiles-moulins-de-la-mure/",
             "classification": "reachable",
             "status": 200
           }
@@ -687,7 +720,7 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "col-de-la-machine",
+          "id": "vercors-trieves-observatory",
           "active": false,
           "snapshots": {
             "climate": true,
@@ -699,7 +732,7 @@
           "imageStatus": "pending"
         },
         {
-          "id": "vassieux-plateau",
+          "id": "vercors-moulins-mure-event",
           "active": false,
           "snapshots": {
             "climate": true,
@@ -714,7 +747,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
