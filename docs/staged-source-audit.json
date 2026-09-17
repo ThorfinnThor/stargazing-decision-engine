@@ -1,21 +1,46 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-17T14:22:09.564Z",
+  "checkedAt": "2026-09-17T14:37:58.554Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 155,
-    "uniqueUrls": 149
+    "sourceRecords": 158,
+    "uniqueUrls": 152
   },
   "summary": {
-    "reachable": 121,
+    "reachable": 124,
     "blocked": 28,
     "missing": 0,
     "http-error": 0,
     "error": 0
   },
   "records": [
+    {
+      "url": "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-6"
+        },
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "site",
+          "siteId": "gredos-hoyos-mirador"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2296,
+      "error": null
+    },
     {
       "url": "https://azstateparks.com/",
       "references": [
@@ -33,7 +58,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 782,
+      "durationMs": 964,
       "error": null
     },
     {
@@ -63,7 +88,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 905,
+      "durationMs": 919,
       "error": null
     },
     {
@@ -83,7 +108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 815,
+      "durationMs": 1088,
       "error": null
     },
     {
@@ -103,7 +128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3053,
+      "durationMs": 591,
       "error": null
     },
     {
@@ -123,7 +148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -143,7 +168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -163,7 +188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -183,7 +208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -203,7 +228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -223,7 +248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -243,7 +268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -263,7 +288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -293,7 +318,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -313,7 +338,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -333,7 +358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -353,7 +378,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -383,7 +408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -403,7 +428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -423,7 +448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 104,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -443,7 +468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 594,
+      "durationMs": 513,
       "error": null
     },
     {
@@ -473,7 +498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 440,
+      "durationMs": 1342,
       "error": null
     },
     {
@@ -503,7 +528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 578,
+      "durationMs": 546,
       "error": null
     },
     {
@@ -523,7 +548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 59,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -553,7 +578,32 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 60,
+      "error": null
+    },
+    {
+      "url": "https://navarredondadegredos.net/observacion-astronomica-en-el-mirador-estelar-de-navarredonda-de-gredos-el-dia-1-de-agosto-de-2025-a-las-2300h/",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-5"
+        },
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "site",
+          "siteId": "gredos-navarredonda-mirador"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://navarredondadegredos.net/observacion-astronomica-en-el-mirador-estelar-de-navarredonda-de-gredos-el-dia-1-de-agosto-de-2025-a-las-2300h/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 996,
       "error": null
     },
     {
@@ -583,7 +633,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1290,
+      "durationMs": 1125,
       "error": null
     },
     {
@@ -603,7 +653,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 386,
+      "durationMs": 1563,
       "error": null
     },
     {
@@ -633,7 +683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 931,
+      "durationMs": 384,
       "error": null
     },
     {
@@ -663,7 +713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 147,
+      "durationMs": 146,
       "error": null
     },
     {
@@ -693,7 +743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2674,
+      "durationMs": 819,
       "error": null
     },
     {
@@ -713,7 +763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2303,
+      "durationMs": 761,
       "error": null
     },
     {
@@ -733,7 +783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 313,
+      "durationMs": 323,
       "error": null
     },
     {
@@ -763,7 +813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1661,
+      "durationMs": 1477,
       "error": null
     },
     {
@@ -783,7 +833,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 346,
+      "durationMs": 309,
       "error": null
     },
     {
@@ -813,7 +863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 94,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -833,7 +883,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1850,
+      "durationMs": 1852,
       "error": null
     },
     {
@@ -863,7 +913,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1818,
+      "durationMs": 1823,
       "error": null
     },
     {
@@ -883,7 +933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1073,
+      "durationMs": 767,
       "error": null
     },
     {
@@ -913,7 +963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 426,
+      "durationMs": 553,
       "error": null
     },
     {
@@ -963,7 +1013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 68,
+      "durationMs": 61,
       "error": null
     },
     {
@@ -983,7 +1033,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 251,
+      "durationMs": 199,
       "error": null
     },
     {
@@ -1008,7 +1058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 147,
+      "durationMs": 180,
       "error": null
     },
     {
@@ -1033,7 +1083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 130,
+      "durationMs": 138,
       "error": null
     },
     {
@@ -1063,7 +1113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 211,
+      "durationMs": 257,
       "error": null
     },
     {
@@ -1083,7 +1133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -1113,7 +1163,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 110,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -1143,7 +1193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4451,
+      "durationMs": 3717,
       "error": null
     },
     {
@@ -1173,7 +1223,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4592,
+      "durationMs": 3669,
       "error": null
     },
     {
@@ -1193,7 +1243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 65,
+      "durationMs": 64,
       "error": null
     },
     {
@@ -1213,7 +1263,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 492,
+      "durationMs": 361,
       "error": null
     },
     {
@@ -1238,7 +1288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 444,
+      "durationMs": 354,
       "error": null
     },
     {
@@ -1258,7 +1308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 325,
+      "durationMs": 204,
       "error": null
     },
     {
@@ -1288,7 +1338,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 159,
+      "durationMs": 254,
       "error": null
     },
     {
@@ -1308,7 +1358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 122,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -1328,7 +1378,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 298,
+      "durationMs": 302,
       "error": null
     },
     {
@@ -1348,7 +1398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 310,
+      "durationMs": 374,
       "error": null
     },
     {
@@ -1368,7 +1418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 846,
+      "durationMs": 816,
       "error": null
     },
     {
@@ -1398,7 +1448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 961,
+      "durationMs": 614,
       "error": null
     },
     {
@@ -1418,7 +1468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 849,
+      "durationMs": 790,
       "error": null
     },
     {
@@ -1448,7 +1498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 589,
+      "durationMs": 1494,
       "error": null
     },
     {
@@ -1468,7 +1518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 369,
+      "durationMs": 382,
       "error": null
     },
     {
@@ -1498,7 +1548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 877,
+      "durationMs": 896,
       "error": null
     },
     {
@@ -1523,7 +1573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 267,
+      "durationMs": 348,
       "error": null
     },
     {
@@ -1543,7 +1593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 706,
+      "durationMs": 402,
       "error": null
     },
     {
@@ -1573,7 +1623,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 557,
+      "durationMs": 471,
       "error": null
     },
     {
@@ -1593,7 +1643,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1156,
+      "durationMs": 536,
+      "error": null
+    },
+    {
+      "url": "https://www.diputacionavila.es/noticias/el-parque-regional-de-gredos-obtiene-la-renovacion-del-certificado-de-reserva-starlight-para-cuatro-anos-mas.html",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.diputacionavila.es/noticias/el-parque-regional-de-gredos-obtiene-la-renovacion-del-certificado-de-reserva-starlight-para-cuatro-anos-mas.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 268,
       "error": null
     },
     {
@@ -1613,7 +1683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1798,
+      "durationMs": 1406,
       "error": null
     },
     {
@@ -1643,7 +1713,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1707,
+      "durationMs": 1939,
       "error": null
     },
     {
@@ -1663,7 +1733,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 190,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -1683,7 +1753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1704,
+      "durationMs": 1785,
       "error": null
     },
     {
@@ -1703,7 +1773,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 934,
+      "durationMs": 927,
       "error": null
     },
     {
@@ -1723,7 +1793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1806,
+      "durationMs": 1873,
       "error": null
     },
     {
@@ -1748,7 +1818,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3303,
+      "durationMs": 2835,
       "error": null
     },
     {
@@ -1778,7 +1848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 177,
+      "durationMs": 198,
       "error": null
     },
     {
@@ -1808,7 +1878,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3373,
+      "durationMs": 3886,
       "error": null
     },
     {
@@ -1828,7 +1898,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 903,
+      "durationMs": 866,
       "error": null
     },
     {
@@ -1848,7 +1918,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 933,
+      "durationMs": 942,
       "error": null
     },
     {
@@ -1868,7 +1938,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4247,
+      "durationMs": 4018,
       "error": null
     },
     {
@@ -1888,7 +1958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 482,
+      "durationMs": 414,
       "error": null
     },
     {
@@ -1908,7 +1978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 174,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -1928,7 +1998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 854,
+      "durationMs": 954,
       "error": null
     },
     {
@@ -1948,7 +2018,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1825,
+      "durationMs": 1235,
       "error": null
     },
     {
@@ -1978,7 +2048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 188,
+      "durationMs": 247,
       "error": null
     },
     {
@@ -1998,7 +2068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 206,
+      "durationMs": 269,
       "error": null
     },
     {
@@ -2028,7 +2098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 201,
+      "durationMs": 190,
       "error": null
     },
     {
@@ -2048,7 +2118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 184,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -2068,7 +2138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 93,
+      "durationMs": 518,
       "error": null
     },
     {
@@ -2088,7 +2158,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3658,
+      "durationMs": 5387,
       "error": null
     },
     {
@@ -2108,7 +2178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 239,
+      "durationMs": 323,
       "error": null
     },
     {
@@ -2128,7 +2198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1077,
+      "durationMs": 996,
       "error": null
     },
     {
@@ -2148,7 +2218,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 382,
+      "durationMs": 489,
       "error": null
     },
     {
@@ -2173,7 +2243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 558,
+      "durationMs": 746,
       "error": null
     },
     {
@@ -2193,7 +2263,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 278,
+      "durationMs": 132,
       "error": null
     },
     {
@@ -2213,7 +2283,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 234,
+      "durationMs": 183,
       "error": null
     },
     {
@@ -2233,7 +2303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 142,
+      "durationMs": 143,
       "error": null
     },
     {
@@ -2258,7 +2328,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2977,
+      "durationMs": 2744,
       "error": null
     },
     {
@@ -2278,7 +2348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 1391,
+      "durationMs": 1270,
       "error": null
     },
     {
@@ -2298,7 +2368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 815,
+      "durationMs": 503,
       "error": null
     },
     {
@@ -2318,7 +2388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 65,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -2338,7 +2408,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3986,
+      "durationMs": 3801,
       "error": null
     },
     {
@@ -2358,7 +2428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 435,
+      "durationMs": 462,
       "error": null
     },
     {
@@ -2388,7 +2458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -2408,7 +2478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -2438,7 +2508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2458,7 +2528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 50,
       "error": null
     },
     {
@@ -2488,7 +2558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -2508,7 +2578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2538,7 +2608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -2558,7 +2628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 46,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2578,7 +2648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -2598,7 +2668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 48,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -2628,7 +2698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 985,
+      "durationMs": 884,
       "error": null
     },
     {
@@ -2648,7 +2718,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 528,
+      "durationMs": 470,
       "error": null
     },
     {
@@ -2668,7 +2738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 409,
+      "durationMs": 391,
       "error": null
     },
     {
@@ -2698,7 +2768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 436,
+      "durationMs": 360,
       "error": null
     },
     {
@@ -2728,7 +2798,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 681,
+      "durationMs": 679,
       "error": null
     },
     {
@@ -2758,7 +2828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 133,
+      "durationMs": 157,
       "error": null
     },
     {
@@ -2778,7 +2848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5782,
+      "durationMs": 6009,
       "error": null
     },
     {
@@ -2808,7 +2878,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5960,
+      "durationMs": 6798,
       "error": null
     },
     {
@@ -2838,7 +2908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3528,
+      "durationMs": 3681,
       "error": null
     },
     {
@@ -2858,7 +2928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 214,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -2878,7 +2948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 557,
+      "durationMs": 394,
       "error": null
     },
     {
@@ -2898,7 +2968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 405,
+      "durationMs": 375,
       "error": null
     },
     {
@@ -2923,7 +2993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -2988,7 +3058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -3018,7 +3088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 103,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -3038,7 +3108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 99,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -3063,7 +3133,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 384,
+      "durationMs": 318,
       "error": null
     },
     {
@@ -3083,7 +3153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1107,
+      "durationMs": 1222,
       "error": null
     },
     {
@@ -3103,7 +3173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 868,
+      "durationMs": 836,
       "error": null
     },
     {
@@ -3123,7 +3193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 211,
+      "durationMs": 216,
       "error": null
     },
     {
@@ -3143,7 +3213,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 401,
+      "durationMs": 363,
       "error": null
     },
     {
@@ -3163,7 +3233,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2070,
+      "durationMs": 3382,
       "error": null
     },
     {
@@ -3183,7 +3253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 222,
+      "durationMs": 200,
       "error": null
     },
     {
@@ -3213,7 +3283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 957,
+      "durationMs": 1198,
       "error": null
     },
     {
@@ -3233,7 +3303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 121,
+      "durationMs": 333,
       "error": null
     },
     {
@@ -3263,61 +3333,31 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 164,
+      "durationMs": 179,
       "error": null
     },
     {
-      "url": "https://www.turismoavila.com/",
-      "references": [
-        {
-          "destinationId": "sierra-de-gredos",
-          "kind": "guide",
-          "sourceId": "sierra-de-gredos-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.turismoavila.com/web/inicio/",
-      "redirected": true,
-      "redirectCount": 3,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 398,
-      "error": null
-    },
-    {
-      "url": "https://www.turismocastillayleon.com/en/nature",
+      "url": "https://www.turismoavila.com/web/descubrir_avila/visor/index.php?iid=5b2136a6c4120-97",
       "references": [
         {
           "destinationId": "sierra-de-gredos",
           "kind": "guide",
           "sourceId": "sierra-de-gredos-source-1"
-        },
-        {
-          "destinationId": "sierra-de-gredos",
-          "kind": "site",
-          "siteId": "garganta-de-los-infernós"
-        },
-        {
-          "destinationId": "sierra-de-gredos",
-          "kind": "site",
-          "siteId": "guisando-gredos"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.turismocastillayleon.com/en/nature",
+      "finalUrl": "https://www.turismoavila.com/web/descubrir_avila/visor/index.php?iid=5b2136a6c4120-97",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html;charset=UTF-8",
-      "durationMs": 313,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 285,
       "error": null
     },
     {
-      "url": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+      "url": "https://www.turismoavila.com/web/multimedia/folletos/Miradores_Estelares_Cielo_Oscuro.pdf",
       "references": [
         {
           "destinationId": "sierra-de-gredos",
@@ -3329,11 +3369,31 @@
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+      "finalUrl": "https://www.turismoavila.com/web/multimedia/folletos/Miradores_Estelares_Cielo_Oscuro.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 235,
+      "error": null
+    },
+    {
+      "url": "https://www.turismocastillayleon.com/en/nature/astrotourism/dark-skies-gredos-iruelas",
+      "references": [
+        {
+          "destinationId": "sierra-de-gredos",
+          "kind": "guide",
+          "sourceId": "sierra-de-gredos-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.turismocastillayleon.com/en/nature/astrotourism/dark-skies-gredos-iruelas",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 239,
+      "durationMs": 1489,
       "error": null
     },
     {
@@ -3363,7 +3423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2137,
+      "durationMs": 2106,
       "error": null
     },
     {
@@ -3383,7 +3443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 777,
+      "durationMs": 747,
       "error": null
     },
     {
@@ -3403,7 +3463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 927,
+      "durationMs": 900,
       "error": null
     },
     {
@@ -3433,7 +3493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 252,
+      "durationMs": 146,
       "error": null
     },
     {
@@ -3463,7 +3523,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 219,
+      "durationMs": 249,
       "error": null
     },
     {
@@ -3483,7 +3543,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 184,
+      "durationMs": 173,
       "error": null
     },
     {
@@ -3503,7 +3563,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1799,
+      "durationMs": 391,
       "error": null
     },
     {
@@ -3523,7 +3583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1164,
+      "durationMs": 1328,
       "error": null
     }
   ]

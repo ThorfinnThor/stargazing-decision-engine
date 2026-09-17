@@ -1,5 +1,5 @@
 {
-  "siteId": "guisando-gredos",
+  "siteId": "gredos-hoyos-mirador",
   "source": "VNP46A4",
   "collectionVersion": "2",
   "radianceLayer": "AllAngle_Composite_Snow_Free",
@@ -20,29 +20,29 @@
       "upperInclusive": false,
       "statistic": "median",
       "alanWeight": 0.45,
-      "radiance": 0,
+      "radiance": 0.541928,
       "coverage": 1,
       "years": [
         {
           "year": 2025,
-          "radiance": 0,
+          "radiance": 0.604585,
           "coverage": 1,
-          "validPixelCount": 78,
-          "totalPixelCount": 78
+          "validPixelCount": 76,
+          "totalPixelCount": 76
         },
         {
           "year": 2024,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 78,
-          "totalPixelCount": 78
+          "validPixelCount": 76,
+          "totalPixelCount": 76
         },
         {
           "year": 2023,
-          "radiance": 0,
+          "radiance": 0.541928,
           "coverage": 1,
-          "validPixelCount": 78,
-          "totalPixelCount": 78
+          "validPixelCount": 76,
+          "totalPixelCount": 76
         }
       ]
     },
@@ -53,29 +53,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.3,
-      "radiance": 0.494156,
+      "radiance": 0.072258,
       "coverage": 1,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.540082,
+          "radiance": 0.084444,
           "coverage": 1,
-          "validPixelCount": 1836,
-          "totalPixelCount": 1836
+          "validPixelCount": 1841,
+          "totalPixelCount": 1841
         },
         {
           "year": 2024,
-          "radiance": 0.446547,
+          "radiance": 0.056954,
           "coverage": 1,
-          "validPixelCount": 1836,
-          "totalPixelCount": 1836
+          "validPixelCount": 1841,
+          "totalPixelCount": 1841
         },
         {
           "year": 2023,
-          "radiance": 0.494156,
+          "radiance": 0.072258,
           "coverage": 1,
-          "validPixelCount": 1836,
-          "totalPixelCount": 1836
+          "validPixelCount": 1841,
+          "totalPixelCount": 1841
         }
       ]
     },
@@ -86,29 +86,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.15,
-      "radiance": 0.15187,
+      "radiance": 0.232205,
       "coverage": 1,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.168224,
+          "radiance": 0.266738,
           "coverage": 1,
-          "validPixelCount": 15339,
-          "totalPixelCount": 15339
+          "validPixelCount": 15371,
+          "totalPixelCount": 15371
         },
         {
           "year": 2024,
-          "radiance": 0.118764,
+          "radiance": 0.193491,
           "coverage": 1,
-          "validPixelCount": 15339,
-          "totalPixelCount": 15339
+          "validPixelCount": 15371,
+          "totalPixelCount": 15371
         },
         {
           "year": 2023,
-          "radiance": 0.15187,
+          "radiance": 0.232205,
           "coverage": 1,
-          "validPixelCount": 15339,
-          "totalPixelCount": 15339
+          "validPixelCount": 15371,
+          "totalPixelCount": 15371
         }
       ]
     },
@@ -119,40 +119,40 @@
       "upperInclusive": true,
       "statistic": "mean",
       "alanWeight": 0.1,
-      "radiance": 0.553176,
-      "coverage": 0.999702,
+      "radiance": 0.572261,
+      "coverage": 0.999736,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.602837,
-          "coverage": 0.999702,
-          "validPixelCount": 90549,
-          "totalPixelCount": 90576
+          "radiance": 0.626257,
+          "coverage": 0.999736,
+          "validPixelCount": 90721,
+          "totalPixelCount": 90745
         },
         {
           "year": 2024,
-          "radiance": 0.462785,
-          "coverage": 0.999901,
-          "validPixelCount": 90567,
-          "totalPixelCount": 90576
+          "radiance": 0.480667,
+          "coverage": 0.999912,
+          "validPixelCount": 90737,
+          "totalPixelCount": 90745
         },
         {
           "year": 2023,
-          "radiance": 0.553176,
-          "coverage": 0.999845,
-          "validPixelCount": 90562,
-          "totalPixelCount": 90576
+          "radiance": 0.572261,
+          "coverage": 0.999868,
+          "validPixelCount": 90733,
+          "totalPixelCount": 90745
         }
       ]
     }
   ],
-  "radiance0to2": 0,
-  "radiance2to10": 0.494156,
-  "radiance10to30": 0.15187,
-  "radiance30to75": 0.553176,
-  "alanExposure": 0.185707,
-  "darknessScore": 80.25,
-  "coverage": 0.999702,
+  "radiance0to2": 0.541928,
+  "radiance2to10": 0.072258,
+  "radiance10to30": 0.232205,
+  "radiance30to75": 0.572261,
+  "alanExposure": 0.292367,
+  "darknessScore": 74.41,
+  "coverage": 0.999736,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:10:06.562561Z"
+  "retrievedAt": "2026-09-17T14:39:26.563464Z"
 }
