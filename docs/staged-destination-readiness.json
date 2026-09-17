@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T15:53:53.238Z",
+  "generatedAt": "2026-09-17T16:47:08.809Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 50,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 48,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 44,
+    "requiringFactualSourceReview": 43,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 5,
+    "withVerifiedFactualReview": 6,
     "readyForActivation": 0
   },
   "records": [
@@ -762,28 +762,76 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 7,
+        "reachable": 7,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "attersee-traunsee",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
+            "https://attersee-attergau.salzkammergut.at/erleben/top-ausflugsziele/sternenpark-attersee-traunsee.html",
+            "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430000495/taucheinstiegstelle-dixi-pfahlbauhaus-unter-wasser-und-unterwasserkrippe.html",
+            "https://attersee-attergau.salzkammergut.at/fileadmin/user_upload/attersee-attergau/kataloge/pdfdateien/Abenteuer_Pfahlbau_unter_Wasser.pdf",
+            "https://tauchseite.de/attersee.html",
+            "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
+            "https://www.oberoesterreich.at/oesterreich-veranstaltung/detail/430298104/wassertage-dem-biber-auf-der-spur.html",
+            "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430027875/sternenpark-attersee-traunsee-1-sternenpark-oesterreichs.html",
+            "https://attersee-attergau.salzkammergut.at/en/oesterreich-stadt-ort/detail/430001294/weyregg-am-attersee.html"
+          ],
+          "verifiedFindings": [
+            "The Sternenpark authority explicitly identifies Tauchplatz Dixi and Taferlklaussee among six designated Sternderl-schau’n visitor places and directs visitors to named public or hiking car parks, established paths and leave-no-trace conduct.",
+            "The Attersee-Attergau tourism authority confirms the Sternenpark's International Dark Sky recognition since 2021 and repeats both named observing places in its visitor guidance.",
+            "The official Dixi visitor listing identifies the site at B152 kilometre 10.6 in Weyregg, lists year-round operation, 20 parking spaces and a WC; the official tourism PDF publishes a coordinate within about 100 metres of the independent dive-coordinate reference 47.864608, 13.563412.",
+            "The official Taferlklaussee route describes the small car park directly at the lake, a larger nearby parking option and an elevation range of 772 to 786 metres; the published event meeting point locates the Taferlklausstube parking area at 47.843838, 13.626818.",
+            "The Sternenpark visitor rules require designated parking and marked paths and prohibit wild camping and fires. Both sites therefore remain limited-access shared visitor places rather than unrestricted night or camping locations.",
+            "Weyregg replaces Unterach as the return base because it is the municipality of the primary Dixi site and the official destination page publishes the town coordinate 47.90, 13.57."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "attersee-traunsee-source-1",
-            "url": "https://www.sternenpark-attersee-traunsee.at/",
+            "url": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "attersee-traunsee-source-2",
-            "url": "https://www.oberoesterreich.at/en/",
+            "url": "https://attersee-attergau.salzkammergut.at/erleben/top-ausflugsziele/sternenpark-attersee-traunsee.html",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "attersee-traunsee-source-3",
-            "url": "https://www.naturpark-attersee-traunsee.at/",
+            "url": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430000495/taucheinstiegstelle-dixi-pfahlbauhaus-unter-wasser-und-unterwasserkrippe.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-4",
+            "url": "https://attersee-attergau.salzkammergut.at/fileadmin/user_upload/attersee-attergau/kataloge/pdfdateien/Abenteuer_Pfahlbau_unter_Wasser.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-5",
+            "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-6",
+            "url": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430027875/sternenpark-attersee-traunsee-1-sternenpark-oesterreichs.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "attersee-traunsee-source-7",
+            "url": "https://attersee-attergau.salzkammergut.at/en/oesterreich-stadt-ort/detail/430001294/weyregg-am-attersee.html",
             "classification": "reachable",
             "status": 200
           }
@@ -792,34 +840,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "attersee-nussdorf",
+          "id": "attersee-dixi-stargazing",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "traunsee-altaussee",
+          "id": "attersee-taferlklaussee",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "attersee-dixi-stargazing:climate",
+        "attersee-dixi-stargazing:black-marble",
+        "attersee-dixi-stargazing:dem",
+        "attersee-dixi-stargazing:scores",
+        "attersee-taferlklaussee:climate",
+        "attersee-taferlklaussee:black-marble",
+        "attersee-taferlklaussee:dem",
+        "attersee-taferlklaussee:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1350,17 +1407,17 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 1,
         "blocked": 0,
-        "broken": 0,
+        "broken": 2,
         "factualReview": "required",
         "factualReviewRecord": null,
         "records": [
           {
             "id": "makgadikgadi-source-1",
             "url": "https://www.botswanatourism.co.bw/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "makgadikgadi-source-2",
@@ -1371,8 +1428,8 @@
           {
             "id": "makgadikgadi-source-3",
             "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           }
         ]
       },
@@ -1406,6 +1463,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -3779,17 +3837,17 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 2,
         "blocked": 0,
-        "broken": 0,
+        "broken": 1,
         "factualReview": "required",
         "factualReviewRecord": null,
         "records": [
           {
             "id": "uyuni-source-1",
             "url": "https://www.turismoyculturas.gob.bo/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "uyuni-source-2",
@@ -3835,6 +3893,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"

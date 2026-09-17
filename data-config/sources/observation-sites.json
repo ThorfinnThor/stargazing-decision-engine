@@ -4045,46 +4045,6 @@
     }
   },
   {
-    "id": "attersee-nussdorf",
-    "slug": "attersee-nussdorf",
-    "destinationId": "attersee-traunsee",
-    "name": "Attersee lakeshore area",
-    "lat": 47.9,
-    "lon": 13.53,
-    "elevationM": 480,
-    "siteType": "lakeshore",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Attersee lakeshore area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Attersee lakeshore area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "traunsee-altaussee",
-    "slug": "traunsee-altaussee",
-    "destinationId": "attersee-traunsee",
-    "name": "Traunsee rural shore",
-    "lat": 47.87,
-    "lon": 13.78,
-    "elevationM": 430,
-    "siteType": "lakeshore",
-    "publicAccess": "limited",
-    "accessScore": 54,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Traunsee rural shore. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Traunsee rural shore nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "grossmugl-starwalk",
     "slug": "grossmugl-starwalk",
     "destinationId": "grossmugl",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "Vercors Drôme Tourisme documents the 2026 Nuit des étoiles at this exact coordinate, including evening constellation interpretation and weather fallback. That dated listing does not establish routine night access: use the mills only when a new event is published and follow its current meeting, parking and weather instructions.",
       "de": "Vercors Drôme Tourisme dokumentiert die Nuit des étoiles 2026 an dieser genauen Koordinate einschließlich abendlicher Sternbildführung und Schlechtwetteralternative. Dieser datierte Eintrag begründet keinen regulären Nachtzugang: Nutze die Mühlen nur bei einer neu veröffentlichten Veranstaltung und befolge deren aktuelle Treffpunkt-, Park- und Wetterhinweise."
+    }
+  },
+  {
+    "id": "attersee-dixi-stargazing",
+    "slug": "attersee-dixi-stargazing",
+    "destinationId": "attersee-traunsee",
+    "name": "Tauchplatz Dixi Sternderl-schau’n site",
+    "lat": 47.864608,
+    "lon": 13.563412,
+    "elevationM": 470,
+    "siteType": "lakeside-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 70,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
+    "accessNotes": {
+      "en": "The Sternenpark authority explicitly designates Tauchplatz Dixi for stargazing and names its public car park and WC. The tourism authority lists the dive site as open year-round with 20 spaces. Use only the designated parking and established visitor footprint, keep clear of diving operations, follow current signs and leave no trace; neither the coordinate nor parking permits camping or fire.",
+      "de": "Die Sternenpark-Verwaltung weist den Tauchplatz Dixi ausdrücklich zum Sternderschauen aus und nennt den öffentlichen Parkplatz sowie das WC. Die Tourismusbehörde führt den Tauchplatz ganzjährig mit 20 Stellplätzen. Nutze nur den ausgewiesenen Parkplatz und die bestehende Besucherfläche, halte Tauchbetrieb frei, beachte aktuelle Schilder und hinterlasse keine Spuren; weder Koordinate noch Parkplatz erlauben Camping oder Feuer."
+    }
+  },
+  {
+    "id": "attersee-taferlklaussee",
+    "slug": "attersee-taferlklaussee",
+    "destinationId": "attersee-traunsee",
+    "name": "Taferlklaussee Sternderl-schau’n site",
+    "lat": 47.843838,
+    "lon": 13.626818,
+    "elevationM": 780,
+    "siteType": "mountain-lake",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
+    "accessNotes": {
+      "en": "The Sternenpark authority explicitly designates Taferlklaussee for stargazing and directs visitors to the lake hiking car park or Hochlecken car park. The coordinate is the officially published meeting point at the Taferlklausstube parking area; follow the signed route to the designated viewing place, respect the nature reserve and current notices, and do not infer camping, fire or vehicle access beyond the car park.",
+      "de": "Die Sternenpark-Verwaltung weist den Taferlklaussee ausdrücklich zum Sternderschauen aus und verweist auf den Wanderparkplatz am See oder den Hochleckenparkplatz. Die Koordinate ist der offiziell veröffentlichte Treffpunkt am Parkplatz der Taferlklausstube; folge der ausgeschilderten Route zum ausgewiesenen Schauplatz, beachte Naturschutzgebiet und aktuelle Hinweise und leite daraus weder Camping, Feuer noch eine Fahrzeugzufahrt über den Parkplatz hinaus ab."
     }
   }
 ]

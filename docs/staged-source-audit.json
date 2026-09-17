@@ -1,21 +1,121 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-17T15:53:53.002Z",
+  "checkedAt": "2026-09-17T16:47:02.942Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 166,
-    "uniqueUrls": 160
+    "sourceRecords": 170,
+    "uniqueUrls": 164
   },
   "summary": {
-    "reachable": 132,
+    "reachable": 133,
     "blocked": 28,
     "missing": 0,
     "http-error": 0,
-    "error": 0
+    "error": 3
   },
   "records": [
+    {
+      "url": "https://attersee-attergau.salzkammergut.at/en/oesterreich-stadt-ort/detail/430001294/weyregg-am-attersee.html",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://attersee-attergau.salzkammergut.at/en/oesterreich-stadt-ort/detail/430001294/weyregg-am-attersee.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 352,
+      "error": null
+    },
+    {
+      "url": "https://attersee-attergau.salzkammergut.at/erleben/top-ausflugsziele/sternenpark-attersee-traunsee.html",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://attersee-attergau.salzkammergut.at/erleben/top-ausflugsziele/sternenpark-attersee-traunsee.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 391,
+      "error": null
+    },
+    {
+      "url": "https://attersee-attergau.salzkammergut.at/fileadmin/user_upload/attersee-attergau/kataloge/pdfdateien/Abenteuer_Pfahlbau_unter_Wasser.pdf",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://attersee-attergau.salzkammergut.at/fileadmin/user_upload/attersee-attergau/kataloge/pdfdateien/Abenteuer_Pfahlbau_unter_Wasser.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 135,
+      "error": null
+    },
+    {
+      "url": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430000495/taucheinstiegstelle-dixi-pfahlbauhaus-unter-wasser-und-unterwasserkrippe.html",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430000495/taucheinstiegstelle-dixi-pfahlbauhaus-unter-wasser-und-unterwasserkrippe.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 378,
+      "error": null
+    },
+    {
+      "url": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430027875/sternenpark-attersee-traunsee-1-sternenpark-oesterreichs.html",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://attersee-attergau.salzkammergut.at/oesterreich-poi/detail/430027875/sternenpark-attersee-traunsee-1-sternenpark-oesterreichs.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 392,
+      "error": null
+    },
     {
       "url": "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
       "references": [
@@ -38,7 +138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1017,
+      "durationMs": 846,
       "error": null
     },
     {
@@ -58,7 +158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1058,
+      "durationMs": 480,
       "error": null
     },
     {
@@ -88,7 +188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1038,
+      "durationMs": 846,
       "error": null
     },
     {
@@ -108,7 +208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1139,
+      "durationMs": 858,
       "error": null
     },
     {
@@ -121,15 +221,15 @@
         }
       ],
       "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 822,
-      "error": null
+      "contentType": null,
+      "durationMs": 40035,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve\ncurl: (28) Connection timed out after 20005 milliseconds\n"
     },
     {
       "url": "https://darksky.org/",
@@ -148,7 +248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -168,7 +268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -188,7 +288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -208,7 +308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -228,7 +328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 117,
       "error": null
     },
     {
@@ -248,7 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -268,7 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 119,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -288,7 +388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -318,7 +418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -338,7 +438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -358,7 +458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -378,7 +478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 98,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -408,7 +508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -428,7 +528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -448,7 +548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 113,
       "error": null
     },
     {
@@ -468,7 +568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 509,
+      "durationMs": 342,
       "error": null
     },
     {
@@ -498,7 +598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 357,
+      "durationMs": 341,
       "error": null
     },
     {
@@ -528,7 +628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 544,
+      "durationMs": 2525,
       "error": null
     },
     {
@@ -548,7 +648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1022,
+      "durationMs": 1146,
       "error": null
     },
     {
@@ -568,7 +668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 67,
+      "durationMs": 63,
       "error": null
     },
     {
@@ -598,7 +698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 64,
       "error": null
     },
     {
@@ -618,7 +718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4150,
+      "durationMs": 142,
       "error": null
     },
     {
@@ -643,7 +743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4024,
+      "durationMs": 146,
       "error": null
     },
     {
@@ -663,7 +763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4348,
+      "durationMs": 145,
       "error": null
     },
     {
@@ -688,7 +788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 769,
+      "durationMs": 707,
       "error": null
     },
     {
@@ -718,7 +818,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1123,
+      "durationMs": 1126,
       "error": null
     },
     {
@@ -743,7 +843,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 4417,
+      "durationMs": 564,
       "error": null
     },
     {
@@ -763,7 +863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 688,
+      "durationMs": 277,
       "error": null
     },
     {
@@ -783,7 +883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 518,
+      "durationMs": 110,
       "error": null
     },
     {
@@ -803,7 +903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 150,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -833,7 +933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 888,
+      "durationMs": 657,
       "error": null
     },
     {
@@ -853,7 +953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2291,
+      "durationMs": 642,
       "error": null
     },
     {
@@ -873,7 +973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 337,
+      "durationMs": 350,
       "error": null
     },
     {
@@ -893,7 +993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 227,
+      "durationMs": 216,
       "error": null
     },
     {
@@ -913,7 +1013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 105,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -943,7 +1043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4544,
+      "durationMs": 1584,
       "error": null
     },
     {
@@ -963,7 +1063,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 301,
+      "durationMs": 398,
       "error": null
     },
     {
@@ -993,7 +1093,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 99,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -1013,7 +1113,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1857,
+      "durationMs": 1444,
       "error": null
     },
     {
@@ -1043,7 +1143,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1843,
+      "durationMs": 1462,
       "error": null
     },
     {
@@ -1063,7 +1163,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 841,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -1093,7 +1193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 459,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -1123,7 +1223,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 856,
+      "durationMs": 851,
       "error": null
     },
     {
@@ -1143,7 +1243,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 67,
+      "error": null
+    },
+    {
+      "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
+      "references": [
+        {
+          "destinationId": "attersee-traunsee",
+          "kind": "guide",
+          "sourceId": "attersee-traunsee-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 459,
       "error": null
     },
     {
@@ -1163,7 +1283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2120,
+      "durationMs": 741,
       "error": null
     },
     {
@@ -1188,7 +1308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 183,
+      "durationMs": 201,
       "error": null
     },
     {
@@ -1213,7 +1333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 141,
+      "durationMs": 486,
       "error": null
     },
     {
@@ -1243,7 +1363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 261,
+      "durationMs": 219,
       "error": null
     },
     {
@@ -1263,7 +1383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -1293,7 +1413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 118,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -1323,7 +1443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5464,
+      "durationMs": 5457,
       "error": null
     },
     {
@@ -1353,7 +1473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 11438,
+      "durationMs": 5418,
       "error": null
     },
     {
@@ -1373,7 +1493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 62,
+      "durationMs": 65,
       "error": null
     },
     {
@@ -1393,7 +1513,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 411,
+      "durationMs": 748,
       "error": null
     },
     {
@@ -1418,7 +1538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 3574,
+      "durationMs": 556,
       "error": null
     },
     {
@@ -1438,7 +1558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 222,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -1468,7 +1588,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 215,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -1488,7 +1608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 94,
+      "durationMs": 109,
       "error": null
     },
     {
@@ -1508,7 +1628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 163,
+      "durationMs": 124,
       "error": null
     },
     {
@@ -1528,7 +1648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3530,
+      "durationMs": 818,
       "error": null
     },
     {
@@ -1558,7 +1678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3350,
+      "durationMs": 762,
       "error": null
     },
     {
@@ -1578,7 +1698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3635,
+      "durationMs": 821,
       "error": null
     },
     {
@@ -1601,15 +1721,15 @@
         }
       ],
       "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.botswanatourism.co.bw/",
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1105,
-      "error": null
+      "contentType": null,
+      "durationMs": 40034,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.botswanatourism.co.bw/\ncurl: (28) Operation timed out after 20002 milliseconds with 52928 bytes received\n"
     },
     {
       "url": "https://www.ciemneniebo.pl/news/english-translation/izera-dark-sky-park",
@@ -1628,7 +1748,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 367,
+      "durationMs": 310,
       "error": null
     },
     {
@@ -1658,7 +1778,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 878,
+      "durationMs": 882,
       "error": null
     },
     {
@@ -1683,7 +1803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 445,
+      "durationMs": 330,
       "error": null
     },
     {
@@ -1703,7 +1823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 421,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -1733,7 +1853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 448,
+      "durationMs": 347,
       "error": null
     },
     {
@@ -1753,7 +1873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 988,
+      "durationMs": 506,
       "error": null
     },
     {
@@ -1773,7 +1893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 348,
+      "durationMs": 193,
       "error": null
     },
     {
@@ -1793,7 +1913,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1353,
+      "durationMs": 2794,
       "error": null
     },
     {
@@ -1823,7 +1943,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1344,
+      "durationMs": 1858,
       "error": null
     },
     {
@@ -1843,7 +1963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1453,
+      "durationMs": 2259,
       "error": null
     },
     {
@@ -1863,7 +1983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 884,
+      "durationMs": 803,
       "error": null
     },
     {
@@ -1883,7 +2003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1951,
+      "durationMs": 1932,
       "error": null
     },
     {
@@ -1908,7 +2028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1524,
+      "durationMs": 1600,
       "error": null
     },
     {
@@ -1938,7 +2058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 204,
+      "durationMs": 119,
       "error": null
     },
     {
@@ -1968,7 +2088,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3188,
+      "durationMs": 2523,
       "error": null
     },
     {
@@ -1988,7 +2108,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1126,
+      "durationMs": 571,
       "error": null
     },
     {
@@ -2008,7 +2128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 992,
+      "durationMs": 459,
       "error": null
     },
     {
@@ -2028,7 +2148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 403,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -2048,7 +2168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
+      "durationMs": 104,
       "error": null
     },
     {
@@ -2068,7 +2188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1058,
+      "durationMs": 842,
       "error": null
     },
     {
@@ -2088,7 +2208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1052,
+      "durationMs": 1151,
       "error": null
     },
     {
@@ -2118,7 +2238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 369,
+      "durationMs": 171,
       "error": null
     },
     {
@@ -2138,7 +2258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 197,
+      "durationMs": 210,
       "error": null
     },
     {
@@ -2168,7 +2288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 186,
+      "durationMs": 196,
       "error": null
     },
     {
@@ -2188,7 +2308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 188,
+      "durationMs": 196,
       "error": null
     },
     {
@@ -2208,7 +2328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 83,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -2228,7 +2348,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 5738,
+      "durationMs": 4635,
       "error": null
     },
     {
@@ -2248,7 +2368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 391,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -2268,7 +2388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 979,
+      "durationMs": 618,
       "error": null
     },
     {
@@ -2288,7 +2408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 554,
+      "durationMs": 373,
       "error": null
     },
     {
@@ -2313,7 +2433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 821,
+      "durationMs": 536,
       "error": null
     },
     {
@@ -2333,7 +2453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 120,
+      "durationMs": 104,
       "error": null
     },
     {
@@ -2353,7 +2473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 141,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -2378,7 +2498,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2731,
+      "durationMs": 2305,
       "error": null
     },
     {
@@ -2398,27 +2518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 1300,
-      "error": null
-    },
-    {
-      "url": "https://www.naturpark-attersee-traunsee.at/",
-      "references": [
-        {
-          "destinationId": "attersee-traunsee",
-          "kind": "guide",
-          "sourceId": "attersee-traunsee-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.naturpark-attersee-traunsee.at/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 814,
+      "durationMs": 1270,
       "error": null
     },
     {
@@ -2438,7 +2538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 77,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -2458,7 +2558,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 17496,
+      "durationMs": 770,
       "error": null
     },
     {
@@ -2478,7 +2578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 513,
+      "durationMs": 220,
       "error": null
     },
     {
@@ -2508,7 +2608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 130,
+      "durationMs": 50,
       "error": null
     },
     {
@@ -2528,7 +2628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -2558,7 +2658,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 57,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -2608,7 +2708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 57,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -2628,7 +2728,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -2658,7 +2758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -2678,7 +2778,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 56,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -2698,7 +2798,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -2718,7 +2818,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 59,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2748,27 +2848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 854,
-      "error": null
-    },
-    {
-      "url": "https://www.oberoesterreich.at/en/",
-      "references": [
-        {
-          "destinationId": "attersee-traunsee",
-          "kind": "guide",
-          "sourceId": "attersee-traunsee-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.upperaustria.com/en",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 451,
+      "durationMs": 996,
       "error": null
     },
     {
@@ -2788,7 +2868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 373,
+      "durationMs": 333,
       "error": null
     },
     {
@@ -2818,7 +2898,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 353,
+      "durationMs": 340,
       "error": null
     },
     {
@@ -2848,7 +2928,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 771,
+      "durationMs": 679,
       "error": null
     },
     {
@@ -2868,7 +2948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 149,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -2888,7 +2968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1717,
+      "durationMs": 1631,
       "error": null
     },
     {
@@ -2918,7 +2998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2333,
+      "durationMs": 2243,
       "error": null
     },
     {
@@ -2948,7 +3028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1589,
+      "durationMs": 1457,
       "error": null
     },
     {
@@ -2968,7 +3048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 130,
+      "durationMs": 125,
       "error": null
     },
     {
@@ -2988,7 +3068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 891,
+      "durationMs": 816,
       "error": null
     },
     {
@@ -3008,7 +3088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 3311,
+      "durationMs": 377,
       "error": null
     },
     {
@@ -3033,7 +3113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -3068,7 +3148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -3098,7 +3178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -3128,7 +3208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -3148,7 +3228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 71,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -3173,7 +3253,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 224,
+      "durationMs": 175,
       "error": null
     },
     {
@@ -3193,7 +3273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1155,
+      "durationMs": 2014,
       "error": null
     },
     {
@@ -3213,7 +3293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 867,
+      "durationMs": 846,
       "error": null
     },
     {
@@ -3233,7 +3313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 214,
+      "durationMs": 217,
       "error": null
     },
     {
@@ -3253,7 +3333,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 387,
+      "durationMs": 227,
       "error": null
     },
     {
@@ -3273,7 +3353,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2039,
+      "durationMs": 3633,
       "error": null
     },
     {
@@ -3293,11 +3373,11 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 164,
+      "durationMs": 110,
       "error": null
     },
     {
-      "url": "https://www.sternenpark-attersee-traunsee.at/",
+      "url": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
       "references": [
         {
           "destinationId": "attersee-traunsee",
@@ -3307,23 +3387,23 @@
         {
           "destinationId": "attersee-traunsee",
           "kind": "site",
-          "siteId": "attersee-nussdorf"
+          "siteId": "attersee-dixi-stargazing"
         },
         {
           "destinationId": "attersee-traunsee",
           "kind": "site",
-          "siteId": "traunsee-altaussee"
+          "siteId": "attersee-taferlklaussee"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.sternenpark-attersee-traunsee.at/",
+      "finalUrl": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 986,
+      "durationMs": 885,
       "error": null
     },
     {
@@ -3343,7 +3423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 154,
+      "durationMs": 77,
       "error": null
     },
     {
@@ -3373,7 +3453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 200,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -3398,7 +3478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1203,
+      "durationMs": 1182,
       "error": null
     },
     {
@@ -3418,7 +3498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1040,
+      "durationMs": 916,
       "error": null
     },
     {
@@ -3438,7 +3518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 135,
+      "durationMs": 168,
       "error": null
     },
     {
@@ -3458,7 +3538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 287,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -3478,7 +3558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 225,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -3498,7 +3578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 249,
+      "durationMs": 245,
       "error": null
     },
     {
@@ -3521,15 +3601,15 @@
         }
       ],
       "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.turismoyculturas.gob.bo/",
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1756,
-      "error": null
+      "contentType": null,
+      "durationMs": 14729,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7352 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -3553,7 +3633,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 192,
+      "durationMs": 182,
       "error": null
     },
     {
@@ -3578,7 +3658,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 165,
+      "durationMs": 167,
       "error": null
     },
     {
@@ -3603,7 +3683,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1295,
+      "durationMs": 1575,
       "error": null
     },
     {
@@ -3623,7 +3703,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 686,
+      "durationMs": 358,
       "error": null
     },
     {
@@ -3643,7 +3723,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 706,
+      "durationMs": 704,
       "error": null
     },
     {
@@ -3673,7 +3753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 154,
+      "durationMs": 109,
       "error": null
     },
     {
@@ -3703,7 +3783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 411,
+      "durationMs": 141,
       "error": null
     },
     {
@@ -3723,7 +3803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 979,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -3743,7 +3823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1038,
+      "durationMs": 201,
       "error": null
     }
   ]
