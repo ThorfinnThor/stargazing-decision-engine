@@ -40,6 +40,13 @@ national-park rules still require designated parking, no camping and a
 wildlife-sensitive visit. The destination and both sites remain inactive, and
 their images remain pending, until every other activation gate is complete.
 
+The Sierra de Gredos factual review replaced two generic or misleading site
+records with the purpose-built stellar viewpoints at Navarredonda de Gredos and
+Hoyos del Espino. Provincial tourism sources document the viewpoint network and
+municipal sources document night astronomy events at both named facilities.
+The old internal site identifiers and their obsolete snapshots were removed;
+the replacement sites remain inactive and their images remain pending.
+
 The staged records include bilingual destination guides, location tours, stay
 areas, observation-site metadata, source records and image requests. Their
 images remain `pending`; no image is treated as licensed until a documented

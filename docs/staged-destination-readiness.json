@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T14:30:03.166Z",
+  "generatedAt": "2026-09-17T14:37:58.805Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 24,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 48,
+    "requiringFactualSourceReview": 47,
     "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 1,
+    "withVerifiedFactualReview": 2,
     "readyForActivation": 0
   },
   "records": [
@@ -319,28 +319,68 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 6,
+        "reachable": 6,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "sierra-de-gredos",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.turismoavila.com/web/descubrir_avila/visor/index.php?iid=5b2136a6c4120-97",
+            "https://www.turismoavila.com/web/multimedia/folletos/Miradores_Estelares_Cielo_Oscuro.pdf",
+            "https://www.turismocastillayleon.com/en/nature/astrotourism/dark-skies-gredos-iruelas",
+            "https://www.diputacionavila.es/noticias/el-parque-regional-de-gredos-obtiene-la-renovacion-del-certificado-de-reserva-starlight-para-cuatro-anos-mas.html",
+            "https://navarredondadegredos.net/observacion-astronomica-en-el-mirador-estelar-de-navarredonda-de-gredos-el-dia-1-de-agosto-de-2025-a-las-2300h/",
+            "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
+            "https://www.openstreetmap.org/node/11318445880",
+            "https://www.openstreetmap.org/node/7815093290"
+          ],
+          "verifiedFindings": [
+            "The Ávila provincial tourism authority identifies Navarredonda de Gredos and Hoyos del Espino as members of its purpose-built stellar-viewpoint network, whose facilities include a stable observing platform, parking, fencing, accessibility features and signed access.",
+            "The Navarredonda municipality documents a 23:00 astronomy event at Mirador Estelar de Navarredonda de Gredos, confirming night use of the named facility; the mapped viewpoint supplies the corrected coordinate 40.36303, -5.12396.",
+            "The Hoyos del Espino municipality documents a 22:30 astronomy event at Mirador Estelar Mesegosillo (Las Cocinillas), confirming night use of the named facility; the mapped viewpoint supplies the corrected coordinate 40.35239, -5.16424.",
+            "The Ávila Provincial Council states that the Sierra de Gredos Regional Park's Starlight Reserve certification was renewed in January 2025 for another four years.",
+            "The official sources support the named astronomy facilities but do not grant camping or override current local signs, temporary restrictions or mountain-weather decisions."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "sierra-de-gredos-source-1",
-            "url": "https://www.turismocastillayleon.com/en/nature",
+            "url": "https://www.turismoavila.com/web/descubrir_avila/visor/index.php?iid=5b2136a6c4120-97",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-de-gredos-source-2",
-            "url": "https://www.turismocastillayleon.com/en/nature/sierra-de-gredos-regional-park",
+            "url": "https://www.turismoavila.com/web/multimedia/folletos/Miradores_Estelares_Cielo_Oscuro.pdf",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-de-gredos-source-3",
-            "url": "https://www.turismoavila.com/",
+            "url": "https://www.turismocastillayleon.com/en/nature/astrotourism/dark-skies-gredos-iruelas",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-de-gredos-source-4",
+            "url": "https://www.diputacionavila.es/noticias/el-parque-regional-de-gredos-obtiene-la-renovacion-del-certificado-de-reserva-starlight-para-cuatro-anos-mas.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-de-gredos-source-5",
+            "url": "https://navarredondadegredos.net/observacion-astronomica-en-el-mirador-estelar-de-navarredonda-de-gredos-el-dia-1-de-agosto-de-2025-a-las-2300h/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-de-gredos-source-6",
+            "url": "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
             "classification": "reachable",
             "status": 200
           }
@@ -349,34 +389,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "garganta-de-los-infernós",
+          "id": "gredos-navarredonda-mirador",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "guisando-gredos",
+          "id": "gredos-hoyos-mirador",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "gredos-navarredonda-mirador:climate",
+        "gredos-navarredonda-mirador:black-marble",
+        "gredos-navarredonda-mirador:dem",
+        "gredos-navarredonda-mirador:scores",
+        "gredos-hoyos-mirador:climate",
+        "gredos-hoyos-mirador:black-marble",
+        "gredos-hoyos-mirador:dem",
+        "gredos-hoyos-mirador:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
