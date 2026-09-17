@@ -34,9 +34,18 @@ const sourceResultByUrl = new Map(sourceAudit.records.map((record) => [record.ur
 const factualReviewByDestination = new Map(factualReviews.records.map((record) => [record.destinationId, record]));
 
 const snapshotKinds = ["climate", "black-marble", "dem", "scores"];
-const snapshotState = (siteId) => Object.fromEntries(
-  snapshotKinds.map((kind) => [kind, existsSync(resolve(root, `data-snapshots/${kind}/${siteId}.json`))]),
-);
+const coordinateSnapshotKinds = ["climate", "dem"];
+const snapshotState = (site) => {
+  const snapshots = Object.fromEntries(
+    snapshotKinds.map((kind) => [kind, existsSync(resolve(root, `data-snapshots/${kind}/${site.id}.json`))]),
+  );
+  const coordinateMismatches = coordinateSnapshotKinds.filter((kind) => {
+    if (!snapshots[kind]) return false;
+    const snapshot = readJson(`data-snapshots/${kind}/${site.id}.json`);
+    return snapshot.requestedPoint?.[0] !== site.lat || snapshot.requestedPoint?.[1] !== site.lon;
+  });
+  return { snapshots, coordinateMismatches };
+};
 
 const records = stagedDestinations.map((destination) => {
   const destinationSites = sites.filter((site) => site.destinationId === destination.id);
@@ -52,15 +61,22 @@ const records = stagedDestinations.map((destination) => {
       status: audit?.status ?? null,
     };
   });
-  const siteStates = destinationSites.map((site) => ({
-    id: site.id,
-    active: site.active,
-    snapshots: snapshotState(site.id),
-    imageStatus: siteImageBySlug.get(site.id)?.status ?? "missing",
-  }));
+  const siteStates = destinationSites.map((site) => {
+    const state = snapshotState(site);
+    return {
+      id: site.id,
+      active: site.active,
+      snapshots: state.snapshots,
+      coordinateMismatches: state.coordinateMismatches,
+      imageStatus: siteImageBySlug.get(site.id)?.status ?? "missing",
+    };
+  });
   const missingSnapshots = siteStates.flatMap((site) => snapshotKinds
     .filter((kind) => !site.snapshots[kind])
     .map((kind) => `${site.id}:${kind}`));
+  const staleSnapshots = siteStates.flatMap((site) => site.coordinateMismatches.length > 0
+    ? snapshotKinds.filter((kind) => site.snapshots[kind]).map((kind) => `${site.id}:${kind}`)
+    : []);
   const sourceBreakages = sourceResults.filter((source) => ["missing", "http-error", "error", "not-audited"].includes(source.classification));
   const blockedSources = sourceResults.filter((source) => source.classification === "blocked");
   const destinationImageStatus = destinationImageBySlug.get(destination.id)?.status ?? "missing";
@@ -73,6 +89,7 @@ const records = stagedDestinations.map((destination) => {
   if (areas.length === 0) blockers.push("stay-area-missing");
   if (destinationSites.length !== 2) blockers.push("observation-site-count-invalid");
   if (missingSnapshots.length > 0) blockers.push("source-snapshots-missing");
+  if (staleSnapshots.length > 0) blockers.push("source-snapshot-coordinates-stale");
   if (sourceBreakages.length > 0) blockers.push("source-reachability-broken");
   if (blockedSources.length > 0) blockers.push("source-access-manual-review-required");
   if (factualReviewStatus === "required") blockers.push("source-factual-review-required");
@@ -101,6 +118,7 @@ const records = stagedDestinations.map((destination) => {
     destinationImageStatus,
     sites: siteStates,
     missingSnapshots,
+    staleSnapshots,
     activationBlockers: blockers,
     readyForActivation: blockers.length === 0,
   };
@@ -113,7 +131,7 @@ const report = {
   summary: {
     destinations: records.length,
     sites: records.reduce((sum, record) => sum + record.sites.length, 0),
-    withCompleteSnapshots: records.filter((record) => record.missingSnapshots.length === 0).length,
+    withCompleteSnapshots: records.filter((record) => record.missingSnapshots.length === 0 && record.staleSnapshots.length === 0).length,
     withCleanSourceReachability: records.filter((record) => record.sources.broken === 0).length,
     withBlockedSources: records.filter((record) => record.sources.blocked > 0).length,
     withApprovedDestinationImage: records.filter((record) => record.destinationImageStatus === "approved").length,

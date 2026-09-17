@@ -28,6 +28,11 @@ distinguishes destinations that are still unreviewed from reviewed records that
 need factual changes. A destination only clears this gate when its review status
 is `verified` and no required changes remain.
 
+The readiness inventory also compares the committed ERA5 and Copernicus DEM
+request points with the current observation-site coordinates. A coordinate
+change marks every location-dependent snapshot for that site as stale until the
+climate, Black Marble, DEM and real-score batch has been regenerated.
+
 The staged records include bilingual destination guides, location tours, stay
 areas, observation-site metadata, source records and image requests. Their
 images remain `pending`; no image is treated as licensed until a documented

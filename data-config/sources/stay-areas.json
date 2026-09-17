@@ -1201,18 +1201,6 @@
     ]
   },
   {
-    "id": "constantina",
-    "destinationId": "sierra-morena",
-    "name": "Constantina",
-    "lat": 37.87,
-    "lon": -5.62,
-    "affiliateQuery": "Constantina Spain",
-    "observationSiteIds": [
-      "sierra-morena-constantina",
-      "sierra-morena-almadén"
-    ]
-  },
-  {
     "id": "torrejón-el-rubio",
     "destinationId": "monfrague",
     "name": "Torrejón el Rubio",
@@ -1786,6 +1774,18 @@
     "observationSiteIds": [
       "kidepo-narus",
       "kidepo-kanangorok"
+    ]
+  },
+  {
+    "id": "almaden-de-la-plata",
+    "destinationId": "sierra-morena",
+    "name": "Almadén de la Plata",
+    "lat": 37.874,
+    "lon": -6.08,
+    "affiliateQuery": "Almadén de la Plata Spain",
+    "observationSiteIds": [
+      "sierra-morena-almadén",
+      "sierra-morena-constantina"
     ]
   }
 ]
