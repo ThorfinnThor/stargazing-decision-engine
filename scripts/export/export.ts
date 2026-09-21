@@ -64,8 +64,14 @@ if (meteorOutputs.some((output) => output.dataStatus !== "real")) throw new Erro
 const gearCategories = readJson<GearCategory[]>(resolve(process.cwd(), "data-config/gear/categories.json"));
 const gearGuides = readJson<GearGuide[]>(resolve(process.cwd(), "data-config/gear/guides.json"));
 const gearProducts = readJson<GearProductMetadata[]>(resolve(process.cwd(), "data-config/gear/products.json"));
-const destinationImages = readJson<Array<{ status: string }>>(resolve(process.cwd(), "data-config/sources/destination-images.json"));
-const siteImages = readJson<Array<{ status: string }>>(resolve(process.cwd(), "data-config/sources/site-images.json"));
+const destinationImages = readJson<Array<{ slug: string; status: string }>>(resolve(process.cwd(), "data-config/sources/destination-images.json"));
+const siteImages = readJson<Array<{ slug: string; status: string }>>(resolve(process.cwd(), "data-config/sources/site-images.json"));
+const publishedDestinationSlugs = new Set(publishedDestinations.map((destination) => destination.slug));
+const publishedSiteSlugs = new Set(publishedSites.map((site) => site.slug));
+const publishedImages = [
+  ...destinationImages.filter((asset) => publishedDestinationSlugs.has(asset.slug)),
+  ...siteImages.filter((asset) => publishedSiteSlugs.has(asset.slug)),
+];
 const realScoreDirectory = resolve(root, "data-snapshots/scores");
 const allRealScoreSnapshots = new Map<string, SiteScoreSnapshot>(
   existsSync(realScoreDirectory)
@@ -259,8 +265,8 @@ writeJson(publicPath("manifest.json"), {
     gearCategories: gearCategories.length,
     gearGuides: gearGuides.length,
     gearProducts: gearProducts.length,
-    imageAssets: destinationImages.length + siteImages.length,
-    approvedImageAssets: [...destinationImages, ...siteImages].filter((asset) => asset.status === "approved").length,
+    imageAssets: publishedImages.length,
+    approvedImageAssets: publishedImages.filter((asset) => asset.status === "approved").length,
   },
   snapshotHashes: {},
   fileChecksums: {},

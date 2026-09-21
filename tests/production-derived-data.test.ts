@@ -3,7 +3,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 import test from "node:test";
 
-import type { CalendarFile, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "../lib/data/types.js";
+import type { CalendarFile, ImageManifest, Manifest, MeteorShowerEvent, ObservationSite, ShortTripFile } from "../lib/data/types.js";
 import { isTravelEligibleSite } from "../lib/access/travel.js";
 
 const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(), path), "utf8")) as T;
@@ -14,8 +14,13 @@ test("published derived products are real and access-gated", () => {
   assert.equal(manifest.counts.observationSites, 200);
   assert.equal(manifest.counts.realScoreSites, 200);
   assert.equal(manifest.counts.calendarFiles, manifest.counts.destinations * 36);
-  assert.ok(manifest.counts.approvedImageAssets >= 50);
-  assert.ok(manifest.counts.approvedImageAssets <= manifest.counts.imageAssets);
+  const images = read<ImageManifest>("public/data/stargazing/images/manifest.json");
+  const publishedImages = [...images.destinations, ...images.sites];
+  assert.equal(manifest.counts.imageAssets, publishedImages.length);
+  assert.equal(
+    manifest.counts.approvedImageAssets,
+    publishedImages.filter((image) => image.status === "approved").length,
+  );
   assert.equal(manifest.sourceVersions.calendar, "astronomy-calendar-real-1.0.0");
   assert.match(manifest.sourceVersions.meteorShowers, /real-site-score/);
   assert.match(manifest.sourceVersions.shortTrips, /real-site-score/);
