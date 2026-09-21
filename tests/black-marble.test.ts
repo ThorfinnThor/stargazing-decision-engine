@@ -107,12 +107,18 @@ test("haversine sampling is approximately 111.2 km per equatorial degree", () =>
 });
 
 test("reviewed coverage overrides require known unique sites and bounded floors", () => {
-  assert.deepEqual(validateBlackMarbleConfig(config, new Set(["teide-high-zone"])), []);
+  assert.deepEqual(validateBlackMarbleConfig(config, new Set([
+    "teide-high-zone",
+    "izera-izerska-laka-events",
+  ])), []);
   assert.ok(validateBlackMarbleConfig({
     ...config,
     coverageOverrides: [
       ...config.coverageOverrides,
       { ...config.coverageOverrides[0], minimumCoverage: config.coverageErrorMin },
     ],
-  }, new Set(["teide-high-zone"])).some((error) => error.includes("unique")));
+  }, new Set([
+    "teide-high-zone",
+    "izera-izerska-laka-events",
+  ])).some((error) => error.includes("unique")));
 });

@@ -26,6 +26,14 @@
       "minimumOtherRingCoverage": 0.9,
       "reason": "The 0-2 km summit ring has 43% minimum yearly good-quality coverage but a zero median radiance in all three baseline years; every outer ring retains at least 98% coverage and stable non-null radiance.",
       "reviewedAt": "2026-08-22"
+    },
+    {
+      "siteId": "izera-izerska-laka-events",
+      "minimumCoverage": 0.53,
+      "affectedRingIds": ["0to2"],
+      "minimumOtherRingCoverage": 0.7,
+      "reason": "The 0-2 km ring has 53.8% minimum yearly good-quality coverage in the fetched three-year baseline; every outer ring meets the global 70% floor, and processing still requires non-null radiance in every ring and year.",
+      "reviewedAt": "2026-09-21"
     }
   ]
 }
