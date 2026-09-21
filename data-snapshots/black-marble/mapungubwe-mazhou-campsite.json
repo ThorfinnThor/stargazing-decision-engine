@@ -1,0 +1,158 @@
+{
+  "siteId": "mapungubwe-mazhou-campsite",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.032553,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.028609,
+          "coverage": 1,
+          "validPixelCount": 1516,
+          "totalPixelCount": 1516
+        },
+        {
+          "year": 2024,
+          "radiance": 0.035506,
+          "coverage": 1,
+          "validPixelCount": 1516,
+          "totalPixelCount": 1516
+        },
+        {
+          "year": 2023,
+          "radiance": 0.032553,
+          "coverage": 1,
+          "validPixelCount": 1516,
+          "totalPixelCount": 1516
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.009837,
+      "coverage": 0.999763,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.008934,
+          "coverage": 0.999763,
+          "validPixelCount": 12638,
+          "totalPixelCount": 12641
+        },
+        {
+          "year": 2024,
+          "radiance": 0.009837,
+          "coverage": 0.999921,
+          "validPixelCount": 12640,
+          "totalPixelCount": 12641
+        },
+        {
+          "year": 2023,
+          "radiance": 0.01247,
+          "coverage": 1,
+          "validPixelCount": 12641,
+          "totalPixelCount": 12641
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.015969,
+      "coverage": 0.99996,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.025704,
+          "coverage": 0.999973,
+          "validPixelCount": 74677,
+          "totalPixelCount": 74679
+        },
+        {
+          "year": 2024,
+          "radiance": 0.015243,
+          "coverage": 0.999987,
+          "validPixelCount": 74678,
+          "totalPixelCount": 74679
+        },
+        {
+          "year": 2023,
+          "radiance": 0.015969,
+          "coverage": 0.99996,
+          "validPixelCount": 74676,
+          "totalPixelCount": 74679
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.032553,
+  "radiance10to30": 0.009837,
+  "radiance30to75": 0.015969,
+  "alanExposure": 0.012663,
+  "darknessScore": 89.73,
+  "coverage": 0.999763,
+  "warnings": [],
+  "retrievedAt": "2026-09-21T21:36:24.321503Z"
+}

@@ -1,0 +1,158 @@
+{
+  "siteId": "grossmugl-sternenwiese",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.513077,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        },
+        {
+          "year": 2024,
+          "radiance": 0.513077,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        },
+        {
+          "year": 2023,
+          "radiance": 0.55194,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.430081,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.351096,
+          "coverage": 1,
+          "validPixelCount": 2120,
+          "totalPixelCount": 2120
+        },
+        {
+          "year": 2024,
+          "radiance": 0.430081,
+          "coverage": 1,
+          "validPixelCount": 2120,
+          "totalPixelCount": 2120
+        },
+        {
+          "year": 2023,
+          "radiance": 0.482834,
+          "coverage": 1,
+          "validPixelCount": 2120,
+          "totalPixelCount": 2120
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.790617,
+      "coverage": 0.998472,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.690284,
+          "coverage": 0.999377,
+          "validPixelCount": 17657,
+          "totalPixelCount": 17668
+        },
+        {
+          "year": 2024,
+          "radiance": 1.790617,
+          "coverage": 0.998472,
+          "validPixelCount": 17641,
+          "totalPixelCount": 17668
+        },
+        {
+          "year": 2023,
+          "radiance": 1.866745,
+          "coverage": 0.998698,
+          "validPixelCount": 17645,
+          "totalPixelCount": 17668
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.797241,
+      "coverage": 0.999051,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.71454,
+          "coverage": 0.999185,
+          "validPixelCount": 104273,
+          "totalPixelCount": 104358
+        },
+        {
+          "year": 2024,
+          "radiance": 1.797241,
+          "coverage": 0.999051,
+          "validPixelCount": 104259,
+          "totalPixelCount": 104358
+        },
+        {
+          "year": 2023,
+          "radiance": 1.843526,
+          "coverage": 0.999205,
+          "validPixelCount": 104275,
+          "totalPixelCount": 104358
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.513077,
+  "radiance2to10": 0.430081,
+  "radiance10to30": 1.790617,
+  "radiance30to75": 1.797241,
+  "alanExposure": 0.550487,
+  "darknessScore": 60.28,
+  "coverage": 0.998472,
+  "warnings": [],
+  "retrievedAt": "2026-09-21T21:35:35.047692Z"
+}

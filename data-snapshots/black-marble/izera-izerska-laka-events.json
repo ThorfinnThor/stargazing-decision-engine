@@ -1,0 +1,163 @@
+{
+  "siteId": "izera-izerska-laka-events",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": true,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.976265,
+      "coverage": 0.538462,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.975289,
+          "coverage": 0.692308,
+          "validPixelCount": 63,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2024,
+          "radiance": 0.976265,
+          "coverage": 0.725275,
+          "validPixelCount": 66,
+          "totalPixelCount": 91
+        },
+        {
+          "year": 2023,
+          "radiance": 2.132613,
+          "coverage": 0.538462,
+          "validPixelCount": 49,
+          "totalPixelCount": 91
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.360361,
+      "coverage": 0.93139,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.329266,
+          "coverage": 0.943946,
+          "validPixelCount": 2105,
+          "totalPixelCount": 2230
+        },
+        {
+          "year": 2024,
+          "radiance": 0.360361,
+          "coverage": 0.955605,
+          "validPixelCount": 2131,
+          "totalPixelCount": 2230
+        },
+        {
+          "year": 2023,
+          "radiance": 0.593113,
+          "coverage": 0.93139,
+          "validPixelCount": 2077,
+          "totalPixelCount": 2230
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.492247,
+      "coverage": 0.882575,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.434884,
+          "coverage": 0.9055,
+          "validPixelCount": 16826,
+          "totalPixelCount": 18582
+        },
+        {
+          "year": 2024,
+          "radiance": 1.492247,
+          "coverage": 0.900226,
+          "validPixelCount": 16728,
+          "totalPixelCount": 18582
+        },
+        {
+          "year": 2023,
+          "radiance": 1.770957,
+          "coverage": 0.882575,
+          "validPixelCount": 16400,
+          "totalPixelCount": 18582
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.006051,
+      "coverage": 0.915508,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.957586,
+          "coverage": 0.929196,
+          "validPixelCount": 101957,
+          "totalPixelCount": 109726
+        },
+        {
+          "year": 2024,
+          "radiance": 1.006051,
+          "coverage": 0.923756,
+          "validPixelCount": 101360,
+          "totalPixelCount": 109726
+        },
+        {
+          "year": 2023,
+          "radiance": 1.119125,
+          "coverage": 0.915508,
+          "validPixelCount": 100455,
+          "totalPixelCount": 109726
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.976265,
+  "radiance2to10": 0.360361,
+  "radiance10to30": 1.492247,
+  "radiance30to75": 1.006051,
+  "alanExposure": 0.605464,
+  "darknessScore": 57.27,
+  "coverage": 0.538462,
+  "warnings": [
+    "0to2 minimum yearly coverage is 0.538462",
+    "10to30 minimum yearly coverage is 0.882575",
+    "Low-coverage override used: 0.538462 is below 0.7",
+    "Reviewed 2026-09-21: The 0-2 km ring has 53.8% minimum yearly good-quality coverage in the fetched three-year baseline; every outer ring meets the global 70% floor, and processing still requires non-null radiance in every ring and year."
+  ],
+  "retrievedAt": "2026-09-21T21:35:32.763229Z"
+}
