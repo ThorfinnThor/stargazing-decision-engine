@@ -1,5 +1,5 @@
 {
-  "siteId": "tara-banjica",
+  "siteId": "tara-zelenika-viewpoint",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    43.91,
-    19.48
+    43.9563893,
+    19.4079615
   ],
   "tile": "N43_00_E019_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N43_00_E019_00_DEM/Copernicus_DSM_COG_10_N43_00_E019_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 1227.787,
+  "elevationM": 553.161,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 1231.884,
-      "validSampleCount": 277
+      "elevationM": 565.327,
+      "validSampleCount": 284
     },
     {
       "radiusKm": 1,
-      "elevationM": 1219.129,
-      "validSampleCount": 4565
+      "elevationM": 551.35,
+      "validSampleCount": 4578
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:59:35.258933Z"
+  "retrievedAt": "2026-09-21T21:22:34.431907Z"
 }

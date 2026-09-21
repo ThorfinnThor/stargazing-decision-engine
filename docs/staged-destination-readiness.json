@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-17T20:15:44.033Z",
+  "generatedAt": "2026-09-21T21:23:06.754Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 48,
-    "withBlockedSources": 24,
+    "withCompleteSnapshots": 43,
+    "withCleanSourceReachability": 47,
+    "withBlockedSources": 23,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
-    "requiringFactualSourceReview": 43,
-    "requiringFactualChanges": 1,
-    "withVerifiedFactualReview": 6,
+    "requiringFactualSourceReview": 0,
+    "requiringFactualChanges": 35,
+    "withVerifiedFactualReview": 15,
     "readyForActivation": 0
   },
   "records": [
@@ -30,8 +30,30 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "isle-of-sark",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.sark.co.uk/nature/dark-skies",
+            "https://www.sark.co.uk/things-to-do",
+            "https://www.sark.co.uk/post/join-in-with-the-locals",
+            "https://www.sark.co.uk/de/properties/la-valette-campsite",
+            "https://www.sark.co.uk/walking-trails/northeast-route"
+          ],
+          "verifiedFindings": [
+            "Sark's official visitor site confirms Dark Sky Island status, public late-night stargazing outings and bookable telescope sessions at the Dachinger Observatory.",
+            "The same authority identifies La Valette as a bookable campsite promoted for observing from its camping field and documents a public walking route to the lookout above Point Robert Lighthouse.",
+            "The staged lighthouse and windmill coordinates do not identify the observatory or the bookable campsite and therefore cannot remain the two recommended astronomy footprints."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "isle-of-sark-observing-footprints",
+              "reason": "Replace the generic lighthouse and windmill pins with reviewed coordinates for the Dachinger Observatory and La Valette campsite, then restrict each route to a current booking or the published public-lane arrangement."
+            }
+          ]
+        },
         "records": [
           {
             "id": "isle-of-sark-source-1",
@@ -84,7 +106,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -882,28 +904,82 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 8,
+        "reachable": 8,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "grossmugl",
+          "status": "verified",
+          "reviewedAt": "2026-09-17",
+          "reviewedUrls": [
+            "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+            "https://sternenweg-grossmugl.at/",
+            "https://project-nightflight.net/sternenweg%20grossmugl%20besucherinfo.pdf",
+            "https://www.noemuseen.at/museum/detail/sternenweg-grossmugl/",
+            "https://starlightoasis.kuffner-sternwarte.at/",
+            "https://starlightoasis.kuffner-sternwarte.at/veranstaltungen.php",
+            "https://geminiden.kuffner-sternwarte.at/",
+            "https://hms.sternhell.at/lightwiki/index.php?title=Gro%C3%9Fmugl"
+          ],
+          "verifiedFindings": [
+            "The Großmugl municipality identifies a signed 1.5-kilometre Star Walk from Hauptstraße 46 to the Sternenrast at Leeberg and describes the route's nine astronomy interpretation stations.",
+            "Project Nightflight's current visitor guide states that the trail is available day and night, open year-round, free and without booking, with use of the mostly unlit field paths at the visitor's own risk; it recommends firm footwear, warm clothing and red light.",
+            "The visitor guide publishes the trailhead coordinate 48°29'39.8\"N, 16°14'01.8\"E, converted to 48.494389, 16.233833, and gives a roughly 20-minute walk each way between the village and the Sternenwiese.",
+            "The Sternenwiese and Sternenrast at Leeberg are explicitly described as the public observing endpoint of the trail. The Kuffner Observatory association publishes the Leeberg observing coordinate 48.500, 16.233 and confirms the community maintains observing fields at Leeberg and the Glühwürmchenwiese.",
+            "Museumsmanagement Niederösterreich lists the Star Walk as publicly operated, freely accessible at any time, with parking at the Hauptstraße 46 starting point.",
+            "The Kuffner Observatory association publishes dated 2026 guided star walks meeting at Station 1, Hauptstraße 46, and states that weather cancellations are announced 24 hours before the event.",
+            "The generic Leiser Berge map pin has no reviewed support as a specific visitor observing site and is removed; guided walks remain a separate programme record rather than permission to use an arbitrary field."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "grossmugl-source-1",
-            "url": "https://www.grossmugl.gv.at/",
+            "url": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "grossmugl-source-2",
-            "url": "https://www.niederoesterreich.at/orte-und-gemeinden/a-grossmugl",
+            "url": "https://sternenweg-grossmugl.at/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "grossmugl-source-3",
-            "url": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+            "url": "https://project-nightflight.net/sternenweg%20grossmugl%20besucherinfo.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-4",
+            "url": "https://www.noemuseen.at/museum/detail/sternenweg-grossmugl/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-5",
+            "url": "https://starlightoasis.kuffner-sternwarte.at/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-6",
+            "url": "https://starlightoasis.kuffner-sternwarte.at/veranstaltungen.php",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-7",
+            "url": "https://geminiden.kuffner-sternwarte.at/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grossmugl-source-8",
+            "url": "https://hms.sternhell.at/lightwiki/index.php?title=Gro%C3%9Fmugl",
             "classification": "reachable",
             "status": 200
           }
@@ -912,34 +988,41 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "grossmugl-starwalk",
+          "id": "grossmugl-sternenwiese",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "leiserberge",
+          "id": "grossmugl-sternenweg-events",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "grossmugl-sternenwiese:climate",
+        "grossmugl-sternenwiese:black-marble",
+        "grossmugl-sternenwiese:scores",
+        "grossmugl-sternenweg-events:climate",
+        "grossmugl-sternenweg-events:black-marble",
+        "grossmugl-sternenweg-events:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -955,28 +1038,99 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 10,
+        "reachable": 10,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "poloniny",
+          "status": "verified",
+          "reviewedAt": "2026-09-18",
+          "reviewedUrls": [
+            "https://www.obecrunina.sk/podstranka.php?stranka=turistika-a-zaujimavosti",
+            "https://obecrunina.sk/podstranka?stranka=2673",
+            "https://www.nppoloniny.sk/bebuilder-7209/",
+            "https://www.nppoloniny.sk/sprava-np-2/park-tmavej-oblohy-poloniny/",
+            "https://www.nppoloniny.sk/navstevnici/",
+            "https://www.nppoloniny.sk/navstevnici/navstevny-poriadok/",
+            "https://www.astrokolonica.sk/astronomicke-observatorium-na-kolonickom-sedle/",
+            "https://www.astrokolonica.sk/ponuka-podujati-denna-exkurzia/",
+            "https://www.astrokolonica.sk/rezervacny-kalendar-3/",
+            "https://astronomy.science.upjs.sk/observatory/",
+            "https://www.nppoloniny.sk/navstevnici/turisticke-chodniky/",
+            "https://intranet.chmi.cz/files/portal/docs/uoco/web_generator/locality/pollution_locality/loc_5KOS_GB.html",
+            "https://www.openstreetmap.org/way/57953194"
+          ],
+          "verifiedFindings": [
+            "Runina municipality states that astronomical observing is possible directly in the village, that public lighting is switched off at 21:00 and that it is not switched on during summer.",
+            "The Poloniny National Park authority separately lists Runina among public night-sky observing locations and states that undisturbed observation is possible even from the village centre.",
+            "The village-centre coordinate 49.073369, 22.405239 identifies the public bus-stop and church area rather than an arbitrary meadow. The municipality and national-park trail information place Runina at about 550 metres elevation.",
+            "National-park visitor guidance requires marked routes, quiet conduct, designated camping and fire locations, so the village record does not imply access to adjoining private land, meadows or protected trails after dark.",
+            "Vihorlat Observatory publishes bookable evening observing programmes at the Astronomical Observatory on Kolonica Saddle, with a planetarium fallback when outdoor conditions prevent telescope observing; visits require a current reservation or published programme.",
+            "The observatory booking page publishes the venue coordinate 48°56′06.7″N, 22°16′26.4″E, converted to 48.935194, 22.273722. The colocated Slovak Hydrometeorological Institute station reports 431 metres elevation, which is used until the catalogue DEM pipeline refreshes the site.",
+            "Runina replaces Kolbasov as the return base because it is the independently usable primary observing location. The unsupported generic Runina meadow and Topľa valley pins are removed; Kolonica remains a separate programme-only alternative."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "poloniny-source-1",
-            "url": "https://slovakia.travel/en/national-park-of-poloniny",
+            "url": "https://www.obecrunina.sk/podstranka.php?stranka=turistika-a-zaujimavosti",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "poloniny-source-2",
-            "url": "https://www.sopsr.sk/web/",
+            "url": "https://obecrunina.sk/podstranka?stranka=2673",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "poloniny-source-3",
-            "url": "https://www.nppoloniny.sk/",
+            "url": "https://www.nppoloniny.sk/bebuilder-7209/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-4",
+            "url": "https://www.nppoloniny.sk/sprava-np-2/park-tmavej-oblohy-poloniny/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-5",
+            "url": "https://www.nppoloniny.sk/navstevnici/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-6",
+            "url": "https://www.nppoloniny.sk/navstevnici/navstevny-poriadok/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-7",
+            "url": "https://www.astrokolonica.sk/astronomicke-observatorium-na-kolonickom-sedle/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-8",
+            "url": "https://www.astrokolonica.sk/ponuka-podujati-denna-exkurzia/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-9",
+            "url": "https://www.astrokolonica.sk/rezervacny-kalendar-3/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "poloniny-source-10",
+            "url": "https://astronomy.science.upjs.sk/observatory/",
             "classification": "reachable",
             "status": 200
           }
@@ -985,34 +1139,41 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "poloniny-runina",
+          "id": "poloniny-runina-centre",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "poloniny-topola",
+          "id": "poloniny-kolonica-observatory",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "poloniny-runina-centre:climate",
+        "poloniny-runina-centre:black-marble",
+        "poloniny-runina-centre:scores",
+        "poloniny-kolonica-observatory:climate",
+        "poloniny-kolonica-observatory:black-marble",
+        "poloniny-kolonica-observatory:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1028,28 +1189,98 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 10,
+        "reachable": 10,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "izera",
+          "status": "verified",
+          "reviewedAt": "2026-09-18",
+          "reviewedUrls": [
+            "https://ciemneniebo.pl/obszary-ochrony-ciemnego-nieba-w-polsce-cn-000/cn-003-dolina-izery",
+            "https://swieradowzdroj.pl/en/2703-swieradowzdroj-izera-dark-sky-park",
+            "https://swieradowzdroj.pl/upload/pdf/8214/2v-10-grudnia-niezbednik-turystyczny-2026.pdf",
+            "https://turystyczna.szklarskaporeba.pl/50-szklarskaporeba-stacja-turystyczna-orle",
+            "https://turystyczna.szklarskaporeba.pl/47-szklarskaporeba-astrosciezka-w-izerach",
+            "https://turystyczna.szklarskaporeba.pl/en/1725-szklarskaporeba-astronomiczny-dzien-w-izerskim-parku-ciemnego-nieba",
+            "https://stacjakultury.swieradowzdroj.pl/izerska-laka/",
+            "https://stacjakultury.swieradowzdroj.pl/izerska-laka/regulamin/",
+            "https://stacjakultury.swieradowzdroj.pl/izerska-laka/kontakt-i-dojazd/",
+            "https://swieradowzdroj.pl/8494-swieradowzdroj-gwiazdy-na-izerskiej-lace",
+            "https://api.open-meteo.com/v1/elevation?latitude=50.9278741,50.815139&longitude=15.314116,15.382861"
+          ],
+          "verifiedFindings": [
+            "The Izera Dark-Sky Park register identifies the cross-border Izera and Jizerka valleys as an active dark-sky protection area founded by the University of Wrocław astronomy institute, Czech astronomy institute and the responsible Polish and Czech forest and landscape authorities.",
+            "The municipal visitor guides describe the signed route through Polana Izerska, Chatka Górzystów and Orle, but do not establish the generic meadow or Stóg Izerski pins as unrestricted night-observing sites.",
+            "The official Szklarska Poręba visitor page documents an astronomy day with night observing at Orle, the coordinate 50°48′54.5″N, 15°22′58.3″E and an elevation of 820 metres.",
+            "The same official event page states that Orle is reached from Jakuszyce on foot, by bicycle or by car only for overnight guests, and that the organised night walk runs only in suitable weather with a minimum group. The catalogue therefore requires a newly published programme plus a confirmed overnight or guided return plan.",
+            "The municipal Izerska Łąka education centre states that its two telescopes are used for night observing only on designated dates. Its rules prohibit unaffiliated visitors anywhere on the property outside operating hours.",
+            "Świeradów-Zdrój published a registration-required astronomy evening at Izerska Łąka on 12 August 2026, confirming the venue's event use without implying routine after-hours access.",
+            "The centre's official embedded map identifies 50.9278741, 15.314116 at Rolnicza 7. A live Open-Meteo elevation lookup returned 467 metres for that point; the catalogue DEM pipeline will independently replace or confirm it during the combined ingestion run.",
+            "The unsupported generic Izera Meadow and Stóg Izerski observation records are removed. Orle becomes the programme-only primary site and stay area; Izerska Łąka remains a separately confirmed event alternative."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "izera-source-1",
-            "url": "https://turystyczna.szklarskaporeba.pl/en/47-szklarskaporeba-model-of-the-solar-system-in-the-jizera-mountains",
+            "url": "https://ciemneniebo.pl/obszary-ochrony-ciemnego-nieba-w-polsce-cn-000/cn-003-dolina-izery",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "izera-source-2",
-            "url": "https://www.ciemneniebo.pl/news/english-translation/izera-dark-sky-park",
+            "url": "https://swieradowzdroj.pl/en/2703-swieradowzdroj-izera-dark-sky-park",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "izera-source-3",
-            "url": "https://www.poland.travel/attachments/article/6505/PRZYRODA_EN.pdf",
+            "url": "https://swieradowzdroj.pl/upload/pdf/8214/2v-10-grudnia-niezbednik-turystyczny-2026.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-4",
+            "url": "https://turystyczna.szklarskaporeba.pl/50-szklarskaporeba-stacja-turystyczna-orle",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-5",
+            "url": "https://turystyczna.szklarskaporeba.pl/47-szklarskaporeba-astrosciezka-w-izerach",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-6",
+            "url": "https://turystyczna.szklarskaporeba.pl/en/1725-szklarskaporeba-astronomiczny-dzien-w-izerskim-parku-ciemnego-nieba",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-7",
+            "url": "https://stacjakultury.swieradowzdroj.pl/izerska-laka/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-8",
+            "url": "https://stacjakultury.swieradowzdroj.pl/izerska-laka/regulamin/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-9",
+            "url": "https://stacjakultury.swieradowzdroj.pl/izerska-laka/kontakt-i-dojazd/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "izera-source-10",
+            "url": "https://swieradowzdroj.pl/8494-swieradowzdroj-gwiazdy-na-izerskiej-lace",
             "classification": "reachable",
             "status": 200
           }
@@ -1058,34 +1289,41 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "izerska-hala",
+          "id": "izera-orle-astronomy-workshop",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "stóg-izerski",
+          "id": "izera-izerska-laka-events",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "izera-orle-astronomy-workshop:climate",
+        "izera-orle-astronomy-workshop:black-marble",
+        "izera-orle-astronomy-workshop:scores",
+        "izera-izerska-laka-events:climate",
+        "izera-izerska-laka-events:black-marble",
+        "izera-izerska-laka-events:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1101,28 +1339,72 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
-        "blocked": 1,
+        "total": 6,
+        "reachable": 6,
+        "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "tara-serbia",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-18",
+          "reviewedUrls": [
+            "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/vidikovci.html",
+            "https://www.nptara.rs/za-posetioce/opste-informacije/planirajte-posetu.html",
+            "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
+            "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
+            "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/edukativne-staze.html",
+            "https://www.nptara.rs/vesti/825-presuda-za-divljanje-kvadom-u-np-tara.html"
+          ],
+          "verifiedFindings": [
+            "The Tara National Park authority identifies Zelenika as an equipped visitor viewpoint beside the Perućac-Mitrovac road and publishes its elevation as 555 metres. The embedded official map identifies the viewpoint at 43.9563893, 19.4079615.",
+            "The park authority identifies Osluša as an arranged, easily reached viewpoint at 964 metres, approached along the E7 walking corridor or the Visoka Tara cycling route. The official embedded map marker is converted to 43.9390556, 19.4710556.",
+            "The current visitor rules require visitors to remain on marked routes and at arranged, designated places, prohibit camping outside designated locations and require conduct that does not disturb wildlife.",
+            "The formal internal-order rulebook states that access is generally free except where its protection rules impose restrictions, prohibits visitor movement away from arranged and marked trails and places without a ranger or authorised guide, and prohibits motor traffic on forest roads or outside designated vehicle routes unless specifically authorised.",
+            "The official Banjska stena educational-trail page describes a six-kilometre medium-difficulty forest route, recommends walking in a group and highlights brown-bear interpretation along the trail. The park separately documents enforcement of the vehicle prohibition on the forest-road approach, so the former generic 'Banjica viewpoint' record is not retained as a night-observing candidate.",
+            "No reviewed National Park page identifies Zelenika, Osluša or another Tara viewpoint as an astronomy site or confirms after-dark parking and independent observing. The generic Mitrovac plateau and Banjica records are therefore removed and the two exact official viewpoints remain inactive, low-access candidates only."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "tara-serbia-night-access",
+              "reason": "Obtain dated written confirmation from Tara National Park that astronomy use after dark is allowed at a named candidate viewpoint, including the permitted hour, access route, parking location and any ranger or permit requirement. Until then no Tara site is an independent observing recommendation and the destination must remain inactive."
+            }
+          ]
+        },
         "records": [
           {
             "id": "tara-serbia-source-1",
-            "url": "https://www.nptara.rs/en/",
-            "classification": "blocked",
-            "status": 403
+            "url": "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/vidikovci.html",
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "tara-serbia-source-2",
-            "url": "https://www.serbia.travel/en",
+            "url": "https://www.nptara.rs/za-posetioce/opste-informacije/planirajte-posetu.html",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-3",
-            "url": "https://www.ekologija.gov.rs/",
+            "url": "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-4",
+            "url": "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-5",
+            "url": "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/edukativne-staze.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-6",
+            "url": "https://www.nptara.rs/vesti/825-presuda-za-divljanje-kvadom-u-np-tara.html",
             "classification": "reachable",
             "status": 200
           }
@@ -1131,35 +1413,42 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "tara-mitrovac",
+          "id": "tara-zelenika-viewpoint",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "tara-banjica",
+          "id": "tara-oslusa-viewpoint",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "tara-zelenika-viewpoint:climate",
+        "tara-zelenika-viewpoint:black-marble",
+        "tara-zelenika-viewpoint:scores",
+        "tara-oslusa-viewpoint:climate",
+        "tara-oslusa-viewpoint:black-marble",
+        "tara-oslusa-viewpoint:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-snapshots-missing",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1175,28 +1464,92 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 8,
+        "reachable": 8,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "kopaonik",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-18",
+          "reviewedUrls": [
+            "https://npkopaonik.rs/pravila-ponasanja/",
+            "https://npkopaonik.rs/pesacke-ture/",
+            "https://npkopaonik.rs/turistickakarta.pdf",
+            "https://npkopaonik.rs/rezervati-prirode/suvo-rudiste/",
+            "https://www.skijalistasrbije.rs/en/about-ski-resort-kopaonik",
+            "https://www.skijalistasrbije.rs/sr/prohodnost-staza-i-rad-zicara-kopaonik",
+            "https://www.skijalistasrbije.rs/en/node/894",
+            "https://www.rts.rs/lat/magazin/nauka/4919343/perseidi-meteorkse-kise-posmatranje.html?print=true",
+            "https://sota.radio-amater.rs/download/sota-arm-yu.pdf",
+            "https://www.openstreetmap.org/node/1619592268",
+            "https://www.openstreetmap.org/node/563264803",
+            "https://api.open-meteo.com/v1/elevation?latitude=43.26932,43.2815602&longitude=20.82346,20.7964588"
+          ],
+          "verifiedFindings": [
+            "Kopaonik National Park's tourist map and the Serbian statistical authority identify Pančićev vrh as the 2,017-metre summit. The SOTA Serbia summit register supplies the precise summit coordinate 43.26932, 20.82346 used for the inactive candidate record.",
+            "The National Park describes Suvo Rudište from Pančićev vrh down the north-eastern slopes as protected high-mountain habitat between 1,650 and 2,017 metres. Visitor rules require marked trails, prohibit wildlife disturbance and noise, and require written management consent for motor vehicles on designated routes.",
+            "The park hiking guidance requires current maps, on-site markings, weather checks and suitable equipment and warns against relying only on a phone in poor visibility, storms or low temperatures. Its guided walks are described as summer-season activities rather than independent night access.",
+            "Ski Resorts of Serbia documents Pančićev vrh and Sunčana dolina as lift and piste infrastructure with operating status and hours. It also states that piste-grooming machinery works every night, so a closed lift or run cannot be interpreted as a safe astronomy area.",
+            "The mapped lower Sunčana dolina lift station is at 43.2815602, 20.7964588. A live Open-Meteo elevation lookup returned 1,604 metres for that point; the catalogue DEM pipeline must independently replace or confirm it during the combined ingestion run.",
+            "The precise Konaci hotel point at 43.2852725, 20.8088404 replaces the coarse generic Kopaonik stay coordinate and remains only the accommodation and enquiry base, not an observing location.",
+            "RTS science guidance quotes a Serbian astronomer specifically cautioning that Kopaonik is not an especially suitable meteor-observing location because of its built infrastructure. No reviewed park, ski-resort or astronomy source establishes a routine public astronomy venue on Kopaonik.",
+            "The generic Pančić access and Sunčana dolina pins are therefore removed. Their exact replacements remain inactive, low-access candidates and the guide instructs visitors to postpone unless both the park and ski operator confirm a dated observing arrangement separated from lighting and maintenance operations."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "kopaonik-astronomy-venue",
+              "reason": "Obtain dated written confirmation from Kopaonik National Park and Ski Resorts of Serbia for a named astronomy venue or event, including the permitted hour, route, parking, lighting state and separation from lift and piste-maintenance operations. If no such arrangement exists, replace Kopaonik in the staged expansion rather than presenting a summit or ski slope as an observing site."
+            }
+          ]
+        },
         "records": [
           {
             "id": "kopaonik-source-1",
-            "url": "https://npkopaonik.com/en/",
+            "url": "https://npkopaonik.rs/pravila-ponasanja/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "kopaonik-source-2",
-            "url": "https://www.serbia.travel/en",
+            "url": "https://npkopaonik.rs/pesacke-ture/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "kopaonik-source-3",
-            "url": "https://www.srbija.gov.rs/",
+            "url": "https://npkopaonik.rs/turistickakarta.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-4",
+            "url": "https://npkopaonik.rs/rezervati-prirode/suvo-rudiste/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-5",
+            "url": "https://www.skijalistasrbije.rs/en/about-ski-resort-kopaonik",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-6",
+            "url": "https://www.skijalistasrbije.rs/sr/prohodnost-staza-i-rad-zicara-kopaonik",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-7",
+            "url": "https://www.skijalistasrbije.rs/en/node/894",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kopaonik-source-8",
+            "url": "https://www.rts.rs/lat/magazin/nauka/4919343/perseidi-meteorkse-kise-posmatranje.html?print=true",
             "classification": "reachable",
             "status": 200
           }
@@ -1205,34 +1558,42 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "kopaonik-pancic",
+          "id": "kopaonik-pancic-summit",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "kopaonik-sunacana",
+          "id": "kopaonik-suncana-lower-station",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "kopaonik-pancic-summit:climate",
+        "kopaonik-pancic-summit:black-marble",
+        "kopaonik-pancic-summit:scores",
+        "kopaonik-suncana-lower-station:climate",
+        "kopaonik-suncana-lower-station:black-marble",
+        "kopaonik-suncana-lower-station:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-snapshots-missing",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1248,30 +1609,79 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 1,
-        "blocked": 2,
+        "total": 7,
+        "reachable": 0,
+        "blocked": 7,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "richtersveld",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/gps-waypoints",
+            "https://www.sanparks.org/parks/ai-ais-richtersveld/accommodation",
+            "https://www.sanparks.org/travel/guide/10-amazing-experiences-in-ai-ais-richtersveld-transfrontier-park",
+            "https://www.sanparks.org/parks/ai-ais-richtersveld/useful-information/visitor-tips",
+            "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/how-to-get-there",
+            "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/entrance-gate",
+            "https://www.sanparks.org/wp-content/uploads/2021/06/richtersveld-park-management-plan.pdf",
+            "https://api.open-meteo.com/v1/elevation?latitude=-28.0747,-28.1836833,-28.1252333&longitude=16.96315,17.1780333,16.8916"
+          ],
+          "verifiedFindings": [
+            "SANParks publishes exact GPS waypoints for Potjiespram Camp at S 28°04.482′, E 16°57.789′ and De Hoop at S 28°11.021′, E 17°10.682′. These convert to -28.0747, 16.96315 and -28.1836833, 17.1780333 and replace the materially incorrect staged coordinates.",
+            "The same official waypoint register places Sendelingsdrift at S 28°07.514′, E 16°53.496′, converted to -28.1252333, 16.8916. This replaces the coarse and incorrect stay-area coordinate while retaining Sendelingsdrift as the reception, permit and supply base.",
+            "SANParks describes Potjiespram as a bookable Orange River campsite near reception. The park management plan identifies Potjiespram and De Hoop as designated camping facilities, and the internal rules allow camping and overnight stays only in designated accommodation areas known to park management.",
+            "SANParks explicitly promotes stargazing as a Richtersveld experience. That supports observing from a booked campsite but does not create permission for a separate roadside, riverbank or desert viewpoint.",
+            "Official travel guidance requires admission and overnight permits at Sendelingsdrift, asks overnight visitors to arrive before 16:00, prohibits driving in the park at night and requires appropriate high-clearance or 4x4 capability. The guide and route therefore keep the vehicle at one booked camp throughout the dark interval.",
+            "Visitor guidance requires water, food, spares and night lighting, warns of extreme temperatures, heavy dew, scorpions and evening wind, and prohibits driving outside indicated routes and camping sites. The catalogue text incorporates these operational limits rather than treating darkness alone as readiness.",
+            "A reviewed Open-Meteo elevation lookup returned 42 metres for Potjiespram, 81 metres for De Hoop and 37 metres for Sendelingsdrift. The first two replace implausible staged elevations of 410 and 480 metres but remain subject to independent confirmation by the combined catalogue DEM ingestion.",
+            "Both observation records remain inactive and both image records remain pending. Factual verification clears only the source-content gate; real snapshots and verified image licences are still required before activation."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "richtersveld-source-1",
-            "url": "https://www.sanparks.org/parks/richtersveld",
+            "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/gps-waypoints",
             "classification": "blocked",
             "status": 403
           },
           {
             "id": "richtersveld-source-2",
-            "url": "https://www.sanparks.org/",
+            "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/accommodation",
             "classification": "blocked",
             "status": 403
           },
           {
             "id": "richtersveld-source-3",
-            "url": "https://www.southafrica.net/",
-            "classification": "reachable",
-            "status": 200
+            "url": "https://www.sanparks.org/travel/guide/10-amazing-experiences-in-ai-ais-richtersveld-transfrontier-park",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-4",
+            "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/useful-information/visitor-tips",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-5",
+            "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/how-to-get-there",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-6",
+            "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/entrance-gate",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "richtersveld-source-7",
+            "url": "https://www.sanparks.org/wp-content/uploads/2021/06/richtersveld-park-management-plan.pdf",
+            "classification": "blocked",
+            "status": 403
           }
         ]
       },
@@ -1281,10 +1691,10 @@
           "id": "richtersveld-potjiespram",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1293,20 +1703,27 @@
           "id": "richtersveld-de-hoop",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "richtersveld-potjiespram:climate",
+        "richtersveld-potjiespram:black-marble",
+        "richtersveld-potjiespram:scores",
+        "richtersveld-de-hoop:climate",
+        "richtersveld-de-hoop:black-marble",
+        "richtersveld-de-hoop:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-snapshots-missing",
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1322,12 +1739,46 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 1,
-        "blocked": 2,
+        "total": 8,
+        "reachable": 0,
+        "blocked": 8,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "mapungubwe",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.sanparks.org/parks/mapungubwe",
+            "https://www.sanparks.org/parks/mapungubwe/accommodation",
+            "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
+            "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
+            "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
+            "https://www.sanparks.org/parks/mapungubwe/explore/heritage/confluence-viewpoint",
+            "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
+            "https://www.sanparks.org/wp-content/uploads/2021/06/mapungubwe_approved_plans.pdf",
+            "https://www.openstreetmap.org/node/2117424196",
+            "https://www.openstreetmap.org/node/4357227138",
+            "https://api.open-meteo.com/v1/elevation?latitude=-22.2177486,-22.187385,-22.2436111&longitude=29.3648104,29.2012847,29.4005556"
+          ],
+          "verifiedFindings": [
+            "SANParks identifies Leokwe Rest Camp as Mapungubwe's main bookable camp in the eastern section and Mazhou Camp Site as a ten-pitch bookable campground in the western section. These replace the unsupported generic 'Mapungubwe camp area' record.",
+            "The mapped Leokwe facility is at -22.2177486, 29.3648104 and the mapped SANParks-operated Mazhou campsite is at -22.187385, 29.2012847. A reviewed Open-Meteo lookup returned 544 and 528 metres respectively; the catalogue DEM pipeline must independently replace or confirm both values.",
+            "SANParks publishes the Main Gate coordinate as 22°14′37″S, 29°24′2″E, converted to -22.2436111, 29.4005556. The exact gate and reception record replaces the generic Mapungubwe stay-area coordinate.",
+            "SANParks locates the Confluence Viewpoint at 22°10′00″S, 29°10′00″E and describes it as a scenic heritage viewpoint and picnic area. It does not identify the viewpoint as an astronomy site or confirm independent use after dark, so the materially incorrect staged Confluence pin is removed rather than promoted as a night location.",
+            "Current visitor guidance states that unguided walking is prohibited because large and dangerous game occurs in the park. Leokwe is unfenced, other camps use only elephant-exclusion fencing and animals can move through and around camps, so a normal open observing-field assumption is unsafe.",
+            "The park advertises guided morning, sunset and night drives, but no reviewed SANParks page identifies Leokwe, Mazhou, Confluence or another place as an astronomy venue or grants independent astronomy use after dark.",
+            "SANParks published a 19 May 2026 notice that renovation work at Leokwe and Mazhou could begin at any time and cause disruption. Any later use therefore requires a current booking and dated confirmation of construction status in addition to astronomy permission.",
+            "Access to Mazhou requires checking in at the Main Gate and driving outside the park to rejoin the western section. This rules out treating Leokwe and Mazhou as two stops in one night and reinforces that any confirmed plan must remain within one assigned accommodation footprint.",
+            "Both replacement site records remain inactive with low access scores, and both image records remain pending. No activation is permitted while astronomy access, real snapshots and image licences remain unresolved."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "mapungubwe-astronomy-access",
+              "reason": "Obtain dated written confirmation from Mapungubwe National Park that astronomy use after dark is permitted within a named accommodation footprint, including current renovation status, booking requirement, wildlife-safety instructions, lighting restrictions and vehicle-movement rules. If the park does not confirm such use, replace Mapungubwe in the staged expansion rather than treating a heritage viewpoint or wildlife camp as an astronomy site."
+            }
+          ]
+        },
         "records": [
           {
             "id": "mapungubwe-source-1",
@@ -1337,50 +1788,88 @@
           },
           {
             "id": "mapungubwe-source-2",
-            "url": "https://www.sanparks.org/",
+            "url": "https://www.sanparks.org/parks/mapungubwe/accommodation",
             "classification": "blocked",
             "status": 403
           },
           {
             "id": "mapungubwe-source-3",
-            "url": "https://www.limpopo.gov.za/",
-            "classification": "reachable",
-            "status": 200
+            "url": "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-4",
+            "url": "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-5",
+            "url": "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-6",
+            "url": "https://www.sanparks.org/parks/mapungubwe/explore/heritage/confluence-viewpoint",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-7",
+            "url": "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "mapungubwe-source-8",
+            "url": "https://www.sanparks.org/wp-content/uploads/2021/06/mapungubwe_approved_plans.pdf",
+            "classification": "blocked",
+            "status": 403
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "mapungubwe-confluence",
+          "id": "mapungubwe-leokwe-rest-camp",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "mapungubwe-camp",
+          "id": "mapungubwe-mazhou-campsite",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "mapungubwe-leokwe-rest-camp:climate",
+        "mapungubwe-leokwe-rest-camp:black-marble",
+        "mapungubwe-leokwe-rest-camp:scores",
+        "mapungubwe-mazhou-campsite:climate",
+        "mapungubwe-mazhou-campsite:black-marble",
+        "mapungubwe-mazhou-campsite:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-snapshots-missing",
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1397,17 +1886,36 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 1,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 2,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "broken": 0,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "makgadikgadi",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+            "https://www.botswanatourism.co.bw/",
+            "https://www.gov.bw/"
+          ],
+          "verifiedFindings": [
+            "Botswana Tourism documents Makgadikgadi as a remote wildlife and salt-pan destination and identifies accommodation serving the wider pans region.",
+            "No reviewed government or tourism page confirms the staged Nata Sanctuary and Kubu Island approach pins as independent public astronomy sites after dark."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "makgadikgadi-night-access",
+              "reason": "Obtain dated confirmation from the responsible reserve or community operator for a named booked camp, permitted night footprint, guide requirement and vehicle rules; otherwise replace both generic pan pins."
+            }
+          ]
+        },
         "records": [
           {
             "id": "makgadikgadi-source-1",
             "url": "https://www.botswanatourism.co.bw/",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "makgadikgadi-source-2",
@@ -1418,8 +1926,8 @@
           {
             "id": "makgadikgadi-source-3",
             "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
@@ -1453,8 +1961,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1471,17 +1978,37 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 2,
         "blocked": 0,
-        "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "broken": 1,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "tsumkwe",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://visitnamibia.com.na/2022/03/north-eastern-region/",
+            "https://visitnamibia.com.na/wp-content/uploads/2022/03/Adventure.pdf",
+            "https://www.meft.gov.na/",
+            "https://www.nacso.org.na/"
+          ],
+          "verifiedFindings": [
+            "Namibia's official tourism material supports the country's strong stargazing conditions and identifies Tsumkwe as a visitor base in the north-east.",
+            "The reviewed sources do not identify the staged community-area and Naye-Naye coordinates as visitor astronomy facilities or grant after-dark access on community or conservancy land."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "tsumkwe-community-permission",
+              "reason": "Replace the generic pins with a named community-owned lodge or campsite and record current conservancy consent, booking, guide, wildlife and night-movement rules before presenting an observing plan."
+            }
+          ]
+        },
         "records": [
           {
             "id": "tsumkwe-source-1",
             "url": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "tsumkwe-source-2",
@@ -1527,7 +2054,8 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-reachability-broken",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1547,8 +2075,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "rakiura",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://rakiura.org.nz/",
+            "https://www.doc.govt.nz/rakiura",
+            "https://www.newzealand.com/int/stewart-island/"
+          ],
+          "verifiedFindings": [
+            "The reviewed destination and conservation sources establish Rakiura/Stewart Island as a dark-sky destination with sensitive coastal and national-park environments.",
+            "They do not establish the coarse Oban shoreline and Horseshoe Bay pins as approved independent observing footprints or document the intended after-dark return."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "rakiura-specific-sites",
+              "reason": "Obtain current local or DOC confirmation for two named public night-viewing places, including exact parking, pedestrian route, wildlife precautions and closing rules, or replace the staged pins."
+            }
+          ]
+        },
         "records": [
           {
             "id": "rakiura-source-1",
@@ -1601,7 +2148,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1621,8 +2168,29 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "kangaroo-island",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+            "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
+            "https://www.parks.sa.gov.au/insider-tips/photography-on-ki",
+            "https://www.parks.sa.gov.au/park-management/new-in-sa-national-parks/flinders-chase-national-park-visitor-centre/visiting-flinders-chase-national-park"
+          ],
+          "verifiedFindings": [
+            "South Australia's park authority explicitly promotes Flinders Chase for stargazing and recommends camping under the stars at a booked park campground.",
+            "West Bay is a real bookable 4WD campground, but the park is otherwise published as open from dawn to dusk and night wildlife makes discretionary driving unsafe.",
+            "The staged generic Flinders Chase area is not a bookable footprint and the route must not imply free night access to daytime attractions."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "kangaroo-island-booked-camps",
+              "reason": "Replace the generic park-area record with a second named bookable campground and make the complete night a daylight-arrival, one-camp stay with no attraction-to-attraction driving after dark."
+            }
+          ]
+        },
         "records": [
           {
             "id": "kangaroo-island-source-1",
@@ -1674,7 +2242,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1694,8 +2262,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "mudgee",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
+            "https://www.nationalparks.nsw.gov.au/",
+            "https://www.environment.nsw.gov.au/"
+          ],
+          "verifiedFindings": [
+            "Mudgee Region Tourism confirms that Mudgee Observatory at 961 Old Grattai Road is open to the public for essential-booking day and night sessions.",
+            "The staged observatory coordinate is only a coarse regional point and the Gulgong outskirts record has no reviewed astronomy-access source."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "mudgee-venue-records",
+              "reason": "Geocode and verify the observatory entrance, switch the primary route to programme-only, and replace the unsupported Gulgong pin with a second named and operator-confirmed venue or remove the destination from the two-site expansion model."
+            }
+          ]
+        },
         "records": [
           {
             "id": "mudgee-source-1",
@@ -1747,7 +2334,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1767,8 +2354,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "great-western-woodlands",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://exploreparks.dbca.wa.gov.au/park/boorabbin-national-park",
+            "https://www.australiasgoldenoutback.com/",
+            "https://www.wa.gov.au/service/environment"
+          ],
+          "verifiedFindings": [
+            "Western Australia's park service identifies Boorabbin National Park as a visitor stop on the Great Eastern Highway.",
+            "No reviewed authority source identifies the staged woodland and Holland Track coordinates as astronomy sites, and remote-road darkness does not establish safe parking or overnight permission."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "great-western-woodlands-access",
+              "reason": "Replace both generic pins with named DBCA campgrounds or day-use facilities and obtain explicit night-use, fire, road and closure rules before creating an observing route."
+            }
+          ]
+        },
         "records": [
           {
             "id": "great-western-woodlands-source-1",
@@ -1820,7 +2426,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1840,8 +2446,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "torrance-barrens",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
+            "https://files.ontario.ca/environment-and-energy/parks-and-protected-areas/mnr00_bcr0225.pdf",
+            "https://darksky.org/places/torrance-barrens-dark-sky-reserve/"
+          ],
+          "verifiedFindings": [
+            "Ontario's management statement recognizes night-sky viewing as an important activity and identifies the Highland Pond parking/access area, trails, toilet and dark-sky signage as the reserve's authorized visitor facilities.",
+            "The staged main-reserve and boardwalk pins are not tied to that named access facility and therefore lack a reviewed arrival and parking footprint."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "torrance-highland-pond",
+              "reason": "Replace the two coarse points with the exact Highland Pond access/parking and a separately documented viewing footprint, and incorporate current reserve fire, camping, trail and closure rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "torrance-barrens-source-1",
@@ -1894,7 +2519,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1914,8 +2539,28 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "fundy",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
+            "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/pointwolfe",
+            "https://parks.canada.ca/pn-np/nb/fundy/visit"
+          ],
+          "verifiedFindings": [
+            "Parks Canada recommends Chignecto Campground as the base close to Fundy's stargazing activity and Wolfe Lake as a secluded viewing place.",
+            "Point Wolfe is a real seasonal campground with published coordinates, but its covered-bridge access is closed from 8 September through December 2026.",
+            "The staged headquarters and Point Wolfe area records do not match the official astronomy recommendation and current closure-sensitive route."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "fundy-official-night-plan",
+              "reason": "Replace the staged sites with Chignecto campground and a precisely documented Wolfe Lake viewing/parking footprint, preserving seasonal gate, bridge and campground checks."
+            }
+          ]
+        },
         "records": [
           {
             "id": "fundy-source-1",
@@ -1968,7 +2613,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1988,8 +2633,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "manitoulin",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.destinationontario.com/en-ca/articles/best-places-for-stargazing-ontario",
+            "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
+            "https://www.manitoulin-island.com/"
+          ],
+          "verifiedFindings": [
+            "Destination Ontario identifies the Manitoulin Eco Park DarkSky Preserve and its communal open observing field as the island's specific stargazing facility.",
+            "The staged Meldrum Bay and Sheguiandah regional pins are not that facility and lack reviewed night-access evidence."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "manitoulin-eco-park",
+              "reason": "Replace the generic shoreline and rural pins with the operator-confirmed Manitoulin Eco Park observing field and a second named public programme or campsite, including booking and after-hours rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "manitoulin-source-1",
@@ -2041,7 +2705,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2061,8 +2725,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "massacre-rim",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
+            "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
+            "https://www.blm.gov/office/winnemucca-district-office"
+          ],
+          "verifiedFindings": [
+            "BLM explicitly promotes stargazing and allows dispersed camping throughout Massacre Rim Dark Sky Sanctuary while warning that the area is extremely remote and has no cell service.",
+            "The official map identifies roads, a campground and interpretive panel, but the staged viewpoint is only a coarse point and Denio is a service base rather than a sanctuary observing site."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "massacre-rim-map-points",
+              "reason": "Replace the coarse viewpoint and Denio observing record with exact BLM map features, then document road class, fire restrictions, dispersed-camping rules, communications and fuel range."
+            }
+          ]
+        },
         "records": [
           {
             "id": "massacre-rim-source-1",
@@ -2115,7 +2798,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2135,8 +2818,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "grand-canyon-parashant",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.nps.gov/thingstodo/stargaze-in-parashant.htm",
+            "https://home.nps.gov/para/planyourvisit/index.htm",
+            "https://www.nps.gov/para/planyourvisit/brochure.htm"
+          ],
+          "verifiedFindings": [
+            "NPS explicitly authorizes self-directed night stargazing in Parashant, advises daylight scouting and designated parking, and warns that interior travel requires slow travel on rough roads, often with high-clearance four-wheel drive.",
+            "Tuweep is not the named Parashant location represented by the staged source set, and the two coarse points do not document a legal parking footprint or the remote-road route."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "parashant-specific-locations",
+              "reason": "Replace Tuweep and the generic Mount Trumbull point with exact NPS/BLM parking or campground features inside Parashant and include vehicle, road, water, communication and seasonal access requirements."
+            }
+          ]
+        },
         "records": [
           {
             "id": "grand-canyon-parashant-source-1",
@@ -2188,7 +2890,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2208,8 +2910,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "oracle-state-park",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://azstateparks.com/oracle",
+            "https://azstateparks.com/oracle/things-to-do/area-attractions",
+            "https://darksky.org/places/oracle-state-park-dark-sky-park/"
+          ],
+          "verifiedFindings": [
+            "Arizona State Parks identifies Oracle as an International Dark Sky Park with environmental programmes, but its normal gate and exit hours end before night observing.",
+            "No reviewed park source supports Charouleau Gap as a park astronomy site or grants independent after-hours access there."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "oracle-programme-only",
+              "reason": "Retain only dated park astronomy events or written after-hours arrangements at Kannally Ranch and replace Charouleau Gap with a second official programme venue or remove it."
+            }
+          ]
+        },
         "records": [
           {
             "id": "oracle-state-park-source-1",
@@ -2262,7 +2983,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2282,8 +3003,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "enchanted-rock",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://tpwd.texas.gov/state-parks/enchanted-rock",
+            "https://darksky.org/places/enchanted-rock-state-natural-area/"
+          ],
+          "verifiedFindings": [
+            "Texas Parks and Wildlife explicitly promotes stargazing, camping and star parties at Enchanted Rock and publishes daily park and gate hours.",
+            "All trails except the Loop Trail close thirty minutes after sunset, so the staged summit record cannot be a night-observing recommendation.",
+            "Booked campers may receive a late-arrival gate code, but a booking does not reopen the summit trail."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "enchanted-rock-night-footprints",
+              "reason": "Remove the summit as a night site and replace it with a named Loop Trail or official star-party footprint plus a booked campground record, preserving gate-code and trail-closure rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "enchanted-rock-source-1",
@@ -2336,7 +3076,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2356,8 +3096,23 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "staunton-river",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.dcr.virginia.gov/state-parks/staunton-river",
+            "https://www.dcr.virginia.gov/",
+            "https://darksky.org/places/staunton-river-state-park/"
+          ],
+          "verifiedFindings": [
+            "Virginia DCR identifies Staunton River as an International Dark Sky Park and states that the field next to the visitor center is available year-round for astronomical observation.",
+            "The park publishes guided summer sessions and registered spring and autumn star parties while keeping independent field use subject to parking fees and current park information.",
+            "The staged observing-field and campground records remain inactive until their real climate, darkness and DEM snapshots and image licences are complete."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "staunton-river-source-1",
@@ -2410,7 +3165,6 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2430,8 +3184,28 @@
         "reachable": 0,
         "blocked": 3,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "kissimmee-prairie",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.floridastateparks.org/learn/dark-sky-designation",
+            "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park/experiences-amenities",
+            "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf"
+          ],
+          "verifiedFindings": [
+            "Florida State Parks documents a reservable astronomy pad with red-light and no-fire rules, a booked campground route and an after-hours permit for eligible pass holders.",
+            "Without one of those arrangements, the authority directs stargazers to a specific grass area and pavilion beside the entrance kiosk, not to a generic north-entrance coordinate.",
+            "The staged campground and north-entrance records must be aligned to the official astronomy pad and kiosk footprint."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "kissimmee-official-observing-areas",
+              "reason": "Replace the generic site records with the mapped astronomy pad and entrance-kiosk viewing area and encode reservation, permit, arrival-before-sunset, red-light and gate rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "kissimmee-prairie-source-1",
@@ -2484,7 +3258,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2504,8 +3278,28 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "big-cypress",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
+            "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
+            "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm"
+          ],
+          "verifiedFindings": [
+            "NPS promotes year-round stargazing from suitable developed locations and publishes recurring programmes at the south end of Seagrape Drive by the Nathaniel P. Reed Visitor Center.",
+            "The superintendent's compendium closes developed day-use areas after sunset unless prior permission is granted, so a general activity page does not authorize every boardwalk or parking area at night.",
+            "The staged Wagonwheel Road and Midway campground records do not match the current programme location or document the required permission."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "big-cypress-authorized-night-use",
+              "reason": "Replace the generic pins with the official Seagrape Drive programme footprint and a separately authorized overnight or permission-based site, recording the current compendium and wildlife rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "big-cypress-source-1",
@@ -2558,7 +3352,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2578,8 +3372,25 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "lassen-volcanic",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.nps.gov/lavo/index.htm",
+            "https://www.nps.gov/lavo/planyourvisit/stargazing.htm",
+            "https://home.nps.gov/lavo/planyourvisit/summer.htm",
+            "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
+            "https://darksky.org/places/lassen-volcanic-national-park/"
+          ],
+          "verifiedFindings": [
+            "NPS explicitly permits stargazing throughout Lassen where the sky is visible and specifically recommends Manzanita Lake and the Lassen Peak trailhead parking area among roadside viewing locations.",
+            "Overnight camping remains limited to campgrounds and is not permitted at ordinary pullouts or parking areas, so the guide must keep observing separate from sleeping.",
+            "Both staged sites remain inactive and require current road, snow and closure checks plus real source snapshots before activation."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "lassen-volcanic-source-1",
@@ -2632,7 +3443,6 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2652,8 +3462,28 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "dinosaur-national-monument",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://home.nps.gov/dino/planyourvisit/stargazing.htm",
+            "https://home.nps.gov/dino/planyourvisit/echo-park.htm",
+            "https://home.nps.gov/dino/planyourvisit/conditions.htm"
+          ],
+          "verifiedFindings": [
+            "NPS identifies a designated stargazing spot at the back of Split Mountain Campground and offers summer ranger programmes there.",
+            "NPS also identifies Echo Park as a camping and stargazing area but warns that its steep unpaved road can become impassable when wet and may require high clearance or four-wheel drive.",
+            "The staged Jensen and Harpers Corner records do not represent those two official night-use areas."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "dinosaur-official-stargazing-sites",
+              "reason": "Replace the staged sites with Split Mountain Campground's designated observing area and Echo Park Campground, including seasonal road, weather, camping and vehicle restrictions."
+            }
+          ]
+        },
         "records": [
           {
             "id": "dinosaur-national-monument-source-1",
@@ -2706,7 +3536,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2726,8 +3556,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "medicine-rocks",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://fwp.mt.gov/stateparks/medicine-rocks/?pubDate=20250715",
+            "https://fwp.mt.gov/stateparks/fees-and-general-information"
+          ],
+          "verifiedFindings": [
+            "Montana FWP identifies Medicine Rocks as an International Dark Sky Sanctuary, publishes a Night Sky Trail and viewing area, and lists current evening stargazing events.",
+            "The park's official coordinate is 46.04550, -104.45839 at 3,379 feet, and eight first-come campsites are open year-round subject to current restrictions.",
+            "The staged duplicate park and campground points at 46.06, -104.50 do not identify the Night Sky Trail or the official park coordinate."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "medicine-rocks-exact-facilities",
+              "reason": "Correct the park coordinate and elevation, distinguish the Night Sky Trail viewing area from the campground, and preserve day-use hours, quiet hours and current closure checks."
+            }
+          ]
+        },
         "records": [
           {
             "id": "medicine-rocks-source-1",
@@ -2780,7 +3629,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2800,8 +3649,24 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "newport-wisconsin",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://dnr.wisconsin.gov/topic/parks/newport",
+            "https://dnr.wisconsin.gov/",
+            "https://dnr.wisconsin.gov/topic/parks/newport/darksky",
+            "https://darksky.org/places/newport-state-park/"
+          ],
+          "verifiedFindings": [
+            "Wisconsin DNR identifies Newport State Park as a Dark Sky Park and a destination for casual stargazers and astronomers.",
+            "The park is open from 06:00 to 23:00 year-round and asks night-sky visitors to scout viewing areas during daylight.",
+            "The staged shoreline and backpack-camping records remain inactive pending real snapshots, current park checks and verified image licences."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "newport-wisconsin-source-1",
@@ -2854,7 +3719,6 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2874,8 +3738,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "boundary-waters",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
+            "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd980562.pdf",
+            "https://www.fs.usda.gov/visit/know-before-you-go"
+          ],
+          "verifiedFindings": [
+            "Superior National Forest documents Moose Lake and Seagull Lake as wilderness entry points governed by permit quotas and wilderness rules.",
+            "An entry point is not an observing site, campground or safe roadside fallback, and the staged records do not identify legal overnight camps or a complete water route."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "boundary-waters-permit-itinerary",
+              "reason": "Replace entry-point pins with a permit-specific, leave-no-trace overnight itinerary whose camps, portages, water safety and emergency plan are reviewed; otherwise remove this wilderness destination from the two-site road model."
+            }
+          ]
+        },
         "records": [
           {
             "id": "boundary-waters-source-1",
@@ -2927,7 +3810,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2947,8 +3830,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "sturt-stony-desert",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+            "https://www.parks.sa.gov.au/",
+            "https://www.environment.sa.gov.au/"
+          ],
+          "verifiedFindings": [
+            "South Australia's park service documents Innamincka Regional Reserve as a remote protected-area destination with bookable or designated visitor facilities and changing road conditions.",
+            "The staged reserve-centre and Cooper Creek regional points are not named astronomy or camping footprints and do not establish legal after-dark vehicle use."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "innamincka-booked-camps",
+              "reason": "Replace both generic desert pins with exact named campgrounds and make the night a one-camp, daylight-arrival plan with current road, flood, fire and water checks."
+            }
+          ]
+        },
         "records": [
           {
             "id": "sturt-stony-desert-source-1",
@@ -3000,7 +3902,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3020,8 +3922,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "alula",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
+            "https://www.experiencealula.com/en",
+            "https://www.rcu.gov.sa/en"
+          ],
+          "verifiedFindings": [
+            "Experience AlUla explicitly promotes naked-eye and telescope stargazing at Harrat Viewpoint.",
+            "The official visitor source does not establish Hegra as an independent astronomy site after its heritage visiting hours, and the staged Harrat coordinate still needs an exact visitor-arrival footprint."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "alula-night-venues",
+              "reason": "Retain Harrat only with exact access coordinates and current opening or booking rules, and replace Hegra with a second official night experience or remove it from the observing sites."
+            }
+          ]
+        },
         "records": [
           {
             "id": "alula-source-1",
@@ -3074,7 +3995,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3094,8 +4015,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "jebel-akhdar",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
+            "https://www.ea.gov.om/en/the-authority/legislations-conventions/legislation-laws/",
+            "https://experienceoman.om/"
+          ],
+          "verifiedFindings": [
+            "Oman's Environment Authority requires a reserve entry permit and explicitly prohibits entry outside permitted visiting times or camping and overnight stays without the appropriate permit.",
+            "The staged Diana's Point and Saiq plateau pins have no reviewed source confirming independent astronomy use, parking or the required permit category."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "jebel-akhdar-permitted-night-use",
+              "reason": "Obtain the reserve's dated permitted hours and overnight conditions for a named public viewing footprint; otherwise replace both scenic pins with licensed operator venues."
+            }
+          ]
+        },
         "records": [
           {
             "id": "jebel-akhdar-source-1",
@@ -3147,7 +4087,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3167,8 +4107,27 @@
         "reachable": 1,
         "blocked": 2,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "rann-of-kutch",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
+            "https://gujarattourism.com/content/dam/gujrattourism/images/articles/festivals_6.pdf",
+            "https://www.incredibleindia.gov.in/en/gujarat"
+          ],
+          "verifiedFindings": [
+            "Gujarat Tourism documents organised seasonal access from Dhordo to the White Rann and promotes evening and moonlit visitor experiences.",
+            "The reviewed sources do not confirm the staged salt-flat and Kalo Dungar coordinates as independent after-dark astronomy sites or document current permit, border and closing arrangements."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "rann-seasonal-operator-route",
+              "reason": "Replace the free-standing map pins with a current official seasonal programme or licensed operator itinerary that names the entry, permitted hours, transport, permit and return."
+            }
+          ]
+        },
         "records": [
           {
             "id": "rann-of-kutch-source-1",
@@ -3221,7 +4180,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3241,8 +4200,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "achi-village",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://sva.jp/night_tour/",
+            "https://info.sva.jp/",
+            "https://www.vill.achi.lg.jp/"
+          ],
+          "verifiedFindings": [
+            "The official Star Village Achi operator publishes a dated 2026-2027 Heavens Sonohara Night Tour using the ropeway to a 1,400-metre venue with scheduled light-down and guided sky interpretation.",
+            "The tour requires date-specific advance tickets and may move indoors or cancel for weather; the staged Achi village outskirts pin has no reviewed independent astronomy arrangement."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "achi-programme-only",
+              "reason": "Make Heavens Sonohara a booking-only programme record with its official address and remove or replace the unsupported village-outskirts site."
+            }
+          ]
+        },
         "records": [
           {
             "id": "achi-village-source-1",
@@ -3294,7 +4272,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3314,8 +4292,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "sani-pass",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.visitlesotho.org.ls/place-to-visit/mountain-biking-4x4-route",
+            "https://www.visitlesotho.org.ls/place-to-visit/sani-top-thabana-ntlenyana",
+            "https://www.gov.ls/"
+          ],
+          "verifiedFindings": [
+            "Visit Lesotho describes Sani Pass and Sani Top as a demanding high-altitude four-wheel-drive route and viewpoint, not as public astronomy facilities.",
+            "Both staged records share the same coarse coordinate and do not document border hours, legal overnight parking, weather closure or a safe night-use footprint."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "sani-pass-night-access",
+              "reason": "Replace the road and viewpoint pins with a named licensed lodge or campsite on the Lesotho side and obtain current border, road, vehicle, weather and night-use confirmation."
+            }
+          ]
+        },
         "records": [
           {
             "id": "sani-pass-source-1",
@@ -3368,7 +4365,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3388,8 +4385,27 @@
         "reachable": 1,
         "blocked": 2,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "drakensberg",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://bookings.kznwildlife.com/MakeABooking.aspx?Resort=Giants+Castle",
+            "https://bookings.kznwildlife.com/termsandconditions.aspx",
+            "https://whc.unesco.org/en/list/985/"
+          ],
+          "verifiedFindings": [
+            "Ezemvelo KZN Wildlife confirms bookable Giants Castle and Didima accommodation inside the Maloti-Drakensberg area and publishes resort terms and gate-sensitive visitor arrangements.",
+            "No reviewed authority page identifies either staged generic area as an independent astronomy site or grants movement outside the booked accommodation footprint after dark."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "drakensberg-accommodation-footprints",
+              "reason": "Replace the generic valley and camp pins with exact booked accommodation footprints and obtain written resort guidance for astronomy outside a unit, lighting, wildlife and gate hours."
+            }
+          ]
+        },
         "records": [
           {
             "id": "drakensberg-source-1",
@@ -3442,7 +4458,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3459,17 +4475,36 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 2,
         "blocked": 0,
-        "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "broken": 1,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "northern-damaraland",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://visitnamibia.com.na/2022/03/north-western-region/",
+            "https://visitnamibia.com.na/2022/02/twyfelfontein-heritage-site/",
+            "https://visitnamibia.com.na/wp-content/uploads/2022/03/ARID_EDEN_DIGITAL_BROCHURE_FINAL.pdf"
+          ],
+          "verifiedFindings": [
+            "Namibia Tourism identifies Twyfelfontein as a heritage visitor site best seen by day and lists named Damaraland lodges and camps with published locations.",
+            "The staged Twyfelfontein area and Palmwag concession pins are not operator-confirmed astronomy footprints and do not establish concession permission or wildlife-safe night movement."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "damaraland-operator-camps",
+              "reason": "Replace both generic pins with named licensed camps or lodges that explicitly offer stargazing and record booking, concession, guide and wildlife rules."
+            }
+          ]
+        },
         "records": [
           {
             "id": "northern-damaraland-source-1",
             "url": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "northern-damaraland-source-2",
@@ -3515,7 +4550,8 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-reachability-broken",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3535,8 +4571,23 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "coral-pink-sand-dunes",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://stateparks.utah.gov/parks/coral-pink/",
+            "https://stateparks.utah.gov/",
+            "https://darksky.org/places/coral-pink-sand-dunes-state-park/"
+          ],
+          "verifiedFindings": [
+            "Utah State Parks and DarkSky identify Coral Pink Sand Dunes as a designated dark-sky park with an onsite campground and night-sky programming context.",
+            "The staged park and campground records remain limited-access and inactive; current park hours, OHV activity, weather, booking and closure notices still govern each visit.",
+            "Factual review does not clear missing real snapshots or pending image licences."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "coral-pink-sand-dunes-source-1",
@@ -3589,7 +4640,6 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3609,8 +4659,23 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "verified",
+        "factualReviewRecord": {
+          "destinationId": "cedar-breaks",
+          "status": "verified",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.nps.gov/cebr/index.htm",
+            "https://www.nps.gov/cebr/planyourvisit/conditions.htm",
+            "https://darksky.org/places/cedar-breaks-national-monument/"
+          ],
+          "verifiedFindings": [
+            "NPS and DarkSky identify Cedar Breaks as an International Dark Sky Park with ranger-supported night-sky use around the Point Supreme visitor area and overlooks.",
+            "Sunset View and Point Supreme are high-elevation, snow- and season-sensitive visitor areas, so current road, facility and programme status remains a same-day requirement.",
+            "Both staged records remain inactive until real snapshots and image licences are complete."
+          ],
+          "requiredChanges": []
+        },
         "records": [
           {
             "id": "cedar-breaks-source-1",
@@ -3663,7 +4728,6 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3683,8 +4747,27 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "puna-argentina",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.argentina.gob.ar/noticias/se-lanzo-la-temporada-invernal-de-jujuy-en-la-ciudad-de-buenos-aires",
+            "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
+            "https://www.jujuy.gob.ar/"
+          ],
+          "verifiedFindings": [
+            "Argentina's government promotes Jujuy's Puna, Salinas Grandes and organised Solar Train night outings for sky viewing.",
+            "The staged Salinas access and generic Quebrada highland pins are not the published train programme or a documented public astronomy footprint, and both require altitude and transport controls."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "puna-organised-night-route",
+              "reason": "Replace the generic high-altitude pins with the current official Solar Train or licensed operator night itinerary, including exact stops, booking, acclimatisation, transport and return."
+            }
+          ]
+        },
         "records": [
           {
             "id": "puna-argentina-source-1",
@@ -3736,7 +4819,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3756,8 +4839,27 @@
         "reachable": 2,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "isla-navarino",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
+            "https://www.sernatur.cl/wp-content/uploads/2018/09/XII-REGION-DE-MAGALLANES-Y-ANTARTICA-CHILENA.pdf",
+            "https://www.conaf.cl/parques-nacionales/"
+          ],
+          "verifiedFindings": [
+            "SERNATUR documents Puerto Williams and the Dientes de Navarino area as trekking and mountain destinations with rapidly changing subantarctic conditions.",
+            "No reviewed public source identifies the staged waterfront and mountain-approach pins as night-observing places or provides an after-dark route and return."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "navarino-settlement-night-site",
+              "reason": "Obtain municipal or operator confirmation for a named, settlement-adjacent public viewing place with exact access and weather limits; do not use the Dientes trail approach as an astronomy fallback."
+            }
+          ]
+        },
         "records": [
           {
             "id": "isla-navarino-source-1",
@@ -3810,7 +4912,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-access-manual-review-required",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3830,8 +4932,27 @@
         "reachable": 2,
         "blocked": 0,
         "broken": 1,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "uyuni",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+            "https://www.turismoyculturas.gob.bo/",
+            "https://www.sernap.gob.bo/"
+          ],
+          "verifiedFindings": [
+            "Bolivia's tourism authority documents Salar de Uyuni as a high-altitude salt-flat destination and promotes sunset visitation, but does not grant independent cross-salar night driving.",
+            "The staged salt-flat and Tahua points do not identify a licensed operator route, legal stop, seasonal surface condition or emergency return."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "uyuni-licensed-night-tour",
+              "reason": "Replace both free-standing pins with exact stops from a current licensed night tour and document driver, route, season, surface, altitude, communications and return arrangements."
+            }
+          ]
+        },
         "records": [
           {
             "id": "uyuni-source-1",
@@ -3884,7 +5005,7 @@
       "staleSnapshots": [],
       "activationBlockers": [
         "source-reachability-broken",
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3904,8 +5025,28 @@
         "reachable": 3,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "required",
-        "factualReviewRecord": null,
+        "factualReview": "changes-required",
+        "factualReviewRecord": {
+          "destinationId": "kidepo-valley",
+          "status": "changes-required",
+          "reviewedAt": "2026-09-21",
+          "reviewedUrls": [
+            "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
+            "https://ugandawildlife.org/news/uwa-pledges-support-for-concessionaires/",
+            "https://ugandawildlife.org/wp-content/uploads/2022/01/Kidepo_Valley_-National_Park_GMP.pdf"
+          ],
+          "verifiedFindings": [
+            "Uganda Wildlife Authority identifies Kidepo as a big-game national park with managed camps and game-drive infrastructure.",
+            "UWA states that night game drives are restricted to overnight park guests for wildlife and safety reasons, and no reviewed source identifies Narus or Kanangorok as independent astronomy sites.",
+            "The staged camp and hot-springs records therefore cannot imply unguided outdoor observing or after-dark driving."
+          ],
+          "requiredChanges": [
+            {
+              "scope": "kidepo-camp-confirmation",
+              "reason": "Obtain dated UWA or concessionaire confirmation for astronomy inside a named booked camp footprint, including ranger, lighting, wildlife and movement rules; otherwise replace the destination."
+            }
+          ]
+        },
         "records": [
           {
             "id": "kidepo-valley-source-1",
@@ -3957,7 +5098,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-review-required",
+        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

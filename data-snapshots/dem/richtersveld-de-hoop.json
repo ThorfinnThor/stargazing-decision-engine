@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    -28.44,
-    17.02
+    -28.1836833,
+    17.1780333
   ],
   "tile": "S29_00_E017_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S29_00_E017_00_DEM/Copernicus_DSM_COG_10_S29_00_E017_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 565.961,
+  "elevationM": 75.569,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 559.281,
-      "validSampleCount": 233
+      "elevationM": 75.945,
+      "validSampleCount": 227
     },
     {
       "radiusKm": 1,
-      "elevationM": 446.904,
-      "validSampleCount": 3745
+      "elevationM": 99.449,
+      "validSampleCount": 3725
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:59:45.423797Z"
+  "retrievedAt": "2026-09-21T21:22:44.477029Z"
 }

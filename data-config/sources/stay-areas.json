@@ -1240,36 +1240,12 @@
     "id": "grossmugl",
     "destinationId": "grossmugl",
     "name": "Großmugl",
-    "lat": 48.49,
-    "lon": 16.24,
+    "lat": 48.494389,
+    "lon": 16.233833,
     "affiliateQuery": "Großmugl Austria",
     "observationSiteIds": [
-      "grossmugl-starwalk",
-      "leiserberge"
-    ]
-  },
-  {
-    "id": "kolbasov",
-    "destinationId": "poloniny",
-    "name": "Kolbasov",
-    "lat": 49.02,
-    "lon": 22.28,
-    "affiliateQuery": "Kolbasov Slovakia",
-    "observationSiteIds": [
-      "poloniny-runina",
-      "poloniny-topola"
-    ]
-  },
-  {
-    "id": "izerska-hala",
-    "destinationId": "izera",
-    "name": "Izera",
-    "lat": 50.88,
-    "lon": 15.34,
-    "affiliateQuery": "Izera Poland",
-    "observationSiteIds": [
-      "izerska-hala",
-      "stóg-izerski"
+      "grossmugl-sternenwiese",
+      "grossmugl-sternenweg-events"
     ]
   },
   {
@@ -1280,44 +1256,20 @@
     "lon": 19.57,
     "affiliateQuery": "Bajina Bašta Serbia",
     "observationSiteIds": [
-      "tara-mitrovac",
-      "tara-banjica"
-    ]
-  },
-  {
-    "id": "kopaonik",
-    "destinationId": "kopaonik",
-    "name": "Kopaonik",
-    "lat": 43.28,
-    "lon": 20.81,
-    "affiliateQuery": "Kopaonik Serbia",
-    "observationSiteIds": [
-      "kopaonik-pancic",
-      "kopaonik-sunacana"
+      "tara-zelenika-viewpoint",
+      "tara-oslusa-viewpoint"
     ]
   },
   {
     "id": "sendelingsdrif",
     "destinationId": "richtersveld",
-    "name": "Sendelingsdrif",
-    "lat": -28.5,
-    "lon": 17.07,
-    "affiliateQuery": "Sendelingsdrif South Africa",
+    "name": "Sendelingsdrift",
+    "lat": -28.1252333,
+    "lon": 16.8916,
+    "affiliateQuery": "Sendelingsdrift South Africa",
     "observationSiteIds": [
       "richtersveld-potjiespram",
       "richtersveld-de-hoop"
-    ]
-  },
-  {
-    "id": "mapungubwe",
-    "destinationId": "mapungubwe",
-    "name": "Mapungubwe",
-    "lat": -22.2,
-    "lon": 29.39,
-    "affiliateQuery": "Mapungubwe South Africa",
-    "observationSiteIds": [
-      "mapungubwe-confluence",
-      "mapungubwe-camp"
     ]
   },
   {
@@ -1786,6 +1738,54 @@
     "observationSiteIds": [
       "attersee-dixi-stargazing",
       "attersee-taferlklaussee"
+    ]
+  },
+  {
+    "id": "runina",
+    "destinationId": "poloniny",
+    "name": "Runina",
+    "lat": 49.073369,
+    "lon": 22.405239,
+    "affiliateQuery": "Runina Slovakia",
+    "observationSiteIds": [
+      "poloniny-runina-centre",
+      "poloniny-kolonica-observatory"
+    ]
+  },
+  {
+    "id": "orle",
+    "destinationId": "izera",
+    "name": "Orle",
+    "lat": 50.815139,
+    "lon": 15.382861,
+    "affiliateQuery": "Orle Poland",
+    "observationSiteIds": [
+      "izera-orle-astronomy-workshop",
+      "izera-izerska-laka-events"
+    ]
+  },
+  {
+    "id": "kopaonik-konaci",
+    "destinationId": "kopaonik",
+    "name": "Konaci, Kopaonik",
+    "lat": 43.2852725,
+    "lon": 20.8088404,
+    "affiliateQuery": "Konaci, Kopaonik Serbia",
+    "observationSiteIds": [
+      "kopaonik-pancic-summit",
+      "kopaonik-suncana-lower-station"
+    ]
+  },
+  {
+    "id": "mapungubwe-main-gate",
+    "destinationId": "mapungubwe",
+    "name": "Mapungubwe Main Gate Reception",
+    "lat": -22.2436111,
+    "lon": 29.4005556,
+    "affiliateQuery": "Mapungubwe Main Gate Reception South Africa",
+    "observationSiteIds": [
+      "mapungubwe-leokwe-rest-camp",
+      "mapungubwe-mazhou-campsite"
     ]
   }
 ]

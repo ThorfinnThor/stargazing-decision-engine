@@ -1,5 +1,5 @@
 {
-  "siteId": "poloniny-runina",
+  "siteId": "grossmugl-sternenwiese",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    49.07,
-    22.36
+    48.5,
+    16.233
   ],
-  "tile": "N49_00_E022_00",
-  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N49_00_E022_00_DEM/Copernicus_DSM_COG_10_N49_00_E022_00_DEM.tif",
+  "tile": "N48_00_E016_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N48_00_E016_00_DEM/Copernicus_DSM_COG_10_N48_00_E016_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 600.027,
+  "elevationM": 221.035,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 561.545,
-      "validSampleCount": 310
+      "elevationM": 220.793,
+      "validSampleCount": 306
     },
     {
       "radiusKm": 1,
-      "elevationM": 597.279,
-      "validSampleCount": 5035
+      "elevationM": 226.463,
+      "validSampleCount": 4972
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:59:29.476437Z"
+  "retrievedAt": "2026-09-21T21:22:06.741472Z"
 }

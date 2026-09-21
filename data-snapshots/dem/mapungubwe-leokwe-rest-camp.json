@@ -1,5 +1,5 @@
 {
-  "siteId": "mapungubwe-confluence",
+  "siteId": "mapungubwe-leokwe-rest-camp",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    -22.25,
-    29.4
+    -22.2177486,
+    29.3648104
   ],
   "tile": "S23_00_E029_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S23_00_E029_00_DEM/Copernicus_DSM_COG_10_S23_00_E029_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 594.664,
+  "elevationM": 546.995,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 594.294,
-      "validSampleCount": 211
+      "elevationM": 545.407,
+      "validSampleCount": 220
     },
     {
       "radiusKm": 1,
-      "elevationM": 593.133,
-      "validSampleCount": 3557
+      "elevationM": 561.436,
+      "validSampleCount": 3558
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T11:59:45.830291Z"
+  "retrievedAt": "2026-09-21T21:22:52.945653Z"
 }
