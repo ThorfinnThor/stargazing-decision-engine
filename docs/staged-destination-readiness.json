@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-21T21:23:06.754Z",
+  "generatedAt": "2026-09-21T21:45:26.115Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 43,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 47,
     "withBlockedSources": 23,
     "withApprovedDestinationImage": 0,
@@ -991,10 +991,10 @@
           "id": "grossmugl-sternenwiese",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1003,26 +1003,18 @@
           "id": "grossmugl-sternenweg-events",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "grossmugl-sternenwiese:climate",
-        "grossmugl-sternenwiese:black-marble",
-        "grossmugl-sternenwiese:scores",
-        "grossmugl-sternenweg-events:climate",
-        "grossmugl-sternenweg-events:black-marble",
-        "grossmugl-sternenweg-events:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1142,10 +1134,10 @@
           "id": "poloniny-runina-centre",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1154,26 +1146,18 @@
           "id": "poloniny-kolonica-observatory",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "poloniny-runina-centre:climate",
-        "poloniny-runina-centre:black-marble",
-        "poloniny-runina-centre:scores",
-        "poloniny-kolonica-observatory:climate",
-        "poloniny-kolonica-observatory:black-marble",
-        "poloniny-kolonica-observatory:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1292,10 +1276,10 @@
           "id": "izera-orle-astronomy-workshop",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1304,26 +1288,18 @@
           "id": "izera-izerska-laka-events",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "izera-orle-astronomy-workshop:climate",
-        "izera-orle-astronomy-workshop:black-marble",
-        "izera-orle-astronomy-workshop:scores",
-        "izera-izerska-laka-events:climate",
-        "izera-izerska-laka-events:black-marble",
-        "izera-izerska-laka-events:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1416,10 +1392,10 @@
           "id": "tara-zelenika-viewpoint",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1428,26 +1404,18 @@
           "id": "tara-oslusa-viewpoint",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "tara-zelenika-viewpoint:climate",
-        "tara-zelenika-viewpoint:black-marble",
-        "tara-zelenika-viewpoint:scores",
-        "tara-oslusa-viewpoint:climate",
-        "tara-oslusa-viewpoint:black-marble",
-        "tara-oslusa-viewpoint:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -1561,10 +1529,10 @@
           "id": "kopaonik-pancic-summit",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1573,26 +1541,18 @@
           "id": "kopaonik-suncana-lower-station",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "kopaonik-pancic-summit:climate",
-        "kopaonik-pancic-summit:black-marble",
-        "kopaonik-pancic-summit:scores",
-        "kopaonik-suncana-lower-station:climate",
-        "kopaonik-suncana-lower-station:black-marble",
-        "kopaonik-suncana-lower-station:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -1691,10 +1651,10 @@
           "id": "richtersveld-potjiespram",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1703,26 +1663,18 @@
           "id": "richtersveld-de-hoop",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "richtersveld-potjiespram:climate",
-        "richtersveld-potjiespram:black-marble",
-        "richtersveld-potjiespram:scores",
-        "richtersveld-de-hoop:climate",
-        "richtersveld-de-hoop:black-marble",
-        "richtersveld-de-hoop:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -1836,10 +1788,10 @@
           "id": "mapungubwe-leokwe-rest-camp",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1848,26 +1800,18 @@
           "id": "mapungubwe-mazhou-campsite",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "mapungubwe-leokwe-rest-camp:climate",
-        "mapungubwe-leokwe-rest-camp:black-marble",
-        "mapungubwe-leokwe-rest-camp:scores",
-        "mapungubwe-mazhou-campsite:climate",
-        "mapungubwe-mazhou-campsite:black-marble",
-        "mapungubwe-mazhou-campsite:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "source-factual-changes-required",
         "destination-image-license-pending",
