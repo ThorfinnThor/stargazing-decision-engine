@@ -65,7 +65,13 @@ export function buildBlackMarbleSnapshot(options: {
   const coverage = Math.min(...rings.map((ring) => ring.coverage));
   const coverageOverrideUsed = coverage < config.coverageErrorMin;
   if (coverageOverrideUsed && !options.allowLowCoverage) {
-    throw new Error(`Black Marble coverage ${coverage} is below ${config.coverageErrorMin}`);
+    const lowCoverageRings = rings
+      .filter((ring) => ring.coverage < config.coverageErrorMin)
+      .map((ring) => `${ring.id}=${ring.coverage}`)
+      .join(", ");
+    throw new Error(
+      `Black Marble coverage ${coverage} is below ${config.coverageErrorMin}; low-coverage rings: ${lowCoverageRings}`,
+    );
   }
   if (coverageOverrideUsed) {
     warnings.push(`Low-coverage override used: ${coverage} is below ${config.coverageErrorMin}`);
