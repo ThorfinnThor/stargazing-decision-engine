@@ -1,0 +1,33 @@
+{
+  "siteId": "tara-garden-hill-guest-courtyard",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    43.9210566,
+    19.4198053
+  ],
+  "tile": "N43_00_E019_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N43_00_E019_00_DEM/Copernicus_DSM_COG_10_N43_00_E019_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1092.862,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1097.688,
+      "validSampleCount": 273
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1119.679,
+      "validSampleCount": 4566
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T21:06:18.385468Z"
+}
