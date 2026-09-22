@@ -1002,6 +1002,8 @@ candidates[boundaryWatersIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["sierra-morena-cartuja-cazalla-astrotourism", 575],
+  ["sierra-morena-castillo-guardas-observatory", 466],
   ["boundary-waters-moose-lake-campsite-1", 410],
   ["boundary-waters-moose-lake-campsite-2", 412],
   ["parashant-mount-trumbull-trailhead", 1983],

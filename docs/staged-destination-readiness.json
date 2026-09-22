@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T20:32:22.652Z",
+  "generatedAt": "2026-09-22T20:40:56.254Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -156,7 +156,7 @@
             "The Astronomical Association of Spain publishes the exact El Castillo de las Guardas Observatory coordinate and an ongoing reservation procedure for public observations on suitable moonless Saturdays, subject to clear weather and minimum attendance.",
             "The association's dated 2026 public calendar ended in September, so the revised record requires a newly confirmed session and operator-issued parking and walking instructions rather than representing the observatory as walk-in or independently accessible.",
             "The association directs visitors to park in Peroamigo and walk under its instructions, warns that no services are nearby and publishes rural-footwear, warm-clothing, red-light, weather and fire-safety requirements.",
-            "Open-Meteo returned preliminary elevations of 575 metres at the La Cartuja property point and 459 metres at the operator-published observatory point; the production DEM workflow must still replace these provisional values."
+            "The production Copernicus GLO-30 snapshots measure 575.070 metres at the La Cartuja property point and 465.631 metres at the operator-published observatory point; the catalogue records the reproducible rounded values of 575 and 466 metres."
           ],
           "requiredChanges": []
         },
@@ -224,10 +224,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -237,28 +237,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "sierra-morena-cartuja-cazalla-astrotourism:climate",
-        "sierra-morena-cartuja-cazalla-astrotourism:black-marble",
-        "sierra-morena-cartuja-cazalla-astrotourism:dem",
-        "sierra-morena-cartuja-cazalla-astrotourism:scores",
-        "sierra-morena-castillo-guardas-observatory:climate",
-        "sierra-morena-castillo-guardas-observatory:black-marble",
-        "sierra-morena-castillo-guardas-observatory:dem",
-        "sierra-morena-castillo-guardas-observatory:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
