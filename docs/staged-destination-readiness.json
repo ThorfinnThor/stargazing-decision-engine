@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T12:01:24.854Z",
+  "generatedAt": "2026-09-22T12:37:58.237Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 17,
-    "withVerifiedFactualReview": 33,
+    "requiringFactualChanges": 16,
+    "withVerifiedFactualReview": 34,
     "readyForActivation": 0
   },
   "records": [
@@ -4111,47 +4111,79 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 8,
+        "reachable": 8,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "boundary-waters",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
-            "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
-            "https://www.fs.usda.gov/Internet/FSE_DOCUMENTS/fseprd980562.pdf",
-            "https://www.fs.usda.gov/visit/know-before-you-go"
+            "https://www.recreation.gov/permits/233396",
+            "https://www.fs.usda.gov/sites/nfs/files/r09/superior/publication/USFS%20BWCAW%20Trip%20Planning%20Guide%202023.pdf",
+            "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCA_Wilderness_Campsites/FeatureServer/0",
+            "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCAW_Entry_Points_2026/FeatureServer/0",
+            "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecInfraRecreationSites_02/MapServer/0",
+            "https://www.recreation.gov/camping/poi/233396",
+            "https://www.fs.usda.gov/superior",
+            "https://api.open-meteo.com/v1/elevation?latitude=48.0043139385195,48.0075388671329&longitude=-91.5005648962981,-91.4905639329872"
           ],
           "verifiedFindings": [
-            "Superior National Forest documents Moose Lake and Seagull Lake as wilderness entry points governed by permit quotas and wilderness rules.",
-            "An entry point is not an observing site, campground or safe roadside fallback, and the staged records do not identify legal overnight camps or a complete water route."
+            "The Superior National Forest campsite layer identifies the replacement coordinates as open designated Moose Lake Campsites 1 and 2; the 2026 entry-point layer and Forest Service recreation layer independently locate Entry Point 25 and Moose Lake Boat Access.",
+            "The revised itinerary is an ice-free permit-bound overnight paddle, not a road-access observing plan: Campsite 1 is the planned night and Campsite 2 is only a preplanned daylight contingency whose availability is not guaranteed by the entry permit.",
+            "The bilingual guide now requires the correct entry date and point, designated-site camping, group limits, PFDs, shore-aware daylight travel, map and compass, treated water, first aid, food storage, a complete external itinerary, live closure and fire checks, and no paddling or campsite search after dark.",
+            "Both replacement sites and the destination remain inactive, and all image records remain pending until separate snapshot, access and licence gates are complete."
           ],
-          "requiredChanges": [
-            {
-              "scope": "boundary-waters-permit-itinerary",
-              "reason": "Replace entry-point pins with a permit-specific, leave-no-trace overnight itinerary whose camps, portages, water safety and emergency plan are reviewed; otherwise remove this wilderness destination from the two-site road model."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "boundary-waters-source-1",
-            "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
+            "url": "https://www.recreation.gov/permits/233396",
             "classification": "reachable",
             "status": 206
           },
           {
             "id": "boundary-waters-source-2",
-            "url": "https://www.fs.usda.gov/superior",
+            "url": "https://www.fs.usda.gov/sites/nfs/files/r09/superior/publication/USFS%20BWCAW%20Trip%20Planning%20Guide%202023.pdf",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "boundary-waters-source-3",
-            "url": "https://www.fs.usda.gov/visit/know-before-you-go",
+            "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCA_Wilderness_Campsites/FeatureServer/0",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-4",
+            "url": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCAW_Entry_Points_2026/FeatureServer/0",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-5",
+            "url": "https://apps.fs.usda.gov/arcx/rest/services/EDW/EDW_RecInfraRecreationSites_02/MapServer/0",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-6",
+            "url": "https://www.recreation.gov/camping/poi/233396",
+            "classification": "reachable",
+            "status": 206
+          },
+          {
+            "id": "boundary-waters-source-7",
+            "url": "https://www.fs.usda.gov/superior",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "boundary-waters-source-8",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=48.0043139385195,48.0075388671329&longitude=-91.5005648962981,-91.4905639329872",
             "classification": "reachable",
             "status": 200
           }
@@ -4160,36 +4192,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "boundary-waters-moose-lake",
+          "id": "boundary-waters-moose-lake-campsite-1",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "boundary-waters-seagull",
+          "id": "boundary-waters-moose-lake-campsite-2",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "boundary-waters-moose-lake-campsite-1:climate",
+        "boundary-waters-moose-lake-campsite-1:black-marble",
+        "boundary-waters-moose-lake-campsite-1:dem",
+        "boundary-waters-moose-lake-campsite-1:scores",
+        "boundary-waters-moose-lake-campsite-2:climate",
+        "boundary-waters-moose-lake-campsite-2:black-marble",
+        "boundary-waters-moose-lake-campsite-2:dem",
+        "boundary-waters-moose-lake-campsite-2:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
