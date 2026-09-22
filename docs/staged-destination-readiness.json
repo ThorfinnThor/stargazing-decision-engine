@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T10:12:40.052Z",
+  "generatedAt": "2026-09-22T10:26:33.623Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -3076,15 +3076,18 @@
             "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
             "https://darksky.org/places/oracle-state-park-dark-sky-park/",
             "https://www.openstreetmap.org/node/3350745581",
-            "https://www.openstreetmap.org/way/328503138"
+            "https://www.openstreetmap.org/way/328503138",
+            "https://api.open-meteo.com/v1/elevation?latitude=32.6215404,32.6096723&longitude=-110.7464941,-110.7336317"
           ],
           "verifiedFindings": [
             "Arizona State Parks explicitly defines two night-sky access models: public Star Parties near Kannally Ranch House on published dates and independently reservable after-hours entry at the American Avenue side gate.",
             "Independent visitors must call before 15:00, preferably on the same day, pay the current fee and obtain a four-digit padlock code; overnight camping remains prohibited.",
             "The American Avenue record uses the mapped parking point inside the official trailhead footprint. The Kannally Ranch House record uses the exact mapped building and remains unavailable unless the park publishes a new dated astronomy event or supplies a written arrangement.",
             "The current Oracle event calendar reviewed on 2026-09-22 lists no future astronomy event, so the Ranch House site has publicAccess no and accessScore 0 rather than implying routine night entry.",
+            "The completed Copernicus DEM ingestion measured 1307.162 metres at American Avenue and 1325.952 metres at Kannally Ranch House; the catalogue stores the corresponding rounded elevations of 1307 and 1326 metres.",
             "The unsupported Charouleau Gap record and the old coarse Ranch House pin have been removed. Both replacements and their images remain inactive and pending."
-          ]
+          ],
+          "requiredChanges": []
         },
         "records": [
           {
@@ -3156,10 +3159,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3169,28 +3172,18 @@
           "active": false,
           "publicAccess": "no",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "oracle-american-avenue-reserved-stargazing:climate",
-        "oracle-american-avenue-reserved-stargazing:black-marble",
-        "oracle-american-avenue-reserved-stargazing:dem",
-        "oracle-american-avenue-reserved-stargazing:scores",
-        "oracle-kannally-ranch-house-star-party:climate",
-        "oracle-kannally-ranch-house-star-party:black-marble",
-        "oracle-kannally-ranch-house-star-party:dem",
-        "oracle-kannally-ranch-house-star-party:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"

@@ -844,6 +844,8 @@ candidates[oracleStateParkIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["oracle-american-avenue-reserved-stargazing", 1307],
+  ["oracle-kannally-ranch-house-star-party", 1326],
   ["manitoulin-eco-park-observation-field", 240],
   ["manitoulin-eco-park-astro-night-check-in", 233],
   ["torrance-highland-pond-viewing-area", 246],
