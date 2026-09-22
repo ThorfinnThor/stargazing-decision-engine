@@ -1,0 +1,158 @@
+{
+  "siteId": "achi-heavens-sonohara-summit-event-site",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 72,
+          "totalPixelCount": 72
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.164948,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.164948,
+          "coverage": 1,
+          "validPixelCount": 1728,
+          "totalPixelCount": 1728
+        },
+        {
+          "year": 2024,
+          "radiance": 0.144866,
+          "coverage": 1,
+          "validPixelCount": 1728,
+          "totalPixelCount": 1728
+        },
+        {
+          "year": 2023,
+          "radiance": 0.189184,
+          "coverage": 1,
+          "validPixelCount": 1728,
+          "totalPixelCount": 1728
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.446894,
+      "coverage": 0.999513,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.446894,
+          "coverage": 0.999722,
+          "validPixelCount": 14363,
+          "totalPixelCount": 14367
+        },
+        {
+          "year": 2024,
+          "radiance": 0.419413,
+          "coverage": 0.999513,
+          "validPixelCount": 14360,
+          "totalPixelCount": 14367
+        },
+        {
+          "year": 2023,
+          "radiance": 0.471661,
+          "coverage": 0.99993,
+          "validPixelCount": 14366,
+          "totalPixelCount": 14367
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.916316,
+      "coverage": 0.99967,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.93743,
+          "coverage": 0.999706,
+          "validPixelCount": 84870,
+          "totalPixelCount": 84895
+        },
+        {
+          "year": 2024,
+          "radiance": 1.883895,
+          "coverage": 0.99967,
+          "validPixelCount": 84867,
+          "totalPixelCount": 84895
+        },
+        {
+          "year": 2023,
+          "radiance": 1.916316,
+          "coverage": 0.999717,
+          "validPixelCount": 84871,
+          "totalPixelCount": 84895
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.164948,
+  "radiance10to30": 0.446894,
+  "radiance30to75": 1.916316,
+  "alanExposure": 0.208248,
+  "darknessScore": 79.02,
+  "coverage": 0.999513,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T07:49:19.332573Z"
+}

@@ -1,0 +1,158 @@
+{
+  "siteId": "sark-la-valette-campsite",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 89,
+          "totalPixelCount": 89
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.007142,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.002382,
+          "coverage": 1,
+          "validPixelCount": 2161,
+          "totalPixelCount": 2161
+        },
+        {
+          "year": 2024,
+          "radiance": 0.007142,
+          "coverage": 1,
+          "validPixelCount": 2161,
+          "totalPixelCount": 2161
+        },
+        {
+          "year": 2023,
+          "radiance": 0.007145,
+          "coverage": 1,
+          "validPixelCount": 2161,
+          "totalPixelCount": 2161
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.08323,
+      "coverage": 0.998279,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.082785,
+          "coverage": 0.99889,
+          "validPixelCount": 17990,
+          "totalPixelCount": 18010
+        },
+        {
+          "year": 2024,
+          "radiance": 0.08323,
+          "coverage": 0.998778,
+          "validPixelCount": 17988,
+          "totalPixelCount": 18010
+        },
+        {
+          "year": 2023,
+          "radiance": 0.08607,
+          "coverage": 0.998279,
+          "validPixelCount": 17979,
+          "totalPixelCount": 18010
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.145914,
+      "coverage": 0.998307,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.123908,
+          "coverage": 0.99905,
+          "validPixelCount": 106236,
+          "totalPixelCount": 106337
+        },
+        {
+          "year": 2024,
+          "radiance": 0.145914,
+          "coverage": 0.998994,
+          "validPixelCount": 106230,
+          "totalPixelCount": 106337
+        },
+        {
+          "year": 2023,
+          "radiance": 0.160589,
+          "coverage": 0.998307,
+          "validPixelCount": 106157,
+          "totalPixelCount": 106337
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.007142,
+  "radiance10to30": 0.08323,
+  "radiance30to75": 0.145914,
+  "alanExposure": 0.027747,
+  "darknessScore": 88.9,
+  "coverage": 0.998279,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T07:49:40.965218Z"
+}
