@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T09:18:15.980Z",
+  "generatedAt": "2026-09-22T09:26:16.671Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 46,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -2505,6 +2505,7 @@
             "The Guardians identify the smooth granite outcrop immediately behind the Ministry sign as the main dark-sky viewing area; a geotagged 2024 nighttime photograph documents a separate footprint at 44.942622, -79.513414 north of the parking and beside the first trail segment.",
             "The current trail page marks Pine Ridge Loop temporarily closed and its eastern connecting boardwalk out of operation, so the route remains at the main viewing outcrop and does not promote the ridge alternative.",
             "Current reserve rules permit camping and fire-making only at six designated campsites away from the viewing area; neither the parking record nor the viewing record grants camping or fire permission, and same-day Ontario Parks alerts remain a required check.",
+            "The completed Copernicus DEM ingestion measured 245.773 metres at the granite viewing point and 247.952 metres at the parking point; the catalogue stores the corresponding rounded elevations of 246 and 248 metres.",
             "Both catalogue records remain inactive, and both image licences remain pending."
           ],
           "requiredChanges": []
@@ -2585,10 +2586,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2598,28 +2599,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "torrance-highland-pond-viewing-area:climate",
-        "torrance-highland-pond-viewing-area:black-marble",
-        "torrance-highland-pond-viewing-area:dem",
-        "torrance-highland-pond-viewing-area:scores",
-        "torrance-highland-pond-parking:climate",
-        "torrance-highland-pond-parking:black-marble",
-        "torrance-highland-pond-parking:dem",
-        "torrance-highland-pond-parking:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

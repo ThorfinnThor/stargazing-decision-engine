@@ -767,6 +767,8 @@ candidates[torranceBarrensIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["torrance-highland-pond-viewing-area", 246],
+  ["torrance-highland-pond-parking", 248],
   ["puna-posta-hornillos-guided-observation", 2368],
   ["puna-tumbaya-solar-train-boarding", 2096],
   ["mudgee-observatory-booked-session", 602],
