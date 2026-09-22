@@ -1,0 +1,158 @@
+{
+  "siteId": "kopaonik-grand-pool-sky-stay",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 1.298441,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.530776,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2024,
+          "radiance": 1.257993,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        },
+        {
+          "year": 2023,
+          "radiance": 1.298441,
+          "coverage": 1,
+          "validPixelCount": 80,
+          "totalPixelCount": 80
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.28843,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.320753,
+          "coverage": 1,
+          "validPixelCount": 1929,
+          "totalPixelCount": 1929
+        },
+        {
+          "year": 2024,
+          "radiance": 0.257692,
+          "coverage": 1,
+          "validPixelCount": 1929,
+          "totalPixelCount": 1929
+        },
+        {
+          "year": 2023,
+          "radiance": 0.28843,
+          "coverage": 1,
+          "validPixelCount": 1929,
+          "totalPixelCount": 1929
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.748509,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.794695,
+          "coverage": 1,
+          "validPixelCount": 16088,
+          "totalPixelCount": 16088
+        },
+        {
+          "year": 2024,
+          "radiance": 0.748509,
+          "coverage": 1,
+          "validPixelCount": 16088,
+          "totalPixelCount": 16088
+        },
+        {
+          "year": 2023,
+          "radiance": 0.7278,
+          "coverage": 1,
+          "validPixelCount": 16088,
+          "totalPixelCount": 16088
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.044115,
+      "coverage": 0.999726,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.140119,
+          "coverage": 0.999726,
+          "validPixelCount": 94970,
+          "totalPixelCount": 94996
+        },
+        {
+          "year": 2024,
+          "radiance": 1.044115,
+          "coverage": 0.999747,
+          "validPixelCount": 94972,
+          "totalPixelCount": 94996
+        },
+        {
+          "year": 2023,
+          "radiance": 1.027319,
+          "coverage": 0.999768,
+          "validPixelCount": 94974,
+          "totalPixelCount": 94996
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 1.298441,
+  "radiance2to10": 0.28843,
+  "radiance10to30": 0.748509,
+  "radiance30to75": 1.044115,
+  "alanExposure": 0.605842,
+  "darknessScore": 57.25,
+  "coverage": 0.999726,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T21:26:10.483346Z"
+}

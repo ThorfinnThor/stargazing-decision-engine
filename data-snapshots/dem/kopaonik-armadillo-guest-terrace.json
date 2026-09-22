@@ -1,0 +1,33 @@
+{
+  "siteId": "kopaonik-armadillo-guest-terrace",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    43.2767046,
+    20.7676804
+  ],
+  "tile": "N43_00_E020_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N43_00_E020_00_DEM/Copernicus_DSM_COG_10_N43_00_E020_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1394.03,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1377.281,
+      "validSampleCount": 282
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1341.572,
+      "validSampleCount": 4523
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T21:27:32.668021Z"
+}
