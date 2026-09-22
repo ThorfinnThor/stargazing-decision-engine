@@ -1044,6 +1044,8 @@ const copernicusElevationOverrides = new Map([
   ["kopaonik-grand-pool-sky-stay", 1731],
   ["mapungubwe-leokwe-rest-camp", 547],
   ["mapungubwe-mazhou-campsite", 533],
+  ["makgadikgadi-eselbe-fireside", 911],
+  ["makgadikgadi-kubu-community-campsite", 909],
   ["boundary-waters-moose-lake-campsite-1", 410],
   ["boundary-waters-moose-lake-campsite-2", 412],
   ["parashant-mount-trumbull-trailhead", 1983],

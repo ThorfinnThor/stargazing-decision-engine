@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T22:04:33.145Z",
+  "generatedAt": "2026-09-22T22:12:10.580Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -1930,7 +1930,7 @@
             "The Trust's visually verified 2025-2027 price list charges per-night camping and separately lists stargazing; it also states that camping outside gazetted areas is prohibited by law.",
             "The revised records use the mapped Eselbe Camp footprint and a mapped designated Kubu camp pitch. The old generic Nata Sanctuary pin and materially incorrect Kubu approach coordinate are removed.",
             "The two records are separate overnight bookings and never a two-stop night route. Eselbe observing remains in the host-managed fireside footprint; Kubu observing remains in the assigned campsite after a daylight arrival and current road-opening check.",
-            "Open-Meteo returned preliminary elevations of 912 metres at Eselbe and 903 metres at Kubu; the catalogue DEM pipeline must independently replace or confirm both values."
+            "Open-Meteo returned preliminary elevations of 912 metres at Eselbe and 903 metres at Kubu. Production Copernicus DEM GLO-30 samples are 911.142 and 908.568 metres, and the catalogue stores 911 and 909 metres."
           ],
           "requiredChanges": []
         },
@@ -1998,10 +1998,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2011,28 +2011,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "makgadikgadi-eselbe-fireside:climate",
-        "makgadikgadi-eselbe-fireside:black-marble",
-        "makgadikgadi-eselbe-fireside:dem",
-        "makgadikgadi-eselbe-fireside:scores",
-        "makgadikgadi-kubu-community-campsite:climate",
-        "makgadikgadi-kubu-community-campsite:black-marble",
-        "makgadikgadi-kubu-community-campsite:dem",
-        "makgadikgadi-kubu-community-campsite:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
