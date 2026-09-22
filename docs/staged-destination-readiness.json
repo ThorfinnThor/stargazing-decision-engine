@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T08:53:20.964Z",
+  "generatedAt": "2026-09-22T09:18:15.980Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 48,
-    "withBlockedSources": 16,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 46,
+    "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 22,
-    "withVerifiedFactualReview": 28,
+    "requiringFactualChanges": 21,
+    "withVerifiedFactualReview": 29,
     "readyForActivation": 0
   },
   "records": [
@@ -1865,9 +1865,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 0,
         "blocked": 0,
-        "broken": 0,
+        "broken": 3,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "makgadikgadi",
@@ -1893,20 +1893,20 @@
           {
             "id": "makgadikgadi-source-1",
             "url": "https://www.botswanatourism.co.bw/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "makgadikgadi-source-2",
             "url": "https://www.gov.bw/",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "makgadikgadi-source-3",
             "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           }
         ]
       },
@@ -1942,6 +1942,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -2477,30 +2478,36 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
-        "blocked": 1,
+        "total": 11,
+        "reachable": 11,
+        "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "torrance-barrens",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
-            "https://files.ontario.ca/environment-and-energy/parks-and-protected-areas/mnr00_bcr0225.pdf",
-            "https://darksky.org/places/torrance-barrens-dark-sky-reserve/"
+            "https://www.ontarioparks.ca/cr/torrancebarrensconservationreserve",
+            "https://www.torrancebarrens.com/stargaze",
+            "https://www.torrancebarrens.com/directions",
+            "https://www.torrancebarrens.com/hiking",
+            "https://www.torrancebarrens.com/rules",
+            "https://www.torrancebarrens.com/camping-fire-ban-2020",
+            "https://www.openstreetmap.org/way/635730634",
+            "https://commons.wikimedia.org/wiki/File:Torrance_Barrens_Dark_Sky_Preserve_(53968290486).jpg",
+            "https://api.open-meteo.com/v1/elevation?latitude=44.942622,44.9415459&longitude=-79.513414,-79.5135668",
+            "https://www.ontarioparks.ca/alerts"
           ],
           "verifiedFindings": [
-            "Ontario's management statement recognizes night-sky viewing as an important activity and identifies the Highland Pond parking/access area, trails, toilet and dark-sky signage as the reserve's authorized visitor facilities.",
-            "The staged main-reserve and boardwalk pins are not tied to that named access facility and therefore lack a reviewed arrival and parking footprint."
+            "Ontario identifies the Highland Pond parking area off Southwood Road as the reserve's formal main access, and the exact unpaved parking polygon is mapped at 44.9415459, -79.5135668.",
+            "The Guardians identify the smooth granite outcrop immediately behind the Ministry sign as the main dark-sky viewing area; a geotagged 2024 nighttime photograph documents a separate footprint at 44.942622, -79.513414 north of the parking and beside the first trail segment.",
+            "The current trail page marks Pine Ridge Loop temporarily closed and its eastern connecting boardwalk out of operation, so the route remains at the main viewing outcrop and does not promote the ridge alternative.",
+            "Current reserve rules permit camping and fire-making only at six designated campsites away from the viewing area; neither the parking record nor the viewing record grants camping or fire permission, and same-day Ontario Parks alerts remain a required check.",
+            "Both catalogue records remain inactive, and both image licences remain pending."
           ],
-          "requiredChanges": [
-            {
-              "scope": "torrance-highland-pond",
-              "reason": "Replace the two coarse points with the exact Highland Pond access/parking and a separately documented viewing footprint, and incorporate current reserve fire, camping, trail and closure rules."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
@@ -2511,52 +2518,108 @@
           },
           {
             "id": "torrance-barrens-source-2",
-            "url": "https://www.ontario.ca/page/crown-land-use-policy-atlas",
+            "url": "https://www.ontarioparks.ca/cr/torrancebarrensconservationreserve",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "torrance-barrens-source-3",
-            "url": "https://darksky.org/places/torrance-barrens-dark-sky-reserve/",
-            "classification": "blocked",
-            "status": 403
+            "url": "https://www.torrancebarrens.com/stargaze",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-4",
+            "url": "https://www.torrancebarrens.com/directions",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-5",
+            "url": "https://www.torrancebarrens.com/hiking",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-6",
+            "url": "https://www.torrancebarrens.com/rules",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-7",
+            "url": "https://www.torrancebarrens.com/camping-fire-ban-2020",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-8",
+            "url": "https://www.openstreetmap.org/way/635730634",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-9",
+            "url": "https://commons.wikimedia.org/wiki/File:Torrance_Barrens_Dark_Sky_Preserve_(53968290486).jpg",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-10",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=44.942622,44.9415459&longitude=-79.513414,-79.5135668",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "torrance-barrens-source-11",
+            "url": "https://www.ontarioparks.ca/alerts",
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "torrance-barrens-main",
+          "id": "torrance-highland-pond-viewing-area",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "torrance-barrens-boardwalk",
+          "id": "torrance-highland-pond-parking",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "torrance-highland-pond-viewing-area:climate",
+        "torrance-highland-pond-viewing-area:black-marble",
+        "torrance-highland-pond-viewing-area:dem",
+        "torrance-highland-pond-viewing-area:scores",
+        "torrance-highland-pond-parking:climate",
+        "torrance-highland-pond-parking:black-marble",
+        "torrance-highland-pond-parking:dem",
+        "torrance-highland-pond-parking:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-access-manual-review-required",
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3858,9 +3921,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 2,
         "blocked": 0,
-        "broken": 0,
+        "broken": 1,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "boundary-waters",
@@ -3886,8 +3949,8 @@
           {
             "id": "boundary-waters-source-1",
             "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "boundary-waters-source-2",
@@ -3935,6 +3998,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"

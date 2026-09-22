@@ -4205,46 +4205,6 @@
     }
   },
   {
-    "id": "torrance-barrens-main",
-    "slug": "torrance-barrens-main",
-    "destinationId": "torrance-barrens",
-    "name": "Torrance Barrens conservation reserve",
-    "lat": 44.91,
-    "lon": -79.56,
-    "elevationM": 260,
-    "siteType": "conservation-reserve",
-    "publicAccess": "limited",
-    "accessScore": 64,
-    "active": false,
-    "priority": 82,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Torrance Barrens conservation reserve. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Torrance Barrens conservation reserve nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "torrance-barrens-boardwalk",
-    "slug": "torrance-barrens-boardwalk",
-    "destinationId": "torrance-barrens",
-    "name": "Torrance Barrens boardwalk",
-    "lat": 44.9,
-    "lon": -79.57,
-    "elevationM": 260,
-    "siteType": "boardwalk",
-    "publicAccess": "limited",
-    "accessScore": 56,
-    "active": false,
-    "priority": 82,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Torrance Barrens boardwalk. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Torrance Barrens boardwalk nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "manitoulin-meldrum",
     "slug": "manitoulin-meldrum",
     "destinationId": "manitoulin",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "The current official itinerary brings booked passengers by included road transfer from San Salvador de Jujuy or Salta to Tumbaya, where reception is scheduled for 19:20 and the guided train departs at 20:05. This record is an operational boarding point, not a second observing site. Follow the ticket's meeting point and operator transfer; do not substitute an independent arrival, platform visit or night session.",
       "de": "Der aktuelle offizielle Ablauf bringt gebuchte Gäste mit enthaltenem Straßentransfer ab San Salvador de Jujuy oder Salta nach Tumbaya. Dort sind der Empfang um 19:20 Uhr und die Abfahrt des geführten Zuges um 20:05 Uhr vorgesehen. Dieser Datensatz ist ein betrieblicher Einstiegsort und kein zweiter Beobachtungsplatz. Folge Treffpunkt und Betreibertransfer des Tickets; ersetze sie nicht durch eine selbstständige Anfahrt, einen Bahnsteigbesuch oder eine Nachtsitzung."
+    }
+  },
+  {
+    "id": "torrance-highland-pond-viewing-area",
+    "slug": "torrance-highland-pond-viewing-area",
+    "destinationId": "torrance-barrens",
+    "name": "Highland Pond main dark-sky viewing area",
+    "lat": 44.942622,
+    "lon": -79.513414,
+    "elevationM": 242,
+    "siteType": "granite-outcrop",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": false,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.torrancebarrens.com/stargaze",
+    "accessNotes": {
+      "en": "The Guardians identify the smooth granite outcrop immediately behind the Ministry sign on Southwood Road as the reserve's main dark-sky viewing area and welcome visitors after dark. This exact point is independently documented by a geotagged 2024 nighttime photograph on the granite north of the formal parking and beside the first mapped trail segment. Use only the established outcrop, keep lights and noise low, and do not extend onto wetlands or closed trails. The coordinate documents a viewing footprint; it does not permit camping or a fire.",
+      "de": "Die Guardians bezeichnen den glatten Granitaufschluss unmittelbar hinter dem Ministeriumsschild an der Southwood Road als Hauptfläche zur Nachthimmelbeobachtung und heißen Gäste nach Einbruch der Dunkelheit willkommen. Dieser genaue Punkt ist zusätzlich durch ein georeferenziertes Nachtfoto von 2024 auf dem Granit nördlich des offiziellen Parkplatzes und neben dem ersten kartierten Wegabschnitt dokumentiert. Nutze nur die bestehende Felsfläche, minimiere Licht und Lärm und weiche weder in Feuchtgebiete noch auf gesperrte Wege aus. Die Koordinate belegt eine Beobachtungsfläche; sie erlaubt weder Camping noch Feuer."
+    }
+  },
+  {
+    "id": "torrance-highland-pond-parking",
+    "slug": "torrance-highland-pond-parking",
+    "destinationId": "torrance-barrens",
+    "name": "Highland Pond parking and trailhead",
+    "lat": 44.9415459,
+    "lon": -79.5135668,
+    "elevationM": 246,
+    "siteType": "trailhead-parking",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": false,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.openstreetmap.org/way/635730634",
+    "accessNotes": {
+      "en": "Ontario identifies the Highland Pond parking area off Southwood Road as the reserve's formal main access, and the mapped unpaved parking polygon supplies this exact arrival point. The Guardians state that the first trail from this parking area leads to the dark-sky viewing area. This is an access record, not a second observing site: park only in the marked area, keep Southwood Road clear and carry equipment to the signed granite footprint. Do not camp or make a fire here.",
+      "de": "Ontario nennt den Parkplatz am Highland Pond an der Southwood Road als offiziellen Hauptzugang des Schutzgebiets; das kartierte unbefestigte Parkplatzpolygon liefert diesen genauen Ankunftspunkt. Laut Guardians führt der erste Weg von diesem Parkplatz zur Nachthimmel-Beobachtungsfläche. Dies ist ein Zugangsdatensatz und kein zweiter Beobachtungsort: Parke nur auf der ausgewiesenen Fläche, halte die Southwood Road frei und trage die Ausrüstung zur beschilderten Granitfläche. Campe hier nicht und mache kein Feuer."
     }
   }
 ]

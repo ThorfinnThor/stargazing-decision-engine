@@ -143,23 +143,29 @@
     },
     {
       "destinationId": "torrance-barrens",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.ontario.ca/page/torrance-barrens-conservation-reserve-management-statement",
-        "https://files.ontario.ca/environment-and-energy/parks-and-protected-areas/mnr00_bcr0225.pdf",
-        "https://darksky.org/places/torrance-barrens-dark-sky-reserve/"
+        "https://www.ontarioparks.ca/cr/torrancebarrensconservationreserve",
+        "https://www.torrancebarrens.com/stargaze",
+        "https://www.torrancebarrens.com/directions",
+        "https://www.torrancebarrens.com/hiking",
+        "https://www.torrancebarrens.com/rules",
+        "https://www.torrancebarrens.com/camping-fire-ban-2020",
+        "https://www.openstreetmap.org/way/635730634",
+        "https://commons.wikimedia.org/wiki/File:Torrance_Barrens_Dark_Sky_Preserve_(53968290486).jpg",
+        "https://api.open-meteo.com/v1/elevation?latitude=44.942622,44.9415459&longitude=-79.513414,-79.5135668",
+        "https://www.ontarioparks.ca/alerts"
       ],
       "verifiedFindings": [
-        "Ontario's management statement recognizes night-sky viewing as an important activity and identifies the Highland Pond parking/access area, trails, toilet and dark-sky signage as the reserve's authorized visitor facilities.",
-        "The staged main-reserve and boardwalk pins are not tied to that named access facility and therefore lack a reviewed arrival and parking footprint."
+        "Ontario identifies the Highland Pond parking area off Southwood Road as the reserve's formal main access, and the exact unpaved parking polygon is mapped at 44.9415459, -79.5135668.",
+        "The Guardians identify the smooth granite outcrop immediately behind the Ministry sign as the main dark-sky viewing area; a geotagged 2024 nighttime photograph documents a separate footprint at 44.942622, -79.513414 north of the parking and beside the first trail segment.",
+        "The current trail page marks Pine Ridge Loop temporarily closed and its eastern connecting boardwalk out of operation, so the route remains at the main viewing outcrop and does not promote the ridge alternative.",
+        "Current reserve rules permit camping and fire-making only at six designated campsites away from the viewing area; neither the parking record nor the viewing record grants camping or fire permission, and same-day Ontario Parks alerts remain a required check.",
+        "Both catalogue records remain inactive, and both image licences remain pending."
       ],
-      "requiredChanges": [
-        {
-          "scope": "torrance-highland-pond",
-          "reason": "Replace the two coarse points with the exact Highland Pond access/parking and a separately documented viewing footprint, and incorporate current reserve fire, camping, trail and closure rules."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "fundy",
