@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T11:20:24.296Z",
+  "generatedAt": "2026-09-22T11:53:22.054Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 18,
-    "withVerifiedFactualReview": 32,
+    "requiringFactualChanges": 17,
+    "withVerifiedFactualReview": 33,
     "readyForActivation": 0
   },
   "records": [
@@ -3010,46 +3010,115 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 13,
+        "reachable": 13,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "grand-canyon-parashant",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.nps.gov/thingstodo/stargaze-in-parashant.htm",
-            "https://home.nps.gov/para/planyourvisit/index.htm",
+            "https://www.blm.gov/visit/mount-trumbull",
+            "https://www.nps.gov/para/planyourvisit/mt-trumbull-summit-trail.htm",
+            "https://www.nps.gov/para/planyourvisit/mount-trumbull-scenic-loop-drive.htm",
+            "https://www.nps.gov/para/planyourvisit/accessibility.htm",
+            "https://www.nps.gov/para/planyourvisit/poverty-mountain-oak-grove-and-twin-point.htm",
+            "https://www.nps.gov/para/planyourvisit/4x4-vehicles-and-off-pavement-travel-safety.htm",
+            "https://www.nps.gov/para/planyourvisit/camping.htm",
+            "https://www.nps.gov/para/learn/management/superintendent-s-compendium.htm",
+            "https://www.blm.gov/programs/public-safety-and-fire/fire/regional-info/arizona/fire-restrictions",
+            "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/3",
+            "https://api.open-meteo.com/v1/elevation?latitude=36.39191793,36.39449207&longitude=-113.15106744,-113.57941422",
             "https://www.nps.gov/para/planyourvisit/brochure.htm"
           ],
           "verifiedFindings": [
-            "NPS explicitly authorizes self-directed night stargazing in Parashant, advises daylight scouting and designated parking, and warns that interior travel requires slow travel on rough roads, often with high-clearance four-wheel drive.",
-            "Tuweep is not the named Parashant location represented by the staged source set, and the two coarse points do not document a legal parking footprint or the remote-road route."
+            "NPS explicitly supports self-directed night stargazing in Parashant, requires daylight hazard scouting and designated parking, and warns that the monument has no towns, services, gasoline or dependable cell coverage.",
+            "The official BLM national recreation-site layer maps Mount Trumbull Trailhead at 36.39191793, -113.15106744 and the Poverty Junction toilet at 36.39449207, -113.57941422; NPS independently documents the associated CR5 trailhead and CR103/BLM1046 vault-toilet parking contexts.",
+            "Mount Trumbull Trailhead is a named BLM stargazing visitor site with parking and a vault toilet. Poverty Junction is retained only as a separate one-stop parking option; neither record is represented as a campsite, and Tuweep is removed because it lies in Grand Canyon National Park under separate rules.",
+            "NPS requires high-clearance four-wheel drive and all-terrain tyres for these routes, states that CR5 around Mount Trumbull is usually impassable from December through February, and warns that the CR103 clay roadbed can remain impassable for days after heavy rain.",
+            "All drinking water, fuel margin, recovery equipment, offline navigation and independent communications must be carried. The possible summer spigot at Mount Trumbull is untreated and unreliable, while current road, smoke, weather, closure and Arizona fire information must be rechecked for every trip.",
+            "Open-Meteo elevation samples at the reviewed coordinates are 1,983 metres for Mount Trumbull Trailhead and 1,769 metres for Poverty Junction; these are preliminary cross-checks pending the catalogue's Copernicus DEM refresh."
           ],
-          "requiredChanges": [
-            {
-              "scope": "parashant-specific-locations",
-              "reason": "Replace Tuweep and the generic Mount Trumbull point with exact NPS/BLM parking or campground features inside Parashant and include vehicle, road, water, communication and seasonal access requirements."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "grand-canyon-parashant-source-1",
-            "url": "https://www.blm.gov/national-conservation-lands/arizona/grandcanyon-parashant",
+            "url": "https://www.nps.gov/thingstodo/stargaze-in-parashant.htm",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "grand-canyon-parashant-source-2",
-            "url": "https://www.nps.gov/para/index.htm",
+            "url": "https://www.blm.gov/visit/mount-trumbull",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "grand-canyon-parashant-source-3",
+            "url": "https://www.nps.gov/para/planyourvisit/mt-trumbull-summit-trail.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-4",
+            "url": "https://www.nps.gov/para/planyourvisit/mount-trumbull-scenic-loop-drive.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-5",
+            "url": "https://www.nps.gov/para/planyourvisit/accessibility.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-6",
+            "url": "https://www.nps.gov/para/planyourvisit/poverty-mountain-oak-grove-and-twin-point.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-7",
+            "url": "https://www.nps.gov/para/planyourvisit/4x4-vehicles-and-off-pavement-travel-safety.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-8",
+            "url": "https://www.nps.gov/para/planyourvisit/camping.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-9",
+            "url": "https://www.nps.gov/para/learn/management/superintendent-s-compendium.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-10",
+            "url": "https://www.blm.gov/programs/public-safety-and-fire/fire/regional-info/arizona/fire-restrictions",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-11",
+            "url": "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/3",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-12",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=36.39191793,36.39449207&longitude=-113.15106744,-113.57941422",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "grand-canyon-parashant-source-13",
             "url": "https://www.nps.gov/para/planyourvisit/brochure.htm",
             "classification": "reachable",
             "status": 200
@@ -3059,36 +3128,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "parashant-tuweep",
+          "id": "parashant-mount-trumbull-trailhead",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "parashant-mount-trumbull",
+          "id": "parashant-poverty-junction-parking",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "parashant-mount-trumbull-trailhead:climate",
+        "parashant-mount-trumbull-trailhead:black-marble",
+        "parashant-mount-trumbull-trailhead:dem",
+        "parashant-mount-trumbull-trailhead:scores",
+        "parashant-poverty-junction-parking:climate",
+        "parashant-poverty-junction-parking:black-marble",
+        "parashant-poverty-junction-parking:dem",
+        "parashant-poverty-junction-parking:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -4073,7 +4151,7 @@
             "id": "boundary-waters-source-1",
             "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
             "classification": "reachable",
-            "status": 200
+            "status": 206
           },
           {
             "id": "boundary-waters-source-2",
@@ -4085,7 +4163,7 @@
             "id": "boundary-waters-source-3",
             "url": "https://www.fs.usda.gov/visit/know-before-you-go",
             "classification": "reachable",
-            "status": 206
+            "status": 200
           }
         ]
       },

@@ -239,23 +239,32 @@
     },
     {
       "destinationId": "grand-canyon-parashant",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.nps.gov/thingstodo/stargaze-in-parashant.htm",
-        "https://home.nps.gov/para/planyourvisit/index.htm",
+        "https://www.blm.gov/visit/mount-trumbull",
+        "https://www.nps.gov/para/planyourvisit/mt-trumbull-summit-trail.htm",
+        "https://www.nps.gov/para/planyourvisit/mount-trumbull-scenic-loop-drive.htm",
+        "https://www.nps.gov/para/planyourvisit/accessibility.htm",
+        "https://www.nps.gov/para/planyourvisit/poverty-mountain-oak-grove-and-twin-point.htm",
+        "https://www.nps.gov/para/planyourvisit/4x4-vehicles-and-off-pavement-travel-safety.htm",
+        "https://www.nps.gov/para/planyourvisit/camping.htm",
+        "https://www.nps.gov/para/learn/management/superintendent-s-compendium.htm",
+        "https://www.blm.gov/programs/public-safety-and-fire/fire/regional-info/arizona/fire-restrictions",
+        "https://gis.blm.gov/arcgis/rest/services/recreation/BLM_Natl_Recreation/MapServer/3",
+        "https://api.open-meteo.com/v1/elevation?latitude=36.39191793,36.39449207&longitude=-113.15106744,-113.57941422",
         "https://www.nps.gov/para/planyourvisit/brochure.htm"
       ],
       "verifiedFindings": [
-        "NPS explicitly authorizes self-directed night stargazing in Parashant, advises daylight scouting and designated parking, and warns that interior travel requires slow travel on rough roads, often with high-clearance four-wheel drive.",
-        "Tuweep is not the named Parashant location represented by the staged source set, and the two coarse points do not document a legal parking footprint or the remote-road route."
+        "NPS explicitly supports self-directed night stargazing in Parashant, requires daylight hazard scouting and designated parking, and warns that the monument has no towns, services, gasoline or dependable cell coverage.",
+        "The official BLM national recreation-site layer maps Mount Trumbull Trailhead at 36.39191793, -113.15106744 and the Poverty Junction toilet at 36.39449207, -113.57941422; NPS independently documents the associated CR5 trailhead and CR103/BLM1046 vault-toilet parking contexts.",
+        "Mount Trumbull Trailhead is a named BLM stargazing visitor site with parking and a vault toilet. Poverty Junction is retained only as a separate one-stop parking option; neither record is represented as a campsite, and Tuweep is removed because it lies in Grand Canyon National Park under separate rules.",
+        "NPS requires high-clearance four-wheel drive and all-terrain tyres for these routes, states that CR5 around Mount Trumbull is usually impassable from December through February, and warns that the CR103 clay roadbed can remain impassable for days after heavy rain.",
+        "All drinking water, fuel margin, recovery equipment, offline navigation and independent communications must be carried. The possible summer spigot at Mount Trumbull is untreated and unreliable, while current road, smoke, weather, closure and Arizona fire information must be rechecked for every trip.",
+        "Open-Meteo elevation samples at the reviewed coordinates are 1,983 metres for Mount Trumbull Trailhead and 1,769 metres for Poverty Junction; these are preliminary cross-checks pending the catalogue's Copernicus DEM refresh."
       ],
-      "requiredChanges": [
-        {
-          "scope": "parashant-specific-locations",
-          "reason": "Replace Tuweep and the generic Mount Trumbull point with exact NPS/BLM parking or campground features inside Parashant and include vehicle, road, water, communication and seasonal access requirements."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "oracle-state-park",
