@@ -1,0 +1,158 @@
+{
+  "siteId": "sierra-morena-cartuja-cazalla-astrotourism",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 73,
+          "totalPixelCount": 73
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.325897,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.327153,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        },
+        {
+          "year": 2024,
+          "radiance": 0.272484,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        },
+        {
+          "year": 2023,
+          "radiance": 0.325897,
+          "coverage": 1,
+          "validPixelCount": 1780,
+          "totalPixelCount": 1780
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.081426,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.081426,
+          "coverage": 1,
+          "validPixelCount": 14855,
+          "totalPixelCount": 14855
+        },
+        {
+          "year": 2024,
+          "radiance": 0.063733,
+          "coverage": 1,
+          "validPixelCount": 14855,
+          "totalPixelCount": 14855
+        },
+        {
+          "year": 2023,
+          "radiance": 0.084866,
+          "coverage": 1,
+          "validPixelCount": 14855,
+          "totalPixelCount": 14855
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.765307,
+      "coverage": 0.999441,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.765307,
+          "coverage": 0.999441,
+          "validPixelCount": 87659,
+          "totalPixelCount": 87708
+        },
+        {
+          "year": 2024,
+          "radiance": 1.655856,
+          "coverage": 0.999897,
+          "validPixelCount": 87699,
+          "totalPixelCount": 87708
+        },
+        {
+          "year": 2023,
+          "radiance": 1.787144,
+          "coverage": 0.99984,
+          "validPixelCount": 87694,
+          "totalPixelCount": 87708
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.325897,
+  "radiance10to30": 0.081426,
+  "radiance30to75": 1.765307,
+  "alanExposure": 0.198084,
+  "darknessScore": 79.58,
+  "coverage": 0.999441,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T20:34:16.416141Z"
+}

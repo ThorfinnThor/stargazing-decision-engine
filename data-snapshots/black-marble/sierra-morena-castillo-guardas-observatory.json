@@ -1,0 +1,158 @@
+{
+  "siteId": "sierra-morena-castillo-guardas-observatory",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 75,
+          "totalPixelCount": 75
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.101252,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.120093,
+          "coverage": 1,
+          "validPixelCount": 1778,
+          "totalPixelCount": 1778
+        },
+        {
+          "year": 2024,
+          "radiance": 0.076976,
+          "coverage": 1,
+          "validPixelCount": 1778,
+          "totalPixelCount": 1778
+        },
+        {
+          "year": 2023,
+          "radiance": 0.101252,
+          "coverage": 1,
+          "validPixelCount": 1778,
+          "totalPixelCount": 1778
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.395109,
+      "coverage": 0.999459,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.405127,
+          "coverage": 0.999459,
+          "validPixelCount": 14786,
+          "totalPixelCount": 14794
+        },
+        {
+          "year": 2024,
+          "radiance": 0.320459,
+          "coverage": 0.999932,
+          "validPixelCount": 14793,
+          "totalPixelCount": 14794
+        },
+        {
+          "year": 2023,
+          "radiance": 0.395109,
+          "coverage": 0.99973,
+          "validPixelCount": 14790,
+          "totalPixelCount": 14794
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 2.259785,
+      "coverage": 0.999463,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.259785,
+          "coverage": 0.999463,
+          "validPixelCount": 87406,
+          "totalPixelCount": 87453
+        },
+        {
+          "year": 2024,
+          "radiance": 2.12859,
+          "coverage": 0.99992,
+          "validPixelCount": 87446,
+          "totalPixelCount": 87453
+        },
+        {
+          "year": 2023,
+          "radiance": 2.282312,
+          "coverage": 0.999794,
+          "validPixelCount": 87435,
+          "totalPixelCount": 87453
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.101252,
+  "radiance10to30": 0.395109,
+  "radiance30to75": 2.259785,
+  "alanExposure": 0.197046,
+  "darknessScore": 79.63,
+  "coverage": 0.999459,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T20:34:16.176847Z"
+}
