@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T08:14:02.901Z",
+  "generatedAt": "2026-09-22T08:27:52.982Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -11,8 +11,8 @@
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 24,
-    "withVerifiedFactualReview": 26,
+    "requiringFactualChanges": 23,
+    "withVerifiedFactualReview": 27,
     "readyForActivation": 0
   },
   "records": [
@@ -2265,47 +2265,72 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 7,
+        "reachable": 7,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "mudgee",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
-            "https://www.nationalparks.nsw.gov.au/",
-            "https://www.environment.nsw.gov.au/"
+            "https://www.mudgeeobservatory.com.au/",
+            "https://www.mudgeeobservatory.com.au/fees.html",
+            "https://www.openstreetmap.org/node/8598919118",
+            "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+            "https://grattaigrove.com.au/",
+            "https://grattaigrove.com.au/contact-and-directions"
           ],
           "verifiedFindings": [
-            "Mudgee Region Tourism confirms that Mudgee Observatory at 961 Old Grattai Road is open to the public for essential-booking day and night sessions.",
-            "The staged observatory coordinate is only a coarse regional point and the Gulgong outskirts record has no reviewed astronomy-access source."
+            "Mudgee Region Tourism and the operator confirm that Mudgee Observatory at 961 Old Grattai Road runs public day and night sessions by essential advance booking; seasonal session times are supplied with the booking.",
+            "The operator's published coordinate and the mapped observatory feature resolve the exact visitor facility, replacing the former coarse regional pin.",
+            "The unsupported Gulgong record is replaced by Grattai Grove: its official destination listing publishes the exact property coordinate and explicitly promotes Milky Way stargazing after nightfall, while the operator confirms two bookable accommodation options, onsite parking directions and wildlife risk on twilight and night approaches.",
+            "The revised route is programme-only: visitors use either one confirmed observatory session or a separately booked Grattai Grove accommodation footprint, never both on one night and never a roadside or paddock substitute."
           ],
-          "requiredChanges": [
-            {
-              "scope": "mudgee-venue-records",
-              "reason": "Geocode and verify the observatory entrance, switch the primary route to programme-only, and replace the unsupported Gulgong pin with a second named and operator-confirmed venue or remove the destination from the two-site expansion model."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "mudgee-source-1",
-            "url": "https://www.visitmudgeeregion.com.au/",
+            "url": "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "mudgee-source-2",
-            "url": "https://www.nationalparks.nsw.gov.au/",
+            "url": "https://www.mudgeeobservatory.com.au/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "mudgee-source-3",
-            "url": "https://www.environment.nsw.gov.au/",
+            "url": "https://www.mudgeeobservatory.com.au/fees.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-4",
+            "url": "https://www.openstreetmap.org/node/8598919118",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-5",
+            "url": "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-6",
+            "url": "https://grattaigrove.com.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "mudgee-source-7",
+            "url": "https://grattaigrove.com.au/contact-and-directions",
             "classification": "reachable",
             "status": 200
           }
@@ -2314,7 +2339,7 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "mudgee-observatory",
+          "id": "mudgee-observatory-booked-session",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -2327,7 +2352,7 @@
           "imageStatus": "pending"
         },
         {
-          "id": "gulgong",
+          "id": "mudgee-grattai-grove-stay",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -2343,7 +2368,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
