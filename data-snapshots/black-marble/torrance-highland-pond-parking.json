@@ -1,0 +1,158 @@
+{
+  "siteId": "torrance-highland-pond-parking",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.066093,
+      "coverage": 0.997986,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.066093,
+          "coverage": 0.999496,
+          "validPixelCount": 1985,
+          "totalPixelCount": 1986
+        },
+        {
+          "year": 2024,
+          "radiance": 0.041258,
+          "coverage": 0.997986,
+          "validPixelCount": 1982,
+          "totalPixelCount": 1986
+        },
+        {
+          "year": 2023,
+          "radiance": 0.067643,
+          "coverage": 0.998993,
+          "validPixelCount": 1984,
+          "totalPixelCount": 1986
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.337147,
+      "coverage": 0.996915,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.35644,
+          "coverage": 0.997762,
+          "validPixelCount": 16497,
+          "totalPixelCount": 16534
+        },
+        {
+          "year": 2024,
+          "radiance": 0.27738,
+          "coverage": 0.997702,
+          "validPixelCount": 16496,
+          "totalPixelCount": 16534
+        },
+        {
+          "year": 2023,
+          "radiance": 0.337147,
+          "coverage": 0.996915,
+          "validPixelCount": 16483,
+          "totalPixelCount": 16534
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.611413,
+      "coverage": 0.995803,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.638485,
+          "coverage": 0.997072,
+          "validPixelCount": 97400,
+          "totalPixelCount": 97686
+        },
+        {
+          "year": 2024,
+          "radiance": 0.561249,
+          "coverage": 0.996479,
+          "validPixelCount": 97342,
+          "totalPixelCount": 97686
+        },
+        {
+          "year": 2023,
+          "radiance": 0.611413,
+          "coverage": 0.995803,
+          "validPixelCount": 97276,
+          "totalPixelCount": 97686
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.066093,
+  "radiance10to30": 0.337147,
+  "radiance30to75": 0.611413,
+  "alanExposure": 0.110492,
+  "darknessScore": 84.37,
+  "coverage": 0.995803,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T09:20:43.316981Z"
+}
