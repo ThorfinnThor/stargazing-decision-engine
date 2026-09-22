@@ -925,6 +925,8 @@ candidates[grandCanyonParashantIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["parashant-mount-trumbull-trailhead", 1983],
+  ["parashant-poverty-junction-parking", 1770],
   ["massacre-ranch-interpretive-camp-meadow", 1817],
   ["stevens-camp-interpretive-camp-meadow", 1756],
   ["oracle-american-avenue-reserved-stargazing", 1307],
