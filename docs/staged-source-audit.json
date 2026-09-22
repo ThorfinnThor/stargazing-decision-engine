@@ -1,16 +1,16 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-22T06:49:31.474Z",
+  "checkedAt": "2026-09-22T07:24:49.435Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 217,
-    "uniqueUrls": 217
+    "sourceRecords": 229,
+    "uniqueUrls": 230
   },
   "summary": {
-    "reachable": 176,
-    "blocked": 35,
+    "reachable": 190,
+    "blocked": 34,
     "missing": 0,
     "http-error": 0,
     "error": 6
@@ -33,7 +33,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2858,
+      "durationMs": 4904,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 306,
+      "durationMs": 362,
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 375,
+      "durationMs": 364,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 134,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -113,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 291,
+      "durationMs": 370,
       "error": null
     },
     {
@@ -133,7 +133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1058,
+      "durationMs": 382,
       "error": null
     },
     {
@@ -158,7 +158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2038,
+      "durationMs": 2070,
       "error": null
     },
     {
@@ -178,7 +178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1150,
+      "durationMs": 833,
       "error": null
     },
     {
@@ -208,7 +208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1238,
+      "durationMs": 872,
       "error": null
     },
     {
@@ -228,7 +228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 844,
+      "durationMs": 866,
       "error": null
     },
     {
@@ -248,7 +248,87 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 593,
+      "durationMs": 585,
+      "error": null
+    },
+    {
+      "url": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 129,
+      "error": null
+    },
+    {
+      "url": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 125,
+      "error": null
+    },
+    {
+      "url": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 96,
+      "error": null
+    },
+    {
+      "url": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 252,
       "error": null
     },
     {
@@ -268,7 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 330,
+      "durationMs": 378,
       "error": null
     },
     {
@@ -288,27 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/big-cypress-national-preserve/",
-      "references": [
-        {
-          "destinationId": "big-cypress",
-          "kind": "guide",
-          "sourceId": "big-cypress-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/big-cypress-national-preserve/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -328,7 +388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -348,7 +408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 82,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -368,7 +428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -398,7 +458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -418,7 +478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -438,7 +498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 135,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -468,7 +528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -488,7 +548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -508,7 +568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -528,7 +588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 513,
+      "durationMs": 518,
       "error": null
     },
     {
@@ -558,7 +618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 446,
+      "durationMs": 506,
       "error": null
     },
     {
@@ -588,7 +648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 554,
+      "durationMs": 543,
       "error": null
     },
     {
@@ -608,7 +668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1237,
+      "durationMs": 1242,
       "error": null
     },
     {
@@ -628,7 +688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf;charset=UTF-8",
-      "durationMs": 735,
+      "durationMs": 959,
       "error": null
     },
     {
@@ -658,7 +718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 758,
+      "durationMs": 929,
       "error": null
     },
     {
@@ -678,7 +738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 740,
+      "durationMs": 754,
       "error": null
     },
     {
@@ -698,7 +758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2879,
+      "durationMs": 2674,
       "error": null
     },
     {
@@ -723,7 +783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2669,
+      "durationMs": 2689,
       "error": null
     },
     {
@@ -743,7 +803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2663,
+      "durationMs": 2757,
       "error": null
     },
     {
@@ -763,7 +823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 78,
+      "durationMs": 73,
       "error": null
     },
     {
@@ -783,7 +843,32 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 225,
+      "durationMs": 178,
+      "error": null
+    },
+    {
+      "url": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-4"
+        },
+        {
+          "destinationId": "big-cypress",
+          "kind": "site",
+          "siteId": "big-cypress-midway-campground"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 669,
       "error": null
     },
     {
@@ -803,7 +888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 572,
+      "durationMs": 491,
       "error": null
     },
     {
@@ -828,7 +913,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 904,
+      "durationMs": 847,
       "error": null
     },
     {
@@ -848,7 +933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 561,
+      "durationMs": 596,
       "error": null
     },
     {
@@ -868,7 +953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 580,
+      "durationMs": 551,
       "error": null
     },
     {
@@ -888,7 +973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 541,
+      "durationMs": 555,
       "error": null
     },
     {
@@ -913,7 +998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 62,
+      "durationMs": 65,
       "error": null
     },
     {
@@ -933,7 +1018,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 129,
+      "durationMs": 126,
       "error": null
     },
     {
@@ -958,7 +1043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 400,
+      "durationMs": 431,
       "error": null
     },
     {
@@ -978,7 +1063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 5416,
+      "durationMs": 428,
       "error": null
     },
     {
@@ -998,7 +1083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 297,
+      "durationMs": 473,
       "error": null
     },
     {
@@ -1018,7 +1103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 176,
+      "durationMs": 364,
       "error": null
     },
     {
@@ -1038,7 +1123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 123,
+      "durationMs": 462,
       "error": null
     },
     {
@@ -1063,7 +1148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 778,
+      "durationMs": 906,
       "error": null
     },
     {
@@ -1083,7 +1168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 968,
+      "durationMs": 764,
       "error": null
     },
     {
@@ -1103,7 +1188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 861,
+      "durationMs": 788,
       "error": null
     },
     {
@@ -1123,7 +1208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 928,
+      "durationMs": 854,
       "error": null
     },
     {
@@ -1143,7 +1228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 893,
+      "durationMs": 874,
       "error": null
     },
     {
@@ -1168,7 +1253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1134,
+      "durationMs": 929,
       "error": null
     },
     {
@@ -1188,7 +1273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 323,
+      "durationMs": 320,
       "error": null
     },
     {
@@ -1208,7 +1293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 198,
+      "durationMs": 226,
       "error": null
     },
     {
@@ -1228,7 +1313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 144,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -1248,7 +1333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 155,
+      "durationMs": 159,
       "error": null
     },
     {
@@ -1278,7 +1363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1764,
+      "durationMs": 1724,
       "error": null
     },
     {
@@ -1298,7 +1383,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 255,
+      "durationMs": 263,
       "error": null
     },
     {
@@ -1318,7 +1403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 739,
+      "durationMs": 518,
       "error": null
     },
     {
@@ -1338,7 +1423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 277,
+      "durationMs": 413,
       "error": null
     },
     {
@@ -1358,7 +1443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 604,
+      "durationMs": 1646,
       "error": null
     },
     {
@@ -1378,7 +1463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 258,
+      "durationMs": 1422,
       "error": null
     },
     {
@@ -1398,7 +1483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 237,
+      "durationMs": 385,
       "error": null
     },
     {
@@ -1423,7 +1508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 419,
+      "durationMs": 519,
       "error": null
     },
     {
@@ -1443,7 +1528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 385,
+      "durationMs": 416,
       "error": null
     },
     {
@@ -1463,7 +1548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 394,
+      "durationMs": 419,
       "error": null
     },
     {
@@ -1483,7 +1568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 78,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -1508,7 +1593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 75,
+      "durationMs": 74,
       "error": null
     },
     {
@@ -1528,7 +1613,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1018,
+      "durationMs": 1054,
       "error": null
     },
     {
@@ -1558,7 +1643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 907,
+      "durationMs": 1017,
       "error": null
     },
     {
@@ -1578,7 +1663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 150,
+      "durationMs": 147,
       "error": null
     },
     {
@@ -1608,7 +1693,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 877,
+      "durationMs": 935,
       "error": null
     },
     {
@@ -1628,7 +1713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 108,
+      "durationMs": 110,
       "error": null
     },
     {
@@ -1648,7 +1733,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -1668,7 +1753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 72,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -1688,8 +1773,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 589,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "durationMs": 871,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://tpwd.texas.gov/state-parks/enchanted-rock",
@@ -1708,8 +1793,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 590,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "durationMs": 855,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites",
@@ -1728,8 +1813,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 578,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "durationMs": 592,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
@@ -1748,8 +1833,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 583,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "durationMs": 594,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
@@ -1773,8 +1858,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 580,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "durationMs": 584,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
@@ -1793,7 +1878,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 300,
+      "durationMs": 304,
       "error": null
     },
     {
@@ -1813,7 +1898,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 189,
+      "durationMs": 201,
       "error": null
     },
     {
@@ -1838,7 +1923,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 132,
+      "durationMs": 137,
       "error": null
     },
     {
@@ -1863,7 +1948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 138,
+      "durationMs": 140,
       "error": null
     },
     {
@@ -1883,7 +1968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 215,
+      "durationMs": 214,
       "error": null
     },
     {
@@ -1903,7 +1988,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 232,
+      "durationMs": 316,
       "error": null
     },
     {
@@ -1928,7 +2013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 233,
+      "durationMs": 292,
       "error": null
     },
     {
@@ -1948,7 +2033,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -1978,7 +2063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2008,7 +2093,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3431,
+      "durationMs": 3606,
       "error": null
     },
     {
@@ -2038,7 +2123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3459,
+      "durationMs": 3563,
       "error": null
     },
     {
@@ -2058,7 +2143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -2078,7 +2163,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 476,
+      "durationMs": 585,
       "error": null
     },
     {
@@ -2103,7 +2188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 508,
+      "durationMs": 552,
       "error": null
     },
     {
@@ -2123,7 +2208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 332,
+      "durationMs": 361,
       "error": null
     },
     {
@@ -2153,7 +2238,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 187,
+      "durationMs": 207,
       "error": null
     },
     {
@@ -2173,7 +2258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 101,
+      "durationMs": 147,
       "error": null
     },
     {
@@ -2193,7 +2278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 193,
+      "durationMs": 208,
       "error": null
     },
     {
@@ -2213,7 +2298,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 176,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -2238,7 +2323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 179,
+      "durationMs": 155,
       "error": null
     },
     {
@@ -2258,7 +2343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 291,
+      "durationMs": 260,
       "error": null
     },
     {
@@ -2278,7 +2363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 793,
+      "durationMs": 3445,
       "error": null
     },
     {
@@ -2308,7 +2393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 760,
+      "durationMs": 4469,
       "error": null
     },
     {
@@ -2328,7 +2413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 760,
+      "durationMs": 5088,
       "error": null
     },
     {
@@ -2358,7 +2443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 590,
+      "durationMs": 589,
       "error": null
     },
     {
@@ -2388,7 +2473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 891,
+      "durationMs": 888,
       "error": null
     },
     {
@@ -2413,7 +2498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 287,
+      "durationMs": 414,
       "error": null
     },
     {
@@ -2433,7 +2518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 215,
+      "durationMs": 436,
       "error": null
     },
     {
@@ -2463,7 +2548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 367,
+      "durationMs": 490,
       "error": null
     },
     {
@@ -2483,7 +2568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 538,
+      "durationMs": 557,
       "error": null
     },
     {
@@ -2503,7 +2588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 233,
+      "durationMs": 258,
       "error": null
     },
     {
@@ -2523,7 +2608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1893,
+      "durationMs": 1845,
       "error": null
     },
     {
@@ -2553,7 +2638,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1320,
+      "durationMs": 2237,
       "error": null
     },
     {
@@ -2573,7 +2658,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1505,
+      "durationMs": 1715,
       "error": null
     },
     {
@@ -2593,32 +2678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1844,
-      "error": null
-    },
-    {
-      "url": "https://www.environment.sa.gov.au/",
-      "references": [
-        {
-          "destinationId": "kangaroo-island",
-          "kind": "guide",
-          "sourceId": "kangaroo-island-source-3"
-        },
-        {
-          "destinationId": "sturt-stony-desert",
-          "kind": "guide",
-          "sourceId": "sturt-stony-desert-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.environment.sa.gov.au/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2454,
+      "durationMs": 1791,
       "error": null
     },
     {
@@ -2648,7 +2708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 161,
+      "durationMs": 169,
       "error": null
     },
     {
@@ -2698,7 +2758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 63,
       "error": null
     },
     {
@@ -2718,7 +2778,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -2748,7 +2808,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3433,
+      "durationMs": 3096,
       "error": null
     },
     {
@@ -2768,7 +2828,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1152,
+      "durationMs": 3681,
       "error": null
     },
     {
@@ -2788,7 +2848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1079,
+      "durationMs": 1259,
       "error": null
     },
     {
@@ -2808,7 +2868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 430,
+      "durationMs": 408,
       "error": null
     },
     {
@@ -2828,7 +2888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -2848,7 +2908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 864,
+      "durationMs": 1058,
       "error": null
     },
     {
@@ -2868,7 +2928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4009,
+      "durationMs": 2902,
       "error": null
     },
     {
@@ -2893,7 +2953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 234,
+      "durationMs": 379,
       "error": null
     },
     {
@@ -2923,7 +2983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 184,
+      "durationMs": 190,
       "error": null
     },
     {
@@ -2943,7 +3003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 181,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -2963,7 +3023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 80,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -2983,7 +3043,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 4586,
+      "durationMs": 4616,
       "error": null
     },
     {
@@ -3003,7 +3063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 114,
+      "durationMs": 321,
       "error": null
     },
     {
@@ -3023,7 +3083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 363,
+      "durationMs": 357,
       "error": null
     },
     {
@@ -3048,7 +3108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 521,
+      "durationMs": 1122,
       "error": null
     },
     {
@@ -3068,7 +3128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 116,
+      "durationMs": 141,
       "error": null
     },
     {
@@ -3088,7 +3148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 149,
+      "durationMs": 159,
       "error": null
     },
     {
@@ -3113,7 +3173,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1861,
+      "durationMs": 1730,
       "error": null
     },
     {
@@ -3133,7 +3193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 1276,
+      "durationMs": 1308,
       "error": null
     },
     {
@@ -3153,7 +3213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 68,
+      "durationMs": 73,
       "error": null
     },
     {
@@ -3173,7 +3233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 137,
+      "durationMs": 122,
       "error": null
     },
     {
@@ -3193,7 +3253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 996,
+      "durationMs": 875,
       "error": null
     },
     {
@@ -3213,7 +3273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 933,
+      "durationMs": 978,
       "error": null
     },
     {
@@ -3233,7 +3293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 891,
+      "durationMs": 1228,
       "error": null
     },
     {
@@ -3253,57 +3313,52 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1338,
+      "durationMs": 849,
       "error": null
     },
     {
-      "url": "https://www.nps.gov/bicy/index.htm",
+      "url": "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm",
       "references": [
         {
           "destinationId": "big-cypress",
           "kind": "guide",
-          "sourceId": "big-cypress-source-1"
-        },
-        {
-          "destinationId": "big-cypress",
-          "kind": "site",
-          "siteId": "big-cypress-wagonwheel"
-        },
-        {
-          "destinationId": "big-cypress",
-          "kind": "site",
-          "siteId": "big-cypress-camp"
+          "sourceId": "big-cypress-source-6"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.nps.gov/bicy/index.htm",
+      "finalUrl": "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 72,
+      "durationMs": 180,
       "error": null
     },
     {
-      "url": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+      "url": "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
       "references": [
         {
           "destinationId": "big-cypress",
           "kind": "guide",
           "sourceId": "big-cypress-source-2"
+        },
+        {
+          "destinationId": "big-cypress",
+          "kind": "site",
+          "siteId": "big-cypress-seagrape-night-sky-program"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+      "finalUrl": "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3333,7 +3388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -3353,7 +3408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -3373,7 +3428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -3398,7 +3453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -3428,7 +3483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -3448,7 +3503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 48,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -3468,7 +3523,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -3492,6 +3547,26 @@
       "error": null
     },
     {
+      "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 166,
+      "error": null
+    },
+    {
       "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
       "references": [
         {
@@ -3508,7 +3583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 188,
+      "durationMs": 168,
       "error": null
     },
     {
@@ -3533,7 +3608,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 48,
+      "durationMs": 53,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 285,
       "error": null
     },
     {
@@ -3553,7 +3648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 717,
+      "durationMs": 774,
       "error": null
     },
     {
@@ -3573,7 +3668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 742,
+      "durationMs": 661,
       "error": null
     },
     {
@@ -3593,7 +3688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 786,
+      "durationMs": 744,
       "error": null
     },
     {
@@ -3613,7 +3708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 733,
+      "durationMs": 632,
       "error": null
     },
     {
@@ -3643,7 +3738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 932,
+      "durationMs": 938,
       "error": null
     },
     {
@@ -3668,7 +3763,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 492,
+      "durationMs": 653,
       "error": null
     },
     {
@@ -3688,7 +3783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 434,
+      "durationMs": 415,
       "error": null
     },
     {
@@ -3718,7 +3813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 402,
+      "durationMs": 335,
       "error": null
     },
     {
@@ -3748,7 +3843,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 696,
+      "durationMs": 663,
       "error": null
     },
     {
@@ -3768,7 +3863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 197,
+      "durationMs": 199,
       "error": null
     },
     {
@@ -3788,7 +3883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 187,
+      "durationMs": 159,
       "error": null
     },
     {
@@ -3808,7 +3903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 197,
+      "durationMs": 140,
       "error": null
     },
     {
@@ -3828,11 +3923,181 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 130,
+      "durationMs": 620,
       "error": null
     },
     {
-      "url": "https://www.parks.sa.gov.au/",
+      "url": "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2348,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1855,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-8"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2158,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2870,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1796,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-4"
+        },
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "site",
+          "siteId": "kangaroo-rocky-river-campground"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1960,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+      "references": [
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "guide",
+          "sourceId": "kangaroo-island-source-5"
+        },
+        {
+          "destinationId": "kangaroo-island",
+          "kind": "site",
+          "siteId": "kangaroo-west-bay-campground"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1846,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "references": [
+        {
+          "destinationId": "sturt-stony-desert",
+          "kind": "guide",
+          "sourceId": "sturt-stony-desert-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 2356,
+      "error": null
+    },
+    {
+      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
       "references": [
         {
           "destinationId": "sturt-stony-desert",
@@ -3844,71 +4109,61 @@
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.parks.sa.gov.au/",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2040,
+      "durationMs": 1568,
       "error": null
     },
     {
-      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
       "references": [
         {
           "destinationId": "sturt-stony-desert",
           "kind": "guide",
-          "sourceId": "sturt-stony-desert-source-1"
+          "sourceId": "sturt-stony-desert-source-3"
         },
         {
           "destinationId": "sturt-stony-desert",
           "kind": "site",
-          "siteId": "sturt-stony-innamincka"
-        },
-        {
-          "destinationId": "sturt-stony-desert",
-          "kind": "site",
-          "siteId": "sturt-stony-cooper"
+          "siteId": "innamincka-cullyamurra-waterhole-campground"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2605,
+      "durationMs": 1753,
       "error": null
     },
     {
-      "url": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+      "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
       "references": [
         {
-          "destinationId": "kangaroo-island",
+          "destinationId": "sturt-stony-desert",
           "kind": "guide",
-          "sourceId": "kangaroo-island-source-1"
+          "sourceId": "sturt-stony-desert-source-4"
         },
         {
-          "destinationId": "kangaroo-island",
+          "destinationId": "sturt-stony-desert",
           "kind": "site",
-          "siteId": "kangaroo-west-bay"
-        },
-        {
-          "destinationId": "kangaroo-island",
-          "kind": "site",
-          "siteId": "kangaroo-flinders"
+          "siteId": "innamincka-policemans-waterhole-campground"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+      "finalUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1819,
+      "durationMs": 1510,
       "error": null
     },
     {
@@ -3928,7 +4183,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 351,
+      "durationMs": 692,
+      "error": null
+    },
+    {
+      "url": "https://www.recreation.gov/camping/campgrounds/246892",
+      "references": [
+        {
+          "destinationId": "big-cypress",
+          "kind": "guide",
+          "sourceId": "big-cypress-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 206,
+      "method": "GET",
+      "finalUrl": "https://www.recreation.gov/camping/campgrounds/246892",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 424,
       "error": null
     },
     {
@@ -3948,7 +4223,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 394,
+      "durationMs": 379,
       "error": null
     },
     {
@@ -3968,7 +4243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 507,
+      "durationMs": 289,
       "error": null
     },
     {
@@ -3988,7 +4263,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -4038,7 +4313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -4058,7 +4333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4078,7 +4353,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -4113,7 +4388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -4133,7 +4408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -4153,7 +4428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -4173,7 +4448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -4213,7 +4488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -4233,7 +4508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 108,
       "error": null
     },
     {
@@ -4253,7 +4528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -4273,7 +4548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4293,7 +4568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -4313,7 +4588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -4333,7 +4608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -4353,7 +4628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1051,
+      "durationMs": 1108,
       "error": null
     },
     {
@@ -4373,7 +4648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 970,
+      "durationMs": 841,
       "error": null
     },
     {
@@ -4393,7 +4668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 98,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -4433,27 +4708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 88,
-      "error": null
-    },
-    {
-      "url": "https://www.southaustralia.com/places-to-go/kangaroo-island",
-      "references": [
-        {
-          "destinationId": "kangaroo-island",
-          "kind": "guide",
-          "sourceId": "kangaroo-island-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "GET",
-      "finalUrl": "https://southaustralia.com/destinations/kangaroo-island",
-      "redirected": true,
-      "redirectCount": 2,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 1937,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4483,7 +4738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 941,
+      "durationMs": 2381,
       "error": null
     },
     {
@@ -4503,7 +4758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -4528,7 +4783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1017,
+      "durationMs": 19834,
       "error": null
     },
     {
@@ -4548,7 +4803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 971,
+      "durationMs": 19825,
       "error": null
     },
     {
@@ -4568,7 +4823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 609,
+      "durationMs": 161,
       "error": null
     },
     {
@@ -4588,7 +4843,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 226,
+      "durationMs": 242,
       "error": null
     },
     {
@@ -4608,7 +4863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 160,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -4628,7 +4883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1317,
+      "durationMs": 871,
       "error": null
     },
     {
@@ -4658,8 +4913,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 12971,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 6309 ms: Couldn't connect to server\n"
+      "durationMs": 11687,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 6383 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -4683,7 +4938,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 196,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -4708,7 +4963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 155,
+      "durationMs": 178,
       "error": null
     },
     {
@@ -4733,7 +4988,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1285,
+      "durationMs": 1452,
       "error": null
     },
     {
@@ -4753,7 +5008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1002,
+      "durationMs": 1195,
       "error": null
     },
     {
@@ -4782,8 +5037,8 @@
       "finalUrl": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 165,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 5567,
       "error": null
     },
     {
@@ -4813,7 +5068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 203,
+      "durationMs": 205,
       "error": null
     },
     {
@@ -4833,7 +5088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1052,
+      "durationMs": 497,
       "error": null
     },
     {
@@ -4853,7 +5108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 481,
+      "durationMs": 494,
       "error": null
     }
   ]

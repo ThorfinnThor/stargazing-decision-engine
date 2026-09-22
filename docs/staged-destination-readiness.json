@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T06:57:54.964Z",
+  "generatedAt": "2026-09-22T07:28:16.569Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 47,
     "withCleanSourceReachability": 48,
-    "withBlockedSources": 19,
+    "withBlockedSources": 18,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 30,
-    "withVerifiedFactualReview": 20,
+    "requiringFactualChanges": 27,
+    "withVerifiedFactualReview": 23,
     "readyForActivation": 0
   },
   "records": [
@@ -2107,49 +2107,71 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 7,
+        "reachable": 7,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "kangaroo-island",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+            "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
             "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
-            "https://www.parks.sa.gov.au/insider-tips/photography-on-ki",
-            "https://www.parks.sa.gov.au/park-management/new-in-sa-national-parks/flinders-chase-national-park-visitor-centre/visiting-flinders-chase-national-park"
+            "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+            "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+            "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+            "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf"
           ],
           "verifiedFindings": [
-            "South Australia's park authority explicitly promotes Flinders Chase for stargazing and recommends camping under the stars at a booked park campground.",
-            "West Bay is a real bookable 4WD campground, but the park is otherwise published as open from dawn to dusk and night wildlife makes discretionary driving unsafe.",
-            "The staged generic Flinders Chase area is not a bookable footprint and the route must not imply free night access to daytime attractions."
+            "Parks SA explicitly promotes Flinders Chase for stargazing and documents Rocky River and West Bay as separate bookable campgrounds.",
+            "The revised coordinates are representative points inside the official georeferenced campground footprints; West Bay requires 4WD and may close after rain, while Rocky River has allocated sites and visitor facilities.",
+            "The revised guide requires one booked campsite for the complete night, daylight arrival and departure, and no attraction-to-attraction or campground-to-campground driving after dark."
           ],
-          "requiredChanges": [
-            {
-              "scope": "kangaroo-island-booked-camps",
-              "reason": "Replace the generic park-area record with a second named bookable campground and make the complete night a daylight-arrival, one-camp stay with no attraction-to-attraction driving after dark."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "kangaroo-island-source-1",
-            "url": "https://www.parks.sa.gov.au/parks/kangaroo-island",
+            "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "kangaroo-island-source-2",
-            "url": "https://www.southaustralia.com/places-to-go/kangaroo-island",
+            "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "kangaroo-island-source-3",
-            "url": "https://www.environment.sa.gov.au/",
+            "url": "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-4",
+            "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-5",
+            "url": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-6",
+            "url": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "kangaroo-island-source-7",
+            "url": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf",
             "classification": "reachable",
             "status": 200
           }
@@ -2158,34 +2180,41 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "kangaroo-west-bay",
+          "id": "kangaroo-west-bay-campground",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "kangaroo-flinders",
+          "id": "kangaroo-rocky-river-campground",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "kangaroo-west-bay-campground:climate",
+        "kangaroo-west-bay-campground:black-marble",
+        "kangaroo-west-bay-campground:scores",
+        "kangaroo-rocky-river-campground:climate",
+        "kangaroo-rocky-river-campground:black-marble",
+        "kangaroo-rocky-river-campground:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3248,85 +3277,107 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
-        "blocked": 1,
+        "total": 6,
+        "reachable": 6,
+        "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "big-cypress",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
             "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
+            "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+            "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+            "https://www.recreation.gov/camping/campgrounds/246892",
             "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm"
           ],
           "verifiedFindings": [
-            "NPS promotes year-round stargazing from suitable developed locations and publishes recurring programmes at the south end of Seagrape Drive by the Nathaniel P. Reed Visitor Center.",
-            "The superintendent's compendium closes developed day-use areas after sunset unless prior permission is granted, so a general activity page does not authorize every boardwalk or parking area at night.",
-            "The staged Wagonwheel Road and Midway campground records do not match the current programme location or document the required permission."
+            "NPS promotes year-round stargazing and publishes current ranger programmes at the south end of Seagrape Drive; an official NPS event record maps that programme footprint exactly.",
+            "NPS separately publishes an exact coordinate and year-round visitor information for Midway Campground, while Recreation.gov supplies its reservation and quiet-hour rules.",
+            "The revised records keep the programme and booked campsite legally separate and do not imply that another boardwalk, road shoulder or closed day-use area is available after dark."
           ],
-          "requiredChanges": [
-            {
-              "scope": "big-cypress-authorized-night-use",
-              "reason": "Replace the generic pins with the official Seagrape Drive programme footprint and a separately authorized overnight or permission-based site, recording the current compendium and wildlife rules."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "big-cypress-source-1",
-            "url": "https://www.nps.gov/bicy/index.htm",
+            "url": "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "big-cypress-source-2",
-            "url": "https://www.nps.gov/bicy/planyourvisit/conditions.htm",
+            "url": "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "big-cypress-source-3",
-            "url": "https://darksky.org/places/big-cypress-national-preserve/",
-            "classification": "blocked",
-            "status": 403
+            "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "big-cypress-source-4",
+            "url": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "big-cypress-source-5",
+            "url": "https://www.recreation.gov/camping/campgrounds/246892",
+            "classification": "reachable",
+            "status": 206
+          },
+          {
+            "id": "big-cypress-source-6",
+            "url": "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm",
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "big-cypress-wagonwheel",
+          "id": "big-cypress-seagrape-night-sky-program",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "big-cypress-camp",
+          "id": "big-cypress-midway-campground",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "big-cypress-seagrape-night-sky-program:climate",
+        "big-cypress-seagrape-night-sky-program:black-marble",
+        "big-cypress-seagrape-night-sky-program:scores",
+        "big-cypress-midway-campground:climate",
+        "big-cypress-midway-campground:black-marble",
+        "big-cypress-midway-campground:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-access-manual-review-required",
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3815,30 +3866,31 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 8,
+        "reachable": 8,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "sturt-stony-desert",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
-            "https://www.parks.sa.gov.au/",
-            "https://www.environment.sa.gov.au/"
+            "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
+            "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
+            "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
+            "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+            "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+            "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+            "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2"
           ],
           "verifiedFindings": [
-            "South Australia's park service documents Innamincka Regional Reserve as a remote protected-area destination with bookable or designated visitor facilities and changing road conditions.",
-            "The staged reserve-centre and Cooper Creek regional points are not named astronomy or camping footprints and do not establish legal after-dark vehicle use."
+            "Parks SA documents Cullyamurra Waterhole and Policemans Waterhole as named bookable campgrounds requiring high-clearance 4WD access; official georeferenced reserve mapping fixes both campground locations.",
+            "The revised notes require a one-camp plan with daylight arrival and departure, booking, remote-area supplies and current road, water, flood, fire, wildlife and communications checks.",
+            "A Parks SA notice published on 4 August 2026 closes the relevant reserve areas because of major flooding until further notice, so the revised guide blocks all observing and camping use until Parks SA explicitly reopens the road and campground."
           ],
-          "requiredChanges": [
-            {
-              "scope": "innamincka-booked-camps",
-              "reason": "Replace both generic desert pins with exact named campgrounds and make the night a one-camp, daylight-arrival plan with current road, flood, fire and water checks."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
@@ -3849,13 +3901,43 @@
           },
           {
             "id": "sturt-stony-desert-source-2",
-            "url": "https://www.parks.sa.gov.au/",
+            "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sturt-stony-desert-source-3",
-            "url": "https://www.environment.sa.gov.au/",
+            "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-4",
+            "url": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-5",
+            "url": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-6",
+            "url": "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-7",
+            "url": "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sturt-stony-desert-source-8",
+            "url": "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2",
             "classification": "reachable",
             "status": 200
           }
@@ -3864,34 +3946,41 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "sturt-stony-innamincka",
+          "id": "innamincka-cullyamurra-waterhole-campground",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "sturt-stony-cooper",
+          "id": "innamincka-policemans-waterhole-campground",
           "active": false,
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "innamincka-cullyamurra-waterhole-campground:climate",
+        "innamincka-cullyamurra-waterhole-campground:black-marble",
+        "innamincka-cullyamurra-waterhole-campground:scores",
+        "innamincka-policemans-waterhole-campground:climate",
+        "innamincka-policemans-waterhole-campground:black-marble",
+        "innamincka-policemans-waterhole-campground:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

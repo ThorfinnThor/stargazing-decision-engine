@@ -1,5 +1,5 @@
 {
-  "siteId": "big-cypress-wagonwheel",
+  "siteId": "big-cypress-seagrape-night-sky-program",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    25.89,
-    -81.35
+    25.900808,
+    -81.325929
   ],
   "tile": "N25_00_W082_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N25_00_W082_00_DEM/Copernicus_DSM_COG_10_N25_00_W082_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 0.223,
+  "elevationM": 1.24,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 0.584,
-      "validSampleCount": 226
+      "elevationM": 0.42,
+      "validSampleCount": 225
     },
     {
       "radiusKm": 1,
-      "elevationM": 0.487,
-      "validSampleCount": 3655
+      "elevationM": 0.003,
+      "validSampleCount": 3665
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T12:00:42.464852Z"
+  "retrievedAt": "2026-09-22T07:22:10.441721Z"
 }

@@ -87,25 +87,23 @@
     },
     {
       "destinationId": "kangaroo-island",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+        "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
         "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
-        "https://www.parks.sa.gov.au/insider-tips/photography-on-ki",
-        "https://www.parks.sa.gov.au/park-management/new-in-sa-national-parks/flinders-chase-national-park-visitor-centre/visiting-flinders-chase-national-park"
+        "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+        "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+        "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+        "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf"
       ],
       "verifiedFindings": [
-        "South Australia's park authority explicitly promotes Flinders Chase for stargazing and recommends camping under the stars at a booked park campground.",
-        "West Bay is a real bookable 4WD campground, but the park is otherwise published as open from dawn to dusk and night wildlife makes discretionary driving unsafe.",
-        "The staged generic Flinders Chase area is not a bookable footprint and the route must not imply free night access to daytime attractions."
+        "Parks SA explicitly promotes Flinders Chase for stargazing and documents Rocky River and West Bay as separate bookable campgrounds.",
+        "The revised coordinates are representative points inside the official georeferenced campground footprints; West Bay requires 4WD and may close after rain, while Rocky River has allocated sites and visitor facilities.",
+        "The revised guide requires one booked campsite for the complete night, daylight arrival and departure, and no attraction-to-attraction or campground-to-campground driving after dark."
       ],
-      "requiredChanges": [
-        {
-          "scope": "kangaroo-island-booked-camps",
-          "reason": "Replace the generic park-area record with a second named bookable campground and make the complete night a daylight-arrival, one-camp stay with no attraction-to-attraction driving after dark."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "mudgee",
@@ -320,24 +318,22 @@
     },
     {
       "destinationId": "big-cypress",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
         "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
+        "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+        "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+        "https://www.recreation.gov/camping/campgrounds/246892",
         "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm"
       ],
       "verifiedFindings": [
-        "NPS promotes year-round stargazing from suitable developed locations and publishes recurring programmes at the south end of Seagrape Drive by the Nathaniel P. Reed Visitor Center.",
-        "The superintendent's compendium closes developed day-use areas after sunset unless prior permission is granted, so a general activity page does not authorize every boardwalk or parking area at night.",
-        "The staged Wagonwheel Road and Midway campground records do not match the current programme location or document the required permission."
+        "NPS promotes year-round stargazing and publishes current ranger programmes at the south end of Seagrape Drive; an official NPS event record maps that programme footprint exactly.",
+        "NPS separately publishes an exact coordinate and year-round visitor information for Midway Campground, while Recreation.gov supplies its reservation and quiet-hour rules.",
+        "The revised records keep the programme and booked campsite legally separate and do not imply that another boardwalk, road shoulder or closed day-use area is available after dark."
       ],
-      "requiredChanges": [
-        {
-          "scope": "big-cypress-authorized-night-use",
-          "reason": "Replace the generic pins with the official Seagrape Drive programme footprint and a separately authorized overnight or permission-based site, recording the current compendium and wildlife rules."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "lassen-volcanic",
@@ -432,23 +428,24 @@
     },
     {
       "destinationId": "sturt-stony-desert",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
-        "https://www.parks.sa.gov.au/",
-        "https://www.environment.sa.gov.au/"
+        "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
+        "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
+        "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
+        "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+        "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+        "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+        "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2"
       ],
       "verifiedFindings": [
-        "South Australia's park service documents Innamincka Regional Reserve as a remote protected-area destination with bookable or designated visitor facilities and changing road conditions.",
-        "The staged reserve-centre and Cooper Creek regional points are not named astronomy or camping footprints and do not establish legal after-dark vehicle use."
+        "Parks SA documents Cullyamurra Waterhole and Policemans Waterhole as named bookable campgrounds requiring high-clearance 4WD access; official georeferenced reserve mapping fixes both campground locations.",
+        "The revised notes require a one-camp plan with daylight arrival and departure, booking, remote-area supplies and current road, water, flood, fire, wildlife and communications checks.",
+        "A Parks SA notice published on 4 August 2026 closes the relevant reserve areas because of major flooding until further notice, so the revised guide blocks all observing and camping use until Parks SA explicitly reopens the road and campground."
       ],
-      "requiredChanges": [
-        {
-          "scope": "innamincka-booked-camps",
-          "reason": "Replace both generic desert pins with exact named campgrounds and make the night a one-camp, daylight-arrival plan with current road, flood, fire and water checks."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "alula",

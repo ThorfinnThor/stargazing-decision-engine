@@ -419,6 +419,142 @@ candidates[medicineRocksIndex] = [
   },
 ];
 
+const bigCypressIndex = candidates.findIndex(([id]) => id === "big-cypress");
+candidates[bigCypressIndex] = [
+  "big-cypress",
+  "Big Cypress",
+  "US",
+  "United States",
+  "north-america",
+  ["florida", "north-america"],
+  "America/New_York",
+  74,
+  ["dark-sky-park", "wetland", "wildlife"],
+  "Big Cypress National Preserve stargazing",
+  ["ochopee", "Ochopee", 25.85, -81.39],
+  [
+    ["big-cypress-seagrape-night-sky-program", "Seagrape Drive night-sky programme area", 25.900808, -81.325929, 8, "ranger-program-area", "limited", 68, "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm", "The National Park Service publishes its current winter astronomy programmes at the south end of Seagrape Drive, east of the Nathaniel P. Reed Visitor Center; an official event record maps this programme footprint at the coordinate shown. Use it only for a currently listed programme, follow ranger parking and boundary instructions, bring a chair and insect protection, use red light only, leave pets at home and accept weather cancellation. The marker does not authorize independent use of another day-use area after closing.", "Der National Park Service veröffentlicht seine aktuellen Winter-Astronomieprogramme am südlichen Ende der Seagrape Drive östlich des Nathaniel P. Reed Visitor Center; ein offizieller Veranstaltungseintrag kartiert die Programmfläche an der angegebenen Koordinate. Nutze sie nur für ein aktuell aufgeführtes Programm, folge den Ranger-Anweisungen zu Parkplatz und Grenze, bringe Sitzgelegenheit und Insektenschutz mit, verwende ausschließlich rotes Licht, lasse Haustiere zu Hause und akzeptiere wetterbedingte Absagen. Die Markierung erlaubt keine selbstständige Nutzung eines anderen Tagesbereichs nach dessen Schließung."],
+    ["big-cypress-midway-campground", "Midway Campground", 25.851926, -80.989444, 6, "campground", "limited", 60, "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm", "The National Park Service publishes this exact Midway Campground coordinate and identifies the campground as open year-round, subject to current conditions and a Recreation.gov reservation. Use only the assigned campsite as the overnight footprint, keep lighting and noise low during quiet hours, do not move to a day-use boardwalk after closing, and follow all wildlife, water and fire restrictions. A campsite booking is separate from the Seagrape astronomy programme.", "Der National Park Service veröffentlicht diese genaue Koordinate des Midway Campground und weist den Campingplatz vorbehaltlich aktueller Bedingungen und einer Reservierung über Recreation.gov als ganzjährig geöffnet aus. Nutze ausschließlich den zugewiesenen Stellplatz als Übernachtungsfläche, halte Licht und Lärm während der Ruhezeiten niedrig, wechsle nach Schließung nicht zu einem Tages-Boardwalk und beachte alle Wildtier-, Wasser- und Feuerregeln. Eine Campingbuchung ist vom Astronomieprogramm an der Seagrape Drive getrennt."],
+  ],
+  [
+    "https://www.nps.gov/thingstodo/stargazing-in-big-cypress.htm",
+    "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
+    "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
+    "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+    "https://www.recreation.gov/camping/campgrounds/246892",
+    "https://www.nps.gov/bicy/learn/management/big-cypress-superintendent-compendium.htm",
+  ],
+  "an official ranger programme or a separately booked campsite, never an improvised boardwalk stop.",
+  "Ein offizielles Rangerprogramm oder ein getrennt gebuchter Campingplatz, niemals ein improvisierter Halt an einem Boardwalk.",
+  {
+    accessMode: "programme-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "public-agency", "protected-area"],
+    sourceTitles: ["National Park Service: stargazing in Big Cypress", "National Park Service: current astronomy programmes", "National Park Service: official Seagrape programme footprint", "National Park Service: Midway Campground", "Recreation.gov: Midway reservations and campground rules", "National Park Service: current Big Cypress compendium"],
+    programmeDetailEn: "Seagrape Drive is usable only for a currently published ranger programme and its instructions. Midway Campground is a separate reservable overnight footprint; neither arrangement authorizes entry to another closed day-use area.",
+    programmeDetailDe: "Die Seagrape Drive ist nur im Rahmen eines aktuell veröffentlichten Rangerprogramms und dessen Anweisungen nutzbar. Der Midway Campground ist eine getrennte, buchbare Übernachtungsfläche; keiner der beiden Rahmen erlaubt den Zutritt zu einem anderen geschlossenen Tagesbereich.",
+  },
+];
+
+const kangarooIslandIndex = candidates.findIndex(([id]) => id === "kangaroo-island");
+candidates[kangarooIslandIndex] = [
+  "kangaroo-island",
+  "Kangaroo Island",
+  "AU",
+  "Australia",
+  "oceania",
+  ["south-australia", "oceania"],
+  "Australia/Adelaide",
+  83,
+  ["island", "coastal", "wildlife"],
+  "Kangaroo Island South Australia stargazing",
+  ["kingscote", "Kingscote", -35.66, 137.64],
+  [
+    ["kangaroo-west-bay-campground", "West Bay Campground", -35.888775, 136.552813, 15, "campground", "limited", 46, "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342", "Parks SA identifies West Bay as a small bookable campground reached by 4WD, and the official georeferenced campground map places its footprint at this representative coordinate. Book before travel, verify that West Bay Road remains open after rain, arrive in daylight, keep the vehicle parked for the complete dark interval and observe only beside the assigned site. Do not drive to park attractions after dark; wildlife is active at dawn, dusk and night.", "Parks SA weist West Bay als kleinen buchbaren Campingplatz mit 4WD-Zufahrt aus; die offizielle georeferenzierte Campingkarte verortet seine Fläche an dieser repräsentativen Koordinate. Buche vor der Fahrt, bestätige nach Regen die Öffnung der West Bay Road, komme bei Tageslicht an, lasse das Fahrzeug während der gesamten Dunkelphase stehen und beobachte nur neben dem zugewiesenen Platz. Fahre nach Einbruch der Dunkelheit keine Parkattraktionen an; Wildtiere sind in Dämmerung und Nacht aktiv."],
+    ["kangaroo-rocky-river-campground", "Rocky River Campground", -35.9522, 136.732703, 40, "campground", "limited", 62, "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689", "Parks SA lists Rocky River as a bookable campground with allocated sites, toilets and showers; the official georeferenced campground map places its footprint at this representative coordinate. Book and arrive during daylight, settle at the assigned site and keep the vehicle there until daylight returns. This is a separate overnight option, not a second stop after West Bay, and park fire, generator, wildlife and temporary-closure rules remain controlling.", "Parks SA führt Rocky River als buchbaren Campingplatz mit zugewiesenen Stellplätzen, Toiletten und Duschen; die offizielle georeferenzierte Campingkarte verortet seine Fläche an dieser repräsentativen Koordinate. Buche und komme bei Tageslicht an, richte dich am zugewiesenen Platz ein und lasse das Fahrzeug bis zur Rückkehr des Tageslichts dort stehen. Dies ist eine getrennte Übernachtungsoption und kein zweiter Halt nach West Bay; Feuer-, Generator-, Wildtier- und temporäre Sperrregeln des Parks bleiben maßgeblich."],
+  ],
+  [
+    "https://www.parks.sa.gov.au/parks/flinders-chase-national-park",
+    "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/accommodation",
+    "https://www.parks.sa.gov.au/insider-tips/stargazing-in-south-australia",
+    "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+    "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+    "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
+    "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/flinders-chase-west-bay-campground-map.pdf",
+  ],
+  "one booked Flinders Chase campsite for the complete night, with arrival and onward travel in daylight.",
+  "Ein gebuchter Campingplatz in Flinders Chase für die vollständige Nacht, mit Ankunft und Weiterfahrt bei Tageslicht.",
+  {
+    accessMode: "camp-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area"],
+    sourceTitles: ["Parks SA: Flinders Chase hours, conditions and safety", "Parks SA: Flinders Chase accommodation", "Parks SA: stargazing in South Australia", "Parks SA: Rocky River Campground booking", "Parks SA: West Bay Campground booking", "Parks SA: official Rocky River campground map", "Parks SA: official West Bay campground map"],
+    campDetailEn: "Parks SA explicitly promotes stargazing in Flinders Chase and identifies West Bay and Rocky River as bookable campgrounds. The usable plan is one overnight booking, daylight arrival and observing beside the assigned campsite, with the vehicle left parked until daylight returns. The second campground requires another booking and a separate daylight journey.",
+    campDetailDe: "Parks SA bewirbt Sternbeobachtung in Flinders Chase ausdrücklich und weist West Bay sowie Rocky River als buchbare Campingplätze aus. Der nutzbare Plan besteht aus einer Übernachtungsbuchung, Ankunft bei Tageslicht und Beobachtung neben dem zugewiesenen Stellplatz; das Fahrzeug bleibt bis zur Rückkehr des Tageslichts stehen. Der zweite Campingplatz erfordert eine weitere Buchung und eine getrennte Tagesfahrt.",
+    campArrivalRuleEn: "Reach the booked campsite in daylight and before any current arrival cutoff",
+    campArrivalRuleDe: "Den gebuchten Campingplatz bei Tageslicht und vor der aktuellen Ankunftsfrist erreichen",
+    campRouteRationaleEn: "The one-camp design protects dark adaptation and avoids a wildlife-sensitive transfer after dark.",
+    campRouteRationaleDe: "Das Ein-Camp-Design schützt die Dunkeladaption und vermeidet eine wildtiersensible Fahrt nach Einbruch der Dunkelheit.",
+    campFinishWarningEn: "The itinerary deliberately excludes driving between campgrounds or attractions after dark.",
+    campFinishWarningDe: "Die Route schließt Fahrten zwischen Campingplätzen oder Attraktionen nach Einbruch der Dunkelheit bewusst aus.",
+  },
+];
+
+const sturtStonyDesertIndex = candidates.findIndex(([id]) => id === "sturt-stony-desert");
+candidates[sturtStonyDesertIndex] = [
+  "sturt-stony-desert",
+  "Sturt Stony Desert",
+  "AU",
+  "Australia",
+  "oceania",
+  ["south-australia", "oceania"],
+  "Australia/Adelaide",
+  88,
+  ["desert", "remote", "outback"],
+  "Sturt Stony Desert South Australia",
+  ["innamincka", "Innamincka", -27.75, 140.73],
+  [
+    ["innamincka-cullyamurra-waterhole-campground", "Cullyamurra Waterhole Campground", -27.70194, 140.838605, 47, "campground", "limited", 36, "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138", "Parks SA identifies Cullyamurra Waterhole as a named bookable campground about 16 kilometres northeast of Innamincka, with high-clearance 4WD access and long-drop toilets; the official georeferenced reserve map places the campground at this coordinate. Do not travel to or use it while the flooding closure published on 4 August 2026 remains in force. Only after Parks SA explicitly reopens the route and campground may a booked visitor arrive in daylight, remain within one assigned camp for the whole night and leave after daylight, with water, communications, road, fire, flood, falling-branch and dingo precautions confirmed.", "Parks SA weist Cullyamurra Waterhole als benannten buchbaren Campingplatz etwa 16 Kilometer nordöstlich von Innamincka mit Zufahrt für hochgelegte Allradfahrzeuge und Plumpsklos aus; die offizielle georeferenzierte Reservatskarte verortet den Campingplatz an dieser Koordinate. Fahre den Ort nicht an und nutze ihn nicht, solange die am 4. August 2026 veröffentlichte Flutsperre gilt. Erst nach ausdrücklicher Wiederöffnung von Strecke und Campingplatz durch Parks SA darf ein gebuchter Gast bei Tageslicht ankommen, die ganze Nacht in einem zugewiesenen Camp bleiben und erst bei Tageslicht weiterfahren; Wasser, Kommunikation sowie Straßen-, Feuer-, Flut-, Astbruch- und Dingoschutz müssen bestätigt sein."],
+    ["innamincka-policemans-waterhole-campground", "Policemans Waterhole Campground", -27.758895, 140.703828, 41, "campground", "limited", 40, "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141", "Parks SA identifies Policemans Waterhole as a named bookable campground about two kilometres southwest of Innamincka via Fifteen Mile Track, requiring a high-clearance 4WD; the official georeferenced reserve map places it at this coordinate. Do not travel to or use it while the flooding closure published on 4 August 2026 remains in force. After an explicit reopening, book first, reach one assigned camp in daylight, keep the west gate clear, remain there throughout the dark interval and depart after daylight only after renewed road, water, communications, fire, flood and wildlife checks.", "Parks SA weist Policemans Waterhole als benannten buchbaren Campingplatz etwa zwei Kilometer südwestlich von Innamincka über den Fifteen Mile Track aus; erforderlich ist ein hochgelegtes Allradfahrzeug, und die offizielle georeferenzierte Reservatskarte verortet ihn an dieser Koordinate. Fahre den Ort nicht an und nutze ihn nicht, solange die am 4. August 2026 veröffentlichte Flutsperre gilt. Buche erst nach ausdrücklicher Wiederöffnung, erreiche ein zugewiesenes Camp bei Tageslicht, halte das Westtor frei, bleibe während der Dunkelphase dort und fahre erst bei Tageslicht nach erneuter Prüfung von Straße, Wasser, Kommunikation, Feuer, Flut und Wildtieren weiter."],
+  ],
+  [
+    "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve",
+    "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/accommodation",
+    "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
+    "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
+    "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Surrounds.pdf",
+    "https://cdn.environment.sa.gov.au/parks/docs/innamincka-regional-reserve/Innamincka-Regional-Reserve.pdf",
+    "https://www.parks.sa.gov.au/know-before-you-go/closures-and-alerts/malkumba-coongie-lakes-national-park-and-innamincka-regional-reserve-2",
+    "https://www.parks.sa.gov.au/know-before-you-go/desert-parks-bulletin-2",
+  ],
+  "two verified bookable campgrounds that remain unusable until the current flood closure is explicitly lifted.",
+  "Zwei verifizierte buchbare Campingplätze, die bis zur ausdrücklichen Aufhebung der aktuellen Flutsperre unbenutzbar bleiben.",
+  {
+    accessMode: "confirmation-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area"],
+    sourceTitles: ["Parks SA: Innamincka Regional Reserve", "Parks SA: Innamincka accommodation", "Parks SA: Cullyamurra Waterhole booking", "Parks SA: Policemans Waterhole booking", "Parks SA: official Innamincka surrounds map", "Parks SA: official regional-reserve map", "Parks SA: current flooding closure", "Parks SA: current Desert Parks Bulletin"],
+    confirmationDetailEn: "Cullyamurra Waterhole and Policemans Waterhole are exact named bookable campgrounds, but the Parks SA notice published on 4 August 2026 closes the relevant reserve areas because of major flooding until further notice. Neither record is usable until Parks SA explicitly reopens its road and campground and current booking, road, flood, fire, water and communications checks all pass.",
+    confirmationDetailDe: "Cullyamurra Waterhole und Policemans Waterhole sind genau verortete, benannte und buchbare Campingplätze. Der am 4. August 2026 veröffentlichte Hinweis von Parks SA sperrt die betroffenen Reservatsbereiche jedoch wegen schwerer Überschwemmungen bis auf Weiteres. Keiner der Datensätze ist nutzbar, bevor Parks SA Straße und Campingplatz ausdrücklich wieder öffnet und aktuelle Prüfungen von Buchung, Straße, Flut, Feuer, Wasser und Kommunikation vollständig bestanden sind.",
+    confirmationWarningEn: "Do not begin an observing or camping visit while the current flooding closure remains. After reopening, use one booked campground only, arrive and depart in daylight, and do not drive between camps after dark.",
+    confirmationWarningDe: "Beginne keinen Beobachtungs- oder Campingbesuch, solange die aktuelle Flutsperre gilt. Nutze nach der Wiederöffnung nur einen gebuchten Campingplatz, komme und fahre bei Tageslicht und wechsle nach Einbruch der Dunkelheit nicht zwischen Camps.",
+  },
+];
+
+const copernicusElevationOverrides = new Map([
+  ["big-cypress-seagrape-night-sky-program", 1],
+  ["big-cypress-midway-campground", 3],
+  ["kangaroo-west-bay-campground", 26],
+  ["kangaroo-rocky-river-campground", 61],
+  ["innamincka-cullyamurra-waterhole-campground", 51],
+  ["innamincka-policemans-waterhole-campground", 47],
+]);
+for (const item of candidates) {
+  for (const site of item[11]) {
+    if (copernicusElevationOverrides.has(site[0])) site[4] = copernicusElevationOverrides.get(site[0]);
+  }
+}
+
 const stagedReviewBatch = read("scripts/catalog/staged-factual-review-batch-2026-09-21.json");
 if (stagedReviewBatch.records.length !== 36) {
   throw new Error(`Expected 36 factual reviews in the combined batch, found ${stagedReviewBatch.records.length}`);
@@ -573,9 +709,10 @@ const makeGuide = (item, index) => {
     leaveStep.body = bi(`Do not infer a night drive, walking return or overnight stay from the map. The dated authority response must state how the visit ends; follow that instruction exactly, account for every item and add no unverified detour or fallback.`, `Leite aus der Karte weder Nachtfahrt noch Fußrückweg oder Übernachtung ab. Die datierte Antwort der zuständigen Stelle muss festlegen, wie der Besuch endet; folge dieser Anweisung genau, prüfe jedes Ausrüstungsteil und ergänze weder ungeprüften Umweg noch Ausweichort.`);
   }
   if (campOnly) {
+    guide.standfirst = bi(`Use ${primary} or ${secondary} only as a booked overnight base, arrive in daylight and observe inside the assigned camping footprint. ${options.campFinishWarningEn ?? "Internal travel at night remains prohibited."} The coordinate never replaces a booking, vehicle requirement or current park instruction. Recheck the reservation, road, weather, fire and emergency conditions immediately before departure.`, `Nutze ${primary} oder ${secondary} ausschließlich als gebuchte Übernachtungsbasis, komme bei Tageslicht an und beobachte innerhalb der zugewiesenen Campingfläche. ${options.campFinishWarningDe ?? "Interne Fahrten bei Nacht bleiben verboten."} Die Koordinate ersetzt weder Buchung noch Fahrzeuganforderung oder aktuelle Parkanweisung. Prüfe Reservierung, Straße, Wetter, Feuerlage und Notfallbedingungen unmittelbar vor der Abfahrt erneut.`);
     guide.tour.summary = bi(`Use one booked campsite for the complete ${name} night. Finish reception and permits, arrive at ${primary} before dark, keep the vehicle parked and observe only inside the assigned camping footprint. Sleep at the same camp and resume travel after daylight; ${secondary} belongs to another booking and daylight transfer.`, `Nutze einen gebuchten Campingplatz für die vollständige ${name}-Nacht. Erledige Rezeption und Genehmigungen, erreiche ${primary} vor Dunkelheit, lasse das Fahrzeug stehen und beobachte nur innerhalb der zugewiesenen Campingfläche. Übernachte am selben Camp und fahre erst bei Tageslicht weiter; ${secondary} gehört zu einer anderen Buchung und Tagesetappe.`);
     guide.tour.duration = bi("One booked overnight with daylight arrival and departure", "Eine gebuchte Übernachtung mit An- und Abfahrt bei Tageslicht");
-    guide.tour.suitability = bi(`Only for overnight guests with a current campsite booking, the required vehicle, supplies and permits. It is not a drive-in viewpoint plan, and no travel between camps is permitted after dark.`, `Nur für Übernachtungsgäste mit aktueller Campingbuchung, vorgeschriebenem Fahrzeug, Vorräten und Genehmigungen. Dies ist kein Aussichtspunkt zum nächtlichen Anfahren; Fahrten zwischen Camps sind nach Einbruch der Dunkelheit unzulässig.`);
+    guide.tour.suitability = bi(`Only for overnight guests with a current campsite booking, the required vehicle, supplies and permits. It is not a drive-in viewpoint plan. ${options.campFinishWarningEn ?? "No travel between camps is permitted after dark."}`, `Nur für Übernachtungsgäste mit aktueller Campingbuchung, vorgeschriebenem Fahrzeug, Vorräten und Genehmigungen. Dies ist kein Aussichtspunkt zum nächtlichen Anfahren. ${options.campFinishWarningDe ?? "Fahrten zwischen Camps sind nach Einbruch der Dunkelheit unzulässig."}`);
     const arriveStep = guide.tour.steps.find((step) => step.id === `${id}-arrive`);
     arriveStep.body = bi(`Reach ${primary} before the park's overnight-arrival cutoff and before dark. Complete the booking check, read the assigned boundary and settle the vehicle once. Do not add ${secondary}; it requires its own booking and a separate daylight transfer.`, `Erreiche ${primary} vor der Ankunftsfrist für Übernachtungsgäste und vor Dunkelheit. Schließe die Buchungsprüfung ab, lies die zugewiesene Grenze und stelle das Fahrzeug einmalig ab. Ergänze ${secondary} nicht; dafür sind eine eigene Buchung und getrennte Tagesetappe nötig.`);
     const observeStep = guide.tour.steps.find((step) => step.id === `${id}-observe`);
@@ -583,7 +720,7 @@ const makeGuide = (item, index) => {
     const leaveStep = guide.tour.steps.find((step) => step.id === `${id}-leave`);
     leaveStep.timeHint = bi("After daylight returns", "Nach Rückkehr des Tageslichts");
     leaveStep.title = bi(`Leave ${primary} in daylight`, `${primary} bei Tageslicht verlassen`);
-    leaveStep.body = bi(`Sleep at the booked campsite and resume travel only after daylight, a fresh road-condition check and complete packing. Report as required at reception or headquarters; never turn the campsite observation into an unauthorised night drive.`, `Übernachte am gebuchten Campingplatz und fahre erst bei Tageslicht, nach neuer Straßenprüfung und vollständigem Packen weiter. Melde dich wie vorgeschrieben an Rezeption oder Parkzentrale; aus der Beobachtung am Camp darf niemals eine unerlaubte Nachtfahrt werden.`);
+    leaveStep.body = bi(`Sleep at the booked campsite and resume travel only after daylight, a fresh road-condition check and complete packing. Report as required at reception or headquarters. ${options.campFinishWarningEn ?? "Never turn the campsite observation into an unauthorised night drive."}`, `Übernachte am gebuchten Campingplatz und fahre erst bei Tageslicht, nach neuer Straßenprüfung und vollständigem Packen weiter. Melde dich wie vorgeschrieben an Rezeption oder Parkzentrale. ${options.campFinishWarningDe ?? "Aus der Beobachtung am Camp darf niemals eine unerlaubte Nachtfahrt werden."}`);
   }
   return guide;
 };
@@ -591,6 +728,7 @@ const makeGuide = (item, index) => {
 const makeTour = (item, index) => {
   const guide = makeGuide(item, index);
   const [id, name, , , , , , , , , stay, sites] = item;
+  const options = item[15] ?? {};
   const sourceIds = guide.sources.map((source) => source.id);
   const primary = sites[0][1];
   const base = stay[1];
@@ -623,10 +761,10 @@ const makeTour = (item, index) => {
   if (campOnly) {
     tour.facts[0] = { label: bi("Booked campsite", "Gebuchter Campingplatz"), value: bi(primary, primary), sourceIds };
     tour.facts[1] = { label: bi("Reception and permit base", "Rezeptions- und Genehmigungsbasis"), value: bi(base, base), sourceIds };
-    tour.facts[2] = { label: bi("Arrival rule", "Ankunftsregel"), value: bi("Complete reception and reach the booked camp before 16:00 and before dark", "Rezeption erledigen und das gebuchte Camp vor 16 Uhr sowie vor Dunkelheit erreichen"), sourceIds };
+    tour.facts[2] = { label: bi("Arrival rule", "Ankunftsregel"), value: bi(options.campArrivalRuleEn ?? "Complete reception and reach the booked camp before 16:00 and before dark", options.campArrivalRuleDe ?? "Rezeption erledigen und das gebuchte Camp vor 16 Uhr sowie vor Dunkelheit erreichen"), sourceIds };
     tour.blocks[0].paragraphs = {
-      en: [`${guide.editorialAngle.en} The one-camp design protects dark adaptation and complies with the prohibition on night driving.`, `Read the assigned campsite boundary before unloading. The vehicle remains parked from the daylight arrival until travel resumes after sunrise.`],
-      de: [`${guide.editorialAngle.de} Das Ein-Camp-Design schützt die Dunkeladaption und entspricht dem Verbot von Nachtfahrten.`, `Lies die Grenze der zugewiesenen Campingfläche vor dem Ausladen. Das Fahrzeug bleibt von der Ankunft bei Tageslicht bis zur Weiterfahrt nach Sonnenaufgang stehen.`],
+      en: [`${guide.editorialAngle.en} ${options.campRouteRationaleEn ?? "The one-camp design protects dark adaptation and complies with the prohibition on night driving."}`, `Read the assigned campsite boundary before unloading. The vehicle remains parked from the daylight arrival until travel resumes after sunrise.`],
+      de: [`${guide.editorialAngle.de} ${options.campRouteRationaleDe ?? "Das Ein-Camp-Design schützt die Dunkeladaption und entspricht dem Verbot von Nachtfahrten."}`, `Lies die Grenze der zugewiesenen Campingfläche vor dem Ausladen. Das Fahrzeug bleibt von der Ankunft bei Tageslicht bis zur Weiterfahrt nach Sonnenaufgang stehen.`],
     };
     tour.blocks[2].items[0] = { label: bi("Booking, daylight arrival and roads are confirmed", "Buchung, Tageslichtankunft und Straßen sind bestätigt"), body: bi(`Stay at ${primary}, keep the vehicle parked throughout the dark interval and depart only after daylight.`, `Bleibe an ${primary}, lasse das Fahrzeug während der gesamten Dunkelphase stehen und fahre erst bei Tageslicht ab.`), sourceIds };
   }
@@ -645,7 +783,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);
