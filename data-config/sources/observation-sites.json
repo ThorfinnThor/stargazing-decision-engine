@@ -4005,46 +4005,6 @@
     }
   },
   {
-    "id": "nata-bird-sanctuary",
-    "slug": "nata-bird-sanctuary",
-    "destinationId": "makgadikgadi",
-    "name": "Nata sanctuary area",
-    "lat": -20.23,
-    "lon": 25.23,
-    "elevationM": 930,
-    "siteType": "salt-pan",
-    "publicAccess": "limited",
-    "accessScore": 52,
-    "active": false,
-    "priority": 88,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.botswanatourism.co.bw/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Nata sanctuary area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Nata sanctuary area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "makgadikgadi-kubu",
-    "slug": "makgadikgadi-kubu",
-    "destinationId": "makgadikgadi",
-    "name": "Kubu Island approach",
-    "lat": -20.9,
-    "lon": 24.6,
-    "elevationM": 900,
-    "siteType": "salt-pan",
-    "publicAccess": "limited",
-    "accessScore": 44,
-    "active": false,
-    "priority": 88,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.botswanatourism.co.bw/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Kubu Island approach. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Kubu Island approach nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "tsumkwe-community",
     "slug": "tsumkwe-community",
     "destinationId": "tsumkwe",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "Grand Kopaonik directly describes its heated outdoor pool as a pool under the stars and publishes reservation and spa contacts. This record represents only the managed hotel guest or confirmed spa-access area. It is suitable for quiet unaided sky viewing when staff confirms the current hours and conditions; do not bring a tripod or telescope into the pool area unless the hotel explicitly assigns a safe place. A room or spa booking grants no access to adjacent ski runs or National Park terrain.",
       "de": "Grand Kopaonik beschreibt seinen beheizten Außenpool direkt als Pool unter den Sternen und veröffentlicht Reservierungs- und Spa-Kontakte. Dieser Datensatz bezeichnet ausschließlich den betreuten Gäste- oder bestätigten Spa-Bereich des Hotels. Er eignet sich für ruhige Beobachtung mit bloßem Auge, wenn das Personal aktuelle Zeiten und Bedingungen bestätigt; bringe weder Stativ noch Teleskop in den Poolbereich, sofern das Hotel keine sichere Fläche ausdrücklich zuweist. Zimmer- oder Spa-Buchung gewährt keinen Zugang zu benachbarten Skipisten oder Nationalparkgelände."
+    }
+  },
+  {
+    "id": "makgadikgadi-eselbe-fireside",
+    "slug": "makgadikgadi-eselbe-fireside",
+    "destinationId": "makgadikgadi",
+    "name": "Eselbe Camp fireside",
+    "lat": -20.1924008,
+    "lon": 26.1862734,
+    "elevationM": 912,
+    "siteType": "booked-astrotourism-stay",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": false,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.eselbecamp.com/",
+    "accessNotes": {
+      "en": "Eselbe Camp's official site identifies a bookable eco-camp on the Nata River and explicitly promotes evening stargazing by its communal fireside. Use this record only as an overnight guest after check-in and follow the host's current instructions for the shared fire-pit footprint. Keep equipment compact, protect other guests and wildlife from light and noise, and do not drive to Nata Bird Sanctuary or a pan after dark as a fallback.",
+      "de": "Die offizielle Seite von Eselbe Camp beschreibt ein buchbares Ökocamp am Nata River und bewirbt ausdrücklich abendliche Sternbeobachtung am gemeinschaftlichen Feuerplatz. Nutze diesen Datensatz nur als Übernachtungsgast nach dem Check-in und befolge die aktuellen Gastgeberanweisungen für die gemeinsam genutzte Feuerstelle. Halte Ausrüstung kompakt, schütze andere Gäste und Wildtiere vor Licht und Lärm und fahre nachts nicht ersatzweise zum Nata Bird Sanctuary oder auf eine Salzpfanne."
+    }
+  },
+  {
+    "id": "makgadikgadi-kubu-community-campsite",
+    "slug": "makgadikgadi-kubu-community-campsite",
+    "destinationId": "makgadikgadi",
+    "name": "Kubu Island Community Campsite",
+    "lat": -20.8930734,
+    "lon": 25.8229179,
+    "elevationM": 903,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": false,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.kubuisland.com/",
+    "accessNotes": {
+      "en": "Gaing-O Community Trust operates Kubu Island's bookable campsite and its 2025-2027 price list explicitly includes stargazing. Book and pay before travel, register on arrival, retain proof of payment and use only the assigned designated campsite. Reconfirm that the island and approach roads are open after rain; arrive in full daylight, keep the vehicle on marked roads, observe from the occupied camp and do not drive, self-walk or search the pan after dark.",
+      "de": "Der Gaing-O Community Trust betreibt den buchbaren Campingplatz auf Kubu Island; seine Preisliste 2025-2027 führt Sternbeobachtung ausdrücklich auf. Buche und zahle vor der Fahrt, registriere dich bei Ankunft, halte den Zahlungsnachweis bereit und nutze nur den zugewiesenen ausgewiesenen Campingplatz. Bestätige nach Regen erneut die Öffnung von Insel und Zufahrten, komme bei vollem Tageslicht an, lasse das Fahrzeug auf markierten Wegen, beobachte vom bewohnten Camp und fahre, wandere oder suche nachts nicht auf der Pfanne."
     }
   }
 ]

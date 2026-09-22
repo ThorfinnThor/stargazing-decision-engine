@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T21:38:54.545Z",
+  "generatedAt": "2026-09-22T22:04:33.145Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 44,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 12,
-    "withVerifiedFactualReview": 38,
+    "requiringFactualChanges": 11,
+    "withVerifiedFactualReview": 39,
     "readyForActivation": 0
   },
   "records": [
@@ -130,9 +130,9 @@
       },
       "sources": {
         "total": 9,
-        "reachable": 8,
+        "reachable": 9,
         "blocked": 0,
-        "broken": 1,
+        "broken": 0,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "sierra-morena",
@@ -200,8 +200,8 @@
           {
             "id": "sierra-morena-source-7",
             "url": "https://xn--asociacionastronomicadeespaa-oyc.es/Observaciones-astronomicas-publicas-2026/",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "sierra-morena-source-8",
@@ -249,7 +249,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -1761,9 +1760,9 @@
       },
       "sources": {
         "total": 10,
-        "reachable": 2,
-        "blocked": 6,
-        "broken": 2,
+        "reachable": 3,
+        "blocked": 7,
+        "broken": 0,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "mapungubwe",
@@ -1822,8 +1821,8 @@
           {
             "id": "mapungubwe-source-5",
             "url": "https://www.sanparks.org/travel/plan/useful-information/rules-regulations",
-            "classification": "not-audited",
-            "status": null
+            "classification": "blocked",
+            "status": 403
           },
           {
             "id": "mapungubwe-source-6",
@@ -1852,8 +1851,8 @@
           {
             "id": "mapungubwe-source-10",
             "url": "https://api.open-meteo.com/v1/elevation?latitude=-22.2177486,-22.187385&longitude=29.3648104,29.2012847",
-            "classification": "not-audited",
-            "status": null
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
@@ -1889,7 +1888,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -1906,47 +1904,88 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 9,
+        "reachable": 9,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "makgadikgadi",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-23",
           "reviewedUrls": [
+            "https://www.eselbecamp.com/",
+            "https://www.eselbecamp.com/accommodation",
+            "https://www.eselbecamp.com/contact-us",
+            "https://www.openstreetmap.org/way/1039179709",
+            "https://www.kubuisland.com/",
+            "https://www.kubuisland.com/assets/downloads/price_list.pdf",
+            "https://www.openstreetmap.org/node/13137026976",
             "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-            "https://www.botswanatourism.co.bw/",
-            "https://www.gov.bw/"
+            "https://api.open-meteo.com/v1/elevation?latitude=-20.1924008,-20.8930734&longitude=26.1862734,25.8229179"
           ],
           "verifiedFindings": [
-            "Botswana Tourism documents Makgadikgadi as a remote wildlife and salt-pan destination and identifies accommodation serving the wider pans region.",
-            "No reviewed government or tourism page confirms the staged Nata Sanctuary and Kubu Island approach pins as independent public astronomy sites after dark."
+            "Eselbe Camp's current official pages identify a bookable Nata River eco-camp, offer self-camping and other overnight accommodation, publish reservation and access directions and explicitly promote evening stargazing by the communal fireside.",
+            "Gaing-O Community Trust identifies itself as custodian and campsite operator at Kubu Island. Its current rules require registration, designated campsites, marked-road driving, designated fireplaces, quiet use and proof of payment.",
+            "The Trust's visually verified 2025-2027 price list charges per-night camping and separately lists stargazing; it also states that camping outside gazetted areas is prohibited by law.",
+            "The revised records use the mapped Eselbe Camp footprint and a mapped designated Kubu camp pitch. The old generic Nata Sanctuary pin and materially incorrect Kubu approach coordinate are removed.",
+            "The two records are separate overnight bookings and never a two-stop night route. Eselbe observing remains in the host-managed fireside footprint; Kubu observing remains in the assigned campsite after a daylight arrival and current road-opening check.",
+            "Open-Meteo returned preliminary elevations of 912 metres at Eselbe and 903 metres at Kubu; the catalogue DEM pipeline must independently replace or confirm both values."
           ],
-          "requiredChanges": [
-            {
-              "scope": "makgadikgadi-night-access",
-              "reason": "Obtain dated confirmation from the responsible reserve or community operator for a named booked camp, permitted night footprint, guide requirement and vehicle rules; otherwise replace both generic pan pins."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "makgadikgadi-source-1",
-            "url": "https://www.botswanatourism.co.bw/",
+            "url": "https://www.eselbecamp.com/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "makgadikgadi-source-2",
-            "url": "https://www.gov.bw/",
+            "url": "https://www.eselbecamp.com/accommodation",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "makgadikgadi-source-3",
+            "url": "https://www.eselbecamp.com/contact-us",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-4",
+            "url": "https://www.openstreetmap.org/way/1039179709",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-5",
+            "url": "https://www.kubuisland.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-6",
+            "url": "https://www.kubuisland.com/assets/downloads/price_list.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-7",
+            "url": "https://www.openstreetmap.org/node/13137026976",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-8",
             "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "makgadikgadi-source-9",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=-20.1924008,-20.8930734&longitude=26.1862734,25.8229179",
             "classification": "reachable",
             "status": 200
           }
@@ -1955,36 +1994,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "nata-bird-sanctuary",
+          "id": "makgadikgadi-eselbe-fireside",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "makgadikgadi-kubu",
+          "id": "makgadikgadi-kubu-community-campsite",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "makgadikgadi-eselbe-fireside:climate",
+        "makgadikgadi-eselbe-fireside:black-marble",
+        "makgadikgadi-eselbe-fireside:dem",
+        "makgadikgadi-eselbe-fireside:scores",
+        "makgadikgadi-kubu-community-campsite:climate",
+        "makgadikgadi-kubu-community-campsite:black-marble",
+        "makgadikgadi-kubu-community-campsite:dem",
+        "makgadikgadi-kubu-community-campsite:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3655,9 +3703,9 @@
       },
       "sources": {
         "total": 6,
-        "reachable": 4,
+        "reachable": 6,
         "blocked": 0,
-        "broken": 2,
+        "broken": 0,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "big-cypress",
@@ -3694,14 +3742,14 @@
           {
             "id": "big-cypress-source-3",
             "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
-            "classification": "missing",
-            "status": 404
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "big-cypress-source-4",
             "url": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
-            "classification": "missing",
-            "status": 404
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "big-cypress-source-5",
@@ -3749,7 +3797,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3858,9 +3905,9 @@
       },
       "sources": {
         "total": 5,
-        "reachable": 3,
+        "reachable": 5,
         "blocked": 0,
-        "broken": 2,
+        "broken": 0,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "dinosaur-national-monument",
@@ -3890,8 +3937,8 @@
           {
             "id": "dinosaur-national-monument-source-2",
             "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
-            "classification": "missing",
-            "status": 404
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "dinosaur-national-monument-source-3",
@@ -3902,8 +3949,8 @@
           {
             "id": "dinosaur-national-monument-source-4",
             "url": "https://home.nps.gov/dino/planyourvisit/conditions.htm",
-            "classification": "missing",
-            "status": 404
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "dinosaur-national-monument-source-5",
@@ -3945,7 +3992,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

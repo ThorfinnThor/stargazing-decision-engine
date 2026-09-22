@@ -376,23 +376,28 @@
     },
     {
       "destinationId": "makgadikgadi",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-23",
       "reviewedUrls": [
+        "https://www.eselbecamp.com/",
+        "https://www.eselbecamp.com/accommodation",
+        "https://www.eselbecamp.com/contact-us",
+        "https://www.openstreetmap.org/way/1039179709",
+        "https://www.kubuisland.com/",
+        "https://www.kubuisland.com/assets/downloads/price_list.pdf",
+        "https://www.openstreetmap.org/node/13137026976",
         "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-        "https://www.botswanatourism.co.bw/",
-        "https://www.gov.bw/"
+        "https://api.open-meteo.com/v1/elevation?latitude=-20.1924008,-20.8930734&longitude=26.1862734,25.8229179"
       ],
       "verifiedFindings": [
-        "Botswana Tourism documents Makgadikgadi as a remote wildlife and salt-pan destination and identifies accommodation serving the wider pans region.",
-        "No reviewed government or tourism page confirms the staged Nata Sanctuary and Kubu Island approach pins as independent public astronomy sites after dark."
+        "Eselbe Camp's current official pages identify a bookable Nata River eco-camp, offer self-camping and other overnight accommodation, publish reservation and access directions and explicitly promote evening stargazing by the communal fireside.",
+        "Gaing-O Community Trust identifies itself as custodian and campsite operator at Kubu Island. Its current rules require registration, designated campsites, marked-road driving, designated fireplaces, quiet use and proof of payment.",
+        "The Trust's visually verified 2025-2027 price list charges per-night camping and separately lists stargazing; it also states that camping outside gazetted areas is prohibited by law.",
+        "The revised records use the mapped Eselbe Camp footprint and a mapped designated Kubu camp pitch. The old generic Nata Sanctuary pin and materially incorrect Kubu approach coordinate are removed.",
+        "The two records are separate overnight bookings and never a two-stop night route. Eselbe observing remains in the host-managed fireside footprint; Kubu observing remains in the assigned campsite after a daylight arrival and current road-opening check.",
+        "Open-Meteo returned preliminary elevations of 912 metres at Eselbe and 903 metres at Kubu; the catalogue DEM pipeline must independently replace or confirm both values."
       ],
-      "requiredChanges": [
-        {
-          "scope": "makgadikgadi-night-access",
-          "reason": "Obtain dated confirmation from the responsible reserve or community operator for a named booked camp, permitted night footprint, guide requirement and vehicle rules; otherwise replace both generic pan pins."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "tsumkwe",
