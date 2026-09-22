@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T12:37:58.237Z",
+  "generatedAt": "2026-09-22T12:45:04.343Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -4134,6 +4134,7 @@
             "The Superior National Forest campsite layer identifies the replacement coordinates as open designated Moose Lake Campsites 1 and 2; the 2026 entry-point layer and Forest Service recreation layer independently locate Entry Point 25 and Moose Lake Boat Access.",
             "The revised itinerary is an ice-free permit-bound overnight paddle, not a road-access observing plan: Campsite 1 is the planned night and Campsite 2 is only a preplanned daylight contingency whose availability is not guaranteed by the entry permit.",
             "The bilingual guide now requires the correct entry date and point, designated-site camping, group limits, PFDs, shore-aware daylight travel, map and compass, treated water, first aid, food storage, a complete external itinerary, live closure and fire checks, and no paddling or campsite search after dark.",
+            "Copernicus DEM GLO-30 samples at the reviewed campsite coordinates are 410.225 and 412.386 metres; the catalogue stores the corresponding rounded elevations of 410 and 412 metres.",
             "Both replacement sites and the destination remain inactive, and all image records remain pending until separate snapshot, access and licence gates are complete."
           ],
           "requiredChanges": []
@@ -4196,10 +4197,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -4209,28 +4210,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "boundary-waters-moose-lake-campsite-1:climate",
-        "boundary-waters-moose-lake-campsite-1:black-marble",
-        "boundary-waters-moose-lake-campsite-1:dem",
-        "boundary-waters-moose-lake-campsite-1:scores",
-        "boundary-waters-moose-lake-campsite-2:climate",
-        "boundary-waters-moose-lake-campsite-2:black-marble",
-        "boundary-waters-moose-lake-campsite-2:dem",
-        "boundary-waters-moose-lake-campsite-2:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

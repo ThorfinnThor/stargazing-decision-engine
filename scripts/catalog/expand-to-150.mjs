@@ -962,6 +962,8 @@ candidates[boundaryWatersIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["boundary-waters-moose-lake-campsite-1", 410],
+  ["boundary-waters-moose-lake-campsite-2", 412],
   ["parashant-mount-trumbull-trailhead", 1983],
   ["parashant-poverty-junction-parking", 1770],
   ["massacre-ranch-interpretive-camp-meadow", 1817],
