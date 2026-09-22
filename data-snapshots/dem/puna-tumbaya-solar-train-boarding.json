@@ -1,0 +1,33 @@
+{
+  "siteId": "puna-tumbaya-solar-train-boarding",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -23.8534632,
+    -65.4652744
+  ],
+  "tile": "S24_00_W066_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S24_00_W066_00_DEM/Copernicus_DSM_COG_10_S24_00_W066_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 2095.501,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 2095.058,
+      "validSampleCount": 218
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 2099.045,
+      "validSampleCount": 3604
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T08:42:57.365756Z"
+}

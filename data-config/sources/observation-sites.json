@@ -4845,46 +4845,6 @@
     }
   },
   {
-    "id": "puna-salinas",
-    "slug": "puna-salinas",
-    "destinationId": "puna-argentina",
-    "name": "Salinas Grandes access",
-    "lat": -23.65,
-    "lon": -65,
-    "elevationM": 3450,
-    "siteType": "salt-flat",
-    "publicAccess": "limited",
-    "accessScore": 42,
-    "active": false,
-    "priority": 90,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.argentina.gob.ar/ambiente",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Salinas Grandes access. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Salinas Grandes access nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "puna-humahuaca",
-    "slug": "puna-humahuaca",
-    "destinationId": "puna-argentina",
-    "name": "Quebrada highland area",
-    "lat": -23.2,
-    "lon": -65.35,
-    "elevationM": 3000,
-    "siteType": "highland",
-    "publicAccess": "limited",
-    "accessScore": 46,
-    "active": false,
-    "priority": 90,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.argentina.gob.ar/ambiente",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Quebrada highland area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Quebrada highland area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "navarino-puerto-williams",
     "slug": "navarino-puerto-williams",
     "destinationId": "isla-navarino",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "Mudgee Region Tourism publishes this exact property coordinate and explicitly tells overnight guests they can stargaze and see the Milky Way after nightfall. Grattai Grove confirms two bookable accommodation options, the 809 Old Grattai Road address, signed onsite parking and wildlife on the twilight and night approach. This is not a public viewpoint: book the accommodation first, obtain the host's current instructions and observe only from the assigned private stay footprint without entering farm paddocks, roads or the observatory next door.",
       "de": "Mudgee Region Tourism veröffentlicht diese genaue Grundstückskoordinate und erklärt ausdrücklich, dass Übernachtungsgäste nach Einbruch der Dunkelheit Sterne und Milchstraße beobachten können. Grattai Grove bestätigt zwei buchbare Unterkünfte, die Adresse 809 Old Grattai Road, ausgeschilderte Parkplätze auf dem Gelände und Wildtiere auf der Zufahrt bei Dämmerung und Nacht. Dies ist kein öffentlicher Aussichtspunkt: Buche zuerst die Unterkunft, hole aktuelle Gastgeberhinweise ein und beobachte nur innerhalb der zugewiesenen privaten Unterkunftsfläche, nicht auf Weiden, Straßen oder am benachbarten Observatorium."
+    }
+  },
+  {
+    "id": "puna-posta-hornillos-guided-observation",
+    "slug": "puna-posta-hornillos-guided-observation",
+    "destinationId": "puna-argentina",
+    "name": "Posta de Hornillos guided observation stop",
+    "lat": -23.6546204,
+    "lon": -65.4314311,
+    "elevationM": 2368,
+    "siteType": "event-venue",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": false,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://trensolar.com.ar/cielo-en-movimiento/",
+    "accessNotes": {
+      "en": "The official Cielo en Movimiento itinerary names Posta de Hornillos as the 21:05 observing stop, with guided astronomy through professional telescopes followed by dinner. This coordinate identifies the mapped historic Posta, but it does not grant independent access. Use it only inside a dated Cielo en Movimiento booking, arrive with the included operator itinerary and leave with the scheduled return; do not drive to the site or remain after the group departs.",
+      "de": "Der offizielle Ablauf von Cielo en Movimiento nennt die Posta de Hornillos als Beobachtungshalt um 21:05 Uhr, mit geführter Astronomie an professionellen Teleskopen und anschließendem Abendessen. Diese Koordinate bezeichnet die kartierte historische Posta, gewährt aber keinen selbstständigen Zugang. Nutze sie ausschließlich im Rahmen einer datierten Cielo-en-Movimiento-Buchung, komme mit dem enthaltenen Betreiberablauf an und fahre mit der vorgesehenen Rückfahrt ab; fahre den Ort nicht selbstständig an und bleibe nicht nach Abfahrt der Gruppe."
+    }
+  },
+  {
+    "id": "puna-tumbaya-solar-train-boarding",
+    "slug": "puna-tumbaya-solar-train-boarding",
+    "destinationId": "puna-argentina",
+    "name": "Tumbaya Solar Train boarding station",
+    "lat": -23.8534632,
+    "lon": -65.4652744,
+    "elevationM": 2096,
+    "siteType": "tour-departure",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": false,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://trensolar.com.ar/cielo-en-movimiento/",
+    "accessNotes": {
+      "en": "The current official itinerary brings booked passengers by included road transfer from San Salvador de Jujuy or Salta to Tumbaya, where reception is scheduled for 19:20 and the guided train departs at 20:05. This record is an operational boarding point, not a second observing site. Follow the ticket's meeting point and operator transfer; do not substitute an independent arrival, platform visit or night session.",
+      "de": "Der aktuelle offizielle Ablauf bringt gebuchte Gäste mit enthaltenem Straßentransfer ab San Salvador de Jujuy oder Salta nach Tumbaya. Dort sind der Empfang um 19:20 Uhr und die Abfahrt des geführten Zuges um 20:05 Uhr vorgesehen. Dieser Datensatz ist ein betrieblicher Einstiegsort und kein zweiter Beobachtungsplatz. Folge Treffpunkt und Betreibertransfer des Tickets; ersetze sie nicht durch eine selbstständige Anfahrt, einen Bahnsteigbesuch oder eine Nachtsitzung."
     }
   }
 ]
