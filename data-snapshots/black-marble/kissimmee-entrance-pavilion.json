@@ -1,0 +1,158 @@
+{
+  "siteId": "kissimmee-entrance-pavilion",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 66,
+          "totalPixelCount": 66
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.091291,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.091291,
+          "coverage": 1,
+          "validPixelCount": 1588,
+          "totalPixelCount": 1588
+        },
+        {
+          "year": 2024,
+          "radiance": 0.080443,
+          "coverage": 1,
+          "validPixelCount": 1588,
+          "totalPixelCount": 1588
+        },
+        {
+          "year": 2023,
+          "radiance": 0.101216,
+          "coverage": 1,
+          "validPixelCount": 1588,
+          "totalPixelCount": 1588
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.132219,
+      "coverage": 0.999546,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.130866,
+          "coverage": 0.999849,
+          "validPixelCount": 13202,
+          "totalPixelCount": 13204
+        },
+        {
+          "year": 2024,
+          "radiance": 0.132219,
+          "coverage": 0.999697,
+          "validPixelCount": 13200,
+          "totalPixelCount": 13204
+        },
+        {
+          "year": 2023,
+          "radiance": 0.168102,
+          "coverage": 0.999546,
+          "validPixelCount": 13198,
+          "totalPixelCount": 13204
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.828783,
+      "coverage": 0.991088,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.914153,
+          "coverage": 0.992037,
+          "validPixelCount": 77363,
+          "totalPixelCount": 77984
+        },
+        {
+          "year": 2024,
+          "radiance": 1.781441,
+          "coverage": 0.991242,
+          "validPixelCount": 77301,
+          "totalPixelCount": 77984
+        },
+        {
+          "year": 2023,
+          "radiance": 1.828783,
+          "coverage": 0.991088,
+          "validPixelCount": 77289,
+          "totalPixelCount": 77984
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.091291,
+  "radiance10to30": 0.132219,
+  "radiance30to75": 1.828783,
+  "alanExposure": 0.14882,
+  "darknessScore": 82.27,
+  "coverage": 0.991088,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T06:52:07.978474Z"
+}

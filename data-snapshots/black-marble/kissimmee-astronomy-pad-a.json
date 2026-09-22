@@ -1,0 +1,158 @@
+{
+  "siteId": "kissimmee-astronomy-pad-a",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 60,
+          "totalPixelCount": 60
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 60,
+          "totalPixelCount": 60
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 60,
+          "totalPixelCount": 60
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.036916,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.036916,
+          "coverage": 1,
+          "validPixelCount": 1594,
+          "totalPixelCount": 1594
+        },
+        {
+          "year": 2024,
+          "radiance": 0.031813,
+          "coverage": 1,
+          "validPixelCount": 1594,
+          "totalPixelCount": 1594
+        },
+        {
+          "year": 2023,
+          "radiance": 0.037095,
+          "coverage": 1,
+          "validPixelCount": 1594,
+          "totalPixelCount": 1594
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.115499,
+      "coverage": 0.99947,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.115499,
+          "coverage": 0.999849,
+          "validPixelCount": 13217,
+          "totalPixelCount": 13219
+        },
+        {
+          "year": 2024,
+          "radiance": 0.11479,
+          "coverage": 0.999697,
+          "validPixelCount": 13215,
+          "totalPixelCount": 13219
+        },
+        {
+          "year": 2023,
+          "radiance": 0.141687,
+          "coverage": 0.99947,
+          "validPixelCount": 13212,
+          "totalPixelCount": 13219
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.923303,
+      "coverage": 0.989644,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.011247,
+          "coverage": 0.990643,
+          "validPixelCount": 77289,
+          "totalPixelCount": 78019
+        },
+        {
+          "year": 2024,
+          "radiance": 1.877297,
+          "coverage": 0.989797,
+          "validPixelCount": 77223,
+          "totalPixelCount": 78019
+        },
+        {
+          "year": 2023,
+          "radiance": 1.923303,
+          "coverage": 0.989644,
+          "validPixelCount": 77211,
+          "totalPixelCount": 78019
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.036916,
+  "radiance10to30": 0.115499,
+  "radiance30to75": 1.923303,
+  "alanExposure": 0.134542,
+  "darknessScore": 83.05,
+  "coverage": 0.989644,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T06:51:53.037544Z"
+}
