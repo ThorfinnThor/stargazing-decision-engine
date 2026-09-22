@@ -1,0 +1,33 @@
+{
+  "siteId": "parashant-poverty-junction-parking",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    36.39449207,
+    -113.57941422
+  ],
+  "tile": "N36_00_W114_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N36_00_W114_00_DEM/Copernicus_DSM_COG_10_N36_00_W114_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1770.476,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1770.807,
+      "validSampleCount": 250
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1771.199,
+      "validSampleCount": 4085
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T11:56:59.057420Z"
+}
