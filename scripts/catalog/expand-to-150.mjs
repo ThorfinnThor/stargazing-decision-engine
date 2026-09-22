@@ -614,7 +614,41 @@ candidates[achiVillageIndex] = [
   },
 ];
 
+const alulaIndex = candidates.findIndex(([id]) => id === "alula");
+candidates[alulaIndex] = [
+  "alula",
+  "AlUla",
+  "SA",
+  "Saudi Arabia",
+  "asia",
+  ["al-madinah", "asia"],
+  "Asia/Riyadh",
+  84,
+  ["desert", "heritage", "guided", "dark-sky-park"],
+  "AlUla Saudi Arabia stargazing",
+  ["alula", "AlUla", 26.61, 37.92],
+  [
+    ["alula-harrat-viewpoint", "Harrat Viewpoint", 26.6323669, 37.8966321, 1219, "desert-viewpoint", "limited", 64, "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint", "Experience AlUla maps this exact visitor viewpoint, states that it is 1,219 metres above sea level and currently opens from 14:00 to 22:00 with free parking, free entry and no booking requirement. The page explicitly describes naked-eye stars and onsite telescopes. Recheck the official page on the day, arrive while the route is clear, observe only inside the managed viewpoint footprint and finish before closing; the listing does not authorize camping or access beyond the visitor area.", "Experience AlUla kartiert diesen genauen Besucher-Aussichtspunkt, nennt 1.219 Meter Höhe und aktuell eine Öffnung von 14 bis 22 Uhr mit kostenlosem Parkplatz, freiem Eintritt und ohne Buchungspflicht. Die Seite beschreibt ausdrücklich Sterne mit bloßem Auge und Teleskope vor Ort. Prüfe die offizielle Seite am Besuchstag erneut, komme bei übersichtlicher Zufahrt an, beobachte nur innerhalb der betreuten Aussichtspunktfläche und beende den Besuch vor Schließung; der Eintrag erlaubt weder Camping noch Zugang außerhalb des Besucherbereichs."],
+    ["alula-gharameel-tour-departure", "Husaak Adventure Centre — Gharameel tour departure", 26.676728, 37.9083988, 980, "tour-departure", "limited", 20, "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel", "Experience AlUla maps this exact Husaak Adventure Centre arrival point for its guided Gharameel stargazing experience. It is a meeting and parking point, not the remote observing camp. The operator provides the 4×4 transfer to and from Gharameel; independent access is not supported. The current page says booking is coming back soon, so do not travel for the experience until a date-specific e-ticket is available. Then arrive at least 15 minutes early with ID, follow the guide, accept weather or visibility changes and return only with the included transport.", "Experience AlUla kartiert diesen genauen Ankunftspunkt am Husaak Adventure Centre für das geführte Gharameel-Sternbeobachtungserlebnis. Er ist Treff- und Parkplatz, nicht das abgelegene Beobachtungscamp. Der Betreiber stellt den Allradtransfer nach Gharameel und zurück; eine selbstständige Zufahrt ist nicht vorgesehen. Die aktuelle Seite meldet, dass die Buchung bald zurückkehrt. Fahre deshalb erst mit verfügbarem datiertem E-Ticket zum Erlebnis. Sei dann mindestens 15 Minuten vorher mit Ausweis vor Ort, folge dem Guide, akzeptiere Änderungen durch Wetter oder Sicht und kehre ausschließlich mit dem enthaltenen Transfer zurück."],
+  ],
+  [
+    "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
+    "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel",
+    "https://www.experiencealula.com/en/places-to-go/husaak-adventures",
+    "https://www.experiencealula.com/en/about/features/dark-sky-designation-in-alula",
+  ],
+  "an evening at the managed Harrat Viewpoint, with the guided Gharameel experience kept as a separately booked operator transfer.",
+  "Ein Abend am betreuten Harrat Viewpoint; das geführte Gharameel-Erlebnis bleibt ein getrennt gebuchter Betreibertransfer.",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["official-destination", "official-destination", "official-destination", "official-destination"],
+    sourceTitles: ["Experience AlUla: Harrat Viewpoint", "Experience AlUla: Stargazing at Gharameel", "Experience AlUla: Husaak Adventures", "Experience AlUla: Dark Sky designation"],
+  },
+];
+
 const copernicusElevationOverrides = new Map([
+  ["alula-harrat-viewpoint", 1162],
+  ["alula-gharameel-tour-departure", 738],
   ["sark-dachinger-observatory", 104],
   ["sark-la-valette-campsite", 96],
   ["achi-heavens-sonohara-summit-event-site", 1406],
@@ -868,7 +902,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village", "alula-harrat", "alula-hegra"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);

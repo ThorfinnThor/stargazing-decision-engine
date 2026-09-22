@@ -444,23 +444,20 @@
     },
     {
       "destinationId": "alula",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
-        "https://www.experiencealula.com/en",
-        "https://www.rcu.gov.sa/en"
+        "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel",
+        "https://www.experiencealula.com/en/places-to-go/husaak-adventures",
+        "https://www.experiencealula.com/en/about/features/dark-sky-designation-in-alula"
       ],
       "verifiedFindings": [
-        "Experience AlUla explicitly promotes naked-eye and telescope stargazing at Harrat Viewpoint.",
-        "The official visitor source does not establish Hegra as an independent astronomy site after its heritage visiting hours, and the staged Harrat coordinate still needs an exact visitor-arrival footprint."
+        "Experience AlUla's official directions resolve Harrat Viewpoint to its exact visitor footprint; the page publishes a 1,219-metre elevation, free parking, free entry, no booking requirement, current 14:00-22:00 hours and explicit naked-eye and telescope stargazing.",
+        "The unsupported Hegra record is replaced by the exact Husaak Adventure Centre meeting point for the official guided Gharameel experience. The source clearly distinguishes that arrival point from the remote observing area, includes operator 4x4 transport in both directions, and currently labels booking as coming back soon.",
+        "The revised guide uses Harrat as the independent managed evening stop and treats Gharameel only as a separate date-specific operator experience; it grants neither independent reserve access nor permission to observe at the meeting point."
       ],
-      "requiredChanges": [
-        {
-          "scope": "alula-night-venues",
-          "reason": "Retain Harrat only with exact access coordinates and current opening or booking rules, and replace Hegra with a second official night experience or remove it from the observing sites."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "jebel-akhdar",
