@@ -253,6 +253,73 @@ candidates[mapungubweIndex] = [
   },
 ];
 
+const fundyIndex = candidates.findIndex(([id]) => id === "fundy");
+candidates[fundyIndex] = [
+  "fundy",
+  "Fundy National Park",
+  "CA",
+  "Canada",
+  "north-america",
+  ["new-brunswick", "north-america"],
+  "America/Moncton",
+  81,
+  ["national-park", "coast", "forest"],
+  "Fundy National Park stargazing Canada",
+  ["alma-new-brunswick", "Alma", 45.60, -64.95],
+  [
+    ["fundy-chignecto-campground", "Chignecto Campground", 45.604208, -64.983783, 287, "campground", "limited", 64, "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto", "Parks Canada publishes this exact campground coordinate and recommends Chignecto as the overnight base for a Fundy stargazing stay. The catalogue's Copernicus GLO-30 snapshot measures 286.667 metres at the requested point. Reserve the campsite, check the operating season and current park notices, and do not treat the booking as permission to observe outside the assigned campground footprint after hours.", "Parks Canada veröffentlicht diese genaue Campingplatzkoordinate und empfiehlt Chignecto als Übernachtungsbasis für einen Sternbeobachtungsaufenthalt im Fundy-Nationalpark. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 286,667 Meter. Reserviere den Stellplatz, prüfe Saison und aktuelle Parkhinweise und behandle die Buchung nicht als Erlaubnis, außerhalb der zugewiesenen Campingfläche nach Betriebsschluss zu beobachten."],
+    ["fundy-wolfe-lake-viewing-area", "Wolfe Lake viewing area", 45.660629, -65.138197, 300, "lake-viewpoint", "limited", 60, "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star", "Parks Canada specifically recommends viewing the sky above Wolfe Lake; the coordinate is the published Wolfe Lake visitor footprint beside the lake, not an invitation to enter shoreline terrain. The catalogue's Copernicus GLO-30 snapshot measures 300.364 metres at the requested point. Check current opening and road notices, arrive in daylight, use only established parking and visitor surfaces, and return to the booked overnight base without improvising a second stop.", "Parks Canada empfiehlt ausdrücklich die Beobachtung des Himmels über dem Wolfe Lake; die Koordinate bezeichnet die veröffentlichte Besucherfläche am See und keine Einladung, Ufergelände zu betreten. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 300,364 Meter. Prüfe aktuelle Öffnungs- und Straßenhinweise, komme bei Tageslicht an, nutze nur bestehende Park- und Besucherflächen und kehre ohne improvisierten zweiten Halt zur gebuchten Übernachtungsbasis zurück."],
+  ],
+  [
+    "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
+    "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+    "https://parks.canada.ca/pn-np/nb/fundy/visit/centre",
+    "https://parks.canada.ca/pn-np/nb/fundy/activ/chaises-chairs",
+    "https://parks.canada.ca/pn-np/nb/fundy/visit/heures-hours",
+    "https://parks.canada.ca/pn-np/nb/fundy/visit",
+  ],
+  "a booked Chignecto base with one separately checked Wolfe Lake viewing visit",
+  "Eine gebuchte Basis in Chignecto mit einem getrennt geprüften Beobachtungsbesuch am Wolfe Lake",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "protected-area", "protected-area"],
+    sourceTitles: ["Parks Canada: camp among the stars at Fundy", "Parks Canada: Chignecto Campground", "Parks Canada: Wolfe Lake Visitor Centre", "Parks Canada: Wolfe Lake visitor coordinate", "Parks Canada: hours of operation", "Parks Canada: current conditions and closures"],
+  },
+];
+
+const dinosaurIndex = candidates.findIndex(([id]) => id === "dinosaur-national-monument");
+candidates[dinosaurIndex] = [
+  "dinosaur-national-monument",
+  "Dinosaur National Monument",
+  "US",
+  "United States",
+  "north-america",
+  ["utah", "colorado", "north-america"],
+  "America/Denver",
+  83,
+  ["national-monument", "desert", "river"],
+  "Dinosaur National Monument stargazing",
+  ["vernal", "Vernal", 40.46, -109.54],
+  [
+    ["dinosaur-split-mountain-night-sky", "Split Mountain night-sky viewing area", 40.438961, -109.252451, 1462, "dark-sky-viewpoint", "limited", 66, "https://www.nps.gov/dino/planyourvisit/splitmountainstargazing.htm", "The National Park Service identifies a designated stargazing spot near Split Mountain Campground, and its published event coordinate places non-camper arrival at the adjacent day-use area. The catalogue's Copernicus GLO-30 snapshot measures 1,462.048 metres at the requested point. Check current road and campground conditions, use the signed viewing and parking footprint, and do not infer camping from attendance at the viewing area.", "Der National Park Service weist nahe dem Split Mountain Campground einen vorgesehenen Sternbeobachtungsplatz aus; die veröffentlichte Veranstaltungskoordinate führt Besucher ohne Campingbuchung zum benachbarten Tagesbereich. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.462,048 Meter. Prüfe aktuelle Straßen- und Campingplatzbedingungen, nutze die ausgeschilderte Beobachtungs- und Parkfläche und leite aus dem Besuch keine Campingerlaubnis ab."],
+    ["dinosaur-echo-park-campground", "Echo Park Campground", 40.5208089, -108.9932317, 1552, "campground", "limited", 54, "https://www.nps.gov/dino/planyourvisit/echo-park.htm", "The National Park Service explicitly lists both camping and stargazing at Echo Park; the mapped campground coordinate identifies the developed overnight facility. The catalogue's Copernicus GLO-30 snapshot measures 1,551.513 metres at the requested point. Reach the booked camp in daylight, obey high-clearance and wet-road restrictions, remain within the campground footprint after dark and cancel rather than attempting the access road in unsuitable conditions.", "Der National Park Service nennt am Echo Park ausdrücklich Camping und Sternbeobachtung; die kartierte Campingplatzkoordinate bezeichnet die ausgebaute Übernachtungsanlage. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.551,513 Meter. Erreiche das gebuchte Camp bei Tageslicht, beachte Vorschriften zu Bodenfreiheit und nasser Straße, bleibe nach Einbruch der Dunkelheit innerhalb der Campingfläche und sage ab, statt die Zufahrt bei ungeeigneten Bedingungen zu versuchen."],
+  ],
+  [
+    "https://www.nps.gov/dino/planyourvisit/splitmountainstargazing.htm",
+    "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
+    "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
+    "https://home.nps.gov/dino/planyourvisit/conditions.htm",
+    "https://www.nps.gov/dino/learn/management/dinocompendium.htm",
+  ],
+  "one official night-sky footprint per evening, with Echo Park requiring a separate booked daylight approach",
+  "Eine offizielle Nachtbeobachtungsfläche pro Abend; Echo Park erfordert eine getrennte, gebuchte Anfahrt bei Tageslicht",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "protected-area"],
+    sourceTitles: ["National Park Service: Split Mountain stargazing", "National Park Service: Split Mountain night-sky event and coordinate", "National Park Service: Echo Park camping and stargazing", "National Park Service: current conditions", "National Park Service: monument compendium and campground rules"],
+  },
+];
+
 const stagedReviewBatch = read("scripts/catalog/staged-factual-review-batch-2026-09-21.json");
 if (stagedReviewBatch.records.length !== 36) {
   throw new Error(`Expected 36 factual reviews in the combined batch, found ${stagedReviewBatch.records.length}`);
@@ -479,7 +546,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);

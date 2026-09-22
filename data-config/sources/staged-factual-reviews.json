@@ -540,24 +540,22 @@
     },
     {
       "destinationId": "fundy",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
-        "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/pointwolfe",
+        "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+        "https://parks.canada.ca/pn-np/nb/fundy/visit/centre",
+        "https://parks.canada.ca/pn-np/nb/fundy/activ/chaises-chairs",
+        "https://parks.canada.ca/pn-np/nb/fundy/visit/heures-hours",
         "https://parks.canada.ca/pn-np/nb/fundy/visit"
       ],
       "verifiedFindings": [
         "Parks Canada recommends Chignecto Campground as the base close to Fundy's stargazing activity and Wolfe Lake as a secluded viewing place.",
-        "Point Wolfe is a real seasonal campground with published coordinates, but its covered-bridge access is closed from 8 September through December 2026.",
-        "The staged headquarters and Point Wolfe area records do not match the official astronomy recommendation and current closure-sensitive route."
+        "Parks Canada publishes the Chignecto Campground coordinate and a Wolfe Lake visitor coordinate, allowing the two staged records to use named visitor footprints rather than coarse park-area pins.",
+        "The revised records preserve campground booking and season checks, current opening and road checks, daylight arrival, established visitor surfaces and a return to the booked overnight base."
       ],
-      "requiredChanges": [
-        {
-          "scope": "fundy-official-night-plan",
-          "reason": "Replace the staged sites with Chignecto campground and a precisely documented Wolfe Lake viewing/parking footprint, preserving seasonal gate, bridge and campground checks."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "manitoulin",
@@ -737,24 +735,21 @@
     },
     {
       "destinationId": "dinosaur-national-monument",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
-        "https://home.nps.gov/dino/planyourvisit/stargazing.htm",
-        "https://home.nps.gov/dino/planyourvisit/echo-park.htm",
-        "https://home.nps.gov/dino/planyourvisit/conditions.htm"
+        "https://www.nps.gov/dino/planyourvisit/splitmountainstargazing.htm",
+        "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
+        "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
+        "https://home.nps.gov/dino/planyourvisit/conditions.htm",
+        "https://www.nps.gov/dino/learn/management/dinocompendium.htm"
       ],
       "verifiedFindings": [
-        "NPS identifies a designated stargazing spot at the back of Split Mountain Campground and offers summer ranger programmes there.",
+        "NPS identifies a designated stargazing spot near Split Mountain Campground, publishes an exact event coordinate and directs visitors who are not camping to the adjacent day-use parking area.",
         "NPS also identifies Echo Park as a camping and stargazing area but warns that its steep unpaved road can become impassable when wet and may require high clearance or four-wheel drive.",
-        "The staged Jensen and Harpers Corner records do not represent those two official night-use areas."
+        "The revised staged records now represent the two official night-use areas and preserve current road, booking, vehicle, quiet-hours and campground checks."
       ],
-      "requiredChanges": [
-        {
-          "scope": "dinosaur-official-stargazing-sites",
-          "reason": "Replace the staged sites with Split Mountain Campground's designated observing area and Echo Park Campground, including seasonal road, weather, camping and vehicle restrictions."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "medicine-rocks",

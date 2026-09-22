@@ -4365,46 +4365,6 @@
     }
   },
   {
-    "id": "fundy-headquarters",
-    "slug": "fundy-headquarters",
-    "destinationId": "fundy",
-    "name": "Fundy park headquarters",
-    "lat": 45.59,
-    "lon": -64.95,
-    "elevationM": 35,
-    "siteType": "park-campus",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 81,
-    "certificationIds": [],
-    "notesSourceUrl": "https://parks.canada.ca/pn-np/nb/fundy",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Fundy park headquarters. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Fundy park headquarters nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "fundy-point-wolfe",
-    "slug": "fundy-point-wolfe",
-    "destinationId": "fundy",
-    "name": "Point Wolfe area",
-    "lat": 45.82,
-    "lon": -65,
-    "elevationM": 80,
-    "siteType": "coastal-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 52,
-    "active": false,
-    "priority": 81,
-    "certificationIds": [],
-    "notesSourceUrl": "https://parks.canada.ca/pn-np/nb/fundy",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Point Wolfe area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Point Wolfe area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "manitoulin-meldrum",
     "slug": "manitoulin-meldrum",
     "destinationId": "manitoulin",
@@ -4762,46 +4722,6 @@
     "accessNotes": {
       "en": "Use only the current published visitor arrangement for Lassen summit road area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
       "de": "Nutze für Lassen summit road area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "dinosaur-jensen",
-    "slug": "dinosaur-jensen",
-    "destinationId": "dinosaur-national-monument",
-    "name": "Jensen visitor area",
-    "lat": 40.37,
-    "lon": -109.35,
-    "elevationM": 1760,
-    "siteType": "river-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 83,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.nps.gov/dino/index.htm",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Jensen visitor area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Jensen visitor area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "dinosaur-harpers",
-    "slug": "dinosaur-harpers",
-    "destinationId": "dinosaur-national-monument",
-    "name": "Harpers Corner road area",
-    "lat": 40.48,
-    "lon": -109.16,
-    "elevationM": 1950,
-    "siteType": "rim-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 48,
-    "active": false,
-    "priority": 83,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.nps.gov/dino/index.htm",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Harpers Corner road area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Harpers Corner road area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -5922,6 +5842,86 @@
     "accessNotes": {
       "en": "SANParks identifies Mazhou as a bookable campsite in Mapungubwe's western section, while the mapped facility is at -22.187385, 29.2012847. A reviewed elevation lookup returned 528 metres and must be replaced or confirmed by the catalogue DEM pipeline. Visitors check in at the main gate and must drive outside the park to reach the western section; dangerous animals occur around camps and renovations may disrupt Mazhou. Keep it inactive unless SANParks confirms a current booking and astronomy use inside the assigned campsite footprint.",
       "de": "SANParks führt Mazhou als buchbaren Campingplatz im Westteil von Mapungubwe; die kartierte Anlage liegt bei -22,187385, 29,2012847. Eine geprüfte Höhenabfrage ergab 528 Meter und muss durch die DEM-Pipeline des Katalogs ersetzt oder bestätigt werden. Gäste melden sich am Haupttor an und müssen den Park verlassen, um den Westteil zu erreichen; gefährliche Tiere kommen an Camps vor und Renovierungen können Mazhou beeinträchtigen. Halte den Ort inaktiv, sofern SANParks nicht eine aktuelle Buchung und astronomische Nutzung innerhalb der zugewiesenen Campingfläche bestätigt."
+    }
+  },
+  {
+    "id": "fundy-chignecto-campground",
+    "slug": "fundy-chignecto-campground",
+    "destinationId": "fundy",
+    "name": "Chignecto Campground",
+    "lat": 45.604208,
+    "lon": -64.983783,
+    "elevationM": 287,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": false,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+    "accessNotes": {
+      "en": "Parks Canada publishes this exact campground coordinate and recommends Chignecto as the overnight base for a Fundy stargazing stay. The catalogue's Copernicus GLO-30 snapshot measures 286.667 metres at the requested point. Reserve the campsite, check the operating season and current park notices, and do not treat the booking as permission to observe outside the assigned campground footprint after hours.",
+      "de": "Parks Canada veröffentlicht diese genaue Campingplatzkoordinate und empfiehlt Chignecto als Übernachtungsbasis für einen Sternbeobachtungsaufenthalt im Fundy-Nationalpark. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 286,667 Meter. Reserviere den Stellplatz, prüfe Saison und aktuelle Parkhinweise und behandle die Buchung nicht als Erlaubnis, außerhalb der zugewiesenen Campingfläche nach Betriebsschluss zu beobachten."
+    }
+  },
+  {
+    "id": "fundy-wolfe-lake-viewing-area",
+    "slug": "fundy-wolfe-lake-viewing-area",
+    "destinationId": "fundy",
+    "name": "Wolfe Lake viewing area",
+    "lat": 45.660629,
+    "lon": -65.138197,
+    "elevationM": 300,
+    "siteType": "lake-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": false,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
+    "accessNotes": {
+      "en": "Parks Canada specifically recommends viewing the sky above Wolfe Lake; the coordinate is the published Wolfe Lake visitor footprint beside the lake, not an invitation to enter shoreline terrain. The catalogue's Copernicus GLO-30 snapshot measures 300.364 metres at the requested point. Check current opening and road notices, arrive in daylight, use only established parking and visitor surfaces, and return to the booked overnight base without improvising a second stop.",
+      "de": "Parks Canada empfiehlt ausdrücklich die Beobachtung des Himmels über dem Wolfe Lake; die Koordinate bezeichnet die veröffentlichte Besucherfläche am See und keine Einladung, Ufergelände zu betreten. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 300,364 Meter. Prüfe aktuelle Öffnungs- und Straßenhinweise, komme bei Tageslicht an, nutze nur bestehende Park- und Besucherflächen und kehre ohne improvisierten zweiten Halt zur gebuchten Übernachtungsbasis zurück."
+    }
+  },
+  {
+    "id": "dinosaur-split-mountain-night-sky",
+    "slug": "dinosaur-split-mountain-night-sky",
+    "destinationId": "dinosaur-national-monument",
+    "name": "Split Mountain night-sky viewing area",
+    "lat": 40.438961,
+    "lon": -109.252451,
+    "elevationM": 1462,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": false,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/dino/planyourvisit/splitmountainstargazing.htm",
+    "accessNotes": {
+      "en": "The National Park Service identifies a designated stargazing spot near Split Mountain Campground, and its published event coordinate places non-camper arrival at the adjacent day-use area. The catalogue's Copernicus GLO-30 snapshot measures 1,462.048 metres at the requested point. Check current road and campground conditions, use the signed viewing and parking footprint, and do not infer camping from attendance at the viewing area.",
+      "de": "Der National Park Service weist nahe dem Split Mountain Campground einen vorgesehenen Sternbeobachtungsplatz aus; die veröffentlichte Veranstaltungskoordinate führt Besucher ohne Campingbuchung zum benachbarten Tagesbereich. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.462,048 Meter. Prüfe aktuelle Straßen- und Campingplatzbedingungen, nutze die ausgeschilderte Beobachtungs- und Parkfläche und leite aus dem Besuch keine Campingerlaubnis ab."
+    }
+  },
+  {
+    "id": "dinosaur-echo-park-campground",
+    "slug": "dinosaur-echo-park-campground",
+    "destinationId": "dinosaur-national-monument",
+    "name": "Echo Park Campground",
+    "lat": 40.5208089,
+    "lon": -108.9932317,
+    "elevationM": 1552,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": false,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
+    "accessNotes": {
+      "en": "The National Park Service explicitly lists both camping and stargazing at Echo Park; the mapped campground coordinate identifies the developed overnight facility. The catalogue's Copernicus GLO-30 snapshot measures 1,551.513 metres at the requested point. Reach the booked camp in daylight, obey high-clearance and wet-road restrictions, remain within the campground footprint after dark and cancel rather than attempting the access road in unsuitable conditions.",
+      "de": "Der National Park Service nennt am Echo Park ausdrücklich Camping und Sternbeobachtung; die kartierte Campingplatzkoordinate bezeichnet die ausgebaute Übernachtungsanlage. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.551,513 Meter. Erreiche das gebuchte Camp bei Tageslicht, beachte Vorschriften zu Bodenfreiheit und nasser Straße, bleibe nach Einbruch der Dunkelheit innerhalb der Campingfläche und sage ab, statt die Zufahrt bei ungeeigneten Bedingungen zu versuchen."
     }
   }
 ]
