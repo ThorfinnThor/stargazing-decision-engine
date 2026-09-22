@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T22:12:10.580Z",
+  "generatedAt": "2026-09-22T22:29:08.736Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 11,
-    "withVerifiedFactualReview": 39,
+    "requiringFactualChanges": 10,
+    "withVerifiedFactualReview": 40,
     "readyForActivation": 0
   },
   "records": [
@@ -2038,48 +2038,102 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 11,
+        "reachable": 11,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "tsumkwe",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-23",
           "reviewedUrls": [
-            "https://visitnamibia.com.na/2022/03/north-eastern-region/",
-            "https://visitnamibia.com.na/wp-content/uploads/2022/03/Adventure.pdf",
-            "https://www.meft.gov.na/",
-            "https://www.nacso.org.na/"
+            "https://www.tsumkwelodge.com/",
+            "https://www.tsumkwelodge.com/campsites/",
+            "https://www.tsumkwelodge.com/facilities-services/",
+            "https://www.tsumkwelodge.com/contac-us-directions/",
+            "https://www.openstreetmap.org/way/319583783",
+            "https://www.lcfn.info/juhoansi/contact",
+            "https://www.lcfn.info/juhoansi/faq",
+            "https://www.lcfn.info/images/pdfs/programs/2026/Juhoansi_En_2026-2027.pdf",
+            "https://www.openstreetmap.org/node/1510404787",
+            "https://www.lcfn.info/entry/the-development-of-a-new-living-hunters-museum-close-to-tsumkwe",
+            "https://api.open-meteo.com/v1/elevation?latitude=-19.601303,-19.2447934&longitude=20.495356,19.2392123"
           ],
           "verifiedFindings": [
-            "Namibia's official tourism material supports the country's strong stargazing conditions and identifies Tsumkwe as a visitor base in the north-east.",
-            "The reviewed sources do not identify the staged community-area and Naye-Naye coordinates as visitor astronomy facilities or grant after-dark access on community or conservancy land."
+            "Tsumkwe Country Lodge publishes a direct booking path, ten campsites, official GPS coordinates, daily reception hours and a walled and fenced guest boundary. It warns that elephants and antelope frequently visit the waterhole and provides night security for late arrivals.",
+            "The Ju/'Hoansi Living Museum publishes its exact Grashoek location, operation until sundown, reception-based campsite acceptance and manager contact. Its FAQ requires cash payment with a receipt, says campsite pre-booking is neither necessary nor possible and requires a 4x4 for overnight campsite access.",
+            "The visually verified 2026-2027 Ju/'Hoansi programme lists three campsites with a dry toilet, bucket shower and braai, plus separately paid guided evening storytelling and cultural activities. Camping does not imply unguided museum, village or bush access after dark.",
+            "Neither selected operator advertises an independent astronomy field. Both records therefore default to brief unaided or handheld-binocular viewing beside the occupied guest or campsite footprint; optical equipment requires explicit operator approval and no after-dark transfer is included.",
+            "The former Living Hunter's Museum at /Xa//oba closed in January 2026. LCFN describes its possible replacement as a development project, so neither the closed site nor the proposed site is a visitor fallback.",
+            "The revised records replace the generic Tsumkwe community-area and Naye-Naye pins with the official lodge GPS and the mapped Grashoek campground. Open-Meteo returned preliminary elevations of 1,150 and 1,203 metres; the production Copernicus pipeline must replace or confirm them."
           ],
-          "requiredChanges": [
-            {
-              "scope": "tsumkwe-community-permission",
-              "reason": "Replace the generic pins with a named community-owned lodge or campsite and record current conservancy consent, booking, guide, wildlife and night-movement rules before presenting an observing plan."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "tsumkwe-source-1",
-            "url": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
+            "url": "https://www.tsumkwelodge.com/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tsumkwe-source-2",
-            "url": "https://www.meft.gov.na/",
+            "url": "https://www.tsumkwelodge.com/campsites/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tsumkwe-source-3",
-            "url": "https://www.nacso.org.na/",
+            "url": "https://www.tsumkwelodge.com/facilities-services/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-4",
+            "url": "https://www.tsumkwelodge.com/contac-us-directions/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-5",
+            "url": "https://www.openstreetmap.org/way/319583783",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-6",
+            "url": "https://www.lcfn.info/juhoansi/contact",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-7",
+            "url": "https://www.lcfn.info/juhoansi/faq",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-8",
+            "url": "https://www.lcfn.info/images/pdfs/programs/2026/Juhoansi_En_2026-2027.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-9",
+            "url": "https://www.openstreetmap.org/node/1510404787",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-10",
+            "url": "https://www.lcfn.info/entry/the-development-of-a-new-living-hunters-museum-close-to-tsumkwe",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tsumkwe-source-11",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=-19.601303,-19.2447934&longitude=20.495356,19.2392123",
             "classification": "reachable",
             "status": 200
           }
@@ -2088,36 +2142,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "tsumkwe-community",
+          "id": "tsumkwe-country-lodge-guest-campsite",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "naye-naye",
+          "id": "tsumkwe-juhoansi-grashoek-campsite",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "tsumkwe-country-lodge-guest-campsite:climate",
+        "tsumkwe-country-lodge-guest-campsite:black-marble",
+        "tsumkwe-country-lodge-guest-campsite:dem",
+        "tsumkwe-country-lodge-guest-campsite:scores",
+        "tsumkwe-juhoansi-grashoek-campsite:climate",
+        "tsumkwe-juhoansi-grashoek-campsite:black-marble",
+        "tsumkwe-juhoansi-grashoek-campsite:dem",
+        "tsumkwe-juhoansi-grashoek-campsite:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
