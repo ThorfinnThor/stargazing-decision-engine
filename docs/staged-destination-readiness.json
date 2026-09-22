@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T08:27:52.982Z",
+  "generatedAt": "2026-09-22T08:53:20.964Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -11,8 +11,8 @@
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 23,
-    "withVerifiedFactualReview": 27,
+    "requiringFactualChanges": 22,
+    "withVerifiedFactualReview": 28,
     "readyForActivation": 0
   },
   "records": [
@@ -4927,7 +4927,7 @@
     },
     {
       "destinationId": "puna-argentina",
-      "name": "Puna de Atacama",
+      "name": "Quebrada de Humahuaca",
       "active": false,
       "editorial": {
         "guide": true,
@@ -4935,47 +4935,64 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 6,
+        "reachable": 6,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "puna-argentina",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
-            "https://www.argentina.gob.ar/noticias/se-lanzo-la-temporada-invernal-de-jujuy-en-la-ciudad-de-buenos-aires",
-            "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
-            "https://www.jujuy.gob.ar/"
+            "https://trensolar.com.ar/cielo-en-movimiento/",
+            "https://prensa.jujuy.gob.ar/tren-solar/cielo-movimiento-el-tren-solar-presenta-la-experiencia-nocturna-mas-innovadora-del-norte-argentino-n123764",
+            "https://www.turismo.jujuy.gob.ar/evento/tren-solar-experiencia-cielo-en-movimiento-volcan-8/",
+            "https://trensolar.com.ar/inicio/",
+            "https://www.openstreetmap.org/way/298017385",
+            "https://www.openstreetmap.org/node/11627187728"
           ],
           "verifiedFindings": [
-            "Argentina's government promotes Jujuy's Puna, Salinas Grandes and organised Solar Train night outings for sky viewing.",
-            "The staged Salinas access and generic Quebrada highland pins are not the published train programme or a documented public astronomy footprint, and both require altitude and transport controls."
+            "The official operator currently publishes bookable Cielo en Movimiento departures for 26 September 2026, with city meeting times, included passenger transfer to Tumbaya, a 19:20 reception and 20:05 guided train departure.",
+            "The operator identifies Posta de Hornillos as the 21:05 guided telescope-observation and dinner stop and schedules the included return toward San Salvador de Jujuy and Salta from 23:30.",
+            "The two exact map records describe linked points in one ticketed itinerary, not independent public observing sites; both remain inactive and their image licences remain pending."
           ],
-          "requiredChanges": [
-            {
-              "scope": "puna-organised-night-route",
-              "reason": "Replace the generic high-altitude pins with the current official Solar Train or licensed operator night itinerary, including exact stops, booking, acclimatisation, transport and return."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "puna-argentina-source-1",
-            "url": "https://www.argentina.gob.ar/ambiente",
+            "url": "https://trensolar.com.ar/cielo-en-movimiento/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "puna-argentina-source-2",
-            "url": "https://www.jujuy.gob.ar/",
+            "url": "https://prensa.jujuy.gob.ar/tren-solar/cielo-movimiento-el-tren-solar-presenta-la-experiencia-nocturna-mas-innovadora-del-norte-argentino-n123764",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "puna-argentina-source-3",
-            "url": "https://www.argentina.gob.ar/parquesnacionales/ecorregiones/puna",
+            "url": "https://www.turismo.jujuy.gob.ar/evento/tren-solar-experiencia-cielo-en-movimiento-volcan-8/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "puna-argentina-source-4",
+            "url": "https://trensolar.com.ar/inicio/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "puna-argentina-source-5",
+            "url": "https://www.openstreetmap.org/way/298017385",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "puna-argentina-source-6",
+            "url": "https://www.openstreetmap.org/node/11627187728",
             "classification": "reachable",
             "status": 200
           }
@@ -4984,7 +5001,7 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "puna-salinas",
+          "id": "puna-posta-hornillos-guided-observation",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -4997,7 +5014,7 @@
           "imageStatus": "pending"
         },
         {
-          "id": "puna-humahuaca",
+          "id": "puna-tumbaya-solar-train-boarding",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -5013,7 +5030,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
