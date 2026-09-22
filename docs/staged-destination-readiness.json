@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T07:55:08.959Z",
+  "generatedAt": "2026-09-22T08:14:02.901Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
     "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
-    "withBlockedSources": 17,
+    "withBlockedSources": 16,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 25,
-    "withVerifiedFactualReview": 25,
+    "requiringFactualChanges": 24,
+    "withVerifiedFactualReview": 26,
     "readyForActivation": 0
   },
   "records": [
@@ -4052,56 +4052,59 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
-        "blocked": 1,
+        "total": 4,
+        "reachable": 4,
+        "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "alula",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
-            "https://www.experiencealula.com/en",
-            "https://www.rcu.gov.sa/en"
+            "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel",
+            "https://www.experiencealula.com/en/places-to-go/husaak-adventures",
+            "https://www.experiencealula.com/en/about/features/dark-sky-designation-in-alula"
           ],
           "verifiedFindings": [
-            "Experience AlUla explicitly promotes naked-eye and telescope stargazing at Harrat Viewpoint.",
-            "The official visitor source does not establish Hegra as an independent astronomy site after its heritage visiting hours, and the staged Harrat coordinate still needs an exact visitor-arrival footprint."
+            "Experience AlUla's official directions resolve Harrat Viewpoint to its exact visitor footprint; the page publishes a 1,219-metre elevation, free parking, free entry, no booking requirement, current 14:00-22:00 hours and explicit naked-eye and telescope stargazing.",
+            "The unsupported Hegra record is replaced by the exact Husaak Adventure Centre meeting point for the official guided Gharameel experience. The source clearly distinguishes that arrival point from the remote observing area, includes operator 4x4 transport in both directions, and currently labels booking as coming back soon.",
+            "The revised guide uses Harrat as the independent managed evening stop and treats Gharameel only as a separate date-specific operator experience; it grants neither independent reserve access nor permission to observe at the meeting point."
           ],
-          "requiredChanges": [
-            {
-              "scope": "alula-night-venues",
-              "reason": "Retain Harrat only with exact access coordinates and current opening or booking rules, and replace Hegra with a second official night experience or remove it from the observing sites."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "alula-source-1",
-            "url": "https://www.experiencealula.com/en",
+            "url": "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "alula-source-2",
-            "url": "https://www.rcu.gov.sa/en",
+            "url": "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "alula-source-3",
-            "url": "https://darksky.org/",
-            "classification": "blocked",
-            "status": 403
+            "url": "https://www.experiencealula.com/en/places-to-go/husaak-adventures",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "alula-source-4",
+            "url": "https://www.experiencealula.com/en/about/features/dark-sky-designation-in-alula",
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "alula-harrat",
+          "id": "alula-harrat-viewpoint",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -4114,7 +4117,7 @@
           "imageStatus": "pending"
         },
         {
-          "id": "alula-hegra",
+          "id": "alula-gharameel-tour-departure",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
@@ -4130,8 +4133,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-access-manual-review-required",
-        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
