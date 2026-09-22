@@ -329,38 +329,32 @@
     },
     {
       "destinationId": "mapungubwe",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.sanparks.org/parks/mapungubwe",
         "https://www.sanparks.org/parks/mapungubwe/accommodation",
         "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
         "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
+        "https://www.sanparks.org/travel/plan/useful-information/rules-regulations",
         "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
-        "https://www.sanparks.org/parks/mapungubwe/explore/heritage/confluence-viewpoint",
         "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
-        "https://www.sanparks.org/wp-content/uploads/2021/06/mapungubwe_approved_plans.pdf",
         "https://www.openstreetmap.org/node/2117424196",
         "https://www.openstreetmap.org/node/4357227138",
-        "https://api.open-meteo.com/v1/elevation?latitude=-22.2177486,-22.187385,-22.2436111&longitude=29.3648104,29.2012847,29.4005556"
+        "https://api.open-meteo.com/v1/elevation?latitude=-22.2177486,-22.187385&longitude=29.3648104,29.2012847"
       ],
       "verifiedFindings": [
         "SANParks identifies Leokwe Rest Camp as Mapungubwe's main bookable camp in the eastern section and Mazhou Camp Site as a ten-pitch bookable campground in the western section. These replace the unsupported generic 'Mapungubwe camp area' record.",
-        "The mapped Leokwe facility is at -22.2177486, 29.3648104 and the mapped SANParks-operated Mazhou campsite is at -22.187385, 29.2012847. A reviewed Open-Meteo lookup returned 544 and 528 metres respectively; the catalogue DEM pipeline must independently replace or confirm both values.",
+        "The mapped Leokwe facility is at -22.2177486, 29.3648104 and the mapped SANParks-operated Mazhou campsite is at -22.187385, 29.2012847. Open-Meteo returned preliminary elevations of 544 and 528 metres; production Copernicus DEM GLO-30 samples are 546.995 and 532.697 metres, and the catalogue stores 547 and 533 metres.",
         "SANParks publishes the Main Gate coordinate as 22°14′37″S, 29°24′2″E, converted to -22.2436111, 29.4005556. The exact gate and reception record replaces the generic Mapungubwe stay-area coordinate.",
         "SANParks locates the Confluence Viewpoint at 22°10′00″S, 29°10′00″E and describes it as a scenic heritage viewpoint and picnic area. It does not identify the viewpoint as an astronomy site or confirm independent use after dark, so the materially incorrect staged Confluence pin is removed rather than promoted as a night location.",
-        "Current visitor guidance states that unguided walking is prohibited because large and dangerous game occurs in the park. Leokwe is unfenced, other camps use only elephant-exclusion fencing and animals can move through and around camps, so a normal open observing-field assumption is unsafe.",
-        "The park advertises guided morning, sunset and night drives, but no reviewed SANParks page identifies Leokwe, Mazhou, Confluence or another place as an astronomy venue or grants independent astronomy use after dark.",
-        "SANParks published a 19 May 2026 notice that renovation work at Leokwe and Mazhou could begin at any time and cause disruption. Any later use therefore requires a current booking and dated confirmation of construction status in addition to astronomy permission.",
+        "Current SANParks visitor guidance states that unguided walking is prohibited because large and dangerous game occurs in the park, Leokwe is unfenced, other camps use only elephant-exclusion fencing and animals can move through and around camps. It also states that outdoor camp lighting is limited and guests require a torch or headlamp outside at night.",
+        "The national rules allow overnight guests only at booked recognised facilities, require reception before occupation and prohibit after-hours driving. Together with the camp-lighting guidance, this supports only brief unaided sky viewing immediately beside the occupied unit or pitch, with a torch ready and immediate indoor retreat; it does not support a walking route, telescope setup or separate viewpoint.",
+        "SANParks published a 19 May 2026 notice that renovation work at Leokwe and Mazhou could begin at any time and cause disruption. Any later use therefore requires a current booking and dated confirmation of construction status plus compliance with current camp instructions.",
         "Access to Mazhou requires checking in at the Main Gate and driving outside the park to rejoin the western section. This rules out treating Leokwe and Mazhou as two stops in one night and reinforces that any confirmed plan must remain within one assigned accommodation footprint.",
-        "Both replacement site records remain inactive with low access scores, and both image records remain pending. No activation is permitted while astronomy access, real snapshots and image licences remain unresolved."
+        "Both replacement site records remain inactive and both image records remain pending. Their access scores reflect a bookable but wildlife-constrained overnight footprint, not a public astronomy venue, and no activation is permitted while image licences remain unresolved."
       ],
-      "requiredChanges": [
-        {
-          "scope": "mapungubwe-astronomy-access",
-          "reason": "Obtain dated written confirmation from Mapungubwe National Park that astronomy use after dark is permitted within a named accommodation footprint, including current renovation status, booking requirement, wildlife-safety instructions, lighting restrictions and vehicle-movement rules. If the park does not confirm such use, replace Mapungubwe in the staged expansion rather than treating a heritage viewpoint or wildlife camp as an astronomy site."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "isle-of-sark",
