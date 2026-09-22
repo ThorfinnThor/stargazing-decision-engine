@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T07:28:16.569Z",
+  "generatedAt": "2026-09-22T07:37:54.457Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 47,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 18,
     "withApprovedDestinationImage": 0,
@@ -80,6 +80,7 @@
         {
           "id": "sark-lighthouse",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -92,6 +93,7 @@
         {
           "id": "sark-windmill",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -197,6 +199,7 @@
         {
           "id": "sierra-morena-constantina",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -209,6 +212,7 @@
         {
           "id": "sierra-morena-almadén",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -301,6 +305,7 @@
         {
           "id": "monfrague-castillo",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -313,6 +318,7 @@
         {
           "id": "monfrague-salto-gitano",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -413,6 +419,7 @@
         {
           "id": "gredos-navarredonda-mirador",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -425,6 +432,7 @@
         {
           "id": "gredos-hoyos-mirador",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -527,6 +535,7 @@
         {
           "id": "javalambre-galactica",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -539,6 +548,7 @@
         {
           "id": "javalambre-oaj-guided-visit",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -639,6 +649,7 @@
         {
           "id": "aigues-boi-taull-starlight",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -651,6 +662,7 @@
         {
           "id": "aigues-sant-quirc-astronomical",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -744,6 +756,7 @@
         {
           "id": "vercors-trieves-observatory",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -756,6 +769,7 @@
         {
           "id": "vercors-moulins-mure-event",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -864,6 +878,7 @@
         {
           "id": "attersee-dixi-stargazing",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -876,6 +891,7 @@
         {
           "id": "attersee-taferlklaussee",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -990,6 +1006,7 @@
         {
           "id": "grossmugl-sternenwiese",
           "active": false,
+          "publicAccess": "yes",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1002,6 +1019,7 @@
         {
           "id": "grossmugl-sternenweg-events",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1133,6 +1151,7 @@
         {
           "id": "poloniny-runina-centre",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1145,6 +1164,7 @@
         {
           "id": "poloniny-kolonica-observatory",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1275,6 +1295,7 @@
         {
           "id": "izera-orle-astronomy-workshop",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1287,6 +1308,7 @@
         {
           "id": "izera-izerska-laka-events",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1391,6 +1413,7 @@
         {
           "id": "tara-zelenika-viewpoint",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1403,6 +1426,7 @@
         {
           "id": "tara-oslusa-viewpoint",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1528,6 +1552,7 @@
         {
           "id": "kopaonik-pancic-summit",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1540,6 +1565,7 @@
         {
           "id": "kopaonik-suncana-lower-station",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1650,6 +1676,7 @@
         {
           "id": "richtersveld-potjiespram",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1662,6 +1689,7 @@
         {
           "id": "richtersveld-de-hoop",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1787,6 +1815,7 @@
         {
           "id": "mapungubwe-leokwe-rest-camp",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1799,6 +1828,7 @@
         {
           "id": "mapungubwe-mazhou-campsite",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1880,6 +1910,7 @@
         {
           "id": "nata-bird-sanctuary",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1892,6 +1923,7 @@
         {
           "id": "makgadikgadi-kubu",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1973,6 +2005,7 @@
         {
           "id": "tsumkwe-community",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -1985,6 +2018,7 @@
         {
           "id": "naye-naye",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2065,6 +2099,7 @@
         {
           "id": "oban-bay",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2077,6 +2112,7 @@
         {
           "id": "rakiura-horseshoe",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2182,11 +2218,12 @@
         {
           "id": "kangaroo-west-bay-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2194,27 +2231,20 @@
         {
           "id": "kangaroo-rocky-river-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "kangaroo-west-bay-campground:climate",
-        "kangaroo-west-bay-campground:black-marble",
-        "kangaroo-west-bay-campground:scores",
-        "kangaroo-rocky-river-campground:climate",
-        "kangaroo-rocky-river-campground:black-marble",
-        "kangaroo-rocky-river-campground:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -2281,6 +2311,7 @@
         {
           "id": "mudgee-observatory",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2293,6 +2324,7 @@
         {
           "id": "gulgong",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2373,6 +2405,7 @@
         {
           "id": "great-western-boorabbin",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2385,6 +2418,7 @@
         {
           "id": "great-western-holland",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2465,6 +2499,7 @@
         {
           "id": "torrance-barrens-main",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2477,6 +2512,7 @@
         {
           "id": "torrance-barrens-boardwalk",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2575,6 +2611,7 @@
         {
           "id": "fundy-chignecto-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2587,6 +2624,7 @@
         {
           "id": "fundy-wolfe-lake-viewing-area",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2666,6 +2704,7 @@
         {
           "id": "manitoulin-meldrum",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2678,6 +2717,7 @@
         {
           "id": "manitoulin-shearer",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2758,6 +2798,7 @@
         {
           "id": "massacre-rim-viewpoint",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2770,6 +2811,7 @@
         {
           "id": "denio-outskirts",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2851,6 +2893,7 @@
         {
           "id": "parashant-tuweep",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2863,6 +2906,7 @@
         {
           "id": "parashant-mount-trumbull",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2943,6 +2987,7 @@
         {
           "id": "oracle-state-park",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -2955,6 +3000,7 @@
         {
           "id": "oracle-charouleau",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3046,6 +3092,7 @@
         {
           "id": "enchanted-rock-loop-trail-d2",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3058,6 +3105,7 @@
         {
           "id": "enchanted-rock-walk-in-tent-sites",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3134,6 +3182,7 @@
         {
           "id": "staunton-river-park",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3146,6 +3195,7 @@
         {
           "id": "staunton-river-camp",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3236,6 +3286,7 @@
         {
           "id": "kissimmee-astronomy-pad-a",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3248,6 +3299,7 @@
         {
           "id": "kissimmee-entrance-pavilion",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3345,11 +3397,12 @@
         {
           "id": "big-cypress-seagrape-night-sky-program",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3357,27 +3410,20 @@
         {
           "id": "big-cypress-midway-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "big-cypress-seagrape-night-sky-program:climate",
-        "big-cypress-seagrape-night-sky-program:black-marble",
-        "big-cypress-seagrape-night-sky-program:scores",
-        "big-cypress-midway-campground:climate",
-        "big-cypress-midway-campground:black-marble",
-        "big-cypress-midway-campground:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3442,6 +3488,7 @@
         {
           "id": "lassen-manazanita",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3454,6 +3501,7 @@
         {
           "id": "lassen-summit",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3544,6 +3592,7 @@
         {
           "id": "dinosaur-split-mountain-night-sky",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3556,6 +3605,7 @@
         {
           "id": "dinosaur-echo-park-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3645,6 +3695,7 @@
         {
           "id": "medicine-rocks-night-sky-trail",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3657,6 +3708,7 @@
         {
           "id": "medicine-rocks-campsite-1",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3733,6 +3785,7 @@
         {
           "id": "newport-porte-des-morts",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3745,6 +3798,7 @@
         {
           "id": "newport-campground",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3825,6 +3879,7 @@
         {
           "id": "boundary-waters-moose-lake",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3837,6 +3892,7 @@
         {
           "id": "boundary-waters-seagull",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -3948,11 +4004,12 @@
         {
           "id": "innamincka-cullyamurra-waterhole-campground",
           "active": false,
+          "publicAccess": "no",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3960,27 +4017,21 @@
         {
           "id": "innamincka-policemans-waterhole-campground",
           "active": false,
+          "publicAccess": "no",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "innamincka-cullyamurra-waterhole-campground:climate",
-        "innamincka-cullyamurra-waterhole-campground:black-marble",
-        "innamincka-cullyamurra-waterhole-campground:scores",
-        "innamincka-policemans-waterhole-campground:climate",
-        "innamincka-policemans-waterhole-campground:black-marble",
-        "innamincka-policemans-waterhole-campground:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
+        "observation-site-access-unavailable",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -4047,6 +4098,7 @@
         {
           "id": "alula-harrat",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4059,6 +4111,7 @@
         {
           "id": "alula-hegra",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4140,6 +4193,7 @@
         {
           "id": "jebel-akhdar-diana",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4152,6 +4206,7 @@
         {
           "id": "jebel-akhdar-saiq",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4232,6 +4287,7 @@
         {
           "id": "rann-dhordo",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4244,6 +4300,7 @@
         {
           "id": "rann-kalo-dungar",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4325,6 +4382,7 @@
         {
           "id": "achi-heavens-sonohara",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4337,6 +4395,7 @@
         {
           "id": "achi-village",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4417,6 +4476,7 @@
         {
           "id": "sani-pass-border",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4429,6 +4489,7 @@
         {
           "id": "sani-top",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4510,6 +4571,7 @@
         {
           "id": "drakensberg-giants-castle",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4522,6 +4584,7 @@
         {
           "id": "drakensberg-camp",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4603,6 +4666,7 @@
         {
           "id": "damaraland-twyfelfontein",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4615,6 +4679,7 @@
         {
           "id": "damaraland-palmwag",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4691,6 +4756,7 @@
         {
           "id": "coral-pink-park",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4703,6 +4769,7 @@
         {
           "id": "coral-pink-camp",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4779,6 +4846,7 @@
         {
           "id": "cedar-breaks-sunset",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4791,6 +4859,7 @@
         {
           "id": "cedar-breaks-camp",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4871,6 +4940,7 @@
         {
           "id": "puna-salinas",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4883,6 +4953,7 @@
         {
           "id": "puna-humahuaca",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4963,6 +5034,7 @@
         {
           "id": "navarino-puerto-williams",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -4975,6 +5047,7 @@
         {
           "id": "navarino-dientes",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -5056,6 +5129,7 @@
         {
           "id": "uyuni-salt-flat",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -5068,6 +5142,7 @@
         {
           "id": "uyuni-tahua",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -5150,6 +5225,7 @@
         {
           "id": "kidepo-narus",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,
@@ -5162,6 +5238,7 @@
         {
           "id": "kidepo-kanangorok",
           "active": false,
+          "publicAccess": "limited",
           "snapshots": {
             "climate": true,
             "black-marble": true,

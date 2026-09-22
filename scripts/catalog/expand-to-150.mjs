@@ -549,9 +549,17 @@ const copernicusElevationOverrides = new Map([
   ["innamincka-cullyamurra-waterhole-campground", 51],
   ["innamincka-policemans-waterhole-campground", 47],
 ]);
+const currentlyClosedSiteIds = new Set([
+  "innamincka-cullyamurra-waterhole-campground",
+  "innamincka-policemans-waterhole-campground",
+]);
 for (const item of candidates) {
   for (const site of item[11]) {
     if (copernicusElevationOverrides.has(site[0])) site[4] = copernicusElevationOverrides.get(site[0]);
+    if (currentlyClosedSiteIds.has(site[0])) {
+      site[6] = "no";
+      site[7] = 0;
+    }
   }
 }
 

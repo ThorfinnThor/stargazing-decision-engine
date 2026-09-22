@@ -66,6 +66,7 @@ const records = stagedDestinations.map((destination) => {
     return {
       id: site.id,
       active: site.active,
+      publicAccess: site.publicAccess,
       snapshots: state.snapshots,
       coordinateMismatches: state.coordinateMismatches,
       imageStatus: siteImageBySlug.get(site.id)?.status ?? "missing",
@@ -83,6 +84,8 @@ const records = stagedDestinations.map((destination) => {
   const pendingSiteImages = siteStates.filter((site) => site.imageStatus !== "approved");
   const factualReview = factualReviewByDestination.get(destination.id);
   const factualReviewStatus = factualReview?.status ?? "required";
+  const allSitesUnavailable = destinationSites.length > 0
+    && destinationSites.every((site) => ["no", "unknown"].includes(site.publicAccess));
   const blockers = [];
   if (!guide) blockers.push("guide-missing");
   if (!tour) blockers.push("tour-missing");
@@ -94,6 +97,7 @@ const records = stagedDestinations.map((destination) => {
   if (blockedSources.length > 0) blockers.push("source-access-manual-review-required");
   if (factualReviewStatus === "required") blockers.push("source-factual-review-required");
   if (factualReviewStatus === "changes-required") blockers.push("source-factual-changes-required");
+  if (allSitesUnavailable) blockers.push("observation-site-access-unavailable");
   if (destinationImageStatus !== "approved") blockers.push("destination-image-license-pending");
   if (pendingSiteImages.length > 0) blockers.push("site-image-license-pending");
 
