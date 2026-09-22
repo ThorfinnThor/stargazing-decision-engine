@@ -636,7 +636,8 @@
         "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
         "https://darksky.org/places/oracle-state-park-dark-sky-park/",
         "https://www.openstreetmap.org/node/3350745581",
-        "https://www.openstreetmap.org/way/328503138"
+        "https://www.openstreetmap.org/way/328503138",
+        "https://api.open-meteo.com/v1/elevation?latitude=32.6215404,32.6096723&longitude=-110.7464941,-110.7336317"
       ],
       "verifiedFindings": [
         "Arizona State Parks explicitly defines two night-sky access models: public Star Parties near Kannally Ranch House on published dates and independently reservable after-hours entry at the American Avenue side gate.",
@@ -644,7 +645,8 @@
         "The American Avenue record uses the mapped parking point inside the official trailhead footprint. The Kannally Ranch House record uses the exact mapped building and remains unavailable unless the park publishes a new dated astronomy event or supplies a written arrangement.",
         "The current Oracle event calendar reviewed on 2026-09-22 lists no future astronomy event, so the Ranch House site has publicAccess no and accessScore 0 rather than implying routine night entry.",
         "The unsupported Charouleau Gap record and the old coarse Ranch House pin have been removed. Both replacements and their images remain inactive and pending."
-      ]
+      ],
+      "requiredChanges": []
     },
     {
       "destinationId": "enchanted-rock",
