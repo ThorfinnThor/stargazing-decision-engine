@@ -5005,46 +5005,6 @@
     }
   },
   {
-    "id": "kopaonik-pancic-summit",
-    "slug": "kopaonik-pancic-summit",
-    "destinationId": "kopaonik",
-    "name": "Pančićev vrh summit",
-    "lat": 43.26932,
-    "lon": 20.82346,
-    "elevationM": 2017,
-    "siteType": "mountain",
-    "publicAccess": "limited",
-    "accessScore": 20,
-    "active": false,
-    "priority": 79,
-    "certificationIds": [],
-    "notesSourceUrl": "https://npkopaonik.rs/turistickakarta.pdf",
-    "accessNotes": {
-      "en": "The National Park tourist map and Serbia's ski-resort operator identify Pančićev vrh as the 2,017-metre summit reached by marked routes and a scheduled chairlift. The reviewed material does not establish independent astronomy access after dark, while ski runs and maintenance operations occupy the approach. Keep this record inactive and use it only if the park and ski operator explicitly confirm a dated observing arrangement, route and return.",
-      "de": "Die touristische Nationalparkkarte und der serbische Skigebietsbetreiber führen Pančićev vrh als 2.017 Meter hohen Gipfel, erreichbar über markierte Wege und eine fahrplanabhängige Sesselbahn. Die geprüften Unterlagen belegen keinen selbstständigen Astronomiezugang nach Einbruch der Dunkelheit; zugleich belegen Skipisten und Wartungsbetrieb den Zugangsbereich. Halte den Datensatz inaktiv und nutze ihn nur, wenn Park und Skibetreiber einen datierten Beobachtungsrahmen, Weg und Rückweg ausdrücklich bestätigen."
-    }
-  },
-  {
-    "id": "kopaonik-suncana-lower-station",
-    "slug": "kopaonik-suncana-lower-station",
-    "destinationId": "kopaonik",
-    "name": "Sunčana dolina lower station",
-    "lat": 43.2815602,
-    "lon": 20.7964588,
-    "elevationM": 1604,
-    "siteType": "ski-area",
-    "publicAccess": "limited",
-    "accessScore": 20,
-    "active": false,
-    "priority": 79,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.openstreetmap.org/node/1619592268",
-    "accessNotes": {
-      "en": "This point is the mapped lower station of the Sunčana dolina chairlift; a reviewed elevation lookup returned 1,604 metres. Official ski-resort pages establish it as operating ski infrastructure, not an astronomy venue, and publish status-dependent access. Keep it inactive unless the operator confirms a specific observing event, safe parking and separation from lighting and maintenance machinery.",
-      "de": "Dieser Punkt ist die kartierte Talstation der Sesselbahn Sunčana dolina; eine geprüfte Höhenabfrage ergab 1.604 Meter. Offizielle Skigebietsseiten belegen aktive Ski-Infrastruktur mit statusabhängigem Zugang, keinen Astronomieort. Halte ihn inaktiv, sofern der Betreiber nicht eine konkrete Beobachtungsveranstaltung, sicheres Parken und die Trennung von Beleuchtung und Wartungsmaschinen bestätigt."
-    }
-  },
-  {
     "id": "mapungubwe-leokwe-rest-camp",
     "slug": "mapungubwe-leokwe-rest-camp",
     "destinationId": "mapungubwe",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "The operator offers four reservable villas in Mitrovac and explicitly describes evening use of the private pool beneath the starry sky. The operator-linked coordinate identifies the accommodation complex, not a public astronomy venue. Observe only as a checked-in guest within the courtyard area assigned by the host, keep clear of the shared pool and other guests, and request permission before setting up optical equipment. A villa booking grants no night access to park trails, viewpoints or forest roads.",
       "de": "Der Betreiber bietet vier buchbare Villen in Mitrovac an und beschreibt ausdrücklich die abendliche Nutzung des privaten Pools unter dem Sternenhimmel. Die vom Betreiber verlinkte Koordinate bezeichnet die Unterkunftsanlage und keinen öffentlichen Astronomieort. Beobachte ausschließlich als eingecheckter Gast innerhalb der vom Gastgeber zugewiesenen Hoffläche, halte Abstand zu gemeinsam genutztem Pool und anderen Gästen und frage vor dem Aufbau optischer Ausrüstung um Erlaubnis. Eine Villenbuchung gewährt keinen Nachtzugang zu Parkwegen, Aussichtspunkten oder Waldstraßen."
+    }
+  },
+  {
+    "id": "kopaonik-armadillo-guest-terrace",
+    "slug": "kopaonik-armadillo-guest-terrace",
+    "destinationId": "kopaonik",
+    "name": "Armadillo Houses guest terrace",
+    "lat": 43.2767046,
+    "lon": 20.7676804,
+    "elevationM": 1376,
+    "siteType": "booked-cabin-stay",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": false,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://hostgost.rs/sr/properties/armadillo-houses/",
+    "accessNotes": {
+      "en": "HostGost offers Armadillo Houses as year-round private cabins with terraces, and its Kopaonik portfolio explicitly promotes falling asleep with a view of the starry sky. The operator's embedded property map fixes this guest accommodation, not a public observing field. Use it only with a current overnight booking, follow check-in and parking instructions and obtain host approval before setting up optical equipment on the assigned terrace. Do not extend the stay onto nearby ski infrastructure, National Park trails or neighbouring land.",
+      "de": "HostGost bietet Armadillo Houses als ganzjährige private Häuser mit Terrassen an und bewirbt im Kopaonik-Portfolio ausdrücklich das Einschlafen mit Blick auf den Sternenhimmel. Die eingebettete Betreiberkarte bestimmt diese Gästeunterkunft und keine öffentliche Beobachtungswiese. Nutze sie nur mit aktueller Übernachtungsbuchung, befolge Check-in und Parkanweisung und hole vor optischer Ausrüstung auf der zugewiesenen Terrasse die Zustimmung des Gastgebers ein. Weite den Aufenthalt weder auf nahe Ski-Infrastruktur noch Nationalparkwege oder Nachbarland aus."
+    }
+  },
+  {
+    "id": "kopaonik-grand-pool-sky-stay",
+    "slug": "kopaonik-grand-pool-sky-stay",
+    "destinationId": "kopaonik",
+    "name": "Grand Kopaonik outdoor-pool guest area",
+    "lat": 43.2845315,
+    "lon": 20.8114871,
+    "elevationM": 1730,
+    "siteType": "booked-hotel-stay",
+    "publicAccess": "limited",
+    "accessScore": 46,
+    "active": false,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.grandkopaonik.com/en/wellness/",
+    "accessNotes": {
+      "en": "Grand Kopaonik directly describes its heated outdoor pool as a pool under the stars and publishes reservation and spa contacts. This record represents only the managed hotel guest or confirmed spa-access area. It is suitable for quiet unaided sky viewing when staff confirms the current hours and conditions; do not bring a tripod or telescope into the pool area unless the hotel explicitly assigns a safe place. A room or spa booking grants no access to adjacent ski runs or National Park terrain.",
+      "de": "Grand Kopaonik beschreibt seinen beheizten Außenpool direkt als Pool unter den Sternen und veröffentlicht Reservierungs- und Spa-Kontakte. Dieser Datensatz bezeichnet ausschließlich den betreuten Gäste- oder bestätigten Spa-Bereich des Hotels. Er eignet sich für ruhige Beobachtung mit bloßem Auge, wenn das Personal aktuelle Zeiten und Bedingungen bestätigt; bringe weder Stativ noch Teleskop in den Poolbereich, sofern das Hotel keine sichere Fläche ausdrücklich zuweist. Zimmer- oder Spa-Buchung gewährt keinen Zugang zu benachbarten Skipisten oder Nationalparkgelände."
     }
   }
 ]

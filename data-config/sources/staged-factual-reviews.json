@@ -276,38 +276,30 @@
     },
     {
       "destinationId": "kopaonik",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-18",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
+        "https://hostgost.rs/sr/properties/armadillo-houses/",
+        "https://hostgost.rs/mountain-houses/",
+        "https://rent.hostgost.rs/booking2.php?booking=d6vlejc3fhh87bthoj0jjcoll5&cur=ARS&lang=en&limitstart=0&multiroom=0&page=price&propid=149071&roomid=330924&version=3&width=960",
+        "https://www.grandkopaonik.com/en/",
+        "https://www.grandkopaonik.com/en/wellness/",
+        "https://www.grandkopaonik.com/en/contact/",
+        "https://www.openstreetmap.org/way/47872172",
         "https://npkopaonik.rs/pravila-ponasanja/",
-        "https://npkopaonik.rs/pesacke-ture/",
         "https://npkopaonik.rs/turistickakarta.pdf",
-        "https://npkopaonik.rs/rezervati-prirode/suvo-rudiste/",
-        "https://www.skijalistasrbije.rs/en/about-ski-resort-kopaonik",
-        "https://www.skijalistasrbije.rs/sr/prohodnost-staza-i-rad-zicara-kopaonik",
-        "https://www.skijalistasrbije.rs/en/node/894",
-        "https://www.rts.rs/lat/magazin/nauka/4919343/perseidi-meteorkse-kise-posmatranje.html?print=true",
-        "https://sota.radio-amater.rs/download/sota-arm-yu.pdf",
-        "https://www.openstreetmap.org/node/1619592268",
-        "https://www.openstreetmap.org/node/563264803",
-        "https://api.open-meteo.com/v1/elevation?latitude=43.26932,43.2815602&longitude=20.82346,20.7964588"
+        "https://api.open-meteo.com/v1/elevation?latitude=43.2767046,43.2845315&longitude=20.7676804,20.8114871"
       ],
       "verifiedFindings": [
-        "Kopaonik National Park's tourist map and the Serbian statistical authority identify Pančićev vrh as the 2,017-metre summit. The SOTA Serbia summit register supplies the precise summit coordinate 43.26932, 20.82346 used for the inactive candidate record.",
-        "The National Park describes Suvo Rudište from Pančićev vrh down the north-eastern slopes as protected high-mountain habitat between 1,650 and 2,017 metres. Visitor rules require marked trails, prohibit wildlife disturbance and noise, and require written management consent for motor vehicles on designated routes.",
-        "The park hiking guidance requires current maps, on-site markings, weather checks and suitable equipment and warns against relying only on a phone in poor visibility, storms or low temperatures. Its guided walks are described as summer-season activities rather than independent night access.",
-        "Ski Resorts of Serbia documents Pančićev vrh and Sunčana dolina as lift and piste infrastructure with operating status and hours. It also states that piste-grooming machinery works every night, so a closed lift or run cannot be interpreted as a safe astronomy area.",
-        "The mapped lower Sunčana dolina lift station is at 43.2815602, 20.7964588. A live Open-Meteo elevation lookup returned 1,604 metres for that point; the catalogue DEM pipeline must independently replace or confirm it during the combined ingestion run.",
-        "The precise Konaci hotel point at 43.2852725, 20.8088404 replaces the coarse generic Kopaonik stay coordinate and remains only the accommodation and enquiry base, not an observing location.",
-        "RTS science guidance quotes a Serbian astronomer specifically cautioning that Kopaonik is not an especially suitable meteor-observing location because of its built infrastructure. No reviewed park, ski-resort or astronomy source establishes a routine public astronomy venue on Kopaonik.",
-        "The generic Pančić access and Sunčana dolina pins are therefore removed. Their exact replacements remain inactive, low-access candidates and the guide instructs visitors to postpone unless both the park and ski operator confirm a dated observing arrangement separated from lighting and maintenance operations."
+        "HostGost directly offers Armadillo Houses as year-round private cabins with private terraces and an embedded operator map at 43.2767046, 20.7676804. Its current Kopaonik portfolio explicitly promotes falling asleep with a view of the starry sky, and its direct booking engine exposes current reservation enquiries.",
+        "The Armadillo catalogue point is limited to the checked-in guest terrace assigned by the host. Optical equipment requires direct host approval, and the stay does not grant access to neighbouring properties, ski infrastructure or National Park terrain.",
+        "Grand Kopaonik directly offers bookable hotel accommodation and describes a 22-by-8-metre heated outdoor pool as a pool under the stars. Its contact page publishes reservation, reception and spa contacts, including a separate spa telephone number.",
+        "The Grand catalogue point uses the OpenStreetMap hotel-building centroid at 43.2845315, 20.8114871 and is limited to quiet unaided sky viewing from a staff-managed guest or confirmed spa area. The pool is not represented as a telescope pad, and equipment is excluded unless the hotel separately approves and assigns a safe footprint.",
+        "Kopaonik National Park visitor rules and tourist map remain the outer boundary for both accommodation records. A room or cabin booking does not authorise Pančićev vrh, Sunčana dolina, a piste, lift, forest road or park trail after dark, so the route includes no night transfer or fallback.",
+        "Open-Meteo supplied preliminary elevation cross-checks of 1,376 metres for Armadillo Houses and 1,730 metres for Grand Kopaonik. Final catalogue elevations remain subject to the production Copernicus DEM ingestion at the reviewed coordinates.",
+        "The former summit and lower-lift-station candidates and the old Konaci stay record are removed. Both replacement accommodation sites remain inactive and their images remain pending license verification."
       ],
-      "requiredChanges": [
-        {
-          "scope": "kopaonik-astronomy-venue",
-          "reason": "Obtain dated written confirmation from Kopaonik National Park and Ski Resorts of Serbia for a named astronomy venue or event, including the permitted hour, route, parking, lighting state and separation from lift and piste-maintenance operations. If no such arrangement exists, replace Kopaonik in the staged expansion rather than presenting a summit or ski slope as an observing site."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "richtersveld",
