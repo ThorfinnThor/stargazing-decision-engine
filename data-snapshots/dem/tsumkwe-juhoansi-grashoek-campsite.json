@@ -1,0 +1,33 @@
+{
+  "siteId": "tsumkwe-juhoansi-grashoek-campsite",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -19.2447934,
+    19.2392123
+  ],
+  "tile": "S20_00_E019_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S20_00_E019_00_DEM/Copernicus_DSM_COG_10_S20_00_E019_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 1204.056,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 1204.069,
+      "validSampleCount": 213
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 1198.518,
+      "validSampleCount": 3490
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T22:33:21.861195Z"
+}
