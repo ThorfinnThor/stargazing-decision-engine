@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T09:45:37.660Z",
+  "generatedAt": "2026-09-22T09:53:58.814Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -2760,6 +2760,7 @@
             "The current Astro Night / Aurora Hunting programme begins with registration outside the Nature Center at the operator-published venue address, then uses an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the same observation field.",
             "The gate closes to vehicles at sunset; Night Pass visitors park outside it and carry equipment for the published 6–12 minute walk. Forest Campgrounds are off-limits to pass visitors, and white light, personal laser pointers and campfires are prohibited in the preserve.",
             "RASC confirms the designated preserve, large 360-degree observation field, public astronomy programming and after-dark vehicle boundary.",
+            "The completed Copernicus DEM ingestion measured 239.721 metres at the observation field and 233.225 metres at the programme check-in; the catalogue stores the corresponding rounded elevations of 240 and 233 metres.",
             "The generic Meldrum Bay and Sheguiandah pins have been removed. Both replacement records remain inactive, and both image licences remain pending."
           ],
           "requiredChanges": []
@@ -2828,10 +2829,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2841,28 +2842,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "manitoulin-eco-park-observation-field:climate",
-        "manitoulin-eco-park-observation-field:black-marble",
-        "manitoulin-eco-park-observation-field:dem",
-        "manitoulin-eco-park-observation-field:scores",
-        "manitoulin-eco-park-astro-night-check-in:climate",
-        "manitoulin-eco-park-astro-night-check-in:black-marble",
-        "manitoulin-eco-park-astro-night-check-in:dem",
-        "manitoulin-eco-park-astro-night-check-in:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
