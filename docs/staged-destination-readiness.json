@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T21:24:17.139Z",
+  "generatedAt": "2026-09-22T21:30:30.977Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 45,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -1521,7 +1521,7 @@
             "Grand Kopaonik directly offers bookable hotel accommodation and describes a 22-by-8-metre heated outdoor pool as a pool under the stars. Its contact page publishes reservation, reception and spa contacts, including a separate spa telephone number.",
             "The Grand catalogue point uses the OpenStreetMap hotel-building centroid at 43.2845315, 20.8114871 and is limited to quiet unaided sky viewing from a staff-managed guest or confirmed spa area. The pool is not represented as a telescope pad, and equipment is excluded unless the hotel separately approves and assigns a safe footprint.",
             "Kopaonik National Park visitor rules and tourist map remain the outer boundary for both accommodation records. A room or cabin booking does not authorise Pančićev vrh, Sunčana dolina, a piste, lift, forest road or park trail after dark, so the route includes no night transfer or fallback.",
-            "Open-Meteo supplied preliminary elevation cross-checks of 1,376 metres for Armadillo Houses and 1,730 metres for Grand Kopaonik. Final catalogue elevations remain subject to the production Copernicus DEM ingestion at the reviewed coordinates.",
+            "Open-Meteo supplied preliminary elevation cross-checks of 1,376 metres for Armadillo Houses and 1,730 metres for Grand Kopaonik. Production Copernicus DEM GLO-30 samples at the reviewed coordinates are 1394.030 and 1731.441 metres; the catalogue stores the rounded values 1,394 and 1,731 metres.",
             "The former summit and lower-lift-station candidates and the old Konaci stay record are removed. Both replacement accommodation sites remain inactive and their images remain pending license verification."
           ],
           "requiredChanges": []
@@ -1596,10 +1596,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1609,28 +1609,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "kopaonik-armadillo-guest-terrace:climate",
-        "kopaonik-armadillo-guest-terrace:black-marble",
-        "kopaonik-armadillo-guest-terrace:dem",
-        "kopaonik-armadillo-guest-terrace:scores",
-        "kopaonik-grand-pool-sky-stay:climate",
-        "kopaonik-grand-pool-sky-stay:black-marble",
-        "kopaonik-grand-pool-sky-stay:dem",
-        "kopaonik-grand-pool-sky-stay:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
