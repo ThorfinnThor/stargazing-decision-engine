@@ -639,23 +639,21 @@
     },
     {
       "destinationId": "enchanted-rock",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://tpwd.texas.gov/state-parks/enchanted-rock",
-        "https://darksky.org/places/enchanted-rock-state-natural-area/"
+        "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
+        "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
+        "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf",
+        "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer"
       ],
       "verifiedFindings": [
         "Texas Parks and Wildlife explicitly promotes stargazing, camping and star parties at Enchanted Rock and publishes daily park and gate hours.",
-        "All trails except the Loop Trail close thirty minutes after sunset, so the staged summit record cannot be a night-observing recommendation.",
-        "Booked campers may receive a late-arrival gate code, but a booking does not reopen the summit trail."
+        "The revised day-use record uses the official D2 footprint at the south Loop Trail trailhead; all trails except the Loop Trail close shortly after sunset, so the summit is no longer recommended at night.",
+        "The revised overnight record uses the official walk-in tent-site area and preserves booking, late-arrival gate-code, trail-closure, quiet and lighting rules."
       ],
-      "requiredChanges": [
-        {
-          "scope": "enchanted-rock-night-footprints",
-          "reason": "Remove the summit as a night site and replace it with a named Loop Trail or official star-party footprint plus a booked campground record, preserving gate-code and trail-closure rules."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "staunton-river",
@@ -675,24 +673,21 @@
     },
     {
       "destinationId": "kissimmee-prairie",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.floridastateparks.org/learn/dark-sky-designation",
-        "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park/experiences-amenities",
-        "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf"
+        "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+        "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
+        "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/ArcGIS/rest/services/Overnight_Accommodations_Statewide_Clean/FeatureServer/0",
+        "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_POI_Statewide/FeatureServer/0"
       ],
       "verifiedFindings": [
-        "Florida State Parks documents a reservable astronomy pad with red-light and no-fire rules, a booked campground route and an after-hours permit for eligible pass holders.",
-        "Without one of those arrangements, the authority directs stargazers to a specific grass area and pavilion beside the entrance kiosk, not to a generic north-entrance coordinate.",
-        "The staged campground and north-entrance records must be aligned to the official astronomy pad and kiosk footprint."
+        "Florida State Parks documents a reservable astronomy pad with red-light and no-fire rules, and the official accommodation GIS identifies Astronomy Pad A exactly.",
+        "The revised fallback record uses the official pavilion beside the entrance kiosk, where visitors without a reservation or eligible after-hours permit are directed to observe.",
+        "The revised access notes distinguish both footprints and preserve reservation, ranger contact, arrival-before-sunset, red-light, bathroom and gate rules."
       ],
-      "requiredChanges": [
-        {
-          "scope": "kissimmee-official-observing-areas",
-          "reason": "Replace the generic site records with the mapped astronomy pad and entrance-kiosk viewing area and encode reservation, permit, arrival-before-sunset, red-light and gate rules."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "big-cypress",
@@ -753,23 +748,21 @@
     },
     {
       "destinationId": "medicine-rocks",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
-        "https://fwp.mt.gov/stateparks/medicine-rocks/?pubDate=20250715",
+        "https://fwp.mt.gov/medicine-rocks",
+        "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/parktrailmaps/medicine_rocks_trail_map.pdf",
+        "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_TRAILS_STATEPARKS_PUBLIC/FeatureServer/0",
+        "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/ArcGIS/rest/services/FWPLND_STATEPARKS_FACILITIES_PTS/FeatureServer/0",
         "https://fwp.mt.gov/stateparks/fees-and-general-information"
       ],
       "verifiedFindings": [
-        "Montana FWP identifies Medicine Rocks as an International Dark Sky Sanctuary, publishes a Night Sky Trail and viewing area, and lists current evening stargazing events.",
-        "The park's official coordinate is 46.04550, -104.45839 at 3,379 feet, and eight first-come campsites are open year-round subject to current restrictions.",
-        "The staged duplicate park and campground points at 46.06, -104.50 do not identify the Night Sky Trail or the official park coordinate."
+        "Montana FWP identifies Medicine Rocks as an International Dark Sky Sanctuary, publishes the Night Sky Trail as a final public trail and lists current evening events at its parking and viewing area.",
+        "The revised trail record lies on the official Night Sky Trail geometry and explicitly defers to the signed event meeting point instead of presenting an invented parking coordinate.",
+        "The revised overnight record uses the exact official FWP coordinate for first-come Campsite 1 and separates campground use from the trail while preserving day-use hours, quiet hours and closure checks."
       ],
-      "requiredChanges": [
-        {
-          "scope": "medicine-rocks-exact-facilities",
-          "reason": "Correct the park coordinate and elevation, distinguish the Night Sky Trail viewing area from the campground, and preserve day-use hours, quiet hours and current closure checks."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "newport-wisconsin",

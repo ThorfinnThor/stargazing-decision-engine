@@ -1,5 +1,5 @@
 {
-  "siteId": "kissimmee-prairie-camp",
+  "siteId": "kissimmee-astronomy-pad-a",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,29 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    27.43,
-    -81.01
+    27.5854220514553,
+    -81.0457665490602
   ],
   "tile": "N27_00_W082_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N27_00_W082_00_DEM/Copernicus_DSM_COG_10_N27_00_W082_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 15.99,
+  "elevationM": 18.981,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 16.077,
-      "validSampleCount": 229
+      "elevationM": 18.842,
+      "validSampleCount": 220
     },
     {
       "radiusKm": 1,
-      "elevationM": null,
-      "validSampleCount": 0
+      "elevationM": 18.915,
+      "validSampleCount": 3712
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
-  "warnings": [
-    "1 km neighborhood crosses the downloaded tile boundary and was omitted"
-  ],
-  "retrievedAt": "2026-09-17T12:00:38.415618Z"
+  "warnings": [],
+  "retrievedAt": "2026-09-22T06:45:42.564300Z"
 }

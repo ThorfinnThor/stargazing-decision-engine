@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-22T06:31:25.348Z",
+  "checkedAt": "2026-09-22T06:49:31.474Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 211,
-    "uniqueUrls": 210
+    "sourceRecords": 217,
+    "uniqueUrls": 217
   },
   "summary": {
-    "reachable": 172,
-    "blocked": 37,
+    "reachable": 176,
+    "blocked": 35,
     "missing": 0,
     "http-error": 0,
-    "error": 1
+    "error": 6
   },
   "records": [
     {
@@ -33,7 +33,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3126,
+      "durationMs": 2858,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 335,
+      "durationMs": 306,
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 362,
+      "durationMs": 375,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 151,
+      "durationMs": 134,
       "error": null
     },
     {
@@ -113,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 355,
+      "durationMs": 291,
       "error": null
     },
     {
@@ -133,7 +133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 359,
+      "durationMs": 1058,
       "error": null
     },
     {
@@ -158,7 +158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 992,
+      "durationMs": 2038,
       "error": null
     },
     {
@@ -178,7 +178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 918,
+      "durationMs": 1150,
       "error": null
     },
     {
@@ -208,7 +208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 952,
+      "durationMs": 1238,
       "error": null
     },
     {
@@ -228,7 +228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 793,
+      "durationMs": 844,
       "error": null
     },
     {
@@ -248,7 +248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 585,
+      "durationMs": 593,
       "error": null
     },
     {
@@ -268,7 +268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 388,
+      "durationMs": 330,
       "error": null
     },
     {
@@ -288,7 +288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -308,7 +308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -328,7 +328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -348,47 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/enchanted-rock-state-natural-area/",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/enchanted-rock-state-natural-area/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 98,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/kissimmee-prairie-preserve-state-park/",
-      "references": [
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/kissimmee-prairie-preserve-state-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -408,7 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 108,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -438,27 +398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/medicine-rocks-state-park/",
-      "references": [
-        {
-          "destinationId": "medicine-rocks",
-          "kind": "guide",
-          "sourceId": "medicine-rocks-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/medicine-rocks-state-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -478,7 +418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -498,7 +438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 135,
       "error": null
     },
     {
@@ -528,7 +468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -548,7 +488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 103,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -568,7 +508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -618,7 +558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 507,
+      "durationMs": 446,
       "error": null
     },
     {
@@ -648,7 +588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 601,
+      "durationMs": 554,
       "error": null
     },
     {
@@ -668,57 +608,77 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1163,
+      "durationMs": 1237,
       "error": null
     },
     {
-      "url": "https://floridastateparks.org/",
+      "url": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/parktrailmaps/medicine_rocks_trail_map.pdf",
       "references": [
         {
-          "destinationId": "kissimmee-prairie",
+          "destinationId": "medicine-rocks",
           "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-2"
+          "sourceId": "medicine-rocks-source-2"
         }
       ],
       "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://floridastateparks.org/",
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/parktrailmaps/medicine_rocks_trail_map.pdf",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 59,
+      "contentType": "application/pdf;charset=UTF-8",
+      "durationMs": 735,
       "error": null
     },
     {
-      "url": "https://floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "url": "https://fwp.mt.gov/medicine-rocks",
       "references": [
         {
-          "destinationId": "kissimmee-prairie",
+          "destinationId": "medicine-rocks",
           "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-1"
+          "sourceId": "medicine-rocks-source-1"
         },
         {
-          "destinationId": "kissimmee-prairie",
+          "destinationId": "medicine-rocks",
           "kind": "site",
-          "siteId": "kissimmee-prairie-north"
+          "siteId": "medicine-rocks-night-sky-trail"
         },
         {
-          "destinationId": "kissimmee-prairie",
+          "destinationId": "medicine-rocks",
           "kind": "site",
-          "siteId": "kissimmee-prairie-camp"
+          "siteId": "medicine-rocks-campsite-1"
         }
       ],
       "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://fwp.mt.gov/medicine-rocks",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 63,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 758,
+      "error": null
+    },
+    {
+      "url": "https://fwp.mt.gov/stateparks/fees-and-general-information",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://fwp.mt.gov/stateparks/fees-and-general-information",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 740,
       "error": null
     },
     {
@@ -738,7 +698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3214,
+      "durationMs": 2879,
       "error": null
     },
     {
@@ -763,7 +723,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3532,
+      "durationMs": 2669,
       "error": null
     },
     {
@@ -783,7 +743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3462,
+      "durationMs": 2663,
       "error": null
     },
     {
@@ -823,7 +783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 191,
+      "durationMs": 225,
       "error": null
     },
     {
@@ -843,7 +803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 680,
+      "durationMs": 572,
       "error": null
     },
     {
@@ -868,7 +828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 970,
+      "durationMs": 904,
       "error": null
     },
     {
@@ -888,7 +848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 544,
+      "durationMs": 561,
       "error": null
     },
     {
@@ -908,7 +868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 548,
+      "durationMs": 580,
       "error": null
     },
     {
@@ -928,7 +888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 532,
+      "durationMs": 541,
       "error": null
     },
     {
@@ -973,7 +933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 128,
+      "durationMs": 129,
       "error": null
     },
     {
@@ -998,7 +958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 399,
+      "durationMs": 400,
       "error": null
     },
     {
@@ -1018,7 +978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 401,
+      "durationMs": 5416,
       "error": null
     },
     {
@@ -1038,7 +998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 257,
+      "durationMs": 297,
       "error": null
     },
     {
@@ -1058,7 +1018,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 120,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -1078,7 +1038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 110,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -1103,7 +1063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 626,
+      "durationMs": 778,
       "error": null
     },
     {
@@ -1123,7 +1083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 788,
+      "durationMs": 968,
       "error": null
     },
     {
@@ -1143,7 +1103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 859,
+      "durationMs": 861,
       "error": null
     },
     {
@@ -1163,7 +1123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 942,
+      "durationMs": 928,
       "error": null
     },
     {
@@ -1183,7 +1143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 807,
+      "durationMs": 893,
       "error": null
     },
     {
@@ -1208,7 +1168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1162,
+      "durationMs": 1134,
       "error": null
     },
     {
@@ -1228,7 +1188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 332,
+      "durationMs": 323,
       "error": null
     },
     {
@@ -1248,7 +1208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 177,
+      "durationMs": 198,
       "error": null
     },
     {
@@ -1268,7 +1228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 92,
+      "durationMs": 144,
       "error": null
     },
     {
@@ -1288,7 +1248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 95,
+      "durationMs": 155,
       "error": null
     },
     {
@@ -1318,7 +1278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1454,
+      "durationMs": 1764,
       "error": null
     },
     {
@@ -1338,7 +1298,107 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 235,
+      "durationMs": 255,
+      "error": null
+    },
+    {
+      "url": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 739,
+      "error": null
+    },
+    {
+      "url": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/ArcGIS/rest/services/Overnight_Accommodations_Statewide_Clean/FeatureServer/0",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/ArcGIS/rest/services/Overnight_Accommodations_Statewide_Clean/FeatureServer/0",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 277,
+      "error": null
+    },
+    {
+      "url": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_POI_Statewide/FeatureServer/0",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_POI_Statewide/FeatureServer/0",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 604,
+      "error": null
+    },
+    {
+      "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/ArcGIS/rest/services/FWPLND_STATEPARKS_FACILITIES_PTS/FeatureServer/0",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/ArcGIS/rest/services/FWPLND_STATEPARKS_FACILITIES_PTS/FeatureServer/0",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 258,
+      "error": null
+    },
+    {
+      "url": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_TRAILS_STATEPARKS_PUBLIC/FeatureServer/0",
+      "references": [
+        {
+          "destinationId": "medicine-rocks",
+          "kind": "guide",
+          "sourceId": "medicine-rocks-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_TRAILS_STATEPARKS_PUBLIC/FeatureServer/0",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 237,
       "error": null
     },
     {
@@ -1363,7 +1423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 391,
+      "durationMs": 419,
       "error": null
     },
     {
@@ -1383,7 +1443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 375,
+      "durationMs": 385,
       "error": null
     },
     {
@@ -1403,7 +1463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 392,
+      "durationMs": 394,
       "error": null
     },
     {
@@ -1448,57 +1508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 74,
-      "error": null
-    },
-    {
-      "url": "https://stateparks.mt.gov/",
-      "references": [
-        {
-          "destinationId": "medicine-rocks",
-          "kind": "guide",
-          "sourceId": "medicine-rocks-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://fwp.mt.gov/stateparks/",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1506,
-      "error": null
-    },
-    {
-      "url": "https://stateparks.mt.gov/medicine-rocks/",
-      "references": [
-        {
-          "destinationId": "medicine-rocks",
-          "kind": "guide",
-          "sourceId": "medicine-rocks-source-1"
-        },
-        {
-          "destinationId": "medicine-rocks",
-          "kind": "site",
-          "siteId": "medicine-rocks-park"
-        },
-        {
-          "destinationId": "medicine-rocks",
-          "kind": "site",
-          "siteId": "medicine-rocks-camp"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://fwp.mt.gov/stateparks/medicine-rocks/",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1464,
+      "durationMs": 75,
       "error": null
     },
     {
@@ -1518,7 +1528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 1018,
       "error": null
     },
     {
@@ -1548,7 +1558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 69,
+      "durationMs": 907,
       "error": null
     },
     {
@@ -1568,7 +1578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 95,
+      "durationMs": 150,
       "error": null
     },
     {
@@ -1598,7 +1608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 889,
+      "durationMs": 877,
       "error": null
     },
     {
@@ -1618,7 +1628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 115,
+      "durationMs": 108,
       "error": null
     },
     {
@@ -1638,7 +1648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 110,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -1658,8 +1668,113 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 73,
+      "durationMs": 72,
       "error": null
+    },
+    {
+      "url": "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 589,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    },
+    {
+      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 590,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    },
+    {
+      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "site",
+          "siteId": "enchanted-rock-walk-in-tent-sites"
+        }
+      ],
+      "https": true,
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 578,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    },
+    {
+      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 583,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+    },
+    {
+      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-2"
+        },
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "site",
+          "siteId": "enchanted-rock-loop-trail-d2"
+        }
+      ],
+      "https": true,
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 580,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
       "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
@@ -1678,7 +1793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 282,
+      "durationMs": 300,
       "error": null
     },
     {
@@ -1698,7 +1813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 139,
+      "durationMs": 189,
       "error": null
     },
     {
@@ -1723,7 +1838,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 142,
+      "durationMs": 132,
       "error": null
     },
     {
@@ -1748,7 +1863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 139,
+      "durationMs": 138,
       "error": null
     },
     {
@@ -1768,7 +1883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 232,
+      "durationMs": 215,
       "error": null
     },
     {
@@ -1788,7 +1903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 228,
+      "durationMs": 232,
       "error": null
     },
     {
@@ -1813,7 +1928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 228,
+      "durationMs": 233,
       "error": null
     },
     {
@@ -1833,7 +1948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -1863,7 +1978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -1893,7 +2008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5234,
+      "durationMs": 3431,
       "error": null
     },
     {
@@ -1923,7 +2038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4908,
+      "durationMs": 3459,
       "error": null
     },
     {
@@ -1943,7 +2058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 66,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -1963,7 +2078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 274,
+      "durationMs": 476,
       "error": null
     },
     {
@@ -1988,7 +2103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 301,
+      "durationMs": 508,
       "error": null
     },
     {
@@ -2008,7 +2123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 193,
+      "durationMs": 332,
       "error": null
     },
     {
@@ -2038,7 +2153,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 138,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -2058,7 +2173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 123,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -2078,7 +2193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 196,
+      "durationMs": 193,
       "error": null
     },
     {
@@ -2098,7 +2213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 179,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -2123,7 +2238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 186,
+      "durationMs": 179,
       "error": null
     },
     {
@@ -2143,7 +2258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 139,
+      "durationMs": 291,
       "error": null
     },
     {
@@ -2163,7 +2278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 776,
+      "durationMs": 793,
       "error": null
     },
     {
@@ -2193,7 +2308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 769,
+      "durationMs": 760,
       "error": null
     },
     {
@@ -2213,7 +2328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 746,
+      "durationMs": 760,
       "error": null
     },
     {
@@ -2243,7 +2358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 582,
+      "durationMs": 590,
       "error": null
     },
     {
@@ -2273,7 +2388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 881,
+      "durationMs": 891,
       "error": null
     },
     {
@@ -2298,7 +2413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 240,
+      "durationMs": 287,
       "error": null
     },
     {
@@ -2318,7 +2433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 412,
+      "durationMs": 215,
       "error": null
     },
     {
@@ -2348,7 +2463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 478,
+      "durationMs": 367,
       "error": null
     },
     {
@@ -2368,7 +2483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 531,
+      "durationMs": 538,
       "error": null
     },
     {
@@ -2388,7 +2503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 178,
+      "durationMs": 233,
       "error": null
     },
     {
@@ -2408,7 +2523,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1834,
+      "durationMs": 1893,
       "error": null
     },
     {
@@ -2438,7 +2553,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2123,
+      "durationMs": 1320,
       "error": null
     },
     {
@@ -2458,7 +2573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1457,
+      "durationMs": 1505,
       "error": null
     },
     {
@@ -2478,7 +2593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2000,
+      "durationMs": 1844,
       "error": null
     },
     {
@@ -2503,7 +2618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1774,
+      "durationMs": 2454,
       "error": null
     },
     {
@@ -2533,7 +2648,77 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 104,
+      "durationMs": 161,
+      "error": null
+    },
+    {
+      "url": "https://www.floridastateparks.org/learn/dark-sky-designation",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-1"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-astronomy-pad-a"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-entrance-pavilion"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.floridastateparks.org/learn/dark-sky-designation",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 63,
+      "error": null
+    },
+    {
+      "url": "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 61,
+      "error": null
+    },
+    {
+      "url": "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "blocked",
+      "status": 403,
+      "method": "GET",
+      "finalUrl": "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 60,
       "error": null
     },
     {
@@ -2563,7 +2748,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2824,
+      "durationMs": 3433,
       "error": null
     },
     {
@@ -2583,7 +2768,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1164,
+      "durationMs": 1152,
       "error": null
     },
     {
@@ -2603,7 +2788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 857,
+      "durationMs": 1079,
       "error": null
     },
     {
@@ -2623,7 +2808,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 115,
+      "durationMs": 430,
       "error": null
     },
     {
@@ -2643,7 +2828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 75,
+      "durationMs": 77,
       "error": null
     },
     {
@@ -2663,7 +2848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 850,
+      "durationMs": 864,
       "error": null
     },
     {
@@ -2683,7 +2868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1616,
+      "durationMs": 4009,
       "error": null
     },
     {
@@ -2708,7 +2893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 163,
+      "durationMs": 234,
       "error": null
     },
     {
@@ -2738,7 +2923,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 189,
+      "durationMs": 184,
       "error": null
     },
     {
@@ -2758,7 +2943,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 193,
+      "durationMs": 181,
       "error": null
     },
     {
@@ -2778,7 +2963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 81,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -2798,7 +2983,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 4816,
+      "durationMs": 4586,
       "error": null
     },
     {
@@ -2818,7 +3003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 79,
+      "durationMs": 114,
       "error": null
     },
     {
@@ -2838,7 +3023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 353,
+      "durationMs": 363,
       "error": null
     },
     {
@@ -2863,7 +3048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 528,
+      "durationMs": 521,
       "error": null
     },
     {
@@ -2883,7 +3068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 120,
+      "durationMs": 116,
       "error": null
     },
     {
@@ -2903,7 +3088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 149,
       "error": null
     },
     {
@@ -2928,7 +3113,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1415,
+      "durationMs": 1861,
       "error": null
     },
     {
@@ -2948,7 +3133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 1272,
+      "durationMs": 1276,
       "error": null
     },
     {
@@ -2968,7 +3153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 139,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -2988,7 +3173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 121,
+      "durationMs": 137,
       "error": null
     },
     {
@@ -3008,7 +3193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1097,
+      "durationMs": 996,
       "error": null
     },
     {
@@ -3028,7 +3213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1092,
+      "durationMs": 933,
       "error": null
     },
     {
@@ -3048,7 +3233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1185,
+      "durationMs": 891,
       "error": null
     },
     {
@@ -3068,7 +3253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1272,
+      "durationMs": 1338,
       "error": null
     },
     {
@@ -3098,7 +3283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 72,
       "error": null
     },
     {
@@ -3118,7 +3303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 52,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -3148,7 +3333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -3168,7 +3353,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 50,
       "error": null
     },
     {
@@ -3188,7 +3373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 66,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -3213,7 +3398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 57,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3243,7 +3428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 59,
+      "durationMs": 50,
       "error": null
     },
     {
@@ -3263,7 +3448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 56,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -3283,7 +3468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -3303,7 +3488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -3323,7 +3508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 169,
+      "durationMs": 188,
       "error": null
     },
     {
@@ -3348,7 +3533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -3368,7 +3553,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 680,
+      "durationMs": 717,
       "error": null
     },
     {
@@ -3388,7 +3573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 669,
+      "durationMs": 742,
       "error": null
     },
     {
@@ -3408,7 +3593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 705,
+      "durationMs": 786,
       "error": null
     },
     {
@@ -3428,7 +3613,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 642,
+      "durationMs": 733,
       "error": null
     },
     {
@@ -3458,7 +3643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 755,
+      "durationMs": 932,
       "error": null
     },
     {
@@ -3483,7 +3668,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 471,
+      "durationMs": 492,
       "error": null
     },
     {
@@ -3503,7 +3688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 332,
+      "durationMs": 434,
       "error": null
     },
     {
@@ -3533,7 +3718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 334,
+      "durationMs": 402,
       "error": null
     },
     {
@@ -3563,7 +3748,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 693,
+      "durationMs": 696,
       "error": null
     },
     {
@@ -3583,7 +3768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 202,
+      "durationMs": 197,
       "error": null
     },
     {
@@ -3603,7 +3788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 177,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -3623,7 +3808,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 253,
+      "durationMs": 197,
       "error": null
     },
     {
@@ -3643,7 +3828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 128,
+      "durationMs": 130,
       "error": null
     },
     {
@@ -3663,7 +3848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1827,
+      "durationMs": 2040,
       "error": null
     },
     {
@@ -3693,7 +3878,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2578,
+      "durationMs": 2605,
       "error": null
     },
     {
@@ -3723,7 +3908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1622,
+      "durationMs": 1819,
       "error": null
     },
     {
@@ -3743,7 +3928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 295,
+      "durationMs": 351,
       "error": null
     },
     {
@@ -3763,7 +3948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 374,
+      "durationMs": 394,
       "error": null
     },
     {
@@ -3783,7 +3968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 355,
+      "durationMs": 507,
       "error": null
     },
     {
@@ -3803,7 +3988,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -3823,7 +4008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -3853,7 +4038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 98,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -3873,7 +4058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -3893,7 +4078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 101,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -3928,7 +4113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -3948,7 +4133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 102,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -3968,7 +4153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -3988,7 +4173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 102,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -4008,7 +4193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -4028,7 +4213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -4048,7 +4233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -4068,7 +4253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -4088,7 +4273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 97,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -4108,7 +4293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -4128,7 +4313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 104,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -4148,7 +4333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -4168,7 +4353,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2110,
+      "durationMs": 1051,
       "error": null
     },
     {
@@ -4188,7 +4373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 853,
+      "durationMs": 970,
       "error": null
     },
     {
@@ -4208,7 +4393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 102,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -4228,7 +4413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 101,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4248,7 +4433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 101,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -4268,7 +4453,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3791,
+      "durationMs": 1937,
       "error": null
     },
     {
@@ -4298,7 +4483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 970,
+      "durationMs": 941,
       "error": null
     },
     {
@@ -4318,37 +4503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
-      "error": null
-    },
-    {
-      "url": "https://www.traveltexas.com/articles/post/unforgettable-texas-landscapes/",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-1"
-        },
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "site",
-          "siteId": "enchanted-rock-summit"
-        },
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "site",
-          "siteId": "enchanted-rock-camp"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.traveltexas.com/articles/post/unforgettable-texas-landscapes/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 94,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -4373,7 +4528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1010,
+      "durationMs": 1017,
       "error": null
     },
     {
@@ -4393,7 +4548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 967,
+      "durationMs": 971,
       "error": null
     },
     {
@@ -4413,7 +4568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 118,
+      "durationMs": 609,
       "error": null
     },
     {
@@ -4433,7 +4588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 158,
+      "durationMs": 226,
       "error": null
     },
     {
@@ -4453,7 +4608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 163,
+      "durationMs": 160,
       "error": null
     },
     {
@@ -4473,7 +4628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 934,
+      "durationMs": 1317,
       "error": null
     },
     {
@@ -4503,8 +4658,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 13647,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7501 ms: Couldn't connect to server\n"
+      "durationMs": 12971,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 30 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 6309 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -4528,7 +4683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 198,
+      "durationMs": 196,
       "error": null
     },
     {
@@ -4553,7 +4708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 182,
+      "durationMs": 155,
       "error": null
     },
     {
@@ -4578,7 +4733,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1282,
+      "durationMs": 1285,
       "error": null
     },
     {
@@ -4598,27 +4753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1165,
-      "error": null
-    },
-    {
-      "url": "https://www.visitfredericksburgtx.com/things-to-do/outdoors/enchanted-rock/",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.visitfredericksburgtx.com/things-to-do/outdoors/enchanted-rock/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 692,
+      "durationMs": 1002,
       "error": null
     },
     {
@@ -4648,7 +4783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 103,
+      "durationMs": 165,
       "error": null
     },
     {
@@ -4678,7 +4813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 175,
+      "durationMs": 203,
       "error": null
     },
     {
@@ -4698,7 +4833,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 88,
+      "durationMs": 1052,
       "error": null
     },
     {
@@ -4718,7 +4853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 258,
+      "durationMs": 481,
       "error": null
     }
   ]

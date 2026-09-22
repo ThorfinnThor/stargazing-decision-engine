@@ -320,6 +320,105 @@ candidates[dinosaurIndex] = [
   },
 ];
 
+const enchantedRockIndex = candidates.findIndex(([id]) => id === "enchanted-rock");
+candidates[enchantedRockIndex] = [
+  "enchanted-rock",
+  "Enchanted Rock",
+  "US",
+  "United States",
+  "north-america",
+  ["texas", "north-america"],
+  "America/Chicago",
+  77,
+  ["state-park", "granite", "hill-country"],
+  "Enchanted Rock State Natural Area stargazing",
+  ["fredericksburg", "Fredericksburg", 30.28, -98.87],
+  [
+    ["enchanted-rock-loop-trail-d2", "Loop Trail south trailhead day-use area (D2)", 30.4986160149212, -98.8184177520007, 433, "trailhead-day-use", "limited", 64, "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info", "Texas Parks and Wildlife maps this day-use footprint at the south side of the Loop Trail. The park is open until 10 p.m., but the entrance gate closes earlier, and every trail except the Loop Trail closes shortly after sunset. Check current capacity and closure notices, arrive before the gate closes, remain on the Loop Trail and developed D2 surface, and never continue toward the summit after its trail closes.", "Texas Parks and Wildlife kartiert diese Tagesfläche an der Südseite des Loop Trail. Der Park ist bis 22 Uhr geöffnet, das Einfahrtstor schließt jedoch früher, und alle Wege außer dem Loop Trail schließen kurz nach Sonnenuntergang. Prüfe aktuelle Kapazitäts- und Sperrhinweise, komme vor Torschluss an, bleibe auf dem Loop Trail und der ausgebauten D2-Fläche und gehe nach Wegschluss niemals weiter in Richtung Gipfel."],
+    ["enchanted-rock-walk-in-tent-sites", "Walk-in tent sites", 30.4963306133242, -98.822661387928, 435, "campground", "limited", 62, "https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites", "The official park GIS and camping map place the walk-in tent-site area at this coordinate. An overnight reservation provides a legal base but does not reopen the summit or other closed trails. Book the site, obtain late-arrival instructions and the gate code before the office closes when needed, observe only from the assigned campsite or open Loop Trail footprint, and follow quiet and light rules.", "Das offizielle Park-GIS und die Campingkarte verorten den Bereich der begehbaren Zeltplätze an dieser Koordinate. Eine Übernachtungsbuchung schafft eine legale Basis, öffnet aber weder den Gipfel noch andere geschlossene Wege. Buche den Platz, hole bei Bedarf vor Büroschluss Hinweise zur späten Ankunft und den Torcode ein, beobachte nur vom zugewiesenen Stellplatz oder vom geöffneten Loop Trail und beachte Ruhe- und Lichtregeln."],
+  ],
+  [
+    "https://tpwd.texas.gov/state-parks/enchanted-rock",
+    "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
+    "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
+    "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf",
+    "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer",
+  ],
+  "an open Loop Trail footprint or a booked campsite, never the closed summit route.",
+  "Eine geöffnete Fläche am Loop Trail oder ein gebuchter Campingplatz, niemals die geschlossene Gipfelroute.",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "protected-area", "public-agency"],
+    sourceTitles: ["Texas Parks and Wildlife: Enchanted Rock hours and gate rules", "Texas Parks and Wildlife: Enchanted Rock trail closures", "Texas Parks and Wildlife: dark skies and star parties", "Texas Parks and Wildlife: official camping and trail map", "Texas Parks and Wildlife GIS: public day-use and camping areas"],
+  },
+];
+
+const kissimmeePrairieIndex = candidates.findIndex(([id]) => id === "kissimmee-prairie");
+candidates[kissimmeePrairieIndex] = [
+  "kissimmee-prairie",
+  "Kissimmee Prairie",
+  "US",
+  "United States",
+  "north-america",
+  ["florida", "north-america"],
+  "America/New_York",
+  76,
+  ["dark-sky-park", "prairie", "wetland"],
+  "Kissimmee Prairie Preserve State Park stargazing",
+  ["okeechobee", "Okeechobee", 27.24, -80.83],
+  [
+    ["kissimmee-astronomy-pad-a", "Astronomy Pad A", 27.5854220514553, -81.0457665490602, 19, "astronomy-pad", "limited", 68, "https://www.floridastateparks.org/learn/dark-sky-designation", "Florida State Parks identifies the astronomy pads as reservable night-observing facilities, and the official accommodation GIS maps Pad A at this coordinate. Reserve the pad, contact the ranger station, arrive before sunset and the gate closure, use only red-spectrum lighting after dark, and do not light a fire. A pad reservation does not authorize entry into other closed preserve areas.", "Florida State Parks weist die Astronomy Pads als buchbare Nachtbeobachtungsanlagen aus; das offizielle Unterkunfts-GIS kartiert Pad A an dieser Koordinate. Reserviere den Platz, kontaktiere die Rangerstation, komme vor Sonnenuntergang und Torschluss an, verwende nach Einbruch der Dunkelheit nur rotes Licht und entzünde kein Feuer. Eine Pad-Reservierung erlaubt keinen Zutritt zu anderen geschlossenen Bereichen des Schutzgebiets."],
+    ["kissimmee-entrance-pavilion", "Entrance-kiosk viewing pavilion", 27.5394789831591, -81.0218868135205, 22, "entrance-viewing-area", "limited", 62, "https://www.floridastateparks.org/learn/dark-sky-designation", "Florida State Parks directs visitors without a campsite, astronomy-pad reservation or eligible after-hours permit to the grass and small pavilion immediately right of the entrance kiosk. The official park GIS places that pavilion here. Park outside the closed gate as directed, pay the applicable entry fee, bring red lighting, water and a toilet plan because the current guidance says no bathrooms are available, and do not pass the gate after it closes.", "Florida State Parks verweist Besucher ohne Camping- oder Astronomy-Pad-Buchung und ohne berechtigte Nachtgenehmigung auf die Wiese und den kleinen Pavillon unmittelbar rechts am Eingangskiosk. Das offizielle Park-GIS verortet diesen Pavillon hier. Parke wie vorgeschrieben außerhalb des geschlossenen Tors, entrichte den fälligen Eintritt, bringe rotes Licht, Wasser und einen Toilettenplan mit, da die aktuellen Hinweise keine Toiletten zusichern, und passiere das Tor nach Schließung nicht."],
+  ],
+  [
+    "https://www.floridastateparks.org/learn/dark-sky-designation",
+    "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
+    "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
+    "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/ArcGIS/rest/services/Overnight_Accommodations_Statewide_Clean/FeatureServer/0",
+    "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_POI_Statewide/FeatureServer/0",
+  ],
+  "a reserved astronomy pad or the separately documented entrance-kiosk fallback.",
+  "Ein reservierter Astronomy Pad oder die getrennt dokumentierte Ausweichfläche am Eingangskiosk.",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "protected-area", "public-agency", "public-agency"],
+    sourceTitles: ["Florida State Parks: dark-sky access and lighting rules", "Florida State Parks: Kissimmee Prairie Preserve", "Florida State Parks: official preserve brochure", "Florida State Parks GIS: astronomy-pad accommodations", "Florida State Parks GIS: entrance pavilion and parking"],
+  },
+];
+
+const medicineRocksIndex = candidates.findIndex(([id]) => id === "medicine-rocks");
+candidates[medicineRocksIndex] = [
+  "medicine-rocks",
+  "Medicine Rocks",
+  "US",
+  "United States",
+  "north-america",
+  ["montana", "north-america"],
+  "America/Denver",
+  82,
+  ["state-park", "prairie", "dark-sky"],
+  "Medicine Rocks State Park Montana stargazing",
+  ["baker-montana", "Baker", 46.37, -104.77],
+  [
+    ["medicine-rocks-night-sky-trail", "Night Sky Trail", 46.0462234527945, -104.467333269572, 1031, "dark-sky-trail", "limited", 62, "https://fwp.mt.gov/medicine-rocks", "Montana FWP publishes the Night Sky Trail as a final public trail and holds guided viewing events from its signed parking and viewing area. This marker lies on the official trail geometry; it is not a substitute for the signed event meeting point. Day use ends at 10 p.m., so use the trail independently only within current park hours, or follow staff instructions during a dated event, and check closures before travel.", "Montana FWP veröffentlicht den Night Sky Trail als endgültig freigegebenen öffentlichen Weg und veranstaltet geführte Beobachtungen ab dem ausgeschilderten Parkplatz und Beobachtungsbereich. Diese Markierung liegt auf der offiziellen Weggeometrie; sie ersetzt nicht den ausgeschilderten Veranstaltungstreffpunkt. Die Tagesnutzung endet um 22 Uhr. Nutze den Weg selbstständig nur innerhalb der aktuellen Parkzeiten oder folge bei einer datierten Veranstaltung den Anweisungen des Personals und prüfe vor der Anreise Sperrungen."],
+    ["medicine-rocks-campsite-1", "Campsite 1", 46.0417955583512, -104.468172965914, 1050, "campground", "limited", 60, "https://fwp.mt.gov/medicine-rocks", "The official Montana FWP facilities layer maps Campsite 1 at this coordinate, one of eight first-come sites. Camping is available year-round subject to current restrictions, but the campsite is a separate overnight footprint and not the Night Sky Trail viewing area. Confirm availability and closures, remain within the assigned campsite after day-use hours, keep lighting low and respect campground quiet hours.", "Der offizielle Anlagen-Datensatz von Montana FWP kartiert Campsite 1 an dieser Koordinate; es ist einer von acht Plätzen nach dem Prinzip der ersten Ankunft. Camping ist vorbehaltlich aktueller Einschränkungen ganzjährig möglich, doch der Stellplatz ist eine eigene Übernachtungsfläche und nicht der Beobachtungsbereich des Night Sky Trail. Bestätige Verfügbarkeit und Sperrungen, bleibe nach Ende der Tagesnutzung auf dem zugewiesenen Stellplatz, halte die Beleuchtung niedrig und beachte die Ruhezeiten."],
+  ],
+  [
+    "https://fwp.mt.gov/medicine-rocks",
+    "https://fwp.mt.gov/binaries/content/assets/fwp/gisresources/parktrailmaps/medicine_rocks_trail_map.pdf",
+    "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/arcgis/rest/services/FWPLND_TRAILS_STATEPARKS_PUBLIC/FeatureServer/0",
+    "https://services3.arcgis.com/Cdxz8r11hT0MGzg1/ArcGIS/rest/services/FWPLND_STATEPARKS_FACILITIES_PTS/FeatureServer/0",
+    "https://fwp.mt.gov/stateparks/fees-and-general-information",
+  ],
+  "the official Night Sky Trail within park hours or a separate first-come campsite.",
+  "Der offizielle Night Sky Trail innerhalb der Parkzeiten oder ein getrennter Stellplatz nach dem Prinzip der ersten Ankunft.",
+  {
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["protected-area", "protected-area", "public-agency", "public-agency", "protected-area"],
+    sourceTitles: ["Montana FWP: Medicine Rocks hours, camping and night-sky events", "Montana FWP: official Medicine Rocks trail map", "Montana FWP GIS: public Night Sky Trail geometry", "Montana FWP GIS: campsite facilities", "Montana FWP: state-park fees and general rules"],
+  },
+];
+
 const stagedReviewBatch = read("scripts/catalog/staged-factual-review-batch-2026-09-21.json");
 if (stagedReviewBatch.records.length !== 36) {
   throw new Error(`Expected 36 factual reviews in the combined batch, found ${stagedReviewBatch.records.length}`);
@@ -546,7 +645,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);
