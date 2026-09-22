@@ -646,7 +646,49 @@ candidates[alulaIndex] = [
   },
 ];
 
+const mudgeeIndex = candidates.findIndex(([id]) => id === "mudgee");
+candidates[mudgeeIndex] = [
+  "mudgee",
+  "Mudgee",
+  "AU",
+  "Australia",
+  "oceania",
+  ["new-south-wales", "oceania"],
+  "Australia/Sydney",
+  80,
+  ["rural", "vineyards", "accessible", "programme-only"],
+  "Mudgee New South Wales stargazing",
+  ["mudgee", "Mudgee", -32.59, 149.59],
+  [
+    ["mudgee-observatory-booked-session", "Mudgee Observatory booked session", -32.6321512, 149.4914588, 620, "public-observatory", "limited", 62, "https://www.visitmudgeeregion.com.au/products/mudgee-observatory", "Mudgee Region Tourism and the observatory identify the public facility at 961 Old Grattai Road; the operator's published coordinate and the mapped observatory feature support this exact visitor point. Both day and night visits require advance booking, and the session time varies by season. Do not arrive for independent observing or infer access from the map. Confirm the date, start and finish, parking and weather decision directly, then use only the equipment and grounds included in that session.", "Mudgee Region Tourism und das Observatorium weisen die öffentliche Anlage an 961 Old Grattai Road aus; die veröffentlichte Betreiberkoordinate und das kartierte Observatoriumsobjekt stützen diesen genauen Besucherpunkt. Tages- und Nachtbesuche erfordern eine Vorabbuchung, die Sitzungszeit ändert sich mit der Jahreszeit. Fahre nicht zur selbstständigen Beobachtung an und leite aus der Karte keinen Zutritt ab. Bestätige Datum, Beginn, Ende, Parkplatz und Wetterentscheidung direkt und nutze dann nur die in der Sitzung vorgesehenen Geräte und Flächen."],
+    ["mudgee-grattai-grove-stay", "Grattai Grove booked accommodation", -32.6338509, 149.505875, 650, "booked-accommodation", "limited", 56, "https://www.visitmudgeeregion.com.au/products/grattai-grove", "Mudgee Region Tourism publishes this exact property coordinate and explicitly tells overnight guests they can stargaze and see the Milky Way after nightfall. Grattai Grove confirms two bookable accommodation options, the 809 Old Grattai Road address, signed onsite parking and wildlife on the twilight and night approach. This is not a public viewpoint: book the accommodation first, obtain the host's current instructions and observe only from the assigned private stay footprint without entering farm paddocks, roads or the observatory next door.", "Mudgee Region Tourism veröffentlicht diese genaue Grundstückskoordinate und erklärt ausdrücklich, dass Übernachtungsgäste nach Einbruch der Dunkelheit Sterne und Milchstraße beobachten können. Grattai Grove bestätigt zwei buchbare Unterkünfte, die Adresse 809 Old Grattai Road, ausgeschilderte Parkplätze auf dem Gelände und Wildtiere auf der Zufahrt bei Dämmerung und Nacht. Dies ist kein öffentlicher Aussichtspunkt: Buche zuerst die Unterkunft, hole aktuelle Gastgeberhinweise ein und beobachte nur innerhalb der zugewiesenen privaten Unterkunftsfläche, nicht auf Weiden, Straßen oder am benachbarten Observatorium."],
+  ],
+  [
+    "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
+    "https://www.mudgeeobservatory.com.au/",
+    "https://www.mudgeeobservatory.com.au/fees.html",
+    "https://www.openstreetmap.org/node/8598919118",
+    "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+    "https://grattaigrove.com.au/",
+    "https://grattaigrove.com.au/contact-and-directions",
+  ],
+  "one advance-booked observatory session or a separate night within booked Grattai Grove accommodation, never an improvised Gulgong stop.",
+  "Eine vorab gebuchte Observatoriumssitzung oder eine getrennte Nacht in gebuchter Unterkunft bei Grattai Grove, niemals ein improvisierter Halt in Gulgong.",
+  {
+    accessMode: "programme-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["official-destination", "official-operator", "official-operator", "open-geodata", "official-destination", "official-operator", "official-operator"],
+    sourceTitles: ["Mudgee Region Tourism: Mudgee Observatory", "Mudgee Observatory: visitor sessions", "Mudgee Observatory: fees, booking and location", "OpenStreetMap: mapped Mudgee Observatory visitor feature", "Mudgee Region Tourism: Grattai Grove", "Grattai Grove: accommodation", "Grattai Grove: contact and night-driving directions"],
+    programmeDetailEn: "Mudgee Observatory is usable only for an advance-booked seasonal session. Grattai Grove is a separate private accommodation whose official destination listing explicitly supports stargazing by overnight guests. A booking for either place grants no access to the other, and neither supports an unplanned roadside or paddock fallback.",
+    programmeDetailDe: "Das Mudgee Observatory ist ausschließlich mit vorab gebuchter saisonaler Sitzung nutzbar. Grattai Grove ist eine getrennte Privatunterkunft, deren offizieller Destinationseintrag Sternbeobachtung für Übernachtungsgäste ausdrücklich vorsieht. Eine Buchung für einen Ort gewährt keinen Zugang zum anderen; keiner erlaubt einen ungeplanten Straßenrand- oder Weide-Ausweichort.",
+    programmeStandfirstSuffixEn: "The programme and accommodation records confirm who may be onsite; they do not grant access without the corresponding booking or current host instructions.",
+    programmeStandfirstSuffixDe: "Programm- und Unterkunftseinträge bestätigen, wer vor Ort sein darf; ohne die zugehörige Buchung und aktuelle Gastgeberanweisung gewähren sie keinen Zugang.",
+  },
+];
+
 const copernicusElevationOverrides = new Map([
+  ["mudgee-observatory-booked-session", 602],
+  ["mudgee-grattai-grove-stay", 639],
   ["alula-harrat-viewpoint", 1162],
   ["alula-gharameel-tour-departure", 738],
   ["sark-dachinger-observatory", 104],
@@ -786,7 +828,7 @@ const makeGuide = (item, index) => {
     standfirst: confirmationOnly
       ? bi(`${name} has real, documented visitor places or facilities, but the reviewed sources do not confirm astronomy use after dark. This staged guide records the evidence gap rather than turning a daytime attraction or operating facility into a night recommendation. Both candidate sites remain inactive until the responsible authorities confirm the intended date, hour, access route and parking.`, `${name} besitzt reale, dokumentierte Besucherorte oder Anlagen, doch die geprüften Quellen bestätigen keine astronomische Nutzung nach Einbruch der Dunkelheit. Dieser vorbereitete Guide dokumentiert die Beleglücke, statt aus einer Tagesattraktion oder Betriebsanlage eine Nachtempfehlung zu machen. Beide Kandidaten bleiben inaktiv, bis die zuständigen Stellen Datum, Uhrzeit, Zugangsweg und Parken bestätigen.`)
       : programmeOnly
-      ? bi(`${name} has documented astronomy venues, but the reviewed pages do not establish a current independent night-observing site. This staged guide starts with a programme or operator confirmation and treats postponement as the only valid outcome when that confirmation is absent. The regional Starlight designation confirms sky quality, not tonight's admission, parking or programme.`, `${name} besitzt dokumentierte Astronomieorte, doch die geprüften Seiten belegen keinen aktuell selbstständig nutzbaren Nachtbeobachtungsplatz. Dieser vorbereitete Guide beginnt mit der Bestätigung durch Programm oder Betreiber und sieht ohne diese Bestätigung ausschließlich eine Verschiebung vor. Die regionale Starlight-Auszeichnung bestätigt die Himmelsqualität, aber weder heutigen Zutritt noch Parkplatz oder Programm.`)
+      ? bi(`${name} has documented astronomy venues, but the reviewed pages do not establish a current independent night-observing site. This staged guide starts with a programme or operator confirmation and treats postponement as the only valid outcome when that confirmation is absent. ${options.programmeStandfirstSuffixEn ?? "A regional Starlight designation confirms sky quality, not tonight's admission, parking or programme."}`, `${name} besitzt dokumentierte Astronomieorte, doch die geprüften Seiten belegen keinen aktuell selbstständig nutzbaren Nachtbeobachtungsplatz. Dieser vorbereitete Guide beginnt mit der Bestätigung durch Programm oder Betreiber und sieht ohne diese Bestätigung ausschließlich eine Verschiebung vor. ${options.programmeStandfirstSuffixDe ?? "Eine regionale Starlight-Auszeichnung bestätigt die Himmelsqualität, aber weder heutigen Zutritt noch Parkplatz oder Programm."}`)
       : campOnly
       ? bi(`${name} supports stargazing only as an overnight campsite plan. Book ${primary} or ${secondary}, complete reception and permits, and arrive before dark because internal travel at night is prohibited. Observe inside the assigned camping footprint, keep the vehicle settled and leave after daylight. The coordinate identifies the camp; it never replaces a booking or current park instruction.`, `${name} trägt Sternbeobachtung nur als Übernachtungsplan am Campingplatz. Buche ${primary} oder ${secondary}, erledige Rezeption und Genehmigungen und komme vor Dunkelheit an, denn interne Fahrten bei Nacht sind verboten. Beobachte innerhalb der zugewiesenen Campingfläche, lasse das Fahrzeug stehen und fahre erst bei Tageslicht ab. Die Koordinate bezeichnet das Camp; sie ersetzt weder Buchung noch aktuelle Parkanweisung.`)
       : bi(`${name} rewards a specific plan. ${angleEnglish} This guide separates the named observing places from the live decisions that remain with visitors and the managing authority. It is written for a real evening, including the point at which postponing is the correct decision, and keeps the practical return visible throughout the planning.`, `${name} belohnt einen konkreten Plan. ${angleGerman} Dieser Guide trennt benannte Beobachtungsorte von den aktuellen Entscheidungen der Gäste und der zuständigen Verwaltung. Er beschreibt einen echten Abend einschließlich des Punkts, an dem Verschieben die richtige Entscheidung ist, und hält den praktischen Rückweg während der Planung sichtbar.`),
@@ -902,7 +944,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village", "alula-harrat", "alula-hegra"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village", "alula-harrat", "alula-hegra", "mudgee-observatory", "gulgong"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);

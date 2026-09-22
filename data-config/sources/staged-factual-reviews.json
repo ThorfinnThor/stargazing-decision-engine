@@ -473,23 +473,24 @@
     },
     {
       "destinationId": "mudgee",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
-        "https://www.nationalparks.nsw.gov.au/",
-        "https://www.environment.nsw.gov.au/"
+        "https://www.mudgeeobservatory.com.au/",
+        "https://www.mudgeeobservatory.com.au/fees.html",
+        "https://www.openstreetmap.org/node/8598919118",
+        "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+        "https://grattaigrove.com.au/",
+        "https://grattaigrove.com.au/contact-and-directions"
       ],
       "verifiedFindings": [
-        "Mudgee Region Tourism confirms that Mudgee Observatory at 961 Old Grattai Road is open to the public for essential-booking day and night sessions.",
-        "The staged observatory coordinate is only a coarse regional point and the Gulgong outskirts record has no reviewed astronomy-access source."
+        "Mudgee Region Tourism and the operator confirm that Mudgee Observatory at 961 Old Grattai Road runs public day and night sessions by essential advance booking; seasonal session times are supplied with the booking.",
+        "The operator's published coordinate and the mapped observatory feature resolve the exact visitor facility, replacing the former coarse regional pin.",
+        "The unsupported Gulgong record is replaced by Grattai Grove: its official destination listing publishes the exact property coordinate and explicitly promotes Milky Way stargazing after nightfall, while the operator confirms two bookable accommodation options, onsite parking directions and wildlife risk on twilight and night approaches.",
+        "The revised route is programme-only: visitors use either one confirmed observatory session or a separately booked Grattai Grove accommodation footprint, never both on one night and never a roadside or paddock substitute."
       ],
-      "requiredChanges": [
-        {
-          "scope": "mudgee-venue-records",
-          "reason": "Geocode and verify the observatory entrance, switch the primary route to programme-only, and replace the unsupported Gulgong pin with a second named and operator-confirmed venue or remove the destination from the two-site expansion model."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "great-western-woodlands",

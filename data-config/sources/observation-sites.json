@@ -4165,46 +4165,6 @@
     }
   },
   {
-    "id": "mudgee-observatory",
-    "slug": "mudgee-observatory",
-    "destinationId": "mudgee",
-    "name": "Mudgee region observatory area",
-    "lat": -32.55,
-    "lon": 149.56,
-    "elevationM": 470,
-    "siteType": "rural-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 62,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Mudgee region observatory area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Mudgee region observatory area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "gulgong",
-    "slug": "gulgong",
-    "destinationId": "mudgee",
-    "name": "Gulgong outskirts",
-    "lat": -32.36,
-    "lon": 149.53,
-    "elevationM": 500,
-    "siteType": "rural-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Gulgong outskirts. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Gulgong outskirts nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "great-western-boorabbin",
     "slug": "great-western-boorabbin",
     "destinationId": "great-western-woodlands",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "Experience AlUla maps this exact Husaak Adventure Centre arrival point for its guided Gharameel stargazing experience. It is a meeting and parking point, not the remote observing camp. The operator provides the 4×4 transfer to and from Gharameel; independent access is not supported. The current page says booking is coming back soon, so do not travel for the experience until a date-specific e-ticket is available. Then arrive at least 15 minutes early with ID, follow the guide, accept weather or visibility changes and return only with the included transport.",
       "de": "Experience AlUla kartiert diesen genauen Ankunftspunkt am Husaak Adventure Centre für das geführte Gharameel-Sternbeobachtungserlebnis. Er ist Treff- und Parkplatz, nicht das abgelegene Beobachtungscamp. Der Betreiber stellt den Allradtransfer nach Gharameel und zurück; eine selbstständige Zufahrt ist nicht vorgesehen. Die aktuelle Seite meldet, dass die Buchung bald zurückkehrt. Fahre deshalb erst mit verfügbarem datiertem E-Ticket zum Erlebnis. Sei dann mindestens 15 Minuten vorher mit Ausweis vor Ort, folge dem Guide, akzeptiere Änderungen durch Wetter oder Sicht und kehre ausschließlich mit dem enthaltenen Transfer zurück."
+    }
+  },
+  {
+    "id": "mudgee-observatory-booked-session",
+    "slug": "mudgee-observatory-booked-session",
+    "destinationId": "mudgee",
+    "name": "Mudgee Observatory booked session",
+    "lat": -32.6321512,
+    "lon": 149.4914588,
+    "elevationM": 602,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
+    "accessNotes": {
+      "en": "Mudgee Region Tourism and the observatory identify the public facility at 961 Old Grattai Road; the operator's published coordinate and the mapped observatory feature support this exact visitor point. Both day and night visits require advance booking, and the session time varies by season. Do not arrive for independent observing or infer access from the map. Confirm the date, start and finish, parking and weather decision directly, then use only the equipment and grounds included in that session.",
+      "de": "Mudgee Region Tourism und das Observatorium weisen die öffentliche Anlage an 961 Old Grattai Road aus; die veröffentlichte Betreiberkoordinate und das kartierte Observatoriumsobjekt stützen diesen genauen Besucherpunkt. Tages- und Nachtbesuche erfordern eine Vorabbuchung, die Sitzungszeit ändert sich mit der Jahreszeit. Fahre nicht zur selbstständigen Beobachtung an und leite aus der Karte keinen Zutritt ab. Bestätige Datum, Beginn, Ende, Parkplatz und Wetterentscheidung direkt und nutze dann nur die in der Sitzung vorgesehenen Geräte und Flächen."
+    }
+  },
+  {
+    "id": "mudgee-grattai-grove-stay",
+    "slug": "mudgee-grattai-grove-stay",
+    "destinationId": "mudgee",
+    "name": "Grattai Grove booked accommodation",
+    "lat": -32.6338509,
+    "lon": 149.505875,
+    "elevationM": 639,
+    "siteType": "booked-accommodation",
+    "publicAccess": "limited",
+    "accessScore": 56,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+    "accessNotes": {
+      "en": "Mudgee Region Tourism publishes this exact property coordinate and explicitly tells overnight guests they can stargaze and see the Milky Way after nightfall. Grattai Grove confirms two bookable accommodation options, the 809 Old Grattai Road address, signed onsite parking and wildlife on the twilight and night approach. This is not a public viewpoint: book the accommodation first, obtain the host's current instructions and observe only from the assigned private stay footprint without entering farm paddocks, roads or the observatory next door.",
+      "de": "Mudgee Region Tourism veröffentlicht diese genaue Grundstückskoordinate und erklärt ausdrücklich, dass Übernachtungsgäste nach Einbruch der Dunkelheit Sterne und Milchstraße beobachten können. Grattai Grove bestätigt zwei buchbare Unterkünfte, die Adresse 809 Old Grattai Road, ausgeschilderte Parkplätze auf dem Gelände und Wildtiere auf der Zufahrt bei Dämmerung und Nacht. Dies ist kein öffentlicher Aussichtspunkt: Buche zuerst die Unterkunft, hole aktuelle Gastgeberhinweise ein und beobachte nur innerhalb der zugewiesenen privaten Unterkunftsfläche, nicht auf Weiden, Straßen oder am benachbarten Observatorium."
     }
   }
 ]
