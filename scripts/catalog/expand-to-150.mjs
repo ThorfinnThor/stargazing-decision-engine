@@ -883,6 +883,8 @@ candidates[oracleStateParkIndex] = [
 ];
 
 const copernicusElevationOverrides = new Map([
+  ["massacre-ranch-interpretive-camp-meadow", 1817],
+  ["stevens-camp-interpretive-camp-meadow", 1756],
   ["oracle-american-avenue-reserved-stargazing", 1307],
   ["oracle-kannally-ranch-house-star-party", 1326],
   ["manitoulin-eco-park-observation-field", 240],

@@ -1,12 +1,12 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T11:05:19.970Z",
+  "generatedAt": "2026-09-22T11:20:24.296Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
-    "withCleanSourceReachability": 47,
+    "withCompleteSnapshots": 50,
+    "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
@@ -2886,13 +2886,16 @@
             "https://www.blm.gov/visit/black-rock-desert-high-rock-canyon-emigrant-trails-national-conservation-area",
             "https://www.blm.gov/nevada-fire-information-and-fire-restrictions",
             "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
-            "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf"
+            "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf",
+            "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_Black%20Rock%20Desert_Plan%20your%20visit.pdf",
+            "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/"
           ],
           "verifiedFindings": [
             "BLM explicitly promotes stargazing and permits dispersed camping throughout Massacre Rim Dark Sky Sanctuary; Massacre Ranch and Steven's Camp are named public recreation areas with primitive campsites and first-come cabins.",
             "The official California National Historic Trail brochure supplies exact interpretive-panel coordinates at Massacre Ranch and Steven's Camp, replacing the coarse sanctuary point and the invalid Denio observing record.",
             "BLM documents gravel Nevada 8A near the sanctuary, extremely rough and rocky interior roads, a four-wheel-drive/high-clearance recommendation, no cell service, unreliable surface water and fuel approximately 40 to 90 road miles away.",
-            "The current Winnemucca fire order prohibits wood and charcoal fires outside developed fee campgrounds or picnic areas, with a narrow portable gas or pressurised-liquid stove exception, and the High Rock Canyon Road southern approach has a recurring winter/spring closure."
+            "The current Winnemucca fire order prohibits wood and charcoal fires outside developed fee campgrounds or picnic areas, with a narrow portable gas or pressurised-liquid stove exception, and the High Rock Canyon Road southern approach has a recurring winter/spring closure.",
+            "Copernicus DEM GLO-30 samples at the reviewed coordinates are 1817.051 metres for Massacre Ranch and 1755.659 metres for Steven's Camp; the catalogue stores the rounded values 1817 and 1756 metres."
           ],
           "requiredChanges": []
         },
@@ -2966,10 +2969,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2979,28 +2982,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "massacre-ranch-interpretive-camp-meadow:climate",
-        "massacre-ranch-interpretive-camp-meadow:black-marble",
-        "massacre-ranch-interpretive-camp-meadow:dem",
-        "massacre-ranch-interpretive-camp-meadow:scores",
-        "stevens-camp-interpretive-camp-meadow:climate",
-        "stevens-camp-interpretive-camp-meadow:black-marble",
-        "stevens-camp-interpretive-camp-meadow:dem",
-        "stevens-camp-interpretive-camp-meadow:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -4051,9 +4044,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 2,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 1,
+        "broken": 0,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "boundary-waters",
@@ -4079,8 +4072,8 @@
           {
             "id": "boundary-waters-source-1",
             "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "boundary-waters-source-2",
@@ -4092,7 +4085,7 @@
             "id": "boundary-waters-source-3",
             "url": "https://www.fs.usda.gov/visit/know-before-you-go",
             "classification": "reachable",
-            "status": 200
+            "status": 206
           }
         ]
       },
@@ -4128,7 +4121,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
