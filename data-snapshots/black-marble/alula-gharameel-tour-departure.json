@@ -1,0 +1,158 @@
+{
+  "siteId": "alula-gharameel-tour-departure",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 3.551921,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 3.805365,
+          "coverage": 1,
+          "validPixelCount": 61,
+          "totalPixelCount": 61
+        },
+        {
+          "year": 2024,
+          "radiance": 3.294725,
+          "coverage": 1,
+          "validPixelCount": 61,
+          "totalPixelCount": 61
+        },
+        {
+          "year": 2023,
+          "radiance": 3.551921,
+          "coverage": 1,
+          "validPixelCount": 61,
+          "totalPixelCount": 61
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 5.249554,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 5.249554,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        },
+        {
+          "year": 2024,
+          "radiance": 4.508473,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        },
+        {
+          "year": 2023,
+          "radiance": 5.734278,
+          "coverage": 1,
+          "validPixelCount": 1574,
+          "totalPixelCount": 1574
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 1.103988,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 1.156404,
+          "coverage": 1,
+          "validPixelCount": 13117,
+          "totalPixelCount": 13117
+        },
+        {
+          "year": 2024,
+          "radiance": 0.945718,
+          "coverage": 1,
+          "validPixelCount": 13117,
+          "totalPixelCount": 13117
+        },
+        {
+          "year": 2023,
+          "radiance": 1.103988,
+          "coverage": 1,
+          "validPixelCount": 13117,
+          "totalPixelCount": 13117
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.0566,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.064824,
+          "coverage": 1,
+          "validPixelCount": 77390,
+          "totalPixelCount": 77390
+        },
+        {
+          "year": 2024,
+          "radiance": 0.047097,
+          "coverage": 1,
+          "validPixelCount": 77390,
+          "totalPixelCount": 77390
+        },
+        {
+          "year": 2023,
+          "radiance": 0.0566,
+          "coverage": 1,
+          "validPixelCount": 77390,
+          "totalPixelCount": 77390
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 3.551921,
+  "radiance2to10": 5.249554,
+  "radiance10to30": 1.103988,
+  "radiance30to75": 0.0566,
+  "alanExposure": 1.348831,
+  "darknessScore": 42.05,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T08:09:23.524405Z"
+}
