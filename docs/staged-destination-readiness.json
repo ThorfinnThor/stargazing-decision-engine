@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T06:49:31.737Z",
+  "generatedAt": "2026-09-22T06:57:54.964Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 47,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 19,
     "withApprovedDestinationImage": 0,
@@ -3018,10 +3018,10 @@
           "id": "enchanted-rock-loop-trail-d2",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3030,26 +3030,18 @@
           "id": "enchanted-rock-walk-in-tent-sites",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "enchanted-rock-loop-trail-d2:climate",
-        "enchanted-rock-loop-trail-d2:black-marble",
-        "enchanted-rock-loop-trail-d2:scores",
-        "enchanted-rock-walk-in-tent-sites:climate",
-        "enchanted-rock-walk-in-tent-sites:black-marble",
-        "enchanted-rock-walk-in-tent-sites:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -3216,10 +3208,10 @@
           "id": "kissimmee-astronomy-pad-a",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3228,26 +3220,18 @@
           "id": "kissimmee-entrance-pavilion",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "kissimmee-astronomy-pad-a:climate",
-        "kissimmee-astronomy-pad-a:black-marble",
-        "kissimmee-astronomy-pad-a:scores",
-        "kissimmee-entrance-pavilion:climate",
-        "kissimmee-entrance-pavilion:black-marble",
-        "kissimmee-entrance-pavilion:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -3611,10 +3595,10 @@
           "id": "medicine-rocks-night-sky-trail",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -3623,26 +3607,18 @@
           "id": "medicine-rocks-campsite-1",
           "active": false,
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "medicine-rocks-night-sky-trail:climate",
-        "medicine-rocks-night-sky-trail:black-marble",
-        "medicine-rocks-night-sky-trail:scores",
-        "medicine-rocks-campsite-1:climate",
-        "medicine-rocks-campsite-1:black-marble",
-        "medicine-rocks-campsite-1:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
