@@ -625,22 +625,25 @@
     },
     {
       "destinationId": "oracle-state-park",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://azstateparks.com/oracle",
-        "https://azstateparks.com/oracle/things-to-do/area-attractions",
-        "https://darksky.org/places/oracle-state-park-dark-sky-park/"
+        "https://azstateparks.com/oracle/dark-skies/viewing-info",
+        "https://azstateparks.com/oracle/events",
+        "https://azstateparks.com/oracle/events/night-sky-photography-workshop",
+        "https://azstateparks.com/oracle/explore/maps",
+        "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
+        "https://darksky.org/places/oracle-state-park-dark-sky-park/",
+        "https://www.openstreetmap.org/node/3350745581",
+        "https://www.openstreetmap.org/way/328503138"
       ],
       "verifiedFindings": [
-        "Arizona State Parks identifies Oracle as an International Dark Sky Park with environmental programmes, but its normal gate and exit hours end before night observing.",
-        "No reviewed park source supports Charouleau Gap as a park astronomy site or grants independent after-hours access there."
-      ],
-      "requiredChanges": [
-        {
-          "scope": "oracle-programme-only",
-          "reason": "Retain only dated park astronomy events or written after-hours arrangements at Kannally Ranch and replace Charouleau Gap with a second official programme venue or remove it."
-        }
+        "Arizona State Parks explicitly defines two night-sky access models: public Star Parties near Kannally Ranch House on published dates and independently reservable after-hours entry at the American Avenue side gate.",
+        "Independent visitors must call before 15:00, preferably on the same day, pay the current fee and obtain a four-digit padlock code; overnight camping remains prohibited.",
+        "The American Avenue record uses the mapped parking point inside the official trailhead footprint. The Kannally Ranch House record uses the exact mapped building and remains unavailable unless the park publishes a new dated astronomy event or supplies a written arrangement.",
+        "The current Oracle event calendar reviewed on 2026-09-22 lists no future astronomy event, so the Ranch House site has publicAccess no and accessScore 0 rather than implying routine night entry.",
+        "The unsupported Charouleau Gap record and the old coarse Ranch House pin have been removed. Both replacements and their images remain inactive and pending."
       ]
     },
     {

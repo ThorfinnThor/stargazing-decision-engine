@@ -4285,46 +4285,6 @@
     }
   },
   {
-    "id": "oracle-state-park",
-    "slug": "oracle-state-park",
-    "destinationId": "oracle-state-park",
-    "name": "Oracle State Park Kannally Ranch",
-    "lat": 32.61,
-    "lon": -110.77,
-    "elevationM": 1370,
-    "siteType": "state-park",
-    "publicAccess": "limited",
-    "accessScore": 62,
-    "active": false,
-    "priority": 78,
-    "certificationIds": [],
-    "notesSourceUrl": "https://azstateparks.com/oracle",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Oracle State Park Kannally Ranch. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Oracle State Park Kannally Ranch nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "oracle-charouleau",
-    "slug": "oracle-charouleau",
-    "destinationId": "oracle-state-park",
-    "name": "Charouleau Gap area",
-    "lat": 32.62,
-    "lon": -110.82,
-    "elevationM": 1300,
-    "siteType": "desert-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 52,
-    "active": false,
-    "priority": 78,
-    "certificationIds": [],
-    "notesSourceUrl": "https://azstateparks.com/oracle",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Charouleau Gap area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Charouleau Gap area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "staunton-river-park",
     "slug": "staunton-river-park",
     "destinationId": "staunton-river",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "This coordinate is the operator-published Manitoulin Eco Park venue address and programme check-in, not a second observing field. The current Astro Night / Aurora Hunting schedule starts with registration outside the Nature Center, followed by an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the observation field. Attend only with a current ticket for the selected date, arrive at the published registration time, follow staff and remain with the group. The DarkSky gate closes to vehicles after sunset; white light, personal laser pointers and campfires are prohibited.",
       "de": "Diese Koordinate ist die vom Betreiber veröffentlichte Adresse des Manitoulin Eco Park und der Programm-Check-in, kein zweites Beobachtungsfeld. Der aktuelle Ablauf von Astro Night / Aurora Hunting beginnt mit der Anmeldung vor dem Nature Center, gefolgt von einem betreuten Fahrzeugkonvoi vom Hauptparkplatz zum DarkSky-Parkplatz und der geführten Sitzung auf dem Beobachtungsfeld. Nimm nur mit aktuellem Ticket für den gewählten Termin teil, erscheine zur veröffentlichten Anmeldezeit, folge dem Personal und bleibe bei der Gruppe. Das DarkSky-Tor schließt nach Sonnenuntergang für Fahrzeuge; Weißlicht, private Laserpointer und Lagerfeuer sind verboten."
+    }
+  },
+  {
+    "id": "oracle-american-avenue-reserved-stargazing",
+    "slug": "oracle-american-avenue-reserved-stargazing",
+    "destinationId": "oracle-state-park",
+    "name": "American Avenue Trailhead reserved stargazing",
+    "lat": 32.6215404,
+    "lon": -110.7464941,
+    "elevationM": 1306,
+    "siteType": "reserved-trailhead-parking",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": false,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://azstateparks.com/oracle/dark-skies/viewing-info",
+    "accessNotes": {
+      "en": "Arizona State Parks explicitly offers independent after-hours stargazing through this side entrance seven days a week. Call the park before 15:00, preferably on the same day, pay the current vehicle fee and obtain the four-digit padlock code before travel. Navigate specifically to American Avenue Trailhead, keep the reservation and gate instructions available offline, stay within the permitted trailhead footprint and leave by the agreed route. The code and coordinate do not authorize camping; overnight camping is prohibited.",
+      "de": "Arizona State Parks bietet über diesen Seiteneingang ausdrücklich an sieben Tagen pro Woche selbstständige Sternbeobachtung nach den normalen Öffnungszeiten an. Rufe den Park vor 15 Uhr an, vorzugsweise am selben Tag, zahle die aktuelle Fahrzeuggebühr und erhalte vor der Fahrt den vierstelligen Zahlenschlosscode. Navigiere gezielt zum American Avenue Trailhead, halte Reservierung und Toranweisung offline bereit, bleibe innerhalb der erlaubten Trailhead-Fläche und verlasse den Park über den vereinbarten Weg. Code und Koordinate erlauben kein Camping; Übernachtungscamping ist verboten."
+    }
+  },
+  {
+    "id": "oracle-kannally-ranch-house-star-party",
+    "slug": "oracle-kannally-ranch-house-star-party",
+    "destinationId": "oracle-state-park",
+    "name": "Kannally Ranch House star-party patio",
+    "lat": 32.6096723,
+    "lon": -110.7336317,
+    "elevationM": 1317,
+    "siteType": "programme-observing-patio",
+    "publicAccess": "no",
+    "accessScore": 0,
+    "active": false,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://azstateparks.com/oracle/events",
+    "accessNotes": {
+      "en": "Arizona State Parks identifies public Star Parties near Kannally Ranch House as its staffed night-sky option, and its official 2025 workshop documents the Ranch House living room and patio as the programme footprint. This is not an independent observing alternative. The current park calendar reviewed on 2026-09-22 lists no future astronomy event, so do not enter or set up here after normal closing. Use this record only when Arizona State Parks publishes a new dated Star Party or provides a written after-hours arrangement for the chosen night; follow that event's admission, parking, staff and finish instructions.",
+      "de": "Arizona State Parks bezeichnet öffentliche Star Parties nahe dem Kannally Ranch House als betreute Nachthimmel-Option; der offizielle Workshop von 2025 belegt Wohnraum und Patio des Ranch House als Programmfläche. Dies ist keine selbstständige Beobachtungsalternative. Der am 22.09.2026 geprüfte Parkkalender nennt keinen künftigen Astronomietermin; betrete den Ort daher nach der normalen Schließzeit nicht und baue dort nichts auf. Nutze diesen Datensatz nur, wenn Arizona State Parks eine neue datierte Star Party veröffentlicht oder für die gewählte Nacht eine schriftliche Sonderregelung erteilt; befolge deren Eintritts-, Park-, Personal- und Abschlussanweisungen."
     }
   }
 ]

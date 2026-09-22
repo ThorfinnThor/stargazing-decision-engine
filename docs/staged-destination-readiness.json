@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T09:53:58.814Z",
+  "generatedAt": "2026-09-22T10:12:40.052Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 20,
-    "withVerifiedFactualReview": 30,
+    "requiringFactualChanges": 19,
+    "withVerifiedFactualReview": 31,
     "readyForActivation": 0
   },
   "records": [
@@ -3058,29 +3058,32 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
+        "total": 10,
+        "reachable": 9,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "oracle-state-park",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://azstateparks.com/oracle",
-            "https://azstateparks.com/oracle/things-to-do/area-attractions",
-            "https://darksky.org/places/oracle-state-park-dark-sky-park/"
+            "https://azstateparks.com/oracle/dark-skies/viewing-info",
+            "https://azstateparks.com/oracle/events",
+            "https://azstateparks.com/oracle/events/night-sky-photography-workshop",
+            "https://azstateparks.com/oracle/explore/maps",
+            "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
+            "https://darksky.org/places/oracle-state-park-dark-sky-park/",
+            "https://www.openstreetmap.org/node/3350745581",
+            "https://www.openstreetmap.org/way/328503138"
           ],
           "verifiedFindings": [
-            "Arizona State Parks identifies Oracle as an International Dark Sky Park with environmental programmes, but its normal gate and exit hours end before night observing.",
-            "No reviewed park source supports Charouleau Gap as a park astronomy site or grants independent after-hours access there."
-          ],
-          "requiredChanges": [
-            {
-              "scope": "oracle-programme-only",
-              "reason": "Retain only dated park astronomy events or written after-hours arrangements at Kannally Ranch and replace Charouleau Gap with a second official programme venue or remove it."
-            }
+            "Arizona State Parks explicitly defines two night-sky access models: public Star Parties near Kannally Ranch House on published dates and independently reservable after-hours entry at the American Avenue side gate.",
+            "Independent visitors must call before 15:00, preferably on the same day, pay the current fee and obtain a four-digit padlock code; overnight camping remains prohibited.",
+            "The American Avenue record uses the mapped parking point inside the official trailhead footprint. The Kannally Ranch House record uses the exact mapped building and remains unavailable unless the park publishes a new dated astronomy event or supplies a written arrangement.",
+            "The current Oracle event calendar reviewed on 2026-09-22 lists no future astronomy event, so the Ranch House site has publicAccess no and accessScore 0 rather than implying routine night entry.",
+            "The unsupported Charouleau Gap record and the old coarse Ranch House pin have been removed. Both replacements and their images remain inactive and pending."
           ]
         },
         "records": [
@@ -3092,52 +3095,103 @@
           },
           {
             "id": "oracle-state-park-source-2",
-            "url": "https://azstateparks.com/",
+            "url": "https://azstateparks.com/oracle/dark-skies/viewing-info",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "oracle-state-park-source-3",
+            "url": "https://azstateparks.com/oracle/events",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-4",
+            "url": "https://azstateparks.com/oracle/events/night-sky-photography-workshop",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-5",
+            "url": "https://azstateparks.com/oracle/explore/maps",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-6",
+            "url": "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-7",
             "url": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
             "classification": "blocked",
             "status": 403
+          },
+          {
+            "id": "oracle-state-park-source-8",
+            "url": "https://www.openstreetmap.org/node/3350745581",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-9",
+            "url": "https://www.openstreetmap.org/way/328503138",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "oracle-state-park-source-10",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=32.6215404,32.6096723&longitude=-110.7464941,-110.7336317",
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "oracle-state-park",
+          "id": "oracle-american-avenue-reserved-stargazing",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "oracle-charouleau",
+          "id": "oracle-kannally-ranch-house-star-party",
           "active": false,
-          "publicAccess": "limited",
+          "publicAccess": "no",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "oracle-american-avenue-reserved-stargazing:climate",
+        "oracle-american-avenue-reserved-stargazing:black-marble",
+        "oracle-american-avenue-reserved-stargazing:dem",
+        "oracle-american-avenue-reserved-stargazing:scores",
+        "oracle-kannally-ranch-house-star-party:climate",
+        "oracle-kannally-ranch-house-star-party:black-marble",
+        "oracle-kannally-ranch-house-star-party:dem",
+        "oracle-kannally-ranch-house-star-party:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-snapshots-missing",
         "source-access-manual-review-required",
-        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
