@@ -1,0 +1,158 @@
+{
+  "siteId": "dinosaur-echo-park-campground",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 78,
+          "totalPixelCount": 78
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1847,
+          "totalPixelCount": 1847
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1847,
+          "totalPixelCount": 1847
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1847,
+          "totalPixelCount": 1847
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.000881,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.001335,
+          "coverage": 1,
+          "validPixelCount": 15404,
+          "totalPixelCount": 15404
+        },
+        {
+          "year": 2024,
+          "radiance": 0.000584,
+          "coverage": 1,
+          "validPixelCount": 15404,
+          "totalPixelCount": 15404
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000881,
+          "coverage": 1,
+          "validPixelCount": 15404,
+          "totalPixelCount": 15404
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.100054,
+      "coverage": 0.999967,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.109775,
+          "coverage": 0.999967,
+          "validPixelCount": 90969,
+          "totalPixelCount": 90972
+        },
+        {
+          "year": 2024,
+          "radiance": 0.086627,
+          "coverage": 0.999978,
+          "validPixelCount": 90970,
+          "totalPixelCount": 90972
+        },
+        {
+          "year": 2023,
+          "radiance": 0.100054,
+          "coverage": 0.999989,
+          "validPixelCount": 90971,
+          "totalPixelCount": 90972
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0.000881,
+  "radiance30to75": 0.100054,
+  "alanExposure": 0.009668,
+  "darknessScore": 89.89,
+  "coverage": 0.999967,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T06:23:11.274833Z"
+}
