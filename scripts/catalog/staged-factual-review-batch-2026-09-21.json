@@ -189,23 +189,27 @@
     },
     {
       "destinationId": "manitoulin",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
-        "https://www.destinationontario.com/en-ca/articles/best-places-for-stargazing-ontario",
-        "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
-        "https://www.manitoulin-island.com/"
+        "https://www.manitoulinecopark.com/darksky",
+        "https://www.manitoulinecopark.com/product-page/night-pass",
+        "https://www.manitoulinecopark.com/online-checkin",
+        "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+        "https://www.manitoulinecopark.com/maps",
+        "https://www.rasc.ca/lpa/manitoulin-eco-park",
+        "https://maps.app.goo.gl/rGaNZEyQBPpT7bB48",
+        "https://maps.app.goo.gl/3nyhR4maEXVLnwyJ8",
+        "https://api.open-meteo.com/v1/elevation?latitude=45.6694987,45.6620625&longitude=-81.9708103,-81.9683125"
       ],
       "verifiedFindings": [
-        "Destination Ontario identifies the Manitoulin Eco Park DarkSky Preserve and its communal open observing field as the island's specific stargazing facility.",
-        "The staged Meldrum Bay and Sheguiandah regional pins are not that facility and lack reviewed night-access evidence."
+        "The operator's Night Pass links the named DarkSky Observation Field at 45.6694987, -81.9708103 and a separate DarkSky parking lot, grants checked-in access from sunset to sunrise, and publishes the Saturday-event and hunting-period exclusions.",
+        "The current Astro Night / Aurora Hunting programme begins with registration outside the Nature Center at the operator-published venue address, then uses an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the same observation field.",
+        "The gate closes to vehicles at sunset; Night Pass visitors park outside it and carry equipment for the published 6–12 minute walk. Forest Campgrounds are off-limits to pass visitors, and white light, personal laser pointers and campfires are prohibited in the preserve.",
+        "RASC confirms the designated preserve, large 360-degree observation field, public astronomy programming and after-dark vehicle boundary.",
+        "The generic Meldrum Bay and Sheguiandah pins have been removed. Both replacement records remain inactive, and both image licences remain pending."
       ],
-      "requiredChanges": [
-        {
-          "scope": "manitoulin-eco-park",
-          "reason": "Replace the generic shoreline and rural pins with the operator-confirmed Manitoulin Eco Park observing field and a second named public programme or campsite, including booking and after-hours rules."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "massacre-rim",

@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-22T09:18:15.714Z",
+  "checkedAt": "2026-09-22T09:45:37.405Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 250,
-    "uniqueUrls": 251
+    "sourceRecords": 256,
+    "uniqueUrls": 257
   },
   "summary": {
-    "reachable": 210,
+    "reachable": 220,
     "blocked": 31,
     "missing": 0,
     "http-error": 0,
-    "error": 10
+    "error": 6
   },
   "records": [
     {
@@ -33,7 +33,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 114,
+      "durationMs": 77,
+      "error": null
+    },
+    {
+      "url": "https://api.open-meteo.com/v1/elevation?latitude=45.6694987,45.6620625&longitude=-81.9708103,-81.9683125",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-9"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://api.open-meteo.com/v1/elevation?latitude=45.6694987,45.6620625&longitude=-81.9708103,-81.9683125",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/json",
+      "durationMs": 86,
       "error": null
     },
     {
@@ -53,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5785,
+      "durationMs": 3937,
       "error": null
     },
     {
@@ -73,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 385,
+      "durationMs": 347,
       "error": null
     },
     {
@@ -93,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 453,
+      "durationMs": 387,
       "error": null
     },
     {
@@ -113,7 +133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 216,
+      "durationMs": 188,
       "error": null
     },
     {
@@ -133,7 +153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 398,
+      "durationMs": 366,
       "error": null
     },
     {
@@ -153,7 +173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 407,
+      "durationMs": 387,
       "error": null
     },
     {
@@ -178,7 +198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1902,
+      "durationMs": 1819,
       "error": null
     },
     {
@@ -198,7 +218,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 899,
+      "durationMs": 851,
       "error": null
     },
     {
@@ -228,7 +248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 846,
+      "durationMs": 903,
       "error": null
     },
     {
@@ -248,7 +268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1031,
+      "durationMs": 862,
       "error": null
     },
     {
@@ -261,15 +281,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 3247,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve\ncurl: (6) Could not resolve host: botswanatourism.co.bw\n"
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 605,
+      "error": null
     },
     {
       "url": "https://cdn.environment.sa.gov.au/parks/docs/flinders-chase-national-park/Flinders_Chase_NP_Rocky_River_campground_optimised.pdf",
@@ -288,7 +308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 484,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -308,7 +328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 226,
+      "durationMs": 132,
       "error": null
     },
     {
@@ -328,7 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 88,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -348,7 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 68,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -368,7 +388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 478,
+      "durationMs": 482,
       "error": null
     },
     {
@@ -388,7 +408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 375,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -408,7 +428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -428,7 +448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -448,7 +468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -478,7 +498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -498,7 +518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 108,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -518,7 +538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -538,7 +558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -558,7 +578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2292,
+      "durationMs": 2423,
       "error": null
     },
     {
@@ -578,7 +598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 491,
+      "durationMs": 499,
       "error": null
     },
     {
@@ -608,7 +628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 436,
+      "durationMs": 445,
       "error": null
     },
     {
@@ -638,7 +658,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 699,
+      "durationMs": 541,
       "error": null
     },
     {
@@ -658,7 +678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1242,
+      "durationMs": 1408,
       "error": null
     },
     {
@@ -678,7 +698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf;charset=UTF-8",
-      "durationMs": 928,
+      "durationMs": 948,
       "error": null
     },
     {
@@ -708,7 +728,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 897,
+      "durationMs": 748,
       "error": null
     },
     {
@@ -728,7 +748,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 911,
+      "durationMs": 740,
       "error": null
     },
     {
@@ -748,7 +768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3010,
+      "durationMs": 5039,
       "error": null
     },
     {
@@ -773,7 +793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2784,
+      "durationMs": 5031,
       "error": null
     },
     {
@@ -793,7 +813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2794,
+      "durationMs": 4217,
       "error": null
     },
     {
@@ -813,7 +833,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 103,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -833,7 +853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 256,
+      "durationMs": 153,
       "error": null
     },
     {
@@ -853,7 +873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 156,
+      "durationMs": 140,
       "error": null
     },
     {
@@ -873,7 +893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 248,
+      "durationMs": 194,
       "error": null
     },
     {
@@ -898,7 +918,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 476,
+      "durationMs": 2609,
       "error": null
     },
     {
@@ -918,7 +938,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 511,
+      "durationMs": 2542,
       "error": null
     },
     {
@@ -938,7 +958,47 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1169,
+      "durationMs": 924,
+      "error": null
+    },
+    {
+      "url": "https://maps.app.goo.gl/3nyhR4maEXVLnwyJ8",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-8"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.google.com/maps/place/M29M%2B77+DarkSky+Parking,+Tehkummah,+ON+P0P+2C0/data=!4m2!3m1!1s0x4d320b0039b6b035:0xaed687550c0ed23e?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjI1LjAYACCIJyp-LDk0MjY3NzI3LDk0Mjc1MzE4LDk0MjIzMjk5LDk0MjE2NDEzLDk0MjEyNDk2LDk0MjA3Mzk0LDk0MjA3NTA2LDk0MjA4NTA2LDk0MjE3NTIzLDk0MjE4NjUzLDk0MjI5ODM5LDQ3MDg0MzkzLDk0MjEzMjAwLDk0MjU4MzI1QgJDQQ%3D%3D&skid=1e051e5c-9c1e-40e4-a3c4-87e42b97c35c",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "durationMs": 379,
+      "error": null
+    },
+    {
+      "url": "https://maps.app.goo.gl/rGaNZEyQBPpT7bB48",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.google.com/maps/place/DarkSky+Observation+Field/data=!4m2!3m1!1s0x4d320b0052483209:0x1399feaa6c20534?utm_source=mstt_1&entry=gps&coh=192189&g_ep=CAESBzI1LjI1LjAYACCenQoqfiw5NDI2NzcyNyw5NDI3NTMxOCw5NDIyMzI5OSw5NDIxNjQxMyw5NDIxMjQ5Niw5NDIwNzM5NCw5NDIwNzUwNiw5NDIwODUwNiw5NDIxNzUyMyw5NDIxODY1Myw5NDIyOTgzOSw0NzA4NDM5Myw5NDIxMzIwMCw5NDI1ODMyNUICQ0E%3D&skid=53a6d6de-74b7-47c2-a530-48a8721c82be",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "durationMs": 436,
       "error": null
     },
     {
@@ -963,7 +1023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 779,
+      "durationMs": 906,
       "error": null
     },
     {
@@ -983,7 +1043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1083,
+      "durationMs": 910,
       "error": null
     },
     {
@@ -1008,7 +1068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 791,
+      "durationMs": 829,
       "error": null
     },
     {
@@ -1028,7 +1088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 524,
+      "durationMs": 2719,
       "error": null
     },
     {
@@ -1048,7 +1108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 551,
+      "durationMs": 2675,
       "error": null
     },
     {
@@ -1068,7 +1128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 569,
+      "durationMs": 2568,
       "error": null
     },
     {
@@ -1113,7 +1173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 126,
+      "durationMs": 122,
       "error": null
     },
     {
@@ -1138,7 +1198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 425,
+      "durationMs": 390,
       "error": null
     },
     {
@@ -1158,7 +1218,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 384,
+      "durationMs": 356,
       "error": null
     },
     {
@@ -1178,7 +1238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 228,
+      "durationMs": 418,
       "error": null
     },
     {
@@ -1198,7 +1258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 204,
+      "durationMs": 424,
       "error": null
     },
     {
@@ -1218,7 +1278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 109,
+      "durationMs": 367,
       "error": null
     },
     {
@@ -1243,7 +1303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 944,
+      "durationMs": 818,
       "error": null
     },
     {
@@ -1263,7 +1323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 902,
+      "durationMs": 813,
       "error": null
     },
     {
@@ -1283,7 +1343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 869,
+      "durationMs": 797,
       "error": null
     },
     {
@@ -1303,7 +1363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 884,
+      "durationMs": 866,
       "error": null
     },
     {
@@ -1323,7 +1383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 880,
+      "durationMs": 810,
       "error": null
     },
     {
@@ -1348,7 +1408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 895,
+      "durationMs": 971,
       "error": null
     },
     {
@@ -1368,7 +1428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 376,
+      "durationMs": 338,
       "error": null
     },
     {
@@ -1388,7 +1448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 196,
+      "durationMs": 215,
       "error": null
     },
     {
@@ -1408,7 +1468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 151,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -1428,7 +1488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1063,
+      "durationMs": 272,
       "error": null
     },
     {
@@ -1448,7 +1508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 158,
+      "durationMs": 185,
       "error": null
     },
     {
@@ -1478,7 +1538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1618,
+      "durationMs": 3165,
       "error": null
     },
     {
@@ -1498,7 +1558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 479,
+      "durationMs": 436,
       "error": null
     },
     {
@@ -1518,7 +1578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 339,
+      "durationMs": 328,
       "error": null
     },
     {
@@ -1538,7 +1598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 590,
+      "durationMs": 1518,
       "error": null
     },
     {
@@ -1558,7 +1618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 458,
+      "durationMs": 327,
       "error": null
     },
     {
@@ -1578,7 +1638,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 284,
+      "durationMs": 317,
       "error": null
     },
     {
@@ -1603,7 +1663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 382,
+      "durationMs": 413,
       "error": null
     },
     {
@@ -1623,7 +1683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 387,
+      "durationMs": 425,
       "error": null
     },
     {
@@ -1643,7 +1703,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 377,
+      "durationMs": 442,
       "error": null
     },
     {
@@ -1663,7 +1723,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 112,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -1688,7 +1748,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 86,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -1708,7 +1768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 784,
+      "durationMs": 876,
       "error": null
     },
     {
@@ -1738,7 +1798,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 786,
+      "durationMs": 793,
       "error": null
     },
     {
@@ -1758,7 +1818,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 146,
+      "durationMs": 160,
       "error": null
     },
     {
@@ -1778,7 +1838,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1136,
+      "durationMs": 1377,
       "error": null
     },
     {
@@ -1803,7 +1863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 896,
+      "durationMs": 882,
       "error": null
     },
     {
@@ -1823,7 +1883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 114,
+      "durationMs": 130,
       "error": null
     },
     {
@@ -1843,7 +1903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 107,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -1863,7 +1923,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 72,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -1883,7 +1943,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 602,
+      "durationMs": 597,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -1903,7 +1963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 585,
+      "durationMs": 576,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -1923,7 +1983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 580,
+      "durationMs": 634,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -1943,7 +2003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 580,
+      "durationMs": 769,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -1968,7 +2028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 580,
+      "durationMs": 719,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -1988,7 +2048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 337,
+      "durationMs": 972,
       "error": null
     },
     {
@@ -2018,7 +2078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3122,
+      "durationMs": 3058,
       "error": null
     },
     {
@@ -2038,7 +2098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3076,
+      "durationMs": 3014,
       "error": null
     },
     {
@@ -2058,7 +2118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 214,
+      "durationMs": 205,
       "error": null
     },
     {
@@ -2083,7 +2143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 194,
+      "durationMs": 156,
       "error": null
     },
     {
@@ -2108,7 +2168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 134,
+      "durationMs": 136,
       "error": null
     },
     {
@@ -2128,7 +2188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 225,
+      "durationMs": 238,
       "error": null
     },
     {
@@ -2148,7 +2208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 241,
+      "durationMs": 246,
       "error": null
     },
     {
@@ -2173,7 +2233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 247,
+      "durationMs": 307,
       "error": null
     },
     {
@@ -2193,7 +2253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 75,
       "error": null
     },
     {
@@ -2253,7 +2313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3811,
+      "durationMs": 8786,
       "error": null
     },
     {
@@ -2283,7 +2343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3598,
+      "durationMs": 7951,
       "error": null
     },
     {
@@ -2303,7 +2363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 70,
       "error": null
     },
     {
@@ -2323,7 +2383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 598,
+      "durationMs": 742,
       "error": null
     },
     {
@@ -2348,7 +2408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 547,
+      "durationMs": 407,
       "error": null
     },
     {
@@ -2368,7 +2428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 275,
+      "durationMs": 271,
       "error": null
     },
     {
@@ -2388,7 +2448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 210,
+      "durationMs": 212,
       "error": null
     },
     {
@@ -2408,7 +2468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 167,
+      "durationMs": 189,
       "error": null
     },
     {
@@ -2433,7 +2493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 192,
+      "durationMs": 154,
       "error": null
     },
     {
@@ -2453,7 +2513,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 189,
+      "durationMs": 309,
       "error": null
     },
     {
@@ -2473,7 +2533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3518,
+      "durationMs": 805,
       "error": null
     },
     {
@@ -2503,7 +2563,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 4539,
+      "durationMs": 787,
       "error": null
     },
     {
@@ -2523,7 +2583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 5047,
+      "durationMs": 743,
       "error": null
     },
     {
@@ -2546,15 +2606,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.botswanatourism.co.bw/",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 3247,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.botswanatourism.co.bw/\ncurl: (6) Could not resolve host: www.botswanatourism.co.bw\n"
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 599,
+      "error": null
     },
     {
       "url": "https://www.conaf.cl/parques-nacionales/",
@@ -2583,7 +2643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1695,
+      "durationMs": 877,
       "error": null
     },
     {
@@ -2608,7 +2668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 318,
+      "durationMs": 489,
       "error": null
     },
     {
@@ -2628,7 +2688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 421,
+      "durationMs": 420,
       "error": null
     },
     {
@@ -2658,27 +2718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 405,
-      "error": null
-    },
-    {
-      "url": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
-      "references": [
-        {
-          "destinationId": "manitoulin",
-          "kind": "guide",
-          "sourceId": "manitoulin-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 540,
+      "durationMs": 514,
       "error": null
     },
     {
@@ -2698,7 +2738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 243,
+      "durationMs": 244,
       "error": null
     },
     {
@@ -2718,7 +2758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1326,
+      "durationMs": 2055,
       "error": null
     },
     {
@@ -2748,7 +2788,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 775,
+      "durationMs": 1920,
       "error": null
     },
     {
@@ -2768,7 +2808,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1657,
+      "durationMs": 1792,
       "error": null
     },
     {
@@ -2788,7 +2828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 162,
+      "durationMs": 185,
       "error": null
     },
     {
@@ -2813,7 +2853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 153,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -2833,7 +2873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 115,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -2858,7 +2898,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 110,
+      "durationMs": 1294,
       "error": null
     },
     {
@@ -2888,7 +2928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -2908,7 +2948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 66,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -2928,7 +2968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 57,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -2951,15 +2991,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 40165,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910\ncurl: (28) Operation timed out after 20004 milliseconds with 0 bytes received\n"
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.fs.usda.gov/r09/superior/recreation",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 17367,
+      "error": null
     },
     {
       "url": "https://www.fs.usda.gov/superior",
@@ -2978,7 +3018,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1148,
+      "durationMs": 1130,
       "error": null
     },
     {
@@ -2998,7 +3038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1082,
+      "durationMs": 16685,
       "error": null
     },
     {
@@ -3018,7 +3058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -3031,15 +3071,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.gov.bw/",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 40027,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.gov.bw/\ncurl: (28) Connection timed out after 20006 milliseconds\n"
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1287,
+      "error": null
     },
     {
       "url": "https://www.gov.ls/",
@@ -3058,7 +3098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3275,
+      "durationMs": 1585,
       "error": null
     },
     {
@@ -3083,7 +3123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 291,
+      "durationMs": 224,
       "error": null
     },
     {
@@ -3113,7 +3153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 186,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -3133,7 +3173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 196,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -3153,7 +3193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 424,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -3173,11 +3213,76 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 318,
+      "durationMs": 329,
       "error": null
     },
     {
-      "url": "https://www.manitoulin-island.com/",
+      "url": "https://www.manitoulinecopark.com/darksky",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.manitoulinecopark.com/darksky",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 3147,
+      "error": null
+    },
+    {
+      "url": "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-4"
+        },
+        {
+          "destinationId": "manitoulin",
+          "kind": "site",
+          "siteId": "manitoulin-eco-park-astro-night-check-in"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 95,
+      "error": null
+    },
+    {
+      "url": "https://www.manitoulinecopark.com/maps",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.manitoulinecopark.com/maps",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 74,
+      "error": null
+    },
+    {
+      "url": "https://www.manitoulinecopark.com/online-checkin",
       "references": [
         {
           "destinationId": "manitoulin",
@@ -3189,11 +3294,36 @@
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.manitoulin-island.com/",
+      "finalUrl": "https://www.manitoulinecopark.com/online-checkin",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html",
-      "durationMs": 378,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 74,
+      "error": null
+    },
+    {
+      "url": "https://www.manitoulinecopark.com/product-page/night-pass",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-2"
+        },
+        {
+          "destinationId": "manitoulin",
+          "kind": "site",
+          "siteId": "manitoulin-eco-park-observation-field"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.manitoulinecopark.com/product-page/night-pass",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 3469,
       "error": null
     },
     {
@@ -3218,7 +3348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 706,
+      "durationMs": 700,
       "error": null
     },
     {
@@ -3238,7 +3368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 121,
+      "durationMs": 199,
       "error": null
     },
     {
@@ -3258,7 +3388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 366,
+      "durationMs": 148,
       "error": null
     },
     {
@@ -3278,7 +3408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1068,
+      "durationMs": 1254,
       "error": null
     },
     {
@@ -3298,7 +3428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1022,
+      "durationMs": 1086,
       "error": null
     },
     {
@@ -3323,7 +3453,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2261,
+      "durationMs": 1829,
       "error": null
     },
     {
@@ -3343,7 +3473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 61,
+      "durationMs": 66,
       "error": null
     },
     {
@@ -3363,7 +3493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 121,
+      "durationMs": 126,
       "error": null
     },
     {
@@ -3383,7 +3513,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 847,
+      "durationMs": 698,
       "error": null
     },
     {
@@ -3403,7 +3533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 821,
+      "durationMs": 849,
       "error": null
     },
     {
@@ -3423,7 +3553,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 950,
+      "durationMs": 920,
       "error": null
     },
     {
@@ -3443,7 +3573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 896,
+      "durationMs": 916,
       "error": null
     },
     {
@@ -3463,7 +3593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -3488,7 +3618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 73,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -3518,7 +3648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -3538,7 +3668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3558,7 +3688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -3583,7 +3713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 47,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -3613,7 +3743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 48,
       "error": null
     },
     {
@@ -3633,7 +3763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3653,7 +3783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 50,
       "error": null
     },
     {
@@ -3673,7 +3803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 52,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -3693,7 +3823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 167,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -3713,7 +3843,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 172,
+      "durationMs": 178,
       "error": null
     },
     {
@@ -3738,7 +3868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3758,7 +3888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 45,
+      "durationMs": 46,
       "error": null
     },
     {
@@ -3778,7 +3908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 756,
+      "durationMs": 676,
       "error": null
     },
     {
@@ -3798,7 +3928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1237,
+      "durationMs": 694,
       "error": null
     },
     {
@@ -3818,7 +3948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1241,
+      "durationMs": 810,
       "error": null
     },
     {
@@ -3838,7 +3968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 712,
+      "durationMs": 705,
       "error": null
     },
     {
@@ -3868,7 +3998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 797,
+      "durationMs": 922,
       "error": null
     },
     {
@@ -3893,7 +4023,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 545,
+      "durationMs": 537,
       "error": null
     },
     {
@@ -3913,7 +4043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 412,
+      "durationMs": 442,
       "error": null
     },
     {
@@ -3933,7 +4063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 672,
+      "durationMs": 673,
       "error": null
     },
     {
@@ -3953,37 +4083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 558,
-      "error": null
-    },
-    {
-      "url": "https://www.ontarioparks.com/",
-      "references": [
-        {
-          "destinationId": "manitoulin",
-          "kind": "guide",
-          "sourceId": "manitoulin-source-1"
-        },
-        {
-          "destinationId": "manitoulin",
-          "kind": "site",
-          "siteId": "manitoulin-meldrum"
-        },
-        {
-          "destinationId": "manitoulin",
-          "kind": "site",
-          "siteId": "manitoulin-shearer"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.ontarioparks.ca/",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 586,
+      "durationMs": 582,
       "error": null
     },
     {
@@ -4003,7 +4103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 202,
+      "durationMs": 189,
       "error": null
     },
     {
@@ -4023,7 +4123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 156,
+      "durationMs": 178,
       "error": null
     },
     {
@@ -4043,7 +4143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 162,
+      "durationMs": 158,
       "error": null
     },
     {
@@ -4063,7 +4163,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 164,
+      "durationMs": 242,
       "error": null
     },
     {
@@ -4083,7 +4183,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 155,
+      "durationMs": 222,
       "error": null
     },
     {
@@ -4103,7 +4203,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 200,
+      "durationMs": 202,
       "error": null
     },
     {
@@ -4128,7 +4228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 202,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -4148,7 +4248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 398,
+      "durationMs": 604,
       "error": null
     },
     {
@@ -4168,7 +4268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3729,
+      "durationMs": 2395,
       "error": null
     },
     {
@@ -4188,7 +4288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3718,
+      "durationMs": 2358,
       "error": null
     },
     {
@@ -4208,7 +4308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4320,
+      "durationMs": 2564,
       "error": null
     },
     {
@@ -4228,7 +4328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 6714,
+      "durationMs": 3602,
       "error": null
     },
     {
@@ -4248,7 +4348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3624,
+      "durationMs": 2276,
       "error": null
     },
     {
@@ -4273,7 +4373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3405,
+      "durationMs": 2006,
       "error": null
     },
     {
@@ -4298,7 +4398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3495,
+      "durationMs": 2037,
       "error": null
     },
     {
@@ -4318,7 +4418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5005,
+      "durationMs": 3145,
       "error": null
     },
     {
@@ -4338,7 +4438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3156,
+      "durationMs": 2104,
       "error": null
     },
     {
@@ -4363,7 +4463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3431,
+      "durationMs": 2112,
       "error": null
     },
     {
@@ -4388,7 +4488,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3065,
+      "durationMs": 2061,
+      "error": null
+    },
+    {
+      "url": "https://www.rasc.ca/lpa/manitoulin-eco-park",
+      "references": [
+        {
+          "destinationId": "manitoulin",
+          "kind": "guide",
+          "sourceId": "manitoulin-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.rasc.ca/lpa/manitoulin-eco-park",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 1128,
       "error": null
     },
     {
@@ -4408,7 +4528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 249,
+      "durationMs": 385,
       "error": null
     },
     {
@@ -4428,7 +4548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 876,
+      "durationMs": 416,
       "error": null
     },
     {
@@ -4448,7 +4568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 382,
+      "durationMs": 294,
       "error": null
     },
     {
@@ -4468,7 +4588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 115,
       "error": null
     },
     {
@@ -4488,7 +4608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -4518,7 +4638,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 122,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -4538,7 +4658,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4593,7 +4713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4613,7 +4733,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 203,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -4633,7 +4753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4653,7 +4773,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -4673,7 +4793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 121,
       "error": null
     },
     {
@@ -4693,7 +4813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -4713,7 +4833,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4733,7 +4853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -4753,7 +4873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 143,
       "error": null
     },
     {
@@ -4773,7 +4893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -4793,7 +4913,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 118,
       "error": null
     },
     {
@@ -4813,7 +4933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 103,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4838,7 +4958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 68,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -4858,7 +4978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -4883,7 +5003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 74,
+      "durationMs": 71,
       "error": null
     },
     {
@@ -4903,7 +5023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 75,
       "error": null
     },
     {
@@ -4923,7 +5043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1086,
+      "durationMs": 1846,
       "error": null
     },
     {
@@ -4943,7 +5063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 897,
+      "durationMs": 832,
       "error": null
     },
     {
@@ -4963,7 +5083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 109,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -4983,7 +5103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 101,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -5003,7 +5123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 84,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -5033,7 +5153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1076,
+      "durationMs": 1162,
       "error": null
     },
     {
@@ -5053,7 +5173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1318,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -5073,7 +5193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -5093,7 +5213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1605,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -5113,7 +5233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 155,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -5138,7 +5258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1645,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -5158,7 +5278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 165,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -5183,7 +5303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 986,
+      "durationMs": 1018,
       "error": null
     },
     {
@@ -5203,7 +5323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 984,
+      "durationMs": 1000,
       "error": null
     },
     {
@@ -5223,7 +5343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 109,
+      "durationMs": 122,
       "error": null
     },
     {
@@ -5243,7 +5363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1433,
+      "durationMs": 1526,
       "error": null
     },
     {
@@ -5263,7 +5383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 274,
+      "durationMs": 246,
       "error": null
     },
     {
@@ -5283,7 +5403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 165,
+      "durationMs": 151,
       "error": null
     },
     {
@@ -5303,7 +5423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1043,
+      "durationMs": 1143,
       "error": null
     },
     {
@@ -5333,8 +5453,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 15146,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7423 ms: Couldn't connect to server\n"
+      "durationMs": 14758,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7396 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -5358,7 +5478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 226,
+      "durationMs": 211,
       "error": null
     },
     {
@@ -5383,7 +5503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 216,
+      "durationMs": 181,
       "error": null
     },
     {
@@ -5408,7 +5528,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1313,
+      "durationMs": 1753,
       "error": null
     },
     {
@@ -5438,7 +5558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 159,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -5463,7 +5583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 196,
+      "durationMs": 241,
       "error": null
     },
     {
@@ -5488,7 +5608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 141,
+      "durationMs": 164,
       "error": null
     },
     {
@@ -5508,7 +5628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 476,
+      "durationMs": 398,
       "error": null
     },
     {
@@ -5528,7 +5648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 288,
+      "durationMs": 1896,
       "error": null
     }
   ]

@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T09:26:16.671Z",
+  "generatedAt": "2026-09-22T09:45:37.660Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 46,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 21,
-    "withVerifiedFactualReview": 29,
+    "requiringFactualChanges": 20,
+    "withVerifiedFactualReview": 30,
     "readyForActivation": 0
   },
   "records": [
@@ -1865,9 +1865,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 0,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 3,
+        "broken": 0,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "makgadikgadi",
@@ -1893,20 +1893,20 @@
           {
             "id": "makgadikgadi-source-1",
             "url": "https://www.botswanatourism.co.bw/",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "makgadikgadi-source-2",
             "url": "https://www.gov.bw/",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "makgadikgadi-source-3",
             "url": "https://botswanatourism.co.bw/index.php/explore/makgadikgadi-pans-game-reserve",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           }
         ]
       },
@@ -1942,7 +1942,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -2736,47 +2735,87 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 9,
+        "reachable": 9,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "manitoulin",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
-            "https://www.destinationontario.com/en-ca/articles/best-places-for-stargazing-ontario",
-            "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
-            "https://www.manitoulin-island.com/"
+            "https://www.manitoulinecopark.com/darksky",
+            "https://www.manitoulinecopark.com/product-page/night-pass",
+            "https://www.manitoulinecopark.com/online-checkin",
+            "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+            "https://www.manitoulinecopark.com/maps",
+            "https://www.rasc.ca/lpa/manitoulin-eco-park",
+            "https://maps.app.goo.gl/rGaNZEyQBPpT7bB48",
+            "https://maps.app.goo.gl/3nyhR4maEXVLnwyJ8",
+            "https://api.open-meteo.com/v1/elevation?latitude=45.6694987,45.6620625&longitude=-81.9708103,-81.9683125"
           ],
           "verifiedFindings": [
-            "Destination Ontario identifies the Manitoulin Eco Park DarkSky Preserve and its communal open observing field as the island's specific stargazing facility.",
-            "The staged Meldrum Bay and Sheguiandah regional pins are not that facility and lack reviewed night-access evidence."
+            "The operator's Night Pass links the named DarkSky Observation Field at 45.6694987, -81.9708103 and a separate DarkSky parking lot, grants checked-in access from sunset to sunrise, and publishes the Saturday-event and hunting-period exclusions.",
+            "The current Astro Night / Aurora Hunting programme begins with registration outside the Nature Center at the operator-published venue address, then uses an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the same observation field.",
+            "The gate closes to vehicles at sunset; Night Pass visitors park outside it and carry equipment for the published 6–12 minute walk. Forest Campgrounds are off-limits to pass visitors, and white light, personal laser pointers and campfires are prohibited in the preserve.",
+            "RASC confirms the designated preserve, large 360-degree observation field, public astronomy programming and after-dark vehicle boundary.",
+            "The generic Meldrum Bay and Sheguiandah pins have been removed. Both replacement records remain inactive, and both image licences remain pending."
           ],
-          "requiredChanges": [
-            {
-              "scope": "manitoulin-eco-park",
-              "reason": "Replace the generic shoreline and rural pins with the operator-confirmed Manitoulin Eco Park observing field and a second named public programme or campsite, including booking and after-hours rules."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "manitoulin-source-1",
-            "url": "https://www.ontarioparks.com/",
+            "url": "https://www.manitoulinecopark.com/darksky",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "manitoulin-source-2",
-            "url": "https://www.destinationontario.com/en-ca/cities-towns/manitoulin-island",
+            "url": "https://www.manitoulinecopark.com/product-page/night-pass",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "manitoulin-source-3",
-            "url": "https://www.manitoulin-island.com/",
+            "url": "https://www.manitoulinecopark.com/online-checkin",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-4",
+            "url": "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-5",
+            "url": "https://www.manitoulinecopark.com/maps",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-6",
+            "url": "https://www.rasc.ca/lpa/manitoulin-eco-park",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-7",
+            "url": "https://maps.app.goo.gl/rGaNZEyQBPpT7bB48",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-8",
+            "url": "https://maps.app.goo.gl/3nyhR4maEXVLnwyJ8",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "manitoulin-source-9",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=45.6694987,45.6620625&longitude=-81.9708103,-81.9683125",
             "classification": "reachable",
             "status": 200
           }
@@ -2785,36 +2824,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "manitoulin-meldrum",
+          "id": "manitoulin-eco-park-observation-field",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "manitoulin-shearer",
+          "id": "manitoulin-eco-park-astro-night-check-in",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "manitoulin-eco-park-observation-field:climate",
+        "manitoulin-eco-park-observation-field:black-marble",
+        "manitoulin-eco-park-observation-field:dem",
+        "manitoulin-eco-park-observation-field:scores",
+        "manitoulin-eco-park-astro-night-check-in:climate",
+        "manitoulin-eco-park-astro-night-check-in:black-marble",
+        "manitoulin-eco-park-astro-night-check-in:dem",
+        "manitoulin-eco-park-astro-night-check-in:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3912,9 +3960,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 2,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 1,
+        "broken": 0,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "boundary-waters",
@@ -3940,8 +3988,8 @@
           {
             "id": "boundary-waters-source-1",
             "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "boundary-waters-source-2",
@@ -3989,7 +4037,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"

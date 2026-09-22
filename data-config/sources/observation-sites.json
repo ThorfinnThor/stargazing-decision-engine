@@ -4205,46 +4205,6 @@
     }
   },
   {
-    "id": "manitoulin-meldrum",
-    "slug": "manitoulin-meldrum",
-    "destinationId": "manitoulin",
-    "name": "Meldrum Bay area",
-    "lat": 45.93,
-    "lon": -83.12,
-    "elevationM": 180,
-    "siteType": "lakeshore",
-    "publicAccess": "limited",
-    "accessScore": 56,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.ontarioparks.com/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Meldrum Bay area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Meldrum Bay area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "manitoulin-shearer",
-    "slug": "manitoulin-shearer",
-    "destinationId": "manitoulin",
-    "name": "Sheguiandah area",
-    "lat": 45.78,
-    "lon": -81.92,
-    "elevationM": 190,
-    "siteType": "rural-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 58,
-    "active": false,
-    "priority": 80,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.ontarioparks.com/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Sheguiandah area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Sheguiandah area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "massacre-rim-viewpoint",
     "slug": "massacre-rim-viewpoint",
     "destinationId": "massacre-rim",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "Ontario identifies the Highland Pond parking area off Southwood Road as the reserve's formal main access, and the mapped unpaved parking polygon supplies this exact arrival point. The Guardians state that the first trail from this parking area leads to the dark-sky viewing area. This is an access record, not a second observing site: park only in the marked area, keep Southwood Road clear and carry equipment to the signed granite footprint. Do not camp or make a fire here.",
       "de": "Ontario nennt den Parkplatz am Highland Pond an der Southwood Road als offiziellen Hauptzugang des Schutzgebiets; das kartierte unbefestigte Parkplatzpolygon liefert diesen genauen Ankunftspunkt. Laut Guardians führt der erste Weg von diesem Parkplatz zur Nachthimmel-Beobachtungsfläche. Dies ist ein Zugangsdatensatz und kein zweiter Beobachtungsort: Parke nur auf der ausgewiesenen Fläche, halte die Southwood Road frei und trage die Ausrüstung zur beschilderten Granitfläche. Campe hier nicht und mache kein Feuer."
+    }
+  },
+  {
+    "id": "manitoulin-eco-park-observation-field",
+    "slug": "manitoulin-eco-park-observation-field",
+    "destinationId": "manitoulin",
+    "name": "Manitoulin Eco Park DarkSky Observation Field",
+    "lat": 45.6694987,
+    "lon": -81.9708103,
+    "elevationM": 240,
+    "siteType": "dark-sky-observation-field",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.manitoulinecopark.com/product-page/night-pass",
+    "accessNotes": {
+      "en": "The operator's current Night Pass grants one person access to the DarkSky Observation Area from sunset to sunrise, and its official map link resolves to this named field coordinate. Buy the pass and check in only after physically arriving. On Saturdays with a special event the pass is not valid before 23:00, and it is not valid during the published November 20–26 and December 4–10 hunting periods. Park at the separate DarkSky lot, walk in, use red light only, keep quiet, stay out of the Forest Campgrounds and make no campfire.",
+      "de": "Der aktuelle Night Pass des Betreibers gewährt einer Person von Sonnenuntergang bis Sonnenaufgang Zugang zur DarkSky Observation Area; der offizielle Kartenlink führt zu dieser Koordinate des benannten Feldes. Kaufe den Pass und checke erst nach der tatsächlichen Ankunft ein. An Samstagen mit Sonderveranstaltung gilt der Pass nicht vor 23 Uhr, und in den veröffentlichten Jagdzeiträumen 20.–26. November sowie 4.–10. Dezember ist er ungültig. Parke am getrennten DarkSky-Parkplatz, gehe zu Fuß hinein, nutze nur Rotlicht, verhalte dich leise, bleibe aus den Forest Campgrounds und mache kein Feuer."
+    }
+  },
+  {
+    "id": "manitoulin-eco-park-astro-night-check-in",
+    "slug": "manitoulin-eco-park-astro-night-check-in",
+    "destinationId": "manitoulin",
+    "name": "Astro Night / Aurora Hunting check-in",
+    "lat": 45.6620625,
+    "lon": -81.9683125,
+    "elevationM": 232,
+    "siteType": "programme-check-in",
+    "publicAccess": "limited",
+    "accessScore": 24,
+    "active": false,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+    "accessNotes": {
+      "en": "This coordinate is the operator-published Manitoulin Eco Park venue address and programme check-in, not a second observing field. The current Astro Night / Aurora Hunting schedule starts with registration outside the Nature Center, followed by an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the observation field. Attend only with a current ticket for the selected date, arrive at the published registration time, follow staff and remain with the group. The DarkSky gate closes to vehicles after sunset; white light, personal laser pointers and campfires are prohibited.",
+      "de": "Diese Koordinate ist die vom Betreiber veröffentlichte Adresse des Manitoulin Eco Park und der Programm-Check-in, kein zweites Beobachtungsfeld. Der aktuelle Ablauf von Astro Night / Aurora Hunting beginnt mit der Anmeldung vor dem Nature Center, gefolgt von einem betreuten Fahrzeugkonvoi vom Hauptparkplatz zum DarkSky-Parkplatz und der geführten Sitzung auf dem Beobachtungsfeld. Nimm nur mit aktuellem Ticket für den gewählten Termin teil, erscheine zur veröffentlichten Anmeldezeit, folge dem Personal und bleibe bei der Gruppe. Das DarkSky-Tor schließt nach Sonnenuntergang für Fahrzeuge; Weißlicht, private Laserpointer und Lagerfeuer sind verboten."
     }
   }
 ]
