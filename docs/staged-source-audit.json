@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-22T10:12:32.808Z",
+  "checkedAt": "2026-09-22T11:05:15.141Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 263,
-    "uniqueUrls": 264
+    "sourceRecords": 270,
+    "uniqueUrls": 271
   },
   "summary": {
-    "reachable": 227,
+    "reachable": 233,
     "blocked": 31,
     "missing": 0,
     "http-error": 0,
-    "error": 6
+    "error": 7
   },
   "records": [
     {
@@ -33,7 +33,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 90,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 86,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 90,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/octet-stream",
-      "durationMs": 569,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -113,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4731,
+      "durationMs": 4621,
       "error": null
     },
     {
@@ -133,7 +133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 505,
+      "durationMs": 360,
       "error": null
     },
     {
@@ -153,7 +153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 542,
+      "durationMs": 447,
       "error": null
     },
     {
@@ -173,7 +173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 368,
+      "durationMs": 198,
       "error": null
     },
     {
@@ -193,7 +193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 547,
+      "durationMs": 353,
       "error": null
     },
     {
@@ -213,7 +213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 586,
+      "durationMs": 357,
       "error": null
     },
     {
@@ -238,7 +238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2166,
+      "durationMs": 1144,
       "error": null
     },
     {
@@ -258,7 +258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1053,
+      "durationMs": 611,
       "error": null
     },
     {
@@ -283,7 +283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1141,
+      "durationMs": 565,
       "error": null
     },
     {
@@ -308,7 +308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1017,
+      "durationMs": 456,
       "error": null
     },
     {
@@ -328,7 +328,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1379,
+      "durationMs": 956,
       "error": null
     },
     {
@@ -348,7 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1135,
+      "durationMs": 809,
       "error": null
     },
     {
@@ -368,7 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1133,
+      "durationMs": 822,
       "error": null
     },
     {
@@ -388,7 +388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 593,
+      "durationMs": 586,
       "error": null
     },
     {
@@ -408,7 +408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 141,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -428,7 +428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 131,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -448,7 +448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 75,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -468,7 +468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 94,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -488,7 +488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 415,
+      "durationMs": 374,
       "error": null
     },
     {
@@ -508,7 +508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 71,
       "error": null
     },
     {
@@ -528,7 +528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -548,7 +548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -568,7 +568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 111,
       "error": null
     },
     {
@@ -577,17 +577,7 @@
         {
           "destinationId": "massacre-rim",
           "kind": "guide",
-          "sourceId": "massacre-rim-source-1"
-        },
-        {
-          "destinationId": "massacre-rim",
-          "kind": "site",
-          "siteId": "massacre-rim-viewpoint"
-        },
-        {
-          "destinationId": "massacre-rim",
-          "kind": "site",
-          "siteId": "denio-outskirts"
+          "sourceId": "massacre-rim-source-10"
         }
       ],
       "https": true,
@@ -598,7 +588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -618,7 +608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -638,7 +628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -658,7 +648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 97,
+      "durationMs": 113,
       "error": null
     },
     {
@@ -678,7 +668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1885,
+      "durationMs": 2432,
       "error": null
     },
     {
@@ -698,7 +688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 491,
+      "durationMs": 339,
       "error": null
     },
     {
@@ -728,7 +718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 428,
+      "durationMs": 329,
       "error": null
     },
     {
@@ -758,7 +748,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 544,
+      "durationMs": 557,
       "error": null
     },
     {
@@ -778,7 +768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1315,
+      "durationMs": 1251,
       "error": null
     },
     {
@@ -798,7 +788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf;charset=UTF-8",
-      "durationMs": 941,
+      "durationMs": 723,
       "error": null
     },
     {
@@ -828,7 +818,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 941,
+      "durationMs": 763,
       "error": null
     },
     {
@@ -848,7 +838,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 927,
+      "durationMs": 752,
       "error": null
     },
     {
@@ -868,7 +858,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3335,
+      "durationMs": 151,
       "error": null
     },
     {
@@ -893,7 +883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2916,
+      "durationMs": 151,
       "error": null
     },
     {
@@ -913,7 +903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3072,
+      "durationMs": 150,
       "error": null
     },
     {
@@ -933,7 +923,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 80,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -953,7 +943,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 172,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -973,7 +963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 124,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -993,7 +983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 187,
+      "durationMs": 183,
       "error": null
     },
     {
@@ -1018,7 +1008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 477,
+      "durationMs": 447,
       "error": null
     },
     {
@@ -1038,7 +1028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 445,
+      "durationMs": 499,
       "error": null
     },
     {
@@ -1058,7 +1048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 871,
+      "durationMs": 906,
       "error": null
     },
     {
@@ -1078,7 +1068,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 468,
+      "durationMs": 330,
       "error": null
     },
     {
@@ -1098,7 +1088,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 412,
+      "durationMs": 409,
       "error": null
     },
     {
@@ -1123,7 +1113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1887,
+      "durationMs": 784,
       "error": null
     },
     {
@@ -1143,7 +1133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1868,
+      "durationMs": 750,
       "error": null
     },
     {
@@ -1168,7 +1158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1139,
+      "durationMs": 952,
       "error": null
     },
     {
@@ -1188,7 +1178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 583,
+      "durationMs": 527,
       "error": null
     },
     {
@@ -1208,7 +1198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 531,
+      "durationMs": 552,
       "error": null
     },
     {
@@ -1228,7 +1218,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 522,
+      "durationMs": 541,
       "error": null
     },
     {
@@ -1253,7 +1243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 62,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -1273,7 +1263,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 133,
+      "durationMs": 362,
       "error": null
     },
     {
@@ -1298,7 +1288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 422,
+      "durationMs": 299,
       "error": null
     },
     {
@@ -1318,7 +1308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 406,
+      "durationMs": 296,
       "error": null
     },
     {
@@ -1338,7 +1328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 277,
+      "durationMs": 247,
       "error": null
     },
     {
@@ -1358,7 +1348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 128,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -1378,7 +1368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -1403,7 +1393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 799,
+      "durationMs": 651,
       "error": null
     },
     {
@@ -1423,7 +1413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 777,
+      "durationMs": 644,
       "error": null
     },
     {
@@ -1443,7 +1433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 767,
+      "durationMs": 649,
       "error": null
     },
     {
@@ -1463,7 +1453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 913,
+      "durationMs": 812,
       "error": null
     },
     {
@@ -1483,7 +1473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 801,
+      "durationMs": 673,
       "error": null
     },
     {
@@ -1508,7 +1498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1105,
+      "durationMs": 647,
       "error": null
     },
     {
@@ -1528,7 +1518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 339,
+      "durationMs": 387,
       "error": null
     },
     {
@@ -1548,7 +1538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 225,
+      "durationMs": 200,
       "error": null
     },
     {
@@ -1568,7 +1558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 126,
+      "durationMs": 121,
       "error": null
     },
     {
@@ -1588,7 +1578,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 283,
+      "durationMs": 61,
       "error": null
     },
     {
@@ -1608,7 +1598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 158,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -1638,7 +1628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 6529,
+      "durationMs": 1429,
       "error": null
     },
     {
@@ -1658,7 +1648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 467,
+      "durationMs": 404,
       "error": null
     },
     {
@@ -1678,7 +1668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 282,
+      "durationMs": 270,
       "error": null
     },
     {
@@ -1698,7 +1688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1577,
+      "durationMs": 1597,
       "error": null
     },
     {
@@ -1718,7 +1708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 350,
+      "durationMs": 225,
       "error": null
     },
     {
@@ -1738,7 +1728,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 432,
+      "durationMs": 378,
       "error": null
     },
     {
@@ -1763,7 +1753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 454,
+      "durationMs": 365,
       "error": null
     },
     {
@@ -1783,7 +1773,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 429,
+      "durationMs": 378,
       "error": null
     },
     {
@@ -1803,7 +1793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 394,
+      "durationMs": 382,
       "error": null
     },
     {
@@ -1823,7 +1813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 87,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -1848,7 +1838,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 82,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -1868,7 +1858,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 868,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -1898,7 +1888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 771,
+      "durationMs": 53,
       "error": null
     },
     {
@@ -1918,7 +1908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 146,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -1938,7 +1928,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1581,
+      "durationMs": 1192,
       "error": null
     },
     {
@@ -1963,7 +1953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1212,
+      "durationMs": 865,
       "error": null
     },
     {
@@ -1983,7 +1973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 172,
+      "durationMs": 119,
       "error": null
     },
     {
@@ -2003,7 +1993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 121,
+      "durationMs": 117,
       "error": null
     },
     {
@@ -2023,7 +2013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 78,
+      "durationMs": 72,
       "error": null
     },
     {
@@ -2043,7 +2033,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 887,
+      "durationMs": 582,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -2063,7 +2053,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 845,
+      "durationMs": 583,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -2083,7 +2073,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 836,
+      "durationMs": 576,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -2103,7 +2093,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 810,
+      "durationMs": 577,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -2128,7 +2118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 790,
+      "durationMs": 579,
       "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
     },
     {
@@ -2148,7 +2138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 348,
+      "durationMs": 283,
       "error": null
     },
     {
@@ -2178,7 +2168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1401,
+      "durationMs": 1133,
       "error": null
     },
     {
@@ -2198,7 +2188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3413,
+      "durationMs": 1173,
       "error": null
     },
     {
@@ -2218,7 +2208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 223,
+      "durationMs": 150,
       "error": null
     },
     {
@@ -2243,7 +2233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 211,
+      "durationMs": 143,
       "error": null
     },
     {
@@ -2268,7 +2258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 141,
+      "durationMs": 136,
       "error": null
     },
     {
@@ -2288,7 +2278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 261,
+      "durationMs": 239,
       "error": null
     },
     {
@@ -2308,7 +2298,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 263,
+      "durationMs": 221,
       "error": null
     },
     {
@@ -2333,7 +2323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 236,
+      "durationMs": 221,
       "error": null
     },
     {
@@ -2353,7 +2343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 82,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -2383,7 +2373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 76,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -2413,7 +2403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5286,
+      "durationMs": 3559,
       "error": null
     },
     {
@@ -2443,7 +2433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5287,
+      "durationMs": 3490,
       "error": null
     },
     {
@@ -2463,7 +2453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 73,
       "error": null
     },
     {
@@ -2483,7 +2473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 507,
+      "durationMs": 551,
       "error": null
     },
     {
@@ -2508,7 +2498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 453,
+      "durationMs": 537,
       "error": null
     },
     {
@@ -2528,7 +2518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 278,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -2548,7 +2538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 282,
+      "durationMs": 215,
       "error": null
     },
     {
@@ -2568,7 +2558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 316,
+      "durationMs": 202,
       "error": null
     },
     {
@@ -2593,7 +2583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 389,
+      "durationMs": 154,
       "error": null
     },
     {
@@ -2613,7 +2603,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 224,
+      "durationMs": 175,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 744,
       "error": null
     },
     {
@@ -2622,7 +2632,7 @@
         {
           "destinationId": "massacre-rim",
           "kind": "guide",
-          "sourceId": "massacre-rim-source-2"
+          "sourceId": "massacre-rim-source-1"
         }
       ],
       "https": true,
@@ -2633,7 +2643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 820,
+      "durationMs": 788,
       "error": null
     },
     {
@@ -2663,27 +2673,157 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 759,
+      "durationMs": 738,
       "error": null
     },
     {
-      "url": "https://www.blm.gov/office/winnemucca-district-office",
+      "url": "https://www.blm.gov/nevada-fire-information-and-fire-restrictions",
       "references": [
         {
           "destinationId": "massacre-rim",
           "kind": "guide",
-          "sourceId": "massacre-rim-source-3"
+          "sourceId": "massacre-rim-source-6"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.blm.gov/office/winnemucca-district-office",
+      "finalUrl": "https://www.blm.gov/nevada-fire-information-and-fire-restrictions",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 561,
+      "durationMs": 764,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 330,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_Black%20Rock%20Desert_Plan%20your%20visit.pdf",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-9"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_Black%20Rock%20Desert_Plan%20your%20visit.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 319,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-8"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 340,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/visit/black-rock-desert-high-rock-canyon-emigrant-trails-national-conservation-area",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/visit/black-rock-desert-high-rock-canyon-emigrant-trails-national-conservation-area",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 747,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/visit/massacre-ranch-recreation-area",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-3"
+        },
+        {
+          "destinationId": "massacre-rim",
+          "kind": "site",
+          "siteId": "massacre-ranch-interpretive-camp-meadow"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/visit/massacre-ranch-recreation-area",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 551,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/visit/stevens-camp-recreation-area",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-4"
+        },
+        {
+          "destinationId": "massacre-rim",
+          "kind": "site",
+          "siteId": "stevens-camp-interpretive-camp-meadow"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/visit/stevens-camp-recreation-area",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 548,
       "error": null
     },
     {
@@ -2713,7 +2853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 584,
+      "durationMs": 583,
       "error": null
     },
     {
@@ -2743,7 +2883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1133,
+      "durationMs": 880,
       "error": null
     },
     {
@@ -2768,7 +2908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 283,
+      "durationMs": 276,
       "error": null
     },
     {
@@ -2788,7 +2928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 424,
+      "durationMs": 181,
       "error": null
     },
     {
@@ -2818,7 +2958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 457,
+      "durationMs": 356,
       "error": null
     },
     {
@@ -2838,7 +2978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 290,
+      "durationMs": 181,
       "error": null
     },
     {
@@ -2858,7 +2998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1289,
+      "durationMs": 1874,
       "error": null
     },
     {
@@ -2888,7 +3028,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2638,
+      "durationMs": 573,
       "error": null
     },
     {
@@ -2908,7 +3048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1706,
+      "durationMs": 1206,
       "error": null
     },
     {
@@ -2928,7 +3068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 154,
+      "durationMs": 116,
       "error": null
     },
     {
@@ -2953,7 +3093,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 113,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -2973,7 +3113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 119,
+      "durationMs": 109,
       "error": null
     },
     {
@@ -2998,7 +3138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 158,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -3028,7 +3168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 58,
+      "durationMs": 56,
       "error": null
     },
     {
@@ -3048,7 +3188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 68,
+      "durationMs": 64,
       "error": null
     },
     {
@@ -3068,7 +3208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -3091,15 +3231,15 @@
         }
       ],
       "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.fs.usda.gov/r09/superior/recreation",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 9432,
-      "error": null
+      "classification": "error",
+      "status": 0,
+      "method": "GET",
+      "finalUrl": null,
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": null,
+      "durationMs": 41455,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910\ncurl: (28) Operation timed out after 20009 milliseconds with 0 bytes received\n"
     },
     {
       "url": "https://www.fs.usda.gov/superior",
@@ -3118,7 +3258,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1057,
+      "durationMs": 865,
       "error": null
     },
     {
@@ -3138,7 +3278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 943,
+      "durationMs": 4267,
       "error": null
     },
     {
@@ -3158,7 +3298,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 134,
       "error": null
     },
     {
@@ -3178,7 +3318,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4690,
+      "durationMs": 678,
       "error": null
     },
     {
@@ -3198,7 +3338,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1489,
+      "durationMs": 1871,
       "error": null
     },
     {
@@ -3223,7 +3363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 322,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -3253,7 +3393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 194,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -3273,7 +3413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 193,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -3293,7 +3433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 97,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -3313,7 +3453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 357,
+      "durationMs": 152,
       "error": null
     },
     {
@@ -3333,7 +3473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 124,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -3358,7 +3498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -3378,7 +3518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -3398,7 +3538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 75,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -3423,7 +3563,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 78,
+      "durationMs": 77,
       "error": null
     },
     {
@@ -3448,7 +3588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1314,
+      "durationMs": 527,
       "error": null
     },
     {
@@ -3468,7 +3608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 225,
+      "durationMs": 107,
       "error": null
     },
     {
@@ -3488,7 +3628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 163,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -3508,7 +3648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1054,
+      "durationMs": 1058,
       "error": null
     },
     {
@@ -3528,7 +3668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1037,
+      "durationMs": 1033,
       "error": null
     },
     {
@@ -3553,7 +3693,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1688,
+      "durationMs": 1951,
       "error": null
     },
     {
@@ -3573,7 +3713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 63,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -3593,7 +3733,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 211,
+      "durationMs": 132,
       "error": null
     },
     {
@@ -3613,7 +3753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1085,
+      "durationMs": 705,
       "error": null
     },
     {
@@ -3633,7 +3773,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1062,
+      "durationMs": 636,
       "error": null
     },
     {
@@ -3653,7 +3793,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1068,
+      "durationMs": 716,
       "error": null
     },
     {
@@ -3673,7 +3813,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1269,
+      "durationMs": 633,
       "error": null
     },
     {
@@ -3693,7 +3833,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 73,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -3718,7 +3858,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3748,7 +3888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3768,7 +3908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3788,7 +3928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3813,7 +3953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 48,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -3843,7 +3983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 66,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3863,7 +4003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 66,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3883,7 +4023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 49,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3903,7 +4043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 58,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -3923,7 +4063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 264,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -3943,7 +4083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 238,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -3988,7 +4128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 52,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -4008,7 +4148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 921,
+      "durationMs": 585,
       "error": null
     },
     {
@@ -4028,7 +4168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 762,
+      "durationMs": 607,
       "error": null
     },
     {
@@ -4048,7 +4188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 807,
+      "durationMs": 645,
       "error": null
     },
     {
@@ -4068,7 +4208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 816,
+      "durationMs": 648,
       "error": null
     },
     {
@@ -4098,7 +4238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 931,
+      "durationMs": 841,
       "error": null
     },
     {
@@ -4123,7 +4263,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 504,
+      "durationMs": 607,
       "error": null
     },
     {
@@ -4143,7 +4283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 430,
+      "durationMs": 334,
       "error": null
     },
     {
@@ -4163,7 +4303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 642,
+      "durationMs": 614,
       "error": null
     },
     {
@@ -4183,7 +4323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 546,
+      "durationMs": 555,
       "error": null
     },
     {
@@ -4203,7 +4343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 196,
+      "durationMs": 207,
       "error": null
     },
     {
@@ -4223,7 +4363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 179,
+      "durationMs": 148,
       "error": null
     },
     {
@@ -4243,7 +4383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 182,
+      "durationMs": 133,
       "error": null
     },
     {
@@ -4263,7 +4403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 152,
+      "durationMs": 160,
       "error": null
     },
     {
@@ -4283,7 +4423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 292,
+      "durationMs": 184,
       "error": null
     },
     {
@@ -4303,7 +4443,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 162,
+      "durationMs": 179,
       "error": null
     },
     {
@@ -4323,7 +4463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 347,
+      "durationMs": 266,
       "error": null
     },
     {
@@ -4343,7 +4483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 178,
+      "durationMs": 190,
       "error": null
     },
     {
@@ -4368,7 +4508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 200,
+      "durationMs": 188,
       "error": null
     },
     {
@@ -4388,7 +4528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 705,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4408,7 +4548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2741,
+      "durationMs": 2144,
       "error": null
     },
     {
@@ -4428,7 +4568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2886,
+      "durationMs": 1997,
       "error": null
     },
     {
@@ -4448,7 +4588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3142,
+      "durationMs": 2505,
       "error": null
     },
     {
@@ -4468,7 +4608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3771,
+      "durationMs": 3208,
       "error": null
     },
     {
@@ -4488,7 +4628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2826,
+      "durationMs": 2108,
       "error": null
     },
     {
@@ -4513,7 +4653,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2578,
+      "durationMs": 2014,
       "error": null
     },
     {
@@ -4538,7 +4678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2585,
+      "durationMs": 1899,
       "error": null
     },
     {
@@ -4558,7 +4698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3464,
+      "durationMs": 2365,
       "error": null
     },
     {
@@ -4578,7 +4718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2603,
+      "durationMs": 1609,
       "error": null
     },
     {
@@ -4603,7 +4743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2686,
+      "durationMs": 1547,
       "error": null
     },
     {
@@ -4628,7 +4768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2659,
+      "durationMs": 1530,
       "error": null
     },
     {
@@ -4648,7 +4788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 510,
+      "durationMs": 507,
       "error": null
     },
     {
@@ -4668,7 +4808,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 202,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -4688,7 +4828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 374,
+      "durationMs": 384,
       "error": null
     },
     {
@@ -4708,7 +4848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 243,
+      "durationMs": 142,
       "error": null
     },
     {
@@ -4728,7 +4868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 102,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -4748,7 +4888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 99,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -4778,7 +4918,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 110,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -4798,7 +4938,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 113,
       "error": null
     },
     {
@@ -4818,7 +4958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -4853,7 +4993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -4873,7 +5013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -4893,7 +5033,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 119,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -4913,7 +5053,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 217,
       "error": null
     },
     {
@@ -4933,7 +5073,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 101,
+      "durationMs": 126,
       "error": null
     },
     {
@@ -4953,7 +5093,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -4973,7 +5113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 81,
+      "durationMs": 111,
       "error": null
     },
     {
@@ -4993,7 +5133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -5013,7 +5153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -5033,7 +5173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 99,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -5053,7 +5193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 110,
+      "durationMs": 126,
       "error": null
     },
     {
@@ -5073,7 +5213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 141,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -5098,7 +5238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 146,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -5118,7 +5258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 72,
       "error": null
     },
     {
@@ -5143,7 +5283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -5163,7 +5303,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 171,
       "error": null
     },
     {
@@ -5183,7 +5323,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2098,
+      "durationMs": 1153,
       "error": null
     },
     {
@@ -5203,7 +5343,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 844,
+      "durationMs": 841,
       "error": null
     },
     {
@@ -5223,7 +5363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 213,
+      "durationMs": 211,
       "error": null
     },
     {
@@ -5243,7 +5383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 212,
+      "durationMs": 145,
       "error": null
     },
     {
@@ -5263,7 +5403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 92,
+      "durationMs": 151,
       "error": null
     },
     {
@@ -5293,7 +5433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 986,
+      "durationMs": 489,
       "error": null
     },
     {
@@ -5313,7 +5453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 104,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -5333,7 +5473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 105,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -5353,7 +5493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 78,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -5373,7 +5513,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 74,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -5398,7 +5538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -5418,7 +5558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 101,
+      "durationMs": 108,
       "error": null
     },
     {
@@ -5443,7 +5583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1060,
+      "durationMs": 5459,
       "error": null
     },
     {
@@ -5463,7 +5603,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1047,
+      "durationMs": 6598,
       "error": null
     },
     {
@@ -5483,7 +5623,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 132,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -5503,7 +5643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1865,
+      "durationMs": 1476,
       "error": null
     },
     {
@@ -5523,7 +5663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 258,
+      "durationMs": 170,
       "error": null
     },
     {
@@ -5543,7 +5683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 179,
+      "durationMs": 178,
       "error": null
     },
     {
@@ -5563,7 +5703,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1321,
+      "durationMs": 860,
       "error": null
     },
     {
@@ -5593,8 +5733,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 14343,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 6950 ms: Couldn't connect to server\n"
+      "durationMs": 14880,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7311 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -5618,7 +5758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 209,
+      "durationMs": 174,
       "error": null
     },
     {
@@ -5643,7 +5783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 184,
+      "durationMs": 144,
       "error": null
     },
     {
@@ -5668,7 +5808,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1307,
+      "durationMs": 1472,
       "error": null
     },
     {
@@ -5698,7 +5838,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 131,
+      "durationMs": 108,
       "error": null
     },
     {
@@ -5723,7 +5863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 217,
+      "durationMs": 172,
       "error": null
     },
     {
@@ -5748,7 +5888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 204,
+      "durationMs": 198,
       "error": null
     },
     {
@@ -5768,7 +5908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1582,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -5788,7 +5928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1104,
+      "durationMs": 740,
       "error": null
     }
   ]

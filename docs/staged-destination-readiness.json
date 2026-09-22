@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T10:26:33.623Z",
+  "generatedAt": "2026-09-22T11:05:19.970Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 48,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 47,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 19,
-    "withVerifiedFactualReview": 31,
+    "requiringFactualChanges": 18,
+    "withVerifiedFactualReview": 32,
     "readyForActivation": 0
   },
   "records": [
@@ -2869,86 +2869,139 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
+        "total": 10,
+        "reachable": 9,
         "blocked": 1,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "massacre-rim",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
             "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
-            "https://www.blm.gov/office/winnemucca-district-office"
+            "https://www.blm.gov/visit/massacre-ranch-recreation-area",
+            "https://www.blm.gov/visit/stevens-camp-recreation-area",
+            "https://www.blm.gov/visit/black-rock-desert-high-rock-canyon-emigrant-trails-national-conservation-area",
+            "https://www.blm.gov/nevada-fire-information-and-fire-restrictions",
+            "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
+            "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf"
           ],
           "verifiedFindings": [
-            "BLM explicitly promotes stargazing and allows dispersed camping throughout Massacre Rim Dark Sky Sanctuary while warning that the area is extremely remote and has no cell service.",
-            "The official map identifies roads, a campground and interpretive panel, but the staged viewpoint is only a coarse point and Denio is a service base rather than a sanctuary observing site."
+            "BLM explicitly promotes stargazing and permits dispersed camping throughout Massacre Rim Dark Sky Sanctuary; Massacre Ranch and Steven's Camp are named public recreation areas with primitive campsites and first-come cabins.",
+            "The official California National Historic Trail brochure supplies exact interpretive-panel coordinates at Massacre Ranch and Steven's Camp, replacing the coarse sanctuary point and the invalid Denio observing record.",
+            "BLM documents gravel Nevada 8A near the sanctuary, extremely rough and rocky interior roads, a four-wheel-drive/high-clearance recommendation, no cell service, unreliable surface water and fuel approximately 40 to 90 road miles away.",
+            "The current Winnemucca fire order prohibits wood and charcoal fires outside developed fee campgrounds or picnic areas, with a narrow portable gas or pressurised-liquid stove exception, and the High Rock Canyon Road southern approach has a recurring winter/spring closure."
           ],
-          "requiredChanges": [
-            {
-              "scope": "massacre-rim-map-points",
-              "reason": "Replace the coarse viewpoint and Denio observing record with exact BLM map features, then document road class, fire restrictions, dispersed-camping rules, communications and fuel range."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "massacre-rim-source-1",
-            "url": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
-            "classification": "blocked",
-            "status": 403
-          },
-          {
-            "id": "massacre-rim-source-2",
             "url": "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
             "classification": "reachable",
             "status": 200
           },
           {
-            "id": "massacre-rim-source-3",
-            "url": "https://www.blm.gov/office/winnemucca-district-office",
+            "id": "massacre-rim-source-2",
+            "url": "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
             "classification": "reachable",
             "status": 200
+          },
+          {
+            "id": "massacre-rim-source-3",
+            "url": "https://www.blm.gov/visit/massacre-ranch-recreation-area",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-4",
+            "url": "https://www.blm.gov/visit/stevens-camp-recreation-area",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-5",
+            "url": "https://www.blm.gov/visit/black-rock-desert-high-rock-canyon-emigrant-trails-national-conservation-area",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-6",
+            "url": "https://www.blm.gov/nevada-fire-information-and-fire-restrictions",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-7",
+            "url": "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-8",
+            "url": "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-9",
+            "url": "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_Black%20Rock%20Desert_Plan%20your%20visit.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "massacre-rim-source-10",
+            "url": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
+            "classification": "blocked",
+            "status": 403
           }
         ]
       },
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "massacre-rim-viewpoint",
+          "id": "massacre-ranch-interpretive-camp-meadow",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "denio-outskirts",
+          "id": "stevens-camp-interpretive-camp-meadow",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "massacre-ranch-interpretive-camp-meadow:climate",
+        "massacre-ranch-interpretive-camp-meadow:black-marble",
+        "massacre-ranch-interpretive-camp-meadow:dem",
+        "massacre-ranch-interpretive-camp-meadow:scores",
+        "stevens-camp-interpretive-camp-meadow:climate",
+        "stevens-camp-interpretive-camp-meadow:black-marble",
+        "stevens-camp-interpretive-camp-meadow:dem",
+        "stevens-camp-interpretive-camp-meadow:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-snapshots-missing",
         "source-access-manual-review-required",
-        "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3998,9 +4051,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 3,
+        "reachable": 2,
         "blocked": 0,
-        "broken": 0,
+        "broken": 1,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "boundary-waters",
@@ -4026,8 +4079,8 @@
           {
             "id": "boundary-waters-source-1",
             "url": "https://www.fs.usda.gov/recarea/superior/recarea/?recid=36910",
-            "classification": "reachable",
-            "status": 200
+            "classification": "error",
+            "status": 0
           },
           {
             "id": "boundary-waters-source-2",
@@ -4075,6 +4128,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
