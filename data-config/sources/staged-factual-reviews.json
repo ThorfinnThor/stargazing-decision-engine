@@ -251,30 +251,28 @@
     },
     {
       "destinationId": "tara-serbia",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-18",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
-        "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/vidikovci.html",
-        "https://www.nptara.rs/za-posetioce/opste-informacije/planirajte-posetu.html",
+        "https://glampingtara.com/",
+        "https://glampingtara.com/contact/",
+        "https://maps.app.goo.gl/cgcsE4ac3KpNqKSBA",
+        "https://serbia.com/provider/glamping-tara/",
+        "https://gardenhilltara.rs/en/",
+        "https://maps.app.goo.gl/scZvnubDy85AdKySA",
         "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
         "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
-        "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/edukativne-staze.html",
-        "https://www.nptara.rs/vesti/825-presuda-za-divljanje-kvadom-u-np-tara.html"
+        "https://api.open-meteo.com/v1/elevation?latitude=43.949661,43.9210566&longitude=19.356679,19.4198053"
       ],
       "verifiedFindings": [
-        "The Tara National Park authority identifies Zelenika as an equipped visitor viewpoint beside the Perućac-Mitrovac road and publishes its elevation as 555 metres. The embedded official map identifies the viewpoint at 43.9563893, 19.4079615.",
-        "The park authority identifies Osluša as an arranged, easily reached viewpoint at 964 metres, approached along the E7 walking corridor or the Visoka Tara cycling route. The official embedded map marker is converted to 43.9390556, 19.4710556.",
-        "The current visitor rules require visitors to remain on marked routes and at arranged, designated places, prohibit camping outside designated locations and require conduct that does not disturb wildlife.",
-        "The formal internal-order rulebook states that access is generally free except where its protection rules impose restrictions, prohibits visitor movement away from arranged and marked trails and places without a ranger or authorised guide, and prohibits motor traffic on forest roads or outside designated vehicle routes unless specifically authorised.",
-        "The official Banjska stena educational-trail page describes a six-kilometre medium-difficulty forest route, recommends walking in a group and highlights brown-bear interpretation along the trail. The park separately documents enforcement of the vehicle prohibition on the forest-road approach, so the former generic 'Banjica viewpoint' record is not retained as a night-observing candidate.",
-        "No reviewed National Park page identifies Zelenika, Osluša or another Tara viewpoint as an astronomy site or confirms after-dark parking and independent observing. The generic Mitrovac plateau and Banjica records are therefore removed and the two exact official viewpoints remain inactive, low-access candidates only."
+        "Glamping Tara's operator directly promotes two reservable all-season panoramic domes in Rastište as accommodation beneath the stars and publishes telephone, messaging and email booking contacts.",
+        "The operator-linked map resolves the Glamping Tara guest property to 43.949661, 19.356679. Serbia.com's operator listing independently describes the stay as suited to sleeping and stargazing beneath Tara's stars and links visitors back to the booking provider.",
+        "Garden Hill Tara's operator offers four reservable villas at Konjska Reka 422 in Mitrovac and explicitly describes evening use of its private pool beneath the starry sky. The operator-linked map resolves the accommodation complex to 43.9210566, 19.4198053.",
+        "Both replacement records are accommodation-only guest footprints. A current overnight booking and the host's assigned outdoor area support use of the selected property; neither record grants access to a park viewpoint, trail, forest road, adjacent parcel or the other accommodation.",
+        "The current Tara National Park visitor rules require use of marked routes and arranged or designated places, prohibit camping outside designated locations and restrict vehicle movement on forest roads or outside designated routes unless specifically authorised. The guide therefore includes no after-dark transfer or park fallback.",
+        "Open-Meteo supplied preliminary elevation cross-checks of 439 metres for Glamping Tara and 1,106 metres for Garden Hill Tara. Final catalogue elevations remain subject to the production Copernicus DEM ingestion at the reviewed coordinates."
       ],
-      "requiredChanges": [
-        {
-          "scope": "tara-serbia-night-access",
-          "reason": "Obtain dated written confirmation from Tara National Park that astronomy use after dark is allowed at a named candidate viewpoint, including the permitted hour, access route, parking location and any ranger or permit requirement. Until then no Tara site is an independent observing recommendation and the destination must remain inactive."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "kopaonik",

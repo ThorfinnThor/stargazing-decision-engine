@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T20:40:56.254Z",
+  "generatedAt": "2026-09-22T21:02:32.041Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 48,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 46,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 15,
-    "withVerifiedFactualReview": 35,
+    "requiringFactualChanges": 14,
+    "withVerifiedFactualReview": 36,
     "readyForActivation": 0
   },
   "records": [
@@ -1359,72 +1359,88 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 6,
-        "reachable": 6,
+        "total": 9,
+        "reachable": 9,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "tara-serbia",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-18",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
-            "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/vidikovci.html",
-            "https://www.nptara.rs/za-posetioce/opste-informacije/planirajte-posetu.html",
+            "https://glampingtara.com/",
+            "https://glampingtara.com/contact/",
+            "https://maps.app.goo.gl/cgcsE4ac3KpNqKSBA",
+            "https://serbia.com/provider/glamping-tara/",
+            "https://gardenhilltara.rs/en/",
+            "https://maps.app.goo.gl/scZvnubDy85AdKySA",
             "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
             "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
-            "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/edukativne-staze.html",
-            "https://www.nptara.rs/vesti/825-presuda-za-divljanje-kvadom-u-np-tara.html"
+            "https://api.open-meteo.com/v1/elevation?latitude=43.949661,43.9210566&longitude=19.356679,19.4198053"
           ],
           "verifiedFindings": [
-            "The Tara National Park authority identifies Zelenika as an equipped visitor viewpoint beside the Perućac-Mitrovac road and publishes its elevation as 555 metres. The embedded official map identifies the viewpoint at 43.9563893, 19.4079615.",
-            "The park authority identifies Osluša as an arranged, easily reached viewpoint at 964 metres, approached along the E7 walking corridor or the Visoka Tara cycling route. The official embedded map marker is converted to 43.9390556, 19.4710556.",
-            "The current visitor rules require visitors to remain on marked routes and at arranged, designated places, prohibit camping outside designated locations and require conduct that does not disturb wildlife.",
-            "The formal internal-order rulebook states that access is generally free except where its protection rules impose restrictions, prohibits visitor movement away from arranged and marked trails and places without a ranger or authorised guide, and prohibits motor traffic on forest roads or outside designated vehicle routes unless specifically authorised.",
-            "The official Banjska stena educational-trail page describes a six-kilometre medium-difficulty forest route, recommends walking in a group and highlights brown-bear interpretation along the trail. The park separately documents enforcement of the vehicle prohibition on the forest-road approach, so the former generic 'Banjica viewpoint' record is not retained as a night-observing candidate.",
-            "No reviewed National Park page identifies Zelenika, Osluša or another Tara viewpoint as an astronomy site or confirms after-dark parking and independent observing. The generic Mitrovac plateau and Banjica records are therefore removed and the two exact official viewpoints remain inactive, low-access candidates only."
+            "Glamping Tara's operator directly promotes two reservable all-season panoramic domes in Rastište as accommodation beneath the stars and publishes telephone, messaging and email booking contacts.",
+            "The operator-linked map resolves the Glamping Tara guest property to 43.949661, 19.356679. Serbia.com's operator listing independently describes the stay as suited to sleeping and stargazing beneath Tara's stars and links visitors back to the booking provider.",
+            "Garden Hill Tara's operator offers four reservable villas at Konjska Reka 422 in Mitrovac and explicitly describes evening use of its private pool beneath the starry sky. The operator-linked map resolves the accommodation complex to 43.9210566, 19.4198053.",
+            "Both replacement records are accommodation-only guest footprints. A current overnight booking and the host's assigned outdoor area support use of the selected property; neither record grants access to a park viewpoint, trail, forest road, adjacent parcel or the other accommodation.",
+            "The current Tara National Park visitor rules require use of marked routes and arranged or designated places, prohibit camping outside designated locations and restrict vehicle movement on forest roads or outside designated routes unless specifically authorised. The guide therefore includes no after-dark transfer or park fallback.",
+            "Open-Meteo supplied preliminary elevation cross-checks of 439 metres for Glamping Tara and 1,106 metres for Garden Hill Tara. Final catalogue elevations remain subject to the production Copernicus DEM ingestion at the reviewed coordinates."
           ],
-          "requiredChanges": [
-            {
-              "scope": "tara-serbia-night-access",
-              "reason": "Obtain dated written confirmation from Tara National Park that astronomy use after dark is allowed at a named candidate viewpoint, including the permitted hour, access route, parking location and any ranger or permit requirement. Until then no Tara site is an independent observing recommendation and the destination must remain inactive."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "tara-serbia-source-1",
-            "url": "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/vidikovci.html",
+            "url": "https://glampingtara.com/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-2",
-            "url": "https://www.nptara.rs/za-posetioce/opste-informacije/planirajte-posetu.html",
+            "url": "https://glampingtara.com/contact/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-3",
-            "url": "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
+            "url": "https://maps.app.goo.gl/cgcsE4ac3KpNqKSBA",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-4",
-            "url": "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
+            "url": "https://serbia.com/provider/glamping-tara/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-5",
-            "url": "https://www.nptara.rs/za-posetioce/turizam-i-rekreacija/edukativne-staze.html",
+            "url": "https://gardenhilltara.rs/en/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "tara-serbia-source-6",
-            "url": "https://www.nptara.rs/vesti/825-presuda-za-divljanje-kvadom-u-np-tara.html",
+            "url": "https://maps.app.goo.gl/scZvnubDy85AdKySA",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-7",
+            "url": "https://www.nptara.rs/za-posetioce/nacionalni-park/pravila-ponasanja.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-8",
+            "url": "https://nptara.rs/images/download/Dokumenta/Pravilnik-o-unutrasnjem-redu-i-cuvarskoj-slubi.pdf",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "tara-serbia-source-9",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=43.949661,43.9210566&longitude=19.356679,19.4198053",
             "classification": "reachable",
             "status": 200
           }
@@ -1433,36 +1449,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "tara-zelenika-viewpoint",
+          "id": "tara-glamping-rastiste-stay",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "tara-oslusa-viewpoint",
+          "id": "tara-garden-hill-guest-courtyard",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "tara-glamping-rastiste-stay:climate",
+        "tara-glamping-rastiste-stay:black-marble",
+        "tara-glamping-rastiste-stay:dem",
+        "tara-glamping-rastiste-stay:scores",
+        "tara-garden-hill-guest-courtyard:climate",
+        "tara-garden-hill-guest-courtyard:black-marble",
+        "tara-garden-hill-guest-courtyard:dem",
+        "tara-garden-hill-guest-courtyard:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3630,9 +3655,9 @@
       },
       "sources": {
         "total": 6,
-        "reachable": 6,
+        "reachable": 4,
         "blocked": 0,
-        "broken": 0,
+        "broken": 2,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "big-cypress",
@@ -3669,14 +3694,14 @@
           {
             "id": "big-cypress-source-3",
             "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=141B4EE7-DF23-54A4-6C48051AD9F08A0D",
-            "classification": "reachable",
-            "status": 200
+            "classification": "missing",
+            "status": 404
           },
           {
             "id": "big-cypress-source-4",
             "url": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
-            "classification": "reachable",
-            "status": 200
+            "classification": "missing",
+            "status": 404
           },
           {
             "id": "big-cypress-source-5",
@@ -3724,6 +3749,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -3832,9 +3858,9 @@
       },
       "sources": {
         "total": 5,
-        "reachable": 5,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 0,
+        "broken": 2,
         "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "dinosaur-national-monument",
@@ -3864,8 +3890,8 @@
           {
             "id": "dinosaur-national-monument-source-2",
             "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
-            "classification": "reachable",
-            "status": 200
+            "classification": "missing",
+            "status": 404
           },
           {
             "id": "dinosaur-national-monument-source-3",
@@ -3876,8 +3902,8 @@
           {
             "id": "dinosaur-national-monument-source-4",
             "url": "https://home.nps.gov/dino/planyourvisit/conditions.htm",
-            "classification": "reachable",
-            "status": 200
+            "classification": "missing",
+            "status": 404
           },
           {
             "id": "dinosaur-national-monument-source-5",
@@ -3919,6 +3945,7 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
+        "source-reachability-broken",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
