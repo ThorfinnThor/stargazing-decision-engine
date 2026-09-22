@@ -3925,46 +3925,6 @@
     }
   },
   {
-    "id": "sierra-morena-constantina",
-    "slug": "sierra-morena-constantina",
-    "destinationId": "sierra-morena",
-    "name": "Castillo de Constantina",
-    "lat": 37.87335,
-    "lon": -5.6228,
-    "elevationM": 620,
-    "siteType": "historic-site",
-    "publicAccess": "limited",
-    "accessScore": 20,
-    "active": false,
-    "priority": 88,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.constantina.org/es/actualidad/eventos/Observacion-Astronomica-en-el-Castillo-de-Constantina/",
-    "accessNotes": {
-      "en": "The municipal page documents a registration-only astronomy event at the castle on 4 July 2024. It does not establish routine night access. Use this site only for a newly announced municipal event whose meeting point and access have been confirmed.",
-      "de": "Die Gemeindeseite dokumentiert am 4. Juli 2024 eine anmeldepflichtige Astronomieveranstaltung auf der Burg. Daraus folgt kein regulärer Nachtzugang. Nutze den Ort nur für eine neu angekündigte kommunale Veranstaltung mit bestätigtem Treffpunkt und Zugang."
-    }
-  },
-  {
-    "id": "sierra-morena-almadén",
-    "slug": "sierra-morena-almadén",
-    "destinationId": "sierra-morena",
-    "name": "Observatorio Astronómico de Almadén de la Plata",
-    "lat": 37.86471,
-    "lon": -6.14661,
-    "elevationM": 412,
-    "siteType": "public-observatory",
-    "publicAccess": "limited",
-    "accessScore": 20,
-    "active": false,
-    "priority": 88,
-    "certificationIds": [],
-    "notesSourceUrl": "https://www.almadendelaplata.es/es/temas/turismo/observatorio-astronomico/",
-    "accessNotes": {
-      "en": "The municipal page identifies the observatory at Mirador de La Traviesa, but the operator currently redirects astronomy activities elsewhere. Arrange a visit directly and confirm this site is operating before travel; this coordinate does not grant independent access.",
-      "de": "Die Gemeindeseite verortet das Observatorium am Mirador de La Traviesa, doch der Betreiber verweist astronomische Aktivitäten derzeit an einen anderen Ort. Vereinbare einen Besuch direkt und bestätige vor der Fahrt den Betrieb; diese Koordinate gewährt keinen selbstständigen Zutritt."
-    }
-  },
-  {
     "id": "monfrague-castillo",
     "slug": "monfrague-castillo",
     "destinationId": "monfrague",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "The Superior National Forest campsite layer identifies this exact point as open Moose Lake Campsite 2. It is recorded only as a preplanned daylight alternative within the same permitted Moose Lake entry itinerary, not as a second observing stop or a guaranteed vacancy. All permit, group, designated-campsite, PFD, shore travel, navigation, treated-water, first-aid, food-storage, itinerary, weather and current-alert gates that apply to Campsite 1 apply here as well. Decide and land while full daylight remains. If no designated site is safely available within the written plan, return or use the plan's legal daylight contingency; do not improvise a shore camp or paddle between sites after dark. Observe only after the tent, craft and food are secured, within the campsite footprint and with minimal dim red light.",
       "de": "Der Campingplatz-Datensatz des Superior National Forest weist diesen genauen Punkt als offenen Moose Lake Campsite 2 aus. Er ist ausschließlich als vorab geplante Alternative bei Tageslicht innerhalb derselben genehmigten Route ab Moose Lake erfasst, nicht als zweiter Beobachtungshalt oder garantierter freier Platz. Sämtliche Regeln zu Permit, Gruppengröße, ausgewiesenem Campingplatz, Schwimmweste, ufernaher Fahrt, Navigation, Wasseraufbereitung, Erster Hilfe, Nahrungssicherung, Reiseplan, Wetter und aktuellen Hinweisen gelten hier ebenso wie an Campsite 1. Entscheide und lande, solange volles Tageslicht bleibt. Ist im schriftlichen Plan kein ausgewiesener Platz sicher verfügbar, kehre um oder nutze die rechtmäßige Tageslicht-Alternative des Plans; improvisiere kein Ufercamp und paddle nach Einbruch der Dunkelheit nicht zwischen Plätzen. Beobachte erst, wenn Zelt, Boot und Nahrung gesichert sind, innerhalb der Campingfläche und mit minimalem schwachem Rotlicht."
+    }
+  },
+  {
+    "id": "sierra-morena-cartuja-cazalla-astrotourism",
+    "slug": "sierra-morena-cartuja-cazalla-astrotourism",
+    "destinationId": "sierra-morena",
+    "name": "La Cartuja de Cazalla astrotourism stay",
+    "lat": 37.95246,
+    "lon": -5.72814,
+    "elevationM": 575,
+    "siteType": "booked-astrotourism-stay",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": false,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://cartuja-cazalla.squarespace.com/astronoma",
+    "accessNotes": {
+      "en": "The accommodation operator offers guided telescope sessions by advance reservation and self-observation for guests with their own equipment. This coordinate is the mapped monastery property, not an independently accessible observing pad. Book the stay first; request a guided monitor at least 15 days ahead and await availability confirmation, or meet the operator's minimum two-night stay for self-observation. Obtain the assigned observing area, arrival, parking, equipment and departure instructions directly from the host. Never enter the property or adjacent land without the booking.",
+      "de": "Der Unterkunftsbetreiber bietet geführte Teleskopsitzungen nach Voranmeldung und Eigenbeobachtung für Gäste mit eigener Ausrüstung an. Diese Koordinate bezeichnet das kartierte Klostergelände und keinen selbstständig zugänglichen Beobachtungsplatz. Buche zuerst den Aufenthalt; frage eine betreute Sitzung mindestens 15 Tage vorher an und warte auf die Verfügbarkeitsbestätigung oder erfülle für Eigenbeobachtung den Mindestaufenthalt von zwei Nächten. Lass dir Beobachtungsfläche, Ankunft, Parken, Ausrüstung und Abreise direkt vom Gastgeber zuweisen. Betritt Grundstück oder Nachbarflächen niemals ohne Buchung."
+    }
+  },
+  {
+    "id": "sierra-morena-castillo-guardas-observatory",
+    "slug": "sierra-morena-castillo-guardas-observatory",
+    "destinationId": "sierra-morena",
+    "name": "El Castillo de las Guardas Observatory",
+    "lat": 37.7343889,
+    "lon": -6.3795278,
+    "elevationM": 459,
+    "siteType": "booked-public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": false,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+    "accessNotes": {
+      "en": "The observatory operator publishes reservation-based public observations on moonless clear Saturdays, subject to weather and minimum attendance. Its dated 2026 summer programme has ended, so this record requires a newly confirmed date rather than a walk-in visit. Register with the operator, obtain the current meeting and walking instructions, park only where directed in Peroamigo and do not drive to the observatory. Bring rural footwear, warm layers and dim red light; there are no nearby services, and the operator's weather or fire-safety cancellation is final. The exact observatory coordinate does not grant access outside a confirmed session.",
+      "de": "Der Observatoriumsbetreiber veröffentlicht an mondlosen klaren Samstagen anmeldepflichtige öffentliche Beobachtungen, abhängig von Wetter und Mindestteilnehmerzahl. Das datierte Sommerprogramm 2026 ist beendet; dieser Datensatz erfordert deshalb einen neu bestätigten Termin und erlaubt keinen spontanen Besuch. Melde dich beim Betreiber an, hole aktuelle Treff- und Fußweghinweise ein, parke ausschließlich wie angewiesen in Peroamigo und fahre nicht zum Observatorium. Nimm geländetaugliche Schuhe, warme Kleidung und schwaches Rotlicht mit; in der Nähe gibt es keine Versorgung, und wetter- oder brandschutzbedingte Absagen des Betreibers sind verbindlich. Die genaue Observatoriumskoordinate gewährt außerhalb einer bestätigten Sitzung keinen Zutritt."
     }
   }
 ]

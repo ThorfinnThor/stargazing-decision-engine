@@ -3,29 +3,29 @@
   "records": [
     {
       "destinationId": "sierra-morena",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-17",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
-        "https://www.almadendelaplata.es/es/temas/turismo/observatorio-astronomico/",
-        "https://www.almadendelaplata.es/es/temas/turismo/la-traviesa/",
-        "https://www.xn--asociacionastronomicadeespaa-oyc.es/Observatorio-Astronomico-de-Almaden-de-la-Plata%2C-Sevilla/",
-        "https://www.constantina.org/es/actualidad/eventos/Observacion-Astronomica-en-el-Castillo-de-Constantina/",
-        "https://patricia.dipusevilla.es/ver-punto/es/01924e2c-b988-7723-8be2-c6a80751e360",
-        "https://www.openstreetmap.org/way/1391142783"
+        "https://cartuja-cazalla.squarespace.com/astronoma",
+        "https://cartuja-cazalla.squarespace.com/casa-rural-sevilla",
+        "https://www.openstreetmap.org/way/1457327654",
+        "https://www.xn--asociacionastronomicadeespaa-oyc.es/observatorio-astronomico-de-el-castillo-de-las-guardas.html",
+        "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+        "https://xn--asociacionastronomicadeespaa-oyc.es/Observaciones-astronomicas-publicas-2026/",
+        "https://www.andalucia.org/listing/observatorio-astron%C3%B3mico-de-el-castillo-de-las-guardas/24425102/",
+        "https://api.open-meteo.com/v1/elevation?latitude=37.95246,37.7343889&longitude=-5.72814,-6.3795278"
       ],
       "verifiedFindings": [
         "The Andalusian tourism authority identifies Sierra Morena as a Starlight Reserve and destination spanning the Sierra Norte de Sevilla natural park.",
-        "The Constantina municipality documents a registered astronomy event at Castillo de Constantina; the provincial heritage register supplies the castle name and coordinates, but the dated event does not establish routine night access.",
-        "The Almadén de la Plata municipality identifies its astronomical observatory at Mirador de La Traviesa, about five kilometres outside the town; the mapped observatory feature supplies the corrected coordinate.",
-        "The observatory operator currently directs astronomy activities to El Castillo de las Guardas, so the Almadén site cannot be presented as a currently operating independent stop."
+        "La Cartuja de Cazalla's current operator page offers advance-reserved guided telescope sessions and self-observation for booked accommodation guests; guided monitoring requires at least 15 days' notice and availability, while self-observers must book at least two nights.",
+        "The mapped La Cartuja monastery property supplies a reproducible property coordinate, but the exact observing area remains assigned by the host and the catalogue does not infer access from that map footprint.",
+        "The Astronomical Association of Spain publishes the exact El Castillo de las Guardas Observatory coordinate and an ongoing reservation procedure for public observations on suitable moonless Saturdays, subject to clear weather and minimum attendance.",
+        "The association's dated 2026 public calendar ended in September, so the revised record requires a newly confirmed session and operator-issued parking and walking instructions rather than representing the observatory as walk-in or independently accessible.",
+        "The association directs visitors to park in Peroamigo and walk under its instructions, warns that no services are nearby and publishes rural-footwear, warm-clothing, red-light, weather and fire-safety requirements.",
+        "Open-Meteo returned preliminary elevations of 575 metres at the La Cartuja property point and 459 metres at the operator-published observatory point; the production DEM workflow must still replace these provisional values."
       ],
-      "requiredChanges": [
-        {
-          "scope": "sierra-morena-access",
-          "reason": "Obtain current operator or municipal confirmation of an actual bookable programme before clearing the factual gate; until then the guide must remain confirmation-first and the destination inactive."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "monfrague",

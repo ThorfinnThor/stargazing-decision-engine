@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T12:45:04.343Z",
+  "generatedAt": "2026-09-22T20:32:22.652Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 16,
-    "withVerifiedFactualReview": 34,
+    "requiringFactualChanges": 15,
+    "withVerifiedFactualReview": 35,
     "readyForActivation": 0
   },
   "records": [
@@ -129,36 +129,36 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 6,
-        "reachable": 6,
+        "total": 9,
+        "reachable": 9,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "sierra-morena",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-17",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
-            "https://www.almadendelaplata.es/es/temas/turismo/observatorio-astronomico/",
-            "https://www.almadendelaplata.es/es/temas/turismo/la-traviesa/",
-            "https://www.xn--asociacionastronomicadeespaa-oyc.es/Observatorio-Astronomico-de-Almaden-de-la-Plata%2C-Sevilla/",
-            "https://www.constantina.org/es/actualidad/eventos/Observacion-Astronomica-en-el-Castillo-de-Constantina/",
-            "https://patricia.dipusevilla.es/ver-punto/es/01924e2c-b988-7723-8be2-c6a80751e360",
-            "https://www.openstreetmap.org/way/1391142783"
+            "https://cartuja-cazalla.squarespace.com/astronoma",
+            "https://cartuja-cazalla.squarespace.com/casa-rural-sevilla",
+            "https://www.openstreetmap.org/way/1457327654",
+            "https://www.xn--asociacionastronomicadeespaa-oyc.es/observatorio-astronomico-de-el-castillo-de-las-guardas.html",
+            "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+            "https://xn--asociacionastronomicadeespaa-oyc.es/Observaciones-astronomicas-publicas-2026/",
+            "https://www.andalucia.org/listing/observatorio-astron%C3%B3mico-de-el-castillo-de-las-guardas/24425102/",
+            "https://api.open-meteo.com/v1/elevation?latitude=37.95246,37.7343889&longitude=-5.72814,-6.3795278"
           ],
           "verifiedFindings": [
             "The Andalusian tourism authority identifies Sierra Morena as a Starlight Reserve and destination spanning the Sierra Norte de Sevilla natural park.",
-            "The Constantina municipality documents a registered astronomy event at Castillo de Constantina; the provincial heritage register supplies the castle name and coordinates, but the dated event does not establish routine night access.",
-            "The Almadén de la Plata municipality identifies its astronomical observatory at Mirador de La Traviesa, about five kilometres outside the town; the mapped observatory feature supplies the corrected coordinate.",
-            "The observatory operator currently directs astronomy activities to El Castillo de las Guardas, so the Almadén site cannot be presented as a currently operating independent stop."
+            "La Cartuja de Cazalla's current operator page offers advance-reserved guided telescope sessions and self-observation for booked accommodation guests; guided monitoring requires at least 15 days' notice and availability, while self-observers must book at least two nights.",
+            "The mapped La Cartuja monastery property supplies a reproducible property coordinate, but the exact observing area remains assigned by the host and the catalogue does not infer access from that map footprint.",
+            "The Astronomical Association of Spain publishes the exact El Castillo de las Guardas Observatory coordinate and an ongoing reservation procedure for public observations on suitable moonless Saturdays, subject to clear weather and minimum attendance.",
+            "The association's dated 2026 public calendar ended in September, so the revised record requires a newly confirmed session and operator-issued parking and walking instructions rather than representing the observatory as walk-in or independently accessible.",
+            "The association directs visitors to park in Peroamigo and walk under its instructions, warns that no services are nearby and publishes rural-footwear, warm-clothing, red-light, weather and fire-safety requirements.",
+            "Open-Meteo returned preliminary elevations of 575 metres at the La Cartuja property point and 459 metres at the operator-published observatory point; the production DEM workflow must still replace these provisional values."
           ],
-          "requiredChanges": [
-            {
-              "scope": "sierra-morena-access",
-              "reason": "Obtain current operator or municipal confirmation of an actual bookable programme before clearing the factual gate; until then the guide must remain confirmation-first and the destination inactive."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
@@ -169,31 +169,49 @@
           },
           {
             "id": "sierra-morena-source-2",
-            "url": "https://www.almadendelaplata.es/es/temas/turismo/observatorio-astronomico/",
+            "url": "https://cartuja-cazalla.squarespace.com/astronoma",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-morena-source-3",
-            "url": "https://www.almadendelaplata.es/es/temas/turismo/la-traviesa/",
+            "url": "https://cartuja-cazalla.squarespace.com/casa-rural-sevilla",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-morena-source-4",
-            "url": "https://www.xn--asociacionastronomicadeespaa-oyc.es/Observatorio-Astronomico-de-Almaden-de-la-Plata%2C-Sevilla/",
+            "url": "https://www.openstreetmap.org/way/1457327654",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-morena-source-5",
-            "url": "https://www.constantina.org/es/actualidad/eventos/Observacion-Astronomica-en-el-Castillo-de-Constantina/",
+            "url": "https://www.xn--asociacionastronomicadeespaa-oyc.es/observatorio-astronomico-de-el-castillo-de-las-guardas.html",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "sierra-morena-source-6",
-            "url": "https://patricia.dipusevilla.es/ver-punto/es/01924e2c-b988-7723-8be2-c6a80751e360",
+            "url": "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-morena-source-7",
+            "url": "https://xn--asociacionastronomicadeespaa-oyc.es/Observaciones-astronomicas-publicas-2026/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-morena-source-8",
+            "url": "https://www.andalucia.org/listing/observatorio-astron%C3%B3mico-de-el-castillo-de-las-guardas/24425102/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "sierra-morena-source-9",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=37.95246,37.7343889&longitude=-5.72814,-6.3795278",
             "classification": "reachable",
             "status": 200
           }
@@ -202,36 +220,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "sierra-morena-constantina",
+          "id": "sierra-morena-cartuja-cazalla-astrotourism",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "sierra-morena-almadén",
+          "id": "sierra-morena-castillo-guardas-observatory",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "sierra-morena-cartuja-cazalla-astrotourism:climate",
+        "sierra-morena-cartuja-cazalla-astrotourism:black-marble",
+        "sierra-morena-cartuja-cazalla-astrotourism:dem",
+        "sierra-morena-cartuja-cazalla-astrotourism:scores",
+        "sierra-morena-castillo-guardas-observatory:climate",
+        "sierra-morena-castillo-guardas-observatory:black-marble",
+        "sierra-morena-castillo-guardas-observatory:dem",
+        "sierra-morena-castillo-guardas-observatory:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

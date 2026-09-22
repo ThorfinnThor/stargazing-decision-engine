@@ -174,6 +174,46 @@ const candidates = [
   ["kidepo-valley", "Kidepo Valley", "UG", "Uganda", "africa", ["karamoja", "africa"], "Africa/Kampala", 84, ["national-park", "savanna", "remote"], "Kidepo Valley National Park Uganda stargazing", ["kitgum", "Kitgum", 3.30, 32.88], [["kidepo-narus", "Narus valley camp", 3.93, 33.88, 950, "savanna-camp", "limited", 42], ["kidepo-kanangorok", "Kanangorok hot springs area", 4.14, 33.86, 1200, "savanna-viewpoint", "limited", 34]], ["https://ugandawildlife.org/national-parks/kidepo-valley-national-park/", "https://ugandawildlife.org/", "https://www.tourism.go.ug/"], "a wildlife reserve night that stays with the camp team", "Eine Wildnisnacht, die beim Campteam bleibt"],
 ];
 
+const sierraMorenaIndex = candidates.findIndex(([id]) => id === "sierra-morena");
+candidates[sierraMorenaIndex] = [
+  "sierra-morena",
+  "Sierra Morena",
+  "ES",
+  "Spain",
+  "europe",
+  ["andalusia", "europe"],
+  "Europe/Madrid",
+  88,
+  ["starlight-reserve", "mountains", "rural"],
+  "Sierra Morena Spain stargazing",
+  ["cazalla-de-la-sierra", "Cazalla de la Sierra", 37.93333, -5.75],
+  [
+    ["sierra-morena-cartuja-cazalla-astrotourism", "La Cartuja de Cazalla astrotourism stay", 37.95246, -5.72814, 575, "booked-astrotourism-stay", "limited", 66, "https://cartuja-cazalla.squarespace.com/astronoma", "The accommodation operator offers guided telescope sessions by advance reservation and self-observation for guests with their own equipment. This coordinate is the mapped monastery property, not an independently accessible observing pad. Book the stay first; request a guided monitor at least 15 days ahead and await availability confirmation, or meet the operator's minimum two-night stay for self-observation. Obtain the assigned observing area, arrival, parking, equipment and departure instructions directly from the host. Never enter the property or adjacent land without the booking.", "Der Unterkunftsbetreiber bietet geführte Teleskopsitzungen nach Voranmeldung und Eigenbeobachtung für Gäste mit eigener Ausrüstung an. Diese Koordinate bezeichnet das kartierte Klostergelände und keinen selbstständig zugänglichen Beobachtungsplatz. Buche zuerst den Aufenthalt; frage eine betreute Sitzung mindestens 15 Tage vorher an und warte auf die Verfügbarkeitsbestätigung oder erfülle für Eigenbeobachtung den Mindestaufenthalt von zwei Nächten. Lass dir Beobachtungsfläche, Ankunft, Parken, Ausrüstung und Abreise direkt vom Gastgeber zuweisen. Betritt Grundstück oder Nachbarflächen niemals ohne Buchung."],
+    ["sierra-morena-castillo-guardas-observatory", "El Castillo de las Guardas Observatory", 37.7343889, -6.3795278, 459, "booked-public-observatory", "limited", 58, "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html", "The observatory operator publishes reservation-based public observations on moonless clear Saturdays, subject to weather and minimum attendance. Its dated 2026 summer programme has ended, so this record requires a newly confirmed date rather than a walk-in visit. Register with the operator, obtain the current meeting and walking instructions, park only where directed in Peroamigo and do not drive to the observatory. Bring rural footwear, warm layers and dim red light; there are no nearby services, and the operator's weather or fire-safety cancellation is final. The exact observatory coordinate does not grant access outside a confirmed session.", "Der Observatoriumsbetreiber veröffentlicht an mondlosen klaren Samstagen anmeldepflichtige öffentliche Beobachtungen, abhängig von Wetter und Mindestteilnehmerzahl. Das datierte Sommerprogramm 2026 ist beendet; dieser Datensatz erfordert deshalb einen neu bestätigten Termin und erlaubt keinen spontanen Besuch. Melde dich beim Betreiber an, hole aktuelle Treff- und Fußweghinweise ein, parke ausschließlich wie angewiesen in Peroamigo und fahre nicht zum Observatorium. Nimm geländetaugliche Schuhe, warme Kleidung und schwaches Rotlicht mit; in der Nähe gibt es keine Versorgung, und wetter- oder brandschutzbedingte Absagen des Betreibers sind verbindlich. Die genaue Observatoriumskoordinate gewährt außerhalb einer bestätigten Sitzung keinen Zutritt."],
+  ],
+  [
+    "https://www.andalucia.org/actividades-y-atracciones/astroturismo-turismo-de-estrella/reserva-starlight-de-sierra-morena/",
+    "https://cartuja-cazalla.squarespace.com/astronoma",
+    "https://cartuja-cazalla.squarespace.com/casa-rural-sevilla",
+    "https://www.openstreetmap.org/way/1457327654",
+    "https://www.xn--asociacionastronomicadeespaa-oyc.es/observatorio-astronomico-de-el-castillo-de-las-guardas.html",
+    "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+    "https://xn--asociacionastronomicadeespaa-oyc.es/Observaciones-astronomicas-publicas-2026/",
+    "https://www.andalucia.org/listing/observatorio-astron%C3%B3mico-de-el-castillo-de-las-guardas/24425102/",
+    "https://api.open-meteo.com/v1/elevation?latitude=37.95246,37.7343889&longitude=-5.72814,-6.3795278",
+  ],
+  "one advance-booked astronomy arrangement, never a generic reserve map pin or an unconfirmed observatory visit",
+  "Genau ein vorab gebuchter Astronomierahmen, niemals ein beliebiger Reserve-Kartenpunkt oder unbestätigter Observatoriumsbesuch",
+  {
+    accessMode: "programme-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["official-destination", "official-destination", "official-destination", "public-agency", "science-institution", "science-institution", "science-institution", "official-destination", "public-agency"],
+    sourceTitles: ["Andalusia Tourism: Sierra Morena Starlight Reserve", "La Cartuja de Cazalla: astronomy stays and reservations", "La Cartuja de Cazalla: registered rural accommodation", "OpenStreetMap: Monasterio de la Cartuja de Cazalla property", "Astronomical Association of Spain: El Castillo de las Guardas Observatory", "Astronomical Association of Spain: reservation and visit rules", "Astronomical Association of Spain: 2026 public observation calendar", "Andalusia Tourism: El Castillo de las Guardas Observatory", "Open-Meteo: preliminary elevation cross-check"],
+    programmeDetailEn: "La Cartuja is usable only with a confirmed accommodation booking and the host's assigned observing arrangement; a guided monitor requires at least 15 days' notice and availability, while self-observers must meet the operator's two-night minimum. El Castillo de las Guardas is a separate association programme requiring a newly confirmed date, registration and operator-issued parking and walking instructions because its published 2026 summer dates have ended. Neither arrangement grants access to the other place or to adjacent land.",
+    programmeDetailDe: "La Cartuja ist nur mit bestätigter Unterkunftsbuchung und der vom Gastgeber zugewiesenen Beobachtungsregelung nutzbar; eine betreute Sitzung erfordert mindestens 15 Tage Vorlauf und Verfügbarkeit, Eigenbeobachter müssen den Mindestaufenthalt von zwei Nächten erfüllen. El Castillo de las Guardas ist ein getrenntes Vereinsprogramm, das einen neu bestätigten Termin, Anmeldung sowie vom Betreiber ausgegebene Park- und Fußweghinweise erfordert, da die veröffentlichten Sommertermine 2026 beendet sind. Kein Rahmen gewährt Zugang zum anderen Ort oder zu Nachbarflächen.",
+  },
+];
+
 const richtersveldIndex = candidates.findIndex(([id]) => id === "richtersveld");
 candidates[richtersveldIndex] = [
   "richtersveld",
@@ -1552,11 +1592,11 @@ const siteImages = read("data-config/sources/site-images.json");
 const guides = read("data-config/editorial/destination-guides.json");
 const tours = read("data-config/editorial/location-tours.json");
 const factualReviews = read("data-config/sources/staged-factual-reviews.json");
-const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", "unterach", "kolbasov", "izerska-hala", "kopaonik", "mapungubwe", "purmamarca", "denio", "mesquite"]);
+const obsoleteStayIds = new Set(["almaden-de-la-plata", "constantina", "espot", "vassieux-en-vercors", "unterach", "kolbasov", "izerska-hala", "kopaonik", "mapungubwe", "purmamarca", "denio", "mesquite"]);
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe", "puna-argentina", "massacre-rim", "grand-canyon-parashant"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village", "alula-harrat", "alula-hegra", "mudgee-observatory", "gulgong", "puna-salinas", "puna-humahuaca", "torrance-barrens-main", "torrance-barrens-boardwalk", "manitoulin-meldrum", "manitoulin-shearer", "oracle-state-park", "oracle-charouleau", "massacre-rim-viewpoint", "denio-outskirts", "parashant-tuweep", "parashant-mount-trumbull", "boundary-waters-moose-lake", "boundary-waters-seagull"]);
+const obsoleteSiteIds = new Set(["sierra-morena-almadén", "sierra-morena-constantina", "garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village", "alula-harrat", "alula-hegra", "mudgee-observatory", "gulgong", "puna-salinas", "puna-humahuaca", "torrance-barrens-main", "torrance-barrens-boardwalk", "manitoulin-meldrum", "manitoulin-shearer", "oracle-state-park", "oracle-charouleau", "massacre-rim-viewpoint", "denio-outskirts", "parashant-tuweep", "parashant-mount-trumbull", "boundary-waters-moose-lake", "boundary-waters-seagull"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);
