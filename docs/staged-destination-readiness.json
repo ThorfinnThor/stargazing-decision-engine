@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T07:37:54.457Z",
+  "generatedAt": "2026-09-22T07:48:09.211Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 48,
     "withCleanSourceReachability": 48,
-    "withBlockedSources": 18,
+    "withBlockedSources": 17,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 27,
-    "withVerifiedFactualReview": 23,
+    "requiringFactualChanges": 25,
+    "withVerifiedFactualReview": 25,
     "readyForActivation": 0
   },
   "records": [
@@ -26,50 +26,57 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 2,
-        "blocked": 1,
+        "total": 5,
+        "reachable": 5,
+        "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "isle-of-sark",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://www.sark.co.uk/nature/dark-skies",
-            "https://www.sark.co.uk/things-to-do",
+            "https://www.sark.co.uk/attractions",
             "https://www.sark.co.uk/post/join-in-with-the-locals",
-            "https://www.sark.co.uk/de/properties/la-valette-campsite",
+            "https://www.sark.co.uk/properties/la-valette-campsite",
             "https://www.sark.co.uk/walking-trails/northeast-route"
           ],
           "verifiedFindings": [
-            "Sark's official visitor site confirms Dark Sky Island status, public late-night stargazing outings and bookable telescope sessions at the Dachinger Observatory.",
-            "The same authority identifies La Valette as a bookable campsite promoted for observing from its camping field and documents a public walking route to the lookout above Point Robert Lighthouse.",
-            "The staged lighthouse and windmill coordinates do not identify the observatory or the bookable campsite and therefore cannot remain the two recommended astronomy footprints."
+            "Sark's official visitor service confirms contact-based booking for the island observatory and says the Sark Astronomy Society offers year-round telescope sessions at the Dachinger Observatory.",
+            "The same official service identifies La Valette as a permitted bookable campsite and explicitly promotes nighttime constellation viewing from its grass.",
+            "The revised records use the exact observatory and campsite footprints, distinguish the guided programme from a campsite booking and do not present the lighthouse lookout, coastal paths or private land as observing overflow."
           ],
-          "requiredChanges": [
-            {
-              "scope": "isle-of-sark-observing-footprints",
-              "reason": "Replace the generic lighthouse and windmill pins with reviewed coordinates for the Dachinger Observatory and La Valette campsite, then restrict each route to a current booking or the published public-lane arrangement."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "isle-of-sark-source-1",
-            "url": "https://darksky.org/places/sark-dark-sky-community/",
-            "classification": "blocked",
-            "status": 403
+            "url": "https://www.sark.co.uk/nature/dark-skies",
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "isle-of-sark-source-2",
-            "url": "https://www.sark.co.uk/travel",
+            "url": "https://www.sark.co.uk/attractions",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "isle-of-sark-source-3",
-            "url": "https://sark.co.uk/getting-around/",
+            "url": "https://www.sark.co.uk/post/join-in-with-the-locals",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "isle-of-sark-source-4",
+            "url": "https://www.sark.co.uk/properties/la-valette-campsite",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "isle-of-sark-source-5",
+            "url": "https://www.sark.co.uk/walking-trails/northeast-route",
             "classification": "reachable",
             "status": 200
           }
@@ -78,37 +85,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "sark-lighthouse",
+          "id": "sark-dachinger-observatory",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "sark-windmill",
+          "id": "sark-la-valette-campsite",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "sark-dachinger-observatory:climate",
+        "sark-dachinger-observatory:black-marble",
+        "sark-dachinger-observatory:scores",
+        "sark-la-valette-campsite:climate",
+        "sark-la-valette-campsite:black-marble",
+        "sark-la-valette-campsite:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-access-manual-review-required",
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -4331,47 +4344,64 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 6,
+        "reachable": 6,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "achi-village",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-22",
           "reviewedUrls": [
             "https://sva.jp/night_tour/",
-            "https://info.sva.jp/",
-            "https://www.vill.achi.lg.jp/"
+            "https://info.sva.jp/information/night_tour_2026/",
+            "https://sva.jp/access",
+            "https://namiai-park.com/",
+            "https://namiai-park.com/price/",
+            "https://db.go-nagano.net/topics_detail6/id=5071"
           ],
           "verifiedFindings": [
-            "The official Star Village Achi operator publishes a dated 2026-2027 Heavens Sonohara Night Tour using the ropeway to a 1,400-metre venue with scheduled light-down and guided sky interpretation.",
-            "The tour requires date-specific advance tickets and may move indoors or cancel for weather; the staged Achi village outskirts pin has no reviewed independent astronomy arrangement."
+            "The official Star Village Achi operator publishes the dated 2026–2027 Heavens Sonohara Night Tour at its 1,400-metre summit venue, reached only by gondola from the official base address.",
+            "Namiai Park separately publishes its exact address and embedded map, daily hours to 22:00, required admission or deck booking and a guided stargazing session held every day with an indoor rain fallback.",
+            "The revised records are programme-only, preserve each venue's separate booking and weather rules and remove the unsupported village-outskirts recommendation."
           ],
-          "requiredChanges": [
-            {
-              "scope": "achi-programme-only",
-              "reason": "Make Heavens Sonohara a booking-only programme record with its official address and remove or replace the unsupported village-outskirts site."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "achi-village-source-1",
-            "url": "https://sva.jp/",
+            "url": "https://sva.jp/night_tour/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "achi-village-source-2",
-            "url": "https://www.vill.achi.lg.jp/",
+            "url": "https://info.sva.jp/information/night_tour_2026/",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "achi-village-source-3",
-            "url": "https://www.go-nagano.net/en/",
+            "url": "https://sva.jp/access",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "achi-village-source-4",
+            "url": "https://namiai-park.com/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "achi-village-source-5",
+            "url": "https://namiai-park.com/price/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "achi-village-source-6",
+            "url": "https://db.go-nagano.net/topics_detail6/id=5071",
             "classification": "reachable",
             "status": 200
           }
@@ -4380,36 +4410,43 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "achi-heavens-sonohara",
+          "id": "achi-heavens-sonohara-summit-event-site",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "achi-village",
+          "id": "achi-namiai-park-observing-field",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
+            "climate": false,
+            "black-marble": false,
             "dem": true,
-            "scores": true
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "achi-heavens-sonohara-summit-event-site:climate",
+        "achi-heavens-sonohara-summit-event-site:black-marble",
+        "achi-heavens-sonohara-summit-event-site:scores",
+        "achi-namiai-park-observing-field:climate",
+        "achi-namiai-park-observing-field:black-marble",
+        "achi-namiai-park-observing-field:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

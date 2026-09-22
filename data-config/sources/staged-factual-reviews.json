@@ -374,26 +374,21 @@
     },
     {
       "destinationId": "isle-of-sark",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://www.sark.co.uk/nature/dark-skies",
-        "https://www.sark.co.uk/things-to-do",
+        "https://www.sark.co.uk/attractions",
         "https://www.sark.co.uk/post/join-in-with-the-locals",
-        "https://www.sark.co.uk/de/properties/la-valette-campsite",
+        "https://www.sark.co.uk/properties/la-valette-campsite",
         "https://www.sark.co.uk/walking-trails/northeast-route"
       ],
       "verifiedFindings": [
-        "Sark's official visitor site confirms Dark Sky Island status, public late-night stargazing outings and bookable telescope sessions at the Dachinger Observatory.",
-        "The same authority identifies La Valette as a bookable campsite promoted for observing from its camping field and documents a public walking route to the lookout above Point Robert Lighthouse.",
-        "The staged lighthouse and windmill coordinates do not identify the observatory or the bookable campsite and therefore cannot remain the two recommended astronomy footprints."
+        "Sark's official visitor service confirms contact-based booking for the island observatory and says the Sark Astronomy Society offers year-round telescope sessions at the Dachinger Observatory.",
+        "The same official service identifies La Valette as a permitted bookable campsite and explicitly promotes nighttime constellation viewing from its grass.",
+        "The revised records use the exact observatory and campsite footprints, distinguish the guided programme from a campsite booking and do not present the lighthouse lookout, coastal paths or private land as observing overflow."
       ],
-      "requiredChanges": [
-        {
-          "scope": "isle-of-sark-observing-footprints",
-          "reason": "Replace the generic lighthouse and windmill pins with reviewed coordinates for the Dachinger Observatory and La Valette campsite, then restrict each route to a current booking or the published public-lane arrangement."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "makgadikgadi",
@@ -880,23 +875,22 @@
     },
     {
       "destinationId": "achi-village",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-22",
       "reviewedUrls": [
         "https://sva.jp/night_tour/",
-        "https://info.sva.jp/",
-        "https://www.vill.achi.lg.jp/"
+        "https://info.sva.jp/information/night_tour_2026/",
+        "https://sva.jp/access",
+        "https://namiai-park.com/",
+        "https://namiai-park.com/price/",
+        "https://db.go-nagano.net/topics_detail6/id=5071"
       ],
       "verifiedFindings": [
-        "The official Star Village Achi operator publishes a dated 2026-2027 Heavens Sonohara Night Tour using the ropeway to a 1,400-metre venue with scheduled light-down and guided sky interpretation.",
-        "The tour requires date-specific advance tickets and may move indoors or cancel for weather; the staged Achi village outskirts pin has no reviewed independent astronomy arrangement."
+        "The official Star Village Achi operator publishes the dated 2026–2027 Heavens Sonohara Night Tour at its 1,400-metre summit venue, reached only by gondola from the official base address.",
+        "Namiai Park separately publishes its exact address and embedded map, daily hours to 22:00, required admission or deck booking and a guided stargazing session held every day with an indoor rain fallback.",
+        "The revised records are programme-only, preserve each venue's separate booking and weather rules and remove the unsupported village-outskirts recommendation."
       ],
-      "requiredChanges": [
-        {
-          "scope": "achi-programme-only",
-          "reason": "Make Heavens Sonohara a booking-only programme record with its official address and remove or replace the unsupported village-outskirts site."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "sani-pass",

@@ -541,7 +541,84 @@ candidates[sturtStonyDesertIndex] = [
   },
 ];
 
+const isleOfSarkIndex = candidates.findIndex(([id]) => id === "isle-of-sark");
+candidates[isleOfSarkIndex] = [
+  "isle-of-sark",
+  "Isle of Sark",
+  "GB",
+  "United Kingdom",
+  "europe",
+  ["channel-islands", "europe"],
+  "Europe/Guernsey",
+  86,
+  ["island", "dark-sky-community", "coastal"],
+  "Isle of Sark Channel Islands",
+  ["sark", "Sark", 49.43, -2.36],
+  [
+    ["sark-dachinger-observatory", "Dachinger Observatory", 49.432552, -2.361605, 90, "public-observatory", "limited", 68, "https://www.sark.co.uk/nature/dark-skies", "Sark's official visitor service directs visitors to contact the Visitor Centre to book the island observatory, while its current community page says the Sark Astronomy Society offers telescope sessions at the Dachinger Observatory throughout the year for a minimum donation. Use this exact observatory only after the Visitor Centre or Society confirms a dated session and meeting instructions. Walk the public lanes carefully, carry a low red light and do not infer access to neighbouring land outside the guided programme.", "Der offizielle Besucherdienst von Sark verweist für Buchungen des Inselobservatoriums an das Visitor Centre; die aktuelle Gemeinschaftsseite erklärt zudem, dass die Sark Astronomy Society ganzjährig Teleskopsitzungen am Dachinger Observatory gegen eine Mindestspende anbietet. Nutze dieses genau verortete Observatorium nur nach Bestätigung eines datierten Termins und der Treffpunktanweisung durch Visitor Centre oder Society. Gehe vorsichtig auf den öffentlichen Wegen, nutze schwaches rotes Licht und leite aus dem Programm keinen Zutritt zu benachbartem Gelände ab."],
+    ["sark-la-valette-campsite", "La Valette Campsite", 49.435751, -2.348015, 50, "campground", "limited", 62, "https://www.sark.co.uk/properties/la-valette-campsite", "Sark's official accommodation listing identifies La Valette as a permitted family campsite and explicitly promotes lying on its grass at night to view the constellations. Book the campsite directly, confirm the assigned field and current facilities, arrive before dark and observe only within the booked camping footprint. The nearby public northeast walking route helps identify the area in daylight but does not turn the lighthouse lookout or coastal paths into campsite overflow after dark.", "Das offizielle Unterkunftsverzeichnis von Sark weist La Valette als genehmigten Familiencampingplatz aus und empfiehlt ausdrücklich, nachts auf seiner Wiese die Sternbilder zu betrachten. Buche den Campingplatz direkt, bestätige zugewiesenes Feld und aktuelle Einrichtungen, komme vor Dunkelheit an und beobachte nur innerhalb der gebuchten Campingfläche. Die nahe öffentliche Nordost-Wanderroute hilft bei der Orientierung am Tag, macht aber weder den Leuchtturm-Aussichtspunkt noch die Küstenwege nachts zu einer Erweiterung des Campingplatzes."],
+  ],
+  [
+    "https://www.sark.co.uk/nature/dark-skies",
+    "https://www.sark.co.uk/attractions",
+    "https://www.sark.co.uk/post/join-in-with-the-locals",
+    "https://www.sark.co.uk/properties/la-valette-campsite",
+    "https://www.sark.co.uk/walking-trails/northeast-route",
+  ],
+  "a booked observatory session or a separately booked campsite field, reached on Sark's public lanes.",
+  "Eine gebuchte Observatoriumssitzung oder ein getrennt gebuchtes Campingfeld, erreichbar über Sarks öffentliche Wege.",
+  {
+    accessMode: "programme-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["official-destination", "official-destination", "official-destination", "official-destination", "official-destination"],
+    sourceTitles: ["Sark Visitor Centre: dark skies and observatory booking", "Sark Visitor Centre: Sark Observatory", "Sark Visitor Centre: year-round Dachinger sessions", "Sark Visitor Centre: La Valette Campsite", "Sark Visitor Centre: northeast public walking route"],
+    programmeDetailEn: "The Dachinger Observatory is usable only for a session confirmed through the Visitor Centre or Sark Astronomy Society. La Valette is a separate bookable campsite whose official listing explicitly supports stargazing from its grass; neither arrangement grants access to the other place or to private coastal land.",
+    programmeDetailDe: "Das Dachinger Observatory ist nur für einen durch Visitor Centre oder Sark Astronomy Society bestätigten Termin nutzbar. La Valette ist ein getrennt buchbarer Campingplatz, dessen offizieller Eintrag Sternbeobachtung auf der Wiese ausdrücklich vorsieht; keiner der beiden Rahmen gewährt Zugang zum anderen Ort oder zu privatem Küstenland.",
+  },
+];
+
+const achiVillageIndex = candidates.findIndex(([id]) => id === "achi-village");
+candidates[achiVillageIndex] = [
+  "achi-village",
+  "Achi Village",
+  "JP",
+  "Japan",
+  "asia",
+  ["nagano", "asia"],
+  "Asia/Tokyo",
+  82,
+  ["dark-sky-community", "mountain", "village"],
+  "Achi Village Japan stargazing",
+  ["achi", "Achi", 35.44, 137.72],
+  [
+    ["achi-heavens-sonohara-summit-event-site", "Heavens Sonohara summit Night Tour venue", 35.455138, 137.642326, 1400, "booked-night-tour", "limited", 68, "https://sva.jp/night_tour/", "The official 2026–2027 Night Tour uses the Heavens Sonohara summit venue at 1,400 metres, reached only by the 2.5-kilometre gondola from the published base address. Buy a date-specific ticket, navigate to the base rather than attempting to drive to the summit, follow the operator's zone and light-down instructions and use the returning gondola at the programme finish. Weather can move interpretation indoors or cancel operation, and the coordinate does not authorize independent mountain access.", "Die offizielle Night Tour 2026–2027 nutzt das 1.400 Meter hohe Gipfelgelände von Heavens Sonohara, das ausschließlich mit der 2,5 Kilometer langen Gondel von der veröffentlichten Taladresse erreicht wird. Kaufe ein datiertes Ticket, navigiere zur Talstation statt zum Gipfel zu fahren, folge den Zonen- und Licht-aus-Anweisungen des Betreibers und nutze zum Programmende die Talgondel. Wetter kann die Erklärung nach innen verlegen oder den Betrieb absagen; die Koordinate erlaubt keinen selbstständigen Bergzugang."],
+    ["achi-namiai-park-observing-field", "Namiai Park observing field", 35.353776, 137.668207, 1200, "booked-stargazing-park", "limited", 64, "https://namiai-park.com/", "Namiai Park publishes its exact address and embedded map position, daily opening to 22:00 and a guided stargazing session held every day, with indoor interpretation in rain. Pay the required admission or reserve a private observing deck, use the official parking and field only during current opening hours, and follow staff instructions for arrival, lighting, photography and departure. This is a separate facility from Heavens Sonohara and requires its own current arrangement.", "Namiai Park veröffentlicht genaue Adresse und eingebettete Kartenposition, tägliche Öffnung bis 22 Uhr und eine täglich stattfindende geführte Sternbeobachtung mit Innenprogramm bei Regen. Entrichte den erforderlichen Eintritt oder reserviere ein privates Beobachtungsdeck, nutze offiziellen Parkplatz und Beobachtungsfeld nur während der aktuellen Öffnungszeiten und folge den Personalhinweisen zu Ankunft, Licht, Fotografie und Abfahrt. Dies ist eine von Heavens Sonohara getrennte Anlage mit eigenem aktuellem Rahmen."],
+  ],
+  [
+    "https://sva.jp/night_tour/",
+    "https://info.sva.jp/information/night_tour_2026/",
+    "https://sva.jp/access",
+    "https://namiai-park.com/",
+    "https://namiai-park.com/price/",
+    "https://db.go-nagano.net/topics_detail6/id=5071",
+  ],
+  "one current booked programme, using either the summit gondola venue or Namiai Park and never an improvised village edge.",
+  "Ein aktuelles gebuchtes Programm entweder am Gondel-Gipfelgelände oder im Namiai Park, niemals ein improvisierter Dorfrand.",
+  {
+    accessMode: "programme-only",
+    checkedAt: "2026-09-22",
+    sourceAuthorities: ["official-destination", "official-destination", "official-destination", "official-destination", "official-destination", "public-agency"],
+    sourceTitles: ["Star Village Achi: Night Tour 2026–2027", "Star Village Achi: current Night Tour announcement", "Star Village Achi: official access and gondola directions", "Namiai Park: current programme, hours and exact map", "Namiai Park: admission and deck booking", "Nagano official tourism: Namiai Park"],
+    programmeDetailEn: "Heavens Sonohara is a date-specific ticketed gondola programme at its 1,400-metre summit venue. Namiai Park is a separate staffed facility with required admission or deck booking and current hours to 22:00. A booking for one venue grants no access to the other.",
+    programmeDetailDe: "Heavens Sonohara ist ein datiertes Gondelprogramm mit Ticket am 1.400 Meter hohen Gipfelgelände. Namiai Park ist eine getrennte betreute Anlage mit erforderlichem Eintritt oder Deckbuchung und aktuellen Öffnungszeiten bis 22 Uhr. Eine Buchung für einen Ort gewährt keinen Zugang zum anderen.",
+  },
+];
+
 const copernicusElevationOverrides = new Map([
+  ["sark-dachinger-observatory", 104],
+  ["sark-la-valette-campsite", 96],
+  ["achi-heavens-sonohara-summit-event-site", 1406],
+  ["achi-namiai-park-observing-field", 1177],
   ["big-cypress-seagrape-night-sky-program", 1],
   ["big-cypress-midway-campground", 3],
   ["kangaroo-west-bay-campground", 26],
@@ -791,7 +868,7 @@ const obsoleteStayIds = new Set(["constantina", "espot", "vassieux-en-vercors", 
 for (let index = stays.length - 1; index >= 0; index -= 1) {
   if (obsoleteStayIds.has(stays[index].id) && ["sierra-morena", "aigues-tortes", "vercors", "attersee-traunsee", "poloniny", "izera", "kopaonik", "mapungubwe"].includes(stays[index].destinationId)) stays.splice(index, 1);
 }
-const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper"]);
+const obsoleteSiteIds = new Set(["garganta-de-los-infernós", "guisando-gredos", "javalambre-observatory-road", "arcos-salinas-viewpoint", "aigues-estany-sant-maurici", "boi-valley", "col-de-la-machine", "vassieux-plateau", "attersee-nussdorf", "traunsee-altaussee", "grossmugl-starwalk", "leiserberge", "poloniny-runina", "poloniny-topola", "izerska-hala", "stóg-izerski", "tara-mitrovac", "tara-banjica", "kopaonik-pancic", "kopaonik-sunacana", "mapungubwe-confluence", "mapungubwe-camp", "fundy-headquarters", "fundy-point-wolfe", "dinosaur-jensen", "dinosaur-harpers", "enchanted-rock-summit", "enchanted-rock-camp", "kissimmee-prairie-north", "kissimmee-prairie-camp", "medicine-rocks-park", "medicine-rocks-camp", "big-cypress-wagonwheel", "big-cypress-camp", "kangaroo-west-bay", "kangaroo-flinders", "sturt-stony-innamincka", "sturt-stony-cooper", "sark-lighthouse", "sark-windmill", "achi-heavens-sonohara", "achi-village"]);
 for (const records of [sites, siteImages]) {
   for (let index = records.length - 1; index >= 0; index -= 1) {
     if (obsoleteSiteIds.has(records[index].id ?? records[index].slug)) records.splice(index, 1);
