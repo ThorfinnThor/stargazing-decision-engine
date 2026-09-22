@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T07:48:09.211Z",
+  "generatedAt": "2026-09-22T07:55:08.959Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 48,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 17,
     "withApprovedDestinationImage": 0,
@@ -89,10 +89,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -102,26 +102,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "sark-dachinger-observatory:climate",
-        "sark-dachinger-observatory:black-marble",
-        "sark-dachinger-observatory:scores",
-        "sark-la-valette-campsite:climate",
-        "sark-la-valette-campsite:black-marble",
-        "sark-la-valette-campsite:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -4414,10 +4406,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -4427,26 +4419,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "achi-heavens-sonohara-summit-event-site:climate",
-        "achi-heavens-sonohara-summit-event-site:black-marble",
-        "achi-heavens-sonohara-summit-event-site:scores",
-        "achi-namiai-park-observing-field:climate",
-        "achi-namiai-park-observing-field:black-marble",
-        "achi-namiai-park-observing-field:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
