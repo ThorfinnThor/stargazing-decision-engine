@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-22T21:02:32.041Z",
+  "generatedAt": "2026-09-22T21:09:30.932Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 46,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -1385,7 +1385,7 @@
             "Garden Hill Tara's operator offers four reservable villas at Konjska Reka 422 in Mitrovac and explicitly describes evening use of its private pool beneath the starry sky. The operator-linked map resolves the accommodation complex to 43.9210566, 19.4198053.",
             "Both replacement records are accommodation-only guest footprints. A current overnight booking and the host's assigned outdoor area support use of the selected property; neither record grants access to a park viewpoint, trail, forest road, adjacent parcel or the other accommodation.",
             "The current Tara National Park visitor rules require use of marked routes and arranged or designated places, prohibit camping outside designated locations and restrict vehicle movement on forest roads or outside designated routes unless specifically authorised. The guide therefore includes no after-dark transfer or park fallback.",
-            "Open-Meteo supplied preliminary elevation cross-checks of 439 metres for Glamping Tara and 1,106 metres for Garden Hill Tara. Final catalogue elevations remain subject to the production Copernicus DEM ingestion at the reviewed coordinates."
+            "Open-Meteo supplied preliminary elevation cross-checks of 439 metres for Glamping Tara and 1,106 metres for Garden Hill Tara. Production Copernicus DEM GLO-30 samples at the reviewed coordinates are 436.087 and 1092.862 metres; the catalogue stores the rounded values 436 and 1,093 metres."
           ],
           "requiredChanges": []
         },
@@ -1453,10 +1453,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -1466,28 +1466,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "tara-glamping-rastiste-stay:climate",
-        "tara-glamping-rastiste-stay:black-marble",
-        "tara-glamping-rastiste-stay:dem",
-        "tara-glamping-rastiste-stay:scores",
-        "tara-garden-hill-guest-courtyard:climate",
-        "tara-garden-hill-guest-courtyard:black-marble",
-        "tara-garden-hill-guest-courtyard:dem",
-        "tara-garden-hill-guest-courtyard:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
