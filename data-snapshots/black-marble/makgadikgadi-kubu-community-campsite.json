@@ -1,0 +1,158 @@
+{
+  "siteId": "makgadikgadi-kubu-community-campsite",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 62,
+          "totalPixelCount": 62
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 62,
+          "totalPixelCount": 62
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 62,
+          "totalPixelCount": 62
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1506,
+          "totalPixelCount": 1506
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1506,
+          "totalPixelCount": 1506
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 1506,
+          "totalPixelCount": 1506
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 12526,
+          "totalPixelCount": 12526
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 12526,
+          "totalPixelCount": 12526
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 12526,
+          "totalPixelCount": 12526
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.056468,
+      "coverage": 0.999932,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.054875,
+          "coverage": 0.999973,
+          "validPixelCount": 74026,
+          "totalPixelCount": 74028
+        },
+        {
+          "year": 2024,
+          "radiance": 0.059161,
+          "coverage": 0.999973,
+          "validPixelCount": 74026,
+          "totalPixelCount": 74028
+        },
+        {
+          "year": 2023,
+          "radiance": 0.056468,
+          "coverage": 0.999932,
+          "validPixelCount": 74023,
+          "totalPixelCount": 74028
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0,
+  "radiance30to75": 0.056468,
+  "alanExposure": 0.005493,
+  "darknessScore": 93.66,
+  "coverage": 0.999932,
+  "warnings": [],
+  "retrievedAt": "2026-09-22T22:06:33.851810Z"
+}
