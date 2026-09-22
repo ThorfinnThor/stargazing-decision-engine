@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-21T21:17:32.035Z",
+  "checkedAt": "2026-09-22T06:31:25.348Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 206,
-    "uniqueUrls": 205
+    "sourceRecords": 211,
+    "uniqueUrls": 210
   },
   "summary": {
-    "reachable": 163,
-    "blocked": 39,
+    "reachable": 172,
+    "blocked": 37,
     "missing": 0,
     "http-error": 0,
-    "error": 3
+    "error": 1
   },
   "records": [
     {
@@ -33,7 +33,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4155,
+      "durationMs": 3126,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 342,
+      "durationMs": 335,
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 329,
+      "durationMs": 362,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 150,
+      "durationMs": 151,
       "error": null
     },
     {
@@ -113,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 400,
+      "durationMs": 355,
       "error": null
     },
     {
@@ -133,7 +133,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 365,
+      "durationMs": 359,
       "error": null
     },
     {
@@ -158,7 +158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1839,
+      "durationMs": 992,
       "error": null
     },
     {
@@ -178,7 +178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 988,
+      "durationMs": 918,
       "error": null
     },
     {
@@ -208,7 +208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 889,
+      "durationMs": 952,
       "error": null
     },
     {
@@ -228,7 +228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 888,
+      "durationMs": 793,
       "error": null
     },
     {
@@ -248,7 +248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 626,
+      "durationMs": 585,
       "error": null
     },
     {
@@ -268,7 +268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 330,
+      "durationMs": 388,
       "error": null
     },
     {
@@ -288,7 +288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -308,7 +308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -328,7 +328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 87,
       "error": null
     },
     {
@@ -348,27 +348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/dinosaur-national-monument/",
-      "references": [
-        {
-          "destinationId": "dinosaur-national-monument",
-          "kind": "guide",
-          "sourceId": "dinosaur-national-monument-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/dinosaur-national-monument/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -388,7 +368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -408,7 +388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -428,7 +408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 108,
       "error": null
     },
     {
@@ -458,7 +438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -478,7 +458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -518,7 +498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -548,7 +528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -568,7 +548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -588,7 +568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -608,7 +588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 501,
+      "durationMs": 513,
       "error": null
     },
     {
@@ -638,7 +618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 420,
+      "durationMs": 507,
       "error": null
     },
     {
@@ -668,7 +648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 586,
+      "durationMs": 601,
       "error": null
     },
     {
@@ -688,7 +668,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1432,
+      "durationMs": 1163,
       "error": null
     },
     {
@@ -708,7 +688,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 56,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -758,7 +738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2921,
+      "durationMs": 3214,
       "error": null
     },
     {
@@ -783,7 +763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2630,
+      "durationMs": 3532,
       "error": null
     },
     {
@@ -803,7 +783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2804,
+      "durationMs": 3462,
       "error": null
     },
     {
@@ -823,7 +803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 79,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -843,7 +823,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 192,
+      "durationMs": 191,
+      "error": null
+    },
+    {
+      "url": "https://home.nps.gov/dino/planyourvisit/conditions.htm",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://home.nps.gov/dino/planyourvisit/conditions.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 680,
       "error": null
     },
     {
@@ -868,7 +868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 773,
+      "durationMs": 970,
       "error": null
     },
     {
@@ -888,7 +888,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2571,
+      "durationMs": 544,
       "error": null
     },
     {
@@ -908,7 +908,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2493,
+      "durationMs": 548,
       "error": null
     },
     {
@@ -928,7 +928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1881,
+      "durationMs": 532,
       "error": null
     },
     {
@@ -953,7 +953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 63,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -973,7 +973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 141,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -998,7 +998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 658,
+      "durationMs": 399,
       "error": null
     },
     {
@@ -1018,7 +1018,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 662,
+      "durationMs": 401,
       "error": null
     },
     {
@@ -1038,7 +1038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 401,
+      "durationMs": 257,
       "error": null
     },
     {
@@ -1058,7 +1058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 127,
+      "durationMs": 120,
       "error": null
     },
     {
@@ -1078,11 +1078,116 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 110,
       "error": null
     },
     {
-      "url": "https://parks.canada.ca/pn-np/nb/fundy",
+      "url": "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-2"
+        },
+        {
+          "destinationId": "fundy",
+          "kind": "site",
+          "siteId": "fundy-chignecto-campground"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 626,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/pn-np/nb/fundy/activ/chaises-chairs",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy/activ/chaises-chairs",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 788,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/pn-np/nb/fundy/visit",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy/visit",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 859,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/pn-np/nb/fundy/visit/centre",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy/visit/centre",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 942,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/pn-np/nb/fundy/visit/heures-hours",
+      "references": [
+        {
+          "destinationId": "fundy",
+          "kind": "guide",
+          "sourceId": "fundy-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy/visit/heures-hours",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 807,
+      "error": null
+    },
+    {
+      "url": "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
       "references": [
         {
           "destinationId": "fundy",
@@ -1092,43 +1197,18 @@
         {
           "destinationId": "fundy",
           "kind": "site",
-          "siteId": "fundy-headquarters"
-        },
-        {
-          "destinationId": "fundy",
-          "kind": "site",
-          "siteId": "fundy-point-wolfe"
+          "siteId": "fundy-wolfe-lake-viewing-area"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://parks.canada.ca/pn-np/nb/fundy",
+      "finalUrl": "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 746,
-      "error": null
-    },
-    {
-      "url": "https://parks.canada.ca/voyage-travel",
-      "references": [
-        {
-          "destinationId": "fundy",
-          "kind": "guide",
-          "sourceId": "fundy-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://parks.canada.ca/voyage-travel",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=utf-8",
-      "durationMs": 652,
+      "durationMs": 1162,
       "error": null
     },
     {
@@ -1148,7 +1228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 319,
+      "durationMs": 332,
       "error": null
     },
     {
@@ -1168,7 +1248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 200,
+      "durationMs": 177,
       "error": null
     },
     {
@@ -1188,7 +1268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 120,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -1208,7 +1288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 161,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -1238,7 +1318,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1830,
+      "durationMs": 1454,
       "error": null
     },
     {
@@ -1258,7 +1338,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 258,
+      "durationMs": 235,
       "error": null
     },
     {
@@ -1283,7 +1363,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 380,
+      "durationMs": 391,
       "error": null
     },
     {
@@ -1303,7 +1383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 378,
+      "durationMs": 375,
       "error": null
     },
     {
@@ -1323,7 +1403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 375,
+      "durationMs": 392,
       "error": null
     },
     {
@@ -1343,7 +1423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 76,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -1368,7 +1448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 71,
+      "durationMs": 74,
       "error": null
     },
     {
@@ -1388,7 +1468,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1867,
+      "durationMs": 1506,
       "error": null
     },
     {
@@ -1418,7 +1498,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1861,
+      "durationMs": 1464,
       "error": null
     },
     {
@@ -1438,7 +1518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 106,
+      "durationMs": 100,
       "error": null
     },
     {
@@ -1468,7 +1548,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 752,
+      "durationMs": 69,
       "error": null
     },
     {
@@ -1488,7 +1568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 145,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -1518,7 +1598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 872,
+      "durationMs": 889,
       "error": null
     },
     {
@@ -1538,7 +1618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 133,
+      "durationMs": 115,
       "error": null
     },
     {
@@ -1558,7 +1638,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 118,
+      "durationMs": 110,
       "error": null
     },
     {
@@ -1582,26 +1662,6 @@
       "error": null
     },
     {
-      "url": "https://tourismnewbrunswick.ca/listing/fundy-national-park",
-      "references": [
-        {
-          "destinationId": "fundy",
-          "kind": "guide",
-          "sourceId": "fundy-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://tourismnewbrunswick.ca/listing/fundy-national-park",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 58,
-      "error": null
-    },
-    {
       "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
       "references": [
         {
@@ -1618,7 +1678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 330,
+      "durationMs": 282,
       "error": null
     },
     {
@@ -1638,7 +1698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 195,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -1663,7 +1723,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 136,
+      "durationMs": 142,
       "error": null
     },
     {
@@ -1688,7 +1748,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 147,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -1708,7 +1768,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 213,
+      "durationMs": 232,
       "error": null
     },
     {
@@ -1728,7 +1788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 224,
+      "durationMs": 228,
       "error": null
     },
     {
@@ -1773,7 +1833,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 51,
       "error": null
     },
     {
@@ -1803,7 +1863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 49,
       "error": null
     },
     {
@@ -1826,15 +1886,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 40044,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://visitnamibia.com.na/2022/02/damaraland-kaokoland/\ncurl: (28) Operation timed out after 20006 milliseconds with 0 bytes received\n"
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 5234,
+      "error": null
     },
     {
       "url": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
@@ -1856,15 +1916,15 @@
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://visitnamibia.com.na/2022/03/north-eastern-region/",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 40036,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://visitnamibia.com.na/2022/03/north-eastern-region/\ncurl: (28) Operation timed out after 20002 milliseconds with 0 bytes received\n"
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 4908,
+      "error": null
     },
     {
       "url": "https://whc.unesco.org/en/list/985/",
@@ -1883,7 +1943,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 66,
       "error": null
     },
     {
@@ -1903,7 +1963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 432,
+      "durationMs": 274,
       "error": null
     },
     {
@@ -1928,7 +1988,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 385,
+      "durationMs": 301,
       "error": null
     },
     {
@@ -1948,7 +2008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 389,
+      "durationMs": 193,
       "error": null
     },
     {
@@ -1978,7 +2038,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 259,
+      "durationMs": 138,
       "error": null
     },
     {
@@ -1998,7 +2058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 219,
+      "durationMs": 123,
       "error": null
     },
     {
@@ -2018,7 +2078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 214,
+      "durationMs": 196,
       "error": null
     },
     {
@@ -2038,7 +2098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 139,
+      "durationMs": 179,
       "error": null
     },
     {
@@ -2063,7 +2123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 132,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -2083,7 +2143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 402,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -2103,7 +2163,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 943,
+      "durationMs": 776,
       "error": null
     },
     {
@@ -2133,7 +2193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3732,
+      "durationMs": 769,
       "error": null
     },
     {
@@ -2153,7 +2213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3722,
+      "durationMs": 746,
       "error": null
     },
     {
@@ -2183,7 +2243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 591,
+      "durationMs": 582,
       "error": null
     },
     {
@@ -2213,7 +2273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 889,
+      "durationMs": 881,
       "error": null
     },
     {
@@ -2238,7 +2298,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 527,
+      "durationMs": 240,
       "error": null
     },
     {
@@ -2258,7 +2318,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 400,
+      "durationMs": 412,
       "error": null
     },
     {
@@ -2288,7 +2348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 406,
+      "durationMs": 478,
       "error": null
     },
     {
@@ -2308,7 +2368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1056,
+      "durationMs": 531,
       "error": null
     },
     {
@@ -2328,7 +2388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 234,
+      "durationMs": 178,
       "error": null
     },
     {
@@ -2348,7 +2408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1270,
+      "durationMs": 1834,
       "error": null
     },
     {
@@ -2378,7 +2438,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1897,
+      "durationMs": 2123,
       "error": null
     },
     {
@@ -2398,7 +2458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1510,
+      "durationMs": 1457,
       "error": null
     },
     {
@@ -2418,7 +2478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1978,
+      "durationMs": 2000,
       "error": null
     },
     {
@@ -2443,7 +2503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1559,
+      "durationMs": 1774,
       "error": null
     },
     {
@@ -2473,7 +2533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 164,
+      "durationMs": 104,
       "error": null
     },
     {
@@ -2503,7 +2563,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3924,
+      "durationMs": 2824,
       "error": null
     },
     {
@@ -2523,7 +2583,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 4247,
+      "durationMs": 1164,
       "error": null
     },
     {
@@ -2543,7 +2603,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1145,
+      "durationMs": 857,
       "error": null
     },
     {
@@ -2563,7 +2623,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 536,
+      "durationMs": 115,
       "error": null
     },
     {
@@ -2583,7 +2643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 75,
       "error": null
     },
     {
@@ -2603,7 +2663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 855,
+      "durationMs": 850,
       "error": null
     },
     {
@@ -2623,7 +2683,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1135,
+      "durationMs": 1616,
       "error": null
     },
     {
@@ -2648,7 +2708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 207,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -2678,7 +2738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 188,
+      "durationMs": 189,
       "error": null
     },
     {
@@ -2698,7 +2758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 187,
+      "durationMs": 193,
       "error": null
     },
     {
@@ -2718,7 +2778,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 82,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -2738,7 +2798,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 4689,
+      "durationMs": 4816,
       "error": null
     },
     {
@@ -2758,7 +2818,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 339,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -2778,7 +2838,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 384,
+      "durationMs": 353,
       "error": null
     },
     {
@@ -2803,7 +2863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 713,
+      "durationMs": 528,
       "error": null
     },
     {
@@ -2823,7 +2883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 180,
+      "durationMs": 120,
       "error": null
     },
     {
@@ -2843,7 +2903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 215,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -2868,7 +2928,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3285,
+      "durationMs": 1415,
       "error": null
     },
     {
@@ -2888,7 +2948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 1280,
+      "durationMs": 1272,
       "error": null
     },
     {
@@ -2908,7 +2968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 61,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -2928,7 +2988,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 114,
+      "durationMs": 121,
       "error": null
     },
     {
@@ -2948,7 +3008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 264,
+      "durationMs": 1097,
       "error": null
     },
     {
@@ -2968,7 +3028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 226,
+      "durationMs": 1092,
       "error": null
     },
     {
@@ -2988,7 +3048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 236,
+      "durationMs": 1185,
       "error": null
     },
     {
@@ -3008,7 +3068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 227,
+      "durationMs": 1272,
       "error": null
     },
     {
@@ -3038,7 +3098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -3058,7 +3118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 52,
       "error": null
     },
     {
@@ -3088,7 +3148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 54,
       "error": null
     },
     {
@@ -3108,57 +3168,52 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 59,
+      "durationMs": 54,
       "error": null
     },
     {
-      "url": "https://www.nps.gov/dino/index.htm",
+      "url": "https://www.nps.gov/dino/learn/management/dinocompendium.htm",
       "references": [
         {
           "destinationId": "dinosaur-national-monument",
           "kind": "guide",
-          "sourceId": "dinosaur-national-monument-source-1"
-        },
-        {
-          "destinationId": "dinosaur-national-monument",
-          "kind": "site",
-          "siteId": "dinosaur-jensen"
-        },
-        {
-          "destinationId": "dinosaur-national-monument",
-          "kind": "site",
-          "siteId": "dinosaur-harpers"
+          "sourceId": "dinosaur-national-monument-source-5"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.nps.gov/dino/index.htm",
+      "finalUrl": "https://www.nps.gov/dino/learn/management/dinocompendium.htm",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 66,
       "error": null
     },
     {
-      "url": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+      "url": "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
       "references": [
         {
           "destinationId": "dinosaur-national-monument",
           "kind": "guide",
-          "sourceId": "dinosaur-national-monument-source-2"
+          "sourceId": "dinosaur-national-monument-source-3"
+        },
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "site",
+          "siteId": "dinosaur-echo-park-campground"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.nps.gov/dino/planyourvisit/conditions.htm",
+      "finalUrl": "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -3188,7 +3243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -3228,7 +3283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 55,
       "error": null
     },
     {
@@ -3248,7 +3303,52 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 50,
+      "durationMs": 55,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/planyourvisit/event-details.htm?id=39E9C035-FF7F-DBC8-EC2D555DE2FE4E4F",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 169,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/thingstodo/splitmountainstargazing.htm",
+      "references": [
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "guide",
+          "sourceId": "dinosaur-national-monument-source-1"
+        },
+        {
+          "destinationId": "dinosaur-national-monument",
+          "kind": "site",
+          "siteId": "dinosaur-split-mountain-night-sky"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/thingstodo/splitmountainstargazing.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 60,
       "error": null
     },
     {
@@ -3268,7 +3368,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 702,
+      "durationMs": 680,
       "error": null
     },
     {
@@ -3288,7 +3388,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 729,
+      "durationMs": 669,
       "error": null
     },
     {
@@ -3308,7 +3408,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 846,
+      "durationMs": 705,
       "error": null
     },
     {
@@ -3328,7 +3428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 744,
+      "durationMs": 642,
       "error": null
     },
     {
@@ -3358,7 +3458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1032,
+      "durationMs": 755,
       "error": null
     },
     {
@@ -3383,7 +3483,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 594,
+      "durationMs": 471,
       "error": null
     },
     {
@@ -3403,7 +3503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 450,
+      "durationMs": 332,
       "error": null
     },
     {
@@ -3433,7 +3533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 399,
+      "durationMs": 334,
       "error": null
     },
     {
@@ -3463,7 +3563,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 840,
+      "durationMs": 693,
       "error": null
     },
     {
@@ -3483,7 +3583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 198,
+      "durationMs": 202,
       "error": null
     },
     {
@@ -3503,7 +3603,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 173,
+      "durationMs": 177,
       "error": null
     },
     {
@@ -3523,7 +3623,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 153,
+      "durationMs": 253,
       "error": null
     },
     {
@@ -3543,7 +3643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 547,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -3563,7 +3663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1899,
+      "durationMs": 1827,
       "error": null
     },
     {
@@ -3593,7 +3693,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2385,
+      "durationMs": 2578,
       "error": null
     },
     {
@@ -3623,7 +3723,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1592,
+      "durationMs": 1622,
       "error": null
     },
     {
@@ -3643,7 +3743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 736,
+      "durationMs": 295,
       "error": null
     },
     {
@@ -3663,7 +3763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 391,
+      "durationMs": 374,
       "error": null
     },
     {
@@ -3683,7 +3783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 373,
+      "durationMs": 355,
       "error": null
     },
     {
@@ -3703,7 +3803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -3723,7 +3823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -3753,7 +3853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 91,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -3773,7 +3873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 99,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -3793,7 +3893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 89,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -3828,7 +3928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -3848,7 +3948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -3868,7 +3968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 98,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -3888,7 +3988,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -3908,7 +4008,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 86,
+      "durationMs": 90,
       "error": null
     },
     {
@@ -3928,7 +4028,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 82,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -3948,7 +4048,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 94,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -3968,7 +4068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 82,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -3988,7 +4088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -4008,7 +4108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 91,
       "error": null
     },
     {
@@ -4028,7 +4128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
+      "durationMs": 104,
       "error": null
     },
     {
@@ -4048,7 +4148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 67,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -4068,7 +4168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1073,
+      "durationMs": 2110,
       "error": null
     },
     {
@@ -4088,7 +4188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 849,
+      "durationMs": 853,
       "error": null
     },
     {
@@ -4128,7 +4228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 89,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4148,7 +4248,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 89,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -4168,7 +4268,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3149,
+      "durationMs": 3791,
       "error": null
     },
     {
@@ -4198,7 +4298,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 918,
+      "durationMs": 970,
       "error": null
     },
     {
@@ -4218,7 +4318,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -4248,7 +4348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 198,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -4273,7 +4373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 965,
+      "durationMs": 1010,
       "error": null
     },
     {
@@ -4293,7 +4393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 925,
+      "durationMs": 967,
       "error": null
     },
     {
@@ -4313,7 +4413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 112,
+      "durationMs": 118,
       "error": null
     },
     {
@@ -4333,7 +4433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 263,
+      "durationMs": 158,
       "error": null
     },
     {
@@ -4353,7 +4453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 189,
+      "durationMs": 163,
       "error": null
     },
     {
@@ -4373,7 +4473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1596,
+      "durationMs": 934,
       "error": null
     },
     {
@@ -4403,8 +4503,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": null,
-      "durationMs": 12251,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7352 ms: Couldn't connect to server\n"
+      "durationMs": 13647,
+      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7501 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -4428,7 +4528,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 183,
+      "durationMs": 198,
       "error": null
     },
     {
@@ -4453,7 +4553,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 132,
+      "durationMs": 182,
       "error": null
     },
     {
@@ -4478,7 +4578,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1335,
+      "durationMs": 1282,
       "error": null
     },
     {
@@ -4498,7 +4598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1189,
+      "durationMs": 1165,
       "error": null
     },
     {
@@ -4518,7 +4618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 735,
+      "durationMs": 692,
       "error": null
     },
     {
@@ -4547,8 +4647,8 @@
       "finalUrl": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 124,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 103,
       "error": null
     },
     {
@@ -4578,7 +4678,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 193,
+      "durationMs": 175,
       "error": null
     },
     {
@@ -4598,7 +4698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 405,
+      "durationMs": 88,
       "error": null
     },
     {
