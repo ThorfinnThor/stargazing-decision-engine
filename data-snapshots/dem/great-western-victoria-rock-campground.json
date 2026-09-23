@@ -1,0 +1,33 @@
+{
+  "siteId": "great-western-victoria-rock-campground",
+  "source": "copernicus-dem-glo-30",
+  "dataset": "COP-DEM_GLO-30-DGED",
+  "modelType": "DSM",
+  "resolutionM": 30,
+  "resolutionArcSeconds": 1,
+  "verticalDatum": "EGM2008",
+  "requestedPoint": [
+    -31.295299530029,
+    120.92800140381
+  ],
+  "tile": "S32_00_E120_00",
+  "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_S32_00_E120_00_DEM/Copernicus_DSM_COG_10_S32_00_E120_00_DEM.tif",
+  "publicFallback": true,
+  "elevationM": 451.111,
+  "neighborhoods": [
+    {
+      "radiusKm": 0.25,
+      "elevationM": 450.81,
+      "validSampleCount": 234
+    },
+    {
+      "radiusKm": 1,
+      "elevationM": 438.09,
+      "validSampleCount": 3854
+    }
+  ],
+  "noDataPolicy": "masked-or-nodata-values-excluded",
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-23T09:40:14.532750Z"
+}
