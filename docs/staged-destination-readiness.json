@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T10:01:24.297Z",
+  "generatedAt": "2026-09-23T10:11:15.390Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
@@ -4684,7 +4684,7 @@
             "Anantara's separate Discover Celestial Wonders astronomer session is a 15-minute drive from the resort and requires advance booking; its unpublished observing site is excluded from both catalogue coordinates and the one-property route.",
             "Oman's Environment Authority prohibits reserve entry outside permitted visiting times and overnight stays without the applicable permit. Its service table includes adult visit-and-overnight permits, while off-road driving and unauthorised fires are prohibited; a hotel room, activity booking or checkpoint passage is not treated as proof of the reserve permit.",
             "The two previous generic scenic pins are replaced by operator-controlled resort records with current booking, permit, 4x4, staff-boundary and same-property overnight gates. No independent Saiq plateau, roadside, cliff or campsite access is inferred.",
-            "Open-Meteo provides preliminary resort-area elevation cross-checks of 1920 m at the Alila property coordinate and 1970 m at Anantara's published GPS; production Copernicus DEM snapshots must confirm or replace them before activation."
+            "Production Copernicus DEM GLO-30 snapshots confirm 1924 m at the Alila representative property coordinate (raw DSM 1924.168 m) and 1970 m at Anantara's published GPS (raw DSM 1969.582 m); the catalogue stores rounded whole metres and these values are now wired through the reproducible elevation overrides."
           ],
           "requiredChanges": []
         },
@@ -4752,10 +4752,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -4765,28 +4765,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "jebel-akhdar-alila-stargazing-deck-programme:climate",
-        "jebel-akhdar-alila-stargazing-deck-programme:black-marble",
-        "jebel-akhdar-alila-stargazing-deck-programme:dem",
-        "jebel-akhdar-alila-stargazing-deck-programme:scores",
-        "jebel-akhdar-anantara-dianas-point-guest-platform:climate",
-        "jebel-akhdar-anantara-dianas-point-guest-platform:black-marble",
-        "jebel-akhdar-anantara-dianas-point-guest-platform:dem",
-        "jebel-akhdar-anantara-dianas-point-guest-platform:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
