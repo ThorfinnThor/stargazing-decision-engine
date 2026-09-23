@@ -4125,46 +4125,6 @@
     }
   },
   {
-    "id": "jebel-akhdar-diana",
-    "slug": "jebel-akhdar-diana",
-    "destinationId": "jebel-akhdar",
-    "name": "Diana's Point",
-    "lat": 23.07,
-    "lon": 57.66,
-    "elevationM": 2000,
-    "siteType": "mountain-viewpoint",
-    "publicAccess": "limited",
-    "accessScore": 46,
-    "active": false,
-    "priority": 86,
-    "certificationIds": [],
-    "notesSourceUrl": "https://experienceoman.om/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Diana's Point. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Diana's Point nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
-    "id": "jebel-akhdar-saiq",
-    "slug": "jebel-akhdar-saiq",
-    "destinationId": "jebel-akhdar",
-    "name": "Saiq plateau",
-    "lat": 23.08,
-    "lon": 57.65,
-    "elevationM": 1900,
-    "siteType": "plateau",
-    "publicAccess": "limited",
-    "accessScore": 52,
-    "active": false,
-    "priority": 86,
-    "certificationIds": [],
-    "notesSourceUrl": "https://experienceoman.om/",
-    "accessNotes": {
-      "en": "Use only the current published visitor arrangement for Saiq plateau. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
-      "de": "Nutze für Saiq plateau nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
-    }
-  },
-  {
     "id": "rann-dhordo",
     "slug": "rann-dhordo",
     "destinationId": "rann-of-kutch",
@@ -5922,6 +5882,46 @@
     "accessNotes": {
       "en": "DBCA lists Victoria Rock as a designated, non-bookable campground along the Holland Track, with two walk-in campsites, eight vehicle-based campsites and one group campsite. Toilets, wood barbecues, picnic tables and an information shelter are provided; camping is first come, first served, free and not guaranteed. Bring all drinking water and firewood, arrive with enough daylight to inspect the site and stay inside the occupied campsite footprint after dark. The page does not create a reservation or independent night access to the Holland Track, Victoria Rock face or another campground. Check the current DBCA alert and road/weather status before departure and leave if the campsite is full, the route is wet or closure signage changes the plan.",
       "de": "DBCA führt Victoria Rock als ausgewiesenen, nicht buchbaren Campingplatz am Holland Track mit zwei Fuß-Camps, acht fahrzeugnahen Stellplätzen und einem Gruppenplatz. Toiletten, Holzgrills, Picknicktische und ein Informationsunterstand sind vorhanden; Camping erfolgt nach dem First-come-Prinzip, ist kostenlos und nicht garantiert. Führe sämtliches Trinkwasser und Feuerholz mit, komme mit genug Tageslicht zur Prüfung des Platzes an und bleibe nachts innerhalb des bewohnten Stellplatzes. Die Seite gewährt weder Reservierung noch selbstständigen Nachtzugang zum Holland Track, Victoria Rock oder einem anderen Camp. Prüfe DBCA-Hinweise sowie Straßen- und Wetterlage vor der Abfahrt und fahre nicht weiter, wenn der Platz voll, die Route nass oder die Beschilderung geändert ist."
+    }
+  },
+  {
+    "id": "jebel-akhdar-alila-stargazing-deck-programme",
+    "slug": "jebel-akhdar-alila-stargazing-deck-programme",
+    "destinationId": "jebel-akhdar",
+    "name": "Alila Jabal Akhdar private stargazing check-in",
+    "lat": 23.14189,
+    "lon": 57.53518,
+    "elevationM": 1920,
+    "siteType": "booked-resort-programme",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": false,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://experiences.hyatt.com/experiences/56af13d2-d9cf-4390-8e02-74cefe624bee/participants-review",
+    "accessNotes": {
+      "en": "Hyatt lists a private guided telescope session on Alila Jabal Akhdar's resort Stargazing Deck. A hotel reservation and World of Hyatt membership are required, and the activity is subject to current availability; confirm its date, start, deck meeting point and resort instructions before travel. The mapped coordinate is a representative point within the OpenStreetMap hotel geometry, not the exact deck or an independent public viewpoint. Complete the required 4x4 mountain access and applicable Environment Authority entry and overnight permit checks, arrive and check in during daylight, attend only the confirmed staff-led activity and sleep at the booked resort. Do not enter the deck outside the operator programme or drive to a plateau roadside after dark.",
+      "de": "Hyatt führt eine private geführte Teleskopsitzung auf dem Stargazing Deck des Alila Jabal Akhdar. Eine Hotelreservierung und World-of-Hyatt-Mitgliedschaft sind nötig; die Aktivität hängt von aktueller Verfügbarkeit ab. Bestätige Datum, Beginn, Deck-Treffpunkt und Betreiberanweisung vor der Fahrt. Die Koordinate ist ein repräsentativer Punkt innerhalb der OpenStreetMap-Hotelgeometrie, weder das genaue Deck noch ein öffentlicher Aussichtspunkt. Kläre Allradzufahrt und die einschlägigen Einreise- und Übernachtungsgenehmigungen der Umweltbehörde, komme bei Tageslicht an, nimm nur an der bestätigten betreuten Aktivität teil und schlafe im gebuchten Resort. Betritt das Deck nicht außerhalb des Programms und fahre nachts nicht zu einem Plateau-Straßenrand."
+    }
+  },
+  {
+    "id": "jebel-akhdar-anantara-dianas-point-guest-platform",
+    "slug": "jebel-akhdar-anantara-dianas-point-guest-platform",
+    "destinationId": "jebel-akhdar",
+    "name": "Anantara Diana's Point guest platform",
+    "lat": 23.067681116038536,
+    "lon": 57.67011780953533,
+    "elevationM": 1970,
+    "siteType": "resort-guest-platform",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": false,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.anantara.com/en/jabal-akhdar",
+    "accessNotes": {
+      "en": "Anantara explicitly promotes stargazing from Diana's Point on its resort property and publishes this GPS position for resort arrival. The coordinate identifies the resort check-in, not the exact cliff-edge platform or public parking. Use the platform only as an overnight guest after staff confirms that evening's permitted guest area, safety boundary and equipment rules; a room reservation alone does not establish Environment Authority entry or overnight permission. The resort requires a 4x4 and checkpoint documents or a prearranged operator transfer. Its separate Discover Celestial Wonders astronomer activity is a 15-minute drive away and is not this catalogue point. Do not enter the cliff edge without staff approval, camp, make fires or drive between resorts after dark.",
+      "de": "Anantara bewirbt Sternbeobachtung an Diana's Point auf dem Resortgelände und veröffentlicht diese GPS-Position für die Anreise. Die Koordinate bezeichnet den Resort-Check-in, nicht die genaue Plattform an der Felskante oder einen öffentlichen Parkplatz. Nutze die Plattform nur als Übernachtungsgast, nachdem das Personal die für diesen Abend erlaubte Gästefläche, Sicherheitsgrenze und Ausrüstungsregeln bestätigt hat; eine Zimmerbuchung belegt keine Einreise- oder Übernachtungsgenehmigung der Umweltbehörde. Das Resort verlangt Allradfahrzeug und Checkpoint-Dokumente oder einen vorab vereinbarten Betreibertransfer. Seine getrennte Astronomenaktivität Discover Celestial Wonders liegt eine 15-minütige Fahrt entfernt und ist nicht dieser Katalogpunkt. Betritt die Felskante nicht ohne Personalfreigabe, campe nicht, entfache kein Feuer und fahre nachts nicht zwischen Resorts."
     }
   }
 ]

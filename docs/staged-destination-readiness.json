@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T09:44:27.916Z",
+  "generatedAt": "2026-09-23T10:01:24.297Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
+    "withCompleteSnapshots": 49,
     "withCleanSourceReachability": 48,
-    "withBlockedSources": 14,
+    "withBlockedSources": 15,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 8,
-    "withVerifiedFactualReview": 42,
+    "requiringFactualChanges": 7,
+    "withVerifiedFactualReview": 43,
     "readyForActivation": 0
   },
   "records": [
@@ -4657,47 +4657,89 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
-        "blocked": 0,
+        "total": 9,
+        "reachable": 4,
+        "blocked": 5,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "jebel-akhdar",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-23",
           "reviewedUrls": [
+            "https://experiences.hyatt.com/experiences/56af13d2-d9cf-4390-8e02-74cefe624bee/participants-review",
+            "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar",
+            "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar/faqs",
+            "https://www.openstreetmap.org/way/491745518",
+            "https://www.anantara.com/en/jabal-akhdar",
+            "https://www.anantara.com/en/jabal-akhdar/contact",
+            "https://www.anantara.com/en/jabal-akhdar/offers/discover-celestial-wonders",
             "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
-            "https://www.ea.gov.om/en/the-authority/legislations-conventions/legislation-laws/",
-            "https://experienceoman.om/"
+            "https://api.open-meteo.com/v1/elevation?latitude=23.14189,23.067681116038536&longitude=57.53518,57.67011780953533"
           ],
           "verifiedFindings": [
-            "Oman's Environment Authority requires a reserve entry permit and explicitly prohibits entry outside permitted visiting times or camping and overnight stays without the appropriate permit.",
-            "The staged Diana's Point and Saiq plateau pins have no reviewed source confirming independent astronomy use, parking or the required permit category."
+            "Hyatt lists a private guided telescope activity on Alila Jabal Akhdar's resort Stargazing Deck; participation requires a hotel reservation and World of Hyatt membership, and current dates remain subject to availability. The catalogue point is a representative coordinate within the mapped OpenStreetMap resort geometry, not the deck itself or public parking.",
+            "Hyatt's resort FAQ says a 4x4 is required for the mountain ascent and a resort transfer can be arranged, so the route requires that vehicle decision before travel.",
+            "Anantara explicitly promotes stargazing from Diana's Point on its resort grounds and publishes the exact resort arrival GPS at 23.067681116038536, 57.67011780953533. The resort requires a 4x4 with driver's licence and vehicle registration documents at the checkpoint or a prearranged operator transfer; the GPS is not an exact platform coordinate or an independent public viewpoint.",
+            "Anantara's separate Discover Celestial Wonders astronomer session is a 15-minute drive from the resort and requires advance booking; its unpublished observing site is excluded from both catalogue coordinates and the one-property route.",
+            "Oman's Environment Authority prohibits reserve entry outside permitted visiting times and overnight stays without the applicable permit. Its service table includes adult visit-and-overnight permits, while off-road driving and unauthorised fires are prohibited; a hotel room, activity booking or checkpoint passage is not treated as proof of the reserve permit.",
+            "The two previous generic scenic pins are replaced by operator-controlled resort records with current booking, permit, 4x4, staff-boundary and same-property overnight gates. No independent Saiq plateau, roadside, cliff or campsite access is inferred.",
+            "Open-Meteo provides preliminary resort-area elevation cross-checks of 1920 m at the Alila property coordinate and 1970 m at Anantara's published GPS; production Copernicus DEM snapshots must confirm or replace them before activation."
           ],
-          "requiredChanges": [
-            {
-              "scope": "jebel-akhdar-permitted-night-use",
-              "reason": "Obtain the reserve's dated permitted hours and overnight conditions for a named public viewing footprint; otherwise replace both scenic pins with licensed operator venues."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "jebel-akhdar-source-1",
-            "url": "https://experienceoman.om/",
+            "url": "https://experiences.hyatt.com/experiences/56af13d2-d9cf-4390-8e02-74cefe624bee/participants-review",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "jebel-akhdar-source-2",
+            "url": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "jebel-akhdar-source-3",
+            "url": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar/faqs",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "jebel-akhdar-source-4",
+            "url": "https://www.openstreetmap.org/way/491745518",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "jebel-akhdar-source-5",
+            "url": "https://www.anantara.com/en/jabal-akhdar",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "jebel-akhdar-source-6",
+            "url": "https://www.anantara.com/en/jabal-akhdar/contact",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "jebel-akhdar-source-7",
+            "url": "https://www.anantara.com/en/jabal-akhdar/offers/discover-celestial-wonders",
+            "classification": "blocked",
+            "status": 403
+          },
+          {
+            "id": "jebel-akhdar-source-8",
             "url": "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
             "classification": "reachable",
             "status": 200
           },
           {
-            "id": "jebel-akhdar-source-3",
-            "url": "https://www.rop.gov.om/",
+            "id": "jebel-akhdar-source-9",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=23.14189,23.067681116038536&longitude=57.53518,57.67011780953533",
             "classification": "reachable",
             "status": 200
           }
@@ -4706,36 +4748,46 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "jebel-akhdar-diana",
+          "id": "jebel-akhdar-alila-stargazing-deck-programme",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "jebel-akhdar-saiq",
+          "id": "jebel-akhdar-anantara-dianas-point-guest-platform",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "jebel-akhdar-alila-stargazing-deck-programme:climate",
+        "jebel-akhdar-alila-stargazing-deck-programme:black-marble",
+        "jebel-akhdar-alila-stargazing-deck-programme:dem",
+        "jebel-akhdar-alila-stargazing-deck-programme:scores",
+        "jebel-akhdar-anantara-dianas-point-guest-platform:climate",
+        "jebel-akhdar-anantara-dianas-point-guest-platform:black-marble",
+        "jebel-akhdar-anantara-dianas-point-guest-platform:dem",
+        "jebel-akhdar-anantara-dianas-point-guest-platform:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
+        "source-access-manual-review-required",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
