@@ -1,0 +1,158 @@
+{
+  "siteId": "jebel-akhdar-anantara-dianas-point-guest-platform",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 9.679841,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 10.12061,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2024,
+          "radiance": 9.103755,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        },
+        {
+          "year": 2023,
+          "radiance": 9.679841,
+          "coverage": 1,
+          "validPixelCount": 64,
+          "totalPixelCount": 64
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 2.28283,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.240773,
+          "coverage": 1,
+          "validPixelCount": 1527,
+          "totalPixelCount": 1527
+        },
+        {
+          "year": 2024,
+          "radiance": 2.28283,
+          "coverage": 1,
+          "validPixelCount": 1527,
+          "totalPixelCount": 1527
+        },
+        {
+          "year": 2023,
+          "radiance": 2.313545,
+          "coverage": 1,
+          "validPixelCount": 1527,
+          "totalPixelCount": 1527
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 2.541668,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.837144,
+          "coverage": 1,
+          "validPixelCount": 12725,
+          "totalPixelCount": 12725
+        },
+        {
+          "year": 2024,
+          "radiance": 2.541668,
+          "coverage": 1,
+          "validPixelCount": 12725,
+          "totalPixelCount": 12725
+        },
+        {
+          "year": 2023,
+          "radiance": 2.443853,
+          "coverage": 1,
+          "validPixelCount": 12725,
+          "totalPixelCount": 12725
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 1.974806,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.269399,
+          "coverage": 1,
+          "validPixelCount": 75158,
+          "totalPixelCount": 75158
+        },
+        {
+          "year": 2024,
+          "radiance": 1.974806,
+          "coverage": 1,
+          "validPixelCount": 75158,
+          "totalPixelCount": 75158
+        },
+        {
+          "year": 2023,
+          "radiance": 1.964116,
+          "coverage": 1,
+          "validPixelCount": 75158,
+          "totalPixelCount": 75158
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 9.679841,
+  "radiance2to10": 2.28283,
+  "radiance10to30": 2.541668,
+  "radiance30to75": 1.974806,
+  "alanExposure": 1.72108,
+  "darknessScore": 37.21,
+  "coverage": 1,
+  "warnings": [],
+  "retrievedAt": "2026-09-23T10:02:32.076400Z"
+}

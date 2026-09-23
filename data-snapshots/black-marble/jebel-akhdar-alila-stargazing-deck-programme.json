@@ -1,0 +1,158 @@
+{
+  "siteId": "jebel-akhdar-alila-stargazing-deck-programme",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0.598584,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.581717,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2024,
+          "radiance": 0.598584,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2023,
+          "radiance": 0.625415,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.705099,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.705099,
+          "coverage": 1,
+          "validPixelCount": 1528,
+          "totalPixelCount": 1528
+        },
+        {
+          "year": 2024,
+          "radiance": 0.687031,
+          "coverage": 1,
+          "validPixelCount": 1528,
+          "totalPixelCount": 1528
+        },
+        {
+          "year": 2023,
+          "radiance": 0.727405,
+          "coverage": 1,
+          "validPixelCount": 1528,
+          "totalPixelCount": 1528
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 2.410359,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.659766,
+          "coverage": 1,
+          "validPixelCount": 12721,
+          "totalPixelCount": 12721
+        },
+        {
+          "year": 2024,
+          "radiance": 2.410359,
+          "coverage": 1,
+          "validPixelCount": 12721,
+          "totalPixelCount": 12721
+        },
+        {
+          "year": 2023,
+          "radiance": 2.400098,
+          "coverage": 1,
+          "validPixelCount": 12721,
+          "totalPixelCount": 12721
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 2.12026,
+      "coverage": 0.998099,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 2.411618,
+          "coverage": 0.999096,
+          "validPixelCount": 75140,
+          "totalPixelCount": 75208
+        },
+        {
+          "year": 2024,
+          "radiance": 2.12026,
+          "coverage": 0.998099,
+          "validPixelCount": 75065,
+          "totalPixelCount": 75208
+        },
+        {
+          "year": 2023,
+          "radiance": 2.092005,
+          "coverage": 0.998298,
+          "validPixelCount": 75080,
+          "totalPixelCount": 75208
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0.598584,
+  "radiance2to10": 0.705099,
+  "radiance10to30": 2.410359,
+  "radiance30to75": 2.12026,
+  "alanExposure": 0.669004,
+  "darknessScore": 53.79,
+  "coverage": 0.998099,
+  "warnings": [],
+  "retrievedAt": "2026-09-23T10:02:32.128080Z"
+}
