@@ -428,23 +428,29 @@
     },
     {
       "destinationId": "rakiura",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-23",
       "reviewedUrls": [
-        "https://rakiura.org.nz/",
+        "https://www.stewartisland.co.nz/dark-sky-sanctuary/",
+        "https://www.doc.govt.nz/parks-and-recreation/places-to-go/southland/places/stewart-island-rakiura/oban-area/things-to-do/oban-day-walks/",
+        "https://www.doc.govt.nz/news/media-releases/2023-media-releases/observation-rock-platform-now-open/",
+        "https://www.southlanddc.govt.nz/community-and-facilities/parks-reserves-playgrounds/",
+        "https://www.doc.govt.nz/rakiuratrack",
         "https://www.doc.govt.nz/rakiura",
-        "https://www.newzealand.com/int/stewart-island/"
+        "https://www.openstreetmap.org/node/495960692",
+        "https://www.openstreetmap.org/node/12324725216",
+        "https://api.open-meteo.com/v1/elevation?latitude=-46.9025887,-46.8898314&longitude=168.1245045,168.1340715"
       ],
       "verifiedFindings": [
-        "The reviewed destination and conservation sources establish Rakiura/Stewart Island as a dark-sky destination with sensitive coastal and national-park environments.",
-        "They do not establish the coarse Oban shoreline and Horseshoe Bay pins as approved independent observing footprints or document the intended after-dark return."
+        "Stewart Island Promotion Association explicitly names Observation Rock and Moturau Moana Gardens as Rakiura night-sky viewing-platform locations and asks visitors to respect nearby homeowners.",
+        "DOC documents Observation Rock as a 30-minute return walk from the Rakiura National Park Visitor Centre, publishes each street turn and identifies the viewpoint for sunsets and aurora. Its November 2023 release confirms that the rebuilt safety platform is intended for expansive night-sky viewing.",
+        "DOC documents Moturau Moana as a one-hour return walk from the same visitor centre, with a road approach via Horseshoe Bay Road, Mill Creek, Butterfield Beach and the Bragg Bay turnoff. Southland District Council currently lists the public garden at 140 Horseshoe Bay Road.",
+        "The revised records use pedestrian out-and-back plans from Oban and make no claim to parking at either platform. Observation Rock uses the same sealed-road route in both directions; Moturau Moana uses the same road-and-formed-track approach and excludes the optional Horseshoe Point loop after dark.",
+        "The reviewed current pages publish no nightly closing time for either viewpoint. The guide therefore does not infer unrestricted hours: current signs, closures, council or DOC instructions and weather control access, and any contradiction ends the visit.",
+        "DOC warns that Rakiura kiwi are nocturnal and requires red light or a red filter, with no flash photography or bright lights. The revised plan adds quiet residential conduct, formed-route discipline, a same-route return and no second night stop.",
+        "The coarse Oban shoreline and erroneous Horseshoe Bay pins are replaced by the mapped Observation Rock viewpoint and the mapped viewpoint inside Moturau Moana Garden. Open-Meteo returned preliminary elevations of 58 and 32 metres; the production Copernicus pipeline must replace or confirm them."
       ],
-      "requiredChanges": [
-        {
-          "scope": "rakiura-specific-sites",
-          "reason": "Obtain current local or DOC confirmation for two named public night-viewing places, including exact parking, pedestrian route, wildlife precautions and closing rules, or replace the staged pins."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "kangaroo-island",
