@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T09:34:04.153Z",
+  "generatedAt": "2026-09-23T09:44:27.916Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 48,
     "withBlockedSources": 14,
     "withApprovedDestinationImage": 0,
@@ -2580,7 +2580,7 @@
             "DBCA places both campgrounds in the Great Western Woodlands and documents the Holland Track as a separate 4WD route context; the revised records therefore replace generic woodland and track pins with the two named campground footprints and do not infer an after-dark track transfer.",
             "DBCA's camping guidance limits camping in Western Australian parks to designated campgrounds and requires current site, road, fire, weather and closure checks; Emergency WA is retained for current alerts.",
             "The revised bilingual guide keeps Boondi and Victoria as separate one-night options, requires daylight arrival and self-sufficient supplies, and does not create a roadside, woodland, rock or Holland Track fallback.",
-            "Open-Meteo provides preliminary elevation cross-checks of 401 m for Boondi Rock and 456 m for Victoria Rock; production Copernicus DEM snapshots must confirm or replace these values before activation."
+            "The production Copernicus DEM GLO-30 snapshots report 399.276 m for Boondi Rock and 451.111 m for Victoria Rock; the catalogue stores the established rounded values of 399 m and 451 m, replacing the preliminary Open-Meteo cross-checks of 401 m and 456 m."
           ],
           "requiredChanges": []
         },
@@ -2636,10 +2636,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2649,28 +2649,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "great-western-boondi-rock-campground:climate",
-        "great-western-boondi-rock-campground:black-marble",
-        "great-western-boondi-rock-campground:dem",
-        "great-western-boondi-rock-campground:scores",
-        "great-western-victoria-rock-campground:climate",
-        "great-western-victoria-rock-campground:black-marble",
-        "great-western-victoria-rock-campground:dem",
-        "great-western-victoria-rock-campground:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

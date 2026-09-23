@@ -1155,6 +1155,8 @@ const copernicusElevationOverrides = new Map([
   ["tsumkwe-juhoansi-grashoek-campsite", 1204],
   ["rakiura-observation-rock-platform", 69],
   ["rakiura-moturau-moana-viewpoint", 36],
+  ["great-western-boondi-rock-campground", 399],
+  ["great-western-victoria-rock-campground", 451],
   ["boundary-waters-moose-lake-campsite-1", 410],
   ["boundary-waters-moose-lake-campsite-2", 412],
   ["parashant-mount-trumbull-trailhead", 1983],
