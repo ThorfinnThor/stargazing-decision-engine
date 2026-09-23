@@ -1,0 +1,158 @@
+{
+  "siteId": "rakiura-observation-rock-platform",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 85,
+          "totalPixelCount": 85
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 2058,
+          "totalPixelCount": 2058
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 2058,
+          "totalPixelCount": 2058
+        },
+        {
+          "year": 2023,
+          "radiance": 0.000773,
+          "coverage": 1,
+          "validPixelCount": 2058,
+          "totalPixelCount": 2058
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 17140,
+          "totalPixelCount": 17140
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 17140,
+          "totalPixelCount": 17140
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 17140,
+          "totalPixelCount": 17140
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.054227,
+      "coverage": 0.999575,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.054227,
+          "coverage": 0.999575,
+          "validPixelCount": 101175,
+          "totalPixelCount": 101218
+        },
+        {
+          "year": 2024,
+          "radiance": 0.05327,
+          "coverage": 0.999595,
+          "validPixelCount": 101177,
+          "totalPixelCount": 101218
+        },
+        {
+          "year": 2023,
+          "radiance": 0.054628,
+          "coverage": 0.999694,
+          "validPixelCount": 101187,
+          "totalPixelCount": 101218
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0,
+  "radiance10to30": 0,
+  "radiance30to75": 0.054227,
+  "alanExposure": 0.005281,
+  "darknessScore": 94.02,
+  "coverage": 0.999575,
+  "warnings": [],
+  "retrievedAt": "2026-09-23T09:12:43.560494Z"
+}
