@@ -1,18 +1,18 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T09:17:09.015Z",
+  "generatedAt": "2026-09-23T09:34:04.153Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 50,
-    "withCleanSourceReachability": 47,
+    "withCompleteSnapshots": 49,
+    "withCleanSourceReachability": 48,
     "withBlockedSources": 14,
     "withApprovedDestinationImage": 0,
     "withAllSiteImagesApproved": 0,
     "requiringFactualSourceReview": 0,
-    "requiringFactualChanges": 9,
-    "withVerifiedFactualReview": 41,
+    "requiringFactualChanges": 8,
+    "withVerifiedFactualReview": 42,
     "readyForActivation": 0
   },
   "records": [
@@ -2213,7 +2213,7 @@
             "The revised records use pedestrian out-and-back plans from Oban and make no claim to parking at either platform. Observation Rock uses the same sealed-road route in both directions; Moturau Moana uses the same road-and-formed-track approach and excludes the optional Horseshoe Point loop after dark.",
             "The reviewed current pages publish no nightly closing time for either viewpoint. The guide therefore does not infer unrestricted hours: current signs, closures, council or DOC instructions and weather control access, and any contradiction ends the visit.",
             "DOC warns that Rakiura kiwi are nocturnal and requires red light or a red filter, with no flash photography or bright lights. The revised plan adds quiet residential conduct, formed-route discipline, a same-route return and no second night stop.",
-            "The coarse Oban shoreline and erroneous Horseshoe Bay pins are replaced by the mapped Observation Rock viewpoint and the mapped viewpoint inside Moturau Moana Garden. Open-Meteo returned preliminary elevations of 58 and 32 metres; the production Copernicus pipeline must replace or confirm them."
+            "The coarse Oban shoreline and erroneous Horseshoe Bay pins are replaced by the mapped Observation Rock viewpoint and the mapped viewpoint inside Moturau Moana Garden. Copernicus DEM GLO-30 samples 68.694 and 35.702 metres at the two requested points; the catalog records the reproducible rounded values of 69 and 36 metres."
           ],
           "requiredChanges": []
         },
@@ -2556,47 +2556,74 @@
         "stayAreas": 1
       },
       "sources": {
-        "total": 3,
-        "reachable": 3,
+        "total": 7,
+        "reachable": 7,
         "blocked": 0,
         "broken": 0,
-        "factualReview": "changes-required",
+        "factualReview": "verified",
         "factualReviewRecord": {
           "destinationId": "great-western-woodlands",
-          "status": "changes-required",
-          "reviewedAt": "2026-09-21",
+          "status": "verified",
+          "reviewedAt": "2026-09-23",
           "reviewedUrls": [
-            "https://exploreparks.dbca.wa.gov.au/park/boorabbin-national-park",
-            "https://www.australiasgoldenoutback.com/",
-            "https://www.wa.gov.au/service/environment"
+            "https://exploreparks.dbca.wa.gov.au/site/boondi-rock-campground",
+            "https://exploreparks.dbca.wa.gov.au/site/victoria-rock-campground",
+            "https://exploreparks.dbca.wa.gov.au/park/goldfields-woodlands-national-park",
+            "https://exploreparks.dbca.wa.gov.au/where-and-when-camp",
+            "https://exploreparks.dbca.wa.gov.au/camping",
+            "https://www.emergency.wa.gov.au/",
+            "https://api.open-meteo.com/v1/elevation?latitude=-31.181,-31.295299530029&longitude=120.386,120.92800140381"
           ],
           "verifiedFindings": [
-            "Western Australia's park service identifies Boorabbin National Park as a visitor stop on the Great Eastern Highway.",
-            "No reviewed authority source identifies the staged woodland and Holland Track coordinates as astronomy sites, and remote-road darkness does not establish safe parking or overnight permission."
+            "DBCA's Boondi Rock Campground page identifies the exact mapped point at -31.181, 120.386 and documents six unconstructed campsites, essential booking, a pit toilet, picnic tables, benches, fire rings, no supplied drinking water and remote-supply requirements.",
+            "DBCA's Victoria Rock Campground page identifies the exact mapped point at -31.295299530029, 120.92800140381 and documents two walk-in campsites, eight vehicle-based campsites, one group campsite, toilets, wood barbecues, picnic tables and an information shelter; the campground is free, non-bookable, first come, first served and availability is not guaranteed.",
+            "DBCA places both campgrounds in the Great Western Woodlands and documents the Holland Track as a separate 4WD route context; the revised records therefore replace generic woodland and track pins with the two named campground footprints and do not infer an after-dark track transfer.",
+            "DBCA's camping guidance limits camping in Western Australian parks to designated campgrounds and requires current site, road, fire, weather and closure checks; Emergency WA is retained for current alerts.",
+            "The revised bilingual guide keeps Boondi and Victoria as separate one-night options, requires daylight arrival and self-sufficient supplies, and does not create a roadside, woodland, rock or Holland Track fallback.",
+            "Open-Meteo provides preliminary elevation cross-checks of 401 m for Boondi Rock and 456 m for Victoria Rock; production Copernicus DEM snapshots must confirm or replace these values before activation."
           ],
-          "requiredChanges": [
-            {
-              "scope": "great-western-woodlands-access",
-              "reason": "Replace both generic pins with named DBCA campgrounds or day-use facilities and obtain explicit night-use, fire, road and closure rules before creating an observing route."
-            }
-          ]
+          "requiredChanges": []
         },
         "records": [
           {
             "id": "great-western-woodlands-source-1",
-            "url": "https://www.dpaw.wa.gov.au/",
+            "url": "https://exploreparks.dbca.wa.gov.au/site/boondi-rock-campground",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "great-western-woodlands-source-2",
-            "url": "https://www.australiasgoldenoutback.com/",
+            "url": "https://exploreparks.dbca.wa.gov.au/site/victoria-rock-campground",
             "classification": "reachable",
             "status": 200
           },
           {
             "id": "great-western-woodlands-source-3",
-            "url": "https://www.wa.gov.au/service/environment",
+            "url": "https://exploreparks.dbca.wa.gov.au/park/goldfields-woodlands-national-park",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-4",
+            "url": "https://exploreparks.dbca.wa.gov.au/where-and-when-camp",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-5",
+            "url": "https://exploreparks.dbca.wa.gov.au/camping",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-6",
+            "url": "https://www.emergency.wa.gov.au/",
+            "classification": "reachable",
+            "status": 200
+          },
+          {
+            "id": "great-western-woodlands-source-7",
+            "url": "https://api.open-meteo.com/v1/elevation?latitude=-31.181,-31.295299530029&longitude=120.386,120.92800140381",
             "classification": "reachable",
             "status": 200
           }
@@ -2605,36 +2632,45 @@
       "destinationImageStatus": "pending",
       "sites": [
         {
-          "id": "great-western-boorabbin",
+          "id": "great-western-boondi-rock-campground",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         },
         {
-          "id": "great-western-holland",
+          "id": "great-western-victoria-rock-campground",
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": true,
-            "black-marble": true,
-            "dem": true,
-            "scores": true
+            "climate": false,
+            "black-marble": false,
+            "dem": false,
+            "scores": false
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [],
+      "missingSnapshots": [
+        "great-western-boondi-rock-campground:climate",
+        "great-western-boondi-rock-campground:black-marble",
+        "great-western-boondi-rock-campground:dem",
+        "great-western-boondi-rock-campground:scores",
+        "great-western-victoria-rock-campground:climate",
+        "great-western-victoria-rock-campground:black-marble",
+        "great-western-victoria-rock-campground:dem",
+        "great-western-victoria-rock-campground:scores"
+      ],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
+        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],
@@ -5121,9 +5157,9 @@
       },
       "sources": {
         "total": 3,
-        "reachable": 2,
+        "reachable": 3,
         "blocked": 0,
-        "broken": 1,
+        "broken": 0,
         "factualReview": "changes-required",
         "factualReviewRecord": {
           "destinationId": "northern-damaraland",
@@ -5149,8 +5185,8 @@
           {
             "id": "northern-damaraland-source-1",
             "url": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
-            "classification": "error",
-            "status": 0
+            "classification": "reachable",
+            "status": 200
           },
           {
             "id": "northern-damaraland-source-2",
@@ -5198,7 +5234,6 @@
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-reachability-broken",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"

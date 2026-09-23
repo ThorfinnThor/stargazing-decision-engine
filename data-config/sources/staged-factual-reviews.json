@@ -495,23 +495,26 @@
     },
     {
       "destinationId": "great-western-woodlands",
-      "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "status": "verified",
+      "reviewedAt": "2026-09-23",
       "reviewedUrls": [
-        "https://exploreparks.dbca.wa.gov.au/park/boorabbin-national-park",
-        "https://www.australiasgoldenoutback.com/",
-        "https://www.wa.gov.au/service/environment"
+        "https://exploreparks.dbca.wa.gov.au/site/boondi-rock-campground",
+        "https://exploreparks.dbca.wa.gov.au/site/victoria-rock-campground",
+        "https://exploreparks.dbca.wa.gov.au/park/goldfields-woodlands-national-park",
+        "https://exploreparks.dbca.wa.gov.au/where-and-when-camp",
+        "https://exploreparks.dbca.wa.gov.au/camping",
+        "https://www.emergency.wa.gov.au/",
+        "https://api.open-meteo.com/v1/elevation?latitude=-31.181,-31.295299530029&longitude=120.386,120.92800140381"
       ],
       "verifiedFindings": [
-        "Western Australia's park service identifies Boorabbin National Park as a visitor stop on the Great Eastern Highway.",
-        "No reviewed authority source identifies the staged woodland and Holland Track coordinates as astronomy sites, and remote-road darkness does not establish safe parking or overnight permission."
+        "DBCA's Boondi Rock Campground page identifies the exact mapped point at -31.181, 120.386 and documents six unconstructed campsites, essential booking, a pit toilet, picnic tables, benches, fire rings, no supplied drinking water and remote-supply requirements.",
+        "DBCA's Victoria Rock Campground page identifies the exact mapped point at -31.295299530029, 120.92800140381 and documents two walk-in campsites, eight vehicle-based campsites, one group campsite, toilets, wood barbecues, picnic tables and an information shelter; the campground is free, non-bookable, first come, first served and availability is not guaranteed.",
+        "DBCA places both campgrounds in the Great Western Woodlands and documents the Holland Track as a separate 4WD route context; the revised records therefore replace generic woodland and track pins with the two named campground footprints and do not infer an after-dark track transfer.",
+        "DBCA's camping guidance limits camping in Western Australian parks to designated campgrounds and requires current site, road, fire, weather and closure checks; Emergency WA is retained for current alerts.",
+        "The revised bilingual guide keeps Boondi and Victoria as separate one-night options, requires daylight arrival and self-sufficient supplies, and does not create a roadside, woodland, rock or Holland Track fallback.",
+        "Open-Meteo provides preliminary elevation cross-checks of 401 m for Boondi Rock and 456 m for Victoria Rock; production Copernicus DEM snapshots must confirm or replace these values before activation."
       ],
-      "requiredChanges": [
-        {
-          "scope": "great-western-woodlands-access",
-          "reason": "Replace both generic pins with named DBCA campgrounds or day-use facilities and obtain explicit night-use, fire, road and closure rules before creating an observing route."
-        }
-      ]
+      "requiredChanges": []
     },
     {
       "destinationId": "torrance-barrens",
