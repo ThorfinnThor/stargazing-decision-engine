@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-23T09:08:51.487Z",
+  "generatedAt": "2026-09-23T09:17:09.015Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 49,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 47,
     "withBlockedSources": 14,
     "withApprovedDestinationImage": 0,
@@ -2281,10 +2281,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -2294,28 +2294,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
-            "dem": false,
-            "scores": false
+            "climate": true,
+            "black-marble": true,
+            "dem": true,
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "rakiura-observation-rock-platform:climate",
-        "rakiura-observation-rock-platform:black-marble",
-        "rakiura-observation-rock-platform:dem",
-        "rakiura-observation-rock-platform:scores",
-        "rakiura-moturau-moana-viewpoint:climate",
-        "rakiura-moturau-moana-viewpoint:black-marble",
-        "rakiura-moturau-moana-viewpoint:dem",
-        "rakiura-moturau-moana-viewpoint:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "destination-image-license-pending",
         "site-image-license-pending"
       ],

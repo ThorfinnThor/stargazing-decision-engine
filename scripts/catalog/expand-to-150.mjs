@@ -1120,6 +1120,8 @@ const copernicusElevationOverrides = new Map([
   ["makgadikgadi-kubu-community-campsite", 909],
   ["tsumkwe-country-lodge-guest-campsite", 1151],
   ["tsumkwe-juhoansi-grashoek-campsite", 1204],
+  ["rakiura-observation-rock-platform", 69],
+  ["rakiura-moturau-moana-viewpoint", 36],
   ["boundary-waters-moose-lake-campsite-1", 410],
   ["boundary-waters-moose-lake-campsite-2", 412],
   ["parashant-mount-trumbull-trailhead", 1983],
