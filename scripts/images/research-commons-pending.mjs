@@ -7,6 +7,7 @@ const destinations = JSON.parse(fs.readFileSync(path.join(root, "data-config/sou
 const images = JSON.parse(fs.readFileSync(path.join(root, "data-config/sources/destination-images.json"), "utf8"));
 const pending = new Set(images.filter((image) => image.status === "pending").map((image) => image.slug));
 const requested = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
+const summaryOnly = process.argv.includes("--summary");
 const selected = destinations.filter((destination) => pending.has(destination.slug) && (requested.length === 0 || requested.includes(destination.slug)));
 const queryOverrides = {
   "central-idaho": "Sawtooth National Recreation Area Idaho landscape",
@@ -42,6 +43,56 @@ const queryOverrides = {
   "wood-buffalo": "Wood Buffalo National Park Salt Plains Canada",
   wairarapa: "Castlepoint Wairarapa New Zealand",
   aenos: "Mount Ainos Kefalonia Greece",
+  "isle-of-sark": "Sark Channel Islands landscape",
+  "sierra-morena": "Sierra Morena Spain landscape",
+  monfrague: "Monfragüe National Park landscape",
+  "sierra-de-gredos": "Sierra de Gredos landscape",
+  javalambre: "Sierra de Javalambre landscape",
+  "aigues-tortes": "Aigüestortes i Estany de Sant Maurici National Park landscape",
+  vercors: "Vercors France landscape",
+  "attersee-traunsee": "Attersee Traunsee Salzkammergut landscape",
+  grossmugl: "Großmugl Weinviertel Austria landscape",
+  poloniny: "Poloniny National Park landscape",
+  izera: "Jizera Mountains landscape",
+  "tara-serbia": "Tara National Park Serbia landscape",
+  kopaonik: "Kopaonik National Park landscape",
+  richtersveld: "Richtersveld National Park landscape",
+  mapungubwe: "Mapungubwe National Park landscape",
+  makgadikgadi: "Makgadikgadi Pans landscape",
+  tsumkwe: "Nyae Nyae Tsumkwe Namibia landscape",
+  rakiura: "Rakiura Stewart Island New Zealand landscape",
+  "kangaroo-island": "Kangaroo Island South Australia landscape",
+  mudgee: "Mudgee New South Wales vineyard landscape",
+  "great-western-woodlands": "Great Western Woodlands Western Australia landscape",
+  "torrance-barrens": "Torrance Barrens Dark Sky Preserve",
+  fundy: "Fundy National Park New Brunswick landscape",
+  manitoulin: "Manitoulin Island Ontario landscape",
+  "massacre-rim": "Massacre Rim Nevada landscape",
+  "grand-canyon-parashant": "Grand Canyon Parashant National Monument landscape",
+  "oracle-state-park": "Oracle State Park Arizona landscape",
+  "enchanted-rock": "Enchanted Rock State Natural Area landscape",
+  "staunton-river": "Staunton River State Park Virginia landscape",
+  "kissimmee-prairie": "Kissimmee Prairie Preserve State Park landscape",
+  "big-cypress": "Big Cypress National Preserve landscape",
+  "lassen-volcanic": "Lassen Volcanic National Park landscape",
+  "dinosaur-national-monument": "Dinosaur National Monument landscape",
+  "medicine-rocks": "Medicine Rocks State Park Montana landscape",
+  "newport-wisconsin": "Newport State Park Wisconsin landscape",
+  "boundary-waters": "Boundary Waters Canoe Area Wilderness Minnesota landscape",
+  "sturt-stony-desert": "Sturt Stony Desert Australia landscape",
+  alula: "AlUla Saudi Arabia landscape",
+  "jebel-akhdar": "Jebel Akhdar Oman landscape",
+  "rann-of-kutch": "Great Rann of Kutch white desert landscape",
+  "achi-village": "Achi Nagano Japan landscape",
+  "sani-pass": "Sani Pass Lesotho landscape",
+  drakensberg: "uKhahlamba Drakensberg Park landscape",
+  "northern-damaraland": "Damaraland Namibia landscape",
+  "coral-pink-sand-dunes": "Coral Pink Sand Dunes State Park landscape",
+  "cedar-breaks": "Cedar Breaks National Monument landscape",
+  "puna-argentina": "Quebrada de Humahuaca Argentina landscape",
+  "isla-navarino": "Navarino Island Puerto Williams landscape",
+  uyuni: "Salar de Uyuni Bolivia landscape",
+  "kidepo-valley": "Kidepo Valley National Park landscape",
 };
 
 const allowedLicenses = /^(CC0|CC BY(?:-SA)?(?: 1\.0| 2\.0| 2\.5| 3\.0| 4\.0)?|Public domain)$/i;
@@ -55,7 +106,7 @@ for (const destination of selected) {
     gsrnamespace: "6",
     gsrlimit: "10",
     prop: "imageinfo",
-    iiprop: "url|extmetadata|size",
+    iiprop: "url|extmetadata|size|mime",
     iiurlwidth: "640",
     format: "json",
     origin: "*",
@@ -77,6 +128,7 @@ for (const destination of selected) {
         title: page.title?.replace(/^File:/, ""),
         width: info?.width,
         height: info?.height,
+        mime: info?.mime,
         license: metadata.LicenseShortName?.value,
         licenseUrl: metadata.LicenseUrl?.value,
         artist: metadata.Artist?.value?.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim(),
@@ -85,6 +137,10 @@ for (const destination of selected) {
         thumbUrl: info?.thumburl,
       };
     })
+    .filter((candidate) => /^image\/(jpeg|png|webp)$/.test(candidate.mime ?? ""))
     .filter((candidate) => candidate.width >= 1600 && candidate.height >= 900 && allowedLicenses.test(candidate.license ?? ""));
-  process.stdout.write(`${JSON.stringify({ destination: destination.name, slug: destination.slug, candidates })}\n`);
+  const outputCandidates = summaryOnly
+    ? candidates.map(({ title, width, height, license, artist }) => ({ title, width, height, license, artist }))
+    : candidates;
+  process.stdout.write(`${JSON.stringify({ destination: destination.name, slug: destination.slug, candidates: outputCandidates })}\n`);
 }

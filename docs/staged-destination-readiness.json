@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T13:33:30.844Z",
+  "generatedAt": "2026-09-25T13:58:01.612Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
@@ -8,12 +8,12 @@
     "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 0,
-    "withApprovedDestinationImage": 0,
-    "withAllSiteImagesApproved": 0,
+    "withApprovedDestinationImage": 50,
+    "withAllSiteImagesApproved": 50,
     "requiringFactualSourceReview": 0,
     "requiringFactualChanges": 7,
     "withVerifiedFactualReview": 43,
-    "readyForActivation": 0
+    "readyForActivation": 42
   },
   "records": [
     {
@@ -82,7 +82,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "sark-dachinger-observatory",
@@ -95,7 +95,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "sark-la-valette-campsite",
@@ -108,16 +108,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "sierra-morena",
@@ -217,7 +214,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "sierra-morena-cartuja-cazalla-astrotourism",
@@ -230,7 +227,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "sierra-morena-castillo-guardas-observatory",
@@ -243,16 +240,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "monfrague",
@@ -322,7 +316,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "monfrague-castillo",
@@ -335,7 +329,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "monfrague-salto-gitano",
@@ -348,16 +342,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "sierra-de-gredos",
@@ -436,7 +427,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "gredos-navarredonda-mirador",
@@ -449,7 +440,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "gredos-hoyos-mirador",
@@ -462,16 +453,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "javalambre",
@@ -552,7 +540,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "javalambre-galactica",
@@ -565,7 +553,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "javalambre-oaj-guided-visit",
@@ -578,16 +566,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "aigues-tortes",
@@ -666,7 +651,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "aigues-boi-taull-starlight",
@@ -679,7 +664,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "aigues-sant-quirc-astronomical",
@@ -692,16 +677,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "vercors",
@@ -773,7 +755,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "vercors-trieves-observatory",
@@ -786,7 +768,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "vercors-moulins-mure-event",
@@ -799,16 +781,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "attersee-traunsee",
@@ -895,7 +874,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "attersee-dixi-stargazing",
@@ -908,7 +887,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "attersee-taferlklaussee",
@@ -921,16 +900,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "grossmugl",
@@ -1023,7 +999,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "grossmugl-sternenwiese",
@@ -1036,7 +1012,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "grossmugl-sternenweg-events",
@@ -1049,16 +1025,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "poloniny",
@@ -1168,7 +1141,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "poloniny-runina-centre",
@@ -1181,7 +1154,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "poloniny-kolonica-observatory",
@@ -1194,16 +1167,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "izera",
@@ -1312,7 +1282,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "izera-orle-astronomy-workshop",
@@ -1325,7 +1295,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "izera-izerska-laka-events",
@@ -1338,16 +1308,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "tara-serbia",
@@ -1446,7 +1413,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "tara-glamping-rastiste-stay",
@@ -1459,7 +1426,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "tara-garden-hill-guest-courtyard",
@@ -1472,16 +1439,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "kopaonik",
@@ -1588,7 +1552,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "kopaonik-armadillo-guest-terrace",
@@ -1601,7 +1565,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "kopaonik-grand-pool-sky-stay",
@@ -1614,16 +1578,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "richtersveld",
@@ -1702,7 +1663,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "richtersveld-potjiespram",
@@ -1715,7 +1676,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "richtersveld-de-hoop",
@@ -1728,16 +1689,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "mapungubwe",
@@ -1844,7 +1802,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "mapungubwe-leokwe-rest-camp",
@@ -1857,7 +1815,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "mapungubwe-mazhou-campsite",
@@ -1870,16 +1828,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "makgadikgadi",
@@ -1978,7 +1933,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "makgadikgadi-eselbe-fireside",
@@ -1991,7 +1946,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "makgadikgadi-kubu-community-campsite",
@@ -2004,16 +1959,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "tsumkwe",
@@ -2126,7 +2078,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "tsumkwe-country-lodge-guest-campsite",
@@ -2139,7 +2091,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "tsumkwe-juhoansi-grashoek-campsite",
@@ -2152,16 +2104,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "rakiura",
@@ -2261,7 +2210,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "rakiura-observation-rock-platform",
@@ -2274,7 +2223,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "rakiura-moturau-moana-viewpoint",
@@ -2287,16 +2236,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "kangaroo-island",
@@ -2378,7 +2324,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "kangaroo-west-bay-campground",
@@ -2391,7 +2337,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "kangaroo-rocky-river-campground",
@@ -2404,16 +2350,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "mudgee",
@@ -2496,7 +2439,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "mudgee-observatory-booked-session",
@@ -2509,7 +2452,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "mudgee-grattai-grove-stay",
@@ -2522,16 +2465,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "great-western-woodlands",
@@ -2616,7 +2556,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "great-western-boondi-rock-campground",
@@ -2629,7 +2569,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "great-western-victoria-rock-campground",
@@ -2642,16 +2582,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "torrance-barrens",
@@ -2764,7 +2701,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "torrance-highland-pond-viewing-area",
@@ -2777,7 +2714,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "torrance-highland-pond-parking",
@@ -2790,16 +2727,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "fundy",
@@ -2874,7 +2808,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "fundy-chignecto-campground",
@@ -2887,7 +2821,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "fundy-wolfe-lake-viewing-area",
@@ -2900,16 +2834,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "manitoulin",
@@ -3008,7 +2939,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "manitoulin-eco-park-observation-field",
@@ -3021,7 +2952,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "manitoulin-eco-park-astro-night-check-in",
@@ -3034,16 +2965,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "massacre-rim",
@@ -3149,7 +3077,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "massacre-ranch-interpretive-camp-meadow",
@@ -3162,7 +3090,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "stevens-camp-interpretive-camp-meadow",
@@ -3175,16 +3103,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "grand-canyon-parashant",
@@ -3311,7 +3236,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "parashant-mount-trumbull-trailhead",
@@ -3324,7 +3249,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "parashant-poverty-junction-parking",
@@ -3337,16 +3262,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "oracle-state-park",
@@ -3445,7 +3367,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "oracle-american-avenue-reserved-stargazing",
@@ -3458,7 +3380,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "oracle-kannally-ranch-house-star-party",
@@ -3471,16 +3393,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "enchanted-rock",
@@ -3542,7 +3461,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "enchanted-rock-loop-trail-d2",
@@ -3555,7 +3474,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "enchanted-rock-walk-in-tent-sites",
@@ -3568,16 +3487,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "staunton-river",
@@ -3631,7 +3547,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "staunton-river-park",
@@ -3644,7 +3560,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "staunton-river-camp",
@@ -3657,16 +3573,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "kissimmee-prairie",
@@ -3734,7 +3647,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "kissimmee-astronomy-pad-a",
@@ -3747,7 +3660,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "kissimmee-entrance-pavilion",
@@ -3760,16 +3673,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "big-cypress",
@@ -3844,7 +3754,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "big-cypress-seagrape-night-sky-program",
@@ -3857,7 +3767,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "big-cypress-midway-campground",
@@ -3870,16 +3780,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "lassen-volcanic",
@@ -3934,7 +3841,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "lassen-manazanita",
@@ -3947,7 +3854,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "lassen-summit",
@@ -3960,16 +3867,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "dinosaur-national-monument",
@@ -4037,7 +3941,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "dinosaur-split-mountain-night-sky",
@@ -4050,7 +3954,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "dinosaur-echo-park-campground",
@@ -4063,16 +3967,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "medicine-rocks",
@@ -4140,7 +4041,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "medicine-rocks-night-sky-trail",
@@ -4153,7 +4054,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "medicine-rocks-campsite-1",
@@ -4166,16 +4067,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "newport-wisconsin",
@@ -4229,7 +4127,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "newport-porte-des-morts",
@@ -4242,7 +4140,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "newport-campground",
@@ -4255,16 +4153,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "boundary-waters",
@@ -4355,7 +4250,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "boundary-waters-moose-lake-campsite-1",
@@ -4368,7 +4263,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "boundary-waters-moose-lake-campsite-2",
@@ -4381,16 +4276,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "sturt-stony-desert",
@@ -4479,7 +4371,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "innamincka-cullyamurra-waterhole-campground",
@@ -4492,7 +4384,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "innamincka-policemans-waterhole-campground",
@@ -4505,15 +4397,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "observation-site-access-unavailable",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "observation-site-access-unavailable"
       ],
       "readyForActivation": false
     },
@@ -4576,7 +4466,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "alula-harrat-viewpoint",
@@ -4589,7 +4479,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "alula-gharameel-tour-departure",
@@ -4602,16 +4492,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "jebel-akhdar",
@@ -4704,7 +4591,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "jebel-akhdar-alila-stargazing-deck-programme",
@@ -4717,7 +4604,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "jebel-akhdar-anantara-dianas-point-guest-platform",
@@ -4730,16 +4617,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "rann-of-kutch",
@@ -4841,7 +4725,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "rann-utsav-tent-city",
@@ -4854,7 +4738,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "rann-white-rann-resort",
@@ -4867,15 +4751,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -4952,7 +4834,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "achi-heavens-sonohara-summit-event-site",
@@ -4965,7 +4847,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "achi-namiai-park-observing-field",
@@ -4978,16 +4860,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "sani-pass",
@@ -5068,7 +4947,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "sani-pass-border",
@@ -5081,7 +4960,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "sani-top",
@@ -5094,15 +4973,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -5192,7 +5069,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "drakensberg-giants-castle",
@@ -5205,7 +5082,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "drakensberg-didima-resort",
@@ -5218,15 +5095,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -5302,7 +5177,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "damaraland-twyfelfontein",
@@ -5315,7 +5190,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "damaraland-palmwag",
@@ -5328,15 +5203,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -5393,7 +5266,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "coral-pink-park",
@@ -5406,7 +5279,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "coral-pink-camp",
@@ -5419,16 +5292,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "cedar-breaks",
@@ -5483,7 +5353,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "cedar-breaks-sunset",
@@ -5496,7 +5366,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "cedar-breaks-camp",
@@ -5509,16 +5379,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "puna-argentina",
@@ -5593,7 +5460,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "puna-posta-hornillos-guided-observation",
@@ -5606,7 +5473,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "puna-tumbaya-solar-train-boarding",
@@ -5619,16 +5486,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
-      "activationBlockers": [
-        "destination-image-license-pending",
-        "site-image-license-pending"
-      ],
-      "readyForActivation": false
+      "activationBlockers": [],
+      "readyForActivation": true
     },
     {
       "destinationId": "isla-navarino",
@@ -5695,7 +5559,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "navarino-puerto-williams",
@@ -5708,7 +5572,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "navarino-dientes",
@@ -5721,15 +5585,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -5813,7 +5675,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "uyuni-salt-flat",
@@ -5826,7 +5688,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "uyuni-tahua",
@@ -5839,15 +5701,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     },
@@ -5918,7 +5778,7 @@
           }
         ]
       },
-      "destinationImageStatus": "pending",
+      "destinationImageStatus": "approved",
       "sites": [
         {
           "id": "kidepo-narus",
@@ -5931,7 +5791,7 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         },
         {
           "id": "kidepo-kanangorok",
@@ -5944,15 +5804,13 @@
             "scores": true
           },
           "coordinateMismatches": [],
-          "imageStatus": "pending"
+          "imageStatus": "approved"
         }
       ],
       "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-factual-changes-required",
-        "destination-image-license-pending",
-        "site-image-license-pending"
+        "source-factual-changes-required"
       ],
       "readyForActivation": false
     }

@@ -10,7 +10,11 @@ if (!sharpPackage) throw new Error("The workspace dependency tree does not conta
 const { default: sharp } = await import(pathToFileURL(path.join(root, "node_modules/.pnpm", sharpPackage, "node_modules/sharp/lib/index.js")));
 const dryRun = process.argv.includes("--dry-run");
 const expansion = process.argv.includes("--expansion");
-const reviewedAt = "2026-09-08";
+const staged = process.argv.includes("--staged");
+const prepareReview = process.argv.includes("--prepare-review");
+const requested = process.argv.slice(2).filter((argument) => !argument.startsWith("--"));
+if ([expansion, staged].filter(Boolean).length > 1) throw new Error("Choose at most one image cohort");
+const reviewedAt = staged ? "2026-09-25" : "2026-09-08";
 const contact = "StargazingIndex image research (info@stargazingindex.com)";
 
 const originalSelections = [
@@ -69,7 +73,61 @@ const expansionSelections = [
   ["om-dark-sky", "Isle of Man Landscape.jpg", "Coastal uplands on the Isle of Man", "Küstenhochland auf der Isle of Man"],
 ];
 
-const selections = (expansion ? expansionSelections : originalSelections)
+const stagedSelections = [
+  ["isle-of-sark", "Sark-aerial.jpg", "Aerial view of Sark and its coastal landscape", "Luftbild von Sark und seiner Küstenlandschaft"],
+  ["sierra-morena", "Spring fields in Sierra Morena (Cordoba, S Spain).jpg", "Spring fields in the Sierra Morena of southern Spain", "Frühlingsfelder in der Sierra Morena im Süden Spaniens"],
+  ["monfrague", "PARQUE NACIONAL DE MONFRAGÜE. VISTA DESDE LA SIERRA DE LAS CORCHUELAS.jpg", "View across Monfragüe National Park from Sierra de las Corchuelas", "Blick von der Sierra de las Corchuelas über den Nationalpark Monfragüe"],
+  ["sierra-de-gredos", "Sierra de Gredos.jpg", "Mountain landscape in the Sierra de Gredos", "Berglandschaft in der Sierra de Gredos"],
+  ["javalambre", "Gúdar-Javalambre 1977.jpg", "Mountain landscape in Gúdar-Javalambre", "Berglandschaft in Gúdar-Javalambre"],
+  ["aigues-tortes", "Sant Maurici lake, Aigüestortes i Estany de Sant Maurici National Park, Spain - Diliff.jpg", "Sant Maurici lake in Aigüestortes i Estany de Sant Maurici National Park", "Der See Sant Maurici im Nationalpark Aigüestortes i Estany de Sant Maurici"],
+  ["vercors", "Mont Aiguille - Vercors - France (31053335294).jpg", "Mont Aiguille in the Vercors mountains", "Mont Aiguille im Vercors-Gebirge"],
+  ["attersee-traunsee", "Attersee - Südostansicht.JPG", "Attersee and the surrounding Salzkammergut mountains", "Der Attersee und die umliegenden Berge des Salzkammerguts"],
+  ["grossmugl", "Großmugl - Hügelgrab (1).JPG", "Open countryside and an ancient burial mound near Großmugl", "Offene Landschaft und ein Hügelgrab bei Großmugl"],
+  ["poloniny", "Národná prírodná rezervácia Jarabá skala, Národný park Poloniny (08).jpg", "Mountain forest in Poloniny National Park", "Bergwald im Nationalpark Poloniny"],
+  ["izera", "Isergebirge-view from Heufuder.JPG", "View across the Jizera Mountains", "Blick über das Isergebirge"],
+  ["tara-serbia", "Over the Tara mountain.jpg", "Forested mountain landscape in Tara National Park", "Bewaldete Berglandschaft im Tara-Nationalpark"],
+  ["kopaonik", "Kopaonik, pogled na Belu Reku.jpg", "Mountain view across Kopaonik", "Bergblick über den Kopaonik"],
+  ["richtersveld", "Vegetation and mountains, Richtersveld National Park, Unesco World Heritage site, Northern Cape, South Africa (20352268568).jpg", "Vegetation and mountains in Richtersveld National Park", "Vegetation und Berge im Richtersveld-Nationalpark"],
+  ["mapungubwe", "Landscape in the Mapungubwe National Park, with zebras.jpg", "Open landscape in Mapungubwe National Park", "Offene Landschaft im Mapungubwe-Nationalpark"],
+  ["makgadikgadi", "Salar del parque nacional Makgadikgadi Pans, Botsuana, 2018-07-30, DD 37.jpg", "Salt-pan landscape in Makgadikgadi Pans National Park", "Salzpfannenlandschaft im Makgadikgadi-Pans-Nationalpark"],
+  ["tsumkwe", "Nyae Nyae See.jpg", "Nyae Nyae Pan near Tsumkwe in northeastern Namibia", "Die Nyae-Nyae-Pfanne bei Tsumkwe im Nordosten Namibias"],
+  ["rakiura", "Forest Stewart Island.jpg", "Temperate rainforest on Rakiura Stewart Island", "Gemäßigter Regenwald auf Rakiura Stewart Island"],
+  ["kangaroo-island", "Flinders Chase National Park 01.jpg", "Coastal landscape in Flinders Chase National Park on Kangaroo Island", "Küstenlandschaft im Flinders-Chase-Nationalpark auf Kangaroo Island"],
+  ["mudgee", "Cudgegong river mudgee.jpg", "Cudgegong River landscape at Mudgee in New South Wales", "Landschaft am Cudgegong River bei Mudgee in New South Wales"],
+  ["great-western-woodlands", "Great Western Woodlands.jpg", "Woodland landscape in the Great Western Woodlands", "Waldlandschaft in den Great Western Woodlands"],
+  ["torrance-barrens", "Torrance Barrens Dark Sky Preserve (53968290486).jpg", "Rocky landscape in Torrance Barrens Dark Sky Preserve", "Felslandschaft im Torrance Barrens Dark Sky Preserve"],
+  ["fundy", "Fundy National Park View 7.JPG", "Forest and coastal landscape in Fundy National Park", "Wald- und Küstenlandschaft im Fundy-Nationalpark"],
+  ["manitoulin", "Gore bay manitoulin island.jpg", "Gore Bay and the North Channel on Manitoulin Island", "Gore Bay und der North Channel auf Manitoulin Island"],
+  ["massacre-rim", "Massacre Rim (29722878482).jpg", "Remote high-desert landscape at Massacre Rim", "Abgelegene Hochwüstenlandschaft am Massacre Rim"],
+  ["grand-canyon-parashant", "-conservationlands15 Social Media Takeover, Feb 15th, BLM Winter Bucket List, Grand Canyon-Parashant National Monument in Arizona for Its Dark Sky Park Status (16514847896).jpg", "Remote landscape in Grand Canyon-Parashant National Monument", "Abgelegene Landschaft im Grand-Canyon-Parashant-Nationalmonument"],
+  ["oracle-state-park", "View of Oracle, AZ looking south - Mt. Lemmon in background.jpg", "Oracle, Arizona, with Mount Lemmon in the background", "Oracle in Arizona mit Mount Lemmon im Hintergrund"],
+  ["enchanted-rock", "Enchanted Rock, Central Texas, June, 2025, Panoramic View.jpg", "Panoramic view of Enchanted Rock in central Texas", "Panoramablick auf Enchanted Rock in Zentraltexas"],
+  ["staunton-river", "River Area Staunton River State Park (15834123201).jpg", "River and woodland landscape at Staunton River State Park", "Fluss- und Waldlandschaft im Staunton River State Park"],
+  ["kissimmee-prairie", "Kissimmee Prairie PSP01.jpg", "Open grassland in Kissimmee Prairie Preserve State Park", "Offenes Grasland im Kissimmee Prairie Preserve State Park"],
+  ["big-cypress", "Big Cypress National Preserve, Florida (99a1838f-c770-46c6-9b82-927ff0af8f62).jpg", "Wetland landscape in Big Cypress National Preserve", "Feuchtgebietslandschaft im Big Cypress National Preserve"],
+  ["lassen-volcanic", "Lassen Volcanic National Park LAVO1937.jpg", "Volcanic mountain landscape in Lassen Volcanic National Park", "Vulkanische Berglandschaft im Lassen-Volcanic-Nationalpark"],
+  ["dinosaur-national-monument", "Gates of lodore dinosaur national monument.jpg", "The Gates of Lodore in Dinosaur National Monument", "Die Gates of Lodore im Dinosaur-Nationalmonument"],
+  ["medicine-rocks", "Medicine Rocks State Park 20.jpg", "Sandstone formations in Medicine Rocks State Park", "Sandsteinformationen im Medicine Rocks State Park"],
+  ["newport-wisconsin", "Gfp-wisconsin-newport-state-park-landscape-and-lake.jpg", "Lake Michigan shoreline in Newport State Park, Wisconsin", "Ufer des Michigansees im Newport State Park in Wisconsin"],
+  ["boundary-waters", "The Boundary Waters, Minnesota.jpg", "Lake and forest landscape in the Boundary Waters Canoe Area Wilderness", "Seen- und Waldlandschaft in der Boundary Waters Canoe Area Wilderness"],
+  ["sturt-stony-desert", "Euro 571250124.jpg", "Kangaroos in arid shrubland of the Tirari-Sturt Stony Desert ecoregion", "Kängurus im trockenen Buschland der Ökoregion Tirari-Sturt Stony Desert"],
+  ["alula", "Landscape at al-Ula, Saudi Arabia (10).jpg", "Sandstone landscape at AlUla in Saudi Arabia", "Sandsteinlandschaft bei AlUla in Saudi-Arabien"],
+  ["jebel-akhdar", "Jebel Akhdar Morning (52708306333).jpg", "Morning mountain landscape in Jebel Akhdar, Oman", "Morgendliche Berglandschaft im Jebel Akhdar im Oman"],
+  ["rann-of-kutch", "The White Desert in Kutch, the great rann of kutch.jpg", "White salt desert in the Great Rann of Kutch", "Weiße Salzwüste im Great Rann of Kutch"],
+  ["achi-village", "Hirugami001.JPG", "Hirugami Onsen and its mountain setting in Achi, Nagano", "Hirugami Onsen und seine Berglandschaft in Achi, Nagano"],
+  ["sani-pass", "Sani Pass heading into Lesotho.jpg", "Mountain road and highland landscape at Sani Pass", "Bergstraße und Hochlandlandschaft am Sani Pass"],
+  ["drakensberg", "ELANDS - View from Eland Cave at Cathedral Peak, South Africa, 2017.jpg", "Mountain landscape seen from Eland Cave in the Drakensberg", "Berglandschaft von der Eland Cave in den Drakensbergen"],
+  ["northern-damaraland", "Damaraland 03.jpg", "Rugged landscape in Damaraland, Namibia", "Raue Landschaft im Damaraland in Namibia"],
+  ["coral-pink-sand-dunes", "Coral Pink Sand Dunes After Rain 03.JPG", "Coral Pink Sand Dunes after rain in Utah", "Die Coral Pink Sand Dunes nach Regen in Utah"],
+  ["cedar-breaks", "Sunset over Cedar Breaks (81574e01-1dd8-b71b-0bf1-9f13cb699d43).JPG", "Sunset over Cedar Breaks National Monument", "Sonnenuntergang über dem Cedar-Breaks-Nationalmonument"],
+  ["puna-argentina", "Quebrada de Humahuaca 01.jpg", "High-altitude landscape in Quebrada de Humahuaca", "Hochlandlandschaft in der Quebrada de Humahuaca"],
+  ["isla-navarino", "Dientes de Navarino desde el Cerro Bandera, Chile.jpg", "Dientes de Navarino mountains seen from Cerro Bandera", "Die Dientes-de-Navarino-Berge vom Cerro Bandera aus gesehen"],
+  ["uyuni", "Salar de Uyuni, Bolivia, 2016-02-04, DD 01-03 HDR.JPG", "Salt-flat landscape at Salar de Uyuni", "Salzpfannenlandschaft im Salar de Uyuni"],
+  ["kidepo-valley", "A landscape of Kidepo National Park in Uganda.jpg", "Savanna landscape in Kidepo Valley National Park", "Savannenlandschaft im Kidepo-Valley-Nationalpark"],
+];
+
+const selections = (staged ? stagedSelections : expansion ? expansionSelections : originalSelections)
+  .filter(([destinationSlug]) => requested.length === 0 || requested.includes(destinationSlug))
   .map(([destinationSlug, fileTitle, altEn, altDe]) => ({ destinationSlug, fileTitle, alt: { en: altEn, de: altDe } }));
 
 function decode(value = "") {
@@ -110,6 +168,7 @@ try {
       titles: `File:${selection.fileTitle}`,
       prop: "imageinfo",
       iiprop: "url|extmetadata|size|mime",
+      iiurlwidth: "1800",
       format: "json",
       origin: "*",
     });
@@ -156,13 +215,20 @@ try {
 
     const extension = info.mime === "image/png" ? ".png" : ".jpg";
     const downloaded = path.join(temporaryDirectory, `${selection.destinationSlug}${extension}`);
-    execFileSync("curl", ["-fsSL", "--retry", "4", "--retry-all-errors", "--retry-delay", "2", "-A", contact, "-o", downloaded, downloadUrl]);
-    const output = path.join(root, "public/images/destinations", `${selection.destinationSlug}.webp`);
+    const assetUrl = prepareReview ? normalizeUrl(info.thumburl, downloadUrl) : downloadUrl;
+    execFileSync("curl", ["-fsSL", "--retry", "4", "--retry-all-errors", "--retry-delay", "2", "-A", contact, "-o", downloaded, assetUrl]);
+    const output = prepareReview
+      ? path.join(temporaryDirectory, `${selection.destinationSlug}.webp`)
+      : path.join(root, "public/images/destinations", `${selection.destinationSlug}.webp`);
     await sharp(downloaded)
       .rotate()
       .resize(1800, 1125, { fit: "cover", position: "attention", withoutEnlargement: true })
       .webp({ quality: 82, effort: 5 })
       .toFile(output);
+    if (prepareReview) {
+      fs.rmSync(downloaded, { force: true });
+      continue;
+    }
     const image = destinationImages.find((entry) => entry.slug === selection.destinationSlug);
     if (!image) throw new Error(`${selection.destinationSlug}: destination image record is missing`);
     Object.assign(image, {
@@ -180,8 +246,28 @@ try {
     delete image.overrideReason;
   }
 
-  if (!dryRun) {
-    const auditPath = path.join(root, "data-config/sources/destination-image-audit-2026-09-08.json");
+  if (prepareReview) {
+    const tilesPerSheet = 10;
+    for (let offset = 0; offset < selections.length; offset += tilesPerSheet) {
+      const sheetSelections = selections.slice(offset, offset + tilesPerSheet);
+      const composites = [];
+      for (const [index, selection] of sheetSelections.entries()) {
+        const tile = await sharp(path.join(temporaryDirectory, `${selection.destinationSlug}.webp`))
+          .resize(360, 225, { fit: "cover" })
+          .composite([{ input: Buffer.from(`<svg width="360" height="34"><rect width="360" height="34" fill="rgba(0,0,0,0.72)"/><text x="10" y="23" fill="white" font-family="sans-serif" font-size="17">${selection.destinationSlug}</text></svg>`), top: 191, left: 0 }])
+          .webp({ quality: 80 })
+          .toBuffer();
+        composites.push({ input: tile, left: (index % 5) * 360, top: Math.floor(index / 5) * 225 });
+      }
+      await sharp({ create: { width: 1800, height: 450, channels: 3, background: "#111827" } })
+        .composite(composites)
+        .webp({ quality: 82 })
+        .toFile(path.join(temporaryDirectory, `contact-sheet-${offset / tilesPerSheet + 1}.webp`));
+    }
+    fs.writeFileSync(path.join(temporaryDirectory, "candidates.json"), `${JSON.stringify(auditCandidates, null, 2)}\n`);
+    console.log(`Prepared visual-review assets in ${temporaryDirectory}`);
+  } else if (!dryRun) {
+    const auditPath = path.join(root, `data-config/sources/destination-image-audit-${reviewedAt}.json`);
     const previousCandidates = expansion && fs.existsSync(auditPath)
       ? JSON.parse(fs.readFileSync(auditPath, "utf8")).candidates ?? []
       : [];
@@ -207,5 +293,5 @@ try {
     fs.writeFileSync(destinationImagesPath, `${JSON.stringify(destinationImages, null, 2)}\n`);
   }
 } finally {
-  fs.rmSync(temporaryDirectory, { recursive: true, force: true });
+  if (!prepareReview) fs.rmSync(temporaryDirectory, { recursive: true, force: true });
 }

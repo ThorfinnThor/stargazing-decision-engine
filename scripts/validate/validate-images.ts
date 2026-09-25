@@ -1,4 +1,4 @@
-import { existsSync, readFileSync, statSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, statSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { buildImageManifest } from "../../lib/images/images.js";
@@ -57,11 +57,16 @@ const seed: SeedData = {
 const destinationImages = readJson<ImageAssetConfig[]>(resolve(root, "data-config/sources/destination-images.json"));
 const siteImages = readJson<ImageAssetConfig[]>(resolve(root, "data-config/sources/site-images.json"));
 const p3 = readJson<P3Register>(resolve(root, "data-config/sources/p3-image-candidates.json"));
-const destinationImageAuditPath = resolve(root, "data-config/sources/destination-image-audit-2026-09-08.json");
-const destinationImageAudit = existsSync(destinationImageAuditPath)
-  ? readJson<DestinationImageAudit>(destinationImageAuditPath)
-  : undefined;
-const siteImageAuditPath = resolve(root, "data-config/sources/site-image-audit-2026-09-08.json");
+const sourceDirectory = resolve(root, "data-config/sources");
+const destinationImageAudits = readdirSync(sourceDirectory)
+  .filter((name) => /^destination-image-audit-\d{4}-\d{2}-\d{2}\.json$/.test(name))
+  .sort()
+  .map((name) => readJson<DestinationImageAudit>(resolve(sourceDirectory, name)));
+const siteImageAuditName = readdirSync(sourceDirectory)
+  .filter((name) => /^site-image-audit-\d{4}-\d{2}-\d{2}\.json$/.test(name))
+  .sort()
+  .at(-1);
+const siteImageAuditPath = resolve(sourceDirectory, siteImageAuditName ?? "site-image-audit-missing.json");
 const siteImageAudit = existsSync(siteImageAuditPath)
   ? readJson<SiteImageAudit>(siteImageAuditPath)
   : undefined;
@@ -98,11 +103,11 @@ for (const candidate of p3.candidates) {
   const bytes = statSync(imagePath).size;
   if (bytes < 10_000 || bytes > 1_000_000) errors.push(`${candidate.destinationSlug}: approved WebP size is outside the 10 KB–1 MB delivery guardrail`);
 }
-if (destinationImageAudit) {
-  if (destinationImageAudit.audit.status !== "approved-for-publication") errors.push("destination image audit is not approved for publication");
+for (const destinationImageAudit of destinationImageAudits) {
+  if (destinationImageAudit.audit.status !== "approved-for-publication") errors.push(`${destinationImageAudit.audit.reviewedAt}: destination image audit is not approved for publication`);
   if (destinationImageAudit.audit.visualReviewCount !== destinationImageAudit.candidates.length
     || destinationImageAudit.audit.metadataVerificationCount !== destinationImageAudit.candidates.length) {
-    errors.push("destination image audit counts do not cover every candidate");
+    errors.push(`${destinationImageAudit.audit.reviewedAt}: destination image audit counts do not cover every candidate`);
   }
   for (const candidate of destinationImageAudit.candidates) {
     if (candidate.reviewStatus !== "approved-after-metadata-and-visual-review") errors.push(`${candidate.destinationSlug}: image audit approval is missing`);
@@ -125,7 +130,7 @@ if (destinationImageAudit) {
     };
     if (!production || production.status !== "approved"
       || Object.entries(expectedFields).some(([key, value]) => JSON.stringify(production[key as keyof ImageAssetConfig]) !== JSON.stringify(value))) {
-      errors.push(`${candidate.destinationSlug}: production config does not match the 2026-09-08 image audit`);
+      errors.push(`${candidate.destinationSlug}: production config does not match the ${destinationImageAudit.audit.reviewedAt} image audit`);
     }
   }
 }
@@ -135,10 +140,11 @@ if (siteImageAudit) {
     || siteImageAudit.audit.uniqueSourceAssetCount !== new Set(siteImageAudit.records.map((record) => record.localPath)).size) {
     errors.push("site image audit counts do not match its records");
   }
-  const activeSites = seed.sites.filter((site) => site.active);
-  if (siteImageAudit.records.length !== activeSites.length
-    || new Set(siteImageAudit.records.map((record) => record.siteSlug)).size !== activeSites.length) {
-    errors.push("site image audit does not cover every observation site exactly once");
+  const approvedSiteSlugs = new Set(siteImages.filter((image) => image.status === "approved").map((image) => image.slug));
+  if (siteImageAudit.records.length !== approvedSiteSlugs.size
+    || new Set(siteImageAudit.records.map((record) => record.siteSlug)).size !== approvedSiteSlugs.size
+    || siteImageAudit.records.some((record) => !approvedSiteSlugs.has(record.siteSlug))) {
+    errors.push("site image audit does not cover every approved observation-site image exactly once");
   }
   for (const record of siteImageAudit.records) {
     if (record.reuseKind !== "destination-regional-context") errors.push(`${record.siteSlug}: unsupported site image reuse kind`);

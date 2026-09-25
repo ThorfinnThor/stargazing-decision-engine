@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 
 const root = process.cwd();
-const checkedAt = "2026-09-08";
+const checkedAt = process.argv.includes("--staged") ? "2026-09-25" : "2026-09-08";
 const dryRun = process.argv.includes("--dry-run");
 
 const read = (relativePath) => JSON.parse(fs.readFileSync(path.join(root, relativePath), "utf8"));
@@ -85,5 +85,5 @@ const audit = {
 console.log(`Prepared ${siteImages.length} observation-site image records from ${uniqueSourceAssets.size} approved destination assets.`);
 if (!dryRun) {
   fs.writeFileSync(path.join(root, "data-config/sources/site-images.json"), `${JSON.stringify(siteImages, null, 2)}\n`);
-  fs.writeFileSync(path.join(root, "data-config/sources/site-image-audit-2026-09-08.json"), `${JSON.stringify(audit, null, 2)}\n`);
+  fs.writeFileSync(path.join(root, `data-config/sources/site-image-audit-${checkedAt}.json`), `${JSON.stringify(audit, null, 2)}\n`);
 }

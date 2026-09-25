@@ -41,6 +41,15 @@ research register itself remains publication-blocked and is never rendered
 directly. `pnpm data:images:validate` now cross-checks every promoted field and
 the local WebP signature before publication.
 
+The 50 staged destination images reviewed on 2026-09-25 are recorded separately
+in
+[`data-config/sources/destination-image-audit-2026-09-25.json`](../data-config/sources/destination-image-audit-2026-09-25.json).
+Every record retains the Commons description page, original download URL, creator,
+license, original dimensions, bilingual alt text and visual-review decision. Their
+100 observation-site mappings are retained in the corresponding dated site-image
+audit and describe each reused image only as regional context. Image approval does
+not activate a destination or change its access status.
+
 Government and NASA images are accepted only when the source page explicitly
 identifies the work as public domain or a U.S. Government work; the manifest
 uses `NASA Public Domain` or `U.S. Government Work` as the license value. No
