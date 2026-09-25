@@ -1,11 +1,11 @@
 {
   "version": 1,
-  "generatedAt": "2026-09-25T08:21:15.496Z",
+  "generatedAt": "2026-09-25T09:20:54.453Z",
   "method": "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
   "summary": {
     "destinations": 50,
     "sites": 100,
-    "withCompleteSnapshots": 46,
+    "withCompleteSnapshots": 50,
     "withCleanSourceReachability": 50,
     "withBlockedSources": 0,
     "withApprovedDestinationImage": 0,
@@ -4848,10 +4848,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -4861,26 +4861,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "rann-utsav-tent-city:climate",
-        "rann-utsav-tent-city:black-marble",
-        "rann-utsav-tent-city:scores",
-        "rann-white-rann-resort:climate",
-        "rann-white-rann-resort:black-marble",
-        "rann-white-rann-resort:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -5082,10 +5074,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -5095,26 +5087,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "sani-pass-border:climate",
-        "sani-pass-border:black-marble",
-        "sani-pass-border:scores",
-        "sani-top:climate",
-        "sani-top:black-marble",
-        "sani-top:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -5213,10 +5197,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -5226,26 +5210,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "drakensberg-giants-castle:climate",
-        "drakensberg-giants-castle:black-marble",
-        "drakensberg-giants-castle:scores",
-        "drakensberg-didima-resort:climate",
-        "drakensberg-didima-resort:black-marble",
-        "drakensberg-didima-resort:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
@@ -5330,10 +5306,10 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
@@ -5343,26 +5319,18 @@
           "active": false,
           "publicAccess": "limited",
           "snapshots": {
-            "climate": false,
-            "black-marble": false,
+            "climate": true,
+            "black-marble": true,
             "dem": true,
-            "scores": false
+            "scores": true
           },
           "coordinateMismatches": [],
           "imageStatus": "pending"
         }
       ],
-      "missingSnapshots": [
-        "damaraland-twyfelfontein:climate",
-        "damaraland-twyfelfontein:black-marble",
-        "damaraland-twyfelfontein:scores",
-        "damaraland-palmwag:climate",
-        "damaraland-palmwag:black-marble",
-        "damaraland-palmwag:scores"
-      ],
+      "missingSnapshots": [],
       "staleSnapshots": [],
       "activationBlockers": [
-        "source-snapshots-missing",
         "source-factual-changes-required",
         "destination-image-license-pending",
         "site-image-license-pending"
