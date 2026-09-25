@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "checkedAt": "2026-09-23T10:01:19.343Z",
+  "checkedAt": "2026-09-25T08:21:15.236Z",
   "method": "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   "cohort": {
     "destinations": 50,
     "sites": 100,
-    "sourceRecords": 325,
-    "uniqueUrls": 325
+    "sourceRecords": 341,
+    "uniqueUrls": 341
   },
   "summary": {
-    "reachable": 285,
-    "blocked": 34,
+    "reachable": 341,
+    "blocked": 0,
     "missing": 0,
     "http-error": 0,
-    "error": 6
+    "error": 0
   },
   "records": [
     {
@@ -33,7 +33,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 104,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -53,7 +53,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 105,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -73,7 +73,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 114,
+      "durationMs": 99,
       "error": null
     },
     {
@@ -93,7 +93,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 118,
+      "durationMs": 97,
       "error": null
     },
     {
@@ -113,7 +113,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 109,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -122,18 +122,18 @@
         {
           "destinationId": "jebel-akhdar",
           "kind": "guide",
-          "sourceId": "jebel-akhdar-source-9"
+          "sourceId": "jebel-akhdar-source-8"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
-      "method": "GET",
+      "method": "HEAD",
       "finalUrl": "https://api.open-meteo.com/v1/elevation?latitude=23.14189,23.067681116038536&longitude=57.53518,57.67011780953533",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 88,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -142,7 +142,7 @@
         {
           "destinationId": "oracle-state-park",
           "kind": "guide",
-          "sourceId": "oracle-state-park-source-10"
+          "sourceId": "oracle-state-park-source-9"
         }
       ],
       "https": true,
@@ -153,7 +153,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 116,
+      "durationMs": 95,
       "error": null
     },
     {
@@ -173,7 +173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 108,
+      "durationMs": 96,
       "error": null
     },
     {
@@ -193,7 +193,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 82,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -213,7 +213,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 86,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -233,7 +233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 90,
+      "durationMs": 93,
       "error": null
     },
     {
@@ -253,7 +253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 86,
+      "durationMs": 101,
       "error": null
     },
     {
@@ -273,7 +273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 90,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -293,7 +293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/json",
-      "durationMs": 84,
+      "durationMs": 103,
       "error": null
     },
     {
@@ -313,7 +313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 782,
+      "durationMs": 422,
       "error": null
     },
     {
@@ -333,7 +333,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/octet-stream",
-      "durationMs": 107,
+      "durationMs": 105,
+      "error": null
+    },
+    {
+      "url": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/documents/2025/06/26/1245/Alila-Jabal-Akhdar-Capacity-Chart-English.pdf",
+      "references": [
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "guide",
+          "sourceId": "jebel-akhdar-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://assets.hyatt.com/content/dam/hyatt/hyattdam/documents/2025/06/26/1245/Alila-Jabal-Akhdar-Capacity-Chart-English.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 149,
       "error": null
     },
     {
@@ -353,7 +373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3475,
+      "durationMs": 126,
       "error": null
     },
     {
@@ -373,7 +393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 345,
+      "durationMs": 296,
       "error": null
     },
     {
@@ -393,7 +413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 360,
+      "durationMs": 346,
       "error": null
     },
     {
@@ -413,7 +433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 163,
+      "durationMs": 160,
       "error": null
     },
     {
@@ -433,7 +453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 345,
+      "durationMs": 370,
       "error": null
     },
     {
@@ -453,7 +473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 385,
+      "durationMs": 358,
       "error": null
     },
     {
@@ -478,7 +498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1927,
+      "durationMs": 841,
       "error": null
     },
     {
@@ -498,7 +518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1120,
+      "durationMs": 1052,
       "error": null
     },
     {
@@ -523,7 +543,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 988,
+      "durationMs": 910,
       "error": null
     },
     {
@@ -548,7 +568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 860,
+      "durationMs": 916,
       "error": null
     },
     {
@@ -568,7 +588,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1188,
+      "durationMs": 1279,
       "error": null
     },
     {
@@ -588,7 +608,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1139,
+      "durationMs": 1014,
+      "error": null
+    },
+    {
+      "url": "https://boliviatravel.gob.bo/prestadores-de-servicio-turistico/",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://boliviatravel.gob.bo/prestadores-de-servicio-turistico/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 787,
       "error": null
     },
     {
@@ -598,6 +638,11 @@
           "destinationId": "uyuni",
           "kind": "guide",
           "sourceId": "uyuni-source-2"
+        },
+        {
+          "destinationId": "uyuni",
+          "kind": "site",
+          "siteId": "uyuni-tahua"
         }
       ],
       "https": true,
@@ -608,7 +653,52 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 838,
+      "durationMs": 787,
+      "error": null
+    },
+    {
+      "url": "https://bookings.kznwildlife.com/MakeABooking.aspx?Resort=Giants+Castle",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-1"
+        },
+        {
+          "destinationId": "drakensberg",
+          "kind": "site",
+          "siteId": "drakensberg-giants-castle"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://bookings.kznwildlife.com/MakeABooking.aspx?Resort=Giants+Castle",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 774,
+      "error": null
+    },
+    {
+      "url": "https://bookings.kznwildlife.com/pdffiles/KZN-WILDLIFE-Booking-553507.pdf",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://bookings.kznwildlife.com/pdffiles/KZN-WILDLIFE-Booking-553507.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 767,
       "error": null
     },
     {
@@ -628,7 +718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 598,
+      "durationMs": 508,
       "error": null
     },
     {
@@ -653,7 +743,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 238,
+      "durationMs": 80,
       "error": null
     },
     {
@@ -673,7 +763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 197,
+      "durationMs": 84,
       "error": null
     },
     {
@@ -693,7 +783,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 168,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -713,7 +803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 179,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -733,7 +823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 139,
+      "durationMs": 94,
       "error": null
     },
     {
@@ -753,7 +843,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 129,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -773,7 +863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 358,
+      "durationMs": 453,
       "error": null
     },
     {
@@ -793,147 +883,57 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
+      "durationMs": 91,
+      "error": null
+    },
+    {
+      "url": "https://content.govdelivery.com/accounts/FLDEP/bulletins/1343282",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-1"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-astronomy-pad-a"
+        },
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "site",
+          "siteId": "kissimmee-entrance-pavilion"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://content.govdelivery.com/accounts/FLDEP/bulletins/1343282",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 188,
+      "error": null
+    },
+    {
+      "url": "https://darksky.org/app/uploads/2018/10/EnchantedRock_AnnualReport_2018.pdf",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://darksky.org/app/uploads/2018/10/EnchantedRock_AnnualReport_2018.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
       "durationMs": 105,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/cedar-breaks-national-monument/",
-      "references": [
-        {
-          "destinationId": "cedar-breaks",
-          "kind": "guide",
-          "sourceId": "cedar-breaks-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/cedar-breaks-national-monument/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/coral-pink-sand-dunes-state-park/",
-      "references": [
-        {
-          "destinationId": "coral-pink-sand-dunes",
-          "kind": "guide",
-          "sourceId": "coral-pink-sand-dunes-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/coral-pink-sand-dunes-state-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 95,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/lassen-volcanic-national-park/",
-      "references": [
-        {
-          "destinationId": "lassen-volcanic",
-          "kind": "guide",
-          "sourceId": "lassen-volcanic-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/lassen-volcanic-national-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
-      "references": [
-        {
-          "destinationId": "massacre-rim",
-          "kind": "guide",
-          "sourceId": "massacre-rim-source-10"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 101,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/newport-state-park/",
-      "references": [
-        {
-          "destinationId": "newport-wisconsin",
-          "kind": "guide",
-          "sourceId": "newport-wisconsin-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/newport-state-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
-      "references": [
-        {
-          "destinationId": "oracle-state-park",
-          "kind": "guide",
-          "sourceId": "oracle-state-park-source-7"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/oracle-state-park-dark-sky-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 85,
-      "error": null
-    },
-    {
-      "url": "https://darksky.org/places/staunton-river-state-park/",
-      "references": [
-        {
-          "destinationId": "staunton-river",
-          "kind": "guide",
-          "sourceId": "staunton-river-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://darksky.org/places/staunton-river-state-park/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
       "error": null
     },
     {
@@ -953,7 +953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1560,
+      "durationMs": 1204,
       "error": null
     },
     {
@@ -973,7 +973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 503,
+      "durationMs": 500,
       "error": null
     },
     {
@@ -1003,7 +1003,67 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 435,
+      "durationMs": 457,
+      "error": null
+    },
+    {
+      "url": "https://dnr.wisconsin.gov/topic/parks/newport/darksky",
+      "references": [
+        {
+          "destinationId": "newport-wisconsin",
+          "kind": "guide",
+          "sourceId": "newport-wisconsin-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://dnr.wisconsin.gov/topic/parks/newport/darksky",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 425,
+      "error": null
+    },
+    {
+      "url": "https://drakensberghikes.com/directory/accommodation/sani-mountain-lodge-sani-top",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://drakensberghikes.com/directory/accommodation/sani-mountain-lodge-sani-top",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 700,
+      "error": null
+    },
+    {
+      "url": "https://experienceoman.om/media/x2cd2gim/the-wanderlust-oman.pdf",
+      "references": [
+        {
+          "destinationId": "jebel-akhdar",
+          "kind": "guide",
+          "sourceId": "jebel-akhdar-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://experienceoman.om/media/x2cd2gim/the-wanderlust-oman.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 582,
       "error": null
     },
     {
@@ -1028,7 +1088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 368,
+      "durationMs": 278,
       "error": null
     },
     {
@@ -1048,7 +1108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 851,
+      "durationMs": 1196,
       "error": null
     },
     {
@@ -1068,7 +1128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 415,
+      "durationMs": 383,
       "error": null
     },
     {
@@ -1088,7 +1148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 393,
+      "durationMs": 555,
       "error": null
     },
     {
@@ -1113,7 +1173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 379,
+      "durationMs": 367,
       "error": null
     },
     {
@@ -1138,7 +1198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 575,
+      "durationMs": 589,
       "error": null
     },
     {
@@ -1158,7 +1218,47 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 513,
+      "durationMs": 1268,
+      "error": null
+    },
+    {
+      "url": "https://floridadep.gov/parks/parks-office-park-planning/documents/kissimmee-prairie-preserve-state-park-2018-unit-0",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://floridadep.gov/parks/parks-office-park-planning/documents/kissimmee-prairie-preserve-state-park-2018-unit-0",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 384,
+      "error": null
+    },
+    {
+      "url": "https://floridadep.gov/parks/parks/documents/kissimmee-prairie-2025-cso-report",
+      "references": [
+        {
+          "destinationId": "kissimmee-prairie",
+          "kind": "guide",
+          "sourceId": "kissimmee-prairie-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://floridadep.gov/parks/parks/documents/kissimmee-prairie-2025-cso-report",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 511,
       "error": null
     },
     {
@@ -1178,7 +1278,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf;charset=UTF-8",
-      "durationMs": 953,
+      "durationMs": 729,
       "error": null
     },
     {
@@ -1208,7 +1308,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 968,
+      "durationMs": 736,
       "error": null
     },
     {
@@ -1228,7 +1328,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 765,
+      "durationMs": 733,
       "error": null
     },
     {
@@ -1248,7 +1348,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3768,
+      "durationMs": 167,
       "error": null
     },
     {
@@ -1273,7 +1373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2946,
+      "durationMs": 171,
       "error": null
     },
     {
@@ -1293,7 +1393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3215,
+      "durationMs": 167,
       "error": null
     },
     {
@@ -1318,7 +1418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 105,
+      "durationMs": 128,
       "error": null
     },
     {
@@ -1338,7 +1438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 87,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -1358,7 +1458,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 426,
+      "durationMs": 408,
       "error": null
     },
     {
@@ -1383,7 +1483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1197,
+      "durationMs": 202,
       "error": null
     },
     {
@@ -1403,7 +1503,52 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1106,
+      "durationMs": 186,
+      "error": null
+    },
+    {
+      "url": "https://gondwana-collection.com/accommodation/palmwag-lodge",
+      "references": [
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-4"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "site",
+          "siteId": "damaraland-palmwag"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://gondwana-collection.com/accommodation/palmwag-lodge",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=utf-8",
+      "durationMs": 1304,
+      "error": null
+    },
+    {
+      "url": "https://gondwana-collection.com/hubfs/Gondwana%20Website/03%20ABOUT%20US/Investors/Gondwana_ValueCreationReport_2023.pdf?hsLang=en",
+      "references": [
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://gondwana-collection.com/hubfs/Gondwana%20Website/03%20ABOUT%20US/Investors/Gondwana_ValueCreationReport_2023.pdf?hsLang=en",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 111,
       "error": null
     },
     {
@@ -1423,7 +1568,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 175,
+      "durationMs": 109,
       "error": null
     },
     {
@@ -1443,7 +1588,47 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 120,
+      "durationMs": 102,
+      "error": null
+    },
+    {
+      "url": "https://gujarattourism.com/fair-and-festival/rann-utsav.html",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://gujarattourism.com/fair-and-festival/rann-utsav.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 475,
+      "error": null
+    },
+    {
+      "url": "https://gujarattourism.com/kutch-zone/kutch/kalo-dungar.html",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://gujarattourism.com/kutch-zone/kutch/kalo-dungar.html",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 484,
       "error": null
     },
     {
@@ -1463,7 +1648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 188,
+      "durationMs": 206,
       "error": null
     },
     {
@@ -1488,7 +1673,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 510,
+      "durationMs": 503,
       "error": null
     },
     {
@@ -1508,7 +1693,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 478,
+      "durationMs": 499,
       "error": null
     },
     {
@@ -1528,7 +1713,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 329,
+      "durationMs": 713,
       "error": null
     },
     {
@@ -1553,7 +1738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 236,
+      "durationMs": 488,
       "error": null
     },
     {
@@ -1573,7 +1758,97 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 892,
+      "durationMs": 923,
+      "error": null
+    },
+    {
+      "url": "https://mail.drakensberghikes.com/images/downloads/EKZNW_2025_2026.pdf",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://mail.drakensberghikes.com/images/downloads/EKZNW_2025_2026.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 574,
+      "error": null
+    },
+    {
+      "url": "https://mapcarta.com/N2416284803",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-4"
+        },
+        {
+          "destinationId": "drakensberg",
+          "kind": "site",
+          "siteId": "drakensberg-didima-resort"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://mapcarta.com/N2416284803",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 109,
+      "error": null
+    },
+    {
+      "url": "https://mapcarta.com/W87507638",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-6"
+        },
+        {
+          "destinationId": "sani-pass",
+          "kind": "site",
+          "siteId": "sani-top"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://mapcarta.com/W87507638",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 145,
+      "error": null
+    },
+    {
+      "url": "https://mapcarta.com/W87555957",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://mapcarta.com/W87555957",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 136,
       "error": null
     },
     {
@@ -1593,7 +1868,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 349,
+      "durationMs": 396,
       "error": null
     },
     {
@@ -1613,7 +1888,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 308,
+      "durationMs": 365,
       "error": null
     },
     {
@@ -1633,7 +1908,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 435,
+      "durationMs": 383,
       "error": null
     },
     {
@@ -1653,7 +1928,177 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=ISO-8859-1",
-      "durationMs": 324,
+      "durationMs": 392,
+      "error": null
+    },
+    {
+      "url": "https://maps.google.com/?q=23.806227,69.512355",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-9"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://maps.google.com/maps?q=23.806227,69.512355",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html; charset=ISO-8859-1",
+      "durationMs": 1472,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 966,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/accommodation-and-prices/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-2"
+        },
+        {
+          "destinationId": "mapungubwe",
+          "kind": "site",
+          "siteId": "mapungubwe-leokwe-rest-camp"
+        },
+        {
+          "destinationId": "mapungubwe",
+          "kind": "site",
+          "siteId": "mapungubwe-mazhou-campsite"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/accommodation-and-prices/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 962,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/activities-and-facilities/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/activities-and-facilities/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 1012,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/camp-layout/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/camp-layout/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 951,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/contact-us/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/contact-us/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 983,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/faqs",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-7"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/faqs/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html",
+      "durationMs": 1238,
+      "error": null
+    },
+    {
+      "url": "https://mapungubwenationalpark.co.za/gate-times/",
+      "references": [
+        {
+          "destinationId": "mapungubwe",
+          "kind": "guide",
+          "sourceId": "mapungubwe-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://mapungubwenationalpark.co.za/gate-times/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 951,
       "error": null
     },
     {
@@ -1678,7 +2123,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 937,
+      "durationMs": 787,
       "error": null
     },
     {
@@ -1698,7 +2143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 917,
+      "durationMs": 847,
       "error": null
     },
     {
@@ -1723,7 +2168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 792,
+      "durationMs": 1087,
       "error": null
     },
     {
@@ -1743,7 +2188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 548,
+      "durationMs": 588,
       "error": null
     },
     {
@@ -1763,7 +2208,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 62,
+      "durationMs": 88,
       "error": null
     },
     {
@@ -1783,7 +2228,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 125,
+      "durationMs": 149,
       "error": null
     },
     {
@@ -1808,7 +2253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 730,
+      "durationMs": 434,
       "error": null
     },
     {
@@ -1828,7 +2273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 418,
+      "durationMs": 411,
       "error": null
     },
     {
@@ -1848,7 +2293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 371,
+      "durationMs": 357,
       "error": null
     },
     {
@@ -1868,7 +2313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 631,
+      "durationMs": 113,
       "error": null
     },
     {
@@ -1888,7 +2333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 383,
+      "durationMs": 81,
       "error": null
     },
     {
@@ -1913,7 +2358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 909,
+      "durationMs": 764,
       "error": null
     },
     {
@@ -1933,7 +2378,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 858,
+      "durationMs": 630,
       "error": null
     },
     {
@@ -1953,7 +2398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 856,
+      "durationMs": 825,
       "error": null
     },
     {
@@ -1973,7 +2418,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 931,
+      "durationMs": 843,
       "error": null
     },
     {
@@ -1993,7 +2438,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1551,
+      "durationMs": 626,
       "error": null
     },
     {
@@ -2018,7 +2463,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1856,
+      "durationMs": 637,
       "error": null
     },
     {
@@ -2038,7 +2483,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 303,
+      "durationMs": 193,
       "error": null
     },
     {
@@ -2058,7 +2503,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 102,
+      "durationMs": 85,
       "error": null
     },
     {
@@ -2078,7 +2523,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 280,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -2098,7 +2543,87 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 158,
+      "durationMs": 94,
+      "error": null
+    },
+    {
+      "url": "https://rannutsav.net/experience",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://rannutsav.net/experience",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 852,
+      "error": null
+    },
+    {
+      "url": "https://rannutsav.net/official-rann-utsav-website/",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://rannutsav.net/official-rann-utsav-website/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1191,
+      "error": null
+    },
+    {
+      "url": "https://rannutsav.net/rann-utsav-packages/",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://rannutsav.net/rann-utsav-packages/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1205,
+      "error": null
+    },
+    {
+      "url": "https://rannutsav.net/special-dates-at-rann-utsav/",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://rannutsav.net/special-dates-at-rann-utsav/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1464,
       "error": null
     },
     {
@@ -2118,7 +2643,207 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 287,
+      "durationMs": 181,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 939,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/accommodation-and-prices/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-2"
+        },
+        {
+          "destinationId": "richtersveld",
+          "kind": "site",
+          "siteId": "richtersveld-potjiespram"
+        },
+        {
+          "destinationId": "richtersveld",
+          "kind": "site",
+          "siteId": "richtersveld-de-hoop"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/accommodation-and-prices/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 934,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/activities-and-facilities/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/activities-and-facilities/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 933,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/camp-layout",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/camp-layout/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html",
+      "durationMs": 1176,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/contact-us/",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-4"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/contact-us/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html",
+      "durationMs": 950,
+      "error": null
+    },
+    {
+      "url": "https://richtersveldnationalpark.co.za/gate-times",
+      "references": [
+        {
+          "destinationId": "richtersveld",
+          "kind": "guide",
+          "sourceId": "richtersveld-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "GET",
+      "finalUrl": "https://richtersveldnationalpark.co.za/gate-times/",
+      "redirected": true,
+      "redirectCount": 1,
+      "contentType": "text/html",
+      "durationMs": 1155,
+      "error": null
+    },
+    {
+      "url": "https://salardeuyunitour.com/en/tour/star-tour-stargazing",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-1"
+        },
+        {
+          "destinationId": "uyuni",
+          "kind": "site",
+          "siteId": "uyuni-salt-flat"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://salardeuyunitour.com/en/tour/star-tour-stargazing",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 495,
+      "error": null
+    },
+    {
+      "url": "https://sanimountain.co.za/lesotho-accommodation/",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-2"
+        },
+        {
+          "destinationId": "sani-pass",
+          "kind": "site",
+          "siteId": "sani-pass-border"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://sanimountain.co.za/lesotho-accommodation/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1668,
+      "error": null
+    },
+    {
+      "url": "https://sanimountain.co.za/visitor-information/",
+      "references": [
+        {
+          "destinationId": "sani-pass",
+          "kind": "guide",
+          "sourceId": "sani-pass-source-1"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://sanimountain.co.za/visitor-information/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1596,
       "error": null
     },
     {
@@ -2138,7 +2863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 651,
+      "durationMs": 594,
       "error": null
     },
     {
@@ -2147,7 +2872,7 @@
         {
           "destinationId": "enchanted-rock",
           "kind": "guide",
-          "sourceId": "enchanted-rock-source-5"
+          "sourceId": "enchanted-rock-source-4"
         }
       ],
       "https": true,
@@ -2158,7 +2883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 522,
+      "durationMs": 256,
       "error": null
     },
     {
@@ -2178,7 +2903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 288,
+      "durationMs": 221,
       "error": null
     },
     {
@@ -2208,7 +2933,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 264,
+      "durationMs": 215,
       "error": null
     },
     {
@@ -2228,7 +2953,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 291,
+      "durationMs": 244,
       "error": null
     },
     {
@@ -2248,7 +2973,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1586,
+      "durationMs": 552,
       "error": null
     },
     {
@@ -2268,7 +2993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 374,
+      "durationMs": 240,
       "error": null
     },
     {
@@ -2288,7 +3013,67 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 346,
+      "durationMs": 237,
+      "error": null
+    },
+    {
+      "url": "https://serviciosturisticos.sernatur.cl/21881-errante-ecolodge",
+      "references": [
+        {
+          "destinationId": "isla-navarino",
+          "kind": "guide",
+          "sourceId": "isla-navarino-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://serviciosturisticos.sernatur.cl/21881-errante-ecolodge",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1851,
+      "error": null
+    },
+    {
+      "url": "https://serviciosturisticos.sernatur.cl/7199-turismo-aventura-shila",
+      "references": [
+        {
+          "destinationId": "isla-navarino",
+          "kind": "guide",
+          "sourceId": "isla-navarino-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://serviciosturisticos.sernatur.cl/7199-turismo-aventura-shila",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1861,
+      "error": null
+    },
+    {
+      "url": "https://siretur.turismoyculturas.gob.bo/cru",
+      "references": [
+        {
+          "destinationId": "uyuni",
+          "kind": "guide",
+          "sourceId": "uyuni-source-5"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://siretur.turismoyculturas.gob.bo/cru",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 641,
       "error": null
     },
     {
@@ -2313,7 +3098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 412,
+      "durationMs": 393,
       "error": null
     },
     {
@@ -2333,7 +3118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 410,
+      "durationMs": 370,
       "error": null
     },
     {
@@ -2353,7 +3138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 431,
+      "durationMs": 393,
       "error": null
     },
     {
@@ -2373,7 +3158,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 166,
+      "durationMs": 83,
       "error": null
     },
     {
@@ -2398,7 +3183,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 144,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -2418,7 +3203,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 949,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -2448,7 +3233,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 934,
+      "durationMs": 85,
+      "error": null
+    },
+    {
+      "url": "https://stateparks.utah.gov/parks/coral-pink/current-conditions/",
+      "references": [
+        {
+          "destinationId": "coral-pink-sand-dunes",
+          "kind": "guide",
+          "sourceId": "coral-pink-sand-dunes-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://stateparks.utah.gov/parks/coral-pink/current-conditions/",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 72,
       "error": null
     },
     {
@@ -2468,7 +3273,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 143,
+      "durationMs": 100,
+      "error": null
+    },
+    {
+      "url": "https://stwetuproduction.blob.core.windows.net/azure-blob-resources-wetu-production/Resources/1563%2F1745332405430_TCL-2025--2026---Rack-Rates.pdf",
+      "references": [
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-2"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://stwetuproduction.blob.core.windows.net/azure-blob-resources-wetu-production/Resources/1563%2F1745332405430_TCL-2025--2026---Rack-Rates.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 160,
       "error": null
     },
     {
@@ -2488,7 +3313,7 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1202,
+      "durationMs": 1207,
       "error": null
     },
     {
@@ -2513,7 +3338,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 867,
+      "durationMs": 850,
       "error": null
     },
     {
@@ -2533,7 +3358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 115,
+      "durationMs": 131,
       "error": null
     },
     {
@@ -2553,7 +3378,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 109,
+      "durationMs": 117,
       "error": null
     },
     {
@@ -2577,87 +3402,7 @@
       "error": null
     },
     {
-      "url": "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-4"
-        }
-      ],
-      "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 879,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
-    },
-    {
-      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-1"
-        }
-      ],
-      "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 857,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
-    },
-    {
-      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "site",
-          "siteId": "enchanted-rock-walk-in-tent-sites"
-        }
-      ],
-      "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 813,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/fees-facilities/campsites\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
-    },
-    {
-      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
-      "references": [
-        {
-          "destinationId": "enchanted-rock",
-          "kind": "guide",
-          "sourceId": "enchanted-rock-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 593,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
-    },
-    {
-      "url": "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
+      "url": "https://texasstateparks.reserveamerica.com/camping/enchanted-rock-state-natural-area/r/campgroundDetails.do?contractCode=TX&parkId=1200056",
       "references": [
         {
           "destinationId": "enchanted-rock",
@@ -2667,19 +3412,44 @@
         {
           "destinationId": "enchanted-rock",
           "kind": "site",
+          "siteId": "enchanted-rock-walk-in-tent-sites"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://texasstateparks.reserveamerica.com/camping/enchanted-rock-state-natural-area/r/campgroundDetails.do?contractCode=TX&parkId=1200056",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 641,
+      "error": null
+    },
+    {
+      "url": "https://texasstateparks.reserveamerica.com/explore/enchanted-rock-state-natural-area/TX/732",
+      "references": [
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "guide",
+          "sourceId": "enchanted-rock-source-1"
+        },
+        {
+          "destinationId": "enchanted-rock",
+          "kind": "site",
           "siteId": "enchanted-rock-loop-trail-d2"
         }
       ],
       "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://texasstateparks.reserveamerica.com/explore/enchanted-rock-state-natural-area/TX/732",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 588,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info\ncurl: (60) SSL certificate problem: unable to get local issuer certificate\nMore details here: https://curl.se/docs/sslcerts.html\n\ncurl failed to verify the legitimacy of the server and therefore could not\nestablish a secure connection to it. To learn more about this situation and\nhow to fix it, please visit the web page mentioned above.\n"
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 568,
+      "error": null
     },
     {
       "url": "https://traunsee-almtal.salzkammergut.at/oesterreich-tour/detail/430006480/wohlfuehlweg-taferlklaussee.html",
@@ -2698,7 +3468,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 280,
+      "durationMs": 297,
       "error": null
     },
     {
@@ -2728,7 +3498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2982,
+      "durationMs": 3871,
       "error": null
     },
     {
@@ -2748,7 +3518,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2774,
+      "durationMs": 3824,
       "error": null
     },
     {
@@ -2768,7 +3538,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 213,
+      "durationMs": 210,
       "error": null
     },
     {
@@ -2793,7 +3563,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 210,
+      "durationMs": 201,
       "error": null
     },
     {
@@ -2818,7 +3588,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 175,
+      "durationMs": 137,
       "error": null
     },
     {
@@ -2838,7 +3608,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 217,
+      "durationMs": 255,
       "error": null
     },
     {
@@ -2858,7 +3628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 245,
+      "durationMs": 248,
       "error": null
     },
     {
@@ -2883,27 +3653,32 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 241,
+      "durationMs": 240,
       "error": null
     },
     {
-      "url": "https://ugandawildlife.org/",
+      "url": "https://twyfelfontein.com.na/activities/",
       "references": [
         {
-          "destinationId": "kidepo-valley",
+          "destinationId": "northern-damaraland",
           "kind": "guide",
-          "sourceId": "kidepo-valley-source-2"
+          "sourceId": "northern-damaraland-source-1"
+        },
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "site",
+          "siteId": "damaraland-twyfelfontein"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://ugandawildlife.org/",
+      "finalUrl": "https://twyfelfontein.com.na/activities/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 604,
       "error": null
     },
     {
@@ -2918,11 +3693,6 @@
           "destinationId": "kidepo-valley",
           "kind": "site",
           "siteId": "kidepo-narus"
-        },
-        {
-          "destinationId": "kidepo-valley",
-          "kind": "site",
-          "siteId": "kidepo-kanangorok"
         }
       ],
       "https": true,
@@ -2937,57 +3707,92 @@
       "error": null
     },
     {
-      "url": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
+      "url": "https://ugandawildlife.org/news/uwa-pledges-support-for-concessionaires/",
       "references": [
         {
-          "destinationId": "northern-damaraland",
+          "destinationId": "kidepo-valley",
           "kind": "guide",
-          "sourceId": "northern-damaraland-source-1"
-        },
-        {
-          "destinationId": "northern-damaraland",
-          "kind": "site",
-          "siteId": "damaraland-twyfelfontein"
-        },
-        {
-          "destinationId": "northern-damaraland",
-          "kind": "site",
-          "siteId": "damaraland-palmwag"
+          "sourceId": "kidepo-valley-source-2"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://visitnamibia.com.na/2022/02/damaraland-kaokoland/",
+      "finalUrl": "https://ugandawildlife.org/news/uwa-pledges-support-for-concessionaires/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 5368,
+      "durationMs": 51,
       "error": null
     },
     {
-      "url": "https://whc.unesco.org/en/list/985/",
+      "url": "https://ugandawildlife.org/news/uwa-signs-three-concession-agreements-with-private-investors/",
       "references": [
         {
-          "destinationId": "drakensberg",
+          "destinationId": "kidepo-valley",
           "kind": "guide",
-          "sourceId": "drakensberg-source-3"
+          "sourceId": "kidepo-valley-source-4"
         }
       ],
       "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://whc.unesco.org/en/list/985/",
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://ugandawildlife.org/news/uwa-signs-three-concession-agreements-with-private-investors/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
+      "durationMs": 50,
       "error": null
     },
     {
-      "url": "https://www.anantara.com/en/jabal-akhdar",
+      "url": "https://ugandawildlife.org/wp-content/uploads/2024/05/KVNP-2018-4.pdf",
+      "references": [
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "guide",
+          "sourceId": "kidepo-valley-source-3"
+        },
+        {
+          "destinationId": "kidepo-valley",
+          "kind": "site",
+          "siteId": "kidepo-kanangorok"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://ugandawildlife.org/wp-content/uploads/2024/05/KVNP-2018-4.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 56,
+      "error": null
+    },
+    {
+      "url": "https://visitnamibia.com.na/wp-content/uploads/2022/03/ARID_EDEN_DIGITAL_BROCHURE_FINAL.pdf",
+      "references": [
+        {
+          "destinationId": "northern-damaraland",
+          "kind": "guide",
+          "sourceId": "northern-damaraland-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://visitnamibia.com.na/wp-content/uploads/2022/03/ARID_EDEN_DIGITAL_BROCHURE_FINAL.pdf",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 672,
+      "error": null
+    },
+    {
+      "url": "https://www.anantara.com/uploads/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/anantara-al-jabal-discovery-guide.pdf",
       "references": [
         {
           "destinationId": "jebel-akhdar",
@@ -3001,18 +3806,18 @@
         }
       ],
       "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.anantara.com/en/jabal-akhdar",
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.anantara.com/uploads/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/anantara-al-jabal-discovery-guide.pdf",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 198,
+      "contentType": "application/pdf",
+      "durationMs": 387,
       "error": null
     },
     {
-      "url": "https://www.anantara.com/en/jabal-akhdar/contact",
+      "url": "https://www.anantara.com/~/media/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/hotel-info/anantara_al_jabal_al_akhdar_brochure.pdf",
       "references": [
         {
           "destinationId": "jebel-akhdar",
@@ -3021,34 +3826,14 @@
         }
       ],
       "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.anantara.com/en/jabal-akhdar/contact",
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.anantara.com/~/media/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/hotel-info/anantara_al_jabal_al_akhdar_brochure.pdf",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 156,
-      "error": null
-    },
-    {
-      "url": "https://www.anantara.com/en/jabal-akhdar/offers/discover-celestial-wonders",
-      "references": [
-        {
-          "destinationId": "jebel-akhdar",
-          "kind": "guide",
-          "sourceId": "jebel-akhdar-source-7"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.anantara.com/en/jabal-akhdar/offers/discover-celestial-wonders",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 163,
+      "contentType": "application/pdf",
+      "durationMs": 383,
       "error": null
     },
     {
@@ -3068,7 +3853,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 361,
+      "durationMs": 86,
       "error": null
     },
     {
@@ -3088,7 +3873,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 949,
+      "durationMs": 79,
       "error": null
     },
     {
@@ -3128,7 +3913,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 177,
+      "durationMs": 194,
       "error": null
     },
     {
@@ -3153,7 +3938,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 171,
+      "durationMs": 203,
       "error": null
     },
     {
@@ -3173,7 +3958,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 799,
+      "durationMs": 197,
+      "error": null
+    },
+    {
+      "url": "https://www.blm.gov/blog/2025-04-21/12-spectacular-blm-stargazing-sites",
+      "references": [
+        {
+          "destinationId": "massacre-rim",
+          "kind": "guide",
+          "sourceId": "massacre-rim-source-10"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.blm.gov/blog/2025-04-21/12-spectacular-blm-stargazing-sites",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 184,
       "error": null
     },
     {
@@ -3193,7 +3998,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 767,
+      "durationMs": 161,
       "error": null
     },
     {
@@ -3213,7 +4018,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 821,
+      "durationMs": 300,
       "error": null
     },
     {
@@ -3233,7 +4038,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 770,
+      "durationMs": 280,
       "error": null
     },
     {
@@ -3253,7 +4058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 334,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -3273,7 +4078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 326,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -3293,7 +4098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 316,
+      "durationMs": 65,
       "error": null
     },
     {
@@ -3313,7 +4118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3586,
+      "durationMs": 175,
       "error": null
     },
     {
@@ -3338,7 +4143,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 736,
+      "durationMs": 158,
       "error": null
     },
     {
@@ -3363,7 +4168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3143,
+      "durationMs": 174,
       "error": null
     },
     {
@@ -3388,33 +4193,23 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 3502,
+      "durationMs": 168,
       "error": null
     },
     {
-      "url": "https://www.conaf.cl/parques-nacionales/",
+      "url": "https://www.conaf.cl/parque_nacionales/parque-nacional-alberto-de-agostini/",
       "references": [
         {
           "destinationId": "isla-navarino",
           "kind": "guide",
-          "sourceId": "isla-navarino-source-1"
-        },
-        {
-          "destinationId": "isla-navarino",
-          "kind": "site",
-          "siteId": "navarino-puerto-williams"
-        },
-        {
-          "destinationId": "isla-navarino",
-          "kind": "site",
-          "siteId": "navarino-dientes"
+          "sourceId": "isla-navarino-source-4"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.conaf.cl/parques-nacionales/",
+      "finalUrl": "https://www.conaf.cl/parque_nacionales/parque-nacional-alberto-de-agostini/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
@@ -3422,7 +4217,27 @@
       "error": null
     },
     {
-      "url": "https://www.dcr.virginia.gov/",
+      "url": "https://www.dcr.virginia.gov/state-parks/blog/how-to-have-stargazing-adventure-in-vsp",
+      "references": [
+        {
+          "destinationId": "staunton-river",
+          "kind": "guide",
+          "sourceId": "staunton-river-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.dcr.virginia.gov/state-parks/blog/how-to-have-stargazing-adventure-in-vsp",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 444,
+      "error": null
+    },
+    {
+      "url": "https://www.dcr.virginia.gov/state-parks/dark-sky-parks",
       "references": [
         {
           "destinationId": "staunton-river",
@@ -3434,11 +4249,11 @@
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.dcr.virginia.gov/",
+      "finalUrl": "https://www.dcr.virginia.gov/state-parks/dark-sky-parks",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 404,
+      "durationMs": 516,
       "error": null
     },
     {
@@ -3468,7 +4283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 312,
+      "durationMs": 475,
       "error": null
     },
     {
@@ -3488,7 +4303,32 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 243,
+      "durationMs": 199,
+      "error": null
+    },
+    {
+      "url": "https://www.dizcoverpraveg.com/whiterannresort",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-8"
+        },
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "site",
+          "siteId": "rann-white-rann-resort"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.dizcoverpraveg.com/whiterannresort",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 574,
       "error": null
     },
     {
@@ -3513,7 +4353,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 449,
+      "durationMs": 420,
       "error": null
     },
     {
@@ -3533,7 +4373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 503,
+      "durationMs": 461,
       "error": null
     },
     {
@@ -3553,7 +4393,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2288,
+      "durationMs": 1562,
       "error": null
     },
     {
@@ -3573,7 +4413,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 473,
+      "durationMs": 442,
       "error": null
     },
     {
@@ -3582,7 +4422,7 @@
         {
           "destinationId": "jebel-akhdar",
           "kind": "guide",
-          "sourceId": "jebel-akhdar-source-8"
+          "sourceId": "jebel-akhdar-source-7"
         }
       ],
       "https": true,
@@ -3593,7 +4433,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 1675,
+      "durationMs": 1470,
       "error": null
     },
     {
@@ -3613,7 +4453,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 124,
+      "durationMs": 113,
       "error": null
     },
     {
@@ -3638,7 +4478,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 126,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -3658,7 +4498,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 82,
+      "durationMs": 70,
       "error": null
     },
     {
@@ -3678,7 +4518,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 79,
+      "durationMs": 75,
+      "error": null
+    },
+    {
+      "url": "https://www.etenders.gov.za/home/Download/?blobName=6b25c1a2-6b08-4d03-8df8-a4d8a7fd2db9.pdf&downloadedFileName=Request+for+proposal+",
+      "references": [
+        {
+          "destinationId": "drakensberg",
+          "kind": "guide",
+          "sourceId": "drakensberg-source-6"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.etenders.gov.za/home/Download/?blobName=6b25c1a2-6b08-4d03-8df8-a4d8a7fd2db9.pdf&downloadedFileName=Request+for+proposal+",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "application/pdf",
+      "durationMs": 922,
       "error": null
     },
     {
@@ -3698,7 +4558,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 161,
+      "durationMs": 105,
       "error": null
     },
     {
@@ -3723,7 +4583,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 118,
+      "durationMs": 127,
       "error": null
     },
     {
@@ -3743,7 +4603,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 122,
+      "durationMs": 112,
       "error": null
     },
     {
@@ -3768,77 +4628,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=utf-8",
-      "durationMs": 132,
-      "error": null
-    },
-    {
-      "url": "https://www.floridastateparks.org/learn/dark-sky-designation",
-      "references": [
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-1"
-        },
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "site",
-          "siteId": "kissimmee-astronomy-pad-a"
-        },
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "site",
-          "siteId": "kissimmee-entrance-pavilion"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.floridastateparks.org/learn/dark-sky-designation",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 55,
-      "error": null
-    },
-    {
-      "url": "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
-      "references": [
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 61,
-      "error": null
-    },
-    {
-      "url": "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
-      "references": [
-        {
-          "destinationId": "kissimmee-prairie",
-          "kind": "guide",
-          "sourceId": "kissimmee-prairie-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 58,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -3858,7 +4648,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 1142,
+      "durationMs": 800,
       "error": null
     },
     {
@@ -3878,47 +4668,27 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1261,
+      "durationMs": 918,
       "error": null
     },
     {
-      "url": "https://www.gob.cl/en/",
+      "url": "https://www.gob.bo/tramites/licencia-turistica-de-prestadores-de-servicios-turisticos",
       "references": [
         {
-          "destinationId": "isla-navarino",
+          "destinationId": "uyuni",
           "kind": "guide",
-          "sourceId": "isla-navarino-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.gob.cl/en/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
-      "error": null
-    },
-    {
-      "url": "https://www.gov.ls/",
-      "references": [
-        {
-          "destinationId": "sani-pass",
-          "kind": "guide",
-          "sourceId": "sani-pass-source-2"
+          "sourceId": "uyuni-source-4"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.gov.ls/",
+      "finalUrl": "https://www.gob.bo/tramites/licencia-turistica-de-prestadores-de-servicios-turisticos",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3947,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 970,
       "error": null
     },
     {
@@ -3938,7 +4708,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 262,
+      "durationMs": 153,
       "error": null
     },
     {
@@ -3958,7 +4728,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 209,
+      "durationMs": 138,
       "error": null
     },
     {
@@ -3983,7 +4753,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 218,
+      "durationMs": 148,
       "error": null
     },
     {
@@ -4008,117 +4778,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 354,
+      "durationMs": 404,
       "error": null
     },
     {
-      "url": "https://www.gujarattourism.com/",
+      "url": "https://www.homeaffairs.gov.ls/immigration/",
       "references": [
         {
-          "destinationId": "rann-of-kutch",
+          "destinationId": "sani-pass",
           "kind": "guide",
-          "sourceId": "rann-of-kutch-source-1"
-        },
-        {
-          "destinationId": "rann-of-kutch",
-          "kind": "site",
-          "siteId": "rann-dhordo"
-        },
-        {
-          "destinationId": "rann-of-kutch",
-          "kind": "site",
-          "siteId": "rann-kalo-dungar"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.gujarattourism.com/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html",
-      "durationMs": 181,
-      "error": null
-    },
-    {
-      "url": "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
-      "references": [
-        {
-          "destinationId": "rann-of-kutch",
-          "kind": "guide",
-          "sourceId": "rann-of-kutch-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html",
-      "durationMs": 185,
-      "error": null
-    },
-    {
-      "url": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar",
-      "references": [
-        {
-          "destinationId": "jebel-akhdar",
-          "kind": "guide",
-          "sourceId": "jebel-akhdar-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html",
-      "durationMs": 83,
-      "error": null
-    },
-    {
-      "url": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar/faqs",
-      "references": [
-        {
-          "destinationId": "jebel-akhdar",
-          "kind": "guide",
-          "sourceId": "jebel-akhdar-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar/faqs",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html",
-      "durationMs": 78,
-      "error": null
-    },
-    {
-      "url": "https://www.incredibleindia.gov.in/en/gujarat",
-      "references": [
-        {
-          "destinationId": "rann-of-kutch",
-          "kind": "guide",
-          "sourceId": "rann-of-kutch-source-3"
+          "sourceId": "sani-pass-source-3"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.incredibleindia.gov.in/en/gujarat",
+      "finalUrl": "https://www.homeaffairs.gov.ls/immigration/",
       "redirected": false,
       "redirectCount": 0,
-      "contentType": "text/html;charset=utf-8",
-      "durationMs": 169,
+      "contentType": "text/html; charset=UTF-8",
+      "durationMs": 1674,
       "error": null
     },
     {
@@ -4143,7 +4823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 208,
+      "durationMs": 817,
       "error": null
     },
     {
@@ -4163,27 +4843,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 111,
+      "durationMs": 121,
       "error": null
     },
     {
-      "url": "https://www.kznwildlife.com/",
+      "url": "https://www.kznwildlife.com/downloads/03-Management-Plans/Approved/2022%20-%20uKhahlamba%20Drakensberg%20Park%20Integrated%20Management%20Plan%20Revision.pdf",
       "references": [
         {
           "destinationId": "drakensberg",
           "kind": "guide",
-          "sourceId": "drakensberg-source-2"
+          "sourceId": "drakensberg-source-7"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.kznwildlife.com/",
+      "finalUrl": "https://www.kznwildlife.com/downloads/03-Management-Plans/Approved/2022%20-%20uKhahlamba%20Drakensberg%20Park%20Integrated%20Management%20Plan%20Revision.pdf",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 310,
+      "durationMs": 82,
       "error": null
     },
     {
@@ -4203,7 +4883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 560,
+      "durationMs": 507,
       "error": null
     },
     {
@@ -4223,7 +4903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 68,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -4248,7 +4928,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 645,
+      "durationMs": 445,
       "error": null
     },
     {
@@ -4268,7 +4948,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 617,
+      "durationMs": 414,
       "error": null
     },
     {
@@ -4288,7 +4968,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 87,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -4313,7 +4993,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 72,
       "error": null
     },
     {
@@ -4333,7 +5013,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
+      "durationMs": 71,
       "error": null
     },
     {
@@ -4353,7 +5033,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -4378,27 +5058,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 71,
-      "error": null
-    },
-    {
-      "url": "https://www.meft.gov.na/",
-      "references": [
-        {
-          "destinationId": "northern-damaraland",
-          "kind": "guide",
-          "sourceId": "northern-damaraland-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.meft.gov.na/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 796,
+      "durationMs": 72,
       "error": null
     },
     {
@@ -4418,7 +5078,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 126,
+      "durationMs": 119,
       "error": null
     },
     {
@@ -4438,7 +5098,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 172,
+      "durationMs": 106,
       "error": null
     },
     {
@@ -4458,7 +5118,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1091,
+      "durationMs": 1045,
       "error": null
     },
     {
@@ -4478,27 +5138,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 1020,
-      "error": null
-    },
-    {
-      "url": "https://www.nacso.org.na/",
-      "references": [
-        {
-          "destinationId": "northern-damaraland",
-          "kind": "guide",
-          "sourceId": "northern-damaraland-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://nacso.org.na/",
-      "redirected": true,
-      "redirectCount": 1,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2573,
+      "durationMs": 1017,
       "error": null
     },
     {
@@ -4538,7 +5178,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 923,
+      "durationMs": 920,
       "error": null
     },
     {
@@ -4558,7 +5198,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 856,
+      "durationMs": 861,
       "error": null
     },
     {
@@ -4578,7 +5218,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 941,
+      "durationMs": 883,
       "error": null
     },
     {
@@ -4598,7 +5238,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 784,
+      "durationMs": 1169,
       "error": null
     },
     {
@@ -4618,7 +5258,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 104,
+      "durationMs": 98,
       "error": null
     },
     {
@@ -4643,7 +5283,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 71,
+      "durationMs": 66,
       "error": null
     },
     {
@@ -4673,7 +5313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 77,
+      "durationMs": 61,
       "error": null
     },
     {
@@ -4693,7 +5333,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 54,
+      "durationMs": 63,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/cebr/planyourvisit/experience-dark-night-skies.htm",
+      "references": [
+        {
+          "destinationId": "cedar-breaks",
+          "kind": "guide",
+          "sourceId": "cedar-breaks-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/cebr/planyourvisit/experience-dark-night-skies.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 57,
       "error": null
     },
     {
@@ -4713,7 +5373,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 52,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -4738,7 +5398,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 57,
+      "durationMs": 56,
       "error": null
     },
     {
@@ -4768,7 +5428,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 56,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -4788,7 +5448,27 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 58,
+      "error": null
+    },
+    {
+      "url": "https://www.nps.gov/lavo/planyourvisit/stargazing.htm",
+      "references": [
+        {
+          "destinationId": "lassen-volcanic",
+          "kind": "guide",
+          "sourceId": "lassen-volcanic-source-3"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.nps.gov/lavo/planyourvisit/stargazing.htm",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html;charset=UTF-8",
+      "durationMs": 59,
       "error": null
     },
     {
@@ -4808,7 +5488,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 51,
+      "durationMs": 56,
       "error": null
     },
     {
@@ -4828,7 +5508,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 60,
+      "durationMs": 56,
       "error": null
     },
     {
@@ -4853,7 +5533,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -4873,7 +5553,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 57,
       "error": null
     },
     {
@@ -4893,7 +5573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 56,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -4913,7 +5593,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 58,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -4933,7 +5613,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 63,
       "error": null
     },
     {
@@ -4953,7 +5633,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 62,
       "error": null
     },
     {
@@ -4973,7 +5653,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 172,
+      "durationMs": 187,
       "error": null
     },
     {
@@ -4993,7 +5673,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 203,
+      "durationMs": 172,
       "error": null
     },
     {
@@ -5018,7 +5698,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 59,
       "error": null
     },
     {
@@ -5038,7 +5718,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 53,
+      "durationMs": 58,
       "error": null
     },
     {
@@ -5058,7 +5738,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 55,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -5078,7 +5758,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 658,
+      "durationMs": 964,
       "error": null
     },
     {
@@ -5103,7 +5783,7 @@
       "redirected": true,
       "redirectCount": 2,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 590,
+      "durationMs": 947,
       "error": null
     },
     {
@@ -5123,7 +5803,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 472,
+      "durationMs": 330,
       "error": null
     },
     {
@@ -5143,7 +5823,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 701,
+      "durationMs": 353,
       "error": null
     },
     {
@@ -5163,7 +5843,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 569,
+      "durationMs": 324,
       "error": null
     },
     {
@@ -5183,7 +5863,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 190,
+      "durationMs": 268,
       "error": null
     },
     {
@@ -5203,7 +5883,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 161,
+      "durationMs": 171,
       "error": null
     },
     {
@@ -5223,7 +5903,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 137,
+      "durationMs": 141,
       "error": null
     },
     {
@@ -5243,7 +5923,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 245,
+      "durationMs": 159,
       "error": null
     },
     {
@@ -5263,7 +5943,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 161,
+      "durationMs": 179,
       "error": null
     },
     {
@@ -5272,7 +5952,7 @@
         {
           "destinationId": "oracle-state-park",
           "kind": "guide",
-          "sourceId": "oracle-state-park-source-8"
+          "sourceId": "oracle-state-park-source-7"
         }
       ],
       "https": true,
@@ -5283,7 +5963,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 137,
+      "durationMs": 242,
       "error": null
     },
     {
@@ -5303,7 +5983,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 249,
+      "durationMs": 175,
       "error": null
     },
     {
@@ -5323,7 +6003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 145,
+      "durationMs": 166,
       "error": null
     },
     {
@@ -5343,7 +6023,32 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 171,
+      "durationMs": 223,
+      "error": null
+    },
+    {
+      "url": "https://www.openstreetmap.org/node/9271272718",
+      "references": [
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "guide",
+          "sourceId": "rann-of-kutch-source-7"
+        },
+        {
+          "destinationId": "rann-of-kutch",
+          "kind": "site",
+          "siteId": "rann-utsav-tent-city"
+        }
+      ],
+      "https": true,
+      "classification": "reachable",
+      "status": 200,
+      "method": "HEAD",
+      "finalUrl": "https://www.openstreetmap.org/node/9271272718",
+      "redirected": false,
+      "redirectCount": 0,
+      "contentType": "text/html; charset=utf-8",
+      "durationMs": 137,
       "error": null
     },
     {
@@ -5363,7 +6068,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 170,
+      "durationMs": 164,
       "error": null
     },
     {
@@ -5383,7 +6088,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 249,
+      "durationMs": 271,
       "error": null
     },
     {
@@ -5403,7 +6108,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 269,
+      "durationMs": 180,
       "error": null
     },
     {
@@ -5423,7 +6128,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 163,
+      "durationMs": 180,
       "error": null
     },
     {
@@ -5432,7 +6137,7 @@
         {
           "destinationId": "oracle-state-park",
           "kind": "guide",
-          "sourceId": "oracle-state-park-source-9"
+          "sourceId": "oracle-state-park-source-8"
         }
       ],
       "https": true,
@@ -5443,7 +6148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 319,
+      "durationMs": 176,
       "error": null
     },
     {
@@ -5463,7 +6168,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 173,
+      "durationMs": 186,
       "error": null
     },
     {
@@ -5483,7 +6188,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 203,
+      "durationMs": 191,
       "error": null
     },
     {
@@ -5528,7 +6233,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 535,
+      "durationMs": 139,
       "error": null
     },
     {
@@ -5548,7 +6253,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2590,
+      "durationMs": 2458,
       "error": null
     },
     {
@@ -5568,7 +6273,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2467,
+      "durationMs": 2273,
       "error": null
     },
     {
@@ -5588,7 +6293,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2653,
+      "durationMs": 2740,
       "error": null
     },
     {
@@ -5608,7 +6313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3627,
+      "durationMs": 3434,
       "error": null
     },
     {
@@ -5628,7 +6333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2326,
+      "durationMs": 2443,
       "error": null
     },
     {
@@ -5653,7 +6358,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2255,
+      "durationMs": 2317,
       "error": null
     },
     {
@@ -5678,7 +6383,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2235,
+      "durationMs": 2495,
       "error": null
     },
     {
@@ -5698,7 +6403,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3204,
+      "durationMs": 3221,
       "error": null
     },
     {
@@ -5718,7 +6423,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1736,
+      "durationMs": 2513,
       "error": null
     },
     {
@@ -5743,7 +6448,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1659,
+      "durationMs": 2445,
       "error": null
     },
     {
@@ -5768,7 +6473,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1659,
+      "durationMs": 2478,
       "error": null
     },
     {
@@ -5788,7 +6493,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 2778,
+      "durationMs": 523,
       "error": null
     },
     {
@@ -5802,13 +6507,13 @@
       ],
       "https": true,
       "classification": "reachable",
-      "status": 206,
-      "method": "GET",
+      "status": 200,
+      "method": "HEAD",
       "finalUrl": "https://www.recreation.gov/camping/campgrounds/246892",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 438,
+      "durationMs": 92,
       "error": null
     },
     {
@@ -5822,13 +6527,13 @@
       ],
       "https": true,
       "classification": "reachable",
-      "status": 206,
-      "method": "GET",
+      "status": 200,
+      "method": "HEAD",
       "finalUrl": "https://www.recreation.gov/camping/poi/233396",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 194,
+      "durationMs": 89,
       "error": null
     },
     {
@@ -5842,348 +6547,13 @@
       ],
       "https": true,
       "classification": "reachable",
-      "status": 206,
-      "method": "GET",
+      "status": 200,
+      "method": "HEAD",
       "finalUrl": "https://www.recreation.gov/permits/233396",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 212,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/accommodation",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-2"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/ai-ais-richtersveld/accommodation",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 103,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/entrance-gate",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-6"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/entrance-gate",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 173,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/gps-waypoints",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-1"
-        },
-        {
-          "destinationId": "richtersveld",
-          "kind": "site",
-          "siteId": "richtersveld-potjiespram"
-        },
-        {
-          "destinationId": "richtersveld",
-          "kind": "site",
-          "siteId": "richtersveld-de-hoop"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/gps-waypoints",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 142,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/how-to-get-there",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-5"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/how-to-get-there",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 143,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/ai-ais-richtersveld/useful-information/visitor-tips",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-4"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/ai-ais-richtersveld/useful-information/visitor-tips",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 118,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/maloti-drakensberg",
-      "references": [
-        {
-          "destinationId": "sani-pass",
-          "kind": "guide",
-          "sourceId": "sani-pass-source-3"
-        },
-        {
-          "destinationId": "drakensberg",
-          "kind": "guide",
-          "sourceId": "drakensberg-source-1"
-        },
-        {
-          "destinationId": "drakensberg",
-          "kind": "site",
-          "siteId": "drakensberg-giants-castle"
-        },
-        {
-          "destinationId": "drakensberg",
-          "kind": "site",
-          "siteId": "drakensberg-camp"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/maloti-drakensberg",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-1"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 101,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe/accommodation",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-2"
-        },
-        {
-          "destinationId": "mapungubwe",
-          "kind": "site",
-          "siteId": "mapungubwe-leokwe-rest-camp"
-        },
-        {
-          "destinationId": "mapungubwe",
-          "kind": "site",
-          "siteId": "mapungubwe-mazhou-campsite"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe/accommodation",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 102,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-7"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 120,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-4"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 105,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 90,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-6"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 93,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/travel/guide/10-amazing-experiences-in-ai-ais-richtersveld-transfrontier-park",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/travel/guide/10-amazing-experiences-in-ai-ais-richtersveld-transfrontier-park",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/travel/plan/useful-information/rules-regulations",
-      "references": [
-        {
-          "destinationId": "mapungubwe",
-          "kind": "guide",
-          "sourceId": "mapungubwe-source-5"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/travel/plan/useful-information/rules-regulations",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 80,
-      "error": null
-    },
-    {
-      "url": "https://www.sanparks.org/wp-content/uploads/2021/06/richtersveld-park-management-plan.pdf",
-      "references": [
-        {
-          "destinationId": "richtersveld",
-          "kind": "guide",
-          "sourceId": "richtersveld-source-7"
-        }
-      ],
-      "https": true,
-      "classification": "blocked",
-      "status": 403,
-      "method": "GET",
-      "finalUrl": "https://www.sanparks.org/wp-content/uploads/2021/06/richtersveld-park-management-plan.pdf",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 100,
+      "durationMs": 60,
       "error": null
     },
     {
@@ -6203,7 +6573,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 76,
+      "durationMs": 70,
       "error": null
     },
     {
@@ -6228,7 +6598,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 72,
+      "durationMs": 74,
       "error": null
     },
     {
@@ -6248,7 +6618,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 84,
+      "durationMs": 67,
       "error": null
     },
     {
@@ -6273,7 +6643,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 70,
+      "durationMs": 67,
       "error": null
     },
     {
@@ -6293,7 +6663,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
+      "durationMs": 66,
       "error": null
     },
     {
@@ -6302,7 +6672,7 @@
         {
           "destinationId": "uyuni",
           "kind": "guide",
-          "sourceId": "uyuni-source-3"
+          "sourceId": "uyuni-source-6"
         }
       ],
       "https": true,
@@ -6313,27 +6683,37 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 964,
+      "durationMs": 1879,
       "error": null
     },
     {
-      "url": "https://www.sernatur.cl/",
+      "url": "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
       "references": [
         {
           "destinationId": "isla-navarino",
           "kind": "guide",
-          "sourceId": "isla-navarino-source-2"
+          "sourceId": "isla-navarino-source-1"
+        },
+        {
+          "destinationId": "isla-navarino",
+          "kind": "site",
+          "siteId": "navarino-puerto-williams"
+        },
+        {
+          "destinationId": "isla-navarino",
+          "kind": "site",
+          "siteId": "navarino-dientes"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.sernatur.cl/",
+      "finalUrl": "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 873,
+      "durationMs": 1012,
       "error": null
     },
     {
@@ -6353,7 +6733,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 6419,
+      "durationMs": 1676,
       "error": null
     },
     {
@@ -6383,7 +6763,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1007,
+      "durationMs": 937,
       "error": null
     },
     {
@@ -6408,7 +6788,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 701,
+      "durationMs": 641,
       "error": null
     },
     {
@@ -6428,7 +6808,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 96,
+      "durationMs": 68,
       "error": null
     },
     {
@@ -6448,7 +6828,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 115,
+      "durationMs": 66,
       "error": null
     },
     {
@@ -6468,7 +6848,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 69,
+      "durationMs": 67,
       "error": null
     },
     {
@@ -6488,7 +6868,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 88,
+      "durationMs": 78,
       "error": null
     },
     {
@@ -6513,27 +6893,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 92,
-      "error": null
-    },
-    {
-      "url": "https://www.tourism.go.ug/",
-      "references": [
-        {
-          "destinationId": "kidepo-valley",
-          "kind": "guide",
-          "sourceId": "kidepo-valley-source-3"
-        }
-      ],
-      "https": true,
-      "classification": "reachable",
-      "status": 200,
-      "method": "HEAD",
-      "finalUrl": "https://www.tourism.go.ug/",
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": "text/html; charset=UTF-8",
-      "durationMs": 83,
+      "durationMs": 65,
       "error": null
     },
     {
@@ -6558,7 +6918,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1467,
+      "durationMs": 1087,
       "error": null
     },
     {
@@ -6578,7 +6938,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1120,
+      "durationMs": 2072,
       "error": null
     },
     {
@@ -6598,7 +6958,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 124,
+      "durationMs": 114,
       "error": null
     },
     {
@@ -6618,7 +6978,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3873,
+      "durationMs": 467,
       "error": null
     },
     {
@@ -6643,7 +7003,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 3086,
+      "durationMs": 428,
       "error": null
     },
     {
@@ -6663,7 +7023,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2183,
+      "durationMs": 733,
       "error": null
     },
     {
@@ -6683,7 +7043,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 2262,
+      "durationMs": 987,
       "error": null
     },
     {
@@ -6703,7 +7063,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1474,
+      "durationMs": 1614,
       "error": null
     },
     {
@@ -6723,7 +7083,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 230,
+      "durationMs": 172,
       "error": null
     },
     {
@@ -6743,7 +7103,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "application/pdf",
-      "durationMs": 151,
+      "durationMs": 154,
       "error": null
     },
     {
@@ -6763,38 +7123,8 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html;charset=UTF-8",
-      "durationMs": 1097,
+      "durationMs": 570,
       "error": null
-    },
-    {
-      "url": "https://www.turismoyculturas.gob.bo/",
-      "references": [
-        {
-          "destinationId": "uyuni",
-          "kind": "guide",
-          "sourceId": "uyuni-source-1"
-        },
-        {
-          "destinationId": "uyuni",
-          "kind": "site",
-          "siteId": "uyuni-salt-flat"
-        },
-        {
-          "destinationId": "uyuni",
-          "kind": "site",
-          "siteId": "uyuni-tahua"
-        }
-      ],
-      "https": true,
-      "classification": "error",
-      "status": 0,
-      "method": "GET",
-      "finalUrl": null,
-      "redirected": false,
-      "redirectCount": 0,
-      "contentType": null,
-      "durationMs": 14737,
-      "error": "Error: Command failed: curl --silent --show-error --location --max-time 20 --output /dev/null --write-out %{http_code}\t%{url_effective}\t%{content_type}\t%{num_redirects}\t%{time_total} --user-agent stargazing-index-source-audit/1.0 (+https://stargazingindex.com) --range 0-0 https://www.turismoyculturas.gob.bo/\ncurl: (7) Failed to connect to www.turismoyculturas.gob.bo port 443 after 7384 ms: Couldn't connect to server\n"
     },
     {
       "url": "https://www.vallboi.cat/en/starlight-destination",
@@ -6818,7 +7148,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 211,
+      "durationMs": 170,
       "error": null
     },
     {
@@ -6843,7 +7173,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 175,
+      "durationMs": 134,
       "error": null
     },
     {
@@ -6868,37 +7198,27 @@
       "redirected": true,
       "redirectCount": 1,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 1423,
+      "durationMs": 1251,
       "error": null
     },
     {
-      "url": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
+      "url": "https://www.visitlesotho.org.ls/place-to-visit/mountain-biking-4x4-route",
       "references": [
         {
           "destinationId": "sani-pass",
           "kind": "guide",
-          "sourceId": "sani-pass-source-1"
-        },
-        {
-          "destinationId": "sani-pass",
-          "kind": "site",
-          "siteId": "sani-pass-border"
-        },
-        {
-          "destinationId": "sani-pass",
-          "kind": "site",
-          "siteId": "sani-top"
+          "sourceId": "sani-pass-source-4"
         }
       ],
       "https": true,
       "classification": "reachable",
       "status": 200,
       "method": "HEAD",
-      "finalUrl": "https://www.visitlesotho.org.ls/gallery_item/sani-pass",
+      "finalUrl": "https://www.visitlesotho.org.ls/place-to-visit/mountain-biking-4x4-route",
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 175,
+      "durationMs": 102,
       "error": null
     },
     {
@@ -6923,7 +7243,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 217,
+      "durationMs": 181,
       "error": null
     },
     {
@@ -6948,7 +7268,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=UTF-8",
-      "durationMs": 212,
+      "durationMs": 137,
       "error": null
     },
     {
@@ -6968,7 +7288,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 111,
+      "durationMs": 77,
       "error": null
     },
     {
@@ -6993,7 +7313,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html",
-      "durationMs": 77,
+      "durationMs": 76,
       "error": null
     },
     {
@@ -7013,7 +7333,7 @@
       "redirected": false,
       "redirectCount": 0,
       "contentType": "text/html; charset=utf-8",
-      "durationMs": 559,
+      "durationMs": 506,
       "error": null
     }
   ]

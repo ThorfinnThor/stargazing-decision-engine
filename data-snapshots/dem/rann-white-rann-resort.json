@@ -1,5 +1,5 @@
 {
-  "siteId": "rann-kalo-dungar",
+  "siteId": "rann-white-rann-resort",
   "source": "copernicus-dem-glo-30",
   "dataset": "COP-DEM_GLO-30-DGED",
   "modelType": "DSM",
@@ -7,27 +7,27 @@
   "resolutionArcSeconds": 1,
   "verticalDatum": "EGM2008",
   "requestedPoint": [
-    23.82,
-    69.58
+    23.806227,
+    69.512355
   ],
   "tile": "N23_00_E069_00",
   "sourceObject": "s3://copernicus-dem-30m/Copernicus_DSM_COG_10_N23_00_E069_00_DEM/Copernicus_DSM_COG_10_N23_00_E069_00_DEM.tif",
   "publicFallback": true,
-  "elevationM": 2.913,
+  "elevationM": 3.222,
   "neighborhoods": [
     {
       "radiusKm": 0.25,
-      "elevationM": 2.909,
-      "validSampleCount": 218
+      "elevationM": 3.083,
+      "validSampleCount": 224
     },
     {
       "radiusKm": 1,
-      "elevationM": 2.848,
-      "validSampleCount": 3595
+      "elevationM": 3.13,
+      "validSampleCount": 3590
     }
   ],
   "noDataPolicy": "masked-or-nodata-values-excluded",
   "coverage": 1,
   "warnings": [],
-  "retrievedAt": "2026-09-17T12:01:13.915638Z"
+  "retrievedAt": "2026-09-23T11:29:16.684968Z"
 }

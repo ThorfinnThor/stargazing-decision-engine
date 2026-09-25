@@ -304,24 +304,21 @@
     {
       "destinationId": "richtersveld",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
-        "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/gps-waypoints",
-        "https://www.sanparks.org/parks/ai-ais-richtersveld/accommodation",
-        "https://www.sanparks.org/travel/guide/10-amazing-experiences-in-ai-ais-richtersveld-transfrontier-park",
-        "https://www.sanparks.org/parks/ai-ais-richtersveld/useful-information/visitor-tips",
-        "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/how-to-get-there",
-        "https://www.sanparks.org/parks/ai-ais-richtersveld/travel/entrance-gate",
-        "https://www.sanparks.org/wp-content/uploads/2021/06/richtersveld-park-management-plan.pdf",
+        "https://richtersveldnationalpark.co.za/",
+        "https://richtersveldnationalpark.co.za/accommodation-and-prices/",
+        "https://richtersveldnationalpark.co.za/activities-and-facilities/",
+        "https://richtersveldnationalpark.co.za/contact-us/",
+        "https://richtersveldnationalpark.co.za/gate-times",
+        "https://richtersveldnationalpark.co.za/camp-layout",
         "https://api.open-meteo.com/v1/elevation?latitude=-28.0747,-28.1836833,-28.1252333&longitude=16.96315,17.1780333,16.8916"
       ],
       "verifiedFindings": [
-        "SANParks publishes exact GPS waypoints for Potjiespram Camp at S 28°04.482′, E 16°57.789′ and De Hoop at S 28°11.021′, E 17°10.682′. These convert to -28.0747, 16.96315 and -28.1836833, 17.1780333 and replace the materially incorrect staged coordinates.",
-        "The same official waypoint register places Sendelingsdrift at S 28°07.514′, E 16°53.496′, converted to -28.1252333, 16.8916. This replaces the coarse and incorrect stay-area coordinate while retaining Sendelingsdrift as the reception, permit and supply base.",
-        "SANParks describes Potjiespram as a bookable Orange River campsite near reception. The park management plan identifies Potjiespram and De Hoop as designated camping facilities, and the internal rules allow camping and overnight stays only in designated accommodation areas known to park management.",
-        "SANParks explicitly promotes stargazing as a Richtersveld experience. That supports observing from a booked campsite but does not create permission for a separate roadside, riverbank or desert viewpoint.",
-        "Official travel guidance requires admission and overnight permits at Sendelingsdrift, asks overnight visitors to arrive before 16:00, prohibits driving in the park at night and requires appropriate high-clearance or 4x4 capability. The guide and route therefore keep the vehicle at one booked camp throughout the dark interval.",
-        "Visitor guidance requires water, food, spares and night lighting, warns of extreme temperatures, heavy dew, scorpions and evening wind, and prohibits driving outside indicated routes and camping sites. The catalogue text incorporates these operational limits rather than treating darkness alone as readiness.",
+        "The current Richtersveld operator pages identify Potjiespram and De Hoop as bookable campsites and publish accommodation details, facilities, reservation contact information, gate times and camp-layout material.",
+        "The operator pages support an overnight booking model, but they do not by themselves establish a separate public roadside, riverbank or desert observing location. The staged records therefore keep observation inside the assigned campsite footprint.",
+        "Current gate hours, access conditions, booking status and park rules must be confirmed directly before travel; the operator pages are not treated as a substitute for current protected-area instructions or permits.",
+        "The catalogue keeps Potjiespram and De Hoop as separate one-site overnight candidates. No after-dark transfer, viewpoint fallback or permission to leave the assigned camp is inferred.",
         "A reviewed Open-Meteo elevation lookup returned 42 metres for Potjiespram, 81 metres for De Hoop and 37 metres for Sendelingsdrift. The first two replace implausible staged elevations of 410 and 480 metres but remain subject to independent confirmation by the combined catalogue DEM ingestion.",
         "Both observation records remain inactive and both image records remain pending. Factual verification clears only the source-content gate; real snapshots and verified image licences are still required before activation."
       ],
@@ -330,28 +327,26 @@
     {
       "destinationId": "mapungubwe",
       "status": "verified",
-      "reviewedAt": "2026-09-22",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
-        "https://www.sanparks.org/parks/mapungubwe",
-        "https://www.sanparks.org/parks/mapungubwe/accommodation",
-        "https://www.sanparks.org/parks/mapungubwe/useful-information/visitor-tips",
-        "https://www.sanparks.org/parks/mapungubwe/travel/how-to-get-there",
-        "https://www.sanparks.org/travel/plan/useful-information/rules-regulations",
-        "https://www.sanparks.org/parks/mapungubwe/what-to-do/facilities",
-        "https://www.sanparks.org/parks/mapungubwe/travel/gps-waypoints",
+        "https://mapungubwenationalpark.co.za/",
+        "https://mapungubwenationalpark.co.za/accommodation-and-prices/",
+        "https://mapungubwenationalpark.co.za/activities-and-facilities/",
+        "https://mapungubwenationalpark.co.za/contact-us/",
+        "https://mapungubwenationalpark.co.za/gate-times/",
+        "https://mapungubwenationalpark.co.za/camp-layout/",
+        "https://mapungubwenationalpark.co.za/faqs",
         "https://www.openstreetmap.org/node/2117424196",
         "https://www.openstreetmap.org/node/4357227138",
         "https://api.open-meteo.com/v1/elevation?latitude=-22.2177486,-22.187385&longitude=29.3648104,29.2012847"
       ],
       "verifiedFindings": [
-        "SANParks identifies Leokwe Rest Camp as Mapungubwe's main bookable camp in the eastern section and Mazhou Camp Site as a ten-pitch bookable campground in the western section. These replace the unsupported generic 'Mapungubwe camp area' record.",
-        "The mapped Leokwe facility is at -22.2177486, 29.3648104 and the mapped SANParks-operated Mazhou campsite is at -22.187385, 29.2012847. Open-Meteo returned preliminary elevations of 544 and 528 metres; production Copernicus DEM GLO-30 samples are 546.995 and 532.697 metres, and the catalogue stores 547 and 533 metres.",
-        "SANParks publishes the Main Gate coordinate as 22°14′37″S, 29°24′2″E, converted to -22.2436111, 29.4005556. The exact gate and reception record replaces the generic Mapungubwe stay-area coordinate.",
-        "SANParks locates the Confluence Viewpoint at 22°10′00″S, 29°10′00″E and describes it as a scenic heritage viewpoint and picnic area. It does not identify the viewpoint as an astronomy site or confirm independent use after dark, so the materially incorrect staged Confluence pin is removed rather than promoted as a night location.",
-        "Current SANParks visitor guidance states that unguided walking is prohibited because large and dangerous game occurs in the park, Leokwe is unfenced, other camps use only elephant-exclusion fencing and animals can move through and around camps. It also states that outdoor camp lighting is limited and guests require a torch or headlamp outside at night.",
-        "The national rules allow overnight guests only at booked recognised facilities, require reception before occupation and prohibit after-hours driving. Together with the camp-lighting guidance, this supports only brief unaided sky viewing immediately beside the occupied unit or pitch, with a torch ready and immediate indoor retreat; it does not support a walking route, telescope setup or separate viewpoint.",
-        "SANParks published a 19 May 2026 notice that renovation work at Leokwe and Mazhou could begin at any time and cause disruption. Any later use therefore requires a current booking and dated confirmation of construction status plus compliance with current camp instructions.",
-        "Access to Mazhou requires checking in at the Main Gate and driving outside the park to rejoin the western section. This rules out treating Leokwe and Mazhou as two stops in one night and reinforces that any confirmed plan must remain within one assigned accommodation footprint.",
+        "The current Mapungubwe operator pages identify Leokwe as a bookable rest camp in the eastern section and Mazhou as a bookable ten-pitch campsite in the western section. These replace the unsupported generic 'Mapungubwe camp area' record.",
+        "The mapped Leokwe facility is at -22.2177486, 29.3648104 and the mapped Mazhou campsite is at -22.187385, 29.2012847. Open-Meteo returned preliminary elevations of 544 and 528 metres; production Copernicus DEM GLO-30 samples are 546.995 and 532.697 metres, and the catalogue stores 547 and 533 metres.",
+        "The operator pages publish gate-time, accommodation, camp-layout, facilities and reservation information, but they do not establish an independent public astronomy site or a permission to move between camps after dark.",
+        "The staged records therefore use only the two mapped booked footprints. No separate viewpoint, roadside fallback or generic park-area coordinate is treated as an observing site.",
+        "Current booking status, renovation/maintenance status, gate hours, wildlife instructions and after-hours movement rules must be confirmed directly with the park or operator before travel; this review does not infer permission from darkness alone.",
+        "The two records remain separate one-site overnight candidates. Any confirmed use must stay within the assigned accommodation footprint and follow the current staff-issued safety and lighting instructions.",
         "Both replacement site records remain inactive and both image records remain pending. Their access scores reflect a bookable but wildlife-constrained overnight footprint, not a public astronomy venue, and no activation is permitted while image licences remain unresolved."
       ],
       "requiredChanges": []
@@ -377,7 +372,7 @@
     {
       "destinationId": "makgadikgadi",
       "status": "verified",
-      "reviewedAt": "2026-09-23",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.eselbecamp.com/",
         "https://www.eselbecamp.com/accommodation",
@@ -590,7 +585,7 @@
     {
       "destinationId": "massacre-rim",
       "status": "verified",
-      "reviewedAt": "2026-09-22",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.blm.gov/massacre-rim-dark-sky-sanctuary",
         "https://www.blm.gov/sites/blm.gov/files/docs/2021-02/Massacre_Rim_Map-508.pdf",
@@ -601,10 +596,11 @@
         "https://www.blm.gov/announcement/black-rock-field-office-announces-annual-temporary-closure-high-rock-canyon-road",
         "https://www.blm.gov/sites/default/files/docs/2022-05/Emigrant_Trail_Brochure_2022_508.pdf",
         "https://www.blm.gov/sites/blm.gov/files/documents/files/NV_Black%20Rock%20Desert_Plan%20your%20visit.pdf",
-        "https://darksky.org/places/massacre-rim-dark-sky-sanctuary/"
+        "https://www.blm.gov/blog/2025-04-21/12-spectacular-blm-stargazing-sites"
       ],
       "verifiedFindings": [
         "BLM explicitly promotes stargazing and permits dispersed camping throughout Massacre Rim Dark Sky Sanctuary; Massacre Ranch and Steven's Camp are named public recreation areas with primitive campsites and first-come cabins.",
+        "BLM's 2025 International Dark Sky Week feature independently identifies Massacre Rim and states that it was certified as an International Dark Sky Sanctuary in 2019; this accessible agency source replaces the blocked DarkSky.org reference.",
         "The official California National Historic Trail brochure supplies exact interpretive-panel coordinates at Massacre Ranch and Steven's Camp, replacing the coarse sanctuary point and the invalid Denio observing record.",
         "BLM documents gravel Nevada 8A near the sanctuary, extremely rough and rocky interior roads, a four-wheel-drive/high-clearance recommendation, no cell service, unreliable surface water and fuel approximately 40 to 90 road miles away.",
         "The current Winnemucca fire order prohibits wood and charcoal fires outside developed fee campgrounds or picnic areas, with a narrow portable gas or pressurised-liquid stove exception, and the High Rock Canyon Road southern approach has a recurring winter/spring closure.",
@@ -644,7 +640,7 @@
     {
       "destinationId": "oracle-state-park",
       "status": "verified",
-      "reviewedAt": "2026-09-22",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://azstateparks.com/oracle",
         "https://azstateparks.com/oracle/dark-skies/viewing-info",
@@ -652,7 +648,6 @@
         "https://azstateparks.com/oracle/events/night-sky-photography-workshop",
         "https://azstateparks.com/oracle/explore/maps",
         "https://arizona-content.usedirect.com/storage/ORAC_Park%20Map_8-2023.pdf",
-        "https://darksky.org/places/oracle-state-park-dark-sky-park/",
         "https://www.openstreetmap.org/node/3350745581",
         "https://www.openstreetmap.org/way/328503138",
         "https://api.open-meteo.com/v1/elevation?latitude=32.6215404,32.6096723&longitude=-110.7464941,-110.7336317"
@@ -661,7 +656,7 @@
         "Arizona State Parks explicitly defines two night-sky access models: public Star Parties near Kannally Ranch House on published dates and independently reservable after-hours entry at the American Avenue side gate.",
         "Independent visitors must call before 15:00, preferably on the same day, pay the current fee and obtain a four-digit padlock code; overnight camping remains prohibited.",
         "The American Avenue record uses the mapped parking point inside the official trailhead footprint. The Kannally Ranch House record uses the exact mapped building and remains unavailable unless the park publishes a new dated astronomy event or supplies a written arrangement.",
-        "The current Oracle event calendar reviewed on 2026-09-22 lists no future astronomy event, so the Ranch House site has publicAccess no and accessScore 0 rather than implying routine night entry.",
+        "Arizona State Parks' current park page independently confirms Oracle's International Dark Sky Park designation and the reserved American Avenue stargazing access; its currently listed future October programmes are daytime geology/art events, not a Ranch House Star Party, so that site remains publicAccess no and accessScore 0 for spontaneous night entry.",
         "The completed Copernicus DEM ingestion measured 1307.162 metres at American Avenue and 1325.952 metres at Kannally Ranch House; the catalogue stores the corresponding rounded elevations of 1307 and 1326 metres.",
         "The unsupported Charouleau Gap record and the old coarse Ranch House pin have been removed. Both replacements and their images remain inactive and pending."
       ],
@@ -670,51 +665,51 @@
     {
       "destinationId": "enchanted-rock",
       "status": "verified",
-      "reviewedAt": "2026-09-22",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
-        "https://tpwd.texas.gov/state-parks/enchanted-rock",
-        "https://tpwd.texas.gov/state-parks/enchanted-rock/trails-info",
-        "https://tpwd.texas.gov/state-parks/enchanted-rock/more-info/dark-skies",
-        "https://tpwd.texas.gov/publications/pwdpubs/media/park_maps/pwd_mp_p4507_119e.pdf",
+        "https://texasstateparks.reserveamerica.com/explore/enchanted-rock-state-natural-area/TX/732",
+        "https://texasstateparks.reserveamerica.com/camping/enchanted-rock-state-natural-area/r/campgroundDetails.do?contractCode=TX&parkId=1200056",
+        "https://darksky.org/app/uploads/2018/10/EnchantedRock_AnnualReport_2018.pdf",
         "https://services1.arcgis.com/1mtXwieMId59thmg/arcgis/rest/services/Texas_State_Parks_Public_Areas/FeatureServer"
       ],
       "verifiedFindings": [
-        "Texas Parks and Wildlife explicitly promotes stargazing, camping and star parties at Enchanted Rock and publishes daily park and gate hours.",
-        "The revised day-use record uses the official D2 footprint at the south Loop Trail trailhead; all trails except the Loop Trail close shortly after sunset, so the summit is no longer recommended at night.",
-        "The revised overnight record uses the official walk-in tent-site area and preserves booking, late-arrival gate-code, trail-closure, quiet and lighting rules."
+        "The official Texas state-park reservation pages identify Enchanted Rock entry windows and the walk-in camping inventory. They do not grant a generic right to use closed trails or to treat the summit as a night fallback.",
+        "The ArcGIS state-park layer and the reviewed catalogue map references retain separate day-use and walk-in tent-site footprints; the records do not merge them into a night route.",
+        "DarkSky International's archived annual report records Enchanted Rock's International Dark Sky Park designation and its night-sky programme context. Current capacity, gate, trail and camping conditions must still be confirmed before each visit.",
+        "Both replacement records remain inactive and their image records remain pending; the source review does not clear activation."
       ],
       "requiredChanges": []
     },
     {
       "destinationId": "staunton-river",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.dcr.virginia.gov/state-parks/staunton-river",
-        "https://www.dcr.virginia.gov/",
-        "https://darksky.org/places/staunton-river-state-park/"
+        "https://www.dcr.virginia.gov/state-parks/dark-sky-parks",
+        "https://www.dcr.virginia.gov/state-parks/blog/how-to-have-stargazing-adventure-in-vsp"
       ],
       "verifiedFindings": [
         "Virginia DCR identifies Staunton River as an International Dark Sky Park and states that the field next to the visitor center is available year-round for astronomical observation.",
-        "The park publishes guided summer sessions and registered spring and autumn star parties while keeping independent field use subject to parking fees and current park information.",
-        "The staged observing-field and campground records remain inactive until their real climate, darkness and DEM snapshots and image licences are complete."
+        "The DCR stargazing guide, last updated February 18, 2026, advises visitors to call the park at least two days before using the field outside designated programmes; the current 2026 calendar lists a registered fall Star Party and public observation night on October 9.",
+        "Independent field use remains subject to park contact, parking fees and current access instructions. The staged observing-field and campground records remain inactive, and associated image licences remain pending."
       ],
       "requiredChanges": []
     },
     {
       "destinationId": "kissimmee-prairie",
       "status": "verified",
-      "reviewedAt": "2026-09-22",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
-        "https://www.floridastateparks.org/learn/dark-sky-designation",
-        "https://www.floridastateparks.org/parks-and-trails/kissimmee-prairie-preserve-state-park",
-        "https://www.floridastateparks.org/sites/default/files/media/file/Kissimmee%20Prairie%20Brochure.pdf",
+        "https://content.govdelivery.com/accounts/FLDEP/bulletins/1343282",
+        "https://floridadep.gov/parks/parks-office-park-planning/documents/kissimmee-prairie-preserve-state-park-2018-unit-0",
+        "https://floridadep.gov/parks/parks/documents/kissimmee-prairie-2025-cso-report",
         "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/ArcGIS/rest/services/Overnight_Accommodations_Statewide_Clean/FeatureServer/0",
         "https://services1.arcgis.com/nRHtyn3uE1kyzoYc/arcgis/rest/services/PBS_POI_Statewide/FeatureServer/0"
       ],
       "verifiedFindings": [
-        "Florida State Parks documents a reservable astronomy pad with red-light and no-fire rules, and the official accommodation GIS identifies Astronomy Pad A exactly.",
-        "The revised fallback record uses the official pavilion beside the entrance kiosk, where visitors without a reservation or eligible after-hours permit are directed to observe.",
+        "Florida DEP documents a reservable astronomy pad with red-light and no-fire rules, and the official accommodation GIS identifies Astronomy Pad A exactly.",
+        "The revised fallback record uses the official pavilion beside the entrance kiosk, where visitors without a reservation or eligible after-hours permit are directed to observe; the same DEP notice says the entrance closes shortly after sunset.",
         "The revised access notes distinguish both footprints and preserve reservation, ranger contact, arrival-before-sunset, red-light, bathroom and gate rules."
       ],
       "requiredChanges": []
@@ -741,18 +736,17 @@
     {
       "destinationId": "lassen-volcanic",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.nps.gov/lavo/index.htm",
         "https://www.nps.gov/lavo/planyourvisit/stargazing.htm",
         "https://home.nps.gov/lavo/planyourvisit/summer.htm",
-        "https://www.nps.gov/lavo/planyourvisit/conditions.htm",
-        "https://darksky.org/places/lassen-volcanic-national-park/"
+        "https://www.nps.gov/lavo/planyourvisit/conditions.htm"
       ],
       "verifiedFindings": [
         "NPS explicitly permits stargazing throughout Lassen where the sky is visible and specifically recommends Manzanita Lake and the Lassen Peak trailhead parking area among roadside viewing locations.",
         "Overnight camping remains limited to campgrounds and is not permitted at ordinary pullouts or parking areas, so the guide must keep observing separate from sleeping.",
-        "Both staged sites remain inactive and require current road, snow and closure checks plus real source snapshots before activation."
+        "The NPS stargazing page replaces the blocked DarkSky listing and directly supports the named public viewing guidance; both staged sites remain inactive and require current road, snow and closure checks plus real source snapshots before activation."
       ],
       "requiredChanges": []
     },
@@ -795,12 +789,11 @@
     {
       "destinationId": "newport-wisconsin",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://dnr.wisconsin.gov/topic/parks/newport",
         "https://dnr.wisconsin.gov/",
-        "https://dnr.wisconsin.gov/topic/parks/newport/darksky",
-        "https://darksky.org/places/newport-state-park/"
+        "https://dnr.wisconsin.gov/topic/parks/newport/darksky"
       ],
       "verifiedFindings": [
         "Wisconsin DNR identifies Newport State Park as a Dark Sky Park and a destination for casual stargazers and astronomers.",
@@ -873,23 +866,22 @@
     {
       "destinationId": "jebel-akhdar",
       "status": "verified",
-      "reviewedAt": "2026-09-23",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://experiences.hyatt.com/experiences/56af13d2-d9cf-4390-8e02-74cefe624bee/participants-review",
-        "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar",
-        "https://www.hyatt.com/alila-hotels-and-resorts/en-US/mctal-alila-jabal-akhdar/faqs",
+        "https://assets.hyatt.com/content/dam/hyatt/hyattdam/documents/2025/06/26/1245/Alila-Jabal-Akhdar-Capacity-Chart-English.pdf",
+        "https://experienceoman.om/media/x2cd2gim/the-wanderlust-oman.pdf",
         "https://www.openstreetmap.org/way/491745518",
-        "https://www.anantara.com/en/jabal-akhdar",
-        "https://www.anantara.com/en/jabal-akhdar/contact",
-        "https://www.anantara.com/en/jabal-akhdar/offers/discover-celestial-wonders",
+        "https://www.anantara.com/uploads/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/anantara-al-jabal-discovery-guide.pdf",
+        "https://www.anantara.com/~/media/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/hotel-info/anantara_al_jabal_al_akhdar_brochure.pdf",
         "https://www.ea.gov.om/en/authority-services/service-catalogue/service-catalogue/entry-permit-to-jabal-akhdar-scenic-reserve",
         "https://api.open-meteo.com/v1/elevation?latitude=23.14189,23.067681116038536&longitude=57.53518,57.67011780953533"
       ],
       "verifiedFindings": [
         "Hyatt lists a private guided telescope activity on Alila Jabal Akhdar's resort Stargazing Deck; participation requires a hotel reservation and World of Hyatt membership, and current dates remain subject to availability. The catalogue point is a representative coordinate within the mapped OpenStreetMap resort geometry, not the deck itself or public parking.",
-        "Hyatt's resort FAQ says a 4x4 is required for the mountain ascent and a resort transfer can be arranged, so the route requires that vehicle decision before travel.",
-        "Anantara explicitly promotes stargazing from Diana's Point on its resort grounds and publishes the exact resort arrival GPS at 23.067681116038536, 57.67011780953533. The resort requires a 4x4 with driver's licence and vehicle registration documents at the checkpoint or a prearranged operator transfer; the GPS is not an exact platform coordinate or an independent public viewpoint.",
-        "Anantara's separate Discover Celestial Wonders astronomer session is a 15-minute drive from the resort and requires advance booking; its unpublished observing site is excluded from both catalogue coordinates and the one-property route.",
+        "Experience Oman states that Jebel Akhdar access requires a high-clearance 4WD, so the vehicle decision must be settled before the ascent; the Environment Authority separately governs reserve entry and overnight permits.",
+        "Anantara's official discovery and resort brochures document Diana's Point, stargazing context and the resort setting; the catalogue coordinate is the resort arrival area, not an exact cliff-edge platform or independent public viewpoint. A 4x4, checkpoint documents or a prearranged operator transfer remain required by the resort's published arrival arrangement.",
+        "The separate Anantara astronomer session remains an operator-only arrangement requiring advance booking; its observing site is excluded from both catalogue coordinates and the one-property route.",
         "Oman's Environment Authority prohibits reserve entry outside permitted visiting times and overnight stays without the applicable permit. Its service table includes adult visit-and-overnight permits, while off-road driving and unauthorised fires are prohibited; a hotel room, activity booking or checkpoint passage is not treated as proof of the reserve permit.",
         "The two previous generic scenic pins are replaced by operator-controlled resort records with current booking, permit, 4x4, staff-boundary and same-property overnight gates. No independent Saiq plateau, roadside, cliff or campsite access is inferred.",
         "Production Copernicus DEM GLO-30 snapshots confirm 1924 m at the Alila representative property coordinate (raw DSM 1924.168 m) and 1970 m at Anantara's published GPS (raw DSM 1969.582 m); the catalogue stores rounded whole metres and these values are now wired through the reproducible elevation overrides."
@@ -899,20 +891,28 @@
     {
       "destinationId": "rann-of-kutch",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-23",
       "reviewedUrls": [
-        "https://www.gujarattourism.com/kutch-zone/kutch/great-rann-of-kutch.html",
-        "https://gujarattourism.com/content/dam/gujrattourism/images/articles/festivals_6.pdf",
-        "https://www.incredibleindia.gov.in/en/gujarat"
+        "https://rannutsav.net/official-rann-utsav-website/",
+        "https://rannutsav.net/rann-utsav-packages/",
+        "https://rannutsav.net/experience",
+        "https://rannutsav.net/special-dates-at-rann-utsav/",
+        "https://gujarattourism.com/kutch-zone/kutch/kalo-dungar.html",
+        "https://gujarattourism.com/fair-and-festival/rann-utsav.html",
+        "https://www.openstreetmap.org/node/9271272718",
+        "https://www.dizcoverpraveg.com/whiterannresort",
+        "https://maps.google.com/?q=23.806227,69.512355"
       ],
       "verifiedFindings": [
-        "Gujarat Tourism documents organised seasonal access from Dhordo to the White Rann and promotes evening and moonlit visitor experiences.",
-        "The reviewed sources do not confirm the staged salt-flat and Kalo Dungar coordinates as independent after-dark astronomy sites or document current permit, border and closing arrangements."
+        "The official Rann Utsav operator identifies Tent City at Dhordo and publishes the 2026–27 season and package itinerary. The White Rann Sunset Point outing runs 17:30–19:00 and returns to Tent City by 19:30; this is not evidence of a deep-night White Rann stop.",
+        "Gujarat Tourism describes Kalo Dungar as a daytime visitor attraction, and the operator's package itinerary returns from the Kalo Dungar excursion to Tent City by 19:30. Neither source establishes independent after-dark access there.",
+        "The previous broad Dhordo and Kalo Dungar pins are replaced with representative coordinates for two separately operated guest properties: Tent City Dhorda's mapped OSM accommodation node and Praveg's official-map-linked White Rann Resort point. Neither representative point is an exact observing footprint.",
+        "Gujarat Tourism links an online White Rann entry-permit portal, although its Rann Utsav season dates on that page are stale and must not be reused. Neither a guest-room booking nor the official sunset itinerary establishes current permit scope, night entry, or an operator-approved outdoor guest area at either property. Copernicus DEM GLO-30 DSM snapshots measure 3.013 m at the Tent City Dhorda OSM point and 3.222 m at Praveg's map-linked property point, stored as rounded 3 m. Both sites and the destination remain inactive; climate and darkness snapshots and exact guest-footprint confirmation are still pending."
       ],
       "requiredChanges": [
         {
-          "scope": "rann-seasonal-operator-route",
-          "reason": "Replace the free-standing map pins with a current official seasonal programme or licensed operator itinerary that names the entry, permitted hours, transport, permit and return."
+          "scope": "rann-booked-property-night-footprint",
+          "reason": "Before either guest property can be considered for after-dark observing, record direct operator confirmation for a named guest outdoor footprint, the booked date's operating and closing hours, permit coverage and the full no-transfer return arrangement; complete the real climate and darkness snapshots at the reviewed property coordinates."
         }
       ]
     },
@@ -938,75 +938,88 @@
     {
       "destinationId": "sani-pass",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-24",
       "reviewedUrls": [
+        "https://sanimountain.co.za/visitor-information/",
+        "https://sanimountain.co.za/lesotho-accommodation/",
+        "https://www.homeaffairs.gov.ls/immigration/",
         "https://www.visitlesotho.org.ls/place-to-visit/mountain-biking-4x4-route",
-        "https://www.visitlesotho.org.ls/place-to-visit/sani-top-thabana-ntlenyana",
-        "https://www.gov.ls/"
+        "https://drakensberghikes.com/directory/accommodation/sani-mountain-lodge-sani-top",
+        "https://mapcarta.com/W87507638"
       ],
       "verifiedFindings": [
-        "Visit Lesotho describes Sani Pass and Sani Top as a demanding high-altitude four-wheel-drive route and viewpoint, not as public astronomy facilities.",
-        "Both staged records share the same coarse coordinate and do not document border hours, legal overnight parking, weather closure or a safe night-use footprint."
+        "Lesotho Home Affairs lists normal Sani Pass border operating hours as 06:00–18:00 GMT+2; the official Sani Mountain Escape visitor page requires a confirmed booking for every visit from 1 December 2025, limits day-visitor access to 10:00–15:00 and warns of weather-related changes or temporary closure.",
+        "Sani Mountain Escape identifies bookable lodge accommodation at 2,874 metres on the Lesotho side. A regional accommodation directory publishes the Sani Mountain Lodge point (-29.584577, 29.288123); OpenStreetMap maps the Highest Pub building (way 87507638) at -29.58472, 29.28818. These are two nearby building/property references within one managed venue, not separate observing areas.",
+        "The duplicate coarse road coordinates have been replaced by those two named property references. The operator still does not confirm the exact outdoor guest footprint allowed after dark, nor does a daytime pub booking permit remaining after the visit slot; border crossing remains subject to daylight operating hours."
       ],
       "requiredChanges": [
         {
           "scope": "sani-pass-night-access",
-          "reason": "Replace the road and viewpoint pins with a named licensed lodge or campsite on the Lesotho side and obtain current border, road, vehicle, weather and night-use confirmation."
+          "reason": "Refresh climate, darkness, elevation and score snapshots at both corrected property coordinates. Keep both records inactive until the operator confirms in writing the overnight guest boundary, the exact outdoor area usable after dark, vehicle/parking rules, current access route and weather or closure procedures. Day-visitor bookings are not a night-access substitute; never plan a border crossing outside the published normal 06:00–18:00 hours."
         }
       ]
     },
     {
       "destinationId": "drakensberg",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-24",
       "reviewedUrls": [
         "https://bookings.kznwildlife.com/MakeABooking.aspx?Resort=Giants+Castle",
-        "https://bookings.kznwildlife.com/termsandconditions.aspx",
-        "https://whc.unesco.org/en/list/985/"
+        "https://mail.drakensberghikes.com/images/downloads/EKZNW_2025_2026.pdf",
+        "https://bookings.kznwildlife.com/pdffiles/KZN-WILDLIFE-Booking-553507.pdf",
+        "https://mapcarta.com/N2416284803",
+        "https://mapcarta.com/W87555957",
+        "https://www.etenders.gov.za/home/Download/?blobName=6b25c1a2-6b08-4d03-8df8-a4d8a7fd2db9.pdf&downloadedFileName=Request+for+proposal+",
+        "https://www.kznwildlife.com/downloads/03-Management-Plans/Approved/2022%20-%20uKhahlamba%20Drakensberg%20Park%20Integrated%20Management%20Plan%20Revision.pdf"
       ],
       "verifiedFindings": [
-        "Ezemvelo KZN Wildlife confirms bookable Giants Castle and Didima accommodation inside the Maloti-Drakensberg area and publishes resort terms and gate-sensitive visitor arrangements.",
-        "No reviewed authority page identifies either staged generic area as an independent astronomy site or grants movement outside the booked accommodation footprint after dark."
+        "Ezemvelo's live reservation system lists Giants Castle accommodation; its official 2023 booking advice gives the resort GPS point (-29.269543, 29.5175361). The published 2025–2026 fees and conditions state seasonal Giants Castle gate hours and 24-hour access at Didima for accommodated guests only, not day visitors. Didima's mapped resort point (-28.94424, 29.23028) is representative, not an assigned observing pad.",
+        "OpenStreetMap maps the Didima Community Campsite as closed. It is excluded as a candidate; the current sources reviewed here do not establish that it has reopened.",
+        "Neither resort source confirms permission for after-dark outdoor astronomy, movement beyond assigned guest areas, or a specific safe observing footprint. The generic valley/camp coordinates are replaced with representative booked-resort points, but both remain inactive pending direct resort instructions and fresh climate, darkness and elevation snapshots at the corrected coordinates."
       ],
       "requiredChanges": [
         {
           "scope": "drakensberg-accommodation-footprints",
-          "reason": "Replace the generic valley and camp pins with exact booked accommodation footprints and obtain written resort guidance for astronomy outside a unit, lighting, wildlife and gate hours."
+          "reason": "Obtain current written guidance from Giants Castle and Didima for the exact guest outdoor area, permitted hours, current gate/arrival arrangements, wildlife, fire, lighting and movement rules; do not use the closed Didima Community Campsite. Refresh climate, darkness, elevation and score snapshots at the corrected representative resort points. Keep both records inactive until those real snapshots and safe guest-area details are documented."
         }
       ]
     },
     {
       "destinationId": "northern-damaraland",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-24",
       "reviewedUrls": [
-        "https://visitnamibia.com.na/2022/03/north-western-region/",
-        "https://visitnamibia.com.na/2022/02/twyfelfontein-heritage-site/",
-        "https://visitnamibia.com.na/wp-content/uploads/2022/03/ARID_EDEN_DIGITAL_BROCHURE_FINAL.pdf"
+        "https://twyfelfontein.com.na/activities/",
+        "https://stwetuproduction.blob.core.windows.net/azure-blob-resources-wetu-production/Resources/1563%2F1745332405430_TCL-2025--2026---Rack-Rates.pdf",
+        "https://visitnamibia.com.na/wp-content/uploads/2022/03/ARID_EDEN_DIGITAL_BROCHURE_FINAL.pdf",
+        "https://gondwana-collection.com/accommodation/palmwag-lodge",
+        "https://gondwana-collection.com/hubfs/Gondwana%20Website/03%20ABOUT%20US/Investors/Gondwana_ValueCreationReport_2023.pdf?hsLang=en"
       ],
       "verifiedFindings": [
-        "Namibia Tourism identifies Twyfelfontein as a heritage visitor site best seen by day and lists named Damaraland lodges and camps with published locations.",
-        "The staged Twyfelfontein area and Palmwag concession pins are not operator-confirmed astronomy footprints and do not establish concession permission or wildlife-safe night movement."
+        "Twyfelfontein Country Lodge offers guided stargazing sessions in its 2025–2026 rate sheet, weather permitting and subject to prior arrangement; the Namibia Tourism Arid Eden guide provides a lodge GPS point. The lodge's own activity page describes its guided visits and safety instructions.",
+        "Gondwana's current Palmwag Lodge page publishes GPS coordinates and an overnight guided sleep-out that includes star viewing; its operator report also documents stargazing activities for Palmwag Lodge & Camp guests. The separate sleep-out camp is not located at the lodge pin and is not a self-guided concession observing point.",
+        "The original generic regional and concession pins have been replaced with representative booked-lodge property points. Neither reviewed operator publishes the exact guest area approved for independent after-dark observing, and Palmwag concession wildlife restrictions make unsupervised night movement inappropriate. Both sites remain inactive pending written property guidance and fresh real-data snapshots at the corrected coordinates."
       ],
       "requiredChanges": [
         {
-          "scope": "damaraland-operator-camps",
-          "reason": "Replace both generic pins with named licensed camps or lodges that explicitly offer stargazing and record booking, concession, guide and wildlife rules."
+          "scope": "damaraland-lodge-night-footprints",
+          "reason": "Confirm in writing with each lodge which specific on-property guest area can be used after dark, whether observing must be guided or prebooked, and the property's arrival, wildlife, fire, lighting and movement rules. Refresh climate, darkness, elevation and score snapshots at the precise corrected lodge coordinates; keep both sites inactive until those facts and licensed images are complete."
         }
       ]
     },
     {
       "destinationId": "coral-pink-sand-dunes",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://stateparks.utah.gov/parks/coral-pink/",
         "https://stateparks.utah.gov/",
-        "https://darksky.org/places/coral-pink-sand-dunes-state-park/"
+        "https://stateparks.utah.gov/parks/coral-pink/current-conditions/"
       ],
       "verifiedFindings": [
-        "Utah State Parks and DarkSky identify Coral Pink Sand Dunes as a designated dark-sky park with an onsite campground and night-sky programming context.",
-        "The staged park and campground records remain limited-access and inactive; current park hours, OHV activity, weather, booking and closure notices still govern each visit.",
+        "Utah State Parks lists the park's hours as daylight hours and identifies camping, facilities, current conditions and reservations; this does not establish routine after-dark access.",
+        "The available primary park sources do not substantiate an International Dark Sky designation, so none is claimed; current access and night-use permission must be confirmed directly with park management.",
+        "The staged park and campground records remain limited-access and inactive; a night visit requires confirmation from park management and applicable booking, OHV, weather and closure rules.",
         "Factual review does not clear missing real snapshots or pending image licences."
       ],
       "requiredChanges": []
@@ -1014,15 +1027,16 @@
     {
       "destinationId": "cedar-breaks",
       "status": "verified",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.nps.gov/cebr/index.htm",
         "https://www.nps.gov/cebr/planyourvisit/conditions.htm",
-        "https://darksky.org/places/cedar-breaks-national-monument/"
+        "https://www.nps.gov/cebr/planyourvisit/experience-dark-night-skies.htm",
+        "https://www.nps.gov/cebr/learn/nature/night-skies.htm"
       ],
       "verifiedFindings": [
-        "NPS and DarkSky identify Cedar Breaks as an International Dark Sky Park with ranger-supported night-sky use around the Point Supreme visitor area and overlooks.",
-        "Sunset View and Point Supreme are high-elevation, snow- and season-sensitive visitor areas, so current road, facility and programme status remains a same-day requirement.",
+        "NPS identifies Cedar Breaks as an International Dark Sky Park and says visitors can experience dark skies year-round from park overlooks; camping and sleeping in vehicles remain prohibited outside the campground.",
+        "NPS publishes ranger-led Night Sky Tours at Point Supreme and current seasonal conditions for overlooks, the picnic area and campground; road, facility and programme status remains a same-day requirement.",
         "Both staged records remain inactive until real snapshots and image licences are complete."
       ],
       "requiredChanges": []
@@ -1049,61 +1063,71 @@
     {
       "destinationId": "isla-navarino",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
-        "https://www.sernatur.cl/wp-content/uploads/2018/09/XII-REGION-DE-MAGALLANES-Y-ANTARTICA-CHILENA.pdf",
-        "https://www.conaf.cl/parques-nacionales/"
+        "https://serviciosturisticos.sernatur.cl/7199-turismo-aventura-shila",
+        "https://serviciosturisticos.sernatur.cl/21881-errante-ecolodge",
+        "https://www.conaf.cl/parque_nacionales/parque-nacional-alberto-de-agostini/"
       ],
       "verifiedFindings": [
-        "SERNATUR documents Puerto Williams and the Dientes de Navarino area as trekking and mountain destinations with rapidly changing subantarctic conditions.",
-        "No reviewed public source identifies the staged waterfront and mountain-approach pins as night-observing places or provides an after-dark route and return."
+        "SERNATUR presents Dientes de Navarino as a trekking circuit and advises visitors to be prepared for difficult weather, including overnight conditions; this describes a remote trek, not an astronomy site or permission to hike after dark.",
+        "SERNATUR currently lists Turismo Aventura Shila and Errante Ecolodge hiking services as registered in Puerto Williams. The reviewed listings and operator categories do not establish a night-sky tour, an approved astronomy footprint or a guide-led after-dark route.",
+        "CONAF says Alberto de Agostini National Park has no public-use facilities and is mainly accessed by sea or air; those park rules do not designate either staged Puerto Williams/Dientes coordinate as an observing place.",
+        "The staged waterfront and trail-approach coordinates remain candidate references only. Reviewed sources do not establish the exact permitted night location, safe access/return, current seasonal limits or emergency arrangements; both sites and all associated images remain inactive/pending."
       ],
       "requiredChanges": [
         {
           "scope": "navarino-settlement-night-site",
-          "reason": "Obtain municipal or operator confirmation for a named, settlement-adjacent public viewing place with exact access and weather limits; do not use the Dientes trail approach as an astronomy fallback."
+          "reason": "Obtain municipal, land-manager or currently registered operator confirmation for one named, settlement-adjacent night location with exact permission, seasonal/weather limits, safe access and return. Do not use the Dientes trail approach as an astronomy fallback or direct visitors onto the trail after dark."
         }
       ]
     },
     {
       "destinationId": "uyuni",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-24",
       "reviewedUrls": [
+        "https://salardeuyunitour.com/en/tour/star-tour-stargazing",
         "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
-        "https://www.turismoyculturas.gob.bo/",
+        "https://boliviatravel.gob.bo/prestadores-de-servicio-turistico/",
+        "https://www.gob.bo/tramites/licencia-turistica-de-prestadores-de-servicios-turisticos",
+        "https://siretur.turismoyculturas.gob.bo/cru",
         "https://www.sernap.gob.bo/"
       ],
       "verifiedFindings": [
-        "Bolivia's tourism authority documents Salar de Uyuni as a high-altitude salt-flat destination and promotes sunset visitation, but does not grant independent cross-salar night driving.",
-        "The staged salt-flat and Tahua points do not identify a licensed operator route, legal stop, seasonal surface condition or emergency return."
+        "Blue Line Service currently advertises a private Star Tour from 22:00 to 02:00, with hotel pickup, a Spanish-speaking driver-guide, transport and an advertised observing elevation of 3,660 m; the public itinerary does not give a route map or exact stop coordinates.",
+        "Gob.bo describes a tourism-provider licence as authorization to operate legally; the public SIRETUR page is an account/registration workflow and does not itself confirm Blue Line Service's current licence. No current public record reviewed here verifies this operator's licence.",
+        "The advertised tour does not document seasonal surface conditions, communications or an emergency-return plan, and no reviewed source ties either staged catalogue coordinate—including Tahúa—to its permitted itinerary.",
+        "The staged coordinates remain candidate references only. They do not establish independent access, a legal salt-flat stop or authorization for night driving; both sites and all related imagery remain inactive/pending."
       ],
       "requiredChanges": [
         {
           "scope": "uyuni-licensed-night-tour",
-          "reason": "Replace both free-standing pins with exact stops from a current licensed night tour and document driver, route, season, surface, altitude, communications and return arrangements."
+          "reason": "Before using either pin, obtain current licence confirmation and operator/authority confirmation of the exact permitted stop coordinates, complete route, season and surface limits, communications, emergency return and any required permits. Do not infer that the Tahúa point belongs to the advertised Uyuni tour."
         }
       ]
     },
     {
       "destinationId": "kidepo-valley",
       "status": "changes-required",
-      "reviewedAt": "2026-09-21",
+      "reviewedAt": "2026-09-25",
       "reviewedUrls": [
         "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
         "https://ugandawildlife.org/news/uwa-pledges-support-for-concessionaires/",
-        "https://ugandawildlife.org/wp-content/uploads/2022/01/Kidepo_Valley_-National_Park_GMP.pdf"
+        "https://ugandawildlife.org/wp-content/uploads/2024/05/KVNP-2018-4.pdf",
+        "https://ugandawildlife.org/news/uwa-signs-three-concession-agreements-with-private-investors/"
       ],
       "verifiedFindings": [
-        "Uganda Wildlife Authority identifies Kidepo as a big-game national park with managed camps and game-drive infrastructure.",
-        "UWA states that night game drives are restricted to overnight park guests for wildlife and safety reasons, and no reviewed source identifies Narus or Kanangorok as independent astronomy sites.",
-        "The staged camp and hot-springs records therefore cannot imply unguided outdoor observing or after-dark driving."
+        "UWA currently states that night game drives are permitted only for tourists staying overnight within parks. This overnight-guest condition is not permission to self-drive, leave a camp on foot at night, or observe from an unapproved area.",
+        "The UWA Kidepo visitor brochure identifies Apoka Rest Camp, Kakine and Nagusokopire facilities and says walks require ranger guides; it identifies the Kanangorok/Kananorok Hot Springs excursion as requiring a ranger escort. The brochure is dated and current operations must be confirmed with UWA.",
+        "The existing Narus Valley pin is a broad candidate coordinate, not confirmed as any named campsite, Apoka accommodation or approved observing footprint. The Kanangorok coordinate is not verified as a current route waypoint or after-dark stopping place.",
+        "UWA announced a 2025 concession agreement for a future Kidepo lodge with a two-to-five-year development horizon; this does not establish a facility available now or night-sky permission. Neither staged point may imply independent astronomy access."
       ],
       "requiredChanges": [
         {
           "scope": "kidepo-camp-confirmation",
-          "reason": "Obtain dated UWA or concessionaire confirmation for astronomy inside a named booked camp footprint, including ranger, lighting, wildlife and movement rules; otherwise replace the destination."
+          "reason": "Obtain current UWA/operator confirmation of an existing named, bookable camp and its exact coordinates plus written permission for quiet sky viewing within its guest footprint, including ranger supervision, lighting, wildlife and movement rules. For Kanangorok, confirm the current route, escort, seasonal road conditions and return timing; otherwise remove or replace that candidate."
         }
       ]
     }
