@@ -28,6 +28,11 @@ distinguishes destinations that are still unreviewed from reviewed records that
 need factual changes. A destination only clears this gate when its review status
 is `verified` and no required changes remain.
 
+The first-party questions and verified contact routes for the seven remaining
+night-access reviews are prepared in
+`docs/staged-access-confirmation-requests-2026-09-25.md`. They are drafts only;
+no request has been sent from the repository workflow.
+
 The readiness inventory also compares the committed ERA5 and Copernicus DEM
 request points with the current observation-site coordinates. A coordinate
 change marks every location-dependent snapshot for that site as stale until the
