@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "grand-canyon-parashant",
+      "destinationSlug": "grand-canyon-parashant",
+      "destinationName": "Grand Canyon-Parashant",
+      "siteId": "parashant-mount-trumbull-trailhead",
+      "siteSlug": "parashant-mount-trumbull-trailhead",
+      "siteName": "Mount Trumbull Trailhead parking",
+      "climateScore": 99,
+      "moonScore": 51.33,
+      "radiantScore": 99.01,
+      "viewingScore": 84.7,
+      "moonConditions": {
+        "dateLocal": "2027-10-22",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.4371,
+        "moonlessHours": 4.98,
+        "totalDarknessHours": 10.12
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 69.59,
+        "darkRadiantHours": 5.67
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "big-bend",
       "destinationSlug": "big-bend",
       "destinationName": "Big Bend",
@@ -139,34 +167,6 @@
       "radiantConditions": {
         "maximumAltitudeDeg": 76.72,
         "darkRadiantHours": 5.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "natural-bridges",
-      "destinationSlug": "natural-bridges",
-      "destinationName": "Natural Bridges",
-      "siteId": "natural-bridges-campground",
-      "siteSlug": "natural-bridges-campground",
-      "siteName": "Natural Bridges campground",
-      "climateScore": 98,
-      "moonScore": 51.19,
-      "radiantScore": 99.01,
-      "viewingScore": 84.16,
-      "moonConditions": {
-        "dateLocal": "2027-10-22",
-        "timezone": "America/Denver",
-        "moonIlluminationFraction": 0.4419,
-        "moonlessHours": 4.98,
-        "totalDarknessHours": 10.12
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 68.38,
-        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",
@@ -289,26 +289,26 @@
     },
     {
       "rank": 5,
-      "destinationId": "big-bend",
-      "destinationSlug": "big-bend",
-      "destinationName": "Big Bend",
-      "siteId": "big-bend-panther-junction",
-      "siteSlug": "big-bend-panther-junction",
-      "siteName": "Big Bend desert observing area",
-      "climateScore": 98,
-      "moonScore": 52.5,
-      "radiantScore": 98.5,
-      "viewingScore": 84.45,
+      "destinationId": "grand-canyon-parashant",
+      "destinationSlug": "grand-canyon-parashant",
+      "destinationName": "Grand Canyon-Parashant",
+      "siteId": "parashant-mount-trumbull-trailhead",
+      "siteSlug": "parashant-mount-trumbull-trailhead",
+      "siteName": "Mount Trumbull Trailhead parking",
+      "climateScore": 99,
+      "moonScore": 51.33,
+      "radiantScore": 99.01,
+      "viewingScore": 84.7,
       "moonConditions": {
         "dateLocal": "2027-10-22",
-        "timezone": "America/Chicago",
-        "moonIlluminationFraction": 0.4466,
-        "moonlessHours": 5.17,
-        "totalDarknessHours": 10.08
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.4371,
+        "moonlessHours": 4.98,
+        "totalDarknessHours": 10.12
       },
       "radiantConditions": {
-        "maximumAltitudeDeg": 76.72,
-        "darkRadiantHours": 5.5
+        "maximumAltitudeDeg": 69.59,
+        "darkRadiantHours": 5.67
       },
       "caveats": [
         "Viewing score is not a forecast of meteor counts or ZHR.",

@@ -19,7 +19,8 @@ const siteImages = readJson("data-config/sources/site-images.json");
 const sourceAudit = readJson("docs/staged-source-audit.json");
 const factualReviews = readJson("data-config/sources/staged-factual-reviews.json");
 
-const stagedDestinations = destinations.filter((destination) => destination.active === false);
+const cohortDestinationIds = new Set(factualReviews.records.map((record) => record.destinationId));
+const stagedDestinations = destinations.filter((destination) => cohortDestinationIds.has(destination.id));
 const byDestination = (records) => new Map(records.map((record) => [record.destinationId, record]));
 const guideByDestination = byDestination(guides);
 const tourByDestination = byDestination(tours);
@@ -84,9 +85,12 @@ const records = stagedDestinations.map((destination) => {
   const pendingSiteImages = siteStates.filter((site) => site.imageStatus !== "approved");
   const factualReview = factualReviewByDestination.get(destination.id);
   const factualReviewStatus = factualReview?.status ?? "required";
+  const publicationMode = factualReview?.publicationDecision?.mode ?? null;
+  const transparentAccessPublication = publicationMode === "transparent-unverified-access";
   const allSitesUnavailable = destinationSites.length > 0
     && destinationSites.every((site) => ["no", "unknown"].includes(site.publicAccess));
   const blockers = [];
+  const warnings = [];
   if (!guide) blockers.push("guide-missing");
   if (!tour) blockers.push("tour-missing");
   if (areas.length === 0) blockers.push("stay-area-missing");
@@ -96,8 +100,11 @@ const records = stagedDestinations.map((destination) => {
   if (sourceBreakages.length > 0) blockers.push("source-reachability-broken");
   if (blockedSources.length > 0) blockers.push("source-access-manual-review-required");
   if (factualReviewStatus === "required") blockers.push("source-factual-review-required");
-  if (factualReviewStatus === "changes-required") blockers.push("source-factual-changes-required");
-  if (allSitesUnavailable) blockers.push("observation-site-access-unavailable");
+  if (factualReviewStatus === "changes-required" && !transparentAccessPublication) blockers.push("source-factual-changes-required");
+  if (factualReviewStatus === "changes-required" && transparentAccessPublication) warnings.push("source-factual-limitations-published-transparently");
+  if (allSitesUnavailable && !transparentAccessPublication) blockers.push("observation-site-access-unavailable");
+  if (allSitesUnavailable && transparentAccessPublication) warnings.push("public-night-access-unverified-reader-confirmation-required");
+  if (transparentAccessPublication && factualReview?.publicationDecision?.currentClosure) warnings.push("currently-closed-do-not-visit-until-official-reopening");
   if (destinationImageStatus !== "approved") blockers.push("destination-image-license-pending");
   if (pendingSiteImages.length > 0) blockers.push("site-image-license-pending");
 
@@ -124,6 +131,8 @@ const records = stagedDestinations.map((destination) => {
     missingSnapshots,
     staleSnapshots,
     activationBlockers: blockers,
+    activationWarnings: warnings,
+    publicationMode,
     readyForActivation: blockers.length === 0,
   };
 });
@@ -131,7 +140,7 @@ const records = stagedDestinations.map((destination) => {
 const report = {
   version: 1,
   generatedAt: new Date().toISOString(),
-  method: "Offline activation-readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification.",
+  method: "Offline catalog-publication readiness inventory. Snapshot presence and source reachability do not replace factual source review or image-license verification. A transparent-unverified-access publication decision preserves unresolved access findings as visible warnings and never represents permission or a travel recommendation.",
   summary: {
     destinations: records.length,
     sites: records.reduce((sum, record) => sum + record.sites.length, 0),
@@ -143,6 +152,8 @@ const report = {
     requiringFactualSourceReview: records.filter((record) => record.sources.factualReview === "required").length,
     requiringFactualChanges: records.filter((record) => record.sources.factualReview === "changes-required").length,
     withVerifiedFactualReview: records.filter((record) => record.sources.factualReview === "verified").length,
+    withTransparentAccessLimitations: records.filter((record) => record.publicationMode === "transparent-unverified-access").length,
+    withActivationWarnings: records.filter((record) => record.activationWarnings.length > 0).length,
     readyForActivation: records.filter((record) => record.readyForActivation).length,
   },
   records,

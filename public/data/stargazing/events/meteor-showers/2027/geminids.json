@@ -119,6 +119,34 @@
     },
     {
       "rank": 4,
+      "destinationId": "grand-canyon-parashant",
+      "destinationSlug": "grand-canyon-parashant",
+      "destinationName": "Grand Canyon-Parashant",
+      "siteId": "parashant-mount-trumbull-trailhead",
+      "siteSlug": "parashant-mount-trumbull-trailhead",
+      "siteName": "Mount Trumbull Trailhead parking",
+      "climateScore": 94,
+      "moonScore": 1.08,
+      "radiantScore": 100,
+      "viewingScore": 67.32,
+      "moonConditions": {
+        "dateLocal": "2027-12-14",
+        "timezone": "America/Phoenix",
+        "moonIlluminationFraction": 0.964,
+        "moonlessHours": 0,
+        "totalDarknessHours": 11.23
+      },
+      "radiantConditions": {
+        "maximumAltitudeDeg": 86.52,
+        "darkRadiantHours": 9.5
+      },
+      "caveats": [
+        "Viewing score is not a forecast of meteor counts or ZHR.",
+        "Climate component uses monthly historical sky-quality climatology for the event month."
+      ]
+    },
+    {
+      "rank": 5,
       "destinationId": "natural-bridges",
       "destinationSlug": "natural-bridges",
       "destinationName": "Natural Bridges",
@@ -138,34 +166,6 @@
       },
       "radiantConditions": {
         "maximumAltitudeDeg": 85.34,
-        "darkRadiantHours": 9.5
-      },
-      "caveats": [
-        "Viewing score is not a forecast of meteor counts or ZHR.",
-        "Climate component uses monthly historical sky-quality climatology for the event month."
-      ]
-    },
-    {
-      "rank": 5,
-      "destinationId": "death-valley",
-      "destinationSlug": "death-valley",
-      "destinationName": "Death Valley",
-      "siteId": "mesquite-flat-sand-dunes",
-      "siteSlug": "mesquite-flat-sand-dunes",
-      "siteName": "Mesquite Flat Sand Dunes",
-      "climateScore": 93,
-      "moonScore": 1.14,
-      "radiantScore": 100,
-      "viewingScore": 66.84,
-      "moonConditions": {
-        "dateLocal": "2027-12-14",
-        "timezone": "America/Los_Angeles",
-        "moonIlluminationFraction": 0.9621,
-        "moonlessHours": 0,
-        "totalDarknessHours": 11.24
-      },
-      "radiantConditions": {
-        "maximumAltitudeDeg": 86.31,
         "darkRadiantHours": 9.5
       },
       "caveats": [

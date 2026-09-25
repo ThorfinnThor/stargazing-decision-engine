@@ -4,6 +4,7 @@ import { formatMonth } from "@/lib/i18n/months";
 import { localizedLinks } from "@/lib/i18n/links";
 import type { DestinationSiteView } from "@/components/sky/destination-site-explorer";
 import { recommendedSiteView } from "@/lib/destination/site-recommendation";
+import { isTravelEligibleSite } from "@/lib/access/travel";
 
 const confidenceRank = { high: 0, moderate: 1, low: 2 } as const;
 
@@ -48,8 +49,22 @@ export function DestinationDecisionSummary({
   hasRealScores: boolean;
 }) {
   const isGerman = locale === "de";
-  const recommended = recommendedSiteView(siteViews);
-  if (!recommended) return null;
+  const eligibleSiteIds = new Set(sites.filter(isTravelEligibleSite).map((site) => site.id));
+  const recommended = recommendedSiteView(siteViews.filter((view) => eligibleSiteIds.has(view.site.id)));
+  if (!recommended) return <section className="destination-decision" id="destination-decision" aria-labelledby="destination-decision-title">
+    <div className="destination-decision-heading">
+      <div>
+        <p className="eyebrow">{isGerman ? "Zugang nicht bestätigt" : "Access not confirmed"}</p>
+        <h2 id="destination-decision-title">{isGerman ? "Planungsreferenz, keine Reiseempfehlung." : "Planning reference, not a travel recommendation."}</h2>
+      </div>
+      <p>{isGerman
+        ? "Die geprüften öffentlichen Quellen belegen keinen nutzbaren öffentlichen Nachtzugang. Frage vor Buchung oder Anreise selbst beim genannten Betreiber oder bei der zuständigen Behörde nach. Ohne konkrete Bestätigung darf keiner der Pins als Beobachtungsort genutzt werden."
+        : "The reviewed public sources do not establish usable public night access. Before booking or travel, contact the named operator or responsible authority yourself. Without specific confirmation, none of the pins should be used as an observing site."}</p>
+    </div>
+    <div className="destination-plan-card">
+      {sites.map((site) => <p className="destination-access-warning" key={site.id}><strong>{site.name}:</strong> {accessLabel(site.publicAccess, locale)}</p>)}
+    </div>
+  </section>;
   const recommendedSite = sites.find((site) => site.id === recommended.site.id) ?? null;
   const bestMonth = [...recommended.monthly.months].sort((left, right) =>
     right.score - left.score || confidenceRank[left.confidenceLevel] - confidenceRank[right.confidenceLevel] || left.month - right.month,

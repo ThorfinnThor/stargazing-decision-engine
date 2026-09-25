@@ -3,7 +3,7 @@
   "originName": "Vienna",
   "countryCode": "AT",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-09-08T13:49:31.088236Z",
+  "generatedAt": "2026-09-25T08:47:57.119268Z",
   "entries": [
     {
       "rank": 1,
@@ -207,6 +207,106 @@
     },
     {
       "rank": 3,
+      "destinationId": "grossmugl",
+      "destinationSlug": "grossmugl",
+      "destinationName": "Großmugl",
+      "distanceKm": 34.07,
+      "distanceBand": "near",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 67
+        },
+        {
+          "month": 8,
+          "score": 67
+        },
+        {
+          "month": 9,
+          "score": 67
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 67,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 67,
+      "distanceUtility": 100,
+      "shortTripScore": 75.25,
+      "bestSiteId": "grossmugl-sternenwiese",
+      "stayArea": {
+        "id": "grossmugl",
+        "name": "Großmugl",
+        "affiliateQuery": "Großmugl Austria"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 67 in month 4.",
+        "Distance is 34.07 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Großmugl."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "bukk",
       "destinationSlug": "bukk",
       "destinationName": "Bükk National Park",
@@ -306,7 +406,107 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 4,
+      "rank": 5,
+      "destinationId": "attersee-traunsee",
+      "destinationSlug": "attersee-traunsee",
+      "destinationName": "Attersee-Traunsee",
+      "distanceKm": 208.25,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 62
+        },
+        {
+          "month": 10,
+          "score": 60
+        },
+        {
+          "month": 3,
+          "score": 59
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 53,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 62,
+      "distanceUtility": 85,
+      "shortTripScore": 67.75,
+      "bestSiteId": "attersee-taferlklaussee",
+      "stayArea": {
+        "id": "weyregg-am-attersee",
+        "name": "Weyregg am Attersee",
+        "affiliateQuery": "Weyregg am Attersee Austria"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 62 in month 4.",
+        "Distance is 208.25 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Weyregg am Attersee."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 6,
       "destinationId": "winklmoosalm",
       "destinationSlug": "winklmoosalm",
       "destinationName": "Winklmoosalm",
@@ -402,6 +602,106 @@
         "Best month score 64 in month 1.",
         "Distance is 289.25 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Reit im Winkl."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 7,
+      "destinationId": "izera",
+      "destinationSlug": "izera",
+      "destinationName": "Izera Dark-Sky Park",
+      "distanceKm": 298.57,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 61
+        },
+        {
+          "month": 8,
+          "score": 61
+        },
+        {
+          "month": 9,
+          "score": 61
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 47,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 46,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 46,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 61,
+      "distanceUtility": 60,
+      "shortTripScore": 60.75,
+      "bestSiteId": "izera-orle-astronomy-workshop",
+      "stayArea": {
+        "id": "orle",
+        "name": "Orle",
+        "affiliateQuery": "Orle Poland"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 61 in month 4.",
+        "Distance is 298.57 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Orle."
       ],
       "confidenceLevel": "high"
     }

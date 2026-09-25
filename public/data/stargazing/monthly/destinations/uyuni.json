@@ -1,0 +1,73 @@
+{
+  "destinationId": "uyuni",
+  "siteId": "uyuni-salt-flat",
+  "dataStatus": "real",
+  "algorithmVersion": "site-score-1.1.0",
+  "generatedAt": "2026-09-17T12:01:45.387158Z",
+  "caveats": [
+    "Temperature comfort uses the monthly astronomical-night mean, not hourly utility",
+    "High-elevation temperature and wind come from the coarse ERA5 grid and are not a summit forecast; confidence is capped at moderate"
+  ],
+  "months": [
+    {
+      "month": 1,
+      "score": 65,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 2,
+      "score": 68,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 3,
+      "score": 81,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 4,
+      "score": 94,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 5,
+      "score": 95,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 6,
+      "score": 95,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 7,
+      "score": 94,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 8,
+      "score": 95,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 9,
+      "score": 96,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 10,
+      "score": 95,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 11,
+      "score": 93,
+      "confidenceLevel": "moderate"
+    },
+    {
+      "month": 12,
+      "score": 77,
+      "confidenceLevel": "moderate"
+    }
+  ]
+}

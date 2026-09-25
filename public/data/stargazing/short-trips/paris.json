@@ -3,10 +3,110 @@
   "originName": "Paris",
   "countryCode": "FR",
   "maxShortTripKm": 400,
-  "generatedAt": "2026-09-08T13:49:31.088236Z",
+  "generatedAt": "2026-09-25T08:47:57.119268Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "isle-of-sark",
+      "destinationSlug": "isle-of-sark",
+      "destinationName": "Isle of Sark",
+      "distanceKm": 348.74,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 65
+        },
+        {
+          "month": 9,
+          "score": 65
+        },
+        {
+          "month": 8,
+          "score": 64
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 65,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 65,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 55,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 65,
+      "distanceUtility": 60,
+      "shortTripScore": 63.75,
+      "bestSiteId": "sark-dachinger-observatory",
+      "stayArea": {
+        "id": "sark",
+        "name": "Sark",
+        "affiliateQuery": "Sark United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 65 in month 4.",
+        "Distance is 348.74 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Sark."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
       "destinationId": "south-downs",
       "destinationSlug": "south-downs",
       "destinationName": "South Downs",
@@ -106,7 +206,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 2,
+      "rank": 3,
       "destinationId": "eifel",
       "destinationSlug": "eifel",
       "destinationName": "Eifel Dark Sky Park",

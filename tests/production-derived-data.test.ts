@@ -11,8 +11,8 @@ const read = <T>(path: string) => JSON.parse(readFileSync(resolve(process.cwd(),
 test("published derived products are real and access-gated", () => {
   const manifest = read<Manifest>("public/data/stargazing/manifest.json");
   assert.equal(manifest.counts.seedScoreSites, 0);
-  assert.equal(manifest.counts.observationSites, 200);
-  assert.equal(manifest.counts.realScoreSites, 200);
+  assert.equal(manifest.counts.observationSites, 300);
+  assert.equal(manifest.counts.realScoreSites, 300);
   assert.equal(manifest.counts.calendarFiles, manifest.counts.destinations * 36);
   const images = read<ImageManifest>("public/data/stargazing/images/manifest.json");
   const publishedImages = [...images.destinations, ...images.sites];
@@ -33,7 +33,7 @@ test("published derived products are real and access-gated", () => {
   assert.equal(calendar.nights.length, new Date(Date.UTC(calendar.year, calendar.month, 0)).getUTCDate());
 
   const sites = read<ObservationSite[]>("data-config/sources/observation-sites.json");
-  assert.equal(sites.filter((site) => site.active).length, 200);
+  assert.equal(sites.filter((site) => site.active).length, 300);
   const eligible = new Set(sites.filter(isTravelEligibleSite).map((site) => site.id));
   for (const file of readdirSync(resolve(process.cwd(), "public/data/stargazing/short-trips"))) {
     const trip = read<ShortTripFile>(`public/data/stargazing/short-trips/${file}`);

@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "id": "vercors-one-site-night",
+  "slug": "vercors-one-site-night",
+  "destinationId": "vercors",
+  "recommendedSiteId": "vercors-trieves-observatory",
+  "title": {
+    "en": "Vercors: A programme-led astronomy night at one confirmed venue, never a generic reserve map pin",
+    "de": "Vercors: Eine programmgebundene Astronomienacht an einem bestätigten Ort statt an einem beliebigen Kartenpunkt der Reserve"
+  },
+  "seoDescription": {
+    "en": "Plan a source-led Vercors astronomy visit only after a current programme and access are confirmed.",
+    "de": "Plane einen quellenbasierten Astronomiebesuch in Vercors nur nach Bestätigung eines aktuellen Programms und Zugangs."
+  },
+  "standfirst": {
+    "en": "Vercors has documented astronomy venues, but the reviewed pages do not establish a current independent night-observing site. This guide starts with a programme or operator confirmation and treats postponement as the only valid outcome when that confirmation is absent. A regional Starlight designation confirms sky quality, not tonight's admission, parking or programme.",
+    "de": "Vercors besitzt dokumentierte Astronomieorte, doch die geprüften Seiten belegen keinen aktuell selbstständig nutzbaren Nachtbeobachtungsplatz. Dieser Guide beginnt mit der Bestätigung durch Programm oder Betreiber und sieht ohne diese Bestätigung ausschließlich eine Verschiebung vor. Eine regionale Starlight-Auszeichnung bestätigt die Himmelsqualität, aber weder heutigen Zutritt noch Parkplatz oder Programm."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachten an"
+      },
+      "value": {
+        "en": "Observatoire d'astronomie du Trièves",
+        "de": "Observatoire d'astronomie du Trièves"
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return base",
+        "de": "Rückkehrbasis"
+      },
+      "value": {
+        "en": "Gresse-en-Vercors",
+        "de": "Gresse-en-Vercors"
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival rule",
+        "de": "Ankunftsregel"
+      },
+      "value": {
+        "en": "At the booked time using the operator's instructions",
+        "de": "Zur gebuchten Zeit nach Betreiberanweisung"
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Separate alternative",
+        "de": "Getrennte Alternative"
+      },
+      "value": {
+        "en": "Moulins de la Mure astronomy event",
+        "de": "Moulins de la Mure astronomy event"
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "vercors-route-place",
+      "kind": "prose",
+      "heading": {
+        "en": "Why this route stops at Observatoire d'astronomie du Trièves",
+        "de": "Warum diese Route an Observatoire d'astronomie du Trièves endet"
+      },
+      "paragraphs": {
+        "en": [
+          "The Trièves observatory is usable only during a currently published public session or after direct group confirmation. Moulins de la Mure is a separate dated event venue and must not be treated as routinely open at night. The single-stop design protects attention, dark adaptation and the known return to Gresse-en-Vercors.",
+          "Read signs and boundaries before unloading. A named place is useful only when its current visitor arrangement is understood."
+        ],
+        "de": [
+          "Das Observatoire du Trièves ist nur während eines aktuell veröffentlichten öffentlichen Termins oder nach direkter Gruppenbestätigung nutzbar. Die Moulins de la Mure sind ein getrennter, datierter Veranstaltungsort und dürfen nicht als regulär nachts geöffnet behandelt werden. Das Ein-Ort-Design schützt Aufmerksamkeit, Dunkeladaption und die bekannte Rückkehr nach Gresse-en-Vercors.",
+          "Lies Schilder und Grenzen vor dem Ausladen. Ein benannter Ort hilft nur, wenn seine aktuelle Besucherregelung verstanden ist."
+        ]
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ]
+    },
+    {
+      "id": "vercors-route-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The sequence for Vercors",
+        "de": "Die Reihenfolge für Vercors"
+      },
+      "introduction": {
+        "en": "Daylight arrival protects the night that follows.",
+        "de": "Ankunft bei Tageslicht schützt die folgende Nacht."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving Gresse-en-Vercors",
+            "de": "Vor der Abfahrt aus Gresse-en-Vercors"
+          },
+          "title": {
+            "en": "Confirm access, weather and return",
+            "de": "Zugang, Wetter und Rückweg bestätigen"
+          },
+          "body": {
+            "en": "Open the current authority pages for Vercors, check the exact elevation and save directions offline. A dark-sky label does not confirm today's gate, road or reservation. Also note who to contact when an on-site notice changes the plan.",
+            "de": "Öffne die aktuellen Verwaltungsseiten für Vercors, prüfe die genaue Höhe und speichere die Navigation offline. Ein Dark-Sky-Label bestätigt weder heutiges Tor, Straße noch Reservierung. Notiere außerdem, wen du bei einer Änderung vor Ort kontaktieren kannst."
+          },
+          "sourceIds": [
+            "vercors-source-1",
+            "vercors-source-2",
+            "vercors-source-3",
+            "vercors-source-4",
+            "vercors-source-5"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the booked arrival time",
+            "de": "Zur gebuchten Ankunftszeit"
+          },
+          "title": {
+            "en": "Check in at Observatoire d'astronomie du Trièves",
+            "de": "An Observatoire d'astronomie du Trièves einchecken"
+          },
+          "body": {
+            "en": "Follow the booking instructions for Observatoire d'astronomie du Trièves, use only the assigned arrival route and parking, and keep Moulins de la Mure astronomy event for a separately booked visit. A reservation for one venue grants no access to the other.",
+            "de": "Folge den Buchungshinweisen für Observatoire d'astronomie du Trièves, nutze nur die zugewiesene Anfahrt und den vorgesehenen Parkplatz und bewahre Moulins de la Mure astronomy event für einen separat gebuchten Besuch. Eine Reservierung für einen Ort gewährt keinen Zugang zum anderen."
+          },
+          "sourceIds": [
+            "vercors-source-1",
+            "vercors-source-2",
+            "vercors-source-3",
+            "vercors-source-4",
+            "vercors-source-5"
+          ]
+        },
+        {
+          "time": {
+            "en": "After twilight",
+            "de": "Nach der Dämmerung"
+          },
+          "title": {
+            "en": "Observe without expanding the footprint",
+            "de": "Beobachten ohne die Fläche zu erweitern"
+          },
+          "body": {
+            "en": "Follow staff instructions and remain inside the booked programme footprint. Keep personal light low, do not interfere with instruments or other visitors, and accept the operator's weather decision. Use only equipment covered by the booking and leave exactly as instructed when the programme ends.",
+            "de": "Folge den Anweisungen des Personals und bleibe innerhalb der gebuchten Programmfläche. Halte eigenes Licht niedrig, störe weder Instrumente noch andere Gäste und akzeptiere die Wetterentscheidung des Betreibers. Nutze nur von der Buchung abgedeckte Ausrüstung und verlasse den Ort zum Programmende genau nach Anweisung."
+          },
+          "sourceIds": [
+            "vercors-source-1",
+            "vercors-source-2",
+            "vercors-source-3",
+            "vercors-source-4",
+            "vercors-source-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vercors-route-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two outcomes are enough in Vercors",
+        "de": "Zwei Ergebnisse genügen in Vercors"
+      },
+      "introduction": {
+        "en": "A supported night proceeds; an unsupported one stops.",
+        "de": "Eine bestätigte Nacht findet statt, eine unbestätigte endet."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Access and return are confirmed",
+            "de": "Zugang und Rückkehr sind bestätigt"
+          },
+          "body": {
+            "en": "Stay at Observatoire d'astronomie du Trièves, keep the vehicle settled and return to Gresse-en-Vercors by the route learned in daylight.",
+            "de": "Bleibe an Observatoire d'astronomie du Trièves, lasse das Fahrzeug stehen und kehre auf der bei Tageslicht erlernten Route nach Gresse-en-Vercors zurück."
+          },
+          "sourceIds": [
+            "vercors-source-1",
+            "vercors-source-2",
+            "vercors-source-3",
+            "vercors-source-4",
+            "vercors-source-5"
+          ]
+        },
+        {
+          "label": {
+            "en": "A critical detail is missing",
+            "de": "Ein kritisches Detail fehlt"
+          },
+          "body": {
+            "en": "Postpone without adding an unverified roadside stop. That is a complete and responsible result.",
+            "de": "Verschiebe ohne unbestätigten Straßenhalt. Das ist ein vollständiges und verantwortungsvolles Ergebnis."
+          },
+          "sourceIds": [
+            "vercors-source-1",
+            "vercors-source-2",
+            "vercors-source-3",
+            "vercors-source-4",
+            "vercors-source-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "vercors-route-warning",
+      "kind": "note",
+      "heading": {
+        "en": "The non-negotiable Vercors boundary",
+        "de": "Die unverhandelbare Grenze in Vercors"
+      },
+      "body": {
+        "en": "Current authority rules take precedence over a clear sky, an attractive photograph or an old map pin.",
+        "de": "Aktuelle Verwaltungsregeln haben Vorrang vor klarem Himmel, attraktivem Foto oder altem Kartenpin."
+      },
+      "sourceIds": [
+        "vercors-source-1",
+        "vercors-source-2",
+        "vercors-source-3",
+        "vercors-source-4",
+        "vercors-source-5"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "vercors-source-1",
+    "vercors-source-2",
+    "vercors-source-3",
+    "vercors-source-4",
+    "vercors-source-5"
+  ],
+  "lastReviewedAt": "2026-09-17"
+}

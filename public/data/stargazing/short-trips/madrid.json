@@ -3,10 +3,310 @@
   "originName": "Madrid",
   "countryCode": "ES",
   "maxShortTripKm": 450,
-  "generatedAt": "2026-09-08T13:49:31.088236Z",
+  "generatedAt": "2026-09-25T08:47:57.119268Z",
   "entries": [
     {
       "rank": 1,
+      "destinationId": "monfrague",
+      "destinationSlug": "monfrague",
+      "destinationName": "Monfragüe",
+      "distanceKm": 210.07,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 92
+        },
+        {
+          "month": 8,
+          "score": 92
+        },
+        {
+          "month": 6,
+          "score": 90
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 78,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 92,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 89,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 80,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 77,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 92,
+      "distanceUtility": 85,
+      "shortTripScore": 90.25,
+      "bestSiteId": "monfrague-castillo",
+      "stayArea": {
+        "id": "torrejón-el-rubio",
+        "name": "Torrejón el Rubio",
+        "affiliateQuery": "Torrejón el Rubio Spain"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 92 in month 7.",
+        "Distance is 210.07 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Torrejón el Rubio."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
+      "destinationId": "sierra-de-gredos",
+      "destinationSlug": "sierra-de-gredos",
+      "destinationName": "Sierra de Gredos",
+      "distanceKm": 120.42,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 91
+        },
+        {
+          "month": 8,
+          "score": 90
+        },
+        {
+          "month": 6,
+          "score": 86
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 75,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 74,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 86,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 91,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 85,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 71,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 69,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 91,
+      "distanceUtility": 85,
+      "shortTripScore": 89.5,
+      "bestSiteId": "gredos-navarredonda-mirador",
+      "stayArea": {
+        "id": "navarredonda-de-gredos",
+        "name": "Navarredonda de Gredos",
+        "affiliateQuery": "Navarredonda de Gredos Spain"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 91 in month 7.",
+        "Distance is 120.42 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Navarredonda de Gredos."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 3,
+      "destinationId": "javalambre",
+      "destinationSlug": "javalambre",
+      "destinationName": "Javalambre",
+      "distanceKm": 230.86,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 89
+        },
+        {
+          "month": 6,
+          "score": 86
+        },
+        {
+          "month": 8,
+          "score": 84
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 77,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 77,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 77,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 89,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 76,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 74,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 73,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 89,
+      "distanceUtility": 85,
+      "shortTripScore": 88,
+      "bestSiteId": "javalambre-galactica",
+      "stayArea": {
+        "id": "arcos-de-las-salinas",
+        "name": "Arcos de las Salinas",
+        "affiliateQuery": "Arcos de las Salinas Spain"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 89 in month 7.",
+        "Distance is 230.86 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Arcos de las Salinas."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "alqueva",
       "destinationSlug": "alqueva",
       "destinationName": "Alqueva",
@@ -106,7 +406,107 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 2,
+      "rank": 5,
+      "destinationId": "sierra-morena",
+      "destinationSlug": "sierra-morena",
+      "destinationName": "Sierra Morena",
+      "distanceKm": 324.83,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 6,
+          "score": 90
+        },
+        {
+          "month": 7,
+          "score": 90
+        },
+        {
+          "month": 8,
+          "score": 90
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 79,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 88,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 83,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 82,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 78,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 90,
+      "distanceUtility": 60,
+      "shortTripScore": 82.5,
+      "bestSiteId": "sierra-morena-cartuja-cazalla-astrotourism",
+      "stayArea": {
+        "id": "cazalla-de-la-sierra",
+        "name": "Cazalla de la Sierra",
+        "affiliateQuery": "Cazalla de la Sierra Spain"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 90 in month 6.",
+        "Distance is 324.83 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Cazalla de la Sierra."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 6,
       "destinationId": "montsec",
       "destinationSlug": "montsec",
       "destinationName": "Montsec",
@@ -206,7 +606,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 3,
+      "rank": 7,
       "destinationId": "sierra-nevada",
       "destinationSlug": "sierra-nevada",
       "destinationName": "Sierra Nevada",
@@ -306,7 +706,107 @@
       "confidenceLevel": "moderate"
     },
     {
-      "rank": 4,
+      "rank": 8,
+      "destinationId": "aigues-tortes",
+      "destinationSlug": "aigues-tortes",
+      "destinationName": "Aigüestortes",
+      "distanceKm": 444.55,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 7,
+          "score": 76
+        },
+        {
+          "month": 8,
+          "score": 76
+        },
+        {
+          "month": 9,
+          "score": 70
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 66,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 2,
+          "score": 66,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 3,
+          "score": 64,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 4,
+          "score": 59,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 5,
+          "score": 58,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 6,
+          "score": 68,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 7,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 8,
+          "score": 76,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 9,
+          "score": 70,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 10,
+          "score": 64,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 11,
+          "score": 64,
+          "confidenceLevel": "moderate"
+        },
+        {
+          "month": 12,
+          "score": 66,
+          "confidenceLevel": "moderate"
+        }
+      ],
+      "stargazingTripScore": 76,
+      "distanceUtility": 60,
+      "shortTripScore": 72,
+      "bestSiteId": "aigues-boi-taull-starlight",
+      "stayArea": {
+        "id": "boi",
+        "name": "Boí",
+        "affiliateQuery": "Boí Spain"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 76 in month 7.",
+        "Distance is 444.55 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Boí."
+      ],
+      "confidenceLevel": "moderate"
+    },
+    {
+      "rank": 9,
       "destinationId": "pic-du-midi",
       "destinationSlug": "pic-du-midi",
       "destinationName": "Pic du Midi",

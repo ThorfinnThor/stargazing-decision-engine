@@ -3,7 +3,7 @@
   "originName": "London",
   "countryCode": "GB",
   "maxShortTripKm": 350,
-  "generatedAt": "2026-09-08T13:49:31.088236Z",
+  "generatedAt": "2026-09-25T08:47:57.119268Z",
   "entries": [
     {
       "rank": 1,
@@ -207,6 +207,106 @@
     },
     {
       "rank": 3,
+      "destinationId": "isle-of-sark",
+      "destinationSlug": "isle-of-sark",
+      "destinationName": "Isle of Sark",
+      "distanceKm": 279.64,
+      "distanceBand": "weekend",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 65
+        },
+        {
+          "month": 9,
+          "score": 65
+        },
+        {
+          "month": 8,
+          "score": 64
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 56,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 63,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 65,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 62,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 60,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 64,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 65,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 58,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 55,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 65,
+      "distanceUtility": 60,
+      "shortTripScore": 63.75,
+      "bestSiteId": "sark-dachinger-observatory",
+      "stayArea": {
+        "id": "sark",
+        "name": "Sark",
+        "affiliateQuery": "Sark United Kingdom"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 65 in month 4.",
+        "Distance is 279.64 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Sark."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "brecon-beacons",
       "destinationSlug": "brecon-beacons",
       "destinationName": "Bannau Brycheiniog",
@@ -306,7 +406,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 4,
+      "rank": 5,
       "destinationId": "elan-valley",
       "destinationSlug": "elan-valley",
       "destinationName": "Elan Valley",
@@ -406,7 +506,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 5,
+      "rank": 6,
       "destinationId": "north-york-moors",
       "destinationSlug": "north-york-moors",
       "destinationName": "North York Moors",
@@ -506,7 +606,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 6,
+      "rank": 7,
       "destinationId": "eryri",
       "destinationSlug": "eryri",
       "destinationName": "Eryri",
@@ -606,7 +706,7 @@
       "confidenceLevel": "high"
     },
     {
-      "rank": 7,
+      "rank": 8,
       "destinationId": "yorkshire-dales",
       "destinationSlug": "yorkshire-dales",
       "destinationName": "Yorkshire Dales",

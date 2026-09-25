@@ -3,7 +3,7 @@
   "originName": "Berlin",
   "countryCode": "DE",
   "maxShortTripKm": 350,
-  "generatedAt": "2026-09-08T13:49:31.088236Z",
+  "generatedAt": "2026-09-25T08:47:57.119268Z",
   "entries": [
     {
       "rank": 1,
@@ -207,6 +207,106 @@
     },
     {
       "rank": 3,
+      "destinationId": "izera",
+      "destinationSlug": "izera",
+      "destinationName": "Izera Dark-Sky Park",
+      "distanceKm": 233.53,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 61
+        },
+        {
+          "month": 8,
+          "score": 61
+        },
+        {
+          "month": 9,
+          "score": 61
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 47,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 50,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 61,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 46,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 46,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 61,
+      "distanceUtility": 85,
+      "shortTripScore": 67,
+      "bestSiteId": "izera-orle-astronomy-workshop",
+      "stayArea": {
+        "id": "orle",
+        "name": "Orle",
+        "affiliateQuery": "Orle Poland"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 61 in month 4.",
+        "Distance is 233.53 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Orle."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 4,
       "destinationId": "rhoen",
       "destinationSlug": "rhoen",
       "destinationName": "Rhön",

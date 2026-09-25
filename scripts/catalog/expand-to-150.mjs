@@ -2382,7 +2382,10 @@ const upsert = (array, item, key = "id") => {
 };
 
 for (const review of stagedReviewBatch.records) {
-  upsert(factualReviews.records, review, "destinationId");
+  const existing = factualReviews.records.find((record) => record.destinationId === review.destinationId);
+  upsert(factualReviews.records, existing?.publicationDecision
+    ? { ...review, publicationDecision: existing.publicationDecision }
+    : review, "destinationId");
 }
 
 for (const [index, item] of candidates.entries()) {

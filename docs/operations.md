@@ -26,7 +26,7 @@ ignored `generated/intermediate` files. Destination editorial tests read
 
 ## Backlog status, 2026-09-08
 
-- The production catalog contains 100 active destinations and 200 observation
+- The production catalog contains 150 active destinations and 300 observation
   sites, with 100 bilingual destination guides and 100 bilingual location tours.
   Fifty additional destinations, 100 sites, guides and tours are staged in the
   source catalog and remain inactive until their real score snapshots are

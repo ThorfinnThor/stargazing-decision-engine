@@ -61,6 +61,12 @@ const editoriallyReadyGearGuides = gearGuides.filter(isGearGuideEditorialReady);
 const destinationGuides = readJson<DestinationEditorialGuide[]>(resolve(root, "data-config/editorial/destination-guides.json"));
 const destinationGuidesBySlug = new Map(destinationGuides.map((guide) => [guide.slug, guide]));
 const locationTours = readJson<LocationTour[]>(resolve(root, "data-config/editorial/location-tours.json"));
+const factualReviews = readJson<{ records: Array<{ destinationId: string; publicationDecision?: { mode?: string } }> }>(resolve(root, "data-config/sources/staged-factual-reviews.json"));
+const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
+const transparentAccessDestinationIds = new Set(factualReviews.records
+  .filter((record) => record.publicationDecision?.mode === "transparent-unverified-access")
+  .map((record) => record.destinationId));
+const publishedLocationTours = locationTours.filter((tour) => activeDestinationIds.has(tour.destinationId) && !transparentAccessDestinationIds.has(tour.destinationId));
 
 function normalizedTimestamp(value: string) {
   const timestamp = new Date(/^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T00:00:00.000Z` : value);
@@ -160,11 +166,11 @@ for (const locale of config.locales) {
   }));
   pages.push(makePage({
     id: `location-tours-${locale}`, pageType: "location-tours", locale, path: `/${locale}/stargazing-tours/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/`])),
-    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Hundert Orte, hundert unterschiedliche Nächte." : "One hundred places, one hundred different nights.",
+    title: locale === "de" ? "Standort-Touren für Sternbeobachtung" : "Stargazing location tours", h1: locale === "de" ? "Bestätigte Orte, unterschiedliche Nächte." : "Confirmed places, different nights.",
     description: locale === "de" ? "Quellenbasierte Nachtpläne für konkrete Beobachtungsorte mit Zugang, Anfahrt und klaren Grenzen." : "Source-backed night plans for specific observing locations, with access, approach and practical boundaries.",
-    lastModified: latestTimestamp(...locationTours.map((tour) => tour.lastReviewedAt)), resultCount: locationTours.length, confidence: "high", uniqueInsightCount: locationTours.length, internalLinkCount: locationTours.length + 1,
+    lastModified: latestTimestamp(...publishedLocationTours.map((tour) => tour.lastReviewedAt)), resultCount: publishedLocationTours.length, confidence: "high", uniqueInsightCount: publishedLocationTours.length, internalLinkCount: publishedLocationTours.length + 1,
   }));
-  for (const tour of locationTours.filter((item) => activeDestinations.some((destination) => destination.id === item.destinationId))) {
+  for (const tour of publishedLocationTours) {
     const path = `/${locale}/stargazing-tours/${tour.slug}/`;
     pages.push(makePage({
       id: `location-tour-${tour.slug}-${locale}`, pageType: "location-tour", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/${tour.slug}/`])),

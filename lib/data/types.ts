@@ -30,7 +30,7 @@ export interface DestinationEditorialSource {
   title: string;
   url: string;
   checkedAt: string;
-  authority: "official-destination" | "public-agency" | "protected-area" | "science-institution" | "nonprofit-certifier";
+  authority: "official-destination" | "official-operator" | "public-agency" | "protected-area" | "science-institution" | "astronomy-organization" | "nonprofit-certifier" | "open-geodata" | "regional-directory";
 }
 
 export interface DestinationEditorialSection {

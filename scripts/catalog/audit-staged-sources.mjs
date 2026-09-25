@@ -19,9 +19,10 @@ if (!Number.isInteger(timeoutMs) || timeoutMs < 1000 || timeoutMs > 120000) thro
 const destinations = readJson("data-config/sources/destinations.json");
 const guides = readJson("data-config/editorial/destination-guides.json");
 const sites = readJson("data-config/sources/observation-sites.json");
-const stagedDestinationIds = new Set(destinations.filter((item) => item.active === false).map((item) => item.id));
-const stagedGuides = guides.filter((guide) => stagedDestinationIds.has(guide.destinationId));
-const stagedSites = sites.filter((site) => stagedDestinationIds.has(site.destinationId));
+const factualReviews = readJson("data-config/sources/staged-factual-reviews.json");
+const cohortDestinationIds = new Set(factualReviews.records.map((record) => record.destinationId));
+const stagedGuides = guides.filter((guide) => cohortDestinationIds.has(guide.destinationId));
+const stagedSites = sites.filter((site) => cohortDestinationIds.has(site.destinationId));
 const execFileAsync = promisify(execFile);
 
 const references = new Map();
@@ -125,7 +126,7 @@ const report = {
   checkedAt: new Date().toISOString(),
   method: "HTTP HEAD with GET fallback, redirects followed; reachability does not verify factual support, current access, or image licensing.",
   cohort: {
-    destinations: stagedDestinationIds.size,
+    destinations: cohortDestinationIds.size,
     sites: stagedSites.length,
     sourceRecords: stagedGuides.reduce((sum, guide) => sum + (guide.sources?.length ?? 0), 0),
     uniqueUrls: urls.length,

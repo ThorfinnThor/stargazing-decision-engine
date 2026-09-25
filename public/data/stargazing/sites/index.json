@@ -1,5 +1,45 @@
 [
   {
+    "id": "achi-heavens-sonohara-summit-event-site",
+    "slug": "achi-heavens-sonohara-summit-event-site",
+    "destinationId": "achi-village",
+    "name": "Heavens Sonohara summit Night Tour venue",
+    "lat": 35.455138,
+    "lon": 137.642326,
+    "elevationM": 1406,
+    "siteType": "booked-night-tour",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://sva.jp/night_tour/",
+    "accessNotes": {
+      "en": "The official 2026–2027 Night Tour uses the Heavens Sonohara summit venue at 1,400 metres, reached only by the 2.5-kilometre gondola from the published base address. Buy a date-specific ticket, navigate to the base rather than attempting to drive to the summit, follow the operator's zone and light-down instructions and use the returning gondola at the programme finish. Weather can move interpretation indoors or cancel operation, and the coordinate does not authorize independent mountain access.",
+      "de": "Die offizielle Night Tour 2026–2027 nutzt das 1.400 Meter hohe Gipfelgelände von Heavens Sonohara, das ausschließlich mit der 2,5 Kilometer langen Gondel von der veröffentlichten Taladresse erreicht wird. Kaufe ein datiertes Ticket, navigiere zur Talstation statt zum Gipfel zu fahren, folge den Zonen- und Licht-aus-Anweisungen des Betreibers und nutze zum Programmende die Talgondel. Wetter kann die Erklärung nach innen verlegen oder den Betrieb absagen; die Koordinate erlaubt keinen selbstständigen Bergzugang."
+    }
+  },
+  {
+    "id": "achi-namiai-park-observing-field",
+    "slug": "achi-namiai-park-observing-field",
+    "destinationId": "achi-village",
+    "name": "Namiai Park observing field",
+    "lat": 35.353776,
+    "lon": 137.668207,
+    "elevationM": 1177,
+    "siteType": "booked-stargazing-park",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://namiai-park.com/",
+    "accessNotes": {
+      "en": "Namiai Park publishes its exact address and embedded map position, daily opening to 22:00 and a guided stargazing session held every day, with indoor interpretation in rain. Pay the required admission or reserve a private observing deck, use the official parking and field only during current opening hours, and follow staff instructions for arrival, lighting, photography and departure. This is a separate facility from Heavens Sonohara and requires its own current arrangement.",
+      "de": "Namiai Park veröffentlicht genaue Adresse und eingebettete Kartenposition, tägliche Öffnung bis 22 Uhr und eine täglich stattfindende geführte Sternbeobachtung mit Innenprogramm bei Regen. Entrichte den erforderlichen Eintritt oder reserviere ein privates Beobachtungsdeck, nutze offiziellen Parkplatz und Beobachtungsfeld nur während der aktuellen Öffnungszeiten und folge den Personalhinweisen zu Ankunft, Licht, Fotografie und Abfahrt. Dies ist eine von Heavens Sonohara getrennte Anlage mit eigenem aktuellem Rahmen."
+    }
+  },
+  {
     "id": "activiteitencentrum-lauwersmeer",
     "slug": "activiteitencentrum-lauwersmeer",
     "destinationId": "lauwersmeer",
@@ -57,6 +97,46 @@
     "accessNotes": {
       "en": "Use only the published visitor arrangement for Mount Aenos picnic area. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
       "de": "Nutze nur die veröffentlichte Besucherregelung für Mount Aenos picnic area. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "aigues-boi-taull-starlight",
+    "slug": "aigues-boi-taull-starlight",
+    "destinationId": "aigues-tortes",
+    "name": "Mirador dels estels de Boí Taüll",
+    "lat": 42.4793803,
+    "lon": 0.8666296,
+    "elevationM": 2049,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.vallboi.cat/en/starlight-destination",
+    "accessNotes": {
+      "en": "The official Vall de Boí page locates this Starlight viewpoint on the accessible walkway from the ski station's P2 car park, with a planisphere for independent interpretation and observing events on selected dates. The coordinate is the mapped P2 arrival area: follow the signed walkway, recheck station notices and do not treat parking as camping permission.",
+      "de": "Die offizielle Seite der Vall de Boí verortet diesen Starlight-Aussichtspunkt am barrierefreien Zugangssteg vom Parkplatz P2 der Skistation; eine Planisphäre ermöglicht selbstständige Orientierung, an ausgewählten Terminen finden Beobachtungsveranstaltungen statt. Die Koordinate bezeichnet den kartierten Ankunftsbereich P2: Folge dem ausgeschilderten Steg, prüfe aktuelle Stationshinweise und verstehe Parken nicht als Campingerlaubnis."
+    }
+  },
+  {
+    "id": "aigues-sant-quirc-astronomical",
+    "slug": "aigues-sant-quirc-astronomical",
+    "destinationId": "aigues-tortes",
+    "name": "Mirador astronòmic de Sant Quirc",
+    "lat": 42.4951864,
+    "lon": 0.8111783,
+    "elevationM": 1491,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 56,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.vallboi.cat/en/viewpoint/sant-quirc-de-durro-hermitages-viewpoint",
+    "accessNotes": {
+      "en": "The official destination recommends Sant Quirc for its astronomical interpretation table and publishes the viewpoint coordinate. Its dedicated access page says the only independent approach is a roughly 20-minute walk from the parking area at Durro's entrance; taxi access can be arranged. Arrive in daylight, use the signed path and do not assume vehicle access to the hermitage.",
+      "de": "Die offizielle Destination empfiehlt Sant Quirc wegen seiner astronomischen Orientierungstafel und veröffentlicht die Koordinate des Aussichtspunkts. Die eigene Zugangsseite nennt als einzigen selbstständigen Zugang einen etwa 20-minütigen Fußweg vom Parkplatz am Ortseingang von Durro; eine Taxifahrt kann vereinbart werden. Komme bei Tageslicht, nutze den ausgeschilderten Weg und setze keine Fahrzeugzufahrt zur Einsiedelei voraus."
     }
   },
   {
@@ -135,6 +215,46 @@
     "certificationIds": []
   },
   {
+    "id": "alula-gharameel-tour-departure",
+    "slug": "alula-gharameel-tour-departure",
+    "destinationId": "alula",
+    "name": "Husaak Adventure Centre — Gharameel tour departure",
+    "lat": 26.676728,
+    "lon": 37.9083988,
+    "elevationM": 738,
+    "siteType": "tour-departure",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.experiencealula.com/en/things-to-do/experiences/stargazing-at-gharameel",
+    "accessNotes": {
+      "en": "Experience AlUla maps this exact Husaak Adventure Centre arrival point for its guided Gharameel stargazing experience. It is a meeting and parking point, not the remote observing camp. The operator provides the 4×4 transfer to and from Gharameel; independent access is not supported. The current page says booking is coming back soon, so do not travel for the experience until a date-specific e-ticket is available. Then arrive at least 15 minutes early with ID, follow the guide, accept weather or visibility changes and return only with the included transport.",
+      "de": "Experience AlUla kartiert diesen genauen Ankunftspunkt am Husaak Adventure Centre für das geführte Gharameel-Sternbeobachtungserlebnis. Er ist Treff- und Parkplatz, nicht das abgelegene Beobachtungscamp. Der Betreiber stellt den Allradtransfer nach Gharameel und zurück; eine selbstständige Zufahrt ist nicht vorgesehen. Die aktuelle Seite meldet, dass die Buchung bald zurückkehrt. Fahre deshalb erst mit verfügbarem datiertem E-Ticket zum Erlebnis. Sei dann mindestens 15 Minuten vorher mit Ausweis vor Ort, folge dem Guide, akzeptiere Änderungen durch Wetter oder Sicht und kehre ausschließlich mit dem enthaltenen Transfer zurück."
+    }
+  },
+  {
+    "id": "alula-harrat-viewpoint",
+    "slug": "alula-harrat-viewpoint",
+    "destinationId": "alula",
+    "name": "Harrat Viewpoint",
+    "lat": 26.6323669,
+    "lon": 37.8966321,
+    "elevationM": 1162,
+    "siteType": "desert-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.experiencealula.com/en/places-to-go/harrat-viewpoint",
+    "accessNotes": {
+      "en": "Experience AlUla maps this exact visitor viewpoint, states that it is 1,219 metres above sea level and currently opens from 14:00 to 22:00 with free parking, free entry and no booking requirement. The page explicitly describes naked-eye stars and onsite telescopes. Recheck the official page on the day, arrive while the route is clear, observe only inside the managed viewpoint footprint and finish before closing; the listing does not authorize camping or access beyond the visitor area.",
+      "de": "Experience AlUla kartiert diesen genauen Besucher-Aussichtspunkt, nennt 1.219 Meter Höhe und aktuell eine Öffnung von 14 bis 22 Uhr mit kostenlosem Parkplatz, freiem Eintritt und ohne Buchungspflicht. Die Seite beschreibt ausdrücklich Sterne mit bloßem Auge und Teleskope vor Ort. Prüfe die offizielle Seite am Besuchstag erneut, komme bei übersichtlicher Zufahrt an, beobachte nur innerhalb der betreuten Aussichtspunktfläche und beende den Besuch vor Schließung; der Eintrag erlaubt weder Camping noch Zugang außerhalb des Besucherbereichs."
+    }
+  },
+  {
     "id": "anza-borrego-dark-sky",
     "slug": "anza-borrego-dark-sky",
     "destinationId": "anza-borrego",
@@ -172,6 +292,46 @@
     "accessNotes": {
       "en": "Official tourism guidance recommends organized astronomical tours outside San Pedro de Atacama. Do not treat the scored plateau coordinate as unrestricted road access; use a licensed local operator and check altitude conditions.",
       "de": "Die offizielle Tourismusinformation empfiehlt organisierte Astronomie-Touren außerhalb von San Pedro de Atacama. Die bewertete Plateau-Koordinate ist kein frei zugänglicher Straßenpunkt; nutze einen lizenzierten lokalen Anbieter und beachte die Höhenlage."
+    }
+  },
+  {
+    "id": "attersee-dixi-stargazing",
+    "slug": "attersee-dixi-stargazing",
+    "destinationId": "attersee-traunsee",
+    "name": "Tauchplatz Dixi Sternderl-schau’n site",
+    "lat": 47.864608,
+    "lon": 13.563412,
+    "elevationM": 470,
+    "siteType": "lakeside-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 70,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
+    "accessNotes": {
+      "en": "The Sternenpark authority explicitly designates Tauchplatz Dixi for stargazing and names its public car park and WC. The tourism authority lists the dive site as open year-round with 20 spaces. Use only the designated parking and established visitor footprint, keep clear of diving operations, follow current signs and leave no trace; neither the coordinate nor parking permits camping or fire.",
+      "de": "Die Sternenpark-Verwaltung weist den Tauchplatz Dixi ausdrücklich zum Sternderschauen aus und nennt den öffentlichen Parkplatz sowie das WC. Die Tourismusbehörde führt den Tauchplatz ganzjährig mit 20 Stellplätzen. Nutze nur den ausgewiesenen Parkplatz und die bestehende Besucherfläche, halte Tauchbetrieb frei, beachte aktuelle Schilder und hinterlasse keine Spuren; weder Koordinate noch Parkplatz erlauben Camping oder Feuer."
+    }
+  },
+  {
+    "id": "attersee-taferlklaussee",
+    "slug": "attersee-taferlklaussee",
+    "destinationId": "attersee-traunsee",
+    "name": "Taferlklaussee Sternderl-schau’n site",
+    "lat": 47.843838,
+    "lon": 13.626818,
+    "elevationM": 780,
+    "siteType": "mountain-lake",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sternenpark-attersee-traunsee.at/themen/sternderl-schauen/",
+    "accessNotes": {
+      "en": "The Sternenpark authority explicitly designates Taferlklaussee for stargazing and directs visitors to the lake hiking car park or Hochlecken car park. The coordinate is the officially published meeting point at the Taferlklausstube parking area; follow the signed route to the designated viewing place, respect the nature reserve and current notices, and do not infer camping, fire or vehicle access beyond the car park.",
+      "de": "Die Sternenpark-Verwaltung weist den Taferlklaussee ausdrücklich zum Sternderschauen aus und verweist auf den Wanderparkplatz am See oder den Hochleckenparkplatz. Die Koordinate ist der offiziell veröffentlichte Treffpunkt am Parkplatz der Taferlklausstube; folge der ausgeschilderten Route zum ausgewiesenen Schauplatz, beachte Naturschutzgebiet und aktuelle Hinweise und leite daraus weder Camping, Feuer noch eine Fahrzeugzufahrt über den Parkplatz hinaus ab."
     }
   },
   {
@@ -290,6 +450,46 @@
     "certificationIds": []
   },
   {
+    "id": "big-cypress-midway-campground",
+    "slug": "big-cypress-midway-campground",
+    "destinationId": "big-cypress",
+    "name": "Midway Campground",
+    "lat": 25.851926,
+    "lon": -80.989444,
+    "elevationM": 3,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 74,
+    "certificationIds": [],
+    "notesSourceUrl": "https://home.nps.gov/bicy/planyourvisit/midway-campground.htm",
+    "accessNotes": {
+      "en": "The National Park Service publishes this exact Midway Campground coordinate and identifies the campground as open year-round, subject to current conditions and a Recreation.gov reservation. Use only the assigned campsite as the overnight footprint, keep lighting and noise low during quiet hours, do not move to a day-use boardwalk after closing, and follow all wildlife, water and fire restrictions. A campsite booking is separate from the Seagrape astronomy programme.",
+      "de": "Der National Park Service veröffentlicht diese genaue Koordinate des Midway Campground und weist den Campingplatz vorbehaltlich aktueller Bedingungen und einer Reservierung über Recreation.gov als ganzjährig geöffnet aus. Nutze ausschließlich den zugewiesenen Stellplatz als Übernachtungsfläche, halte Licht und Lärm während der Ruhezeiten niedrig, wechsle nach Schließung nicht zu einem Tages-Boardwalk und beachte alle Wildtier-, Wasser- und Feuerregeln. Eine Campingbuchung ist vom Astronomieprogramm an der Seagrape Drive getrennt."
+    }
+  },
+  {
+    "id": "big-cypress-seagrape-night-sky-program",
+    "slug": "big-cypress-seagrape-night-sky-program",
+    "destinationId": "big-cypress",
+    "name": "Seagrape Drive night-sky programme area",
+    "lat": 25.900808,
+    "lon": -81.325929,
+    "elevationM": 1,
+    "siteType": "ranger-program-area",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 74,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/bicy/planyourvisit/astronomy-programs.htm",
+    "accessNotes": {
+      "en": "The National Park Service publishes its current winter astronomy programmes at the south end of Seagrape Drive, east of the Nathaniel P. Reed Visitor Center; an official event record maps this programme footprint at the coordinate shown. Use it only for a currently listed programme, follow ranger parking and boundary instructions, bring a chair and insect protection, use red light only, leave pets at home and accept weather cancellation. The marker does not authorize independent use of another day-use area after closing.",
+      "de": "Der National Park Service veröffentlicht seine aktuellen Winter-Astronomieprogramme am südlichen Ende der Seagrape Drive östlich des Nathaniel P. Reed Visitor Center; ein offizieller Veranstaltungseintrag kartiert die Programmfläche an der angegebenen Koordinate. Nutze sie nur für ein aktuell aufgeführtes Programm, folge den Ranger-Anweisungen zu Parkplatz und Grenze, bringe Sitzgelegenheit und Insektenschutz mit, verwende ausschließlich rotes Licht, lasse Haustiere zu Hause und akzeptiere wetterbedingte Absagen. Die Markierung erlaubt keine selbstständige Nutzung eines anderen Tagesbereichs nach dessen Schließung."
+    }
+  },
+  {
     "id": "bisei-observatory",
     "slug": "bisei-observatory",
     "destinationId": "bisei",
@@ -327,6 +527,46 @@
     "accessNotes": {
       "en": "Night access is tied to a booked campground stay. Reservations, fees, summer closures, heat precautions, and current state-park restrictions apply.",
       "de": "Nachtzugang ist an eine gebuchte Campingübernachtung gebunden. Reservierung, Gebühren, Sommersperrungen, Hitzeschutz und aktuelle State-Park-Regeln gelten."
+    }
+  },
+  {
+    "id": "boundary-waters-moose-lake-campsite-1",
+    "slug": "boundary-waters-moose-lake-campsite-1",
+    "destinationId": "boundary-waters",
+    "name": "Moose Lake Campsite 1",
+    "lat": 48.0043139385195,
+    "lon": -91.5005648962981,
+    "elevationM": 410,
+    "siteType": "permit-only-wilderness-campsite",
+    "publicAccess": "limited",
+    "accessScore": 32,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCA_Wilderness_Campsites/FeatureServer/0",
+    "accessNotes": {
+      "en": "The Superior National Forest campsite layer identifies this exact point as open Moose Lake Campsite 1. It is not a drive-up observing site: use it only as part of an ice-free overnight paddle entering at the entry point and date printed on a valid BWCAW permit. Reach and assess the designated fire-grate and latrine campsite in full daylight, wear a PFD on the water, remain close to shore, carry map and compass rather than relying on cell service, treat drinking water, bring first aid and leave a complete itinerary with a trusted contact. The entry permit does not reserve this individual campsite. If it is occupied, weather threatens, smoke or fire rules change, or the daylight safety margin is insufficient, use only a preplanned legal daylight alternative or turn back; never paddle or search for another camp after dark. Once camp is secured, observe only within the designated campsite using minimal dim red light and no perimeter, flood or string lighting. Recheck live permits, closures, fire restrictions and weather before departure.",
+      "de": "Der Campingplatz-Datensatz des Superior National Forest weist diesen genauen Punkt als offenen Moose Lake Campsite 1 aus. Er ist kein mit dem Auto erreichbarer Beobachtungsort: Nutze ihn ausschließlich im Rahmen einer eisfreien Paddelübernachtung über den Eintrittspunkt und am Datum eines gültigen BWCAW-Permits. Erreiche und beurteile den ausgewiesenen Campingplatz mit Feuerrost und Latrine bei vollem Tageslicht, trage auf dem Wasser eine Schwimmweste, bleibe ufernah, führe Karte und Kompass statt dich auf Mobilfunk zu verlassen, bereite Trinkwasser auf, nimm Erste Hilfe mit und hinterlege einen vollständigen Reiseplan bei einer Vertrauensperson. Das Eintrittspermit reserviert diesen einzelnen Campingplatz nicht. Ist er belegt, droht Wetter, ändern sich Rauch- oder Feuerregeln oder reicht die Tageslichtreserve nicht, nutze nur eine vorab geplante rechtmäßige Alternative bei Tageslicht oder kehre um; paddle oder suche niemals nach Einbruch der Dunkelheit nach einem anderen Camp. Beobachte erst nach vollständig eingerichtetem Camp ausschließlich innerhalb des ausgewiesenen Campingplatzes mit minimalem schwachem Rotlicht und ohne Umgebungs-, Flut- oder Lichterkettenbeleuchtung. Prüfe Permit, Sperren, Feuerregeln und Wetter unmittelbar vor der Abfahrt erneut."
+    }
+  },
+  {
+    "id": "boundary-waters-moose-lake-campsite-2",
+    "slug": "boundary-waters-moose-lake-campsite-2",
+    "destinationId": "boundary-waters",
+    "name": "Moose Lake Campsite 2",
+    "lat": 48.0075388671329,
+    "lon": -91.4905639329872,
+    "elevationM": 412,
+    "siteType": "permit-only-wilderness-campsite",
+    "publicAccess": "limited",
+    "accessScore": 30,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://services1.arcgis.com/gGHDlz6USftL5Pau/arcgis/rest/services/R09_SNF_BWCA_Wilderness_Campsites/FeatureServer/0",
+    "accessNotes": {
+      "en": "The Superior National Forest campsite layer identifies this exact point as open Moose Lake Campsite 2. It is recorded only as a preplanned daylight alternative within the same permitted Moose Lake entry itinerary, not as a second observing stop or a guaranteed vacancy. All permit, group, designated-campsite, PFD, shore travel, navigation, treated-water, first-aid, food-storage, itinerary, weather and current-alert gates that apply to Campsite 1 apply here as well. Decide and land while full daylight remains. If no designated site is safely available within the written plan, return or use the plan's legal daylight contingency; do not improvise a shore camp or paddle between sites after dark. Observe only after the tent, craft and food are secured, within the campsite footprint and with minimal dim red light.",
+      "de": "Der Campingplatz-Datensatz des Superior National Forest weist diesen genauen Punkt als offenen Moose Lake Campsite 2 aus. Er ist ausschließlich als vorab geplante Alternative bei Tageslicht innerhalb derselben genehmigten Route ab Moose Lake erfasst, nicht als zweiter Beobachtungshalt oder garantierter freier Platz. Sämtliche Regeln zu Permit, Gruppengröße, ausgewiesenem Campingplatz, Schwimmweste, ufernaher Fahrt, Navigation, Wasseraufbereitung, Erster Hilfe, Nahrungssicherung, Reiseplan, Wetter und aktuellen Hinweisen gelten hier ebenso wie an Campsite 1. Entscheide und lande, solange volles Tageslicht bleibt. Ist im schriftlichen Plan kein ausgewiesener Platz sicher verfügbar, kehre um oder nutze die rechtmäßige Tageslicht-Alternative des Plans; improvisiere kein Ufercamp und paddle nach Einbruch der Dunkelheit nicht zwischen Plätzen. Beobachte erst, wenn Zelt, Boot und Nahrung gesichert sind, innerhalb der Campingfläche und mit minimalem schwachem Rotlicht."
     }
   },
   {
@@ -547,6 +787,46 @@
     "accessNotes": {
       "en": "This broad coordinate supports regional climate scoring but does not identify a verified public parking or observing surface. Use a confirmed paved Island in the Sky overlook and current NPS access notices instead.",
       "de": "Diese breite Koordinate dient der regionalen Klimabewertung, bezeichnet aber keine bestätigte öffentliche Park- oder Beobachtungsfläche. Nutze stattdessen einen bestätigten asphaltierten Aussichtspunkt auf Island in the Sky und aktuelle NPS-Zugangshinweise."
+    }
+  },
+  {
+    "id": "cedar-breaks-camp",
+    "slug": "cedar-breaks-camp",
+    "destinationId": "cedar-breaks",
+    "name": "Point Supreme area",
+    "lat": 37.63,
+    "lon": -112.84,
+    "elevationM": 3150,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 38,
+    "active": true,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/cebr/index.htm",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Point Supreme area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Point Supreme area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "cedar-breaks-sunset",
+    "slug": "cedar-breaks-sunset",
+    "destinationId": "cedar-breaks",
+    "name": "Sunset View Overlook",
+    "lat": 37.63,
+    "lon": -112.84,
+    "elevationM": 3150,
+    "siteType": "rim-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 42,
+    "active": true,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/cebr/index.htm",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Sunset View Overlook. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Sunset View Overlook nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -850,6 +1130,46 @@
     }
   },
   {
+    "id": "coral-pink-camp",
+    "slug": "coral-pink-camp",
+    "destinationId": "coral-pink-sand-dunes",
+    "name": "Coral Pink campground",
+    "lat": 37.04,
+    "lon": -112.71,
+    "elevationM": 1820,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": true,
+    "priority": 76,
+    "certificationIds": [],
+    "notesSourceUrl": "https://stateparks.utah.gov/parks/coral-pink/",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Coral Pink campground. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Coral Pink campground nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "coral-pink-park",
+    "slug": "coral-pink-park",
+    "destinationId": "coral-pink-sand-dunes",
+    "name": "Coral Pink Sand Dunes State Park",
+    "lat": 37.04,
+    "lon": -112.71,
+    "elevationM": 1820,
+    "siteType": "sand-dunes",
+    "publicAccess": "limited",
+    "accessScore": 56,
+    "active": true,
+    "priority": 76,
+    "certificationIds": [],
+    "notesSourceUrl": "https://stateparks.utah.gov/parks/coral-pink/",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Coral Pink Sand Dunes State Park. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Coral Pink Sand Dunes State Park nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
     "id": "cosmic-campground-sites",
     "slug": "cosmic-campground-sites",
     "destinationId": "cosmic-campground",
@@ -965,6 +1285,46 @@
     "certificationIds": []
   },
   {
+    "id": "damaraland-palmwag",
+    "slug": "damaraland-palmwag",
+    "destinationId": "northern-damaraland",
+    "name": "Palmwag Lodge guest property",
+    "lat": -19.88556,
+    "lon": 13.93694,
+    "elevationM": 889,
+    "siteType": "booked-concession-lodge",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://gondwana-collection.com/accommodation/palmwag-lodge",
+    "accessNotes": {
+      "en": "Gondwana publishes Palmwag Lodge's current GPS point and an overnight guided sleep-out that includes stargazing; its operator report also lists guest stargazing activities at Palmwag Lodge & Camp. The lodge pin is not the separate sleep-out camp or a concession observing stop. Do not self-drive or walk into the wildlife concession at night. Ask the lodge which immediate guest area, if any, is permitted for quiet sky viewing after dark and follow all guide, wildlife, fire and lighting instructions. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Gondwana veröffentlicht den aktuellen GPS-Punkt der Palmwag Lodge und einen geführten Übernachtungs-Ausflug mit Sternbeobachtung; auch der Betreiberbericht nennt Stargazing-Aktivitäten für Palmwag Lodge & Camp. Der Lodge-Punkt ist weder das separate Schlafcamp noch ein Beobachtungsstopp in der Konzession. Nachts nicht selbst in die Wildtierkonzession fahren oder gehen. Frage die Lodge, ob und welche unmittelbare Gästefläche nach Einbruch der Dunkelheit für ruhige Himmelsbeobachtung erlaubt ist, und befolge alle Guide-, Wildtier-, Feuer- und Lichtregeln. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "damaraland-twyfelfontein",
+    "slug": "damaraland-twyfelfontein",
+    "destinationId": "northern-damaraland",
+    "name": "Twyfelfontein Country Lodge guest property",
+    "lat": -20.57087,
+    "lon": 14.36965,
+    "elevationM": 563,
+    "siteType": "booked-desert-lodge",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://twyfelfontein.com.na/activities/",
+    "accessNotes": {
+      "en": "Twyfelfontein Country Lodge lists guided stargazing sessions in its current 2025–2026 activity rates, weather permitting and subject to prior arrangement. The official Namibia Tourism Arid Eden brochure publishes this lodge's GPS point. This coordinate identifies the booked lodge property, not the guided session's observing setup. Guests must confirm with the lodge which immediate guest area is currently permitted after dark; do not walk to the heritage engravings, trails or other sites at night. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Twyfelfontein Country Lodge führt in den aktuellen Aktivitätstarifen 2025–2026 geführte Sternbeobachtung auf; wetterabhängig und nach vorheriger Vereinbarung. Die offizielle Arid-Eden-Broschüre von Namibia Tourism veröffentlicht den GPS-Punkt der Lodge. Diese Koordinate bezeichnet das gebuchte Lodge-Grundstück, nicht den konkreten Aufbauort einer geführten Sitzung. Gäste müssen mit der Lodge klären, welche unmittelbare Gästefläche aktuell nach Einbruch der Dunkelheit genutzt werden darf; nachts nicht zu den Felsgravuren, Wegen oder anderen Orten laufen. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
     "id": "dark-sky-platform-lauwersmeer",
     "slug": "dark-sky-platform-lauwersmeer",
     "destinationId": "lauwersmeer",
@@ -1057,6 +1417,86 @@
     "accessNotes": {
       "en": "Use only the published visitor arrangement for Desert View. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
       "de": "Nutze nur die veröffentlichte Besucherregelung für Desert View. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "dinosaur-echo-park-campground",
+    "slug": "dinosaur-echo-park-campground",
+    "destinationId": "dinosaur-national-monument",
+    "name": "Echo Park Campground",
+    "lat": 40.5208089,
+    "lon": -108.9932317,
+    "elevationM": 1552,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/dino/planyourvisit/echo-park.htm",
+    "accessNotes": {
+      "en": "The National Park Service explicitly lists both camping and stargazing at Echo Park; the mapped campground coordinate identifies the developed overnight facility. The catalogue's Copernicus GLO-30 snapshot measures 1,551.513 metres at the requested point. Reach the booked camp in daylight, obey high-clearance and wet-road restrictions, remain within the campground footprint after dark and cancel rather than attempting the access road in unsuitable conditions.",
+      "de": "Der National Park Service nennt am Echo Park ausdrücklich Camping und Sternbeobachtung; die kartierte Campingplatzkoordinate bezeichnet die ausgebaute Übernachtungsanlage. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.551,513 Meter. Erreiche das gebuchte Camp bei Tageslicht, beachte Vorschriften zu Bodenfreiheit und nasser Straße, bleibe nach Einbruch der Dunkelheit innerhalb der Campingfläche und sage ab, statt die Zufahrt bei ungeeigneten Bedingungen zu versuchen."
+    }
+  },
+  {
+    "id": "dinosaur-split-mountain-night-sky",
+    "slug": "dinosaur-split-mountain-night-sky",
+    "destinationId": "dinosaur-national-monument",
+    "name": "Split Mountain night-sky viewing area",
+    "lat": 40.438961,
+    "lon": -109.252451,
+    "elevationM": 1462,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/thingstodo/splitmountainstargazing.htm",
+    "accessNotes": {
+      "en": "The National Park Service identifies a designated stargazing spot near Split Mountain Campground, and its published event coordinate places non-camper arrival at the adjacent day-use area. The catalogue's Copernicus GLO-30 snapshot measures 1,462.048 metres at the requested point. Check current road and campground conditions, use the signed viewing and parking footprint, and do not infer camping from attendance at the viewing area.",
+      "de": "Der National Park Service weist nahe dem Split Mountain Campground einen vorgesehenen Sternbeobachtungsplatz aus; die veröffentlichte Veranstaltungskoordinate führt Besucher ohne Campingbuchung zum benachbarten Tagesbereich. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 1.462,048 Meter. Prüfe aktuelle Straßen- und Campingplatzbedingungen, nutze die ausgeschilderte Beobachtungs- und Parkfläche und leite aus dem Besuch keine Campingerlaubnis ab."
+    }
+  },
+  {
+    "id": "drakensberg-didima-resort",
+    "slug": "drakensberg-didima-resort",
+    "destinationId": "drakensberg",
+    "name": "Didima Resort guest property",
+    "lat": -28.94424,
+    "lon": 29.23028,
+    "elevationM": 1405,
+    "siteType": "booked-park-resort",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://mapcarta.com/N2416284803",
+    "accessNotes": {
+      "en": "Ezemvelo lists Didima among its bookable park resorts and its official 2025–2026 tariff states 24-hour access for accommodated guests only (not day visitors); the mapped Didima Resort locality is a representative resort point. Copernicus DEM GLO-30 measured 1405.123 m DSM here; the catalogue stores 1405 m. Do not use the adjacent Didima Community Campsite as a fallback: OpenStreetMap maps it as closed. A room booking does not itself authorize night walking or astronomy outside the assigned guest area. Ask the resort manager about a specific safe on-property area and any wildlife, fire, lighting and movement restrictions; never head onto trails or into the reserve after dark. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Ezemvelo listet Didima als buchbares Parkresort; die offiziellen Tarife 2025–2026 nennen 24-Stunden-Zugang ausschließlich für Übernachtungsgäste (nicht für Tagesbesucher). Der kartierte Ort Didima Resort ist ein repräsentativer Resortpunkt. Copernicus DEM GLO-30 maß hier eine DSM-Höhe von 1405,123 m; der Katalog speichert 1405 m. Nutze den benachbarten Didima Community Campsite nicht als Ausweichziel: OpenStreetMap kennzeichnet ihn als geschlossen. Eine Zimmerbuchung erlaubt nicht automatisch nächtliche Wege oder Beobachtung außerhalb des zugewiesenen Gästebereichs. Frage die Resortverwaltung nach einer konkreten sicheren Fläche auf dem Gelände sowie Wildtier-, Feuer-, Licht- und Bewegungsregeln; gehe nach Einbruch der Dunkelheit niemals auf Wege oder ins Schutzgebiet. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "drakensberg-giants-castle",
+    "slug": "drakensberg-giants-castle",
+    "destinationId": "drakensberg",
+    "name": "Giants Castle Resort guest property",
+    "lat": -29.269543,
+    "lon": 29.5175361,
+    "elevationM": 1707,
+    "siteType": "booked-park-resort",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://bookings.kznwildlife.com/MakeABooking.aspx?Resort=Giants+Castle",
+    "accessNotes": {
+      "en": "Ezemvelo's live booking system lists Giants Castle chalets, lodge accommodation and Bannerman's Hut; its official 2025–2026 fees and conditions state gate hours of 05:00–22:00 (Oct–Mar) and 06:00–22:00 (Apr–Sep), subject to alteration. Its official 2023 booking advice publishes the resort GPS point. Copernicus DEM GLO-30 measured 1706.974 m DSM at this representative resort point; the catalogue stores 1707 m. This is not an assigned observing pad. Use only with a confirmed overnight booking, confirm current hours before travel, and ask the camp manager which on-property area, if any, is safe and permitted for quiet sky viewing after dark. Do not leave the resort grounds or walk toward trails, wildlife areas or viewpoints at night; follow staff, wildlife, fire and lighting rules. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Ezemvelos aktuelles Buchungssystem führt Chalets, Lodge-Unterkunft und Bannermans Hütte in Giants Castle; die offiziellen Tarife und Bedingungen 2025–2026 nennen Torzeiten von 05:00–22:00 Uhr (Okt.–März) und 06:00–22:00 Uhr (Apr.–Sept.), vorbehaltlich Änderungen. Die offizielle Buchungsbestätigung von 2023 veröffentlicht den Resort-GPS-Punkt. Copernicus DEM GLO-30 maß an diesem repräsentativen Resortpunkt eine DSM-Höhe von 1706,974 m; der Katalog speichert 1707 m. Dies ist keine zugewiesene Beobachtungsfläche. Nutze den Ort nur mit bestätigter Übernachtungsbuchung, bestätige die aktuellen Zeiten vor der Anreise und frage die Campverwaltung, ob und wo auf dem Gelände nach Einbruch der Dunkelheit eine ruhige Himmelsbeobachtung sicher und erlaubt ist. Verlasse nachts weder das Resortgelände noch gehe zu Wegen, Wildtierflächen oder Aussichtspunkten; befolge Personal-, Wildtier-, Feuer- und Lichtregeln. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
     }
   },
   {
@@ -1175,6 +1615,46 @@
     }
   },
   {
+    "id": "enchanted-rock-loop-trail-d2",
+    "slug": "enchanted-rock-loop-trail-d2",
+    "destinationId": "enchanted-rock",
+    "name": "Loop Trail south trailhead day-use area (D2)",
+    "lat": 30.4986160149212,
+    "lon": -98.8184177520007,
+    "elevationM": 433,
+    "siteType": "trailhead-day-use",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 77,
+    "certificationIds": [],
+    "notesSourceUrl": "https://texasstateparks.reserveamerica.com/explore/enchanted-rock-state-natural-area/TX/732",
+    "accessNotes": {
+      "en": "The official Texas state-park reservation listing confirms Enchanted Rock access and current entry windows. This coordinate remains a catalogue map reference for the south Loop Trail day-use footprint. Check current capacity, gate and trail notices before travel, remain only on the currently open Loop Trail/developed surface, and never continue toward the summit after its trail closes.",
+      "de": "Die offizielle Reservierungsseite der texanischen State Parks bestätigt den Zugang zu Enchanted Rock und aktuelle Eintrittsfenster. Diese Koordinate bleibt eine Katalogkartenreferenz für die Tagesfläche am südlichen Loop Trail. Prüfe Kapazität, Tor- und Wegsperren vor der Fahrt, bleibe nur auf dem aktuell geöffneten Loop Trail bzw. der ausgebauten Fläche und gehe nach Wegschluss niemals weiter zum Gipfel."
+    }
+  },
+  {
+    "id": "enchanted-rock-walk-in-tent-sites",
+    "slug": "enchanted-rock-walk-in-tent-sites",
+    "destinationId": "enchanted-rock",
+    "name": "Walk-in tent sites",
+    "lat": 30.4963306133242,
+    "lon": -98.822661387928,
+    "elevationM": 435,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 77,
+    "certificationIds": [],
+    "notesSourceUrl": "https://texasstateparks.reserveamerica.com/camping/enchanted-rock-state-natural-area/r/campgroundDetails.do?contractCode=TX&parkId=1200056",
+    "accessNotes": {
+      "en": "The official Texas state-park reservation listing provides the walk-in camping inventory and current booking windows. This coordinate remains a catalogue map reference for the tent-site area. An overnight reservation does not reopen the summit or other closed trails; obtain current late-arrival instructions, observe only from the assigned campsite or open Loop Trail footprint, and follow quiet, light and park rules.",
+      "de": "Die offizielle Reservierungsseite der texanischen State Parks führt die begehbaren Zeltplätze und aktuellen Buchungsfenster. Diese Koordinate bleibt eine Katalogkartenreferenz für den Zeltplatzbereich. Eine Übernachtungsbuchung öffnet weder den Gipfel noch andere gesperrte Wege; kläre aktuelle Hinweise für späte Ankunft, beobachte nur vom zugewiesenen Stellplatz oder vom geöffneten Loop Trail und beachte Ruhe-, Licht- und Parkregeln."
+    }
+  },
+  {
     "id": "exmoor-dark-sky",
     "slug": "exmoor-dark-sky",
     "destinationId": "exmoor",
@@ -1272,6 +1752,46 @@
     "accessNotes": {
       "en": "Use only the current published visitor arrangement for Fukui Nature Conservation Center. Confirm parking, booking, opening, hazards and the return before travel; this coordinate is not permission to enter or camp.",
       "de": "Nutze für Fukui Nature Conservation Center nur die aktuell veröffentlichte Besucherregelung. Bestätige Parken, Buchung, Öffnung, Gefahren und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "fundy-chignecto-campground",
+    "slug": "fundy-chignecto-campground",
+    "destinationId": "fundy",
+    "name": "Chignecto Campground",
+    "lat": 45.604208,
+    "lon": -64.983783,
+    "elevationM": 287,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/pn-np/nb/fundy/activ/camping/chignecto",
+    "accessNotes": {
+      "en": "Parks Canada publishes this exact campground coordinate and recommends Chignecto as the overnight base for a Fundy stargazing stay. The catalogue's Copernicus GLO-30 snapshot measures 286.667 metres at the requested point. Reserve the campsite, check the operating season and current park notices, and do not treat the booking as permission to observe outside the assigned campground footprint after hours.",
+      "de": "Parks Canada veröffentlicht diese genaue Campingplatzkoordinate und empfiehlt Chignecto als Übernachtungsbasis für einen Sternbeobachtungsaufenthalt im Fundy-Nationalpark. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 286,667 Meter. Reserviere den Stellplatz, prüfe Saison und aktuelle Parkhinweise und behandle die Buchung nicht als Erlaubnis, außerhalb der zugewiesenen Campingfläche nach Betriebsschluss zu beobachten."
+    }
+  },
+  {
+    "id": "fundy-wolfe-lake-viewing-area",
+    "slug": "fundy-wolfe-lake-viewing-area",
+    "destinationId": "fundy",
+    "name": "Wolfe Lake viewing area",
+    "lat": 45.660629,
+    "lon": -65.138197,
+    "elevationM": 300,
+    "siteType": "lake-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 81,
+    "certificationIds": [],
+    "notesSourceUrl": "https://parks.canada.ca/voyage-travel/hebergement-accommodation/etoile-camping-star",
+    "accessNotes": {
+      "en": "Parks Canada specifically recommends viewing the sky above Wolfe Lake; the coordinate is the published Wolfe Lake visitor footprint beside the lake, not an invitation to enter shoreline terrain. The catalogue's Copernicus GLO-30 snapshot measures 300.364 metres at the requested point. Check current opening and road notices, arrive in daylight, use only established parking and visitor surfaces, and return to the booked overnight base without improvising a second stop.",
+      "de": "Parks Canada empfiehlt ausdrücklich die Beobachtung des Himmels über dem Wolfe Lake; die Koordinate bezeichnet die veröffentlichte Besucherfläche am See und keine Einladung, Ufergelände zu betreten. Der Copernicus-GLO-30-Snapshot des Katalogs misst am abgefragten Punkt 300,364 Meter. Prüfe aktuelle Öffnungs- und Straßenhinweise, komme bei Tageslicht an, nutze nur bestehende Park- und Besucherflächen und kehre ohne improvisierten zweiten Halt zur gebuchten Übernachtungsbasis zurück."
     }
   },
   {
@@ -1377,6 +1897,126 @@
     "accessNotes": {
       "en": "The National Park Service identifies the Dunes Parking Area as the reference point for independent night-sky visits. Check current park alerts, weather, fees, and road conditions before arrival.",
       "de": "Der National Park Service nennt den Dunes Parking Area als Orientierungspunkt für selbständige Nachthimmelbesuche. Prüfe vor der Anreise Parkmeldungen, Wetter, Gebühren und Straßenzustand."
+    }
+  },
+  {
+    "id": "great-western-boondi-rock-campground",
+    "slug": "great-western-boondi-rock-campground",
+    "destinationId": "great-western-woodlands",
+    "name": "Boondi Rock Campground",
+    "lat": -31.181,
+    "lon": 120.386,
+    "elevationM": 399,
+    "siteType": "bookable-campground",
+    "publicAccess": "limited",
+    "accessScore": 52,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://exploreparks.dbca.wa.gov.au/site/boondi-rock-campground",
+    "accessNotes": {
+      "en": "DBCA lists Boondi Rock as a designated campground in the Great Western Woodlands with six unconstructed campsites, essential booking, a pit toilet, picnic tables, benches and fire rings. Booking and the assigned campsite control this record; arrive in daylight, carry all drinking water, food, fuel, medication and first aid, and observe only beside the occupied campsite. Campfires are allowed only when current conditions permit and only in the provided fire ring; check current fire restrictions, use supplied firewood and stop immediately on any ranger instruction. Do not swim in the dam, approach wildlife or drive to another rock or track after dark. The official DBCA map point is a campground location, not a promise that every individual pitch or route is available tonight.",
+      "de": "DBCA führt Boondi Rock als ausgewiesenen Campingplatz in den Great Western Woodlands mit sechs unbefestigten Stellplätzen, zwingender Buchung, Trockentoilette, Picknicktischen, Bänken und Feuerstellen. Buchung und zugewiesener Stellplatz bestimmen diesen Datensatz; komme bei Tageslicht an, führe sämtliches Trinkwasser, Essen, Kraftstoff, Medikamente und Erste Hilfe mit und beobachte ausschließlich neben dem bewohnten Stellplatz. Feuer sind nur erlaubt, wenn die aktuellen Bedingungen dies zulassen, und ausschließlich in der bereitgestellten Feuerstelle; prüfe aktuelle Feuerregeln, nutze mitgebrachtes Feuerholz und beende sofort bei Anweisung des Rangers. Schwimme nicht im Damm, nähere dich keinen Wildtieren und fahre nachts weder zu einem anderen Felsen noch auf einen anderen Track. Der offizielle DBCA-Kartenpunkt bezeichnet den Campingplatz und garantiert weder einen bestimmten Stellplatz noch eine heutige freie Route."
+    }
+  },
+  {
+    "id": "great-western-victoria-rock-campground",
+    "slug": "great-western-victoria-rock-campground",
+    "destinationId": "great-western-woodlands",
+    "name": "Victoria Rock Campground",
+    "lat": -31.295299530029,
+    "lon": 120.92800140381,
+    "elevationM": 451,
+    "siteType": "first-come-campground",
+    "publicAccess": "limited",
+    "accessScore": 48,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://exploreparks.dbca.wa.gov.au/site/victoria-rock-campground",
+    "accessNotes": {
+      "en": "DBCA lists Victoria Rock as a designated, non-bookable campground along the Holland Track, with two walk-in campsites, eight vehicle-based campsites and one group campsite. Toilets, wood barbecues, picnic tables and an information shelter are provided; camping is first come, first served, free and not guaranteed. Bring all drinking water and firewood, arrive with enough daylight to inspect the site and stay inside the occupied campsite footprint after dark. The page does not create a reservation or independent night access to the Holland Track, Victoria Rock face or another campground. Check the current DBCA alert and road/weather status before departure and leave if the campsite is full, the route is wet or closure signage changes the plan.",
+      "de": "DBCA führt Victoria Rock als ausgewiesenen, nicht buchbaren Campingplatz am Holland Track mit zwei Fuß-Camps, acht fahrzeugnahen Stellplätzen und einem Gruppenplatz. Toiletten, Holzgrills, Picknicktische und ein Informationsunterstand sind vorhanden; Camping erfolgt nach dem First-come-Prinzip, ist kostenlos und nicht garantiert. Führe sämtliches Trinkwasser und Feuerholz mit, komme mit genug Tageslicht zur Prüfung des Platzes an und bleibe nachts innerhalb des bewohnten Stellplatzes. Die Seite gewährt weder Reservierung noch selbstständigen Nachtzugang zum Holland Track, Victoria Rock oder einem anderen Camp. Prüfe DBCA-Hinweise sowie Straßen- und Wetterlage vor der Abfahrt und fahre nicht weiter, wenn der Platz voll, die Route nass oder die Beschilderung geändert ist."
+    }
+  },
+  {
+    "id": "gredos-hoyos-mirador",
+    "slug": "gredos-hoyos-mirador",
+    "destinationId": "sierra-de-gredos",
+    "name": "Mirador Estelar de Hoyos del Espino",
+    "lat": 40.35239,
+    "lon": -5.16424,
+    "elevationM": 1520,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://ayuntamientohoyosdelespino.es/fiestas-patronales-hoyos-del-espino-2026/",
+    "accessNotes": {
+      "en": "The provincial tourism authority lists Hoyos del Espino in its purpose-built stellar-viewpoint network, and the municipality documents a 22:30 astronomy event at Mirador Estelar Mesegosillo (Las Cocinillas). That event confirms night use of the named facility, not unrestricted parking or camping; follow current signs and municipal notices.",
+      "de": "Die Tourismusbehörde der Provinz führt Hoyos del Espino in ihrem Netz angelegter Sternen-Aussichtspunkte, und die Gemeinde dokumentiert um 22:30 Uhr eine Astronomieveranstaltung am Mirador Estelar Mesegosillo (Las Cocinillas). Die Veranstaltung bestätigt die nächtliche Nutzung des benannten Ortes, aber weder uneingeschränktes Parken noch Camping; beachte aktuelle Schilder und kommunale Hinweise."
+    }
+  },
+  {
+    "id": "gredos-navarredonda-mirador",
+    "slug": "gredos-navarredonda-mirador",
+    "destinationId": "sierra-de-gredos",
+    "name": "Mirador Estelar de Navarredonda de Gredos",
+    "lat": 40.36303,
+    "lon": -5.12396,
+    "elevationM": 1598,
+    "siteType": "dark-sky-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 74,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://navarredondadegredos.net/observacion-astronomica-en-el-mirador-estelar-de-navarredonda-de-gredos-el-dia-1-de-agosto-de-2025-a-las-2300h/",
+    "accessNotes": {
+      "en": "The provincial tourism authority lists Navarredonda in its purpose-built stellar-viewpoint network, with a stable platform, parking, fencing and access directions. The municipality also documents a 23:00 astronomy event at this named viewpoint. Recheck local signs and current notices before an independent visit; the coordinate does not authorize camping.",
+      "de": "Die Tourismusbehörde der Provinz führt Navarredonda in ihrem Netz angelegter Sternen-Aussichtspunkte mit stabiler Plattform, Parkplatz, Einfriedung und Wegweisung. Die Gemeinde dokumentiert zudem eine Astronomieveranstaltung um 23:00 Uhr an diesem benannten Aussichtspunkt. Prüfe vor einem selbstständigen Besuch örtliche Schilder und aktuelle Hinweise erneut; die Koordinate erlaubt kein Camping."
+    }
+  },
+  {
+    "id": "grossmugl-sternenweg-events",
+    "slug": "grossmugl-sternenweg-events",
+    "destinationId": "grossmugl",
+    "name": "Sternenweg Station 1 guided walks",
+    "lat": 48.494389,
+    "lon": 16.233833,
+    "elevationM": 225,
+    "siteType": "event-meeting-point",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://starlightoasis.kuffner-sternwarte.at/veranstaltungen.php",
+    "accessNotes": {
+      "en": "The Kuffner Observatory association publishes dated 2026 star walks meeting at Station 1, Hauptstraße 46, with weather cancellations announced on the event page. Use this record only for a currently published guided walk and its stated meeting time. The coordinate is the meeting point, not an independent observing field; outside a programme, follow the separately documented public Star Walk and its current conditions.",
+      "de": "Der Verein Kuffner-Sternwarte veröffentlicht datierte Sternwanderungen 2026 mit Treffpunkt Station 1, Hauptstraße 46; wetterbedingte Absagen werden auf der Veranstaltungsseite bekanntgegeben. Nutze diesen Datensatz nur für eine aktuell veröffentlichte Führung zur angegebenen Treffzeit. Die Koordinate bezeichnet den Treffpunkt und kein selbstständiges Beobachtungsfeld; außerhalb eines Programms gilt der getrennt dokumentierte öffentliche Sternenweg mit seinen aktuellen Bedingungen."
+    }
+  },
+  {
+    "id": "grossmugl-sternenwiese",
+    "slug": "grossmugl-sternenwiese",
+    "destinationId": "grossmugl",
+    "name": "Sternenwiese at Leeberg",
+    "lat": 48.5,
+    "lon": 16.233,
+    "elevationM": 250,
+    "siteType": "dark-sky-field",
+    "publicAccess": "yes",
+    "accessScore": 76,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.grossmugl.gv.at/Sternenweg_-_Themenwanderweg",
+    "accessNotes": {
+      "en": "The municipality and the Star Walk visitor guide identify the Sternenwiese and Sternenrast at Leeberg as the public observing endpoint of the signed 1.5-kilometre trail. Park at the documented trailhead by Hauptstraße 46 and allow about 20 minutes each way on mostly unlit field paths. Use firm footwear and low red light, remain on the established route, respect farmland and wildlife, and do not infer vehicle access or camping at the observing field.",
+      "de": "Die Gemeinde und die Besucherinformation des Sternenwegs weisen Sternenwiese und Sternenrast beim Leeberg als öffentlichen Beobachtungsendpunkt des ausgeschilderten 1,5-Kilometer-Wegs aus. Parke am dokumentierten Startpunkt bei Hauptstraße 46 und plane auf überwiegend unbeleuchteten Feldwegen etwa 20 Minuten je Richtung ein. Nutze feste Schuhe und schwaches Rotlicht, bleibe auf dem bestehenden Weg, respektiere Landwirtschaft und Tierwelt und leite daraus weder eine Fahrzeugzufahrt noch Camping an der Beobachtungswiese ab."
     }
   },
   {
@@ -1615,6 +2255,46 @@
     }
   },
   {
+    "id": "innamincka-cullyamurra-waterhole-campground",
+    "slug": "innamincka-cullyamurra-waterhole-campground",
+    "destinationId": "sturt-stony-desert",
+    "name": "Cullyamurra Waterhole Campground",
+    "lat": -27.70194,
+    "lon": 140.838605,
+    "elevationM": 51,
+    "siteType": "campground",
+    "publicAccess": "no",
+    "accessScore": 0,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73138",
+    "accessNotes": {
+      "en": "Parks SA identifies Cullyamurra Waterhole as a named bookable campground about 16 kilometres northeast of Innamincka, with high-clearance 4WD access and long-drop toilets; the official georeferenced reserve map places the campground at this coordinate. Do not travel to or use it while the flooding closure published on 4 August 2026 remains in force. Only after Parks SA explicitly reopens the route and campground may a booked visitor arrive in daylight, remain within one assigned camp for the whole night and leave after daylight, with water, communications, road, fire, flood, falling-branch and dingo precautions confirmed. The public sources reviewed for this profile report the relevant park access closed until further notice. Do not travel to this pin unless Parks SA officially announces reopening. After reopening, verify the current route, campsite, conditions and night-use rules yourself before travel.",
+      "de": "Parks SA weist Cullyamurra Waterhole als benannten buchbaren Campingplatz etwa 16 Kilometer nordöstlich von Innamincka mit Zufahrt für hochgelegte Allradfahrzeuge und Plumpsklos aus; die offizielle georeferenzierte Reservatskarte verortet den Campingplatz an dieser Koordinate. Fahre den Ort nicht an und nutze ihn nicht, solange die am 4. August 2026 veröffentlichte Flutsperre gilt. Erst nach ausdrücklicher Wiederöffnung von Strecke und Campingplatz durch Parks SA darf ein gebuchter Gast bei Tageslicht ankommen, die ganze Nacht in einem zugewiesenen Camp bleiben und erst bei Tageslicht weiterfahren; Wasser, Kommunikation sowie Straßen-, Feuer-, Flut-, Astbruch- und Dingoschutz müssen bestätigt sein. Die für dieses Profil geprüften öffentlichen Quellen melden den betreffenden Parkzugang bis auf Weiteres als geschlossen. Reise nicht zu diesem Pin, solange Parks SA keine offizielle Wiederöffnung bekannt gibt. Prüfe nach einer Wiederöffnung Route, Campingplatz, Bedingungen und Regeln für die Nacht selbst vor der Anreise."
+    }
+  },
+  {
+    "id": "innamincka-policemans-waterhole-campground",
+    "slug": "innamincka-policemans-waterhole-campground",
+    "destinationId": "sturt-stony-desert",
+    "name": "Policemans Waterhole Campground",
+    "lat": -27.758895,
+    "lon": 140.703828,
+    "elevationM": 47,
+    "siteType": "campground",
+    "publicAccess": "no",
+    "accessScore": 0,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.sa.gov.au/parks/innamincka-regional-reserve/booking/73141",
+    "accessNotes": {
+      "en": "Parks SA identifies Policemans Waterhole as a named bookable campground about two kilometres southwest of Innamincka via Fifteen Mile Track, requiring a high-clearance 4WD; the official georeferenced reserve map places it at this coordinate. Do not travel to or use it while the flooding closure published on 4 August 2026 remains in force. After an explicit reopening, book first, reach one assigned camp in daylight, keep the west gate clear, remain there throughout the dark interval and depart after daylight only after renewed road, water, communications, fire, flood and wildlife checks. The public sources reviewed for this profile report the relevant park access closed until further notice. Do not travel to this pin unless Parks SA officially announces reopening. After reopening, verify the current route, campsite, conditions and night-use rules yourself before travel.",
+      "de": "Parks SA weist Policemans Waterhole als benannten buchbaren Campingplatz etwa zwei Kilometer südwestlich von Innamincka über den Fifteen Mile Track aus; erforderlich ist ein hochgelegtes Allradfahrzeug, und die offizielle georeferenzierte Reservatskarte verortet ihn an dieser Koordinate. Fahre den Ort nicht an und nutze ihn nicht, solange die am 4. August 2026 veröffentlichte Flutsperre gilt. Buche erst nach ausdrücklicher Wiederöffnung, erreiche ein zugewiesenes Camp bei Tageslicht, halte das Westtor frei, bleibe während der Dunkelphase dort und fahre erst bei Tageslicht nach erneuter Prüfung von Straße, Wasser, Kommunikation, Feuer, Flut und Wildtieren weiter. Die für dieses Profil geprüften öffentlichen Quellen melden den betreffenden Parkzugang bis auf Weiteres als geschlossen. Reise nicht zu diesem Pin, solange Parks SA keine offizielle Wiederöffnung bekannt gibt. Prüfe nach einer Wiederöffnung Route, Campingplatz, Bedingungen und Regeln für die Nacht selbst vor der Anreise."
+    }
+  },
+  {
     "id": "iping-common-dark-sky",
     "slug": "iping-common-dark-sky",
     "destinationId": "south-downs",
@@ -1655,6 +2335,46 @@
     }
   },
   {
+    "id": "izera-izerska-laka-events",
+    "slug": "izera-izerska-laka-events",
+    "destinationId": "izera",
+    "name": "Izerska Łąka astronomy events",
+    "lat": 50.9278741,
+    "lon": 15.314116,
+    "elevationM": 467,
+    "siteType": "environmental-education-centre",
+    "publicAccess": "limited",
+    "accessScore": 52,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://stacjakultury.swieradowzdroj.pl/izerska-laka/",
+    "accessNotes": {
+      "en": "The municipal education centre uses its telescopes for night observing only on designated dates. Its rules prohibit unaffiliated visitors anywhere on the property outside opening hours, and the municipality's dated 2026 astronomy evening required registration. Attend only a newly published event or directly confirmed group session, follow the organiser's parking instructions and leave when the programme ends; the coordinate is not permission for independent after-hours use.",
+      "de": "Das kommunale Bildungszentrum setzt seine Teleskope nur an festgelegten Terminen für Nachtbeobachtungen ein. Die Hausordnung verbietet unbeteiligten Personen den Aufenthalt auf dem gesamten Gelände außerhalb der Öffnungszeiten, und der datierte Astronomieabend 2026 der Gemeinde war anmeldepflichtig. Besuche den Ort nur zu einer neu veröffentlichten Veranstaltung oder einer direkt bestätigten Gruppensitzung, befolge die Parkhinweise des Veranstalters und verlasse das Gelände nach Programmende; die Koordinate erlaubt keine selbstständige Nutzung außerhalb der Zeiten."
+    }
+  },
+  {
+    "id": "izera-orle-astronomy-workshop",
+    "slug": "izera-orle-astronomy-workshop",
+    "destinationId": "izera",
+    "name": "Orle astronomy workshop venue",
+    "lat": 50.815139,
+    "lon": 15.382861,
+    "elevationM": 820,
+    "siteType": "event-venue",
+    "publicAccess": "limited",
+    "accessScore": 56,
+    "active": true,
+    "priority": 85,
+    "certificationIds": [],
+    "notesSourceUrl": "https://turystyczna.szklarskaporeba.pl/en/1725-szklarskaporeba-astronomiczny-dzien-w-izerskim-parku-ciemnego-nieba",
+    "accessNotes": {
+      "en": "The official Szklarska Poręba page documents night-sky observing at Orle, the exact coordinate and an elevation of 820 metres. Use this record only for a newly published programme and confirmed participation. The organiser states that Orle is reached from Jakuszyce on foot, by bicycle or by car only for overnight guests; arrange accommodation or the guided return in advance and do not infer general vehicle access, camping or an independent night trail.",
+      "de": "Die offizielle Seite von Szklarska Poręba dokumentiert Nachtbeobachtung in Orle, die genaue Koordinate und 820 Meter Höhe. Nutze diesen Datensatz nur für ein neu veröffentlichtes Programm mit bestätigter Teilnahme. Laut Veranstalter wird Orle von Jakuszyce zu Fuß, mit dem Fahrrad oder mit dem Auto ausschließlich für Übernachtungsgäste erreicht; kläre Unterkunft oder geführte Rückkehr vorab und leite daraus weder allgemeine Fahrzeugzufahrt, Camping noch eine selbstständige Nachtwanderung ab."
+    }
+  },
+  {
     "id": "jasper-medicine-lake",
     "slug": "jasper-medicine-lake",
     "destinationId": "jasper",
@@ -1668,6 +2388,86 @@
     "active": true,
     "priority": 88,
     "certificationIds": []
+  },
+  {
+    "id": "javalambre-galactica",
+    "slug": "javalambre-galactica",
+    "destinationId": "javalambre",
+    "name": "Galáctica astronomy centre",
+    "lat": 39.9991162,
+    "lon": -1.0407695,
+    "elevationM": 1126,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://galactica.org.es/prepara-tu-visita/",
+    "accessNotes": {
+      "en": "The official visitor page confirms bookable nighttime telescope activities and onsite parking. Use this site only with a dated reservation or published programme; weather may cancel the observation, and the coordinate grants neither access outside the booking nor permission to camp.",
+      "de": "Die offizielle Besuchsseite bestätigt buchbare nächtliche Teleskopaktivitäten und einen Parkplatz vor Ort. Nutze diesen Ort nur mit datierter Reservierung oder veröffentlichtem Programm; das Wetter kann die Beobachtung absagen, und die Koordinate gewährt weder Zugang außerhalb der Buchung noch eine Campingerlaubnis."
+    }
+  },
+  {
+    "id": "javalambre-oaj-guided-visit",
+    "slug": "javalambre-oaj-guided-visit",
+    "destinationId": "javalambre",
+    "name": "Observatorio Astrofísico de Javalambre guided visit",
+    "lat": 40.0412972,
+    "lon": -1.0164167,
+    "elevationM": 1957,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://oaj.cefca.es/oaj_visits/visits",
+    "accessNotes": {
+      "en": "CEFCA publishes the summit coordinate and 1,957-metre elevation and directs public visits through Galáctica. Galáctica states that this is an outreach tour, not direct observing. Use only a booked guided visit and its official access instructions; do not treat the research observatory or its gate as an independent night-observing site.",
+      "de": "CEFCA veröffentlicht die Gipfelkoordinate und 1.957 Meter Höhe und verweist öffentliche Besuche an Galáctica. Galáctica erklärt, dass dies eine Wissensführung und keine direkte Beobachtung ist. Nutze ausschließlich eine gebuchte Führung mit deren offiziellen Zufahrtshinweisen; behandle weder das Forschungsobservatorium noch sein Tor als selbstständigen Nachtbeobachtungsplatz."
+    }
+  },
+  {
+    "id": "jebel-akhdar-alila-stargazing-deck-programme",
+    "slug": "jebel-akhdar-alila-stargazing-deck-programme",
+    "destinationId": "jebel-akhdar",
+    "name": "Alila Jabal Akhdar private stargazing check-in",
+    "lat": 23.14189,
+    "lon": 57.53518,
+    "elevationM": 1924,
+    "siteType": "booked-resort-programme",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://experiences.hyatt.com/experiences/56af13d2-d9cf-4390-8e02-74cefe624bee/participants-review",
+    "accessNotes": {
+      "en": "Hyatt lists a private guided telescope session on Alila Jabal Akhdar's resort Stargazing Deck. A hotel reservation and World of Hyatt membership are required, and the activity is subject to current availability; confirm its date, start, deck meeting point and resort instructions before travel. The mapped coordinate is a representative point within the OpenStreetMap hotel geometry, not the exact deck or an independent public viewpoint. Complete the required 4x4 mountain access and applicable Environment Authority entry and overnight permit checks, arrive and check in during daylight, attend only the confirmed staff-led activity and sleep at the booked resort. Do not enter the deck outside the operator programme or drive to a plateau roadside after dark.",
+      "de": "Hyatt führt eine private geführte Teleskopsitzung auf dem Stargazing Deck des Alila Jabal Akhdar. Eine Hotelreservierung und World-of-Hyatt-Mitgliedschaft sind nötig; die Aktivität hängt von aktueller Verfügbarkeit ab. Bestätige Datum, Beginn, Deck-Treffpunkt und Betreiberanweisung vor der Fahrt. Die Koordinate ist ein repräsentativer Punkt innerhalb der OpenStreetMap-Hotelgeometrie, weder das genaue Deck noch ein öffentlicher Aussichtspunkt. Kläre Allradzufahrt und die einschlägigen Einreise- und Übernachtungsgenehmigungen der Umweltbehörde, komme bei Tageslicht an, nimm nur an der bestätigten betreuten Aktivität teil und schlafe im gebuchten Resort. Betritt das Deck nicht außerhalb des Programms und fahre nachts nicht zu einem Plateau-Straßenrand."
+    }
+  },
+  {
+    "id": "jebel-akhdar-anantara-dianas-point-guest-platform",
+    "slug": "jebel-akhdar-anantara-dianas-point-guest-platform",
+    "destinationId": "jebel-akhdar",
+    "name": "Anantara Diana's Point guest platform",
+    "lat": 23.067681116038536,
+    "lon": 57.67011780953533,
+    "elevationM": 1970,
+    "siteType": "resort-guest-platform",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.anantara.com/uploads/minor/anantara/documents/anantaraaljabal-al-akhdar-resort/anantara-al-jabal-discovery-guide.pdf",
+    "accessNotes": {
+      "en": "Anantara's official discovery guide promotes stargazing and the Diana's Point resort setting; the published coordinate identifies the resort arrival area, not the exact cliff-edge platform or public parking. Use the platform only as an overnight guest after staff confirms that evening's permitted guest area, safety boundary and equipment rules; a room reservation alone does not establish Environment Authority entry or overnight permission. The resort requires a 4x4 and checkpoint documents or a prearranged operator transfer. Its separate astronomer activity is a distinct operator arrangement and is not this catalogue point. Do not enter the cliff edge without staff approval, camp, make fires or drive between resorts after dark.",
+      "de": "Anantaras offizieller Discovery Guide bewirbt Sternbeobachtung und die Resort-Umgebung von Diana's Point; die veröffentlichte Koordinate bezeichnet den Resort-Check-in, nicht die genaue Plattform an der Felskante oder einen öffentlichen Parkplatz. Nutze die Plattform nur als Übernachtungsgast, nachdem das Personal die für diesen Abend erlaubte Gästefläche, Sicherheitsgrenze und Ausrüstungsregeln bestätigt hat; eine Zimmerbuchung belegt keine Einreise- oder Übernachtungsgenehmigung der Umweltbehörde. Das Resort verlangt Allradfahrzeug und Checkpoint-Dokumente oder einen vorab vereinbarten Betreibertransfer. Die separate Astronomenaktivität ist ein eigenes Betreiberangebot und nicht dieser Katalogpunkt. Betritt die Felskante nicht ohne Personalfreigabe, campe nicht, entfache kein Feuer und fahre nachts nicht zwischen Resorts."
+    }
   },
   {
     "id": "jeremys-bay-kejimkujik",
@@ -1765,6 +2565,46 @@
     }
   },
   {
+    "id": "kangaroo-rocky-river-campground",
+    "slug": "kangaroo-rocky-river-campground",
+    "destinationId": "kangaroo-island",
+    "name": "Rocky River Campground",
+    "lat": -35.9522,
+    "lon": 136.732703,
+    "elevationM": 61,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/63689",
+    "accessNotes": {
+      "en": "Parks SA lists Rocky River as a bookable campground with allocated sites, toilets and showers; the official georeferenced campground map places its footprint at this representative coordinate. Book and arrive during daylight, settle at the assigned site and keep the vehicle there until daylight returns. This is a separate overnight option, not a second stop after West Bay, and park fire, generator, wildlife and temporary-closure rules remain controlling.",
+      "de": "Parks SA führt Rocky River als buchbaren Campingplatz mit zugewiesenen Stellplätzen, Toiletten und Duschen; die offizielle georeferenzierte Campingkarte verortet seine Fläche an dieser repräsentativen Koordinate. Buche und komme bei Tageslicht an, richte dich am zugewiesenen Platz ein und lasse das Fahrzeug bis zur Rückkehr des Tageslichts dort stehen. Dies ist eine getrennte Übernachtungsoption und kein zweiter Halt nach West Bay; Feuer-, Generator-, Wildtier- und temporäre Sperrregeln des Parks bleiben maßgeblich."
+    }
+  },
+  {
+    "id": "kangaroo-west-bay-campground",
+    "slug": "kangaroo-west-bay-campground",
+    "destinationId": "kangaroo-island",
+    "name": "West Bay Campground",
+    "lat": -35.888775,
+    "lon": 136.552813,
+    "elevationM": 26,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 46,
+    "active": true,
+    "priority": 83,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.parks.sa.gov.au/parks/flinders-chase-national-park/booking/65342",
+    "accessNotes": {
+      "en": "Parks SA identifies West Bay as a small bookable campground reached by 4WD, and the official georeferenced campground map places its footprint at this representative coordinate. Book before travel, verify that West Bay Road remains open after rain, arrive in daylight, keep the vehicle parked for the complete dark interval and observe only beside the assigned site. Do not drive to park attractions after dark; wildlife is active at dawn, dusk and night.",
+      "de": "Parks SA weist West Bay als kleinen buchbaren Campingplatz mit 4WD-Zufahrt aus; die offizielle georeferenzierte Campingkarte verortet seine Fläche an dieser repräsentativen Koordinate. Buche vor der Fahrt, bestätige nach Regen die Öffnung der West Bay Road, komme bei Tageslicht an, lasse das Fahrzeug während der gesamten Dunkelphase stehen und beobachte nur neben dem zugewiesenen Platz. Fahre nach Einbruch der Dunkelheit keine Parkattraktionen an; Wildtiere sind in Dämmerung und Nacht aktiv."
+    }
+  },
+  {
     "id": "kerry-dark-sky",
     "slug": "kerry-dark-sky",
     "destinationId": "kerry",
@@ -1820,6 +2660,46 @@
     }
   },
   {
+    "id": "kidepo-kanangorok",
+    "slug": "kidepo-kanangorok",
+    "destinationId": "kidepo-valley",
+    "name": "Kanangorok Hot Springs area",
+    "lat": 4.14,
+    "lon": 33.86,
+    "elevationM": 1200,
+    "siteType": "savanna-viewpoint",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://ugandawildlife.org/wp-content/uploads/2024/05/KVNP-2018-4.pdf",
+    "accessNotes": {
+      "en": "The UWA park brochure calls this feature Kananorok Hot Springs and says the visit requires a ranger-guide escort; it is a remote wildlife excursion, not a night-sky stop. The staged coordinate is not an operator-confirmed route waypoint or safe place to remain after dark. Do not drive or walk here independently, especially at night, and do not assume overnight park admission allows late access to this area. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Die UWA-Parkbroschüre nennt das Gebiet Kananorok Hot Springs und verlangt für den Besuch eine Rangerbegleitung; es handelt sich um einen abgelegenen Wildtierausflug, nicht um einen Nachtbeobachtungsstopp. Die vorgemerkte Koordinate ist kein vom Betreiber bestätigter Routenpunkt oder sicherer Ort für einen Aufenthalt nach Einbruch der Dunkelheit. Nicht eigenständig dorthin fahren oder gehen, besonders nachts; eine Park-Übernachtung gestattet nicht automatisch späten Zugang zu diesem Bereich. Der Ort muss möglicherweise entfallen, falls keine sichere genehmigte Route existiert. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "kidepo-narus",
+    "slug": "kidepo-narus",
+    "destinationId": "kidepo-valley",
+    "name": "Narus Valley visitor area (candidate reference)",
+    "lat": 3.93,
+    "lon": 33.88,
+    "elevationM": 950,
+    "siteType": "savanna-camp",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://ugandawildlife.org/national-parks/kidepo-valley-national-park/",
+    "accessNotes": {
+      "en": "This is only a broad Narus Valley candidate coordinate; it is not verified as Apoka Rest Camp, a named UWA campsite, or an assigned night-viewing area. UWA permits night game drives only for tourists staying overnight inside parks; that eligibility does not authorize an unguided drive, walking away from camp, or astronomy from an unapproved footprint. An official UWA visitor brochure identifies Apoka Rest Camp, Kakine and Nagusokopire as visitor/viewpoint facilities and requires a ranger guide for walks, but its wildlife viewpoints are not astronomy permits and the brochure is dated. Keep this point inactive until UWA or the current concession operator identifies the exact booked accommodation, coordinates, ranger-supervised movement and a safe on-property area for quiet sky viewing. Never walk away from camp at night; follow current wildlife, lighting and ranger directions. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Dies ist nur eine grobe Kandidatenkoordinate im Narus-Tal; sie ist weder als Apoka Rest Camp noch als benannter UWA-Campingplatz oder zugewiesene Nachtbeobachtungsfläche bestätigt. UWA erlaubt nächtliche Pirschfahrten nur Touristen mit Übernachtung im Park; das berechtigt weder zu eigenständigen Fahrten noch zum Weggehen vom Camp oder zur Beobachtung an einer nicht freigegebenen Fläche. Eine offizielle UWA-Besucherbroschüre nennt Apoka Rest Camp, Kakine und Nagusokopire als Besuchs-/Aussichtseinrichtungen und verlangt für Fußwege einen Ranger, ist jedoch älter. Die Wildtier-Aussichtspunkte sind keine Astronomie-Genehmigungen. Nachts niemals das Camp verlassen; aktuelle Wildtier-, Licht- und Rangeranweisungen befolgen. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
     "id": "kielder-dark-sky",
     "slug": "kielder-dark-sky",
     "destinationId": "kielder",
@@ -1837,6 +2717,46 @@
     "accessNotes": {
       "en": "This coordinate represents the wider forest, not a verified pull-off. Use a named visitor car park or the Stonehaugh pavilion and follow posted closing, parking, and forest-road conditions.",
       "de": "Diese Koordinate repräsentiert den größeren Wald, keine verifizierte Haltebucht. Nutze einen benannten Besucherparkplatz oder den Stonehaugh Pavilion und beachte veröffentlichte Schließ-, Park- und Waldstraßenbedingungen."
+    }
+  },
+  {
+    "id": "kissimmee-astronomy-pad-a",
+    "slug": "kissimmee-astronomy-pad-a",
+    "destinationId": "kissimmee-prairie",
+    "name": "Astronomy Pad A",
+    "lat": 27.5854220514553,
+    "lon": -81.0457665490602,
+    "elevationM": 19,
+    "siteType": "astronomy-pad",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 76,
+    "certificationIds": [],
+    "notesSourceUrl": "https://content.govdelivery.com/accounts/FLDEP/bulletins/1343282",
+    "accessNotes": {
+      "en": "Florida DEP identifies astronomy pads as reservable night-observing facilities, and the official accommodation GIS maps Pad A at this coordinate. Reserve the pad, contact the ranger station, arrive before sunset and the gate closure, use only red-spectrum lighting after dark, and do not light a fire. A pad reservation does not authorize entry into other closed preserve areas.",
+      "de": "Florida DEP weist die Astronomy Pads als buchbare Nachtbeobachtungsanlagen aus; das offizielle Unterkunfts-GIS kartiert Pad A an dieser Koordinate. Reserviere den Platz, kontaktiere die Rangerstation, komme vor Sonnenuntergang und Torschluss an, verwende nach Einbruch der Dunkelheit nur rotes Licht und entzünde kein Feuer. Eine Pad-Reservierung erlaubt keinen Zutritt zu anderen geschlossenen Bereichen des Schutzgebiets."
+    }
+  },
+  {
+    "id": "kissimmee-entrance-pavilion",
+    "slug": "kissimmee-entrance-pavilion",
+    "destinationId": "kissimmee-prairie",
+    "name": "Entrance-kiosk viewing pavilion",
+    "lat": 27.5394789831591,
+    "lon": -81.0218868135205,
+    "elevationM": 22,
+    "siteType": "entrance-viewing-area",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 76,
+    "certificationIds": [],
+    "notesSourceUrl": "https://content.govdelivery.com/accounts/FLDEP/bulletins/1343282",
+    "accessNotes": {
+      "en": "Florida DEP directs visitors without a campsite, astronomy-pad reservation or eligible after-hours permit to the grass and small pavilion immediately right of the entrance kiosk. The official park GIS places that pavilion here. Park outside the closed gate as directed, pay the applicable entry fee, bring red lighting, water and a toilet plan because the current guidance says no bathrooms are available, and do not pass the gate after it closes.",
+      "de": "Florida DEP verweist Besucher ohne Camping- oder Astronomy-Pad-Buchung und ohne berechtigte Nachtgenehmigung auf die Wiese und den kleinen Pavillon unmittelbar rechts am Eingangskiosk. Das offizielle Park-GIS verortet diesen Pavillon hier. Parke wie vorgeschrieben außerhalb des geschlossenen Tors, entrichte den fälligen Eintritt, bringe rotes Licht, Wasser und einen Toilettenplan mit, da die aktuellen Hinweise keine Toiletten zusichern, und passiere das Tor nach Schließung nicht."
     }
   },
   {
@@ -1877,6 +2797,46 @@
     "accessNotes": {
       "en": "Public night observing is provided only through scheduled Visitor Center programmes. Reserve ahead and follow arrival, road, weather, and tribal-land instructions.",
       "de": "Öffentliche Nachtbeobachtung findet nur im Rahmen terminierter Visitor-Center-Programme statt. Reserviere vorab und beachte Anfahrts-, Straßen-, Wetter- und Stammesland-Hinweise."
+    }
+  },
+  {
+    "id": "kopaonik-armadillo-guest-terrace",
+    "slug": "kopaonik-armadillo-guest-terrace",
+    "destinationId": "kopaonik",
+    "name": "Armadillo Houses guest terrace",
+    "lat": 43.2767046,
+    "lon": 20.7676804,
+    "elevationM": 1394,
+    "siteType": "booked-cabin-stay",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://hostgost.rs/sr/properties/armadillo-houses/",
+    "accessNotes": {
+      "en": "HostGost offers Armadillo Houses as year-round private cabins with terraces, and its Kopaonik portfolio explicitly promotes falling asleep with a view of the starry sky. The operator's embedded property map fixes this guest accommodation, not a public observing field. Use it only with a current overnight booking, follow check-in and parking instructions and obtain host approval before setting up optical equipment on the assigned terrace. Do not extend the stay onto nearby ski infrastructure, National Park trails or neighbouring land.",
+      "de": "HostGost bietet Armadillo Houses als ganzjährige private Häuser mit Terrassen an und bewirbt im Kopaonik-Portfolio ausdrücklich das Einschlafen mit Blick auf den Sternenhimmel. Die eingebettete Betreiberkarte bestimmt diese Gästeunterkunft und keine öffentliche Beobachtungswiese. Nutze sie nur mit aktueller Übernachtungsbuchung, befolge Check-in und Parkanweisung und hole vor optischer Ausrüstung auf der zugewiesenen Terrasse die Zustimmung des Gastgebers ein. Weite den Aufenthalt weder auf nahe Ski-Infrastruktur noch Nationalparkwege oder Nachbarland aus."
+    }
+  },
+  {
+    "id": "kopaonik-grand-pool-sky-stay",
+    "slug": "kopaonik-grand-pool-sky-stay",
+    "destinationId": "kopaonik",
+    "name": "Grand Kopaonik outdoor-pool guest area",
+    "lat": 43.2845315,
+    "lon": 20.8114871,
+    "elevationM": 1731,
+    "siteType": "booked-hotel-stay",
+    "publicAccess": "limited",
+    "accessScore": 46,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.grandkopaonik.com/en/wellness/",
+    "accessNotes": {
+      "en": "Grand Kopaonik directly describes its heated outdoor pool as a pool under the stars and publishes reservation and spa contacts. This record represents only the managed hotel guest or confirmed spa-access area. It is suitable for quiet unaided sky viewing when staff confirms the current hours and conditions; do not bring a tripod or telescope into the pool area unless the hotel explicitly assigns a safe place. A room or spa booking grants no access to adjacent ski runs or National Park terrain.",
+      "de": "Grand Kopaonik beschreibt seinen beheizten Außenpool direkt als Pool unter den Sternen und veröffentlicht Reservierungs- und Spa-Kontakte. Dieser Datensatz bezeichnet ausschließlich den betreuten Gäste- oder bestätigten Spa-Bereich des Hotels. Er eignet sich für ruhige Beobachtung mit bloßem Auge, wenn das Personal aktuelle Zeiten und Bedingungen bestätigt; bringe weder Stativ noch Teleskop in den Poolbereich, sofern das Hotel keine sichere Fläche ausdrücklich zuweist. Zimmer- oder Spa-Buchung gewährt keinen Zugang zu benachbarten Skipisten oder Nationalparkgelände."
     }
   },
   {
@@ -1933,6 +2893,46 @@
     "active": true,
     "priority": 95,
     "certificationIds": []
+  },
+  {
+    "id": "lassen-manazanita",
+    "slug": "lassen-manazanita",
+    "destinationId": "lassen-volcanic",
+    "name": "Manzanita Lake area",
+    "lat": 40.53,
+    "lon": -121.58,
+    "elevationM": 1780,
+    "siteType": "lake-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/lavo/index.htm",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Manzanita Lake area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Manzanita Lake area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "lassen-summit",
+    "slug": "lassen-summit",
+    "destinationId": "lassen-volcanic",
+    "name": "Lassen summit road area",
+    "lat": 40.49,
+    "lon": -121.51,
+    "elevationM": 2600,
+    "siteType": "mountain-road",
+    "publicAccess": "limited",
+    "accessScore": 38,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/lavo/index.htm",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Lassen summit road area. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Lassen summit road area nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
   },
   {
     "id": "lava-flow-campground",
@@ -2055,6 +3055,46 @@
     }
   },
   {
+    "id": "makgadikgadi-eselbe-fireside",
+    "slug": "makgadikgadi-eselbe-fireside",
+    "destinationId": "makgadikgadi",
+    "name": "Eselbe Camp fireside",
+    "lat": -20.1924008,
+    "lon": 26.1862734,
+    "elevationM": 911,
+    "siteType": "booked-astrotourism-stay",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.eselbecamp.com/",
+    "accessNotes": {
+      "en": "Eselbe Camp's official site identifies a bookable eco-camp on the Nata River and explicitly promotes evening stargazing by its communal fireside. Use this record only as an overnight guest after check-in and follow the host's current instructions for the shared fire-pit footprint. Keep equipment compact, protect other guests and wildlife from light and noise, and do not drive to Nata Bird Sanctuary or a pan after dark as a fallback.",
+      "de": "Die offizielle Seite von Eselbe Camp beschreibt ein buchbares Ökocamp am Nata River und bewirbt ausdrücklich abendliche Sternbeobachtung am gemeinschaftlichen Feuerplatz. Nutze diesen Datensatz nur als Übernachtungsgast nach dem Check-in und befolge die aktuellen Gastgeberanweisungen für die gemeinsam genutzte Feuerstelle. Halte Ausrüstung kompakt, schütze andere Gäste und Wildtiere vor Licht und Lärm und fahre nachts nicht ersatzweise zum Nata Bird Sanctuary oder auf eine Salzpfanne."
+    }
+  },
+  {
+    "id": "makgadikgadi-kubu-community-campsite",
+    "slug": "makgadikgadi-kubu-community-campsite",
+    "destinationId": "makgadikgadi",
+    "name": "Kubu Island Community Campsite",
+    "lat": -20.8930734,
+    "lon": 25.8229179,
+    "elevationM": 909,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.kubuisland.com/",
+    "accessNotes": {
+      "en": "Gaing-O Community Trust operates Kubu Island's bookable campsite and its 2025-2027 price list explicitly includes stargazing. Book and pay before travel, register on arrival, retain proof of payment and use only the assigned designated campsite. Reconfirm that the island and approach roads are open after rain; arrive in full daylight, keep the vehicle on marked roads, observe from the occupied camp and do not drive, self-walk or search the pan after dark.",
+      "de": "Der Gaing-O Community Trust betreibt den buchbaren Campingplatz auf Kubu Island; seine Preisliste 2025-2027 führt Sternbeobachtung ausdrücklich auf. Buche und zahle vor der Fahrt, registriere dich bei Ankunft, halte den Zahlungsnachweis bereit und nutze nur den zugewiesenen ausgewiesenen Campingplatz. Bestätige nach Regen erneut die Öffnung von Insel und Zufahrten, komme bei vollem Tageslicht an, lasse das Fahrzeug auf markierten Wegen, beobachte vom bewohnten Camp und fahre, wandere oder suche nachts nicht auf der Pfanne."
+    }
+  },
+  {
     "id": "malham-national-park-centre",
     "slug": "malham-national-park-centre",
     "destinationId": "yorkshire-dales",
@@ -2095,6 +3135,86 @@
     }
   },
   {
+    "id": "manitoulin-eco-park-astro-night-check-in",
+    "slug": "manitoulin-eco-park-astro-night-check-in",
+    "destinationId": "manitoulin",
+    "name": "Astro Night / Aurora Hunting check-in",
+    "lat": 45.6620625,
+    "lon": -81.9683125,
+    "elevationM": 233,
+    "siteType": "programme-check-in",
+    "publicAccess": "limited",
+    "accessScore": 24,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.manitoulinecopark.com/event-details/astro-night-aurora-hunting-september-26",
+    "accessNotes": {
+      "en": "This coordinate is the operator-published Manitoulin Eco Park venue address and programme check-in, not a second observing field. The current Astro Night / Aurora Hunting schedule starts with registration outside the Nature Center, followed by an operator-led convoy from the main parking lot to DarkSky Parking and a guided session at the observation field. Attend only with a current ticket for the selected date, arrive at the published registration time, follow staff and remain with the group. The DarkSky gate closes to vehicles after sunset; white light, personal laser pointers and campfires are prohibited.",
+      "de": "Diese Koordinate ist die vom Betreiber veröffentlichte Adresse des Manitoulin Eco Park und der Programm-Check-in, kein zweites Beobachtungsfeld. Der aktuelle Ablauf von Astro Night / Aurora Hunting beginnt mit der Anmeldung vor dem Nature Center, gefolgt von einem betreuten Fahrzeugkonvoi vom Hauptparkplatz zum DarkSky-Parkplatz und der geführten Sitzung auf dem Beobachtungsfeld. Nimm nur mit aktuellem Ticket für den gewählten Termin teil, erscheine zur veröffentlichten Anmeldezeit, folge dem Personal und bleibe bei der Gruppe. Das DarkSky-Tor schließt nach Sonnenuntergang für Fahrzeuge; Weißlicht, private Laserpointer und Lagerfeuer sind verboten."
+    }
+  },
+  {
+    "id": "manitoulin-eco-park-observation-field",
+    "slug": "manitoulin-eco-park-observation-field",
+    "destinationId": "manitoulin",
+    "name": "Manitoulin Eco Park DarkSky Observation Field",
+    "lat": 45.6694987,
+    "lon": -81.9708103,
+    "elevationM": 240,
+    "siteType": "dark-sky-observation-field",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.manitoulinecopark.com/product-page/night-pass",
+    "accessNotes": {
+      "en": "The operator's current Night Pass grants one person access to the DarkSky Observation Area from sunset to sunrise, and its official map link resolves to this named field coordinate. Buy the pass and check in only after physically arriving. On Saturdays with a special event the pass is not valid before 23:00, and it is not valid during the published November 20–26 and December 4–10 hunting periods. Park at the separate DarkSky lot, walk in, use red light only, keep quiet, stay out of the Forest Campgrounds and make no campfire.",
+      "de": "Der aktuelle Night Pass des Betreibers gewährt einer Person von Sonnenuntergang bis Sonnenaufgang Zugang zur DarkSky Observation Area; der offizielle Kartenlink führt zu dieser Koordinate des benannten Feldes. Kaufe den Pass und checke erst nach der tatsächlichen Ankunft ein. An Samstagen mit Sonderveranstaltung gilt der Pass nicht vor 23 Uhr, und in den veröffentlichten Jagdzeiträumen 20.–26. November sowie 4.–10. Dezember ist er ungültig. Parke am getrennten DarkSky-Parkplatz, gehe zu Fuß hinein, nutze nur Rotlicht, verhalte dich leise, bleibe aus den Forest Campgrounds und mache kein Feuer."
+    }
+  },
+  {
+    "id": "mapungubwe-leokwe-rest-camp",
+    "slug": "mapungubwe-leokwe-rest-camp",
+    "destinationId": "mapungubwe",
+    "name": "Leokwe Rest Camp",
+    "lat": -22.2177486,
+    "lon": 29.3648104,
+    "elevationM": 547,
+    "siteType": "rest-camp",
+    "publicAccess": "limited",
+    "accessScore": 42,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://mapungubwenationalpark.co.za/accommodation-and-prices/",
+    "accessNotes": {
+      "en": "The current Mapungubwe operator accommodation page identifies Leokwe as a bookable rest camp in the eastern section. This coordinate and elevation remain catalogue references that the DEM/source pipeline must replace or confirm. Use only with a current booking and direct confirmation of the camp's present operating status; remain within the assigned guest footprint and follow current wildlife, lighting and after-hours movement instructions.",
+      "de": "Die aktuelle Unterkunftsseite des Mapungubwe-Betreibers führt Leokwe als buchbares Restcamp im Ostteil. Koordinate und Höhe bleiben Katalogreferenzen, die die DEM-/Quellenpipeline ersetzen oder bestätigen muss. Nutze den Ort nur mit aktueller Buchung und direkter Bestätigung des derzeitigen Betriebsstatus; bleibe innerhalb der zugewiesenen Gästefläche und befolge aktuelle Wildtier-, Licht- und Nachtbewegungsregeln."
+    }
+  },
+  {
+    "id": "mapungubwe-mazhou-campsite",
+    "slug": "mapungubwe-mazhou-campsite",
+    "destinationId": "mapungubwe",
+    "name": "Mazhou Camp Site",
+    "lat": -22.187385,
+    "lon": 29.2012847,
+    "elevationM": 533,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 46,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://mapungubwenationalpark.co.za/accommodation-and-prices/",
+    "accessNotes": {
+      "en": "The current Mapungubwe operator accommodation page identifies Mazhou as a bookable ten-pitch campsite in the western section. This coordinate and elevation remain catalogue references that the DEM/source pipeline must replace or confirm. Check the current arrival and transfer instructions before travel, stay inside the assigned campsite footprint and follow current wildlife, lighting and after-hours movement rules; no second camp or night transfer is inferred.",
+      "de": "Die aktuelle Unterkunftsseite des Mapungubwe-Betreibers führt Mazhou als buchbaren Campingplatz mit zehn Stellflächen im Westteil. Koordinate und Höhe bleiben Katalogreferenzen, die die DEM-/Quellenpipeline ersetzen oder bestätigen muss. Bestätige aktuelle Anreise- und Transferhinweise vor der Reise, bleibe innerhalb der zugewiesenen Campingfläche und befolge aktuelle Wildtier-, Licht- und Nachtbewegungsregeln; ein zweites Camp oder eine Nachtfahrt wird nicht angenommen."
+    }
+  },
+  {
     "id": "mas-de-la-barque",
     "slug": "mas-de-la-barque",
     "destinationId": "cevennes",
@@ -2112,6 +3232,26 @@
     "accessNotes": {
       "en": "Use only the current published visitor arrangement for Mas de la Barque visitor area. Confirm parking, booking, opening, hazards and the return before travel; this coordinate is not permission to enter or camp.",
       "de": "Nutze für Mas de la Barque visitor area nur die aktuell veröffentlichte Besucherregelung. Bestätige Parken, Buchung, Öffnung, Gefahren und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "massacre-ranch-interpretive-camp-meadow",
+    "slug": "massacre-ranch-interpretive-camp-meadow",
+    "destinationId": "massacre-rim",
+    "name": "Massacre Ranch interpretive panel and camp meadow",
+    "lat": 41.56091,
+    "lon": -119.58268,
+    "elevationM": 1817,
+    "siteType": "primitive-campground",
+    "publicAccess": "limited",
+    "accessScore": 52,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.blm.gov/visit/massacre-ranch-recreation-area",
+    "accessNotes": {
+      "en": "BLM identifies Massacre Ranch as a free recreation area about 3 miles east of gravel Nevada 8A and 45 road miles east of Cedarville, with a first-come cabin, primitive campsites and a vault toilet. The official California National Historic Trail brochure supplies this exact interpretive-panel coordinate in the Massacre Ranch meadow. Arrive in daylight on established routes only; interior roads are rough and rocky, so use four-wheel drive with clearance, sound tyres and a full-size spare. There is no cell service, surface water is unreliable, and fuel is roughly 40–90 road miles from the sanctuary. Carry all water and recovery supplies, save maps offline and tell someone the route. The cabin is never guaranteed. Camp or observe only in the existing recreation footprint, stay no more than 14 days, and check current road, smoke and BLM Nevada fire restrictions immediately before departure. Under the current Winnemucca order, do not light wood or charcoal fires here; only the expressly allowed portable gas or pressurised-liquid stove exception applies while that order remains in force.",
+      "de": "BLM weist Massacre Ranch als kostenloses Erholungsgebiet etwa 3 Meilen östlich der geschotterten Nevada 8A und 45 Straßenmeilen östlich von Cedarville aus, mit einer nicht reservierbaren Hütte nach Verfügbarkeit, primitiven Campingflächen und Trockentoilette. Die offizielle Broschüre zum California National Historic Trail liefert diese genaue Koordinate der Informationstafel in der Wiese von Massacre Ranch. Komme bei Tageslicht und nutze ausschließlich bestehende Routen; die Binnenstraßen sind extrem rau und felsig, daher sind Allradantrieb, Bodenfreiheit, gute Reifen und ein vollwertiges Ersatzrad erforderlich. Es gibt keinen Mobilfunk, Oberflächenwasser ist unzuverlässig und Kraftstoff liegt ungefähr 40–90 Straßenmeilen vom Schutzgebiet entfernt. Führe sämtliches Wasser und Bergungsmaterial mit, speichere Karten offline und hinterlege die Route bei einer Kontaktperson. Die Hütte ist niemals garantiert. Campe oder beobachte nur innerhalb der bestehenden Erholungsfläche, bleibe höchstens 14 Tage und prüfe Straße, Rauch sowie aktuelle BLM-Feuerregeln für Nevada unmittelbar vor der Abfahrt. Nach der derzeitigen Winnemucca-Verfügung sind Holz- und Holzkohlefeuer hier unzulässig; solange sie gilt, ist nur die ausdrücklich erlaubte Ausnahme für tragbare Gas- oder Druckflüssigkeitskocher nutzbar."
     }
   },
   {
@@ -2255,6 +3395,46 @@
     }
   },
   {
+    "id": "medicine-rocks-campsite-1",
+    "slug": "medicine-rocks-campsite-1",
+    "destinationId": "medicine-rocks",
+    "name": "Campsite 1",
+    "lat": 46.0417955583512,
+    "lon": -104.468172965914,
+    "elevationM": 1050,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://fwp.mt.gov/medicine-rocks",
+    "accessNotes": {
+      "en": "The official Montana FWP facilities layer maps Campsite 1 at this coordinate, one of eight first-come sites. Camping is available year-round subject to current restrictions, but the campsite is a separate overnight footprint and not the Night Sky Trail viewing area. Confirm availability and closures, remain within the assigned campsite after day-use hours, keep lighting low and respect campground quiet hours.",
+      "de": "Der offizielle Anlagen-Datensatz von Montana FWP kartiert Campsite 1 an dieser Koordinate; es ist einer von acht Plätzen nach dem Prinzip der ersten Ankunft. Camping ist vorbehaltlich aktueller Einschränkungen ganzjährig möglich, doch der Stellplatz ist eine eigene Übernachtungsfläche und nicht der Beobachtungsbereich des Night Sky Trail. Bestätige Verfügbarkeit und Sperrungen, bleibe nach Ende der Tagesnutzung auf dem zugewiesenen Stellplatz, halte die Beleuchtung niedrig und beachte die Ruhezeiten."
+    }
+  },
+  {
+    "id": "medicine-rocks-night-sky-trail",
+    "slug": "medicine-rocks-night-sky-trail",
+    "destinationId": "medicine-rocks",
+    "name": "Night Sky Trail",
+    "lat": 46.0462234527945,
+    "lon": -104.467333269572,
+    "elevationM": 1031,
+    "siteType": "dark-sky-trail",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://fwp.mt.gov/medicine-rocks",
+    "accessNotes": {
+      "en": "Montana FWP publishes the Night Sky Trail as a final public trail and holds guided viewing events from its signed parking and viewing area. This marker lies on the official trail geometry; it is not a substitute for the signed event meeting point. Day use ends at 10 p.m., so use the trail independently only within current park hours, or follow staff instructions during a dated event, and check closures before travel.",
+      "de": "Montana FWP veröffentlicht den Night Sky Trail als endgültig freigegebenen öffentlichen Weg und veranstaltet geführte Beobachtungen ab dem ausgeschilderten Parkplatz und Beobachtungsbereich. Diese Markierung liegt auf der offiziellen Weggeometrie; sie ersetzt nicht den ausgeschilderten Veranstaltungstreffpunkt. Die Tagesnutzung endet um 22 Uhr. Nutze den Weg selbstständig nur innerhalb der aktuellen Parkzeiten oder folge bei einer datierten Veranstaltung den Anweisungen des Personals und prüfe vor der Anreise Sperrungen."
+    }
+  },
+  {
     "id": "medlands-beach-night",
     "slug": "medlands-beach-night",
     "destinationId": "great-barrier-island",
@@ -2332,6 +3512,46 @@
     "accessNotes": {
       "en": "This official self-guided astronomy route uses the Minas de San José viewpoint. Access remains subject to Teide road, parking, weather, and closure rules.",
       "de": "Diese offizielle selbstgeführte Astronomieroute nutzt den Aussichtspunkt Minas de San José. Der Zugang unterliegt den aktuellen Straßen-, Parkplatz-, Wetter- und Sperrregeln am Teide."
+    }
+  },
+  {
+    "id": "monfrague-castillo",
+    "slug": "monfrague-castillo",
+    "destinationId": "monfrague",
+    "name": "Castillo de Monfragüe",
+    "lat": 39.82815,
+    "lon": -6.05149,
+    "elevationM": 458,
+    "siteType": "historic-site",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://turismomonfrague.es/imprescindible/castillo-de-monfrague/",
+    "accessNotes": {
+      "en": "The reserve tourism authority names the castle as a stargazing location and describes a roughly 20-minute walk from the designated parking area followed by stairs. Confirm current park notices before travel, arrive in daylight and use only the signed route; the coordinate grants neither vehicle access to the castle nor permission to camp.",
+      "de": "Die Tourismusverwaltung der Biosphärenreserve nennt die Burg als Sternbeobachtungsort und beschreibt vom ausgewiesenen Parkplatz einen etwa 20-minütigen Fußweg mit anschließendem Treppenabschnitt. Prüfe vor der Fahrt aktuelle Parkhinweise, komme bei Tageslicht an und nutze ausschließlich den ausgeschilderten Weg; die Koordinate gewährt weder Fahrzeugzugang zur Burg noch eine Campingerlaubnis."
+    }
+  },
+  {
+    "id": "monfrague-salto-gitano",
+    "slug": "monfrague-salto-gitano",
+    "destinationId": "monfrague",
+    "name": "Salto del Gitano",
+    "lat": 39.82855,
+    "lon": -6.05783,
+    "elevationM": 236,
+    "siteType": "park-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://turismomonfrague.es/imprescindible/salto-del-gitano/",
+    "accessNotes": {
+      "en": "The reserve tourism authority names Salto del Gitano as a stargazing location and describes access by road or a signed walk from Villarreal de San Carlos. It is also a sensitive wildlife viewpoint beside a public road: use only designated parking, keep light and noise minimal, and recheck current park notices before a night visit.",
+      "de": "Die Tourismusverwaltung der Biosphärenreserve nennt Salto del Gitano als Sternbeobachtungsort und beschreibt die Anfahrt über die Straße oder einen ausgeschilderten Fußweg ab Villarreal de San Carlos. Der Ort ist zugleich ein sensibler Wildtier-Aussichtspunkt an einer öffentlichen Straße: Nutze nur ausgewiesene Parkflächen, minimiere Licht und Lärm und prüfe vor einem Nachtbesuch aktuelle Parkhinweise."
     }
   },
   {
@@ -2495,6 +3715,46 @@
     }
   },
   {
+    "id": "mudgee-grattai-grove-stay",
+    "slug": "mudgee-grattai-grove-stay",
+    "destinationId": "mudgee",
+    "name": "Grattai Grove booked accommodation",
+    "lat": -32.6338509,
+    "lon": 149.505875,
+    "elevationM": 639,
+    "siteType": "booked-accommodation",
+    "publicAccess": "limited",
+    "accessScore": 56,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/products/grattai-grove",
+    "accessNotes": {
+      "en": "Mudgee Region Tourism publishes this exact property coordinate and explicitly tells overnight guests they can stargaze and see the Milky Way after nightfall. Grattai Grove confirms two bookable accommodation options, the 809 Old Grattai Road address, signed onsite parking and wildlife on the twilight and night approach. This is not a public viewpoint: book the accommodation first, obtain the host's current instructions and observe only from the assigned private stay footprint without entering farm paddocks, roads or the observatory next door.",
+      "de": "Mudgee Region Tourism veröffentlicht diese genaue Grundstückskoordinate und erklärt ausdrücklich, dass Übernachtungsgäste nach Einbruch der Dunkelheit Sterne und Milchstraße beobachten können. Grattai Grove bestätigt zwei buchbare Unterkünfte, die Adresse 809 Old Grattai Road, ausgeschilderte Parkplätze auf dem Gelände und Wildtiere auf der Zufahrt bei Dämmerung und Nacht. Dies ist kein öffentlicher Aussichtspunkt: Buche zuerst die Unterkunft, hole aktuelle Gastgeberhinweise ein und beobachte nur innerhalb der zugewiesenen privaten Unterkunftsfläche, nicht auf Weiden, Straßen oder am benachbarten Observatorium."
+    }
+  },
+  {
+    "id": "mudgee-observatory-booked-session",
+    "slug": "mudgee-observatory-booked-session",
+    "destinationId": "mudgee",
+    "name": "Mudgee Observatory booked session",
+    "lat": -32.6321512,
+    "lon": 149.4914588,
+    "elevationM": 602,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 80,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.visitmudgeeregion.com.au/products/mudgee-observatory",
+    "accessNotes": {
+      "en": "Mudgee Region Tourism and the observatory identify the public facility at 961 Old Grattai Road; the operator's published coordinate and the mapped observatory feature support this exact visitor point. Both day and night visits require advance booking, and the session time varies by season. Do not arrive for independent observing or infer access from the map. Confirm the date, start and finish, parking and weather decision directly, then use only the equipment and grounds included in that session.",
+      "de": "Mudgee Region Tourism und das Observatorium weisen die öffentliche Anlage an 961 Old Grattai Road aus; die veröffentlichte Betreiberkoordinate und das kartierte Observatoriumsobjekt stützen diesen genauen Besucherpunkt. Tages- und Nachtbesuche erfordern eine Vorabbuchung, die Sitzungszeit ändert sich mit der Jahreszeit. Fahre nicht zur selbstständigen Beobachtung an und leite aus der Karte keinen Zutritt ab. Bestätige Datum, Beginn, Ende, Parkplatz und Wetterentscheidung direkt und nutze dann nur die in der Sitzung vorgesehenen Geräte und Flächen."
+    }
+  },
+  {
     "id": "musala-hut-night-area",
     "slug": "musala-hut-night-area",
     "destinationId": "rila",
@@ -2572,6 +3832,86 @@
     "accessNotes": {
       "en": "The National Park Service explicitly welcomes independent stargazing from the visitor-center parking lot. Facilities may be closed after hours, so carry water, fuel, a paper map, and current park information.",
       "de": "Der National Park Service erlaubt selbständige Sternbeobachtung ausdrücklich vom Parkplatz des Besucherzentrums. Einrichtungen können nach Dienstschluss geschlossen sein; nimm Wasser, Kraftstoff, Papierkarte und aktuelle Parkinformationen mit."
+    }
+  },
+  {
+    "id": "navarino-dientes",
+    "slug": "navarino-dientes",
+    "destinationId": "isla-navarino",
+    "name": "Dientes de Navarino trail approach",
+    "lat": -54.98,
+    "lon": -67.55,
+    "elevationM": 250,
+    "siteType": "mountain-trail-approach",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
+    "accessNotes": {
+      "en": "SERNATUR presents Dientes de Navarino as a trekking circuit and warns of difficult weather conditions, including at night; its advice to be prepared and overnight on the route is not authorization to use this staged approach coordinate or hike after dark. The point is not a verified campsite, observatory or permitted astronomy stop, and no reviewed source supplies a current night route or emergency-return plan. Do not direct visitors onto the trail at night. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "SERNATUR stellt Dientes de Navarino als Trekkingroute dar und warnt vor schwierigen Wetterbedingungen, auch nachts; der Hinweis, vorbereitet zu sein und unterwegs zu übernachten, ist keine Genehmigung für diese vorgemerkte Zugangspunktskoordinate oder eine Wanderung nach Einbruch der Dunkelheit. Der Punkt ist weder als Campingplatz noch Observatorium oder erlaubter Astronomiestopp verifiziert; eine aktuelle Nachtroute oder Notfallrückkehr ist in den geprüften Quellen nicht dokumentiert. Besucher nicht nachts auf den Weg schicken. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "navarino-puerto-williams",
+    "slug": "navarino-puerto-williams",
+    "destinationId": "isla-navarino",
+    "name": "Puerto Williams waterfront",
+    "lat": -54.93,
+    "lon": -67.61,
+    "elevationM": 10,
+    "siteType": "waterfront",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sernatur.cl/puerto-williams-el-destino-del-fin-del-mundo/",
+    "accessNotes": {
+      "en": "SERNATUR describes Puerto Williams attractions and the Dientes de Navarino trek, but the reviewed sources do not name this waterfront coordinate as a designated night-sky site or confirm after-dark public access, lighting, safe standing area or return arrangements. Treat it only as a settlement reference, not a recommendation to enter the waterfront at night. Ask the municipality or booked accommodation for a currently permitted, sheltered location and local night-safety instructions. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "SERNATUR beschreibt Sehenswürdigkeiten in Puerto Williams und die Wanderroute Dientes de Navarino, benennt diese Uferkoordinate jedoch nicht als ausgewiesenen Nachtbeobachtungsort und bestätigt weder öffentlichen Zugang nach Einbruch der Dunkelheit noch Beleuchtung, sicheren Standbereich oder Rückkehr. Nur als Ortsreferenz der Siedlung behandeln, nicht als Empfehlung, nachts ans Ufer zu gehen. Frage Gemeinde oder gebuchte Unterkunft nach einem aktuell erlaubten, geschützten Ort und örtlichen Sicherheitshinweisen für die Nacht. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "newport-campground",
+    "slug": "newport-campground",
+    "destinationId": "newport-wisconsin",
+    "name": "Newport campground",
+    "lat": 45.25,
+    "lon": -86.97,
+    "elevationM": 185,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://dnr.wisconsin.gov/topic/parks/newport",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Newport campground. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Newport campground nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "newport-porte-des-morts",
+    "slug": "newport-porte-des-morts",
+    "destinationId": "newport-wisconsin",
+    "name": "Newport shoreline",
+    "lat": 45.25,
+    "lon": -86.96,
+    "elevationM": 185,
+    "siteType": "lakeshore",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://dnr.wisconsin.gov/topic/parks/newport",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Newport shoreline. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Newport shoreline nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
     }
   },
   {
@@ -2675,6 +4015,46 @@
     }
   },
   {
+    "id": "oracle-american-avenue-reserved-stargazing",
+    "slug": "oracle-american-avenue-reserved-stargazing",
+    "destinationId": "oracle-state-park",
+    "name": "American Avenue Trailhead reserved stargazing",
+    "lat": 32.6215404,
+    "lon": -110.7464941,
+    "elevationM": 1307,
+    "siteType": "reserved-trailhead-parking",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://azstateparks.com/oracle/dark-skies/viewing-info",
+    "accessNotes": {
+      "en": "Arizona State Parks explicitly offers independent after-hours stargazing through this side entrance seven days a week. Call the park before 15:00, preferably on the same day, pay the current vehicle fee and obtain the four-digit padlock code before travel. Navigate specifically to American Avenue Trailhead, keep the reservation and gate instructions available offline, stay within the permitted trailhead footprint and leave by the agreed route. The code and coordinate do not authorize camping; overnight camping is prohibited.",
+      "de": "Arizona State Parks bietet über diesen Seiteneingang ausdrücklich an sieben Tagen pro Woche selbstständige Sternbeobachtung nach den normalen Öffnungszeiten an. Rufe den Park vor 15 Uhr an, vorzugsweise am selben Tag, zahle die aktuelle Fahrzeuggebühr und erhalte vor der Fahrt den vierstelligen Zahlenschlosscode. Navigiere gezielt zum American Avenue Trailhead, halte Reservierung und Toranweisung offline bereit, bleibe innerhalb der erlaubten Trailhead-Fläche und verlasse den Park über den vereinbarten Weg. Code und Koordinate erlauben kein Camping; Übernachtungscamping ist verboten."
+    }
+  },
+  {
+    "id": "oracle-kannally-ranch-house-star-party",
+    "slug": "oracle-kannally-ranch-house-star-party",
+    "destinationId": "oracle-state-park",
+    "name": "Kannally Ranch House star-party patio",
+    "lat": 32.6096723,
+    "lon": -110.7336317,
+    "elevationM": 1326,
+    "siteType": "programme-observing-patio",
+    "publicAccess": "no",
+    "accessScore": 0,
+    "active": true,
+    "priority": 78,
+    "certificationIds": [],
+    "notesSourceUrl": "https://azstateparks.com/oracle/events",
+    "accessNotes": {
+      "en": "Arizona State Parks identifies public Star Parties near Kannally Ranch House as its staffed night-sky option, and its official 2025 workshop documents the Ranch House living room and patio as the programme footprint. This is not an independent observing alternative. The current park calendar reviewed on 2026-09-22 lists no future astronomy event, so do not enter or set up here after normal closing. Use this record only when Arizona State Parks publishes a new dated Star Party or provides a written after-hours arrangement for the chosen night; follow that event's admission, parking, staff and finish instructions.",
+      "de": "Arizona State Parks bezeichnet öffentliche Star Parties nahe dem Kannally Ranch House als betreute Nachthimmel-Option; der offizielle Workshop von 2025 belegt Wohnraum und Patio des Ranch House als Programmfläche. Dies ist keine selbstständige Beobachtungsalternative. Der am 22.09.2026 geprüfte Parkkalender nennt keinen künftigen Astronomietermin; betrete den Ort daher nach der normalen Schließzeit nicht und baue dort nichts auf. Nutze diesen Datensatz nur, wenn Arizona State Parks eine neue datierte Star Party veröffentlicht oder für die gewählte Nacht eine schriftliche Sonderregelung erteilt; befolge deren Eintritts-, Park-, Personal- und Abschlussanweisungen."
+    }
+  },
+  {
     "id": "panorama-point-arches",
     "slug": "panorama-point-arches",
     "destinationId": "arches",
@@ -2752,6 +4132,46 @@
     "accessNotes": {
       "en": "ESO introduced a small number of ticketed public night tours in 2026. Access exists only on published tour dates with official transport and registration; normal public visits remain daytime-only.",
       "de": "ESO führte 2026 wenige kostenpflichtige öffentliche Nachttouren ein. Zugang besteht nur an veröffentlichten Terminen mit offiziellem Transport und Anmeldung; reguläre Besuche bleiben Tagestouren."
+    }
+  },
+  {
+    "id": "parashant-mount-trumbull-trailhead",
+    "slug": "parashant-mount-trumbull-trailhead",
+    "destinationId": "grand-canyon-parashant",
+    "name": "Mount Trumbull Trailhead parking",
+    "lat": 36.39191793,
+    "lon": -113.15106744,
+    "elevationM": 1983,
+    "siteType": "remote-trailhead-parking",
+    "publicAccess": "limited",
+    "accessScore": 40,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.blm.gov/visit/mount-trumbull",
+    "accessNotes": {
+      "en": "BLM and NPS identify Mount Trumbull Trailhead on County Road 5 as a public visitor footprint with parking, a vault toilet and stargazing activity. The official BLM recreation-site layer supplies this exact trailhead coordinate. Select it as the only stop, reach and inspect it in full daylight, park completely in the designated area and keep the road clear. Use a high-clearance four-wheel-drive vehicle with all-terrain tyres, a full tank, recovery gear and a suitable spare; County Road 5 is rough, can become impassable after rain or snow and is usually impassable here from December through February. Carry all drinking water because the seasonal spigot is untreated and not reliable, plus offline maps, a satellite communicator and an external itinerary because there are no services or dependable cell coverage. Observe only in the established parking footprint with red light. This record does not authorize camping near the adjacent historic and cultural landscape, entry into wilderness by vehicle or a second night drive to another site. Recheck roads, weather, smoke, closures and Arizona fire restrictions immediately before departure.",
+      "de": "BLM und NPS weisen den Mount Trumbull Trailhead an der County Road 5 als öffentliche Besucherfläche mit Parkplatz, Trockentoilette und Sternbeobachtung aus. Der offizielle BLM-Datensatz der Erholungsorte liefert diese genaue Trailhead-Koordinate. Wähle ihn als einzigen Halt, erreiche und prüfe ihn bei vollem Tageslicht, parke vollständig auf der ausgewiesenen Fläche und halte die Straße frei. Nutze ein hochgelegtes Allradfahrzeug mit Geländereifen, vollem Tank, Bergungsausrüstung und geeignetem Ersatzrad; die County Road 5 ist rau, kann nach Regen oder Schnee unpassierbar werden und ist hier gewöhnlich von Dezember bis Februar unpassierbar. Führe sämtliches Trinkwasser mit, da der saisonale Hahn unbehandeltes und nicht verlässliches Wasser liefert, außerdem Offline-Karten, Satellitenkommunikation und einen extern hinterlegten Reiseplan, weil es weder Dienstleistungen noch verlässlichen Mobilfunk gibt. Beobachte nur innerhalb der bestehenden Parkfläche mit Rotlicht. Dieser Datensatz erlaubt weder Camping nahe der angrenzenden historischen und kulturellen Landschaft noch Fahrzeuge in der Wilderness oder eine zweite Nachtfahrt zu einem anderen Ort. Prüfe Straßen, Wetter, Rauch, Sperren und die Feuerregeln Arizonas unmittelbar vor der Abfahrt erneut."
+    }
+  },
+  {
+    "id": "parashant-poverty-junction-parking",
+    "slug": "parashant-poverty-junction-parking",
+    "destinationId": "grand-canyon-parashant",
+    "name": "Poverty Junction kiosk and parking",
+    "lat": 36.39449207,
+    "lon": -113.57941422,
+    "elevationM": 1770,
+    "siteType": "remote-road-junction-parking",
+    "publicAccess": "limited",
+    "accessScore": 34,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.nps.gov/para/planyourvisit/accessibility.htm",
+    "accessNotes": {
+      "en": "NPS identifies the Poverty Mountain vault toilet at the junction of County Road 103 and BLM 1046 and confirms that the monument's vault toilets are served from parking areas. The official BLM recreation-site layer maps the Poverty Junction toilet and adjacent kiosk at this exact coordinate. Treat the established kiosk/toilet parking footprint as a separate one-stop option, not a transfer after Mount Trumbull. Scout it in daylight, park fully clear of both roads and set up only where current signs permit. NPS rates CR103 for high-clearance four-wheel-drive vehicles with all-terrain tyres and warns that clay roads can remain impassable for days after heavy rain. Bring all water, fuel margin, recovery equipment, offline navigation, satellite communication and an external itinerary; no services or dependable cell coverage exist in the monument. The coordinate grants no camping right and does not justify a roadside, meadow or unmarked fallback. Recheck road, weather, smoke, closure and Arizona fire information before leaving St. George and turn back while daylight remains if any check fails.",
+      "de": "NPS verortet die Trockentoilette am Poverty Mountain an der Kreuzung von County Road 103 und BLM 1046 und bestätigt, dass die Trockentoiletten des Monuments von Parkflächen aus erreicht werden. Der offizielle BLM-Datensatz der Erholungsorte kartiert Toilette und benachbarten Kiosk an dieser genauen Koordinate. Behandle die bestehende Kiosk- und Toiletten-Parkfläche als getrennte Ein-Halt-Option und nicht als Weiterfahrt nach Mount Trumbull. Erkunde sie bei Tageslicht, parke vollständig außerhalb beider Straßen und baue nur dort auf, wo aktuelle Schilder dies zulassen. NPS stuft CR103 für hochgelegte Allradfahrzeuge mit Geländereifen ein und warnt, dass Lehmstraßen nach starkem Regen tagelang unpassierbar bleiben können. Führe sämtliches Wasser, Kraftstoffreserve, Bergungsausrüstung, Offline-Navigation, Satellitenkommunikation und einen extern hinterlegten Reiseplan mit; im Monument gibt es weder Dienstleistungen noch verlässlichen Mobilfunk. Die Koordinate gewährt kein Campingrecht und rechtfertigt weder Straßenrand noch Wiese oder unmarkierten Ausweichort. Prüfe Straße, Wetter, Rauch, Sperren und Feuerinformationen für Arizona vor der Abfahrt aus St. George und kehre bei verbleibendem Tageslicht um, wenn eine Prüfung scheitert."
     }
   },
   {
@@ -2915,6 +4335,86 @@
     }
   },
   {
+    "id": "poloniny-kolonica-observatory",
+    "slug": "poloniny-kolonica-observatory",
+    "destinationId": "poloniny",
+    "name": "Astronomical Observatory on Kolonica Saddle",
+    "lat": 48.935194,
+    "lon": 22.273722,
+    "elevationM": 431,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.astrokolonica.sk/rezervacny-kalendar-3/",
+    "accessNotes": {
+      "en": "The observatory publishes this exact venue coordinate and offers bookable evening telescope programmes, with an indoor planetarium substitute when outdoor observing conditions fail. Attend only with a current reservation or a dated public programme and follow the operator's arrival instructions. The site is a working scientific facility, so the coordinate grants no independent after-hours access, parking or camping.",
+      "de": "Das Observatorium veröffentlicht für diesen Veranstaltungsort genaue Koordinaten und bietet buchbare abendliche Teleskopprogramme an; bei ungeeigneten Außenbedingungen wird im Planetarium ein Ersatzprogramm durchgeführt. Besuche den Ort nur mit aktueller Reservierung oder zu einem datierten öffentlichen Programm und befolge die Anreisehinweise des Betreibers. Der Ort ist eine aktive wissenschaftliche Einrichtung; die Koordinate gewährt daher keinen selbstständigen Zugang außerhalb der Zeiten sowie keine Park- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "poloniny-runina-centre",
+    "slug": "poloniny-runina-centre",
+    "destinationId": "poloniny",
+    "name": "Runina village centre by the church",
+    "lat": 49.073369,
+    "lon": 22.405239,
+    "elevationM": 550,
+    "siteType": "village-centre",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.obecrunina.sk/podstranka.php?stranka=turistika-a-zaujimavosti",
+    "accessNotes": {
+      "en": "The municipality states that astronomical observing is possible directly in Runina and that its public lighting is switched off at 21:00 and not used in summer. The national park also names the village centre as an undisturbed public observing location. Use the public village-space and bus-stop area by the church, keep clear of homes and religious activity, minimise light and noise, and do not treat nearby meadows, trails or parking as permission to enter private land or camp.",
+      "de": "Die Gemeinde erklärt, dass astronomische Beobachtung direkt in Runina möglich ist und die öffentliche Beleuchtung um 21:00 Uhr ausgeschaltet sowie im Sommer gar nicht eingeschaltet wird. Auch der Nationalpark nennt das Ortszentrum als ungestörten öffentlichen Beobachtungsort. Nutze den öffentlichen Dorf- und Bushaltestellenbereich bei der Kirche, halte Abstand zu Wohnhäusern und religiöser Nutzung, minimiere Licht und Lärm und verstehe benachbarte Wiesen, Wege oder Parkflächen nicht als Erlaubnis für Privatgrund oder Camping."
+    }
+  },
+  {
+    "id": "puna-posta-hornillos-guided-observation",
+    "slug": "puna-posta-hornillos-guided-observation",
+    "destinationId": "puna-argentina",
+    "name": "Posta de Hornillos guided observation stop",
+    "lat": -23.6546204,
+    "lon": -65.4314311,
+    "elevationM": 2368,
+    "siteType": "event-venue",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://trensolar.com.ar/cielo-en-movimiento/",
+    "accessNotes": {
+      "en": "The official Cielo en Movimiento itinerary names Posta de Hornillos as the 21:05 observing stop, with guided astronomy through professional telescopes followed by dinner. This coordinate identifies the mapped historic Posta, but it does not grant independent access. Use it only inside a dated Cielo en Movimiento booking, arrive with the included operator itinerary and leave with the scheduled return; do not drive to the site or remain after the group departs.",
+      "de": "Der offizielle Ablauf von Cielo en Movimiento nennt die Posta de Hornillos als Beobachtungshalt um 21:05 Uhr, mit geführter Astronomie an professionellen Teleskopen und anschließendem Abendessen. Diese Koordinate bezeichnet die kartierte historische Posta, gewährt aber keinen selbstständigen Zugang. Nutze sie ausschließlich im Rahmen einer datierten Cielo-en-Movimiento-Buchung, komme mit dem enthaltenen Betreiberablauf an und fahre mit der vorgesehenen Rückfahrt ab; fahre den Ort nicht selbstständig an und bleibe nicht nach Abfahrt der Gruppe."
+    }
+  },
+  {
+    "id": "puna-tumbaya-solar-train-boarding",
+    "slug": "puna-tumbaya-solar-train-boarding",
+    "destinationId": "puna-argentina",
+    "name": "Tumbaya Solar Train boarding station",
+    "lat": -23.8534632,
+    "lon": -65.4652744,
+    "elevationM": 2096,
+    "siteType": "tour-departure",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://trensolar.com.ar/cielo-en-movimiento/",
+    "accessNotes": {
+      "en": "The current official itinerary brings booked passengers by included road transfer from San Salvador de Jujuy or Salta to Tumbaya, where reception is scheduled for 19:20 and the guided train departs at 20:05. This record is an operational boarding point, not a second observing site. Follow the ticket's meeting point and operator transfer; do not substitute an independent arrival, platform visit or night session.",
+      "de": "Der aktuelle offizielle Ablauf bringt gebuchte Gäste mit enthaltenem Straßentransfer ab San Salvador de Jujuy oder Salta nach Tumbaya. Dort sind der Empfang um 19:20 Uhr und die Abfahrt des geführten Zuges um 20:05 Uhr vorgesehen. Dieser Datensatz ist ein betrieblicher Einstiegsort und kein zweiter Beobachtungsplatz. Folge Treffpunkt und Betreibertransfer des Tickets; ersetze sie nicht durch eine selbstständige Anfahrt, einen Bahnsteigbesuch oder eine Nachtsitzung."
+    }
+  },
+  {
     "id": "pyramid-island",
     "slug": "pyramid-island",
     "destinationId": "jasper",
@@ -2932,6 +4432,86 @@
     "accessNotes": {
       "en": "Parks Canada lists Pyramid Island as an easy-access dark-sky location. Check park alerts, parking restrictions, wildlife guidance, and seasonal conditions.",
       "de": "Parks Canada nennt Pyramid Island als leicht erreichbaren Dark-Sky-Ort. Prüfe Parkmeldungen, Parkregeln, Wildtierhinweise und saisonale Bedingungen."
+    }
+  },
+  {
+    "id": "rakiura-moturau-moana-viewpoint",
+    "slug": "rakiura-moturau-moana-viewpoint",
+    "destinationId": "rakiura",
+    "name": "Moturau Moana Gardens viewing point",
+    "lat": -46.8898314,
+    "lon": 168.1340715,
+    "elevationM": 36,
+    "siteType": "public-garden-viewpoint",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.stewartisland.co.nz/dark-sky-sanctuary/",
+    "accessNotes": {
+      "en": "Stewart Island Promotion Association lists Moturau Moana Gardens among Rakiura's night-sky viewing-platform locations, while Southland District Council records the public garden at 140 Horseshoe Bay Road. Use DOC's one-hour return walking route from the Rakiura National Park Visitor Centre: follow the waterfront and Horseshoe Bay Road, cross Mill Creek, pass Butterfield Beach and the Bragg Bay turnoff, then use the signed garden entrance and formed track to the mapped viewpoint. Do not rely on parking inside or beside the garden; begin and finish on foot in Oban, avoid the optional Horseshoe Point loop after dark and respect the surrounding homes. No nightly closing time is published on the reviewed current pages, so current signs, closures, council instructions and weather control access. Remain on the formed path and viewpoint, do not camp, keep lighting minimal, use a red light near wildlife, never use flash or bright lights around kiwi and return by the same road route.",
+      "de": "Die Stewart Island Promotion Association nennt Moturau Moana Gardens ausdrücklich als Rakiura-Standort mit Plattform zur Nachthimmelbeobachtung; der Southland District Council führt den öffentlichen Garten an der Adresse 140 Horseshoe Bay Road. Nutze den offiziellen Fußweg von insgesamt einer Stunde ab dem Rakiura National Park Visitor Centre: Folge Ufer und Horseshoe Bay Road, überquere Mill Creek, passiere Butterfield Beach und die Abzweigung Bragg Bay und nutze anschließend den ausgeschilderten Garteneingang sowie den angelegten Weg zum kartierten Aussichtspunkt. Verlasse dich nicht auf Parken im oder am Garten; beginne und beende den Weg zu Fuß in Oban, vermeide nach Einbruch der Dunkelheit die optionale Horseshoe-Point-Runde und respektiere die umliegenden Wohnhäuser. Die geprüften aktuellen Seiten nennen keine nächtliche Schließzeit; aktuelle Schilder, Sperren, Council-Anweisungen und Wetter bestimmen daher den Zugang. Bleibe auf angelegtem Weg und Aussichtspunkt, campe nicht, minimiere Beleuchtung, nutze bei Wildtieren Rotlicht, verwende bei Kiwi niemals Blitz oder helles Licht und kehre über dieselbe Straßenroute zurück."
+    }
+  },
+  {
+    "id": "rakiura-observation-rock-platform",
+    "slug": "rakiura-observation-rock-platform",
+    "destinationId": "rakiura",
+    "name": "Observation Rock viewing platform",
+    "lat": -46.9025887,
+    "lon": 168.1245045,
+    "elevationM": 69,
+    "siteType": "public-viewing-platform",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 89,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.doc.govt.nz/news/media-releases/2023-media-releases/observation-rock-platform-now-open/",
+    "accessNotes": {
+      "en": "Stewart Island Promotion Association and DOC explicitly identify Observation Rock as a night-sky viewpoint, and DOC reopened its purpose-built platform with a safety barrier in November 2023. Use the official 30-minute return walking route from the Rakiura National Park Visitor Centre: waterfront, Ayr Street, Leonard Street, then Excelsior Street to the signed short path. This record does not claim parking at the platform; walk from Oban, keep residential access clear and respect homeowners. The reviewed official pages publish no nightly closing time, so recheck current signs, closures, weather and the visitor centre before setting out; any closure or contradictory on-site instruction ends the visit. Stay on the platform and formed approach, keep light and voices low, use a red light near wildlife, never use flash or bright lights around kiwi and return by the same sealed-road route rather than adding another site.",
+      "de": "Die Stewart Island Promotion Association und DOC weisen Observation Rock ausdrücklich als Nachthimmel-Aussichtspunkt aus; DOC eröffnete die eigens gebaute Plattform mit Sicherheitsbarriere im November 2023 wieder. Nutze den offiziellen Fußweg von insgesamt 30 Minuten ab dem Rakiura National Park Visitor Centre: Ufer, Ayr Street, Leonard Street und anschließend Excelsior Street bis zum ausgeschilderten kurzen Pfad. Dieser Datensatz behauptet keinen Parkplatz an der Plattform; gehe ab Oban zu Fuß, halte Wohnzufahrten frei und respektiere Anwohner. Die geprüften offiziellen Seiten veröffentlichen keine nächtliche Schließzeit; prüfe daher vor dem Aufbruch aktuelle Schilder, Sperren, Wetter und Hinweise des Visitor Centre erneut. Jede Sperre oder widersprechende Anweisung vor Ort beendet den Besuch. Bleibe auf Plattform und angelegtem Zugang, halte Licht und Stimmen niedrig, nutze bei Wildtieren Rotlicht, verwende bei Kiwi niemals Blitz oder helles Licht und kehre auf demselben Weg über befestigte Straßen zurück, statt einen weiteren Ort anzuhängen."
+    }
+  },
+  {
+    "id": "rann-utsav-tent-city",
+    "slug": "rann-utsav-tent-city",
+    "destinationId": "rann-of-kutch",
+    "name": "Rann Utsav Tent City guest property",
+    "lat": 23.80373,
+    "lon": 69.50919,
+    "elevationM": 3,
+    "siteType": "booked-accommodation",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.openstreetmap.org/node/9271272718",
+    "accessNotes": {
+      "en": "This OpenStreetMap node identifies Tent City Dhorda as an accommodation point; it is a representative property coordinate, not a tent, courtyard or approved astronomy footprint. Copernicus DEM GLO-30 measured 3.013 m DSM elevation at this point; the catalogue stores 3 m. The official 2026–27 Rann Utsav itinerary returns guests from the White Rann sunset visit to Tent City by 19:30. Do not treat that excursion as a night-sky venue or leave the booked property after dark. A current overnight booking is not enough by itself: ask the operator whether a specific outdoor guest area is open for quiet observing on the booked date, and follow its permit, lighting, closing and staff instructions. Keep this catalogue record inactive until climate and darkness snapshots are complete and the guest footprint is confirmed. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Dieser OpenStreetMap-Knoten kennzeichnet Tent City Dhorda als Unterkunftspunkt; er ist eine repräsentative Grundstückskoordinate, kein Zelt, Hof oder freigegebener Astronomieplatz. Copernicus DEM GLO-30 maß an diesem Punkt eine DSM-Höhe von 3,013 m; der Katalog speichert 3 m. Der offizielle Rann-Utsav-Ablauf 2026–27 bringt Gäste vom Sonnenuntergangsbesuch im White Rann bis 19:30 Uhr zur Tent City zurück. Behandle diesen Ausflug nicht als Nachtbeobachtungsort und verlasse das gebuchte Gelände nach Einbruch der Dunkelheit nicht. Eine aktuelle Übernachtungsbuchung genügt allein nicht: Frage den Betreiber, ob am gebuchten Termin eine bestimmte Außenfläche für ruhige Beobachtung geöffnet ist, und befolge Genehmigungs-, Licht-, Schließ- und Personalanweisungen. Dieser Katalogdatensatz bleibt inaktiv, bis Klima- und Dunkelheitssnapshots vollständig sowie die Gästefläche bestätigt sind. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "rann-white-rann-resort",
+    "slug": "rann-white-rann-resort",
+    "destinationId": "rann-of-kutch",
+    "name": "White Rann Resort guest property",
+    "lat": 23.806227,
+    "lon": 69.512355,
+    "elevationM": 3,
+    "siteType": "booked-resort-stay",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.dizcoverpraveg.com/whiterannresort",
+    "accessNotes": {
+      "en": "Praveg's official White Rann Resort page represents a separate bookable guest property in Dhordo; its linked map pin gives the catalogue's representative property coordinate, not an observing deck or public salt-flat access. Copernicus DEM GLO-30 measured 3.222 m DSM elevation at this point; the catalogue stores 3 m. The operator's promotional reference to the night sky does not define an outdoor guest boundary or grant permission to enter the White Rann. Use only after an overnight booking and direct staff confirmation of the assigned outdoor guest footprint, current opening and equipment rules; remain on the property and do not make an after-dark transfer to the salt flat or Kalo Dungar. This record stays inactive until climate and darkness snapshots are complete and the permitted footprint is documented. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Die offizielle Seite von Praveg bezeichnet das White Rann Resort als separate buchbare Unterkunft in Dhordo; der dort verlinkte Kartenpin liefert die repräsentative Grundstückskoordinate des Katalogs, weder eine Beobachtungsplattform noch öffentlichen Zugang zur Salzwüste. Copernicus DEM GLO-30 maß an diesem Punkt eine DSM-Höhe von 3,222 m; der Katalog speichert 3 m. Der Werbehinweis des Betreibers auf den Nachthimmel legt keine erlaubte Außenfläche fest und gestattet keinen Zutritt zum White Rann. Nutze den Ort nur mit Übernachtungsbuchung und direkter Bestätigung der zugewiesenen Außenfläche, aktuellen Öffnung und Ausrüstungsregeln; bleibe auf dem Grundstück und fahre nachts weder zur Salzwüste noch nach Kalo Dungar. Der Datensatz bleibt inaktiv, bis Klima- und Dunkelheitssnapshots vollständig und die erlaubte Fläche dokumentiert sind. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
     }
   },
   {
@@ -2972,6 +4552,46 @@
     "accessNotes": {
       "en": "Use only the current published visitor arrangement for Répáshuta village visitor area. Confirm parking, booking, opening, hazards and the return before travel; this coordinate is not permission to enter or camp.",
       "de": "Nutze für Répáshuta village visitor area nur die aktuell veröffentlichte Besucherregelung. Bestätige Parken, Buchung, Öffnung, Gefahren und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "richtersveld-de-hoop",
+    "slug": "richtersveld-de-hoop",
+    "destinationId": "richtersveld",
+    "name": "De Hoop Camp Site",
+    "lat": -28.1836833,
+    "lon": 17.1780333,
+    "elevationM": 81,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 54,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://richtersveldnationalpark.co.za/accommodation-and-prices/",
+    "accessNotes": {
+      "en": "The current Richtersveld operator accommodation page identifies De Hoop as a bookable campsite. This coordinate and elevation remain catalogue references that the DEM/source pipeline must replace or confirm. Use it only with a current overnight booking, arrive before dark and remain inside the assigned camping footprint until daylight travel resumes.",
+      "de": "Die aktuelle Unterkunftsseite des Richtersveld-Betreibers führt De Hoop als buchbaren Campingplatz. Koordinate und Höhe bleiben Katalogreferenzen, die die DEM-/Quellenpipeline ersetzen oder bestätigen muss. Nutze ihn nur mit aktueller Übernachtungsbuchung, komme vor Dunkelheit an und bleibe innerhalb der zugewiesenen Campingfläche, bis Fahrten bei Tageslicht wieder möglich sind."
+    }
+  },
+  {
+    "id": "richtersveld-potjiespram",
+    "slug": "richtersveld-potjiespram",
+    "destinationId": "richtersveld",
+    "name": "Potjiespram Camp Site",
+    "lat": -28.0747,
+    "lon": 16.96315,
+    "elevationM": 42,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": true,
+    "priority": 90,
+    "certificationIds": [],
+    "notesSourceUrl": "https://richtersveldnationalpark.co.za/accommodation-and-prices/",
+    "accessNotes": {
+      "en": "The current Richtersveld operator accommodation page identifies Potjiespram as a bookable campsite. This coordinate and elevation remain catalogue references that the DEM/source pipeline must replace or confirm. Stargaze only from the assigned camping footprint after a daylight arrival; verify current access, booking and park rules before travel.",
+      "de": "Die aktuelle Unterkunftsseite des Richtersveld-Betreibers führt Potjiespram als buchbaren Campingplatz. Koordinate und Höhe bleiben Katalogreferenzen, die die DEM-/Quellenpipeline ersetzen oder bestätigen muss. Beobachte nur innerhalb der zugewiesenen Campingfläche nach Ankunft bei Tageslicht; bestätige aktuelle Zufahrt, Buchung und Parkregeln vor der Reise."
     }
   },
   {
@@ -3095,6 +4715,86 @@
     }
   },
   {
+    "id": "sani-pass-border",
+    "slug": "sani-pass-border",
+    "destinationId": "sani-pass",
+    "name": "Sani Mountain Escape lodge guest property",
+    "lat": -29.584577,
+    "lon": 29.288123,
+    "elevationM": 2878,
+    "siteType": "booked-mountain-lodge",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://sanimountain.co.za/lesotho-accommodation/",
+    "accessNotes": {
+      "en": "Sani Mountain Escape currently offers bookable overnight accommodation at 2,874 m; this representative lodge point is published by a regional accommodation directory, not supplied by the operator as an astronomy pin. Every visit requires a confirmed booking. The point is within the managed guest property and is not permission to walk onto the pass, trails or surrounding highland after dark. Ask the operator which immediate area is allowed for after-dark viewing, and follow its weather, border, vehicle, wildlife and lighting instructions. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Sani Mountain Escape bietet aktuell buchbare Übernachtungen auf 2.874 m; diesen repräsentativen Lodge-Punkt veröffentlicht ein regionales Unterkunftsverzeichnis, nicht der Betreiber als Astronomiepunkt. Jeder Besuch erfordert eine bestätigte Buchung. Der Punkt liegt innerhalb der betreuten Gästefläche und erlaubt nicht, nachts auf den Pass, Wege oder das umliegende Hochland zu gehen. Frage den Betreiber, welche unmittelbare Fläche nach Einbruch der Dunkelheit genutzt werden darf, und befolge Wetter-, Grenz-, Fahrzeug-, Wildtier- und Lichtregeln. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "sani-top",
+    "slug": "sani-top",
+    "destinationId": "sani-pass",
+    "name": "Highest Pub building at Sani Mountain Escape",
+    "lat": -29.58472,
+    "lon": 29.28818,
+    "elevationM": 2878,
+    "siteType": "booked-guest-venue",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://mapcarta.com/W87507638",
+    "accessNotes": {
+      "en": "The Highest Pub is a named building within the same Sani Mountain Escape property; OpenStreetMap's building point is distinct from the lodge listing by only a short distance. Its operator requires advance booking and says capacity is limited. It is an arrival/venue reference, not a second observing area, open road stop or authorization to remain after the property's approved hours. Use only as part of a confirmed overnight stay and ask staff for the exact permitted guest footprint after dark. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Der Highest Pub ist ein benanntes Gebäude auf demselben Grundstück von Sani Mountain Escape; der OpenStreetMap-Gebäudepunkt liegt nur wenige Meter vom Lodge-Verzeichnispunkt entfernt. Der Betreiber verlangt eine Vorabbuchung und nennt eine begrenzte Kapazität. Der Punkt dient als Ankunfts-/Gebäudereferenz, nicht als zweites Beobachtungsgebiet, offener Straßenstopp oder Erlaubnis, nach den genehmigten Zeiten auf dem Gelände zu bleiben. Nur im Rahmen einer bestätigten Übernachtung nutzen und das Personal nach der konkreten Gästefläche für die Nacht fragen. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "sark-dachinger-observatory",
+    "slug": "sark-dachinger-observatory",
+    "destinationId": "isle-of-sark",
+    "name": "Dachinger Observatory",
+    "lat": 49.432552,
+    "lon": -2.361605,
+    "elevationM": 104,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 68,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sark.co.uk/nature/dark-skies",
+    "accessNotes": {
+      "en": "Sark's official visitor service directs visitors to contact the Visitor Centre to book the island observatory, while its current community page says the Sark Astronomy Society offers telescope sessions at the Dachinger Observatory throughout the year for a minimum donation. Use this exact observatory only after the Visitor Centre or Society confirms a dated session and meeting instructions. Walk the public lanes carefully, carry a low red light and do not infer access to neighbouring land outside the guided programme.",
+      "de": "Der offizielle Besucherdienst von Sark verweist für Buchungen des Inselobservatoriums an das Visitor Centre; die aktuelle Gemeinschaftsseite erklärt zudem, dass die Sark Astronomy Society ganzjährig Teleskopsitzungen am Dachinger Observatory gegen eine Mindestspende anbietet. Nutze dieses genau verortete Observatorium nur nach Bestätigung eines datierten Termins und der Treffpunktanweisung durch Visitor Centre oder Society. Gehe vorsichtig auf den öffentlichen Wegen, nutze schwaches rotes Licht und leite aus dem Programm keinen Zutritt zu benachbartem Gelände ab."
+    }
+  },
+  {
+    "id": "sark-la-valette-campsite",
+    "slug": "sark-la-valette-campsite",
+    "destinationId": "isle-of-sark",
+    "name": "La Valette Campsite",
+    "lat": 49.435751,
+    "lon": -2.348015,
+    "elevationM": 96,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 86,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.sark.co.uk/properties/la-valette-campsite",
+    "accessNotes": {
+      "en": "Sark's official accommodation listing identifies La Valette as a permitted family campsite and explicitly promotes lying on its grass at night to view the constellations. Book the campsite directly, confirm the assigned field and current facilities, arrive before dark and observe only within the booked camping footprint. The nearby public northeast walking route helps identify the area in daylight but does not turn the lighthouse lookout or coastal paths into campsite overflow after dark.",
+      "de": "Das offizielle Unterkunftsverzeichnis von Sark weist La Valette als genehmigten Familiencampingplatz aus und empfiehlt ausdrücklich, nachts auf seiner Wiese die Sternbilder zu betrachten. Buche den Campingplatz direkt, bestätige zugewiesenes Feld und aktuelle Einrichtungen, komme vor Dunkelheit an und beobachte nur innerhalb der gebuchten Campingfläche. Die nahe öffentliche Nordost-Wanderroute hilft bei der Orientierung am Tag, macht aber weder den Leuchtturm-Aussichtspunkt noch die Küstenwege nachts zu einer Erweiterung des Campingplatzes."
+    }
+  },
+  {
     "id": "seawall-acadia",
     "slug": "seawall-acadia",
     "destinationId": "acadia",
@@ -3132,6 +4832,46 @@
     "accessNotes": {
       "en": "Siding Spring Observatory is a working research facility and is not open to the public at night. Use public observing options elsewhere around Warrumbungle or a listed local tour instead.",
       "de": "Das Siding Spring Observatory ist eine aktive Forschungseinrichtung und nachts nicht öffentlich zugänglich. Nutze stattdessen öffentliche Beobachtungsplätze im Warrumbungle-Gebiet oder eine dort genannte lokale Tour."
+    }
+  },
+  {
+    "id": "sierra-morena-cartuja-cazalla-astrotourism",
+    "slug": "sierra-morena-cartuja-cazalla-astrotourism",
+    "destinationId": "sierra-morena",
+    "name": "La Cartuja de Cazalla astrotourism stay",
+    "lat": 37.95246,
+    "lon": -5.72814,
+    "elevationM": 575,
+    "siteType": "booked-astrotourism-stay",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://cartuja-cazalla.squarespace.com/astronoma",
+    "accessNotes": {
+      "en": "The accommodation operator offers guided telescope sessions by advance reservation and self-observation for guests with their own equipment. This coordinate is the mapped monastery property, not an independently accessible observing pad. Book the stay first; request a guided monitor at least 15 days ahead and await availability confirmation, or meet the operator's minimum two-night stay for self-observation. Obtain the assigned observing area, arrival, parking, equipment and departure instructions directly from the host. Never enter the property or adjacent land without the booking.",
+      "de": "Der Unterkunftsbetreiber bietet geführte Teleskopsitzungen nach Voranmeldung und Eigenbeobachtung für Gäste mit eigener Ausrüstung an. Diese Koordinate bezeichnet das kartierte Klostergelände und keinen selbstständig zugänglichen Beobachtungsplatz. Buche zuerst den Aufenthalt; frage eine betreute Sitzung mindestens 15 Tage vorher an und warte auf die Verfügbarkeitsbestätigung oder erfülle für Eigenbeobachtung den Mindestaufenthalt von zwei Nächten. Lass dir Beobachtungsfläche, Ankunft, Parken, Ausrüstung und Abreise direkt vom Gastgeber zuweisen. Betritt Grundstück oder Nachbarflächen niemals ohne Buchung."
+    }
+  },
+  {
+    "id": "sierra-morena-castillo-guardas-observatory",
+    "slug": "sierra-morena-castillo-guardas-observatory",
+    "destinationId": "sierra-morena",
+    "name": "El Castillo de las Guardas Observatory",
+    "lat": 37.7343889,
+    "lon": -6.3795278,
+    "elevationM": 466,
+    "siteType": "booked-public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 58,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.xn--asociacionastronomicadeespaa-oyc.es/visita-observatorio-astronomico-sevilla.html",
+    "accessNotes": {
+      "en": "The observatory operator publishes reservation-based public observations on moonless clear Saturdays, subject to weather and minimum attendance. Its dated 2026 summer programme has ended, so this record requires a newly confirmed date rather than a walk-in visit. Register with the operator, obtain the current meeting and walking instructions, park only where directed in Peroamigo and do not drive to the observatory. Bring rural footwear, warm layers and dim red light; there are no nearby services, and the operator's weather or fire-safety cancellation is final. The exact observatory coordinate does not grant access outside a confirmed session.",
+      "de": "Der Observatoriumsbetreiber veröffentlicht an mondlosen klaren Samstagen anmeldepflichtige öffentliche Beobachtungen, abhängig von Wetter und Mindestteilnehmerzahl. Das datierte Sommerprogramm 2026 ist beendet; dieser Datensatz erfordert deshalb einen neu bestätigten Termin und erlaubt keinen spontanen Besuch. Melde dich beim Betreiber an, hole aktuelle Treff- und Fußweghinweise ein, parke ausschließlich wie angewiesen in Peroamigo und fahre nicht zum Observatorium. Nimm geländetaugliche Schuhe, warme Kleidung und schwaches Rotlicht mit; in der Nähe gibt es keine Versorgung, und wetter- oder brandschutzbedingte Absagen des Betreibers sind verbindlich. Die genaue Observatoriumskoordinate gewährt außerhalb einer bestätigten Sitzung keinen Zutritt."
     }
   },
   {
@@ -3255,6 +4995,66 @@
     }
   },
   {
+    "id": "staunton-river-camp",
+    "slug": "staunton-river-camp",
+    "destinationId": "staunton-river",
+    "name": "Staunton River campground",
+    "lat": 36.79,
+    "lon": -78.8,
+    "elevationM": 115,
+    "siteType": "campground",
+    "publicAccess": "limited",
+    "accessScore": 62,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Staunton River campground. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Staunton River campground nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "staunton-river-park",
+    "slug": "staunton-river-park",
+    "destinationId": "staunton-river",
+    "name": "Staunton River observing field",
+    "lat": 36.78,
+    "lon": -78.79,
+    "elevationM": 120,
+    "siteType": "state-park",
+    "publicAccess": "limited",
+    "accessScore": 66,
+    "active": true,
+    "priority": 79,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.dcr.virginia.gov/state-parks/staunton-river",
+    "accessNotes": {
+      "en": "Use only the current published visitor arrangement for Staunton River observing field. Confirm opening, parking, hazards, permits and the return before travel; this coordinate is not permission to enter or camp.",
+      "de": "Nutze für Staunton River observing field nur die aktuell veröffentlichte Besucherregelung. Bestätige Öffnung, Parken, Gefahren, Genehmigungen und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "stevens-camp-interpretive-camp-meadow",
+    "slug": "stevens-camp-interpretive-camp-meadow",
+    "destinationId": "massacre-rim",
+    "name": "Steven's Camp interpretive panel and camp meadow",
+    "lat": 41.48991,
+    "lon": -119.49171,
+    "elevationM": 1756,
+    "siteType": "primitive-campground",
+    "publicAccess": "limited",
+    "accessScore": 46,
+    "active": true,
+    "priority": 91,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.blm.gov/visit/stevens-camp-recreation-area",
+    "accessNotes": {
+      "en": "BLM identifies Steven's Camp as a free recreation area 11 miles south of Nevada 8A and about 55 road miles east of Cedarville, with a first-come cabin, adjacent primitive campsites, a vault toilet and a 14-day limit. The official California National Historic Trail brochure supplies this exact interpretive-panel coordinate. Treat it as a separate overnight choice, never a second stop after dark. Reach it in daylight using only a route confirmed by the Black Rock Field Office; rough rocky roads require four-wheel drive, clearance, good tyres and a full-size spare, and the High Rock Canyon Road southern approach is subject to an annual winter/spring closure. There is no cell service and no reliable water or nearby fuel, so carry full supplies, offline maps and an external itinerary. Recheck the current closure, weather, smoke and fire order before travel. Under the current Winnemucca restrictions, do not use wood or charcoal fire here unless BLM expressly confirms a later rule permits it; use only an allowed portable gas or pressurised-liquid stove while the order applies.",
+      "de": "BLM weist Steven's Camp als kostenloses Erholungsgebiet 11 Meilen südlich der Nevada 8A und etwa 55 Straßenmeilen östlich von Cedarville aus, mit einer nicht reservierbaren Hütte nach Verfügbarkeit, angrenzenden primitiven Campingflächen, Trockentoilette und einer Höchstaufenthaltsdauer von 14 Tagen. Die offizielle Broschüre zum California National Historic Trail liefert diese genaue Koordinate der Informationstafel. Behandle den Ort als getrennte Übernachtungswahl und niemals als zweiten Halt nach Einbruch der Dunkelheit. Erreiche ihn bei Tageslicht ausschließlich über eine vom Black Rock Field Office bestätigte Route; raue und felsige Straßen verlangen Allradantrieb, Bodenfreiheit, gute Reifen und ein vollwertiges Ersatzrad, und die südliche Zufahrt über die High Rock Canyon Road unterliegt einer jährlichen Winter-/Frühjahrssperre. Es gibt weder Mobilfunk noch verlässliches Wasser oder nahen Kraftstoff; führe daher vollständige Vorräte, Offline-Karten und einen extern hinterlegten Reiseplan mit. Prüfe aktuelle Sperre, Wetter, Rauch und Feuerverfügung vor der Fahrt erneut. Nach den derzeitigen Winnemucca-Beschränkungen sind Holz- und Holzkohlefeuer hier unzulässig, sofern BLM nicht ausdrücklich eine spätere Freigabe bestätigt; während der Verfügung darf nur ein erlaubter tragbarer Gas- oder Druckflüssigkeitskocher verwendet werden."
+    }
+  },
+  {
     "id": "stonehaugh-stargazing-pavilion",
     "slug": "stonehaugh-stargazing-pavilion",
     "destinationId": "kielder",
@@ -3375,6 +5175,46 @@
     }
   },
   {
+    "id": "tara-garden-hill-guest-courtyard",
+    "slug": "tara-garden-hill-guest-courtyard",
+    "destinationId": "tara-serbia",
+    "name": "Garden Hill Tara guest courtyard",
+    "lat": 43.9210566,
+    "lon": 19.4198053,
+    "elevationM": 1093,
+    "siteType": "booked-villa-stay",
+    "publicAccess": "limited",
+    "accessScore": 60,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://gardenhilltara.rs/en/",
+    "accessNotes": {
+      "en": "The operator offers four reservable villas in Mitrovac and explicitly describes evening use of the private pool beneath the starry sky. The operator-linked coordinate identifies the accommodation complex, not a public astronomy venue. Observe only as a checked-in guest within the courtyard area assigned by the host, keep clear of the shared pool and other guests, and request permission before setting up optical equipment. A villa booking grants no night access to park trails, viewpoints or forest roads.",
+      "de": "Der Betreiber bietet vier buchbare Villen in Mitrovac an und beschreibt ausdrücklich die abendliche Nutzung des privaten Pools unter dem Sternenhimmel. Die vom Betreiber verlinkte Koordinate bezeichnet die Unterkunftsanlage und keinen öffentlichen Astronomieort. Beobachte ausschließlich als eingecheckter Gast innerhalb der vom Gastgeber zugewiesenen Hoffläche, halte Abstand zu gemeinsam genutztem Pool und anderen Gästen und frage vor dem Aufbau optischer Ausrüstung um Erlaubnis. Eine Villenbuchung gewährt keinen Nachtzugang zu Parkwegen, Aussichtspunkten oder Waldstraßen."
+    }
+  },
+  {
+    "id": "tara-glamping-rastiste-stay",
+    "slug": "tara-glamping-rastiste-stay",
+    "destinationId": "tara-serbia",
+    "name": "Glamping Tara guest property",
+    "lat": 43.949661,
+    "lon": 19.356679,
+    "elevationM": 436,
+    "siteType": "booked-glamping-stay",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://glampingtara.com/",
+    "accessNotes": {
+      "en": "The operator advertises its two all-season panoramic domes as a place to dream beneath the stars and publishes direct booking contacts. The operator-linked map identifies this guest property, not a public viewing field. Use it only with a confirmed overnight booking, obtain check-in, parking and the permitted outdoor guest footprint from the host, and keep lights low. Do not turn the booking into access to surrounding park roads, forest, viewpoints or neighbouring land; use a tripod or telescope outside the dome only with the host's approval.",
+      "de": "Der Betreiber bewirbt seine zwei ganzjährig nutzbaren Panoramakuppeln als Ort zum Träumen unter Sternen und veröffentlicht direkte Buchungskontakte. Die vom Betreiber verlinkte Karte bezeichnet dieses Gästegelände und keine öffentliche Beobachtungswiese. Nutze es nur mit bestätigter Übernachtungsbuchung, kläre Check-in, Parkplatz und erlaubte Außenfläche beim Gastgeber und halte Licht niedrig. Leite aus der Buchung keinen Zugang zu umliegenden Parkstraßen, Wald, Aussichtspunkten oder Nachbargrundstücken ab; Stativ oder Teleskop außerhalb der Kuppel nur mit Zustimmung des Gastgebers."
+    }
+  },
+  {
     "id": "teide-high-zone",
     "slug": "teide-high-zone",
     "destinationId": "tenerife",
@@ -3392,6 +5232,46 @@
     "accessNotes": {
       "en": "Night observing must use publicly accessible park viewpoints and comply with current road, parking, trail, weather, and closure rules; this score does not grant observatory or summit access.",
       "de": "Nächtliche Beobachtungen müssen öffentlich zugängliche Park-Aussichtspunkte sowie aktuelle Straßen-, Parkplatz-, Wege-, Wetter- und Sperrregeln beachten; dieser Wert gewährt keinen Zugang zu Observatorium oder Gipfel."
+    }
+  },
+  {
+    "id": "torrance-highland-pond-parking",
+    "slug": "torrance-highland-pond-parking",
+    "destinationId": "torrance-barrens",
+    "name": "Highland Pond parking and trailhead",
+    "lat": 44.9415459,
+    "lon": -79.5135668,
+    "elevationM": 248,
+    "siteType": "trailhead-parking",
+    "publicAccess": "limited",
+    "accessScore": 20,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.openstreetmap.org/way/635730634",
+    "accessNotes": {
+      "en": "Ontario identifies the Highland Pond parking area off Southwood Road as the reserve's formal main access, and the mapped unpaved parking polygon supplies this exact arrival point. The Guardians state that the first trail from this parking area leads to the dark-sky viewing area. This is an access record, not a second observing site: park only in the marked area, keep Southwood Road clear and carry equipment to the signed granite footprint. Do not camp or make a fire here.",
+      "de": "Ontario nennt den Parkplatz am Highland Pond an der Southwood Road als offiziellen Hauptzugang des Schutzgebiets; das kartierte unbefestigte Parkplatzpolygon liefert diesen genauen Ankunftspunkt. Laut Guardians führt der erste Weg von diesem Parkplatz zur Nachthimmel-Beobachtungsfläche. Dies ist ein Zugangsdatensatz und kein zweiter Beobachtungsort: Parke nur auf der ausgewiesenen Fläche, halte die Southwood Road frei und trage die Ausrüstung zur beschilderten Granitfläche. Campe hier nicht und mache kein Feuer."
+    }
+  },
+  {
+    "id": "torrance-highland-pond-viewing-area",
+    "slug": "torrance-highland-pond-viewing-area",
+    "destinationId": "torrance-barrens",
+    "name": "Highland Pond main dark-sky viewing area",
+    "lat": 44.942622,
+    "lon": -79.513414,
+    "elevationM": 246,
+    "siteType": "granite-outcrop",
+    "publicAccess": "limited",
+    "accessScore": 72,
+    "active": true,
+    "priority": 82,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.torrancebarrens.com/stargaze",
+    "accessNotes": {
+      "en": "The Guardians identify the smooth granite outcrop immediately behind the Ministry sign on Southwood Road as the reserve's main dark-sky viewing area and welcome visitors after dark. This exact point is independently documented by a geotagged 2024 nighttime photograph on the granite north of the formal parking and beside the first mapped trail segment. Use only the established outcrop, keep lights and noise low, and do not extend onto wetlands or closed trails. The coordinate documents a viewing footprint; it does not permit camping or a fire.",
+      "de": "Die Guardians bezeichnen den glatten Granitaufschluss unmittelbar hinter dem Ministeriumsschild an der Southwood Road als Hauptfläche zur Nachthimmelbeobachtung und heißen Gäste nach Einbruch der Dunkelheit willkommen. Dieser genaue Punkt ist zusätzlich durch ein georeferenziertes Nachtfoto von 2024 auf dem Granit nördlich des offiziellen Parkplatzes und neben dem ersten kartierten Wegabschnitt dokumentiert. Nutze nur die bestehende Felsfläche, minimiere Licht und Lärm und weiche weder in Feuchtgebiete noch auf gesperrte Wege aus. Die Koordinate belegt eine Beobachtungsfläche; sie erlaubt weder Camping noch Feuer."
     }
   },
   {
@@ -3432,6 +5312,46 @@
     "accessNotes": {
       "en": "Use only the published visitor arrangement for Townsite Campground. Confirm current access, parking or booking, hours and hazard notices before travel; the coordinate is not permission to enter or camp.",
       "de": "Nutze nur die veröffentlichte Besucherregelung für Townsite Campground. Bestätige aktuellen Zugang, Parken oder Buchung, Zeiten und Gefahrenmeldungen vor der Reise; die Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "tsumkwe-country-lodge-guest-campsite",
+    "slug": "tsumkwe-country-lodge-guest-campsite",
+    "destinationId": "tsumkwe",
+    "name": "Tsumkwe Country Lodge guest campsite",
+    "lat": -19.601303,
+    "lon": 20.495356,
+    "elevationM": 1151,
+    "siteType": "booked-lodge-campsite",
+    "publicAccess": "limited",
+    "accessScore": 38,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.tsumkwelodge.com/campsites/",
+    "accessNotes": {
+      "en": "Tsumkwe Country Lodge offers ten bookable campsites inside its walled and fenced guest property. The official pages do not advertise an astronomy programme, so a booking supports only brief unaided or handheld-binocular sky viewing from the immediate assigned guest footprint after check-in and host approval. Reception operates from 07:00 to 21:00; arrive in daylight, ask where quiet outdoor use is allowed and keep a torch ready because elephants and antelope frequent the waterhole. Do not move toward the waterhole, gate, town edge or another dark area after nightfall. A tripod or telescope needs separate explicit host approval; wildlife, security or shared use ends the session immediately.",
+      "de": "Die Tsumkwe Country Lodge bietet zehn buchbare Campingplätze innerhalb ihres ummauerten und eingezäunten Gästegeländes. Die offiziellen Seiten bewerben kein Astronomieprogramm; eine Buchung trägt daher nur kurze Himmelsbeobachtung mit bloßem Auge oder Handfernglas innerhalb der unmittelbar zugewiesenen Gästefläche nach Check-in und Gastgeberfreigabe. Die Rezeption ist von 07:00 bis 21:00 Uhr besetzt; komme bei Tageslicht an, frage nach der erlaubten ruhigen Außenfläche und halte eine Lampe bereit, weil Elefanten und Antilopen häufig die Wasserstelle aufsuchen. Gehe nachts weder zur Wasserstelle noch zum Tor, Ortsrand oder einem anderen dunklen Bereich. Stativ oder Teleskop benötigen eine getrennte ausdrückliche Gastgeberfreigabe; Wildtiere, Sicherheit oder gemeinschaftliche Nutzung beenden die Sitzung sofort."
+    }
+  },
+  {
+    "id": "tsumkwe-juhoansi-grashoek-campsite",
+    "slug": "tsumkwe-juhoansi-grashoek-campsite",
+    "destinationId": "tsumkwe",
+    "name": "Ju/'Hoansi Living Museum Grashoek campsite",
+    "lat": -19.2447934,
+    "lon": 19.2392123,
+    "elevationM": 1204,
+    "siteType": "community-campsite",
+    "publicAccess": "limited",
+    "accessScore": 34,
+    "active": true,
+    "priority": 87,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.lcfn.info/juhoansi/contact",
+    "accessNotes": {
+      "en": "The Ju/'Hoansi Living Museum operates a community campsite at Grashoek. Its official contact and FAQ pages require registration and cash payment with a receipt at reception, state that campsite pre-booking is neither necessary nor possible and require a 4x4 for overnight campsite access. The current 2026-2027 programme lists three campsites with a dry toilet, bucket shower and braai. Reach reception and the assigned campsite before sundown, carry water and confirm all current instructions with the manager. No source grants independent night movement through the museum, village or bush: after dark remain at the occupied pitch, use only unaided eyes or handheld binoculars unless the manager explicitly approves equipment, and join any storytelling, walk or fire activity only as a current paid guided programme.",
+      "de": "Das Ju/'Hoansi Living Museum betreibt in Grashoek einen gemeinschaftlichen Campingplatz. Offizielle Kontakt- und FAQ-Seiten verlangen Anmeldung und Barzahlung mit Quittung an der Rezeption, erklären eine Vorreservierung des Campingplatzes für weder nötig noch möglich und schreiben für die Zufahrt zur Übernachtungsfläche einen Geländewagen vor. Das aktuelle Programm 2026-2027 nennt drei Campingplätze mit Trockentoilette, Eimerdusche und Braai. Erreiche Rezeption und zugewiesenen Platz vor Sonnenuntergang, führe Wasser mit und bestätige alle aktuellen Anweisungen beim Manager. Keine Quelle erlaubt selbstständige Nachtbewegung durch Museum, Dorf oder Busch: Bleibe nach Einbruch der Dunkelheit am bewohnten Stellplatz, nutze nur bloßes Auge oder Handfernglas, sofern der Manager keine Ausrüstung ausdrücklich erlaubt, und nimm an Erzählen, Wanderung oder Feueraktivität nur als aktuell bezahltes geführtes Programm teil."
     }
   },
   {
@@ -3535,6 +5455,46 @@
     }
   },
   {
+    "id": "uyuni-salt-flat",
+    "slug": "uyuni-salt-flat",
+    "destinationId": "uyuni",
+    "name": "Salar de Uyuni access",
+    "lat": -20.13,
+    "lon": -67.49,
+    "elevationM": 3650,
+    "siteType": "salt-flat",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://salardeuyunitour.com/en/tour/star-tour-stargazing",
+    "accessNotes": {
+      "en": "Blue Line Service currently advertises a private stargazing tour with hotel pickup, a 22:00–02:00 schedule and an advertised observing elevation of 3,660 m; its public description does not publish the exact route, salt-flat stop coordinates, current tourism licence number, seasonal surface limits, communications or emergency-return plan. This staged coordinate is not verified as the tour's stop and is not permission for independent night driving or salt-flat access. Do not travel to this pin or enter the salar at night without a currently authorized local operator's direct instructions and applicable permits. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Blue Line Service bewirbt aktuell eine private Sternbeobachtungstour mit Hotelabholung, Abfahrt von 22:00 bis 02:00 Uhr und einer angegebenen Beobachtungshöhe von 3.660 m; die öffentliche Beschreibung nennt weder genaue Route und Haltekoordinaten noch aktuelle Tourismus-Lizenznummer, saisonale Untergrundgrenzen, Kommunikation oder Notfallrückkehr. Diese vorgemerkte Koordinate ist nicht als Tourstopp verifiziert und erlaubt weder eigenständiges Nachtfahren noch Zutritt zum Salar. Fahre nachts nicht zu diesem Pin und betrete den Salar nicht ohne direkte Anweisungen eines aktuell autorisierten lokalen Betreibers und erforderliche Genehmigungen. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
+    "id": "uyuni-tahua",
+    "slug": "uyuni-tahua",
+    "destinationId": "uyuni",
+    "name": "Tahúa lakeshore",
+    "lat": -20.08,
+    "lon": -66.5,
+    "elevationM": 3700,
+    "siteType": "highland-lake",
+    "publicAccess": "unknown",
+    "accessScore": null,
+    "active": true,
+    "priority": 88,
+    "certificationIds": [],
+    "notesSourceUrl": "https://boliviatravel.gob.bo/salar-de-uyuni-y-lagunade-colores/",
+    "accessNotes": {
+      "en": "The tourism authority describes Uyuni and the salt-flat region, but no reviewed official source or current operator itinerary ties this Tahúa lakeshore coordinate to an authorized night-sky stop. It must not be presented as a route extension, public after-dark access or emergency fallback for the separately advertised Uyuni tour. This catalogue entry is a planning reference, not confirmation of public night access. Before booking or travel, contact the named operator or responsible authority yourself for the exact place, date, hours, access route, parking and return plan. If they do not confirm it, do not use this pin.",
+      "de": "Die Tourismusbehörde beschreibt Uyuni und die Salzwüstenregion, aber keine geprüfte amtliche Quelle oder aktuelle Betreibertour ordnet diese Uferkoordinate bei Tahúa einem genehmigten Nachtbeobachtungsstopp zu. Der Ort darf weder als Routenerweiterung noch als öffentlicher Nachtzugang oder Notfallalternative zur separat beworbenen Uyuni-Tour dargestellt werden. Dieser Katalogeintrag ist eine Planungsreferenz und keine Bestätigung eines öffentlichen Nachtzugangs. Kontaktiere vor Buchung oder Anreise selbst den genannten Betreiber oder die zuständige Behörde und kläre den genauen Ort, das Datum, die Zeiten, Zufahrt, Parken und Rückkehr. Ohne konkrete Bestätigung darfst du diesen Pin nicht nutzen."
+    }
+  },
+  {
     "id": "valberg-sentinel",
     "slug": "valberg-sentinel",
     "destinationId": "alpes-azur-mercantour",
@@ -3552,6 +5512,46 @@
     "accessNotes": {
       "en": "Use only the current published visitor arrangement for Valberg astronomy trail area. Confirm parking, booking, opening, hazards and the return before travel; this coordinate is not permission to enter or camp.",
       "de": "Nutze für Valberg astronomy trail area nur die aktuell veröffentlichte Besucherregelung. Bestätige Parken, Buchung, Öffnung, Gefahren und Rückkehr vor der Fahrt; diese Koordinate ist keine Zutritts- oder Campingerlaubnis."
+    }
+  },
+  {
+    "id": "vercors-moulins-mure-event",
+    "slug": "vercors-moulins-mure-event",
+    "destinationId": "vercors",
+    "name": "Moulins de la Mure astronomy event",
+    "lat": 44.914771,
+    "lon": 5.379652,
+    "elevationM": 1087,
+    "siteType": "event-venue",
+    "publicAccess": "limited",
+    "accessScore": 36,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.vercors-drome.com/sejour-vacances-vercors/7922765_11eme-nuit-des-etoiles-moulins-de-la-mure/",
+    "accessNotes": {
+      "en": "Vercors Drôme Tourisme documents the 2026 Nuit des étoiles at this exact coordinate, including evening constellation interpretation and weather fallback. That dated listing does not establish routine night access: use the mills only when a new event is published and follow its current meeting, parking and weather instructions.",
+      "de": "Vercors Drôme Tourisme dokumentiert die Nuit des étoiles 2026 an dieser genauen Koordinate einschließlich abendlicher Sternbildführung und Schlechtwetteralternative. Dieser datierte Eintrag begründet keinen regulären Nachtzugang: Nutze die Mühlen nur bei einer neu veröffentlichten Veranstaltung und befolge deren aktuelle Treffpunkt-, Park- und Wetterhinweise."
+    }
+  },
+  {
+    "id": "vercors-trieves-observatory",
+    "slug": "vercors-trieves-observatory",
+    "destinationId": "vercors",
+    "name": "Observatoire d'astronomie du Trièves",
+    "lat": 44.90013,
+    "lon": 5.554026,
+    "elevationM": 1260,
+    "siteType": "public-observatory",
+    "publicAccess": "limited",
+    "accessScore": 64,
+    "active": true,
+    "priority": 84,
+    "certificationIds": [],
+    "notesSourceUrl": "https://www.trieves-vercors.fr/activites/culture-et-patrimoine/524177_observatoire-dastronomie-du-trieves/",
+    "accessNotes": {
+      "en": "The Trièves tourism office publishes the observatory's exact coordinate, visitor entrance and dated public sessions with telescope observing. Attend only during a currently listed public session or after direct group confirmation; follow the entrance directions behind Résidence Les Dolomites and do not infer independent access outside the programme.",
+      "de": "Das Tourismusbüro Trièves veröffentlicht die genaue Koordinate, den Besuchereingang und datierte öffentliche Termine mit Teleskopbeobachtung. Besuche den Ort nur zu einem aktuell aufgeführten öffentlichen Termin oder nach direkter Gruppenbestätigung; folge der Zugangsbeschreibung hinter der Résidence Les Dolomites und leite außerhalb des Programms keinen selbstständigen Zutritt ab."
     }
   },
   {

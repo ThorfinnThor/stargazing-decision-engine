@@ -1,0 +1,269 @@
+{
+  "version": 1,
+  "id": "isle-of-sark-one-site-night",
+  "slug": "isle-of-sark-one-site-night",
+  "destinationId": "isle-of-sark",
+  "recommendedSiteId": "sark-dachinger-observatory",
+  "title": {
+    "en": "Isle of Sark: A booked observatory session or a separately booked campsite field, reached on Sark's public lanes.",
+    "de": "Isle of Sark: Eine gebuchte Observatoriumssitzung oder ein getrennt gebuchtes Campingfeld, erreichbar über Sarks öffentliche Wege."
+  },
+  "seoDescription": {
+    "en": "Plan a source-led Isle of Sark astronomy visit only after a current programme and access are confirmed.",
+    "de": "Plane einen quellenbasierten Astronomiebesuch in Isle of Sark nur nach Bestätigung eines aktuellen Programms und Zugangs."
+  },
+  "standfirst": {
+    "en": "Isle of Sark has documented astronomy venues, but the reviewed pages do not establish a current independent night-observing site. This guide starts with a programme or operator confirmation and treats postponement as the only valid outcome when that confirmation is absent. A regional Starlight designation confirms sky quality, not tonight's admission, parking or programme.",
+    "de": "Isle of Sark besitzt dokumentierte Astronomieorte, doch die geprüften Seiten belegen keinen aktuell selbstständig nutzbaren Nachtbeobachtungsplatz. Dieser Guide beginnt mit der Bestätigung durch Programm oder Betreiber und sieht ohne diese Bestätigung ausschließlich eine Verschiebung vor. Eine regionale Starlight-Auszeichnung bestätigt die Himmelsqualität, aber weder heutigen Zutritt noch Parkplatz oder Programm."
+  },
+  "facts": [
+    {
+      "label": {
+        "en": "Observe at",
+        "de": "Beobachten an"
+      },
+      "value": {
+        "en": "Dachinger Observatory",
+        "de": "Dachinger Observatory"
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Return base",
+        "de": "Rückkehrbasis"
+      },
+      "value": {
+        "en": "Sark",
+        "de": "Sark"
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Arrival rule",
+        "de": "Ankunftsregel"
+      },
+      "value": {
+        "en": "At the booked time using the operator's instructions",
+        "de": "Zur gebuchten Zeit nach Betreiberanweisung"
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ]
+    },
+    {
+      "label": {
+        "en": "Separate alternative",
+        "de": "Getrennte Alternative"
+      },
+      "value": {
+        "en": "La Valette Campsite",
+        "de": "La Valette Campsite"
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "isle-of-sark-route-place",
+      "kind": "prose",
+      "heading": {
+        "en": "Why this route stops at Dachinger Observatory",
+        "de": "Warum diese Route an Dachinger Observatory endet"
+      },
+      "paragraphs": {
+        "en": [
+          "The Dachinger Observatory is usable only for a session confirmed through the Visitor Centre or Sark Astronomy Society. La Valette is a separate bookable campsite whose official listing explicitly supports stargazing from its grass; neither arrangement grants access to the other place or to private coastal land. The single-stop design protects attention, dark adaptation and the known return to Sark.",
+          "Read signs and boundaries before unloading. A named place is useful only when its current visitor arrangement is understood."
+        ],
+        "de": [
+          "Das Dachinger Observatory ist nur für einen durch Visitor Centre oder Sark Astronomy Society bestätigten Termin nutzbar. La Valette ist ein getrennt buchbarer Campingplatz, dessen offizieller Eintrag Sternbeobachtung auf der Wiese ausdrücklich vorsieht; keiner der beiden Rahmen gewährt Zugang zum anderen Ort oder zu privatem Küstenland. Das Ein-Ort-Design schützt Aufmerksamkeit, Dunkeladaption und die bekannte Rückkehr nach Sark.",
+          "Lies Schilder und Grenzen vor dem Ausladen. Ein benannter Ort hilft nur, wenn seine aktuelle Besucherregelung verstanden ist."
+        ]
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ]
+    },
+    {
+      "id": "isle-of-sark-route-timing",
+      "kind": "schedule",
+      "heading": {
+        "en": "The sequence for Isle of Sark",
+        "de": "Die Reihenfolge für Isle of Sark"
+      },
+      "introduction": {
+        "en": "Daylight arrival protects the night that follows.",
+        "de": "Ankunft bei Tageslicht schützt die folgende Nacht."
+      },
+      "items": [
+        {
+          "time": {
+            "en": "Before leaving Sark",
+            "de": "Vor der Abfahrt aus Sark"
+          },
+          "title": {
+            "en": "Confirm access, weather and return",
+            "de": "Zugang, Wetter und Rückweg bestätigen"
+          },
+          "body": {
+            "en": "Open the current authority pages for Isle of Sark, check the exact elevation and save directions offline. A dark-sky label does not confirm today's gate, road or reservation. Also note who to contact when an on-site notice changes the plan.",
+            "de": "Öffne die aktuellen Verwaltungsseiten für Isle of Sark, prüfe die genaue Höhe und speichere die Navigation offline. Ein Dark-Sky-Label bestätigt weder heutiges Tor, Straße noch Reservierung. Notiere außerdem, wen du bei einer Änderung vor Ort kontaktieren kannst."
+          },
+          "sourceIds": [
+            "isle-of-sark-source-1",
+            "isle-of-sark-source-2",
+            "isle-of-sark-source-3",
+            "isle-of-sark-source-4",
+            "isle-of-sark-source-5"
+          ]
+        },
+        {
+          "time": {
+            "en": "At the booked arrival time",
+            "de": "Zur gebuchten Ankunftszeit"
+          },
+          "title": {
+            "en": "Check in at Dachinger Observatory",
+            "de": "An Dachinger Observatory einchecken"
+          },
+          "body": {
+            "en": "Follow the booking instructions for Dachinger Observatory, use only the assigned arrival route and parking, and keep La Valette Campsite for a separately booked visit. A reservation for one venue grants no access to the other.",
+            "de": "Folge den Buchungshinweisen für Dachinger Observatory, nutze nur die zugewiesene Anfahrt und den vorgesehenen Parkplatz und bewahre La Valette Campsite für einen separat gebuchten Besuch. Eine Reservierung für einen Ort gewährt keinen Zugang zum anderen."
+          },
+          "sourceIds": [
+            "isle-of-sark-source-1",
+            "isle-of-sark-source-2",
+            "isle-of-sark-source-3",
+            "isle-of-sark-source-4",
+            "isle-of-sark-source-5"
+          ]
+        },
+        {
+          "time": {
+            "en": "After twilight",
+            "de": "Nach der Dämmerung"
+          },
+          "title": {
+            "en": "Observe without expanding the footprint",
+            "de": "Beobachten ohne die Fläche zu erweitern"
+          },
+          "body": {
+            "en": "Follow staff instructions and remain inside the booked programme footprint. Keep personal light low, do not interfere with instruments or other visitors, and accept the operator's weather decision. Use only equipment covered by the booking and leave exactly as instructed when the programme ends.",
+            "de": "Folge den Anweisungen des Personals und bleibe innerhalb der gebuchten Programmfläche. Halte eigenes Licht niedrig, störe weder Instrumente noch andere Gäste und akzeptiere die Wetterentscheidung des Betreibers. Nutze nur von der Buchung abgedeckte Ausrüstung und verlasse den Ort zum Programmende genau nach Anweisung."
+          },
+          "sourceIds": [
+            "isle-of-sark-source-1",
+            "isle-of-sark-source-2",
+            "isle-of-sark-source-3",
+            "isle-of-sark-source-4",
+            "isle-of-sark-source-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isle-of-sark-route-decision",
+      "kind": "decisions",
+      "heading": {
+        "en": "Two outcomes are enough in Isle of Sark",
+        "de": "Zwei Ergebnisse genügen in Isle of Sark"
+      },
+      "introduction": {
+        "en": "A supported night proceeds; an unsupported one stops.",
+        "de": "Eine bestätigte Nacht findet statt, eine unbestätigte endet."
+      },
+      "items": [
+        {
+          "label": {
+            "en": "Access and return are confirmed",
+            "de": "Zugang und Rückkehr sind bestätigt"
+          },
+          "body": {
+            "en": "Stay at Dachinger Observatory, keep the vehicle settled and return to Sark by the route learned in daylight.",
+            "de": "Bleibe an Dachinger Observatory, lasse das Fahrzeug stehen und kehre auf der bei Tageslicht erlernten Route nach Sark zurück."
+          },
+          "sourceIds": [
+            "isle-of-sark-source-1",
+            "isle-of-sark-source-2",
+            "isle-of-sark-source-3",
+            "isle-of-sark-source-4",
+            "isle-of-sark-source-5"
+          ]
+        },
+        {
+          "label": {
+            "en": "A critical detail is missing",
+            "de": "Ein kritisches Detail fehlt"
+          },
+          "body": {
+            "en": "Postpone without adding an unverified roadside stop. That is a complete and responsible result.",
+            "de": "Verschiebe ohne unbestätigten Straßenhalt. Das ist ein vollständiges und verantwortungsvolles Ergebnis."
+          },
+          "sourceIds": [
+            "isle-of-sark-source-1",
+            "isle-of-sark-source-2",
+            "isle-of-sark-source-3",
+            "isle-of-sark-source-4",
+            "isle-of-sark-source-5"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "isle-of-sark-route-warning",
+      "kind": "note",
+      "heading": {
+        "en": "The non-negotiable Isle of Sark boundary",
+        "de": "Die unverhandelbare Grenze in Isle of Sark"
+      },
+      "body": {
+        "en": "Current authority rules take precedence over a clear sky, an attractive photograph or an old map pin.",
+        "de": "Aktuelle Verwaltungsregeln haben Vorrang vor klarem Himmel, attraktivem Foto oder altem Kartenpin."
+      },
+      "sourceIds": [
+        "isle-of-sark-source-1",
+        "isle-of-sark-source-2",
+        "isle-of-sark-source-3",
+        "isle-of-sark-source-4",
+        "isle-of-sark-source-5"
+      ],
+      "tone": "warning"
+    }
+  ],
+  "sourceIds": [
+    "isle-of-sark-source-1",
+    "isle-of-sark-source-2",
+    "isle-of-sark-source-3",
+    "isle-of-sark-source-4",
+    "isle-of-sark-source-5"
+  ],
+  "lastReviewedAt": "2026-09-22"
+}

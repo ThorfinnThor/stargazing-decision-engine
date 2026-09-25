@@ -170,13 +170,13 @@ test("next-night preview rejects an invalid starting instant", () => {
   assert.throws(() => findNextAstronomicalNight(westhavelland, "not-an-instant"), /Invalid preview start instant/);
 });
 
-test("destination pages support live darkness or the upcoming night for all 200 observation sites throughout the day", () => {
+test("destination pages support live darkness or the upcoming night for all 300 observation sites throughout the day", () => {
   const instants = Array.from({ length: 8 }, (_, index) => new Date(Date.parse("2026-08-25T00:00:00.000Z") + index * 3 * 60 * 60 * 1000).toISOString());
   const sites = loadSites().filter((site) => site.active);
   const destinations = loadDestinations().filter((destination) => destination.active);
   const destinationsById = new Map(destinations.map((destination) => [destination.id, destination]));
-  assert.equal(destinations.length, 100);
-  assert.equal(sites.length, 200);
+  assert.equal(destinations.length, 150);
+  assert.equal(sites.length, 300);
   for (const site of sites) {
     const destination = destinationsById.get(site.destinationId);
     assert.ok(destination, site.slug);

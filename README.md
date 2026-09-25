@@ -134,7 +134,7 @@ as fallbacks. Viator stays disabled. See [`docs/affiliate-setup.md`](docs/affili
 Gear guides are static specification-analysis pages with no scraped prices or
 availability claims. See [`docs/gear-methodology.md`](docs/gear-methodology.md).
 
-The current production catalog contains 100 active destinations with 200 observation sites. A further 50 destinations and 100 observation sites are prepared in the source catalog and remain inactive until their real climate, darkness, elevation and score snapshots are ingested. Every
+The current production catalog contains 150 active destinations with 300 observation-site records. Eight destinations are deliberately published only as access-unverified planning references: they remain excluded from travel recommendations until readers obtain current confirmation from the named operator or responsible authority. Every
 site published in production has a complete reviewed real score snapshot, and
 every destination exposes two site-specific
 sky and monthly-score views. Synthetic scoring remains only as an isolated development
