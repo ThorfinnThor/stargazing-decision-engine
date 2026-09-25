@@ -1,0 +1,158 @@
+{
+  "siteId": "drakensberg-didima-resort",
+  "source": "VNP46A4",
+  "collectionVersion": "2",
+  "radianceLayer": "AllAngle_Composite_Snow_Free",
+  "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+  "units": "nW/cm2/sr",
+  "blackMarbleYears": [
+    2023,
+    2024,
+    2025
+  ],
+  "baselineOverrideUsed": false,
+  "coverageOverrideUsed": false,
+  "rings": [
+    {
+      "id": "0to2",
+      "minKm": 0,
+      "maxKm": 2,
+      "upperInclusive": false,
+      "statistic": "median",
+      "alanWeight": 0.45,
+      "radiance": 0,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2024,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        },
+        {
+          "year": 2023,
+          "radiance": 0,
+          "coverage": 1,
+          "validPixelCount": 65,
+          "totalPixelCount": 65
+        }
+      ]
+    },
+    {
+      "id": "2to10",
+      "minKm": 2,
+      "maxKm": 10,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.3,
+      "radiance": 0.009103,
+      "coverage": 1,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.006903,
+          "coverage": 1,
+          "validPixelCount": 1605,
+          "totalPixelCount": 1605
+        },
+        {
+          "year": 2024,
+          "radiance": 0.015249,
+          "coverage": 1,
+          "validPixelCount": 1605,
+          "totalPixelCount": 1605
+        },
+        {
+          "year": 2023,
+          "radiance": 0.009103,
+          "coverage": 1,
+          "validPixelCount": 1605,
+          "totalPixelCount": 1605
+        }
+      ]
+    },
+    {
+      "id": "10to30",
+      "minKm": 10,
+      "maxKm": 30,
+      "upperInclusive": false,
+      "statistic": "mean",
+      "alanWeight": 0.15,
+      "radiance": 0.063991,
+      "coverage": 0.999104,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.063991,
+          "coverage": 0.999627,
+          "validPixelCount": 13385,
+          "totalPixelCount": 13390
+        },
+        {
+          "year": 2024,
+          "radiance": 0.075731,
+          "coverage": 0.999104,
+          "validPixelCount": 13378,
+          "totalPixelCount": 13390
+        },
+        {
+          "year": 2023,
+          "radiance": 0.061663,
+          "coverage": 0.999627,
+          "validPixelCount": 13385,
+          "totalPixelCount": 13390
+        }
+      ]
+    },
+    {
+      "id": "30to75",
+      "minKm": 30,
+      "maxKm": 75,
+      "upperInclusive": true,
+      "statistic": "mean",
+      "alanWeight": 0.1,
+      "radiance": 0.20319,
+      "coverage": 0.999949,
+      "years": [
+        {
+          "year": 2025,
+          "radiance": 0.213481,
+          "coverage": 0.999949,
+          "validPixelCount": 79026,
+          "totalPixelCount": 79030
+        },
+        {
+          "year": 2024,
+          "radiance": 0.20319,
+          "coverage": 1,
+          "validPixelCount": 79030,
+          "totalPixelCount": 79030
+        },
+        {
+          "year": 2023,
+          "radiance": 0.174116,
+          "coverage": 0.999987,
+          "validPixelCount": 79029,
+          "totalPixelCount": 79030
+        }
+      ]
+    }
+  ],
+  "radiance0to2": 0,
+  "radiance2to10": 0.009103,
+  "radiance10to30": 0.063991,
+  "radiance30to75": 0.20319,
+  "alanExposure": 0.03052,
+  "darknessScore": 88.75,
+  "coverage": 0.999104,
+  "warnings": [],
+  "retrievedAt": "2026-09-25T08:44:03.179559Z"
+}
