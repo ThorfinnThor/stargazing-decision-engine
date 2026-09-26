@@ -371,7 +371,7 @@ test("reviewed Viator catalog contains only tracked product landing links", () =
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
   const published = (JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[])
     .filter((offer) => offer.partnerId === "viator-activities");
-  assert.equal(viatorOffers.length, 12);
+  assert.equal(viatorOffers.length, 15);
   assert.equal(published.length, viatorOffers.length);
   for (const offer of viatorOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
@@ -391,16 +391,16 @@ test("reviewed Viator catalog contains only tracked product landing links", () =
   }
 });
 
-test("regional activity sections contain no more than two direct GetYourGuide products per destination", () => {
+test("regional activity sections contain no more than two direct products per destination", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const regionalOffers = actual.offers.filter((offer) => offer.enabled && offer.kind === "regional");
   const destinationCounts = new Map<string, number>();
   for (const offer of regionalOffers) {
-    assert.equal(offer.partnerId, "getyourguide-activities");
+    assert.ok(["getyourguide-activities", "viator-activities"].includes(offer.partnerId));
     destinationCounts.set(offer.destinationId, (destinationCounts.get(offer.destinationId) ?? 0) + 1);
   }
-  assert.equal(regionalOffers.length, 90);
-  assert.equal(destinationCounts.size, 50);
+  assert.equal(regionalOffers.length, 98);
+  assert.equal(destinationCounts.size, 58);
   for (const count of destinationCounts.values()) assert.ok(count <= 2);
 });
 
@@ -444,10 +444,41 @@ test("57-destination audit additions retain verified product identity and tour m
   assert.equal(offers.some((offer) => offer.affiliateUrl.includes("-t1167432/")), false);
 });
 
+test("new-catalog activity additions retain verified product identity, classification, and tour mapping", () => {
+  const offers = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[];
+  const expected = [
+    ["makgadikgadi", "325328", "getyourguide-activities", "regional"],
+    ["kangaroo-island", "454988", "getyourguide-activities", "regional"],
+    ["tara-serbia", "210579", "getyourguide-activities", "regional"],
+    ["fundy", "884823", "getyourguide-activities", "regional"],
+    ["sierra-morena", "82914", "getyourguide-activities", "regional"],
+    ["sierra-de-gredos", "1156697", "getyourguide-activities", "regional"],
+    ["coral-pink-sand-dunes", "300061p10", "viator-activities", "stargazing"],
+    ["monfrague", "372094p1", "viator-activities", "regional"],
+    ["rakiura", "2264p34", "viator-activities", "regional"],
+  ] as const;
+  for (const [destinationId, productId, partnerId, kind] of expected) {
+    const offer = offers.find((item) => item.destinationId === destinationId && item.id.endsWith(productId));
+    assert.ok(offer, `${destinationId} needs its reviewed direct product`);
+    assert.equal(offer.partnerId, partnerId);
+    assert.equal(offer.kind, kind);
+    assert.ok(offer.locationTourSlugs.length > 0);
+    const url = new URL(offer.affiliateUrl);
+    if (partnerId === "getyourguide-activities") {
+      assert.ok(url.pathname.endsWith(`-t${productId}/`));
+      assert.equal(url.searchParams.get("referral_redirect"), "1");
+      assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
+    } else {
+      assert.match(url.pathname.toLowerCase(), new RegExp(`-${productId}$`));
+      assert.equal(url.searchParams.get("pid"), "P00314274");
+    }
+  }
+});
+
 test("every published GetYourGuide offer opens its exact product page", () => {
   const offers = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[];
   const getYourGuideOffers = offers.filter((offer) => offer.partnerId === "getyourguide-activities");
-  assert.equal(getYourGuideOffers.length, 124);
+  assert.equal(getYourGuideOffers.length, 130);
   for (const offer of getYourGuideOffers) {
     const url = new URL(offer.affiliateUrl);
     assert.match(url.pathname, /-t\d+\/$/);
