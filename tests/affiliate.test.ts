@@ -346,8 +346,11 @@ test("reviewed GetYourGuide catalog contains only direct tracked product pages",
 
 test("published GetYourGuide offers expose direct analyzer-compatible links and retain fallback redirects", () => {
   const sourceConfig = JSON.parse(source("data-config/sources/affiliate-activity-offers.json")) as AffiliateActivityOfferConfig;
-  const published = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as Array<PublishedAffiliateActivityOffer>;
-  const enabled = new Map(sourceConfig.offers.filter((offer) => offer.enabled).map((offer) => [offer.id, offer]));
+  const published = (JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as Array<PublishedAffiliateActivityOffer>)
+    .filter((offer) => offer.partnerId === "getyourguide-activities");
+  const enabled = new Map(sourceConfig.offers
+    .filter((offer) => offer.enabled && offer.partnerId === "getyourguide-activities")
+    .map((offer) => [offer.id, offer]));
   assert.equal(published.length, enabled.size);
   for (const offer of published) {
     const sourceOffer = enabled.get(offer.id);
@@ -363,10 +366,29 @@ test("published GetYourGuide offers expose direct analyzer-compatible links and 
   assert.doesNotMatch(activityOffers, /href=\{offer\.redirectPath\}/);
 });
 
-test("Viator offers stay disabled until their affiliate links resolve to product detail pages", () => {
+test("reviewed Viator catalog contains only tracked product landing links", () => {
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
-  assert.equal(viatorOffers.length, 0);
+  const published = (JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[])
+    .filter((offer) => offer.partnerId === "viator-activities");
+  assert.equal(viatorOffers.length, 11);
+  assert.equal(published.length, viatorOffers.length);
+  for (const offer of viatorOffers) {
+    const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
+    assert.equal(url.hostname, "www.viator.com");
+    assert.equal(url.searchParams.get("pid"), "P00314274");
+    assert.equal(url.searchParams.get("mcid"), "42383");
+    assert.equal(url.searchParams.get("medium"), "link");
+    assert.equal(url.searchParams.get("medium_version"), "selector");
+    assert.equal(url.searchParams.get("campaign"), "Stargazing");
+    assert.match(url.pathname, /^\/tours\/[^/]+\/[^/]+\/d\d+-\d+P\d+$/i);
+    const productCode = url.pathname.match(/-(\d+P\d+)$/i)?.[1].toLowerCase();
+    assert.ok(productCode && offer.id.endsWith(productCode));
+    assert.equal(offer.lastReviewedAt, "2026-09-26");
+    const publishedOffer = published.find((item) => item.id === offer.id);
+    assert.equal(publishedOffer?.affiliateUrl, url.toString());
+    assert.equal(publishedOffer?.redirectPath, `/go/viator-activities/offer/${offer.id}/`);
+  }
 });
 
 test("regional activity sections contain no more than two direct GetYourGuide products per destination", () => {
@@ -386,14 +408,14 @@ test("the first ten destinations use the reviewed offer inventory without automa
   const actual = JSON.parse(readFileSync("data-config/sources/affiliate-activity-offers.json", "utf8")) as AffiliateActivityOfferConfig;
   const firstTen = ["la-palma", "tenerife", "westhavelland", "alqueva", "galloway", "atacama", "big-bend", "aoraki-mackenzie", "namibrand", "jasper"];
   const expectedCounts: Record<string, { stargazing: number; regional: number }> = {
-    "la-palma": { stargazing: 2, regional: 2 },
+    "la-palma": { stargazing: 4, regional: 2 },
     "tenerife": { stargazing: 3, regional: 2 },
     "westhavelland": { stargazing: 0, regional: 0 },
     "alqueva": { stargazing: 2, regional: 2 },
     "galloway": { stargazing: 0, regional: 2 },
-    "atacama": { stargazing: 1, regional: 2 },
+    "atacama": { stargazing: 3, regional: 2 },
     "big-bend": { stargazing: 0, regional: 1 },
-    "aoraki-mackenzie": { stargazing: 1, regional: 2 },
+    "aoraki-mackenzie": { stargazing: 3, regional: 2 },
     "namibrand": { stargazing: 0, regional: 2 },
     "jasper": { stargazing: 1, regional: 2 },
   };
@@ -402,8 +424,8 @@ test("the first ten destinations use the reviewed offer inventory without automa
     assert.equal(offers.filter((offer) => (offer.kind ?? "stargazing") === "stargazing").length, expectedCounts[destinationId].stargazing);
     assert.equal(offers.filter((offer) => offer.kind === "regional").length, expectedCounts[destinationId].regional);
   }
-  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2" && offer.enabled), false);
-  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4" && offer.enabled), false);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-stargazing-279280p2" && offer.enabled), true);
+  assert.equal(actual.offers.some((offer) => offer.id === "viator-la-palma-roque-private-5593930p4" && offer.enabled), true);
 });
 
 test("57-destination audit additions retain verified product identity and tour mapping", () => {
