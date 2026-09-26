@@ -371,7 +371,7 @@ test("reviewed Viator catalog contains only tracked product landing links", () =
   const viatorOffers = actual.offers.filter((offer) => offer.partnerId === "viator-activities" && offer.enabled);
   const published = (JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[])
     .filter((offer) => offer.partnerId === "viator-activities");
-  assert.equal(viatorOffers.length, 11);
+  assert.equal(viatorOffers.length, 12);
   assert.equal(published.length, viatorOffers.length);
   for (const offer of viatorOffers) {
     const url = new URL(offer.urlTemplate.replace("{affiliateId}", "P00314274"));
@@ -442,6 +442,20 @@ test("57-destination audit additions retain verified product identity and tour m
     assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
   }
   assert.equal(offers.some((offer) => offer.affiliateUrl.includes("-t1167432/")), false);
+});
+
+test("every published GetYourGuide offer opens its exact product page", () => {
+  const offers = JSON.parse(source("public/data/stargazing/affiliate/activity-offers.json")) as PublishedAffiliateActivityOffer[];
+  const getYourGuideOffers = offers.filter((offer) => offer.partnerId === "getyourguide-activities");
+  assert.equal(getYourGuideOffers.length, 124);
+  for (const offer of getYourGuideOffers) {
+    const url = new URL(offer.affiliateUrl);
+    assert.match(url.pathname, /-t\d+\/$/);
+    assert.equal(url.searchParams.get("referral_redirect"), "1");
+    assert.equal(url.searchParams.get("partner_id"), "BKWM9K1");
+    assert.equal(url.searchParams.get("utm_medium"), "online_publisher");
+    assert.ok(url.searchParams.get("cmp"));
+  }
 });
 
 test("affiliate disclosures appear only with rendered affiliate integrations", () => {
