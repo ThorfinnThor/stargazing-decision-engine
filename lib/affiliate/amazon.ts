@@ -13,11 +13,30 @@ export interface AmazonGearConfig {
   enabled: boolean;
   trackingId: string;
   marketplace: "amazon.de";
+  oneLink?: {
+    enabled: boolean;
+    sourceStoreId: string;
+    destinationStoreIds: {
+      "amazon.com": string;
+    };
+    redirectPreference: "exact-match" | "close-match";
+    checkedAt: string;
+  };
   matches: AmazonProductMatch[];
 }
 
 export function validateAmazonGearConfig(config: AmazonGearConfig, guides?: GearGuide[]) {
   if (typeof config.enabled !== "boolean" || config.marketplace !== "amazon.de" || !/^[a-zA-Z0-9-]+-21$/.test(config.trackingId)) throw new Error("Invalid Amazon.de affiliate configuration");
+  if (config.oneLink) {
+    const destinationStoreId = config.oneLink.destinationStoreIds?.["amazon.com"];
+    if (typeof config.oneLink.enabled !== "boolean"
+      || !/^[a-zA-Z0-9-]+-21$/.test(config.oneLink.sourceStoreId)
+      || !/^[a-zA-Z0-9-]+-20$/.test(destinationStoreId ?? "")
+      || !new Set(["exact-match", "close-match"]).has(config.oneLink.redirectPreference)
+      || !/^\d{4}-\d{2}-\d{2}$/.test(config.oneLink.checkedAt)) {
+      throw new Error("Invalid Amazon OneLink configuration record");
+    }
+  }
   if (!Array.isArray(config.matches)) throw new Error("Amazon matches must be an array");
   const known = guides && new Set(guides.flatMap(g => g.items.map(i => `${g.slug}\0${i.name.en}`)));
   const seen = new Set<string>();

@@ -2,6 +2,15 @@
   "enabled": true,
   "marketplace": "amazon.de",
   "trackingId": "stargazingindex-21",
+  "oneLink": {
+    "enabled": true,
+    "sourceStoreId": "seitenhafen36-21",
+    "destinationStoreIds": {
+      "amazon.com": "seitenhafen36-20"
+    },
+    "redirectPreference": "close-match",
+    "checkedAt": "2026-09-27"
+  },
   "matches": [
     {
       "guideSlug": "binoculars",

@@ -22,6 +22,23 @@ test("all approved Amazon links identify a specific guide product and preserve t
   }
 });
 
+test("Amazon OneLink records the verified DE-to-US account mapping without rewriting source links", () => {
+  validateAmazonGearConfig(config, guides);
+  assert.deepEqual(config.oneLink, {
+    enabled: true,
+    sourceStoreId: "seitenhafen36-21",
+    destinationStoreIds: { "amazon.com": "seitenhafen36-20" },
+    redirectPreference: "close-match",
+    checkedAt: "2026-09-27",
+  });
+  const match = config.matches[0];
+  const item = guides.find(g => g.slug === match.guideSlug)!.items.find(i => i.name.en === match.productName)!;
+  const url = new URL(buildAmazonProductUrl(config, match.guideSlug, item)!);
+  assert.equal(url.hostname, "www.amazon.de");
+  assert.equal(url.searchParams.get("tag"), "stargazingindex-21");
+  assert.equal(url.toString().includes("seitenhafen36-20"), false);
+});
+
 test("Amazon links fail closed without an exact match or valid configuration", () => {
   const item = guides[0].items[0];
   assert.equal(buildAmazonProductUrl(config, guides[0].slug, item), null);
@@ -34,6 +51,8 @@ test("Amazon links fail closed without an exact match or valid configuration", (
   assert.throws(() => validateAmazonGearConfig({...config,matches:[match,match]},guides), /Duplicate/);
   assert.throws(() => validateAmazonGearConfig({...config,matches:[{...match,asin:"../search"}]},guides), /Invalid/);
   assert.throws(() => validateAmazonGearConfig({...config,matches:[{...match,productName:"Unknown"}]},guides), /unknown/);
+  assert.throws(() => validateAmazonGearConfig({...config,oneLink:{...config.oneLink!,sourceStoreId:"wrong-20"}},guides), /OneLink/);
+  assert.throws(() => validateAmazonGearConfig({...config,oneLink:{...config.oneLink!,destinationStoreIds:{"amazon.com":"wrong-21"}}},guides), /OneLink/);
 });
 
 test("replacement products never inherit the unavailable model's affiliate mapping", () => {
