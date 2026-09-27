@@ -5,10 +5,18 @@ import test from "node:test";
 
 import { buildSeoMetadata } from "../lib/seo/metadata.js";
 import { buildWebPageStructuredData } from "../lib/seo/structured-data.js";
+import type { Destination } from "../lib/data/types.js";
 import type { SeoRegistry } from "../lib/data/load.js";
 
 const read = (path: string) => readFileSync(resolve(process.cwd(), path), "utf8");
 const registry = JSON.parse(read("public/data/stargazing/seo/registry.json")) as SeoRegistry;
+
+interface StagedFactualReviewRegister {
+  records: Array<{
+    destinationId: string;
+    publicationDecision?: { mode?: string };
+  }>;
+}
 
 test("SEO registry exposes accurate discovery fields and the publisher page", () => {
   assert.ok(registry.pages.some((page) => page.id === "about-en" && page.indexable));
@@ -21,6 +29,35 @@ test("SEO registry exposes accurate discovery fields and the publisher page", ()
     assert.equal(page.alternatePaths["x-default"], page.alternatePaths.en);
     assert.ok(!Number.isNaN(Date.parse(page.lastModified)));
   }
+});
+
+test("expanded destinations index only eligible bilingual destination pages", () => {
+  const destinations = JSON.parse(read("data-config/sources/destinations.json")) as Destination[];
+  const reviews = JSON.parse(read("data-config/sources/staged-factual-reviews.json")) as StagedFactualReviewRegister;
+  const newDestinationIds = new Set(reviews.records.map((record) => record.destinationId));
+  const transparentDestinationIds = new Set(reviews.records
+    .filter((record) => record.publicationDecision?.mode === "transparent-unverified-access")
+    .map((record) => record.destinationId));
+  const newDestinationSlugs = new Set(destinations
+    .filter((destination) => newDestinationIds.has(destination.id))
+    .map((destination) => destination.slug));
+
+  const newDestinationPages = registry.pages.filter((page) => page.pageType === "destination" && newDestinationSlugs.has(page.path.split("/").at(-2) ?? ""));
+  const indexableNewDestinationPages = newDestinationPages.filter((page) => page.indexable);
+  assert.equal(newDestinationPages.length, 100);
+  assert.equal(indexableNewDestinationPages.length, 84);
+  assert.deepEqual(new Set(indexableNewDestinationPages.map((page) => page.locale)), new Set(["en", "de"]));
+
+  for (const record of reviews.records) {
+    const destination = destinations.find((candidate) => candidate.id === record.destinationId)!;
+    const pages = newDestinationPages.filter((page) => page.path.endsWith(`/${destination.slug}/`));
+    assert.equal(pages.length, 2, `${record.destinationId}: expected one destination page per locale`);
+    assert.ok(pages.every((page) => page.indexable === !transparentDestinationIds.has(record.destinationId)), `${record.destinationId}: unexpected destination indexability`);
+  }
+
+  const newTourPages = registry.pages.filter((page) => page.pageType === "location-tour" && page.reasons.includes("supporting-page-held-from-index"));
+  assert.equal(newTourPages.length, 84);
+  assert.ok(newTourPages.every((page) => !page.indexable));
 });
 
 test("sitemap and robots sources preserve canonical, language, freshness, and AI-search discovery", () => {
