@@ -69,6 +69,39 @@ const transparentAccessDestinationIds = new Set(factualReviews.records
   .map((record) => record.destinationId));
 const publishedLocationTours = locationTours.filter((tour) => activeDestinationIds.has(tour.destinationId) && !transparentAccessDestinationIds.has(tour.destinationId));
 
+const destinationGuideLocales = ["en", "de"] as const;
+const minimumEditorialSentenceWords = 12;
+const maximumRepeatedEditorialSentenceRatio = 0.25;
+const editorialSentenceSegmenters = Object.fromEntries(destinationGuideLocales.map((locale) => [locale, new Intl.Segmenter(locale, { granularity: "sentence" })])) as Record<(typeof destinationGuideLocales)[number], Intl.Segmenter>;
+const normalizeEditorialSentence = (value: string) => value.toLocaleLowerCase("en").replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+const destinationGuideText = (guide: DestinationEditorialGuide, locale: (typeof destinationGuideLocales)[number]) => [
+  guide.standfirst[locale],
+  guide.editorialAngle[locale],
+  ...guide.sections.flatMap((section) => section.paragraphs[locale]),
+  guide.tour.summary[locale],
+  guide.tour.suitability[locale],
+  ...guide.tour.steps.map((step) => step.body[locale]),
+  ...guide.fieldNotes.map((note) => note.body[locale]),
+  ...guide.faq.map((item) => item.answer[locale]),
+].join(" ");
+const destinationGuideSentences = new Map<string, string[]>();
+const destinationIdsByEditorialSentence = new Map<string, Set<string>>();
+for (const guide of destinationGuides) for (const locale of destinationGuideLocales) {
+  const sentences = [...editorialSentenceSegmenters[locale].segment(destinationGuideText(guide, locale))]
+    .map(({ segment }) => normalizeEditorialSentence(segment))
+    .filter((sentence) => sentence.split(" ").length >= minimumEditorialSentenceWords);
+  destinationGuideSentences.set(`${guide.destinationId}:${locale}`, sentences);
+  for (const sentence of new Set(sentences)) {
+    const key = `${locale}:${sentence}`;
+    destinationIdsByEditorialSentence.set(key, new Set([...(destinationIdsByEditorialSentence.get(key) ?? []), guide.destinationId]));
+  }
+}
+const repetitiveEditorialDestinationIds = new Set(destinationGuides.flatMap((guide) => destinationGuideLocales.some((locale) => {
+  const sentences = destinationGuideSentences.get(`${guide.destinationId}:${locale}`) ?? [];
+  const repeatedSentences = sentences.filter((sentence) => (destinationIdsByEditorialSentence.get(`${locale}:${sentence}`)?.size ?? 0) > 1);
+  return sentences.length > 0 && repeatedSentences.length / sentences.length >= maximumRepeatedEditorialSentenceRatio;
+}) ? [guide.destinationId] : []));
+
 function normalizedTimestamp(value: string) {
   const timestamp = new Date(/^\d{4}-\d{2}-\d{2}$/.test(value) ? `${value}T00:00:00.000Z` : value);
   if (Number.isNaN(timestamp.valueOf())) throw new Error(`Invalid SEO last-modified timestamp: ${value}`);
@@ -203,7 +236,7 @@ for (const locale of config.locales) {
       title: editorialGuide?.seoTitle[locale] ?? (locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`), h1: destination.name,
       description: editorialGuide?.seoDescription[locale] ?? (locale === "de" ? `Himmelsführer für ${destination.name}.` : `Dark-sky guide for ${destination.name}.`), lastModified: editorialGuide ? latestTimestamp(dataLastModified, editorialGuide.lastReviewedAt) : dataLastModified, resultCount: destinationScores.length, confidence: editorialGuide ? "high" : confidence, uniqueInsightCount: editorialGuide ? editorialGuide.sections.length + editorialGuide.fieldNotes.length + 1 : destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: editorialGuide ? 4 : 1,
       travelEligible: seed.sites.some((site) => site.destinationId === destination.id && isTravelEligibleSite(site)),
-      forceNoindexReason: editorialGuide ? undefined : "editorial-guide-pending",
+      forceNoindexReason: !editorialGuide ? "editorial-guide-pending" : repetitiveEditorialDestinationIds.has(destination.id) ? "repetitive-editorial-copy" : undefined,
     }));
   }
   for (const event of events) {

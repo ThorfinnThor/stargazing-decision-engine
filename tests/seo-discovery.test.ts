@@ -46,15 +46,23 @@ test("expanded destinations index only eligible bilingual destination pages", ()
   const newDestinationPages = registry.pages.filter((page) => page.pageType === "destination" && newDestinationSlugs.has(page.path.split("/").at(-2) ?? ""));
   const indexableNewDestinationPages = newDestinationPages.filter((page) => page.indexable);
   assert.equal(newDestinationPages.length, 100);
-  assert.equal(indexableNewDestinationPages.length, 84);
+  assert.equal(indexableNewDestinationPages.length, 30);
   assert.deepEqual(new Set(indexableNewDestinationPages.map((page) => page.locale)), new Set(["en", "de"]));
 
   for (const record of reviews.records) {
     const destination = destinations.find((candidate) => candidate.id === record.destinationId)!;
     const pages = newDestinationPages.filter((page) => page.path.endsWith(`/${destination.slug}/`));
     assert.equal(pages.length, 2, `${record.destinationId}: expected one destination page per locale`);
-    assert.ok(pages.every((page) => page.indexable === !transparentDestinationIds.has(record.destinationId)), `${record.destinationId}: unexpected destination indexability`);
+    const heldForRepetition = pages.some((page) => page.reasons.includes("repetitive-editorial-copy"));
+    assert.ok(pages.every((page) => page.indexable === (!transparentDestinationIds.has(record.destinationId) && !heldForRepetition)), `${record.destinationId}: unexpected destination indexability`);
   }
+
+  const indexableNewDestinationIds = new Set(indexableNewDestinationPages.map((page) => destinations.find((destination) => page.path.endsWith(`/${destination.slug}/`))?.id));
+  assert.deepEqual(indexableNewDestinationIds, new Set([
+    "boundary-waters", "grand-canyon-parashant", "great-western-woodlands", "jebel-akhdar", "kopaonik",
+    "makgadikgadi", "manitoulin", "mapungubwe", "massacre-rim", "oracle-state-park", "puna-argentina",
+    "rakiura", "tara-serbia", "torrance-barrens", "tsumkwe",
+  ]));
 
   const newTourPages = registry.pages.filter((page) => page.pageType === "location-tour" && page.reasons.includes("supporting-page-held-from-index"));
   assert.equal(newTourPages.length, 84);
