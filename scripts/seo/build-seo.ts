@@ -63,6 +63,7 @@ const destinationGuidesBySlug = new Map(destinationGuides.map((guide) => [guide.
 const locationTours = readJson<LocationTour[]>(resolve(root, "data-config/editorial/location-tours.json"));
 const factualReviews = readJson<{ records: Array<{ destinationId: string; publicationDecision?: { mode?: string } }> }>(resolve(root, "data-config/sources/staged-factual-reviews.json"));
 const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
+const expandedDestinationIds = new Set(factualReviews.records.map((record) => record.destinationId));
 const transparentAccessDestinationIds = new Set(factualReviews.records
   .filter((record) => record.publicationDecision?.mode === "transparent-unverified-access")
   .map((record) => record.destinationId));
@@ -175,6 +176,8 @@ for (const locale of config.locales) {
     pages.push(makePage({
       id: `location-tour-${tour.slug}-${locale}`, pageType: "location-tour", locale, path, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-tours/${tour.slug}/`])),
       title: tour.title[locale], h1: tour.title[locale], description: tour.seoDescription[locale], lastModified: tour.lastReviewedAt, resultCount: tour.blocks.length, confidence: "high", uniqueInsightCount: tour.blocks.length + tour.facts.length, internalLinkCount: 3,
+      travelEligible: seed.sites.some((site) => site.destinationId === tour.destinationId && isTravelEligibleSite(site)),
+      forceNoindexReason: expandedDestinationIds.has(tour.destinationId) ? "supporting-page-held-from-index" : undefined,
     }));
   }
   pages.push(makePage({
