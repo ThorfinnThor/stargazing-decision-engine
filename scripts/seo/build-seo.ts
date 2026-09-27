@@ -216,6 +216,7 @@ for (const locale of config.locales) {
         : `Plan the ${event.name[locale]} ${event.year} with peak timing, Moon conditions, and reviewed destinations for a practical observing night.`,
       resultCount: event.topSites.length, confidence: event.confidenceLevel, uniqueInsightCount: event.topSites.length >= 2 ? 3 : event.topSites.length, internalLinkCount: event.topDestinations.length + 2,
       lastModified: event.verifiedAt,
+      forceNoindexReason: "editorial-depth-pending",
     }));
   }
   for (const trip of shortTrips) {
@@ -231,7 +232,7 @@ for (const locale of config.locales) {
         : locale === "de" ? `Derzeit erfüllt kein geprüftes Ziel die Kriterien für eine kurze Sternreise ab ${trip.originName}.` : `No reviewed destination currently meets the criteria for a short stargazing trip from ${trip.originName}.`,
       resultCount: trip.entries.length, confidence: trip.entries[0]?.confidenceLevel ?? "low", uniqueInsightCount: trip.entries.length >= 2 ? 3 : trip.entries.length, internalLinkCount: trip.entries.length + activeDestinations.length,
       lastModified: dataLastModified,
-      forceNoindexReason: hasResults ? undefined : "no-qualifying-destinations",
+      forceNoindexReason: hasResults ? "editorial-depth-pending" : "no-qualifying-destinations",
     }));
   }
   for (const guide of gearGuides) {

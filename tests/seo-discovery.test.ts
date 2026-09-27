@@ -22,7 +22,8 @@ test("SEO registry exposes accurate discovery fields and the publisher page", ()
   assert.ok(registry.pages.some((page) => page.id === "about-en" && page.indexable));
   const aucklandPage = registry.pages.find((page) => page.id === "short-trip-auckland-en");
   const aucklandTrip = JSON.parse(read("public/data/stargazing/short-trips/auckland.json")) as { entries: unknown[] };
-  assert.equal(aucklandPage?.indexable, aucklandTrip.entries.length > 0);
+  assert.equal(aucklandPage?.indexable, false);
+  assert.equal(aucklandPage?.reasons.includes("editorial-depth-pending"), aucklandTrip.entries.length > 0);
   assert.equal(aucklandPage?.reasons.includes("no-qualifying-destinations"), aucklandTrip.entries.length === 0);
   assert.equal(new Set(registry.pages.map((page) => page.canonical)).size, registry.pages.length);
   for (const page of registry.pages) {
@@ -58,6 +59,16 @@ test("expanded destinations index only eligible bilingual destination pages", ()
   const newTourPages = registry.pages.filter((page) => page.pageType === "location-tour" && page.reasons.includes("supporting-page-held-from-index"));
   assert.equal(newTourPages.length, 84);
   assert.ok(newTourPages.every((page) => !page.indexable));
+});
+
+test("thin automated planning pages stay out of search until editorial depth is added", () => {
+  const heldPageTypes = new Set(["meteor-shower", "short-trip"]);
+  const heldPages = registry.pages.filter((page) => heldPageTypes.has(page.pageType));
+  assert.ok(heldPages.length > 0);
+  assert.ok(heldPages.every((page) => !page.indexable));
+
+  const pagesWithResults = heldPages.filter((page) => !page.reasons.includes("no-results"));
+  assert.ok(pagesWithResults.every((page) => page.reasons.includes("editorial-depth-pending")));
 });
 
 test("sitemap and robots sources preserve canonical, language, freshness, and AI-search discovery", () => {
