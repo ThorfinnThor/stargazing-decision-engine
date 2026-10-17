@@ -1399,18 +1399,28 @@ h1 span {
 .blog-related > div a:focus-visible { background: #151e34; }
 .blog-related strong { font: 400 1.15rem/1.3 Georgia, serif; }
 .blog-related span { color: var(--gold); font-size: 0.75rem; }
+.destination-blog-related { max-width: 74rem; margin: 5rem auto 0; padding-top: 2rem; border-top: 1px solid rgb(142 197 255 / 24%); }
+.destination-blog-related h2 { max-width: 28ch; font: 400 clamp(1.7rem, 3vw, 2.75rem)/1.12 Georgia, serif; letter-spacing: -0.025em; }
+.destination-blog-related > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid rgb(142 197 255 / 24%); border-left: 1px solid rgb(142 197 255 / 24%); }
+.destination-blog-related > div a { display: flex; min-height: 9rem; padding: 1.2rem; border-right: 1px solid rgb(142 197 255 / 24%); border-bottom: 1px solid rgb(142 197 255 / 24%); flex-direction: column; justify-content: space-between; text-decoration: none; }
+.destination-blog-related > div a:hover,
+.destination-blog-related > div a:focus-visible { background: #151e34; }
+.destination-blog-related strong { font: 400 1.15rem/1.3 Georgia, serif; }
+.destination-blog-related small { color: var(--gold); font-size: 0.75rem; }
 
 @media (max-width: 780px) {
   .blog-card-grid { grid-template-columns: 1fr; }
   .blog-metric-grid { grid-template-columns: 1fr; }
   .blog-metric-grid div + div { border-top: 1px solid rgb(142 197 255 / 26%); border-left: 0; }
   .blog-related > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .destination-blog-related > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
 @media (max-width: 520px) {
   .blog-index-page,
   .blog-post-page { padding-inline: 1rem; }
   .blog-related > div { grid-template-columns: 1fr; }
+  .destination-blog-related > div { grid-template-columns: 1fr; }
   .blog-post-header h1 { overflow-wrap: anywhere; }
 }
 

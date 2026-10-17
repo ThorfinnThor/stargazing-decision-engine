@@ -203,6 +203,6 @@ const posts = blogPostSources.map((source): BlogPost => {
 });
 
 for (const post of posts) writeJson(publicPath(`editorial/blog/${post.slug}.json`), post);
-const index: BlogPostSummary[] = posts.map(({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug }) => ({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug }));
+const index: BlogPostSummary[] = posts.map(({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }) => ({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }));
 writeJson(publicPath("editorial/blog/index.json"), index);
 console.log(`Built ${posts.length} English blog posts from committed destination data.`);

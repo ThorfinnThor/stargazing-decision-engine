@@ -393,7 +393,7 @@ export interface BlogPost {
   methodologyNote: string;
 }
 
-export type BlogPostSummary = Pick<BlogPost, "slug" | "title" | "seoDescription" | "standfirst" | "publishedAt" | "lastReviewedAt" | "readingMinutes" | "heroDestinationSlug">;
+export type BlogPostSummary = Pick<BlogPost, "slug" | "title" | "seoDescription" | "standfirst" | "publishedAt" | "lastReviewedAt" | "readingMinutes" | "heroDestinationSlug" | "relatedDestinationSlugs">;
 
 export interface ShortTripFile {
   originSlug: string;

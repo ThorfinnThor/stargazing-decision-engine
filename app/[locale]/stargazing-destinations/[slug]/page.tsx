@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { listDestinationEditorialGuides, listLocationTours, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { listBlogPosts, listDestinationEditorialGuides, listLocationTours, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -11,6 +11,7 @@ import { DestinationSiteExplorer, type DestinationSiteView } from "@/components/
 import { DestinationEditorialGuideView } from "@/components/destination-editorial-guide";
 import { DestinationDecisionSummary } from "@/components/destination-decision-summary";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
+import { localizedLinks } from "@/lib/i18n/links";
 
 export const dynamic = "force-static";
 export const dynamicParams = false;
@@ -79,7 +80,8 @@ function readParams(params: { locale: string; slug: string }) {
       .filter((item) => item.slug !== destination.slug && editorialSlugs.has(item.slug))
       .sort((left, right) => Number(right.continent === destination.continent) - Number(left.continent === destination.continent) || left.priority - right.priority)
       .slice(0, 3);
-    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), locationTour: listLocationTours().find((tour) => tour.destinationId === destination.id) ?? null, relatedDestinations, seo: loadSeoPage(path) };
+    const blogPosts = locale === "en" ? listBlogPosts().filter((post) => post.relatedDestinationSlugs.includes(destination.slug)) : [];
+    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), locationTour: listLocationTours().find((tour) => tour.destinationId === destination.id) ?? null, relatedDestinations, blogPosts, seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -104,7 +106,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, siteViews, image, guide, locationTour, relatedDestinations, locale, seo } = resolved;
+  const { destination, sites, siteViews, image, guide, locationTour, relatedDestinations, blogPosts, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
@@ -189,6 +191,11 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
             <small>{related.countryName}</small>
           </Link>)}
         </div>
+      </nav>}
+      {locale === "en" && blogPosts.length > 0 && <nav className="destination-blog-related" aria-labelledby="destination-blog-related-title">
+        <p className="eyebrow">From the data journal</p>
+        <h2 id="destination-blog-related-title">What the numbers say about this destination</h2>
+        <div>{blogPosts.slice(0, 3).map((post) => <Link href={localizedLinks.blogPost(post.slug)} key={post.slug}><strong>{post.title}</strong><small>{post.readingMinutes} min read →</small></Link>)}</div>
       </nav>}
     </main>
   );
