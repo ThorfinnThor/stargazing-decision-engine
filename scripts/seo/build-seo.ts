@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { evaluateIndexability, type IndexabilityRequirements } from "../../lib/seo/indexability.js";
-import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearGuide, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
+import type { BlogPost, BlogPostSummary, Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearGuide, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, OriginCity, ShortTripFile } from "../../lib/data/types.js";
 import { generatedDir, generatedPath, publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 import { isTravelEligibleSite } from "../../lib/access/travel.js";
 import { isGearGuideEditorialReady } from "../../lib/gear/gear.js";
@@ -68,6 +68,7 @@ const transparentAccessDestinationIds = new Set(factualReviews.records
   .filter((record) => record.publicationDecision?.mode === "transparent-unverified-access")
   .map((record) => record.destinationId));
 const publishedLocationTours = locationTours.filter((tour) => activeDestinationIds.has(tour.destinationId) && !transparentAccessDestinationIds.has(tour.destinationId));
+const blogPosts = readJson<BlogPostSummary[]>(publicPath("editorial/blog/index.json"));
 
 const destinationGuideLocales = ["en", "de"] as const;
 const minimumEditorialSentenceWords = 12;
@@ -277,6 +278,24 @@ for (const locale of config.locales) {
       forceNoindexReason: editoriallyReady ? undefined : "editorial-comparison-pending",
     }));
   }
+}
+
+const blogPath = "/en/blog/";
+pages.push(makePage({
+  id: "blog-en", pageType: "blog", locale: "en", path: blogPath, alternatePaths: { en: blogPath },
+  title: "Stargazing data stories and field notes", h1: "Better questions for darker nights.",
+  description: "Original analyses of stargazing seasons, darkness, climate, elevation, access, and trip trade-offs using the Stargazing Index dataset.",
+  lastModified: latestTimestamp(...blogPosts.map((post) => post.lastReviewedAt)), resultCount: blogPosts.length, confidence: "high", uniqueInsightCount: blogPosts.length, internalLinkCount: blogPosts.length + 1,
+}));
+for (const summary of blogPosts) {
+  const post = readJson<BlogPost>(publicPath(`editorial/blog/${summary.slug}.json`));
+  const path = `/en/blog/${post.slug}/`;
+  pages.push(makePage({
+    id: `blog-post-${post.slug}-en`, pageType: "blog-post", locale: "en", path, alternatePaths: { en: path },
+    title: post.title, h1: post.title, description: post.seoDescription, lastModified: post.lastReviewedAt,
+    resultCount: post.blocks.length, confidence: "high", uniqueInsightCount: post.metrics.length + post.blocks.filter((block) => block.kind === "prose").length,
+    internalLinkCount: post.relatedDestinationSlugs.length + 2,
+  }));
 }
 
 writeJson(publicPath("seo/registry.json"), { version: 1, siteUrl: config.siteUrl, pages });

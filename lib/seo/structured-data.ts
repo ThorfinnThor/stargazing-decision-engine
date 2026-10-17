@@ -1,5 +1,5 @@
 import { legal } from "@/lib/legal/config";
-import type { Destination, DestinationEditorialGuide, DestinationEditorialSource, GearGuide, LocationTour } from "@/lib/data/types";
+import type { BlogPost, Destination, DestinationEditorialGuide, DestinationEditorialSource, GearGuide, LocationTour } from "@/lib/data/types";
 
 const sectionNames = {
   en: {
@@ -10,6 +10,7 @@ const sectionNames = {
     "stargazing-tours": "Location tours",
     "short-trips": "Short trips",
     "meteor-showers": "Meteor showers",
+    blog: "Data journal",
   },
   de: {
     gear: "Ausrüstungsguides",
@@ -19,6 +20,7 @@ const sectionNames = {
     "stargazing-tours": "Standort-Touren",
     "short-trips": "Kurzreisen",
     "meteor-showers": "Meteorschauer",
+    blog: "Datenjournal",
   },
 } as const;
 
@@ -63,7 +65,7 @@ function breadcrumbs(url: URL, locale: "en" | "de", pageName: string) {
     item: `${url.origin}/${locale}/`,
   }];
   const firstSegment = contentSegments[0];
-  if ((firstSegment === "gear" || firstSegment === "stargazing-tours") && contentSegments.length > 1) {
+  if ((firstSegment === "gear" || firstSegment === "stargazing-tours" || firstSegment === "blog") && contentSegments.length > 1) {
     items.push({
       "@type": "ListItem",
       position: items.length + 1,
@@ -175,6 +177,35 @@ export function buildWebPageStructuredData(options: {
   }
 
   return { "@context": "https://schema.org", "@graph": graph };
+}
+
+export function buildBlogPostStructuredData(options: { post: BlogPost; url: string; image?: string | null }) {
+  const { post, url } = options;
+  const origin = new URL(url).origin;
+  const image = absoluteMediaUrl(url, options.image);
+  return {
+    "@context": "https://schema.org",
+    "@graph": [{
+      "@type": "BlogPosting",
+      "@id": `${url}#article`,
+      headline: post.title,
+      description: post.seoDescription,
+      datePublished: post.publishedAt,
+      dateModified: post.lastReviewedAt,
+      inLanguage: "en",
+      isAccessibleForFree: true,
+      mainEntityOfPage: { "@id": `${url}#webpage` },
+      author: authorEntity(origin, "en"),
+      publisher: publisherEntity(origin),
+      ...(image ? { image } : {}),
+      about: post.relatedDestinationSlugs.map((slug) => ({ "@type": "TouristDestination", url: `${origin}/en/stargazing-destinations/${slug}/` })),
+      citation: [
+        `${origin}/data/stargazing/manifest.json`,
+        `${origin}/data/stargazing/destinations/index.json`,
+        `${origin}/data/stargazing/sites/index.json`,
+      ],
+    }],
+  };
 }
 
 export function buildDestinationEditorialStructuredData(options: {

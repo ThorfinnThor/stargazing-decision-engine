@@ -5,7 +5,7 @@ import { publicDataDir, readJson } from "../pipeline/io.js";
 import { validateProductionSiteOrigin } from "../../lib/seo/site-url.js";
 import { createSchemaValidator } from "./validate-schemas.js";
 
-interface SeoPage { id: string; path: string; canonical: string; alternatePaths: Record<string, string>; title: string; h1: string; lastModified: string; indexable: boolean; reasons: string[] }
+interface SeoPage { id: string; locale: "en" | "de"; path: string; canonical: string; alternatePaths: Record<string, string>; title: string; h1: string; lastModified: string; indexable: boolean; reasons: string[] }
 interface SeoRegistry { version: 1; siteUrl: string; pages: SeoPage[] }
 interface SeoConfig { siteUrl: string }
 const directory = resolve(publicDataDir, "seo");
@@ -30,7 +30,9 @@ if (errors.length === 0) {
     if (page.indexable && page.reasons.length > 0) errors.push(`${page.id}: indexable page has gate reasons`);
     if (!page.indexable && page.reasons.length === 0) errors.push(`${page.id}: non-indexable page has no gate reason`);
     if (!page.canonical.startsWith(`${registry.siteUrl}/`)) errors.push(`${page.id}: canonical is outside configured site URL`);
-    if (page.alternatePaths.en === undefined || page.alternatePaths.de === undefined) errors.push(`${page.id}: missing hreflang alternate`);
+    const isEnglishOnlyBlogPage = page.locale === "en" && page.path.startsWith("/en/blog/");
+    if (page.alternatePaths.en === undefined || (!isEnglishOnlyBlogPage && page.alternatePaths.de === undefined)) errors.push(`${page.id}: missing hreflang alternate`);
+    if (isEnglishOnlyBlogPage && page.alternatePaths.de !== undefined) errors.push(`${page.id}: English-only blog page must not advertise a missing German alternate`);
     if (page.alternatePaths["x-default"] !== page.alternatePaths.en) errors.push(`${page.id}: x-default must point to the English fallback`);
     if (Number.isNaN(Date.parse(page.lastModified))) errors.push(`${page.id}: invalid lastModified timestamp`);
   }

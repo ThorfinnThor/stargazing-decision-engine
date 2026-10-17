@@ -28,7 +28,7 @@ export function buildSeoMetadata(options: {
         description,
         url: canonical,
         locale: locale === "de" ? "de_DE" : "en_US",
-        alternateLocale: [locale === "de" ? "en_US" : "de_DE"],
+        alternateLocale: seo && seo.alternatePaths[locale === "de" ? "en" : "de"] === undefined ? [] : [locale === "de" ? "en_US" : "de_DE"],
         modifiedTime: options.article.modifiedTime,
         section: options.article.section,
         authors: options.article.authors,
@@ -41,7 +41,7 @@ export function buildSeoMetadata(options: {
         description,
         url: canonical,
         locale: locale === "de" ? "de_DE" : "en_US",
-        alternateLocale: [locale === "de" ? "en_US" : "de_DE"],
+        alternateLocale: seo && seo.alternatePaths[locale === "de" ? "en" : "de"] === undefined ? [] : [locale === "de" ? "en_US" : "de_DE"],
         images,
       };
 

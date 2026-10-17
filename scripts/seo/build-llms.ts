@@ -29,7 +29,7 @@ const content = `# Stargazing Index
 
 > Stargazing Index is a bilingual, data-driven guide for choosing stargazing destinations, months, observing sites, and astronomy gear. Its reviewed field guides, independent routes, and source-backed comparisons are supported by reproducible JSON data and clearly stated limitations.
 
-The primary language is English. German versions use the same paths under \`/de/\`; each page declares reciprocal language alternates. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
+The primary language is English. Core destination, location-tour, and gear pages have German versions under \`/de/\` with reciprocal language alternates. The data journal is currently English-only and does not advertise a missing German alternate. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
 
 ## Choose the right source
 
@@ -37,6 +37,7 @@ The primary language is English. German versions use the same paths under \`/de/
 - Use a location tour for one concrete, source-backed evening plan at a named observing site.
 - Use a short-trip guide to compare qualifying destinations from a specific origin city. A short-trip page can be deliberately excluded from indexing when no destination passes its evidence and distance gates.
 - Use a gear guide for specification-based product comparisons. These guides do not publish live prices or claim unreported hands-on tests.
+- Use a data-journal article to understand a cross-destination pattern, selection rule, or score trade-off before opening the underlying destination profiles.
 - Prefer the cited primary sources on each guide for current closures, bookings, opening times, protected-area rules, and manufacturer specifications.
 
 ## Editorial provenance
@@ -50,7 +51,7 @@ Stargazing Index is editorially managed by Schayan Yousefian. Every destination 
 - [About the publisher](${absolute("/en/about/")}): Mission, editorial responsibility, corrections, and ownership.
 - [Editorial methodology](${absolute("/en/methodology/")}): Evidence, source, freshness, and independence rules.
 - [XML sitemap](${absolute("/sitemap.xml")}): Complete list of indexable English and German canonical pages.
-${section("Destination guides", "destination")}${section("Location tours", "location-tour")}${section("Short-trip guides", "short-trip")}${section("Gear guides", "gear-guide")}
+${section("Data journal", "blog-post")}${section("Destination guides", "destination")}${section("Location tours", "location-tour")}${section("Short-trip guides", "short-trip")}${section("Gear guides", "gear-guide")}
 ## Machine-readable data
 
 - [Dataset manifest](${absolute("/data/stargazing/manifest.json")}): Dataset version, generation time, sources, counts, hashes, and checksums.
@@ -58,6 +59,7 @@ ${section("Destination guides", "destination")}${section("Location tours", "loca
 - [Observation-site index](${absolute("/data/stargazing/sites/index.json")}): Coordinates, elevation, access status, and source-backed access notes.
 - [Editorial destination-guide index](${absolute("/data/stargazing/editorial/destinations/index.json")}): Reviewed guide identifiers, word counts, source counts, and revision dates.
 - [Editorial gear-guide index](${absolute("/data/stargazing/gear/index.json")}): Bilingual specification comparisons with cited primary sources and clearly labelled affiliate links where a partner is approved.
+- [Data-journal index](${absolute("/data/stargazing/editorial/blog/index.json")}): Four reviewed English analyses with generated evidence tables and declared methodology limits.
 - [SEO registry](${absolute("/data/stargazing/seo/registry.json")}): Canonicals, language alternates, descriptions, modification dates, and indexability decisions.
 
 ## Optional

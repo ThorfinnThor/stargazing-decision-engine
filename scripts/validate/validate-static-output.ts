@@ -28,5 +28,5 @@ for (const item of orphans) {
 if (result.broken.length > 0 || result.localeParityGaps.length > 0 || orphans.length > 0) {
   process.exitCode = 1;
 } else {
-  console.log(`Validated ${result.htmlFiles} exported HTML files, ${result.references} same-origin references, EN/DE route parity, and internal discovery for every indexable page.`);
+  console.log(`Validated ${result.htmlFiles} exported HTML files, ${result.references} same-origin references, EN/DE route parity (with the declared English-only blog exception), and internal discovery for every indexable page.`);
 }

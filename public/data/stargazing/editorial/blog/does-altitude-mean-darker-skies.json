@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "does-altitude-mean-darker-skies",
+  "title": "Does higher altitude mean darker skies? The data says no",
+  "seoDescription": "Compare high and low stargazing sites to separate elevation from artificial light, climate, comfort, and access in dark-sky trip planning.",
+  "standfirst": "Elevation can put you above some haze and atmospheric mass, but it does not switch off nearby lights or guarantee clear weather. Eight real sites reveal the trade-off.",
+  "publishedAt": "2026-10-17",
+  "lastReviewedAt": "2026-10-17",
+  "readingMinutes": 7,
+  "heroDestinationSlug": "hanle",
+  "datasetId": "altitude-versus-darkness",
+  "relatedDestinationSlugs": [
+    "hanle",
+    "mauna-kea",
+    "cerro-paranal",
+    "great-basin",
+    "kalbarri",
+    "richtersveld",
+    "great-barrier-island",
+    "rakiura"
+  ],
+  "methodologyNote": "Elevation is the representative site's committed elevation value. Darkness, Sky Quality, and Stargazing Trip are the published site scores; annual values are simple means of the twelve monthly rows. Elevation is only one score component, and the comparison is not a live forecast. It does not claim that the sites offer equivalent access, oxygen risk, horizons, infrastructure, or observing permissions.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Elevation and darkness are not synonyms",
+      "paragraphs": [
+        "High observatories are built where thin, dry air and favourable atmospheric conditions can improve professional observing. That association often turns into an overly broad travel rule: higher must mean darker. But artificial light is generated on the ground and spreads across distance. A mountain above a city can remain exposed to a substantial light dome, while a remote beach or desert plain can sit under an exceptionally dark sky close to sea level.",
+        "The data separates these ideas. Elevation is measured in metres. Darkness is derived from artificial-light exposure. Sky Quality also accounts for historical cloud conditions, dew, and elevation, while Stargazing Trip adds practical comfort and access. Two sites with similar heights can therefore receive different scores, and a low site can outperform a mountain when remoteness and climate work in its favour."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Height and darkness side by side",
+      "introduction": "The comparison deliberately mixes high and low sites. Annual Sky Quality and Trip scores are simple means of the twelve published monthly values.",
+      "columns": [
+        "Destination",
+        "Elevation",
+        "Darkness",
+        "Sky quality",
+        "Trip score",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Hanle",
+          "4,500 m",
+          "100",
+          "92.9",
+          "86.9",
+          "Limited"
+        ],
+        [
+          "Mauna Kea",
+          "4,200 m",
+          "90",
+          "74.4",
+          "76.6",
+          "Limited"
+        ],
+        [
+          "Cerro Paranal",
+          "2,635 m",
+          "100",
+          "98.4",
+          "96.8",
+          "Limited"
+        ],
+        [
+          "Great Basin",
+          "3,013 m",
+          "92",
+          "89.9",
+          "87.8",
+          "Public"
+        ],
+        [
+          "Kalbarri",
+          "150 m",
+          "100",
+          "93.7",
+          "93",
+          "Limited"
+        ],
+        [
+          "Richtersveld",
+          "42 m",
+          "90",
+          "91.9",
+          "92.6",
+          "Limited"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "5 m",
+          "100",
+          "74.4",
+          "74.6",
+          "Public"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "69 m",
+          "94",
+          "51.2",
+          "57.4",
+          "Limited"
+        ]
+      ],
+      "note": "A low site can be extremely dark; a high site can carry a lower darkness score. Access labels do not replace current official visitor rules."
+    },
+    {
+      "kind": "prose",
+      "heading": "What altitude can improve—and what it cannot",
+      "paragraphs": [
+        "Elevation can reduce the amount of atmosphere above an observer and may place a site above some low-level haze or moisture. In a suitable climate, that is valuable. It can also bring colder temperatures, stronger exposure, difficult roads, rapid weather changes, and altitude illness. A summit designed for research is not automatically a visitor attraction, and a named observing zone may have strict nighttime rules.",
+        "Altitude cannot erase regional artificial light, clouds at the observing level, wind, smoke, dust, or local obstructions. Nor can it make an inaccessible site useful to a traveller. This is why the comparison keeps annual Sky Quality and Trip scores beside height and darkness. The combined scores do not diminish altitude; they put it in the correct decision context."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Treat elevation as a modifier, not a destination strategy",
+      "body": "First ask whether the site is dark, historically clear in your month, legally accessible, and practical for your group. Use elevation to refine that shortlist—not to create it by itself."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why low-elevation sites remain competitive",
+      "paragraphs": [
+        "The low sites in the table are not identical. Some benefit from dry continental conditions; others are maritime and pay a cloud penalty despite excellent darkness. Their shared lesson is narrower: low elevation does not impose a low darkness score. Remoteness, settlement patterns, and regional lighting can matter more for artificial-light exposure than height above sea level.",
+        "A low site can also be easier to reach and physically easier to use. That does not guarantee public nighttime access. Campgrounds, reserves, beaches, and private properties carry different rules, and a site marked limited may require booking or permission. Practical advantage should be demonstrated from current official information rather than inferred from a road on a map."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Build a safer high-altitude plan",
+      "paragraphs": [
+        "If a high site remains on your shortlist, check the official visitor policy, road status, weather, required reservations, acclimatisation advice, and whether private vehicles are allowed after dark. Bring clothing for the actual nighttime range rather than the daytime temperature in the nearest town. A high score is not medical or access guidance.",
+        "For the observing decision, compare the exact month. Annual means make the structural relationship visible, but seasonal cloud and comfort can change the result. Then add the Moon phase and a current forecast. The best destination is not the highest point you can name; it is the place where darkness, atmosphere, timing, access, and your tolerance for risk align."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Elevation range",
+      "value": "5–4,500 m",
+      "note": "Representative sites in this comparison"
+    },
+    {
+      "label": "Low-site darkness",
+      "value": "90–100",
+      "note": "Selected sites below 200 metres"
+    },
+    {
+      "label": "Variables shown",
+      "value": "5",
+      "note": "Height, darkness, sky, trip, and access"
+    }
+  ]
+}

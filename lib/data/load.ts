@@ -1,7 +1,7 @@
 import { existsSync, readFileSync, readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
-import type { Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, ShortTripFile, SiteMonthlySummary } from "./types.js";
+import type { BlogPost, BlogPostSummary, Destination, DestinationEditorialGuide, DestinationMonthlySummary, GearCategory, GearGuide, GearProductMetadata, ImageManifest, LocationTour, Manifest, MeteorShowerEvent, ObservationSite, PublishedAffiliateActivityOffer, PublishedAffiliateDestinationSearch, ShortTripFile, SiteMonthlySummary } from "./types.js";
 import type { NightPreviewFile } from "../astronomy/types.js";
 
 export interface SeoPageRecord {
@@ -144,4 +144,12 @@ export function listGearGuides() {
 
 export function loadGearGuide(slug: string): GearGuide {
   return readPublished<GearGuide>(`gear/guides/${slug}.json`);
+}
+
+export function listBlogPosts(): BlogPostSummary[] {
+  return readPublished<BlogPostSummary[]>("editorial/blog/index.json");
+}
+
+export function loadBlogPost(slug: string): BlogPost {
+  return readPublished<BlogPost>(`editorial/blog/${slug}.json`);
 }

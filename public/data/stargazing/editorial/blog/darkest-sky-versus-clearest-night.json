@@ -1,0 +1,141 @@
+{
+  "version": 1,
+  "slug": "darkest-sky-versus-clearest-night",
+  "title": "The darkest sky is not always the clearest night",
+  "seoDescription": "Darkness and clear-night probability measure different things. Compare real destination data to see why a dark site can still be a poor weather bet.",
+  "standfirst": "Light pollution and cloud climate answer different questions. Six destinations show why a perfect darkness score can coexist with very different odds of a usable night.",
+  "publishedAt": "2026-10-17",
+  "lastReviewedAt": "2026-10-17",
+  "readingMinutes": 7,
+  "heroDestinationSlug": "great-barrier-island",
+  "datasetId": "darkness-versus-clear",
+  "relatedDestinationSlugs": [
+    "namibrand",
+    "great-barrier-island",
+    "kangaroo-island",
+    "rakiura",
+    "death-valley",
+    "richtersveld"
+  ],
+  "methodologyNote": "Darkness is the committed site-level score derived from Black Marble artificial-light exposure. Clear-night probability is the simple mean of twelve monthly probabilities in the 1991–2020 ERA5 climate snapshot for the representative site. Annual trip and sky-quality figures are simple means of the twelve published monthly scores. These aggregates are descriptive, not live forecasts.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Two variables that are easy to confuse",
+      "paragraphs": [
+        "A dark sky describes the absence of artificial light in and around an observing location. A clear night describes the atmosphere above it. The first can remain broadly stable for years; the second changes with weather and has a strong seasonal pattern. Putting both ideas under the loose label “good stargazing” makes recommendations sound simpler than the underlying decision really is.",
+        "Our darkness score is derived from committed Black Marble radiance inputs and the calibrated artificial-light model. The clear-night figure comes from thirty-year ERA5 climate normals. Neither is a live reading. Read together, however, they expose a practical distinction: a remote island can be exceptionally dark and still have a maritime cloud climate, while a desert site can combine low artificial light with many historically clear nights."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Six dark sites, six different weather profiles",
+      "introduction": "Annual values are simple means across the twelve monthly rows. They make the structural contrast visible; use monthly data for an actual trip.",
+      "columns": [
+        "Destination",
+        "Darkness",
+        "Clear nights",
+        "Sky quality",
+        "Trip score",
+        "Access"
+      ],
+      "rows": [
+        [
+          "NamibRand",
+          "100",
+          "83.6%",
+          "98.7",
+          "97.8",
+          "Limited"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "100",
+          "30.6%",
+          "74.4",
+          "74.6",
+          "Public"
+        ],
+        [
+          "Kangaroo Island",
+          "100",
+          "25.5%",
+          "71",
+          "72.8",
+          "Limited"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "94",
+          "8.8%",
+          "51.2",
+          "57.4",
+          "Limited"
+        ],
+        [
+          "Death Valley",
+          "96",
+          "72%",
+          "93.5",
+          "93",
+          "Public"
+        ],
+        [
+          "Richtersveld",
+          "90",
+          "74.9%",
+          "91.9",
+          "92.6",
+          "Limited"
+        ]
+      ],
+      "note": "Darkness comes from the calibrated artificial-light layer. Clear-night probability comes from ERA5 cloud history. A perfect score in one column does not imply a perfect result in the other."
+    },
+    {
+      "kind": "prose",
+      "heading": "The same darkness score can hide a different trip",
+      "paragraphs": [
+        "The comparison includes several sites with the maximum darkness score. Their historical clear-night averages are far from identical, and their annual trip scores separate accordingly. That gap is not a contradiction. Darkness protects contrast when the sky is clear; it does not remove clouds, moisture, wind, or an uncomfortable temperature. A destination can therefore be optically promising but operationally risky for a short, fixed-date trip.",
+        "The reverse deserves care too. A strong clear-night average does not make a bright site dark. Clear air over a light dome can still wash out faint structure. For visual deep-sky observing and wide-field astrophotography, artificial light remains a hard constraint. For lunar or planetary observing, outreach, or a flexible trip with other daytime goals, a somewhat brighter but reliably clear location may still be the rational choice."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Darkness protects the view; climate determines how often you may get it",
+      "body": "A high darkness score is a necessary strength for faint targets, not a promise of cloud-free weather. Compare darkness, clear-night history, month, and trip flexibility before treating any destination as a safer bet."
+    },
+    {
+      "kind": "prose",
+      "heading": "Choose according to the cost of failure",
+      "paragraphs": [
+        "If you can stay for a week and change plans night by night, a dark but cloudier destination may be worth the gamble. If you have one evening at the end of a costly journey, historical cloud reliability deserves more weight. A photographer pursuing faint nebulae may accept lower weather odds for truly dark conditions; a family planning a first naked-eye session may value comfort, simple access, and a reasonable chance of any clear window.",
+        "This is also why annual averages should begin a comparison rather than finish it. A destination with a modest annual clear-night figure may have a useful dry-season window. Open its monthly profile before ruling it out. Conversely, an excellent annual figure can conceal a weaker month. The correct unit of planning is the destination, the month, and the actual date—not the destination name alone."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "What still has to be checked close to departure",
+      "paragraphs": [
+        "Historical normals cannot see the forecast for your night. They also do not fully describe local fog, low cloud against terrain, smoke, dust, temporary lighting, vegetation, buildings, or a blocked horizon at the exact place where you stand. The representative site anchors the data consistently, but conditions can vary inside a large park or island.",
+        "Use the table to understand the structural trade-off. Then check the current forecast, satellite and smoke information where relevant, Moon phase, and the official access source. If a site is limited or booking-only, confirm its terms directly through the published operator or authority information. The score narrows uncertainty; it does not transfer responsibility for a current access or safety decision."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Darkness leaders",
+      "value": "3",
+      "note": "Selected sites scoring 100 for darkness"
+    },
+    {
+      "label": "Clear-night spread",
+      "value": "25.5–83.6%",
+      "note": "Among those 100-darkness sites"
+    },
+    {
+      "label": "Independent signals",
+      "value": "2",
+      "note": "Artificial light and cloud climate"
+    }
+  ]
+}

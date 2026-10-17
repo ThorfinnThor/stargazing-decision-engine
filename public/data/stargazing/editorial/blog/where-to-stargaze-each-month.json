@@ -1,0 +1,221 @@
+{
+  "version": 1,
+  "slug": "where-to-stargaze-each-month",
+  "title": "Where to stargaze each month: a 12-stop data atlas",
+  "seoDescription": "A month-by-month stargazing atlas built from historical climate, darkness, comfort, access, and confidence data across 150 reviewed destinations.",
+  "standfirst": "There is no single best stargazing destination for every month. This atlas uses one repeatable rule to surface twelve different places, then explains what the scores can—and cannot—tell you before you travel.",
+  "publishedAt": "2026-10-17",
+  "lastReviewedAt": "2026-10-17",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "namibrand",
+  "datasetId": "monthly-atlas",
+  "relatedDestinationSlugs": [
+    "namibrand",
+    "kalbarri",
+    "death-valley",
+    "tsumkwe",
+    "lapalala",
+    "makgadikgadi",
+    "mapungubwe",
+    "alqueva",
+    "great-western-woodlands",
+    "joshua-tree",
+    "richtersveld",
+    "witsand"
+  ],
+  "methodologyNote": "For each calendar month, we selected the highest Stargazing Trip score among active destinations with real score snapshots and a representative site marked public or limited access, without repeating a destination. Limited access can mean booking, guest-only use, permits, opening-hour constraints, or other conditions. Scores use 1991–2020 ERA5 climate normals and committed darkness, elevation, and access inputs; they are not forecasts.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "One question, one consistent selection rule",
+      "paragraphs": [
+        "A calendar like this becomes misleading if the method changes from month to month. We therefore started with every active destination that has a complete real-data score series. For each month, we took the strongest Stargazing Trip score from a representative observing site that is labelled either publicly accessible or limited, and then removed that destination from the remaining months. The no-repeat rule turns the result into a useful atlas rather than a list dominated by one exceptional desert.",
+        "The Stargazing Trip score is a decision score, not a measurement of how beautiful the Milky Way will look on a particular night. It combines sky quality with practical comfort. Darkness, historical cloud conditions, dew, wind, temperature, elevation, and the documented access input all matter. A result can therefore outrank a darker site if it is historically clearer or more comfortable in that month. Confidence is shown because a precise-looking rank should never hide weaker source coverage."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "The 12-stop atlas",
+      "introduction": "The score columns use a 0–100 scale. Clear nights are the historical monthly probability at the representative site; access is the reviewed catalog status.",
+      "columns": [
+        "Month",
+        "Destination",
+        "Country",
+        "Trip",
+        "Sky",
+        "Comfort",
+        "Clear nights",
+        "Access"
+      ],
+      "rows": [
+        [
+          "January",
+          "NamibRand",
+          "Namibia",
+          "97",
+          "98",
+          "93",
+          "70.1%",
+          "Limited"
+        ],
+        [
+          "February",
+          "Kalbarri",
+          "Australia",
+          "94",
+          "96",
+          "86",
+          "69.2%",
+          "Limited"
+        ],
+        [
+          "March",
+          "Death Valley",
+          "United States",
+          "93",
+          "92",
+          "97",
+          "62.6%",
+          "Public"
+        ],
+        [
+          "April",
+          "Tsumkwe",
+          "Namibia",
+          "95",
+          "96",
+          "92",
+          "68.3%",
+          "Limited"
+        ],
+        [
+          "May",
+          "Lapalala Wilderness",
+          "South Africa",
+          "95",
+          "94",
+          "98",
+          "87.4%",
+          "Limited"
+        ],
+        [
+          "June",
+          "Makgadikgadi Pans",
+          "Botswana",
+          "94",
+          "94",
+          "94",
+          "84.2%",
+          "Limited"
+        ],
+        [
+          "July",
+          "Mapungubwe",
+          "South Africa",
+          "93",
+          "93",
+          "91",
+          "79.9%",
+          "Limited"
+        ],
+        [
+          "August",
+          "Alqueva",
+          "Portugal",
+          "92",
+          "91",
+          "96",
+          "84.4%",
+          "Public"
+        ],
+        [
+          "September",
+          "Great Western Woodlands",
+          "Australia",
+          "95",
+          "95",
+          "92",
+          "69%",
+          "Limited"
+        ],
+        [
+          "October",
+          "Joshua Tree",
+          "United States",
+          "92",
+          "91",
+          "98",
+          "82.7%",
+          "Public"
+        ],
+        [
+          "November",
+          "Richtersveld",
+          "South Africa",
+          "93",
+          "92",
+          "95",
+          "71.7%",
+          "Limited"
+        ],
+        [
+          "December",
+          "Witsand",
+          "South Africa",
+          "94",
+          "94",
+          "94",
+          "69.8%",
+          "Limited"
+        ]
+      ],
+      "note": "Selection rule: highest monthly Stargazing Trip score among eligible real-data destinations, with no destination used twice. This creates variety; it is not an absolute global ranking."
+    },
+    {
+      "kind": "prose",
+      "heading": "How to read the twelve rows",
+      "paragraphs": [
+        "Start with the trip score, then read sideways. Sky Quality concentrates on the observing environment, while Trip Comfort captures the practical side of spending time outside at night. The historical clear-night probability is the share of nights in the 1991–2020 climate sample that met the pipeline's clear-night definition. It is a long-run planning signal, not the chance that your booked night will be clear.",
+        "The access column deserves equal attention. A site marked limited has evidence of a real location, but it may sit inside a reserve, lodge, campground, protected area, or bookable programme. The row is not permission to arrive after dark. Open the linked destination guide, follow its official source, and check current access, closures, bookings, road conditions, and local rules yourself before committing to the trip."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "The useful answer is not “book the winner”",
+      "body": "Use the atlas to build a shortlist for your month. Then compare travel distance, access, Moon phase, current forecasts, fire or weather closures, and whether the named observing site actually fits your equipment and experience."
+    },
+    {
+      "kind": "prose",
+      "heading": "What the pattern says about seasonality",
+      "paragraphs": [
+        "The sequence shifts between southern African dry-season locations, Australian sites, and arid North American destinations. That is not an editorial attempt to spread pins around a map; it is what happens when cloud climatology and night comfort are allowed to compete with darkness. Several locations remain excellent across a long season, but the no-repeat rule reveals credible alternatives instead of pretending that the same destination is the only rational choice all year.",
+        "A monthly winner can also conceal a narrow trade-off. Very dark places may have limited visitor infrastructure. Comfortable places may carry more artificial light. A high annual reputation does not guarantee the strongest month-specific conditions. This is why the table keeps the component scores visible. If your priority is visual observing, astrophotography, warmth, or an easy public viewpoint, you may choose a different row than the combined ranking suggests."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Turn a monthly signal into a real observing plan",
+      "paragraphs": [
+        "Once you have a shortlist, move from climate to timing. Check the Moon for the exact travel dates, because monthly climate scores do not choose a moonless night for you. Look at a current weather forecast close to departure, and pay attention to wind, humidity, smoke, dust, and road conditions. Those fast-changing factors sit outside a historical normal and can reverse the practical decision on the day.",
+        "Finally, treat every named site as a researched reference point rather than a guaranteed public observing pad. Conditions and rules change after our review date. Official park, reserve, campground, or operator information remains the authority for entry. The atlas is most valuable when it narrows a large world to a defensible shortlist while leaving the final, current decision in your hands."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations assessed",
+      "value": "150",
+      "note": "Active catalog with real monthly score files"
+    },
+    {
+      "label": "Monthly selections",
+      "value": "12",
+      "note": "One non-repeating destination per month"
+    },
+    {
+      "label": "Climate baseline",
+      "value": "1991–2020",
+      "note": "Historical ERA5 normal, not a forecast"
+    }
+  ]
+}

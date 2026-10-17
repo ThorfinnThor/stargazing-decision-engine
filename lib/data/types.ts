@@ -365,6 +365,36 @@ export interface ImageManifest {
   sites: PublicImageAsset[];
 }
 
+export interface BlogMetric {
+  label: string;
+  value: string;
+  note: string;
+}
+
+export type BlogPostBlock =
+  | { kind: "prose"; heading: string; paragraphs: string[] }
+  | { kind: "callout"; heading: string; body: string }
+  | { kind: "table"; heading: string; introduction: string; columns: string[]; rows: string[][]; note: string };
+
+export interface BlogPost {
+  version: 1;
+  slug: string;
+  title: string;
+  seoDescription: string;
+  standfirst: string;
+  publishedAt: string;
+  lastReviewedAt: string;
+  readingMinutes: number;
+  heroDestinationSlug: string;
+  datasetId: string;
+  metrics: BlogMetric[];
+  blocks: BlogPostBlock[];
+  relatedDestinationSlugs: string[];
+  methodologyNote: string;
+}
+
+export type BlogPostSummary = Pick<BlogPost, "slug" | "title" | "seoDescription" | "standfirst" | "publishedAt" | "lastReviewedAt" | "readingMinutes" | "heroDestinationSlug">;
+
 export interface ShortTripFile {
   originSlug: string;
   originName: string;

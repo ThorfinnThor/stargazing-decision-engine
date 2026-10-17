@@ -8,6 +8,7 @@ export function SiteHeader({ locale }: { locale: Locale }) {
     { href: localizedLinks.finder(locale), label: "Finder" },
     { href: localizedLinks.locationTours(locale), label: isGerman ? "Nachtpläne" : "Night plans" },
     { href: localizedLinks.gear(locale), label: isGerman ? "Ausrüstung" : "Gear" },
+    ...(!isGerman ? [{ href: localizedLinks.blog(), label: "Blog" }] : []),
     { href: localizedLinks.methodology(locale), label: isGerman ? "Methodik" : "Method" },
     { href: localizedLinks.about(locale), label: isGerman ? "Über uns" : "About" },
   ];

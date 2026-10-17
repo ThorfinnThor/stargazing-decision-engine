@@ -129,6 +129,7 @@ export function validateStaticOutput(outputDirectory: string, siteOrigin: string
   const localeParityGaps = htmlFiles.flatMap((file) => {
     const source = toPublicPath(outputDirectory, file);
     if (!source.startsWith("/en/")) return [];
+    if (source.startsWith("/en/blog/")) return [];
     const expected = source.replace(/^\/en\//, "/de/");
     return resolveExportedTarget(outputDirectory, expected)
       ? []

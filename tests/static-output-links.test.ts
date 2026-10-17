@@ -45,6 +45,8 @@ test("static output validation reports broken links and missing localized routes
   const directory = fixture();
   writeFileSync(resolve(directory, "en/about/index.html"), '<a href="/missing/">Missing</a><a href="https://example.com/external">External</a>');
   writeFileSync(resolve(directory, "en/only.html"), "English only");
+  mkdirSync(resolve(directory, "en/blog/pilot"), { recursive: true });
+  writeFileSync(resolve(directory, "en/blog/pilot/index.html"), "Declared English-only editorial page");
   const result = validateStaticOutput(directory, "https://stargazingindex.com");
   assert.deepEqual(result.broken.map((item) => item.targetPath), ["/missing/"]);
   assert.deepEqual(result.localeParityGaps, [{ source: "/en/only", expected: "/de/only" }]);

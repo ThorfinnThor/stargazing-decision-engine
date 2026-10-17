@@ -2,7 +2,7 @@
 
 > Stargazing Index is a bilingual, data-driven guide for choosing stargazing destinations, months, observing sites, and astronomy gear. Its reviewed field guides, independent routes, and source-backed comparisons are supported by reproducible JSON data and clearly stated limitations.
 
-The primary language is English. German versions use the same paths under `/de/`; each page declares reciprocal language alternates. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
+The primary language is English. Core destination, location-tour, and gear pages have German versions under `/de/` with reciprocal language alternates. The data journal is currently English-only and does not advertise a missing German alternate. Destination scores use historical climate normals and darkness data, not live weather. Astronomical sky simulations do not include local clouds, haze, terrain, buildings, vegetation, or measured on-site light pollution. Gear comparisons are editorial analyses of cited manufacturer specifications and do not claim hands-on testing unless explicitly stated.
 
 ## Choose the right source
 
@@ -10,11 +10,12 @@ The primary language is English. German versions use the same paths under `/de/`
 - Use a location tour for one concrete, source-backed evening plan at a named observing site.
 - Use a short-trip guide to compare qualifying destinations from a specific origin city. A short-trip page can be deliberately excluded from indexing when no destination passes its evidence and distance gates.
 - Use a gear guide for specification-based product comparisons. These guides do not publish live prices or claim unreported hands-on tests.
+- Use a data-journal article to understand a cross-destination pattern, selection rule, or score trade-off before opening the underlying destination profiles.
 - Prefer the cited primary sources on each guide for current closures, bookings, opening times, protected-area rules, and manufacturer specifications.
 
 ## Editorial provenance
 
-Stargazing Index is editorially managed by Schayan Yousefian. Every destination guide, location tour, and gear guide shows its responsible editor, review date, evidence, and material limitations. The latest review date represented in this index is 2026-09-25. Corrections can be submitted through the contact page. Affiliate relationships do not alter destination scores, rankings, or editorial conclusions.
+Stargazing Index is editorially managed by Schayan Yousefian. Every destination guide, location tour, and gear guide shows its responsible editor, review date, evidence, and material limitations. The latest review date represented in this index is 2026-10-17. Corrections can be submitted through the contact page. Affiliate relationships do not alter destination scores, rankings, or editorial conclusions.
 
 ## Start here
 
@@ -23,6 +24,13 @@ Stargazing Index is editorially managed by Schayan Yousefian. Every destination 
 - [About the publisher](https://stargazingindex.com/en/about/): Mission, editorial responsibility, corrections, and ownership.
 - [Editorial methodology](https://stargazingindex.com/en/methodology/): Evidence, source, freshness, and independence rules.
 - [XML sitemap](https://stargazingindex.com/sitemap.xml): Complete list of indexable English and German canonical pages.
+
+## Data journal
+
+- [Where to stargaze each month: a 12-stop data atlas](https://stargazingindex.com/en/blog/where-to-stargaze-each-month/): A month-by-month stargazing atlas built from historical climate, darkness, comfort, access, and confidence data across 150 reviewed destinations.
+- [The darkest sky is not always the clearest night](https://stargazingindex.com/en/blog/darkest-sky-versus-clearest-night/): Darkness and clear-night probability measure different things. Compare real destination data to see why a dark site can still be a poor weather bet.
+- [Does higher altitude mean darker skies? The data says no](https://stargazingindex.com/en/blog/does-altitude-mean-darker-skies/): Compare high and low stargazing sites to separate elevation from artificial light, climate, comfort, and access in dark-sky trip planning.
+- [The longest night is not always the best stargazing month](https://stargazingindex.com/en/blog/longest-night-is-not-always-best-month/): Long winter darkness can lose to clearer, warmer months. Compare six destinations where the best trip score arrives outside the longest-night month.
 
 ## Destination guides
 
@@ -293,6 +301,7 @@ Stargazing Index is editorially managed by Schayan Yousefian. Every destination 
 - [Observation-site index](https://stargazingindex.com/data/stargazing/sites/index.json): Coordinates, elevation, access status, and source-backed access notes.
 - [Editorial destination-guide index](https://stargazingindex.com/data/stargazing/editorial/destinations/index.json): Reviewed guide identifiers, word counts, source counts, and revision dates.
 - [Editorial gear-guide index](https://stargazingindex.com/data/stargazing/gear/index.json): Bilingual specification comparisons with cited primary sources and clearly labelled affiliate links where a partner is approved.
+- [Data-journal index](https://stargazingindex.com/data/stargazing/editorial/blog/index.json): Four reviewed English analyses with generated evidence tables and declared methodology limits.
 - [SEO registry](https://stargazingindex.com/data/stargazing/seo/registry.json): Canonicals, language alternates, descriptions, modification dates, and indexability decisions.
 
 ## Optional

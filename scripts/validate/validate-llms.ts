@@ -9,7 +9,7 @@ const registry = readJson<SeoRegistry>(resolve(root, "public/data/stargazing/seo
 const errors: string[] = [];
 
 if (!content.startsWith("# Stargazing Index\n\n> ")) errors.push("llms.txt must begin with the site H1 and summary blockquote");
-for (const heading of ["## Choose the right source", "## Editorial provenance", "## Start here", "## Destination guides", "## Gear guides", "## Machine-readable data", "## Optional"]) {
+for (const heading of ["## Choose the right source", "## Editorial provenance", "## Start here", "## Data journal", "## Destination guides", "## Gear guides", "## Machine-readable data", "## Optional"]) {
   if (!content.includes(heading)) errors.push(`llms.txt is missing ${heading}`);
 }
 if (!content.includes("not live weather")) errors.push("llms.txt must preserve the historical-data limitation");
@@ -21,7 +21,7 @@ const internalLinks = [...content.matchAll(/\[[^\]]+\]\((https:\/\/stargazingind
 if (new Set(internalLinks).size !== internalLinks.length) errors.push("llms.txt contains duplicate URLs");
 
 const listedIndexablePages = new Set(internalLinks.filter((url) => registry.pages.some((page) => page.canonical === url)));
-for (const pageType of ["destination", "short-trip", "gear-guide"]) {
+for (const pageType of ["blog-post", "destination", "short-trip", "gear-guide"]) {
   for (const page of registry.pages.filter((candidate) => candidate.locale === "en" && candidate.pageType === pageType && candidate.indexable)) {
     if (!listedIndexablePages.has(page.canonical)) errors.push(`llms.txt is missing indexable page ${page.canonical}`);
   }
