@@ -14,7 +14,6 @@ export function buildRootMetadata(locale: "en" | "de"): Metadata {
     creator: legal.owner,
     publisher: legal.businessName,
     category: "travel and astronomy",
-    verification: { google: "VghTXkmLTbUf951Y1oGoCIUHoeykPenHh54EVGIbQCM" },
     alternates: {
       canonical: `/${locale}/`,
       languages: { en: "/en/", de: "/de/", "x-default": "/en/" },
