@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "dew-risk-at-dark-sky-sites",
+  "title": "A dark site can still be damp: why dew risk belongs in the plan",
+  "seoDescription": "Compare historical dew risk at eight stargazing destinations and learn why darkness and clear-night probability do not protect optics from condensation.",
+  "standfirst": "Artificial light may be low and the sky may open, yet moisture can still end an observing session. Eight real-data destinations reveal how widely historical nighttime dew risk varies.",
+  "publishedAt": "2026-10-19",
+  "lastReviewedAt": "2026-10-19",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "elan-valley",
+  "datasetId": "dew-risk-spectrum",
+  "relatedDestinationSlugs": [
+    "death-valley",
+    "joshua-tree",
+    "alula",
+    "namibrand",
+    "elan-valley",
+    "poloniny",
+    "attersee-traunsee",
+    "yorkshire-dales"
+  ],
+  "methodologyNote": "We calculated annual means from the twelve monthly values in each representative site's 1991–2020 ERA5 climate snapshot, then selected the four lowest and four highest dew-risk means among active real-data destinations whose access is public or limited. The pipeline flags dew risk when nighttime air temperature is within 2°C of the dew point. Clear-night probability and dew risk are separate historical signals, not a claim that they occur simultaneously, and they are not a live forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Darkness does not keep glass dry",
+      "paragraphs": [
+        "A dark-sky designation or an excellent artificial-light score says nothing about how close the nighttime air may be to saturation. When an exposed optical surface cools, moisture can condense on lenses, corrector plates, eyepieces, camera bodies, and cases. Contrast falls, photographs soften, and a session can become an exercise in packing damp equipment. The sky can look promising while the observing system quietly approaches its practical limit.",
+        "Our climate pipeline treats dew as its own variable. An hour is flagged when the air temperature sits within two degrees Celsius of the dew point during astronomical night. The annual percentage in the table is the mean of twelve monthly probabilities, not a measurement from the exact field where a telescope will stand. It is useful as a comparative planning signal because it separates moisture exposure from darkness, clouds, and wind instead of hiding them inside one score."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "The two ends of the historical dew-risk spectrum",
+      "introduction": "Clear-night and dew-risk percentages are separate annual means from the 1991–2020 ERA5 snapshot. They should not be multiplied or read as a joint probability.",
+      "columns": [
+        "Signal group",
+        "Destination",
+        "Clear nights",
+        "Dew risk",
+        "Trip score",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Drier end",
+          "Death Valley",
+          "72%",
+          "0.2%",
+          "93",
+          "Public"
+        ],
+        [
+          "Drier end",
+          "Joshua Tree",
+          "72.1%",
+          "1.3%",
+          "90.1",
+          "Public"
+        ],
+        [
+          "Drier end",
+          "AlUla",
+          "83.6%",
+          "1.4%",
+          "79.3",
+          "Limited"
+        ],
+        [
+          "Drier end",
+          "NamibRand",
+          "83.6%",
+          "1.9%",
+          "97.8",
+          "Limited"
+        ],
+        [
+          "Dew-prone end",
+          "Elan Valley",
+          "9.5%",
+          "76.5%",
+          "49.9",
+          "Public"
+        ],
+        [
+          "Dew-prone end",
+          "Poloniny",
+          "18.6%",
+          "74.2%",
+          "60.5",
+          "Limited"
+        ],
+        [
+          "Dew-prone end",
+          "Attersee-Traunsee",
+          "18.9%",
+          "70.3%",
+          "56.8",
+          "Limited"
+        ],
+        [
+          "Dew-prone end",
+          "Yorkshire Dales",
+          "9%",
+          "68.2%",
+          "43.6",
+          "Limited"
+        ]
+      ],
+      "note": "The comparison uses the representative site for each destination. The reanalysis grid cannot resolve every local fog pocket, waterside surface, sheltered valley, or exposed ridge."
+    },
+    {
+      "kind": "prose",
+      "heading": "The dry and damp ends of the catalog are far apart",
+      "paragraphs": [
+        "The selected destinations deliberately show the two ends of the observed distribution. Arid desert environments produce very low historical dew-risk means, while Atlantic, upland, and continental sites can spend much more nighttime near the dew point. That difference affects equipment planning and tolerance for a fixed date. It does not make the dry group universally better: heat, dust, wind, road exposure, access, and extreme remoteness remain separate constraints.",
+        "The clear-night column must also be read independently. A clear-night probability describes historical cloud conditions under the pipeline definition. Dew risk describes the temperature-to-dew-point relationship across astronomical-night hours. The two aggregates are not a joint probability, so the table cannot tell you that a particular clear night will be wet. It can tell you that ignoring moisture is a much larger gamble at some destinations than at others."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Clear is not the same as dry",
+      "body": "Use cloud history to estimate whether the sky may open and dew history to decide how resilient the observing setup should be. For the actual night, check the current temperature, dew point, wind, and forecast together."
+    },
+    {
+      "kind": "prose",
+      "heading": "What dew changes in a field plan",
+      "paragraphs": [
+        "At a higher-risk destination, prevention belongs in the plan before darkness. A dew shield can delay radiative cooling of exposed optics; a correctly sized heater and a tested power supply can protect longer sessions. Keep caps, cloths, cables, and electronics organised so that a hurried response does not introduce bright light or damage. Equipment should return indoors capped or uncapped according to a deliberate acclimatisation routine, not be sealed wet in a case and forgotten.",
+        "Naked-eye observers are not exempt from the signal. Condensation can wet seating, paper charts, clothing, and vehicle surfaces, while damp cold feels different from the same air temperature in a dry climate. The right response may be a shorter session, a sheltered official observing area, or a setup that can be packed quickly. No score requires someone to remain outside after comfort, visibility, or safe footing has deteriorated."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Move from climate history to tonight's decision",
+      "paragraphs": [
+        "Use the annual comparison to recognise structural risk, then open the destination's monthly profile. Moisture can be seasonal, and an annual mean may hide a substantially drier window. Once dates are fixed, replace climate history with a current forecast and watch the temperature-dew-point spread through the planned observing hours. Local water, vegetation, valleys, fog, and exposed slopes can produce conditions that a broad reanalysis grid does not resolve.",
+        "Finally, keep access and weather in the same decision. A dry forecast does not reopen a closed road, and a valid booking does not make condensation harmless. Confirm the exact observing footprint, the return route, and the equipment response before departure. The value of the dew signal is not that it predicts failure; it makes one preventable source of failure visible early enough to choose a better month, bring the right protection, or shorten the plan without surprise."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations compared",
+      "value": "8",
+      "note": "Four at each end of the catalog distribution"
+    },
+    {
+      "label": "Drier-end range",
+      "value": "0.2–1.9%",
+      "note": "Annual mean nighttime dew-risk probability"
+    },
+    {
+      "label": "Dew-prone range",
+      "value": "68.2–76.5%",
+      "note": "Annual mean nighttime dew-risk probability"
+    }
+  ]
+}

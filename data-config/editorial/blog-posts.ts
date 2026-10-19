@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -221,6 +221,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "A monthly climate normal cannot tell you which weekend will work. After identifying a stronger season, check the Moon for the specific dates, then use a current forecast as departure approaches. At cold destinations, confirm seasonal roads, campground or park operations, heating and battery performance, and whether nighttime parking is permitted. Long darkness does not imply that visitor facilities remain open.",
           "Finally, keep the historical nature of the comparison in view. The climate sample describes 1991–2020, while access and site evidence carry their own review dates. Weather, closures, wildfire smoke, storms, and local rules change faster. The data is designed to choose a sensible planning window; current official information and real-time conditions must make the final call.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "highest-stargazing-score-limited-access",
+    title: "The highest stargazing score may come with limited access",
+    seoDescription: "Compare public and limited-access stargazing destinations to see why a higher sky score does not automatically make a trip easier to execute.",
+    standfirst: "A remarkable score answers what conditions may offer. It does not answer whether you can simply arrive, park, and observe. Eight leading destinations show why access belongs beside sky quality in every shortlist.",
+    publishedAt: "2026-10-19",
+    lastReviewedAt: "2026-10-19",
+    readingMinutes: 8,
+    heroDestinationSlug: "big-bend",
+    datasetId: "access-versus-score",
+    relatedDestinationSlugs: ["big-bend", "natural-bridges", "death-valley", "capitol-reef", "namibrand", "grand-canyon-parashant", "sutherland", "kalbarri"],
+    methodologyNote: "We selected the four active real-data destinations with the highest annual mean Stargazing Trip score in each of two representative-site access groups: public and limited. Annual Sky Quality and Trip values are simple means of the twelve published monthly scores; the best month is the highest monthly Trip score. Access is the reviewed catalog status, not a guarantee of current entry, and the comparison is not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "A score and an access label answer different questions",
+        paragraphs: [
+          "Stargazing rankings become dangerous when they collapse the observing environment and the visitor experience into one promise. Sky Quality describes the strength of the natural observing conditions represented in the model. The Stargazing Trip score adds practical comfort and access inputs, but even a strong combined result cannot reproduce every booking rule, gate time, road restriction, permit, guest-only condition, or local closure. A place can deserve its score and still be the wrong choice for an unplanned evening.",
+          "The access label is deliberately plain. Public means the representative site has documented public use, while limited means that use depends on a condition such as a reservation, accommodation, tour, permit, seasonal operation, difficult route, or restricted visitor footprint. Neither label means unrestricted access at every hour. Both require a current check of the official source linked from the destination guide before travel.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Why limited-access leaders can top the table",
+        paragraphs: [
+          "Several limited-access destinations protect exceptional darkness precisely because they are remote, managed, or lightly developed. That can support an outstanding score while reducing spontaneity. A reserve lodge, research area, primitive desert road, or bookable programme may provide a carefully controlled route into a dark landscape. The same controls that preserve the environment can also mean that arriving without the required booking or vehicle is not a viable plan.",
+          "The table therefore does not demote limited locations. It makes their transaction cost visible. A high annual mean can justify the extra preparation for a dedicated trip, especially when the destination is the main purpose of travel. It may be a poor choice for a one-night detour, a late arrival, or a group that needs predictable facilities. The correct comparison is not simply score against score; it is score against the effort and uncertainty required to use the exact site legally and safely.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "The practical winner is the best site you can actually use",
+        body: "Treat a limited-access leader as a planned product, booking, or route—not as a pin on a map. A slightly lower-scoring public site can be the stronger decision when time, transport, mobility, or same-day flexibility matters more than the final few score points.",
+      },
+      {
+        kind: "prose",
+        heading: "Public does not mean frictionless",
+        paragraphs: [
+          "The public group contains national parks and other recognised visitor settings, but its label is not permission to ignore local rules. Entrance stations can close, roads can be seasonal, campgrounds may require reservations, and individual overlooks or trails may prohibit overnight use. Weather, wildfire, flooding, snow, wildlife, or maintenance can remove the usable route even when the wider destination remains open. Public access reduces one category of uncertainty; it does not eliminate planning.",
+          "Public destinations can nevertheless carry a decisive advantage: they often offer a clearer official visitor framework. Published maps, alerts, parking rules, campground systems, and ranger information make it easier to determine where a night visit belongs. That institutional clarity can be more valuable than a small score difference, particularly for first-time visitors or travellers who cannot absorb a failed access attempt after a long drive.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Build the shortlist in the right order",
+        paragraphs: [
+          "Begin with the month-specific data rather than the annual mean shown here. Confirm that the sky and comfort profile fits your dates, then open the destination guide and identify one exact observing footprint. Follow its official source to check current opening, booking, vehicle, fee, camping, and after-dark conditions. If any essential condition is unclear, choose a documented alternative instead of extending the destination label to a roadside pull-off or open-looking land nearby.",
+          "Only after the route is workable should you add the Moon phase and a current weather forecast. Keep a simple cancellation threshold for cloud, wind, smoke, unsafe roads, or a closed facility. The score is most useful when it helps compare viable plans. It is least useful when an impressive number persuades someone to improvise around a missing reservation, locked gate, private boundary, or route that should have been rejected before departure.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "dew-risk-at-dark-sky-sites",
+    title: "A dark site can still be damp: why dew risk belongs in the plan",
+    seoDescription: "Compare historical dew risk at eight stargazing destinations and learn why darkness and clear-night probability do not protect optics from condensation.",
+    standfirst: "Artificial light may be low and the sky may open, yet moisture can still end an observing session. Eight real-data destinations reveal how widely historical nighttime dew risk varies.",
+    publishedAt: "2026-10-19",
+    lastReviewedAt: "2026-10-19",
+    readingMinutes: 8,
+    heroDestinationSlug: "elan-valley",
+    datasetId: "dew-risk-spectrum",
+    relatedDestinationSlugs: ["death-valley", "joshua-tree", "alula", "namibrand", "elan-valley", "poloniny", "attersee-traunsee", "yorkshire-dales"],
+    methodologyNote: "We calculated annual means from the twelve monthly values in each representative site's 1991–2020 ERA5 climate snapshot, then selected the four lowest and four highest dew-risk means among active real-data destinations whose access is public or limited. The pipeline flags dew risk when nighttime air temperature is within 2°C of the dew point. Clear-night probability and dew risk are separate historical signals, not a claim that they occur simultaneously, and they are not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Darkness does not keep glass dry",
+        paragraphs: [
+          "A dark-sky designation or an excellent artificial-light score says nothing about how close the nighttime air may be to saturation. When an exposed optical surface cools, moisture can condense on lenses, corrector plates, eyepieces, camera bodies, and cases. Contrast falls, photographs soften, and a session can become an exercise in packing damp equipment. The sky can look promising while the observing system quietly approaches its practical limit.",
+          "Our climate pipeline treats dew as its own variable. An hour is flagged when the air temperature sits within two degrees Celsius of the dew point during astronomical night. The annual percentage in the table is the mean of twelve monthly probabilities, not a measurement from the exact field where a telescope will stand. It is useful as a comparative planning signal because it separates moisture exposure from darkness, clouds, and wind instead of hiding them inside one score.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "The dry and damp ends of the catalog are far apart",
+        paragraphs: [
+          "The selected destinations deliberately show the two ends of the observed distribution. Arid desert environments produce very low historical dew-risk means, while Atlantic, upland, and continental sites can spend much more nighttime near the dew point. That difference affects equipment planning and tolerance for a fixed date. It does not make the dry group universally better: heat, dust, wind, road exposure, access, and extreme remoteness remain separate constraints.",
+          "The clear-night column must also be read independently. A clear-night probability describes historical cloud conditions under the pipeline definition. Dew risk describes the temperature-to-dew-point relationship across astronomical-night hours. The two aggregates are not a joint probability, so the table cannot tell you that a particular clear night will be wet. It can tell you that ignoring moisture is a much larger gamble at some destinations than at others.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Clear is not the same as dry",
+        body: "Use cloud history to estimate whether the sky may open and dew history to decide how resilient the observing setup should be. For the actual night, check the current temperature, dew point, wind, and forecast together.",
+      },
+      {
+        kind: "prose",
+        heading: "What dew changes in a field plan",
+        paragraphs: [
+          "At a higher-risk destination, prevention belongs in the plan before darkness. A dew shield can delay radiative cooling of exposed optics; a correctly sized heater and a tested power supply can protect longer sessions. Keep caps, cloths, cables, and electronics organised so that a hurried response does not introduce bright light or damage. Equipment should return indoors capped or uncapped according to a deliberate acclimatisation routine, not be sealed wet in a case and forgotten.",
+          "Naked-eye observers are not exempt from the signal. Condensation can wet seating, paper charts, clothing, and vehicle surfaces, while damp cold feels different from the same air temperature in a dry climate. The right response may be a shorter session, a sheltered official observing area, or a setup that can be packed quickly. No score requires someone to remain outside after comfort, visibility, or safe footing has deteriorated.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Move from climate history to tonight's decision",
+        paragraphs: [
+          "Use the annual comparison to recognise structural risk, then open the destination's monthly profile. Moisture can be seasonal, and an annual mean may hide a substantially drier window. Once dates are fixed, replace climate history with a current forecast and watch the temperature-dew-point spread through the planned observing hours. Local water, vegetation, valleys, fog, and exposed slopes can produce conditions that a broad reanalysis grid does not resolve.",
+          "Finally, keep access and weather in the same decision. A dry forecast does not reopen a closed road, and a valid booking does not make condensation harmless. Confirm the exact observing footprint, the return route, and the equipment response before departure. The value of the dew signal is not that it predicts failure; it makes one preventable source of failure visible early enough to choose a better month, bring the right protection, or shorten the plan without surprise.",
         ],
       },
     ],

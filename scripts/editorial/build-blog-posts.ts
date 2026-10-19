@@ -181,11 +181,84 @@ function longestNightVersusBestMonth(): DatasetOutput {
   };
 }
 
+function accessVersusScore(): DatasetOutput {
+  const eligible = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"));
+  const values = eligible.map(({ destination, site, monthly }) => {
+    const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+    return {
+      slug: destination.slug,
+      destination: destination.name,
+      access: site.publicAccess,
+      trip: average(monthly.map((item) => item.stargazingTrip)),
+      sky: average(monthly.map((item) => item.skyQuality)),
+      bestMonth: monthNames[best.month - 1],
+      bestTrip: best.stargazingTrip,
+    };
+  });
+  const selected = (["yes", "limited"] as const).flatMap((access) => values
+    .filter((item) => item.access === access)
+    .sort((left, right) => right.trip - left.trip || left.destination.localeCompare(right.destination))
+    .slice(0, 4));
+  const publicLeader = selected.find((item) => item.access === "yes");
+  const limitedLeader = selected.find((item) => item.access === "limited");
+  if (!publicLeader || !limitedLeader) throw new Error("Insufficient access groups for blog comparison");
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(selected.length), note: "Four public and four limited-access leaders" },
+      { label: "Public benchmark", value: String(round(publicLeader.trip)), note: `${publicLeader.destination} annual Trip score` },
+      { label: "Limited benchmark", value: String(round(limitedLeader.trip)), note: `${limitedLeader.destination} annual Trip score` },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Eight high-scoring destinations, two access realities",
+      "Annual values are simple means of the twelve published monthly rows. The access label describes the reviewed representative site and must be checked against current official rules.",
+      ["Destination", "Access", "Annual trip", "Sky quality", "Best month", "Best-month trip"],
+      selected.map((item) => [item.destination, item.access === "yes" ? "Public" : "Limited", String(round(item.trip)), String(round(item.sky)), item.bestMonth, String(item.bestTrip)]),
+      "Selection rule: the four highest annual Stargazing Trip means in each access group among active destinations with real score data. Limited may mean booking, guest-only use, permits, seasonal operation, a controlled visitor footprint, or route constraints.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
+function dewRiskSpectrum(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => ({
+      slug: destination.slug,
+      destination: destination.name,
+      access: site.publicAccess,
+      clear: average(climate.months.map((item) => item.clearNightProbability ?? 0)) * 100,
+      dew: average(climate.months.map((item) => item.dewRiskProbability ?? 0)) * 100,
+      trip: average(monthly.map((item) => item.stargazingTrip)),
+    }))
+    .sort((left, right) => left.dew - right.dew || left.destination.localeCompare(right.destination));
+  const dry = values.slice(0, 4);
+  const damp = values.slice(-4).sort((left, right) => right.dew - left.dew || left.destination.localeCompare(right.destination));
+  const selected = [...dry.map((item) => ({ ...item, group: "Drier end" })), ...damp.map((item) => ({ ...item, group: "Dew-prone end" }))];
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(selected.length), note: "Four at each end of the catalog distribution" },
+      { label: "Drier-end range", value: `${round(Math.min(...dry.map((item) => item.dew)))}–${round(Math.max(...dry.map((item) => item.dew)))}%`, note: "Annual mean nighttime dew-risk probability" },
+      { label: "Dew-prone range", value: `${round(Math.min(...damp.map((item) => item.dew)))}–${round(Math.max(...damp.map((item) => item.dew)))}%`, note: "Annual mean nighttime dew-risk probability" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "The two ends of the historical dew-risk spectrum",
+      "Clear-night and dew-risk percentages are separate annual means from the 1991–2020 ERA5 snapshot. They should not be multiplied or read as a joint probability.",
+      ["Signal group", "Destination", "Clear nights", "Dew risk", "Trip score", "Access"],
+      selected.map((item) => [item.group, item.destination, `${round(item.clear)}%`, `${round(item.dew)}%`, String(round(item.trip)), item.access === "yes" ? "Public" : "Limited"]),
+      "The comparison uses the representative site for each destination. The reanalysis grid cannot resolve every local fog pocket, waterside surface, sheltered valley, or exposed ridge.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
   "altitude-versus-darkness": altitudeVersusDarkness,
   "longest-night-versus-best-month": longestNightVersusBestMonth,
+  "access-versus-score": accessVersusScore,
+  "dew-risk-spectrum": dewRiskSpectrum,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {
