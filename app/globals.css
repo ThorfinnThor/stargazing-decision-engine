@@ -2136,6 +2136,22 @@ details[open] .content-disclosure-state > span:first-child { display: none; }
   border-left: 0;
 }
 
+/* Multi-row related grids: restart the left border on each row and collapse the shared row border. */
+@media (min-width: 801px) {
+  .destination-related-grid a:nth-child(3n + 1) { border-left: 1px solid rgb(142 197 255 / 22%); }
+  .destination-related-grid a:nth-child(n + 4) { border-top: 0; }
+}
+
+.destination-related + .destination-related { border-top: 0; }
+
+/* Tour and gear cards carry full titles rather than place names. */
+.destination-related-tours .destination-related-grid strong,
+.destination-related-gear .destination-related-grid strong,
+.location-tour-related .destination-related-grid strong {
+  font-size: 1.1rem;
+  line-height: 1.25;
+}
+
 .destination-related-grid span,
 .destination-related-grid small {
   color: var(--blue);

@@ -1,5 +1,6 @@
 import type { Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
+import { LocaleSwitcher } from "@/components/locale-switcher";
 
 export function SiteHeader({ locale }: { locale: Locale }) {
   const isGerman = locale === "de";
@@ -21,8 +22,6 @@ export function SiteHeader({ locale }: { locale: Locale }) {
     <nav className="site-header-menu" aria-label={isGerman ? "Hauptnavigation" : "Main navigation"}>
       {items.map((item) => <a href={item.href} key={item.href}>{item.label}</a>)}
     </nav>
-    <nav className="site-header-locales" aria-label={isGerman ? "Sprache" : "Language"}>
-      {(["en", "de"] as const).map((item) => <a className={item === locale ? "active" : ""} href={localizedLinks.home(item)} key={item}>{item.toUpperCase()}</a>)}
-    </nav>
+    <LocaleSwitcher locale={locale} label={isGerman ? "Sprache" : "Language"} />
   </header>;
 }

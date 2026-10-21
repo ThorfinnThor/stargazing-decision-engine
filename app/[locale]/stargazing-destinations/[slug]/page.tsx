@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { listBlogPosts, listDestinationEditorialGuides, listLocationTours, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadImageManifest, loadNightPreviews, loadSeoPage, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { listBlogPosts, listDestinationEditorialGuides, listGearGuides, listLocationTours, loadDestination, loadDestinationEditorialGuide, loadDestinations, loadGearGuide, loadImageManifest, loadNightPreviews, loadSeoPage, loadSeoRegistry, loadSiteMonthly, loadSites } from "@/lib/data/load";
+import { isGearGuideEditorialReady } from "@/lib/gear/gear";
+import { destinationAnchors, selectGearGuidesForDestination, selectRelatedDestinations } from "@/lib/seo/internal-links";
 import { createSkyLocation } from "@/lib/astronomy/primary-site";
 import { buildDestinationEditorialStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
@@ -76,12 +78,19 @@ function readParams(params: { locale: string; slug: string }) {
     });
     const image = loadImageManifest().destinations.find((asset) => asset.slug === destination.slug) ?? null;
     const editorialSlugs = new Set(listDestinationEditorialGuides());
-    const relatedDestinations = loadDestinations()
-      .filter((item) => item.slug !== destination.slug && editorialSlugs.has(item.slug))
-      .sort((left, right) => Number(right.continent === destination.continent) - Number(left.continent === destination.continent) || left.priority - right.priority)
-      .slice(0, 3);
+    const indexablePaths = new Set(loadSeoRegistry().pages.filter((page) => page.indexable).map((page) => page.path));
+    const allDestinations = loadDestinations();
+    const anchors = destinationAnchors(allDestinations, allSites);
+    const relatedCandidates = allDestinations.filter((item) => editorialSlugs.has(item.slug) && indexablePaths.has(localizedLinks.destination(locale, item.slug)));
+    const relatedDestinations = selectRelatedDestinations(destination, relatedCandidates, anchors, 6);
+    const toursByDestination = new Map(listLocationTours().filter((tour) => indexablePaths.has(localizedLinks.locationTour(locale, tour.slug))).map((tour) => [tour.destinationId, tour]));
+    const nearbyTours = selectRelatedDestinations(destination, allDestinations.filter((item) => toursByDestination.has(item.id)), anchors, 3)
+      .map((item) => ({ destination: item, tour: toursByDestination.get(item.id)! }));
+    const readyGearGuides = listGearGuides().map(loadGearGuide).filter(isGearGuideEditorialReady);
+    const gearGuides = selectGearGuidesForDestination(destination, readyGearGuides.map((item) => item.slug))
+      .map((match) => readyGearGuides.find((item) => item.slug === match.slug)!);
     const blogPosts = locale === "en" ? listBlogPosts().filter((post) => post.relatedDestinationSlugs.includes(destination.slug)) : [];
-    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), locationTour: listLocationTours().find((tour) => tour.destinationId === destination.id) ?? null, relatedDestinations, blogPosts, seo: loadSeoPage(path) };
+    return { locale, destination, sites, siteViews, image, guide: loadDestinationEditorialGuide(destination.slug), locationTour: listLocationTours().find((tour) => tour.destinationId === destination.id) ?? null, relatedDestinations, nearbyTours, gearGuides, blogPosts, seo: loadSeoPage(path) };
   } catch { return null; }
 }
 
@@ -106,7 +115,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function DestinationPage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { destination, sites, siteViews, image, guide, locationTour, relatedDestinations, blogPosts, locale, seo } = resolved;
+  const { destination, sites, siteViews, image, guide, locationTour, relatedDestinations, nearbyTours, gearGuides, blogPosts, locale, seo } = resolved;
   const isGerman = locale === "de";
   const description = seo?.description ?? `Dark-sky guide for ${destination.name}.`;
   const structuredData = buildWebPageStructuredData({ name: seo?.title ?? destination.name, description, url: seo?.canonical ?? `https://stargazingindex.com/${locale}/stargazing-destinations/${destination.slug}/`, inLanguage: locale, isPartOf: "Stargazing Index", dateModified: seo?.lastModified });
@@ -189,6 +198,32 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
             <span>{String(index + 1).padStart(2, "0")}</span>
             <strong>{related.name}</strong>
             <small>{related.countryName}</small>
+          </Link>)}
+        </div>
+      </nav>}
+      {guide && nearbyTours.length > 0 && <nav className="destination-related destination-related-tours" aria-labelledby="destination-nearby-tours-title">
+        <div>
+          <p className="eyebrow">{isGerman ? "Nachtpläne in der Nähe" : "Night plans nearby"}</p>
+          <h2 id="destination-nearby-tours-title">{isGerman ? "Konkrete Nächte in ähnlichen Regionen" : "Specific nights in nearby regions"}</h2>
+        </div>
+        <div className="destination-related-grid">
+          {nearbyTours.map(({ destination: nearby, tour }) => <Link key={tour.id} href={localizedLinks.locationTour(locale, tour.slug)}>
+            <span>{nearby.name}</span>
+            <strong>{tour.title[locale]}</strong>
+            <small>{isGerman ? "Nachtplan öffnen" : "Open night plan"} →</small>
+          </Link>)}
+        </div>
+      </nav>}
+      {gearGuides.length > 0 && <nav className="destination-related destination-related-gear" aria-labelledby="destination-gear-title">
+        <div>
+          <p className="eyebrow">{isGerman ? "Packliste" : "Packing list"}</p>
+          <h2 id="destination-gear-title">{isGerman ? `Ausrüstung für ${destination.name}` : `Gear for ${destination.name}`}</h2>
+        </div>
+        <div className="destination-related-grid">
+          {gearGuides.map((gear) => <Link key={gear.slug} href={localizedLinks.gearGuide(locale, gear.slug)}>
+            <span>{isGerman ? "Gear-Guide" : "Gear guide"}</span>
+            <strong>{gear.title[locale]}</strong>
+            <small>{isGerman ? "Zum Vergleich" : "View comparison"} →</small>
           </Link>)}
         </div>
       </nav>}
