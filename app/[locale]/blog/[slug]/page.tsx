@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
-import { listBlogPosts, loadBlogPost, loadDestination, loadDestinations, loadImageManifest, loadSeoPage } from "@/lib/data/load";
+import { listBlogPosts, listLocationTours, loadBlogPost, loadDestination, loadDestinations, loadImageManifest, loadSeoPage, loadSeoRegistry } from "@/lib/data/load";
 import { localizedLinks } from "@/lib/i18n/links";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { buildBlogPostStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
@@ -17,10 +17,18 @@ function readPost(locale: string, slug: string) {
   try {
     const post = loadBlogPost(slug);
     const image = loadImageManifest().destinations.find((item) => item.slug === post.heroDestinationSlug) ?? null;
+    const related = post.relatedDestinationSlugs.map(loadDestination);
+    const indexablePaths = new Set(loadSeoRegistry().pages.filter((page) => page.indexable).map((page) => page.path));
+    const tours = listLocationTours();
+    const relatedTours = related.flatMap((destination) => {
+      const tour = tours.find((item) => item.destinationId === destination.id);
+      return tour && indexablePaths.has(localizedLinks.locationTour("en", tour.slug)) ? [{ destination, tour }] : [];
+    });
     return {
       post,
       image,
-      related: post.relatedDestinationSlugs.map(loadDestination),
+      related,
+      relatedTours,
       destinationSlugsByName: new Map(loadDestinations().map((destination) => [destination.name, destination.slug])),
       seo: loadSeoPage(`/en/blog/${slug}/`),
     };
@@ -49,7 +57,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
   const { locale, slug } = await params;
   const resolved = readPost(locale, slug);
   if (!resolved) notFound();
-  const { post, image, related, destinationSlugsByName, seo } = resolved;
+  const { post, image, related, relatedTours, destinationSlugsByName, seo } = resolved;
   const canonical = seo?.canonical ?? `https://stargazingindex.com/en/blog/${post.slug}/`;
   const webPageData = buildWebPageStructuredData({ name: post.title, description: post.seoDescription, url: canonical, inLanguage: "en", dateModified: post.lastReviewedAt });
   const articleData = buildBlogPostStructuredData({ post, url: canonical, image: image?.localPath ?? null });
@@ -92,6 +100,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <p className="eyebrow">Open the underlying guides</p><h2 id="blog-related-title">Destinations in this analysis</h2>
         <div>{related.map((destination) => <Link href={localizedLinks.destination("en", destination.slug)} key={destination.id}><strong>{destination.name}</strong><span>{destination.countryName} →</span></Link>)}</div>
       </nav>
+      {relatedTours.length > 0 ? <nav className="blog-related" aria-labelledby="blog-related-tours-title">
+        <p className="eyebrow">Turn the numbers into a night</p><h2 id="blog-related-tours-title">Night plans for these destinations</h2>
+        <div>{relatedTours.map(({ destination, tour }) => <Link href={localizedLinks.locationTour("en", tour.slug)} key={tour.id}><strong>{tour.title.en}</strong><span>{destination.name} →</span></Link>)}</div>
+      </nav> : null}
     </article>
   </main>;
 }

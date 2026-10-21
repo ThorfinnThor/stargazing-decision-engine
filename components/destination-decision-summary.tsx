@@ -88,7 +88,8 @@ export function DestinationDecisionSummary({
     <div className="destination-decision-grid">
       <div className="destination-score-card">
         <span>{isGerman ? "Bestes Klimafenster" : "Best climatological window"}</span>
-        <strong>{bestMonth.score}<small>/100</small></strong>
+        {/* The slash comes from CSS: a literal "/100" string in the RSC payload is crawled as the URL /100. */}
+        <strong>{bestMonth.score}<small className="destination-score-scale">100</small></strong>
         <p>{formatMonth(bestMonth.month, locale)} · {confidenceLabel(bestMonth.confidenceLevel, locale)}</p>
       </div>
 

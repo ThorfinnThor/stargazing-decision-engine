@@ -8,7 +8,8 @@ import { loadGearProductImages } from "@/lib/gear/product-images";
 import { buildAstroshopProductUrl } from "@/lib/affiliate/affiliate";
 import { loadAffiliateConfig, loadAstroshopProductMatches, loadAmazonGearConfig } from "@/lib/affiliate/config";
 import { buildAmazonProductUrl } from "@/lib/affiliate/amazon";
-import { listGearGuides, loadGearCategories, loadGearGuide, loadSeoPage } from "@/lib/data/load";
+import { listDestinationEditorialGuides, listGearGuides, loadDestinations, loadGearCategories, loadGearGuide, loadSeoPage, loadSeoRegistry } from "@/lib/data/load";
+import { circularNeighbours, selectDestinationsForGearGuide } from "@/lib/seo/internal-links";
 import { buildGearGuideStructuredData, buildWebPageStructuredData } from "@/lib/seo/structured-data";
 import { buildSeoMetadata } from "@/lib/seo/metadata";
 import { isLocale, locales, type Locale } from "@/lib/i18n/config";
@@ -23,10 +24,17 @@ export function generateStaticParams() { return locales.flatMap((locale) => list
 function readParams(params: { locale: string; slug: string }) {
   if (!isLocale(params.locale)) return null;
   try {
+    const locale = params.locale as Locale;
+    const guide = loadGearGuide(params.slug);
+    const readyGuides = listGearGuides().map(loadGearGuide).filter(isGearGuideEditorialReady);
+    const indexablePaths = new Set(loadSeoRegistry().pages.filter((page) => page.indexable).map((page) => page.path));
+    const editorialSlugs = new Set(listDestinationEditorialGuides());
+    const destinations = loadDestinations().filter((item) => editorialSlugs.has(item.slug) && indexablePaths.has(localizedLinks.destination(locale, item.slug)));
     return {
-      locale: params.locale as Locale,
-      guide: loadGearGuide(params.slug),
-      relatedGuides: listGearGuides().filter((slug) => slug !== params.slug).map(loadGearGuide).filter(isGearGuideEditorialReady).slice(0, 3),
+      locale,
+      guide,
+      relatedGuides: circularNeighbours(readyGuides, readyGuides.findIndex((item) => item.slug === guide.slug), 6),
+      destinations: selectDestinationsForGearGuide(guide.slug, destinations, readyGuides.map((item) => item.slug), 6),
       seo: loadSeoPage(`/${params.locale}/gear/${params.slug}/`),
     };
   } catch {
@@ -53,7 +61,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 export default async function GearGuidePage({ params }: { params: Promise<{ locale: string; slug: string }> }) {
   const resolved = readParams(await params);
   if (!resolved) notFound();
-  const { locale, guide, relatedGuides, seo } = resolved;
+  const { locale, guide, relatedGuides, destinations, seo } = resolved;
   const isGerman = locale === "de";
   const categories = loadGearCategories();
   const affiliateConfig = loadAffiliateConfig();
@@ -124,6 +132,19 @@ export default async function GearGuidePage({ params }: { params: Promise<{ loca
         <h2 id="related-guides-title">{isGerman ? "Weitere Ausrüstungs-Guides" : "Related gear guides"}</h2>
         <div className="gear-guide-grid">{relatedGuides.map((related) => <a className="gear-guide-card" href={localizedLinks.gearGuide(locale, related.slug)} key={related.slug}><div className="card-topline"><span>{categories.find((category) => category.id === related.category)?.name[locale]}</span><span aria-hidden="true">↗</span></div><h3>{related.title[locale]}</h3><p>{categories.find((category) => category.id === related.category)?.description[locale] ?? related.summary[locale]}</p><span className="gear-card-action">{isGerman ? "Zum Vergleich" : "View comparison"} →</span></a>)}</div>
       </section>
+      {destinations.length > 0 && <nav className="destination-related gear-related-destinations" aria-labelledby="gear-destinations-title">
+        <div>
+          <p className="eyebrow">{isGerman ? "Wo es sich lohnt" : "Where it earns its place"}</p>
+          <h2 id="gear-destinations-title">{isGerman ? "Reiseziele, für die dieser Guide passt" : "Destinations this guide is built for"}</h2>
+        </div>
+        <div className="destination-related-grid">
+          {destinations.map((destination) => <a key={destination.id} href={localizedLinks.destination(locale, destination.slug)}>
+            <span>{destination.countryName}</span>
+            <strong>{destination.name}</strong>
+            <small>{isGerman ? "Himmelsführer öffnen" : "Open sky guide"} →</small>
+          </a>)}
+        </div>
+      </nav>}
       <AffiliateGearLink locale={locale} />
       <footer className="event-footer"><p>{isGerman
         ? "Dieser Guide enthält gekennzeichnete Affiliate-Links. Die Produktauswahl und Bewertung bleiben unabhängig."
