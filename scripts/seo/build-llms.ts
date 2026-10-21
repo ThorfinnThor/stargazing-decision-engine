@@ -59,7 +59,7 @@ ${section("Data journal", "blog-post")}${section("Destination guides", "destinat
 - [Observation-site index](${absolute("/data/stargazing/sites/index.json")}): Coordinates, elevation, access status, and source-backed access notes.
 - [Editorial destination-guide index](${absolute("/data/stargazing/editorial/destinations/index.json")}): Reviewed guide identifiers, word counts, source counts, and revision dates.
 - [Editorial gear-guide index](${absolute("/data/stargazing/gear/index.json")}): Bilingual specification comparisons with cited primary sources and clearly labelled affiliate links where a partner is approved.
-- [Data-journal index](${absolute("/data/stargazing/editorial/blog/index.json")}): Six reviewed English analyses with generated evidence tables and declared methodology limits.
+- [Data-journal index](${absolute("/data/stargazing/editorial/blog/index.json")}): Eight reviewed English analyses with generated evidence tables and declared methodology limits.
 - [SEO registry](${absolute("/data/stargazing/seo/registry.json")}): Canonicals, language alternates, descriptions, modification dates, and indexability decisions.
 
 ## Optional

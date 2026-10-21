@@ -252,6 +252,80 @@ function dewRiskSpectrum(): DatasetOutput {
   };
 }
 
+function windRiskSpectrum(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => {
+      const windValues = climate.months.map((item) => item.highWindHourProbability).filter((value): value is number => value !== null);
+      const clearValues = climate.months.map((item) => item.clearNightProbability).filter((value): value is number => value !== null);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        clear: average(clearValues) * 100,
+        wind: average(windValues) * 100,
+        trip: average(monthly.map((item) => item.stargazingTrip)),
+      };
+    })
+    .sort((left, right) => left.wind - right.wind || left.destination.localeCompare(right.destination));
+  const calm = values.slice(0, 4);
+  const windy = values.slice(-4).sort((left, right) => right.wind - left.wind || left.destination.localeCompare(right.destination));
+  const selected = [...calm.map((item) => ({ ...item, group: "Calmer end" })), ...windy.map((item) => ({ ...item, group: "Windier end" }))];
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(selected.length), note: "Four at each end of the catalog distribution" },
+      { label: "Calmer-end range", value: `${round(Math.min(...calm.map((item) => item.wind)))}–${round(Math.max(...calm.map((item) => item.wind)))}%`, note: "Annual mean share of astronomical-night hours at or above 30 km/h" },
+      { label: "Windier-end range", value: `${round(Math.min(...windy.map((item) => item.wind)))}–${round(Math.max(...windy.map((item) => item.wind)))}%`, note: "Annual mean share of astronomical-night hours at or above 30 km/h" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "The two ends of the historical wind-risk spectrum",
+      "Clear-night and high-wind percentages are separate means across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. They are comparison signals, not a joint probability.",
+      ["Signal group", "Destination", "Clear nights", "High-wind hours", "Trip score", "Access"],
+      selected.map((item) => [item.group, item.destination, `${round(item.clear)}%`, `${round(item.wind)}%`, String(round(item.trip)), item.access === "yes" ? "Public" : "Limited"]),
+      "The pipeline defines a high-wind hour as at least 30 km/h at the ERA5 10-metre wind level. The reanalysis grid cannot resolve every exposed ridge, sheltered hollow, gust, or obstruction at the representative site.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
+function seasonalScoreStability(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly }) => {
+      const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+      const weakest = monthly.reduce((winner, item) => item.stargazingTrip < winner.stargazingTrip ? item : winner);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        spread: best.stargazingTrip - weakest.stargazingTrip,
+        bestMonth: monthNames[best.month - 1],
+        bestTrip: best.stargazingTrip,
+        weakestMonth: monthNames[weakest.month - 1],
+        weakestTrip: weakest.stargazingTrip,
+      };
+    })
+    .sort((left, right) => left.spread - right.spread || left.destination.localeCompare(right.destination));
+  const stable = values.slice(0, 4);
+  const seasonal = values.slice(-4).sort((left, right) => right.spread - left.spread || left.destination.localeCompare(right.destination));
+  const selected = [...stable.map((item) => ({ ...item, group: "More stable" })), ...seasonal.map((item) => ({ ...item, group: "More seasonal" }))];
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(selected.length), note: "Four at each end of the monthly score-spread distribution" },
+      { label: "Stable-end spread", value: `${Math.min(...stable.map((item) => item.spread))}–${Math.max(...stable.map((item) => item.spread))}`, note: "Points between strongest and weakest month" },
+      { label: "Seasonal-end spread", value: `${Math.min(...seasonal.map((item) => item.spread))}–${Math.max(...seasonal.map((item) => item.spread))}`, note: "Points between strongest and weakest month" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Stable profiles and narrow seasonal windows",
+      "The spread is the difference between the highest and lowest published monthly Stargazing Trip score for the same representative site. A smaller spread means greater score stability, not necessarily a higher score.",
+      ["Pattern", "Destination", "Score spread", "Strongest month", "Trip", "Weakest month", "Trip", "Access"],
+      selected.map((item) => [item.group, item.destination, String(item.spread), item.bestMonth, String(item.bestTrip), item.weakestMonth, String(item.weakestTrip), item.access === "yes" ? "Public" : "Limited"]),
+      "A monthly score of zero can reflect the absence of astronomical darkness at the representative site's latitude. The comparison describes the shape of the published annual profile; it is not a forecast for a specific night.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -259,6 +333,8 @@ const builders = {
   "longest-night-versus-best-month": longestNightVersusBestMonth,
   "access-versus-score": accessVersusScore,
   "dew-risk-spectrum": dewRiskSpectrum,
+  "wind-risk-spectrum": windRiskSpectrum,
+  "seasonal-score-stability": seasonalScoreStability,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {
@@ -276,6 +352,9 @@ const posts = blogPostSources.map((source): BlogPost => {
 });
 
 for (const post of posts) writeJson(publicPath(`editorial/blog/${post.slug}.json`), post);
-const index: BlogPostSummary[] = posts.map(({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }) => ({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }));
+const index: BlogPostSummary[] = posts
+  .slice()
+  .sort((left, right) => Date.parse(right.publishedAt) - Date.parse(left.publishedAt) || right.slug.localeCompare(left.slug))
+  .map(({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }) => ({ slug, title, seoDescription, standfirst, publishedAt, lastReviewedAt, readingMinutes, heroDestinationSlug, relatedDestinationSlugs }));
 writeJson(publicPath("editorial/blog/index.json"), index);
 console.log(`Built ${posts.length} English blog posts from committed destination data.`);

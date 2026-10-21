@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "clear-night-too-windy-for-telescope",
+  "title": "A clear night can still be too windy for the telescope",
+  "seoDescription": "Compare historical high-wind exposure at eight stargazing destinations and learn why a clear sky alone does not guarantee a usable observing night.",
+  "standfirst": "Cloud is only one way an observing session can fail. At the windier end of our real-data catalog, a large share of astronomical-night hours crosses the pipeline's high-wind threshold—even when the sky itself may be clear.",
+  "publishedAt": "2026-10-21",
+  "lastReviewedAt": "2026-10-21",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "great-barrier-island",
+  "datasetId": "wind-risk-spectrum",
+  "relatedDestinationSlugs": [
+    "aigues-tortes",
+    "alpes-azur-mercantour",
+    "aoraki-mackenzie",
+    "attersee-traunsee",
+    "bulbjerg",
+    "kozushima",
+    "de-boschplaat",
+    "isle-of-sark"
+  ],
+  "methodologyNote": "We calculated the mean high-wind-hour probability across months with astronomical-night observations in each representative site's 1991–2020 ERA5 climate snapshot, then selected the four lowest and four highest means among active real-data destinations whose access is public or limited. The pipeline defines high wind as at least 30 km/h at the ERA5 10-metre wind level. Clear-night and wind percentages are separate historical signals, not simultaneous probabilities, and they are not a live forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Clear sky and steady air are different questions",
+      "paragraphs": [
+        "Cloud forecasts dominate most stargazing plans because opaque sky ends the discussion quickly. Wind is easier to underestimate. Stars can be visible while a telescope image shakes, a lightweight tripod vibrates, a camera strap moves, or a gust turns a large optical tube into a sail. On an exposed coast or ridge, the practical observing window may close well before the sky does. A clear-night signal therefore answers whether cloud is likely to permit a view; it does not answer whether the equipment can remain stable enough to use it.",
+        "Our climate snapshots keep those signals separate. The high-wind metric counts astronomical-night hours when ERA5 wind at ten metres reaches at least 30 kilometres per hour. The article table compares four destinations at each end of the catalog distribution. It does not claim that high wind and clear sky occur in the same hour, and it does not reproduce individual gusts. Its purpose is to reveal which plans deserve a stronger wind contingency before dates, transport, and equipment are fixed."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "The two ends of the historical wind-risk spectrum",
+      "introduction": "Clear-night and high-wind percentages are separate means across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. They are comparison signals, not a joint probability.",
+      "columns": [
+        "Signal group",
+        "Destination",
+        "Clear nights",
+        "High-wind hours",
+        "Trip score",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Calmer end",
+          "Aigüestortes",
+          "25.8%",
+          "0%",
+          "66.4",
+          "Limited"
+        ],
+        [
+          "Calmer end",
+          "Alpes Azur Mercantour",
+          "39.4%",
+          "0%",
+          "75.5",
+          "Limited"
+        ],
+        [
+          "Calmer end",
+          "Aoraki Mackenzie",
+          "19.3%",
+          "0%",
+          "63.2",
+          "Public"
+        ],
+        [
+          "Calmer end",
+          "Attersee-Traunsee",
+          "18.9%",
+          "0%",
+          "56.8",
+          "Limited"
+        ],
+        [
+          "Windier end",
+          "Bulbjerg",
+          "19.4%",
+          "47.7%",
+          "45.2",
+          "Limited"
+        ],
+        [
+          "Windier end",
+          "Kozushima",
+          "29.5%",
+          "44.1%",
+          "65.2",
+          "Limited"
+        ],
+        [
+          "Windier end",
+          "De Boschplaat",
+          "12.2%",
+          "38.9%",
+          "52.4",
+          "Limited"
+        ],
+        [
+          "Windier end",
+          "Isle of Sark",
+          "13.6%",
+          "38.3%",
+          "59.8",
+          "Limited"
+        ]
+      ],
+      "note": "The pipeline defines a high-wind hour as at least 30 km/h at the ERA5 10-metre wind level. The reanalysis grid cannot resolve every exposed ridge, sheltered hollow, gust, or obstruction at the representative site."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the annual contrast matters",
+      "paragraphs": [
+        "The calmer end shows almost no hours crossing this particular threshold in the gridded historical record. That does not mean the selected sites are windless. A breeze below 30 kilometres per hour can still affect a long lens, and local terrain may accelerate air in ways the reanalysis cell does not capture. The result is best read as low exposure to the defined high-wind condition, not as a promise of perfectly steady air or good astronomical seeing.",
+        "The windier group tells a stronger planning story. Maritime islands and exposed northern landscapes can carry high annual means even though their darkness and access remain attractive. A destination can therefore be valuable for naked-eye observing yet demanding for long-exposure imaging or a large telescope. The annual Trip score in the table combines more than wind, so it may remain respectable. That is not a contradiction: a combined score summarises trade-offs, while this comparison isolates the one that can physically destabilise a session."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Visible stars do not guarantee usable optics",
+      "body": "Use clear-night history to shortlist a season, then use the wind signal to choose equipment and a cancellation threshold. For the actual evening, a current hourly forecast and conditions at the official observing site must replace the climate normal."
+    },
+    {
+      "kind": "prose",
+      "heading": "Match the setup to exposure",
+      "paragraphs": [
+        "A wind-aware plan begins with less surface area and fewer loose parts. Keep tripod legs short and properly spread, remove hanging straps, route cables so they cannot tug, and use only ballast that the manufacturer and ground conditions make safe. A lens hood, dew shield, or shroud can increase wind load even when it solves another problem. Sheltering behind a vehicle, wall, or vegetation may help only where parking and site rules allow it, and the shelter itself must not introduce headlights, vibration, falling branches, or unsafe exhaust exposure.",
+        "Equipment choice also changes the threshold. Handheld binoculars, unaided viewing, a compact camera, and a long-focal-length imaging rig do not fail at the same wind speed. A traveller with fixed dates can carry a smaller alternative rather than betting the whole night on the largest setup. No amount of image stabilisation makes an exposed cliff, rough shoreline, or moving tree canopy safe. If gusts affect footing, doors, loose objects, or the return route, the correct response is to stop rather than defend the score."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Move from climate signal to tonight's decision",
+      "paragraphs": [
+        "Start with the destination's monthly profile because an annual mean can hide a calmer season. Once a month is plausible, identify the exact documented observing footprint and read its current official access information. Exposed headlands, island roads, ferries, mountain routes, and seasonal facilities can create consequences that a weather percentage cannot express. Choose a documented fallback with less exposure instead of assuming that any nearby hollow, field, or roadside pull-off is lawful or suitable after dark.",
+        "Near departure, compare sustained wind, gusts, cloud, precipitation, temperature, smoke, and road conditions in a current forecast. Set a simple equipment-specific limit in advance so that sunk travel cost does not move the threshold during the night. ERA5 history is valuable for choosing a resilient destination and season; it is not a live forecast or a microscale site survey. The strongest plan uses the climate signal early, then lets current conditions make the final decision."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations compared",
+      "value": "8",
+      "note": "Four at each end of the catalog distribution"
+    },
+    {
+      "label": "Calmer-end range",
+      "value": "0–0%",
+      "note": "Annual mean share of astronomical-night hours at or above 30 km/h"
+    },
+    {
+      "label": "Windier-end range",
+      "value": "38.3–47.7%",
+      "note": "Annual mean share of astronomical-night hours at or above 30 km/h"
+    }
+  ]
+}

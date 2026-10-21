@@ -44,7 +44,7 @@ export default async function BlogIndexPage({ params }: { params: Promise<{ loca
       <h1>Better questions for darker nights.</h1>
       <p className="lede">Original stories built from our destination, climate, darkness, elevation, and access data. Each article keeps the numbers visible, states its selection rule, and separates historical evidence from current travel conditions.</p>
     </header>
-    <section className="blog-card-grid" aria-label="Pilot articles">
+    <section className="blog-card-grid" aria-label="Articles">
       {resolved.posts.map((post, index) => <article className="blog-card" key={post.slug}>
         {post.image?.status === "approved" && post.image.localPath ? <figure><img src={post.image.localPath} alt={post.image.alt.en} loading={index === 0 ? "eager" : "lazy"} /><figcaption>{post.image.attribution} · <a href={post.image.sourceUrl ?? undefined} rel="noreferrer">Source</a> · <a href={post.image.licenseUrl ?? undefined} rel="noreferrer">License</a></figcaption></figure> : null}
         <div className="blog-card-body">

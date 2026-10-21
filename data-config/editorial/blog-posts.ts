@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -325,6 +325,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "Use the annual comparison to recognise structural risk, then open the destination's monthly profile. Moisture can be seasonal, and an annual mean may hide a substantially drier window. Once dates are fixed, replace climate history with a current forecast and watch the temperature-dew-point spread through the planned observing hours. Local water, vegetation, valleys, fog, and exposed slopes can produce conditions that a broad reanalysis grid does not resolve.",
           "Finally, keep access and weather in the same decision. A dry forecast does not reopen a closed road, and a valid booking does not make condensation harmless. Confirm the exact observing footprint, the return route, and the equipment response before departure. The value of the dew signal is not that it predicts failure; it makes one preventable source of failure visible early enough to choose a better month, bring the right protection, or shorten the plan without surprise.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "clear-night-too-windy-for-telescope",
+    title: "A clear night can still be too windy for the telescope",
+    seoDescription: "Compare historical high-wind exposure at eight stargazing destinations and learn why a clear sky alone does not guarantee a usable observing night.",
+    standfirst: "Cloud is only one way an observing session can fail. At the windier end of our real-data catalog, a large share of astronomical-night hours crosses the pipeline's high-wind threshold—even when the sky itself may be clear.",
+    publishedAt: "2026-10-21",
+    lastReviewedAt: "2026-10-21",
+    readingMinutes: 8,
+    heroDestinationSlug: "great-barrier-island",
+    datasetId: "wind-risk-spectrum",
+    relatedDestinationSlugs: ["aigues-tortes", "alpes-azur-mercantour", "aoraki-mackenzie", "attersee-traunsee", "great-barrier-island", "isle-of-sark", "kozushima", "bulbjerg"],
+    methodologyNote: "We calculated the mean high-wind-hour probability across months with astronomical-night observations in each representative site's 1991–2020 ERA5 climate snapshot, then selected the four lowest and four highest means among active real-data destinations whose access is public or limited. The pipeline defines high wind as at least 30 km/h at the ERA5 10-metre wind level. Clear-night and wind percentages are separate historical signals, not simultaneous probabilities, and they are not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Clear sky and steady air are different questions",
+        paragraphs: [
+          "Cloud forecasts dominate most stargazing plans because opaque sky ends the discussion quickly. Wind is easier to underestimate. Stars can be visible while a telescope image shakes, a lightweight tripod vibrates, a camera strap moves, or a gust turns a large optical tube into a sail. On an exposed coast or ridge, the practical observing window may close well before the sky does. A clear-night signal therefore answers whether cloud is likely to permit a view; it does not answer whether the equipment can remain stable enough to use it.",
+          "Our climate snapshots keep those signals separate. The high-wind metric counts astronomical-night hours when ERA5 wind at ten metres reaches at least 30 kilometres per hour. The article table compares four destinations at each end of the catalog distribution. It does not claim that high wind and clear sky occur in the same hour, and it does not reproduce individual gusts. Its purpose is to reveal which plans deserve a stronger wind contingency before dates, transport, and equipment are fixed.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Why the annual contrast matters",
+        paragraphs: [
+          "The calmer end shows almost no hours crossing this particular threshold in the gridded historical record. That does not mean the selected sites are windless. A breeze below 30 kilometres per hour can still affect a long lens, and local terrain may accelerate air in ways the reanalysis cell does not capture. The result is best read as low exposure to the defined high-wind condition, not as a promise of perfectly steady air or good astronomical seeing.",
+          "The windier group tells a stronger planning story. Maritime islands and exposed northern landscapes can carry high annual means even though their darkness and access remain attractive. A destination can therefore be valuable for naked-eye observing yet demanding for long-exposure imaging or a large telescope. The annual Trip score in the table combines more than wind, so it may remain respectable. That is not a contradiction: a combined score summarises trade-offs, while this comparison isolates the one that can physically destabilise a session.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Visible stars do not guarantee usable optics",
+        body: "Use clear-night history to shortlist a season, then use the wind signal to choose equipment and a cancellation threshold. For the actual evening, a current hourly forecast and conditions at the official observing site must replace the climate normal.",
+      },
+      {
+        kind: "prose",
+        heading: "Match the setup to exposure",
+        paragraphs: [
+          "A wind-aware plan begins with less surface area and fewer loose parts. Keep tripod legs short and properly spread, remove hanging straps, route cables so they cannot tug, and use only ballast that the manufacturer and ground conditions make safe. A lens hood, dew shield, or shroud can increase wind load even when it solves another problem. Sheltering behind a vehicle, wall, or vegetation may help only where parking and site rules allow it, and the shelter itself must not introduce headlights, vibration, falling branches, or unsafe exhaust exposure.",
+          "Equipment choice also changes the threshold. Handheld binoculars, unaided viewing, a compact camera, and a long-focal-length imaging rig do not fail at the same wind speed. A traveller with fixed dates can carry a smaller alternative rather than betting the whole night on the largest setup. No amount of image stabilisation makes an exposed cliff, rough shoreline, or moving tree canopy safe. If gusts affect footing, doors, loose objects, or the return route, the correct response is to stop rather than defend the score.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Move from climate signal to tonight's decision",
+        paragraphs: [
+          "Start with the destination's monthly profile because an annual mean can hide a calmer season. Once a month is plausible, identify the exact documented observing footprint and read its current official access information. Exposed headlands, island roads, ferries, mountain routes, and seasonal facilities can create consequences that a weather percentage cannot express. Choose a documented fallback with less exposure instead of assuming that any nearby hollow, field, or roadside pull-off is lawful or suitable after dark.",
+          "Near departure, compare sustained wind, gusts, cloud, precipitation, temperature, smoke, and road conditions in a current forecast. Set a simple equipment-specific limit in advance so that sunk travel cost does not move the threshold during the night. ERA5 history is valuable for choosing a resilient destination and season; it is not a live forecast or a microscale site survey. The strongest plan uses the climate signal early, then lets current conditions make the final decision.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "year-round-stargazing-or-narrow-season",
+    title: "Year-round stargazing or a narrow season? Eight destinations compared",
+    seoDescription: "Compare the most stable and most seasonal monthly stargazing score profiles to see when annual averages hide a narrow observing window.",
+    standfirst: "Two destinations can share a credible annual story while demanding completely different calendars. The spread between their strongest and weakest monthly Trip scores reveals whether flexibility matters a little—or everything.",
+    publishedAt: "2026-10-21",
+    lastReviewedAt: "2026-10-21",
+    readingMinutes: 8,
+    heroDestinationSlug: "westhavelland",
+    datasetId: "seasonal-score-stability",
+    relatedDestinationSlugs: ["richtersveld", "namibrand", "alula", "rakiura", "mon-and-nyord", "westhavelland", "rhoen", "jasper"],
+    methodologyNote: "For every active real-data destination whose representative site is public or limited, we subtracted the lowest of its twelve published monthly Stargazing Trip scores from the highest. We then selected the four smallest and four largest spreads. The score combines the catalog's historical darkness, climate, comfort, and access inputs. A zero can reflect the absence of astronomical darkness at that latitude in a calendar month. The comparison is a historical profile analysis, not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "An annual average hides the shape of the year",
+        paragraphs: [
+          "Annual summaries are useful when a traveller has not chosen dates, but they compress twelve different decisions into one number. A destination that stays within a narrow score band can tolerate a flexible calendar, while another may swing from an excellent shoulder-season month to no astronomical darkness at all. The same annual mean can therefore describe either dependable conditions or a brief opportunity surrounded by weak months. For trip planning, the shape of the monthly profile can matter as much as its overall level.",
+          "We measure that shape with a simple spread: the highest published Stargazing Trip score minus the lowest for the same representative site. The table selects the four smallest and four largest spreads among active destinations with real snapshots and documented public or limited access. This is not a ranking of the best places. A stable low score remains low, and a highly seasonal destination may deliver the stronger peak. The spread measures calendar sensitivity, not absolute quality.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Stable can mean forgiving—or consistently difficult",
+        paragraphs: [
+          "Several dry, dark destinations hold strong scores through much of the year because their artificial-light conditions barely change and their climate inputs vary within a relatively small range. That makes date selection more forgiving, especially for travellers who can adjust only the Moon phase or choose between adjacent weeks. The small spread does not remove heat, cold, permits, road conditions, or limited access. It says only that the model does not see a large gap between the strongest and weakest calendar month.",
+          "Stability also needs context at cloudier sites. A narrow range can occur because no season becomes outstanding, not because every month is excellent. Rakiura in the selected stable group illustrates why the strongest-month and weakest-month scores must stay beside the spread. The useful question is two-part: how high does the profile reach, and how sharply does it change? Reading only one of those answers can turn a descriptive statistic into a false recommendation.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Score spread measures timing risk, not destination quality",
+        body: "A small spread supports flexible scheduling only when the underlying scores meet your needs. A large spread is not a defect if you can travel inside the strong window and verify current access and weather.",
+      },
+      {
+        kind: "prose",
+        heading: "Why northern profiles can collapse in summer",
+        paragraphs: [
+          "At higher northern latitudes, the Sun may never reach 18 degrees below the horizon around early summer. Under the astronomical definition used by the pipeline, those months have no astronomical night. A monthly Trip score can consequently fall to zero even though visitors still experience twilight and may see bright stars or planets. That zero is not a statement that the landscape is poor. It states that the destination cannot offer the specific deep-dark condition the score is designed to compare.",
+          "Climate can widen the profile for other reasons. Cloud, temperature, wind, and wet-hour history shift through the year, while the amount of darkness changes simultaneously. The strongest month is therefore not automatically the winter solstice month, as our separate longest-night analysis shows. Large-spread destinations reward deliberate timing: identify the strong band in the monthly chart first, then compare the practical conditions and official access within that band rather than relying on a generic winter rule.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Choose flexibility before choosing the destination",
+        paragraphs: [
+          "A fixed-date traveller should begin with the calendar. Remove destinations whose monthly profile is structurally weak for those dates, then compare the remaining sky, comfort, access, and travel effort. A flexible traveller can reverse the process: choose a compelling destination, locate its strongest historical window, and reserve enough date flexibility for the Moon and current weather. In both cases, the spread helps expose how costly a one-month mistake could be before flights, accommodation, or long drives are committed.",
+          "The final decision still belongs to current information. Open the destination guide, select an exact documented observing site, and verify its current official rules, route, seasonal operation, and closures. Then add the Moon and a live forecast. Historical monthly scores are designed to narrow a large catalog into realistic seasons; they cannot guarantee a particular night. A stable profile buys planning tolerance, while a seasonal profile demands precision. Neither replaces the last check at departure.",
         ],
       },
     ],

@@ -9,8 +9,11 @@ const indexPath = publicPath("editorial/blog/index.json");
 const index = existsSync(indexPath) ? readJson<BlogPostSummary[]>(indexPath) : [];
 const images = readJson<ImageManifest>(publicPath("images/manifest.json"));
 
-if (blogPostSources.length !== 6) errors.push(`Expected exactly six reviewed articles, found ${blogPostSources.length}`);
+if (blogPostSources.length !== 8) errors.push(`Expected exactly eight reviewed articles, found ${blogPostSources.length}`);
 if (index.length !== blogPostSources.length) errors.push(`Blog index has ${index.length} posts, expected ${blogPostSources.length}`);
+for (let position = 1; position < index.length; position += 1) {
+  if (Date.parse(index[position - 1].publishedAt) < Date.parse(index[position].publishedAt)) errors.push("Blog index must be ordered from newest to oldest");
+}
 if (new Set(blogPostSources.map((post) => post.slug)).size !== blogPostSources.length) errors.push("Blog slugs must be unique");
 if (new Set(blogPostSources.map((post) => post.title)).size !== blogPostSources.length) errors.push("Blog titles must be unique");
 
@@ -53,5 +56,5 @@ if (errors.length > 0) {
   errors.forEach((error) => console.error(error));
   process.exitCode = 1;
 } else {
-  console.log("Validated six unique English articles, generated evidence tables, internal links, and approved hero-image provenance.");
+  console.log("Validated eight unique English articles, newest-first ordering, generated evidence tables, internal links, and approved hero-image provenance.");
 }
