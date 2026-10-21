@@ -1554,6 +1554,8 @@ h1 span {
   letter-spacing: 0;
 }
 
+.destination-score-scale::before { content: "/"; }
+
 .destination-score-card p,
 .destination-site-card p,
 .destination-plan-card p {
