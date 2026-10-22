@@ -1,3 +1,4 @@
+import { CookieSettingsButton } from "@/components/cookie-consent";
 import type { Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
 import { legal } from "@/lib/legal/config";
@@ -15,6 +16,7 @@ export function LegalFooter({ locale }: { locale: Locale }) {
         <a href={localizedLinks.contact(locale)}>{de ? "Kontakt" : "Contact"}</a>
         <a href={localizedLinks.imprint(locale)}>{de ? "Impressum" : "Imprint"}</a>
         <a href={localizedLinks.privacy(locale)}>{de ? "Datenschutz" : "Privacy"}</a>
+        <CookieSettingsButton locale={locale} />
       </nav>
     </footer>
   );
