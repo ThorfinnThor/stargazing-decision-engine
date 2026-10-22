@@ -60,3 +60,10 @@ test("privacy notice documents Google Analytics 4 in both languages", () => {
     assert.match(privacy, phrase);
   }
 });
+
+test("privacy notice discloses Cloudflare Web Analytics and GetYourGuide on-device storage", () => {
+  const privacy = read("app/[locale]/privacy/page.tsx");
+  for (const phrase of [/Cloudflare Web Analytics/, /static\.cloudflareinsights\.com/, /\/cdn-cgi\/rum/, /„session_id“/, /“session_id”/, /gyg_visitor_id/, /partner_id/, /collector\.getyourguide\.com/]) {
+    assert.match(privacy, phrase);
+  }
+});
