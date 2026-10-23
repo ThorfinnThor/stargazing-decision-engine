@@ -4049,3 +4049,15 @@ h3 {
   .gear-category-nav, .gear-page-nav { gap: 0.5rem; }
   .gear-category-nav a, .gear-page-nav a { font-size: 0.8rem; padding: 0.7rem; }
 }
+
+.destinations-index { padding-top: 2.25rem; }
+.destinations-index a { color: var(--blue); text-underline-offset: 0.2em; }
+.destinations-index-jump { display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; margin-top: 1.25rem; font-size: 0.8rem; }
+.destinations-index-continent { padding-bottom: 2.5rem; scroll-margin-top: 5rem; }
+.destinations-index-continent h2 { margin: 2rem 0 1rem; color: var(--paper); font-family: Georgia, "Times New Roman", serif; font-size: var(--type-section-title); font-weight: 400; }
+.destinations-index-country { display: grid; grid-template-columns: minmax(9rem, 14rem) minmax(0, 1fr); gap: 1rem; padding: 1rem 0; border-top: 1px solid rgb(255 255 255 / 12%); }
+.destinations-index-country h3 { margin: 0; color: var(--gold); font: 700 0.7rem/1.6 ui-monospace, monospace; letter-spacing: 0.08em; text-transform: uppercase; }
+.destinations-index-country ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); gap: 1rem 2rem; margin: 0; padding: 0; list-style: none; }
+.destinations-index-country li a { font-weight: 700; }
+.destinations-index-country li p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.5; }
+@media (max-width: 700px) { .destinations-index-country { grid-template-columns: 1fr; } }

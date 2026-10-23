@@ -3,12 +3,12 @@
   "destinationId": "flagstaff",
   "slug": "flagstaff",
   "seoTitle": {
-    "en": "Flagstaff stargazing guide and observing sites",
-    "de": "Stargazing-Guide Flagstaff und Beobachtungsorte"
+    "en": "Flagstaff stargazing: Lowell Observatory, Buffalo Park and city skies",
+    "de": "Flagstaff: Lowell Observatory, Buffalo Park und der Himmel über der Stadt"
   },
   "seoDescription": {
-    "en": "Plan a sourced stargazing night in Flagstaff with two real sites, current access checks and a practical return route.",
-    "de": "Plane eine belegte Beobachtungsnacht in Flagstaff mit zwei realen Orten, Zugangsprüfung und praktischem Rückweg."
+    "en": "Stargazing in Flagstaff, the world's first International Dark Sky Place (2001): Lowell Observatory tickets and hours, Buffalo Park rules, winter ice and an easy return.",
+    "de": "Sterne in Flagstaff, dem ersten International Dark Sky Place der Welt (2001): Tickets und Zeiten im Lowell Observatory, Regeln im Buffalo Park, Glatteis im Winter."
   },
   "standfirst": {
     "en": "Flagstaff protects darkness inside a working city. Lowell Observatory provides structured public astronomy with tickets and hours, whereas Buffalo Park is an outdoor recreation space whose current rules and closing arrangements need their own check. Event capacity, park hours, winter ice and nearby urban light make the two experiences fundamentally different. The page separates astronomy calculated for each site from the live decisions that remain with the visitor and managing authority; Flagstaff cannot remove that uncertainty.",
@@ -19,6 +19,27 @@
     "de": "Buche Lowell, wenn Vermittlung zählt; wähle Buffalo nur nach bestätigtem Abendzugang und einfachem Rückweg. Wenn sich Außenbedingungen verschlechtern, bleibe bei einem gebuchten Innenprogramm oder verschiebe den Abend. Das Ergebnis ist ein brauchbarer Abend statt einer Sammlung schöner, aber unvereinbarer Kartenmarken; dies setzt die Abbruchgrenze in Flagstaff."
   },
   "sections": [
+    {
+      "id": "flagstaff-dark-sky-city",
+      "heading": {
+        "en": "Why Flagstaff became the first International Dark Sky Place",
+        "de": "Warum Flagstaff der erste International Dark Sky Place wurde"
+      },
+      "paragraphs": {
+        "en": [
+          "DarkSky International records Flagstaff as the world's first International Dark Sky Place, designated in 2001. The roots go back much further: the city, home to Lowell Observatory and the Naval Observatory Flagstaff Station, enacted the world's first outdoor lighting ordinance in 1958. That long policy history is why a city of this size still offers a usable night sky close to its streets.",
+          "Lowell Observatory sits at about 7,250 feet on Mars Hill, roughly a mile west of historic downtown, and is where Pluto was discovered. General admission includes guided tours, exhibits and stargazing, and the observatory usually opens its telescopes around sunset, which ranges from about 4:30 pm in winter to 8 pm in summer. Overnight parking and camping are not permitted on campus, so plan the drive back into town before you arrive."
+        ],
+        "de": [
+          "DarkSky International führt Flagstaff als ersten International Dark Sky Place der Welt, ausgezeichnet im Jahr 2001. Die Wurzeln reichen viel weiter zurück: Die Stadt, Sitz des Lowell Observatory und der Naval Observatory Flagstaff Station, erließ 1958 die weltweit erste Verordnung für Außenbeleuchtung. Diese lange Tradition erklärt, warum eine Stadt dieser Größe noch einen brauchbaren Nachthimmel nahe ihren Straßen bietet.",
+          "Das Lowell Observatory liegt auf rund 7.250 Fuß Höhe auf dem Mars Hill, etwa eine Meile westlich der historischen Innenstadt, und ist der Ort, an dem Pluto entdeckt wurde. Der allgemeine Eintritt umfasst Führungen, Ausstellungen und Sternbeobachtung; die Teleskope öffnen meist gegen Sonnenuntergang, im Winter etwa ab 16:30 Uhr, im Sommer gegen 20 Uhr. Übernachten und Campen auf dem Gelände ist nicht erlaubt, plane die Rückfahrt in die Stadt also vorher."
+        ]
+      },
+      "sourceIds": [
+        "flagstaff-designation",
+        "flagstaff-access"
+      ]
+    },
     {
       "id": "flagstaff-field",
       "heading": {
@@ -248,6 +269,19 @@
   "faq": [
     {
       "question": {
+        "en": "What is the best way to go stargazing in Flagstaff?",
+        "de": "Wie gelingt Sternbeobachtung in Flagstaff am besten?"
+      },
+      "answer": {
+        "en": "For most visitors the simplest choice is an evening at Lowell Observatory, where general admission includes stargazing and the telescopes usually open around sunset. No reservation is needed for general admission, but hours vary by weekday and season, so check the observatory's current schedule and the local forecast before driving up Mars Hill.",
+        "de": "Für die meisten Besucher ist ein Abend im Lowell Observatory die einfachste Wahl: Der allgemeine Eintritt umfasst Sternbeobachtung, und die Teleskope öffnen meist gegen Sonnenuntergang. Für den allgemeinen Eintritt ist keine Reservierung nötig, doch die Zeiten wechseln nach Wochentag und Saison; prüfe daher den aktuellen Plan und die Wettervorhersage, bevor du auf den Mars Hill fährst."
+      },
+      "sourceIds": [
+        "flagstaff-access"
+      ]
+    },
+    {
+      "question": {
         "en": "Is Lowell Observatory visitor campus guaranteed to be open at night?",
         "de": "Ist Lowell Observatory visitor campus nachts garantiert offen?"
       },
@@ -283,7 +317,7 @@
       "publisher": "DarkSky International",
       "title": "Flagstaff Dark Sky Community",
       "url": "https://darksky.org/places/flagstaff-arizona-dark-sky-community/",
-      "checkedAt": "2026-09-08",
+      "checkedAt": "2026-10-23",
       "authority": "nonprofit-certifier"
     },
     {
@@ -291,7 +325,7 @@
       "publisher": "Lowell Observatory",
       "title": "Visitor information",
       "url": "https://lowell.edu/visit/",
-      "checkedAt": "2026-09-08",
+      "checkedAt": "2026-10-23",
       "authority": "science-institution"
     },
     {
@@ -303,5 +337,5 @@
       "authority": "public-agency"
     }
   ],
-  "lastReviewedAt": "2026-09-08"
+  "lastReviewedAt": "2026-10-23"
 }

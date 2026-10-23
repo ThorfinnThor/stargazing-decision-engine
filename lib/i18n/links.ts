@@ -3,6 +3,7 @@ import type { Locale } from "./config";
 export const localizedLinks = {
   home: (locale: Locale) => `/${locale}/`,
   finder: (locale: Locale) => `/${locale}/finder/`,
+  destinations: (locale: Locale) => `/${locale}/stargazing-destinations/`,
   destination: (locale: Locale, slug: string) => `/${locale}/stargazing-destinations/${slug}/`,
   locationTours: (locale: Locale) => `/${locale}/stargazing-tours/`,
   locationTour: (locale: Locale, slug: string) => `/${locale}/stargazing-tours/${slug}/`,
