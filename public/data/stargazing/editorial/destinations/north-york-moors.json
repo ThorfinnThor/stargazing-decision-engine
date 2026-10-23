@@ -3,8 +3,8 @@
   "destinationId": "north-york-moors",
   "slug": "north-york-moors",
   "seoTitle": {
-    "en": "North York Moors stargazing: Sutton Bank, Dalby or Danby?",
-    "de": "Stargazing in den North York Moors: Sutton Bank, Dalby oder Danby?"
+    "en": "Sutton Bank stargazing: North York Moors Dark Sky Reserve guide",
+    "de": "Sutton Bank: Sterne beobachten im Dark Sky Reserve North York Moors"
   },
   "seoDescription": {
     "en": "Choose between a booked Sutton Bank or Danby event and a named Dark Sky Discovery Site, with practical forest and moorland access checks.",
@@ -19,6 +19,28 @@
     "de": "North York Moors wird einfacher, sobald der Abend einem einzigen Ort gehört. Sutton Bank, Danby Lodge und Dalby bieten verschiedene Erlebnisse, deshalb verbindet dieser Guide sie nicht zu einer Rundfahrt. Eine Buchung oder aktuelle ortsspezifische Zugangsprüfung sollte sowohl den Beobachtungsplatz als auch das Ende der Nacht festlegen."
   },
   "sections": [
+    {
+      "id": "sutton-bank-dark-sky-reserve",
+      "heading": {
+        "en": "Sutton Bank, Danby and Dalby inside an International Dark Sky Reserve",
+        "de": "Sutton Bank, Danby und Dalby in einem International Dark Sky Reserve"
+      },
+      "paragraphs": {
+        "en": [
+          "The North York Moors is an International Dark Sky Reserve designated by DarkSky, and the National Park Authority names three Dark Sky Discovery Sites of the Milky Way class: the National Park Centres at Sutton Bank and Danby, and Dalby Observatories in Dalby Forest. The class name means the galaxy is often visible to the naked eye there. At Sutton Bank, the Nature and Star Hub explains the changing sky and hosts booked stargazing evenings with an astronomer.",
+          "The park's own guidance is useful for timing a trip. The Milky Way stands overhead on autumn and early winter evenings, the Andromeda Galaxy is visible to the naked eye from the moors, and the Northern Lights are seen occasionally, especially on the coast, so alert services are worth installing. The annual Dark Skies Festival runs for 17 days in February, and a Fringe Festival fills the October half term with further events."
+        ],
+        "de": [
+          "Die North York Moors sind ein von DarkSky ausgezeichnetes International Dark Sky Reserve, und die Nationalparkverwaltung nennt drei Dark Sky Discovery Sites der Milchstraßen-Klasse: die Nationalparkzentren in Sutton Bank und Danby sowie die Dalby Observatories im Dalby Forest. Der Klassenname bedeutet, dass die Galaxie dort oft mit bloßem Auge sichtbar ist. In Sutton Bank erklärt der Nature and Star Hub den Himmel im Jahreslauf und bietet buchbare Sternabende mit einem Astronomen.",
+          "Die Hinweise des Parks helfen beim Timing einer Reise. Die Milchstraße steht an Herbst- und frühen Winterabenden im Zenit, die Andromedagalaxie ist von den Mooren mit bloßem Auge zu sehen, und Polarlichter zeigen sich gelegentlich, vor allem an der Küste, weshalb sich Warn-Apps lohnen. Das jährliche Dark Skies Festival dauert 17 Tage im Februar, und ein Fringe Festival bringt in den Herbstferien im Oktober weitere Veranstaltungen."
+        ]
+      },
+      "sourceIds": [
+        "nym-sites",
+        "nym-events",
+        "nym-hub"
+      ]
+    },
     {
       "id": "choose-one-discovery-site",
       "heading": {
@@ -248,6 +270,19 @@
   "faq": [
     {
       "question": {
+        "en": "Can you see the Milky Way and Northern Lights from Sutton Bank?",
+        "de": "Sieht man von Sutton Bank die Milchstraße und Polarlichter?"
+      },
+      "answer": {
+        "en": "Sutton Bank is one of the park's Milky Way class Dark Sky Discovery Sites, so on a clear, moonless autumn or winter evening the galaxy is often visible to the naked eye. The Northern Lights do appear over the North York Moors, but rarely and unpredictably, so the park recommends signing up to aurora alert services.",
+        "de": "Sutton Bank ist eine der Dark Sky Discovery Sites der Milchstraßen-Klasse im Park, daher ist die Galaxie an klaren, mondlosen Herbst- und Winterabenden oft mit bloßem Auge sichtbar. Polarlichter erscheinen über den North York Moors zwar, aber selten und schwer vorhersehbar, weshalb der Park empfiehlt, sich für Polarlicht-Warnungen anzumelden."
+      },
+      "sourceIds": [
+        "nym-sites"
+      ]
+    },
+    {
+      "question": {
         "en": "Which North York Moors site should I choose?",
         "de": "Welchen Ort in North York Moors sollte ich wählen?"
       },
@@ -283,7 +318,7 @@
       "publisher": "North York Moors National Park Authority",
       "title": "Where to go and what to see",
       "url": "https://www.northyorkmoors.org.uk/things-to-do/stargazing-and-dark-skies/where-to-go-and-what-to-see",
-      "checkedAt": "2026-08-29",
+      "checkedAt": "2026-10-23",
       "authority": "public-agency"
     },
     {
@@ -291,7 +326,7 @@
       "publisher": "North York Moors National Park Authority",
       "title": "Festivals, events and activities",
       "url": "https://www.northyorkmoors.org.uk/things-to-do/stargazing-and-dark-skies/festivals-events-and-activities",
-      "checkedAt": "2026-08-29",
+      "checkedAt": "2026-10-23",
       "authority": "public-agency"
     },
     {
@@ -299,9 +334,9 @@
       "publisher": "North York Moors National Park Authority",
       "title": "Sutton Bank Star and Nature Hub",
       "url": "https://www.northyorkmoors.org.uk/things-to-do/attractions/sutton-bank-national-park-centre/star-and-nature-hub",
-      "checkedAt": "2026-08-29",
+      "checkedAt": "2026-10-23",
       "authority": "public-agency"
     }
   ],
-  "lastReviewedAt": "2026-09-08"
+  "lastReviewedAt": "2026-10-23"
 }

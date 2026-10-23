@@ -3,8 +3,8 @@
   "destinationId": "cherry-springs",
   "slug": "cherry-springs",
   "seoTitle": {
-    "en": "Cherry Springs stargazing: public field, permits and a practical night",
-    "de": "Sterne in Cherry Springs: Besucherfläche, Permit und Nachtplan"
+    "en": "Cherry Springs State Park stargazing: dark sky, Milky Way and permits",
+    "de": "Cherry Springs State Park: dunkler Himmel, Milchstraße und Permits"
   },
   "seoDescription": {
     "en": "Choose the correct Cherry Springs stargazing area, understand overnight permits and plan a low-light observing session with official Pennsylvania guidance.",
@@ -39,6 +39,26 @@
         "chsp-stargazing",
         "chsp-park",
         "chsp-permit"
+      ]
+    },
+    {
+      "id": "why-the-sky-is-dark",
+      "heading": {
+        "en": "What keeps the Cherry Springs sky so dark",
+        "de": "Was den Himmel über Cherry Springs so dunkel hält"
+      },
+      "paragraphs": {
+        "en": [
+          "Pennsylvania DCNR explains the park's darkness with geography rather than marketing. Cherry Springs sits on top of a 2,300-foot mountain surrounded by relatively undeveloped state forest, while nearby communities lie in valleys that shield their light from the summit. Inside the park, all lighting is shielded and white light has been converted to red, so the site itself does not undo what the landscape provides.",
+          "DCNR also notes that the park's position, at about 41.65 degrees north, gives a good view toward the core of the Milky Way, and that the astronomy field offers an open 360-degree horizon. In practice that makes the summer months, when the galactic core stands above the southern horizon in the evening, the most rewarding season for a first visit. The park links a Clear Sky Chart on its stargazing page, which is worth reading alongside an ordinary weather forecast."
+        ],
+        "de": [
+          "Das Pennsylvania DCNR erklärt die Dunkelheit des Parks mit der Geografie statt mit Werbesprache. Cherry Springs liegt auf einem 2.300 Fuß hohen Berg inmitten weitgehend unbebauter Staatsforste, während die nächsten Orte in Tälern liegen, die ihr Licht vom Gipfel abschirmen. Im Park selbst ist jede Beleuchtung abgeschirmt und weißes Licht durch rotes ersetzt, sodass der Ort nicht zunichtemacht, was die Landschaft bietet.",
+          "Das DCNR weist außerdem darauf hin, dass die Lage des Parks auf etwa 41,65 Grad Nord einen guten Blick auf das Zentrum der Milchstraße erlaubt und das Astronomiefeld einen freien Rundumhorizont von 360 Grad bietet. Praktisch macht das die Sommermonate, in denen das galaktische Zentrum abends über dem Südhorizont steht, zur lohnendsten Saison für einen ersten Besuch. Auf der Stargazing-Seite verlinkt der Park ein Clear Sky Chart, das man neben einer normalen Wettervorhersage lesen sollte."
+        ]
+      },
+      "sourceIds": [
+        "chsp-stargazing"
       ]
     },
     {
@@ -266,6 +286,19 @@
         "chsp-etiquette",
         "chsp-permit"
       ]
+    },
+    {
+      "question": {
+        "en": "When is the best time to see the Milky Way at Cherry Springs?",
+        "de": "Wann sieht man die Milchstraße in Cherry Springs am besten?"
+      },
+      "answer": {
+        "en": "DCNR highlights the park's clear view toward the core of the Milky Way. That core is highest in the evening sky during summer, so plan a moonless night between late spring and early autumn, then check the park's linked Clear Sky Chart and current conditions on the day before driving to the mountaintop.",
+        "de": "Das DCNR hebt den freien Blick des Parks auf das Zentrum der Milchstraße hervor. Dieses Zentrum steht im Sommer abends am höchsten, plane also eine mondlose Nacht zwischen spätem Frühjahr und frühem Herbst und prüfe am Tag selbst das verlinkte Clear Sky Chart und die aktuellen Bedingungen, bevor du auf den Berg fährst."
+      },
+      "sourceIds": [
+        "chsp-stargazing"
+      ]
     }
   ],
   "sources": [
@@ -274,7 +307,7 @@
       "publisher": "Pennsylvania Department of Conservation and Natural Resources",
       "title": "Stargazing and Astronomy at Cherry Springs State Park",
       "url": "https://www.pa.gov/agencies/dcnr/recreation/where-to-go/state-parks/find-a-park/cherry-springs-state-park/stargazing",
-      "checkedAt": "2026-08-29",
+      "checkedAt": "2026-10-23",
       "authority": "public-agency"
     },
     {
@@ -302,5 +335,5 @@
       "authority": "public-agency"
     }
   ],
-  "lastReviewedAt": "2026-09-08"
+  "lastReviewedAt": "2026-10-23"
 }

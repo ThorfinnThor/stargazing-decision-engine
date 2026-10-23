@@ -226,6 +226,14 @@ for (const locale of config.locales) {
     id: `about-${locale}`, pageType: "about", locale, path: `/${locale}/about/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/about/`])),
     title: locale === "de" ? "Über Stargazing Index" : "About Stargazing Index", h1: locale === "de" ? "Entscheidungen für bessere Nächte." : "Decisions for better nights.", description: locale === "de" ? "So verbindet Stargazing Index Klimadaten, Astronomie, Standortrecherche und redaktionelle Prüfung zu nachvollziehbaren Reiseentscheidungen." : "How Stargazing Index combines climate data, astronomy, location research, and editorial review into practical travel decisions.", lastModified: editorialLastModified, resultCount: 3, confidence: "high", uniqueInsightCount: 3, internalLinkCount: 3,
   }));
+  const guidedDestinations = activeDestinations.filter((destination) => destinationGuidesBySlug.has(destination.slug));
+  pages.push(makePage({
+    id: `destinations-${locale}`, pageType: "destinations", locale, path: `/${locale}/stargazing-destinations/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/stargazing-destinations/`])),
+    title: locale === "de" ? "Reiseziele für Sternbeobachtung nach Kontinent und Land" : "Stargazing destinations by continent and country",
+    h1: locale === "de" ? "Reiseziele für dunkle Himmel" : "Destinations for dark skies",
+    description: locale === "de" ? "Alle geprüften Dark-Sky-Reiseziele nach Kontinent und Land, jeweils mit quellenbasiertem Himmelsführer, Zugangshinweisen und Monatsvergleich." : "Every reviewed dark-sky destination by continent and country, each with a source-backed sky guide, access notes and a month-by-month comparison.",
+    lastModified: latestTimestamp(dataLastModified, ...destinationGuides.map((guide) => guide.lastReviewedAt)), resultCount: guidedDestinations.length, confidence: "high", uniqueInsightCount: guidedDestinations.length, internalLinkCount: guidedDestinations.length + 1,
+  }));
   for (const destination of activeDestinations) {
     const path = `/${locale}/stargazing-destinations/${destination.slug}/`;
     const published = readJson<DestinationMonthlySummary>(publicPath(`monthly/destinations/${destination.slug}.json`));

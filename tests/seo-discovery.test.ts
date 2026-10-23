@@ -140,5 +140,17 @@ test("structured data connects pages to the site, publisher, and breadcrumbs", (
   const destination = buildWebPageStructuredData({ name: "Westhavelland", description: "Description", url: "https://stargazingindex.com/de/stargazing-destinations/westhavelland/", inLanguage: "de" });
   const breadcrumb = destination["@graph"].find((item) => item["@type"] === "BreadcrumbList");
   assert.ok(breadcrumb);
-  assert.equal((breadcrumb?.itemListElement as Array<unknown>).length, 2);
+  const trail = breadcrumb?.itemListElement as Array<{ item: string }>;
+  assert.equal(trail.length, 3);
+  assert.equal(trail[1]?.item, "https://stargazingindex.com/de/stargazing-destinations/");
+});
+
+test("the destinations hub is an indexable, sitemap-listed page linked from the header", () => {
+  const registry = JSON.parse(readFileSync(resolve(process.cwd(), "public/data/stargazing/seo/registry.json"), "utf8")) as { pages: Array<{ path: string; pageType: string; indexable: boolean }> };
+  for (const locale of ["en", "de"]) {
+    const hub = registry.pages.find((page) => page.path === `/${locale}/stargazing-destinations/`);
+    assert.equal(hub?.pageType, "destinations");
+    assert.equal(hub?.indexable, true);
+  }
+  assert.match(readFileSync(resolve(process.cwd(), "components/site-header.tsx"), "utf8"), /localizedLinks\.destinations\(locale\)/);
 });

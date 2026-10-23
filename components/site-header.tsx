@@ -5,7 +5,7 @@ import { LocaleSwitcher } from "@/components/locale-switcher";
 export function SiteHeader({ locale }: { locale: Locale }) {
   const isGerman = locale === "de";
   const items = [
-    { href: `${localizedLinks.home(locale)}#catalog`, label: isGerman ? "Ziele" : "Destinations" },
+    { href: localizedLinks.destinations(locale), label: isGerman ? "Ziele" : "Destinations" },
     { href: localizedLinks.finder(locale), label: "Finder" },
     { href: localizedLinks.locationTours(locale), label: isGerman ? "Nachtpläne" : "Night plans" },
     { href: localizedLinks.gear(locale), label: isGerman ? "Ausrüstung" : "Gear" },

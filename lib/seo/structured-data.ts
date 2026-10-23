@@ -65,7 +65,7 @@ function breadcrumbs(url: URL, locale: "en" | "de", pageName: string) {
     item: `${url.origin}/${locale}/`,
   }];
   const firstSegment = contentSegments[0];
-  if ((firstSegment === "gear" || firstSegment === "stargazing-tours" || firstSegment === "blog") && contentSegments.length > 1) {
+  if ((firstSegment === "gear" || firstSegment === "stargazing-tours" || firstSegment === "stargazing-destinations" || firstSegment === "blog") && contentSegments.length > 1) {
     items.push({
       "@type": "ListItem",
       position: items.length + 1,
