@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -429,6 +429,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "A fixed-date traveller should begin with the calendar. Remove destinations whose monthly profile is structurally weak for those dates, then compare the remaining sky, comfort, access, and travel effort. A flexible traveller can reverse the process: choose a compelling destination, locate its strongest historical window, and reserve enough date flexibility for the Moon and current weather. In both cases, the spread helps expose how costly a one-month mistake could be before flights, accommodation, or long drives are committed.",
           "The final decision still belongs to current information. Open the destination guide, select an exact documented observing site, and verify its current official rules, route, seasonal operation, and closures. Then add the Moon and a live forecast. Historical monthly scores are designed to narrow a large catalog into realistic seasons; they cannot guarantee a particular night. A stable profile buys planning tolerance, while a seasonal profile demands precision. Neither replaces the last check at departure.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "does-stargazing-need-perfectly-clear-skies",
+    title: "Does stargazing need perfectly clear skies? The threshold changes the odds",
+    seoDescription: "Compare clear-night and good-night probabilities at eight destinations to see how a wider cloud tolerance changes historical stargazing opportunities.",
+    standfirst: "A night does not have to be cloudless to be useful. Across eight real-data destinations, changing the accepted cloud ceiling from 20% to 40% creates a surprisingly different historical opportunity window.",
+    publishedAt: "2026-10-25",
+    lastReviewedAt: "2026-10-25",
+    readingMinutes: 8,
+    heroDestinationSlug: "great-barrier-island",
+    datasetId: "good-versus-clear-night",
+    relatedDestinationSlugs: ["pico-do-arieiro", "great-barrier-island", "kangaroo-island", "river-murray", "kissimmee-prairie", "big-cypress", "tenerife", "kalbarri"],
+    methodologyNote: "For every active real-data destination whose representative site has public or limited access, we averaged clear-night and good-night probabilities across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. Both metrics require at least three consecutive dry astronomical-night hours. Clear hours allow no more than 20% cloud cover; good hours allow no more than 40%. We selected the eight largest percentage-point gaps. These are historical gridded-climate signals, not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Useful sky is not a single definition",
+        paragraphs: [
+          "A forecast icon often reduces the sky to clear or cloudy, but an observing session has a more practical question: how much cloud can the activity tolerate? A wide-field visual tour can remain rewarding with broken cloud if large openings move through the sky. A long unattended exposure sequence may need a much stricter window. Calling both plans “stargazing” does not make their weather requirements identical, so one probability cannot answer both without an explicit threshold.",
+          "Our climate pipeline stores two night-level signals for that reason. A clear night contains at least three consecutive dry astronomical-night hours with total cloud cover at or below 20%. A good night uses the same three-hour and precipitation rules but allows cloud cover up to 40%. Neither label means the whole night is clear, and neither promises that the opening coincides with a target's position. They are consistent historical definitions designed for comparisons across the catalog.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "The largest gaps reveal threshold-sensitive destinations",
+        paragraphs: [
+          "The table selects the eight destinations where relaxing the cloud ceiling adds the largest historical window. That is not the same as selecting the eight clearest places. A destination can have a modest strict clear-night probability and still gain substantially under the wider definition. The gap tells us that many historical nights sat between the two thresholds for a usable three-hour sequence; it does not tell us that every one of those sequences would suit every observer.",
+          "Annual values are simple means of the available monthly probabilities, so they expose a structural contrast rather than a travel date. The Trip score remains in the table to prevent the cloud comparison from becoming a destination ranking. Darkness, dew, wind, temperature, access, and elevation still shape the wider decision. A large added window may be valuable for visual observing while a lower combined score reveals other costs that need separate attention.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Choose the sky threshold after choosing the activity",
+        body: "Use the strict clear-night signal for work that needs sustained clean frames or uninterrupted target visibility. A wider good-night window can be realistic for visual sessions, bright targets, short exposures, or plans that can pause between cloud bands.",
+      },
+      {
+        kind: "prose",
+        heading: "What 40% cloud can—and cannot—mean in practice",
+        paragraphs: [
+          "Forty percent total cloud cover is an area average in the ERA5 grid, not a map of where each cloud sits. The remaining opening might expose a useful sector, or cloud may cover exactly the horizon, constellation, or Milky Way region that motivated the trip. Cloud type, transparency, haze, smoke, and local fog also matter. The broader metric is therefore permission to consider a night, not evidence that a specific target will stay visible for three hours.",
+          "Different activities turn that uncertainty into different costs. Naked-eye observing can move between open sectors. A compact camera can switch subjects or collect shorter frames. A telescope at long focal length may lose guiding or calibration continuity, while automated imaging can waste hours if clouds repeatedly cross the field. The right threshold belongs in the observing brief before a destination is compared, otherwise a probability that was calculated correctly can still answer the wrong question.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Move from climate history to the actual night",
+        paragraphs: [
+          "Begin with the destination's monthly profile because the annual gap can hide strong seasonality. Select an exact documented observing site and confirm current official access, route, closure, and nighttime-use information. Then inspect a current hourly forecast with cloud cover by layer where available, precipitation, wind, dew point, smoke, and visibility. Satellite imagery and nearby observations can refine the decision close to departure, but they still do not remove local uncertainty.",
+          "Finally, write a simple fallback into the plan. Decide whether broken cloud changes the target, shortens the session, switches the equipment, or cancels the trip. A current forecast must make that call; the 1991–2020 normal cannot. The historical comparison is valuable earlier, when it shows that a strict astrophotography plan and a flexible visual plan may assign very different opportunity to the same destination without either interpretation being dishonest.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-cold-is-best-stargazing-month",
+    title: "How cold is the best stargazing month? Eight high-scoring windows compared",
+    seoDescription: "Compare nighttime temperatures in eight high-scoring destination months and see why a strong stargazing score is not a promise of thermal comfort.",
+    standfirst: "The strongest month in a destination profile can be below freezing or comfortably mild. Eight high-scoring windows show how much temperature planning still sits behind a promising Trip score.",
+    publishedAt: "2026-10-25",
+    lastReviewedAt: "2026-10-25",
+    readingMinutes: 8,
+    heroDestinationSlug: "atacama",
+    datasetId: "best-month-temperature-range",
+    relatedDestinationSlugs: ["alpes-azur-mercantour", "atacama", "puna-argentina", "hanle", "aenos", "monfrague", "great-western-woodlands", "kalbarri"],
+    methodologyNote: "For every active real-data destination whose representative site has public or limited access, we identified the month with its highest published Stargazing Trip score. We retained best months scoring at least 75, then selected the four lowest and four highest ERA5 astronomical-night mean temperatures. P10 is the temperature below which 10% of historical astronomical-night hours fall in that month. Ties in monthly score follow source order. These gridded 1991–2020 climate statistics are not a live forecast or a site-specific measurement.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "A strong score is not a clothing recommendation",
+        paragraphs: [
+          "The Stargazing Trip score combines sky quality and practical comfort so that months can be compared on one scale. Temperature contributes to that result, but it does not set a universal boundary between comfortable and uncomfortable. A high score can survive a cold nighttime mean when darkness, cloud history, wind, dryness, elevation, and access are otherwise strong. Travellers who read the combined number without opening its components may therefore arrive with the right month and the wrong field plan.",
+          "This comparison begins with each destination's own highest-scoring month, then keeps only windows scoring at least 75. From that high-score pool, it shows the four coldest and four warmest historical nighttime means. The selection is deliberately about contrast, not a global top eight. It asks how different the thermal environment can be even after the score has already identified a credible stargazing month.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Mean temperature is only the centre of the story",
+        paragraphs: [
+          "The nighttime mean averages every astronomical-night hour in the chosen calendar month across the climate normal. It is useful for broad comparison, but equipment and people experience individual hours. The P10 column adds a colder reference: ten percent of the historical astronomical-night hours fall below that temperature. It is not an expected nightly minimum, yet it shows why packing only for the mean can leave little margin during a long stationary session.",
+          "Radiative cooling, wind, humidity, altitude, ground contact, and the distance from shelter can make the same air temperature feel very different. Camera batteries lose useful runtime in cold conditions, focus can drift as equipment cools, and condensation may appear when optics move between environments. Human tolerance varies just as widely. The data can reveal exposure; it cannot decide what clothing, heating, acclimatisation, or session length is safe for a particular traveller.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Plan for the lower tail, not only the monthly mean",
+        body: "Use the mean to compare destinations and the P10 value to see whether colder historical hours deserve a larger safety margin. Replace both with the current hourly forecast before departure.",
+      },
+      {
+        kind: "prose",
+        heading: "Cold high-score windows demand more than warm layers",
+        paragraphs: [
+          "The colder group includes elevated and continental settings where an excellent astronomical profile coexists with low nighttime temperatures. At high elevations, the ERA5 grid may sit far below the actual observing surface, which is why the site methodology caps confidence and warns that gridded temperature is not a summit forecast. The correct response is not to add an arbitrary number to the table. It is to treat the published value as a regional baseline and consult current, elevation-appropriate official weather information.",
+          "A robust cold plan considers the full return journey as well as the observing hour. Batteries, vehicle readiness, ice, snow, wind chill, seasonal roads, and reduced dexterity can become limiting before sky quality does. The destination guide identifies the reviewed observing footprint and source trail; it does not turn a remote high-altitude landscape into a serviced venue. If the current conditions exceed the group's preparation or the documented route is unavailable, the score offers no reason to improvise elsewhere.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Warmer does not remove environmental limits",
+        paragraphs: [
+          "The warmer group shows that a best month can retain a high score with a much milder astronomical-night mean. That can reduce thermal strain and simplify a long visual session, but it does not guarantee comfort. A warm mean may coexist with a broad daily temperature swing, insects, dust, wildfire smoke, humidity, limited water, or a hot daytime approach. P10 is a lower-tail temperature statistic, not a complete description of local exposure.",
+          "Use the comparison to choose the kind of window that fits the traveller, then move back to the individual monthly profile. Confirm the exact site and current official rules, add Moon phase, and replace the climate normal with a live hourly forecast. Set cancellation limits for temperature, wind, precipitation, smoke, roads, and equipment performance before travel. The best month is a strong historical starting point; the safest usable night is always a current decision.",
         ],
       },
     ],

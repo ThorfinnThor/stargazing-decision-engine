@@ -326,6 +326,80 @@ function seasonalScoreStability(): DatasetOutput {
   };
 }
 
+function goodVersusClearNight(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => {
+      const validMonths = climate.months.filter((item) => item.clearNightProbability !== null && item.goodNightProbability !== null);
+      const clear = average(validMonths.map((item) => item.clearNightProbability as number)) * 100;
+      const good = average(validMonths.map((item) => item.goodNightProbability as number)) * 100;
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        clear,
+        good,
+        gain: good - clear,
+        trip: average(monthly.map((item) => item.stargazingTrip)),
+      };
+    })
+    .sort((left, right) => right.gain - left.gain || left.destination.localeCompare(right.destination))
+    .slice(0, 8);
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(values.length), note: "Largest catalog gaps between the two cloud thresholds" },
+      { label: "Largest added window", value: `+${round(Math.max(...values.map((item) => item.gain)))} points`, note: "Good-night minus clear-night probability" },
+      { label: "Required sequence", value: "3 hours", note: "Consecutive dry astronomical-night hours" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Where a wider cloud tolerance changes the historical odds",
+      "Both columns are simple means across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. A clear night needs a three-hour dry sequence at no more than 20% cloud cover; a good night uses the same rule at no more than 40%.",
+      ["Destination", "Clear-night", "Good-night", "Added window", "Trip score", "Access"],
+      values.map((item) => [item.destination, `${round(item.clear)}%`, `${round(item.good)}%`, `+${round(item.gain)} points`, String(round(item.trip)), item.access === "yes" ? "Public" : "Limited"]),
+      "Selection rule: the eight largest good-night minus clear-night gaps among active real-data destinations with public or limited representative-site access. The two percentages are historical monthly aggregates, not forecasts for a specific night.",
+    ),
+    relatedDestinationSlugs: values.map((item) => item.slug),
+  };
+}
+
+function bestMonthTemperatureRange(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => {
+      const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+      const weather = climate.months.find((item) => item.month === best.month);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        bestMonth: monthNames[best.month - 1],
+        bestTrip: best.stargazingTrip,
+        meanTemp: weather?.nightTempMeanC ?? null,
+        p10Temp: weather?.nightTempP10C ?? null,
+      };
+    })
+    .filter((item): item is typeof item & { meanTemp: number; p10Temp: number } => item.bestTrip >= 75 && item.meanTemp !== null && item.p10Temp !== null)
+    .sort((left, right) => left.meanTemp - right.meanTemp || left.destination.localeCompare(right.destination));
+  const colder = values.slice(0, 4);
+  const warmer = values.slice(-4).sort((left, right) => right.meanTemp - left.meanTemp || left.destination.localeCompare(right.destination));
+  const selected = [...colder.map((item) => ({ ...item, group: "Colder window" })), ...warmer.map((item) => ({ ...item, group: "Warmer window" }))];
+  return {
+    metrics: [
+      { label: "High-score windows", value: String(values.length), note: "Best months with a Trip score of at least 75" },
+      { label: "Coldest selected mean", value: `${round(Math.min(...colder.map((item) => item.meanTemp)))}°C`, note: "Historical astronomical-night mean in the best month" },
+      { label: "Warmest selected mean", value: `${round(Math.max(...warmer.map((item) => item.meanTemp)))}°C`, note: "Historical astronomical-night mean in the best month" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "The cold and warm ends of high-scoring best months",
+      "For each eligible destination, we found its highest published monthly Stargazing Trip score. Among best months scoring at least 75, the table shows the four lowest and four highest ERA5 astronomical-night mean temperatures.",
+      ["Temperature group", "Destination", "Best month", "Trip", "Night mean", "Night P10", "Access"],
+      selected.map((item) => [item.group, item.destination, item.bestMonth, String(item.bestTrip), `${round(item.meanTemp)}°C`, `${round(item.p10Temp)}°C`, item.access === "yes" ? "Public" : "Limited"]),
+      "P10 is the temperature below which 10% of historical astronomical-night hours fall in that month. ERA5 represents a broad grid cell at two metres above the model surface; it is not a campsite, valley, or summit forecast.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -335,6 +409,8 @@ const builders = {
   "dew-risk-spectrum": dewRiskSpectrum,
   "wind-risk-spectrum": windRiskSpectrum,
   "seasonal-score-stability": seasonalScoreStability,
+  "good-versus-clear-night": goodVersusClearNight,
+  "best-month-temperature-range": bestMonthTemperatureRange,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {

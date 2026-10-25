@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "does-stargazing-need-perfectly-clear-skies",
+  "title": "Does stargazing need perfectly clear skies? The threshold changes the odds",
+  "seoDescription": "Compare clear-night and good-night probabilities at eight destinations to see how a wider cloud tolerance changes historical stargazing opportunities.",
+  "standfirst": "A night does not have to be cloudless to be useful. Across eight real-data destinations, changing the accepted cloud ceiling from 20% to 40% creates a surprisingly different historical opportunity window.",
+  "publishedAt": "2026-10-25",
+  "lastReviewedAt": "2026-10-25",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "great-barrier-island",
+  "datasetId": "good-versus-clear-night",
+  "relatedDestinationSlugs": [
+    "pico-do-arieiro",
+    "great-barrier-island",
+    "kangaroo-island",
+    "river-murray",
+    "kissimmee-prairie",
+    "big-cypress",
+    "tenerife",
+    "kalbarri"
+  ],
+  "methodologyNote": "For every active real-data destination whose representative site has public or limited access, we averaged clear-night and good-night probabilities across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. Both metrics require at least three consecutive dry astronomical-night hours. Clear hours allow no more than 20% cloud cover; good hours allow no more than 40%. We selected the eight largest percentage-point gaps. These are historical gridded-climate signals, not a live forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Useful sky is not a single definition",
+      "paragraphs": [
+        "A forecast icon often reduces the sky to clear or cloudy, but an observing session has a more practical question: how much cloud can the activity tolerate? A wide-field visual tour can remain rewarding with broken cloud if large openings move through the sky. A long unattended exposure sequence may need a much stricter window. Calling both plans “stargazing” does not make their weather requirements identical, so one probability cannot answer both without an explicit threshold.",
+        "Our climate pipeline stores two night-level signals for that reason. A clear night contains at least three consecutive dry astronomical-night hours with total cloud cover at or below 20%. A good night uses the same three-hour and precipitation rules but allows cloud cover up to 40%. Neither label means the whole night is clear, and neither promises that the opening coincides with a target's position. They are consistent historical definitions designed for comparisons across the catalog."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Where a wider cloud tolerance changes the historical odds",
+      "introduction": "Both columns are simple means across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. A clear night needs a three-hour dry sequence at no more than 20% cloud cover; a good night uses the same rule at no more than 40%.",
+      "columns": [
+        "Destination",
+        "Clear-night",
+        "Good-night",
+        "Added window",
+        "Trip score",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Pico do Arieiro",
+          "16.5%",
+          "40.1%",
+          "+23.6 points",
+          "51.1",
+          "Limited"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "30.6%",
+          "50.2%",
+          "+19.6 points",
+          "74.6",
+          "Public"
+        ],
+        [
+          "Kangaroo Island",
+          "25.5%",
+          "41%",
+          "+15.5 points",
+          "72.8",
+          "Limited"
+        ],
+        [
+          "River Murray",
+          "52.6%",
+          "67.2%",
+          "+14.5 points",
+          "85.1",
+          "Public"
+        ],
+        [
+          "Kissimmee Prairie",
+          "41.7%",
+          "55.2%",
+          "+13.5 points",
+          "75.4",
+          "Limited"
+        ],
+        [
+          "Big Cypress",
+          "45.3%",
+          "58.6%",
+          "+13.3 points",
+          "76.9",
+          "Limited"
+        ],
+        [
+          "Tenerife",
+          "55.9%",
+          "69.2%",
+          "+13.2 points",
+          "82.8",
+          "Limited"
+        ],
+        [
+          "Kalbarri",
+          "67.2%",
+          "80.2%",
+          "+13.1 points",
+          "93",
+          "Limited"
+        ]
+      ],
+      "note": "Selection rule: the eight largest good-night minus clear-night gaps among active real-data destinations with public or limited representative-site access. The two percentages are historical monthly aggregates, not forecasts for a specific night."
+    },
+    {
+      "kind": "prose",
+      "heading": "The largest gaps reveal threshold-sensitive destinations",
+      "paragraphs": [
+        "The table selects the eight destinations where relaxing the cloud ceiling adds the largest historical window. That is not the same as selecting the eight clearest places. A destination can have a modest strict clear-night probability and still gain substantially under the wider definition. The gap tells us that many historical nights sat between the two thresholds for a usable three-hour sequence; it does not tell us that every one of those sequences would suit every observer.",
+        "Annual values are simple means of the available monthly probabilities, so they expose a structural contrast rather than a travel date. The Trip score remains in the table to prevent the cloud comparison from becoming a destination ranking. Darkness, dew, wind, temperature, access, and elevation still shape the wider decision. A large added window may be valuable for visual observing while a lower combined score reveals other costs that need separate attention."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Choose the sky threshold after choosing the activity",
+      "body": "Use the strict clear-night signal for work that needs sustained clean frames or uninterrupted target visibility. A wider good-night window can be realistic for visual sessions, bright targets, short exposures, or plans that can pause between cloud bands."
+    },
+    {
+      "kind": "prose",
+      "heading": "What 40% cloud can—and cannot—mean in practice",
+      "paragraphs": [
+        "Forty percent total cloud cover is an area average in the ERA5 grid, not a map of where each cloud sits. The remaining opening might expose a useful sector, or cloud may cover exactly the horizon, constellation, or Milky Way region that motivated the trip. Cloud type, transparency, haze, smoke, and local fog also matter. The broader metric is therefore permission to consider a night, not evidence that a specific target will stay visible for three hours.",
+        "Different activities turn that uncertainty into different costs. Naked-eye observing can move between open sectors. A compact camera can switch subjects or collect shorter frames. A telescope at long focal length may lose guiding or calibration continuity, while automated imaging can waste hours if clouds repeatedly cross the field. The right threshold belongs in the observing brief before a destination is compared, otherwise a probability that was calculated correctly can still answer the wrong question."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Move from climate history to the actual night",
+      "paragraphs": [
+        "Begin with the destination's monthly profile because the annual gap can hide strong seasonality. Select an exact documented observing site and confirm current official access, route, closure, and nighttime-use information. Then inspect a current hourly forecast with cloud cover by layer where available, precipitation, wind, dew point, smoke, and visibility. Satellite imagery and nearby observations can refine the decision close to departure, but they still do not remove local uncertainty.",
+        "Finally, write a simple fallback into the plan. Decide whether broken cloud changes the target, shortens the session, switches the equipment, or cancels the trip. A current forecast must make that call; the 1991–2020 normal cannot. The historical comparison is valuable earlier, when it shows that a strict astrophotography plan and a flexible visual plan may assign very different opportunity to the same destination without either interpretation being dishonest."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations compared",
+      "value": "8",
+      "note": "Largest catalog gaps between the two cloud thresholds"
+    },
+    {
+      "label": "Largest added window",
+      "value": "+23.6 points",
+      "note": "Good-night minus clear-night probability"
+    },
+    {
+      "label": "Required sequence",
+      "value": "3 hours",
+      "note": "Consecutive dry astronomical-night hours"
+    }
+  ]
+}
