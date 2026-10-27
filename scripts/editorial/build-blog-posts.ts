@@ -1,7 +1,8 @@
+import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { blogPostSources } from "../../data-config/editorial/blog-posts.js";
-import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, Destination, ImageManifest, MonthlySiteScore, ObservationSite } from "../../lib/data/types.js";
+import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, CalendarFile, Destination, ImageManifest, MeteorShowerEvent, MonthlySiteScore, ObservationSite } from "../../lib/data/types.js";
 import type { Era5ClimateSnapshot } from "../../lib/climate/era5/types.js";
 import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
@@ -400,6 +401,92 @@ function bestMonthTemperatureRange(): DatasetOutput {
   };
 }
 
+function meteorShowers2027(): DatasetOutput {
+  const eventRoot = publicPath("events/meteor-showers/2027");
+  const events = readdirSync(eventRoot)
+    .filter((file) => file.endsWith(".json"))
+    .sort()
+    .map((file) => readJson<MeteorShowerEvent>(resolve(eventRoot, file)))
+    .filter((event) => event.indexable && event.topDestinations.length > 0 && event.viewingScore !== null)
+    .sort((left, right) => (right.viewingScore ?? -1) - (left.viewingScore ?? -1) || left.name.en.localeCompare(right.name.en));
+  const rows = events.map((event) => {
+    const top = event.topDestinations[0];
+    const [, month, day] = event.peakDate.split("-").map(Number);
+    return {
+      name: event.name.en,
+      peakDate: `${monthNames[month - 1]} ${day}`,
+      zhr: event.referenceZhr,
+      moon: top.moonConditions.moonIlluminationFraction,
+      moonless: top.moonConditions.moonlessHours,
+      destination: top.destinationName,
+      destinationSlug: top.destinationSlug,
+      viewingScore: top.viewingScore,
+    };
+  });
+  const illumination = rows.map((item) => item.moon).filter((value): value is number => value !== null);
+  return {
+    metrics: [
+      { label: "Showers compared", value: String(rows.length), note: "Indexable events in the committed 2027 calendar" },
+      { label: "Peak Moon range", value: `${round(Math.min(...illumination) * 100)}–${round(Math.max(...illumination) * 100)}%`, note: "At each event's highest-ranked destination" },
+      { label: "Reference ZHR range", value: `${Math.min(...rows.map((item) => item.zhr ?? Infinity))}–${Math.max(...rows.map((item) => item.zhr ?? -Infinity))}`, note: "IMO reference values, not predicted observed counts" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Eleven 2027 meteor-shower peaks under very different Moon conditions",
+      "Rows are ordered by the published viewing score at each shower's highest-ranked destination. The score combines historical monthly sky quality with event-night Moon and radiant geometry; it does not forecast clouds or meteor counts.",
+      ["Meteor shower", "Peak date", "Reference ZHR", "Moon illuminated", "Moonless hours", "Top destination", "Viewing score"],
+      rows.map((item) => [item.name, item.peakDate, item.zhr === null ? "Not stated" : String(item.zhr), item.moon === null ? "Unknown" : `${round(item.moon * 100)}%`, `${round(item.moonless)} h`, item.destination, String(round(item.viewingScore))]),
+      "The IMO source gives peak dates for these records but no exact UTC peak hour, so the pipeline evaluates the named local observing night. Reference ZHR is a standard ideal-rate descriptor, not a promise for one observer or location.",
+    ),
+    relatedDestinationSlugs: [...new Set(rows.map((item) => item.destinationSlug))],
+  };
+}
+
+function milkyWayWindows2027(): DatasetOutput {
+  const eligible = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"));
+  const values = eligible.map(({ destination, site }) => {
+    const nights = Array.from({ length: 12 }, (_, index) => readJson<CalendarFile>(publicPath(`calendar/${destination.slug}/2027-${String(index + 1).padStart(2, "0")}.json`)).nights).flat();
+    const best = nights
+      .filter((night) => night.milkyWayOpportunityScore !== null)
+      .sort((left, right) => (right.milkyWayOpportunityScore ?? -1) - (left.milkyWayOpportunityScore ?? -1)
+        || right.milkyWayStrongHours - left.milkyWayStrongHours
+        || right.milkyWayUsefulHours - left.milkyWayUsefulHours
+        || left.dateLocal.localeCompare(right.dateLocal))[0];
+    if (!best) throw new Error(`${destination.slug}: no 2027 Milky Way calendar night`);
+    return {
+      slug: destination.slug,
+      destination: destination.name,
+      access: site.publicAccess,
+      date: best.dateLocal,
+      score: best.milkyWayOpportunityScore ?? 0,
+      strongHours: best.milkyWayStrongHours,
+      usefulHours: best.milkyWayUsefulHours,
+      altitude: best.galacticCenterAltitudeMaxDeg ?? 0,
+      moonlessHours: best.moonlessHours,
+    };
+  }).sort((left, right) => right.score - left.score
+    || right.strongHours - left.strongHours
+    || right.usefulHours - left.usefulHours
+    || left.destination.localeCompare(right.destination))
+    .slice(0, 8);
+  const juneCount = values.filter((item) => item.date.slice(5, 7) === "06").length;
+  return {
+    metrics: [
+      { label: "Destinations assessed", value: String(eligible.length), note: "Active real-data destinations with public or limited access" },
+      { label: "Longest strong window", value: `${round(Math.max(...values.map((item) => item.strongHours)))} h`, note: "Milky Way core above the strong-altitude threshold during darkness" },
+      { label: "June dates", value: `${juneCount} of ${values.length}`, note: "Selected best nights falling in June 2027" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "The eight longest high-scoring Milky Way windows in the 2027 calendar",
+      "For each eligible destination, the pipeline selected its strongest 2027 night by Milky Way opportunity score, strong core hours, useful core hours, then date. The table shows the top eight destination-level results.",
+      ["Destination", "Local date", "Opportunity", "Strong core", "Useful core", "Core max altitude", "Moonless", "Access"],
+      values.map((item) => [item.destination, item.date, String(round(item.score)), `${round(item.strongHours)} h`, `${round(item.usefulHours)} h`, `${round(item.altitude)}°`, `${round(item.moonlessHours)} h`, item.access === "yes" ? "Public" : "Limited"]),
+      "The astronomy calendar models Sun, Moon, and Galactic Centre geometry for the representative site. It does not include clouds, haze, smoke, terrain, vegetation, artificial light measured onsite, or current access conditions.",
+    ),
+    relatedDestinationSlugs: values.map((item) => item.slug),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -411,6 +498,8 @@ const builders = {
   "seasonal-score-stability": seasonalScoreStability,
   "good-versus-clear-night": goodVersusClearNight,
   "best-month-temperature-range": bestMonthTemperatureRange,
+  "meteor-showers-2027": meteorShowers2027,
+  "milky-way-windows-2027": milkyWayWindows2027,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {

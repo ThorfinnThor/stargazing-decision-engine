@@ -1,0 +1,192 @@
+{
+  "version": 1,
+  "slug": "best-meteor-showers-2027-moon",
+  "title": "The biggest meteor shower is not the best-timed in 2027",
+  "seoDescription": "Compare all eleven 2027 meteor-shower peaks by Moon conditions, radiant geometry, historical sky quality, reference ZHR, and their highest-ranked destination.",
+  "standfirst": "The showers with the largest reference rates meet some of the brightest Moon conditions of 2027. Our event data shows why a smaller shower under a darker sky can become the stronger observing plan.",
+  "publishedAt": "2026-10-27",
+  "lastReviewedAt": "2026-10-27",
+  "readingMinutes": 9,
+  "heroDestinationSlug": "atacama",
+  "datasetId": "meteor-showers-2027",
+  "relatedDestinationSlugs": [
+    "atacama",
+    "massacre-rim",
+    "gobi",
+    "cerro-paranal",
+    "big-bend"
+  ],
+  "methodologyNote": "We loaded all eleven indexable 2027 meteor-shower event files generated from the cited International Meteor Organization calendar. For each shower, the table uses its highest-ranked destination and reports the committed reference ZHR, event-night Moon illumination and moonless darkness, and the pipeline viewing score. That score combines monthly historical sky quality with Moon and radiant geometry. The IMO records provide peak dates but no exact UTC peak hours, and the result is not a live forecast of clouds, meteor counts, or local access.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Reference rate and observing quality are not the same thing",
+      "paragraphs": [
+        "Meteor-shower calendars often lead with zenithal hourly rate, or ZHR, because it gives a standard way to describe a shower's activity under ideal conditions. It is not the number a typical observer will count. The actual experience depends on radiant height, limiting magnitude, field of view, obstructions, weather, local light, attention, and the fraction of the night spent observing. Most importantly for a date that cannot be moved, moonlight can erase faint meteors even when the shower itself is intrinsically active.",
+        "The 2027 comparison makes that distinction visible. The table keeps the IMO reference ZHR beside Moon illumination, moonless hours, the highest-ranked destination, and our viewing score. A high-rate shower can land near a bright Moon, while a smaller shower can peak with long moonless darkness. Neither column invalidates the other. ZHR describes the shower under a reference model; the planning columns describe whether the fixed 2027 geometry gives that activity room to be seen."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Eleven 2027 meteor-shower peaks under very different Moon conditions",
+      "introduction": "Rows are ordered by the published viewing score at each shower's highest-ranked destination. The score combines historical monthly sky quality with event-night Moon and radiant geometry; it does not forecast clouds or meteor counts.",
+      "columns": [
+        "Meteor shower",
+        "Peak date",
+        "Reference ZHR",
+        "Moon illuminated",
+        "Moonless hours",
+        "Top destination",
+        "Viewing score"
+      ],
+      "rows": [
+        [
+          "Alpha Capricornids",
+          "July 31",
+          "5",
+          "2.4%",
+          "10.3 h",
+          "Atacama Plateau",
+          "99.2"
+        ],
+        [
+          "Southern Delta Aquariids",
+          "July 31",
+          "25",
+          "2.4%",
+          "10.3 h",
+          "Atacama Plateau",
+          "99.2"
+        ],
+        [
+          "Aurigids",
+          "September 1",
+          "6",
+          "0.5%",
+          "7.6 h",
+          "Massacre Rim",
+          "95.9"
+        ],
+        [
+          "Quadrantids",
+          "January 4",
+          "80",
+          "15.2%",
+          "10.5 h",
+          "Gobi Desert",
+          "95.6"
+        ],
+        [
+          "Eta Aquariids",
+          "May 6",
+          "50",
+          "0.3%",
+          "10.3 h",
+          "Atacama Plateau",
+          "94.5"
+        ],
+        [
+          "Ursids",
+          "December 23",
+          "10",
+          "17.3%",
+          "9.9 h",
+          "Gobi Desert",
+          "94.5"
+        ],
+        [
+          "Orionids",
+          "October 22",
+          "20",
+          "45.6%",
+          "5.7 h",
+          "Cerro Paranal",
+          "86.3"
+        ],
+        [
+          "Leonids",
+          "November 18",
+          "15",
+          "75.9%",
+          "2.3 h",
+          "Gobi Desert",
+          "75.2"
+        ],
+        [
+          "Perseids",
+          "August 13",
+          "110",
+          "92%",
+          "1 h",
+          "Massacre Rim",
+          "73.8"
+        ],
+        [
+          "Lyrids",
+          "April 23",
+          "18",
+          "94.3%",
+          "0.8 h",
+          "Big Bend",
+          "71.5"
+        ],
+        [
+          "Geminids",
+          "December 14",
+          "150",
+          "98.6%",
+          "0 h",
+          "Gobi Desert",
+          "69.6"
+        ]
+      ],
+      "note": "The IMO source gives peak dates for these records but no exact UTC peak hour, so the pipeline evaluates the named local observing night. Reference ZHR is a standard ideal-rate descriptor, not a promise for one observer or location."
+    },
+    {
+      "kind": "prose",
+      "heading": "The Moon rearranges the familiar calendar",
+      "paragraphs": [
+        "The Geminids carry the largest reference ZHR in the committed 2027 set, yet their peak is paired with an almost fully illuminated Moon and no moonless darkness at the top-ranked destination. The Perseids also bring a large reference rate but face a strongly illuminated Moon and only a short moonless interval. Those showers remain real events, and bright meteors can still appear. Their famous names simply do not override the sky background on the scheduled peak night.",
+        "At the other end, several lower-rate July, September, and December showers align with much darker Moon conditions. The Southern Delta Aquariids share a date with the Alpha Capricornids, creating two active streams under the same favourable geometry in the event files. The ranking does not predict a spectacular display; it shows that the observing environment preserves more of whatever activity occurs. A lower ZHR under dark sky and a high ZHR under moonlight answer different kinds of expectation."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "A famous shower can still be a difficult year",
+      "body": "Choose 2027 meteor plans by combining shower activity with Moon, radiant, climate, and access. Do not treat reference ZHR as a guaranteed count or assume that the traditional headline shower automatically owns the best night."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the top destination changes with the radiant",
+      "paragraphs": [
+        "A meteor radiant must rise high enough during darkness for a location to use the event well. Northern showers favour different latitudes from southern streams, and the local date can shift relative to the cited calendar date. The pipeline calculates radiant altitude and dark radiant hours at each representative site, then combines that geometry with event-night Moon conditions and the destination's historical monthly sky-quality score. This is why one destination cannot lead every shower even if its annual climate is excellent.",
+        "The top destination is still a comparison output, not an invitation to arrive at an arbitrary coordinate. Some representative sites are limited, remote, seasonal, bookable, or subject to specific visitor rules. The event score cannot open a gate, reserve a programme, make a road passable, or create overnight permission. Use the linked destination guide to identify the documented observing footprint and current official sources before the event enters a travel plan."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Turn the ranking into a realistic 2027 plan",
+      "paragraphs": [
+        "Start by deciding whether the goal is a high-rate headline shower or the best dark-sky meteor opportunity available in the year. If the chosen peak has a bright Moon, inspect when the Moon is below the horizon and whether observing before or after the named peak preserves more darkness. Activity spans a date range, but the event files do not model an hourly activity curve, and the IMO records used here do not state exact UTC peak times. Do not invent precision that the source does not provide.",
+        "As the date approaches, replace historical climate with a current forecast for cloud, visibility, smoke, wind, temperature, and precipitation. Confirm current access and a safe return route through published official information. Bring a wide naked-eye field rather than concentrating on the radiant itself, protect dark adaptation, and set a cancellation threshold. The score is most valuable when it redirects attention from reputation alone toward the conditions that determine whether meteors can actually be seen."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Showers compared",
+      "value": "11",
+      "note": "Indexable events in the committed 2027 calendar"
+    },
+    {
+      "label": "Peak Moon range",
+      "value": "0.3–98.6%",
+      "note": "At each event's highest-ranked destination"
+    },
+    {
+      "label": "Reference ZHR range",
+      "value": "5–150",
+      "note": "IMO reference values, not predicted observed counts"
+    }
+  ]
+}

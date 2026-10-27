@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -533,6 +533,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "The warmer group shows that a best month can retain a high score with a much milder astronomical-night mean. That can reduce thermal strain and simplify a long visual session, but it does not guarantee comfort. A warm mean may coexist with a broad daily temperature swing, insects, dust, wildfire smoke, humidity, limited water, or a hot daytime approach. P10 is a lower-tail temperature statistic, not a complete description of local exposure.",
           "Use the comparison to choose the kind of window that fits the traveller, then move back to the individual monthly profile. Confirm the exact site and current official rules, add Moon phase, and replace the climate normal with a live hourly forecast. Set cancellation limits for temperature, wind, precipitation, smoke, roads, and equipment performance before travel. The best month is a strong historical starting point; the safest usable night is always a current decision.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "best-meteor-showers-2027-moon",
+    title: "The biggest meteor shower is not the best-timed in 2027",
+    seoDescription: "Compare all eleven 2027 meteor-shower peaks by Moon conditions, radiant geometry, historical sky quality, reference ZHR, and their highest-ranked destination.",
+    standfirst: "The showers with the largest reference rates meet some of the brightest Moon conditions of 2027. Our event data shows why a smaller shower under a darker sky can become the stronger observing plan.",
+    publishedAt: "2026-10-27",
+    lastReviewedAt: "2026-10-27",
+    readingMinutes: 9,
+    heroDestinationSlug: "atacama",
+    datasetId: "meteor-showers-2027",
+    relatedDestinationSlugs: ["atacama", "massacre-rim", "gobi", "cerro-paranal", "big-bend"],
+    methodologyNote: "We loaded all eleven indexable 2027 meteor-shower event files generated from the cited International Meteor Organization calendar. For each shower, the table uses its highest-ranked destination and reports the committed reference ZHR, event-night Moon illumination and moonless darkness, and the pipeline viewing score. That score combines monthly historical sky quality with Moon and radiant geometry. The IMO records provide peak dates but no exact UTC peak hours, and the result is not a live forecast of clouds, meteor counts, or local access.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Reference rate and observing quality are not the same thing",
+        paragraphs: [
+          "Meteor-shower calendars often lead with zenithal hourly rate, or ZHR, because it gives a standard way to describe a shower's activity under ideal conditions. It is not the number a typical observer will count. The actual experience depends on radiant height, limiting magnitude, field of view, obstructions, weather, local light, attention, and the fraction of the night spent observing. Most importantly for a date that cannot be moved, moonlight can erase faint meteors even when the shower itself is intrinsically active.",
+          "The 2027 comparison makes that distinction visible. The table keeps the IMO reference ZHR beside Moon illumination, moonless hours, the highest-ranked destination, and our viewing score. A high-rate shower can land near a bright Moon, while a smaller shower can peak with long moonless darkness. Neither column invalidates the other. ZHR describes the shower under a reference model; the planning columns describe whether the fixed 2027 geometry gives that activity room to be seen.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "The Moon rearranges the familiar calendar",
+        paragraphs: [
+          "The Geminids carry the largest reference ZHR in the committed 2027 set, yet their peak is paired with an almost fully illuminated Moon and no moonless darkness at the top-ranked destination. The Perseids also bring a large reference rate but face a strongly illuminated Moon and only a short moonless interval. Those showers remain real events, and bright meteors can still appear. Their famous names simply do not override the sky background on the scheduled peak night.",
+          "At the other end, several lower-rate July, September, and December showers align with much darker Moon conditions. The Southern Delta Aquariids share a date with the Alpha Capricornids, creating two active streams under the same favourable geometry in the event files. The ranking does not predict a spectacular display; it shows that the observing environment preserves more of whatever activity occurs. A lower ZHR under dark sky and a high ZHR under moonlight answer different kinds of expectation.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "A famous shower can still be a difficult year",
+        body: "Choose 2027 meteor plans by combining shower activity with Moon, radiant, climate, and access. Do not treat reference ZHR as a guaranteed count or assume that the traditional headline shower automatically owns the best night.",
+      },
+      {
+        kind: "prose",
+        heading: "Why the top destination changes with the radiant",
+        paragraphs: [
+          "A meteor radiant must rise high enough during darkness for a location to use the event well. Northern showers favour different latitudes from southern streams, and the local date can shift relative to the cited calendar date. The pipeline calculates radiant altitude and dark radiant hours at each representative site, then combines that geometry with event-night Moon conditions and the destination's historical monthly sky-quality score. This is why one destination cannot lead every shower even if its annual climate is excellent.",
+          "The top destination is still a comparison output, not an invitation to arrive at an arbitrary coordinate. Some representative sites are limited, remote, seasonal, bookable, or subject to specific visitor rules. The event score cannot open a gate, reserve a programme, make a road passable, or create overnight permission. Use the linked destination guide to identify the documented observing footprint and current official sources before the event enters a travel plan.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Turn the ranking into a realistic 2027 plan",
+        paragraphs: [
+          "Start by deciding whether the goal is a high-rate headline shower or the best dark-sky meteor opportunity available in the year. If the chosen peak has a bright Moon, inspect when the Moon is below the horizon and whether observing before or after the named peak preserves more darkness. Activity spans a date range, but the event files do not model an hourly activity curve, and the IMO records used here do not state exact UTC peak times. Do not invent precision that the source does not provide.",
+          "As the date approaches, replace historical climate with a current forecast for cloud, visibility, smoke, wind, temperature, and precipitation. Confirm current access and a safe return route through published official information. Bring a wide naked-eye field rather than concentrating on the radiant itself, protect dark adaptation, and set a cancellation threshold. The score is most valuable when it redirects attention from reputation alone toward the conditions that determine whether meteors can actually be seen.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "longest-milky-way-windows-2027",
+    title: "The longest Milky Way windows in 2027 cluster south of the equator",
+    seoDescription: "Compare the eight longest high-scoring Milky Way windows in the 2027 astronomy calendar by core visibility, Moon-free darkness, altitude, and access.",
+    standfirst: "When every destination contributes its strongest 2027 night, the longest high-scoring Milky Way windows gather in southern winter. Geometry explains the pattern—but not whether the sky will be clear.",
+    publishedAt: "2026-10-27",
+    lastReviewedAt: "2026-10-27",
+    readingMinutes: 9,
+    heroDestinationSlug: "aoraki-mackenzie",
+    datasetId: "milky-way-windows-2027",
+    relatedDestinationSlugs: ["rakiura", "aoraki-mackenzie", "kaikoura", "wairarapa", "great-barrier-island", "kangaroo-island", "oudtshoorn", "river-murray"],
+    methodologyNote: "For each active real-data destination whose representative site has public or limited access, we scanned all twelve committed 2027 astronomy-calendar files and selected one night by highest Milky Way opportunity score, then strong core hours, useful core hours, and earliest date. We ranked those destination-level winners by the same rule and retained the top eight. The calendar uses Astronomy Engine geometry plus the approved Galactic Centre coordinate and Moon overlap. It is not a live forecast and does not model clouds, haze, smoke, terrain, vegetation, onsite light, or current access.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Milky Way season is a geometry problem before it is a weather problem",
+        paragraphs: [
+          "The bright central Milky Way is not equally placed for every latitude, season, or hour. A useful window needs astronomical darkness while the Galactic Centre is above a minimum altitude, and a strong window raises that altitude threshold further. Moonlight can then remove otherwise suitable time. These conditions are deterministic enough to calculate years ahead, which makes them valuable for planning—but only for the celestial half of the decision.",
+          "Our calendar evaluates those overlaps in ten-minute steps at each representative site. The opportunity score rewards useful and strong core visibility during dark, Moon-free time. For this article, every eligible destination contributes only its strongest 2027 night before the top eight are selected. That prevents a single destination from filling the table with adjacent dates and turns the result into a comparison of the longest destination-level opportunities.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Why the longest windows gather in southern winter",
+        paragraphs: [
+          "The selected dates cluster in June, when southern locations combine long winter darkness with favourable placement of the Galactic Centre. The top rows come from New Zealand, Australia, and southern Africa, all south of the equator. Their long astronomical nights provide room for the core to remain above the useful and strong altitude thresholds while the Moon stays out of the way for much of the session.",
+          "This does not mean the Northern Hemisphere lacks a Milky Way season. It means the particular ranking rewards the longest single-night overlap, and southern winter can combine longer darkness with a higher Galactic Centre arc. A northern destination may offer a shorter but excellent photographic window, easier access, or much better weather on the travel dates. The table measures duration and geometry, not universal destination quality.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "A score of 100 is not a weather promise",
+        body: "The astronomy calculation can identify an exceptional Moon-free core window while the local sky remains cloudy, hazy, smoky, windy, or inaccessible. Combine the calendar with monthly climate first and a current forecast last.",
+      },
+      {
+        kind: "prose",
+        heading: "The first row is also the clearest warning",
+        paragraphs: [
+          "Rakiura produces the longest strong core window in this comparison because its southern latitude and winter night create extraordinary geometry. Its separate climate profile, however, is much less generous than the geometry. That contrast is precisely why the Milky Way score remains separate from the Stargazing Trip score. Combining them too early would hide whether a plan is limited by celestial timing or by historical weather.",
+          "The same caution applies to Moonless hours. A long Moon-free interval tells us that lunar glare is absent while the Sun is sufficiently low; it says nothing about cloud, transparency, artificial light, or a clear horizon. Maximum Galactic Centre altitude is also a geometric value. Mountains, trees, buildings, marine haze, and local topography can obstruct the actual view even when the calculated centre rises high in an unobstructed sky model.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Use the long window without overclaiming it",
+        paragraphs: [
+          "Open the chosen destination's monthly profile and compare June cloud, wind, dew, rain, and temperature history. Then identify the exact documented observing site and read current official access, booking, road, seasonal-operation, and closure information. A regional dark-sky label does not extend permission to every beach, field, roadside, reserve, or private property inside the destination name. Limited access remains limited even on the best astronomical night of the year.",
+          "Near the date, use an hourly forecast and current Moon and sky information to decide whether the calculated window survives real conditions. Check the orientation and foreground in daylight, preserve dark adaptation, and keep a fallback date or destination where possible. The 2027 calendar gives the strongest geometric shortlist our data can support. The final night still depends on weather, local visibility, lawful access, and the observer's ability to use the available hours safely.",
         ],
       },
     ],
