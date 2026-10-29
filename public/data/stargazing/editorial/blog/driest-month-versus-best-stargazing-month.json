@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "slug": "driest-month-versus-best-stargazing-month",
+  "title": "The driest month is not always the best stargazing month",
+  "seoDescription": "Compare the driest historical month with the highest-scoring stargazing month at eight destinations, using real rain, cloud, darkness, comfort, and access data.",
+  "standfirst": "Avoiding rain matters, but minimising wet nighttime hours can push a trip into colder, cloudier, windier, or much shorter nights. Eight destination profiles show why the combined answer often lands in another month.",
+  "publishedAt": "2026-10-29",
+  "lastReviewedAt": "2026-10-29",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "kissimmee-prairie",
+  "datasetId": "driest-versus-best-month",
+  "relatedDestinationSlugs": [
+    "kissimmee-prairie",
+    "boundary-waters",
+    "newport-wisconsin",
+    "staunton-river",
+    "grasslands",
+    "kozushima",
+    "manitoulin",
+    "minami-rokuroshi"
+  ],
+  "methodologyNote": "Among active destinations with real score snapshots and a representative site marked public or limited access, we identified each site's month with the lowest 1991–2020 ERA5 wet-night-hour probability and its month with the highest published Stargazing Trip score. We retained the eight different-month cases with the largest score advantage for the best trip month. Ties follow source order. Wet-night-hour probability measures the share of astronomical-night hours meeting the pipeline's precipitation threshold; it is not the probability that an entire night or trip will be rainy. The comparison is not a live forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Dry weather is necessary, but driest is a narrow optimisation",
+      "paragraphs": [
+        "Rain can end an observing session quickly, damage unprotected equipment, and make remote roads or footpaths unsafe. It is therefore reasonable to look for a dry season. The mistake is to treat the lowest precipitation statistic as a complete stargazing recommendation. A month can be marginally drier at night while offering more cloud, less astronomical darkness, harsher temperatures, stronger wind, or a lower practical score than a neighbouring season.",
+        "Our climate snapshot reports the share of astronomical-night hours that cross the wet-hour threshold. The Stargazing Trip score answers a broader question: how well do darkness, historical cloud conditions, dew, wind, temperature, elevation, and documented access work together in that month? Comparing the two reveals where a rain-only decision leaves useful observing quality on the table."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Where the driest month loses to the stronger overall window",
+      "introduction": "Wet hours are the share of astronomical-night hours meeting the precipitation threshold. The table retains the eight different-month cases with the largest Trip-score advantage.",
+      "columns": [
+        "Destination",
+        "Driest month",
+        "Wet hours",
+        "Trip",
+        "Best trip month",
+        "Wet hours",
+        "Trip",
+        "Gain",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Kissimmee Prairie",
+          "July",
+          "4.1%",
+          "66",
+          "April",
+          "4.8%",
+          "84",
+          "+18",
+          "Limited"
+        ],
+        [
+          "Boundary Waters",
+          "February",
+          "9.7%",
+          "62",
+          "August",
+          "12.2%",
+          "77",
+          "+15",
+          "Limited"
+        ],
+        [
+          "Newport State Park",
+          "February",
+          "11.6%",
+          "65",
+          "August",
+          "12.6%",
+          "79",
+          "+14",
+          "Limited"
+        ],
+        [
+          "Staunton River State Park",
+          "July",
+          "8.8%",
+          "64",
+          "October",
+          "10.8%",
+          "76",
+          "+12",
+          "Limited"
+        ],
+        [
+          "Grasslands National Park",
+          "July",
+          "4.5%",
+          "81",
+          "August",
+          "6%",
+          "92",
+          "+11",
+          "Public"
+        ],
+        [
+          "Kozushima",
+          "May",
+          "19.1%",
+          "63",
+          "December",
+          "19.5%",
+          "73",
+          "+10",
+          "Limited"
+        ],
+        [
+          "Manitoulin Island",
+          "June",
+          "11%",
+          "70",
+          "August",
+          "12.7%",
+          "80",
+          "+10",
+          "Limited"
+        ],
+        [
+          "Minami-Rokuroshi",
+          "August",
+          "17.6%",
+          "58",
+          "April",
+          "23.3%",
+          "68",
+          "+10",
+          "Limited"
+        ]
+      ],
+      "note": "Selection is based on the representative site's 1991–2020 ERA5 snapshot and published monthly scores. Wet-hour share is not a whole-night rain probability, and a small percentage difference should not be read as a forecast for booked dates."
+    },
+    {
+      "kind": "prose",
+      "heading": "Small rain differences can hide large score differences",
+      "paragraphs": [
+        "The largest gaps in the table do not mean that the recommended month is wet. They show that the driest month gains too little on the precipitation measure to offset losses elsewhere. At several destinations, the wet-hour difference is only a few percentage points while the combined trip score improves by ten points or more in another month. That is a meaningful planning trade-off, especially when the drier month is colder, cloudier, or shorter on usable darkness.",
+        "The pattern also prevents a common reading error. Wet-night-hour probability is an hourly share, not the percentage of nights ruined by rain. A brief wet hour and a full washed-out night are not equivalent, and neighbouring hours or nights are not independent. The table therefore keeps the precipitation value beside the combined score instead of converting it into a false promise about how many nights will work."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Use rain to reject bad windows, not to choose the winner alone",
+      "body": "Start with a month that is acceptably dry, then compare cloud, darkness, temperature, wind, dew, access, and the Moon. The last fraction of precipitation advantage is rarely worth a much weaker observing profile."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the result changes from Florida to northern lakes",
+      "paragraphs": [
+        "Seasonal mechanisms differ by destination. A subtropical site can reach its lowest wet-hour value during a hot, humid, or cloud-prone period, while a continental northern site may be driest in winter when cold and shorter visitor operations reduce practicality. Maritime islands can remain relatively wet throughout the year, making wind and cloud more decisive than a small movement in precipitation alone. The same selection rule exposes different local trade-offs rather than forcing one climate story onto every row.",
+        "Access can move independently of climate as well. A public label does not mean that every road, campground, gate, or nighttime parking area operates year-round, and a limited label may involve bookings, guest-only use, permits, or controlled hours. The score uses the reviewed access input, but it cannot know a future closure. A statistically favourable month still requires a current check with the published authority or operator source."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Turn the historical comparison into a date decision",
+      "paragraphs": [
+        "Use the table to choose a season, then open the destination's monthly profile and inspect the component values. Decide how much rain risk your equipment, road, and group can tolerate. Add Moon phase for the exact dates, because a dry month can still offer a bright observing night. For a short fixed-date trip, build a fallback activity or a second destination rather than assuming that a climate normal protects a booking.",
+        "Near departure, replace every historical average with current hourly weather, warnings, road conditions, fire or smoke information, and official access notices. Local showers, terrain, and coastal effects can sit below the ERA5 grid scale. The data supports a defensible shortlist; it does not authorise entry, guarantee a dry night, or make a hazardous route sensible when present conditions disagree."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations assessed",
+      "value": "119",
+      "note": "Active real-data destinations with public or limited access"
+    },
+    {
+      "label": "Different best month",
+      "value": "79 of 119",
+      "note": "Driest month and highest Trip-score month do not match"
+    },
+    {
+      "label": "Largest score gain",
+      "value": "+18",
+      "note": "Best trip month versus driest month in the selected cases"
+    }
+  ]
+}

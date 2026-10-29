@@ -487,6 +487,88 @@ function milkyWayWindows2027(): DatasetOutput {
   };
 }
 
+function driestVersusBestMonth(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => {
+      const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+      const wetMonths = climate.months.filter((item): item is typeof item & { wetNightHourProbability: number } => item.wetNightHourProbability !== null);
+      const driest = wetMonths.reduce((winner, item) => item.wetNightHourProbability < winner.wetNightHourProbability ? item : winner);
+      const driestScore = monthly.find((item) => item.month === driest.month);
+      const bestClimate = climate.months.find((item) => item.month === best.month);
+      if (!driestScore || bestClimate?.wetNightHourProbability === null || bestClimate?.wetNightHourProbability === undefined) throw new Error(`${destination.slug}: incomplete rain comparison`);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        driestMonth: driest.month,
+        driestWet: driest.wetNightHourProbability * 100,
+        driestTrip: driestScore.stargazingTrip,
+        bestMonth: best.month,
+        bestWet: bestClimate.wetNightHourProbability * 100,
+        bestTrip: best.stargazingTrip,
+        gain: best.stargazingTrip - driestScore.stargazingTrip,
+      };
+    });
+  const differentMonthCount = values.filter((item) => item.bestMonth !== item.driestMonth).length;
+  const selected = values
+    .filter((item) => item.bestMonth !== item.driestMonth)
+    .sort((left, right) => right.gain - left.gain || left.destination.localeCompare(right.destination))
+    .slice(0, 8);
+  return {
+    metrics: [
+      { label: "Destinations assessed", value: String(values.length), note: "Active real-data destinations with public or limited access" },
+      { label: "Different best month", value: `${differentMonthCount} of ${values.length}`, note: "Driest month and highest Trip-score month do not match" },
+      { label: "Largest score gain", value: `+${Math.max(...selected.map((item) => item.gain))}`, note: "Best trip month versus driest month in the selected cases" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Where the driest month loses to the stronger overall window",
+      "Wet hours are the share of astronomical-night hours meeting the precipitation threshold. The table retains the eight different-month cases with the largest Trip-score advantage.",
+      ["Destination", "Driest month", "Wet hours", "Trip", "Best trip month", "Wet hours", "Trip", "Gain", "Access"],
+      selected.map((item) => [item.destination, monthNames[item.driestMonth - 1], `${round(item.driestWet)}%`, String(item.driestTrip), monthNames[item.bestMonth - 1], `${round(item.bestWet)}%`, String(item.bestTrip), `+${item.gain}`, item.access === "yes" ? "Public" : "Limited"]),
+      "Selection is based on the representative site's 1991–2020 ERA5 snapshot and published monthly scores. Wet-hour share is not a whole-night rain probability, and a small percentage difference should not be read as a forecast for booked dates.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
+function multiNightClearExpectation(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly, climate }) => {
+      const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+      const weather = climate.months.find((item) => item.month === best.month);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        bestMonth: best.month,
+        bestTrip: best.stargazingTrip,
+        clear: weather?.clearNightProbability ?? null,
+      };
+    })
+    .filter((item): item is typeof item & { clear: number } => item.bestTrip >= 75 && item.clear !== null)
+    .sort((left, right) => left.clear - right.clear || left.destination.localeCompare(right.destination));
+  const lower = values.slice(0, 4);
+  const higher = values.slice(-4).sort((left, right) => right.clear - left.clear || left.destination.localeCompare(right.destination));
+  const selected = [...lower.map((item) => ({ ...item, group: "Lower-clear window" })), ...higher.map((item) => ({ ...item, group: "Higher-clear window" }))];
+  return {
+    metrics: [
+      { label: "High-score windows", value: String(values.length), note: "Best months with a Trip score of at least 75" },
+      { label: "One-night range", value: `${round(Math.min(...selected.map((item) => item.clear)) * 100)}–${round(Math.max(...selected.map((item) => item.clear)) * 100)}%`, note: "Historical clear-night probability in the selected windows" },
+      { label: "Five-night expectation", value: `${round(Math.min(...selected.map((item) => item.clear)) * 5)}–${round(Math.max(...selected.map((item) => item.clear)) * 5)}`, note: "Expected clear nights, not a guarantee" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Expected clear nights across three trip lengths",
+      "Every row is the destination's highest-scoring month and has a Trip score of at least 75. Expected counts multiply the historical monthly clear-night probability by trip length.",
+      ["Reliability group", "Destination", "Best month", "Trip", "Clear-night probability", "1 night", "3 nights", "5 nights", "Access"],
+      selected.map((item) => [item.group, item.destination, monthNames[item.bestMonth - 1], String(item.bestTrip), `${round(item.clear * 100)}%`, round(item.clear, 2).toFixed(2), round(item.clear * 3, 2).toFixed(2), round(item.clear * 5, 2).toFixed(2), item.access === "yes" ? "Public" : "Limited"]),
+      "Expected counts are long-run averages and can be fractional. They do not state the probability of at least one clear night, because consecutive nights share weather systems and should not be assumed independent.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -500,6 +582,8 @@ const builders = {
   "best-month-temperature-range": bestMonthTemperatureRange,
   "meteor-showers-2027": meteorShowers2027,
   "milky-way-windows-2027": milkyWayWindows2027,
+  "driest-versus-best-month": driestVersusBestMonth,
+  "multi-night-clear-expectation": multiNightClearExpectation,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {

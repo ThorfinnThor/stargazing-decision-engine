@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -637,6 +637,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "Open the chosen destination's monthly profile and compare June cloud, wind, dew, rain, and temperature history. Then identify the exact documented observing site and read current official access, booking, road, seasonal-operation, and closure information. A regional dark-sky label does not extend permission to every beach, field, roadside, reserve, or private property inside the destination name. Limited access remains limited even on the best astronomical night of the year.",
           "Near the date, use an hourly forecast and current Moon and sky information to decide whether the calculated window survives real conditions. Check the orientation and foreground in daylight, preserve dark adaptation, and keep a fallback date or destination where possible. The 2027 calendar gives the strongest geometric shortlist our data can support. The final night still depends on weather, local visibility, lawful access, and the observer's ability to use the available hours safely.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "driest-month-versus-best-stargazing-month",
+    title: "The driest month is not always the best stargazing month",
+    seoDescription: "Compare the driest historical month with the highest-scoring stargazing month at eight destinations, using real rain, cloud, darkness, comfort, and access data.",
+    standfirst: "Avoiding rain matters, but minimising wet nighttime hours can push a trip into colder, cloudier, windier, or much shorter nights. Eight destination profiles show why the combined answer often lands in another month.",
+    publishedAt: "2026-10-29",
+    lastReviewedAt: "2026-10-29",
+    readingMinutes: 8,
+    heroDestinationSlug: "kissimmee-prairie",
+    datasetId: "driest-versus-best-month",
+    relatedDestinationSlugs: ["kissimmee-prairie", "boundary-waters", "newport-wisconsin", "staunton-river", "grasslands", "kozushima", "manitoulin", "minami-rokuroshi"],
+    methodologyNote: "Among active destinations with real score snapshots and a representative site marked public or limited access, we identified each site's month with the lowest 1991–2020 ERA5 wet-night-hour probability and its month with the highest published Stargazing Trip score. We retained the eight different-month cases with the largest score advantage for the best trip month. Ties follow source order. Wet-night-hour probability measures the share of astronomical-night hours meeting the pipeline's precipitation threshold; it is not the probability that an entire night or trip will be rainy. The comparison is not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Dry weather is necessary, but driest is a narrow optimisation",
+        paragraphs: [
+          "Rain can end an observing session quickly, damage unprotected equipment, and make remote roads or footpaths unsafe. It is therefore reasonable to look for a dry season. The mistake is to treat the lowest precipitation statistic as a complete stargazing recommendation. A month can be marginally drier at night while offering more cloud, less astronomical darkness, harsher temperatures, stronger wind, or a lower practical score than a neighbouring season.",
+          "Our climate snapshot reports the share of astronomical-night hours that cross the wet-hour threshold. The Stargazing Trip score answers a broader question: how well do darkness, historical cloud conditions, dew, wind, temperature, elevation, and documented access work together in that month? Comparing the two reveals where a rain-only decision leaves useful observing quality on the table.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Small rain differences can hide large score differences",
+        paragraphs: [
+          "The largest gaps in the table do not mean that the recommended month is wet. They show that the driest month gains too little on the precipitation measure to offset losses elsewhere. At several destinations, the wet-hour difference is only a few percentage points while the combined trip score improves by ten points or more in another month. That is a meaningful planning trade-off, especially when the drier month is colder, cloudier, or shorter on usable darkness.",
+          "The pattern also prevents a common reading error. Wet-night-hour probability is an hourly share, not the percentage of nights ruined by rain. A brief wet hour and a full washed-out night are not equivalent, and neighbouring hours or nights are not independent. The table therefore keeps the precipitation value beside the combined score instead of converting it into a false promise about how many nights will work.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Use rain to reject bad windows, not to choose the winner alone",
+        body: "Start with a month that is acceptably dry, then compare cloud, darkness, temperature, wind, dew, access, and the Moon. The last fraction of precipitation advantage is rarely worth a much weaker observing profile.",
+      },
+      {
+        kind: "prose",
+        heading: "Why the result changes from Florida to northern lakes",
+        paragraphs: [
+          "Seasonal mechanisms differ by destination. A subtropical site can reach its lowest wet-hour value during a hot, humid, or cloud-prone period, while a continental northern site may be driest in winter when cold and shorter visitor operations reduce practicality. Maritime islands can remain relatively wet throughout the year, making wind and cloud more decisive than a small movement in precipitation alone. The same selection rule exposes different local trade-offs rather than forcing one climate story onto every row.",
+          "Access can move independently of climate as well. A public label does not mean that every road, campground, gate, or nighttime parking area operates year-round, and a limited label may involve bookings, guest-only use, permits, or controlled hours. The score uses the reviewed access input, but it cannot know a future closure. A statistically favourable month still requires a current check with the published authority or operator source.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Turn the historical comparison into a date decision",
+        paragraphs: [
+          "Use the table to choose a season, then open the destination's monthly profile and inspect the component values. Decide how much rain risk your equipment, road, and group can tolerate. Add Moon phase for the exact dates, because a dry month can still offer a bright observing night. For a short fixed-date trip, build a fallback activity or a second destination rather than assuming that a climate normal protects a booking.",
+          "Near departure, replace every historical average with current hourly weather, warnings, road conditions, fire or smoke information, and official access notices. Local showers, terrain, and coastal effects can sit below the ERA5 grid scale. The data supports a defensible shortlist; it does not authorise entry, guarantee a dry night, or make a hazardous route sensible when present conditions disagree.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "one-night-or-five-stargazing-trip",
+    title: "One night or five? What trip length changes in the climate data",
+    seoDescription: "See how expected clear nights change from a one-night visit to three- and five-night stargazing trips across eight high-scoring destination windows.",
+    standfirst: "A strong destination can still fail on a single booked night. Extending the stay does not change the climate, but it increases the expected number of usable nights—and the value differs sharply between destinations.",
+    publishedAt: "2026-10-29",
+    lastReviewedAt: "2026-10-29",
+    readingMinutes: 8,
+    heroDestinationSlug: "great-barrier-island",
+    datasetId: "multi-night-clear-expectation",
+    relatedDestinationSlugs: ["grasslands", "boundary-waters", "rakiura", "great-barrier-island", "atacama", "natural-bridges", "namibrand", "tsumkwe"],
+    methodologyNote: "For every active real-data destination with public or limited representative-site access, we selected its highest published monthly Stargazing Trip score and retained windows scoring at least 75 with a non-null 1991–2020 ERA5 clear-night probability. The table shows the four lowest and four highest clear-night probabilities in that high-score set. Expected clear nights equal the monthly clear-night probability multiplied by one, three, or five nights. This linear expectation does not require nights to be independent, but it is not the probability of seeing at least one clear night and it is not a live forecast.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Trip length changes exposure to opportunity, not the weather",
+        paragraphs: [
+          "A destination score is often read as if it belonged to a booking. It does not. The climate model describes a historical month at a representative site, while a booking occupies particular dates that can still land under cloud. Staying longer gives the atmosphere more chances to offer a usable interval, but it cannot make an unsettled weather pattern independent from one night to the next or guarantee that any night will meet the clear-night definition.",
+          "The most honest quantity available from the monthly probability is an expected count. If a month historically records a 60% clear-night probability, one night contributes 0.6 expected clear nights, three nights contribute 1.8, and five contribute 3.0. Those figures are long-run averages across many hypothetical trips. No traveller observes 1.8 nights, and a real three-night stay can still deliver zero, one, two, or three.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "High trip scores can carry different weather reliability",
+        paragraphs: [
+          "Every destination in the table reaches a best-month Stargazing Trip score of at least 75, so none is presented as a weak window. Yet the clear-night probabilities span a substantial range. The score also values darkness, dew, wind, temperature, elevation, and access. A destination can therefore earn a strong combined result even when cloud makes a single fixed night less reliable than at a desert leader.",
+          "That distinction should shape the itinerary. A lower-clear window may still be worth choosing for exceptional darkness, geography, or another travel goal, but it benefits more from extra nights and flexible daily plans. A high-clear window reduces weather exposure in the historical record, yet it still needs a current forecast and a Moon check. Reliability is one decision input, not permission to discard every other constraint.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Expected nights are not a guarantee of one successful night",
+        body: "Multiply probability by trip length to compare long-run observing opportunity. Do not convert the result into a promise: adjacent nights share weather systems, and the climate average cannot see the forecast for your dates.",
+      },
+      {
+        kind: "prose",
+        heading: "Why we do not publish a simple at-least-one-night percentage",
+        paragraphs: [
+          "A familiar formula can turn a nightly probability into the chance of at least one success over several attempts, but it assumes independence. Weather rarely behaves that way. A slow front, marine layer, monsoon pulse, or blocking pattern can affect several consecutive nights. Applying an independence formula would produce a precise-looking number that our monthly aggregate does not justify, especially at destinations where seasonal systems persist.",
+          "Expected counts avoid that specific claim because expectations add even when outcomes are correlated. They still rely on the selected dates belonging to the same broad climate window and on the historical definition matching the observer's needs. The pipeline defines a clear night as a dry three-hour sequence during astronomical darkness with cloud cover no higher than 20%. Planetary observing, bright Moon work, or brief visual sessions may tolerate conditions outside that definition.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Choose duration after pricing the cost of a failed night",
+        paragraphs: [
+          "A one-night visit can be rational when travel is short, cancellation is easy, and the trip has other purposes. A remote destination with expensive transport, limited access, or a specialist astrophotography goal places a higher cost on failure and may justify three to five nights. Extra duration also creates room to respond to wind, dew, smoke, fatigue, or access changes even when cloud is not the limiting factor.",
+          "After choosing the month and approximate duration, plan exact dates around the Moon and verify the named site's current rules. Then watch the forecast and official notices as the trip approaches. Use a flexible booking or alternate location where practical. The historical table helps match trip length to climate uncertainty; it does not guarantee clear sky, replace safety judgement, or make an inaccessible site available after dark.",
         ],
       },
     ],

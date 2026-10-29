@@ -7,10 +7,10 @@ import type { SeoRegistry } from "../lib/data/load.js";
 
 const read = <T>(path: string) => JSON.parse(readFileSync(path, "utf8")) as T;
 
-test("English blog publishes exactly twelve reviewed data-led articles from newest to oldest", () => {
+test("English blog publishes exactly fourteen reviewed data-led articles from newest to oldest", () => {
   const index = read<BlogPostSummary[]>("public/data/stargazing/editorial/blog/index.json");
-  assert.equal(index.length, 12);
-  assert.equal(new Set(index.map((post) => post.slug)).size, 12);
+  assert.equal(index.length, 14);
+  assert.equal(new Set(index.map((post) => post.slug)).size, 14);
   assert.deepEqual(index.map((post) => post.publishedAt), index.map((post) => post.publishedAt).sort((left, right) => Date.parse(right) - Date.parse(left)));
   for (const summary of index) {
     const post = read<BlogPost>(`public/data/stargazing/editorial/blog/${summary.slug}.json`);
@@ -27,7 +27,7 @@ test("blog SEO is indexable, discoverable, and explicitly English-only", () => {
   const index = read<BlogPostSummary[]>("public/data/stargazing/editorial/blog/index.json");
   const registry = read<SeoRegistry>("public/data/stargazing/seo/registry.json");
   const blogPages = registry.pages.filter((page) => page.pageType === "blog" || page.pageType === "blog-post");
-  assert.equal(blogPages.length, 13);
+  assert.equal(blogPages.length, 15);
   assert.ok(blogPages.every((page) => page.locale === "en" && page.indexable));
   assert.ok(blogPages.every((page) => page.alternatePaths.en === page.path && page.alternatePaths.de === undefined));
   assert.deepEqual(new Set(blogPages.filter((page) => page.pageType === "blog-post").map((page) => page.path.split("/").at(-2))), new Set(index.map((post) => post.slug)));

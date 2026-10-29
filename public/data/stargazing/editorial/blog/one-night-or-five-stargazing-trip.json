@@ -1,0 +1,186 @@
+{
+  "version": 1,
+  "slug": "one-night-or-five-stargazing-trip",
+  "title": "One night or five? What trip length changes in the climate data",
+  "seoDescription": "See how expected clear nights change from a one-night visit to three- and five-night stargazing trips across eight high-scoring destination windows.",
+  "standfirst": "A strong destination can still fail on a single booked night. Extending the stay does not change the climate, but it increases the expected number of usable nights—and the value differs sharply between destinations.",
+  "publishedAt": "2026-10-29",
+  "lastReviewedAt": "2026-10-29",
+  "readingMinutes": 8,
+  "heroDestinationSlug": "great-barrier-island",
+  "datasetId": "multi-night-clear-expectation",
+  "relatedDestinationSlugs": [
+    "aigues-tortes",
+    "kangaroo-island",
+    "great-barrier-island",
+    "bukk",
+    "aenos",
+    "lapalala",
+    "makgadikgadi",
+    "mapungubwe"
+  ],
+  "methodologyNote": "For every active real-data destination with public or limited representative-site access, we selected its highest published monthly Stargazing Trip score and retained windows scoring at least 75 with a non-null 1991–2020 ERA5 clear-night probability. The table shows the four lowest and four highest clear-night probabilities in that high-score set. Expected clear nights equal the monthly clear-night probability multiplied by one, three, or five nights. This linear expectation does not require nights to be independent, but it is not the probability of seeing at least one clear night and it is not a live forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Trip length changes exposure to opportunity, not the weather",
+      "paragraphs": [
+        "A destination score is often read as if it belonged to a booking. It does not. The climate model describes a historical month at a representative site, while a booking occupies particular dates that can still land under cloud. Staying longer gives the atmosphere more chances to offer a usable interval, but it cannot make an unsettled weather pattern independent from one night to the next or guarantee that any night will meet the clear-night definition.",
+        "The most honest quantity available from the monthly probability is an expected count. If a month historically records a 60% clear-night probability, one night contributes 0.6 expected clear nights, three nights contribute 1.8, and five contribute 3.0. Those figures are long-run averages across many hypothetical trips. No traveller observes 1.8 nights, and a real three-night stay can still deliver zero, one, two, or three."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Expected clear nights across three trip lengths",
+      "introduction": "Every row is the destination's highest-scoring month and has a Trip score of at least 75. Expected counts multiply the historical monthly clear-night probability by trip length.",
+      "columns": [
+        "Reliability group",
+        "Destination",
+        "Best month",
+        "Trip",
+        "Clear-night probability",
+        "1 night",
+        "3 nights",
+        "5 nights",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Lower-clear window",
+          "Aigüestortes",
+          "July",
+          "76",
+          "31%",
+          "0.31",
+          "0.93",
+          "1.55",
+          "Limited"
+        ],
+        [
+          "Lower-clear window",
+          "Kangaroo Island",
+          "February",
+          "79",
+          "33.8%",
+          "0.34",
+          "1.02",
+          "1.69",
+          "Limited"
+        ],
+        [
+          "Lower-clear window",
+          "Aotea Great Barrier Island",
+          "January",
+          "78",
+          "34.5%",
+          "0.35",
+          "1.04",
+          "1.73",
+          "Public"
+        ],
+        [
+          "Lower-clear window",
+          "Bükk National Park",
+          "August",
+          "77",
+          "36.7%",
+          "0.37",
+          "1.10",
+          "1.83",
+          "Limited"
+        ],
+        [
+          "Higher-clear window",
+          "Mount Aenos",
+          "August",
+          "88",
+          "91.9%",
+          "0.92",
+          "2.76",
+          "4.60",
+          "Limited"
+        ],
+        [
+          "Higher-clear window",
+          "Lapalala Wilderness",
+          "May",
+          "95",
+          "87.4%",
+          "0.87",
+          "2.62",
+          "4.37",
+          "Limited"
+        ],
+        [
+          "Higher-clear window",
+          "Makgadikgadi Pans",
+          "May",
+          "94",
+          "86.6%",
+          "0.87",
+          "2.60",
+          "4.33",
+          "Limited"
+        ],
+        [
+          "Higher-clear window",
+          "Mapungubwe",
+          "May",
+          "93",
+          "86.5%",
+          "0.86",
+          "2.59",
+          "4.32",
+          "Limited"
+        ]
+      ],
+      "note": "Expected counts are long-run averages and can be fractional. They do not state the probability of at least one clear night, because consecutive nights share weather systems and should not be assumed independent."
+    },
+    {
+      "kind": "prose",
+      "heading": "High trip scores can carry different weather reliability",
+      "paragraphs": [
+        "Every destination in the table reaches a best-month Stargazing Trip score of at least 75, so none is presented as a weak window. Yet the clear-night probabilities span a substantial range. The score also values darkness, dew, wind, temperature, elevation, and access. A destination can therefore earn a strong combined result even when cloud makes a single fixed night less reliable than at a desert leader.",
+        "That distinction should shape the itinerary. A lower-clear window may still be worth choosing for exceptional darkness, geography, or another travel goal, but it benefits more from extra nights and flexible daily plans. A high-clear window reduces weather exposure in the historical record, yet it still needs a current forecast and a Moon check. Reliability is one decision input, not permission to discard every other constraint."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Expected nights are not a guarantee of one successful night",
+      "body": "Multiply probability by trip length to compare long-run observing opportunity. Do not convert the result into a promise: adjacent nights share weather systems, and the climate average cannot see the forecast for your dates."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why we do not publish a simple at-least-one-night percentage",
+      "paragraphs": [
+        "A familiar formula can turn a nightly probability into the chance of at least one success over several attempts, but it assumes independence. Weather rarely behaves that way. A slow front, marine layer, monsoon pulse, or blocking pattern can affect several consecutive nights. Applying an independence formula would produce a precise-looking number that our monthly aggregate does not justify, especially at destinations where seasonal systems persist.",
+        "Expected counts avoid that specific claim because expectations add even when outcomes are correlated. They still rely on the selected dates belonging to the same broad climate window and on the historical definition matching the observer's needs. The pipeline defines a clear night as a dry three-hour sequence during astronomical darkness with cloud cover no higher than 20%. Planetary observing, bright Moon work, or brief visual sessions may tolerate conditions outside that definition."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Choose duration after pricing the cost of a failed night",
+      "paragraphs": [
+        "A one-night visit can be rational when travel is short, cancellation is easy, and the trip has other purposes. A remote destination with expensive transport, limited access, or a specialist astrophotography goal places a higher cost on failure and may justify three to five nights. Extra duration also creates room to respond to wind, dew, smoke, fatigue, or access changes even when cloud is not the limiting factor.",
+        "After choosing the month and approximate duration, plan exact dates around the Moon and verify the named site's current rules. Then watch the forecast and official notices as the trip approaches. Use a flexible booking or alternate location where practical. The historical table helps match trip length to climate uncertainty; it does not guarantee clear sky, replace safety judgement, or make an inaccessible site available after dark."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "High-score windows",
+      "value": "84",
+      "note": "Best months with a Trip score of at least 75"
+    },
+    {
+      "label": "One-night range",
+      "value": "31–91.9%",
+      "note": "Historical clear-night probability in the selected windows"
+    },
+    {
+      "label": "Five-night expectation",
+      "value": "1.5–4.6",
+      "note": "Expected clear nights, not a guarantee"
+    }
+  ]
+}
