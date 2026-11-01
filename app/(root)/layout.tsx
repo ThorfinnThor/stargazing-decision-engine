@@ -13,7 +13,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="en">
       <head><script dangerouslySetInnerHTML={{ __html: consentHeadScript }} /><link rel="describedby" href="/llms.txt" /></head>
-      <body><CookieConsent locale="en" />{children}<GetYourGuideAnalytics /></body>
+      <body>{children}<CookieConsent locale="en" /><GetYourGuideAnalytics /></body>
     </html>
   );
 }

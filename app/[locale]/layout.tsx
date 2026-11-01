@@ -28,7 +28,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   return (
     <html lang={locale}>
       <head><script dangerouslySetInnerHTML={{ __html: consentHeadScript }} /><link rel="describedby" href="/llms.txt" /></head>
-      <body><CookieConsent locale={locale} /><SiteHeader locale={locale} />{children}<LegalFooter locale={locale} /><GetYourGuideAnalytics /></body>
+      <body><SiteHeader locale={locale} />{children}<LegalFooter locale={locale} /><CookieConsent locale={locale} /><GetYourGuideAnalytics /></body>
     </html>
   );
 }
