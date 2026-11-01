@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "slug": "how-far-from-city-to-dark-sky-trip",
+  "title": "How far from a major city to a strong stargazing trip?",
+  "seoDescription": "Compare the leading reviewed short-trip destination from 23 cities by great-circle distance, best month, Stargazing Trip score, and distance-weighted ranking.",
+  "standfirst": "The strongest nearby option in our catalog can sit 73 kilometres from one city and almost 500 from another. All 23 origin files show why a short dark-sky trip depends as much on geography and catalog coverage as on the destination score.",
+  "publishedAt": "2026-11-01",
+  "lastReviewedAt": "2026-11-01",
+  "readingMinutes": 9,
+  "heroDestinationSlug": "westhavelland",
+  "datasetId": "short-trip-city-reach",
+  "relatedDestinationSlugs": [
+    "south-downs",
+    "mon-and-nyord",
+    "westhavelland",
+    "great-barrier-island",
+    "de-boschplaat",
+    "kitt-peak",
+    "alqueva",
+    "cederberg",
+    "elan-valley",
+    "monfrague",
+    "el-leoncito",
+    "joshua-tree",
+    "great-sand-dunes",
+    "north-york-moors",
+    "zselic",
+    "cherry-springs",
+    "isle-of-sark",
+    "warrumbungle",
+    "alpes-azur-mercantour",
+    "rhoen",
+    "central-tasmania",
+    "hanle"
+  ],
+  "methodologyNote": "We loaded all 23 committed active-origin short-trip files and took the first-ranked entry from each. The short-trip ranking uses 75% of the destination's best eligible monthly Stargazing Trip score and 25% distance utility within the origin's configured radius. Distance is the great-circle separation from the city coordinate to the selected representative observing site; it is not road distance, drive time, a route recommendation, or proof that a crossing is practical. Low-confidence months and unusable access are excluded by the existing pipeline. The results are not a live forecast and do not replace current transport or access checks.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Nearby is a ranking decision, not a fixed distance",
+      "paragraphs": [
+        "A useful dark-sky trip from a city must balance two competing values. Travelling farther can reach a stronger observing environment, while a shorter journey is easier to repeat and less costly to abandon when the forecast deteriorates. Ranking only by sky would turn every city page into a long-distance search. Ranking only by distance could reward a nearby site whose historical observing conditions are too weak. The short-trip model keeps both signals visible.",
+        "For each of the 23 configured origin cities, this article takes the first-ranked result already produced by the public data pipeline. The ranking gives 75% weight to the destination's strongest eligible monthly Stargazing Trip score and 25% to distance utility. It therefore prefers a materially better sky when the extra distance remains inside the configured radius, while still penalising a long reach that makes a trip less short in practice."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "The leading reviewed short-trip result from all 23 origins",
+      "introduction": "Rows are ordered by great-circle distance. The selected destination is rank one in its origin file after combining 75% best-month Stargazing Trip score and 25% distance utility.",
+      "columns": [
+        "Origin city",
+        "Leading destination",
+        "Great-circle distance",
+        "Best month",
+        "Trip",
+        "Short-trip score",
+        "Confidence"
+      ],
+      "rows": [
+        [
+          "London",
+          "South Downs",
+          "73 km",
+          "September",
+          "64",
+          "73",
+          "High"
+        ],
+        [
+          "Copenhagen",
+          "Møn and Nyord",
+          "79 km",
+          "April",
+          "71",
+          "78.25",
+          "High"
+        ],
+        [
+          "Berlin",
+          "Westhavelland",
+          "81.6 km",
+          "April",
+          "71",
+          "78.25",
+          "High"
+        ],
+        [
+          "Auckland",
+          "Aotea Great Barrier Island",
+          "92.4 km",
+          "January",
+          "78",
+          "83.5",
+          "High"
+        ],
+        [
+          "Amsterdam",
+          "De Boschplaat",
+          "122.4 km",
+          "April",
+          "64",
+          "69.25",
+          "High"
+        ],
+        [
+          "Phoenix",
+          "Kitt Peak",
+          "171.6 km",
+          "April",
+          "95",
+          "92.5",
+          "Moderate"
+        ],
+        [
+          "Lisbon",
+          "Alqueva",
+          "172.6 km",
+          "June",
+          "92",
+          "90.25",
+          "High"
+        ],
+        [
+          "Hamburg",
+          "Westhavelland",
+          "177.1 km",
+          "April",
+          "71",
+          "74.5",
+          "High"
+        ],
+        [
+          "Cape Town",
+          "Cederberg Wilderness",
+          "187.1 km",
+          "January",
+          "95",
+          "92.5",
+          "Moderate"
+        ],
+        [
+          "Dublin",
+          "Elan Valley",
+          "209.8 km",
+          "April",
+          "60",
+          "66.25",
+          "High"
+        ],
+        [
+          "Madrid",
+          "Monfragüe",
+          "210.1 km",
+          "July",
+          "92",
+          "90.25",
+          "High"
+        ],
+        [
+          "Santiago",
+          "El Leoncito",
+          "224.2 km",
+          "November",
+          "94",
+          "91.75",
+          "Moderate"
+        ],
+        [
+          "Los Angeles",
+          "Joshua Tree",
+          "228 km",
+          "April",
+          "94",
+          "91.75",
+          "High"
+        ],
+        [
+          "Denver",
+          "Great Sand Dunes",
+          "228.5 km",
+          "June",
+          "93",
+          "91",
+          "Moderate"
+        ],
+        [
+          "Edinburgh",
+          "North York Moors",
+          "242.5 km",
+          "April",
+          "60",
+          "66.25",
+          "High"
+        ],
+        [
+          "Vienna",
+          "Zselic Starry Sky Park",
+          "243.1 km",
+          "August",
+          "80",
+          "81.25",
+          "High"
+        ],
+        [
+          "New York",
+          "Cherry Springs",
+          "335.4 km",
+          "September",
+          "77",
+          "72.75",
+          "High"
+        ],
+        [
+          "Paris",
+          "Isle of Sark",
+          "348.7 km",
+          "April",
+          "65",
+          "63.75",
+          "High"
+        ],
+        [
+          "Sydney",
+          "Warrumbungle",
+          "354.9 km",
+          "March",
+          "96",
+          "87",
+          "High"
+        ],
+        [
+          "Zurich",
+          "Alpes Azur Mercantour",
+          "385.7 km",
+          "January",
+          "81",
+          "75.75",
+          "Moderate"
+        ],
+        [
+          "Brussels",
+          "Rhön",
+          "395.5 km",
+          "April",
+          "68",
+          "66",
+          "High"
+        ],
+        [
+          "Melbourne",
+          "Central Tasmania",
+          "489.6 km",
+          "February",
+          "65",
+          "63.75",
+          "High"
+        ],
+        [
+          "Delhi",
+          "Hanle",
+          "493.1 km",
+          "June",
+          "96",
+          "87",
+          "Moderate"
+        ]
+      ],
+      "note": "Great-circle distance is coordinate-to-coordinate separation. It does not estimate roads, ferries, borders, traffic, elevation, travel time, cost, or current access. Rank one is the modelled compromise inside each configured radius, not necessarily the closest destination or the highest raw Trip score."
+    },
+    {
+      "kind": "prose",
+      "heading": "The 73-to-493-kilometre spread needs careful reading",
+      "paragraphs": [
+        "The closest leading result belongs to a city with a reviewed destination inside a compact regional radius. At the other end, some origins need almost the full configured search distance before the catalog reaches a qualifying representative site. That contrast describes our current destination network as well as real geography. A blank part of the map does not prove that no darker local place exists; it means the reviewed catalog does not currently support recommending one through this pipeline.",
+        "The distance column is deliberately labelled great-circle distance. It measures the shortest separation over the Earth between two coordinates. It does not know roads, ferries, borders, mountains, traffic, seasonal closures, or the location of a traveller's home within a large city. A 100-kilometre straight-line result can be a much longer journey, while an island destination may require a ferry or flight. The number supports comparison, not navigation."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Air distance is not an itinerary",
+      "body": "Use the table to identify a reviewed candidate, then calculate the real route yourself. Check transport, border or ferry requirements, nighttime access, parking, closures, and the return journey before treating any result as short or practical."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the highest Trip score does not always rank first",
+      "paragraphs": [
+        "A more distant destination can have a higher Stargazing Trip score and still lose the short-trip ranking to a closer alternative. That is intentional. The result answers which reviewed option offers the strongest compromise from the named origin, not which destination has the best sky anywhere inside the radius. The table keeps both the raw Trip score and the distance-weighted Short-trip score so the trade-off can be audited rather than hidden.",
+        "Confidence also remains visible. Moderate confidence can reflect limitations such as a high-elevation climate grid or other source constraints even when the score itself is strong. It is not a percentage chance that the result is correct. A high-confidence row is better supported by the model inputs; it still cannot guarantee weather, access, or safe travel on a future date."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Turn a city comparison into a real weekend plan",
+      "paragraphs": [
+        "Begin with the listed best month, then inspect the destination's full monthly profile rather than assuming the top month is the only usable one. Check Moon phase for the exact dates and compare a current forecast close to departure. If the drive, ferry, or flight is expensive, add flexibility through a second night or a daytime purpose. A short trip is especially vulnerable to a single cloudy booking because there is little time to recover.",
+        "Finally, open the destination guide and follow its official sources for the named observing footprint. Public does not mean unrestricted at every hour, and limited access can require a booking, guest stay, programme, permit, or controlled route. Calculate the real route with a current map, set weather and fatigue limits, and keep a lawful fallback. The data can narrow the world to a defensible candidate; the traveller must still prove that the actual journey works."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Origin cities",
+      "value": "23",
+      "note": "Every committed active-origin short-trip file"
+    },
+    {
+      "label": "Leading-distance range",
+      "value": "73–493 km",
+      "note": "Great-circle distance, not road distance"
+    },
+    {
+      "label": "Trip score 90+",
+      "value": "9",
+      "note": "Leading origin results with a best-month Trip score of at least 90"
+    }
+  ]
+}

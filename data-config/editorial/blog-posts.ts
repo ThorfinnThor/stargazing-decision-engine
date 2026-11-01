@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -741,6 +741,110 @@ export const blogPostSources: BlogPostSource[] = [
         paragraphs: [
           "A one-night visit can be rational when travel is short, cancellation is easy, and the trip has other purposes. A remote destination with expensive transport, limited access, or a specialist astrophotography goal places a higher cost on failure and may justify three to five nights. Extra duration also creates room to respond to wind, dew, smoke, fatigue, or access changes even when cloud is not the limiting factor.",
           "After choosing the month and approximate duration, plan exact dates around the Moon and verify the named site's current rules. Then watch the forecast and official notices as the trip approaches. Use a flexible booking or alternate location where practical. The historical table helps match trip length to climate uncertainty; it does not guarantee clear sky, replace safety judgement, or make an inaccessible site available after dark.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "best-sky-versus-easiest-stargazing-trip",
+    title: "The best sky can still be the harder trip",
+    seoDescription: "Compare Sky Quality and Trip Comfort at eight stargazing destinations where the observing environment and practical experience point in opposite directions.",
+    standfirst: "A dark, clear observing environment can demand cold, wind, altitude, or controlled access. A comfortable night can also sit under weaker sky. Eight real destination windows show why those scores must remain visible separately.",
+    publishedAt: "2026-11-01",
+    lastReviewedAt: "2026-11-01",
+    readingMinutes: 8,
+    heroDestinationSlug: "atacama",
+    datasetId: "sky-quality-versus-comfort",
+    relatedDestinationSlugs: ["atacama", "hanle", "alpes-azur-mercantour", "achi-village", "pico-do-arieiro", "om-dark-sky", "south-downs", "mayo-dark-sky"],
+    methodologyNote: "For every active destination with real score snapshots and a representative site marked public or limited access, we selected the month with its highest published Stargazing Trip score. We subtracted Trip Comfort from Sky Quality, then retained the four largest positive gaps and four largest negative gaps. Sky Quality combines clear-sky climate, darkness, dew, and elevation; Trip Comfort combines temperature, wind, rain, and the reviewed access input. The final Trip score weights Sky Quality at 80% and Trip Comfort at 20%. These are modelled historical planning scores, not a live forecast or a current access determination.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "A good sky and an easy night are different products",
+        paragraphs: [
+          "Stargazing recommendations often use one adjective—best—to cover two separate questions. The first asks whether the observing environment is dark, historically clear, dry enough to resist dew, and helped by elevation. The second asks whether a traveller can tolerate the temperature and wind, avoid rain, and use the reviewed observing site under its documented access conditions. Those questions can agree, but the largest score gaps show that they do not have to.",
+          "Our published model keeps Sky Quality and Trip Comfort separate before combining them. Sky Quality receives the larger share of the final Stargazing Trip score because the site must first support astronomical observing. Comfort still matters because an excellent sky that a group cannot safely or legally use is not a successful trip. Showing both components prevents a high combined number from hiding which side is doing the work.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Sky-led destinations ask more from the traveller",
+        paragraphs: [
+          "The sky-led group contains windows where exceptional darkness and clear-sky history outrun practical comfort. High plateaus and mountain settings can earn very strong Sky Quality values while temperature, wind, altitude, remoteness, or restricted visitor arrangements reduce the comfort component. The gap does not label those destinations unsafe or undesirable. It says that the astronomical reward depends on more preparation than the headline sky score alone suggests.",
+          "That preparation is destination-specific. High elevation can require acclimatisation and conservative health decisions. Remote roads can make weather, fuel, communications, and a return plan more important. A limited-access site can require a booking, tour, permit, accommodation, or a controlled visitor footprint. The score records a reviewed input; it cannot open a gate or confirm that a programme operates on the chosen night.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Choose the constraint before choosing the winner",
+        body: "If faint targets are the priority, accept only the comfort penalties your group can manage. If ease, warmth, or simple access matters more, do not mistake a high comfort score for equally strong darkness and clear-sky conditions.",
+      },
+      {
+        kind: "prose",
+        heading: "Comfort-led destinations reveal the opposite trade-off",
+        paragraphs: [
+          "In the comfort-led group, temperature, wind, rain, or access inputs look more favourable than the sky component. These locations may support a pleasant outdoor session or an easier wider trip while historical cloud or another sky-quality input limits faint-object observing. A large negative gap is therefore not a failure of the comfort score. It is evidence that physical ease cannot remove cloud or create darker regional lighting.",
+          "The distinction also changes with the observing goal. Lunar, planetary, outreach, and bright-object sessions can tolerate a less pristine sky than wide-field Milky Way photography or faint deep-sky observing. A beginner may value a simple, comfortable session that actually happens. A specialist may accept severe logistics for a rare sky. The component scores make those preferences explicit instead of pretending that one ranking serves every observer.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Use the combined score without surrendering judgement",
+        paragraphs: [
+          "The final Trip score uses an 80/20 weighting in favour of Sky Quality. That is a transparent editorial decision, not a law of nature. Open the destination's monthly profile and inspect the components before accepting its rank. If your group has mobility, cold, altitude, or transport constraints, give the comfort side more practical weight. If the trip exists only to capture a faint target, the sky side may dominate your shortlist.",
+          "Then move from historical structure to current conditions. Check the Moon, hourly forecast, smoke, warnings, roads, operating dates, and official access information. Scores cannot see a temporary closure, local fog pocket, storm, equipment problem, or a traveller's health. Their value is to expose the trade-off early enough that the final decision can be specific, current, and honest about the cost of using the sky.",
+        ],
+      },
+    ],
+  },
+  {
+    slug: "how-far-from-city-to-dark-sky-trip",
+    title: "How far from a major city to a strong stargazing trip?",
+    seoDescription: "Compare the leading reviewed short-trip destination from 23 cities by great-circle distance, best month, Stargazing Trip score, and distance-weighted ranking.",
+    standfirst: "The strongest nearby option in our catalog can sit 73 kilometres from one city and almost 500 from another. All 23 origin files show why a short dark-sky trip depends as much on geography and catalog coverage as on the destination score.",
+    publishedAt: "2026-11-01",
+    lastReviewedAt: "2026-11-01",
+    readingMinutes: 9,
+    heroDestinationSlug: "westhavelland",
+    datasetId: "short-trip-city-reach",
+    relatedDestinationSlugs: ["south-downs", "mon-and-nyord", "westhavelland", "great-barrier-island", "kitt-peak", "alqueva", "cederberg", "joshua-tree"],
+    methodologyNote: "We loaded all 23 committed active-origin short-trip files and took the first-ranked entry from each. The short-trip ranking uses 75% of the destination's best eligible monthly Stargazing Trip score and 25% distance utility within the origin's configured radius. Distance is the great-circle separation from the city coordinate to the selected representative observing site; it is not road distance, drive time, a route recommendation, or proof that a crossing is practical. Low-confidence months and unusable access are excluded by the existing pipeline. The results are not a live forecast and do not replace current transport or access checks.",
+    blocks: [
+      {
+        kind: "prose",
+        heading: "Nearby is a ranking decision, not a fixed distance",
+        paragraphs: [
+          "A useful dark-sky trip from a city must balance two competing values. Travelling farther can reach a stronger observing environment, while a shorter journey is easier to repeat and less costly to abandon when the forecast deteriorates. Ranking only by sky would turn every city page into a long-distance search. Ranking only by distance could reward a nearby site whose historical observing conditions are too weak. The short-trip model keeps both signals visible.",
+          "For each of the 23 configured origin cities, this article takes the first-ranked result already produced by the public data pipeline. The ranking gives 75% weight to the destination's strongest eligible monthly Stargazing Trip score and 25% to distance utility. It therefore prefers a materially better sky when the extra distance remains inside the configured radius, while still penalising a long reach that makes a trip less short in practice.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "The 73-to-493-kilometre spread needs careful reading",
+        paragraphs: [
+          "The closest leading result belongs to a city with a reviewed destination inside a compact regional radius. At the other end, some origins need almost the full configured search distance before the catalog reaches a qualifying representative site. That contrast describes our current destination network as well as real geography. A blank part of the map does not prove that no darker local place exists; it means the reviewed catalog does not currently support recommending one through this pipeline.",
+          "The distance column is deliberately labelled great-circle distance. It measures the shortest separation over the Earth between two coordinates. It does not know roads, ferries, borders, mountains, traffic, seasonal closures, or the location of a traveller's home within a large city. A 100-kilometre straight-line result can be a much longer journey, while an island destination may require a ferry or flight. The number supports comparison, not navigation.",
+        ],
+      },
+      {
+        kind: "callout",
+        heading: "Air distance is not an itinerary",
+        body: "Use the table to identify a reviewed candidate, then calculate the real route yourself. Check transport, border or ferry requirements, nighttime access, parking, closures, and the return journey before treating any result as short or practical.",
+      },
+      {
+        kind: "prose",
+        heading: "Why the highest Trip score does not always rank first",
+        paragraphs: [
+          "A more distant destination can have a higher Stargazing Trip score and still lose the short-trip ranking to a closer alternative. That is intentional. The result answers which reviewed option offers the strongest compromise from the named origin, not which destination has the best sky anywhere inside the radius. The table keeps both the raw Trip score and the distance-weighted Short-trip score so the trade-off can be audited rather than hidden.",
+          "Confidence also remains visible. Moderate confidence can reflect limitations such as a high-elevation climate grid or other source constraints even when the score itself is strong. It is not a percentage chance that the result is correct. A high-confidence row is better supported by the model inputs; it still cannot guarantee weather, access, or safe travel on a future date.",
+        ],
+      },
+      {
+        kind: "prose",
+        heading: "Turn a city comparison into a real weekend plan",
+        paragraphs: [
+          "Begin with the listed best month, then inspect the destination's full monthly profile rather than assuming the top month is the only usable one. Check Moon phase for the exact dates and compare a current forecast close to departure. If the drive, ferry, or flight is expensive, add flexibility through a second night or a daytime purpose. A short trip is especially vulnerable to a single cloudy booking because there is little time to recover.",
+          "Finally, open the destination guide and follow its official sources for the named observing footprint. Public does not mean unrestricted at every hour, and limited access can require a booking, guest stay, programme, permit, or controlled route. Calculate the real route with a current map, set weather and fatigue limits, and keep a lawful fallback. The data can narrow the world to a defensible candidate; the traveller must still prove that the actual journey works.",
         ],
       },
     ],

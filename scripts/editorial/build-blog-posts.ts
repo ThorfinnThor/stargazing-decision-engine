@@ -2,7 +2,7 @@ import { readdirSync } from "node:fs";
 import { resolve } from "node:path";
 
 import { blogPostSources } from "../../data-config/editorial/blog-posts.js";
-import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, CalendarFile, Destination, ImageManifest, MeteorShowerEvent, MonthlySiteScore, ObservationSite } from "../../lib/data/types.js";
+import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, CalendarFile, Destination, ImageManifest, MeteorShowerEvent, MonthlySiteScore, ObservationSite, ShortTripFile } from "../../lib/data/types.js";
 import type { Era5ClimateSnapshot } from "../../lib/climate/era5/types.js";
 import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
@@ -569,6 +569,78 @@ function multiNightClearExpectation(): DatasetOutput {
   };
 }
 
+function skyQualityVersusComfort(): DatasetOutput {
+  const values = seed.destinations.filter((destination) => destination.active).map((destination) => context(destination.slug))
+    .filter((item) => item.dataStatus === "real" && (item.site.publicAccess === "yes" || item.site.publicAccess === "limited"))
+    .map(({ destination, site, monthly }) => {
+      const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+      return {
+        slug: destination.slug,
+        destination: destination.name,
+        access: site.publicAccess,
+        month: best.month,
+        sky: best.skyQuality,
+        comfort: best.tripComfort,
+        gap: best.skyQuality - best.tripComfort,
+        trip: best.stargazingTrip,
+      };
+    });
+  const skyLed = values.slice().sort((left, right) => right.gap - left.gap || left.destination.localeCompare(right.destination)).slice(0, 4);
+  const comfortLed = values.slice().sort((left, right) => left.gap - right.gap || left.destination.localeCompare(right.destination)).slice(0, 4);
+  const selected = [...skyLed.map((item) => ({ ...item, group: "Sky-led" })), ...comfortLed.map((item) => ({ ...item, group: "Comfort-led" }))];
+  return {
+    metrics: [
+      { label: "Destinations assessed", value: String(values.length), note: "Active real-data destinations with public or limited access" },
+      { label: "Component-gap range", value: `${Math.min(...selected.map((item) => item.gap))} to +${Math.max(...selected.map((item) => item.gap))}`, note: "Sky Quality minus Trip Comfort in the selected windows" },
+      { label: "Final weighting", value: "80 / 20", note: "Sky Quality versus Trip Comfort in the published Trip score" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "Where sky quality and trip comfort pull apart",
+      "Each row uses the destination's highest Stargazing Trip month. A positive gap means Sky Quality leads Trip Comfort; a negative gap means practical comfort leads the sky component.",
+      ["Pattern", "Destination", "Best month", "Sky quality", "Trip comfort", "Gap", "Trip", "Access"],
+      selected.map((item) => [item.group, item.destination, monthNames[item.month - 1], String(item.sky), String(item.comfort), item.gap > 0 ? `+${item.gap}` : String(item.gap), String(item.trip), item.access === "yes" ? "Public" : "Limited"]),
+      "Sky Quality combines clear-sky climate, darkness, dew, and elevation. Trip Comfort combines temperature, wind, rain, and reviewed access. Both are 0–100 model scores, not guarantees or current-condition readings.",
+    ),
+    relatedDestinationSlugs: selected.map((item) => item.slug),
+  };
+}
+
+function shortTripCityReach(): DatasetOutput {
+  const files = readdirSync(publicPath("short-trips"))
+    .filter((file) => file.endsWith(".json"))
+    .sort()
+    .map((file) => readJson<ShortTripFile>(publicPath(`short-trips/${file}`)));
+  const values = files.map((file) => {
+    const entry = file.entries[0];
+    if (!entry) throw new Error(`${file.originSlug}: no qualifying short-trip entry`);
+    return {
+      origin: file.originName,
+      slug: entry.destinationSlug,
+      destination: entry.destinationName,
+      distance: entry.distanceKm,
+      bestMonth: entry.bestMonths[0].month,
+      trip: entry.stargazingTripScore,
+      shortTrip: entry.shortTripScore,
+      confidence: entry.confidenceLevel,
+    };
+  }).sort((left, right) => left.distance - right.distance || left.origin.localeCompare(right.origin));
+  return {
+    metrics: [
+      { label: "Origin cities", value: String(values.length), note: "Every committed active-origin short-trip file" },
+      { label: "Leading-distance range", value: `${Math.round(Math.min(...values.map((item) => item.distance)))}–${Math.round(Math.max(...values.map((item) => item.distance)))} km`, note: "Great-circle distance, not road distance" },
+      { label: "Trip score 90+", value: String(values.filter((item) => item.trip >= 90).length), note: "Leading origin results with a best-month Trip score of at least 90" },
+    ] satisfies BlogMetric[],
+    block: table(
+      "The leading reviewed short-trip result from all 23 origins",
+      "Rows are ordered by great-circle distance. The selected destination is rank one in its origin file after combining 75% best-month Stargazing Trip score and 25% distance utility.",
+      ["Origin city", "Leading destination", "Great-circle distance", "Best month", "Trip", "Short-trip score", "Confidence"],
+      values.map((item) => [item.origin, item.destination, `${round(item.distance)} km`, monthNames[item.bestMonth - 1], String(item.trip), String(round(item.shortTrip, 2)), item.confidence[0].toUpperCase() + item.confidence.slice(1)]),
+      "Great-circle distance is coordinate-to-coordinate separation. It does not estimate roads, ferries, borders, traffic, elevation, travel time, cost, or current access. Rank one is the modelled compromise inside each configured radius, not necessarily the closest destination or the highest raw Trip score.",
+    ),
+    relatedDestinationSlugs: [...new Set(values.map((item) => item.slug))],
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -584,6 +656,8 @@ const builders = {
   "milky-way-windows-2027": milkyWayWindows2027,
   "driest-versus-best-month": driestVersusBestMonth,
   "multi-night-clear-expectation": multiNightClearExpectation,
+  "sky-quality-versus-comfort": skyQualityVersusComfort,
+  "short-trip-city-reach": shortTripCityReach,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {
