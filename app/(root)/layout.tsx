@@ -1,6 +1,7 @@
 import type { ReactNode } from "react";
 
 import { CookieConsent } from "@/components/cookie-consent";
+import { consentHeadScript } from "@/lib/analytics/consent";
 import { GetYourGuideAnalytics } from "@/components/getyourguide-integration";
 import { buildRootMetadata } from "@/lib/seo/root-metadata";
 
@@ -11,7 +12,7 @@ export const metadata = buildRootMetadata("en");
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="en">
-      <head><link rel="describedby" href="/llms.txt" /></head>
+      <head><script dangerouslySetInnerHTML={{ __html: consentHeadScript }} /><link rel="describedby" href="/llms.txt" /></head>
       <body>{children}<CookieConsent locale="en" /><GetYourGuideAnalytics /></body>
     </html>
   );

@@ -2,6 +2,7 @@ import type { ReactNode } from "react";
 import { notFound } from "next/navigation";
 
 import { CookieConsent } from "@/components/cookie-consent";
+import { consentHeadScript } from "@/lib/analytics/consent";
 import { GetYourGuideAnalytics } from "@/components/getyourguide-integration";
 import { LegalFooter } from "@/components/legal-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -26,7 +27,7 @@ export default async function LocaleLayout({ children, params }: { children: Rea
   if (!isLocale(locale)) notFound();
   return (
     <html lang={locale}>
-      <head><link rel="describedby" href="/llms.txt" /></head>
+      <head><script dangerouslySetInnerHTML={{ __html: consentHeadScript }} /><link rel="describedby" href="/llms.txt" /></head>
       <body><SiteHeader locale={locale} />{children}<LegalFooter locale={locale} /><CookieConsent locale={locale} /><GetYourGuideAnalytics /></body>
     </html>
   );

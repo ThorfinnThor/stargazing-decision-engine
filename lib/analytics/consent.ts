@@ -2,6 +2,14 @@ export const gaMeasurementId = "G-WZSPWW8M7F";
 export const consentStorageKey = "sgi-analytics-consent-v1";
 export const openConsentEvent = "sgi:open-cookie-settings";
 
+// The banner ships in the static HTML so it paints with the page. Appearing only
+// after hydration made its paragraph the mobile LCP element (about 4 s on
+// /en/, FCP 1.2 s). This runs in <head> before first paint and marks a reader
+// who already chose, so globals.css hides the banner for them without a flash.
+export const consentDecidedAttribute = "data-consent-set";
+export const consentHeadScript =
+  `try{if(localStorage.getItem(${JSON.stringify(consentStorageKey)}))document.documentElement.setAttribute(${JSON.stringify(consentDecidedAttribute)},"")}catch(e){}`;
+
 export type ConsentChoice = "granted" | "denied";
 
 type GtagWindow = Window & { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void } & Record<string, unknown>;
