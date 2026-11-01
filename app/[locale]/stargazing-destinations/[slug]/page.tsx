@@ -230,7 +230,7 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
       {locale === "en" && blogPosts.length > 0 && <nav className="destination-blog-related" aria-labelledby="destination-blog-related-title">
         <p className="eyebrow">From the data journal</p>
         <h2 id="destination-blog-related-title">What the numbers say about this destination</h2>
-        <div>{blogPosts.slice(0, 3).map((post) => <Link href={localizedLinks.blogPost(post.slug)} key={post.slug}><strong>{post.title}</strong><small>{post.readingMinutes} min read →</small></Link>)}</div>
+        <div>{blogPosts.map((post) => <Link href={localizedLinks.blogPost(post.slug)} key={post.slug}><strong>{post.title}</strong><small>{post.readingMinutes} min read →</small></Link>)}</div>
       </nav>}
     </main>
   );

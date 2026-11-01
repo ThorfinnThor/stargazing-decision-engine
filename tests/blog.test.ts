@@ -33,6 +33,13 @@ test("blog SEO is indexable, discoverable, and explicitly English-only", () => {
   assert.deepEqual(new Set(blogPages.filter((page) => page.pageType === "blog-post").map((page) => page.path.split("/").at(-2))), new Set(index.map((post) => post.slug)));
 });
 
+test("destination pages expose every reciprocal blog association without truncation", () => {
+  const destinationPage = readFileSync("app/[locale]/stargazing-destinations/[slug]/page.tsx", "utf8");
+  assert.match(destinationPage, /post\.relatedDestinationSlugs\.includes\(destination\.slug\)/);
+  assert.match(destinationPage, /blogPosts\.map\(\(post\)/);
+  assert.doesNotMatch(destinationPage, /blogPosts\.slice\(/);
+});
+
 test("monthly atlas is generated from twelve different destinations", () => {
   const post = read<BlogPost>("public/data/stargazing/editorial/blog/where-to-stargaze-each-month.json");
   const table = post.blocks.find((block) => block.kind === "table");
