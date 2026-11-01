@@ -67,3 +67,16 @@ test("privacy notice discloses Cloudflare Web Analytics and GetYourGuide on-devi
     assert.match(privacy, phrase);
   }
 });
+
+test("the consent banner renders open on the server and is hidden before paint once a choice exists", () => {
+  // It paints with the page; appearing after hydration made it the late mobile LCP element.
+  const banner = read("components/cookie-consent.tsx");
+  assert.match(banner, /useState\(true\)/);
+  assert.match(banner, /if \(stored !== null\) setOpen\(false\)/);
+  assert.match(banner, /removeAttribute\(consentDecidedAttribute\)/);
+  for (const layout of ["app/(root)/layout.tsx", "app/[locale]/layout.tsx"]) {
+    assert.match(read(layout), /<head><script dangerouslySetInnerHTML=\{\{ __html: consentHeadScript \}\} \/>/);
+  }
+  assert.match(read("lib/analytics/consent.ts"), /localStorage\.getItem\(\$\{JSON\.stringify\(consentStorageKey\)\}\)/);
+  assert.match(read("app/globals.css"), /html\[data-consent-set\] \.cookie-consent \{\s*display: none;/);
+});

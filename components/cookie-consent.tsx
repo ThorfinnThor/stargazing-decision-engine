@@ -4,17 +4,22 @@ import { useEffect, useState } from "react";
 
 import type { Locale } from "@/lib/i18n/config";
 import { localizedLinks } from "@/lib/i18n/links";
-import { disableGoogleAnalytics, loadGoogleAnalytics, openConsentEvent, readConsent, storeConsent, type ConsentChoice } from "@/lib/analytics/consent";
+import { consentDecidedAttribute, disableGoogleAnalytics, loadGoogleAnalytics, openConsentEvent, readConsent, storeConsent, type ConsentChoice } from "@/lib/analytics/consent";
 
+// Rendered open on the server so it paints with the page; the head script hides
+// it before paint for a reader who already chose, and the effect removes it.
 export function CookieConsent({ locale }: { locale: Locale }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
   const de = locale === "de";
 
   useEffect(() => {
     const stored = readConsent();
     if (stored === "granted") loadGoogleAnalytics();
-    else if (stored === null) setOpen(true);
-    const reopen = () => setOpen(true);
+    if (stored !== null) setOpen(false);
+    const reopen = () => {
+      document.documentElement.removeAttribute(consentDecidedAttribute);
+      setOpen(true);
+    };
     window.addEventListener(openConsentEvent, reopen);
     return () => window.removeEventListener(openConsentEvent, reopen);
   }, []);

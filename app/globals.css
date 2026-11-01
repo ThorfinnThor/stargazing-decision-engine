@@ -4061,3 +4061,8 @@ h3 {
 .destinations-index-country li a { font-weight: 700; }
 .destinations-index-country li p { margin: 0.3rem 0 0; color: var(--muted); font-size: 0.78rem; line-height: 1.5; }
 @media (max-width: 700px) { .destinations-index-country { grid-template-columns: 1fr; } }
+
+/* A reader who already chose: the head script in the layouts sets this before first paint. */
+html[data-consent-set] .cookie-consent {
+  display: none;
+}
