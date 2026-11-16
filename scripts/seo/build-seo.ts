@@ -63,6 +63,8 @@ const destinationGuidesBySlug = new Map(destinationGuides.map((guide) => [guide.
 const locationTours = readJson<LocationTour[]>(resolve(root, "data-config/editorial/location-tours.json"));
 const factualReviews = readJson<{ records: Array<{ destinationId: string; publicationDecision?: { mode?: string } }> }>(resolve(root, "data-config/sources/staged-factual-reviews.json"));
 const activeDestinationIds = new Set(activeDestinations.map((destination) => destination.id));
+// Destinations deliberately held from the index (e.g. closed to visitors), with the reason recorded in config.
+const destinationIndexHolds = new Map(readJson<{ holds: Array<{ destinationId: string; reason: string }> }>(resolve(root, "data-config/seo/destination-index-holds.json")).holds.map((hold) => [hold.destinationId, hold.reason]));
 const expandedDestinationIds = new Set(factualReviews.records.map((record) => record.destinationId));
 const transparentAccessDestinationIds = new Set(factualReviews.records
   .filter((record) => record.publicationDecision?.mode === "transparent-unverified-access")
@@ -245,7 +247,7 @@ for (const locale of config.locales) {
       title: editorialGuide?.seoTitle[locale] ?? (locale === "de" ? `${destination.name} · Sternbeobachtung` : `${destination.name} · Stargazing destination`), h1: destination.name,
       description: editorialGuide?.seoDescription[locale] ?? (locale === "de" ? `Himmelsführer für ${destination.name}.` : `Dark-sky guide for ${destination.name}.`), lastModified: editorialGuide ? latestTimestamp(dataLastModified, editorialGuide.lastReviewedAt) : dataLastModified, resultCount: destinationScores.length, confidence: editorialGuide ? "high" : confidence, uniqueInsightCount: editorialGuide ? editorialGuide.sections.length + editorialGuide.fieldNotes.length + 1 : destinationScores.length >= 3 ? 3 : destinationScores.length, internalLinkCount: editorialGuide ? 4 : 1,
       travelEligible: seed.sites.some((site) => site.destinationId === destination.id && isTravelEligibleSite(site)),
-      forceNoindexReason: !editorialGuide ? "editorial-guide-pending" : repetitiveEditorialDestinationIds.has(destination.id) ? "repetitive-editorial-copy" : undefined,
+      forceNoindexReason: destinationIndexHolds.get(destination.id) ?? (!editorialGuide ? "editorial-guide-pending" : repetitiveEditorialDestinationIds.has(destination.id) ? "repetitive-editorial-copy" : undefined),
     }));
   }
   for (const event of events) {
