@@ -9,7 +9,7 @@ import { root, readJson } from "../pipeline/io.js";
 type SourceConfig = {
   sourceName: string; sourceVersion: string; sourceUrl: string; sourceCommit: string;
   license: "CC BY-SA 4.0"; licenseUrl: string; upstreamSha256: string;
-  magnitudeCutoff: number; generatedAt: string;
+  magnitudeCutoff: number; faintMagnitudeCutoff: number; generatedAt: string;
 };
 type RawStar = { hip: string; proper: string; ra: string; dec: string; mag: string; ci: string };
 
@@ -24,7 +24,11 @@ const bytes = readFileSync(inputPath);
 const checksum = createHash("sha256").update(bytes).digest("hex");
 if (checksum !== config.upstreamSha256) throw new Error(`HYG checksum mismatch: ${checksum}`);
 const rows = parse(bytes, { columns: true, skip_empty_lines: true }) as RawStar[];
-const stars: Array<[number, number, number, number, number, number | null]> = [];
+type CatalogRow = [number, number, number, number, number, number | null];
+const stars: CatalogRow[] = [];
+// Stars between the main cutoff and the faint cutoff ship in a separate file that only
+// the light-pollution comparison loads, so every other sky keeps its current payload.
+const faintStars: CatalogRow[] = [];
 for (const row of rows) {
   const id = Number(row.hip);
   const raHours = Number(row.ra);
@@ -33,16 +37,18 @@ for (const row of rows) {
   const colorIndex = row.ci.trim() === "" ? null : Number(row.ci);
   if (row.proper === "Sol" || row.hip.trim() === "" || !Number.isInteger(id) || id <= 0 || !Number.isFinite(raHours) || !Number.isFinite(decDeg) || !Number.isFinite(magnitude)) continue;
   if (raHours < 0 || raHours >= 24 || decDeg < -90 || decDeg > 90) continue;
-  if (magnitude > config.magnitudeCutoff && !anchorIds.has(id)) continue;
-  if (magnitude > constellationAnchorMagnitudeCeiling) throw new Error(`Constellation anchor HIP ${id} exceeds the approved magnitude ceiling`);
+  const isFaint = magnitude > config.magnitudeCutoff && !anchorIds.has(id);
+  if (isFaint && magnitude > config.faintMagnitudeCutoff) continue;
+  if (!isFaint && magnitude > constellationAnchorMagnitudeCeiling) throw new Error(`Constellation anchor HIP ${id} exceeds the approved magnitude ceiling`);
   if (colorIndex !== null && !Number.isFinite(colorIndex)) continue;
   const ra = raHours * 15 * Math.PI / 180;
   const dec = decDeg * Math.PI / 180;
   const cosDec = Math.cos(dec);
   const round = (value: number, digits: number) => Number(value.toFixed(digits));
-  stars.push([id, round(cosDec * Math.cos(ra), 8), round(cosDec * Math.sin(ra), 8), round(Math.sin(dec), 8), round(magnitude, 2), colorIndex === null ? null : round(colorIndex, 3)]);
+  (isFaint ? faintStars : stars).push([id, round(cosDec * Math.cos(ra), 8), round(cosDec * Math.sin(ra), 8), round(Math.sin(dec), 8), round(magnitude, 2), colorIndex === null ? null : round(colorIndex, 3)]);
 }
 stars.sort((left, right) => left[4] - right[4] || left[0] - right[0]);
+faintStars.sort((left, right) => left[4] - right[4] || left[0] - right[0]);
 const output = {
   version: 2,
   source: {
@@ -60,4 +66,11 @@ const outputPath = resolve(root, "public/data/stargazing/astronomy/bright-stars.
 writeFileSync(outputPath, `${JSON.stringify(output)}\n`);
 const missingAnchors = [...anchorIds].filter((anchorId) => !stars.some((star) => star[0] === anchorId));
 if (missingAnchors.length > 0) throw new Error(`Missing constellation anchor HIP IDs: ${missingAnchors.join(", ")}`);
+const faintOutput = {
+  version: 1,
+  source: { ...output.source, magnitudeFloor: config.magnitudeCutoff, magnitudeCutoff: config.faintMagnitudeCutoff, constellationAnchorMagnitudeCeiling: undefined },
+  stars: faintStars,
+};
+writeFileSync(resolve(root, "public/data/stargazing/astronomy/faint-stars.json"), `${JSON.stringify(faintOutput)}\n`);
+console.log(`Built ${faintStars.length} faint HIP stars between magnitude ${config.magnitudeCutoff} and ${config.faintMagnitudeCutoff}.`);
 console.log(`Built ${stars.length} HYG ${config.sourceVersion} HIP stars, including ${anchorIds.size} constellation anchors.`);

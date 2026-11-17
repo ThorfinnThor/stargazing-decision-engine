@@ -161,6 +161,13 @@ export type BrightStarCatalog = {
   stars: Array<[number, number, number, number, number, number | null]>;
 };
 
+// Stars fainter than the main catalog cutoff, loaded only where a darker-than-default sky is drawn.
+export type FaintStarCatalog = {
+  version: 1;
+  source: Omit<BrightStarCatalog["source"], "constellationAnchorMagnitudeCeiling"> & { magnitudeFloor: number };
+  stars: BrightStarCatalog["stars"];
+};
+
 export type ConstellationDatasetFile = {
   version: 1;
   skyCulture: "western";
