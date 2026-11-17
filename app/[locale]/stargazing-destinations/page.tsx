@@ -68,7 +68,9 @@ export default async function StargazingDestinationsPage({ params }: { params: P
       <p className="lede">{isGerman
         ? "Jedes Ziel hat einen quellenbasierten Himmelsführer mit konkreten Beobachtungsorten, Zugangshinweisen und einem Monatsvergleich. Wenn du nach Monat, Temperatur oder Zugang filtern willst, nutze den Finder."
         : "Every destination has a source-backed sky guide with specific observing sites, access notes and a month-by-month comparison. To filter by month, temperature or access, use the finder."}{" "}
-        <a href={localizedLinks.finder(locale)}>{isGerman ? "Zum Finder" : "Open the finder"}</a>
+        <a href={localizedLinks.finder(locale)}>{isGerman ? "Zum Finder" : "Open the finder"}</a>{" "}
+        {isGerman ? "Wie viel dunkler es dort ist als bei dir zu Hause, zeigt der" : "To see how much darker these skies are than yours at home, try the"}{" "}
+        <a href={localizedLinks.lightPollutionComparison(locale)}>{isGerman ? "Himmelsvergleich" : "sky comparison"}</a>.
       </p>
       <nav className="destinations-index-jump" aria-label={isGerman ? "Kontinente" : "Continents"}>
         {continents.map((item) => <a key={item.continent} href={`#${item.continent}`}>{item.label} ({item.count})</a>)}

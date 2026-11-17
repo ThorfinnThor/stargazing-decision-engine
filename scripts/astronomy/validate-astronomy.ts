@@ -7,7 +7,7 @@ import { computeSky } from "../../lib/astronomy/compute-sky.js";
 import { constellationCopyById } from "../../lib/astronomy/constellation-copy.js";
 import { createSkyLocation, resolvePrimaryObservationSite } from "../../lib/astronomy/primary-site.js";
 import { validateNightPlannerConfig, type NightPlannerConfig } from "../../lib/astronomy/night-planner.js";
-import type { BrightStarCatalog, ConstellationDatasetFile, NightPreviewFile } from "../../lib/astronomy/types.js";
+import type { BrightStarCatalog, ConstellationDatasetFile, FaintStarCatalog, NightPreviewFile } from "../../lib/astronomy/types.js";
 import { isValidInstantIso } from "../../lib/astronomy/validation.js";
 import { publicDataDir, readJson } from "../pipeline/io.js";
 
@@ -40,6 +40,16 @@ for (const [index, star] of catalog.stars.entries()) {
   if (star[4] > catalog.source.constellationAnchorMagnitudeCeiling) errors.push(`catalog star ${star[0]} exceeds magnitude ceiling`);
 }
 if (new Set(catalog.stars.map((star) => star[0])).size !== catalog.stars.length) errors.push("catalog IDs are not unique");
+const faintPath = resolve(publicDataDir, "astronomy/faint-stars.json");
+const faintCatalog = readJson<FaintStarCatalog>(faintPath);
+if (faintCatalog.version !== 1 || faintCatalog.source.upstreamSha256 !== catalog.source.upstreamSha256 || faintCatalog.source.magnitudeFloor !== 6 || faintCatalog.source.magnitudeCutoff !== 6.5 || faintCatalog.stars.length !== 3829) errors.push("faint star catalog contract or count drifted");
+const faintBytes = readFileSync(faintPath);
+if (gzipSync(faintBytes).byteLength > 100_000) errors.push("faint star catalog exceeds the 100 KB gzip guardrail");
+const brightIds = new Set(catalog.stars.map((star) => star[0]));
+for (const star of faintCatalog.stars) {
+  if (star[4] <= 6 || star[4] > 6.5) errors.push(`faint star ${star[0]} is outside magnitude 6–6.5`);
+  if (brightIds.has(star[0])) errors.push(`faint star ${star[0]} duplicates a bright catalog star`);
+}
 const starIds = new Set(catalog.stars.map((star) => star[0]));
 const constellationIds = new Set<string>();
 for (const constellation of constellationFile.constellations) {

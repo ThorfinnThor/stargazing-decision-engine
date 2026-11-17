@@ -225,6 +225,12 @@ for (const locale of config.locales) {
     title: locale === "de" ? "So bewerten wir Astronomie-Ausrüstung" : "How we evaluate astronomy gear", h1: locale === "de" ? "So bewerten wir Ausrüstung." : "How we evaluate gear.", description: locale === "de" ? "Transparente Methodik für technische Vergleiche, Nachweise, Aktualität und redaktionelle Unabhängigkeit." : "Transparent methodology for technical comparisons, evidence, freshness, and editorial independence.", lastModified: editorialLastModified, resultCount: 6, confidence: "high", uniqueInsightCount: 5, internalLinkCount: gearGuides.length + 1,
   }));
   pages.push(makePage({
+    id: `light-pollution-comparison-${locale}`, pageType: "light-pollution-comparison", locale, path: `/${locale}/light-pollution-comparison/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/light-pollution-comparison/`])),
+    title: locale === "de" ? "Lichtverschmutzung: Dein Himmel vs. der dunkelste Himmel" : "Light pollution: your sky vs. the darkest sky", h1: locale === "de" ? "Dein Himmel vs. der dunkelste Himmel" : "Your sky vs. the darkest sky",
+    description: locale === "de" ? "Wie viele Sterne nimmt dir die Lichtverschmutzung? Vergleiche deinen Nachthimmel mit dem dunkelsten Himmel der Erde, Stern für Stern, für heute Nacht." : "How many stars does light pollution take from you? Compare your night sky with the darkest sky on Earth, star by star, for tonight.",
+    lastModified: "2026-11-17T00:00:00.000Z", resultCount: 6, confidence: "high", uniqueInsightCount: 6, internalLinkCount: 4,
+  }));
+  pages.push(makePage({
     id: `about-${locale}`, pageType: "about", locale, path: `/${locale}/about/`, alternatePaths: Object.fromEntries(config.locales.map((item) => [item, `/${item}/about/`])),
     title: locale === "de" ? "Über Stargazing Index" : "About Stargazing Index", h1: locale === "de" ? "Entscheidungen für bessere Nächte." : "Decisions for better nights.", description: locale === "de" ? "So verbindet Stargazing Index Klimadaten, Astronomie, Standortrecherche und redaktionelle Prüfung zu nachvollziehbaren Reiseentscheidungen." : "How Stargazing Index combines climate data, astronomy, location research, and editorial review into practical travel decisions.", lastModified: editorialLastModified, resultCount: 3, confidence: "high", uniqueInsightCount: 3, internalLinkCount: 3,
   }));

@@ -50,6 +50,7 @@ Stargazing Index is editorially managed by Schayan Yousefian. Every destination 
 - [German home](${absolute("/de/")}): Deutsche Übersicht aller Ziele, Kurzreisen und Ausrüstungsguides.
 - [About the publisher](${absolute("/en/about/")}): Mission, editorial responsibility, corrections, and ownership.
 - [Editorial methodology](${absolute("/en/methodology/")}): Evidence, source, freshness, and independence rules.
+- [Light-pollution comparison](${absolute("/en/light-pollution-comparison/")}): Interactive view of how many catalogue stars remain visible under each Bortle class compared with the darkest sky, for tonight.
 - [XML sitemap](${absolute("/sitemap.xml")}): Complete list of indexable English and German canonical pages.
 ${section("Data journal", "blog-post")}${section("Destination guides", "destination")}${section("Location tours", "location-tour")}${section("Short-trip guides", "short-trip")}${section("Gear guides", "gear-guide")}
 ## Machine-readable data
