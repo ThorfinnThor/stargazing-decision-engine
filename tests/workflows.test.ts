@@ -14,7 +14,7 @@ test("GitHub workflows keep static quality gates explicit", () => {
 });
 
 test("GitHub workflows use the packageManager pnpm version", () => {
-  for (const name of ["ci.yml", "calendar-refresh.yml", "health-check.yml", "data-ingest.yml", "darkness-calibration.yml"]) {
+  for (const name of ["ci.yml", "calendar-refresh.yml", "health-check.yml", "data-ingest.yml", "darkness-calibration.yml", "city-sky.yml"]) {
     const contents = workflow(name);
     assertIncludes(contents, "actions/checkout@v7");
     assertIncludes(contents, "pnpm/setup@v2");
@@ -29,6 +29,15 @@ test("GitHub workflows use the packageManager pnpm version", () => {
 
   assertIncludes(workflow("data-ingest.yml"), "actions/setup-python@v7");
   assertIncludes(workflow("darkness-calibration.yml"), "actions/setup-python@v7");
+  assertIncludes(workflow("city-sky.yml"), "actions/setup-python@v7");
+});
+
+test("city sky data is manual and never committed straight to main", () => {
+  const citySky = workflow("city-sky.yml");
+  assertIncludes(citySky, "workflow_dispatch:");
+  assertIncludes(citySky, "github.ref_name == 'main'");
+  assertIncludes(citySky, "pnpm data:astronomy:validate");
+  assertIncludes(citySky, "pnpm test");
 });
 
 test("ingestion is manual and commits only after the full gate", () => {

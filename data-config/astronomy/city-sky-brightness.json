@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "method": "anchor-distribution-piecewise-linear-v1",
+  "description": "Estimates the naked-eye limiting magnitude at a city centre from the same ring-weighted Black Marble exposure that scores observing sites. Each curve point ties a statistic of the reviewed calibration-anchor distributions in data-config/scoring/darkness.json to the best-case limiting magnitude of a Bortle class. The result is an estimate, labelled as such on the page, and readers can always override it with their own setting.",
+  "minimumCoverage": 0.7,
+  "curve": [
+    { "distribution": "dark_reference", "statistic": "median", "limitingMagnitude": 6.5, "rationale": "Typical reviewed dark-sky reference site: Bortle 1–3, shown at the 6.5 catalogue floor." },
+    { "distribution": "mid_reference", "statistic": "median", "limitingMagnitude": 6.0, "rationale": "Typical reviewed rural site near towns (outskirts of Kanab, Mammoth Lakes, Queenstown): Bortle 5." },
+    { "distribution": "mid_reference", "statistic": "maximum", "limitingMagnitude": 5.5, "rationale": "Brightest reviewed mid reference, on the edge of a city (Vienna Kahlenberg, Boulder Chautauqua): Bortle 6." },
+    { "distribution": "urban_control", "statistic": "minimum", "limitingMagnitude": 5.0, "rationale": "Darkest reviewed metropolitan centre still sits at the bright end of Bortle 7." },
+    { "distribution": "urban_control", "statistic": "p25", "limitingMagnitude": 4.5, "rationale": "Every reviewed metropolitan centre (Berlin, London, Paris, Tokyo, New York …) is an inner-city sky; the lower quartile marks Bortle 8." },
+    { "distribution": "urban_control", "statistic": "p75", "limitingMagnitude": 4.0, "rationale": "Upper quartile of reviewed metropolitan centres (New York, São Paulo, Cairo, Los Angeles, Dubai): Bortle 9." }
+  ]
+}
