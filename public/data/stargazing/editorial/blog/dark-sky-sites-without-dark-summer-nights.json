@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "slug": "dark-sky-sites-without-dark-summer-nights",
+  "title": "Why a dark-sky destination can have no astronomical night in June",
+  "seoDescription": "Compare June, September, and December darkness at eight destinations. Learn why low light pollution does not guarantee an astronomical summer night.",
+  "standfirst": "Galloway, Kielder, Jasper, and Wood Buffalo have no sampled astronomical-night hours in June in our climate files. Their artificial-light scores cannot remove summer twilight.",
+  "publishedAt": "2026-11-17",
+  "lastReviewedAt": "2026-11-17",
+  "readingMinutes": 6,
+  "heroDestinationSlug": "galloway",
+  "datasetId": "summer-astronomical-darkness",
+  "relatedDestinationSlugs": [
+    "galloway",
+    "kielder",
+    "jasper",
+    "wood-buffalo",
+    "cherry-springs",
+    "death-valley",
+    "namibrand",
+    "rakiura"
+  ],
+  "methodologyNote": "For eight selected representative sites, June, September, and December totals are astronomicalHourCount divided by the thirty years in the committed 1991–2020 ERA5 baseline. The pipeline samples hours with Sun altitude below −18°. Results are average monthly sampled-hour totals, not continuous twilight calculations or hours per night. Zero means no qualifying sampled hours; null cloud probabilities are not replaced with zero. The comparison is not a forecast and does not account for Moon position, clouds, target altitude, or current access. The twilight definition follows the US Naval Observatory's Rise, Set, and Twilight Definitions (aa.usno.navy.mil/faq/RST_defs).",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "Low artificial light cannot remove twilight",
+      "paragraphs": [
+        "A dark-sky designation or a strong darkness score describes protection from artificial light. It does not tell you how far the Sun sinks below the horizon during the month you intend to visit. In June, our representative-site records for Galloway, Kielder, Jasper, and Wood Buffalo contain zero hours meeting the astronomical-night threshold. A clear evening there can still remain in twilight throughout the hours when a traveller expects the deepest darkness.",
+        "Our climate pipeline uses a solar altitude below −18° to select astronomical-night hours. The US Naval Observatory defines the boundary of astronomical twilight at eighteen degrees below the horizon. At sufficiently northern latitudes around the northern summer, the Sun's path prevents it from reaching that depth. Choosing a site farther from lamps does not change that solar geometry. Choosing another season or latitude can."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "How the astronomical-night sample changes with season",
+      "introduction": "Values are average total sampled astronomical-night hours per calendar month, rounded to one decimal. Latitude belongs to the representative observing site.",
+      "columns": [
+        "Destination",
+        "Latitude",
+        "June hours/month",
+        "September hours/month",
+        "December hours/month"
+      ],
+      "rows": [
+        [
+          "Galloway Forest",
+          "55.14° N",
+          "0",
+          "209.9",
+          "372"
+        ],
+        [
+          "Kielder Forest",
+          "55.25° N",
+          "0",
+          "209.1",
+          "388.1"
+        ],
+        [
+          "Jasper National Park",
+          "52.87° N",
+          "0",
+          "220.4",
+          "372"
+        ],
+        [
+          "Wood Buffalo",
+          "60.73° N",
+          "0",
+          "176.9",
+          "372"
+        ],
+        [
+          "Cherry Springs",
+          "41.65° N",
+          "143.1",
+          "257.8",
+          "341"
+        ],
+        [
+          "Death Valley",
+          "36.53° N",
+          "167.8",
+          "261.2",
+          "341"
+        ],
+        [
+          "NamibRand",
+          "24.95° S",
+          "330",
+          "270",
+          "217.3"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "46.9° S",
+          "360",
+          "260.6",
+          "73.7"
+        ]
+      ],
+      "note": "Zero indicates no qualifying hourly samples. These are not continuous twilight durations or usable observing hours; Moon, clouds, target visibility, and access are separate constraints."
+    },
+    {
+      "kind": "prose",
+      "heading": "Three months expose the seasonal difference",
+      "paragraphs": [
+        "The table compares June with September and December at eight selected locations. It includes four northern examples with a June gap, two lower-latitude North American sites, and two southern destinations. The southern rows make the calendar issue visible. June is not a universal summer month, and the same date can offer a very different amount of astronomical darkness in the opposite hemisphere.",
+        "Every figure is an average total for the whole calendar month, obtained from the committed thirty-year sample. It is not a promise of that many observable hours, or a nightly duration you can put into an itinerary. Clouds may cover the sky, the Moon may be up, and your target may be below the horizon. Months also have different lengths. The totals describe the size of the astronomical-night sample before those other observing constraints are applied."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "A missing cloud probability is not a cloudy month",
+      "paragraphs": [
+        "The June records with no astronomical-night hours also have null clear-night probabilities. That is a meaningful absence of a denominator. The pipeline has no qualifying astronomical-night sample from which to calculate that statistic. Replacing null with zero would turn an absence of dark-night observations into a claim that all such nights were cloudy, which the data does not support.",
+        "Likewise, zero sampled astronomical hours is not a ban on looking at the sky. An evening can still be suitable for bright objects or a twilight activity. The narrower conclusion is that a trip designed around a long, fully dark session needs another date or a different location. Decide which kind of observing you want before treating a dark-sky destination name as sufficient evidence that summer will suit it."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Check twilight for your dates before choosing the Moon phase",
+      "body": "A moonless date can still have persistent twilight. Establish that astronomical darkness occurs at the site, then check the Moon, target visibility, weather, and available access within that window."
+    },
+    {
+      "kind": "prose",
+      "heading": "Turn a monthly comparison into a timed session",
+      "paragraphs": [
+        "Open the destination's calendar for the exact date and check the beginning and end of the observing window in local time. Hourly historical sampling is too coarse to identify the first evening when a brief dark interval returns. It also cannot tell you whether the centre of the Milky Way, a meteor radiant, or a chosen deep-sky target will be well placed. Those questions need date-specific astronomy rather than another annual darkness score.",
+        "Access must fit the resulting time window. A venue that closes before astronomical dusk cannot become a usable observing site merely because the regional climate looks promising. Follow the official visitor information linked from the destination guide and check which footprint is available after dark. A workable plan needs the Sun, Moon, target, weather, and lawful access to align during the same hours; this comparison establishes the first of those constraints."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Sites compared",
+      "value": "8",
+      "note": "Selected northern and southern examples"
+    },
+    {
+      "label": "June zero-hour rows",
+      "value": "4",
+      "note": "No sampled hours below −18° solar altitude"
+    },
+    {
+      "label": "Climate baseline",
+      "value": "1991–2020",
+      "note": "Average monthly sampled-hour totals over thirty years"
+    }
+  ]
+}

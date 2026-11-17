@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach" | "night-temperature-percentiles" | "summer-astronomical-darkness";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -17,6 +17,70 @@ export interface BlogPostSource {
 }
 
 export const blogPostSources: BlogPostSource[] = [
+  {
+    slug: "night-temperature-average-versus-cold-tail",
+    title: "What a mild night average hides at a stargazing site",
+    seoDescription: "Compare historical nighttime temperature means and P10–P90 ranges at eight stargazing sites to understand what the average leaves out of a packing plan.",
+    standfirst: "A monthly night temperature is one number drawn from thousands of hours. The colder end of that record can change what you pack, even in a destination's strongest trip month.",
+    publishedAt: "2026-11-17",
+    lastReviewedAt: "2026-11-17",
+    readingMinutes: 6,
+    heroDestinationSlug: "hanle",
+    datasetId: "night-temperature-percentiles",
+    relatedDestinationSlugs: ["namibrand", "death-valley", "hanle", "rakiura", "jasper", "wood-buffalo", "cherry-springs", "central-idaho"],
+    methodologyNote: "For eight explicitly selected destinations, we use the representative site's highest published monthly Stargazing Trip score; ties retain the first calendar month. Temperature mean, P10, and P90 come from astronomical-night hourly temperatures in the same month's 1991–2020 ERA5 snapshot. P10–P90 describes the middle 80% of sampled hourly temperatures, not nightly minima or a within-night cooling curve. Values are rounded to one decimal; differences use unrounded inputs. This is not a forecast, a clothing rating, or a safety threshold.",
+    blocks: [
+      { kind: "prose", heading: "A good observing month still needs a temperature range", paragraphs: [
+        "Hanle's highest Trip score occurs in June in our current monthly dataset. The historical mean temperature during astronomical night is about 2.4°C, while the tenth percentile is about −2.6°C. Jasper's selected August row averages about 5.8°C and has a tenth percentile near 0.9°C. Those pairs describe a more useful planning question than whether a destination is simply warm or cold. How far below the headline average did a substantial share of its recorded night hours fall?",
+        "The eight rows use each destination's highest combined Trip month so that the comparison starts from a plausible observing season. They include deserts, an island, mountain settings, and northern parks. These are selected examples, not a ranking of the world's most variable climates. Keeping the month, mean, and percentiles together lets you see the temperature distribution behind a seemingly reassuring seasonal recommendation."
+      ] },
+      { kind: "prose", heading: "Read P10 as an hourly statistic", paragraphs: [
+        "P10 is the tenth percentile of the historical hourly temperatures included in that month's astronomical-night sample. Roughly one tenth of those hours were at or below it. P90 is the corresponding upper percentile, so the interval between them contains approximately the middle eighty percent of sampled temperatures. Our pipeline calculates both from the hourly series, rather than averaging a collection of daily minimum and maximum temperatures.",
+        "That distinction matters when you interpret the spread. A twelve-degree P10–P90 interval does not mean the air cools twelve degrees between setting up and packing away. It combines variation between hours, different nights, and thirty years of weather. Nor does P10 mean that one night in ten will have that minimum. An individual night contributes several hours, and neighbouring hours are related. The table supports a range-aware packing decision without estimating a probability of a cold night."
+      ] },
+      { kind: "callout", heading: "Compare the mean with the colder tail before packing", body: "Use the historical range to spot where an average feels incomplete. Set clothing, shelter, and equipment plans from a current site-specific forecast and your actual observing hours." },
+      { kind: "prose", heading: "Similar spreads can mean very different sessions", paragraphs: [
+        "Death Valley's selected October temperatures span roughly 13.4°C to 25.9°C between P10 and P90. Hanle's selected June interval spans roughly −2.6°C to 7.5°C. Both contain meaningful variation, but their absolute temperature levels create different practical questions. A wide interval alone cannot tell you which place will feel colder, and a narrower interval is not automatically more comfortable.",
+        "The mean-minus-P10 column isolates how much colder the lower percentile is than the average. It is a descriptive gap, not an instruction to subtract a fixed number from the weather forecast. Forecast temperatures and historical percentiles answer different questions. The useful habit is to notice when a monthly average conceals a colder part of the distribution, then investigate the conditions expected during your own visit."
+      ] },
+      { kind: "prose", heading: "Match the temperature to the place where you will stand", paragraphs: [
+        "Each destination is anchored to one representative observing site. The ERA5 value is a gridded historical estimate associated with that site, not a thermometer reading beside your tripod. A nearby town, a sheltered campsite, an exposed viewpoint, and a different elevation may have different conditions. The table does not resolve all those local differences, and its one-decimal display should not be read as that level of local predictive accuracy.",
+        "Before departure, compare a current forecast for the observing location and time with the practical details in its destination guide. Include wind and precipitation in that decision rather than treating air temperature as the whole experience. If a cold or exposed session would exceed your group's equipment or experience, choose a different observing window or location. The historical comparison is useful preparation; the night's conditions determine the actual plan."
+      ] },
+    ],
+  },
+  {
+    slug: "dark-sky-sites-without-dark-summer-nights",
+    title: "Why a dark-sky destination can have no astronomical night in June",
+    seoDescription: "Compare June, September, and December darkness at eight destinations. Learn why low light pollution does not guarantee an astronomical summer night.",
+    standfirst: "Galloway, Kielder, Jasper, and Wood Buffalo have no sampled astronomical-night hours in June in our climate files. Their artificial-light scores cannot remove summer twilight.",
+    publishedAt: "2026-11-17",
+    lastReviewedAt: "2026-11-17",
+    readingMinutes: 6,
+    heroDestinationSlug: "galloway",
+    datasetId: "summer-astronomical-darkness",
+    relatedDestinationSlugs: ["galloway", "kielder", "jasper", "wood-buffalo", "cherry-springs", "death-valley", "namibrand", "rakiura"],
+    methodologyNote: "For eight selected representative sites, June, September, and December totals are astronomicalHourCount divided by the thirty years in the committed 1991–2020 ERA5 baseline. The pipeline samples hours with Sun altitude below −18°. Results are average monthly sampled-hour totals, not continuous twilight calculations or hours per night. Zero means no qualifying sampled hours; null cloud probabilities are not replaced with zero. The comparison is not a forecast and does not account for Moon position, clouds, target altitude, or current access. The twilight definition follows the US Naval Observatory's Rise, Set, and Twilight Definitions (aa.usno.navy.mil/faq/RST_defs).",
+    blocks: [
+      { kind: "prose", heading: "Low artificial light cannot remove twilight", paragraphs: [
+        "A dark-sky designation or a strong darkness score describes protection from artificial light. It does not tell you how far the Sun sinks below the horizon during the month you intend to visit. In June, our representative-site records for Galloway, Kielder, Jasper, and Wood Buffalo contain zero hours meeting the astronomical-night threshold. A clear evening there can still remain in twilight throughout the hours when a traveller expects the deepest darkness.",
+        "Our climate pipeline uses a solar altitude below −18° to select astronomical-night hours. The US Naval Observatory defines the boundary of astronomical twilight at eighteen degrees below the horizon. At sufficiently northern latitudes around the northern summer, the Sun's path prevents it from reaching that depth. Choosing a site farther from lamps does not change that solar geometry. Choosing another season or latitude can."
+      ] },
+      { kind: "prose", heading: "Three months expose the seasonal difference", paragraphs: [
+        "The table compares June with September and December at eight selected locations. It includes four northern examples with a June gap, two lower-latitude North American sites, and two southern destinations. The southern rows make the calendar issue visible. June is not a universal summer month, and the same date can offer a very different amount of astronomical darkness in the opposite hemisphere.",
+        "Every figure is an average total for the whole calendar month, obtained from the committed thirty-year sample. It is not a promise of that many observable hours, or a nightly duration you can put into an itinerary. Clouds may cover the sky, the Moon may be up, and your target may be below the horizon. Months also have different lengths. The totals describe the size of the astronomical-night sample before those other observing constraints are applied."
+      ] },
+      { kind: "prose", heading: "A missing cloud probability is not a cloudy month", paragraphs: [
+        "The June records with no astronomical-night hours also have null clear-night probabilities. That is a meaningful absence of a denominator. The pipeline has no qualifying astronomical-night sample from which to calculate that statistic. Replacing null with zero would turn an absence of dark-night observations into a claim that all such nights were cloudy, which the data does not support.",
+        "Likewise, zero sampled astronomical hours is not a ban on looking at the sky. An evening can still be suitable for bright objects or a twilight activity. The narrower conclusion is that a trip designed around a long, fully dark session needs another date or a different location. Decide which kind of observing you want before treating a dark-sky destination name as sufficient evidence that summer will suit it."
+      ] },
+      { kind: "callout", heading: "Check twilight for your dates before choosing the Moon phase", body: "A moonless date can still have persistent twilight. Establish that astronomical darkness occurs at the site, then check the Moon, target visibility, weather, and available access within that window." },
+      { kind: "prose", heading: "Turn a monthly comparison into a timed session", paragraphs: [
+        "Open the destination's calendar for the exact date and check the beginning and end of the observing window in local time. Hourly historical sampling is too coarse to identify the first evening when a brief dark interval returns. It also cannot tell you whether the centre of the Milky Way, a meteor radiant, or a chosen deep-sky target will be well placed. Those questions need date-specific astronomy rather than another annual darkness score.",
+        "Access must fit the resulting time window. A venue that closes before astronomical dusk cannot become a usable observing site merely because the regional climate looks promising. Follow the official visitor information linked from the destination guide and check which footprint is available after dark. A workable plan needs the Sun, Moon, target, weather, and lawful access to align during the same hours; this comparison establishes the first of those constraints."
+      ] },
+    ],
+  },
   {
     slug: "where-to-stargaze-each-month",
     title: "Where to stargaze each month: a 12-stop data atlas",

@@ -641,6 +641,55 @@ function shortTripCityReach(): DatasetOutput {
   };
 }
 
+function nightTemperaturePercentiles(): DatasetOutput {
+  const slugs = ["namibrand", "death-valley", "hanle", "rakiura", "jasper", "wood-buffalo", "cherry-springs", "central-idaho"];
+  const values = slugs.map((slug) => {
+    const { destination, monthly, climate, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+    const weather = climate.months.find((item) => item.month === best.month);
+    if (!weather || weather.nightTempMeanC === null || weather.nightTempP10C === null || weather.nightTempP90C === null) throw new Error(`${slug}: missing temperature distribution`);
+    return { name: destination.name, month: best.month, mean: weather.nightTempMeanC, p10: weather.nightTempP10C, p90: weather.nightTempP90C };
+  });
+  return {
+    metrics: [
+      { label: "Sites compared", value: String(values.length), note: "Selected examples in their highest Trip-score month" },
+      { label: "Distribution shown", value: "P10–P90", note: "Middle 80% of historical astronomical-night hourly temperatures" },
+      { label: "Below-zero P10", value: String(values.filter((item) => item.p10 < 0).length), note: "Selected windows with a colder-tail percentile below freezing" },
+    ],
+    block: table("The mean and the colder tail in the same month", "All temperatures are in °C. The gap is the mean minus P10; the spread is P90 minus P10, calculated before rounding.",
+      ["Destination", "Selected month", "Mean °C", "P10 °C", "P90 °C", "Mean–P10 °C", "P90–P10 °C"],
+      values.map((item) => [item.name, monthNames[item.month - 1], String(round(item.mean)), String(round(item.p10)), String(round(item.p90)), String(round(item.mean - item.p10)), String(round(item.p90 - item.p10))]),
+      "Percentiles describe all sampled astronomical-night hours for the month across 1991–2020. They are not nightly lows, a cooling trajectory, or a forecast for your dates."),
+  };
+}
+
+function summerAstronomicalDarkness(): DatasetOutput {
+  const slugs = ["galloway", "kielder", "jasper", "wood-buffalo", "cherry-springs", "death-valley", "namibrand", "rakiura"];
+  const values = slugs.map((slug) => {
+    const { destination, site, climate, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const years = climate.climateNormal.endYear - climate.climateNormal.startYear + 1;
+    const hours = [6, 9, 12].map((month) => {
+      const weather = climate.months.find((item) => item.month === month);
+      if (!weather || weather.dataCompleteness < 1) throw new Error(`${slug}: incomplete darkness sample`);
+      return weather.astronomicalHourCount / years;
+    });
+    return { name: destination.name, lat: site.lat, hours };
+  });
+  return {
+    metrics: [
+      { label: "Sites compared", value: String(values.length), note: "Selected northern and southern examples" },
+      { label: "June zero-hour rows", value: String(values.filter((item) => item.hours[0] === 0).length), note: "No sampled hours below −18° solar altitude" },
+      { label: "Climate baseline", value: "1991–2020", note: "Average monthly sampled-hour totals over thirty years" },
+    ],
+    block: table("How the astronomical-night sample changes with season", "Values are average total sampled astronomical-night hours per calendar month, rounded to one decimal. Latitude belongs to the representative observing site.",
+      ["Destination", "Latitude", "June hours/month", "September hours/month", "December hours/month"],
+      values.map((item) => [item.name, `${round(Math.abs(item.lat), 2)}° ${item.lat < 0 ? "S" : "N"}`, ...item.hours.map((hours) => String(round(hours)))]),
+      "Zero indicates no qualifying hourly samples. These are not continuous twilight durations or usable observing hours; Moon, clouds, target visibility, and access are separate constraints."),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -658,6 +707,8 @@ const builders = {
   "multi-night-clear-expectation": multiNightClearExpectation,
   "sky-quality-versus-comfort": skyQualityVersusComfort,
   "short-trip-city-reach": shortTripCityReach,
+  "night-temperature-percentiles": nightTemperaturePercentiles,
+  "summer-astronomical-darkness": summerAstronomicalDarkness,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {
