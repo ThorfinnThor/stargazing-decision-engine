@@ -4,9 +4,11 @@ import { useEffect, useMemo, useRef, useState } from "react";
 
 import { SkyCanvas } from "./sky-canvas";
 import { brightStars } from "@/lib/astronomy/catalog";
+import { CitySearch } from "./city-search";
 import {
-  computeSkyComparison, darkestSky, defaultReferenceCity, defaultSituationId, distanceKm, findReferenceCity, findSituation,
-  referenceCities, referenceCityLocation, selectComparisonInstant, skySituations, type ReferenceCity, type SkySituation,
+  bortleForLimitingMagnitude, computeSkyComparison, darkestSky, defaultReferenceCity, defaultSituationId, distanceKm,
+  findReferenceCity, findSituation, parseCitySkyRows, referenceCities, referenceCityLocation, selectComparisonInstant,
+  skyglowForLimitingMagnitude, skySituations, type CitySkyFile, type EstimatedCity, type ReferenceCity, type SkySituation,
 } from "@/lib/astronomy/light-pollution";
 import { roundedCurrentMinuteIso } from "@/lib/astronomy/selection";
 import { formatLocalClockTime } from "@/lib/astronomy/time";
@@ -16,19 +18,45 @@ import { localizedLinks } from "@/lib/i18n/links";
 
 export type ComparisonDestination = { slug: string; name: string; countryName: string; lat: number; lon: number };
 
-type Choice = { city: ReferenceCity; situation: SkySituation; nowIso: string };
+type ComparisonCity = ReferenceCity | EstimatedCity;
+// "estimate" uses the satellite estimate for the chosen city; otherwise one of the five settings.
+type Choice = { city: ComparisonCity; sky: "estimate" | SkySituation; nowIso: string; touched?: boolean };
 
 const faintStarsUrl = "/data/stargazing/astronomy/faint-stars.json";
+const citySkyUrl = "/data/stargazing/astronomy/city-sky.json";
 
-function readChoiceFromUrl(locale: Locale): Choice {
+function hasEstimate(city: ComparisonCity): city is EstimatedCity {
+  return "limitingMagnitude" in city;
+}
+
+function readTimeZone() {
+  try { return Intl.DateTimeFormat().resolvedOptions().timeZone; } catch { return null; }
+}
+
+// Resolves the URL (or the reader's time zone) against whichever city list is loaded.
+// Without a sky in the URL, a city with an estimate shows the estimate; Phase 1 links
+// with ?sky=<setting> keep their setting.
+function resolveChoice(locale: Locale, cities: readonly ComparisonCity[] | null, nowIso: string): Choice {
   const params = new URLSearchParams(window.location.search);
-  let timeZone: string | null = null;
-  try { timeZone = Intl.DateTimeFormat().resolvedOptions().timeZone; } catch { timeZone = null; }
-  return {
-    city: findReferenceCity(params.get("city")) ?? defaultReferenceCity(locale, timeZone),
-    situation: findSituation(params.get("sky")) ?? (findSituation(defaultSituationId) as SkySituation),
-    nowIso: roundedCurrentMinuteIso(),
-  };
+  const fallback = defaultReferenceCity(locale, readTimeZone());
+  const list = cities ?? referenceCities;
+  const city = list.find((item) => item.id === params.get("city")) ?? list.find((item) => item.id === fallback.id) ?? fallback;
+  const situation = findSituation(params.get("sky"));
+  const sky = situation ?? (hasEstimate(city) ? "estimate" : (findSituation(defaultSituationId) as SkySituation));
+  return { city, sky, nowIso };
+}
+
+function skyOf(choice: Choice) {
+  if (choice.sky === "estimate" && hasEstimate(choice.city)) {
+    const limitingMagnitude = choice.city.limitingMagnitude;
+    return { id: "estimate", limitingMagnitude, bortle: bortleForLimitingMagnitude(limitingMagnitude), skyglow: skyglowForLimitingMagnitude(limitingMagnitude) };
+  }
+  const situation = choice.sky === "estimate" ? (findSituation(defaultSituationId) as SkySituation) : choice.sky;
+  return { id: situation.id, limitingMagnitude: situation.limitingMagnitude, bortle: situation.bortle, skyglow: situation.skyglow, situation };
+}
+
+function formatMagnitude(locale: Locale, value: number) {
+  return locale === "de" ? value.toFixed(1).replace(".", ",") : value.toFixed(1);
 }
 
 function formatCount(locale: Locale, value: number) {
@@ -37,8 +65,8 @@ function formatCount(locale: Locale, value: number) {
 
 function shareUrl(locale: Locale, choice: Choice) {
   const url = new URL(localizedLinks.lightPollutionComparison(locale), window.location.origin);
-  url.searchParams.set("sky", choice.situation.id);
   url.searchParams.set("city", choice.city.id);
+  url.searchParams.set("sky", skyOf(choice).id);
   return url.toString();
 }
 
@@ -46,14 +74,32 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
   const de = locale === "de";
   const [choice, setChoice] = useState<Choice | null>(null);
   const [stars, setStars] = useState<readonly CatalogStar[] | null>(null);
+  const [cities, setCities] = useState<readonly EstimatedCity[] | null>(null);
   const [split, setSplit] = useState(50);
   const [status, setStatus] = useState<string | null>(null);
   const yoursRef = useRef<HTMLDivElement>(null);
   const darkestRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    setChoice(readChoiceFromUrl(locale));
+    const nowIso = roundedCurrentMinuteIso();
+    setChoice(resolveChoice(locale, null, nowIso));
     let cancelled = false;
+    fetch(citySkyUrl)
+      .then((response) => (response.ok ? response.json() as Promise<CitySkyFile> : Promise.reject(new Error(String(response.status)))))
+      .then((file) => {
+        if (cancelled) return;
+        const parsed = parseCitySkyRows(file.cities);
+        setCities(parsed);
+        // Re-resolve unless the reader already changed something.
+        setChoice((current) => {
+          if (!current || !current.touched) return resolveChoice(locale, parsed, nowIso);
+          // The reader already chose: keep their setting and swap in the same city with its estimate.
+          const city = parsed.find((item) => item.id === current.city.id);
+          return city ? { ...current, city } : current;
+        });
+      })
+      // Without the city file the page keeps the reference cities and the five settings.
+      .catch(() => undefined);
     fetch(faintStarsUrl)
       .then((response) => (response.ok ? response.json() as Promise<FaintStarCatalog> : Promise.reject(new Error(String(response.status)))))
       .then((file) => {
@@ -66,18 +112,21 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
     return () => { cancelled = true; };
   }, [locale]);
 
-  const update = (next: Partial<Omit<Choice, "nowIso">>) => {
+  const update = (next: Partial<Pick<Choice, "city" | "sky">>) => {
     if (!choice) return;
-    const merged = { ...choice, ...next };
+    const merged = { ...choice, ...next, touched: true };
     setChoice(merged);
     setStatus(null);
-    try { window.history.replaceState(null, "", `${window.location.pathname}?sky=${merged.situation.id}&city=${merged.city.id}`); } catch { /* history blocked */ }
+    try { window.history.replaceState(null, "", `${window.location.pathname}?city=${merged.city.id}&sky=${skyOf(merged).id}`); } catch { /* history blocked */ }
   };
+
+  // Picking a city with an estimate switches to it; the reader can still pick a setting afterwards.
+  const pickCity = (city: ComparisonCity) => update({ city, sky: hasEstimate(city) ? "estimate" : (choice?.sky === "estimate" ? (findSituation(defaultSituationId) as SkySituation) : choice?.sky) });
 
   const result = useMemo(() => {
     if (!choice || !stars) return null;
     const timing = selectComparisonInstant(referenceCityLocation(choice.city, darkestSky.limitingMagnitude), choice.nowIso);
-    return { timing, ...computeSkyComparison({ city: choice.city, situation: choice.situation, instantIso: timing.instantIso, stars }) };
+    return { timing, ...computeSkyComparison({ city: choice.city, limitingMagnitude: skyOf(choice).limitingMagnitude, instantIso: timing.instantIso, stars }) };
   }, [choice, stars]);
 
   const nearest = useMemo(() => {
@@ -93,7 +142,10 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
   }
 
   const cityName = choice.city.name[locale];
-  const situationName = choice.situation.label[locale];
+  const sky = skyOf(choice);
+  const estimated = sky.id === "estimate";
+  const situationName = sky.situation ? sky.situation.label[locale] : (de ? "Schätzung fürs Zentrum" : "estimate for the centre");
+  const estimate = hasEstimate(choice.city) ? choice.city.limitingMagnitude : null;
   const percent = Math.max(1, Math.round(result.visibleShare * 100));
   const time = formatLocalClockTime(locale, choice.city.timeZone, result.timing.instantIso);
   const yoursCount = formatCount(locale, result.yours.visibleStars);
@@ -112,7 +164,9 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
     context.drawImage(yoursCanvas, 70, 92, 460, 460);
     context.drawImage(darkestCanvas, 670, 92, 460, 460);
     context.textAlign = "center"; context.fillStyle = "#e9c46a"; context.font = "600 26px Georgia, serif";
-    context.fillText(de ? `Mein Himmel · ${situationName}, ${cityName}` : `My sky · ${situationName}, ${cityName}`, 300, 56);
+    context.fillText(estimated
+      ? (de ? `Mein Himmel · ${cityName}, Bortle ${sky.bortle}` : `My sky · ${cityName}, Bortle ${sky.bortle}`)
+      : (de ? `Mein Himmel · ${situationName}, ${cityName}` : `My sky · ${situationName}, ${cityName}`), 300, 56);
     context.fillText(de ? "Der dunkelste Himmel" : "The darkest sky", 900, 56);
     context.fillStyle = "#ffffff"; context.font = "400 30px Georgia, serif";
     context.fillText(de ? `${yoursCount} Sterne` : `${yoursCount} stars`, 300, 590);
@@ -153,33 +207,51 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
   return (
     <div className="lp-comparison">
       <div className="lp-controls">
+        {cities ? (
+          <CitySearch locale={locale} cities={cities} selected={choice.city as EstimatedCity} onSelect={pickCity} />
+        ) : (
+          <label className="lp-city">
+            <span>{de ? "Nächste Großstadt (für Sternbilder und Uhrzeit)" : "Nearest big city (sets which stars are up)"}</span>
+            <select value={choice.city.id} onChange={(event) => { const next = findReferenceCity(event.target.value); if (next) pickCity(next); }}>
+              {[...referenceCities].sort((left, right) => left.name[locale].localeCompare(right.name[locale], locale)).map((item) => <option key={item.id} value={item.id}>{item.name[locale]}</option>)}
+            </select>
+          </label>
+        )}
         <fieldset className="lp-situations">
-          <legend>{de ? "Wo wohnst du?" : "Where do you live?"}</legend>
+          <legend>{estimate !== null ? (de ? "Wie hell ist dein Himmel?" : "How bright is your sky?") : (de ? "Wo wohnst du?" : "Where do you live?")}</legend>
+          {estimate !== null ? (
+            <label className={`lp-estimate${estimated ? " active" : ""}`}>
+              <input type="radio" name="lp-situation" value="estimate" checked={estimated} onChange={() => update({ sky: "estimate" })} />
+              <strong>{de ? "Schätzung aus Satellitendaten" : "Satellite estimate"}</strong>
+              <span>{de
+                ? `Zentrum von ${cityName}: Bortle ${bortleForLimitingMagnitude(estimate)}, Sterne bis Helligkeit ${formatMagnitude(locale, estimate)}`
+                : `Centre of ${cityName}: Bortle ${bortleForLimitingMagnitude(estimate)}, stars to magnitude ${formatMagnitude(locale, estimate)}`}</span>
+            </label>
+          ) : null}
+          {estimate !== null ? <p className="lp-situations-or">{de ? "Oder wähle, wie du wohnst:" : "Or pick where you live:"}</p> : null}
           {skySituations.map((situation) => (
-            <label key={situation.id} className={situation.id === choice.situation.id ? "active" : undefined}>
-              <input type="radio" name="lp-situation" value={situation.id} checked={situation.id === choice.situation.id} onChange={() => update({ situation })} />
+            <label key={situation.id} className={situation.id === sky.id ? "active" : undefined}>
+              <input type="radio" name="lp-situation" value={situation.id} checked={situation.id === sky.id} onChange={() => update({ sky: situation })} />
               <strong>{situation.label[locale]}</strong>
               <span>{situation.hint[locale]}</span>
             </label>
           ))}
         </fieldset>
-        <label className="lp-city">
-          <span>{de ? "Nächste Großstadt (für Sternbilder und Uhrzeit)" : "Nearest big city (sets which stars are up)"}</span>
-          <select value={choice.city.id} onChange={(event) => { const next = findReferenceCity(event.target.value); if (next) update({ city: next }); }}>
-            {[...referenceCities].sort((left, right) => left.name[locale].localeCompare(right.name[locale], locale)).map((item) => <option key={item.id} value={item.id}>{item.name[locale]}</option>)}
-          </select>
-        </label>
       </div>
 
       <p className="lp-headline" aria-live="polite">
-        {de
+        {estimated
+          ? (de
+            ? <>Im Zentrum von {cityName} siehst du geschätzt etwa <strong>{yoursCount}</strong> Sterne. Unter dem dunkelsten Himmel wären es <strong>{darkestCount}</strong>. Das sind nur <strong>{percent} %</strong>.</>
+            : <>In the centre of {cityName} you can see an estimated <strong>{yoursCount}</strong> stars. Under the darkest sky it would be <strong>{darkestCount}</strong>. That is just <strong>{percent}%</strong>.</>)
+          : de
           ? <>Du siehst etwa <strong>{yoursCount}</strong> Sterne. Unter dem dunkelsten Himmel wären es <strong>{darkestCount}</strong>. Das sind nur <strong>{percent} %</strong>.</>
           : <>You can see about <strong>{yoursCount}</strong> stars. Under the darkest sky it would be <strong>{darkestCount}</strong>. That is just <strong>{percent}%</strong>.</>}
       </p>
 
       <div className="lp-stage" style={{ ["--lp-split" as string]: `${split}%` }}>
         <div className="lp-layer" ref={yoursRef}>
-          <SkyCanvas snapshot={result.yours.snapshot} variant="destination" locale={locale} showConstellations={false} activeConstellationId={null} skyglow={choice.situation.skyglow} />
+          <SkyCanvas snapshot={result.yours.snapshot} variant="destination" locale={locale} showConstellations={false} activeConstellationId={null} skyglow={sky.skyglow} />
         </div>
         <div className="lp-layer lp-layer-dark" ref={darkestRef}>
           <SkyCanvas snapshot={result.darkest.snapshot} variant="destination" locale={locale} showConstellations={false} activeConstellationId={null} />
@@ -196,8 +268,8 @@ export function LightPollutionComparison({ locale, destinations }: { locale: Loc
 
       <p className="lp-meta">
         {de
-          ? `${result.timing.live ? "Jetzt" : "Heute Nacht"}, ${time} Uhr Ortszeit in ${cityName}${result.timing.live ? "" : " (dunkelster Moment der Nacht)"}. Links: ${situationName}, Bortle ${choice.situation.bortle}, Sterne bis Helligkeit ${choice.situation.limitingMagnitude.toFixed(1).replace(".", ",")}. Rechts: Bortle ${darkestSky.bortle}, Sterne bis ${darkestSky.limitingMagnitude.toFixed(1).replace(".", ",")}.`
-          : `${result.timing.live ? "Now" : "Tonight"}, ${time} local time in ${cityName}${result.timing.live ? "" : " (darkest moment of the night)"}. Left: ${situationName}, Bortle ${choice.situation.bortle}, stars to magnitude ${choice.situation.limitingMagnitude.toFixed(1)}. Right: Bortle ${darkestSky.bortle}, stars to ${darkestSky.limitingMagnitude.toFixed(1)}.`}
+          ? `${result.timing.live ? "Jetzt" : "Heute Nacht"}, ${time} Uhr Ortszeit in ${cityName}${result.timing.live ? "" : " (dunkelster Moment der Nacht)"}. Links: ${estimated ? "Satellitenschätzung fürs Zentrum" : situationName}, Bortle ${sky.bortle}, Sterne bis Helligkeit ${formatMagnitude(locale, sky.limitingMagnitude)}. Rechts: Bortle ${darkestSky.bortle}, Sterne bis ${formatMagnitude(locale, darkestSky.limitingMagnitude)}.`
+          : `${result.timing.live ? "Now" : "Tonight"}, ${time} local time in ${cityName}${result.timing.live ? "" : " (darkest moment of the night)"}. Left: ${estimated ? "satellite estimate for the centre" : situationName}, Bortle ${sky.bortle}, stars to magnitude ${formatMagnitude(locale, sky.limitingMagnitude)}. Right: Bortle ${darkestSky.bortle}, stars to ${formatMagnitude(locale, darkestSky.limitingMagnitude)}.`}
         {result.yours.snapshot.moon.aboveHorizon ? (de ? " Der Mond steht gerade am Himmel und hellt ihn zusätzlich auf. Das ist hier nicht eingerechnet." : " The Moon is up and brightens the sky further. That is not included here.") : null}
       </p>
 

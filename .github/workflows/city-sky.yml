@@ -1,0 +1,77 @@
+name: City sky brightness data
+
+# Measures Black Marble night light around every comparison city and turns it into the
+# limiting-magnitude estimates behind the light-pollution comparison. Dispatch it on a
+# data branch (never main); it commits the snapshot and the public file to that branch
+# so the result goes through a reviewed pull request.
+on:
+  workflow_dispatch:
+    inputs:
+      year:
+        description: "VNP46A4 annual composite year (empty = latest available)"
+        required: false
+        default: ""
+        type: string
+      limit:
+        description: "Only the first N cities, for a trial run (empty = all)"
+        required: false
+        default: ""
+        type: string
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-ingest-main
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      EARTHDATA_TOKEN: ${{ secrets.EARTHDATA_TOKEN }}
+    steps:
+      - name: Refuse to commit data straight to main
+        if: ${{ github.ref_name == 'main' }}
+        run: |
+          echo "Dispatch this workflow on a data branch, then review the pull request." >&2
+          exit 1
+      - uses: actions/checkout@v7
+      - uses: pnpm/setup@v2
+        with:
+          runtime: node@22
+          cache: true
+          install: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: pnpm install --frozen-lockfile
+      - run: python -m pip install -r requirements-data.txt
+      - name: Fetch and measure Black Marble tiles for every comparison city
+        env:
+          REQUESTED_YEAR: ${{ inputs.year }}
+          REQUESTED_LIMIT: ${{ inputs.limit }}
+        run: |
+          set -euo pipefail
+          args=()
+          if [[ -n "$REQUESTED_YEAR" ]]; then args+=(--year "$REQUESTED_YEAR"); fi
+          if [[ -n "$REQUESTED_LIMIT" ]]; then args+=(--limit "$REQUESTED_LIMIT"); fi
+          pnpm data:city-sky:fetch "${args[@]}"
+      - run: pnpm data:city-sky
+      - run: pnpm data:astronomy:validate
+        if: ${{ inputs.limit == '' }}
+      - run: pnpm typecheck
+      - run: pnpm test
+      - name: Commit city sky data to the dispatched branch
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- data-snapshots/black-marble/cities public/data/stargazing/astronomy/city-sky.json
+          if git diff --cached --quiet; then
+            echo "No city sky changes to commit."
+            exit 0
+          fi
+          git commit -m "chore(data): refresh city sky brightness estimates"
+          git push

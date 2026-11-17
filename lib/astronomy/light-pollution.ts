@@ -30,6 +30,72 @@ export const skySituations: readonly SkySituation[] = [
 
 export const darkestSky = { bortle: "1–3", limitingMagnitude: 6.5 } as const;
 
+// The five situations sit exactly on this line, so an estimated sky between two of them
+// gets a glow between theirs.
+export function skyglowForLimitingMagnitude(limitingMagnitude: number) {
+  return Math.min(1, Math.max(0, (darkestSky.limitingMagnitude - limitingMagnitude) / 2.5));
+}
+
+// Nearest Bortle class for a best-case limiting magnitude, using the same class values
+// as the situations above.
+export function bortleForLimitingMagnitude(limitingMagnitude: number) {
+  if (limitingMagnitude >= 6.45) return darkestSky.bortle;
+  if (limitingMagnitude >= 6.05) return "4";
+  if (limitingMagnitude >= 5.75) return "5";
+  if (limitingMagnitude >= 5.25) return "6";
+  if (limitingMagnitude >= 4.75) return "7";
+  if (limitingMagnitude >= 4.25) return "8";
+  return "9";
+}
+
+export interface ExposureMagnitudePoint {
+  alanExposure: number;
+  limitingMagnitude: number;
+}
+
+// Piecewise-linear and clamped at both ends; points must rise in exposure and fall in magnitude.
+export function limitingMagnitudeForExposure(alanExposure: number, curve: readonly ExposureMagnitudePoint[]) {
+  if (!Number.isFinite(alanExposure) || alanExposure < 0) throw new Error("ALAN exposure must be a non-negative finite number");
+  if (curve.length < 2) throw new Error("Exposure curve needs at least two points");
+  for (let index = 1; index < curve.length; index += 1) {
+    if (curve[index].alanExposure <= curve[index - 1].alanExposure || curve[index].limitingMagnitude >= curve[index - 1].limitingMagnitude) {
+      throw new Error("Exposure curve must rise in exposure and fall in limiting magnitude");
+    }
+  }
+  if (alanExposure <= curve[0].alanExposure) return curve[0].limitingMagnitude;
+  const last = curve[curve.length - 1];
+  if (alanExposure >= last.alanExposure) return last.limitingMagnitude;
+  const right = curve.findIndex((point) => point.alanExposure >= alanExposure);
+  const a = curve[right - 1];
+  const b = curve[right];
+  return a.limitingMagnitude + ((alanExposure - a.alanExposure) / (b.alanExposure - a.alanExposure)) * (b.limitingMagnitude - a.limitingMagnitude);
+}
+
+// A city with a satellite estimate of its centre's sky. Compact rows keep the lazily
+// loaded file small: [id, English name, German name ("" = same), country, lat, lon, time zone, limiting magnitude].
+export type CitySkyRow = [string, string, string, string, number, number, string, number];
+
+export interface CitySkyFile {
+  version: 1;
+  source: {
+    blackMarble: { product: string; collectionVersion: string; year: number; radianceLayer: string };
+    cities: { name: string; url: string; license: string };
+    labels: { name: string; url: string; license: string };
+    method: string;
+    calibratedAt: string;
+  };
+  cities: CitySkyRow[];
+}
+
+export interface EstimatedCity extends ReferenceCity {
+  country: string;
+  limitingMagnitude: number;
+}
+
+export function parseCitySkyRows(rows: readonly CitySkyRow[]): EstimatedCity[] {
+  return rows.map(([id, en, de, country, lat, lon, timeZone, limitingMagnitude]) => ({ id, name: { en, de: de || en }, country, lat, lon, timeZone, limitingMagnitude }));
+}
+
 export interface ReferenceCity {
   id: string;
   name: Record<Locale, string>;
@@ -126,8 +192,8 @@ function summarize(snapshot: SkySnapshot): SkyComparisonSide {
   return { snapshot, visibleStars: snapshot.stars.length };
 }
 
-export function computeSkyComparison(input: { city: ReferenceCity; situation: SkySituation; instantIso: string; stars: readonly CatalogStar[] }) {
-  const yours = summarize(computeSky(referenceCityLocation(input.city, input.situation.limitingMagnitude), input.instantIso, input.stars));
+export function computeSkyComparison(input: { city: ReferenceCity; limitingMagnitude: number; instantIso: string; stars: readonly CatalogStar[] }) {
+  const yours = summarize(computeSky(referenceCityLocation(input.city, input.limitingMagnitude), input.instantIso, input.stars));
   const darkest = summarize(computeSky(referenceCityLocation(input.city, darkestSky.limitingMagnitude), input.instantIso, input.stars));
   const visibleShare = darkest.visibleStars === 0 ? 0 : yours.visibleStars / darkest.visibleStars;
   return { yours, darkest, visibleShare };
