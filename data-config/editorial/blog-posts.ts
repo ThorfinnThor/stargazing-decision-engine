@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach" | "night-temperature-percentiles" | "summer-astronomical-darkness";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach" | "night-temperature-percentiles" | "summer-astronomical-darkness" | "within-destination-sites" | "clear-hours-versus-nights";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -17,6 +17,70 @@ export interface BlogPostSource {
 }
 
 export const blogPostSources: BlogPostSource[] = [
+  {
+    slug: "same-destination-different-stargazing-sites",
+    title: "Same destination, different stargazing site: what changes?",
+    seoDescription: "Compare paired observing sites within six destinations. See how darkness, monthly Trip scores, and reviewed access can differ behind one destination name.",
+    standfirst: "A destination score belongs to a representative observing location. Twelve site records show what can change when you choose another place within the same destination.",
+    publishedAt: "2026-11-19",
+    lastReviewedAt: "2026-11-19",
+    readingMinutes: 6,
+    heroDestinationSlug: "jasper",
+    datasetId: "within-destination-sites",
+    relatedDestinationSlugs: ["death-valley", "jasper", "galloway", "cherry-springs", "central-idaho", "great-barrier-island"],
+    methodologyNote: "We explicitly selected six destinations and compare their active site records in the representative site's highest Stargazing Trip month, retaining the first calendar month on a tie. Each row uses that site's committed real monthly scores for the same month, plus its reviewed access label. No annual averages or independently optimised secondary-site months are used. This is not a forecast or a field comparison of observed sky brightness. Shared climate grids and rounded scores can produce identical values; labels do not confirm present-day nighttime entry.",
+    blocks: [
+      { kind: "prose", heading: "The destination name is only the beginning of the decision", paragraphs: [
+        "In the current Jasper data, the representative Medicine Lake observing area scores 67 for an August stargazing trip. Pyramid Island scores 70 in the same month, despite a slightly lower darkness score. At Cherry Springs, the two reviewed sites have matching darkness and Trip scores in September, but different access labels. Those are two distinct reasons to look beyond a destination's headline result before deciding where to spend the evening.",
+        "Our destination profiles use a representative site to keep climate and scoring anchored to a consistent location. A park, island, or dark-sky region can contain other reviewed observing places with different inputs. The paired rows below show six examples using the representative site's strongest Trip month for both locations. Holding the month constant avoids giving one site a seasonal advantage simply by comparing it in a different part of the year."
+      ] },
+      { kind: "prose", heading: "A darker point does not settle the whole comparison", paragraphs: [
+        "The Death Valley pair separates artificial-light exposure from the combined travel score. In October, the representative dark-sky area has a darkness score of 96 and a Trip score of 96. Mesquite Flat Sand Dunes has corresponding scores of 100 and 97. The darker model input changes the result, but it does not create an equally large difference in the combined score. Darkness is one component within a wider calculation.",
+        "Jasper demonstrates the reverse direction. The site with the lower darkness score has the higher Trip score in this comparison. Other site inputs, including the historical climate series, contribute to that result. The table cannot establish that you will personally see more objects from one place on a given night. It identifies where the underlying model differs, so you can inspect the relevant site profile rather than applying one destination-wide number to every viewpoint."
+      ] },
+      { kind: "prose", heading: "Matching numbers can still leave a different access decision", paragraphs: [
+        "Cherry Springs' Overnight Astronomy Observation Field and Public Viewing Area both score 88 for darkness and 77 for a September trip. Their catalog access labels differ. The overnight field is limited, while the viewing area is public. That distinction belongs in the planning decision even when the numerical comparison offers no separation. The labels summarise reviewed evidence; the official visitor information determines what you can actually do during your visit.",
+        "The Great Barrier Island pair makes a similar point. Medlands Beach and the Windy Canyon trailhead share the displayed January scores, while their access labels differ. Equal model values do not establish equal paths, horizons, ground conditions, facilities, or nighttime permissions. Those features are not interchangeable merely because the weather and artificial-light inputs happen to produce matching rounded outputs."
+      ] },
+      { kind: "callout", heading: "Choose an observing footprint as well as a destination", body: "Use the paired scores to identify differences worth investigating. Resolve the exact viewpoint, route, arrival time, and permitted activity through the linked destination information and current official sources." },
+      { kind: "prose", heading: "How much weight should a small score gap carry?", paragraphs: [
+        "A one-point difference should be read alongside how the data was produced. Climate is gridded, several nearby sites may share a weather series, and published scores are rounded. The Central Idaho pair reaches the same July Trip score even though the darkness values differ slightly. Galloway's rows differ by one point in both darkness and Trip score. Neither pattern supports a claim that the better-scoring site will be observably better on the night you arrive.",
+        "A practical choice can therefore favour a lower-scoring site if it offers suitable access and an observing setup that works for you. Read the destination guide for the named place, then check current visitor rules and the forecast close to departure. This analysis does not rank every possible spot within these regions. It shows why selecting the destination and selecting the actual observing location are related decisions that still need separate evidence."
+      ] },
+    ],
+  },
+  {
+    slug: "clear-night-does-not-mean-clear-all-night",
+    title: "A clear night does not mean clear all night",
+    seoDescription: "Compare clear-hour and clear-night statistics at eight stargazing destinations, and see why a three-hour clear sequence does not promise an uninterrupted session.",
+    standfirst: "Our clear-night statistic counts nights with a qualifying three-hour sequence. The clear-hour statistic measures something else. Reading both prevents an encouraging percentage from becoming an all-night promise.",
+    publishedAt: "2026-11-19",
+    lastReviewedAt: "2026-11-19",
+    readingMinutes: 6,
+    heroDestinationSlug: "namibrand",
+    datasetId: "clear-hours-versus-nights",
+    relatedDestinationSlugs: ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"],
+    methodologyNote: "Eight explicitly selected representative sites use their highest Stargazing Trip month, retaining the first month on ties. In the committed 1991–2020 ERA5 pipeline, a clear hour has total cloud cover ≤20%; a clear night contains at least three consecutive UTC hourly samples during astronomical night that meet that cloud threshold and are not wet under the configured precipitation rule (≥0.1 mm/hour is wet). Clear-hour probability divides qualifying cloud samples by all astronomical-night hourly samples; clear-night probability divides qualifying nights by all sampled astronomical nights. The percentage-point gap subtracts clear-hour share from clear-night frequency before rounding. These are different denominators, not a conditional probability or a measure of all-night continuity. This is not a forecast.",
+    blocks: [
+      { kind: "prose", heading: "What the clear-night percentage actually counts", paragraphs: [
+        "Death Valley's selected October row has a historical clear-night frequency of about 81.1%, while about 71.9% of its sampled astronomical-night hours meet the clear cloud-cover threshold. Those figures can coexist without contradiction. One asks whether a night contained a qualifying observing window. The other asks how much of the entire pool of sampled night hours met a cloud criterion. Neither says that eighty-one percent of nights were cloudless from dusk to dawn.",
+        "The distinction comes directly from our aggregation rules. A clear night needs at least three consecutive qualifying hourly samples during astronomical night. Those samples must meet the cloud threshold and the precipitation condition. Once the sequence exists, that night counts once, even if other hours were cloudy. The statistic is useful for identifying a history of opportunities, but it does not describe the duration of the longest clear run or the cloud pattern outside that run."
+      ] },
+      { kind: "prose", heading: "Why the hourly share can be higher or lower", paragraphs: [
+        "At NamibRand in March, about 81.4% of nights qualify, compared with a clear-hour share around 73.8%. Jasper's August pair goes in the other direction, with about 24.1% of nights qualifying and 26.3% of hours meeting the cloud criterion. The eight examples show that there is no universal conversion factor from one percentage to the other. A larger hourly share does not automatically imply a larger frequency of three-hour windows.",
+        "There are several reasons the aggregates differ. Clear hourly samples may be separated by cloudier hours and fail the sequence rule. A night with a long enough clear interval can qualify despite cloud outside that interval. Longer nights contribute more hours to the hourly denominator, while every sampled night contributes one unit to the nightly denominator. The nightly test also checks precipitation, whereas the cloud-only hourly share does not. These differences prevent the percentage-point gap from isolating any single weather mechanism."
+      ] },
+      { kind: "callout", heading: "Do not subtract the percentages to estimate interruption risk", body: "The gap compares statistics with different denominators and criteria. It does not estimate how often clouds interrupt a session, how many hours you will lose, or the chance that a qualifying night stays clear until dawn." },
+      { kind: "prose", heading: "A short session and a long imaging run ask different questions", paragraphs: [
+        "For a visitor hoping for a few hours outside, a history of qualifying windows can be a useful seasonal signal. A photographer needing an uninterrupted sequence extending well beyond three hours needs more information. The same monthly clear-night percentage cannot answer both questions. The committed aggregate files do not provide a distribution of longest clear runs, so this article does not derive a six-hour or all-night success rate from them.",
+        "Even the timing of a qualifying sequence matters. A window could occur after your permitted access ends, before your target is high enough, or while the Moon is inconveniently placed. The monthly statistic has no knowledge of your itinerary. It compresses many years of hourly records into a seasonal comparison, leaving the scheduling problem to the date-specific calendar and a current hourly forecast."
+      ] },
+      { kind: "prose", heading: "Use the climate result to choose a season, then plan the hours", paragraphs: [
+        "The comparison holds each destination at its highest Trip-score month rather than selecting the month with the largest difference between the two cloud statistics. This gives the rows a travel-planning context without presenting them as global leaders in clear-night reliability. The examples include destinations with very different climates, and the percentage-point gap is descriptive. It is not a quality score that should be maximised when choosing a trip.",
+        "Once a season looks suitable, define the actual hours you need and check a current forecast against them. Allow time for arrival and setup, and make sure the official access conditions cover the session. Use the destination calendar for the Moon and astronomical timing. Reading a clear-night percentage as evidence of possible windows keeps it useful; treating it as guaranteed uninterrupted observing asks the historical statistic to answer a question it was never built to measure."
+      ] },
+    ],
+  },
   {
     slug: "night-temperature-average-versus-cold-tail",
     title: "What a mild night average hides at a stargazing site",

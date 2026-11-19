@@ -1,0 +1,202 @@
+{
+  "version": 1,
+  "slug": "same-destination-different-stargazing-sites",
+  "title": "Same destination, different stargazing site: what changes?",
+  "seoDescription": "Compare paired observing sites within six destinations. See how darkness, monthly Trip scores, and reviewed access can differ behind one destination name.",
+  "standfirst": "A destination score belongs to a representative observing location. Twelve site records show what can change when you choose another place within the same destination.",
+  "publishedAt": "2026-11-19",
+  "lastReviewedAt": "2026-11-19",
+  "readingMinutes": 6,
+  "heroDestinationSlug": "jasper",
+  "datasetId": "within-destination-sites",
+  "relatedDestinationSlugs": [
+    "death-valley",
+    "jasper",
+    "galloway",
+    "cherry-springs",
+    "central-idaho",
+    "great-barrier-island"
+  ],
+  "methodologyNote": "We explicitly selected six destinations and compare their active site records in the representative site's highest Stargazing Trip month, retaining the first calendar month on a tie. Each row uses that site's committed real monthly scores for the same month, plus its reviewed access label. No annual averages or independently optimised secondary-site months are used. This is not a forecast or a field comparison of observed sky brightness. Shared climate grids and rounded scores can produce identical values; labels do not confirm present-day nighttime entry.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "The destination name is only the beginning of the decision",
+      "paragraphs": [
+        "In the current Jasper data, the representative Medicine Lake observing area scores 67 for an August stargazing trip. Pyramid Island scores 70 in the same month, despite a slightly lower darkness score. At Cherry Springs, the two reviewed sites have matching darkness and Trip scores in September, but different access labels. Those are two distinct reasons to look beyond a destination's headline result before deciding where to spend the evening.",
+        "Our destination profiles use a representative site to keep climate and scoring anchored to a consistent location. A park, island, or dark-sky region can contain other reviewed observing places with different inputs. The paired rows below show six examples using the representative site's strongest Trip month for both locations. Holding the month constant avoids giving one site a seasonal advantage simply by comparing it in a different part of the year."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Paired observing places in a shared month",
+      "introduction": "Darkness and Trip are published 0–100 scores. Each destination uses one common month, so differences are between site records rather than travel seasons.",
+      "columns": [
+        "Destination",
+        "Observing site",
+        "Role",
+        "Month",
+        "Darkness",
+        "Trip",
+        "Access"
+      ],
+      "rows": [
+        [
+          "Death Valley",
+          "Death Valley dark-sky area",
+          "Representative",
+          "October",
+          "96",
+          "96",
+          "Public"
+        ],
+        [
+          "Death Valley",
+          "Mesquite Flat Sand Dunes",
+          "Other reviewed site",
+          "October",
+          "100",
+          "97",
+          "Public"
+        ],
+        [
+          "Jasper National Park",
+          "Medicine Lake observing area",
+          "Representative",
+          "August",
+          "87",
+          "67",
+          "Public"
+        ],
+        [
+          "Jasper National Park",
+          "Pyramid Island",
+          "Other reviewed site",
+          "August",
+          "86",
+          "70",
+          "Public"
+        ],
+        [
+          "Galloway Forest",
+          "Galloway dark-sky park",
+          "Representative",
+          "April",
+          "88",
+          "58",
+          "Public"
+        ],
+        [
+          "Galloway Forest",
+          "Clatteringshaws Loch",
+          "Other reviewed site",
+          "April",
+          "89",
+          "59",
+          "Public"
+        ],
+        [
+          "Cherry Springs",
+          "Cherry Springs Overnight Astronomy Observation Field",
+          "Representative",
+          "September",
+          "88",
+          "77",
+          "Limited"
+        ],
+        [
+          "Cherry Springs",
+          "Cherry Springs Public Viewing Area",
+          "Other reviewed site",
+          "September",
+          "88",
+          "77",
+          "Public"
+        ],
+        [
+          "Central Idaho",
+          "Stanley Lake day-use area",
+          "Representative",
+          "July",
+          "100",
+          "98",
+          "Limited"
+        ],
+        [
+          "Central Idaho",
+          "Redfish Lake visitor area",
+          "Other reviewed site",
+          "July",
+          "99",
+          "98",
+          "Limited"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "Medlands Beach",
+          "Representative",
+          "January",
+          "100",
+          "78",
+          "Public"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "Windy Canyon trailhead",
+          "Other reviewed site",
+          "January",
+          "100",
+          "78",
+          "Limited"
+        ]
+      ],
+      "note": "Equal values can result from shared climate grids and score rounding. Access labels are reviewed catalog summaries and require current official confirmation; score gaps are not measured differences in the view on a specific night."
+    },
+    {
+      "kind": "prose",
+      "heading": "A darker point does not settle the whole comparison",
+      "paragraphs": [
+        "The Death Valley pair separates artificial-light exposure from the combined travel score. In October, the representative dark-sky area has a darkness score of 96 and a Trip score of 96. Mesquite Flat Sand Dunes has corresponding scores of 100 and 97. The darker model input changes the result, but it does not create an equally large difference in the combined score. Darkness is one component within a wider calculation.",
+        "Jasper demonstrates the reverse direction. The site with the lower darkness score has the higher Trip score in this comparison. Other site inputs, including the historical climate series, contribute to that result. The table cannot establish that you will personally see more objects from one place on a given night. It identifies where the underlying model differs, so you can inspect the relevant site profile rather than applying one destination-wide number to every viewpoint."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Matching numbers can still leave a different access decision",
+      "paragraphs": [
+        "Cherry Springs' Overnight Astronomy Observation Field and Public Viewing Area both score 88 for darkness and 77 for a September trip. Their catalog access labels differ. The overnight field is limited, while the viewing area is public. That distinction belongs in the planning decision even when the numerical comparison offers no separation. The labels summarise reviewed evidence; the official visitor information determines what you can actually do during your visit.",
+        "The Great Barrier Island pair makes a similar point. Medlands Beach and the Windy Canyon trailhead share the displayed January scores, while their access labels differ. Equal model values do not establish equal paths, horizons, ground conditions, facilities, or nighttime permissions. Those features are not interchangeable merely because the weather and artificial-light inputs happen to produce matching rounded outputs."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Choose an observing footprint as well as a destination",
+      "body": "Use the paired scores to identify differences worth investigating. Resolve the exact viewpoint, route, arrival time, and permitted activity through the linked destination information and current official sources."
+    },
+    {
+      "kind": "prose",
+      "heading": "How much weight should a small score gap carry?",
+      "paragraphs": [
+        "A one-point difference should be read alongside how the data was produced. Climate is gridded, several nearby sites may share a weather series, and published scores are rounded. The Central Idaho pair reaches the same July Trip score even though the darkness values differ slightly. Galloway's rows differ by one point in both darkness and Trip score. Neither pattern supports a claim that the better-scoring site will be observably better on the night you arrive.",
+        "A practical choice can therefore favour a lower-scoring site if it offers suitable access and an observing setup that works for you. Read the destination guide for the named place, then check current visitor rules and the forecast close to departure. This analysis does not rank every possible spot within these regions. It shows why selecting the destination and selecting the actual observing location are related decisions that still need separate evidence."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Destinations compared",
+      "value": "6",
+      "note": "Explicitly selected destinations with multiple active sites"
+    },
+    {
+      "label": "Site records",
+      "value": "12",
+      "note": "Real monthly score files for the displayed locations"
+    },
+    {
+      "label": "Timing rule",
+      "value": "Same month",
+      "note": "Representative site's best Trip month used for every site in its destination"
+    }
+  ]
+}
