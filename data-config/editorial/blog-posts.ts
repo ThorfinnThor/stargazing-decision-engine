@@ -7,7 +7,7 @@ export interface BlogPostSource {
   lastReviewedAt: string;
   readingMinutes: number;
   heroDestinationSlug: string;
-  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach" | "night-temperature-percentiles" | "summer-astronomical-darkness" | "within-destination-sites" | "clear-hours-versus-nights";
+  datasetId: "monthly-atlas" | "darkness-versus-clear" | "altitude-versus-darkness" | "longest-night-versus-best-month" | "access-versus-score" | "dew-risk-spectrum" | "wind-risk-spectrum" | "seasonal-score-stability" | "good-versus-clear-night" | "best-month-temperature-range" | "meteor-showers-2027" | "milky-way-windows-2027" | "driest-versus-best-month" | "multi-night-clear-expectation" | "sky-quality-versus-comfort" | "short-trip-city-reach" | "night-temperature-percentiles" | "summer-astronomical-darkness" | "within-destination-sites" | "clear-hours-versus-nights" | "moon-phase-versus-moonless-hours" | "local-versus-regional-radiance";
   relatedDestinationSlugs: string[];
   methodologyNote: string;
   blocks: Array<
@@ -17,6 +17,70 @@ export interface BlogPostSource {
 }
 
 export const blogPostSources: BlogPostSource[] = [
+  {
+    slug: "do-you-need-new-moon-for-stargazing",
+    title: "Do you need a new Moon for a moonless stargazing session?",
+    seoDescription: "Eight September 2027 calendar examples show three or more moonless hours despite a substantially illuminated Moon. Learn why phase alone misses the observing window.",
+    standfirst: "A Moon that is more than seventy percent illuminated can still leave several hours of astronomical darkness while it is below the horizon. Your observing window matters as much as the phase label.",
+    publishedAt: "2026-11-22",
+    lastReviewedAt: "2026-11-22",
+    readingMinutes: 6,
+    heroDestinationSlug: "death-valley",
+    datasetId: "moon-phase-versus-moonless-hours",
+    relatedDestinationSlugs: ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"],
+    methodologyNote: "For eight explicitly selected destinations, we read the committed September 2027 astronomy-calendar file and select the night with the highest stored illumination fraction among nights with illumination ≥30% and at least three moonless hours; ties use more moonless hours, then the earliest local date. Illumination is evaluated at the midpoint of the calendar's local-noon-to-next-noon interval, near local midnight, rather than averaged over the observing hours. Moonless hours are ten-minute samples of astronomical darkness with Moon altitude ≤0°, bounded by exact twilight duration. The named site is the calendar file's site, which can differ from the climate representative. Totals do not establish one continuous window. This is not a forecast or a sky-brightness measurement. Phase terminology follows the US Naval Observatory (https://aa.usno.navy.mil/faq/moon_phases).",
+    blocks: [
+      { kind: "prose", heading: "An illuminated Moon does not have to be in your sky", paragraphs: [
+        "The Death Valley calendar for 9 September 2027 pairs a stored Moon illumination of about 73.5% with 3.64 moonless hours during astronomical darkness. Jasper's selected night has about 73.2% illumination and 4.17 moonless hours. A phase-only filter could reject both dates, even though the calendar identifies substantial time with the Moon below the horizon. The useful question is whether that time matches the session you want.",
+        "New Moon is a convenient planning anchor, but the entire night is not the only unit of observing. A visitor with a few hours available can sometimes use the dark interval before moonrise or after moonset on another date. This table deliberately selects strongly illuminated examples from September 2027 rather than recommending the month's best nights. It demonstrates a limitation of phase labels, not an argument that these dates outperform a well-chosen new-Moon visit."
+      ] },
+      { kind: "prose", heading: "How to read a phase percentage beside moonless hours", paragraphs: [
+        "The illumination percentage describes the lit fraction of the visible lunar disk. In our calendar it is evaluated near local midnight, at the midpoint of the local-noon-to-next-noon interval assigned to the observing night. It is not the fraction of your session affected by Moonlight. Moonless hours instead count the overlap between astronomical darkness and the Moon being at or below the model horizon. They describe a geometrical opportunity at a particular site.",
+        "The distinction is visible in the southern rows. NamibRand's selected night starts on 20 September, with a stored illumination around 76.2% and 3.17 moonless hours. Rakiura and Great Barrier Island also contribute nights beginning on 20 September, with different darkness and moonless totals. The calendar uses local dates and site coordinates. A date copied from another destination is therefore not a substitute for opening the calendar where you will actually observe."
+      ] },
+      { kind: "callout", heading: "Find the usable interval before rejecting a date by phase", body: "Check astronomical dusk and dawn, local moonrise and moonset, and your target's position. A total of three moonless hours is useful only if the relevant interval falls inside the hours you can use." },
+      { kind: "prose", heading: "A moonless interval still needs the right target", paragraphs: [
+        "Death Valley's selected row illustrates another limit. Its calendar records several moonless hours but zero useful Galactic Centre hours under the separate Milky Way model. That does not remove the moonless interval. It shows that the interval and the target's favourable altitude do not overlap under the configured thresholds. The same date can therefore be relevant to one observing plan while failing a trip built specifically around the bright central Milky Way.",
+        "Our table keeps total astronomical darkness separate from the moonless portion. The difference helps identify how much of the dark night has the Moon above the horizon, but it is not a measure of how bright the sky becomes. Neither the phase fraction nor these duration totals models atmospheric scattering or the local horizon. Moonless hours are also a total; use the detailed events and your session timing to establish whether you have the continuous interval you need."
+      ] },
+      { kind: "prose", heading: "When an off-new-Moon date can work for your trip", paragraphs: [
+        "Start with the hours you are willing and permitted to spend at the site. A window after moonset may require observing well into the following morning, while one before moonrise may require arriving before the sky becomes fully dark. The displayed local date marks the evening on which the observing night begins. Keep the timezone and following-day events attached to it when making an itinerary, especially if you are comparing destinations across hemispheres.",
+        "Then bring the calendar together with monthly climate, a current hourly forecast, and the official access information for the named location. A geometrical opening cannot establish cloud-free weather or extend a closing time. If the available moonless interval fits your target and your schedule, the absence of a new Moon need not end the plan. If it does not fit, a familiar phase label cannot make the date suitable."
+      ] },
+    ],
+  },
+  {
+    slug: "local-darkness-versus-regional-light-pollution",
+    title: "A locally dark site can still have regional light exposure",
+    seoDescription: "Compare Black Marble radiance in four distance rings around eight observing sites, and learn why a zero local median does not settle the darkness score.",
+    standfirst: "Eight representative sites share a zero median radiance within two kilometres. Their wider surroundings and calibrated darkness scores still differ. The surrounding rings explain why.",
+    publishedAt: "2026-11-22",
+    lastReviewedAt: "2026-11-22",
+    readingMinutes: 6,
+    heroDestinationSlug: "galloway",
+    datasetId: "local-versus-regional-radiance",
+    relatedDestinationSlugs: ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"],
+    methodologyNote: "Eight explicitly selected climate-representative sites use their committed NASA VNP46A4 Collection 2 AllAngle_Composite_Snow_Free snapshots for 2023–2025. Radiance units are nW/cm²/sr. The 0–2 km value is the across-year median of each year's accepted-pixel median; outer rings use across-year medians of annual accepted-pixel means. We display stored radiances to six decimals and calibrated darkness to two. Ring weights in the exposure model are 0.45, 0.30, 0.15, and 0.10 applied to log(1 + radiance), followed by the separate darkness calibration. Rings are radial summaries, not directional skyglow predictions. This is not a forecast, a current lighting audit, a Bortle classification, or an SQM measurement. NASA product documentation: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4/.",
+    blocks: [
+      { kind: "prose", heading: "The nearest two kilometres do not tell the whole story", paragraphs: [
+        "NamibRand, Death Valley, Galloway, and Jasper all have a stored local median radiance of zero in this comparison. Yet their calibrated darkness scores range from 100 at NamibRand to 86.58 at Jasper. That difference is not caused by a change of weather or season in the table. Our artificial-light model also uses three wider distance rings, extending to seventy-five kilometres around each representative observing site.",
+        "The eight examples were selected to make that local-versus-regional distinction visible. They do not form a global ranking of light pollution, and their shared zero local median does not prove that every nearby pixel contains no light. A median describes the middle of a distribution. Individual bright pixels can exist without making the middle value positive. Interpreting zero as a guarantee of a completely unlit observing footprint would exceed the evidence."
+      ] },
+      { kind: "prose", heading: "What each ring contributes to the model", paragraphs: [
+        "The nearest ring covers distances from zero to two kilometres. The next three cover two to ten, ten to thirty, and thirty to seventy-five kilometres. Within each baseline year, the pipeline takes a median for the inner ring and a mean for each outer ring. It then takes a median across the three annual summaries. The resulting values retain the spatial context without letting one unusually bright baseline year alone set the entire comparison.",
+        "The model combines these summaries using decreasing weights applied to the logarithm of one plus radiance. It then converts that exposure through a separate darkness calibration. The outermost ring has a smaller weight than the nearest ring, but a nonzero value can still affect the exposure. This is why having a dark immediate neighbourhood and having a low regional artificial-light signal are related strengths rather than identical measurements."
+      ] },
+      { kind: "prose", heading: "Different surrounding patterns can lead to different scores", paragraphs: [
+        "Jasper's representative Medicine Lake record has its largest displayed ring radiance in the two-to-ten-kilometre band. Galloway's strongest displayed value occurs in the thirty-to-seventy-five-kilometre band. Rakiura has zero stored radiance in its first three rings, followed by a positive outermost value. These patterns show why distance bands are useful: the same local summary can sit inside quite different regional surroundings.",
+        "Do not read a ring as a map of which horizon will look brightest. Each band combines accepted pixels from every direction around the site. It cannot identify a particular light dome, a shielded viewpoint, or the direction in which a foreground photograph will work. Those questions need spatial information and observations at the exact location. The table explains the inputs behind the score; it does not reconstruct the visual sky from a handful of radial averages."
+      ] },
+      { kind: "callout", heading: "Satellite radiance is not a sky-brightness reading at your tripod", body: "Use the ring values to understand regional artificial-light exposure. A field sky-brightness measurement, local lighting inspection, and view of the actual horizon answer different questions." },
+      { kind: "prose", heading: "Use the baseline for context, then inspect the observing place", paragraphs: [
+        "NASA's VNP46A4 product provides annual nighttime-light composites. Our stored three-year baseline gives this comparison a consistent historical reference. It cannot capture every lighting change after the baseline or every temporary lamp, vehicle, event, or construction site. The six-decimal radiance display preserves the small stored values; it is not a claim that current conditions are known with six-decimal practical accuracy.",
+        "For a visit, open the destination guide and identify the actual observing footprint. Check current official access information, inspect local lighting and obstructions where possible, and consider the Moon and the night's weather separately. A strong darkness score can help narrow the search, but it does not supply permission to enter or a guarantee of a particular naked-eye view. Understanding the rings makes the score more useful because it exposes what the number summarises and what still requires a local check."
+      ] },
+    ],
+  },
   {
     slug: "same-destination-different-stargazing-sites",
     title: "Same destination, different stargazing site: what changes?",

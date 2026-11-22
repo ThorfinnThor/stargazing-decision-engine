@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import { blogPostSources } from "../../data-config/editorial/blog-posts.js";
 import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, CalendarFile, Destination, ImageManifest, MeteorShowerEvent, MonthlySiteScore, ObservationSite, ShortTripFile } from "../../lib/data/types.js";
 import type { Era5ClimateSnapshot } from "../../lib/climate/era5/types.js";
+import type { BlackMarbleSnapshot } from "../../lib/darkness/black-marble/types.js";
 import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
 interface SeedData { destinations: Destination[]; sites: ObservationSite[] }
@@ -744,6 +745,58 @@ function clearHoursVersusNights(): DatasetOutput {
   };
 }
 
+function moonPhaseVersusMoonlessHours(): DatasetOutput {
+  const config = readJson<{ sampleMinutes: number; astronomicalTwilightDeg: number; moonlessMoonAltitudeDeg: number }>(resolve(root, "data-config/astronomy/calendar-config.json"));
+  if (config.sampleMinutes !== 10 || config.astronomicalTwilightDeg !== -18 || config.moonlessMoonAltitudeDeg !== 0) throw new Error("Review Moon article after calendar threshold changes");
+  const slugs = ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"];
+  const values = slugs.map((slug) => {
+    const destination = destinationsBySlug.get(slug);
+    if (!destination?.active) throw new Error(`${slug}: inactive Moon article destination`);
+    const calendar = readJson<CalendarFile>(publicPath(`calendar/${slug}/2027-09.json`));
+    const site = calendar.siteId ? sitesById.get(calendar.siteId) : undefined;
+    if (!site?.active || site.destinationId !== destination.id || calendar.year !== 2027 || calendar.month !== 9) throw new Error(`${slug}: invalid calendar site or period`);
+    const night = calendar.nights
+      .filter((item): item is typeof item & { moonIlluminationFraction: number } => item.moonIlluminationFraction !== null && item.moonIlluminationFraction >= 0.3 && item.moonlessHours >= 3)
+      .sort((left, right) => right.moonIlluminationFraction - left.moonIlluminationFraction || right.moonlessHours - left.moonlessHours || left.dateLocal.localeCompare(right.dateLocal))[0];
+    if (!night) throw new Error(`${slug}: no qualifying illuminated-Moon example`);
+    return { name: destination.name, site: site.name, night };
+  });
+  return {
+    metrics: [
+      { label: "Calendar examples", value: String(values.length), note: "One selected September 2027 night per destination" },
+      { label: "Stored illumination", value: `${round(Math.min(...values.map((item) => item.night.moonIlluminationFraction)) * 100)}–${round(Math.max(...values.map((item) => item.night.moonIlluminationFraction)) * 100)}%`, note: "Evaluated near local midnight, not during every moonless hour" },
+      { label: "Moonless time required", value: "≥3 hours", note: "Moon at or below the model horizon during astronomical darkness" },
+    ],
+    block: table("A substantial lunar phase with a usable moonless total", "For each destination we choose the most illuminated qualifying September night, rather than the darkest night of the month. The date is the local evening starting the night; durations are hours.",
+      ["Destination", "Calendar site", "Night begins", "Moon illuminated", "Astronomical darkness", "Moonless hours"],
+      values.map(({ name, site, night }) => [name, site, night.dateLocal, `${round(night.moonIlluminationFraction * 100)}%`, String(night.totalDarknessHours), String(night.moonlessHours)]),
+      "The calendar site's coordinates determine the totals. Ten-minute Moon sampling and total durations do not specify a continuous observing window, current weather, or target visibility."),
+  };
+}
+
+function localVersusRegionalRadiance(): DatasetOutput {
+  const slugs = ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"];
+  const values = slugs.map((slug) => {
+    const { destination, site, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const snapshot = readJson<BlackMarbleSnapshot>(resolve(root, `data-snapshots/black-marble/${site.slug}.json`));
+    const radiances = [snapshot.radiance0to2, snapshot.radiance2to10, snapshot.radiance10to30, snapshot.radiance30to75];
+    if (snapshot.siteId !== site.id || snapshot.source !== "VNP46A4" || snapshot.radiance0to2 !== 0 || snapshot.darknessScore === null || radiances.some((value) => value === null || !Number.isFinite(value)) || snapshot.blackMarbleYears.join(",") !== "2023,2024,2025") throw new Error(`${slug}: review regional-light article against updated snapshot`);
+    return { name: destination.name, radiances: radiances as number[], darkness: snapshot.darknessScore };
+  });
+  return {
+    metrics: [
+      { label: "Representative sites", value: String(values.length), note: "Selected active destinations with committed Black Marble snapshots" },
+      { label: "Local ring median", value: "0 at all 8", note: "0–2 km median; does not mean every local pixel is unlit" },
+      { label: "Darkness range", value: `${Math.min(...values.map((item) => item.darkness)).toFixed(2)}–${Math.max(...values.map((item) => item.darkness)).toFixed(2)}`, note: "Calibrated 0–100 model score across these examples" },
+    ],
+    block: table("The surrounding rings behind a shared local zero", "Radiance is in nW/cm²/sr, displayed to six decimals. The inner ring uses pixel medians and outer rings use pixel means within each year; each stored ring then takes the median across 2023–2025.",
+      ["Destination", "0–2 km", "2–10 km", "10–30 km", "30–75 km", "Darkness score"],
+      values.map((item) => [item.name, ...item.radiances.map((value) => value.toFixed(6)), item.darkness.toFixed(2)]),
+      "These radial summaries describe the satellite-light input, not directional skyglow, an SQM reading, or a Bortle class. Six-decimal display preserves stored small signals without implying current field precision."),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -765,6 +818,8 @@ const builders = {
   "summer-astronomical-darkness": summerAstronomicalDarkness,
   "within-destination-sites": withinDestinationSites,
   "clear-hours-versus-nights": clearHoursVersusNights,
+  "moon-phase-versus-moonless-hours": moonPhaseVersusMoonlessHours,
+  "local-versus-regional-radiance": localVersusRegionalRadiance,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {

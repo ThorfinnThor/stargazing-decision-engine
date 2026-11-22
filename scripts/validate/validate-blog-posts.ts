@@ -9,7 +9,7 @@ const indexPath = publicPath("editorial/blog/index.json");
 const index = existsSync(indexPath) ? readJson<BlogPostSummary[]>(indexPath) : [];
 const images = readJson<ImageManifest>(publicPath("images/manifest.json"));
 
-if (blogPostSources.length !== 20) errors.push(`Expected exactly twenty reviewed articles, found ${blogPostSources.length}`);
+if (blogPostSources.length !== 22) errors.push(`Expected exactly twenty-two reviewed articles, found ${blogPostSources.length}`);
 if (index.length !== blogPostSources.length) errors.push(`Blog index has ${index.length} posts, expected ${blogPostSources.length}`);
 for (let position = 1; position < index.length; position += 1) {
   if (Date.parse(index[position - 1].publishedAt) < Date.parse(index[position].publishedAt)) errors.push("Blog index must be ordered from newest to oldest");
@@ -56,5 +56,5 @@ if (errors.length > 0) {
   errors.forEach((error) => console.error(error));
   process.exitCode = 1;
 } else {
-  console.log("Validated twenty unique English articles, newest-first ordering, generated evidence tables, internal links, and approved hero-image provenance.");
+  console.log("Validated twenty-two unique English articles, newest-first ordering, generated evidence tables, internal links, and approved hero-image provenance.");
 }
