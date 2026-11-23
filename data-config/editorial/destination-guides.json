@@ -9870,8 +9870,8 @@
       "de": "Sutton Bank: Sterne beobachten im Dark Sky Reserve North York Moors"
     },
     "seoDescription": {
-      "en": "Choose between a booked Sutton Bank or Danby event and a named Dark Sky Discovery Site, with practical forest and moorland access checks.",
-      "de": "Wähle zwischen einer gebuchten Veranstaltung in Sutton Bank oder Danby und einem benannten Dark Sky Discovery Site samt praktischer Wald- und Moorzugangsprüfung."
+      "en": "Sutton Bank stargazing: booked Star Hub evenings, Danby and Dalby as alternatives, parking and access checks, and the next eclipse dates in 2027 and 2028.",
+      "de": "Sterne in Sutton Bank: gebuchte Abende im Star Hub, Danby und Dalby als Alternativen, Parken und Zugang sowie die nächsten Sonnenfinsternisse 2027 und 2028."
     },
     "standfirst": {
       "en": "North York Moors offers several official discovery sites, but they are not interchangeable. Sutton Bank, Danby Lodge, and Dalby have different parking, programmes, terrain, and closing arrangements, so the first task is choosing one. A booked event supplies the clearest after-hours framework. Independent visitors should use a named official site, confirm its current car-park and forest rules, and never substitute an unverified moorland pull-off.",
@@ -9968,6 +9968,27 @@
           "nym-sites",
           "nym-events",
           "nym-hub"
+        ]
+      },
+      {
+        "id": "sutton-bank-eclipse",
+        "heading": {
+          "en": "Sutton Bank eclipse dates: after August 2026, the next ones are 2027 and 2028",
+          "de": "Sonnenfinsternis in Sutton Bank: nach August 2026 folgen 2027 und 2028"
+        },
+        "paragraphs": {
+          "en": [
+            "The eclipse many people looked for at Sutton Bank is over: on 12 August 2026 the Moon covered about 90 percent of the Sun there, between 18:12 and 20:02 BST with the maximum at 19:09. The next one is the partial phase of the total eclipse of 2 August 2027. From Sutton Bank it runs from 09:08 to 10:55 BST, and at 10:01 about a third of the Sun's disc is covered. The Sun then stands 38 degrees high in the east-southeast, so this one does not need a low horizon.",
+            "On 26 January 2028 another partial eclipse starts at 15:35 GMT, but the Sun is only 6 degrees high in the southwest and sets at about 16:32, before the maximum. An open southwestern horizon decides whether you see it at all. The local times and coverage on this page are our own calculation for the Star Hub's position. Use certified eclipse glasses marked ISO 12312-2 for every phase, because a partial eclipse is never safe to watch with the naked eye, and ask the National Park Centre about parking and events closer to the date."
+          ],
+          "de": [
+            "Die Sonnenfinsternis, nach der viele für Sutton Bank gesucht haben, ist vorbei: Am 12. August 2026 bedeckte der Mond dort rund 90 Prozent der Sonne, zwischen 18:12 und 20:02 Uhr BST mit dem Maximum um 19:09 Uhr. Als Nächstes folgt die partielle Phase der totalen Finsternis vom 2. August 2027. In Sutton Bank dauert sie von 09:08 bis 10:55 Uhr BST, und um 10:01 Uhr ist etwa ein Drittel der Sonnenscheibe bedeckt. Die Sonne steht dann 38 Grad hoch im Ostsüdosten, ein tiefer Horizont ist also nicht nötig.",
+            "Am 26. Januar 2028 beginnt um 15:35 Uhr GMT eine weitere partielle Finsternis. Die Sonne steht dann aber nur 6 Grad hoch im Südwesten und geht gegen 16:32 Uhr unter, noch vor dem Maximum. Ob man sie überhaupt sieht, hängt am freien Südwesthorizont. Die örtlichen Zeiten und Bedeckungen auf dieser Seite haben wir für die Position des Star Hub selbst berechnet. Nutze in jeder Phase zertifizierte Finsternisbrillen mit der Kennzeichnung ISO 12312-2, denn eine partielle Finsternis ist mit bloßem Auge nie sicher, und frage kurz vor dem Termin beim National Park Centre nach Parken und Veranstaltungen."
+          ]
+        },
+        "sourceIds": [
+          "nym-eclipse-catalogue",
+          "nym-eclipse-safety"
         ]
       }
     ],
@@ -10146,6 +10167,19 @@
       },
       {
         "question": {
+          "en": "When is the next eclipse at Sutton Bank?",
+          "de": "Wann ist die nächste Sonnenfinsternis in Sutton Bank?"
+        },
+        "answer": {
+          "en": "The next solar eclipse visible from Sutton Bank is partial, on 2 August 2027 from 09:08 to 10:55 BST, with about a third of the Sun's disc covered at 10:01. After that, a partial eclipse on 26 January 2028 begins shortly before sunset. Totality on 2 August 2027 only crosses southern Spain, North Africa and the Middle East.",
+          "de": "Die nächste in Sutton Bank sichtbare Sonnenfinsternis ist partiell: am 2. August 2027 von 09:08 bis 10:55 Uhr BST, um 10:01 Uhr ist etwa ein Drittel der Sonnenscheibe bedeckt. Danach beginnt am 26. Januar 2028 kurz vor Sonnenuntergang eine weitere partielle Finsternis. Total verläuft die Finsternis vom 2. August 2027 nur über Südspanien, Nordafrika und den Nahen Osten."
+        },
+        "sourceIds": [
+          "nym-eclipse-catalogue"
+        ]
+      },
+      {
+        "question": {
           "en": "Which North York Moors site should I choose?",
           "de": "Welchen Ort in North York Moors sollte ich wählen?"
         },
@@ -10199,9 +10233,25 @@
         "url": "https://www.northyorkmoors.org.uk/things-to-do/attractions/sutton-bank-national-park-centre/star-and-nature-hub",
         "checkedAt": "2026-10-23",
         "authority": "public-agency"
+      },
+      {
+        "id": "nym-eclipse-catalogue",
+        "publisher": "NASA Goddard Space Flight Center",
+        "title": "Solar Eclipses: 2021–2030",
+        "url": "https://eclipse.gsfc.nasa.gov/SEdecade/SEdecade2021.html",
+        "checkedAt": "2026-11-23",
+        "authority": "science-institution"
+      },
+      {
+        "id": "nym-eclipse-safety",
+        "publisher": "Royal Museums Greenwich",
+        "title": "How to see the 12 August 2026 partial solar eclipse",
+        "url": "https://www.rmg.co.uk/stories/space-astronomy/how-see-12-august-2026-partial-solar-eclipse",
+        "checkedAt": "2026-11-23",
+        "authority": "science-institution"
       }
     ],
-    "lastReviewedAt": "2026-10-23"
+    "lastReviewedAt": "2026-11-23"
   },
   {
     "version": 1,
@@ -17036,12 +17086,12 @@
     "destinationId": "sedona",
     "slug": "sedona",
     "seoTitle": {
-      "en": "Sedona stargazing guide: Two Trees observing area",
-      "de": "Stargazing-Guide Sedona: Two Trees observing area"
+      "en": "Sedona stargazing guide: Two Trees observation area",
+      "de": "Stargazing-Guide Sedona: Two Trees observation area"
     },
     "seoDescription": {
-      "en": "Stargazing in Sedona, an International Dark Sky Community since 2014: Baldwin Trailhead below Cathedral Rock, Centennial Trailhead in town and Red Rock Pass rules.",
-      "de": "Sterne in Sedona, seit 2014 International Dark Sky Community: Baldwin Trailhead unter dem Cathedral Rock, Centennial Trailhead in der Stadt und Regeln zum Red Rock Pass."
+      "en": "Two Trees observation area near Sedona: directions off SR 89A, what is known about parking and access, plus official trailheads and Red Rock Pass rules.",
+      "de": "Two Trees observation area bei Sedona: Anfahrt ab der SR 89A, was zu Parken und Zugang bekannt ist, dazu offizielle Trailheads und Regeln zum Red Rock Pass."
     },
     "standfirst": {
       "en": "Sedona became an International Dark Sky Community in 2014, which means the dark sky here is protected by a town's lighting rules rather than by a fenced park. The best nights happen at the edge of town, on Coconino National Forest trailheads surrounded by red rock. Visit Sedona's stargazing list names the places it recommends, from a short paved path at Centennial Trailhead to slickrock below Cathedral Rock at Baldwin Trailhead. Two Trees, the Verde Valley astronomy club's observing site off SR 89A, is a further option for experienced observers.",
@@ -17076,16 +17126,16 @@
       {
         "id": "sedona-two-trees-site",
         "heading": {
-          "en": "Two Trees: the Verde Valley astronomers' site off SR 89A",
-          "de": "Two Trees: der Platz der Verde-Valley-Astronomen an der SR 89A"
+          "en": "Two Trees observation area: directions, parking and access",
+          "de": "Two Trees observation area: Anfahrt, Parken und Zugang"
         },
         "paragraphs": {
           "en": [
-            "Two Trees is not a park facility but one of the usual observing sites of the Astronomers of Verde Valley, a local astronomy club. The club places it between Sedona and Cottonwood: leave SR 89A north of Forest Road 525 and head west on Forest Road 761B. It gives the coordinates as about 34°49'16\" N, 111°54'51\" W, and for a sky forecast it points to the Clear Sky Clocks for Cottonwood or Sedona.",
+            "The Two Trees observation area is not a park facility but one of the usual observing sites of the Astronomers of Verde Valley, a local astronomy club. The club places it between Sedona and Cottonwood: leave SR 89A north of Forest Road 525 and head west on Forest Road 761B. It gives the coordinates as about 34°49'16\" N, 111°54'51\" W, and for a sky forecast it points to the Clear Sky Clocks for Cottonwood or Sedona.",
             "The club page lists no parking rules, opening hours or facilities, and neither Visit Sedona nor the Red Rock Ranger District overview describes Two Trees or Turkey Creek trailhead, the second point in this page's sky model. Treat Two Trees as an option for experienced observers on forest roads, check the Forest Service alerts and fire danger first, and use Baldwin or Centennial Trailhead when you want officially published directions."
           ],
           "de": [
-            "Two Trees ist keine Parkeinrichtung, sondern einer der üblichen Beobachtungsplätze der Astronomers of Verde Valley, eines örtlichen Astronomievereins. Der Verein verortet ihn zwischen Sedona und Cottonwood: Man verlässt die SR 89A nördlich der Forest Road 525 und fährt westwärts auf der Forest Road 761B. Als Koordinaten nennt er etwa 34°49'16\" N, 111°54'51\" W und verweist für die Himmelsprognose auf die Clear Sky Clocks von Cottonwood oder Sedona.",
+            "Die Two Trees observation area ist keine Parkeinrichtung, sondern einer der üblichen Beobachtungsplätze der Astronomers of Verde Valley, eines örtlichen Astronomievereins. Der Verein verortet ihn zwischen Sedona und Cottonwood: Man verlässt die SR 89A nördlich der Forest Road 525 und fährt westwärts auf der Forest Road 761B. Als Koordinaten nennt er etwa 34°49'16\" N, 111°54'51\" W und verweist für die Himmelsprognose auf die Clear Sky Clocks von Cottonwood oder Sedona.",
             "Die Vereinsseite nennt weder Parkregeln noch Öffnungszeiten oder Ausstattung, und weder Visit Sedona noch die Übersicht des Red Rock Ranger District beschreiben Two Trees oder den Turkey Creek trailhead, den zweiten Punkt im Himmelsmodell dieser Seite. Betrachte Two Trees als Option für erfahrene Beobachter auf Forststraßen, prüfe vorher Meldungen und Waldbrandstufe des Forest Service und nimm Baldwin oder Centennial Trailhead, wenn du offiziell veröffentlichte Wegbeschreibungen möchtest."
           ]
         },
@@ -17443,11 +17493,11 @@
         "publisher": "Astronomers of Verde Valley",
         "title": "Maps and Directions: Two Trees Observing Site",
         "url": "https://www.astroverde.org/maps_and_directions.htm",
-        "checkedAt": "2026-11-01",
+        "checkedAt": "2026-11-23",
         "authority": "astronomy-organization"
       }
     ],
-    "lastReviewedAt": "2026-11-01"
+    "lastReviewedAt": "2026-11-23"
   },
   {
     "version": 1,
