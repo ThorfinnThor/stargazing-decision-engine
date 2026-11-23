@@ -20,29 +20,29 @@
       "upperInclusive": false,
       "statistic": "median",
       "alanWeight": 0.45,
-      "radiance": 0.748699,
-      "coverage": 0.991667,
+      "radiance": 0.829792,
+      "coverage": 0.834783,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.748699,
+          "radiance": 0.829792,
           "coverage": 1,
-          "validPixelCount": 120,
-          "totalPixelCount": 120
+          "validPixelCount": 115,
+          "totalPixelCount": 115
         },
         {
           "year": 2024,
-          "radiance": 0.5816,
+          "radiance": 0.570908,
           "coverage": 1,
-          "validPixelCount": 120,
-          "totalPixelCount": 120
+          "validPixelCount": 115,
+          "totalPixelCount": 115
         },
         {
           "year": 2023,
-          "radiance": 0.765844,
-          "coverage": 0.991667,
-          "validPixelCount": 119,
-          "totalPixelCount": 120
+          "radiance": 0.881173,
+          "coverage": 0.834783,
+          "validPixelCount": 96,
+          "totalPixelCount": 115
         }
       ]
     },
@@ -53,29 +53,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.3,
-      "radiance": 0.774602,
-      "coverage": 0.971226,
+      "radiance": 0.801645,
+      "coverage": 0.870795,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.774602,
-          "coverage": 0.990764,
-          "validPixelCount": 2789,
-          "totalPixelCount": 2815
+          "radiance": 0.814974,
+          "coverage": 0.957409,
+          "validPixelCount": 2675,
+          "totalPixelCount": 2794
         },
         {
           "year": 2024,
-          "radiance": 0.58062,
+          "radiance": 0.569079,
           "coverage": 1,
-          "validPixelCount": 2815,
-          "totalPixelCount": 2815
+          "validPixelCount": 2794,
+          "totalPixelCount": 2794
         },
         {
           "year": 2023,
-          "radiance": 0.804584,
-          "coverage": 0.971226,
-          "validPixelCount": 2734,
-          "totalPixelCount": 2815
+          "radiance": 0.801645,
+          "coverage": 0.870795,
+          "validPixelCount": 2433,
+          "totalPixelCount": 2794
         }
       ]
     },
@@ -86,29 +86,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.15,
-      "radiance": 0.836094,
-      "coverage": 0.920078,
+      "radiance": 0.858795,
+      "coverage": 0.899073,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.836094,
-          "coverage": 0.953911,
-          "validPixelCount": 22415,
-          "totalPixelCount": 23498
+          "radiance": 0.858795,
+          "coverage": 0.928909,
+          "validPixelCount": 21638,
+          "totalPixelCount": 23294
         },
         {
           "year": 2024,
-          "radiance": 0.642974,
-          "coverage": 0.994553,
-          "validPixelCount": 23370,
-          "totalPixelCount": 23498
+          "radiance": 0.590872,
+          "coverage": 0.994462,
+          "validPixelCount": 23165,
+          "totalPixelCount": 23294
         },
         {
           "year": 2023,
-          "radiance": 0.862427,
-          "coverage": 0.920078,
-          "validPixelCount": 21620,
-          "totalPixelCount": 23498
+          "radiance": 0.859304,
+          "coverage": 0.899073,
+          "validPixelCount": 20943,
+          "totalPixelCount": 23294
         }
       ]
     },
@@ -119,40 +119,44 @@
       "upperInclusive": true,
       "statistic": "mean",
       "alanWeight": 0.1,
-      "radiance": 0.756091,
-      "coverage": 0.900107,
+      "radiance": 0.747576,
+      "coverage": 0.930427,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.756091,
-          "coverage": 0.976504,
-          "validPixelCount": 135528,
-          "totalPixelCount": 138789
+          "radiance": 0.747576,
+          "coverage": 0.977814,
+          "validPixelCount": 134515,
+          "totalPixelCount": 137567
         },
         {
           "year": 2024,
-          "radiance": 0.547089,
-          "coverage": 0.999676,
-          "validPixelCount": 138744,
-          "totalPixelCount": 138789
+          "radiance": 0.574746,
+          "coverage": 0.998939,
+          "validPixelCount": 137421,
+          "totalPixelCount": 137567
         },
         {
           "year": 2023,
-          "radiance": 0.837335,
-          "coverage": 0.900107,
-          "validPixelCount": 124925,
-          "totalPixelCount": 138789
+          "radiance": 0.822768,
+          "coverage": 0.930427,
+          "validPixelCount": 127996,
+          "totalPixelCount": 137567
         }
       ]
     }
   ],
-  "radiance0to2": 0.748699,
-  "radiance2to10": 0.774602,
-  "radiance10to30": 0.836094,
-  "radiance30to75": 0.756091,
-  "alanExposure": 0.57102,
-  "darknessScore": 59.16,
-  "coverage": 0.900107,
-  "warnings": [],
-  "retrievedAt": "2026-09-01T01:32:44.805830Z"
+  "radiance0to2": 0.829792,
+  "radiance2to10": 0.801645,
+  "radiance10to30": 0.858795,
+  "radiance30to75": 0.747576,
+  "alanExposure": 0.597313,
+  "darknessScore": 57.72,
+  "coverage": 0.834783,
+  "warnings": [
+    "0to2 minimum yearly coverage is 0.834783",
+    "2to10 minimum yearly coverage is 0.870795",
+    "10to30 minimum yearly coverage is 0.899073"
+  ],
+  "retrievedAt": "2026-11-23T13:38:31.148295Z"
 }

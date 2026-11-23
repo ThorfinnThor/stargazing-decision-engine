@@ -17,7 +17,7 @@
     "kissimmee-prairie",
     "big-cypress",
     "tenerife",
-    "kalbarri"
+    "aoraki-mackenzie"
   ],
   "methodologyNote": "For every active real-data destination whose representative site has public or limited access, we averaged clear-night and good-night probabilities across months with astronomical-night observations in the 1991–2020 ERA5 snapshot. Both metrics require at least three consecutive dry astronomical-night hours. Clear hours allow no more than 20% cloud cover; good hours allow no more than 40%. We selected the eight largest percentage-point gaps. These are historical gridded-climate signals, not a live forecast.",
   "blocks": [
@@ -44,10 +44,10 @@
       "rows": [
         [
           "Pico do Arieiro",
-          "16.5%",
-          "40.1%",
-          "+23.6 points",
-          "51.1",
+          "21.8%",
+          "46.5%",
+          "+24.6 points",
+          "57.8",
           "Limited"
         ],
         [
@@ -99,12 +99,12 @@
           "Limited"
         ],
         [
-          "Kalbarri",
-          "67.2%",
-          "80.2%",
-          "+13.1 points",
-          "93",
-          "Limited"
+          "Aoraki Mackenzie",
+          "19.3%",
+          "32.2%",
+          "+13 points",
+          "63.2",
+          "Public"
         ]
       ],
       "note": "Selection rule: the eight largest good-night minus clear-night gaps among active real-data destinations with public or limited representative-site access. The two percentages are historical monthly aggregates, not forecasts for a specific night."
@@ -147,7 +147,7 @@
     },
     {
       "label": "Largest added window",
-      "value": "+23.6 points",
+      "value": "+24.6 points",
       "note": "Good-night minus clear-night probability"
     },
     {
