@@ -8,6 +8,7 @@ export const localizedLinks = {
   locationTours: (locale: Locale) => `/${locale}/stargazing-tours/`,
   locationTour: (locale: Locale, slug: string) => `/${locale}/stargazing-tours/${slug}/`,
   methodology: (locale: Locale) => `/${locale}/methodology/`,
+  lightPollutionComparison: (locale: Locale) => `/${locale}/light-pollution-comparison/`,
   meteorShower: (locale: Locale, year: number, slug: string) => `/${locale}/meteor-showers/${year}/${slug}/`,
   shortTrips: (locale: Locale, originSlug: string) => `/${locale}/short-trips/${originSlug}/`,
   gear: (locale: Locale) => `/${locale}/gear/`,

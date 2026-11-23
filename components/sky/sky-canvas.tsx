@@ -61,12 +61,14 @@ function moonTexture(illuminatedFraction: number, angle: number | null) {
   return canvas;
 }
 
-export function SkyCanvas({ snapshot, variant, locale, showConstellations, activeConstellationId }: {
+export function SkyCanvas({ snapshot, variant, locale, showConstellations, activeConstellationId, skyglow = 0 }: {
   snapshot: SkySnapshot;
   variant: "homepage" | "destination";
   locale: Locale;
   showConstellations: boolean;
   activeConstellationId: string | null;
+  // 0–1: tints the sky with artificial light, strongest toward the horizon.
+  skyglow?: number;
 }) {
   const ref = useRef<HTMLCanvasElement>(null);
   useEffect(() => {
@@ -91,6 +93,13 @@ export function SkyCanvas({ snapshot, variant, locale, showConstellations, activ
       gradient.addColorStop(0, `rgb(${red + 9} ${green + 12} ${blue + 18})`);
       gradient.addColorStop(1, `rgb(${red} ${green} ${blue})`);
       context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.fillStyle = gradient; context.fill();
+      if (skyglow > 0) {
+        const glow = context.createRadialGradient(center, center, 0, center, center, radius);
+        glow.addColorStop(0, `rgb(70 68 84 / ${(0.22 * skyglow).toFixed(3)})`);
+        glow.addColorStop(0.7, `rgb(120 96 88 / ${(0.28 * skyglow).toFixed(3)})`);
+        glow.addColorStop(1, `rgb(196 132 84 / ${(0.48 * skyglow).toFixed(3)})`);
+        context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.fillStyle = glow; context.fill();
+      }
       context.save(); context.beginPath(); context.arc(center, center, radius, 0, Math.PI * 2); context.clip();
       const drawConstellation = (constellationId: string, active: boolean) => {
         const constellation = snapshot.constellations.find((item) => item.id === constellationId);
@@ -165,6 +174,6 @@ export function SkyCanvas({ snapshot, variant, locale, showConstellations, activ
     const observer = new ResizeObserver(() => requestAnimationFrame(draw));
     observer.observe(canvas);
     return () => observer.disconnect();
-  }, [activeConstellationId, locale, showConstellations, snapshot, variant]);
+  }, [activeConstellationId, locale, showConstellations, skyglow, snapshot, variant]);
   return <canvas className="sky-canvas" ref={ref} aria-hidden="true" />;
 }

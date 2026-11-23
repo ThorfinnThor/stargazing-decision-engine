@@ -73,6 +73,9 @@ export function HomePage({ locale }: { locale: Locale }) {
           <a className="hero-link" href={localizedLinks.finder(locale)}>
             {copy.explore} <span aria-hidden="true">→</span>
           </a>
+          <a className="hero-link hero-link-secondary" href={localizedLinks.lightPollutionComparison(locale)}>
+            {locale === "de" ? "Wie viele Sterne nimmt dir deine Stadt?" : "How many stars does your city take?"} <span aria-hidden="true">→</span>
+          </a>
         </div>
 
         <div className="orbit">

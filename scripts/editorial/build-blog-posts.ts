@@ -4,6 +4,7 @@ import { resolve } from "node:path";
 import { blogPostSources } from "../../data-config/editorial/blog-posts.js";
 import type { BlogMetric, BlogPost, BlogPostBlock, BlogPostSummary, CalendarFile, Destination, ImageManifest, MeteorShowerEvent, MonthlySiteScore, ObservationSite, ShortTripFile } from "../../lib/data/types.js";
 import type { Era5ClimateSnapshot } from "../../lib/climate/era5/types.js";
+import type { BlackMarbleSnapshot } from "../../lib/darkness/black-marble/types.js";
 import { publicPath, readJson, root, writeJson } from "../pipeline/io.js";
 
 interface SeedData { destinations: Destination[]; sites: ObservationSite[] }
@@ -641,6 +642,161 @@ function shortTripCityReach(): DatasetOutput {
   };
 }
 
+function nightTemperaturePercentiles(): DatasetOutput {
+  const slugs = ["namibrand", "death-valley", "hanle", "rakiura", "jasper", "wood-buffalo", "cherry-springs", "central-idaho"];
+  const values = slugs.map((slug) => {
+    const { destination, monthly, climate, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const best = monthly.reduce((winner, item) => item.stargazingTrip > winner.stargazingTrip ? item : winner);
+    const weather = climate.months.find((item) => item.month === best.month);
+    if (!weather || weather.nightTempMeanC === null || weather.nightTempP10C === null || weather.nightTempP90C === null) throw new Error(`${slug}: missing temperature distribution`);
+    return { name: destination.name, month: best.month, mean: weather.nightTempMeanC, p10: weather.nightTempP10C, p90: weather.nightTempP90C };
+  });
+  return {
+    metrics: [
+      { label: "Sites compared", value: String(values.length), note: "Selected examples in their highest Trip-score month" },
+      { label: "Distribution shown", value: "P10–P90", note: "Middle 80% of historical astronomical-night hourly temperatures" },
+      { label: "Below-zero P10", value: String(values.filter((item) => item.p10 < 0).length), note: "Selected windows with a colder-tail percentile below freezing" },
+    ],
+    block: table("The mean and the colder tail in the same month", "All temperatures are in °C. The gap is the mean minus P10; the spread is P90 minus P10, calculated before rounding.",
+      ["Destination", "Selected month", "Mean °C", "P10 °C", "P90 °C", "Mean–P10 °C", "P90–P10 °C"],
+      values.map((item) => [item.name, monthNames[item.month - 1], String(round(item.mean)), String(round(item.p10)), String(round(item.p90)), String(round(item.mean - item.p10)), String(round(item.p90 - item.p10))]),
+      "Percentiles describe all sampled astronomical-night hours for the month across 1991–2020. They are not nightly lows, a cooling trajectory, or a forecast for your dates."),
+  };
+}
+
+function summerAstronomicalDarkness(): DatasetOutput {
+  const slugs = ["galloway", "kielder", "jasper", "wood-buffalo", "cherry-springs", "death-valley", "namibrand", "rakiura"];
+  const values = slugs.map((slug) => {
+    const { destination, site, climate, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const years = climate.climateNormal.endYear - climate.climateNormal.startYear + 1;
+    const hours = [6, 9, 12].map((month) => {
+      const weather = climate.months.find((item) => item.month === month);
+      if (!weather || weather.dataCompleteness < 1) throw new Error(`${slug}: incomplete darkness sample`);
+      return weather.astronomicalHourCount / years;
+    });
+    return { name: destination.name, lat: site.lat, hours };
+  });
+  return {
+    metrics: [
+      { label: "Sites compared", value: String(values.length), note: "Selected northern and southern examples" },
+      { label: "June zero-hour rows", value: String(values.filter((item) => item.hours[0] === 0).length), note: "No sampled hours below −18° solar altitude" },
+      { label: "Climate baseline", value: "1991–2020", note: "Average monthly sampled-hour totals over thirty years" },
+    ],
+    block: table("How the astronomical-night sample changes with season", "Values are average total sampled astronomical-night hours per calendar month, rounded to one decimal. Latitude belongs to the representative observing site.",
+      ["Destination", "Latitude", "June hours/month", "September hours/month", "December hours/month"],
+      values.map((item) => [item.name, `${round(Math.abs(item.lat), 2)}° ${item.lat < 0 ? "S" : "N"}`, ...item.hours.map((hours) => String(round(hours)))]),
+      "Zero indicates no qualifying hourly samples. These are not continuous twilight durations or usable observing hours; Moon, clouds, target visibility, and access are separate constraints."),
+  };
+}
+
+function withinDestinationSites(): DatasetOutput {
+  const slugs = ["death-valley", "jasper", "galloway", "cherry-springs", "central-idaho", "great-barrier-island"];
+  const rows = slugs.flatMap((slug) => {
+    const { destination, site: representative, monthly, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const month = monthly.reduce((best, score) => score.stargazingTrip > best.stargazingTrip ? score : best).month;
+    const sites = seed.sites.filter((site) => site.active && site.destinationId === destination.id)
+      .sort((left, right) => Number(right.id === representative.id) - Number(left.id === representative.id) || left.slug.localeCompare(right.slug));
+    if (sites.length < 2) throw new Error(`${slug}: requires at least two active observing sites`);
+    return sites.map((site) => {
+      const file = readJson<SiteMonthlyFile & { dataStatus: string }>(publicPath(`monthly/sites/${site.slug}.json`));
+      const score = file.scores.find((item) => item.month === month);
+      if (file.dataStatus !== "real" || !score) throw new Error(`${site.slug}: missing real monthly comparison`);
+      const access = site.publicAccess === "yes" ? "Public" : site.publicAccess === "limited" ? "Limited" : site.publicAccess;
+      return [destination.name, site.name, site.id === representative.id ? "Representative" : "Other reviewed site", monthNames[month - 1], String(score.darknessScore), String(score.stargazingTrip), access];
+    });
+  });
+  return {
+    metrics: [
+      { label: "Destinations compared", value: String(slugs.length), note: "Explicitly selected destinations with multiple active sites" },
+      { label: "Site records", value: String(rows.length), note: "Real monthly score files for the displayed locations" },
+      { label: "Timing rule", value: "Same month", note: "Representative site's best Trip month used for every site in its destination" },
+    ],
+    block: table("Paired observing places in a shared month", "Darkness and Trip are published 0–100 scores. Each destination uses one common month, so differences are between site records rather than travel seasons.",
+      ["Destination", "Observing site", "Role", "Month", "Darkness", "Trip", "Access"], rows,
+      "Equal values can result from shared climate grids and score rounding. Access labels are reviewed catalog summaries and require current official confirmation; score gaps are not measured differences in the view on a specific night."),
+  };
+}
+
+function clearHoursVersusNights(): DatasetOutput {
+  const thresholds = readJson<{ thresholds: { clearCloudCoverMax: number; clearSequenceHoursMin: number; wetPrecipitationMmPerHourMin: number } }>(resolve(root, "data-config/sources/era5.json")).thresholds;
+  if (thresholds.clearCloudCoverMax !== 0.2 || thresholds.clearSequenceHoursMin !== 3 || thresholds.wetPrecipitationMmPerHourMin !== 0.1) throw new Error("Review clear-night article wording after threshold changes");
+  const slugs = ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"];
+  const values = slugs.map((slug) => {
+    const { destination, monthly, climate, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const best = monthly.reduce((winner, score) => score.stargazingTrip > winner.stargazingTrip ? score : winner);
+    const weather = climate.months.find((item) => item.month === best.month);
+    if (!weather || weather.clearHourProbability === null || weather.clearNightProbability === null || weather.nightCount === 0 || weather.astronomicalHourCount === 0) throw new Error(`${slug}: missing cloud-statistic denominators`);
+    return { name: destination.name, month: best.month, hours: weather.clearHourProbability * 100, nights: weather.clearNightProbability * 100 };
+  });
+  return {
+    metrics: [
+      { label: "Representative sites", value: String(values.length), note: "Selected examples in their highest Trip-score month" },
+      { label: "Clear-night sequence", value: `${thresholds.clearSequenceHoursMin} hours`, note: "Consecutive clear, non-wet astronomical-night hourly samples" },
+      { label: "Clear cloud threshold", value: `≤${thresholds.clearCloudCoverMax * 100}%`, note: "Total cloud cover in the hourly climate input" },
+    ],
+    block: table("Clear-hour share and clear-night frequency side by side", "The gap is clear-night frequency minus clear-hour share in percentage points, calculated before rounding. Each statistic retains its own denominator and criteria.",
+      ["Destination", "Selected month", "Clear hours", "Qualifying nights", "Gap (pp)"],
+      values.map((item) => [item.name, monthNames[item.month - 1], `${round(item.hours)}%`, `${round(item.nights)}%`, `${item.nights > item.hours ? "+" : ""}${round(item.nights - item.hours)}`]),
+      "Hours are cloud-only samples; qualifying nights require a three-hour clear and non-wet sequence. Neither column measures continuous all-night observing, and their difference is not interruption risk."),
+  };
+}
+
+function moonPhaseVersusMoonlessHours(): DatasetOutput {
+  const config = readJson<{ sampleMinutes: number; astronomicalTwilightDeg: number; moonlessMoonAltitudeDeg: number }>(resolve(root, "data-config/astronomy/calendar-config.json"));
+  if (config.sampleMinutes !== 10 || config.astronomicalTwilightDeg !== -18 || config.moonlessMoonAltitudeDeg !== 0) throw new Error("Review Moon article after calendar threshold changes");
+  const slugs = ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"];
+  const values = slugs.map((slug) => {
+    const destination = destinationsBySlug.get(slug);
+    if (!destination?.active) throw new Error(`${slug}: inactive Moon article destination`);
+    const calendar = readJson<CalendarFile>(publicPath(`calendar/${slug}/2027-09.json`));
+    const site = calendar.siteId ? sitesById.get(calendar.siteId) : undefined;
+    if (!site?.active || site.destinationId !== destination.id || calendar.year !== 2027 || calendar.month !== 9) throw new Error(`${slug}: invalid calendar site or period`);
+    const night = calendar.nights
+      .filter((item): item is typeof item & { moonIlluminationFraction: number } => item.moonIlluminationFraction !== null && item.moonIlluminationFraction >= 0.3 && item.moonlessHours >= 3)
+      .sort((left, right) => right.moonIlluminationFraction - left.moonIlluminationFraction || right.moonlessHours - left.moonlessHours || left.dateLocal.localeCompare(right.dateLocal))[0];
+    if (!night) throw new Error(`${slug}: no qualifying illuminated-Moon example`);
+    return { name: destination.name, site: site.name, night };
+  });
+  return {
+    metrics: [
+      { label: "Calendar examples", value: String(values.length), note: "One selected September 2027 night per destination" },
+      { label: "Stored illumination", value: `${round(Math.min(...values.map((item) => item.night.moonIlluminationFraction)) * 100)}–${round(Math.max(...values.map((item) => item.night.moonIlluminationFraction)) * 100)}%`, note: "Evaluated near local midnight, not during every moonless hour" },
+      { label: "Moonless time required", value: "≥3 hours", note: "Moon at or below the model horizon during astronomical darkness" },
+    ],
+    block: table("A substantial lunar phase with a usable moonless total", "For each destination we choose the most illuminated qualifying September night, rather than the darkest night of the month. The date is the local evening starting the night; durations are hours.",
+      ["Destination", "Calendar site", "Night begins", "Moon illuminated", "Astronomical darkness", "Moonless hours"],
+      values.map(({ name, site, night }) => [name, site, night.dateLocal, `${round(night.moonIlluminationFraction * 100)}%`, String(night.totalDarknessHours), String(night.moonlessHours)]),
+      "The calendar site's coordinates determine the totals. Ten-minute Moon sampling and total durations do not specify a continuous observing window, current weather, or target visibility."),
+  };
+}
+
+function localVersusRegionalRadiance(): DatasetOutput {
+  const slugs = ["namibrand", "death-valley", "galloway", "jasper", "cherry-springs", "central-idaho", "rakiura", "great-barrier-island"];
+  const values = slugs.map((slug) => {
+    const { destination, site, dataStatus } = context(slug);
+    if (!destination.active || dataStatus !== "real") throw new Error(`${slug}: requires active real data`);
+    const snapshot = readJson<BlackMarbleSnapshot>(resolve(root, `data-snapshots/black-marble/${site.slug}.json`));
+    const radiances = [snapshot.radiance0to2, snapshot.radiance2to10, snapshot.radiance10to30, snapshot.radiance30to75];
+    if (snapshot.siteId !== site.id || snapshot.source !== "VNP46A4" || snapshot.radiance0to2 !== 0 || snapshot.darknessScore === null || radiances.some((value) => value === null || !Number.isFinite(value)) || snapshot.blackMarbleYears.join(",") !== "2023,2024,2025") throw new Error(`${slug}: review regional-light article against updated snapshot`);
+    return { name: destination.name, radiances: radiances as number[], darkness: snapshot.darknessScore };
+  });
+  return {
+    metrics: [
+      { label: "Representative sites", value: String(values.length), note: "Selected active destinations with committed Black Marble snapshots" },
+      { label: "Local ring median", value: "0 at all 8", note: "0–2 km median; does not mean every local pixel is unlit" },
+      { label: "Darkness range", value: `${Math.min(...values.map((item) => item.darkness)).toFixed(2)}–${Math.max(...values.map((item) => item.darkness)).toFixed(2)}`, note: "Calibrated 0–100 model score across these examples" },
+    ],
+    block: table("The surrounding rings behind a shared local zero", "Radiance is in nW/cm²/sr, displayed to six decimals. The inner ring uses pixel medians and outer rings use pixel means within each year; each stored ring then takes the median across 2023–2025.",
+      ["Destination", "0–2 km", "2–10 km", "10–30 km", "30–75 km", "Darkness score"],
+      values.map((item) => [item.name, ...item.radiances.map((value) => value.toFixed(6)), item.darkness.toFixed(2)]),
+      "These radial summaries describe the satellite-light input, not directional skyglow, an SQM reading, or a Bortle class. Six-decimal display preserves stored small signals without implying current field precision."),
+  };
+}
+
 const builders = {
   "monthly-atlas": monthlyAtlas,
   "darkness-versus-clear": darknessVersusClear,
@@ -658,6 +814,12 @@ const builders = {
   "multi-night-clear-expectation": multiNightClearExpectation,
   "sky-quality-versus-comfort": skyQualityVersusComfort,
   "short-trip-city-reach": shortTripCityReach,
+  "night-temperature-percentiles": nightTemperaturePercentiles,
+  "summer-astronomical-darkness": summerAstronomicalDarkness,
+  "within-destination-sites": withinDestinationSites,
+  "clear-hours-versus-nights": clearHoursVersusNights,
+  "moon-phase-versus-moonless-hours": moonPhaseVersusMoonlessHours,
+  "local-versus-regional-radiance": localVersusRegionalRadiance,
 };
 
 const posts = blogPostSources.map((source): BlogPost => {

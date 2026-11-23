@@ -222,6 +222,18 @@ h1 span {
   font-size: 1.2rem;
 }
 
+.hero-link-secondary {
+  margin-left: 1.5rem;
+  border-bottom-color: rgb(142 197 255 / 60%);
+  color: var(--blue);
+}
+
+@media (max-width: 640px) {
+  .hero-link-secondary {
+    margin-left: 0;
+  }
+}
+
 .event-page {
   min-height: 100vh;
   padding: 4rem clamp(1.25rem, 7vw, 7rem);
@@ -1087,6 +1099,16 @@ h1 span {
   color: var(--gold);
   font-size: 0.8rem;
   letter-spacing: 0.05em;
+}
+
+.destination-sky-comparison {
+  margin: 1.5rem 0 2.5rem;
+  line-height: 1.6;
+}
+
+.destination-sky-comparison a {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
 }
 
 .event-summary {
@@ -4065,4 +4087,389 @@ h3 {
 /* A reader who already chose: the head script in the layouts sets this before first paint. */
 html[data-consent-set] .cookie-consent {
   display: none;
+}
+
+/* Light-pollution comparison */
+.lp-comparison {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 70rem;
+  padding: 2rem 0 3rem;
+  border-bottom: 1px solid rgb(255 255 255 / 14%);
+}
+
+.lp-loading {
+  min-height: 24rem;
+}
+
+.lp-controls {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.lp-situations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10.5rem, 1fr));
+  gap: 0.6rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.lp-situations legend,
+.lp-city > span {
+  margin-bottom: 0.6rem;
+  color: var(--blue);
+  font-family: monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lp-situations label {
+  position: relative;
+  display: grid;
+  gap: 0.25rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 0.6rem;
+  cursor: pointer;
+  background: var(--night-soft);
+}
+
+.lp-situations label.active {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 1px var(--gold) inset;
+}
+
+.lp-situations label:focus-within {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.lp-situations input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.lp-situations strong {
+  color: #fff;
+  font-size: 0.95rem;
+}
+
+.lp-situations span {
+  color: var(--muted);
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.lp-city {
+  display: grid;
+  max-width: 24rem;
+}
+
+.lp-city select {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--night-soft);
+  font-size: 1rem;
+}
+
+.lp-city-search {
+  position: relative;
+}
+
+.lp-city-search > label {
+  margin-bottom: 0.6rem;
+  color: var(--blue);
+  font-family: monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.lp-city-field {
+  position: relative;
+  display: grid;
+}
+
+.lp-city-search input {
+  padding: 0.6rem 0.75rem;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 0.5rem;
+  color: #fff;
+  background: var(--night-soft);
+  font-size: 1rem;
+}
+
+.lp-city-search input:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.lp-city-country,
+.lp-city-empty {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
+.lp-city-results {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 0.25rem);
+  right: 0;
+  left: 0;
+  margin: 0;
+  padding: 0.3rem;
+  list-style: none;
+  border: 1px solid rgb(255 255 255 / 20%);
+  border-radius: 0.5rem;
+  background: #101629;
+  box-shadow: 0 12px 30px rgb(0 0 0 / 45%);
+}
+
+.lp-city-results li {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.5rem 0.6rem;
+  border-radius: 0.35rem;
+  cursor: pointer;
+}
+
+.lp-city-results li.active {
+  background: rgb(233 196 106 / 16%);
+}
+
+.lp-city-results strong {
+  color: #fff;
+  font-weight: 500;
+}
+
+.lp-city-results span {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.lp-situations .lp-estimate {
+  grid-column: 1 / -1;
+  background: linear-gradient(135deg, rgb(233 196 106 / 10%), var(--night-soft));
+}
+
+.lp-situations-or {
+  grid-column: 1 / -1;
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.lp-headline {
+  max-width: 46rem;
+  margin: 0;
+  color: #dfe4ef;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
+  line-height: 1.45;
+}
+
+.lp-headline strong {
+  color: var(--gold);
+  font-weight: 400;
+}
+
+.lp-stage {
+  position: relative;
+  width: min(100%, 40rem);
+  aspect-ratio: 1;
+  justify-self: center;
+  touch-action: pan-y;
+}
+
+.lp-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.lp-layer-dark {
+  clip-path: inset(0 0 0 var(--lp-split, 50%));
+}
+
+.lp-divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: var(--lp-split, 50%);
+  width: 2px;
+  margin-left: -1px;
+  background: var(--gold);
+  box-shadow: 0 0 12px rgb(233 196 106 / 60%);
+  pointer-events: none;
+}
+
+.lp-divider::after {
+  content: "‹ ›";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  width: 2.4rem;
+  height: 2.4rem;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--night);
+  background: var(--gold);
+  font-weight: 700;
+  transform: translate(-50%, -50%);
+}
+
+.lp-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: ew-resize;
+}
+
+.lp-stage:has(.lp-range:focus-visible) .lp-divider {
+  box-shadow: 0 0 0 3px var(--blue);
+}
+
+.lp-tag {
+  position: absolute;
+  top: 0.4rem;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  color: #fff;
+  background: rgb(8 11 23 / 75%);
+  font-family: monospace;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+.lp-tag-yours {
+  left: 0;
+}
+
+.lp-tag-dark {
+  right: 0;
+}
+
+.lp-meta {
+  max-width: 46rem;
+  margin: 0;
+  color: #9ba6be;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+.lp-share {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.lp-share button {
+  padding: 0.65rem 1.1rem;
+  border: 1px solid var(--gold);
+  border-radius: 999px;
+  color: var(--night);
+  background: var(--gold);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.lp-share button + button {
+  color: var(--gold);
+  background: transparent;
+}
+
+.lp-share span {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.lp-nearest-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 0.75rem;
+}
+
+.lp-nearest-card {
+  display: grid;
+  gap: 0.3rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid rgb(255 255 255 / 16%);
+  border-radius: 0.6rem;
+  color: #fff;
+  background: var(--night-soft);
+  text-decoration: none;
+}
+
+.lp-nearest-card:hover,
+.lp-nearest-card:focus-visible {
+  border-color: var(--gold);
+}
+
+.lp-nearest-card span {
+  color: var(--blue);
+  font-family: monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.lp-nearest-card strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.lp-nearest-card small {
+  color: var(--muted);
+}
+
+.lp-nearest h2 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.3rem, 2vw, 1.7rem);
+}
+
+.lp-table-wrap {
+  overflow-x: auto;
+}
+
+.lp-table {
+  width: 100%;
+  max-width: 40rem;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.lp-table th,
+.lp-table td {
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid rgb(255 255 255 / 12%);
+  text-align: left;
+}
+
+.lp-table th {
+  color: var(--blue);
+  font-weight: 600;
+}
+
+.lp-source {
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.lp-source a {
+  color: var(--gold);
 }

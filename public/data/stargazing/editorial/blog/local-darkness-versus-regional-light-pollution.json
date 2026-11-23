@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "local-darkness-versus-regional-light-pollution",
+  "title": "A locally dark site can still have regional light exposure",
+  "seoDescription": "Compare Black Marble radiance in four distance rings around eight observing sites, and learn why a zero local median does not settle the darkness score.",
+  "standfirst": "Eight representative sites share a zero median radiance within two kilometres. Their wider surroundings and calibrated darkness scores still differ. The surrounding rings explain why.",
+  "publishedAt": "2026-11-22",
+  "lastReviewedAt": "2026-11-22",
+  "readingMinutes": 6,
+  "heroDestinationSlug": "galloway",
+  "datasetId": "local-versus-regional-radiance",
+  "relatedDestinationSlugs": [
+    "namibrand",
+    "death-valley",
+    "galloway",
+    "jasper",
+    "cherry-springs",
+    "central-idaho",
+    "rakiura",
+    "great-barrier-island"
+  ],
+  "methodologyNote": "Eight explicitly selected climate-representative sites use their committed NASA VNP46A4 Collection 2 AllAngle_Composite_Snow_Free snapshots for 2023–2025. Radiance units are nW/cm²/sr. The 0–2 km value is the across-year median of each year's accepted-pixel median; outer rings use across-year medians of annual accepted-pixel means. We display stored radiances to six decimals and calibrated darkness to two. Ring weights in the exposure model are 0.45, 0.30, 0.15, and 0.10 applied to log(1 + radiance), followed by the separate darkness calibration. Rings are radial summaries, not directional skyglow predictions. This is not a forecast, a current lighting audit, a Bortle classification, or an SQM measurement. NASA product documentation: https://ladsweb.modaps.eosdis.nasa.gov/missions-and-measurements/products/VNP46A4/.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "The nearest two kilometres do not tell the whole story",
+      "paragraphs": [
+        "NamibRand, Death Valley, Galloway, and Jasper all have a stored local median radiance of zero in this comparison. Yet their calibrated darkness scores range from 100 at NamibRand to 86.58 at Jasper. That difference is not caused by a change of weather or season in the table. Our artificial-light model also uses three wider distance rings, extending to seventy-five kilometres around each representative observing site.",
+        "The eight examples were selected to make that local-versus-regional distinction visible. They do not form a global ranking of light pollution, and their shared zero local median does not prove that every nearby pixel contains no light. A median describes the middle of a distribution. Individual bright pixels can exist without making the middle value positive. Interpreting zero as a guarantee of a completely unlit observing footprint would exceed the evidence."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "The surrounding rings behind a shared local zero",
+      "introduction": "Radiance is in nW/cm²/sr, displayed to six decimals. The inner ring uses pixel medians and outer rings use pixel means within each year; each stored ring then takes the median across 2023–2025.",
+      "columns": [
+        "Destination",
+        "0–2 km",
+        "2–10 km",
+        "10–30 km",
+        "30–75 km",
+        "Darkness score"
+      ],
+      "rows": [
+        [
+          "NamibRand",
+          "0.000000",
+          "0.000000",
+          "0.000000",
+          "0.000182",
+          "100.00"
+        ],
+        [
+          "Death Valley",
+          "0.000000",
+          "0.010447",
+          "0.000903",
+          "0.009472",
+          "95.84"
+        ],
+        [
+          "Galloway Forest",
+          "0.000000",
+          "0.000000",
+          "0.067990",
+          "0.390673",
+          "88.07"
+        ],
+        [
+          "Jasper National Park",
+          "0.000000",
+          "0.237658",
+          "0.007544",
+          "0.051249",
+          "86.58"
+        ],
+        [
+          "Cherry Springs",
+          "0.000000",
+          "0.000533",
+          "0.073259",
+          "0.305957",
+          "88.37"
+        ],
+        [
+          "Central Idaho",
+          "0.000000",
+          "0.004170",
+          "0.000295",
+          "0.004941",
+          "99.90"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "0.000000",
+          "0.000000",
+          "0.000000",
+          "0.054227",
+          "94.02"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "0.000000",
+          "0.000000",
+          "0.000000",
+          "0.008713",
+          "100.00"
+        ]
+      ],
+      "note": "These radial summaries describe the satellite-light input, not directional skyglow, an SQM reading, or a Bortle class. Six-decimal display preserves stored small signals without implying current field precision."
+    },
+    {
+      "kind": "prose",
+      "heading": "What each ring contributes to the model",
+      "paragraphs": [
+        "The nearest ring covers distances from zero to two kilometres. The next three cover two to ten, ten to thirty, and thirty to seventy-five kilometres. Within each baseline year, the pipeline takes a median for the inner ring and a mean for each outer ring. It then takes a median across the three annual summaries. The resulting values retain the spatial context without letting one unusually bright baseline year alone set the entire comparison.",
+        "The model combines these summaries using decreasing weights applied to the logarithm of one plus radiance. It then converts that exposure through a separate darkness calibration. The outermost ring has a smaller weight than the nearest ring, but a nonzero value can still affect the exposure. This is why having a dark immediate neighbourhood and having a low regional artificial-light signal are related strengths rather than identical measurements."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Different surrounding patterns can lead to different scores",
+      "paragraphs": [
+        "Jasper's representative Medicine Lake record has its largest displayed ring radiance in the two-to-ten-kilometre band. Galloway's strongest displayed value occurs in the thirty-to-seventy-five-kilometre band. Rakiura has zero stored radiance in its first three rings, followed by a positive outermost value. These patterns show why distance bands are useful: the same local summary can sit inside quite different regional surroundings.",
+        "Do not read a ring as a map of which horizon will look brightest. Each band combines accepted pixels from every direction around the site. It cannot identify a particular light dome, a shielded viewpoint, or the direction in which a foreground photograph will work. Those questions need spatial information and observations at the exact location. The table explains the inputs behind the score; it does not reconstruct the visual sky from a handful of radial averages."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Satellite radiance is not a sky-brightness reading at your tripod",
+      "body": "Use the ring values to understand regional artificial-light exposure. A field sky-brightness measurement, local lighting inspection, and view of the actual horizon answer different questions."
+    },
+    {
+      "kind": "prose",
+      "heading": "Use the baseline for context, then inspect the observing place",
+      "paragraphs": [
+        "NASA's VNP46A4 product provides annual nighttime-light composites. Our stored three-year baseline gives this comparison a consistent historical reference. It cannot capture every lighting change after the baseline or every temporary lamp, vehicle, event, or construction site. The six-decimal radiance display preserves the small stored values; it is not a claim that current conditions are known with six-decimal practical accuracy.",
+        "For a visit, open the destination guide and identify the actual observing footprint. Check current official access information, inspect local lighting and obstructions where possible, and consider the Moon and the night's weather separately. A strong darkness score can help narrow the search, but it does not supply permission to enter or a guarantee of a particular naked-eye view. Understanding the rings makes the score more useful because it exposes what the number summarises and what still requires a local check."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Representative sites",
+      "value": "8",
+      "note": "Selected active destinations with committed Black Marble snapshots"
+    },
+    {
+      "label": "Local ring median",
+      "value": "0 at all 8",
+      "note": "0–2 km median; does not mean every local pixel is unlit"
+    },
+    {
+      "label": "Darkness range",
+      "value": "86.58–100.00",
+      "note": "Calibrated 0–100 model score across these examples"
+    }
+  ]
+}

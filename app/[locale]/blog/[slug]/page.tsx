@@ -95,6 +95,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
         <h2>How this comparison was made</h2>
         <p>{post.methodologyNote}</p>
         <p><Link href={localizedLinks.methodology("en")}>Read the editorial methodology</Link> →</p>
+        <p><Link href={localizedLinks.lightPollutionComparison("en")}>Light pollution comparison: your sky vs. the darkest sky</Link> →</p>
       </aside>
       <nav className="blog-related" aria-labelledby="blog-related-title">
         <p className="eyebrow">Open the underlying guides</p><h2 id="blog-related-title">Destinations in this analysis</h2>

@@ -150,6 +150,10 @@ export default async function DestinationPage({ params }: { params: Promise<{ lo
         </figcaption>
       </figure>}
       <DestinationSiteExplorer options={siteViews} locale={locale} />
+      <p className="event-note destination-sky-comparison">
+        {isGerman ? "Wie viele Sterne nimmt dir künstliches Licht zu Hause? " : "How many stars does artificial light hide from you at home? "}
+        <Link href={localizedLinks.lightPollutionComparison(locale)}>{isGerman ? "Lichtverschmutzung im Vergleich: dein Himmel und der dunkelste" : "Light pollution comparison: your sky vs. the darkest sky"}</Link>
+      </p>
       <details className="event-summary destination-access-summary">
         <summary id="destination-access-title">
           <strong>{isGerman ? "Zugang bei Nacht" : "Night access"}</strong>

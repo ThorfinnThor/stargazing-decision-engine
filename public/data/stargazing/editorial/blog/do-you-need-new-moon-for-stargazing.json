@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "slug": "do-you-need-new-moon-for-stargazing",
+  "title": "Do you need a new Moon for a moonless stargazing session?",
+  "seoDescription": "Eight September 2027 calendar examples show three or more moonless hours despite a substantially illuminated Moon. Learn why phase alone misses the observing window.",
+  "standfirst": "A Moon that is more than seventy percent illuminated can still leave several hours of astronomical darkness while it is below the horizon. Your observing window matters as much as the phase label.",
+  "publishedAt": "2026-11-22",
+  "lastReviewedAt": "2026-11-22",
+  "readingMinutes": 6,
+  "heroDestinationSlug": "death-valley",
+  "datasetId": "moon-phase-versus-moonless-hours",
+  "relatedDestinationSlugs": [
+    "namibrand",
+    "death-valley",
+    "galloway",
+    "jasper",
+    "cherry-springs",
+    "central-idaho",
+    "rakiura",
+    "great-barrier-island"
+  ],
+  "methodologyNote": "For eight explicitly selected destinations, we read the committed September 2027 astronomy-calendar file and select the night with the highest stored illumination fraction among nights with illumination ≥30% and at least three moonless hours; ties use more moonless hours, then the earliest local date. Illumination is evaluated at the midpoint of the calendar's local-noon-to-next-noon interval, near local midnight, rather than averaged over the observing hours. Moonless hours are ten-minute samples of astronomical darkness with Moon altitude ≤0°, bounded by exact twilight duration. The named site is the calendar file's site, which can differ from the climate representative. Totals do not establish one continuous window. This is not a forecast or a sky-brightness measurement. Phase terminology follows the US Naval Observatory (https://aa.usno.navy.mil/faq/moon_phases).",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "An illuminated Moon does not have to be in your sky",
+      "paragraphs": [
+        "The Death Valley calendar for 9 September 2027 pairs a stored Moon illumination of about 73.5% with 3.64 moonless hours during astronomical darkness. Jasper's selected night has about 73.2% illumination and 4.17 moonless hours. A phase-only filter could reject both dates, even though the calendar identifies substantial time with the Moon below the horizon. The useful question is whether that time matches the session you want.",
+        "New Moon is a convenient planning anchor, but the entire night is not the only unit of observing. A visitor with a few hours available can sometimes use the dark interval before moonrise or after moonset on another date. This table deliberately selects strongly illuminated examples from September 2027 rather than recommending the month's best nights. It demonstrates a limitation of phase labels, not an argument that these dates outperform a well-chosen new-Moon visit."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "A substantial lunar phase with a usable moonless total",
+      "introduction": "For each destination we choose the most illuminated qualifying September night, rather than the darkest night of the month. The date is the local evening starting the night; durations are hours.",
+      "columns": [
+        "Destination",
+        "Calendar site",
+        "Night begins",
+        "Moon illuminated",
+        "Astronomical darkness",
+        "Moonless hours"
+      ],
+      "rows": [
+        [
+          "NamibRand",
+          "NamibRand reserve observing zone",
+          "2027-09-20",
+          "76.2%",
+          "9.4",
+          "3.17"
+        ],
+        [
+          "Death Valley",
+          "Death Valley dark-sky area",
+          "2027-09-09",
+          "73.5%",
+          "8.43",
+          "3.64"
+        ],
+        [
+          "Galloway Forest",
+          "Clatteringshaws Loch",
+          "2027-09-10",
+          "78.9%",
+          "6.5",
+          "3.5"
+        ],
+        [
+          "Jasper National Park",
+          "Medicine Lake observing area",
+          "2027-09-09",
+          "73.2%",
+          "6.8",
+          "4.17"
+        ],
+        [
+          "Cherry Springs",
+          "Cherry Springs Overnight Astronomy Observation Field",
+          "2027-09-09",
+          "72.5%",
+          "8.06",
+          "3.83"
+        ],
+        [
+          "Central Idaho",
+          "Redfish Lake visitor area",
+          "2027-09-09",
+          "73.2%",
+          "7.85",
+          "3.83"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "Moturau Moana Gardens viewing point",
+          "2027-09-20",
+          "79.9%",
+          "8.58",
+          "3.47"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "Windy Canyon trailhead",
+          "2027-09-20",
+          "79.9%",
+          "9.11",
+          "3"
+        ]
+      ],
+      "note": "The calendar site's coordinates determine the totals. Ten-minute Moon sampling and total durations do not specify a continuous observing window, current weather, or target visibility."
+    },
+    {
+      "kind": "prose",
+      "heading": "How to read a phase percentage beside moonless hours",
+      "paragraphs": [
+        "The illumination percentage describes the lit fraction of the visible lunar disk. In our calendar it is evaluated near local midnight, at the midpoint of the local-noon-to-next-noon interval assigned to the observing night. It is not the fraction of your session affected by Moonlight. Moonless hours instead count the overlap between astronomical darkness and the Moon being at or below the model horizon. They describe a geometrical opportunity at a particular site.",
+        "The distinction is visible in the southern rows. NamibRand's selected night starts on 20 September, with a stored illumination around 76.2% and 3.17 moonless hours. Rakiura and Great Barrier Island also contribute nights beginning on 20 September, with different darkness and moonless totals. The calendar uses local dates and site coordinates. A date copied from another destination is therefore not a substitute for opening the calendar where you will actually observe."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Find the usable interval before rejecting a date by phase",
+      "body": "Check astronomical dusk and dawn, local moonrise and moonset, and your target's position. A total of three moonless hours is useful only if the relevant interval falls inside the hours you can use."
+    },
+    {
+      "kind": "prose",
+      "heading": "A moonless interval still needs the right target",
+      "paragraphs": [
+        "Death Valley's selected row illustrates another limit. Its calendar records several moonless hours but zero useful Galactic Centre hours under the separate Milky Way model. That does not remove the moonless interval. It shows that the interval and the target's favourable altitude do not overlap under the configured thresholds. The same date can therefore be relevant to one observing plan while failing a trip built specifically around the bright central Milky Way.",
+        "Our table keeps total astronomical darkness separate from the moonless portion. The difference helps identify how much of the dark night has the Moon above the horizon, but it is not a measure of how bright the sky becomes. Neither the phase fraction nor these duration totals models atmospheric scattering or the local horizon. Moonless hours are also a total; use the detailed events and your session timing to establish whether you have the continuous interval you need."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "When an off-new-Moon date can work for your trip",
+      "paragraphs": [
+        "Start with the hours you are willing and permitted to spend at the site. A window after moonset may require observing well into the following morning, while one before moonrise may require arriving before the sky becomes fully dark. The displayed local date marks the evening on which the observing night begins. Keep the timezone and following-day events attached to it when making an itinerary, especially if you are comparing destinations across hemispheres.",
+        "Then bring the calendar together with monthly climate, a current hourly forecast, and the official access information for the named location. A geometrical opening cannot establish cloud-free weather or extend a closing time. If the available moonless interval fits your target and your schedule, the absence of a new Moon need not end the plan. If it does not fit, a familiar phase label cannot make the date suitable."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Calendar examples",
+      "value": "8",
+      "note": "One selected September 2027 night per destination"
+    },
+    {
+      "label": "Stored illumination",
+      "value": "72.5–79.9%",
+      "note": "Evaluated near local midnight, not during every moonless hour"
+    },
+    {
+      "label": "Moonless time required",
+      "value": "≥3 hours",
+      "note": "Moon at or below the model horizon during astronomical darkness"
+    }
+  ]
+}

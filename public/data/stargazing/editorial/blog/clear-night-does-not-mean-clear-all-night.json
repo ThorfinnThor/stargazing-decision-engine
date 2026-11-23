@@ -1,0 +1,150 @@
+{
+  "version": 1,
+  "slug": "clear-night-does-not-mean-clear-all-night",
+  "title": "A clear night does not mean clear all night",
+  "seoDescription": "Compare clear-hour and clear-night statistics at eight stargazing destinations, and see why a three-hour clear sequence does not promise an uninterrupted session.",
+  "standfirst": "Our clear-night statistic counts nights with a qualifying three-hour sequence. The clear-hour statistic measures something else. Reading both prevents an encouraging percentage from becoming an all-night promise.",
+  "publishedAt": "2026-11-19",
+  "lastReviewedAt": "2026-11-19",
+  "readingMinutes": 6,
+  "heroDestinationSlug": "namibrand",
+  "datasetId": "clear-hours-versus-nights",
+  "relatedDestinationSlugs": [
+    "namibrand",
+    "death-valley",
+    "galloway",
+    "jasper",
+    "cherry-springs",
+    "central-idaho",
+    "rakiura",
+    "great-barrier-island"
+  ],
+  "methodologyNote": "Eight explicitly selected representative sites use their highest Stargazing Trip month, retaining the first month on ties. In the committed 1991–2020 ERA5 pipeline, a clear hour has total cloud cover ≤20%; a clear night contains at least three consecutive UTC hourly samples during astronomical night that meet that cloud threshold and are not wet under the configured precipitation rule (≥0.1 mm/hour is wet). Clear-hour probability divides qualifying cloud samples by all astronomical-night hourly samples; clear-night probability divides qualifying nights by all sampled astronomical nights. The percentage-point gap subtracts clear-hour share from clear-night frequency before rounding. These are different denominators, not a conditional probability or a measure of all-night continuity. This is not a forecast.",
+  "blocks": [
+    {
+      "kind": "prose",
+      "heading": "What the clear-night percentage actually counts",
+      "paragraphs": [
+        "Death Valley's selected October row has a historical clear-night frequency of about 81.1%, while about 71.9% of its sampled astronomical-night hours meet the clear cloud-cover threshold. Those figures can coexist without contradiction. One asks whether a night contained a qualifying observing window. The other asks how much of the entire pool of sampled night hours met a cloud criterion. Neither says that eighty-one percent of nights were cloudless from dusk to dawn.",
+        "The distinction comes directly from our aggregation rules. A clear night needs at least three consecutive qualifying hourly samples during astronomical night. Those samples must meet the cloud threshold and the precipitation condition. Once the sequence exists, that night counts once, even if other hours were cloudy. The statistic is useful for identifying a history of opportunities, but it does not describe the duration of the longest clear run or the cloud pattern outside that run."
+      ]
+    },
+    {
+      "kind": "table",
+      "heading": "Clear-hour share and clear-night frequency side by side",
+      "introduction": "The gap is clear-night frequency minus clear-hour share in percentage points, calculated before rounding. Each statistic retains its own denominator and criteria.",
+      "columns": [
+        "Destination",
+        "Selected month",
+        "Clear hours",
+        "Qualifying nights",
+        "Gap (pp)"
+      ],
+      "rows": [
+        [
+          "NamibRand",
+          "March",
+          "73.8%",
+          "81.4%",
+          "+7.6"
+        ],
+        [
+          "Death Valley",
+          "October",
+          "71.9%",
+          "81.1%",
+          "+9.1"
+        ],
+        [
+          "Galloway Forest",
+          "April",
+          "16.5%",
+          "14.4%",
+          "-2"
+        ],
+        [
+          "Jasper National Park",
+          "August",
+          "26.3%",
+          "24.1%",
+          "-2.2"
+        ],
+        [
+          "Cherry Springs",
+          "September",
+          "35.5%",
+          "40.9%",
+          "+5.4"
+        ],
+        [
+          "Central Idaho",
+          "July",
+          "70.2%",
+          "67.3%",
+          "-2.9"
+        ],
+        [
+          "Rakiura Stewart Island",
+          "March",
+          "10.2%",
+          "12.3%",
+          "+2"
+        ],
+        [
+          "Aotea Great Barrier Island",
+          "January",
+          "33.3%",
+          "34.5%",
+          "+1.3"
+        ]
+      ],
+      "note": "Hours are cloud-only samples; qualifying nights require a three-hour clear and non-wet sequence. Neither column measures continuous all-night observing, and their difference is not interruption risk."
+    },
+    {
+      "kind": "prose",
+      "heading": "Why the hourly share can be higher or lower",
+      "paragraphs": [
+        "At NamibRand in March, about 81.4% of nights qualify, compared with a clear-hour share around 73.8%. Jasper's August pair goes in the other direction, with about 24.1% of nights qualifying and 26.3% of hours meeting the cloud criterion. The eight examples show that there is no universal conversion factor from one percentage to the other. A larger hourly share does not automatically imply a larger frequency of three-hour windows.",
+        "There are several reasons the aggregates differ. Clear hourly samples may be separated by cloudier hours and fail the sequence rule. A night with a long enough clear interval can qualify despite cloud outside that interval. Longer nights contribute more hours to the hourly denominator, while every sampled night contributes one unit to the nightly denominator. The nightly test also checks precipitation, whereas the cloud-only hourly share does not. These differences prevent the percentage-point gap from isolating any single weather mechanism."
+      ]
+    },
+    {
+      "kind": "callout",
+      "heading": "Do not subtract the percentages to estimate interruption risk",
+      "body": "The gap compares statistics with different denominators and criteria. It does not estimate how often clouds interrupt a session, how many hours you will lose, or the chance that a qualifying night stays clear until dawn."
+    },
+    {
+      "kind": "prose",
+      "heading": "A short session and a long imaging run ask different questions",
+      "paragraphs": [
+        "For a visitor hoping for a few hours outside, a history of qualifying windows can be a useful seasonal signal. A photographer needing an uninterrupted sequence extending well beyond three hours needs more information. The same monthly clear-night percentage cannot answer both questions. The committed aggregate files do not provide a distribution of longest clear runs, so this article does not derive a six-hour or all-night success rate from them.",
+        "Even the timing of a qualifying sequence matters. A window could occur after your permitted access ends, before your target is high enough, or while the Moon is inconveniently placed. The monthly statistic has no knowledge of your itinerary. It compresses many years of hourly records into a seasonal comparison, leaving the scheduling problem to the date-specific calendar and a current hourly forecast."
+      ]
+    },
+    {
+      "kind": "prose",
+      "heading": "Use the climate result to choose a season, then plan the hours",
+      "paragraphs": [
+        "The comparison holds each destination at its highest Trip-score month rather than selecting the month with the largest difference between the two cloud statistics. This gives the rows a travel-planning context without presenting them as global leaders in clear-night reliability. The examples include destinations with very different climates, and the percentage-point gap is descriptive. It is not a quality score that should be maximised when choosing a trip.",
+        "Once a season looks suitable, define the actual hours you need and check a current forecast against them. Allow time for arrival and setup, and make sure the official access conditions cover the session. Use the destination calendar for the Moon and astronomical timing. Reading a clear-night percentage as evidence of possible windows keeps it useful; treating it as guaranteed uninterrupted observing asks the historical statistic to answer a question it was never built to measure."
+      ]
+    }
+  ],
+  "metrics": [
+    {
+      "label": "Representative sites",
+      "value": "8",
+      "note": "Selected examples in their highest Trip-score month"
+    },
+    {
+      "label": "Clear-night sequence",
+      "value": "3 hours",
+      "note": "Consecutive clear, non-wet astronomical-night hourly samples"
+    },
+    {
+      "label": "Clear cloud threshold",
+      "value": "≤20%",
+      "note": "Total cloud cover in the hourly climate input"
+    }
+  ]
+}

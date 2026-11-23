@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync } from "node:fs";
 import { resolve } from "node:path";
 import { gzipSync } from "node:zlib";
 
@@ -7,8 +7,9 @@ import { computeSky } from "../../lib/astronomy/compute-sky.js";
 import { constellationCopyById } from "../../lib/astronomy/constellation-copy.js";
 import { createSkyLocation, resolvePrimaryObservationSite } from "../../lib/astronomy/primary-site.js";
 import { validateNightPlannerConfig, type NightPlannerConfig } from "../../lib/astronomy/night-planner.js";
-import type { BrightStarCatalog, ConstellationDatasetFile, NightPreviewFile } from "../../lib/astronomy/types.js";
+import type { BrightStarCatalog, ConstellationDatasetFile, FaintStarCatalog, NightPreviewFile } from "../../lib/astronomy/types.js";
 import { isValidInstantIso } from "../../lib/astronomy/validation.js";
+import { darkestSky, referenceCities, type CitySkyFile } from "../../lib/astronomy/light-pollution.js";
 import { publicDataDir, readJson } from "../pipeline/io.js";
 
 const catalogPath = resolve(publicDataDir, "astronomy/bright-stars.json");
@@ -40,6 +41,16 @@ for (const [index, star] of catalog.stars.entries()) {
   if (star[4] > catalog.source.constellationAnchorMagnitudeCeiling) errors.push(`catalog star ${star[0]} exceeds magnitude ceiling`);
 }
 if (new Set(catalog.stars.map((star) => star[0])).size !== catalog.stars.length) errors.push("catalog IDs are not unique");
+const faintPath = resolve(publicDataDir, "astronomy/faint-stars.json");
+const faintCatalog = readJson<FaintStarCatalog>(faintPath);
+if (faintCatalog.version !== 1 || faintCatalog.source.upstreamSha256 !== catalog.source.upstreamSha256 || faintCatalog.source.magnitudeFloor !== 6 || faintCatalog.source.magnitudeCutoff !== 6.5 || faintCatalog.stars.length !== 3829) errors.push("faint star catalog contract or count drifted");
+const faintBytes = readFileSync(faintPath);
+if (gzipSync(faintBytes).byteLength > 100_000) errors.push("faint star catalog exceeds the 100 KB gzip guardrail");
+const brightIds = new Set(catalog.stars.map((star) => star[0]));
+for (const star of faintCatalog.stars) {
+  if (star[4] <= 6 || star[4] > 6.5) errors.push(`faint star ${star[0]} is outside magnitude 6–6.5`);
+  if (brightIds.has(star[0])) errors.push(`faint star ${star[0]} duplicates a bright catalog star`);
+}
 const starIds = new Set(catalog.stars.map((star) => star[0]));
 const constellationIds = new Set<string>();
 for (const constellation of constellationFile.constellations) {
@@ -68,5 +79,26 @@ for (const preview of previewFile.previews) {
   if (snapshot.stars.some((star) => !Number.isFinite(star.xNormalized) || !Number.isFinite(star.yNormalized))) errors.push(`${preview.id}: non-finite projected star`);
 }
 
+// The city estimates only exist once the Black Marble city fetch has run; until then the
+// comparison page falls back to its reference cities.
+const citySkyPath = resolve(publicDataDir, "astronomy/city-sky.json");
+let citySkySummary = "no city sky estimates yet";
+if (existsSync(citySkyPath)) {
+  const citySky = readJson<CitySkyFile>(citySkyPath);
+  const configured = readJson<{ cities: { id: string }[] }>(resolve(process.cwd(), "data-config/astronomy/comparison-cities.json")).cities;
+  const ids = new Set(citySky.cities.map((row) => row[0]));
+  if (citySky.version !== 1) errors.push("city sky file version drifted");
+  if (ids.size !== citySky.cities.length) errors.push("city sky ids are not unique");
+  if (citySky.cities.length < configured.length * 0.9) errors.push(`city sky covers only ${citySky.cities.length} of ${configured.length} configured cities`);
+  for (const city of referenceCities) if (!ids.has(city.id)) errors.push(`city sky is missing reference city ${city.id} (shared links use it)`);
+  for (const [id, en, , country, lat, lon, timeZone, magnitude] of citySky.cities) {
+    if (!en || !/^[A-Z]{2}$/.test(country) || Math.abs(lat) > 90 || Math.abs(lon) > 180) errors.push(`${id}: city sky row is malformed`);
+    if (!(magnitude >= 4 && magnitude <= darkestSky.limitingMagnitude)) errors.push(`${id}: limiting magnitude ${magnitude} is outside 4–${darkestSky.limitingMagnitude}`);
+    try { new Intl.DateTimeFormat("en", { timeZone }).format(0); } catch { errors.push(`${id}: unknown time zone ${timeZone}`); }
+  }
+  if (gzipSync(readFileSync(citySkyPath)).byteLength > 80_000) errors.push("city sky file exceeds the 80 KB gzip guardrail");
+  citySkySummary = `${citySky.cities.length} city sky estimates`;
+}
+
 if (errors.length) { errors.forEach((error) => console.error(error)); process.exitCode = 1; }
-else console.log(`Validated ${catalog.stars.length} licensed HIP stars, ${constellationFile.constellations.length} Western constellations, and ${previewFile.previews.length} deterministic night previews.`);
+else console.log(`Validated ${catalog.stars.length} licensed HIP stars, ${constellationFile.constellations.length} Western constellations, ${previewFile.previews.length} deterministic night previews, and ${citySkySummary}.`);
