@@ -32,6 +32,17 @@ DACH_MIN_POPULATION = 50_000
 DACH = {"DE", "AT", "CH"}
 # Sections of a populated place (city districts) are not separate cities.
 EXCLUDED_FEATURE_CODES = {"PPLX", "PPLH", "PPLQ", "PPLW"}
+# GeoNames records whose population is wrong or belongs to a larger area. Found because
+# Black Marble measures almost no light at the point given for these "cities".
+EXCLUDED_GEONAME_IDS = {
+    "2780180": "Eisenzicken (AT): village listed with 54,353 people",
+    "1723510": "Budta (PH): village listed with 1,273,715 people",
+    "1978681": "Malingao (PH): village listed with 1,121,974 people",
+    "1183105": "Battagram (PK): town listed with a district-sized population",
+    "1194041": "Mohammadpur (BD): village listed with 527,571 people",
+    "1815463": "Changzhi (CN): second record about 160 km from the actual city",
+    "12446699": "Daxing'anling (CN): prefecture-level region, not a city",
+}
 MAX_WINDOW_KM = 75
 EARTH_RADIUS_KM = 6371.0088
 
@@ -119,7 +130,7 @@ def build(cache: Path | None, alternate_names_zip: Path | None = None) -> dict:
         population = int(row[14] or 0)
         country = row[8]
         threshold = DACH_MIN_POPULATION if country in DACH else GLOBAL_MIN_POPULATION
-        if population < threshold or row[7] in EXCLUDED_FEATURE_CODES:
+        if population < threshold or row[7] in EXCLUDED_FEATURE_CODES or row[0] in EXCLUDED_GEONAME_IDS:
             continue
         lat, lon = float(row[4]), float(row[5])
         if crosses_antimeridian(lat, lon):
@@ -179,6 +190,7 @@ def build(cache: Path | None, alternate_names_zip: Path | None = None) -> dict:
                 "globalMinPopulation": GLOBAL_MIN_POPULATION,
                 "dachMinPopulation": DACH_MIN_POPULATION,
                 "excludedFeatureCodes": sorted(EXCLUDED_FEATURE_CODES),
+                "excludedGeonameIds": sorted(int(value) for value in EXCLUDED_GEONAME_IDS),
                 "excludesAntimeridianWindowsKm": MAX_WINDOW_KM,
                 "legacyReferenceCities": len(LEGACY_IDS),
             },
