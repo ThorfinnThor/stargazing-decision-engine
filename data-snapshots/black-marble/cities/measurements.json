@@ -1,0 +1,335 @@
+{
+ "version": 1,
+ "source": "VNP46A4",
+ "collectionVersion": "2",
+ "radianceLayer": "AllAngle_Composite_Snow_Free",
+ "qualityLayer": "AllAngle_Composite_Snow_Free_Quality",
+ "units": "nW/cm2/sr",
+ "year": 2025,
+ "ringConfig": [
+  {
+   "id": "0to2",
+   "minKm": 0,
+   "maxKm": 2,
+   "upperInclusive": false,
+   "statistic": "median",
+   "alanWeight": 0.45
+  },
+  {
+   "id": "2to10",
+   "minKm": 2,
+   "maxKm": 10,
+   "upperInclusive": false,
+   "statistic": "mean",
+   "alanWeight": 0.3
+  },
+  {
+   "id": "10to30",
+   "minKm": 10,
+   "maxKm": 30,
+   "upperInclusive": false,
+   "statistic": "mean",
+   "alanWeight": 0.15
+  },
+  {
+   "id": "30to75",
+   "minKm": 30,
+   "maxKm": 75,
+   "upperInclusive": true,
+   "statistic": "mean",
+   "alanWeight": 0.1
+  }
+ ],
+ "granules": [
+  "VNP46A4.A2025001.h18v08.002.2026076173955.h5",
+  "VNP46A4.A2025001.h19v09.002.2026076174110.h5",
+  "VNP46A4.A2025001.h20v04.002.2026076195059.h5",
+  "VNP46A4.A2025001.h28v05.002.2026077001945.h5",
+  "VNP46A4.A2025001.h28v06.002.2026077001935.h5",
+  "VNP46A4.A2025001.h28v07.002.2026077002010.h5",
+  "VNP46A4.A2025001.h29v04.002.2026077002302.h5",
+  "VNP46A4.A2025001.h29v05.002.2026077002306.h5",
+  "VNP46A4.A2025001.h29v06.002.2026077002426.h5",
+  "VNP46A4.A2025001.h30v05.002.2026077004206.h5"
+ ],
+ "missingTiles": [],
+ "retrievedAt": "2026-11-23T13:20:50Z",
+ "cities": [
+  {
+   "id": "shanghai",
+   "rings": {
+    "0to2": {
+     "radiance": 73.258766,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 60.011511,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 34.26001,
+     "coverage": 0.999197
+    },
+    "30to75": {
+     "radiance": 10.464901,
+     "coverage": 0.93322
+    }
+   },
+   "coverage": 0.93322,
+   "alanExposure": 3.95006
+  },
+  {
+   "id": "chongqing",
+   "rings": {
+    "0to2": {
+     "radiance": 51.151306,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 35.54129,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 14.685155,
+     "coverage": 0.999629
+    },
+    "30to75": {
+     "radiance": 2.01139,
+     "coverage": 0.998591
+    }
+   },
+   "coverage": 0.998591,
+   "alanExposure": 3.382047
+  },
+  {
+   "id": "chengdu",
+   "rings": {
+    "0to2": {
+     "radiance": 66.522583,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 45.858795,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 21.088741,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 4.033901,
+     "coverage": 0.999167
+    }
+   },
+   "coverage": 0.999167,
+   "alanExposure": 3.675629
+  },
+  {
+   "id": "beijing",
+   "rings": {
+    "0to2": {
+     "radiance": 76.396725,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 55.070271,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 26.473171,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 4.480951,
+     "coverage": 0.999933
+    }
+   },
+   "coverage": 0.999933,
+   "alanExposure": 3.832116
+  },
+  {
+   "id": "guangzhou",
+   "rings": {
+    "0to2": {
+     "radiance": 52.403648,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 53.246725,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 30.907241,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 14.391251,
+     "coverage": 0.99863
+    }
+   },
+   "coverage": 0.99863,
+   "alanExposure": 3.780913
+  },
+  {
+   "id": "shenzhen",
+   "rings": {
+    "0to2": {
+     "radiance": 72.733055,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 34.967752,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 31.044242,
+     "coverage": 0.95659
+    },
+    "30to75": {
+     "radiance": 13.835759,
+     "coverage": 0.929575
+    }
+   },
+   "coverage": 0.929575,
+   "alanExposure": 3.799762
+  },
+  {
+   "id": "kinshasa",
+   "rings": {
+    "0to2": {
+     "radiance": 33.439623,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 19.953118,
+     "coverage": 0.997869
+    },
+    "10to30": {
+     "radiance": 3.230106,
+     "coverage": 0.985446
+    },
+    "30to75": {
+     "radiance": 0.036247,
+     "coverage": 0.999567
+    }
+   },
+   "coverage": 0.985446,
+   "alanExposure": 2.725224
+  },
+  {
+   "id": "istanbul",
+   "rings": {
+    "0to2": {
+     "radiance": 148.225929,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 65.951629,
+     "coverage": 0.998392
+    },
+    "10to30": {
+     "radiance": 26.559791,
+     "coverage": 0.898562
+    },
+    "30to75": {
+     "radiance": 4.091422,
+     "coverage": 0.971689
+    }
+   },
+   "coverage": 0.898562,
+   "alanExposure": 4.173858
+  },
+  {
+   "id": "lagos",
+   "rings": {
+    "0to2": {
+     "radiance": 34.717705,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 20.899904,
+     "coverage": 0.987252
+    },
+    "10to30": {
+     "radiance": 6.656607,
+     "coverage": 0.937293
+    },
+    "30to75": {
+     "radiance": 1.117318,
+     "coverage": 0.994941
+    }
+   },
+   "coverage": 0.937293,
+   "alanExposure": 2.915336
+  },
+  {
+   "id": "ho-chi-minh-city",
+   "rings": {
+    "0to2": {
+     "radiance": 44.248095,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 39.336059,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 13.509439,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 6.46287,
+     "coverage": 0.98496
+    }
+   },
+   "coverage": 0.98496,
+   "alanExposure": 3.42686
+  },
+  {
+   "id": "tianjin",
+   "rings": {
+    "0to2": {
+     "radiance": 95.65554,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 59.541283,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 15.339168,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 5.625122,
+     "coverage": 0.966194
+    }
+   },
+   "coverage": 0.966194,
+   "alanExposure": 3.896138
+  },
+  {
+   "id": "wuhan",
+   "rings": {
+    "0to2": {
+     "radiance": 72.453186,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 50.817729,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 19.351838,
+     "coverage": 0.998235
+    },
+    "30to75": {
+     "radiance": 2.590049,
+     "coverage": 0.989827
+    }
+   },
+   "coverage": 0.989827,
+   "alanExposure": 3.697604
+  }
+ ]
+}
