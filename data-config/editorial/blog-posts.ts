@@ -316,7 +316,7 @@ export const blogPostSources: BlogPostSource[] = [
   {
     slug: "does-altitude-mean-darker-skies",
     title: "Does higher altitude mean darker skies? The data says no",
-    seoDescription: "Compare high and low stargazing sites to separate elevation from artificial light, climate, comfort, and access in dark-sky trip planning.",
+    seoDescription: "Kalbarri at 150 m scores 100 for darkness, Mauna Kea at 4,200 m scores 90. Eight sites show why altitude alone does not make a night sky darker.",
     standfirst: "Elevation can put you above some haze and atmospheric mass, but it does not switch off nearby lights or guarantee clear weather. Eight real sites reveal the trade-off.",
     publishedAt: "2026-10-17",
     lastReviewedAt: "2026-10-17",

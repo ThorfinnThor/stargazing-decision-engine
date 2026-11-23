@@ -48,3 +48,14 @@ test("monthly atlas is generated from twelve different destinations", () => {
   assert.equal(new Set(table.rows.map((row) => row[1])).size, 12);
   assert.deepEqual(table.rows.map((row) => row[0]), ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]);
 });
+
+test("altitude post description quotes the numbers in its own table", () => {
+  const post = read<BlogPost>("public/data/stargazing/editorial/blog/does-altitude-mean-darker-skies.json");
+  const table = post.blocks.find((block) => block.kind === "table");
+  assert.ok(table && table.kind === "table");
+  const row = (name: string) => table.rows.find((item) => item[0] === name);
+  const [kalbarri, maunaKea] = [row("Kalbarri"), row("Mauna Kea")];
+  assert.ok(kalbarri && maunaKea);
+  assert.ok(post.seoDescription.includes(`Kalbarri at ${kalbarri[1]} scores ${kalbarri[2]} for darkness`));
+  assert.ok(post.seoDescription.includes(`Mauna Kea at ${maunaKea[1]} scores ${maunaKea[2]}.`));
+});
