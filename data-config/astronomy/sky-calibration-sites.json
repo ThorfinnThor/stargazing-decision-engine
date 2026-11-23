@@ -1,6 +1,6 @@
 {
  "version": 1,
- "description": "Published zenith night-sky brightness under clear, moonless conditions (mag/arcsec², Sky Quality Meter), used to calibrate the city estimate. Each site is paired with the Black Marble year of its measurements.",
+ "description": "Published zenith night-sky brightness under clear, moonless conditions (mag/arcsec², Sky Quality Meter), used to check the city estimate. Each site is paired with the Black Marble year of its measurements. The stations do not shift the curve: depending on the published conversion from sky brightness to limiting magnitude, the estimate for towns is about 0.4 mag too high or too low.",
  "sources": [
   {
    "id": "posch-2018",

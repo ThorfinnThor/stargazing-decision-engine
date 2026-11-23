@@ -84,6 +84,33 @@ test("every reviewed metropolitan centre lands in Bortle 7 to 9 and dark referen
   assert.ok(limitingMagnitudeForExposure(berlin, curve) > limitingMagnitudeForExposure(newYork, curve));
 });
 
+// Crumey (2014), eq. 53, with the field factor that puts the 6.5 catalogue floor at a natural
+// dark sky (21.83 mag/arcsec²). Other published conversions differ by a few tenths.
+function crumeyLimitingMagnitude(zenithMag: number) {
+  const luminance = 10.8e4 * 10 ** (-0.4 * zenithMag);
+  const illuminance = 1.486 * (6.505e-4 * luminance ** 0.25 - 8.461e-4 * luminance ** 0.5) ** 2;
+  return -2.5 * Math.log10(illuminance / 2.54e-6);
+}
+
+test("the estimate follows published clear-sky measurements at 65 stations", () => {
+  const sites = JSON.parse(readFileSync("data-config/astronomy/sky-calibration-sites.json", "utf8")).sites as { id: string; year: number; zenithMag: number }[];
+  const measured = JSON.parse(readFileSync("data-snapshots/black-marble/cities/calibration-sites.json", "utf8")).sites as { id: string; year: number; coverage: number; alanExposure: number }[];
+  const byId = new Map(measured.map((item) => [item.id, item]));
+  const points = sites.map((site) => {
+    const item = byId.get(site.id)!;
+    assert.equal(item.year, site.year, site.id);
+    assert.ok(item.coverage >= brightnessConfig.minimumCoverage, site.id);
+    return { exposure: item.alanExposure, zenithMag: site.zenithMag, estimate: limitingMagnitudeForExposure(item.alanExposure, curve) };
+  });
+  assert.equal(points.length, 65);
+  const pairs = points.flatMap((a, index) => points.slice(index + 1).map((b) => ({ a, b }))).filter(({ a, b }) => Math.abs(a.zenithMag - b.zenithMag) > 0.5);
+  const agreeing = pairs.filter(({ a, b }) => (a.zenithMag > b.zenithMag) === (a.exposure < b.exposure)).length;
+  assert.ok(agreeing / pairs.length > 0.9, `only ${agreeing} of ${pairs.length} clearly different pairs are in the measured order`);
+  const towns = points.filter((point) => point.exposure >= 0.5 && point.exposure < 2.5);
+  const offset = towns.reduce((sum, point) => sum + point.estimate - crumeyLimitingMagnitude(point.zenithMag), 0) / towns.length;
+  assert.ok(Math.abs(offset) < 0.25, `town estimate is ${offset.toFixed(2)} mag off`);
+});
+
 test("city sky build drops cities without a reliable measurement and keeps compact rows", () => {
   const cities = {
     version: 1 as const,
