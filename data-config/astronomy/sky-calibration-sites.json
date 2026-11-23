@@ -1,0 +1,614 @@
+{
+ "version": 1,
+ "description": "Published zenith night-sky brightness under clear, moonless conditions (mag/arcsec², Sky Quality Meter), used to check the city estimate. Each site is paired with the Black Marble year of its measurements. The stations do not shift the curve: depending on the published conversion from sky brightness to limiting magnitude, the estimate for towns is about 0.4 mag too high or too low.",
+ "sources": [
+  {
+   "id": "posch-2018",
+   "citation": "Posch, Binder & Puschnig (2018), Systematic measurements of the night sky brightness at 26 locations in Eastern Austria, JQSRT 211, 144–165, Table 2 (clear, moonless nights)",
+   "url": "https://arxiv.org/abs/1803.09811"
+  },
+  {
+   "id": "shah-2025",
+   "citation": "Shah et al. (2025), Beyond the Clouds: Advanced Data Analysis of a Dutch Sky Quality Meter Network, Table 1 (clear-night brightness, January 2020)",
+   "url": "https://arxiv.org/abs/2507.11343",
+   "exclusion": "Sites whose Table 1 value differs from the dark peak in Table 2 by more than 0.5 mag: Moddergat, Hippolytushoef, Boerakker, tZandt, Heerenveen, DeHeld"
+  },
+  {
+   "id": "bertolo-2019",
+   "citation": "Bertolo et al. (2019), Measurements of Night Sky Brightness in the Veneto Region of Italy, J. Imaging 5, 56 (modal value 2018, moonless and cloudless nights)",
+   "url": "https://doi.org/10.3390/jimaging5050056"
+  },
+  {
+   "id": "bara-2016",
+   "citation": "Bará (2016), Anthropogenic disruption of the night sky darkness in urban and rural areas, R. Soc. Open Sci. 3, 160541, Table 1 (global mode; UTM 29T ED50 converted to WGS84)",
+   "url": "https://doi.org/10.1098/rsos.160541"
+  }
+ ],
+ "sites": [
+  {
+   "id": "at-lsm",
+   "name": "Linz-Schlossmuseum",
+   "source": "posch-2018",
+   "lat": 48.30528,
+   "lon": 14.28278,
+   "year": 2016,
+   "zenithMag": 19.2
+  },
+  {
+   "id": "at-lgo",
+   "name": "Linz-Goethestraße",
+   "source": "posch-2018",
+   "lat": 48.30528,
+   "lon": 14.30833,
+   "year": 2016,
+   "zenithMag": 19.0
+  },
+  {
+   "id": "at-lsw",
+   "name": "Linz-Sternwarte",
+   "source": "posch-2018",
+   "lat": 48.29333,
+   "lon": 14.26833,
+   "year": 2016,
+   "zenithMag": 19.5
+  },
+  {
+   "id": "at-sty",
+   "name": "Steyr",
+   "source": "posch-2018",
+   "lat": 48.04917,
+   "lon": 14.44222,
+   "year": 2016,
+   "zenithMag": 20.3
+  },
+  {
+   "id": "at-stw",
+   "name": "Steyregg-Weih",
+   "source": "posch-2018",
+   "lat": 48.28861,
+   "lon": 14.35361,
+   "year": 2016,
+   "zenithMag": 19.7
+  },
+  {
+   "id": "at-tra",
+   "name": "Traun",
+   "source": "posch-2018",
+   "lat": 48.23556,
+   "lon": 14.25306,
+   "year": 2016,
+   "zenithMag": 19.8
+  },
+  {
+   "id": "at-wel",
+   "name": "Wels-Rathaus",
+   "source": "posch-2018",
+   "lat": 48.15639,
+   "lon": 14.02472,
+   "year": 2016,
+   "zenithMag": 19.4
+  },
+  {
+   "id": "at-bra",
+   "name": "Braunau",
+   "source": "posch-2018",
+   "lat": 48.26111,
+   "lon": 13.04472,
+   "year": 2016,
+   "zenithMag": 20.2
+  },
+  {
+   "id": "at-gri",
+   "name": "Grieskirchen",
+   "source": "posch-2018",
+   "lat": 48.23444,
+   "lon": 13.82583,
+   "year": 2016,
+   "zenithMag": 20.2
+  },
+  {
+   "id": "at-fre",
+   "name": "Freistadt",
+   "source": "posch-2018",
+   "lat": 48.50917,
+   "lon": 14.50194,
+   "year": 2016,
+   "zenithMag": 20.2
+  },
+  {
+   "id": "at-mat",
+   "name": "Mattighofen",
+   "source": "posch-2018",
+   "lat": 48.09722,
+   "lon": 13.15167,
+   "year": 2016,
+   "zenithMag": 20.8
+  },
+  {
+   "id": "at-pas",
+   "name": "Pasching",
+   "source": "posch-2018",
+   "lat": 48.25861,
+   "lon": 14.21,
+   "year": 2016,
+   "zenithMag": 20.1
+  },
+  {
+   "id": "at-voe",
+   "name": "Vöcklabruck",
+   "source": "posch-2018",
+   "lat": 48.00583,
+   "lon": 13.64528,
+   "year": 2016,
+   "zenithMag": 20.4
+  },
+  {
+   "id": "at-bod",
+   "name": "Nationalpark-Bodinggraben",
+   "source": "posch-2018",
+   "lat": 47.79194,
+   "lon": 14.39389,
+   "year": 2016,
+   "zenithMag": 21.8
+  },
+  {
+   "id": "at-feu",
+   "name": "Feuerkogel",
+   "source": "posch-2018",
+   "lat": 47.81583,
+   "lon": 13.72083,
+   "year": 2016,
+   "zenithMag": 21.8
+  },
+  {
+   "id": "at-gis",
+   "name": "Giselawarte",
+   "source": "posch-2018",
+   "lat": 48.38417,
+   "lon": 14.25306,
+   "year": 2016,
+   "zenithMag": 21.3
+  },
+  {
+   "id": "at-gru",
+   "name": "Grünbach",
+   "source": "posch-2018",
+   "lat": 48.53056,
+   "lon": 14.575,
+   "year": 2016,
+   "zenithMag": 21.6
+  },
+  {
+   "id": "at-kid",
+   "name": "Kirchschlag-Davidschlag",
+   "source": "posch-2018",
+   "lat": 48.44194,
+   "lon": 14.27389,
+   "year": 2016,
+   "zenithMag": 21.6
+  },
+  {
+   "id": "at-kri",
+   "name": "Krippenstein",
+   "source": "posch-2018",
+   "lat": 47.52306,
+   "lon": 13.69333,
+   "year": 2016,
+   "zenithMag": 21.9
+  },
+  {
+   "id": "at-los",
+   "name": "Losenstein-Hohe Dirn",
+   "source": "posch-2018",
+   "lat": 47.90611,
+   "lon": 14.41111,
+   "year": 2016,
+   "zenithMag": 21.8
+  },
+  {
+   "id": "at-mun",
+   "name": "Münzkirchen",
+   "source": "posch-2018",
+   "lat": 48.47917,
+   "lon": 13.55806,
+   "year": 2016,
+   "zenithMag": 21.2
+  },
+  {
+   "id": "at-uli",
+   "name": "Ulrichsberg-Schöneben",
+   "source": "posch-2018",
+   "lat": 48.70556,
+   "lon": 13.94556,
+   "year": 2016,
+   "zenithMag": 21.6
+  },
+  {
+   "id": "at-zoe",
+   "name": "Nationalpark-Zöblboden",
+   "source": "posch-2018",
+   "lat": 47.83833,
+   "lon": 14.44111,
+   "year": 2016,
+   "zenithMag": 21.9
+  },
+  {
+   "id": "nl-hornhuizen",
+   "name": "Hornhuizen",
+   "source": "shah-2025",
+   "lat": 53.403,
+   "lon": 6.352,
+   "year": 2020,
+   "zenithMag": 21.77
+  },
+  {
+   "id": "nl-vlieland-oost",
+   "name": "Vlieland-Oost",
+   "source": "shah-2025",
+   "lat": 53.295,
+   "lon": 5.092,
+   "year": 2020,
+   "zenithMag": 21.63
+  },
+  {
+   "id": "nl-sellingen",
+   "name": "Sellingen",
+   "source": "shah-2025",
+   "lat": 52.938,
+   "lon": 7.131,
+   "year": 2020,
+   "zenithMag": 21.61
+  },
+  {
+   "id": "nl-ostland",
+   "name": "Ostland",
+   "source": "shah-2025",
+   "lat": 53.607,
+   "lon": 6.727,
+   "year": 2020,
+   "zenithMag": 21.51
+  },
+  {
+   "id": "nl-lauwersoog",
+   "name": "Lauwersoog",
+   "source": "shah-2025",
+   "lat": 53.385,
+   "lon": 6.235,
+   "year": 2020,
+   "zenithMag": 21.48
+  },
+  {
+   "id": "nl-nes",
+   "name": "Nes",
+   "source": "shah-2025",
+   "lat": 53.449,
+   "lon": 5.775,
+   "year": 2020,
+   "zenithMag": 21.43
+  },
+  {
+   "id": "nl-roodeschool",
+   "name": "Roodeschool",
+   "source": "shah-2025",
+   "lat": 53.412,
+   "lon": 6.755,
+   "year": 2020,
+   "zenithMag": 21.04
+  },
+  {
+   "id": "nl-texel",
+   "name": "Texel",
+   "source": "shah-2025",
+   "lat": 53.003,
+   "lon": 4.787,
+   "year": 2020,
+   "zenithMag": 20.97
+  },
+  {
+   "id": "nl-borkum",
+   "name": "Borkum",
+   "source": "shah-2025",
+   "lat": 53.587,
+   "lon": 6.663,
+   "year": 2020,
+   "zenithMag": 20.97
+  },
+  {
+   "id": "nl-oostkapelle",
+   "name": "Oostkapelle",
+   "source": "shah-2025",
+   "lat": 51.572,
+   "lon": 3.537,
+   "year": 2020,
+   "zenithMag": 20.82
+  },
+  {
+   "id": "nl-gorredijk",
+   "name": "Gorredijk",
+   "source": "shah-2025",
+   "lat": 53.008,
+   "lon": 6.074,
+   "year": 2020,
+   "zenithMag": 20.81
+  },
+  {
+   "id": "nl-weerribben",
+   "name": "Weerribben",
+   "source": "shah-2025",
+   "lat": 52.788,
+   "lon": 5.938,
+   "year": 2020,
+   "zenithMag": 20.76
+  },
+  {
+   "id": "nl-lochem",
+   "name": "Lochem",
+   "source": "shah-2025",
+   "lat": 52.172,
+   "lon": 6.401,
+   "year": 2020,
+   "zenithMag": 20.66
+  },
+  {
+   "id": "nl-haaksbergen",
+   "name": "Haaksbergen",
+   "source": "shah-2025",
+   "lat": 52.149,
+   "lon": 6.718,
+   "year": 2020,
+   "zenithMag": 20.39
+  },
+  {
+   "id": "nl-heerenveen-st",
+   "name": "Heerenveen-St.",
+   "source": "shah-2025",
+   "lat": 52.96,
+   "lon": 5.915,
+   "year": 2020,
+   "zenithMag": 20.15
+  },
+  {
+   "id": "nl-tolbert",
+   "name": "Tolbert",
+   "source": "shah-2025",
+   "lat": 53.165,
+   "lon": 6.359,
+   "year": 2020,
+   "zenithMag": 20.12
+  },
+  {
+   "id": "nl-oldenburg",
+   "name": "Oldenburg",
+   "source": "shah-2025",
+   "lat": 53.152,
+   "lon": 8.165,
+   "year": 2020,
+   "zenithMag": 19.92
+  },
+  {
+   "id": "nl-zernike",
+   "name": "Zernike",
+   "source": "shah-2025",
+   "lat": 53.24,
+   "lon": 6.536,
+   "year": 2020,
+   "zenithMag": 19.88
+  },
+  {
+   "id": "nl-dezilk",
+   "name": "DeZilk",
+   "source": "shah-2025",
+   "lat": 52.301,
+   "lon": 4.542,
+   "year": 2020,
+   "zenithMag": 19.51
+  },
+  {
+   "id": "nl-leiden",
+   "name": "Leiden",
+   "source": "shah-2025",
+   "lat": 52.155,
+   "lon": 4.483,
+   "year": 2020,
+   "zenithMag": 18.91
+  },
+  {
+   "id": "nl-rijswijk",
+   "name": "Rijswijk",
+   "source": "shah-2025",
+   "lat": 52.026,
+   "lon": 4.314,
+   "year": 2020,
+   "zenithMag": 18.16
+  },
+  {
+   "id": "it-padova",
+   "name": "Padova",
+   "source": "bertolo-2019",
+   "lat": 45.40269,
+   "lon": 11.88486,
+   "year": 2018,
+   "zenithMag": 18.0
+  },
+  {
+   "id": "it-nove",
+   "name": "Nove",
+   "source": "bertolo-2019",
+   "lat": 45.70914,
+   "lon": 11.67832,
+   "year": 2018,
+   "zenithMag": 19.6
+  },
+  {
+   "id": "it-montebello",
+   "name": "Montebello",
+   "source": "bertolo-2019",
+   "lat": 45.46872,
+   "lon": 11.35044,
+   "year": 2018,
+   "zenithMag": 19.7
+  },
+  {
+   "id": "it-pennar",
+   "name": "Pennar",
+   "source": "bertolo-2019",
+   "lat": 45.86598,
+   "lon": 11.52691,
+   "year": 2018,
+   "zenithMag": 20.8
+  },
+  {
+   "id": "it-monte-baldo",
+   "name": "Monte Baldo",
+   "source": "bertolo-2019",
+   "lat": 45.69778,
+   "lon": 10.85889,
+   "year": 2018,
+   "zenithMag": 20.7
+  },
+  {
+   "id": "it-cima-ekar",
+   "name": "Cima Ekar",
+   "source": "bertolo-2019",
+   "lat": 45.84872,
+   "lon": 11.56898,
+   "year": 2018,
+   "zenithMag": 20.9
+  },
+  {
+   "id": "it-passo-valles",
+   "name": "Passo Valles",
+   "source": "bertolo-2019",
+   "lat": 46.33883,
+   "lon": 11.80249,
+   "year": 2018,
+   "zenithMag": 21.3
+  },
+  {
+   "id": "es-santiago-de-compostela",
+   "name": "Santiago de Compostela",
+   "source": "bara-2016",
+   "lat": 42.8866,
+   "lon": -8.521,
+   "year": 2015,
+   "zenithMag": 19.2
+  },
+  {
+   "id": "es-vigo",
+   "name": "Vigo",
+   "source": "bara-2016",
+   "lat": 42.2417,
+   "lon": -8.7275,
+   "year": 2015,
+   "zenithMag": 18.7
+  },
+  {
+   "id": "es-guisamo",
+   "name": "Guísamo",
+   "source": "bara-2016",
+   "lat": 43.3094,
+   "lon": -8.2798,
+   "year": 2015,
+   "zenithMag": 19.8
+  },
+  {
+   "id": "es-areeiro",
+   "name": "Areeiro",
+   "source": "bara-2016",
+   "lat": 42.4044,
+   "lon": -8.6729,
+   "year": 2015,
+   "zenithMag": 19.8
+  },
+  {
+   "id": "es-illas-cies",
+   "name": "Illas Cíes",
+   "source": "bara-2016",
+   "lat": 42.2119,
+   "lon": -8.9083,
+   "year": 2015,
+   "zenithMag": 20.9
+  },
+  {
+   "id": "es-illa-de-ons",
+   "name": "Illa de Ons",
+   "source": "bara-2016",
+   "lat": 42.3822,
+   "lon": -8.936,
+   "year": 2015,
+   "zenithMag": 20.8
+  },
+  {
+   "id": "es-illa-de-salvora",
+   "name": "Illa de Sálvora",
+   "source": "bara-2016",
+   "lat": 42.4649,
+   "lon": -9.0135,
+   "year": 2015,
+   "zenithMag": 21.2
+  },
+  {
+   "id": "es-paramos",
+   "name": "Paramos",
+   "source": "bara-2016",
+   "lat": 43.002,
+   "lon": -8.699,
+   "year": 2015,
+   "zenithMag": 21.1
+  },
+  {
+   "id": "es-labrada",
+   "name": "Labrada",
+   "source": "bara-2016",
+   "lat": 43.4055,
+   "lon": -7.5019,
+   "year": 2015,
+   "zenithMag": 21.3
+  },
+  {
+   "id": "es-fontaneira",
+   "name": "Fontaneira",
+   "source": "bara-2016",
+   "lat": 43.0359,
+   "lon": -7.1963,
+   "year": 2015,
+   "zenithMag": 21.4
+  },
+  {
+   "id": "es-o-cebreiro",
+   "name": "O Cebreiro",
+   "source": "bara-2016",
+   "lat": 42.7071,
+   "lon": -7.047,
+   "year": 2015,
+   "zenithMag": 21.5
+  },
+  {
+   "id": "es-lardeira",
+   "name": "Lardeira",
+   "source": "bara-2016",
+   "lat": 42.3752,
+   "lon": -6.7833,
+   "year": 2015,
+   "zenithMag": 21.5
+  },
+  {
+   "id": "es-xares",
+   "name": "Xares",
+   "source": "bara-2016",
+   "lat": 42.2079,
+   "lon": -6.8925,
+   "year": 2015,
+   "zenithMag": 21.5
+  },
+  {
+   "id": "es-cabeza-de-manzaneda",
+   "name": "Cabeza de Manzaneda",
+   "source": "bara-2016",
+   "lat": 42.2602,
+   "lon": -7.2982,
+   "year": 2015,
+   "zenithMag": 21.7
+  }
+ ]
+}

@@ -68,6 +68,7 @@
     "data:astronomy:previews": "node --import tsx scripts/astronomy/build-night-previews.ts",
     "data:astronomy:validate": "node --import tsx scripts/astronomy/validate-astronomy.ts",
     "data:city-sky:cities": "python3 scripts/import/build_comparison_cities.py",
+    "data:city-sky:calibration": "python3 scripts/import/fetch_sky_calibration.py",
     "data:city-sky:fetch": "python3 scripts/import/fetch_city_sky_brightness.py",
     "data:city-sky": "node --import tsx scripts/astronomy/build-city-sky.ts",
     "data:p3:images:validate": "node --import tsx scripts/validate/validate-p3-image-candidates.ts",

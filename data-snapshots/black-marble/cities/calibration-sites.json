@@ -1,0 +1,1576 @@
+{
+ "version": 1,
+ "source": "VNP46A4",
+ "collectionVersion": "2",
+ "granules": [
+  "VNP46A4.A2015001.h17v04.002.2025093111824.h5",
+  "VNP46A4.A2016001.h19v04.002.2025101113502.h5",
+  "VNP46A4.A2018001.h18v04.002.2025113134247.h5",
+  "VNP46A4.A2018001.h19v04.002.2025113134108.h5",
+  "VNP46A4.A2020001.h18v03.002.2025134020239.h5"
+ ],
+ "missingTiles": [],
+ "retrievedAt": "2026-11-23T15:27:45Z",
+ "sites": [
+  {
+   "id": "at-lsm",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 23.130214,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 5.890958,
+     "coverage": 0.996689
+    },
+    "10to30": {
+     "radiance": 0.843943,
+     "coverage": 0.998807
+    },
+    "30to75": {
+     "radiance": 0.379803,
+     "coverage": 0.999375
+    }
+   },
+   "coverage": 0.996689,
+   "alanExposure": 2.135602
+  },
+  {
+   "id": "at-lgo",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 28.109301,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 5.363721,
+     "coverage": 0.995747
+    },
+    "10to30": {
+     "radiance": 0.891133,
+     "coverage": 0.998921
+    },
+    "30to75": {
+     "radiance": 0.381355,
+     "coverage": 0.999317
+    }
+   },
+   "coverage": 0.995747,
+   "alanExposure": 2.200043
+  },
+  {
+   "id": "at-lsw",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 7.633882,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 6.760797,
+     "coverage": 0.996681
+    },
+    "10to30": {
+     "radiance": 0.849258,
+     "coverage": 0.998807
+    },
+    "30to75": {
+     "radiance": 0.352089,
+     "coverage": 0.999375
+    }
+   },
+   "coverage": 0.996681,
+   "alanExposure": 1.707171
+  },
+  {
+   "id": "at-sty",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 6.762512,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.668317,
+     "coverage": 0.998095
+    },
+    "10to30": {
+     "radiance": 1.313209,
+     "coverage": 0.999257
+    },
+    "30to75": {
+     "radiance": 0.293573,
+     "coverage": 0.99942
+    }
+   },
+   "coverage": 0.998095,
+   "alanExposure": 1.227268
+  },
+  {
+   "id": "at-stw",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 5.465017,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 5.865882,
+     "coverage": 0.997635
+    },
+    "10to30": {
+     "radiance": 0.919757,
+     "coverage": 0.998579
+    },
+    "30to75": {
+     "radiance": 0.339592,
+     "coverage": 0.999346
+    }
+   },
+   "coverage": 0.997635,
+   "alanExposure": 1.544918
+  },
+  {
+   "id": "at-tra",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 7.921088,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 6.75629,
+     "coverage": 0.998582
+    },
+    "10to30": {
+     "radiance": 0.921367,
+     "coverage": 0.998578
+    },
+    "30to75": {
+     "radiance": 0.312169,
+     "coverage": 0.999364
+    }
+   },
+   "coverage": 0.998578,
+   "alanExposure": 1.724463
+  },
+  {
+   "id": "at-wel",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 15.401802,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.842636,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 1.305666,
+     "coverage": 0.999202
+    },
+    "30to75": {
+     "radiance": 0.344591,
+     "coverage": 0.999074
+    }
+   },
+   "coverage": 0.999074,
+   "alanExposure": 1.72716
+  },
+  {
+   "id": "at-bra",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 7.320874,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.810654,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.703501,
+     "coverage": 0.999602
+    },
+    "30to75": {
+     "radiance": 0.661192,
+     "coverage": 0.999114
+    }
+   },
+   "coverage": 0.999114,
+   "alanExposure": 1.262208
+  },
+  {
+   "id": "at-gri",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.95021,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.309517,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.781789,
+     "coverage": 0.999431
+    },
+    "30to75": {
+     "radiance": 0.566716,
+     "coverage": 0.999047
+    }
+   },
+   "coverage": 0.999047,
+   "alanExposure": 0.51301
+  },
+  {
+   "id": "at-fre",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 2.831574,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.167638,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.724853,
+     "coverage": 0.999265
+    },
+    "30to75": {
+     "radiance": 0.57657,
+     "coverage": 0.99886
+    }
+   },
+   "coverage": 0.99886,
+   "alanExposure": 0.778265
+  },
+  {
+   "id": "at-mat",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.962661,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.120528,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.710506,
+     "coverage": 0.999601
+    },
+    "30to75": {
+     "radiance": 0.544567,
+     "coverage": 0.999169
+    }
+   },
+   "coverage": 0.999169,
+   "alanExposure": 0.461568
+  },
+  {
+   "id": "at-pas",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 1.885581,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 6.720778,
+     "coverage": 0.996684
+    },
+    "10to30": {
+     "radiance": 0.938168,
+     "coverage": 0.998805
+    },
+    "30to75": {
+     "radiance": 0.318724,
+     "coverage": 0.999365
+    }
+   },
+   "coverage": 0.996684,
+   "alanExposure": 1.216979
+  },
+  {
+   "id": "at-voe",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 3.654645,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.903632,
+     "coverage": 0.999048
+    },
+    "10to30": {
+     "radiance": 0.381,
+     "coverage": 0.998972
+    },
+    "30to75": {
+     "radiance": 0.683681,
+     "coverage": 0.999265
+    }
+   },
+   "coverage": 0.998972,
+   "alanExposure": 0.985688
+  },
+  {
+   "id": "at-bod",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.042882,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.230379,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 0.504237,
+     "coverage": 0.99932
+    }
+   },
+   "coverage": 0.99932,
+   "alanExposure": 0.084523
+  },
+  {
+   "id": "at-feu",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.121761,
+     "coverage": 0.996651
+    },
+    "10to30": {
+     "radiance": 0.347844,
+     "coverage": 0.998452
+    },
+    "30to75": {
+     "radiance": 0.580678,
+     "coverage": 0.999641
+    }
+   },
+   "coverage": 0.996651,
+   "alanExposure": 0.125031
+  },
+  {
+   "id": "at-gis",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.479322,
+     "coverage": 0.997162
+    },
+    "10to30": {
+     "radiance": 1.323586,
+     "coverage": 0.998695
+    },
+    "30to75": {
+     "radiance": 0.486697,
+     "coverage": 0.999203
+    }
+   },
+   "coverage": 0.997162,
+   "alanExposure": 0.438518
+  },
+  {
+   "id": "at-gru",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.291455,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.224346,
+     "coverage": 0.999774
+    },
+    "30to75": {
+     "radiance": 0.674829,
+     "coverage": 0.998708
+    }
+   },
+   "coverage": 0.998708,
+   "alanExposure": 0.158663
+  },
+  {
+   "id": "at-kid",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.145925,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 1.25807,
+     "coverage": 0.99847
+    },
+    "30to75": {
+     "radiance": 0.541846,
+     "coverage": 0.999108
+    }
+   },
+   "coverage": 0.99847,
+   "alanExposure": 0.206338
+  },
+  {
+   "id": "at-kri",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.037109,
+     "coverage": 0.997124
+    },
+    "10to30": {
+     "radiance": 0.105518,
+     "coverage": 0.999654
+    },
+    "30to75": {
+     "radiance": 0.313487,
+     "coverage": 0.999649
+    }
+   },
+   "coverage": 0.997124,
+   "alanExposure": 0.053247
+  },
+  {
+   "id": "at-los",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.071779,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.322561,
+     "coverage": 0.999657
+    },
+    "30to75": {
+     "radiance": 0.461108,
+     "coverage": 0.99936
+    }
+   },
+   "coverage": 0.99936,
+   "alanExposure": 0.100651
+  },
+  {
+   "id": "at-mun",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.285169,
+     "coverage": 0.995755
+    },
+    "10to30": {
+     "radiance": 0.494048,
+     "coverage": 0.998924
+    },
+    "30to75": {
+     "radiance": 0.657404,
+     "coverage": 0.99931
+    }
+   },
+   "coverage": 0.995755,
+   "alanExposure": 0.186016
+  },
+  {
+   "id": "at-uli",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.113679,
+     "coverage": 0.997649
+    },
+    "10to30": {
+     "radiance": 0.211638,
+     "coverage": 0.999042
+    },
+    "30to75": {
+     "radiance": 0.729158,
+     "coverage": 0.999036
+    }
+   },
+   "coverage": 0.997649,
+   "alanExposure": 0.11586
+  },
+  {
+   "id": "at-zoe",
+   "year": 2016,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.038186,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.273752,
+     "coverage": 0.999771
+    },
+    "30to75": {
+     "radiance": 0.493438,
+     "coverage": 0.99935
+    }
+   },
+   "coverage": 0.99935,
+   "alanExposure": 0.087646
+  },
+  {
+   "id": "nl-hornhuizen",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.054858,
+     "coverage": 0.98555
+    },
+    "10to30": {
+     "radiance": 0.606099,
+     "coverage": 0.971941
+    },
+    "30to75": {
+     "radiance": 0.399487,
+     "coverage": 0.973127
+    }
+   },
+   "coverage": 0.971941,
+   "alanExposure": 0.120704
+  },
+  {
+   "id": "nl-vlieland-oost",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 0.97
+    },
+    "2to10": {
+     "radiance": 0.001255,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.105597,
+     "coverage": 0.993568
+    },
+    "30to75": {
+     "radiance": 0.822587,
+     "coverage": 0.973301
+    }
+   },
+   "coverage": 0.97,
+   "alanExposure": 0.07546
+  },
+  {
+   "id": "nl-sellingen",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 0.989691
+    },
+    "2to10": {
+     "radiance": 0.290247,
+     "coverage": 0.964454
+    },
+    "10to30": {
+     "radiance": 0.824575,
+     "coverage": 0.940631
+    },
+    "30to75": {
+     "radiance": 0.786053,
+     "coverage": 0.956578
+    }
+   },
+   "coverage": 0.940631,
+   "alanExposure": 0.224653
+  },
+  {
+   "id": "nl-ostland",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.066776,
+     "coverage": 0.991132
+    },
+    "10to30": {
+     "radiance": 0.102783,
+     "coverage": 0.991188
+    },
+    "30to75": {
+     "radiance": 0.360554,
+     "coverage": 0.978167
+    }
+   },
+   "coverage": 0.978167,
+   "alanExposure": 0.064857
+  },
+  {
+   "id": "nl-lauwersoog",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.059509,
+     "coverage": 0.985125
+    },
+    "10to30": {
+     "radiance": 0.457673,
+     "coverage": 0.971591
+    },
+    "30to75": {
+     "radiance": 0.746826,
+     "coverage": 0.971742
+    }
+   },
+   "coverage": 0.971591,
+   "alanExposure": 0.129648
+  },
+  {
+   "id": "nl-nes",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 0.878788
+    },
+    "2to10": {
+     "radiance": 0.009496,
+     "coverage": 0.994053
+    },
+    "10to30": {
+     "radiance": 0.341912,
+     "coverage": 0.98092
+    },
+    "30to75": {
+     "radiance": 0.278946,
+     "coverage": 0.980551
+    }
+   },
+   "coverage": 0.878788,
+   "alanExposure": 0.071553
+  },
+  {
+   "id": "nl-roodeschool",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.529291,
+     "coverage": 0.89
+    },
+    "2to10": {
+     "radiance": 0.719609,
+     "coverage": 0.948642
+    },
+    "10to30": {
+     "radiance": 1.085488,
+     "coverage": 0.964506
+    },
+    "30to75": {
+     "radiance": 0.298961,
+     "coverage": 0.975539
+    }
+   },
+   "coverage": 0.89,
+   "alanExposure": 0.490198
+  },
+  {
+   "id": "nl-texel",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 0.927083
+    },
+    "2to10": {
+     "radiance": 0.898889,
+     "coverage": 0.966138
+    },
+    "10to30": {
+     "radiance": 2.006373,
+     "coverage": 0.96382
+    },
+    "30to75": {
+     "radiance": 1.323251,
+     "coverage": 0.970861
+    }
+   },
+   "coverage": 0.927083,
+   "alanExposure": 0.441788
+  },
+  {
+   "id": "nl-borkum",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 0.852941
+    },
+    "2to10": {
+     "radiance": 0.021941,
+     "coverage": 0.997469
+    },
+    "10to30": {
+     "radiance": 0.09626,
+     "coverage": 0.990968
+    },
+    "30to75": {
+     "radiance": 0.390084,
+     "coverage": 0.977339
+    }
+   },
+   "coverage": 0.852941,
+   "alanExposure": 0.053233
+  },
+  {
+   "id": "nl-oostkapelle",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.659785,
+     "coverage": 0.840426
+    },
+    "2to10": {
+     "radiance": 0.573774,
+     "coverage": 0.934426
+    },
+    "10to30": {
+     "radiance": 0.833663,
+     "coverage": 0.958389
+    },
+    "30to75": {
+     "radiance": 7.67937,
+     "coverage": 0.923972
+    }
+   },
+   "coverage": 0.840426,
+   "alanExposure": 0.671095
+  },
+  {
+   "id": "nl-gorredijk",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.665012,
+     "coverage": 0.85
+    },
+    "2to10": {
+     "radiance": 0.338795,
+     "coverage": 0.96531
+    },
+    "10to30": {
+     "radiance": 0.783305,
+     "coverage": 0.94033
+    },
+    "30to75": {
+     "radiance": 1.880043,
+     "coverage": 0.95004
+    }
+   },
+   "coverage": 0.85,
+   "alanExposure": 0.509506
+  },
+  {
+   "id": "nl-weerribben",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.757652,
+     "coverage": 0.843137
+    },
+    "2to10": {
+     "radiance": 26.01889,
+     "coverage": 0.890807
+    },
+    "10to30": {
+     "radiance": 1.230038,
+     "coverage": 0.935417
+    },
+    "30to75": {
+     "radiance": 1.937693,
+     "coverage": 0.929292
+    }
+   },
+   "coverage": 0.843137,
+   "alanExposure": 1.470817
+  },
+  {
+   "id": "nl-lochem",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.766941,
+     "coverage": 0.873684
+    },
+    "2to10": {
+     "radiance": 0.277391,
+     "coverage": 0.952402
+    },
+    "10to30": {
+     "radiance": 1.877425,
+     "coverage": 0.910824
+    },
+    "30to75": {
+     "radiance": 2.249463,
+     "coverage": 0.902977
+    }
+   },
+   "coverage": 0.873684,
+   "alanExposure": 0.605992
+  },
+  {
+   "id": "nl-haaksbergen",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 0.884162,
+     "coverage": 0.865979
+    },
+    "2to10": {
+     "radiance": 0.598372,
+     "coverage": 0.942282
+    },
+    "10to30": {
+     "radiance": 1.615515,
+     "coverage": 0.925206
+    },
+    "30to75": {
+     "radiance": 2.127521,
+     "coverage": 0.916398
+    }
+   },
+   "coverage": 0.865979,
+   "alanExposure": 0.684006
+  },
+  {
+   "id": "nl-heerenveen-st",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 10.622379,
+     "coverage": 0.948454
+    },
+    "2to10": {
+     "radiance": 0.784379,
+     "coverage": 0.938706
+    },
+    "10to30": {
+     "radiance": 3.602266,
+     "coverage": 0.939612
+    },
+    "30to75": {
+     "radiance": 1.493643,
+     "coverage": 0.947216
+    }
+   },
+   "coverage": 0.938706,
+   "alanExposure": 1.597898
+  },
+  {
+   "id": "nl-tolbert",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 3.660881,
+     "coverage": 0.905263
+    },
+    "2to10": {
+     "radiance": 0.540662,
+     "coverage": 0.945392
+    },
+    "10to30": {
+     "radiance": 1.054538,
+     "coverage": 0.943597
+    },
+    "30to75": {
+     "radiance": 1.278882,
+     "coverage": 0.959085
+    }
+   },
+   "coverage": 0.905263,
+   "alanExposure": 1.012682
+  },
+  {
+   "id": "nl-oldenburg",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 5.109192,
+     "coverage": 0.90625
+    },
+    "2to10": {
+     "radiance": 1.719131,
+     "coverage": 0.932536
+    },
+    "10to30": {
+     "radiance": 0.224785,
+     "coverage": 0.971892
+    },
+    "30to75": {
+     "radiance": 0.68639,
+     "coverage": 0.968331
+    }
+   },
+   "coverage": 0.90625,
+   "alanExposure": 1.197175
+  },
+  {
+   "id": "nl-zernike",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 12.189477,
+     "coverage": 0.927835
+    },
+    "2to10": {
+     "radiance": 3.710872,
+     "coverage": 0.9258
+    },
+    "10to30": {
+     "radiance": 0.744552,
+     "coverage": 0.944132
+    },
+    "30to75": {
+     "radiance": 1.111063,
+     "coverage": 0.963824
+    }
+   },
+   "coverage": 0.9258,
+   "alanExposure": 1.783894
+  },
+  {
+   "id": "nl-dezilk",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 3.18765,
+     "coverage": 0.9375
+    },
+    "2to10": {
+     "radiance": 6.277089,
+     "coverage": 0.969144
+    },
+    "10to30": {
+     "radiance": 21.111087,
+     "coverage": 0.948103
+    },
+    "30to75": {
+     "radiance": 8.594603,
+     "coverage": 0.910525
+    }
+   },
+   "coverage": 0.910525,
+   "alanExposure": 1.930414
+  },
+  {
+   "id": "nl-leiden",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 28.075642,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 13.069308,
+     "coverage": 0.952443
+    },
+    "10to30": {
+     "radiance": 46.462186,
+     "coverage": 0.932862
+    },
+    "30to75": {
+     "radiance": 4.144069,
+     "coverage": 0.906127
+    }
+   },
+   "coverage": 0.906127,
+   "alanExposure": 3.052428
+  },
+  {
+   "id": "nl-rijswijk",
+   "year": 2020,
+   "rings": {
+    "0to2": {
+     "radiance": 35.718037,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 163.770025,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 28.25992,
+     "coverage": 0.919703
+    },
+    "30to75": {
+     "radiance": 3.984501,
+     "coverage": 0.90896
+    }
+   },
+   "coverage": 0.90896,
+   "alanExposure": 3.819902
+  },
+  {
+   "id": "it-padova",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 54.303688,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 20.694498,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 7.715573,
+     "coverage": 0.994301
+    },
+    "30to75": {
+     "radiance": 4.145516,
+     "coverage": 0.991309
+    }
+   },
+   "coverage": 0.991309,
+   "alanExposure": 3.217475
+  },
+  {
+   "id": "it-nove",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 6.582126,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 9.005659,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 6.111001,
+     "coverage": 0.999702
+    },
+    "30to75": {
+     "radiance": 4.701827,
+     "coverage": 0.992811
+    }
+   },
+   "coverage": 0.992811,
+   "alanExposure": 2.070878
+  },
+  {
+   "id": "it-montebello",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 4.433221,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 8.653696,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 6.762807,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 5.15814,
+     "coverage": 0.993417
+    }
+   },
+   "coverage": 0.993417,
+   "alanExposure": 1.931021
+  },
+  {
+   "id": "it-pennar",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 3.120289,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.064312,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 3.181877,
+     "coverage": 0.999048
+    },
+    "30to75": {
+     "radiance": 4.671838,
+     "coverage": 0.997906
+    }
+   },
+   "coverage": 0.997906,
+   "alanExposure": 1.24277
+  },
+  {
+   "id": "it-monte-baldo",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.05642,
+     "coverage": 0.988597
+    },
+    "10to30": {
+     "radiance": 3.244722,
+     "coverage": 0.983244
+    },
+    "30to75": {
+     "radiance": 4.399869,
+     "coverage": 0.997616
+    }
+   },
+   "coverage": 0.983244,
+   "alanExposure": 0.601779
+  },
+  {
+   "id": "it-cima-ekar",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.475781,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 3.728004,
+     "coverage": 0.999703
+    },
+    "30to75": {
+     "radiance": 4.712033,
+     "coverage": 0.997049
+    }
+   },
+   "coverage": 0.997049,
+   "alanExposure": 0.67925
+  },
+  {
+   "id": "it-passo-valles",
+   "year": 2018,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.38506,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.376753,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 1.609458,
+     "coverage": 0.999601
+    }
+   },
+   "coverage": 0.999601,
+   "alanExposure": 0.241596
+  },
+  {
+   "id": "es-santiago-de-compostela",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 22.188776,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 5.191496,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.988544,
+     "coverage": 0.999937
+    },
+    "30to75": {
+     "radiance": 1.567875,
+     "coverage": 0.994479
+    }
+   },
+   "coverage": 0.994479,
+   "alanExposure": 2.159022
+  },
+  {
+   "id": "es-vigo",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 63.455698,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 10.712664,
+     "coverage": 0.968882
+    },
+    "10to30": {
+     "radiance": 2.968337,
+     "coverage": 0.992663
+    },
+    "30to75": {
+     "radiance": 1.133813,
+     "coverage": 0.997249
+    }
+   },
+   "coverage": 0.968882,
+   "alanExposure": 2.895434
+  },
+  {
+   "id": "es-guisamo",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 9.037144,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 7.992506,
+     "coverage": 0.986018
+    },
+    "10to30": {
+     "radiance": 2.980284,
+     "coverage": 0.992293
+    },
+    "30to75": {
+     "radiance": 0.644981,
+     "coverage": 0.999348
+    }
+   },
+   "coverage": 0.986018,
+   "alanExposure": 1.953725
+  },
+  {
+   "id": "es-areeiro",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 7.180408,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 7.057702,
+     "coverage": 0.969474
+    },
+    "10to30": {
+     "radiance": 3.659261,
+     "coverage": 0.987962
+    },
+    "30to75": {
+     "radiance": 1.012168,
+     "coverage": 0.998014
+    }
+   },
+   "coverage": 0.969474,
+   "alanExposure": 1.872522
+  },
+  {
+   "id": "es-illas-cies",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.803008,
+     "coverage": 0.985271
+    },
+    "10to30": {
+     "radiance": 3.226397,
+     "coverage": 0.99114
+    },
+    "30to75": {
+     "radiance": 1.017069,
+     "coverage": 0.997151
+    }
+   },
+   "coverage": 0.985271,
+   "alanExposure": 0.463204
+  },
+  {
+   "id": "es-illa-de-ons",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 1.003392,
+     "coverage": 0.994737
+    },
+    "10to30": {
+     "radiance": 3.976594,
+     "coverage": 0.983219
+    },
+    "30to75": {
+     "radiance": 0.898075,
+     "coverage": 0.998355
+    }
+   },
+   "coverage": 0.983219,
+   "alanExposure": 0.513248
+  },
+  {
+   "id": "es-illa-de-salvora",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.758755,
+     "coverage": 0.990047
+    },
+    "10to30": {
+     "radiance": 2.205386,
+     "coverage": 0.98721
+    },
+    "30to75": {
+     "radiance": 1.111716,
+     "coverage": 0.997877
+    }
+   },
+   "coverage": 0.98721,
+   "alanExposure": 0.418857
+  },
+  {
+   "id": "es-paramos",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.60281,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.638958,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 1.671252,
+     "coverage": 0.999251
+    },
+    "30to75": {
+     "radiance": 1.336981,
+     "coverage": 0.995263
+    }
+   },
+   "coverage": 0.995263,
+   "alanExposure": 0.592778
+  },
+  {
+   "id": "es-labrada",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.181247,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.517924,
+     "coverage": 0.99969
+    },
+    "30to75": {
+     "radiance": 0.839348,
+     "coverage": 0.998151
+    }
+   },
+   "coverage": 0.998151,
+   "alanExposure": 0.173514
+  },
+  {
+   "id": "es-fontaneira",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.018048,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.579329,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 0.480826,
+     "coverage": 0.999662
+    }
+   },
+   "coverage": 0.999662,
+   "alanExposure": 0.113176
+  },
+  {
+   "id": "es-o-cebreiro",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.071322,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.18775,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 0.450135,
+     "coverage": 0.999926
+    }
+   },
+   "coverage": 0.999926,
+   "alanExposure": 0.083643
+  },
+  {
+   "id": "es-lardeira",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.179768,
+     "coverage": 0.999475
+    },
+    "10to30": {
+     "radiance": 0.737721,
+     "coverage": 0.999874
+    },
+    "30to75": {
+     "radiance": 0.340901,
+     "coverage": 0.999947
+    }
+   },
+   "coverage": 0.999475,
+   "alanExposure": 0.161816
+  },
+  {
+   "id": "es-xares",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.041506,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.26916,
+     "coverage": 0.999873
+    },
+    "30to75": {
+     "radiance": 0.50794,
+     "coverage": 0.999925
+    }
+   },
+   "coverage": 0.999873,
+   "alanExposure": 0.089028
+  },
+  {
+   "id": "es-cabeza-de-manzaneda",
+   "year": 2015,
+   "rings": {
+    "0to2": {
+     "radiance": 0.0,
+     "coverage": 1.0
+    },
+    "2to10": {
+     "radiance": 0.11691,
+     "coverage": 1.0
+    },
+    "10to30": {
+     "radiance": 0.194556,
+     "coverage": 1.0
+    },
+    "30to75": {
+     "radiance": 0.714899,
+     "coverage": 0.999604
+    }
+   },
+   "coverage": 0.999604,
+   "alanExposure": 0.113771
+  }
+ ]
+}
