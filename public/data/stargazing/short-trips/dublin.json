@@ -3,110 +3,10 @@
   "originName": "Dublin",
   "countryCode": "IE",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-09-25T08:47:57.119268Z",
+  "generatedAt": "2026-11-23T13:29:41.152316Z",
   "entries": [
     {
       "rank": 1,
-      "destinationId": "elan-valley",
-      "destinationSlug": "elan-valley",
-      "destinationName": "Elan Valley",
-      "distanceKm": 209.85,
-      "distanceBand": "regional",
-      "bestMonths": [
-        {
-          "month": 4,
-          "score": 60
-        },
-        {
-          "month": 9,
-          "score": 57
-        },
-        {
-          "month": 3,
-          "score": 56
-        }
-      ],
-      "monthlyStargazingTripScores": [
-        {
-          "month": 1,
-          "score": 53,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 2,
-          "score": 55,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 3,
-          "score": 56,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 4,
-          "score": 60,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 5,
-          "score": 56,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 6,
-          "score": 0,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 7,
-          "score": 53,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 8,
-          "score": 54,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 9,
-          "score": 57,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 10,
-          "score": 55,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 11,
-          "score": 53,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 12,
-          "score": 52,
-          "confidenceLevel": "high"
-        }
-      ],
-      "stargazingTripScore": 60,
-      "distanceUtility": 85,
-      "shortTripScore": 66.25,
-      "bestSiteId": "craig-goch-dam",
-      "stayArea": {
-        "id": "rhayader",
-        "name": "Rhayader",
-        "affiliateQuery": "Rhayader Elan Valley"
-      },
-      "campingAvailable": null,
-      "reasons": [
-        "Best month score 60 in month 4.",
-        "Distance is 209.85 km by great-circle calculation; no road time is estimated.",
-        "Stay area metadata: Rhayader."
-      ],
-      "confidenceLevel": "high"
-    },
-    {
-      "rank": 2,
       "destinationId": "brecon-beacons",
       "destinationSlug": "brecon-beacons",
       "destinationName": "Bannau Brycheiniog",
@@ -202,6 +102,106 @@
         "Best month score 60 in month 4.",
         "Distance is 231.52 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Brecon."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 2,
+      "destinationId": "elan-valley",
+      "destinationSlug": "elan-valley",
+      "destinationName": "Elan Valley",
+      "distanceKm": 211.8,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 4,
+          "score": 59
+        },
+        {
+          "month": 9,
+          "score": 57
+        },
+        {
+          "month": 2,
+          "score": 55
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 52,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 59,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 55,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 0,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 57,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 54,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 53,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 52,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 59,
+      "distanceUtility": 85,
+      "shortTripScore": 65.5,
+      "bestSiteId": "craig-goch-dam",
+      "stayArea": {
+        "id": "rhayader",
+        "name": "Rhayader",
+        "affiliateQuery": "Rhayader Elan Valley"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 59 in month 4.",
+        "Distance is 211.8 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Rhayader."
       ],
       "confidenceLevel": "high"
     },
@@ -310,7 +310,7 @@
       "destinationId": "eryri",
       "destinationSlug": "eryri",
       "destinationName": "Eryri",
-      "distanceKm": 192.49,
+      "distanceKm": 187.27,
       "distanceBand": "regional",
       "bestMonths": [
         {
@@ -400,7 +400,7 @@
       "campingAvailable": null,
       "reasons": [
         "Best month score 58 in month 4.",
-        "Distance is 192.49 km by great-circle calculation; no road time is estimated.",
+        "Distance is 187.27 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Beddgelert."
       ],
       "confidenceLevel": "high"

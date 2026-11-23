@@ -3,7 +3,7 @@
   "originName": "Phoenix",
   "countryCode": "US",
   "maxShortTripKm": 500,
-  "generatedAt": "2026-09-25T08:47:57.119268Z",
+  "generatedAt": "2026-11-23T13:29:41.152316Z",
   "entries": [
     {
       "rank": 1,
@@ -107,6 +107,106 @@
     },
     {
       "rank": 2,
+      "destinationId": "sedona",
+      "destinationSlug": "sedona",
+      "destinationName": "Sedona",
+      "distanceKm": 153.35,
+      "distanceBand": "regional",
+      "bestMonths": [
+        {
+          "month": 5,
+          "score": 94
+        },
+        {
+          "month": 6,
+          "score": 94
+        },
+        {
+          "month": 4,
+          "score": 93
+        }
+      ],
+      "monthlyStargazingTripScores": [
+        {
+          "month": 1,
+          "score": 85,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 2,
+          "score": 84,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 3,
+          "score": 88,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 4,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 5,
+          "score": 94,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 6,
+          "score": 94,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 7,
+          "score": 86,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 8,
+          "score": 90,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 9,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 10,
+          "score": 93,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 11,
+          "score": 91,
+          "confidenceLevel": "high"
+        },
+        {
+          "month": 12,
+          "score": 86,
+          "confidenceLevel": "high"
+        }
+      ],
+      "stargazingTripScore": 94,
+      "distanceUtility": 85,
+      "shortTripScore": 91.75,
+      "bestSiteId": "two-trees-observing-area",
+      "stayArea": {
+        "id": "sedona-town",
+        "name": "Sedona",
+        "affiliateQuery": "Sedona United States"
+      },
+      "campingAvailable": null,
+      "reasons": [
+        "Best month score 94 in month 5.",
+        "Distance is 153.35 km by great-circle calculation; no road time is estimated.",
+        "Stay area metadata: Sedona."
+      ],
+      "confidenceLevel": "high"
+    },
+    {
+      "rank": 3,
       "destinationId": "oracle-state-park",
       "destinationSlug": "oracle-state-park",
       "destinationName": "Oracle State Park",
@@ -202,106 +302,6 @@
         "Best month score 93 in month 5.",
         "Distance is 154.16 km by great-circle calculation; no road time is estimated.",
         "Stay area metadata: Oracle."
-      ],
-      "confidenceLevel": "high"
-    },
-    {
-      "rank": 3,
-      "destinationId": "sedona",
-      "destinationSlug": "sedona",
-      "destinationName": "Sedona",
-      "distanceKm": 151.94,
-      "distanceBand": "regional",
-      "bestMonths": [
-        {
-          "month": 5,
-          "score": 92
-        },
-        {
-          "month": 6,
-          "score": 92
-        },
-        {
-          "month": 9,
-          "score": 92
-        }
-      ],
-      "monthlyStargazingTripScores": [
-        {
-          "month": 1,
-          "score": 83,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 2,
-          "score": 83,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 3,
-          "score": 86,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 4,
-          "score": 91,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 5,
-          "score": 92,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 6,
-          "score": 92,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 7,
-          "score": 85,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 8,
-          "score": 88,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 9,
-          "score": 92,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 10,
-          "score": 91,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 11,
-          "score": 88,
-          "confidenceLevel": "high"
-        },
-        {
-          "month": 12,
-          "score": 84,
-          "confidenceLevel": "high"
-        }
-      ],
-      "stargazingTripScore": 92,
-      "distanceUtility": 85,
-      "shortTripScore": 90.25,
-      "bestSiteId": "turkey-creek-trailhead-night",
-      "stayArea": {
-        "id": "sedona-town",
-        "name": "Sedona",
-        "affiliateQuery": "Sedona United States"
-      },
-      "campingAvailable": null,
-      "reasons": [
-        "Best month score 92 in month 5.",
-        "Distance is 151.94 km by great-circle calculation; no road time is estimated.",
-        "Stay area metadata: Sedona."
       ],
       "confidenceLevel": "high"
     },

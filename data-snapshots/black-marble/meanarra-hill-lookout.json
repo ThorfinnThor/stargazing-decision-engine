@@ -27,22 +27,22 @@
           "year": 2025,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 65,
-          "totalPixelCount": 65
+          "validPixelCount": 63,
+          "totalPixelCount": 63
         },
         {
           "year": 2024,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 65,
-          "totalPixelCount": 65
+          "validPixelCount": 63,
+          "totalPixelCount": 63
         },
         {
           "year": 2023,
           "radiance": 0,
           "coverage": 1,
-          "validPixelCount": 65,
-          "totalPixelCount": 65
+          "validPixelCount": 63,
+          "totalPixelCount": 63
         }
       ]
     },
@@ -53,28 +53,28 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.3,
-      "radiance": 0.04323,
+      "radiance": 0.073786,
       "coverage": 0.999371,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.044439,
-          "coverage": 0.999371,
-          "validPixelCount": 1590,
+          "radiance": 0.074689,
+          "coverage": 1,
+          "validPixelCount": 1591,
           "totalPixelCount": 1591
         },
         {
           "year": 2024,
-          "radiance": 0.04323,
+          "radiance": 0.073786,
           "coverage": 0.999371,
           "validPixelCount": 1590,
           "totalPixelCount": 1591
         },
         {
           "year": 2023,
-          "radiance": 0.030055,
-          "coverage": 0.999371,
-          "validPixelCount": 1590,
+          "radiance": 0.055916,
+          "coverage": 1,
+          "validPixelCount": 1591,
           "totalPixelCount": 1591
         }
       ]
@@ -86,29 +86,29 @@
       "upperInclusive": false,
       "statistic": "mean",
       "alanWeight": 0.15,
-      "radiance": 0,
-      "coverage": 1,
+      "radiance": 0.000379,
+      "coverage": 0.999924,
       "years": [
         {
           "year": 2025,
-          "radiance": 0,
-          "coverage": 1,
-          "validPixelCount": 13222,
-          "totalPixelCount": 13222
+          "radiance": 0.000379,
+          "coverage": 0.999924,
+          "validPixelCount": 13226,
+          "totalPixelCount": 13227
         },
         {
           "year": 2024,
-          "radiance": 0,
+          "radiance": 0.000432,
           "coverage": 1,
-          "validPixelCount": 13222,
-          "totalPixelCount": 13222
+          "validPixelCount": 13227,
+          "totalPixelCount": 13227
         },
         {
           "year": 2023,
-          "radiance": 0,
-          "coverage": 1,
-          "validPixelCount": 13222,
-          "totalPixelCount": 13222
+          "radiance": 0.000135,
+          "coverage": 0.999924,
+          "validPixelCount": 13226,
+          "totalPixelCount": 13227
         }
       ]
     },
@@ -119,40 +119,40 @@
       "upperInclusive": true,
       "statistic": "mean",
       "alanWeight": 0.1,
-      "radiance": 0.005775,
+      "radiance": 0.005776,
       "coverage": 0.999987,
       "years": [
         {
           "year": 2025,
-          "radiance": 0.006676,
+          "radiance": 0.006677,
           "coverage": 1,
-          "validPixelCount": 78110,
-          "totalPixelCount": 78110
+          "validPixelCount": 78098,
+          "totalPixelCount": 78098
         },
         {
           "year": 2024,
-          "radiance": 0.005775,
+          "radiance": 0.005776,
           "coverage": 1,
-          "validPixelCount": 78110,
-          "totalPixelCount": 78110
+          "validPixelCount": 78098,
+          "totalPixelCount": 78098
         },
         {
           "year": 2023,
           "radiance": 0.005561,
           "coverage": 0.999987,
-          "validPixelCount": 78109,
-          "totalPixelCount": 78110
+          "validPixelCount": 78097,
+          "totalPixelCount": 78098
         }
       ]
     }
   ],
   "radiance0to2": 0,
-  "radiance2to10": 0.04323,
-  "radiance10to30": 0,
-  "radiance30to75": 0.005775,
-  "alanExposure": 0.013272,
-  "darknessScore": 89.69,
+  "radiance2to10": 0.073786,
+  "radiance10to30": 0.000379,
+  "radiance30to75": 0.005776,
+  "alanExposure": 0.02199,
+  "darknessScore": 89.22,
   "coverage": 0.999371,
   "warnings": [],
-  "retrievedAt": "2026-09-01T01:28:24.517806Z"
+  "retrievedAt": "2026-11-23T13:21:23.818146Z"
 }
