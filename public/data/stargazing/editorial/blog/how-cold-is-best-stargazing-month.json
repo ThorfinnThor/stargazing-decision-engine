@@ -15,9 +15,9 @@
     "puna-argentina",
     "hanle",
     "aenos",
+    "kalbarri",
     "monfrague",
-    "great-western-woodlands",
-    "kalbarri"
+    "great-western-woodlands"
   ],
   "methodologyNote": "For every active real-data destination whose representative site has public or limited access, we identified the month with its highest published Stargazing Trip score. We retained best months scoring at least 75, then selected the four lowest and four highest ERA5 astronomical-night mean temperatures. P10 is the temperature below which 10% of historical astronomical-night hours fall in that month. Ties in monthly score follow source order. These gridded 1991–2020 climate statistics are not a live forecast or a site-specific measurement.",
   "blocks": [
@@ -90,6 +90,15 @@
         ],
         [
           "Warmer window",
+          "Kalbarri",
+          "January",
+          "95",
+          "23°C",
+          "18.5°C",
+          "Limited"
+        ],
+        [
+          "Warmer window",
           "Monfragüe",
           "July",
           "92",
@@ -104,15 +113,6 @@
           "95",
           "22.1°C",
           "16.2°C",
-          "Limited"
-        ],
-        [
-          "Warmer window",
-          "Kalbarri",
-          "January",
-          "95",
-          "22°C",
-          "17.8°C",
           "Limited"
         ]
       ],
